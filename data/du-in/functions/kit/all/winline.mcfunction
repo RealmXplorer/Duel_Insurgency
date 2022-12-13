@@ -25,9 +25,7 @@ execute if entity @s[scores={kit=5}] run playsound minecraft:springtrap.line voi
 execute if entity @s[scores={kit=31}] run playsound minecraft:judy.line.win voice @a ~ ~ ~ 100 1
 
 #execute if entity @s[scores={kit=1001}] run playsound minecraft:krampus.win voice @a ~ ~ ~ 100 1
-execute if entity @s[scores={kit=1001}] run tellraw @a {"text":"Game shutting down.","bold":true,"color":"dark_red"}
-execute if entity @s[scores={kit=1001}] run playsound minecraft:block.beacon.deactivate master @a ~ ~ ~ 1 1 1
-execute if entity @s[scores={kit=1001}] run playsound minecraft:paz.snore master @a ~ ~ ~ 1 1 1
+execute if entity @s[scores={kit=1001}] run function du-in:kit/paz/sounds/win
 
 execute if entity @s[scores={kit=1002}] run playsound minecraft:jerma.win voice @a ~ ~ ~ 100 1
 execute if entity @s[scores={kit=1003}] run playsound minecraft:sus.victory voice @a ~ ~ ~ 100 1
