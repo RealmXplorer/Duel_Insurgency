@@ -49,8 +49,7 @@ execute if entity @s[scores={kit=1000}] run playsound minecraft:saac.death maste
 #KRAMPUS DEATH SOUND#
 #execute if entity @s[scores={kit=1001}] run playsound minecraft:krampus.death master @a ~ ~ ~ 3 1
 
-execute if entity @s[scores={kit=1001}] run playsound minecraft:paz.cry master @a ~ ~ ~ 3 1
-
+execute if entity @s[scores={kit=1001}] run function du-in:kit/paz/sounds/death
 #JERMA DEATH SOUND#
 execute if entity @s[scores={kit=1002}] run playsound minecraft:jerma.death master @a ~ ~ ~ 3 1
 
