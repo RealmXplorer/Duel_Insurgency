@@ -1,0 +1,11 @@
+execute unless score #main online matches ..1 run playsound minecraft:block.end_portal.spawn master @a ~ ~ ~ 0.5 2
+execute unless score #main online matches ..1 run playsound minecraft:block.bell.use master @a ~ ~ ~ 1 1
+execute unless score #main online matches ..1 run playsound minecraft:block.amethyst_block.hit master @a ~ ~ ~ 1 2
+
+execute unless score #main online matches ..1 store result score #gamemode gamemode run scoreboard players get #gamemode gamemodeID
+
+execute if score #main online matches ..1 run tellraw @a {"text":"Not enough players to start game!","bold":true,"italic":true,"color":"dark_red"}
+execute if score #main online matches ..1 run playsound minecraft:block.note_block.guitar master @a ~ ~ ~ 2 0.5 1
+execute if score #main online matches ..1 run playsound minecraft:block.note_block.didgeridoo master @a ~ ~ ~ 2 0.5 1
+bossbar set minecraft:map_countdown players @a
+scoreboard players reset @s play

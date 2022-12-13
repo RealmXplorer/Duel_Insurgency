@@ -1,0 +1,4 @@
+execute if entity @s[scores={kitList=..0}] run function du-in:lobby/kitmenu/select/undertale/chara
+#clear @s player_head
+item replace entity @s[tag=kitMenu] inventory.8 with minecraft:player_head{charaHead:1b,fixedItem:1b,weaponItem:1b,headItem:1b,display:{Name:'{"text":"Chara","color":"white","bold":true,"italic":false}',Lore:['{"text":"Undertale","color":"aqua","bold":true,"italic":true}']},SkullOwner:{Id:[I;867896025,-2025831227,-1696125005,-2071803774],Properties:{textures:[{Value:"eyJ0ZXh0dXJlcyI6eyJTS0lOIjp7InVybCI6Imh0dHA6Ly90ZXh0dXJlcy5taW5lY3JhZnQubmV0L3RleHR1cmUvNzkzNzM0YmMyNTY1Mzc2MzAxZmJiNzE2NmZkNGQxNGM3NjE3ZTUwOTdiM2VjMmQ0ODZhZmFkNGIwNTgifX19"}]}},lobbyItem:1b} 1
+execute if entity @s[scores={kitList=8}] run scoreboard players remove @s kitList 1

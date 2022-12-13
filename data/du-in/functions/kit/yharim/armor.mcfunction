@@ -1,0 +1,6 @@
+item replace entity @s[tag=!lorde] armor.head with minecraft:player_head{display:{Name:"{\"text\":\"Jungle Tyrant Yharim\"}"},weaponItem:1b,SkullOwner:{Id:[I;-787015374,-583712165,-1311176001,-1055844486],Properties:{textures:[{Value:"eyJ0ZXh0dXJlcyI6eyJTS0lOIjp7InVybCI6Imh0dHA6Ly90ZXh0dXJlcy5taW5lY3JhZnQubmV0L3RleHR1cmUvOGI4ZGIwMjNhOTVhYTllNjI4NTkzODE3NWQ4NGVhOWYyOWExZmMwZGEyMjk0ODA2NGY2MzBiNjViNjg5M2MxMyJ9fX0="}]}}} 1
+item replace entity @s[tag=lorde] armor.head with minecraft:player_head{display:{Name:"{\"text\":\"THE LORDE\"}"},weaponItem:1b,SkullOwner:{Id:[I;486645937,-2058271039,-1233236791,-310561082],Properties:{textures:[{Value:"eyJ0ZXh0dXJlcyI6eyJTS0lOIjp7InVybCI6Imh0dHA6Ly90ZXh0dXJlcy5taW5lY3JhZnQubmV0L3RleHR1cmUvZWM3NTg0NDYxZTY5OGE2YjFiNWViNTRmYTljZGI0YjFmYWFmNmExYjFmMmYzNzA2ZmY3ZTkyMGViOWU0ZDQzNyJ9fX0="}]}}} 1
+item replace entity @s armor.chest with minecraft:leather_chestplate{display:{Name:'{"text":"Yharim"}',color:2501449},HideFlags:4,Unbreakable:1b,weaponItem:1b} 1
+item replace entity @s armor.legs with minecraft:leather_leggings{display:{Name:'{"text":"Yharim"}',color:13734468},HideFlags:4,Unbreakable:1b,weaponItem:1b} 1
+item replace entity @s armor.feet with minecraft:leather_boots{display:{Name:'{"text":"Nick B"}',color:13668182},HideFlags:4,Unbreakable:1b,weaponItem:1b} 1
+tag @s remove armor

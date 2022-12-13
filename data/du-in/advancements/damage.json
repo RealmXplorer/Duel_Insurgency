@@ -1,0 +1,10 @@
+{
+    "criteria": {
+        "damage": {
+            "trigger": "minecraft:entity_hurt_player"
+        }
+    },
+    "rewards": {
+        "function": "du-in:kit/all/damage"
+    }
+}

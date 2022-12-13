@@ -1,0 +1,5 @@
+#HUSK#
+item replace entity @s armor.head with minecraft:player_head{display:{Name:"{\"text\":\"Husk\"}"},weaponItem:1b,SkullOwner:{Id:[I;-207171088,338838309,-1453827855,-1780856411],Properties:{textures:[{Value:"eyJ0ZXh0dXJlcyI6eyJTS0lOIjp7InVybCI6Imh0dHA6Ly90ZXh0dXJlcy5taW5lY3JhZnQubmV0L3RleHR1cmUvMjY5Yjk3MzRkMGU3YmYwNjBmZWRjNmJmN2ZlYzY0ZTFmN2FkNmZjODBiMGZkODQ0MWFkMGM3NTA4Yzg1MGQ3MyJ9fX0="}]}}} 1
+item replace entity @s armor.chest with minecraft:leather_chestplate{display:{Name:'{"text":"Husk"}',color:10719073},HideFlags:4,Unbreakable:1b,weaponItem:1b} 1
+item replace entity @s armor.legs with minecraft:leather_leggings{display:{Name:'{"text":"Husk"}',color:3221010},HideFlags:4,Unbreakable:1b,weaponItem:1b} 1
+item replace entity @s armor.feet with minecraft:leather_boots{display:{Name:'{"text":"Nick B"}',color:5393471},HideFlags:4,Unbreakable:1b,weaponItem:1b} 1

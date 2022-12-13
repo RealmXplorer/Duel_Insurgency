@@ -1,0 +1,24 @@
+{
+    "display": {
+        "title": {
+            "text": "Such as He"
+        },
+        "description": {
+            "text": "Get the really low chance of getting Big Chungus"
+        },
+        "icon": {
+            "item": "minecraft:player_head",
+            "nbt": "{SkullOwner:{Id:[I;-1422274543,-1674883992,-2042114192,298265553],Properties:{textures:[{Value:\"eyJ0ZXh0dXJlcyI6eyJTS0lOIjp7InVybCI6Imh0dHA6Ly90ZXh0dXJlcy5taW5lY3JhZnQubmV0L3RleHR1cmUvYzNiMzg2MTQzYWNiZGE5NmQwNjkxNzg5OGZjYmI3YmMwYTJkY2VlOTNmNWU1OWNhNWI3M2U2NzgzZTVjMSJ9fX0=\"}]}}}"
+        },
+        "frame": "challenge",
+        "show_toast": true,
+        "announce_to_chat": true,
+        "hidden": true
+    },
+    "criteria": {
+        "chungus": {
+            "trigger": "minecraft:impossible"
+        }
+    },
+    "parent": "du-in:kitpick"
+}

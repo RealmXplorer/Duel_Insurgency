@@ -1,0 +1,4 @@
+execute if entity @s[scores={kitList=..0}] run function du-in:lobby/kitmenu/select/undertale/papyrus
+#clear @s player_head
+item replace entity @s[tag=kitMenu] inventory.4 with minecraft:player_head{papyrusHead:1b,fixedItem:1b,weaponItem:1b,headItem:1b,display:{Name:'{"text":"Papyrus","color":"white","bold":true,"italic":false}',Lore:['{"text":"Undertale","color":"aqua","bold":true,"italic":true}']},SkullOwner:{Id:[I;620872026,1752321509,-1189445380,707847166],Properties:{textures:[{Value:"eyJ0ZXh0dXJlcyI6eyJTS0lOIjp7InVybCI6Imh0dHA6Ly90ZXh0dXJlcy5taW5lY3JhZnQubmV0L3RleHR1cmUvZWQzZDVkMjRhN2Q0Mjk0ZjVhYThiZGI0NDdlOWZmOTU4YjNhMGZlNWNkOTYzYjliZGE1ODdjYzE1ZTlhODUifX19"}]}},lobbyItem:1b} 1
+execute if entity @s[scores={kitList=4}] run scoreboard players remove @s kitList 1

@@ -1,0 +1,4 @@
+execute if entity @s[scores={kitList=..0}] run function du-in:lobby/kitmenu/select/mobs/zombie
+
+item replace entity @s[tag=kitMenu] inventory.6 with minecraft:player_head{zombieHead:1b,display:{Name:'{"text":"Zombie","color":"white","bold":true,"italic":false}',Lore:['{"text":"Minecraft","color":"green","bold":true,"italic":true}']},SkullOwner:{Id:[I;-1722163816,-273461527,-1459933222,35179936],Properties:{textures:[{Value:"eyJ0ZXh0dXJlcyI6eyJTS0lOIjp7InVybCI6Imh0dHA6Ly90ZXh0dXJlcy5taW5lY3JhZnQubmV0L3RleHR1cmUvNTZmYzg1NGJiODRjZjRiNzY5NzI5Nzk3M2UwMmI3OWJjMTA2OTg0NjBiNTFhNjM5YzYwZTVlNDE3NzM0ZTExIn19fQ=="}]}},fixedItem:1b,weaponItem:1b,headItem:1b,lobbyItem:1b} 1
+execute if entity @s[scores={kitList=6}] run scoreboard players remove @s kitList 1

@@ -1,0 +1,5 @@
+#GONER STEVE#
+item replace entity @s armor.head with minecraft:player_head{weaponItem:1b,SkullOwner:{Id:[I;-397089264,-2043001806,-1782867861,482285012],Properties:{textures:[{Value:"eyJ0ZXh0dXJlcyI6eyJTS0lOIjp7InVybCI6Imh0dHA6Ly90ZXh0dXJlcy5taW5lY3JhZnQubmV0L3RleHR1cmUvMmJjZTk3NTJlZjQ1N2MyYzZlZmE5M2ExYzRhYTViMmY0OTc1OGMyNjFkZTY4MTg5Mjg3ZjFhNDI1YTg0YzlkZiJ9fX0="}]}}}
+item replace entity @s armor.chest with minecraft:leather_chestplate{display:{Name:'{"text":"Gsteve"}',color:6908265},weaponItem:1b,HideFlags:4,Unbreakable:1b} 1
+item replace entity @s armor.legs with minecraft:leather_leggings{display:{Name:'{"text":"Gsteve"}',color:5855577},weaponItem:1b,HideFlags:4,Unbreakable:1b} 1
+item replace entity @s armor.feet with minecraft:leather_boots{display:{Name:'{"text":"Nick B"}',color:4210752},weaponItem:1b,HideFlags:4,Unbreakable:1b} 1

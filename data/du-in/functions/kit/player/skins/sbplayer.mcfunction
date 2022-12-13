@@ -1,0 +1,5 @@
+#TERRARIA PLAYER#
+item replace entity @s armor.head with minecraft:player_head{display:{Name:"{\"text\":\"Warden's Helmet\"}"},weaponItem:1b,SkullOwner:{Id:[I;-772786896,167657582,-1326237280,845652956],Properties:{textures:[{Value:"eyJ0ZXh0dXJlcyI6eyJTS0lOIjp7InVybCI6Imh0dHA6Ly90ZXh0dXJlcy5taW5lY3JhZnQubmV0L3RleHR1cmUvZTVlYjBiZDg1YWFkZGYwZDI5ZWQwODJlYWMwM2ZjYWRlNDNkMGVlODAzYjBlODE2MmFkZDI4YTYzNzlmYjU0ZSJ9fX0="}]}}} 1
+item replace entity @s armor.chest with minecraft:leather_chestplate{display:{Name:'{"text":"Necron\'s Chestplate","color":"#F870FF","bold":true}',color:15155516},weaponItem:1b,Unbreakable:1b} 1
+item replace entity @s armor.legs with minecraft:leather_leggings{display:{Name:'{"text":"Necron\'s Leggings","color":"#F870FF","bold":true}',color:15162428},weaponItem:1b,Unbreakable:1b} 1
+item replace entity @s armor.feet with leather_boots{display:{Name:'{"text":"Necron\'s Boots","color":"#F870FF","bold":true}',color:15167036},weaponItem:1b,Unbreakable:1b} 1

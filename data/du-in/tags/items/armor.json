@@ -1,0 +1,10 @@
+{
+    "replace":false,
+    "values": [
+        "minecraft:player_head",
+        "minecraft:leather_chestplate",
+        "minecraft:leather_leggings",
+        "minecraft:leather_boots"
+        
+    ]
+}

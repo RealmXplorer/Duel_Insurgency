@@ -1,0 +1,4 @@
+item replace entity @s armor.head with minecraft:player_head{display:{Name:"{\"text\":\"Michael Myers\"}"},SkullOwner:{Id:[I;-200033418,347359048,-1302951582,1350406878],Properties:{textures:[{Value:"eyJ0ZXh0dXJlcyI6eyJTS0lOIjp7InVybCI6Imh0dHA6Ly90ZXh0dXJlcy5taW5lY3JhZnQubmV0L3RleHR1cmUvNTNiZDgyNThlZDA5OTk4ZWI5NTUxZjA0MmY5OGFmNTQ1MTJmYmYxNTBlYjk5NjAyYzQxYTcwZjVkNTlkN2VlMyJ9fX0="}]}},weaponItem:1b} 1
+item replace entity @s armor.legs with minecraft:leather_leggings{Unbreakable:1,HideFlags:4,display:{Name:'{"text":"Myers"}',color:5787980},weaponItem:1b} 1
+item replace entity @s armor.chest with minecraft:leather_chestplate{Unbreakable:1,HideFlags:4,display:{Name:'{"text":"Myers"}',color:5394758},weaponItem:1b} 1
+item replace entity @s armor.feet with minecraft:leather_boots{Unbreakable:1,HideFlags:4,display:{Name:'{"text":"Nick B"}',color:6381652},weaponItem:1b} 1

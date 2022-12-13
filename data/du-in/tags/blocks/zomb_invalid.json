@@ -1,0 +1,9 @@
+{
+    "replace":false,
+    "values": [
+        "minecraft:air",
+        "#minecraft:liquid",
+        "#minecraft:all_doors"
+
+    ]
+}

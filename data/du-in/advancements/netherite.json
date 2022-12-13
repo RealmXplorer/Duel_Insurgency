@@ -1,0 +1,23 @@
+{
+    "display": {
+        "title": {
+            "text": "Top 1%"
+        },
+        "description": {
+            "text": "Earn 5,000 diamonds in Duel: Insurgency"
+        },
+        "icon": {
+            "item": "minecraft:netherite_ingot"
+        },
+        "frame": "task",
+        "show_toast": true,
+        "announce_to_chat": true,
+        "hidden": false
+    },
+    "criteria": {
+        "netherite": {
+            "trigger": "minecraft:impossible"
+        }
+    },
+    "parent": "du-in:diamondblock"
+}

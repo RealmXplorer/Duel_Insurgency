@@ -1,0 +1,4 @@
+execute if entity @s[scores={kitList=..0}] run function du-in:lobby/kitmenu/select/fnaf/springtrap
+#clear @s player_head
+item replace entity @s[tag=kitMenu] inventory.1 with minecraft:player_head{springHead:1b,fixedItem:1b,weaponItem:1b,headItem:1b,display:{Name:'{"text":"Springtrap","color":"white","bold":true,"italic":false}',Lore:['{"text":"Five Nights at Freddy\'s 3","color":"#961FFF","bold":true,"italic":true}']},SkullOwner:{Id:[I;-974232140,105529911,-1429545513,183247425],Properties:{textures:[{Value:"eyJ0ZXh0dXJlcyI6eyJTS0lOIjp7InVybCI6Imh0dHA6Ly90ZXh0dXJlcy5taW5lY3JhZnQubmV0L3RleHR1cmUvZjUwMDFhMDg3OTYzNDYyN2FkNDgzNWNmODcwYzFiY2IxYTc2NzI0ZTVjYzkyMjQxMzE3OWQwOGEyMGNkNjk2YiJ9fX0="}]}},lobbyItem:1b} 1
+execute if entity @s[scores={kitList=1}] run scoreboard players remove @s kitList 1

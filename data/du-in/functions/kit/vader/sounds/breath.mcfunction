@@ -1,0 +1,2 @@
+execute if entity @s[scores={Health=11..}] run playsound minecraft:vader.breathe master @a[tag=!working] ~ ~ ~ 0.3 1
+execute if entity @s[scores={Health=..10}] run playsound minecraft:vader.hurtbreathe master @a[tag=!working] ~ ~ ~ 0.3 1

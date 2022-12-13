@@ -1,0 +1,4 @@
+scoreboard players set @s fakeTimer 60
+scoreboard objectives setdisplay sidebar gumballClassicFake
+scoreboard players set @a gumballClassicFake 0
+scoreboard players set @s gumballClassicFake 9

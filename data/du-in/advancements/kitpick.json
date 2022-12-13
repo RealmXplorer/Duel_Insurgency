@@ -1,0 +1,23 @@
+{
+    "display": {
+        "title": {
+            "text": "It Begins"
+        },
+        "description": {
+            "text": "Pick a kit in Duel: Insurgency"
+        },
+        "icon": {
+            "item": "minecraft:player_head"
+        },
+        "frame": "task",
+        "show_toast": true,
+        "announce_to_chat": true,
+        "hidden": false
+    },
+    "criteria": {
+        "kitpick": {
+            "trigger": "minecraft:impossible"
+        }
+    },
+    "parent": "du-in:root"
+}

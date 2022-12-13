@@ -1,0 +1,20 @@
+{
+    "replace":false,
+    "values": [
+        "minecraft:magma_cream",
+        "minecraft:slime_ball",
+        "minecraft:bone",
+        "minecraft:crossbow",
+        "minecraft:bow",
+        "minecraft:trident",
+        "minecraft:warped_fungus_on_a_stick",
+        "minecraft:stone_axe",
+        "minecraft:wooden_axe",
+        "minecraft:stone_sword",
+        "minecraft:wooden_sword",
+        "minecraft:music_disc_11",
+        "minecraft:music_disc_stal",
+        "minecraft:stick",
+        "minecraft:arrow"
+    ]
+}

@@ -1,0 +1,24 @@
+{
+    "display": {
+        "title": {
+            "text": "Legendary"
+        },
+        "description": {
+            "text": "Buy and play a legendary kit"
+        },
+        "icon": {
+            "item": "minecraft:player_head",
+            "nbt": "{SkullOwner:_saac}"
+        },
+        "frame": "challenge",
+        "show_toast": true,
+        "announce_to_chat": true,
+        "hidden": true
+    },
+    "criteria": {
+        "unlock": {
+            "trigger": "minecraft:impossible"
+        }
+    },
+    "parent": "du-in:kitpick"
+}

@@ -1,0 +1,44 @@
+Objectives and tags (usually) follow camelCase.
+functions and folders usually follow snake_case.
+
+Template for characters are found in "du-in/functions/kit/template"
+
+Legendary characters are sometimes referred to as "unlocked", and always have a "kit" value of 1000 or higher.
+
+Some functions for the character are kept in the "du-in/functions/kit/all/" folder.
+	Setting a normal "kit" score to a character is kept in "du-in/functions/kit/all/set(1,2,3,4)"
+		Legendary characters are kept in "du-in/functions/kit/all/setleg"
+	Deathsounds are kept in "du-in/functions/kit/all/deathsound"
+	Win voicelines are kept in "du-in/functions/kit/all/winline"
+	Inflicting damage kept in "du-in/functions/kit/all/hit"
+	Necessary functions for resetting character data on death happens in "du-in/functions/ingame/kill/death"
+
+Some outside functions are needed for certain aspects to characters
+	"du-in/functions/main/player_specific" contains "random" value, which limits random character selection pool. (if a character is added, it will need to be increased from 26)
+	"du-in/functions/lobby/kitmenu/" contains two folders that set up the character selection page.
+
+There are hidden "du-in/functions/spookmode" and "du-in/functions/festive" functions that will switch the theme over to Halloween and Christmas respectively, while setting all online player's skins to the theme.
+	These do not trigger in-game, and must be triggered with "/function"
+
+Tag "kitActions" runs when a player with tag "playing" right clicks a carrot on a stick.
+	This activates the character's main ability.
+
+Tag "secKitActions" run when a player with tag "playing" right clicks a warped fungus on a stick.
+	This activates the character's secondary ability.
+
+There is an item tag called "weapons" at "du-in/tags/items/weapon.json". This tracks all main weapons to keep them in players inventories.
+	-If an item that currently isn't being used as a weapon in the game is added, it will need to be added to this file.
+
+Maps, similar to characters, have their own value of "map".
+
+The map selected to be played on is determined by two factors:
+	What is the player's gamemode lobby? (cmap for Classic and Deathmatch, kothl for King of the Hill, ctfl for Capture the Flag, etc.)
+	What is the map's score?
+
+Maps are voted on in map select. This happens in "du-in/functions/maps/init"
+	This is not important unless you are adding more than 20 maps.
+
+"du-in/functions/maps/pick/init" determines the gamemode being played, and runs depending on that.
+	The child functions begin the map sequence and set everything up for the selected map.
+
+"du-in/functions/maps/classic/arena" is a good base, as Arena contains all normal map information.

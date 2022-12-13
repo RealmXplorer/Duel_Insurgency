@@ -1,0 +1,5 @@
+#MAGMA CUBE#
+item replace entity @s armor.chest with minecraft:leather_chestplate{Unbreakable:1,display:{Name:'{"text":"Magma"}',color:1116163},weaponItem:1b} 1
+item replace entity @s armor.legs with minecraft:leather_leggings{Unbreakable:1,display:{Name:'{"text":"Magma"}',color:3017728},weaponItem:1b} 1
+item replace entity @s armor.feet with minecraft:leather_boots{Unbreakable:1,display:{Name:'{"text":"Nick B"}',color:3017728},weaponItem:1b} 1
+item replace entity @s armor.head with minecraft:player_head{display:{Name:"{\"text\":\"Magma Cube\"}"},weaponItem:1b,SkullOwner:{Id:[I;-1767051932,1535462297,-1205513267,2057279270],Properties:{textures:[{Value:"eyJ0ZXh0dXJlcyI6eyJTS0lOIjp7InVybCI6Imh0dHA6Ly90ZXh0dXJlcy5taW5lY3JhZnQubmV0L3RleHR1cmUvMzg5NTdkNTAyM2M5MzdjNGM0MWFhMjQxMmQ0MzQxMGJkYTIzY2Y3OWE5ZjZhYjM2Yjc2ZmVmMmQ3YzQyOSJ9fX0="}]}}} 1

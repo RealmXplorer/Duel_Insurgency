@@ -1,0 +1,2 @@
+clear @s minecraft:carrot_on_a_stick{CustomModelData:1011}
+item replace entity @s[gamemode=!creative,tag=!playing,tag=!working,tag=!teamMode,tag=partyLeader] hotbar.4 with minecraft:carrot_on_a_stick{CustomModelData:1011,display:{Name:'{"text":"Quickplay","color":"aqua","bold":true,"italic":false}',Lore:['{"text":"Right click to use!","color":"dark_purple"}']},fixedItem:1b,weaponItem:1b,quickItem:1b}

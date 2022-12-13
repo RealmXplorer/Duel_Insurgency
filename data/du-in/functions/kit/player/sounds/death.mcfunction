@@ -1,0 +1,2 @@
+execute if entity @s[scores={steveSkin=4}] run playsound minecraft:terraria.playkill master @a ~ ~ ~ 3 1
+execute if entity @s[scores={steveSkin=3}] run playsound minecraft:gaster.back master @a ~ ~ ~ .5 1 1

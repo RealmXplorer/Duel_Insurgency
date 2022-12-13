@@ -1,0 +1,23 @@
+{
+    "display": {
+        "title": {
+            "text": "Veteran"
+        },
+        "description": {
+            "text": "Win 500 games of Duel: Insurgency"
+        },
+        "icon": {
+            "item": "minecraft:golden_apple"
+        },
+        "frame": "task",
+        "show_toast": true,
+        "announce_to_chat": true,
+        "hidden": false
+    },
+    "criteria": {
+        "veteran": {
+            "trigger": "minecraft:impossible"
+        }
+    },
+    "parent": "du-in:champion"
+}

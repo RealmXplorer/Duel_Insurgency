@@ -1,0 +1,14 @@
+{
+    "replace":false,
+    "values": [
+        "minecraft:air",
+        "#minecraft:liquid",
+        "#minecraft:wool_carpets",
+        "minecraft:moss_carpet",
+        "#minecraft:flowers",
+        "#minecraft:saplings",
+        "#minecraft:replaceable_plants",
+        "minecraft:snow"
+
+    ]
+}

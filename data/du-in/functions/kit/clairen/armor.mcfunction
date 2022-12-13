@@ -1,0 +1,6 @@
+item replace entity @s[tag=!maskless] armor.head with minecraft:player_head{display:{Name:"{\"text\":\"Clairen\"}"},SkullOwner:{Id:[I;-641831667,-1060878634,-1174944740,735223405],Properties:{textures:[{Value:"eyJ0ZXh0dXJlcyI6eyJTS0lOIjp7InVybCI6Imh0dHA6Ly90ZXh0dXJlcy5taW5lY3JhZnQubmV0L3RleHR1cmUvNmQ2M2E3OTQ2MWEwZTk5YzNlOWI4MDA4ZTEwYzA2MGJiYzdlZDM5Mjk2OTI3YTI3NjBjYjBmNTNmMzU1YjlhOSJ9fX0="}]}}} 1
+item replace entity @s[tag=maskless] armor.head with minecraft:player_head{display:{Name:"{\"text\":\"Clairen (Maskless)\"}"},SkullOwner:{Id:[I;-1268619068,1014123744,-1218912535,-1434296331],Properties:{textures:[{Value:"eyJ0ZXh0dXJlcyI6eyJTS0lOIjp7InVybCI6Imh0dHA6Ly90ZXh0dXJlcy5taW5lY3JhZnQubmV0L3RleHR1cmUvMmU5NDUzZDNjNzJkNjY0OGFmNmNhNzJiNmJjNDdlNWIzZjk2M2VmNTc2ZjJhOWFhNjNjNTRkNmZmYmYyZGZlYyJ9fX0="}]}}} 1
+item replace entity @s armor.chest with minecraft:leather_chestplate{display:{Name:'{"text":"Clairen"}',color:8129326},HideFlags:4,Unbreakable:1b,weaponItem:1b} 1
+item replace entity @s armor.legs with minecraft:leather_leggings{display:{Name:'{"text":"Clairen"}',color:2236962},HideFlags:4,Unbreakable:1b,weaponItem:1b} 1
+item replace entity @s armor.feet with minecraft:leather_boots{display:{Name:'{"text":"Nick B"}',color:13290186},HideFlags:4,Unbreakable:1b,weaponItem:1b} 1
+tag @s remove armor

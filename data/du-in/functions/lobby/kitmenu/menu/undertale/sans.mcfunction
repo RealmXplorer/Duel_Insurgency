@@ -1,0 +1,4 @@
+execute if entity @s[scores={kitList=..0}] run function du-in:lobby/kitmenu/select/undertale/sans
+#clear @s player_head
+item replace entity @s[tag=kitMenu] inventory.1 with minecraft:player_head{sansHead:1b,fixedItem:1b,weaponItem:1b,headItem:1b,display:{Name:'{"text":"Sans","color":"white","bold":true,"italic":false}',Lore:['{"text":"Undertale","color":"aqua","bold":true,"italic":true}']},SkullOwner:{Id:[I;1075612150,944654141,-1270342541,-1555910951],Properties:{textures:[{Value:"eyJ0ZXh0dXJlcyI6eyJTS0lOIjp7InVybCI6Imh0dHA6Ly90ZXh0dXJlcy5taW5lY3JhZnQubmV0L3RleHR1cmUvOTVhZWY4ZDczYzZiM2I5N2Q3YjU3MTZmY2EyMTVmNWViYTY3OTkyMTJkMTFlYjYzZTE1ODg5NDBkMWUyMWI3MyJ9fX0="}]}},lobbyItem:1b} 1
+execute if entity @s[scores={kitList=1}] run scoreboard players remove @s kitList 1

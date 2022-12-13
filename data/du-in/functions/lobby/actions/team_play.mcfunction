@@ -1,0 +1,2 @@
+execute if entity @s[scores={teamPlayMode=1..},tag=!teamMode] run function du-in:lobby/actions/team_enable
+execute if entity @s[scores={teamPlayMode=1..},tag=teamMode] run function du-in:lobby/actions/team_disable
