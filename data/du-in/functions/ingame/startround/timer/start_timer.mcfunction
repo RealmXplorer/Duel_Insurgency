@@ -67,7 +67,6 @@ tag @a remove countStop
 schedule function du-in:ingame/other/one_sec_loop 1s
 schedule function du-in:ingame/other/five_loop 5s
 execute as @a run function du-in:lobby/item_reset
-kill @e[tag=displayItem]
 tag @a remove noItem
 tag @a remove kitMenu
 #tag @a remove mapOverride

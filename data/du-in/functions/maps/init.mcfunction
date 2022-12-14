@@ -2,6 +2,9 @@
 scoreboard players reset #voting
 scoreboard players set #voting mapWinner 0
 
+#Kill map select entities
+kill @e[tag=displayItem]
+
 #Tally votes
 execute as @a[scores={mapVote=1}] run scoreboard players add #voting map1Vote 1
 execute as @a[scores={mapVote=2}] run scoreboard players add #voting map2Vote 1
