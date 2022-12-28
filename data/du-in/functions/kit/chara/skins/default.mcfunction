@@ -1,5 +1,5 @@
 #DEFAULT#
 item replace entity @s armor.head with minecraft:player_head{display:{Name:"{\"text\":\"Chara\"}"},weaponItem:1b,SkullOwner:{Id:[I;867896025,-2025831227,-1696125005,-2071803774],Properties:{textures:[{Value:"eyJ0ZXh0dXJlcyI6eyJTS0lOIjp7InVybCI6Imh0dHA6Ly90ZXh0dXJlcy5taW5lY3JhZnQubmV0L3RleHR1cmUvNzkzNzM0YmMyNTY1Mzc2MzAxZmJiNzE2NmZkNGQxNGM3NjE3ZTUwOTdiM2VjMmQ0ODZhZmFkNGIwNTgifX19"}]}}} 1
-item replace entity @s armor.chest with minecraft:leather_chestplate{Unbreakable:1,HideFlags:4,display:{Name:'{"text":"Chara"}',color:8439583},weaponItem:1b} 1
-item replace entity @s armor.legs with minecraft:leather_leggings{display:{Name:'{"text":"Chara"}',color:8606770},HideFlags:4,Unbreakable:1,weaponItem:1b} 1
-item replace entity @s armor.feet with minecraft:leather_boots{display:{Name:'{"text":"Nick B"}',color:8606770},HideFlags:4,Unbreakable:1,weaponItem:1b} 1
+item replace entity @s armor.chest with minecraft:leather_chestplate{display:{Name:'{"text":"Chara Chest"}',color:8439583},Unbreakable:1,HideFlags:4,weaponItem:1b} 1
+item replace entity @s armor.legs with minecraft:leather_leggings{display:{Name:'{"text":"Chara Legs"}',color:8606770},HideFlags:4,Unbreakable:1,weaponItem:1b} 1
+item replace entity @s armor.feet with minecraft:leather_boots{display:{Name:'{"text":"Chara Feet"}',color:8606770},HideFlags:4,Unbreakable:1,weaponItem:1b} 1

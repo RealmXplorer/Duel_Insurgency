@@ -2,7 +2,7 @@ execute if entity @s[tag=!stolen,scores={hit=5..}] run function du-in:kit/claire
 
 
 # Weapon #
-execute if entity @s[tag=!stolen,tag=!teamDead] unless entity @s[scores={weapCount=1}] run item replace entity @s hotbar.0 with wooden_sword{display:{Name:'{"text":"Phasesaber","color":"#BA0000","bold":true}'},Enchantments:[{id:"minecraft:knockback",lvl:1}],HideFlags:4,Unbreakable:1b,CustomModelData:114,weaponItem:1b,clairenSaber:1b,AttributeModifiers:[{AttributeName:"generic.attack_damage",Name:"generic.attack_damage",Amount:4.5,Operation:0,UUID:[I;-1208756985,1490898231,-1402752434,913687444],Slot:"mainhand"},{AttributeName:"generic.attack_speed",Name:"generic.attack_speed",Amount:-2,Operation:0,UUID:[I;150931488,-224377682,-1476605358,-249302083],Slot:"mainhand"}]} 1
+execute if entity @s[tag=!stolen,tag=!teamDead] unless entity @s[scores={weapCount=1}] run function du-in:kit/clairen/weapon
 
 #execute store result score @s[tag=!stolen] weapCount run clear @s[tag=!kitMenu] wooden_sword 0
 

@@ -1,5 +1,5 @@
 item replace entity @s armor.head with minecraft:player_head{display:{Name:"{\"text\":\"Asriel God\"}"},weaponItem:1b,SkullOwner:{Id:[I;-171500783,804276705,-1983779023,-343739928],Properties:{textures:[{Value:"eyJ0ZXh0dXJlcyI6eyJTS0lOIjp7InVybCI6Imh0dHA6Ly90ZXh0dXJlcy5taW5lY3JhZnQubmV0L3RleHR1cmUvMTRkNDMzYWViZWIxNWU1NzNkYWM1ZjY5MTE2NTRlYzM4MzQ0ZjJhY2IxMWNhOGIyOWQ5YzM3MDY2ODNkN2E0In19fQ=="}]}}} 1
-item replace entity @s armor.chest with minecraft:leather_chestplate{Unbreakable:1,HideFlags:4,display:{Name:'{"text":"Asriel"}',color:14511283},weaponItem:1b} 1
-item replace entity @s armor.legs with minecraft:leather_leggings{Unbreakable:1,HideFlags:4,display:{Name:'{"text":"Asriel"}',color:1908001},weaponItem:1b} 1
-item replace entity @s armor.feet with minecraft:leather_boots{Unbreakable:1,HideFlags:4,display:{Name:'{"text":"Nick B"}',color:16383998},weaponItem:1b} 1
+item replace entity @s armor.chest with minecraft:leather_chestplate{Unbreakable:1,HideFlags:4,display:{Name:'{"text":"Asriel Chest"}',color:14511283},weaponItem:1b} 1
+item replace entity @s armor.legs with minecraft:leather_leggings{Unbreakable:1,HideFlags:4,display:{Name:'{"text":"Asriel Legs"}',color:1908001},weaponItem:1b} 1
+item replace entity @s armor.feet with minecraft:leather_boots{Unbreakable:1,HideFlags:4,display:{Name:'{"text":"Asriel Feet"}',color:16383998},weaponItem:1b} 1
 tag @s remove armor

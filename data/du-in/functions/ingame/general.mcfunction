@@ -59,7 +59,7 @@ execute positioned as @e[type=marker,tag=ventBlock] run function du-in:maps/vent
 
 
 #
-execute if entity @a[scores={kit=1000}] as @e[type=painting] run function du-in:ingame/vending_machine/painting
+execute if entity @a[scores={kit=1000..1001}] as @e[type=painting] run function du-in:ingame/vending_machine/painting
 
 
 #Run as Asgore's firewalls

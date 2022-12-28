@@ -1,6 +1,6 @@
 #Kill all items buried in the ground#
-execute if entity @a[scores={kit=1000}] at @a[tag=playing] as @e[type=minecraft:wandering_trader,tag=vending,distance=..30] at @s run function du-in:ingame/vending_machine/vendor
-execute if entity @a[scores={kit=1000}] at @a[tag=playing] as @e[type=minecraft:painting,distance=..30] at @s run function du-in:ingame/vending_machine/vending
+execute if entity @a[scores={kit=1000..1001}] at @a[tag=playing] as @e[type=minecraft:wandering_trader,tag=vending,distance=..30] at @s run function du-in:ingame/vending_machine/vendor
+execute if entity @a[scores={kit=1000..1001}] at @a[tag=playing] as @e[type=minecraft:painting,distance=..30] at @s run function du-in:ingame/vending_machine/vending
 
 #Run as all players (every second)
 execute as @a[tag=playing,tag=!grave] at @s run function du-in:ingame/other/play_half

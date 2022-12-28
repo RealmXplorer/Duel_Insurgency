@@ -51,6 +51,9 @@ execute if entity @s[scores={comboScore=3..},tag=playing] run function du-in:kit
     #Saac
     execute if entity @s[tag=!broken,scores={kit=1000},tag=playing,predicate=du-in:ten_chance] unless entity @s[scores={saacDisTimer=1..}] run function du-in:kit/saac/passive/break
 
+    #Paz
+    execute if entity @s[scores={kit=1001},tag=playing] run playsound minecraft:paz.fnf.hit master @a ~ ~ ~ 1 1
+    execute if entity @s[scores={kit=1001},tag=playing,predicate=du-in:thirty_chance,tag=!fortniteCard] run function du-in:kit/paz/card/give_card
     #Impostor
     execute if entity @s[scores={kit=1003},tag=playing,tag=!stolen] run playsound minecraft:soundeffect.whack master @a ~ ~ ~ .5 1
 

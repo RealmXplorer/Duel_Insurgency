@@ -6,7 +6,8 @@
 #function du-in:lobby/mapselect/switch
 #tp @s[tag=!spectator,tag=!teamMode] 232 91 36 180 0
 tp @s[tag=!spectator,tag=!working] 232 91 36 180 0
-function du-in:lobby/mapselect/switch
+#kill @e[tag=displayItem]
+#function du-in:lobby/mapselect/switch
 tag @s remove mystery
 execute as @a run function du-in:music/lobby/stop/kitselect
 #execute if entity @s[tag=teamMode] run tp @s[tag=teamMode,tag=!spectator] 512 5 528 0 0

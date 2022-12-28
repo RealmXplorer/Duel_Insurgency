@@ -97,5 +97,3 @@ summon marker 234 91 20 {Tags:["mapVote","displayItem","vote15"]}
 summon area_effect_cloud 232 92 37 {Duration:2147483647,Tags:["displayItem"],CustomNameVisible:1b,CustomName:"{\"text\":\"Random Map\",\"color\":\"blue\",\"bold\":true}"}
 summon minecraft:item 232 92 37 {NoGravity:1b,Age:-32768,Health:99999,PickupDelay:32767,Tags:["mapLabel","displayItem"],Item:{id:"minecraft:lapis_block",Count:1b}}
 summon marker 232 91 36 {Tags:["mapVote","displayItem","voteRand"]} 
-#232 91 36
-#228 92 20

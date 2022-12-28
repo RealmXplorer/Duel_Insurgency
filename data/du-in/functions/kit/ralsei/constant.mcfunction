@@ -16,6 +16,7 @@ clear @s[scores={ralseiTP=60..},tag=!stolen] minecraft:gunpowder{CustomModelData
 clear @s[scores={ralseiTP=90..},tag=!stolen] minecraft:gunpowder{CustomModelData:2016}
 clear @s[scores={ralseiTP=..119},tag=!stolen] minecraft:gunpowder{CustomModelData:2018}
 
+#Track number of secondaries and Tp meters in inventory
 execute store result score @s[tag=!stolen] secCount run clear @s[tag=!kitMenu] warped_fungus_on_a_stick 0
 execute store result score @s[tag=!stolen] triCount run clear @s[tag=!kitMenu] gunpowder 0
 
@@ -24,7 +25,7 @@ item replace entity @s[level=1] weapon.offhand with minecraft:carrot_on_a_stick{
 
 execute if entity @s[tag=kitActions] run function du-in:kit/ralsei/ability/init
 
-
+#Secondary Ability Use
 execute if entity @s[tag=secKitActions] run function du-in:kit/ralsei/prayer/init
 
 #TP Counting and sounds

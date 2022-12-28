@@ -1,5 +1,5 @@
 #TERRARIA PLAYER#
 item replace entity @s armor.head with minecraft:player_head{display:{Name:"{\"text\":\"Terraria Player\"}"},weaponItem:1b,SkullOwner:{Id:[I;-1424340984,-242136467,-1341135019,-1786758919],Properties:{textures:[{Value:"eyJ0ZXh0dXJlcyI6eyJTS0lOIjp7InVybCI6Imh0dHA6Ly90ZXh0dXJlcy5taW5lY3JhZnQubmV0L3RleHR1cmUvNTQzYTlmYWJkZTIyMmIxODUxMmY3ZmMzZjk1ZjI4YTlkYzRmODg3MGM5ZTMyNDYxZGU5NTYwM2M4YTJhNTY3YiJ9fX0="}]}}} 1
-item replace entity @s armor.chest with minecraft:leather_chestplate{display:{Name:'{"text":"Tsteve"}',color:10079826},weaponItem:1b,HideFlags:4,Unbreakable:1b} 1
-item replace entity @s armor.legs with minecraft:leather_leggings{display:{Name:'{"text":"Tsteve"}',color:15630378},weaponItem:1b,HideFlags:4,Unbreakable:1b} 1
-item replace entity @s armor.feet with minecraft:leather_boots{display:{Name:'{"text":"Nick B"}',color:6710088},weaponItem:1b,HideFlags:4,Unbreakable:1b} 1
+item replace entity @s armor.chest with minecraft:leather_chestplate{display:{Name:'{"text":"Terraria Player Chest"}',color:10079826},weaponItem:1b,HideFlags:4,Unbreakable:1b} 1
+item replace entity @s armor.legs with minecraft:leather_leggings{display:{Name:'{"text":"Terraria Player Legs"}',color:15630378},weaponItem:1b,HideFlags:4,Unbreakable:1b} 1
+item replace entity @s armor.feet with minecraft:leather_boots{display:{Name:'{"text":"Terraria Player Feet"}',color:6710088},weaponItem:1b,HideFlags:4,Unbreakable:1b} 1

@@ -1,5 +1,5 @@
 #GINGERBREAD#
 item replace entity @s armor.head with minecraft:player_head{display:{Name:"{\"text\":\"Gingerbread Man\"}"},weaponItem:1b,SkullOwner:{Id:[I;156266010,-1374600632,-1838645622,876962649],Properties:{textures:[{Value:"eyJ0ZXh0dXJlcyI6eyJTS0lOIjp7InVybCI6Imh0dHA6Ly90ZXh0dXJlcy5taW5lY3JhZnQubmV0L3RleHR1cmUvN2RiNTQ0MjlkZWM1YjNmN2VmNDBlOGJjM2ZmMTk5NWNlZjY5NmEzNTAyOGY3ODJmNjM5MWMyYjU1MTFiYmUifX19"}]}}} 1
-item replace entity @s armor.chest with minecraft:leather_chestplate{display:{Name:'{"text":"Ginger"}',color:12543009},HideFlags:4,Unbreakable:1b,weaponItem:1b} 1
-item replace entity @s armor.legs with minecraft:leather_leggings{display:{Name:'{"text":"Ginger"}',color:13662001},HideFlags:4,Unbreakable:1b,weaponItem:1b} 1
-item replace entity @s armor.feet with minecraft:leather_boots{display:{Name:'{"text":"Nick B"}',color:14321478},HideFlags:4,Unbreakable:1b,weaponItem:1b} 1
+item replace entity @s armor.chest with minecraft:leather_chestplate{display:{Name:'{"text":"Gingerbread Chest"}',color:12543009},HideFlags:4,Unbreakable:1b,weaponItem:1b} 1
+item replace entity @s armor.legs with minecraft:leather_leggings{display:{Name:'{"text":"Gingerbread Legs"}',color:13662001},HideFlags:4,Unbreakable:1b,weaponItem:1b} 1
+item replace entity @s armor.feet with minecraft:leather_boots{display:{Name:'{"text":"Gingerbread Feet"}',color:14321478},HideFlags:4,Unbreakable:1b,weaponItem:1b} 1

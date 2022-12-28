@@ -44,6 +44,11 @@ clear @s[tag=stolen] minecraft:emerald
 #CLEAR TAGS#
 execute if entity @a[scores={kit=17}] run tag @s remove kyloHit
 execute if entity @a[scores={kit=1005}] run tag @s remove notEaten
+
+execute if entity @a[scores={kit=1001}] run scoreboard players remove @s[scores={weaponTier=1..}] weaponTier 1
+clear @s[scores={kit=1001}] #du-in:weapon
+execute if entity @s[scores={kit=1001}] run function du-in:kit/paz/weapon
+
 execute if entity @a[scores={kit=1005}] run tag @s remove runza
 execute if entity @a[scores={kit=1005}] run tag @s remove peepedHorror
 execute if entity @s[scores={kit=5},tag=springLock] run function du-in:kit/springtrap/ability/disable

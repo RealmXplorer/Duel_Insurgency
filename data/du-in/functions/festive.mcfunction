@@ -4,6 +4,7 @@ scoreboard players set @a sansSkin 1
 scoreboard players set @a golemSkin 1
 scoreboard players set @a creepSkin 1
 scoreboard players set @a flowSkin 1
+scoreboard players set @a clairenSkin 1
 scoreboard players set #main lobbyTheme 1
 function du-in:lobby/display/christmas/switch
 stopsound @a

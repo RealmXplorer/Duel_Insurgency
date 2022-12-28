@@ -54,6 +54,8 @@ execute as @a run function du-in:lobby/item_reset
 
 #Teleport players to map select
 execute as @a run function du-in:lobby/mapselect/tomap
+kill @e[tag=displayItem]
+function du-in:lobby/mapselect/switch
 
 #Start music
 scoreboard players set @a music 0
