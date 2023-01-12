@@ -34,6 +34,7 @@ execute if entity @s[scores={kit=7},tag=!stolen] run give @s minecraft:arrow 2
 execute if entity @s[scores={kit=7},tag=!stolen,predicate=du-in:half_chance] run give @s minecraft:arrow 1
 
 execute if entity @s[scores={kit=1000}] run function du-in:kit/saac/sounds/lines
+#This also gives Fortnite Card
 execute if entity @s[scores={kit=1001}] run function du-in:kit/paz/sounds/lines
 execute if entity @s[scores={kit=1002}] run function du-in:kit/jerma/sounds/lines
 execute if entity @s[scores={kit=1003}] run function du-in:kit/impostor/sounds/line
