@@ -1,6 +1,6 @@
 #Timer for lobby sidebar for scroll
 scoreboard players add #main sidebarTimer 1
-execute if score #main sidebarTimer matches 601.. run scoreboard players set #main sidebarTimer 0
+execute if score #main sidebarTimer matches 481.. run scoreboard players set #main sidebarTimer 0
 
 #Test for amount of people on team
 execute if entity @a[tag=teamMode] run scoreboard players set #main teamOnline 0
