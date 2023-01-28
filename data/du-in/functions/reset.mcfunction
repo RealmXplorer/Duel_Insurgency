@@ -341,3 +341,7 @@ scoreboard players reset @a card
 tag @a remove kothEnd
 scoreboard players set @a weaponTier 0
 tag @a remove fortniteCard
+
+tag @a remove parried
+tag @a remove parryStart
+scoreboard players set @a parryCooldown 0
