@@ -7,7 +7,7 @@
 execute if entity @s[level=1..2,tag=!lobby,tag=!win,tag=!lose,tag=!winend,tag=!kitMenu,tag=!chungus] unless entity @s[scores={gasterTimer=-99..}] run function du-in:kit/all/ability/return
 
 #Return ability if player does not have it
-execute if entity @s[tag=!startgame,tag=!chungus] unless entity @s[scores={Acount=1}] run function du-in:ingame/other/ability_clear
+execute if entity @s[tag=!startgame,tag=!chungus] unless entity @s[scores={Acount=1}] run xp set @s 2 levels
 
 # Stating Game Functions #
     execute if entity @s[tag=startgame] run function du-in:ingame/start_seq
@@ -16,8 +16,12 @@ execute if entity @s[tag=!startgame,tag=!chungus] unless entity @s[scores={Acoun
     execute if entity @s[tag=teamDead] run function du-in:ingame/team_dead
 
 #Give glow if sneaking, remove glow if not
-    execute if entity @s[predicate=du-in:is_sneaking,tag=!gasterInvisible,gamemode=adventure,tag=!inField] unless entity @s[scores={floweyHitTimer=0..}] unless entity @s[scores={gasterTimer=0..}] run effect give @s minecraft:glowing 1 0 true
-    execute if entity @s[predicate=!du-in:is_sneaking,tag=!gasterInvisible,gamemode=adventure,tag=!inField,tag=!flagGot] run effect clear @s minecraft:glowing
+    execute if entity @s[predicate=du-in:is_sneaking] run function du-in:ingame/is_sneaking
+    execute if entity @s[predicate=!du-in:is_sneaking] run function du-in:ingame/is_not_sneaking
+
+    execute if entity @s[tag=parryStart] run function du-in:kit/all/parry_buffer
+    #execute if entity @s[predicate=du-in:is_sneaking,tag=!gasterInvisible,gamemode=adventure,tag=!inField] unless entity @s[scores={floweyHitTimer=0..}] unless entity @s[scores={gasterTimer=0..}] run effect give @s minecraft:glowing 1 0 true
+    #execute if entity @s[predicate=!du-in:is_sneaking,tag=!gasterInvisible,gamemode=adventure,tag=!inField,tag=!flagGot] run effect clear @s minecraft:glowing
     #execute if entity @s[scores={floweyHitTimer=0..},tag=inField] run effect give @s minecraft:glowing 1 0 true
     #execute if entity @s[scores={gasterTimer=0..},tag=inField] run effect give @s minecraft:glowing 1 0 true
 
@@ -115,6 +119,8 @@ scoreboard players remove @s[scores={yharimTimer=1..}] yharimTimer 1
 #Ralsei Sleep#
 execute if entity @s[scores={ralseiTimer=..70}] run function du-in:kit/ralsei/ability/sleep
 
+scoreboard players reset @s[scores={parryHit=1..}] parryHit
+scoreboard players reset @s[scores={parryDam=1..}] parryDam
 
 #Darwin Timer#
 execute if entity @s[scores={darwinTimer=0..}] run function du-in:kit/gumball/ability/darwin/timer
