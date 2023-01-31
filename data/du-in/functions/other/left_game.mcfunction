@@ -37,6 +37,7 @@ execute if entity @a[tag=partyLeader,tag=cqIngame] run tag @s add cqIngame
 
 execute if entity @a[tag=partyLeader,tag=song] run tag @s[tag=!musicOff] add song
 
+execute if entity @a[tag=partyLeader,tag=lobby] run tag @s remove winend
 
 execute if entity @a[tag=partyLeader,tag=songEnd] run tag @s[tag=!musicOff] add songEnd
 
