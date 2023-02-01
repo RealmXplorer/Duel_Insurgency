@@ -56,6 +56,7 @@ execute as @a run function du-in:lobby/item_reset
 execute as @a run function du-in:lobby/mapselect/tomap
 kill @e[tag=displayItem]
 function du-in:lobby/mapselect/switch
+kill @e[type=area_effect_cloud,tag=gamemodeLabel]
 
 #Start music
 scoreboard players set @a music 0

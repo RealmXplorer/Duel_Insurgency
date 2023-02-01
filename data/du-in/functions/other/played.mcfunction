@@ -12,6 +12,9 @@ scoreboard players set @s kothScale 0
 scoreboard players set @s tKothScale 0
 scoreboard players set @s ctfScale 0
 scoreboard players set @s conqScale 0
+scoreboard players set @s Wins 0
+scoreboard players set @s Kills 0
+scoreboard players set @s Diamonds 0
 scoreboard players set @s spawnpoint 1
 execute store result score @s UUID run data get entity @s UUID[0]
 

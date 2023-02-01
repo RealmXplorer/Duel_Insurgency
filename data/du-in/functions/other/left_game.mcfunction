@@ -37,7 +37,9 @@ execute if entity @a[tag=partyLeader,tag=cqIngame] run tag @s add cqIngame
 
 execute if entity @a[tag=partyLeader,tag=song] run tag @s[tag=!musicOff] add song
 
-execute if entity @a[tag=partyLeader,tag=lobby] run tag @s remove winend
+execute if entity @a[tag=partyLeader,tag=lobby] run tag @s[tag=winend] add win
+execute if entity @a[tag=partyLeader,tag=lobby] if entity @s[tag=win] run scoreboard players set #main endTime 6
+execute if entity @a[tag=partyLeader,tag=lobby] if entity @s[tag=winend] run scoreboard players set #main endTime 6
 
 execute if entity @a[tag=partyLeader,tag=songEnd] run tag @s[tag=!musicOff] add songEnd
 
