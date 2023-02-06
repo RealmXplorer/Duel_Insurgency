@@ -1,7 +1,7 @@
 #Announce winners
 title @a[tag=!teamMode,tag=!falseWin,tag=!lobby] title {"text":"","bold":true,"color":"gold","extra":[{"selector":"@a[tag=win,tag=!falseWin]"}]}
-execute if entity @a[tag=team1,tag=win] run title @a title [{"text":"RED TEAM","bold":true,"color":"red"}]
-execute if entity @a[tag=team2,tag=win] run title @a title [{"text":"BLUE TEAM","bold":true,"color":"blue"}]
+execute if entity @a[tag=team1,tag=win,tag=!falseWin] run title @a title [{"text":"RED TEAM","bold":true,"color":"red"}]
+execute if entity @a[tag=team2,tag=win,tag=!falseWin] run title @a title [{"text":"BLUE TEAM","bold":true,"color":"blue"}]
 title @a[tag=!falseWin,tag=!lobby] subtitle {"text":"WINS","color":"gold"}
 title @a times 5 120 5
 
