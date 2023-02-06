@@ -3,4 +3,6 @@ execute if entity @s[tag=lobby,tag=shop,nbt=!{Inventory:[{tag:{fixedItem:1b},id:
 
 #SHOP BACK#
 execute if entity @s[scores={back=1..}] run function du-in:lobby/actions/shop_back
+
+#Music
 execute unless entity @s[tag=musicOff] run function du-in:music/lobby/shop

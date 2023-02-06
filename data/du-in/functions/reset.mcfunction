@@ -346,6 +346,7 @@ tag @a remove parried
 tag @a remove parryStart
 scoreboard players set @a parryCooldown 0
 
+#Create new gamemode select label
 kill @e[type=area_effect_cloud,tag=gamemodeLabel]
 summon area_effect_cloud -983 16 517 {Duration:2147483647,Tags:["gamemodeLabel"],CustomNameVisible:1b}
 function du-in:lobby/display/default/text
