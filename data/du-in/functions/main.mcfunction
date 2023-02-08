@@ -58,6 +58,8 @@
         execute if entity @a[tag=devMode] run function du-in:other/playercount/dev_mode
 
 
+#execute as @e[type=item,tag=!displayItem] at @s run function du-in:return_item
+
 #execute as @a[tag=kyloHit,scores={kyloTimer=30}] at @s rotated as @s run tp @e[type=marker,tag=kyloHitPos,limit=1,sort=nearest] ~ ~ ~ ~ ~
 #execute as @a[tag=kyloHit,scores={kyloTimer=..30}] at @s run execute as @e[type=marker,tag=kyloHitPos,sort=nearest,limit=1] at @s rotated as @s run tp @a[tag=kyloHit,limit=1,sort=nearest,scores={kyloTimer=..30}] @s
 

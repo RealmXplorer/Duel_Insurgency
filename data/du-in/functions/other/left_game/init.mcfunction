@@ -16,7 +16,7 @@ advancement revoke @s only du-in:utility/kill
 execute if entity @a[tag=partyLeader,tag=lobby] run function du-in:other/left_game/in_lobby
 
 #IF PARTY LEADER IS IN GAME OR IS SPECTATING
-execute if entity @a[tag=partyLeader,tag=playing] run function du-in:other/left_game/in_lobby
+execute if entity @a[tag=partyLeader,tag=playing] run function du-in:other/left_game/in_game
 execute if entity @a[tag=partyLeader,tag=spectating] run function du-in:other/left_game/in_game
 
 #CLEAR TAGS

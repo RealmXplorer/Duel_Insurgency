@@ -1,4 +1,4 @@
 tellraw @a {"text":"Game shutdown canceled!","bold":true,"color":"green"}
 scoreboard players reset #main shutdown
 scoreboard players reset #main shutdownTimer
-tag @a[tag=playing] remove falseWin
+tag @a remove falseWin
