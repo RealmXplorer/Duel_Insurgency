@@ -21,6 +21,3 @@ execute if entity @s[scores={kit=23}] run function du-in:kit/nick/constant
 
 # Ralsei #
 execute if entity @s[scores={kit=24}] run function du-in:kit/ralsei/constant
-
-#ADVANCEMENTS#
-#advancement grant @s[tag=!mystery,tag=!mysteryHead,scores={kit=17..23}] only du-in:starwars
