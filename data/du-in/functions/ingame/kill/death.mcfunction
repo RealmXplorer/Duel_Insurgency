@@ -56,5 +56,7 @@ execute if entity @s[scores={kit=5},tag=springLock] run function du-in:kit/sprin
 #KILLSTREAK#
 scoreboard players reset @s killStreak
 
+function du-in:ingame/killstreaks/combo/reset
+
 #Remove a life (only applicable in Deathmatch)
 scoreboard players remove @s[tag=dmIngame] Lives 1

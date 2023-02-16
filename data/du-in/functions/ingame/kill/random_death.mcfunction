@@ -34,9 +34,9 @@ clear @s minecraft:wither_rose
 
 #CLEAR TAGS#
 tag @s remove kyloHit
-tag @s remove anakinPulled
-tag @s remove close
-tag @s remove lukePulled
+#tag @s remove anakinPulled
+#tag @s remove close
+#tag @s remove lukePulled
 #tag @s remove charaFear
 tag @s remove inRing
 tag @s remove ring1
@@ -56,6 +56,7 @@ tag @s remove killstreak3
 
 #Remove a life (only applicable in Deathmatch)
 scoreboard players remove @s Lives 1
+function du-in:ingame/killstreaks/combo/reset
 
 #Random kit mode clears
 execute unless entity @s[tag=grave] run function du-in:kit/all/reset
