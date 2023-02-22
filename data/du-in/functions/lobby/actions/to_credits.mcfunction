@@ -7,4 +7,5 @@ scoreboard players set @s music 0
 title @s title {"text":"","color":"red","bold":true}
 title @s subtitle {"text":"","color":"red","bold":true}
 tag @s add credits
+tag @s add subLobby
 #scoreboard players reset @s toCredits

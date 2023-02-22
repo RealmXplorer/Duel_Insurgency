@@ -6,5 +6,6 @@ scoreboard players set @s music 0
 clear @s
 function du-in:lobby/item_reset
 tag @s remove credits
+tag @s remove subLobby
 #function du-in:other/afk/end
 scoreboard players reset @s back
