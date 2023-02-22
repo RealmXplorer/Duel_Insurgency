@@ -6,9 +6,9 @@ execute if entity @s[tag=winend] run scoreboard players set #main endTime 6
 scoreboard players reset @s killIngame
 scoreboard players reset @s kothTimer
 
-execute if entity @a[tag=partyLeader,tag=lobby,tag=!shop,tag=!parkour] run tp @s @a[tag=partyLeader,limit=1]
-execute if entity @a[tag=partyLeader,tag=lobby,tag=!shop,tag=parkour] run tp @s -999 13 517 -90 0
-execute if entity @a[tag=partyLeader,tag=lobby,tag=shop,tag=!parkour] run tp @s -999 13 517 -90 0
+execute if entity @a[tag=partyLeader,tag=lobby,tag=!subLobby] run tp @s @a[tag=partyLeader,limit=1]
+execute if entity @a[tag=partyLeader,tag=lobby,tag=subLobby] run tp @s -999 13 517 -90 0
+
 
 team join lobby @s[tag=!playing,tag=!ready,tag=!dmDead,tag=!spectating,tag=!team1,tag=!team2,tag=!AFK]
 

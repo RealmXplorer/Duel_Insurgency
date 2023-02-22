@@ -14,6 +14,7 @@ clear @s
 execute unless entity @s[scores={lobby=1}] run tag @s remove shop
 execute unless entity @s[scores={lobby=1}] run tag @s remove parkour
 execute unless entity @s[scores={lobby=1}] run tag @s remove credits
+execute unless entity @s[scores={lobby=1}] run tag @s remove subLobby
 
 #Remove gamemode specific lobby tags if not in map select
 execute unless entity @s[scores={lobby=3}] run tag @s remove cl

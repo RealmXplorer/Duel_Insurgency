@@ -1,6 +1,7 @@
 playsound minecraft:entity.ender_dragon.flap master @s ~ ~ ~ 100 1
 tp @s 643 6 -149 0 0
 tag @s add parkour
+tag @s add subLobby
 stopsound @s record
 scoreboard players set @s music 0
 clear @s

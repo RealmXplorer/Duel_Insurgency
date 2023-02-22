@@ -22,11 +22,11 @@
 
 # Gamemode Select Inventory Items #
     # Spam Mode Item # (FUNCTIONALITY RUNS THROUGH ITEM FUNCTION)
-        execute if entity @s[nbt=!{Inventory:[{tag:{fixedItem:1b},id:"minecraft:cookie",Slot:24b}]},tag=!working,gamemode=!creative,tag=partyLeader,tag=!shop,tag=!parkour] run function du-in:lobby/item/spam
+        execute if entity @s[nbt=!{Inventory:[{tag:{fixedItem:1b},id:"minecraft:cookie",Slot:24b}]},tag=!working,gamemode=!creative,tag=partyLeader,tag=!subLobby] run function du-in:lobby/item/spam
         #execute if entity @s[advancements={du-in:lobby/cookie=false},tag=!working,gamemode=!creative,scores={lobby=1},tag=!startgame,tag=!playing,tag=partyLeader,tag=!parkour,tag=!credits,tag=!shop] run function du-in:lobby/item/spam
 
     # Random Mode Item # (FUNCTIONALITY RUNS THROUGH ITEM FUNCTION)
-        execute if entity @s[nbt=!{Inventory:[{tag:{fixedItem:1b},id:"minecraft:rabbit_foot",Slot:20b}]},tag=!working,gamemode=!creative,tag=partyLeader,tag=!shop,tag=!parkour] run function du-in:lobby/item/random_mode
+        execute if entity @s[nbt=!{Inventory:[{tag:{fixedItem:1b},id:"minecraft:rabbit_foot",Slot:20b}]},tag=!working,gamemode=!creative,tag=partyLeader,tag=!subLobby] run function du-in:lobby/item/random_mode
 
     # Team Mode Item #
         #execute if entity @s[tag=partyLeader,nbt=!{Inventory:[{tag:{fixedItem:1b},id:"minecraft:carrot_on_a_stick",Slot:2b}]}] run function du-in:lobby/item/team

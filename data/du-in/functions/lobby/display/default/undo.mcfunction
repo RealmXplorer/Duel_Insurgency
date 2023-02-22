@@ -16,6 +16,6 @@ team modify displayBlueTeam color blue
 team modify Red prefix {"text":"[Red] ","bold":true,"color":"red"}
 team modify Blue prefix {"text":"[Blue] ","bold":true,"color":"blue"}
 
-tp @s[tag=!shop,tag=!parkour] -999 13 517 -90 0
+tp @s[tag=!subLobby] -999 13 517 -90 0
 
 #637 32 33

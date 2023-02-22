@@ -20,6 +20,7 @@ execute if score #gamemode gamemode matches 4.. run tag @a add teamMode
 #Remove Sub-lobby tags
 tag @a remove shop
 tag @a remove parkour
+tag @s remove subLobby
 
 #Clear inventories
 clear @a

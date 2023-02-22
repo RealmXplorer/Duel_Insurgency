@@ -1,0 +1,39 @@
+Kit score determines what character's attributes, weapons, abilities, etc. are run in the game.
+
+This list maps out what number is associated with which character and follows this format:
+Kit number = character name
+
+1 = Spider
+2 = Zombie
+3 = Slime
+4 = Creeper
+5 = Springtrap
+6 = Golem
+7 = Player
+8 = Villager
+9 = Chara
+10 = Gaster
+11 = Asriel
+12 = Flowey
+13 = Papyrus
+14 = Asgore
+15 = Frisk
+16 = Sans
+17 = Kylo Ren
+18 = Darth Vader
+19 = Emperor Palpatine
+20 = Yharim
+21 = Cuphead
+22 = Gumball & Darwin
+23 = Nick Wilde
+24 = Ralsei
+25 = Clairen
+
+1000 = Saac
+1001 = PearApplez
+1002 = Jerma985
+1003 = The Impostor
+1004 = 'Blank'
+1005 = Runza Rex
+
+42069 = Big Chungus
