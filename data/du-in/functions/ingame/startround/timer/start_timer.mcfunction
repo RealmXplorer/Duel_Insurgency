@@ -72,4 +72,4 @@ tag @a remove kitMenu
 #tag @a remove mapOverride
 team join Red @a[scores={team=1}]
 team join Blue @a[scores={team=2}]
-execute if entity @a[scores={kit=26}] at @a[scores={kit=26},limit=1] run playsound minecraft:cuphead.announce.start master @a ~ ~ ~ 10 1
+execute if entity @a[scores={kit=21}] at @a[scores={kit=21},limit=1] run playsound minecraft:cuphead.announce.start master @a ~ ~ ~ 10 1
