@@ -1,4 +1,4 @@
-execute if entity @s[scores={kitList=..0}] run function du-in:lobby/kitmenu/select/terraria/yharim
+execute if entity @s[scores={kitList=..0}] run function du-in:lobby/kitmenu/select/grabbag/yharim
 #clear @s player_head
 item replace entity @s[tag=kitMenu] inventory.2 with minecraft:player_head{yharimHead:1b,display:{Name:'{"text":"The Jungle Tyrant Yharim","color":"white","bold":true,"italic":false}',Lore:['{"text":"The Calamity Mod","color":"#FF9D0A","bold":true,"italic":true}']},SkullOwner:{Id:[I;-787015374,-583712165,-1311176001,-1055844486],Properties:{textures:[{Value:"eyJ0ZXh0dXJlcyI6eyJTS0lOIjp7InVybCI6Imh0dHA6Ly90ZXh0dXJlcy5taW5lY3JhZnQubmV0L3RleHR1cmUvOGI4ZGIwMjNhOTVhYTllNjI4NTkzODE3NWQ4NGVhOWYyOWExZmMwZGEyMjk0ODA2NGY2MzBiNjViNjg5M2MxMyJ9fX0="}]}},fixedItem:1b,weaponItem:1b,headItem:1b,lobbyItem:1b} 1
 execute if entity @s[scores={kitList=2}] run scoreboard players remove @s kitList 1

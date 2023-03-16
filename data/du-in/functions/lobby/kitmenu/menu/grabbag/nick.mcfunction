@@ -1,4 +1,4 @@
-execute if entity @s[scores={kitList=..0}] run function du-in:lobby/kitmenu/select/zootopia/nick
+execute if entity @s[scores={kitList=..0}] run function du-in:lobby/kitmenu/select/grabbag/nick
 #clear @s player_head
 item replace entity @s[tag=kitMenu] inventory.4 with minecraft:player_head{nickHead:1b,display:{Name:'{"text":"Nick Wilde","color":"white","bold":true,"italic":false}',Lore:['{"text":"Zootopia","color":"violet","bold":true,"italic":true}']},SkullOwner:{Id:[I;-2089979935,-97038555,-1183453249,822254303],Properties:{textures:[{Value:"eyJ0ZXh0dXJlcyI6eyJTS0lOIjp7InVybCI6Imh0dHA6Ly90ZXh0dXJlcy5taW5lY3JhZnQubmV0L3RleHR1cmUvZDljOTAyMjNkYzI0MTU2YzAxZTY1NGQyMmEwZWU5OTQ1NWQ1ODRhNjFkZjEwN2Y2YTdhZTJjNjA3ZjUxZmM5NyJ9fX0="}]}},fixedItem:1b,weaponItem:1b,headItem:1b,lobbyItem:1b} 1
 execute if entity @s[scores={kitList=4}] run scoreboard players remove @s kitList 1
