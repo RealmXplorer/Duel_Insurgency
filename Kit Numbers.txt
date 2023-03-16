@@ -28,6 +28,7 @@ Kit number = character name
 23 = Nick Wilde
 24 = Ralsei
 25 = Clairen
+26 = Big Jack Horner
 
 1000 = Saac
 1001 = PearApplez
