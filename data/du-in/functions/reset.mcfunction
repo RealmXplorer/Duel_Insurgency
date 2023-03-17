@@ -277,6 +277,10 @@ execute as @a run function du-in:music/ingame/stop/all
         scoreboard players set @a vent 0
         scoreboard players set @a ventCooldown 0
 
+    #Jack Horner#
+        scoreboard players set @a magicCount 1
+        tag @a remove umbrella
+
 
 tag @a remove charged
 tag @a remove kitDone
@@ -350,4 +354,3 @@ scoreboard players set @a parryCooldown 0
 kill @e[type=area_effect_cloud,tag=gamemodeLabel]
 summon area_effect_cloud -983 16 517 {Duration:2147483647,Tags:["gamemodeLabel"],CustomNameVisible:1b}
 function du-in:lobby/display/default/text
-
