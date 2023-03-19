@@ -18,7 +18,7 @@
         #execute if entity @a[tag=exIngame] run function du-in:ingame/extraction/extraction
 
 #Give Night Vision on Better End map.
-execute if score #main map matches 12 run effect give @a[tag=cmap,tag=!win,tag=!lose,tag=!winend] minecraft:night_vision infite 1 true
+execute if score #main map matches 12 run effect give @a[tag=cmap,tag=!win,tag=!lose,tag=!winend] minecraft:night_vision infinite 1 true
 
 # General Functions #
     # Random death  Mode clear #
