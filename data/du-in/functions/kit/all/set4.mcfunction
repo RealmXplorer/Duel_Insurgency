@@ -9,3 +9,6 @@ execute if entity @s[scores={kit=25}] run function du-in:kit/clairen/constant
 
 #Jack Horner#
 execute if entity @s[scores={kit=26}] run function du-in:kit/jack_horner/constant
+
+#Puss#
+execute if entity @s[scores={kit=27}] run function du-in:kit/puss/constant
