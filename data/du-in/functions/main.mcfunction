@@ -26,7 +26,7 @@
         execute if score #main blueTeamCount matches ..0 if score #main redTeamCount matches ..0 run tag @r[tag=dmDead] add win
 
     #   Give all players saturation #
-        effect give @a[predicate=!du-in:has_saturation,tag=!notEaten] minecraft:saturation 1000000 100 true
+        effect give @a[predicate=!du-in:has_saturation,tag=!notEaten] minecraft:saturation infinite 100 true
 
     #Random kit timer commands#
         scoreboard players add @r[predicate=du-in:half_chance] random 1

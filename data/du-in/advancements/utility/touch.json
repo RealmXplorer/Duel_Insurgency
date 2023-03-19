@@ -1,0 +1,45 @@
+{
+
+    "__comment": "Made with TheDestruc7i0n's advancements generator: https://advancements.thedestruc7i0n.ca",
+
+    "criteria": {
+
+        "midas": {
+
+            "trigger": "minecraft:player_hurt_entity",
+
+            "conditions": {
+
+                "damage": {
+
+                    "source_entity": {
+
+                        "equipment": {
+
+                            "mainhand": {
+
+                                "item": "minecraft:stick",
+
+                                "nbt": "{CustomModelData:105}"
+
+                            }
+
+                        }
+
+                    }
+
+                }
+
+            }
+
+        }
+
+    },
+
+    "rewards": {
+
+        "function": "du-in:kit/jack_horner/ability/midas/use"
+
+    }
+
+}

@@ -1,0 +1,49 @@
+{
+
+    "__comment": "Made with TheDestruc7i0n's advancements generator: https://advancements.thedestruc7i0n.ca",
+
+    "criteria": {
+
+        "bow": {
+
+            "trigger": "minecraft:entity_hurt_player",
+
+            "conditions": {
+
+                "damage": {
+
+                    "type": {
+
+                        "direct_entity": {
+
+                            "type": "minecraft:arrow",
+
+                            "nbt": "{ShotFromCrossbow:1b}"
+
+                        },
+
+                        "source_entity": {
+
+                            "type": "minecraft:player"
+
+                        },
+
+                        "is_projectile": true
+
+                    }
+
+                }
+
+            }
+
+        }
+
+    },
+
+    "rewards": {
+
+        "function": "du-in:kit/jack_horner/ability/unicorn_bow/hit"
+
+    }
+
+}

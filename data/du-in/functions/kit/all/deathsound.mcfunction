@@ -31,12 +31,6 @@ execute if entity @s[scores={kit=17}] unless entity @s[scores={kyloSkin=1}] run 
 #PALPS DEATH SOUND#
 execute if entity @s[scores={kit=19}] run playsound minecraft:palpatine.death master @a ~ ~ ~ 3 1
 
-#LUKE DEATH SOUND#
-#execute if entity @s[scores={kit=21}] run playsound minecraft:luke.death master @a ~ ~ ~ 3 1
-
-#ANAKIN DEATH SOUND#
-#execute if entity @s[scores={kit=22}] run playsound minecraft:anakin.death master @a ~ ~ ~ 3 1
-
 #ANAKIN DEATH SOUND#
 execute if entity @s[scores={kit=5}] run playsound minecraft:springtrap.death master @a ~ ~ ~ 3 1
 

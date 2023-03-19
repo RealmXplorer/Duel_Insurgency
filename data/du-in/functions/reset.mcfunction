@@ -280,6 +280,10 @@ execute as @a run function du-in:music/ingame/stop/all
     #Jack Horner#
         scoreboard players set @a magicCount 1
         tag @a remove umbrella
+        tag @a remove magicBag
+        tag @a remove poisonApple
+        tag @a remove unicornBow
+        scoreboard players reset @a crossbowShoot
 
 
 tag @a remove charged

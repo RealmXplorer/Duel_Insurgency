@@ -7,3 +7,5 @@ tag @s remove kitActions
 tag @s remove magicBag
 #Remove umbrella
 tag @s remove umbrella
+tag @s remove poisonApple
+scoreboard players reset @s crossbowShoot

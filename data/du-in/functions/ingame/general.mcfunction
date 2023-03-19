@@ -18,7 +18,7 @@
         #execute if entity @a[tag=exIngame] run function du-in:ingame/extraction/extraction
 
 #Give Night Vision on Better End map.
-execute if score #main map matches 12 run effect give @a[tag=cmap,tag=!win,tag=!lose,tag=!winend] minecraft:night_vision 1000000 1 true
+execute if score #main map matches 12 run effect give @a[tag=cmap,tag=!win,tag=!lose,tag=!winend] minecraft:night_vision infite 1 true
 
 # General Functions #
     # Random death  Mode clear #
@@ -51,8 +51,9 @@ execute positioned as @e[type=marker,tag=ventBlock] run function du-in:maps/vent
     effect give @a[tag=inField] minecraft:glowing 1 0 true
 
     #Tag projectiles
-    tag @e[type=arrow] add projectile
-    tag @e[type=trident] add projectile
+    tag @e[type=arrow,tag=!projectile] add projectile
+    tag @e[type=trident,tag=!projectile] add projectile
+    tag @e[type=minecraft:snowball,tag=!projectile] add projectile
 
     #Run for when players are in Clairen's field
     execute at @e[type=marker,tag=clairenField] at @a[gamemode=!spectator] run function du-in:kit/clairen/ability/add_infield
@@ -96,3 +97,11 @@ execute as @e[type=falling_block,tag=floweyStem] at @s run function du-in:kit/fl
 
 #Papyrus Ability bones
 execute as @e[type=marker,scores={papyrusHitTimer=-1..},tag=papyrusFind] at @s run function du-in:kit/papyrus/ability/bones
+
+
+execute as @e[tag=gold,scores={goldTimer=1..}] run function du-in:kit/jack_horner/ability/midas/timer
+
+execute at @e[type=minecraft:marker,tag=poisonApple] unless entity @e[type=minecraft:snowball,distance=..2] run function du-in:kit/jack_horner/ability/poison_apple/explode
+
+kill @e[type=minecraft:marker,tag=poisonApple]
+execute at @e[type=minecraft:snowball] run summon minecraft:marker ~ ~ ~ {Tags:["poisonApple"]}

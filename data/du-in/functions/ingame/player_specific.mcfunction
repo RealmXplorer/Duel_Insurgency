@@ -147,3 +147,7 @@ execute if entity @s[tag=kyloHit,scores={kyloTimer=-99..}] run function du-in:ki
 
 #Paz Ability
 execute if entity @s[scores={blakeTimer=-99..}] run function du-in:kit/paz/ability/rubberband
+
+execute if entity @s[scores={unicornTimer=1..}] run function du-in:kit/jack_horner/ability/unicorn_bow/timer
+
+execute if entity @s[tag=midasTouched] run function du-in:kit/jack_horner/ability/midas/freeze
