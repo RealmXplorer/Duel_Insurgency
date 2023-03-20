@@ -58,6 +58,10 @@ tag @s remove killstreak3
 scoreboard players remove @s Lives 1
 function du-in:ingame/killstreaks/combo/reset
 
+scoreboard players add #main matchDeaths 1
+execute if entity @s[tag=deathMark] run scoreboard players set #main markTimer 10
+tag @s remove deathMark
+
 #Random kit mode clears
 execute unless entity @s[tag=grave] run function du-in:kit/all/reset
 tag @s[tag=!grave] add random

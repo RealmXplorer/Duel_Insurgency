@@ -6,7 +6,7 @@ execute if entity @s[scores={jump=1..}] run function du-in:kit/saac/sounds/jump
 #effect give @s minecraft:speed 1 0 true
 #execute if entity @s[tag=killLine] run function du-in:kit/saac/sounds/lines
 
-tag @s[tag=!legMusicOff] add saac
+tag @s[tag=!legMusicOff,tag=!ctfIngame,tag=!cqIngame] add saac
 scoreboard players add @s kickstartKind 1
 scoreboard players set @s[scores={kickstartKind=5..}] kickstartKind 1
 scoreboard players remove @s[scores={saacDisTimer=-99..}] saacDisTimer 1

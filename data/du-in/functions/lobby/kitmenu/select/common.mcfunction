@@ -14,6 +14,9 @@ execute if entity @s[tag=!kitPicked] run playsound minecraft:block.copper.place 
 execute if entity @s[tag=!kitPicked] run playsound minecraft:block.deepslate_tiles.place master @a ~ ~ ~ 1 1
 execute if entity @s[tag=!kitPicked] run playsound minecraft:block.netherite_block.break master @a ~ ~ ~ 1 .5
 execute if entity @s[tag=!kitPicked] run particle minecraft:composter ~ ~1 ~ 0.25 0.5 0.25 0 20 force
+
+attribute @s[tag=playing] generic.max_health base set 20
+
 #End function
 tag @s[tag=!playing] add kitPicked
 tag @s[tag=!playing] add ready

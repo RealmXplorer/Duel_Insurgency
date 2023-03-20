@@ -1,6 +1,5 @@
 clear @s snowball
-execute if entity @s[tag=!stolen] run function du-in:kit/jack_horner/weapon
-execute if entity @s[tag=stolen] run function du-in:kit/villager/weapon
+scoreboard players set @s weapCount 0
 
 #Remove ability from hand
 #clear @s minecraft:carrot_on_a_stick

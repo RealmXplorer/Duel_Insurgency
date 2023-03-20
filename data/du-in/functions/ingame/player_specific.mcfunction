@@ -35,7 +35,7 @@ execute if entity @s[level=1..2,tag=!lobby,tag=!win,tag=!lose,tag=!winend,tag=!k
     execute if entity @s[scores={healthHit=1..}] run function du-in:ingame/regentimer/health_dam
 #
 
-execute if entity @s[level=1..,tag=!teamDead,tag=!win,tag=!lose,tag=!winend,tag=!kitMenu,tag=!chungus,tag=!startgame] unless entity @s[scores={deathTimer=0..}] run xp add @s -1 levels
+execute if entity @s[level=1..,tag=!teamDead,tag=!win,tag=!lose,tag=!winend,tag=!kitMenu,tag=!chungus,tag=!startgame,tag=!deathDouble] unless entity @s[scores={deathTimer=0..}] run xp add @s -1 levels
 
 #KILL COMBOS
     #Initialize and run combo test if player has kill
@@ -151,3 +151,5 @@ execute if entity @s[scores={blakeTimer=-99..}] run function du-in:kit/paz/abili
 execute if entity @s[scores={unicornTimer=1..}] run function du-in:kit/jack_horner/ability/unicorn_bow/timer
 
 execute if entity @s[tag=midasTouched] run function du-in:kit/jack_horner/ability/midas/freeze
+
+execute if entity @s[scores={deathAbilityTimer=1..}] run function du-in:kit/death/ability/ability_timer

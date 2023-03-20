@@ -6,7 +6,7 @@ clear @s player_head{pussHead:1b}
 #Play sound
 playsound minecraft:asgore.voice master @s ~ ~ ~ 100 1
 #Announce kit pick
-tellraw @s [{"text":"Selected the ","bold":true,"color":"gray"},{"text":"Puss ","bold":true,"color":"gold"},{"text":"class! ","bold":true,"color":"gray"},{"text":"(Click here for kit info!)","bold":false,"color":"white","underlined":true,"clickEvent":{"action":"run_command","value":"/trigger info add 1"}}]
+tellraw @s [{"text":"Selected the ","bold":true,"color":"gray"},{"text":"Puss in Boots","bold":true,"color":"gold"},{"text":"class! ","bold":true,"color":"gray"},{"text":"(Click here for kit info!)","bold":false,"color":"white","underlined":true,"clickEvent":{"action":"run_command","value":"/trigger info add 1"}}]
 #Set kit score to match kit
 scoreboard players set @s kit 27
 #Tell player about kit

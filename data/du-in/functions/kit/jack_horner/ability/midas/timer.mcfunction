@@ -1,3 +1,3 @@
-scoreboard players remove @e[tag=gold,scores={goldTimer=1..}] goldTimer 1
+scoreboard players remove @s[type=!player,tag=gold,scores={goldTimer=1..}] goldTimer 1
 
-kill @e[tag=gold,scores={goldTimer=..0}]
+kill @s[type=!player,tag=gold,scores={goldTimer=..0}]

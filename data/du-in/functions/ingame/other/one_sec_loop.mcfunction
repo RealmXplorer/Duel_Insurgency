@@ -14,5 +14,7 @@ execute as @a[gamemode=!spectator,tag=playing,tag=!startgame,tag=!chungus] store
 #Add 1 to score "spawnpoint"
 scoreboard players add @r[tag=playing,gamemode=!spectator,predicate=du-in:half_chance] spawnpoint 1
 
+execute if score #main matchDeaths matches 8.. if entity @a[scores={kit=28}] run function du-in:kit/death/passive/start
+
 #say success
 schedule function du-in:ingame/other/one_sec_loop 1s

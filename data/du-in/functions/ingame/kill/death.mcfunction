@@ -1,6 +1,10 @@
 #Drop flag if player has flag and dies
 execute if entity @s[tag=flagGot] run function du-in:ingame/ctf/flag_death
 
+scoreboard players add #main matchDeaths 1
+execute if entity @s[tag=deathMark] run scoreboard players set #main markTimer 10
+tag @s remove deathMark
+
 #Summon slimes on death
 execute if entity @s[scores={kit=3},tag=!stolen] run function du-in:kit/slime/death/init
 

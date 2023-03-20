@@ -66,6 +66,7 @@ execute if entity @a[scores={kit=1000..1001}] as @e[type=painting] run function 
 #Run as Asgore's firewalls
 execute as @e[type=armor_stand,tag=asgoreFire,scores={asgoreFire=-99..}] at @s run function du-in:kit/asgore/ability/fire_wall
 
+execute as @e[type=block_display,tag=flame,scores={flameTimer=-99..}] at @s run function du-in:kit/death/ability/timer
 
 #Countdown Vent score.
 scoreboard players add @a[tag=sus,scores={ventCooldown=..61}] ventCooldown 1
@@ -99,7 +100,7 @@ execute as @e[type=falling_block,tag=floweyStem] at @s run function du-in:kit/fl
 execute as @e[type=marker,scores={papyrusHitTimer=-1..},tag=papyrusFind] at @s run function du-in:kit/papyrus/ability/bones
 
 
-execute as @e[tag=gold,scores={goldTimer=1..}] run function du-in:kit/jack_horner/ability/midas/timer
+execute as @e[type=!player,tag=gold,scores={goldTimer=1..}] run function du-in:kit/jack_horner/ability/midas/timer
 
 execute at @e[type=minecraft:marker,tag=poisonApple] unless entity @e[type=minecraft:snowball,distance=..2] run function du-in:kit/jack_horner/ability/poison_apple/explode
 
