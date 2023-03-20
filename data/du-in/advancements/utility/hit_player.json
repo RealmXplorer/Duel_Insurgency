@@ -1,0 +1,31 @@
+{
+
+  "__comment": "Made with TheDestruc7i0n's advancements generator: https://advancements.thedestruc7i0n.ca",
+
+  "criteria": {
+
+      "damage": {
+
+          "trigger": "minecraft:player_hurt_entity",
+
+          "conditions": {
+
+              "entity": {
+
+                  "type": "minecraft:player"
+
+              }
+
+          }
+
+      }
+
+  },
+
+  "rewards": {
+
+      "function": "du-in:kit/all/hit_player"
+
+  }
+
+}

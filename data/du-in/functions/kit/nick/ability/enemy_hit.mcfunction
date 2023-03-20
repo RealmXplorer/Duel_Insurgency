@@ -4,6 +4,12 @@ execute if entity @s[nbt={Inventory:[{id:"minecraft:carrot_on_a_stick"}]}] run t
 
 particle minecraft:angry_villager ~ ~1 ~ 0.6 .6 0.6 0 25 force
 
+execute if entity @s[predicate=du-in:has_strength] run effect give @s weakness 2 0
+execute if entity @s[predicate=du-in:has_strength] run effect clear @s strength
+
+execute if entity @s[predicate=du-in:has_speed] run effect give @s slowness 2 0
+execute if entity @s[predicate=du-in:has_speed] run effect clear @s speed
+
 playsound minecraft:entity.blaze.death master @s ~ ~ ~ 1 0.5
 clear @s[tag=!springLock] minecraft:carrot_on_a_stick
 tag @s[scores={kit=1000,saacMoney=0..}] add saacSteal
