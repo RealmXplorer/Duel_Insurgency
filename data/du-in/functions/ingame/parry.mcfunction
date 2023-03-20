@@ -5,4 +5,5 @@ effect give @s minecraft:resistance 2 5 true
 title @s title {"text":""}
 title @s subtitle {"text":"🛡 Parry! 🛡","color":"blue"}
 title @s times 0 15 5
+execute if entity @s[tag=!parried] on attacker run function du-in:ingame/parried
 tag @s add parried
