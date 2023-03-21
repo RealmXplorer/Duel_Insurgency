@@ -31,4 +31,4 @@ execute if entity @s[tag=secKitActions,tag=!stolen] run function du-in:kit/death
 attribute @s[tag=!stolen] minecraft:generic.movement_speed base set 0.125
 
 #Base Weight
-attribute @s[tag=!stolen] generic.knockback_resistance base set 0.23
+attribute @s[tag=!stolen,tag=!pussFear] generic.knockback_resistance base set 0.23

@@ -1,2 +1,2 @@
-tag @a[distance=..8,gamemode=!spectator] add inField
-tag @a[distance=8..,gamemode=!spectator] remove inField
+tag @a[distance=..6,gamemode=!spectator,tag=!inField] add inField
+tag @a[distance=6..,gamemode=!spectator,tag=inField] remove inField

@@ -7,5 +7,8 @@ tag @s remove kitActions
 tag @s remove magicBag
 #Remove umbrella
 tag @s remove umbrella
+tag @s remove crystalBall
 tag @s remove poisonApple
+tag @s remove phoenix
+tag @s remove hornerWeapon
 scoreboard players reset @s crossbowShoot

@@ -52,4 +52,4 @@ item replace entity @s[scores={cardPower=25..}] hotbar.8 with paper{weaponItem:1
 #Attributes#
 attribute @s[tag=!stolen] minecraft:generic.movement_speed base set 0.13
 
-execute unless entity @a[tag=partyLeader,tag=weightOff] unless entity @s[scores={cupTimer=0..}] run attribute @s[tag=!stolen] generic.knockback_resistance base set 0.02
+execute unless entity @a[tag=partyLeader,tag=weightOff] unless entity @s[scores={cupTimer=0..}] run attribute @s[tag=!stolen,tag=!pussFear] generic.knockback_resistance base set 0.02

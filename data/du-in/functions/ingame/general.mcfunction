@@ -56,8 +56,8 @@ execute positioned as @e[type=marker,tag=ventBlock] run function du-in:maps/vent
     tag @e[type=minecraft:snowball,tag=!projectile] add projectile
 
     #Run for when players are in Clairen's field
-    execute at @e[type=marker,tag=clairenField] at @a[gamemode=!spectator] run function du-in:kit/clairen/ability/add_infield
-
+    execute at @e[type=marker,tag=clairenField] run function du-in:kit/clairen/ability/add_infield
+#at @a[gamemode=!spectator]
 
 #
 execute if entity @a[scores={kit=1000..1001}] as @e[type=painting] run function du-in:ingame/vending_machine/painting

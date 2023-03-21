@@ -31,4 +31,4 @@ attribute @s[tag=!stolen] generic.movement_speed base set 0.15
 #.1425
 
 ##Base KB Resistance is 0.
-#attribute @s[tag=!stolen] generic.knockback_resistance base set 0
+#attribute @s[tag=!stolen,tag=!pussFear] generic.knockback_resistance base set 0

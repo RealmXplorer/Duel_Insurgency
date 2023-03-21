@@ -13,4 +13,4 @@ item replace entity @s[level=1] weapon.offhand with minecraft:carrot_on_a_stick{
 execute if entity @s[tag=armor] run function du-in:kit/judy/armor
 attribute @s[tag=!stolen] minecraft:generic.movement_speed base set 0.14
 #.12
-attribute @s[tag=!stolen] generic.knockback_resistance base set 0
+attribute @s[tag=!stolen,tag=!pussFear] generic.knockback_resistance base set 0

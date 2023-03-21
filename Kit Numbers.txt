@@ -29,6 +29,8 @@ Kit number = character name
 24 = Ralsei
 25 = Clairen
 26 = Big Jack Horner
+27 = Puss in Boots
+28 = Death
 
 1000 = Saac
 1001 = PearApplez

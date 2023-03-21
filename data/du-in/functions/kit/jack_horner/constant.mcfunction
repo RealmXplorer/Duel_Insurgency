@@ -21,11 +21,13 @@ execute if entity @s[tag=poisonApple] run function du-in:kit/jack_horner/ability
 
 execute if entity @s[tag=unicornBow] run function du-in:kit/jack_horner/ability/unicorn_bow/run
 
-scoreboard players add @s magicCount 1
-scoreboard players set @s[scores={magicCount=5..}] magicCount 1
+execute if entity @s[tag=asgoreTrident] run function du-in:kit/jack_horner/ability/trident/run
+
+scoreboard players add @s[predicate=du-in:half_chance] magicCount 1
+scoreboard players set @s[scores={magicCount=8..}] magicCount 1
 
 #Base movement speed#
 attribute @s[tag=!stolen] minecraft:generic.movement_speed base set 0.135
 
 #Base Weight
-attribute @s[tag=!stolen] generic.knockback_resistance base set 0.35
+attribute @s[tag=!stolen,tag=!pussFear] generic.knockback_resistance base set 0.35

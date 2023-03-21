@@ -7,7 +7,7 @@ effect give @s minecraft:speed 3 1 true
 #If player is on team
 execute if entity @s[tag=!sabotaged] as @a[distance=0.05..5,tag=playing,gamemode=!spectator,tag=!teamDead] if score @s team = @a[tag=kitActions,limit=1,tag=playing,scores={kit=15}] team run function du-in:kit/frisk/ability/team
 
-execute if entity @s[tag=sabotaged] as @a[distance=0.05..5,tag=playing,gamemode=!spectator,tag=!teamDead] run function du-in:kit/frisk/ability/team
+execute if entity @s[tag=sabotaged] as @a[distance=0.05..5,tag=playing,gamemode=!spectator,tag=!teamDead,tag=!sabotaged] run function du-in:kit/frisk/ability/team
 
 
 clear @s minecraft:carrot_on_a_stick

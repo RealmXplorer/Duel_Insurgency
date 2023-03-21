@@ -4,7 +4,7 @@ scoreboard players enable @s info
 clear @s player_head{hornerHead:1b}
 
 #Play sound
-playsound minecraft:asgore.voice master @s ~ ~ ~ 100 1
+#playsound minecraft:asgore.voice master @s ~ ~ ~ 100 1
 #Announce kit pick
 tellraw @s [{"text":"Selected the ","bold":true,"color":"gray"},{"text":"Big Jack Horner ","bold":true,"color":"gold"},{"text":"class! ","bold":true,"color":"gray"},{"text":"(Click here for kit info!)","bold":false,"color":"white","underlined":true,"clickEvent":{"action":"run_command","value":"/trigger info add 1"}}]
 #Set kit score to match kit

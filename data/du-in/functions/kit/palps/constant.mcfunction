@@ -18,7 +18,7 @@ execute if entity @s[scores={palpTimer=-99..}] run function du-in:kit/palps/abil
 #Attributes#
 attribute @s[tag=!stolen] minecraft:generic.movement_speed base set 0.135
 #.1075
-attribute @s[tag=!stolen] generic.knockback_resistance base set 0.04
+attribute @s[tag=!stolen,tag=!pussFear] generic.knockback_resistance base set 0.04
 
 execute unless entity @s[scores={palpTimer=2..},tag=!deathMark] run attribute @s minecraft:generic.armor base set 0
 

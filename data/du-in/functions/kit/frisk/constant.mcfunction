@@ -11,7 +11,7 @@ execute if entity @s[tag=kitActions] run function du-in:kit/frisk/ability/init
 execute if entity @s[tag=!teamDead,tag=!stolen] unless entity @s[scores={weapCount=1}] run function du-in:kit/frisk/weapon
 
 attribute @s[tag=!stolen] minecraft:generic.movement_speed base set 0.135
-attribute @s[tag=!stolen] generic.knockback_resistance base set 0.035
+attribute @s[tag=!stolen,tag=!pussFear] generic.knockback_resistance base set 0.035
 
 #THE VERY POWER
 #I STUDIED
