@@ -1,10 +1,13 @@
 clear @s minecraft:carrot_on_a_stick
 playsound minecraft:entity.vex.death master @a ~ ~ ~ 1 .5
 function du-in:kit/springtrap/particle
-effect give @s minecraft:regeneration 5 2 true
+effect give @s[tag=!sabotaged] minecraft:regeneration 5 2 true
+
+
 clear @s minecraft:carrot_on_a_stick
-execute unless entity @s[tag=stolen] run xp set @s 390 levels
-tag @s add kitDone
+xp set @s[tag=!stolen] 390 levels
+tag @s[tag=stolen] add kitDone
+tag @s remove sabotaged
 tag @s remove springLock
 tag @s remove kitActions
 #scoreboard players set @s[tag=stolen,tag=givenStolen,tag=kitDone] kit 8

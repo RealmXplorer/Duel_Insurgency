@@ -18,5 +18,8 @@ execute if entity @s[scores={comboScore=3..},tag=playing] run function du-in:kit
 #Cuphead Card system#
     scoreboard players add @s[scores={kit=21},tag=!stolen] cardPower 1
 
+#Palpatine Life Steal
+    execute if entity @s[scores={kit=19,palpTimer=1..},tag=playing,predicate=du-in:weapon_hold] run function du-in:kit/palps/ability/hit
+
 #Regen Timer reset
 function du-in:ingame/regentimer/health_dam

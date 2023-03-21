@@ -1,4 +1,5 @@
-scoreboard players set @s creeperTimer 40
+scoreboard players set @s[tag=!sabotaged] creeperTimer 40
+scoreboard players set @s[tag=sabotaged] creeperTimer 1
 effect give @s minecraft:speed 2 3 true
 playsound minecraft:entity.creeper.primed master @a ~ ~ ~ 100 1
 

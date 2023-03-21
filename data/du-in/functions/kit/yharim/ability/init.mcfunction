@@ -1,5 +1,6 @@
 scoreboard players set @s yharimTimer 60
-function du-in:kit/yharim/ability/effects
+execute if entity @s[tag=!sabotaged] run function du-in:kit/yharim/ability/effects
+execute if entity @s[tag=sabotaged] run function du-in:kit/yharim/ability/sabotaged
 
 playsound minecraft:terraria.drink master @a ~ ~ ~ 20 .1 1
 playsound minecraft:terraria.drink master @a ~ ~ ~ 20 2 1

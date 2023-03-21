@@ -9,8 +9,7 @@ advancement revoke @s only du-in:utility/hit
 
     #Palps
     execute if entity @s[scores={kit=19},tag=playing,predicate=du-in:weapon_hold,tag=!stolen] unless entity @s[scores={palpsSkin=1}] run playsound minecraft:saber.land master @a ~ ~ ~ .5 1
-    execute if entity @s[scores={kit=19,palpTimer=1..},tag=playing,predicate=du-in:weapon_hold] run function du-in:kit/palps/ability/hit
-
+    
     #Luke
     #execute if entity @s[scores={kit=21},tag=playing,predicate=du-in:weapon_hold,tag=!stolen] run playsound minecraft:saber.land master @a ~ ~ ~ .5 1
 
@@ -32,7 +31,7 @@ advancement revoke @s only du-in:utility/hit
     #Gumball
     execute if entity @s[scores={kit=22},tag=!darwin,tag=playing,predicate=du-in:weapon_hold,predicate=du-in:quarter_chance,tag=!stolen] run playsound minecraft:gumball.bonk master @a ~ ~ ~ .5 1
     execute if entity @s[scores={kit=22},tag=darwin,tag=playing,predicate=du-in:weapon_hold,predicate=du-in:half_chance,tag=!stolen] run playsound minecraft:soundeffect.sillywhack voice @s ~ ~ ~ 100 1
-    
+
     #Paz
     execute if entity @s[scores={kit=1001},tag=playing] run playsound minecraft:paz.fnf.hit master @a ~ ~ ~ 1 1
 

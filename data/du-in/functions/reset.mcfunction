@@ -366,3 +366,4 @@ scoreboard players reset @a matchKills
 tag @a remove deathMark
 tag @a remove deathDouble
 scoreboard players reset @a deathSwapTimer
+tag @a remove sabotaged

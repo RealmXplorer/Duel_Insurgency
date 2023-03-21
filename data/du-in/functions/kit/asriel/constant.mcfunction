@@ -21,11 +21,9 @@ execute unless entity @s[scores={weapCount=1}] if entity @s[tag=!stolen,tag=!tea
 
 attribute @s[tag=!stolen] minecraft:generic.movement_speed base set 0.1325
 
-execute if entity @s[scores={asrielHitTimer=0..,asrielTimer=1}] run summon minecraft:lightning_bolt ^ ^ ^5 {Tags:["projectile"]}
+#Ability functions
+execute if entity @s[scores={asrielHitTimer=-1..}] run function du-in:kit/asriel/ability/timer
 
-scoreboard players remove @s[scores={asrielHitTimer=-1..}] asrielHitTimer 1
-tag @s[scores={asrielHitTimer=..1},tag=stolen] add kitDone
-scoreboard players reset @s[scores={asrielHitTimer=..0}] asrielHitTimer
 scoreboard players set @s[scores={asrielTimer=3..}] asrielTimer 0
 
 #.1075

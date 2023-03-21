@@ -5,6 +5,7 @@ scoreboard players add #main matchDeaths 1
 execute if entity @s[tag=deathMark] run scoreboard players set #main markTimer 10
 tag @s remove deathMark
 
+tag @s remove sabotaged
 #Summon slimes on death
 execute if entity @s[scores={kit=3},tag=!stolen] run function du-in:kit/slime/death/init
 

@@ -45,6 +45,7 @@ tag @s remove notEaten
 tag @s remove runza
 execute if entity @s[tag=springLock] run function du-in:kit/springtrap/ability/disable
 tag @s remove peepedHorror
+tag @s remove sabotaged
 
 #Stop Chara jumpscare sound
 stopsound @s master chara.jump

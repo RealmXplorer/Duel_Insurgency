@@ -4,7 +4,7 @@
 
 
 #Return ability
-execute if entity @s[level=1..2,tag=!lobby,tag=!win,tag=!lose,tag=!winend,tag=!kitMenu,tag=!chungus] unless entity @s[scores={gasterTimer=-99..}] run function du-in:kit/all/ability/return
+execute if entity @s[level=1..2,tag=!lobby,tag=!win,tag=!lose,tag=!winend,tag=!kitMenu,tag=!chungus] unless entity @s[scores={palpTimer=-99..}] unless entity @s[scores={gasterTimer=-99..}] run function du-in:kit/all/ability/return
 
 #Return ability if player does not have it
 #execute if entity @s[tag=!startgame,tag=!chungus] unless entity @s[scores={Acount=1}] unless entity @s[level=1..] run xp set @s 2 levels
@@ -100,7 +100,7 @@ execute if entity @s[scores={sansHitTimer=0..}] run function du-in:kit/sans/abil
 execute at @e[type=minecraft:marker,tag=spawnPoint,sort=nearest] facing entity @r[tag=playing] eyes run spawnpoint @s[tag=!grave,tag=!teamMode] ~ ~ ~ ~
 
 #End Yharim Ability
-execute if entity @s[scores={yharimTimer=..0}] run function du-in:kit/yharim/timer_reset
+execute if entity @s[scores={yharimTimer=..0}] run function du-in:kit/yharim/ability/timer_reset
 
 #Use vending Machine#
 execute if entity @a[scores={kit=1000..1001}] if entity @s[scores={ksMachineUse=1..}] run function du-in:kit/saac/vending/init
@@ -153,3 +153,5 @@ execute if entity @s[scores={unicornTimer=1..}] run function du-in:kit/jack_horn
 execute if entity @s[tag=midasTouched] run function du-in:kit/jack_horner/ability/midas/freeze
 
 execute if entity @s[scores={deathAbilityTimer=1..}] run function du-in:kit/death/ability/ability_timer
+
+execute if entity @s[scores={sabotageTimer=1..}] run function du-in:kit/nick/ability/sabotage_timer
