@@ -8,7 +8,7 @@ execute if entity @s[tag=!stolen,scores={jump=1..}] run function du-in:kit/jump
 execute if entity @s[tag=armor,tag=!stolen] run function du-in:kit/cuphead/armor
 
 #Give ability#
-execute if entity @s[level=1] run item replace entity @s weapon.offhand with minecraft:carrot_on_a_stick{display:{Name:'{"text":"Super Art II","color":"gold","bold":true,"italic":false,"underlined":false,"strikethrough":false,"obfuscated":false}',Lore:['{"text":"Right click to activate!","color":"dark_purple","bold":true}','[{"text":""}]','{"text":"Can only be used with 5 cards, and increases I-frames","color":"dark_gray"}']},HideFlags:1,Enchantments:[{id:"minecraft:protection",lvl:1s}],CustomModelData:136,weaponItem:1b}
+execute if entity @s[level=1] run function du-in:kit/cuphead/ability/item
 
 #Abilities initializations
 execute if entity @s[tag=kitActions] run function du-in:kit/cuphead/ability/init
