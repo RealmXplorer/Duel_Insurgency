@@ -4,7 +4,7 @@
 
 
 #Return ability
-execute if entity @s[level=1..2,tag=!lobby,tag=!win,tag=!lose,tag=!winend,tag=!kitMenu,tag=!chungus] unless entity @s[scores={palpTimer=-99..}] unless entity @s[scores={gasterTimer=-99..}] run function du-in:kit/all/ability/return
+execute if entity @s[level=1..2,tag=!lobby,tag=!win,tag=!lose,tag=!kitMenu,tag=!chungus] unless entity @s[scores={palpTimer=-99..}] unless entity @s[scores={gasterTimer=-99..}] run function du-in:kit/all/ability/return
 
 #Return ability if player does not have it
 #execute if entity @s[tag=!startgame,tag=!chungus] unless entity @s[scores={Acount=1}] unless entity @s[level=1..] run xp set @s 2 levels
@@ -35,7 +35,7 @@ execute if entity @s[level=1..2,tag=!lobby,tag=!win,tag=!lose,tag=!winend,tag=!k
     execute if entity @s[scores={healthHit=1..}] run function du-in:ingame/regentimer/health_dam
 #
 
-execute if entity @s[level=1..,tag=!teamDead,tag=!win,tag=!lose,tag=!winend,tag=!kitMenu,tag=!chungus,tag=!startgame,tag=!deathDouble] unless entity @s[scores={deathTimer=0..}] run xp add @s -1 levels
+execute if entity @s[level=1..,tag=!teamDead,tag=!win,tag=!lose,tag=!kitMenu,tag=!chungus,tag=!startgame,tag=!deathDouble] unless entity @s[scores={deathTimer=0..}] run xp add @s -1 levels
 
 #KILL COMBOS
     #Initialize and run combo test if player has kill

@@ -12,13 +12,13 @@
         execute if entity @a[tag=ctfIngame] run function du-in:ingame/ctf/ctf
 
     # Conquest Functions #
-        execute if entity @a[tag=cqIngame,tag=!win,tag=!lose,tag=!winend] run function du-in:ingame/conquest/conquest
+        execute if entity @a[tag=cqIngame,tag=!win,tag=!lose] run function du-in:ingame/conquest/conquest
 
     # Extraction Functions #
         #execute if entity @a[tag=exIngame] run function du-in:ingame/extraction/extraction
 
 #Give Night Vision on Better End map.
-execute if score #main map matches 12 run effect give @a[tag=cmap,tag=!win,tag=!lose,tag=!winend] minecraft:night_vision infinite 1 true
+execute if score #main map matches 12 run effect give @a[tag=cmap,tag=!win,tag=!lose] minecraft:night_vision infinite 1 true
 
 # General Functions #
     # Random death  Mode clear #

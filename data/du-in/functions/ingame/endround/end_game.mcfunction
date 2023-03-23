@@ -22,7 +22,7 @@ execute as @a run function du-in:music/lobby/stop/lobby
 scoreboard players set #main endTime 140
 
 #End game immediately if shutdown
-execute if entity @a[tag=falseWin] run scoreboard players set #main endTime 6
+execute if entity @a[tag=falseWin] run scoreboard players set #main endTime 5
 
 #Anyone who does not have win tag, give lose.
 tag @a[tag=!win] add lose

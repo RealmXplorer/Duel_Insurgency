@@ -1,7 +1,6 @@
 
-tag @s[tag=winend] add win
-execute if entity @s[tag=win] run scoreboard players set #main endTime 6
-execute if entity @s[tag=winend] run scoreboard players set #main endTime 6
+tag @s add win
+execute if entity @s[tag=win] run scoreboard players set #main endTime 5
 
 scoreboard players reset @s killIngame
 scoreboard players reset @s kothTimer

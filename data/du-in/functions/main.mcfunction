@@ -12,7 +12,7 @@
     # Run when game ends #
         execute if entity @a[tag=win,tag=!endSeq] run function du-in:ingame/endround/end_game
         execute if score #main endTime matches 5 run function du-in:reset
-        execute if entity @a[tag=winend] run function du-in:ingame/endround/end_round
+        execute if score #main endTime matches ..1 run function du-in:ingame/endround/end_time
 
     #Execute as All players
         execute as @a at @s run function du-in:main/player_specific
@@ -44,14 +44,14 @@
     # SHUTDOWN Game if not enough players #
         execute if score #main online matches ..1 unless entity @a[tag=lobby] run function du-in:ingame/shutdown
 
-    execute if entity @a[tag=lobby,tag=partyLeader,tag=!playing,gamemode=!spectator,scores={lobby=0..}] run function du-in:other/shutdown/end
+    execute if entity @a[tag=lobby,tag=partyLeader,tag=!playing,gamemode=!spectator,scores={lobby=0..},tag=!win] run function du-in:other/shutdown/end
 
     #Cancel Shutdown
     execute if score #main shutdown matches 1.. if score #main online matches 2.. if entity @a[tag=playing,tag=!working] run function du-in:other/shutdown/cancel
 
     #Start Shutdown
-    execute if score #main shutdown matches 1.. if entity @a[tag=playing,tag=!win] run function du-in:other/shutdown/start
-    execute if score #main shutdown matches 1.. if entity @a[tag=spectating,tag=!win] run function du-in:other/shutdown/start
+    execute if score #main shutdown matches 1.. if entity @a[tag=playing,tag=!win,tag=!lose] run function du-in:other/shutdown/start
+    execute if score #main shutdown matches 1.. if entity @a[tag=spectating,tag=!win,tag=!lose] run function du-in:other/shutdown/start
 
     #Track number of players online (If a player has 'devMode' tag, certain functions will run regardless of player count)
         execute unless entity @a[tag=devMode] run function du-in:other/playercount/default

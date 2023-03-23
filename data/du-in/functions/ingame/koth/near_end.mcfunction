@@ -2,7 +2,7 @@
 #playsound minecraft:block.anvil.destroy master @a[tag=koth,tag=kothend] ~ ~ ~ 2 1.25
 
 #Start end of round music
-tag @a[tag=song,tag=!songEnd,tag=!win,tag=!lose,tag=!winend] add songEnd
+tag @a[tag=song,tag=!songEnd,tag=!win,tag=!lose] add songEnd
 scoreboard players set @a[tag=song,tag=songEnd] music 0
 execute as @a[tag=song,tag=songEnd] run function du-in:music/ingame/stop/transition
 tag @a remove song

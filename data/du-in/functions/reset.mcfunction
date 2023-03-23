@@ -113,9 +113,9 @@ scoreboard players reset @a[tag=!working] kit
 tag @a[tag=!working] remove playing
 
 
-team join lobby @a
-scoreboard players set #main lobby 1 
-scoreboard players set @a lobby 1
+# team join lobby @a
+# scoreboard players set #main lobby 1 
+# scoreboard players set @a lobby 1
 
 
 scoreboard objectives setdisplay belowName winStreak
@@ -143,7 +143,6 @@ scoreboard players set #main kitOnline 0
 #DELAY 5#
 tag @a[tag=win,tag=!falseWin] add wonGame
 tag @a[tag=spectating] add wasSpect
-tag @a add winend
 tag @a remove dmIngame
 tag @a remove ctfIngame
 tag @a remove cqIngame
@@ -158,7 +157,6 @@ scoreboard players add @a[tag=win,tag=!falseWin] Wins 1
 scoreboard players add @a[tag=win,tag=!falseWin] winStreak 1
 scoreboard players set @a[tag=lose,tag=!spectating] winStreak 0
 tag @a remove spectating
-tag @a remove win
 tag @a remove killstreak3
 tag @a remove kothHalf
 tag @a remove kickstarted
@@ -344,7 +342,7 @@ tag @a remove maskless
 scoreboard players reset * gumballClassicFake
 tag @a remove super
 tag @a remove magma
-tag @a remove endSeq
+
 scoreboard players reset @a card
 tag @a remove kothEnd
 scoreboard players set @a weaponTier 0
@@ -365,7 +363,22 @@ scoreboard players set #main markTimer 0
 scoreboard players reset @a matchKills
 tag @a remove deathMark
 tag @a remove deathDouble
+tag @a remove deathAbility
 scoreboard players reset @a deathSwapTimer
 tag @a remove sabotaged
 scoreboard players reset @a pussDeaths
 tag @a remove gatitoBlade
+
+
+#WINEND#
+
+#END ROUND#
+#tp @a[tag=!working] -999 13 517 -90 0
+#spawnpoint @a -999 13 517
+title @a[tag=partyLeader] title {"text":"","color":"red","bold":true}
+title @a[tag=partyLeader] subtitle {"text":"Open inventory for more options!","color":"red","bold":true}
+title @a[tag=partyLeader] actionbar {"text":"Open inventory for more options!","color":"red","bold":true}
+execute as @a run function du-in:lobby/item_reset
+tag @a add givenStats
+clear @a
+scoreboard players reset @a[tag=lobby] killStreakDeaths

@@ -1,6 +1,13 @@
 #ENDTIME 140#
+team join lobby @a
+scoreboard players set #main lobby 1
+scoreboard players set @a lobby 1
 tag @a add lobby
 gamemode adventure @a[tag=!working,tag=lobby]
 scoreboard players set * music 0
-tag @a remove winend
+tp @a[tag=!working] -999 13 517 -90 0
+spawnpoint @a -999 13 517
+tag @a remove win
+tag @a remove lose
+tag @a remove endSeq
 scoreboard players reset #main endTime
