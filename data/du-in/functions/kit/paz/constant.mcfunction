@@ -2,7 +2,8 @@
 execute if entity @s[tag=!stolen,scores={hit=5..}] run function du-in:kit/paz/sounds/hit
 execute if entity @s[tag=!stolen,scores={step=150..}] run function du-in:kit/paz/sounds/step
 execute if entity @s[tag=!stolen,scores={sprint=150..}] run function du-in:kit/paz/sounds/step
-execute if entity @s[tag=!stolen,scores={jump=1..}] run function du-in:kit/paz/sounds/jump
+execute if entity @s[tag=!stolen,scores={jump=1..}] run function du-in:kit/jump
+
 
 #Give Weapon
 execute if entity @s[tag=!teamDead,tag=!stolen] unless entity @s[scores={weapCount=1}] run function du-in:kit/paz/weapon

@@ -1,6 +1,7 @@
 #SOUNDS#
 execute if entity @s[scores={step=150..}] run function du-in:kit/impostor/sounds/step
 execute if entity @s[scores={sprint=150..}] run function du-in:kit/impostor/sounds/step
+execute if entity @s[tag=!stolen,scores={jump=1..}] run function du-in:kit/jump
 
 #ARMOR#
 execute if entity @s[tag=armor] run function du-in:kit/impostor/armor

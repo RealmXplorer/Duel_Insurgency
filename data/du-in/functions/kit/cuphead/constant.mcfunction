@@ -2,7 +2,7 @@
 execute if entity @s[tag=!stolen,scores={hit=5..}] run function du-in:kit/cuphead/sounds/hit
 #execute if entity @s[tag=!stolen,scores={step=150..}] run function du-in:kit/flowey/sounds/step
 #execute if entity @s[tag=!stolen,scores={sprint=150..}] run function du-in:kit/flowey/sounds/step
-#execute if entity @s[tag=!stolen,scores={jump=1..}] run function du-in:kit/flowey/sounds/jump
+execute if entity @s[tag=!stolen,scores={jump=1..}] run function du-in:kit/jump
 
 # Armor #
 execute if entity @s[tag=armor,tag=!stolen] run function du-in:kit/cuphead/armor

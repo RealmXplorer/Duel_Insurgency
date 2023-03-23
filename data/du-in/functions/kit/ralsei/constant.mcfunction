@@ -1,4 +1,5 @@
-execute if entity @s[scores={hit=5..}] run function du-in:kit/ralsei/sounds/hit
+execute if entity @s[tag=!stolen,scores={hit=5..}] run function du-in:kit/ralsei/sounds/hit
+execute if entity @s[tag=!stolen,scores={jump=1..}] run function du-in:kit/jump
 
 #Armor#
 execute if entity @s[tag=armor] run function du-in:kit/ralsei/armor

@@ -1,5 +1,5 @@
 execute if entity @s[scores={hit=5..}] run function du-in:kit/villager/sounds/hit
-execute if entity @s[scores={jump=1..}] run function du-in:kit/villager/sounds/jump
+execute if entity @s[tag=!stolen,scores={jump=1..}] run function du-in:kit/jump
 
 tag @s remove gaster
 tag @s remove wilde

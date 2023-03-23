@@ -2,7 +2,7 @@
 #AND MOVE ON TO THE NEXT
 
 #Other#
-execute if entity @s[scores={jump=1..,kit=25..999},tag=!stolen] run function du-in:kit/jump
+#execute if entity @s[scores={jump=1..},tag=!stolen] run function du-in:kit/jump
 
 #Clairen#
 execute if entity @s[scores={kit=25}] run function du-in:kit/clairen/constant

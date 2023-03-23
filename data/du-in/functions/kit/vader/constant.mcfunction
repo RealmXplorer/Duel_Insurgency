@@ -1,4 +1,6 @@
 execute if entity @s[tag=!stolen,scores={hit=5..}] run function du-in:kit/vader/sounds/hit
+execute if entity @s[tag=!stolen,scores={jump=1..}] run function du-in:kit/jump
+
 
 execute if entity @s[tag=!stolen] run function du-in:kit/vader/sounds/breathactive
 

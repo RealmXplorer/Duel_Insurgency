@@ -8,7 +8,7 @@ execute if entity @s[tag=spectating] run function du-in:ingame/spect
 #Teleport a player who was in game to the party leader, (or if party leader is spectating, teleport to other player)
 execute if entity @a[tag=partyLeader,tag=playing] if entity @a[tag=playing,distance=50..] run tp @s[tag=playing] @a[tag=partyLeader,limit=1]
 execute if entity @a[tag=partyLeader,tag=spectating] if entity @a[tag=playing,distance=50..] run tp @s[tag=playing] @r[tag=playing,sort=furthest]
-execute if entity @a[tag=partyLeader,tag=spectating] run tp @s[tag=!playing,tag=!spectating] @r[tag=playing]
+execute if entity @a[tag=partyLeader,tag=spectating] run tp @s[tag=spectating] @r[tag=playing]
 
 #Match player who left's music with the party leader
 execute if entity @a[tag=partyLeader,tag=song] run tag @s[tag=!musicOff] add song

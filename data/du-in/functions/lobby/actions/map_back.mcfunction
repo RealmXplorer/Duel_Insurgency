@@ -37,6 +37,7 @@ tag @a remove ctfl
 tag @a remove cql
 #tag @a remove exl
 tag @a remove cmap
+tag @a remove ready
 scoreboard players reset #gamemode gamemode
 tag @a remove ranMode
 tag @a remove spamClick

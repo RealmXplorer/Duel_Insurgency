@@ -7,7 +7,7 @@ execute as @a[tag=playing,tag=!grave] at @s run function du-in:ingame/other/play
 
 #Check if player has weapon
 execute as @a[gamemode=!spectator,tag=playing,tag=!startgame,tag=!chungus] store result score @s Acount run clear @s[tag=!kitMenu] carrot_on_a_stick 0
-execute as @a[gamemode=!spectator,tag=playing,tag=!startgame,tag=!chungus] unless entity @s[scores={palpTimer=-99..}] unless entity @s[scores={Acount=1}] unless entity @s[level=3..] run xp set @s[tag=!grave,tag=!hornerWeapon] 2 levels
+execute as @a[gamemode=!spectator,tag=playing,tag=!startgame,tag=!chungus,tag=!magma] unless entity @s[scores={palpTimer=-99..}] unless entity @s[scores={Acount=1}] unless entity @s[level=3..] run xp set @s[tag=!grave,tag=!hornerWeapon] 2 levels
 
 execute as @a[gamemode=!spectator,tag=playing,tag=!startgame,tag=!chungus] store result score @s weapCount unless entity @s[scores={kit=1003}] run clear @s[tag=!kitMenu] #du-in:weapon 0
 

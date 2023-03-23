@@ -1,5 +1,5 @@
-execute if entity @s[tag=!stolen,scores={hit=5..}] unless entity @s[scores={kyloSkin=1}] run function du-in:kit/kylo/sounds/hit
-#execute if entity @s[scores={hitFail=1..}] run function du-in:kit/kylo/sounds/fail
+execute if entity @s[tag=!stolen,scores={hit=5..}] run function du-in:kit/kylo/sounds/hit
+execute if entity @s[tag=!stolen,scores={jump=1..}] run function du-in:kit/jump
 
 #ARMOR#
 execute if entity @s[tag=armor,tag=!stolen] unless entity @s[scores={kyloSkin=1..}] run function du-in:kit/kylo/armor
