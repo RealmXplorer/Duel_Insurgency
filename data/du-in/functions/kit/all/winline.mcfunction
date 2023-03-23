@@ -2,7 +2,7 @@ stopsound @a voice
 #execute if entity @s[scores={kit=1..4}] run playsound minecraft:villain.pick record @a ~ ~ ~ 100 1
 #execute if entity @s[scores={kit=5..8}] run playsound minecraft:hero.pick record @a ~ ~ ~ 100 1
 
-execute unless entity @s[scores={kit=5}] unless entity @s[scores={kit=10}] unless entity @s[scores={kit=12..14}] unless entity @s[scores={kit=16}] unless entity @s[scores={kit=20..22}] unless entity @s[scores={kit=25}] unless entity @s[scores={kit=28}] unless entity @s[scores={kit=1000..}] run function du-in:kit/all/win_music/start
+execute unless entity @s[scores={kit=5}] unless entity @s[scores={kit=10}] unless entity @s[scores={kit=12..14}] unless entity @s[scores={kit=16}] unless entity @s[scores={kit=20..22}] unless entity @s[scores={kit=25}] unless entity @s[scores={kit=27..28}] unless entity @s[scores={kit=1000..}] run function du-in:kit/all/win_music/start
 
 #Win music
 execute if entity @s[scores={kit=10}] run playsound minecraft:gaster.pick record @a ~ ~ ~ 100 1
@@ -27,6 +27,7 @@ execute if entity @s[scores={kit=19}] run playsound minecraft:palps.line.win voi
 
 execute if entity @s[scores={kit=23}] run playsound minecraft:nick.line.win voice @a ~ ~ ~ 100 1
 
+execute if entity @s[scores={kit=27}] run playsound minecraft:puss.win voice @a ~ ~ ~ 100 1
 execute if entity @s[scores={kit=28}] run playsound minecraft:death.whistle.mark voice @a ~ ~ ~ 100 1
 
 #execute if entity @s[scores={kit=31}] run playsound minecraft:judy.line.win voice @a ~ ~ ~ 100 1
