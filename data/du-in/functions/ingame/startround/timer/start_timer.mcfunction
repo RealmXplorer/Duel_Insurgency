@@ -9,6 +9,7 @@ scoreboard players set @a[tag=playing,gamemode=!spectator] weapCount 0
 scoreboard players set @a[scores={kit=22}] gumballSwitch 2
 scoreboard players set @a[scores={kit=28}] deathWeapSwitch 2
 scoreboard players set #main titleTimer2 80
+scoreboard players set @a cardPower 0
 #tag @a[tag=exl] add exIngame
 #tag @a[tag=exl] add exl
 

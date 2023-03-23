@@ -1,3 +1,5 @@
+#execute positioned ^ ^ ^1.25 run function du-in:kit/villager/raycast/init
+
 execute if entity @a[distance=.05..5,tag=playing,gamemode=!spectator,tag=!teamDead] unless entity @a[distance=.05..4,tag=playing,scores={kit=8}] unless entity @a[distance=.05..5,tag=playing,scores={kit=1000..}] run tag @s add stolen
 
 execute if entity @a[distance=.05..5,tag=playing,scores={kit=8},gamemode=!spectator,tag=!teamDead] run function du-in:kit/all/ability/villager

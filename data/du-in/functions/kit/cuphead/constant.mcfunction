@@ -36,7 +36,7 @@ effect clear @s[scores={floatTimer=1}] minecraft:levitation
 execute if entity @s[scores={parryTimer=0..}] run function du-in:kit/cuphead/parry/timer
 
 #Play Super sound#
-execute if entity @s[scores={cardPower=25..},tag=!super] run function du-in:kit/cuphead/ability/charged
+execute if entity @s[scores={cardPower=25..},tag=!super] run function du-in:kit/cuphead/ability/charged_sound
 
 #Give Cards#
 execute if entity @s[scores={cardPower=5..9}] run function du-in:kit/cuphead/card/card1
