@@ -19,10 +19,10 @@ execute if entity @a[tag=sus] run summon marker -456 9 -486 {Tags:["vent","mapSp
 execute if entity @a[tag=sus] run summon marker -473 9 -511 {Tags:["vent","mapSpecific"]}
 execute if entity @a[tag=sus] run summon marker -472 8 -497 {Tags:["vent","mapSpecific"]}
 
-summon marker -486 8 -489 {Tags:["ventBlock","mapSpecific"]}
-summon marker -456 8 -485 {Tags:["ventBlock","mapSpecific"]}
-summon marker -473 8 -512 {Tags:["ventBlock","mapSpecific"]}
-summon marker -473 7 -498 {Tags:["ventBlock","mapSpecific"]}
+summon interaction -486 8 -489 {Tags:["ventBlock","mapSpecific"],width:1f,height:1.1f,response:1b}
+summon interaction -456 8 -485 {Tags:["ventBlock","mapSpecific"],width:1f,height:1.1f,response:1b}
+summon interaction -473 8 -512 {Tags:["ventBlock","mapSpecific"],width:1f,height:1.1f,response:1b}
+summon interaction -473 7 -498 {Tags:["ventBlock","mapSpecific"],width:1f,height:1.1f,response:1b}
 
 #Halloween Vending Machines#
 execute if entity @a[scores={kit=1000..1001}] run summon interaction -487 9 -495 {Tags:["vending","mapSpecific"],width:1.15f,height:2.1f,response:1b}

@@ -18,10 +18,10 @@ execute if entity @a[tag=sus] run summon marker 1272 9 1259 {Tags:["vent","mapSp
 execute if entity @a[tag=sus] run summon marker 1273 8 1273 {Tags:["vent","mapSpecific"]}
 execute if entity @a[tag=sus] run summon marker 1260 9 1281 {Tags:["vent","mapSpecific"]}
 
-summon marker 1259 8 1281 {Tags:["ventBlock","mapSpecific"]}
-summon marker 1272 8 1258 {Tags:["ventBlock","mapSpecific"]}
-summon marker 1289 8 1285 {Tags:["ventBlock","mapSpecific"]}
-summon marker 1272 7 1272 {Tags:["ventBlock","mapSpecific"]}
+summon interaction 1259 8 1281 {Tags:["ventBlock","mapSpecific"],width:1f,height:1.1f,response:1b}
+summon interaction 1272 8 1258 {Tags:["ventBlock","mapSpecific"],width:1f,height:1.1f,response:1b}
+summon interaction 1289 8 1285 {Tags:["ventBlock","mapSpecific"],width:1f,height:1.1f,response:1b}
+summon interaction 1272 7 1272 {Tags:["ventBlock","mapSpecific"],width:1f,height:1.1f,response:1b}
 
 #Thanksgiving Vending Machines#
 execute if entity @a[scores={kit=1000..1001}] run summon interaction 1258 9 1275 {Tags:["vending","mapSpecific"],width:1.15f,height:2.1f,response:1b}

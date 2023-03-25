@@ -25,7 +25,7 @@ summon marker 33 8 2477 {Tags:["spawnPoint","team2","mapSpecific"]}
 #summon marker 18 5 -535 {Tags:["ventBlock","mapSpecific"]}
 #summon marker -12 5 -539 {Tags:["ventBlock","mapSpecific"]}
 
-execute if entity @a[tag=kothl] run summon area_effect_cloud 1 13 2498 {NoGravity:1b,Duration:2147483647,Tags:["kothObj","mapSpecific"],CustomNameVisible:1b,CustomName:'{"text":"Stand on this point!","color":"red","bold":true}'}
+#execute if entity @a[tag=kothl] run summon area_effect_cloud 1 13 2498 {NoGravity:1b,Duration:2147483647,Tags:["kothObj","mapSpecific"],CustomNameVisible:1b,CustomName:'{"text":"Stand on this point!","color":"red","bold":true}'}
 
 #Vending Machines#
 execute if entity @a[scores={kit=1000..1001}] run summon interaction 24 10 2534 {Tags:["vending","mapSpecific"],width:1.15f,height:2.1f,response:1b}

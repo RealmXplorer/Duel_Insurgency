@@ -23,10 +23,10 @@ execute if entity @a[tag=sus] run summon marker 1 6 -561 {Tags:["vent","mapSpeci
 execute if entity @a[tag=sus] run summon marker 17 6 -536 {Tags:["vent","mapSpecific"]}
 
 #Set vent block locations#
-summon marker 1 4 -548 {Tags:["ventBlock","mapSpecific"]}
-summon marker 1 5 -562 {Tags:["ventBlock","mapSpecific"]}
-summon marker 18 5 -535 {Tags:["ventBlock","mapSpecific"]}
-summon marker -12 5 -539 {Tags:["ventBlock","mapSpecific"]}
+summon interaction 1 4 -548 {Tags:["ventBlock","mapSpecific"],width:1f,height:1.1f,response:1b}
+summon interaction 1 5 -562 {Tags:["ventBlock","mapSpecific"],width:1f,height:1.1f,response:1b}
+summon interaction 18 5 -535 {Tags:["ventBlock","mapSpecific"],width:1f,height:1.1f,response:1b}
+summon interaction -12 5 -539 {Tags:["ventBlock","mapSpecific"],width:1f,height:1.1f,response:1b}
 
 #Set Vending Machines (If a saac is in game)#
 execute if entity @a[scores={kit=1000..1001}] run summon interaction 4 6 -562 {Tags:["vending","mapSpecific"],width:1.15f,height:2.1f,response:1b}

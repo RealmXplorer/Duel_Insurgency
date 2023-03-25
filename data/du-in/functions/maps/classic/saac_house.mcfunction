@@ -18,10 +18,10 @@ execute if entity @a[tag=sus] run summon marker -1991 47 -1969 {Tags:["vent","ma
 execute if entity @a[tag=sus] run summon marker -1991 39 -1977 {Tags:["vent","mapSpecific"]}
 execute if entity @a[tag=sus] run summon marker -1992 36 -1949 {Tags:["vent","mapSpecific"]}
 
-summon marker -1990 38 -1976 {Tags:["ventBlock","mapSpecific"]}
-summon marker -1990 46 -1968 {Tags:["ventBlock","mapSpecific"]}
-summon marker -1991 35 -1948 {Tags:["ventBlock","mapSpecific"]}
-summon marker -2005 35 -1974 {Tags:["ventBlock","mapSpecific"]}
+summon interaction -1990 38 -1976 {Tags:["ventBlock","mapSpecific"],width:1f,height:1.1f,response:1b}
+summon interaction -1990 46 -1968 {Tags:["ventBlock","mapSpecific"],width:1f,height:1.1f,response:1b}
+summon interaction -1991 35 -1948 {Tags:["ventBlock","mapSpecific"],width:1f,height:1.1f,response:1b}
+summon interaction -2005 35 -1974 {Tags:["ventBlock","mapSpecific"],width:1f,height:1.1f,response:1b}
 
 #Saac Vending Machines#
 execute if entity @a[scores={kit=1000..1001}] run summon interaction -2000 36 -1965 {Tags:["vending","mapSpecific"],width:1.15f,height:2.1f,response:1b}

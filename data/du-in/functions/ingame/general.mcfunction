@@ -37,7 +37,7 @@ execute if score #main map matches 12 run effect give @a[tag=cmap,tag=!win,tag=!
     #Make timer count down
         execute if score #main titleTimer2 matches -99.. run function du-in:ingame/startround/timer/timer
 
-execute positioned as @e[type=marker,tag=ventBlock] run function du-in:maps/vents/init
+#execute positioned as @e[type=marker,tag=ventBlock] run function du-in:maps/vents/init
 
 
 

@@ -18,10 +18,10 @@ execute if entity @a[tag=sus] run summon marker 2032 9 -596 {Tags:["vent","mapSp
 execute if entity @a[tag=sus] run summon marker 2060 8 -568 {Tags:["vent","mapSpecific"]}
 execute if entity @a[tag=sus] run summon marker 2036 9 -537 {Tags:["vent","mapSpecific"]}
 
-summon marker 2007 7 -564 {Tags:["ventBlock","mapSpecific"]}
-summon marker 2031 8 -596 {Tags:["ventBlock","mapSpecific"]}
-summon marker 2060 7 -569 {Tags:["ventBlock","mapSpecific"]}
-summon marker 2036 8 -536 {Tags:["ventBlock","mapSpecific"]}
+summon interaction 2007 7 -564 {Tags:["ventBlock","mapSpecific"],width:1f,height:1.1f,response:1b}
+summon interaction 2031 8 -596 {Tags:["ventBlock","mapSpecific"],width:1f,height:1.1f,response:1b}
+summon interaction 2060 7 -569 {Tags:["ventBlock","mapSpecific"],width:1f,height:1.1f,response:1b}
+summon interaction 2036 8 -536 {Tags:["ventBlock","mapSpecific"],width:1f,height:1.1f,response:1b}
 
 #Vending Machines#
 execute if entity @a[scores={kit=1000..1001}] run summon interaction 2060 10 -579 {Tags:["vending","mapSpecific"],width:1.15f,height:2.1f,response:1b}

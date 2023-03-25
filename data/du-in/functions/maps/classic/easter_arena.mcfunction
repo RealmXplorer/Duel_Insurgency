@@ -18,10 +18,10 @@ execute if entity @a[tag=sus] run summon marker 916 10 495 {Tags:["vent","mapSpe
 execute if entity @a[tag=sus] run summon marker 929 9 488 {Tags:["vent","mapSpecific"]}
 execute if entity @a[tag=sus] run summon marker 929 10 474 {Tags:["vent","mapSpecific"]}
 
-summon marker 928 9 473 {Tags:["ventBlock","mapSpecific"]}
-summon marker 945 9 500 {Tags:["ventBlock","mapSpecific"]}
-summon marker 928 8 487 {Tags:["ventBlock","mapSpecific"]}
-summon marker 945 9 500 {Tags:["ventBlock","mapSpecific"]}
+summon interaction 928 9 473 {Tags:["ventBlock","mapSpecific"],width:1f,height:1.1f,response:1b}
+summon interaction 945 9 500 {Tags:["ventBlock","mapSpecific"],width:1f,height:1.1f,response:1b}
+summon interaction 928 8 487 {Tags:["ventBlock","mapSpecific"],width:1f,height:1.1f,response:1b}
+summon interaction 945 9 500 {Tags:["ventBlock","mapSpecific"],width:1f,height:1.1f,response:1b}
 
 #Default Vending Machines#
 execute if entity @a[scores={kit=1000..1001}] run summon interaction 931 10 507 {Tags:["vending","mapSpecific"],width:1.15f,height:2.1f,response:1b}
