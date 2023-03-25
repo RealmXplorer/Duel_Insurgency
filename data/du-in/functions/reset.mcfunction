@@ -172,6 +172,7 @@ scoreboard players reset * healthHit
 scoreboard players reset * healthTimer
 tag @a remove grave
 tag @a remove chungus
+tag @a remove saul
 tag @a remove dmBlueFinale
 tag @a remove dmRedFinale
 tag @a remove kitParticles

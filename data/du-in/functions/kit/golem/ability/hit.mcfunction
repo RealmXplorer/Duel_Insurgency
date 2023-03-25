@@ -1,9 +1,8 @@
-scoreboard players set @a[distance=0.05..4,tag=playing,limit=1,sort=nearest,gamemode=!spectator,tag=!teamDead] golemFloat 5
+execute if entity @s[tag=!sabotaged] as @a[distance=0.05..4,tag=playing,limit=1,sort=nearest,gamemode=!spectator,tag=!teamDead] run function du-in:kit/golem/ability/throw
 
-effect give @a[distance=0.05..4,tag=playing,limit=1,sort=nearest,gamemode=!spectator,tag=!teamDead] minecraft:levitation 1 25 true
-effect give @a[distance=0.05..4,tag=playing,limit=1,sort=nearest,gamemode=!spectator,tag=!teamDead] minecraft:instant_damage 1 0 true
+execute if entity @s[tag=sabotaged] run function du-in:kit/golem/ability/throw
+tellraw @s[tag=sabotaged] [{"text":"You threw yourself???","bold":true,"color":"red"}]
 
-tellraw @a[distance=0.05..4,tag=playing,gamemode=!spectator,tag=!teamDead] [{"text":"You got tossed by Iron Golem!","bold":true,"color":"red"}]
 playsound minecraft:entity.iron_golem.hurt master @s ~ ~ ~ 10 1
 
 particle minecraft:crit ~ ~.1 ~ 0.1 1 0.1 0 100 force
@@ -16,4 +15,5 @@ playsound minecraft:entity.player.attack.sweep master @a ~ ~ ~ 100 .1
 
 clear @s minecraft:carrot_on_a_stick
 xp set @s[tag=!stolen] 360 levels
+tag @s remove sabotaged
 tag @s add kitDone

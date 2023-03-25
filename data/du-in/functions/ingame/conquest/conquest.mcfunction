@@ -2,7 +2,7 @@
 execute as @e[type=marker,tag=cqPoint] at @s run function du-in:ingame/conquest/points/point
 
 #MUSIC#
-execute as @a[tag=cqIngame,tag=!startGame,tag=!saac,tag=!bigChungus] at @s run function du-in:music/ingame/conquest
+execute as @a[tag=cqIngame,tag=!startGame,tag=!saac,tag=!bigChungus,tag=!saul] at @s run function du-in:music/ingame/conquest
 
 #If team is halfway to winning
 execute if entity @a[tag=!cqHalf] if score Blue capturePoints >= #main cqHalf run function du-in:ingame/conquest/half

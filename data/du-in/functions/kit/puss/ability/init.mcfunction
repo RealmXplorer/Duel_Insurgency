@@ -1,4 +1,7 @@
+scoreboard players set @s[tag=!sabotaged] pussTimer 80
 execute if entity @s[tag=!sabotaged] as @a[distance=0.05..5,tag=playing,gamemode=!spectator,tag=!teamDead] unless score @s team = @a[tag=kitActions,limit=1,tag=playing,scores={kit=27}] team run function du-in:kit/puss/ability/hit
+
+scoreboard players set @s weapCount 0
 
 #execute anchored eyes facing entity @s eyes run summon marker ^ ^ ^1.25 {Tags:["tpMark"]}
 
@@ -19,10 +22,10 @@ particle minecraft:poof ~ ~.1 ~ 0.1 0.1 0.1 0.05 100 force
 #Remove ability from hand
 clear @s minecraft:carrot_on_a_stick
 #Start cooldown
-xp set @s[tag=!stolen] 270 levels
+#xp set @s[tag=!stolen] 270 levels
 
 #Switch villager back to their ability
-tag @s[tag=stolen] add kitDone
+#tag @s[tag=stolen] add kitDone
 tag @s remove sabotaged
 #End ability
 tag @s remove kitActions

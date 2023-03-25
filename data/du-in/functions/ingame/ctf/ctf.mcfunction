@@ -39,4 +39,4 @@ execute if entity @a[tag=!ctfEnd] if score #main redPoints >= #main ctfMax run f
 clear @a[tag=!flagGot,tag=!working] #minecraft:banners
 
 #MUSIC#
-execute as @a[tag=ctfIngame,tag=!startgame,tag=!saac,tag=!bigChungus] at @s run function du-in:music/ingame/ctf
+execute as @a[tag=ctfIngame,tag=!startgame,tag=!saac,tag=!bigChungus,tag=!saul] at @s run function du-in:music/ingame/ctf

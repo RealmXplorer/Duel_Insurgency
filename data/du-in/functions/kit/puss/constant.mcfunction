@@ -25,6 +25,8 @@ execute if entity @s[tag=!stolen,tag=!teamDead,scores={pussDeaths=4..}] unless e
 
 execute if entity @s[scores={pussSwapTimer=-1..}] run function du-in:kit/puss/secondary/timer
 
+execute if entity @s[scores={pussTimer=-1..}] run function du-in:kit/puss/ability/self_timer
+
 #Base movement speed#
 attribute @s[tag=!stolen] generic.movement_speed base set 0.15
 

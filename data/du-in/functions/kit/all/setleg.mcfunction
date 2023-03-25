@@ -23,3 +23,5 @@ execute unless entity @s[tag=startgame] unless entity @s[tag=legMusicOff] run fu
 
 #EASTER EGG KITS#
 execute if entity @s[scores={kit=42069},tag=!stolen] run function du-in:kit/chungus/constant
+
+execute if entity @s[scores={kit=2015},tag=!stolen] run function du-in:kit/saul/constant

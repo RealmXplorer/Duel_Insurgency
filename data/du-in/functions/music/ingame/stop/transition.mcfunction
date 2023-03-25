@@ -24,3 +24,4 @@ stopsound @s record minecraft:music.christmas.dm
 stopsound @s record minecraft:music.christmas.koth
 stopsound @s record minecraft:music.saac
 stopsound @s record minecraft:big.chungus
+stopsound @s record minecraft:music.saul

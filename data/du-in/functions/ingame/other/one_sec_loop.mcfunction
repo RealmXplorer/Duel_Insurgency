@@ -6,10 +6,10 @@ execute if entity @a[scores={kit=1000..1001}] at @a[tag=playing] as @e[type=mine
 execute as @a[tag=playing,tag=!grave] at @s run function du-in:ingame/other/play_half
 
 #Check if player has weapon
-execute as @a[gamemode=!spectator,tag=playing,tag=!startgame,tag=!chungus] store result score @s Acount run clear @s[tag=!kitMenu] carrot_on_a_stick 0
-execute as @a[gamemode=!spectator,tag=playing,tag=!startgame,tag=!chungus,tag=!magma] unless entity @s[scores={palpTimer=-99..}] unless entity @s[scores={Acount=1}] unless entity @s[level=3..] run xp set @s[tag=!grave,tag=!hornerWeapon] 2 levels
+execute as @a[gamemode=!spectator,tag=playing,tag=!startgame] store result score @s Acount run clear @s[tag=!kitMenu] carrot_on_a_stick 0
+execute as @a[gamemode=!spectator,tag=playing,tag=!startgame,tag=!magma] unless entity @s[scores={palpTimer=-99..}] unless entity @s[scores={pussTimer=-99..}] unless entity @s[scores={Acount=1}] unless entity @s[level=3..] run xp set @s[tag=!grave,tag=!hornerWeapon] 2 levels
 
-execute as @a[gamemode=!spectator,tag=playing,tag=!startgame,tag=!chungus] store result score @s weapCount unless entity @s[scores={kit=1003}] run clear @s[tag=!kitMenu] #du-in:weapon 0
+execute as @a[gamemode=!spectator,tag=playing,tag=!startgame,tag=!pussFear] store result score @s weapCount unless entity @s[scores={kit=1003}] run clear @s[tag=!kitMenu] #du-in:weapon 0
 
 #Add 1 to score "spawnpoint"
 scoreboard players add @r[tag=playing,gamemode=!spectator,predicate=du-in:half_chance] spawnpoint 1

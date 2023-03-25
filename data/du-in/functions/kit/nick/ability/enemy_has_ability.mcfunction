@@ -1,6 +1,6 @@
 #Sabotage ability
 execute if entity @s[scores={kit=1}] run function du-in:kit/nick/ability/sabotage
-execute if entity @s[scores={kit=3..5}] run function du-in:kit/nick/ability/sabotage
+execute if entity @s[scores={kit=3..6}] run function du-in:kit/nick/ability/sabotage
 execute if entity @s[scores={kit=7}] run function du-in:kit/nick/ability/sabotage
 execute if entity @s[scores={kit=11}] run function du-in:kit/nick/ability/sabotage
 execute if entity @s[scores={kit=13}] run function du-in:kit/nick/ability/sabotage
