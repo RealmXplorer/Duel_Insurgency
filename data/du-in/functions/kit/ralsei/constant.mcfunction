@@ -42,4 +42,4 @@ execute if entity @s[scores={ralseiTP=..119},tag=!stolen] if entity @a[distance=
 execute if entity @s[tag=!stolen] run attribute @s minecraft:generic.max_health base set 14
 attribute @s[tag=!stolen] generic.movement_speed base set 0.145
 #.1225
-attribute @s generic.knockback_resistance base set 0.01
+attribute @s[tag=!pussFear] generic.knockback_resistance base set 0.01

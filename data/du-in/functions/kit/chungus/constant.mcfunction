@@ -19,4 +19,4 @@ tag @s remove killLine
 execute if entity @s[tag=armor] run function du-in:kit/chungus/armor
 attribute @s[tag=!stolen] minecraft:generic.movement_speed base set 0.125
 #.1
-attribute @s generic.knockback_resistance base set 1
+attribute @s[tag=!pussFear] generic.knockback_resistance base set 1

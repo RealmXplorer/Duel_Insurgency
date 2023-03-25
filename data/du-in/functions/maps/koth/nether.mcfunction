@@ -19,10 +19,10 @@ summon marker -183 7 92 {Tags:["spawnPoint","team2","mapSpecific"]}
 summon area_effect_cloud -183.0 6.75 56.0 {NoGravity:1b,Duration:2147483647,Tags:["kothObj","mapSpecific"],CustomNameVisible:1b,CustomName:'{"text":"Stand on this point!","color":"red","bold":true}'}
 
 #Vending Machines#
-execute if entity @a[scores={kit=1000..1001}] run summon wandering_trader -197.1 7 38.5 {Silent:1b,Invulnerable:1b,PersistenceRequired:1b,NoAI:1b,Tags:["vending","mapSpecific"],Offers:{}}
-execute if entity @a[scores={kit=1000..1001}] run summon wandering_trader -167.1 9 40.5 {Silent:1b,Invulnerable:1b,PersistenceRequired:1b,NoAI:1b,Tags:["vending","mapSpecific"],Offers:{}}
-execute if entity @a[scores={kit=1000..1001}] run summon wandering_trader -168.5 7 66.9 {Silent:1b,Invulnerable:1b,PersistenceRequired:1b,NoAI:1b,Tags:["vending","mapSpecific"],Offers:{}}
-execute if entity @a[scores={kit=1000..1001}] run summon wandering_trader -200.5 9 69.9 {Silent:1b,Invulnerable:1b,PersistenceRequired:1b,NoAI:1b,Tags:["vending","mapSpecific"],Offers:{}}
+execute if entity @a[scores={kit=1000..1001}] run summon interaction -197 7 38 {Tags:["vending","mapSpecific"],width:1.15f,height:2.1f,response:1b}
+execute if entity @a[scores={kit=1000..1001}] run summon interaction -167 9 40 {Tags:["vending","mapSpecific"],width:1.15f,height:2.1f,response:1b}
+execute if entity @a[scores={kit=1000..1001}] run summon interaction -169 7 67 {Tags:["vending","mapSpecific"],width:1.15f,height:2.1f,response:1b}
+execute if entity @a[scores={kit=1000..1001}] run summon interaction -201 9 70 {Tags:["vending","mapSpecific"],width:1.15f,height:2.1f,response:1b}
 
 summon painting -201 9 69 {facing:2b,Invulnerable:1b,Tags:["mapSpecific"],variant:"minecraft:wanderer"}
 summon painting -198 7 38 {facing:1b,Invulnerable:1b,Tags:["mapSpecific"],variant:"minecraft:wanderer"}

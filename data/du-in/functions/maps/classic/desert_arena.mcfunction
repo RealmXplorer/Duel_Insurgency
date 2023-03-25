@@ -23,11 +23,11 @@ summon marker 2541 5 2528 {Tags:["ventBlock","mapSpecific"]}
 summon marker 2517 5 2506 {Tags:["ventBlock","mapSpecific"]}
 summon marker 2517 5 2528 {Tags:["ventBlock","mapSpecific"]}
 
-execute if entity @a[scores={kit=1000..1001}] run summon wandering_trader 2519.1 6 2529.5 {Silent:1b,Invulnerable:1b,PersistenceRequired:1b,NoAI:1b,Tags:["vending","mapSpecific"],Offers:{}}
-execute if entity @a[scores={kit=1000..1001}] run summon wandering_trader 2519.1 6 2505.5 {Silent:1b,Invulnerable:1b,PersistenceRequired:1b,NoAI:1b,Tags:["vending","mapSpecific"],Offers:{}}
-
-execute if entity @a[scores={kit=1000..1001}] run summon wandering_trader 2539.9 6 2505.5 {Silent:1b,Invulnerable:1b,PersistenceRequired:1b,NoAI:1b,Tags:["vending","mapSpecific"],Offers:{}}
-execute if entity @a[scores={kit=1000..1001}] run summon wandering_trader 2539.9 6 2529.5 {Silent:1b,Invulnerable:1b,PersistenceRequired:1b,NoAI:1b,Tags:["vending","mapSpecific"],Offers:{}}
+#Vending Machines#
+execute if entity @a[scores={kit=1000..1001}] run summon interaction 2518 6 2529 {Tags:["vending","mapSpecific"],width:1.15f,height:2.1f,response:1b}
+execute if entity @a[scores={kit=1000..1001}] run summon interaction 2518 6 2505 {Tags:["vending","mapSpecific"],width:1.15f,height:2.1f,response:1b}
+execute if entity @a[scores={kit=1000..1001}] run summon interaction 2540 6 2505 {Tags:["vending","mapSpecific"],width:1.15f,height:2.1f,response:1b}
+execute if entity @a[scores={kit=1000..1001}] run summon interaction 2540 6 2529 {Tags:["vending","mapSpecific"],width:1.15f,height:2.1f,response:1b}
 
 summon painting 2519 6 2529 {facing:3b,Invulnerable:1b,Tags:["mapSpecific"],variant:"minecraft:wanderer"}
 summon painting 2519 6 2505 {facing:3b,Invulnerable:1b,Tags:["mapSpecific"],variant:"minecraft:wanderer"}

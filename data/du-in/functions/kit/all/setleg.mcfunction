@@ -12,7 +12,7 @@ execute if entity @s[scores={kit=1002},tag=!stolen] run function du-in:kit/jerma
 execute if entity @s[scores={kit=1003},tag=!stolen] run function du-in:kit/impostor/constant
 
 #THANOS#
-#execute as @a[scores={kit=1004}] run attribute @s generic.knockback_resistance base set 0.2
+#execute as @a[scores={kit=1004}] run attribute @s[tag=!pussFear] generic.knockback_resistance base set 0.2
 
 #RUNZA REX#
 execute if entity @s[scores={kit=1005},tag=!stolen] run function du-in:kit/runza/constant

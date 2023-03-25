@@ -5,8 +5,9 @@ execute as @a[tag=playing,tag=cIngame,tag=!chalf] if score @s killIngame >= #mai
 title @a[tag=cIngame,tag=!chalf] actionbar {"text":"","color":"gold","extra":[{"selector":"@p[tag=atHalf,tag=cIngame]"},{"text":" is halfway to victory!"}]}
 
 #Playsound
-execute at @a as @a run playsound minecraft:block.anvil.use master @p ~ ~ ~ 1 1.15
-
+#execute at @a as @a run playsound minecraft:block.anvil.use master @s ~ ~ ~ 1 1.15
+execute at @a as @a run playsound minecraft:soundeffect.woosh master @s ~ ~ ~ .5 1
+execute at @a as @a run playsound minecraft:soundeffect.woosh master @s ~ ~ ~ .5 2
 #Change bossbar color
 #bossbar set bossbar:classic color pink
 

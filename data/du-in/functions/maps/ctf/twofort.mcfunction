@@ -22,26 +22,24 @@ execute at @e[type=marker,tag=blueFlag] run setblock ~ ~ ~ blue_banner destroy
 execute at @e[type=marker,tag=redFlag] run setblock ~ ~ ~ red_banner destroy
 
 #Vending Machines#
-execute if entity @a[scores={kit=1000..1001}] run summon wandering_trader -1017.5 11 -957.1 {Silent:1b,Invulnerable:1b,PersistenceRequired:1b,NoAI:1b,Tags:["vending","mapSpecific"],Offers:{}}
-execute if entity @a[scores={kit=1000..1001}] run summon wandering_trader -1010.9 5 -954.5 {Silent:1b,Invulnerable:1b,PersistenceRequired:1b,NoAI:1b,Tags:["vending","mapSpecific"],Offers:{}}
-execute if entity @a[scores={kit=1000..1001}] run summon wandering_trader -1006.1 16 -971.5 {Silent:1b,Invulnerable:1b,PersistenceRequired:1b,NoAI:1b,Tags:["vending","mapSpecific"],Offers:{}}
-execute if entity @a[scores={kit=1000..1001}] run summon wandering_trader -970.1 11 -978.5 {Silent:1b,Invulnerable:1b,PersistenceRequired:1b,NoAI:1b,Tags:["vending","mapSpecific"],Offers:{}}
-execute if entity @a[scores={kit=1000..1001}] run summon wandering_trader -1003.5 10 -991.1 {Silent:1b,Invulnerable:1b,PersistenceRequired:1b,NoAI:1b,Tags:["vending","mapSpecific"],Offers:{}}
+##Blue Side
+execute if entity @a[scores={kit=1000..1001}] run summon interaction -1012 5 -955 {Tags:["vending","mapSpecific"],width:1.15f,height:2.1f,response:1b}
+execute if entity @a[scores={kit=1000..1001}] run summon interaction -1006 16 -972 {Tags:["vending","mapSpecific"],width:1.15f,height:2.1f,response:1b}
+execute if entity @a[scores={kit=1000..1001}] run summon interaction -970 11 -979 {Tags:["vending","mapSpecific"],width:1.15f,height:2.1f,response:1b}
+execute if entity @a[scores={kit=1000..1001}] run summon interaction -1004 10 -991 {Tags:["vending","mapSpecific"],width:1.15f,height:2.1f,response:1b}
 
-execute if entity @a[scores={kit=1000..1001}] run summon wandering_trader -1002.5 10 -1026.9 {Silent:1b,Invulnerable:1b,PersistenceRequired:1b,NoAI:1b,Tags:["vending","mapSpecific"],Offers:{}}
-execute if entity @a[scores={kit=1000..1001}] run summon wandering_trader -1035.9 11 -1039.5 {Silent:1b,Invulnerable:1b,PersistenceRequired:1b,NoAI:1b,Tags:["vending","mapSpecific"],Offers:{}}
-execute if entity @a[scores={kit=1000..1001}] run summon wandering_trader -988.5 11 -1060.9 {Silent:1b,Invulnerable:1b,PersistenceRequired:1b,NoAI:1b,Tags:["vending","mapSpecific"],Offers:{}}
-execute if entity @a[scores={kit=1000..1001}] run summon wandering_trader -995.1 5 -1063.5 {Silent:1b,Invulnerable:1b,PersistenceRequired:1b,NoAI:1b,Tags:["vending","mapSpecific"],Offers:{}}
-execute if entity @a[scores={kit=1000..1001}] run summon wandering_trader -999.9 16 -1046.5 {Silent:1b,Invulnerable:1b,PersistenceRequired:1b,NoAI:1b,Tags:["vending","mapSpecific"],Offers:{}}
-
-summon painting -1018 11 -958 {facing:2b,Invulnerable:1b,Tags:["mapSpecific"],variant:"minecraft:wanderer"}
 summon painting -1011 5 -955 {facing:3b,Invulnerable:1b,Tags:["mapSpecific"],variant:"minecraft:wanderer"}
 summon painting -1007 16 -972 {facing:1b,Invulnerable:1b,Tags:["mapSpecific"],variant:"minecraft:wanderer"}
 summon painting -971 11 -979 {facing:1b,Invulnerable:1b,Tags:["mapSpecific"],variant:"minecraft:wanderer"}
 summon painting -1004 10 -992 {facing:2b,Invulnerable:1b,Tags:["mapSpecific"],variant:"minecraft:wanderer"}
 
+##Red Side
+execute if entity @a[scores={kit=1000..1001}] run summon interaction -1003 10 -1028 {Tags:["vending","mapSpecific"],width:1.15f,height:2.1f,response:1b}
+execute if entity @a[scores={kit=1000..1001}] run summon interaction -1037 11 -1040 {Tags:["vending","mapSpecific"],width:1.15f,height:2.1f,response:1b}
+execute if entity @a[scores={kit=1000..1001}] run summon interaction -995 5 -1064 {Tags:["vending","mapSpecific"],width:1.15f,height:2.1f,response:1b}
+execute if entity @a[scores={kit=1000..1001}] run summon interaction -1001 16 -1047 {Tags:["vending","mapSpecific"],width:1.15f,height:2.1f,response:1b}
+
 summon painting -1003 10 -1027 {facing:0b,Invulnerable:1b,Tags:["mapSpecific"],variant:"minecraft:wanderer"}
 summon painting -1036 11 -1040 {facing:3b,Invulnerable:1b,Tags:["mapSpecific"],variant:"minecraft:wanderer"}
-summon painting -989 11 -1061 {facing:0b,Invulnerable:1b,Tags:["mapSpecific"],variant:"minecraft:wanderer"}
 summon painting -996 5 -1064 {facing:1b,Invulnerable:1b,Tags:["mapSpecific"],variant:"minecraft:wanderer"}
 summon painting -1000 16 -1047 {facing:3b,Invulnerable:1b,Tags:["mapSpecific"],variant:"minecraft:wanderer"}

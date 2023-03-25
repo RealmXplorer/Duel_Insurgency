@@ -31,4 +31,4 @@ execute if entity @s[tag=kothIngame] run function du-in:kit/springtrap/passive/k
 #attribute @s[tag=!stolen,tag=!springLock] generic.movement_speed base set 0.09
 attribute @s[tag=!stolen,tag=!springLock] minecraft:generic.movement_speed base set 0.125
 #.1
-attribute @s generic.knockback_resistance base set 0.25
+attribute @s[tag=!pussFear] generic.knockback_resistance base set 0.25

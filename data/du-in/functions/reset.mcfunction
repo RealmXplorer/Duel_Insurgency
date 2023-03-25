@@ -370,7 +370,7 @@ tag @a remove sabotaged
 scoreboard players reset @a pussDeaths
 tag @a remove gatitoBlade
 
-
+scoreboard players reset @a ambience
 #WINEND#
 
 #END ROUND#

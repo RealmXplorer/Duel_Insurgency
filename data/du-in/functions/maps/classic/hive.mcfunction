@@ -17,10 +17,10 @@ summon marker 36 5 36 {Tags:["spawnPoint","team2","mapSpecific"]}
 #NO VENTS#
 
 #VENDING MACHINES#
-execute if entity @a[scores={kit=1000..1001}] run summon wandering_trader 67.5 6 45.9 {Silent:1b,Invulnerable:1b,PersistenceRequired:1b,NoAI:1b,Tags:["vending","mapSpecific"],Offers:{}}
-execute if entity @a[scores={kit=1000..1001}] run summon wandering_trader 68.5 5 70.1 {Silent:1b,Invulnerable:1b,PersistenceRequired:1b,NoAI:1b,Tags:["vending","mapSpecific"],Offers:{}}
-execute if entity @a[scores={kit=1000..1001}] run summon wandering_trader 44.9 7 65.5 {Silent:1b,Invulnerable:1b,PersistenceRequired:1b,NoAI:1b,Tags:["vending","mapSpecific"],Offers:{}}
-execute if entity @a[scores={kit=1000..1001}] run summon wandering_trader 42.5 5 42.9 {Silent:1b,Invulnerable:1b,PersistenceRequired:1b,NoAI:1b,Tags:["vending","mapSpecific"],Offers:{}}
+execute if entity @a[scores={kit=1000..1001}] run summon interaction 67 6 46 {Tags:["vending","mapSpecific"],width:1.15f,height:2.1f,response:1b}
+execute if entity @a[scores={kit=1000..1001}] run summon interaction 68 5 69 {Tags:["vending","mapSpecific"],width:1.15f,height:2.1f,response:1b}
+execute if entity @a[scores={kit=1000..1001}] run summon interaction 45 7 65 {Tags:["vending","mapSpecific"],width:1.15f,height:2.1f,response:1b}
+execute if entity @a[scores={kit=1000..1001}] run summon interaction 42 5 43 {Tags:["vending","mapSpecific"],width:1.15f,height:2.1f,response:1b}
 
 summon painting 68 5 70 {facing:0b,Invulnerable:1b,Tags:["mapSpecific"],variant:"minecraft:wanderer"}
 summon painting 67 6 45 {facing:2b,Invulnerable:1b,Tags:["mapSpecific"],variant:"minecraft:wanderer"}

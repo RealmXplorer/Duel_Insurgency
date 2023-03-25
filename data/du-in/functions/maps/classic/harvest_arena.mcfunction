@@ -24,10 +24,10 @@ summon marker 1289 8 1285 {Tags:["ventBlock","mapSpecific"]}
 summon marker 1272 7 1272 {Tags:["ventBlock","mapSpecific"]}
 
 #Thanksgiving Vending Machines#
-execute if entity @a[scores={kit=1000..1001}] run summon wandering_trader 1258.9 9 1275.5 {Silent:1b,Invulnerable:1b,PersistenceRequired:1b,NoAI:1b,Tags:["vending","mapSpecific"],Offers:{}}
-execute if entity @a[scores={kit=1000..1001}] run summon wandering_trader 1275.5 9 1292.1 {Silent:1b,Invulnerable:1b,PersistenceRequired:1b,NoAI:1b,Tags:["vending","mapSpecific"],Offers:{}}
-execute if entity @a[scores={kit=1000..1001}] run summon wandering_trader 1292.1 9 1275.5 {Silent:1b,Invulnerable:1b,PersistenceRequired:1b,NoAI:1b,Tags:["vending","mapSpecific"],Offers:{}}
-execute if entity @a[scores={kit=1000..1001}] run summon wandering_trader 1275.5 9 1258.9 {Silent:1b,Invulnerable:1b,PersistenceRequired:1b,NoAI:1b,Tags:["vending","mapSpecific"],Offers:{}}
+execute if entity @a[scores={kit=1000..1001}] run summon interaction 1258 9 1275 {Tags:["vending","mapSpecific"],width:1.15f,height:2.1f,response:1b}
+execute if entity @a[scores={kit=1000..1001}] run summon interaction 1275 9 1292 {Tags:["vending","mapSpecific"],width:1.15f,height:2.1f,response:1b}
+execute if entity @a[scores={kit=1000..1001}] run summon interaction 1292 9 1275 {Tags:["vending","mapSpecific"],width:1.15f,height:2.1f,response:1b}
+execute if entity @a[scores={kit=1000..1001}] run summon interaction 1275 9 1258 {Tags:["vending","mapSpecific"],width:1.15f,height:2.1f,response:1b}
 
 summon painting 1275 9 1259 {facing:0b,Invulnerable:1b,Tags:["mapSpecific"],variant:"minecraft:wanderer"}
 summon painting 1259 9 1275 {facing:3b,Invulnerable:1b,Tags:["mapSpecific"],variant:"minecraft:wanderer"}

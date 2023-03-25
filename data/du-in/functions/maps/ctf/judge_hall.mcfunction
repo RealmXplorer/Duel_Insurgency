@@ -14,12 +14,9 @@ summon marker 248 4 413 {Tags:["ctfFlag","blueFlag","mapSpecific"]}
 execute at @e[type=marker,tag=blueFlag] run setblock ~ ~ ~ blue_banner destroy
 execute at @e[type=marker,tag=redFlag] run setblock ~ ~ ~ red_banner destroy
 
-execute if entity @a[scores={kit=1000..1001}] run summon wandering_trader 253.5 4 425.9 {Silent:1b,Invulnerable:1b,PersistenceRequired:1b,NoAI:1b,Tags:["vending","mapSpecific"],Offers:{}}
-execute if entity @a[scores={kit=1000..1001}] run summon wandering_trader 242.5 4 516.1 {Silent:1b,Invulnerable:1b,PersistenceRequired:1b,NoAI:1b,Tags:["vending","mapSpecific"],Offers:{}}
-execute if entity @a[scores={kit=1000..1001}] run summon wandering_trader 260.5 5 447.9 {Silent:1b,Invulnerable:1b,PersistenceRequired:1b,NoAI:1b,Tags:["vending","mapSpecific"],Offers:{}}
-execute if entity @a[scores={kit=1000..1001}] run summon wandering_trader 258.1 5 501.5 {Silent:1b,Invulnerable:1b,PersistenceRequired:1b,NoAI:1b,Tags:["vending","mapSpecific"],Offers:{}}
+#Vending Machines#
+execute if entity @a[scores={kit=1000..1001}] run summon interaction 253 4 426 {Tags:["vending","mapSpecific"],width:1.15f,height:2.1f,response:1b}
+execute if entity @a[scores={kit=1000..1001}] run summon interaction 242 4 515 {Tags:["vending","mapSpecific"],width:1.15f,height:2.1f,response:1b}
 
 summon painting 253 4 425 {facing:2b,Invulnerable:1b,Tags:["mapSpecific"],variant:"minecraft:wanderer"}
 summon painting 242 4 516 {facing:0b,Invulnerable:1b,Tags:["mapSpecific"],variant:"minecraft:wanderer"}
-summon painting 260 5 447 {facing:2b,Invulnerable:1b,Tags:["mapSpecific"],variant:"minecraft:wanderer"}
-summon painting 258 5 501 {facing:3b,Invulnerable:1b,Tags:["mapSpecific"],variant:"minecraft:wanderer"}

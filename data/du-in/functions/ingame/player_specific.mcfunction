@@ -100,7 +100,7 @@ execute at @e[type=minecraft:marker,tag=spawnPoint,sort=nearest] facing entity @
 execute if entity @s[scores={yharimTimer=..0}] run function du-in:kit/yharim/ability/timer_reset
 
 #Use vending Machine#
-execute if entity @a[scores={kit=1000..1001}] if entity @s[scores={ksMachineUse=1..}] run function du-in:kit/saac/vending/init
+#execute if entity @a[scores={kit=1000..1001}] if entity @s[scores={ksMachineUse=1..}] run function du-in:kit/saac/vending/init
 
 #Peep the Horror
     execute if entity @a[scores={kit=1002},tag=playing] run scoreboard players remove @s[scores={jermaTimer=-1..}] jermaTimer 1
