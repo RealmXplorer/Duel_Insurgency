@@ -13,6 +13,6 @@ particle minecraft:cloud ~ ~1 ~ 0.30 .30 0.30 0 10 force
 playsound minecraft:entity.ender_dragon.growl master @a ~ ~ ~ .5 .85
 
 clear @s minecraft:carrot_on_a_stick
-xp set @s 380 levels
+xp set @s[tag=!stolen] 380 levels
 tag @s[tag=stolen] add kitDone
 tag @s remove kitActions

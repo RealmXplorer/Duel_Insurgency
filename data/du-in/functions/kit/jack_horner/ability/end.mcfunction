@@ -11,4 +11,6 @@ tag @s remove crystalBall
 tag @s remove poisonApple
 tag @s remove phoenix
 tag @s remove hornerWeapon
+tag @s remove ethicalBug
+tag @s remove midasHand
 scoreboard players reset @s crossbowShoot

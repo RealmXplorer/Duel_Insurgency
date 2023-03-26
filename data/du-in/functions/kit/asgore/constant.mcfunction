@@ -12,10 +12,6 @@ scoreboard players reset @s[scores={trident=1..}] trident
 execute if entity @s[tag=thrown,scores={tridentTimer=0..}] run scoreboard players remove @s tridentTimer 1
 execute if entity @s[tag=thrown,scores={tridentTimer=..0}] run function du-in:kit/asgore/passive/return
 
-#ASGORE PARTICLES#
-execute if entity @s[tag=kitParticles] run function du-in:kit/asgore/particle
-tag @s[tag=kitParticles] remove kitParticles
-
 #Ability item
 item replace entity @s[level=1] weapon.offhand with minecraft:carrot_on_a_stick{display:{Name:'{"text":"Firewall","color":"gold","bold":true,"italic":false,"underlined":false,"strikethrough":false,"obfuscated":false}',Lore:['{"text":"Right click to activate!","color":"dark_purple","bold":true}','[{"text":""}]','{"text":"Summons a wall of ","color":"dark_gray"}','{"text":"fire at the position ","color":"dark_gray"}','{"text":"you are looking.","color":"dark_gray"}']},HideFlags:1,Enchantments:[{id:"minecraft:protection",lvl:1s}],CustomModelData:113,weaponItem:1b}
 

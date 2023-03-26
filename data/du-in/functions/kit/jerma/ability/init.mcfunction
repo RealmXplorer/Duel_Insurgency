@@ -8,6 +8,6 @@ execute as @a[tag=horrorStart] at @s run function du-in:kit/jerma/particle
 execute as @a[tag=playing,gamemode=!spectator,tag=!working] unless score @a[scores={kit=1002},tag=kitActions,limit=1] team = @s team run tag @a remove horrorStart
 
 clear @s minecraft:carrot_on_a_stick
-xp set @s 600 levels
+xp set @s[tag=!stolen] 600 levels
 effect give @s minecraft:speed 3 1 true
 tag @s remove kitActions

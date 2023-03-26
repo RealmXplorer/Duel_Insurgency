@@ -6,5 +6,5 @@ execute positioned ^ ^ ^1.25 run function du-in:kit/cuphead/ability/raycast
 
 scoreboard players remove @s cardPower 5
 clear @s minecraft:paper 1
-xp set @s 200 levels
+xp set @s[tag=!stolen] 200 levels
 clear @s carrot_on_a_stick

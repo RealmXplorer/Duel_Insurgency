@@ -12,20 +12,20 @@ execute if score #main blueFlagTimer matches 0.. run scoreboard players remove #
 execute as @a[tag=flagGot] run function du-in:ingame/ctf/flag_have
 
 #FLAG GRABS#
-execute unless entity @a[tag=flagGot,tag=team2] unless entity @e[tag=redFlagItem] at @e[type=marker,tag=redFlag,limit=1] run execute as @a[tag=team2,distance=..1,tag=!spectating] run function du-in:ingame/ctf/red_captured
-execute unless entity @a[tag=flagGot,tag=team1] unless entity @e[tag=blueFlagItem] at @e[type=marker,tag=blueFlag,limit=1] run execute as @a[tag=team1,distance=..1,tag=!spectating] run function du-in:ingame/ctf/blue_captured
+execute unless entity @a[tag=flagGot,tag=team2] unless entity @e[tag=redFlagItem] at @e[type=marker,tag=redFlag,limit=1] run execute as @a[tag=team2,distance=..1,tag=!spectating] run function du-in:ingame/ctf/red/red_captured
+execute unless entity @a[tag=flagGot,tag=team1] unless entity @e[tag=blueFlagItem] at @e[type=marker,tag=blueFlag,limit=1] run execute as @a[tag=team1,distance=..1,tag=!spectating] run function du-in:ingame/ctf/blue/blue_captured
 
 #FLAG CAPTURES#
-execute if entity @a[tag=flagGot,tag=team1] at @e[type=marker,tag=redFlag,limit=1] run execute as @a[tag=team1,distance=..1,tag=flagGot] run function du-in:ingame/ctf/red_score
-execute if entity @a[tag=flagGot,tag=team2] at @e[type=marker,tag=blueFlag,limit=1] run execute as @a[tag=team2,distance=..1,tag=flagGot] run function du-in:ingame/ctf/blue_score
+execute if entity @a[tag=flagGot,tag=team1] at @e[type=marker,tag=redFlag,limit=1] run execute as @a[tag=team1,distance=..1,tag=flagGot] run function du-in:ingame/ctf/red/red_score
+execute if entity @a[tag=flagGot,tag=team2] at @e[type=marker,tag=blueFlag,limit=1] run execute as @a[tag=team2,distance=..1,tag=flagGot] run function du-in:ingame/ctf/blue/blue_score
 
 #FLAG RETURNS#
-execute if entity @e[type=marker,tag=redFlag,tag=captured] unless entity @a[tag=flagGot,tag=team2] if score #main redFlagTimer matches ..0 run function du-in:ingame/ctf/red_return
-execute if entity @e[type=marker,tag=blueFlag,tag=captured] unless entity @a[tag=flagGot,tag=team1] if score #main blueFlagTimer matches ..0 run function du-in:ingame/ctf/blue_return
+execute if entity @e[type=marker,tag=redFlag,tag=captured] unless entity @a[tag=flagGot,tag=team2] if score #main redFlagTimer matches ..0 run function du-in:ingame/ctf/red/red_return
+execute if entity @e[type=marker,tag=blueFlag,tag=captured] unless entity @a[tag=flagGot,tag=team1] if score #main blueFlagTimer matches ..0 run function du-in:ingame/ctf/blue/blue_return
 
 #FLAG GETS#
-execute if score #main blueFlagCooldown matches ..0 at @e[tag=blueFlagItem] run execute as @a[tag=team1,distance=..1,tag=!teamDead] run function du-in:ingame/ctf/blue_flag_get
-execute if score #main redFlagCooldown matches ..0 at @e[tag=redFlagItem] run execute as @a[tag=team2,distance=..1,tag=!teamDead] run function du-in:ingame/ctf/red_flag_get
+execute if score #main blueFlagCooldown matches ..0 at @e[tag=blueFlagItem] run execute as @a[tag=team1,distance=..1,tag=!teamDead] run function du-in:ingame/ctf/blue/blue_flag_get
+execute if score #main redFlagCooldown matches ..0 at @e[tag=redFlagItem] run execute as @a[tag=team2,distance=..1,tag=!teamDead] run function du-in:ingame/ctf/red/red_flag_get
 
 #CLOSE TO END#
 execute if entity @a[tag=!ctfClose] if score #main bluePoints >= #main ctfClose run function du-in:ingame/ctf/close

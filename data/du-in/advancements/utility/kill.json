@@ -10,6 +10,6 @@
         }
     },
     "rewards": {
-        "function": "du-in:ingame/kill/kill"
+        "function": "du-in:kit/all/kill/kill"
     }
 }

@@ -66,8 +66,8 @@ scoreboard players set @a gameKills 0
 tag @a remove ready
 tag @a remove teamPicked
 tag @a remove countStop
-schedule function du-in:ingame/other/one_sec_loop 1s
-schedule function du-in:ingame/other/five_loop 5s
+schedule function du-in:ingame/scheduled/one_sec_loop 1s
+schedule function du-in:ingame/scheduled/five_loop 5s
 execute as @a run function du-in:lobby/item_reset
 tag @a remove noItem
 tag @a remove kitMenu

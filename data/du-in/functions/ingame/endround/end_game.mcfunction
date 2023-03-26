@@ -1,8 +1,8 @@
 #Announce winners
-title @a[tag=!teamMode,tag=!falseWin,tag=!lobby] title {"text":"","bold":true,"color":"gold","extra":[{"selector":"@a[tag=win,tag=!falseWin]"}]}
-execute if entity @a[tag=team1,tag=win,tag=!falseWin] run title @a title [{"text":"RED TEAM","bold":true,"color":"red"}]
-execute if entity @a[tag=team2,tag=win,tag=!falseWin] run title @a title [{"text":"BLUE TEAM","bold":true,"color":"blue"}]
-title @a[tag=!falseWin,tag=!lobby] subtitle {"text":"WINS","color":"gold"}
+title @a[tag=!teamMode,tag=!falseWin,tag=!lobby,tag=!voidLose,tag=!void] title {"text":"","bold":true,"color":"gold","extra":[{"selector":"@a[tag=win,tag=!falseWin,tag=!void]"}]}
+execute if entity @a[tag=team1,tag=win,tag=!falseWin,tag=!voidLose,tag=!void] run title @a title [{"text":"RED TEAM","bold":true,"color":"red"}]
+execute if entity @a[tag=team2,tag=win,tag=!falseWin,tag=!voidLose,tag=!void] run title @a title [{"text":"BLUE TEAM","bold":true,"color":"blue"}]
+title @a[tag=!falseWin,tag=!lobby,tag=!voidLose,tag=!void] subtitle {"text":"WINS","color":"gold"}
 title @a times 5 120 5
 
 #Stop abilities
@@ -26,17 +26,18 @@ execute if entity @a[tag=falseWin] run scoreboard players set #main endTime 5
 
 #Anyone who does not have win tag, give lose.
 tag @a[tag=!win] add lose
+tag @a[tag=voidLose] add lose
 
 #Add exp and levels to players
-execute as @a[tag=!ranMode,tag=!falseWin,tag=!spectating] at @s run function du-in:other/levels
+execute as @a[tag=!ranMode,tag=!falseWin,tag=!spectating,tag=!voidLose] at @s run function du-in:other/levels
 
 #Give achievements
-advancement grant @a[tag=win,tag=!falseWin,tag=!spectating] only du-in:win
-advancement grant @a[tag=cIngame,tag=win,tag=!falseWin,tag=!spectating] only du-in:cwin
-advancement grant @a[tag=ctfIngame,tag=win,tag=!falseWin,tag=!spectating] only du-in:ctfwin
-advancement grant @a[tag=dmIngame,tag=win,tag=!falseWin,tag=!spectating] only du-in:dmwin
-advancement grant @a[tag=cqIngame,tag=win,tag=!falseWin,tag=!spectating] only du-in:conqwin
-advancement grant @a[tag=kothIngame,tag=win,tag=!falseWin,tag=!spectating] only du-in:kothwin
+advancement grant @a[tag=win,tag=!falseWin,tag=!spectating,tag=!voidLose] only du-in:win
+advancement grant @a[tag=cIngame,tag=win,tag=!falseWin,tag=!spectating,tag=!voidLose] only du-in:cwin
+advancement grant @a[tag=ctfIngame,tag=win,tag=!falseWin,tag=!spectating,tag=!voidLose] only du-in:ctfwin
+advancement grant @a[tag=dmIngame,tag=win,tag=!falseWin,tag=!spectating,tag=!voidLose] only du-in:dmwin
+advancement grant @a[tag=cqIngame,tag=win,tag=!falseWin,tag=!spectating,tag=!voidLose] only du-in:conqwin
+advancement grant @a[tag=kothIngame,tag=win,tag=!falseWin,tag=!spectating,tag=!voidLose] only du-in:kothwin
 #advancement grant @a[tag=exIngame,tag=win,tag=!falseWin,tag=!spectating] only du-in:exwin
 
 #Replace CTF Flags
@@ -62,10 +63,10 @@ kill @e[type=armor_stand,tag=papyrusBone]
 kill @e[type=marker,tag=kyloHitPos]
 
 #Play sounds for ending
-execute if entity @a[tag=partyLeader,tag=aprilFools] as @a[tag=win] at @s run playsound minecraft:soundeffect.laugh master @a ~ ~ ~ 100000 1
-execute unless entity @a[tag=partyLeader,tag=aprilFools] as @a[tag=win,tag=!aprilFools,tag=!falseWin,tag=!stolen] unless entity @s[scores={team=1..}] at @s run function du-in:kit/all/winline
+execute if entity @a[tag=partyLeader,tag=aprilFools] as @a[tag=win,tag=!void,tag=!voidLose] at @s run playsound minecraft:soundeffect.laugh master @a ~ ~ ~ 100000 1
+execute unless entity @a[tag=partyLeader,tag=aprilFools] as @a[tag=win,tag=!aprilFools,tag=!falseWin,tag=!stolen,tag=!void,tag=!voidLose] unless entity @s[scores={team=1..}] at @s run function du-in:kit/all/winline
 
-execute if entity @a[scores={team=1..}] at @r run function du-in:kit/all/win_music/start
+execute if entity @a[scores={team=1..},tag=!void,tag=!voidLose] at @r run function du-in:kit/all/win_music/start
 
 #End function
 tag @a add endSeq

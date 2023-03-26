@@ -1,6 +1,6 @@
 #End one and five second Loops#
-schedule clear du-in:ingame/other/one_sec_loop
-schedule clear du-in:ingame/other/five_loop
+schedule clear du-in:ingame/scheduled/one_sec_loop
+schedule clear du-in:ingame/scheduled/five_loop
 
 #DELAY 1#
 tag @a remove startgame
@@ -17,7 +17,7 @@ tag @a remove classicEnd
 #advancement grant @a[tag=win,tag=!falseWin,scores={kit=9..16}] only du-in:undertalewin
 #advancement grant @a[tag=win,tag=!falseWin,scores={kit=17..23}] only du-in:starwarswin
 #advancement grant @a[tag=win,tag=!falseWin,scores={kit=24..32}] only du-in:zootopiawin
-advancement grant @a[tag=win,tag=!falseWin,scores={kit=1000..1007}] only du-in:unlockwin
+advancement grant @a[tag=win,tag=!falseWin,scores={kit=1000..1007},tag=!voidLose] only du-in:unlockwin
 advancement grant @a[scores={Wins=100..}] only du-in:unstop
 advancement grant @a[scores={Wins=250..}] only du-in:champion
 advancement grant @a[scores={Wins=500..}] only du-in:champion
@@ -141,7 +141,7 @@ scoreboard players reset * saacMoneyChance
 scoreboard players set #main kitOnline 0
 
 #DELAY 5#
-tag @a[tag=win,tag=!falseWin] add wonGame
+tag @a[tag=win,tag=!falseWin,tag=!voidLose] add wonGame
 tag @a[tag=spectating] add wasSpect
 tag @a remove dmIngame
 tag @a remove ctfIngame
@@ -153,8 +153,8 @@ tag @a remove team1
 tag @a remove team2
 scoreboard players reset @e teamCount
 scoreboard players add @a[tag=!spectating,tag=!falseWin] gamesPlayed 1
-scoreboard players add @a[tag=win,tag=!falseWin] Wins 1
-scoreboard players add @a[tag=win,tag=!falseWin] winStreak 1
+scoreboard players add @a[tag=win,tag=!falseWin,tag=!voidLose] Wins 1
+scoreboard players add @a[tag=win,tag=!falseWin,tag=!voidLose] winStreak 1
 scoreboard players set @a[tag=lose,tag=!spectating] winStreak 0
 tag @a remove spectating
 tag @a remove killstreak3
@@ -175,7 +175,7 @@ tag @a remove chungus
 tag @a remove saul
 tag @a remove dmBlueFinale
 tag @a remove dmRedFinale
-tag @a remove kitParticles
+#tag @a remove kitParticles
 tag @a remove kitSounds
 tag @a remove countStop
 xp set @a 0 levels
@@ -382,4 +382,11 @@ title @a[tag=partyLeader] actionbar {"text":"Open inventory for more options!","
 execute as @a run function du-in:lobby/item_reset
 tag @a add givenStats
 clear @a
+tag @a remove void
 scoreboard players reset @a[tag=lobby] killStreakDeaths
+
+#scoreboard players reset #main gonersKilled
+scoreboard players reset #main gonersCount
+
+scoreboard players reset @a gonersKilled
+tag @a remove voidLose

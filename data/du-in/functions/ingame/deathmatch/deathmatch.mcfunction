@@ -8,7 +8,7 @@ execute as @a[tag=dmIngame,scores={Lives=..1},tag=!dmClose] run function du-in:i
 execute if score #main playerCount matches 2 run function du-in:ingame/deathmatch/finale
 
 #TEAM DEATHMATCH STUFF#
-execute if entity @a[tag=teamMode] run function du-in:ingame/deathmatch/teams
+execute if entity @a[tag=teamMode] run function du-in:ingame/deathmatch/team/teams
 
 #DEATHMATCH ENDING#
 execute if score #main playerCount matches 1 run function du-in:ingame/deathmatch/end

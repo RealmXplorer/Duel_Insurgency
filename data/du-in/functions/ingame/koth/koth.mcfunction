@@ -1,8 +1,8 @@
 #DEFAULT KOTH#
-execute if entity @a[tag=!teamMode] run function du-in:ingame/koth/default
+execute if entity @a[tag=!teamMode] run function du-in:ingame/koth/default/default
 
 #TEAM KOTH#
-execute if entity @a[tag=teamMode] run function du-in:ingame/koth/teams
+execute if entity @a[tag=teamMode] run function du-in:ingame/koth/team/teams
 
 #MUSIC#
 execute as @a[tag=kothIngame,tag=!startgame,tag=!saac,tag=!bigChungus,tag=!saul] at @s run function du-in:music/ingame/koth

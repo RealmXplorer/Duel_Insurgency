@@ -16,7 +16,7 @@ execute if entity @s[level=1..2,tag=!lobby,tag=!win,tag=!lose,tag=!kitMenu] unle
     execute if entity @s[predicate=du-in:is_sneaking] run function du-in:ingame/is_sneaking
     execute if entity @s[predicate=!du-in:is_sneaking] run function du-in:ingame/is_not_sneaking
 
-    execute if entity @s[tag=parryStart] run function du-in:kit/all/parry_buffer
+    execute if entity @s[tag=parryStart] run function du-in:kit/all/parry/parry_buffer
     #execute if entity @s[predicate=du-in:is_sneaking,tag=!gasterInvisible,gamemode=adventure,tag=!inField] unless entity @s[scores={floweyHitTimer=0..}] unless entity @s[scores={gasterTimer=0..}] run effect give @s minecraft:glowing 1 0 true
     #execute if entity @s[predicate=!du-in:is_sneaking,tag=!gasterInvisible,gamemode=adventure,tag=!inField,tag=!flagGot] run effect clear @s minecraft:glowing
     #execute if entity @s[scores={floweyHitTimer=0..},tag=inField] run effect give @s minecraft:glowing 1 0 true
@@ -94,7 +94,7 @@ execute if entity @s[scores={sansHitTimer=0..}] run function du-in:kit/sans/abil
 
 
 #Set spawnpoints
-execute at @e[type=minecraft:marker,tag=spawnPoint,sort=nearest] facing entity @r[tag=playing] eyes run spawnpoint @s[tag=!grave,tag=!teamMode] ~ ~ ~ ~
+execute at @e[type=minecraft:marker,tag=spawnPoint,sort=nearest] facing entity @r[tag=playing] eyes run spawnpoint @s[tag=!grave,tag=!teamMode,tag=!void] ~ ~ ~ ~
 
 #End Yharim Ability
 execute if entity @s[scores={yharimTimer=..0}] run function du-in:kit/yharim/ability/timer_reset

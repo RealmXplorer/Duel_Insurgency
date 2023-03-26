@@ -7,6 +7,6 @@ particle minecraft:dust .75 0 1 2 ~ ~ ~ 2 2 2 2 50
 particle minecraft:explosion ~ ~1 ~ 0 0 0 2 1
 
 clear @s minecraft:carrot_on_a_stick
-xp set @s 400 levels
+xp set @s[tag=!stolen] 400 levels
 tag @s[tag=stolen] add kitDone
 tag @s remove kitActions

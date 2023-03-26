@@ -15,7 +15,7 @@ execute positioned ^4 ^ ^ if entity @s[distance=..25] run function du-in:kit/dea
 #Remove ability from hand
 clear @s minecraft:carrot_on_a_stick
 #Start cooldown
-xp set @s 340 levels
+xp set @s[tag=!stolen] 340 levels
 
 #Switch villager back to their ability
 tag @s[tag=stolen] add kitDone

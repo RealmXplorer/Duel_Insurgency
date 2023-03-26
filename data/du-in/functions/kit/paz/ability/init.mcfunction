@@ -31,7 +31,7 @@ effect give @s strength 2 0 true
 clear @s minecraft:carrot_on_a_stick
 
 #Start cooldown
-xp set @s 600 levels
+xp set @s[tag=!stolen] 600 levels
 
 #Remove PAZ teleport exemption
 tag @s remove hacker

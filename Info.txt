@@ -11,7 +11,7 @@ Some functions for the character are kept in the "du-in/functions/kit/all/" fold
 	Deathsounds are kept in "du-in/functions/kit/all/deathsound"
 	Win voicelines are kept in "du-in/functions/kit/all/winline"
 	Inflicting damage kept in "du-in/functions/kit/all/hit"
-	Necessary functions for resetting character data on death happens in "du-in/functions/ingame/kill/death"
+	Necessary functions for resetting character data on death happens in "du-in/functions/kit/all/kill/death"
 
 Some outside functions are needed for certain aspects to characters
 	"du-in/functions/main/player_specific" contains "random" value, which limits random character selection pool. (if a character is added, it will need to be increased from 26)

@@ -9,6 +9,23 @@
             "trigger": "minecraft:entity_hurt_player",
 
             "conditions": {
+                "entity": {
+
+                    "equipment": {
+
+                        "mainhand": {
+
+                            "item": "minecraft:stick",
+
+                            "nbt": "{CustomModelData:105}"
+
+                        }
+
+                    },
+
+                    "type": "minecraft:player"
+
+                },
 
                 "damage": {
 
