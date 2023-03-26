@@ -4,6 +4,9 @@ advancement revoke @s only du-in:utility/hit_player
 scoreboard players set @s comboHitTimer 0
 scoreboard players add @s comboScore 1
 
+#execute if entity @s[tag=voidReady] run tellraw @a [{"text":"The Void reaffirms its grasp...","bold":true,"color":"red"}]
+#tag @s remove voidReady
+
 #Combos Sounds
 execute if entity @s[scores={comboScore=3..},tag=playing] run function du-in:kit/all/combo_sounds/init
 

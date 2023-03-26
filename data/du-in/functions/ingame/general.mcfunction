@@ -1,4 +1,7 @@
 #   Run GAMEMODES  #
+scoreboard players set #main voidReadyOnline 0
+execute as @a[tag=!spectating,tag=!working,tag=voidReady] run scoreboard players add #main voidReadyOnline 1
+
     # Classic Functions #
         execute if entity @a[tag=cIngame] run function du-in:ingame/classic/classic
     
@@ -19,7 +22,7 @@
 
     ## HELP ##
         execute if entity @a[tag=void] run function du-in:ingame/void/void
-
+        
 #Give Night Vision on Better End map.
 execute if score #main map matches 12 run effect give @a[tag=cmap,tag=!win,tag=!lose] minecraft:night_vision infinite 1 true
 

@@ -31,3 +31,6 @@ execute if entity @a[scores={kit=1000..1001}] run summon interaction 659 31 -622
 summon painting 675 31 -598 {facing:1b,Invulnerable:1b,Tags:["mapSpecific"],variant:"minecraft:wanderer"}
 summon painting 659 31 -621 {facing:0b,Invulnerable:1b,Tags:["mapSpecific"],variant:"minecraft:wanderer"}
 summon painting 686 31 -580 {facing:2b,Invulnerable:1b,Tags:["mapSpecific"],variant:"minecraft:wanderer"}
+
+#Goner Eye#
+summon interaction 688 32 -577 {Tags:["voidLock","mapSpecific"],width:0.6f,height:0.6f,response:1b}

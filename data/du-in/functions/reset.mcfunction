@@ -1,6 +1,6 @@
 #End one and five second Loops#
 schedule clear du-in:ingame/scheduled/one_sec_loop
-schedule clear du-in:ingame/scheduled/five_loop
+#schedule clear du-in:ingame/scheduled/five_loop
 
 #DELAY 1#
 tag @a remove startgame
@@ -108,7 +108,7 @@ tag @a remove dmClose
 #execute as @a run scoreboard players operation @s compScore += @s killDeathRatio
 
 #DELAY 4#
-execute unless entity @a[tag=partyLeader,tag=sidebarDisplay] run scoreboard objectives setdisplay sidebar Kills
+execute if entity @a[tag=partyLeader,tag=!timeFree,tag=!sidebarDisplay] run scoreboard objectives setdisplay sidebar Kills
 scoreboard players reset @a[tag=!working] kit
 tag @a[tag=!working] remove playing
 
@@ -376,17 +376,19 @@ scoreboard players reset @a ambience
 #END ROUND#
 #tp @a[tag=!working] -999 13 517 -90 0
 #spawnpoint @a -999 13 517
-title @a[tag=partyLeader] title {"text":"","color":"red","bold":true}
-title @a[tag=partyLeader] subtitle {"text":"Open inventory for more options!","color":"red","bold":true}
-title @a[tag=partyLeader] actionbar {"text":"Open inventory for more options!","color":"red","bold":true}
+title @a[tag=partyLeader,tag=!timeFree] title {"text":"","color":"red","bold":true}
+title @a[tag=partyLeader,tag=!timeFree] subtitle {"text":"Open inventory for more options!","color":"red","bold":true}
+title @a[tag=partyLeader,tag=!timeFree] actionbar {"text":"Open inventory for more options!","color":"red","bold":true}
 execute as @a run function du-in:lobby/item_reset
 tag @a add givenStats
 clear @a
 tag @a remove void
 scoreboard players reset @a[tag=lobby] killStreakDeaths
+tag @a remove voidReady
 
 #scoreboard players reset #main gonersKilled
 scoreboard players reset #main gonersCount
 
+scoreboard players reset @a realDeath
 scoreboard players reset @a gonersKilled
 tag @a remove voidLose

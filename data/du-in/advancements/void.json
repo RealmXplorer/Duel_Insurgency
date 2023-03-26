@@ -1,0 +1,23 @@
+{
+    "display": {
+        "title": {
+            "text": "The Void"
+        },
+        "description": {
+            "text": "Enter the void, and discover the true nature of this multiverse"
+        },
+        "icon": {
+            "item": "minecraft:black_concrete"
+        },
+        "frame": "goal",
+        "show_toast": true,
+        "announce_to_chat": true,
+        "hidden": false
+    },
+    "criteria": {
+        "void": {
+            "trigger": "minecraft:impossible"
+        }
+    },
+    "parent": "du-in:root"
+}

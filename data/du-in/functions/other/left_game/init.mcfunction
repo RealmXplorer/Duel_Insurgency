@@ -30,6 +30,10 @@ execute if entity @a[tag=partyLeader,tag=lobby] run function du-in:other/left_ga
 execute if entity @a[tag=partyLeader,tag=playing] run function du-in:other/left_game/in_game
 execute if entity @a[tag=partyLeader,tag=spectating] run function du-in:other/left_game/in_game
 
+#If Party Leader is Free or Not
+execute if entity @a[tag=partyLeader,tag=free] run function du-in:other/left_game/free
+execute if entity @a[tag=partyLeader,tag=!free] run function du-in:other/left_game/trapped
+
 #MATCH PLAYER TO PARTY LEADER'S RANDOM MODE#
 execute if entity @a[tag=partyLeader,tag=ranMode] run tag @s add ranMode
 execute unless entity @a[tag=partyLeader,tag=ranMode] run tag @s remove ranMode

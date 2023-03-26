@@ -29,7 +29,7 @@ scoreboard players add #main kitWheel 1
 execute if score #main kitWheel matches 22.. run scoreboard players set #main kitWheel 1
 
 #Give all in Lobby health#
-effect give @a[tag=!playing] minecraft:instant_health 100 100 true
+effect give @a[tag=!playing] minecraft:instant_health infinite 100 true
 ##The not playing tag is important for if a player joins mid-match.
 
 #Start game#

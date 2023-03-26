@@ -3,7 +3,7 @@ scoreboard players set #main gonerCount 0
 execute as @e[type=skeleton,tag=gonerThing] run scoreboard players add #main gonerCount 1
 
 #Spawn enemies
-execute unless entity @a[scores={gonersKilled=30..}] if score #main gonerCount matches ..5 if predicate du-in:half_chance positioned 108 5 -107 run function du-in:ingame/void/spawn/start
+execute unless entity @a[scores={gonersKilled=30..}] if score #main gonerCount matches ..5 positioned 108 5 -107 run function du-in:ingame/void/spawn/start
 
 #Music
 execute as @a[tag=void,tag=!win] run function du-in:music/void/void
@@ -21,5 +21,6 @@ execute store result score Insurgents matchDeaths run scoreboard players get #ma
 
 #Win and Lose conditions
 execute if entity @a[tag=!win,scores={gonersKilled=30..}] run function du-in:ingame/void/win
+execute if entity @a[scores={gonersKilled=30..}] run function du-in:ingame/void/explode
 
 execute if score #main matchDeaths matches 2.. unless entity @a[tag=win] run function du-in:ingame/void/lose

@@ -46,3 +46,6 @@ summon painting 25 10 2534 {facing:3b,Invulnerable:1b,Tags:["mapSpecific"],varia
 summon painting -29 8 2519 {facing:0b,Invulnerable:1b,Tags:["mapSpecific"],variant:"minecraft:wanderer"}
 summon painting -10 8 2473 {facing:3b,Invulnerable:1b,Tags:["mapSpecific"],variant:"minecraft:wanderer"}
 summon painting 21 8 2486 {facing:3b,Invulnerable:1b,Tags:["mapSpecific"],variant:"minecraft:wanderer"}
+
+#Goner Eye#
+summon interaction -44 8 2480 {Tags:["voidLock","mapSpecific"],width:0.6f,height:0.6f,response:1b}

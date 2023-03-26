@@ -33,3 +33,5 @@ summon painting 2519 6 2529 {facing:3b,Invulnerable:1b,Tags:["mapSpecific"],vari
 summon painting 2519 6 2505 {facing:3b,Invulnerable:1b,Tags:["mapSpecific"],variant:"minecraft:wanderer"}
 summon painting 2539 6 2505 {facing:1b,Invulnerable:1b,Tags:["mapSpecific"],variant:"minecraft:wanderer"}
 summon painting 2539 6 2529 {facing:1b,Invulnerable:1b,Tags:["mapSpecific"],variant:"minecraft:wanderer"}
+
+summon interaction 2542 7 2534 {Tags:["voidLock","mapSpecific"],width:0.6f,height:0.6f,response:1b}

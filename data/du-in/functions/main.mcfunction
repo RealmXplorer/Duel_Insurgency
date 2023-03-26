@@ -12,10 +12,13 @@
     # Run when game ends #
         execute if entity @a[tag=win,tag=!endSeq] run function du-in:ingame/endround/end_game
         execute if score #main endTime matches 5 run function du-in:reset
-        execute if score #main endTime matches ..1 run function du-in:ingame/endround/end_time
+        execute if score #main endTime matches ..1 unless score #main pylonsDestroyed matches 4.. run function du-in:ingame/endround/end_time
+        execute if score #main endTime matches ..1 if score #main pylonsDestroyed matches 4.. run function du-in:ingame/void/free/start
 
     #Execute as All players
         execute as @a at @s run function du-in:main/player_specific
+
+    execute if entity @a[tag=free] run function du-in:ingame/void/free/general
 
 # CONSTANTLY RUNNING FUNCTIONS #
     # Stop Music and Ambient sounds #
