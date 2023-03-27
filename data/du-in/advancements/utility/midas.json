@@ -6,27 +6,9 @@
 
         "midas": {
 
-            "trigger": "minecraft:player_hurt_entity",
+            "trigger": "minecraft:entity_hurt_player",
 
             "conditions": {
-
-                "entity": {
-
-                    "equipment": {
-
-                        "mainhand": {
-
-                            "item": "minecraft:stick",
-
-                            "nbt": "{CustomModelData:105}"
-
-                        }
-
-                    },
-
-                    "type": "minecraft:player"
-
-                },
 
                 "damage": {
 
@@ -42,7 +24,11 @@
 
                             }
 
-                        }
+                        },
+
+                        "type": "minecraft:player",
+
+                        "nbt": "{Tags:[\"midasHand\"]}"
 
                     }
 
@@ -56,8 +42,9 @@
 
     "rewards": {
 
-        "function": "du-in:kit/jack_horner/ability/midas/use"
+        "function": "du-in:kit/jack_horner/ability/midas/touch"
 
     }
 
 }
+

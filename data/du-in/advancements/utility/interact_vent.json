@@ -11,6 +11,6 @@
     }
   },
   "rewards": {
-    "function": "du-in:maps/vents/run"
+    "function": "du-in:ingame/vents/run"
   }
 }

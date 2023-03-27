@@ -22,9 +22,6 @@ execute as @a[tag=!spectating,tag=!working,tag=voidReady] run scoreboard players
 
     ## HELP ##
         execute if entity @a[tag=void] run function du-in:ingame/void/void
-        
-#Give Night Vision on Better End map.
-execute if score #main map matches 12 run effect give @a[tag=cmap,tag=!win,tag=!lose] minecraft:night_vision infinite 1 true
 
 # General Functions #
     # Random death  Mode clear #
@@ -42,8 +39,6 @@ execute if score #main map matches 12 run effect give @a[tag=cmap,tag=!win,tag=!
 
     #Make timer count down
         execute if score #main titleTimer2 matches -99.. run function du-in:ingame/startround/timer/timer
-
-#execute positioned as @e[type=marker,tag=ventBlock] run function du-in:maps/vents/init
 
 
 

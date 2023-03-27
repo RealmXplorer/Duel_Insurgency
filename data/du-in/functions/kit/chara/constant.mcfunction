@@ -13,7 +13,6 @@ execute if entity @s[tag=!stolen,tag=!teamDead] unless entity @s[scores={weapCou
 execute if entity @s[tag=armor,tag=!stolen] run function du-in:kit/chara/armor
 
 execute if entity @s[level=1] run function du-in:kit/chara/ability/item
-#scoreboard players set @a[tag=charaFear] music 0
 
 attribute @s[tag=!stolen] minecraft:generic.movement_speed base set 0.125
 #.11

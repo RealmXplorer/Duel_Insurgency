@@ -1,5 +1,5 @@
 #DEFAULT#
-item replace entity @s armor.head with minecraft:player_head{display:{Name:"{\"text\":\"Creeper\"}"},SkullOwner:MHF_Creeper,weaponItem:1b}
+item replace entity @s armor.head with minecraft:player_head{display:{Name:"{\"text\":\"Creeper\"}"},SkullOwner:{Id:[I;-288171773,-902673209,-1287927237,-605975132],Properties:{textures:[{Value:"eyJ0ZXh0dXJlcyI6eyJTS0lOIjp7InVybCI6Imh0dHA6Ly90ZXh0dXJlcy5taW5lY3JhZnQubmV0L3RleHR1cmUvZjQyNTQ4MzhjMzNlYTIyN2ZmY2EyMjNkZGRhYWJmZTBiMDIxNWY3MGRhNjQ5ZTk0NDQ3N2Y0NDM3MGNhNjk1MiJ9fX0="}]}},weaponItem:1b}
 item replace entity @s armor.chest with minecraft:leather_chestplate{Unbreakable:1,HideFlags:4,display:{Name:'{"text":"Creeper Chest"}',color:8439583},weaponItem:1b} 1
 item replace entity @s armor.legs with minecraft:leather_leggings{Unbreakable:1,HideFlags:4,display:{Name:'{"text":"Creeper Legs"}',color:8439583},weaponItem:1b} 1
 item replace entity @s armor.feet with minecraft:leather_boots{Unbreakable:1,HideFlags:4,display:{Name:'{"text":"Creeper Feet"}',color:9211020},weaponItem:1b} 1

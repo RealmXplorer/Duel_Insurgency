@@ -22,7 +22,7 @@ execute as @a run function du-in:music/lobby/stop/lobby
 scoreboard players set #main endTime 140
 
 #End game immediately if shutdown
-execute if entity @a[tag=falseWin] run scoreboard players set #main endTime 5
+#execute if entity @a[tag=falseWin] run scoreboard players set #main endTime 5
 
 #Anyone who does not have win tag, give lose.
 tag @a[tag=!win] add lose
@@ -34,7 +34,7 @@ execute as @a[tag=!ranMode,tag=!falseWin,tag=!spectating,tag=!voidLose] at @s ru
 #Give achievements
 advancement grant @a[tag=win,tag=!falseWin,tag=!spectating,tag=!voidLose] only du-in:win
 advancement grant @a[tag=cIngame,tag=win,tag=!falseWin,tag=!spectating,tag=!voidLose] only du-in:cwin
-advancement grant @a[tag=ctfIngame,tag=win,tag=!falseWin,tag=!spectating,tag=!voidLose] only du-in:ctfwin
+advancement grant @a[tag=ctfIngame,tag=win,tag=!falseWin,tag=!spectating,tag=!voidLose] only du-in:ctf/ctfwin
 advancement grant @a[tag=dmIngame,tag=win,tag=!falseWin,tag=!spectating,tag=!voidLose] only du-in:dmwin
 advancement grant @a[tag=cqIngame,tag=win,tag=!falseWin,tag=!spectating,tag=!voidLose] only du-in:conqwin
 advancement grant @a[tag=kothIngame,tag=win,tag=!falseWin,tag=!spectating,tag=!voidLose] only du-in:kothwin

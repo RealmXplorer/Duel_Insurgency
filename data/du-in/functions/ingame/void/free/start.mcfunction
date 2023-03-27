@@ -16,6 +16,6 @@ team leave @a
 tp @a 7974 7 265
 spawnpoint @a 7974 7 265
 
-advancement grant @a[tag=!spectating] only du-in:origins
+advancement grant @a[tag=!spectating] only du-in:void/origins
 
 scoreboard players reset #main endTime

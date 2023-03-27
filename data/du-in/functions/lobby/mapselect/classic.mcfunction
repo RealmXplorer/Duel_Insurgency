@@ -7,9 +7,9 @@ summon minecraft:item 228 92 22 {NoGravity:1b,Age:-32768,Health:99999,PickupDela
 summon marker 230 91 22 {Tags:["mapVote","displayItem","vote13"]} 
 
 
-#Better End
-summon area_effect_cloud 228 92 24 {Duration:2147483647,Tags:["displayItem"],CustomNameVisible:1b,CustomName:"{\"text\":\"Better End\",\"color\":\"dark_purple\",\"bold\":true}"}
-summon minecraft:item 228 92 24 {NoGravity:1b,Age:-32768,Health:99999,PickupDelay:32767,Tags:["mapLabel","displayItem"],Item:{id:"minecraft:end_stone",Count:1b}}
+#Wishing Star
+summon area_effect_cloud 228 92 24 {Duration:2147483647,Tags:["displayItem"],CustomNameVisible:1b,CustomName:"{\"text\":\"Wishing Star\",\"color\":\"dark_purple\",\"bold\":true}"}
+summon minecraft:item 228 92 24 {NoGravity:1b,Age:-32768,Health:99999,PickupDelay:32767,Tags:["mapLabel","displayItem"],Item:{id:"minecraft:nether_star",Count:1b}}
 summon marker 230 91 24 {Tags:["mapVote","displayItem","vote12"]} 
 
 #Mountain Castle

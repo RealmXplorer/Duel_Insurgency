@@ -30,9 +30,11 @@ execute if entity @a[tag=partyLeader,tag=lobby] run function du-in:other/left_ga
 execute if entity @a[tag=partyLeader,tag=playing] run function du-in:other/left_game/in_game
 execute if entity @a[tag=partyLeader,tag=spectating] run function du-in:other/left_game/in_game
 
+execute if entity @a[tag=partyLeader,tag=void] run function du-in:other/left_game/in_void
+
 #If Party Leader is Free or Not
 execute if entity @a[tag=partyLeader,tag=free] run function du-in:other/left_game/free
-execute if entity @a[tag=partyLeader,tag=!free] run function du-in:other/left_game/trapped
+execute if entity @a[tag=partyLeader,tag=!free,tag=!playing,tag=!spectating,tag=!lobby] run function du-in:other/left_game/trapped
 
 #MATCH PLAYER TO PARTY LEADER'S RANDOM MODE#
 execute if entity @a[tag=partyLeader,tag=ranMode] run tag @s add ranMode
@@ -45,6 +47,7 @@ execute unless entity @a[scores={lobby=3},tag=partyLeader] run bossbar set minec
 function du-in:lobby/item_reset
 
 #Set music to 0 for player who left
+stopsound @s record
 scoreboard players set @s music 0
 #tag @s remove online
 

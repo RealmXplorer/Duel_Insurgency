@@ -1,0 +1,33 @@
+{
+
+  "__comment": "Made with TheDestruc7i0n's advancements generator: https://advancements.thedestruc7i0n.ca",
+
+  "criteria": {
+
+      "killgoner": {
+
+          "trigger": "minecraft:player_killed_entity",
+
+          "conditions": {
+
+              "entity": {
+
+                  "type": "minecraft:skeleton",
+
+                  "nbt": "{Tags:[\"gonerEye\"]}"
+
+              }
+
+          }
+
+      }
+
+  },
+
+  "rewards": {
+
+      "function": "du-in:ingame/void/goner/eye_kill"
+
+  }
+
+}

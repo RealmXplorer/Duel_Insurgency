@@ -28,7 +28,7 @@
     # Give Quickplay Item #
         execute if entity @s[scores={lobby=3},nbt=!{Inventory:[{tag:{fixedItem:1b},id:"minecraft:carrot_on_a_stick",Slot:4b}]},tag=!teamMode] run function du-in:lobby/item/quick
 
- #execute if entity @s[tag=mapRandom] run function du-in:maps/random
+ #execute if entity @s[tag=mapRandom] run function du-in:maps/start/random
 
 # Map Select Timer Announcements #
     execute if score #main mapCountdown matches 200 run function du-in:lobby/timers/map/ten
@@ -66,7 +66,7 @@ execute as @e[type=marker,tag=mapVote] at @s run function du-in:lobby/mapselect/
     
     #Random Count Reset#
         scoreboard players set @s[scores={cMapRandom=16..}] cMapRandom 1
-        scoreboard players set @s[scores={kMapRandom=7..}] kMapRandom 1
+        scoreboard players set @s[scores={kMapRandom=9..}] kMapRandom 1
         scoreboard players set @s[scores={ctfMapRandom=5..}] ctfMapRandom 1
         scoreboard players set @s[scores={cqMapRandom=1..}] cqMapRandom 1
         #scoreboard players set @s[scores={exMapRandom=3..}] exMapRandom 1

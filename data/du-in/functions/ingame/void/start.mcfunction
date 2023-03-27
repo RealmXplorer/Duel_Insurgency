@@ -24,7 +24,7 @@ execute positioned 113 5 -91 run playsound minecraft:block.end_portal.spawn mast
 execute positioned 113 5 -91 run playsound minecraft:block.bell.use master @a ~ ~ ~ 1 0.75
 execute positioned 113 5 -91 run playsound minecraft:block.amethyst_block.hit master @a ~ ~ ~ 1 1.5
 
-advancement grant @a[gamemode=!spectator] only du-in:void
+advancement grant @a[gamemode=!spectator] only du-in:void/void
 
 execute unless score #main matchDeaths matches 1.. run scoreboard players set Insurgents matchDeaths 0
 #execute store result score Insurgents matchDeaths run scoreboard players get #main matchDeaths

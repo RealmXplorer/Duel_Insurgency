@@ -19,3 +19,5 @@ execute if entity @a[tag=partyLeader,tag=cql] run tag @s add cql
 #execute if entity @a[tag=partyLeader,tag=exl] run tag @s add exl
 execute if entity @a[tag=partyLeader,tag=cmap] run tag @s add cmap
 execute if entity @a[tag=partyLeader,tag=kitMenu,tag=lobby] run tag @s add kitMenu
+
+stopsound @s record

@@ -386,9 +386,13 @@ tag @a remove void
 scoreboard players reset @a[tag=lobby] killStreakDeaths
 tag @a remove voidReady
 
+tag @a remove midasHand
+tag @a remove ethicalBug
+
 #scoreboard players reset #main gonersKilled
 scoreboard players reset #main gonersCount
 
 scoreboard players reset @a realDeath
 scoreboard players reset @a gonersKilled
 tag @a remove voidLose
+tag @a remove phoenix

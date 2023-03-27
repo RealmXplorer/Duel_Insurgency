@@ -14,7 +14,7 @@ title @a subtitle {"text":""}
 
 #Pick random map#
 tag @r[tag=!working] add voteRandom
-execute as @a[tag=voteRandom] run function du-in:maps/random
+execute as @a[tag=voteRandom] run function du-in:maps/start/random
 
 #Reset map countdown timer
 scoreboard players reset #main mapCountdown

@@ -33,9 +33,10 @@ summon marker 232 91 36 {Tags:["mapVote","displayItem","voteRand"]}
 
 
 
-#Harvest
-#summon area_effect_cloud 236 92 30 {Duration:2147483647,Tags:["displayItem"],CustomNameVisible:1b,CustomName:"{\"text\":\"Harvest\",\"color\":\"#e06e16\",\"bold\":true}"}
-#summon minecraft:item 236 92 30 {NoGravity:1b,Age:-32768,Health:99999,PickupDelay:32767,Tags:["mapLabel","displayItem"],Item:{id:"minecraft:jack_o_lantern",Count:1b}}
+#Chancel
+summon area_effect_cloud 236 92 30 {Duration:2147483647,Tags:["displayItem"],CustomNameVisible:1b,CustomName:"{\"text\":\"Chancel\",\"color\":\"white\",\"bold\":true}"}
+summon minecraft:item 236 92 30 {NoGravity:1b,Age:-32768,Health:99999,PickupDelay:32767,Tags:["mapLabel","displayItem"],Item:{id:"minecraft:stone_brick_wall",Count:1b}}
+summon marker 234 91 30 {Tags:["mapVote","displayItem","vote8"]}
 
 #Pride Rock
 summon area_effect_cloud 236 92 28 {Duration:2147483647,Tags:["displayItem"],CustomNameVisible:1b,CustomName:"{\"text\":\"Pride Rock\",\"color\":\"gray\",\"bold\":true}"}
