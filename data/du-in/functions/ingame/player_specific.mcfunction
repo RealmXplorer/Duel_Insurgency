@@ -17,10 +17,6 @@ execute if entity @s[level=1..2,tag=!lobby,tag=!win,tag=!lose,tag=!kitMenu] unle
     execute if entity @s[predicate=!du-in:is_sneaking] run function du-in:ingame/is_not_sneaking
 
     execute if entity @s[tag=parryStart] run function du-in:kit/all/parry/parry_buffer
-    #execute if entity @s[predicate=du-in:is_sneaking,tag=!gasterInvisible,gamemode=adventure,tag=!inField] unless entity @s[scores={floweyHitTimer=0..}] unless entity @s[scores={gasterTimer=0..}] run effect give @s minecraft:glowing 1 0 true
-    #execute if entity @s[predicate=!du-in:is_sneaking,tag=!gasterInvisible,gamemode=adventure,tag=!inField,tag=!flagGot] run effect clear @s minecraft:glowing
-    #execute if entity @s[scores={floweyHitTimer=0..},tag=inField] run effect give @s minecraft:glowing 1 0 true
-    #execute if entity @s[scores={gasterTimer=0..},tag=inField] run effect give @s minecraft:glowing 1 0 true
 
 
 # REGEN TIMER (Except for Zombie) #
