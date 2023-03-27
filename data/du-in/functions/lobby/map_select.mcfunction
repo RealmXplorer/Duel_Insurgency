@@ -58,11 +58,11 @@ execute as @e[type=marker,tag=mapVote] at @s run function du-in:lobby/mapselect/
 
 #Random Timers#
     #Random count up#
-        scoreboard players add @r[predicate=du-in:half_chance,tag=cmap] cMapRandom 1
-        scoreboard players add @r[predicate=du-in:half_chance,tag=kothl] kMapRandom 1
-        scoreboard players add @r[predicate=du-in:half_chance,tag=ctfl] ctfMapRandom 1
-        scoreboard players add @r[predicate=du-in:half_chance,tag=cql] cqMapRandom 1
-        #scoreboard players add @r[predicate=du-in:half_chance] exMapRandom 1
+        scoreboard players add @r[predicate=du-in:chance/half_chance,tag=cmap] cMapRandom 1
+        scoreboard players add @r[predicate=du-in:chance/half_chance,tag=kothl] kMapRandom 1
+        scoreboard players add @r[predicate=du-in:chance/half_chance,tag=ctfl] ctfMapRandom 1
+        scoreboard players add @r[predicate=du-in:chance/half_chance,tag=cql] cqMapRandom 1
+        #scoreboard players add @r[predicate=du-in:chance/half_chance] exMapRandom 1
     
     #Random Count Reset#
         scoreboard players set @s[scores={cMapRandom=16..}] cMapRandom 1

@@ -1,13 +1,13 @@
 {
     "display": {
         "title": {
-            "text": "Veni, Vidi"
+            "text": "Dang it Bobby!"
         },
         "description": {
-            "text": "Play a round of Conquest"
+            "text": "Play a round of King of the Hill"
         },
         "icon": {
-            "item": "minecraft:red_concrete"
+            "item": "minecraft:gold_block"
         },
         "frame": "task",
         "show_toast": true,
@@ -15,9 +15,9 @@
         "hidden": false
     },
     "criteria": {
-        "conquest": {
+        "koth": {
             "trigger": "minecraft:impossible"
         }
     },
-    "parent": "du-in:classic"
+    "parent": "du-in:gamemode/classic"
 }

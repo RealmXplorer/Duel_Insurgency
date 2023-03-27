@@ -18,4 +18,5 @@ spawnpoint @a 7974 7 265
 
 advancement grant @a[tag=!spectating] only du-in:void/origins
 
+scoreboard objectives setdisplay sidebar
 scoreboard players reset #main endTime

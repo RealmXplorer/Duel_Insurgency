@@ -9,6 +9,6 @@ execute store result score @a[tag=dmIngame] Lives run scoreboard players get @a[
 #tag @a[tag=!working,tag=!musicOff] add song
 team join Deathmatch @a[tag=!spectating]
 execute if entity @a[tag=!teamMode] run execute store result score #main playerCount run team list Deathmatch
-advancement grant @a[tag=playing] only du-in:deathmatch
+advancement grant @a[tag=playing] only du-in:gamemode/deathmatch
 scoreboard objectives setdisplay sidebar Lives
 tag @a remove dml

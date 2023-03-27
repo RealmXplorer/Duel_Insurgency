@@ -8,4 +8,4 @@ xp set @s[tag=!stolen,tag=midasHand] 310 levels
 
 #End ability
 execute if entity @s[tag=midasHand] run function du-in:kit/jack_horner/ability/end
-advancement revoke @s only du-in:utility/touch
+advancement revoke @s only du-in:kit/touch

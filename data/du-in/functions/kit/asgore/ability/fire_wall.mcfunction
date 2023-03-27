@@ -7,7 +7,7 @@ execute as @a[gamemode=!spectator,distance=..1,tag=playing,nbt={Fire:-20s}] at @
 
 #Particle and sounds
 particle minecraft:flame ~ ~1 ~ 0.2 0.4 0.2 0 3 force
-execute if entity @s[tag=audio] run playsound minecraft:block.fire.ambient master @a[predicate=du-in:ten_chance] ~ ~ ~ 10 1
+execute if entity @s[tag=audio] run playsound minecraft:block.fire.ambient master @a[predicate=du-in:chance/ten_chance] ~ ~ ~ 10 1
 
 #Particle and sounds when wall disappears
 execute if entity @s[scores={asgoreFire=..1}] run particle minecraft:large_smoke ~ ~2 ~ 0.1 0.5 0.1 0 20 force

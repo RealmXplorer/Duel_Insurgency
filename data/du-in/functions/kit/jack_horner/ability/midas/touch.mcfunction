@@ -9,4 +9,4 @@ execute at @s run summon minecraft:marker ~ ~ ~ {Tags:["gold","notSet"]}
 scoreboard players set @e[tag=gold,tag=notSet] goldTimer 30
 tag @e[tag=notSet,tag=gold,scores={goldTimer=-1..}] remove notSet
 
-advancement revoke @s only du-in:utility/midas
+advancement revoke @s only du-in:kit/midas

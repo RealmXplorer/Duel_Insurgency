@@ -13,5 +13,5 @@ bossbar set conquest:red visible true
 #team join Red @a[scores={team=1},tag=!AFK]
 #team join Blue @a[scores={team=2},tag=!AFK]
 scoreboard objectives setdisplay sidebar capturePoints
-advancement grant @a[tag=playing] only du-in:conquest
+advancement grant @a[tag=playing] only du-in:gamemode/conquest
 tag @a remove cql

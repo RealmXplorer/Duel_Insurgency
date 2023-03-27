@@ -1,23 +1,23 @@
 {
     "display": {
         "title": {
-            "text": "Whole 'lotta Diamonds"
+            "text": "Vici"
         },
         "description": {
-            "text": "Earn 500 diamonds while playing Duel: Insurgency"
+            "text": "Win a round of Conquest"
         },
         "icon": {
-            "item": "minecraft:diamond_block"
+            "item": "minecraft:blue_concrete"
         },
         "frame": "task",
         "show_toast": true,
         "announce_to_chat": true,
-        "hidden": false
+        "hidden": true
     },
     "criteria": {
-        "diamondblock": {
+        "conqwin": {
             "trigger": "minecraft:impossible"
         }
     },
-    "parent": "du-in:diamond"
+    "parent": "du-in:gamemode/conquest"
 }

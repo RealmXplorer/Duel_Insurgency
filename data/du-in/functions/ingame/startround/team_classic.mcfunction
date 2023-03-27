@@ -14,5 +14,5 @@ scoreboard objectives setdisplay sidebar classicTeamKills
 #execute if entity @a[tag=!teamMode] run bossbar set bossbar:classic visible true
 bossbar set minecraft:classicred visible true
 bossbar set minecraft:classicblue visible true
-advancement grant @a[tag=playing] only du-in:classic
+advancement grant @a[tag=playing] only du-in:gamemode/classic
 tag @a remove cl

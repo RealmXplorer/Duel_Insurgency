@@ -1,4 +1,4 @@
-advancement revoke @s only du-in:clairen
+advancement revoke @s only du-in:scrapped/clairen
 #tag @s add saberRaycast
 
 #execute at @s anchored eyes positioned ^ ^ ^ run function du-in:kit/clairen/saber/raycast

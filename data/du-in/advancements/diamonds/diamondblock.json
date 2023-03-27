@@ -1,23 +1,23 @@
 {
     "display": {
         "title": {
-            "text": "Victory Royale"
+            "text": "Whole 'lotta Diamonds"
         },
         "description": {
-            "text": "Win a round of Deathmatch"
+            "text": "Earn 500 diamonds while playing Duel: Insurgency"
         },
         "icon": {
-            "item": "minecraft:poppy"
+            "item": "minecraft:diamond_block"
         },
         "frame": "task",
         "show_toast": true,
         "announce_to_chat": true,
-        "hidden": true
+        "hidden": false
     },
     "criteria": {
-        "dmwin": {
+        "diamondblock": {
             "trigger": "minecraft:impossible"
         }
     },
-    "parent": "du-in:deathmatch"
+    "parent": "du-in:diamonds/diamond"
 }

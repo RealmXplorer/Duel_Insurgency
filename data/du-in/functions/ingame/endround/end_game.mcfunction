@@ -32,12 +32,12 @@ tag @a[tag=voidLose] add lose
 execute as @a[tag=!ranMode,tag=!falseWin,tag=!spectating,tag=!voidLose] at @s run function du-in:other/levels
 
 #Give achievements
-advancement grant @a[tag=win,tag=!falseWin,tag=!spectating,tag=!voidLose] only du-in:win
-advancement grant @a[tag=cIngame,tag=win,tag=!falseWin,tag=!spectating,tag=!voidLose] only du-in:cwin
-advancement grant @a[tag=ctfIngame,tag=win,tag=!falseWin,tag=!spectating,tag=!voidLose] only du-in:ctf/ctfwin
-advancement grant @a[tag=dmIngame,tag=win,tag=!falseWin,tag=!spectating,tag=!voidLose] only du-in:dmwin
-advancement grant @a[tag=cqIngame,tag=win,tag=!falseWin,tag=!spectating,tag=!voidLose] only du-in:conqwin
-advancement grant @a[tag=kothIngame,tag=win,tag=!falseWin,tag=!spectating,tag=!voidLose] only du-in:kothwin
+advancement grant @a[tag=win,tag=!falseWin,tag=!spectating,tag=!voidLose] only du-in:gamemode/win
+advancement grant @a[tag=cIngame,tag=win,tag=!falseWin,tag=!spectating,tag=!voidLose] only du-in:gamemode/cwin
+advancement grant @a[tag=ctfIngame,tag=win,tag=!falseWin,tag=!spectating,tag=!voidLose] only du-in:gamemode/ctfwin
+advancement grant @a[tag=dmIngame,tag=win,tag=!falseWin,tag=!spectating,tag=!voidLose] only du-in:gamemode/dmwin
+advancement grant @a[tag=cqIngame,tag=win,tag=!falseWin,tag=!spectating,tag=!voidLose] only du-in:gamemode/conqwin
+advancement grant @a[tag=kothIngame,tag=win,tag=!falseWin,tag=!spectating,tag=!voidLose] only du-in:gamemode/kothwin
 #advancement grant @a[tag=exIngame,tag=win,tag=!falseWin,tag=!spectating] only du-in:exwin
 
 #Replace CTF Flags

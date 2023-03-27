@@ -10,5 +10,5 @@ scoreboard objectives setdisplay sidebar killIngame
 
 team join Classic @a[tag=!spectating,tag=!teamMode,tag=!AFK]
 scoreboard players set @a[tag=!spectating,tag=!working] killIngame 0
-advancement grant @a[tag=playing] only du-in:classic
+advancement grant @a[tag=playing] only du-in:gamemode/classic
 tag @a remove cl

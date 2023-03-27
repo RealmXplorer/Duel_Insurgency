@@ -1,24 +1,23 @@
 {
     "display": {
         "title": {
-            "text": "Legends Never Die"
+            "text": "Battle Royale?"
         },
         "description": {
-            "text": "Win with a legendary kit"
+            "text": "Play a round of Deathmatch"
         },
         "icon": {
-            "item": "minecraft:warped_fungus_on_a_stick",
-            "nbt": "{CustomModelData:2001}"
+            "item": "minecraft:wither_rose"
         },
         "frame": "task",
         "show_toast": true,
         "announce_to_chat": true,
-        "hidden": true
+        "hidden": false
     },
     "criteria": {
-        "unlockwin": {
+        "deathmatch": {
             "trigger": "minecraft:impossible"
         }
     },
-    "parent": "du-in:unlock"
+    "parent": "du-in:gamemode/classic"
 }

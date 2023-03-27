@@ -1,23 +1,23 @@
 {
     "display": {
         "title": {
-            "text": "Vici"
+            "text": "Veni, Vidi"
         },
         "description": {
-            "text": "Win a round of Conquest"
+            "text": "Play a round of Conquest"
         },
         "icon": {
-            "item": "minecraft:blue_concrete"
+            "item": "minecraft:red_concrete"
         },
         "frame": "task",
         "show_toast": true,
         "announce_to_chat": true,
-        "hidden": true
+        "hidden": false
     },
     "criteria": {
-        "conqwin": {
+        "conquest": {
             "trigger": "minecraft:impossible"
         }
     },
-    "parent": "du-in:conquest"
+    "parent": "du-in:gamemode/classic"
 }

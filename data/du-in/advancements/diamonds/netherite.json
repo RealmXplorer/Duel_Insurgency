@@ -1,23 +1,23 @@
 {
     "display": {
         "title": {
-            "text": "The High Ground"
+            "text": "Top 1%"
         },
         "description": {
-            "text": "Win a round of King of the Hill"
+            "text": "Earn 5,000 diamonds in Duel: Insurgency"
         },
         "icon": {
-            "item": "minecraft:black_glazed_terracotta"
+            "item": "minecraft:netherite_ingot"
         },
         "frame": "task",
         "show_toast": true,
         "announce_to_chat": true,
-        "hidden": true
+        "hidden": false
     },
     "criteria": {
-        "kothwin": {
+        "netherite": {
             "trigger": "minecraft:impossible"
         }
     },
-    "parent": "du-in:koth"
+    "parent": "du-in:diamonds/diamondblock"
 }

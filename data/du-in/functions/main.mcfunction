@@ -32,7 +32,7 @@
         effect give @a[predicate=!du-in:has_saturation,tag=!notEaten] minecraft:saturation infinite 100 true
 
     #Random kit timer commands#
-        scoreboard players add @r[predicate=du-in:half_chance] random 1
+        scoreboard players add @r[predicate=du-in:chance/half_chance] random 1
         #scoreboard players set @a[scores={random=26..}] random 1
     
     # Countdown during end of game #

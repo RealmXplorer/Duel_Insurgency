@@ -33,7 +33,7 @@ bossbar set minecraft:map_countdown visible false
 #advancement grant @a[tag=!mystery,tag=!mysteryHead,scores={kit=24}] only du-in:zootopia
 #advancement grant @a[tag=!mystery,tag=!mysteryHead,scores={kit=9..16}] only du-in:undertale
 #advancement grant @a[tag=!mystery,tag=!mysteryHead,scores={kit=1..8}] only du-in:minecraft
-advancement grant @a[tag=!mystery,tag=!mysteryHead,scores={kit=1000..1007}] only du-in:unlock
+advancement grant @a[tag=!mystery,tag=!mysteryHead,scores={kit=1000..1007}] only du-in:unlock/unlock
 advancement grant @a[scores={kit=42069}] only du-in:chungus
 #tag @a remove mysteryHead
 execute as @a run attribute @s minecraft:generic.attack_damage base set 1

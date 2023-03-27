@@ -1,23 +1,23 @@
 {
     "display": {
         "title": {
-            "text": "Top 1%"
+            "text": "The Insurgency"
         },
         "description": {
-            "text": "Earn 5,000 diamonds in Duel: Insurgency"
+            "text": "Win a round of Classic"
         },
         "icon": {
-            "item": "minecraft:netherite_ingot"
+            "item": "minecraft:golden_sword"
         },
         "frame": "task",
         "show_toast": true,
         "announce_to_chat": true,
-        "hidden": false
+        "hidden": true
     },
     "criteria": {
-        "netherite": {
+        "cwin": {
             "trigger": "minecraft:impossible"
         }
     },
-    "parent": "du-in:diamondblock"
+    "parent": "du-in:gamemode/classic"
 }

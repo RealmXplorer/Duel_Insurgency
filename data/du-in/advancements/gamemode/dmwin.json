@@ -1,13 +1,13 @@
 {
     "display": {
         "title": {
-            "text": "The Insurgency"
+            "text": "Victory Royale"
         },
         "description": {
-            "text": "Win a round of Classic"
+            "text": "Win a round of Deathmatch"
         },
         "icon": {
-            "item": "minecraft:golden_sword"
+            "item": "minecraft:poppy"
         },
         "frame": "task",
         "show_toast": true,
@@ -15,9 +15,9 @@
         "hidden": true
     },
     "criteria": {
-        "cwin": {
+        "dmwin": {
             "trigger": "minecraft:impossible"
         }
     },
-    "parent": "du-in:classic"
+    "parent": "du-in:gamemode/deathmatch"
 }

@@ -10,5 +10,5 @@ execute if entity @a run scoreboard objectives setdisplay sidebar kothTimer
 
 team join Classic @a[tag=!spectating]
 scoreboard players set @a[tag=!spectating,tag=!working] kothTimer 0
-advancement grant @a[tag=playing] only du-in:koth
+advancement grant @a[tag=playing] only du-in:gamemode/koth
 tag @a remove kothl

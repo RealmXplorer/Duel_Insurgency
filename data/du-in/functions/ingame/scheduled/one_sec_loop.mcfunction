@@ -12,7 +12,7 @@ execute as @a[gamemode=!spectator,tag=playing,tag=!startgame,tag=!magma] unless 
 execute as @a[gamemode=!spectator,tag=playing,tag=!startgame,tag=!pussFear] store result score @s weapCount run clear @s[tag=!kitMenu] #du-in:weapon 0
 
 #Add 1 to score "spawnpoint"
-scoreboard players add @r[tag=playing,gamemode=!spectator,predicate=du-in:half_chance] spawnpoint 1
+scoreboard players add @r[tag=playing,gamemode=!spectator,predicate=du-in:chance/half_chance] spawnpoint 1
 
 execute if score #main matchDeaths matches 8.. if entity @a[scores={kit=28}] run function du-in:kit/death/passive/start
 

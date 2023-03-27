@@ -28,7 +28,7 @@ execute as @a[tag=!spectating,tag=!working,tag=voidReady] run scoreboard players
         execute if entity @a[tag=ranMode] as @e[type=player,tag=deathTest,distance=0..] positioned 216 -100 40 run function du-in:ingame/random_death
 
     # Add 1 to spawnpoint score #
-        #scoreboard players add @r[predicate=du-in:half_chance] spawnpoint 1
+        #scoreboard players add @r[predicate=du-in:chance/half_chance] spawnpoint 1
 
     # SPAM CLICK MODE #
         execute if entity @a[tag=partyLeader,tag=spamClick] as @a[tag=playing] run attribute @s minecraft:generic.attack_speed base set 100
