@@ -34,4 +34,5 @@ summon painting -2491 8 -2462 {facing:3b,Invulnerable:1b,Tags:["mapSpecific"],va
 summon painting -2483 7 -2472 {facing:2b,Invulnerable:1b,Tags:["mapSpecific"],variant:"minecraft:wanderer"}
 
 #Goner Eye#
-summon interaction -2466 9 -2439 {Tags:["voidLock","mapSpecific"],width:0.6f,height:0.6f,response:1b}
+execute unless entity @a[tag=partyLeader,tag=ebbotLock] run summon interaction -2466 9 -2439 {Tags:["voidLock","mapSpecific"],width:0.6f,height:0.6f,response:1b}
+execute if entity @a[tag=partyLeader,tag=ebbotLock] run summon interaction -2466 9 -2439 {Tags:["usedVoidLock","mapSpecific"],width:0.6f,height:0.6f,response:1b}

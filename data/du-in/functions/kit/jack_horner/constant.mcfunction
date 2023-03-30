@@ -30,4 +30,4 @@ scoreboard players set @s[scores={magicCount=8..}] magicCount 1
 attribute @s[tag=!stolen] minecraft:generic.movement_speed base set 0.135
 
 #Base Weight
-attribute @s[tag=!stolen,tag=!pussFear] generic.knockback_resistance base set 0.35
+attribute @s[tag=!stolen,tag=!pussFear,tag=!parry] generic.knockback_resistance base set 0.35

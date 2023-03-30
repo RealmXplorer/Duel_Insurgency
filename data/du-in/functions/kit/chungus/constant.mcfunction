@@ -4,7 +4,7 @@ tag @a[tag=!bigChungus,tag=!legMusicOff,tag=!void] add bigChungus
 tag @s add chungus
 
 #attribute @s minecraft:generic.attack_damage base set 5
-attribute @s minecraft:generic.armor base set 2
+attribute @s[tag=!parry] minecraft:generic.armor base set 2
 
 execute if entity @s[tag=!teamDead,tag=!stolen] unless entity @s[scores={weapCount=1}] run function du-in:kit/chungus/weapon
 

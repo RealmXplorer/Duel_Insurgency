@@ -35,7 +35,7 @@ clear @s[scores={yharimRage=120..},tag=!stolen] minecraft:warped_fungus_on_a_sti
 clear @s[scores={yharimRage=160..},tag=!stolen] minecraft:warped_fungus_on_a_stick{CustomModelData:2012}
 
 #Attributes#
-execute unless entity @s[scores={yharimTimer=1..}] run attribute @s[tag=!stolen,tag=!pussFear] generic.knockback_resistance base set 0.07
+execute unless entity @s[scores={yharimTimer=1..}] run attribute @s[tag=!stolen,tag=!pussFear,tag=!parry] generic.knockback_resistance base set 0.07
 
 attribute @s[tag=!stolen] minecraft:generic.movement_speed base set 0.125
 

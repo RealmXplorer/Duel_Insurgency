@@ -150,3 +150,9 @@ execute if entity @s[scores={deathAbilityTimer=1..}] run function du-in:kit/deat
 execute if entity @s[scores={sabotageTimer=1..}] run function du-in:kit/nick/ability/sabotage_timer
 
 execute if entity @s[scores={pussFearTimer=1..}] run function du-in:kit/puss/ability/fear_timer
+
+execute if entity @s[scores={sansHitTimer=0..}] unless entity @s[scores={gasterTimer=..79}] unless entity @s[scores={deathTimer=0..}] run item replace entity @s armor.chest with minecraft:leather_chestplate{display:{Name:'{"text":"Gravity","color":"blue","bold":true}',color:2228479},Unbreakable:1b,weaponItem:1b,AttributeModifiers:[{AttributeName:"generic.knockbackResistance",Name:"generic.knockbackResistance",Amount:1,Operation:0,UUIDLeast:928037,UUIDMost:684643}]} 1
+
+execute if entity @s[predicate=du-in:ambience/jungle_check,tag=!ambOff] run function du-in:maps/ambient/global/jungle
+
+execute if entity @s[tag=parry,scores={parryDuration=1..}] run function du-in:kit/all/parry/in_parry

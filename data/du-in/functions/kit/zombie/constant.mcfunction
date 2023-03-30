@@ -45,4 +45,4 @@ execute if blocks ~ ~ ~ ~ ~.5 ~ ~ ~-.5 ~ all run tag @s add badBlock
 #Weight#
 attribute @s[tag=!stolen] generic.movement_speed base set 0.135
 #.1075
-attribute @s[tag=!stolen,tag=!pussFear] generic.knockback_resistance base set 0.04
+attribute @s[tag=!stolen,tag=!pussFear,tag=!parry] generic.knockback_resistance base set 0.04

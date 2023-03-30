@@ -1,5 +1,6 @@
 tag @s add ponderOrb
-effect give @r[tag=!ponderOrb] glowing 3 2 true
+tag @r[tag=!ponderOrb] add pondered
+effect give @a[tag=!ponderOrb,tag=pondered] glowing 3 2 true
 tag @s remove ponderOrb
 
 effect give @s speed 3 2 true

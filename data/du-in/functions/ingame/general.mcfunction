@@ -1,6 +1,6 @@
 #   Run GAMEMODES  #
-scoreboard players set #main voidReadyOnline 0
-execute as @a[tag=!spectating,tag=!working,tag=voidReady] run scoreboard players add #main voidReadyOnline 1
+#scoreboard players set #main voidReadyOnline 0
+#execute as @a[tag=!spectating,tag=!working,tag=voidReady] run scoreboard players add #main voidReadyOnline 1
 
     # Classic Functions #
         execute if entity @a[tag=cIngame] run function du-in:ingame/classic/classic
@@ -41,7 +41,7 @@ execute as @a[tag=!spectating,tag=!working,tag=voidReady] run scoreboard players
         execute if score #main titleTimer2 matches -99.. run function du-in:ingame/startround/timer/timer
 
 
-
+tag @a[predicate=du-in:chance/quarter_chance] remove pondered
 
 
 #Clairen ability field functionality

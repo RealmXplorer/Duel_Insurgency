@@ -4,7 +4,7 @@ tag @s[tag=sabotaged] add confusion
 clear @s minecraft:carrot_on_a_stick
 
 xp set @s[tag=!stolen] 600 levels
-tag @s remove confusion
+tag @s[tag=!sabotaged] remove confusion
 
 effect give @s minecraft:resistance 3 0 true
 effect give @s minecraft:speed 3 1 true

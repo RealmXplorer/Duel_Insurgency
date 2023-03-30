@@ -13,4 +13,4 @@ execute at @e[type=minecraft:area_effect_cloud,tag=kothObj] run function du-in:i
 execute if score #main map matches 2 run effect give @a[tag=!win,tag=!lose,predicate=!du-in:effect/has_night_vision] minecraft:night_vision infinite 100 true
 execute if score #main map matches 3 run effect give @a[tag=!win,tag=!lose,predicate=!du-in:effect/has_night_vision] minecraft:night_vision infinite 100 true
 
-execute as @a[tag=kothIngame,tag=!ambOff] at @s run function du-in:music/ambient/koth
+execute as @a[tag=kothIngame,tag=!ambOff] at @s run function du-in:maps/koth

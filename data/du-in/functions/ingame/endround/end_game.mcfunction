@@ -65,6 +65,7 @@ kill @e[type=marker,tag=kyloHitPos]
 #Play sounds for ending
 execute if entity @a[tag=partyLeader,tag=aprilFools] as @a[tag=win,tag=!void,tag=!voidLose] at @s run playsound minecraft:soundeffect.laugh master @a ~ ~ ~ 100000 1
 execute unless entity @a[tag=partyLeader,tag=aprilFools] as @a[tag=win,tag=!aprilFools,tag=!falseWin,tag=!stolen,tag=!void,tag=!voidLose] unless entity @s[scores={team=1..}] at @s run function du-in:kit/all/winline
+execute if entity @a[tag=win,tag=stolen] at @r run function du-in:kit/all/win_music/start
 
 execute if entity @a[scores={team=1..},tag=!void,tag=!voidLose] at @r run function du-in:kit/all/win_music/start
 

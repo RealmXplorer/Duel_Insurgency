@@ -75,3 +75,5 @@ tag @a remove kitMenu
 team join Red @a[scores={team=1}]
 team join Blue @a[scores={team=2}]
 execute if entity @a[scores={kit=21}] at @a[scores={kit=21},limit=1] run playsound minecraft:cuphead.announce.start master @a ~ ~ ~ 10 1
+tag @a remove fromVoid
+scoreboard players set #main voidReadyOnline 0

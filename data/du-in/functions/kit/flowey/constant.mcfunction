@@ -22,7 +22,7 @@ execute if entity @s[tag=!teamDead,tag=!stolen] unless entity @s[scores={floweyH
 
 attribute @s[tag=!stolen] minecraft:generic.movement_speed base set 0.13
 #.105
-attribute @s[tag=!stolen,tag=!pussFear] generic.knockback_resistance base set 0.06
+attribute @s[tag=!stolen,tag=!pussFear,tag=!parry] generic.knockback_resistance base set 0.06
 
 #MY EXPERIMENTS
 #HAVE FAILED YOU

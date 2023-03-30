@@ -21,7 +21,7 @@
         execute if entity @s[scores={kitUseThrow=1..}] run function du-in:other/thrown
 
     #Random kit timer reset#
-	scoreboard players set @s[scores={random=26..}] random 1
+	scoreboard players set @s[scores={random=29..}] random 1
 
     # If a player has left the game #
         execute if entity @s[scores={leaveGame=1..}] run function du-in:other/left_game/init

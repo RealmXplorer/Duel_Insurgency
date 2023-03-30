@@ -18,7 +18,8 @@ execute if entity @s[tag=armor,tag=!stolen] run function du-in:kit/vader/armor
 #Ability#
 item replace entity @s[level=1] weapon.offhand with minecraft:carrot_on_a_stick{display:{Name:'{"text":"Force Grab","color":"gold","bold":true,"italic":false,"underlined":false,"strikethrough":false,"obfuscated":false}',Lore:['{"text":"Right click to activate!","color":"dark_purple","bold":true}','[{"text":""}]','{"text":"I find your lack of","color":"dark_gray"}','{"text":"faith disturbing.","color":"dark_gray"}']},HideFlags:1,Enchantments:[{id:"minecraft:protection",lvl:1s}],CustomModelData:117,weaponItem:1b}
 
-execute if entity @s[tag=kitActions] run function du-in:kit/vader/ability/init
+execute if entity @s[tag=kitActions,tag=!void] run function du-in:kit/vader/ability/init
+execute if entity @s[tag=kitActions,tag=void] run function du-in:kit/vader/ability/void/init
 
 #Attribute#
 #attribute @s[tag=!stolen] generic.movement_speed base set 0.095

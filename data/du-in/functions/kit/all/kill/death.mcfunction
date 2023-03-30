@@ -1,10 +1,14 @@
+title @s title {"text":"  ","color":"red","bold":true}
+title @s subtitle {"text":"  ","color":"red","bold":true}
+
 #Drop flag if player has flag and dies
 execute if entity @s[tag=flagGot] run function du-in:ingame/ctf/flag_death
 
 scoreboard players add #main matchDeaths 1
 execute if entity @s[tag=deathMark] run scoreboard players set #main markTimer 10
 tag @s remove deathMark
-
+tag @s remove pondered
+xp set @s[tag=sabotaged] 120 levels
 tag @s remove sabotaged
 #Summon slimes on death
 execute if entity @s[scores={kit=3},tag=!stolen] run function du-in:kit/slime/death/init

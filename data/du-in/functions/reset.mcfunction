@@ -2,6 +2,8 @@
 schedule clear du-in:ingame/scheduled/one_sec_loop
 #schedule clear du-in:ingame/scheduled/five_loop
 
+advancement revoke @a only du-in:void/interact_void
+
 #DELAY 1#
 tag @a remove startgame
 tag @a remove cl
@@ -178,6 +180,7 @@ tag @a remove dmRedFinale
 #tag @a remove kitParticles
 tag @a remove kitSounds
 tag @a remove countStop
+tag @a remove parry
 xp set @a 0 levels
 scoreboard players set #main classicMost 0
 
@@ -205,7 +208,7 @@ execute as @a run function du-in:music/ingame/stop/all
 ##RESET GAMEPLAY SCORES AND TAGS
 
     #Reset ability use score#
-        scoreboard players reset * abilityUse
+        #scoreboard players reset * abilityUse
 
     #Remove Classic scores and tags#
         tag @a remove closeWin
@@ -334,7 +337,7 @@ tag @a remove peepedHorror
 tag @a remove secKitActions
 tag @a remove sus
 scoreboard players reset @a villagerEmeralds
-execute as @a run function du-in:lobby/actions/stats
+execute as @a[tag=!timeFree] run function du-in:lobby/actions/stats
 tag @a remove maxTP
 tag @a remove rageMeter
 scoreboard players set @a cardPower 0
@@ -351,6 +354,7 @@ tag @a remove fortniteCard
 
 tag @a remove parried
 tag @a remove parryStart
+scoreboard players set @a parryDuration 0
 scoreboard players set @a parryCooldown 0
 
 #Create new gamemode select label
@@ -371,6 +375,7 @@ scoreboard players reset @a pussDeaths
 tag @a remove gatitoBlade
 
 scoreboard players reset @a ambience
+scoreboard players reset @a localAmb
 #WINEND#
 
 #END ROUND#
@@ -380,19 +385,24 @@ title @a[tag=partyLeader,tag=!timeFree] title {"text":"","color":"red","bold":tr
 title @a[tag=partyLeader,tag=!timeFree] subtitle {"text":"Open inventory for more options!","color":"red","bold":true}
 title @a[tag=partyLeader,tag=!timeFree] actionbar {"text":"Open inventory for more options!","color":"red","bold":true}
 execute as @a run function du-in:lobby/item_reset
-tag @a add givenStats
+tag @a[tag=!timeFree] add givenStats
 clear @a
 tag @a remove void
 scoreboard players reset @a[tag=lobby] killStreakDeaths
 tag @a remove voidReady
+scoreboard players set @a voidReadyOnline 0
 
 tag @a remove midasHand
 tag @a remove ethicalBug
+tag @a remove hornerWeapon
 
 #scoreboard players reset #main gonersKilled
 scoreboard players reset #main gonersCount
-
+scoreboard players reset #main leastDeaths
 scoreboard players reset @a realDeath
 scoreboard players reset @a gonersKilled
 tag @a remove voidLose
 tag @a remove phoenix
+
+scoreboard players set @a diedIngame 0
+#tag @a

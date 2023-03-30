@@ -20,7 +20,7 @@ execute if entity @s[scores={gasterTimer=-1..}] run function du-in:kit/gaster/ab
 #Attributes#
 attribute @s[tag=!stolen] minecraft:generic.movement_speed base set 0.13
 #.105
-execute unless entity @s[scores={gasterTimer=1..}] run attribute @s[tag=!stolen,tag=!pussFear] generic.knockback_resistance base set 0.04
+execute unless entity @s[scores={gasterTimer=1..}] run attribute @s[tag=!stolen,tag=!pussFear,tag=!parry] generic.knockback_resistance base set 0.04
 execute if entity @s[scores={gasterTimer=1..}] run attribute @s minecraft:generic.knockback_resistance base set 10
 
 #THIS NEXT EXPERIMENT WILL BE

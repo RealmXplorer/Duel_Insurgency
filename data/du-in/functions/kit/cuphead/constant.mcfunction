@@ -23,7 +23,7 @@ execute if entity @s[tag=!stolen,tag=!teamDead] unless entity @s[scores={secCoun
 #execute if entity @s[tag=!stolen,tag=!teamDead] unless entity @s[scores={secCount=1}] unless entity @s[scores={parryTimer=1..}] run item replace entity @s hotbar.1 with warped_fungus_on_a_stick{display:{Name:'{"text":"Parry","color":"#EF0AFF","bold":true}',Lore:['{"text":"Jump in the air and right click near enemy or projectile to parry!"}']},Unbreakable:1b,CustomModelData:2014,weaponItem:1b} 1
 
 #Check for secondary#
-execute store result score @s[tag=!stolen] secCount run clear @s[tag=!kitMenu] warped_fungus_on_a_stick 0
+execute store result score @s[tag=!stolen,tag=!pussFear] secCount run clear @s[tag=!kitMenu] warped_fungus_on_a_stick 0
 #execute store result score @s[tag=!stolen] secCount run clear @s[tag=!kitMenu] warped_fungus_on_a_stick 0
 
 #Super ability#
@@ -52,4 +52,4 @@ item replace entity @s[scores={cardPower=25..}] hotbar.8 with paper{weaponItem:1
 #Attributes#
 attribute @s[tag=!stolen] minecraft:generic.movement_speed base set 0.13
 
-execute unless entity @a[tag=partyLeader,tag=weightOff] unless entity @s[scores={cupTimer=0..}] run attribute @s[tag=!stolen,tag=!pussFear] generic.knockback_resistance base set 0.02
+execute unless entity @a[tag=partyLeader,tag=weightOff] unless entity @s[scores={cupTimer=0..}] run attribute @s[tag=!stolen,tag=!pussFear,tag=!parry] generic.knockback_resistance base set 0.02

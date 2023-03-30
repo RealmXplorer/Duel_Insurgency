@@ -10,7 +10,8 @@ execute unless entity @s[scores={weapCount=1}] run item replace entity @s[tag=!s
 
 #execute store result score @s[tag=!stolen] weapCount run clear @s[tag=!kitMenu] stone_sword 0
 
-execute if entity @s[tag=kitActions] run function du-in:kit/spider/ability/init
+execute if entity @s[tag=kitActions,tag=!void] run function du-in:kit/spider/ability/init
+execute if entity @s[tag=kitActions,tag=void] run function du-in:kit/spider/ability/void/init
 
 execute if entity @s[tag=armor,tag=!stolen] run function du-in:kit/spider/armor
 
@@ -19,4 +20,4 @@ item replace entity @s[level=1] weapon.offhand with minecraft:carrot_on_a_stick{
 
 attribute @s[tag=!stolen] generic.movement_speed base set 0.135
 #.1225
-attribute @s[tag=!stolen,tag=!pussFear] generic.knockback_resistance base set 0.03
+attribute @s[tag=!stolen,tag=!pussFear,tag=!parry] generic.knockback_resistance base set 0.03

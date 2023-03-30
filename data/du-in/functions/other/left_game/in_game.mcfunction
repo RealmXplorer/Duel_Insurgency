@@ -1,6 +1,8 @@
 #Remove lobby tag from player who left
 tag @s remove lobby
 
+tag @s remove void
+
 #Make player who left (if they weren't in a game) a spectator
 execute if entity @a[tag=partyLeader,tag=!win,tag=!lose] run tag @s[tag=!playing,tag=!spectating,tag=!working,tag=!dmDead] add spectating
 execute if entity @s[tag=spectating] run function du-in:ingame/spect

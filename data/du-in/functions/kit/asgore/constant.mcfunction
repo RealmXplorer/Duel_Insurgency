@@ -28,7 +28,7 @@ execute unless entity @s[scores={tridentTimer=1..}] unless entity @s[scores={tri
 attribute @s[tag=!stolen] minecraft:generic.armor base set 3.5
 attribute @s[tag=!stolen] minecraft:generic.armor_toughness base set 1
 attribute @s[tag=!stolen] minecraft:generic.movement_speed base set 0.125
-attribute @s[tag=!stolen,tag=!pussFear] generic.knockback_resistance base set 0.15
+attribute @s[tag=!stolen,tag=!pussFear,tag=!parry] generic.knockback_resistance base set 0.15
 
 #MY KING
 #TRULY A SHAME

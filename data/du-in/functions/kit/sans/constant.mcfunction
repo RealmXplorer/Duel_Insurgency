@@ -8,7 +8,8 @@ execute if entity @s[tag=!stolen] run attribute @s minecraft:generic.max_health 
 #effect give @s[tag=!stolen] minecraft:speed 1 1 true
 
 #CONSTANTS#
-execute if entity @s[scores={abilityUse=1..}] run function du-in:kit/sans/ability/init
+execute if entity @s[tag=kitActions,tag=!void] run function du-in:kit/sans/ability/init
+execute if entity @s[tag=kitActions,tag=void] run function du-in:kit/sans/ability/void/init
 
 #Armor #
 execute if entity @s[tag=armor,tag=!stolen] run function du-in:kit/sans/armor
@@ -30,5 +31,10 @@ item replace entity @s[level=1] weapon.offhand with minecraft:carrot_on_a_stick{
 attribute @s[tag=!stolen] generic.movement_speed base set 0.15
 #.1425
 
+#Set Sans head to normal
+execute unless entity @s[scores={sansSkin=1..}] run item replace entity @s[level=..164,tag=!stolen] armor.head with minecraft:player_head{display:{Name:"{\"text\":\"Sans\"}"},SkullOwner:{Id:[I;1075612150,944654141,-1270342541,-1555910951],Properties:{textures:[{Value:"eyJ0ZXh0dXJlcyI6eyJTS0lOIjp7InVybCI6Imh0dHA6Ly90ZXh0dXJlcy5taW5lY3JhZnQubmV0L3RleHR1cmUvOTVhZWY4ZDczYzZiM2I5N2Q3YjU3MTZmY2EyMTVmNWViYTY3OTkyMTJkMTFlYjYzZTE1ODg5NDBkMWUyMWI3MyJ9fX0="}]}},weaponItem:1b} 1
+item replace entity @s[tag=!stolen,scores={sansSkin=1},level=..164] armor.head with minecraft:player_head{display:{Name:"{\"text\":\"Sans\"}"},SkullOwner:{Id:[I;-1361811219,-379894067,-1830054592,-906781659],Properties:{textures:[{Value:"eyJ0ZXh0dXJlcyI6eyJTS0lOIjp7InVybCI6Imh0dHA6Ly90ZXh0dXJlcy5taW5lY3JhZnQubmV0L3RleHR1cmUvOThhMjJmZmU1NjdhMzc2ZjliNjcyMjg5M2I4YzczZjJlYzU4YTk1ZGMxMmYxYjY3ZmUzNTUwMTU3ZmQ4NmI2YyJ9fX0="}]}},weaponItem:1b} 1
+
+
 ##Base KB Resistance is 0.
-#attribute @s[tag=!stolen,tag=!pussFear] generic.knockback_resistance base set 0
+#attribute @s[tag=!stolen,tag=!pussFear,tag=!parry] generic.knockback_resistance base set 0

@@ -21,4 +21,4 @@ execute if score #main playerCount matches ..0 run tag @r[tag=dmDead] add win
 #MUSIC#
 execute as @a[tag=dmIngame,tag=!musicOff,tag=!startgame,tag=!saac,tag=!bigChungus] at @s run function du-in:music/ingame/deathmatch
 
-execute as @a[tag=dmIngame,tag=!ambOff] at @s run function du-in:music/ambient/classic
+function du-in:maps/classic

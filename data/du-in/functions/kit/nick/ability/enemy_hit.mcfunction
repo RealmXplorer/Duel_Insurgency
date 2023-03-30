@@ -1,7 +1,10 @@
 #Remove ability
 execute if entity @s[nbt={Inventory:[{id:"minecraft:carrot_on_a_stick"}]}] run function du-in:kit/nick/ability/enemy_has_ability
 
-execute if entity @s[nbt=!{Inventory:[{id:"minecraft:carrot_on_a_stick"}]}] run xp add @s 95 levels
+execute if entity @s[nbt=!{Inventory:[{id:"minecraft:carrot_on_a_stick"}]}] run function du-in:kit/nick/ability/enemy_no_ability
+
+#execute if entity @s[nbt=!{Inventory:[{id:"minecraft:carrot_on_a_stick"}]}] run xp add @s 95 levels
+
 #execute if entity @s[nbt={Inventory:[{id:"minecraft:carrot_on_a_stick"}]}] run tag @s[tag=springLock] add kitActions
 
 particle minecraft:angry_villager ~ ~1 ~ 0.6 .6 0.6 0 25 force

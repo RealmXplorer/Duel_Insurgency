@@ -1,7 +1,7 @@
 scoreboard players remove @s palpTimer 1
 
 particle minecraft:crit ~ ~.5 ~ 0 1 0 0.5 3 force @a
-attribute @s[tag=!deathMark] minecraft:generic.armor base set -2
+attribute @s[tag=!deathMark,tag=!parry] minecraft:generic.armor base set -2
 
 execute if entity @s[scores={palpTimer=..1}] run function du-in:kit/palps/ability/end
 # attribute @s[scores={palpTimer=..1},tag=!deathMark] minecraft:generic.armor base set 0

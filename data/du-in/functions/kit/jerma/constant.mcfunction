@@ -21,6 +21,6 @@ execute if entity @s[tag=kitActions] run function du-in:kit/jerma/ability/init
 #Attributes#
 attribute @s[tag=!stolen] minecraft:generic.movement_speed base set 0.135
 #.11
-attribute @s[tag=!stolen,tag=!pussFear] generic.knockback_resistance base set 0.04
+attribute @s[tag=!stolen,tag=!pussFear,tag=!parry] generic.knockback_resistance base set 0.04
 
 #WHAT THE FUCK#

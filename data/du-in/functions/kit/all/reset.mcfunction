@@ -40,7 +40,7 @@ scoreboard players set @s saacMoney 0
 scoreboard players set @s saacMoneyDollar 0
 scoreboard players set @s vent 0
 scoreboard players set @s ventCooldown 0
-scoreboard players reset @s abilityUse
+#scoreboard players reset @s abilityUse
 scoreboard players reset @s palpsHit
 scoreboard players reset @s asrielHitLand
 scoreboard players reset @s saacHit

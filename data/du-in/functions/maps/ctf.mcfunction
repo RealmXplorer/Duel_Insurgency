@@ -1,0 +1,2 @@
+execute if score #main map matches 1 as @a[tag=!ambOff] at @s run function du-in:maps/ambient/global/cave
+execute if score #main map matches 4 as @a[tag=!ambOff] at @s run function du-in:maps/ambient/global/forest

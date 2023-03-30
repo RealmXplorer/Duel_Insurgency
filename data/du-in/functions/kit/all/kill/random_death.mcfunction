@@ -1,7 +1,13 @@
 #This function runs in Random kit on death
+title @s title {"text":"  ","color":"red","bold":true}
+title @s subtitle {"text":"  ","color":"red","bold":true}
 
 execute if entity @s[scores={kit=3},tag=!stolen] run function du-in:kit/slime/death/init
 
+scoreboard players add #main matchDeaths 1
+execute if entity @s[tag=deathMark] run scoreboard players set #main markTimer 10
+tag @s remove deathMark
+tag @s remove pondered
 execute unless score #main lobbyTheme matches 1.. run function du-in:ingame/killmsg/death/default
 execute if score #main lobbyTheme matches 1 run function du-in:ingame/killmsg/death/halloween
 execute if score #main lobbyTheme matches 2 run function du-in:ingame/killmsg/death/thanks
@@ -27,6 +33,7 @@ scoreboard players reset @s creeperTimer
 scoreboard players reset @s jermaTimer
 scoreboard players reset @s villagerEmeralds
 scoreboard players reset @s ralseiTimer
+scoreboard players reset @s palpTimer
 scoreboard players set @s magmaTimer 1
 scoreboard players set @s[tag=grave,tag=!teamDead] zombieTimer 5
 clear @s minecraft:wither_rose
@@ -34,6 +41,7 @@ clear @s minecraft:wither_rose
 
 #CLEAR TAGS#
 tag @s remove kyloHit
+tag @s remove darwin
 #tag @s remove anakinPulled
 #tag @s remove close
 #tag @s remove lukePulled
@@ -45,6 +53,7 @@ tag @s remove notEaten
 tag @s remove runza
 execute if entity @s[tag=springLock] run function du-in:kit/springtrap/ability/disable
 tag @s remove peepedHorror
+xp set @s[tag=sabotaged] 120 levels
 tag @s remove sabotaged
 
 #Stop Chara jumpscare sound

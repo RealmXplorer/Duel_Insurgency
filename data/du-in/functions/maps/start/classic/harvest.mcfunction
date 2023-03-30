@@ -31,6 +31,8 @@ execute if entity @a[tag=sus] run summon marker -17 8 2472 {Tags:["vent","mapSpe
 execute if entity @a[tag=sus] run summon marker 30 8 2481 {Tags:["vent","mapSpecific"]}
 execute if entity @a[tag=sus] run summon marker 36 9 2534 {Tags:["vent","mapSpecific"]}
 
+summon marker -53 8 2498 {Tags:["riverAmb","mapSpecific"]}
+
 summon interaction -43 8 2527 {Tags:["ventBlock","mapSpecific"],width:1f,height:1.1f,response:1b}
 summon interaction -17 7 2471 {Tags:["ventBlock","mapSpecific"],width:1f,height:1.1f,response:1b}
 summon interaction 29 7 2481 {Tags:["ventBlock","mapSpecific"],width:1f,height:1.1f,response:1b}
@@ -48,4 +50,5 @@ summon painting -10 8 2473 {facing:3b,Invulnerable:1b,Tags:["mapSpecific"],varia
 summon painting 21 8 2486 {facing:3b,Invulnerable:1b,Tags:["mapSpecific"],variant:"minecraft:wanderer"}
 
 #Goner Eye#
-summon interaction -44 8 2480 {Tags:["voidLock","mapSpecific"],width:0.6f,height:0.6f,response:1b}
+execute unless entity @a[tag=partyLeader,tag=harvestLock] run summon interaction -44 8 2480 {Tags:["voidLock","mapSpecific"],width:0.6f,height:0.6f,response:1b}
+execute if entity @a[tag=partyLeader,tag=harvestLock] run summon interaction -44 8 2480 {Tags:["usedVoidLock","mapSpecific"],width:0.6f,height:0.6f,response:1b}

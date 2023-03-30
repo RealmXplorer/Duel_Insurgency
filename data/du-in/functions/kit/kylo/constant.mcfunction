@@ -15,5 +15,5 @@ execute unless entity @s[scores={weapCount=1}] run item replace entity @s[tag=!s
 #execute store result score @s[tag=!stolen] weapCount run clear @s[tag=!kitMenu] wooden_sword 0
 
 #Attributes#
-attribute @s[tag=!stolen,tag=!pussFear] generic.knockback_resistance base set 0.02
+attribute @s[tag=!stolen,tag=!pussFear,tag=!parry] generic.knockback_resistance base set 0.02
 attribute @s[tag=!stolen] generic.movement_speed base set 0.145

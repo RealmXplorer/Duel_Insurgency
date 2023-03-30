@@ -1,3 +1,3 @@
-playsound minecraft:goner.ear.hit voice @a ~ ~ ~ 2 1
+playsound minecraft:goner.ear.hit voice @a ~ ~ ~ 1 1
 
 advancement revoke @s only du-in:void/ear_hurt

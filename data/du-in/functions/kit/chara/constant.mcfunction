@@ -16,7 +16,7 @@ execute if entity @s[level=1] run function du-in:kit/chara/ability/item
 
 attribute @s[tag=!stolen] minecraft:generic.movement_speed base set 0.125
 #.11
-attribute @s[tag=!stolen,tag=!pussFear] generic.knockback_resistance base set 0.035
+attribute @s[tag=!stolen,tag=!pussFear,tag=!parry] generic.knockback_resistance base set 0.035
 
 #A shame the one who looks for me has not yet found me.
 #Maybe, you and I, can find him first.
