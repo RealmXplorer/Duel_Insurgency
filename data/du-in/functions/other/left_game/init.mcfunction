@@ -64,6 +64,8 @@ tag @s remove startgame
 execute if entity @a[tag=partyLeader,tag=!teamMode] run tag @s remove teamMode
 execute if entity @a[tag=partyLeader,tag=teamMode] run tag @s add teamMode
 
+#execute store result score @s pylonNum run scoreboard players get @a[tag=partyLeader,limit=1] pylonNum
+
 #RESET KIT MENU
 scoreboard players set @s kitTheme 1
 function du-in:lobby/item_reset

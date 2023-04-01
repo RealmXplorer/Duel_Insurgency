@@ -22,7 +22,7 @@ scoreboard players set @s tKothScale 0
 scoreboard players set @s ctfScale 0
 scoreboard players set @s conqScale 0
 
-scoreboard players set @s pylonNum 0
+#scoreboard players set @s pylonNum 0
 
 #Initialize sidebar scores
 scoreboard players set @s Wins 0

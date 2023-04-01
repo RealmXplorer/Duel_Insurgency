@@ -8,4 +8,5 @@ title @s title {"text":""}
 title @s subtitle {"text":"🛡 Parry! 🛡","color":"blue"}
 title @s times 0 15 5
 execute if entity @s[tag=!parried] on attacker run function du-in:kit/all/parry/parried
+scoreboard players add @s gameParries 1
 tag @s add parried

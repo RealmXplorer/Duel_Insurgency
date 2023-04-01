@@ -9,6 +9,10 @@ tag @a remove dmIngame
 tag @a remove kothIngame
 tag @a remove ctfIngame
 tag @a remove cqIngame
+tag @a remove team1
+tag @a remove team2
+tag @a remove flagGot
+
 
 tag @a remove saul
 tag @a remove saac
@@ -32,8 +36,8 @@ execute positioned 113 5 -91 run playsound minecraft:soundeffect.voidbell master
 execute positioned 113 5 -91 run playsound minecraft:soundeffect.voidbell master @a ~ ~ ~ 1 1.5
 execute positioned 113 5 -91 run playsound minecraft:soundeffect.voidbell master @a ~ ~ ~ 1 2
 
-scoreboard players set @a[scores={pylonNum=..2}] gonersKilled 30
-scoreboard players set @a[scores={pylonNum=3}] gonersKilled 45
+execute if score #main pylonsDestroyed matches ..2 run scoreboard players set @a gonersKilled 30
+execute if score #main pylonsDestroyed matches 3 run scoreboard players set @a gonersKilled 45
 
 advancement grant @a[gamemode=!spectator] only du-in:void/void
 
@@ -51,6 +55,9 @@ execute if score #main pylonsDestroyed matches 3 run tellraw @a [{"text":"It's t
 scoreboard objectives setdisplay sidebar matchDeaths
 
 scoreboard players set #main wave 1
+
+title @a title " "
+title @a subtitle [{"text":"Wave ","color":"light_purple","bold":true},{"score":{"name":"#main","objective":"wave"},"color":"dark_purple","bold":true},{"text":"/2","color":"dark_purple","bold":true}]
 
 bossbar set gast:pylon name [{"text":"Pylon Stabilization: ","bold":true,"color":"white"},{"score":{"name":"@r","objective":"gonersKilled"},"color":"red"},{"text":" Goners left","color":"gray"}]
 execute store result bossbar gast:pylon max run scoreboard players get @r gonersKilled

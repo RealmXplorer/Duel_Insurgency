@@ -62,6 +62,7 @@ scoreboard players set @a gameDam 0
 scoreboard players set @a gameHit 0
 scoreboard players set @a gameDeaths 0
 scoreboard players set @a gameKills 0
+scoreboard players set @a gameParries 0
 #execute unless entity @a[tag=partyLeader,tag=weatherOff] run gamerule doWeatherCycle true
 tag @a remove ready
 tag @a remove teamPicked

@@ -5,5 +5,7 @@ execute if entity @s[tag=sabotaged] run function du-in:kit/kylo/ability/hit
 xp set @s[tag=!stolen] 360 levels
 clear @s minecraft:carrot_on_a_stick
 
+#execute if entity @s[tag=empower] run scoreboard players add @a[tag=kyloHit,scores={kyloTimer=30}] kyloTimer 20
 tag @s remove sabotaged
+#tag @s remove empower
 tag @s[tag=stolen] add kitDone

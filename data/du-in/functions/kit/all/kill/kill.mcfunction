@@ -29,6 +29,8 @@ execute if entity @a[tag=partyLeader,tag=aprilFools] run playsound minecraft:sou
 #playsound minecraft:block.note_block.basedrum master @s ~ ~ ~ 1 1
 #playsound minecraft:block.chain.place master @s ~ ~ ~ 1 1
 
+execute if entity @s[scores={kit=16},tag=!stolen,predicate=du-in:chance/low_chance] run playsound minecraft:sans.sans master @a ~ ~ ~ 1 1
+
 scoreboard players add @s Diamonds 3
 execute if entity @s[scores={kit=7},tag=!stolen] run give @s minecraft:arrow 2
 execute if entity @s[scores={kit=7},tag=!stolen,predicate=du-in:chance/half_chance] run give @s minecraft:arrow 1

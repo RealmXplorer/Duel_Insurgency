@@ -1,8 +1,8 @@
+execute unless entity @s[tag=sabotaged] run tag @a[distance=0.05..4,gamemode=!spectator,tag=playing,limit=1,sort=nearest,tag=!teamDead] add sansHit
 
-tag @a[distance=0.05..4,gamemode=!spectator,tag=playing,limit=1,sort=nearest,tag=!teamDead] add sansHit
-
+scoreboard players set @s[tag=sabotaged] ralseiTimer 70
 #Leave Kylo force freeze if using ability
-tag @s remove kyloHit
+tag @s[tag=!sabotaged] remove kyloHit
 
 #Summon marker behind afflicted player
 execute at @a[tag=sansHit] rotated as @a[tag=sansHit] run summon minecraft:marker ^ ^ ^-1 {Tags:["sansTp"]}

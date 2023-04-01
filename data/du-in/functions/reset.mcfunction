@@ -371,6 +371,7 @@ tag @a remove deathDouble
 tag @a remove deathAbility
 scoreboard players reset @a deathSwapTimer
 tag @a remove sabotaged
+tag @a remove empower
 scoreboard players reset @a pussDeaths
 tag @a remove gatitoBlade
 
@@ -403,6 +404,7 @@ scoreboard players reset @a realDeath
 scoreboard players reset @a gonersKilled
 tag @a remove voidLose
 tag @a remove phoenix
+tag @a remove caveSpider
 
 scoreboard players set @a diedIngame 0
 #tag @a
