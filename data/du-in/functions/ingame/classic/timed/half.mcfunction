@@ -4,6 +4,7 @@
 #Announce player
 title @a[tag=cIngame,tag=!chalf] actionbar {"text":"Time is halfway up!","color":"gold"}
 
+bossbar set bossbar:gametimer color red
 #Playsound
 #execute at @a as @a run playsound minecraft:block.anvil.use master @s ~ ~ ~ 1 1.15
 execute at @a as @a run playsound minecraft:soundeffect.woosh master @s ~ ~ ~ .5 1

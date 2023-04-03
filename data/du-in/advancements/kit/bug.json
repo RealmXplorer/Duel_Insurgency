@@ -6,26 +6,9 @@
 
         "midas": {
 
-            "trigger": "minecraft:entity_hurt_player",
+            "trigger": "minecraft:player_hurt_entity",
 
             "conditions": {
-                "entity": {
-
-                    "equipment": {
-
-                        "mainhand": {
-
-                            "item": "minecraft:stick",
-
-                            "nbt": "{CustomModelData:105}"
-
-                        }
-
-                    },
-
-                    "type": "minecraft:player"
-
-                },
 
                 "damage": {
 
@@ -41,9 +24,7 @@
 
                             }
 
-                        },
-
-                        "type": "minecraft:player"
+                        }
 
                     }
 

@@ -14,7 +14,8 @@ execute if entity @s[tag=armor,tag=!stolen] run function du-in:kit/golem/armor
 
 execute if entity @s[level=1] run function du-in:kit/golem/ability/item
 
-execute if entity @s[tag=kitActions] run function du-in:kit/golem/ability/init
+execute if entity @s[tag=kitActions,tag=!void] run function du-in:kit/golem/ability/init
+execute if entity @s[tag=kitActions,tag=void] run function du-in:kit/golem/ability/void/init
 
 #GOLEM#
 #attribute @s[tag=!stolen] generic.movement_speed base set 0.1

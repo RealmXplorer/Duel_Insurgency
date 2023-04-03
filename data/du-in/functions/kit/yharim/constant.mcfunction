@@ -22,7 +22,8 @@ item replace entity @s[level=1] weapon.offhand with minecraft:carrot_on_a_stick{
 execute if entity @s[tag=kitActions] run function du-in:kit/yharim/ability/init
 
 #Add Yharim Rage#
-execute if entity @s[gamemode=!spectator,tag=!rageMeter,tag=!stolen] if entity @a[distance=0.05..3.5,tag=playing,gamemode=!spectator] unless score @a[distance=0.05..3.5,tag=playing,gamemode=!spectator,limit=1] team = @s team run scoreboard players add @s yharimRage 1
+execute if entity @s[gamemode=!spectator,tag=!rageMeter,tag=!stolen,tag=!void] if entity @a[distance=0.05..3.5,tag=playing,gamemode=!spectator] unless score @a[distance=0.05..3.5,tag=playing,gamemode=!spectator,limit=1] team = @s team run scoreboard players add @s yharimRage 1
+execute if entity @s[gamemode=!spectator,tag=!rageMeter,tag=!stolen,tag=void] if entity @e[type=skeleton,tag=gonerThing,distance=0.05..3.5] run scoreboard players add @s yharimRage 1
 
 #Fully Charge Rage#
 execute if entity @s[scores={yharimRage=200..},tag=!rageMeter] run function du-in:kit/yharim/charged_rage

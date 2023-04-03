@@ -65,5 +65,15 @@ execute store result bossbar gast:pylon max run scoreboard players get @r goners
 scoreboard players set @a team 1
 team join Insurgent @a
 
+bossbar set bossbar:gametimer visible false
+bossbar set du-in:redctf visible false
+bossbar set du-in:bluectf visible false
+bossbar set conquest:red visible false
+bossbar set conquest:blue visible false
+bossbar set minecraft:bluekoth visible false
+bossbar set minecraft:redkoth visible false
+bossbar set minecraft:classicblue visible false
+bossbar set minecraft:classicred visible false
+
 bossbar set gast:pylon players @a
 bossbar set gast:pylon visible true

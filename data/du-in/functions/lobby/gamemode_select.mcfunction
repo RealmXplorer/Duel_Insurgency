@@ -28,6 +28,9 @@
     # Random Mode Item # (FUNCTIONALITY RUNS THROUGH ITEM FUNCTION)
         execute if entity @s[nbt=!{Inventory:[{tag:{fixedItem:1b},id:"minecraft:rabbit_foot",Slot:20b}]},tag=!working,gamemode=!creative,tag=partyLeader,tag=!subLobby] run function du-in:lobby/item/random_mode
 
+    # Timed Mode Item # (FUNCTIONALITY RUNS THROUGH ITEM FUNCTION)
+        execute if entity @s[nbt=!{Inventory:[{tag:{fixedItem:1b},id:"minecraft:iron_ingot",Slot:22b}]},tag=!working,gamemode=!creative,tag=partyLeader,tag=!subLobby] run function du-in:lobby/item/timed_mode
+
     # Team Mode Item #
         #execute if entity @s[tag=partyLeader,nbt=!{Inventory:[{tag:{fixedItem:1b},id:"minecraft:carrot_on_a_stick",Slot:2b}]}] run function du-in:lobby/item/team
 

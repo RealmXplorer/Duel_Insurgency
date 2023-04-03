@@ -7,3 +7,4 @@ function du-in:lobby/scales/conquestcap
 function du-in:lobby/scales/tclassicap
 function du-in:lobby/scales/tkothcap
 function du-in:lobby/scales/death_timer_cap
+function du-in:lobby/scales/gametimecap

@@ -10,7 +10,7 @@ execute if entity @s[level=1..2,tag=!lobby,tag=!win,tag=!lose,tag=!kitMenu] unle
     execute if entity @s[tag=startgame] run function du-in:ingame/start_seq
 
 # If a player is dead in team mode #
-    execute if entity @s[tag=teamDead] run function du-in:ingame/team_dead
+    execute if entity @s[tag=teamDead,tag=!void] run function du-in:ingame/team_dead
 
 #Give glow if sneaking, remove glow if not
     execute if entity @s[predicate=du-in:is_sneaking] run function du-in:ingame/is_sneaking
@@ -145,7 +145,7 @@ execute if entity @s[scores={unicornTimer=1..}] run function du-in:kit/jack_horn
 
 execute if entity @s[tag=midasTouched] run function du-in:kit/jack_horner/ability/midas/freeze
 
-execute if entity @s[scores={deathAbilityTimer=1..}] run function du-in:kit/death/ability/ability_timer
+execute if entity @s[scores={deathAbilityTimer=-99..}] run function du-in:kit/death/ability/ability_timer
 
 execute if entity @s[scores={sabotageTimer=1..}] run function du-in:kit/nick/ability/sabotage_timer
 

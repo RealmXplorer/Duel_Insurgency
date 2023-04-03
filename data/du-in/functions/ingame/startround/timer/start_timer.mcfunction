@@ -7,6 +7,7 @@ scoreboard players reset @a justdied
 tag @a[tag=!working,tag=!spectating] add playing
 scoreboard players set @a[tag=playing,gamemode=!spectator] weapCount 0
 scoreboard players set @a[scores={kit=22}] gumballSwitch 2
+scoreboard players set @a[scores={kit=27}] pussWeapSwitch 2
 scoreboard players set @a[scores={kit=28}] deathWeapSwitch 2
 scoreboard players set #main titleTimer2 80
 scoreboard players set @a cardPower 0
@@ -38,14 +39,22 @@ advancement grant @a[scores={kit=42069}] only du-in:chungus
 #tag @a remove mysteryHead
 execute as @a run attribute @s minecraft:generic.attack_damage base set 1
 
+bossbar set bossbar:gametimer players @a
+
 tag @a[tag=!working,tag=!musicOff] add song
-execute if entity @a[tag=cl,tag=!teamMode] run function du-in:ingame/startround/classic
-execute if entity @a[tag=cl,tag=teamMode] run function du-in:ingame/startround/team_classic
+execute if entity @a[tag=cl,tag=!teamMode,tag=!timedMode,tag=partyLeader] run function du-in:ingame/startround/classic
+execute if entity @a[tag=cl,tag=teamMode,tag=!timedMode,tag=partyLeader] run function du-in:ingame/startround/team_classic
+
+execute if entity @a[tag=cl,tag=timedMode,tag=!teamMode,tag=partyLeader] run function du-in:ingame/startround/timed_classic
+execute if entity @a[tag=cl,tag=timedMode,tag=teamMode,tag=partyLeader] run function du-in:ingame/startround/timed_team_classic
 
 execute if entity @a[tag=dml] run function du-in:ingame/startround/deathmatch
 
-execute if entity @a[tag=kothl,tag=!teamMode] run function du-in:ingame/startround/koth
-execute if entity @a[tag=kothl,tag=teamMode] run function du-in:ingame/startround/team_koth
+execute if entity @a[tag=kothl,tag=!teamMode,tag=!timedMode,tag=partyLeader] run function du-in:ingame/startround/koth
+execute if entity @a[tag=kothl,tag=teamMode,tag=partyLeader] run function du-in:ingame/startround/team_koth
+
+execute if entity @a[tag=kothl,tag=!teamMode,tag=timedMode,tag=partyLeader] run function du-in:ingame/startround/timed_koth
+execute if entity @a[tag=kothl,tag=teamMode,tag=timedMode,tag=partyLeader] run function du-in:ingame/startround/timed_team_koth
 
 execute if entity @a[tag=ctfl] run function du-in:ingame/startround/ctf
 execute if entity @a[tag=cql] run function du-in:ingame/startround/conquest

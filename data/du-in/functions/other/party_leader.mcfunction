@@ -23,6 +23,8 @@ execute unless score @a[tag=partyLeader,limit=1,tag=!playing] tKothScale = #main
 #Announce Death Timer Changes#
 execute unless score @a[tag=partyLeader,limit=1,tag=!playing] dtScale = #main dtScale run function du-in:lobby/scales/death_timer_cap
 
+execute unless score @a[tag=partyLeader,limit=1,tag=!playing] gameTimeScale = #main gameTimeScale run function du-in:lobby/scales/gametimecap
+
 #Set Main scale to match new party leader's
 execute store result score #main killScale run scoreboard players get @a[tag=partyLeader,limit=1] killScale
 execute store result score #main dmScale run scoreboard players get @a[tag=partyLeader,limit=1] dmScale

@@ -1,15 +1,20 @@
 # HALF WAY #
     scoreboard players remove #main maxTimer 1
+    execute store result bossbar bossbar:gametimer value run scoreboard players get #main maxTimer
 
     #When game is half over
     #execute as @a[tag=playing,tag=!chalf] if score @s killIngame >= #main testHalf run function du-in:ingame/classic/default/half
 
-execute if score #main maxTimer matches 1500 run function du-in:ingame/classic/timed/half
+execute as @a[gamemode=!spectator,tag=playing,tag=cIngame,sort=random] if score @s killIngame > #main classicMost store result score #main classicMost run scoreboard players get @s killIngame
+
+
+execute if score #main maxTimer = #main timerHalf run function du-in:ingame/classic/timed/half
+
 # CLOSE TO END # 
+execute if score #main maxTimer matches 1000 run function du-in:ingame/classic/timed/near_end
 
-execute if score #main maxTimer matches 2000 run function du-in:ingame/classic/timed/near_end
+execute if score #main maxTimer matches ..0 run function du-in:ingame/classic/timed/ending
 
-execute if score #main maxTimer matches 3000 run function du-in:ingame/classic/timed/ending
     #Starts music
     #execute as @a[tag=playing,tag=!classicEnd] if score @s killIngame >= #main testGoal run function du-in:ingame/classic/default/near_end
 

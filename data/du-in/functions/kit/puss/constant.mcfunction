@@ -12,7 +12,7 @@ execute if entity @s[tag=armor,tag=!stolen] run function du-in:kit/puss/armor
 execute if entity @s[level=1] run function du-in:kit/puss/ability/item
 
 #WEAPON#
-execute unless entity @s[scores={weapCount=1}] if entity @s[tag=!teamDead,tag=!stolen] run function du-in:kit/puss/weapon
+execute unless entity @s[scores={weapCount=1}] if entity @s[tag=!teamDead,tag=!stolen,tag=!pussFear] run function du-in:kit/puss/weapon
 
 #Use ability
 execute if entity @s[tag=kitActions,tag=!void] run function du-in:kit/puss/ability/init

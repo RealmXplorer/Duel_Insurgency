@@ -39,9 +39,9 @@ tag @a remove cql
 tag @a remove cmap
 tag @a remove ready
 scoreboard players reset #gamemode gamemode
-tag @a remove ranMode
-tag @a remove spamClick
-tag @a remove teamMode
+#tag @a remove ranMode
+#tag @a remove spamClick
+#tag @a remove teamMode
 
 #Removes stopped countdown tag
 tag @a remove countStop

@@ -21,6 +21,8 @@ scoreboard players set @s kothScale 0
 scoreboard players set @s tKothScale 0
 scoreboard players set @s ctfScale 0
 scoreboard players set @s conqScale 0
+scoreboard players set @s dtScale 0
+scoreboard players set @s gameTimeScale 0
 
 #scoreboard players set @s pylonNum 0
 

@@ -46,6 +46,7 @@ bossbar set conquest:blue visible false
 bossbar set conquest:red visible false
 bossbar set conquest:blue color white
 bossbar set conquest:red color white
+bossbar set bossbar:gametimer visible false
 scoreboard players set #main cRedPoints 0
 tag @a remove teamMode
 tag @a remove asrielCharge
@@ -134,6 +135,7 @@ scoreboard players set #main redFlagCooldown 0
 scoreboard players reset #main blueFlagTimer
 scoreboard players reset #main redFlagTimer
 bossbar set bossbar:classic color white
+bossbar set bossbar:gametimer color white
 scoreboard players reset #main blueTeamCount
 scoreboard players set @a wildeTimer 0
 tag @a remove sans
@@ -297,6 +299,10 @@ weather clear
 stopsound @a ambient
 scoreboard players reset @a ranMode
 scoreboard players reset @a spamMode
+scoreboard players reset @a timedMode
+tag @a remove ranMode
+tag @a remove timedMode
+tag @a remove spamMode
 tag @a remove springLock
 tag @a remove lorde
 scoreboard players reset @a yharimTimer
@@ -399,7 +405,7 @@ tag @a remove hornerWeapon
 
 #scoreboard players reset #main gonersKilled
 scoreboard players reset #main gonersCount
-scoreboard players reset #main leastDeaths
+scoreboard players set #main leastDeaths 0
 scoreboard players reset @a realDeath
 scoreboard players reset @a gonersKilled
 tag @a remove voidLose
