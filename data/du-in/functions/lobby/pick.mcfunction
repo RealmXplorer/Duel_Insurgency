@@ -27,7 +27,7 @@ tag @a remove subLobby
 clear @a
 
 #Remove item tags
-tag @a remove givenStats
+#tag @a remove givenStats
 tag @a remove givenEx
 
 #Set global lobby to 3

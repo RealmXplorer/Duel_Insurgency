@@ -145,7 +145,8 @@ scoreboard players reset * saacMoneyChance
 scoreboard players set #main kitOnline 0
 
 #DELAY 5#
-tag @a[tag=win,tag=!falseWin,tag=!voidLose] add wonGame
+tag @a[tag=win,tag=!falseWin,tag=!voidLose,tag=!tie] add wonGame
+tag @a[tag=win,tag=!falseWin,tag=!voidLose,tag=tie] add tiedGame
 tag @a[tag=spectating] add wasSpect
 tag @a remove dmIngame
 tag @a remove ctfIngame
@@ -157,8 +158,8 @@ tag @a remove team1
 tag @a remove team2
 scoreboard players reset @e teamCount
 scoreboard players add @a[tag=!spectating,tag=!falseWin] gamesPlayed 1
-scoreboard players add @a[tag=win,tag=!falseWin,tag=!voidLose] Wins 1
-scoreboard players add @a[tag=win,tag=!falseWin,tag=!voidLose] winStreak 1
+scoreboard players add @a[tag=win,tag=!falseWin,tag=!voidLose,tag=!tie] Wins 1
+scoreboard players add @a[tag=win,tag=!falseWin,tag=!voidLose,tag=!tie] winStreak 1
 scoreboard players set @a[tag=lose,tag=!spectating] winStreak 0
 tag @a remove spectating
 tag @a remove killstreak3
@@ -316,7 +317,7 @@ tag @a remove teamPicked
 function du-in:lobby/item_reset
 scoreboard players reset @a secKitUse
 scoreboard players reset #main startSeq
-tag @a add givenStats
+#tag @a add givenStats
 
 #Kill Entities#
 tp @e[type=!player,tag=mapSpecific] 216 0 40
@@ -392,7 +393,7 @@ title @a[tag=partyLeader,tag=!timeFree] title {"text":"","color":"red","bold":tr
 title @a[tag=partyLeader,tag=!timeFree] subtitle {"text":"Open inventory for more options!","color":"red","bold":true}
 title @a[tag=partyLeader,tag=!timeFree] actionbar {"text":"Open inventory for more options!","color":"red","bold":true}
 execute as @a run function du-in:lobby/item_reset
-tag @a[tag=!timeFree] add givenStats
+#tag @a[tag=!timeFree] add givenStats
 clear @a
 tag @a remove void
 scoreboard players reset @a[tag=lobby] killStreakDeaths
@@ -408,6 +409,7 @@ scoreboard players reset #main gonersCount
 scoreboard players set #main leastDeaths 0
 scoreboard players reset @a realDeath
 scoreboard players reset @a gonersKilled
+scoreboard players set @a gameGonerKills 0
 tag @a remove voidLose
 tag @a remove phoenix
 tag @a remove caveSpider

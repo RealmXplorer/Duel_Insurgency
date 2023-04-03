@@ -4,7 +4,7 @@ tag @s remove givenBlue
 tag @s remove givenQuery
 #tag @s remove givenPark
 tag @s remove givenCredits
-tag @s remove givenStats
+#tag @s remove givenStats
 tag @a remove givenEx
 tag @s remove givenNext
 tag @s remove givenPrev

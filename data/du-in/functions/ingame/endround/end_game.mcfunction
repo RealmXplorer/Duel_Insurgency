@@ -1,8 +1,17 @@
 #Announce winners
-title @a[tag=!teamMode,tag=!falseWin,tag=!lobby,tag=!voidLose,tag=!void] title {"text":"","bold":true,"color":"gold","extra":[{"selector":"@a[tag=win,tag=!falseWin,tag=!void]"}]}
+execute as @a[tag=win] run scoreboard players add #main winners 1
+execute if score #main winners matches 2.. run tag @a[tag=!teamMode] add tie
+execute if entity @a[tag=team1,tag=win,tag=!falseWin,tag=!voidLose,tag=!void] if entity @a[tag=team2,tag=win,tag=!falseWin,tag=!voidLose,tag=!void] run tag @a add tie
+
+title @a[tag=!teamMode,tag=!falseWin,tag=!lobby,tag=!voidLose,tag=!void,tag=!tie] title {"text":"","bold":true,"color":"gold","extra":[{"selector":"@a[tag=win,tag=!falseWin,tag=!void]"}]}
+title @a[tag=!teamMode,tag=!falseWin,tag=!lobby,tag=!voidLose,tag=!void,tag=tie] title {"text":"TIE!","bold":true,"color":"gray"}
 execute if entity @a[tag=team1,tag=win,tag=!falseWin,tag=!voidLose,tag=!void] run title @a title [{"text":"RED TEAM","bold":true,"color":"red"}]
 execute if entity @a[tag=team2,tag=win,tag=!falseWin,tag=!voidLose,tag=!void] run title @a title [{"text":"BLUE TEAM","bold":true,"color":"blue"}]
-title @a[tag=!falseWin,tag=!lobby,tag=!voidLose,tag=!void] subtitle {"text":"WINS","color":"gold"}
+
+execute if entity @a[tag=team1,tag=win,tag=!falseWin,tag=!voidLose,tag=!void,tag=tie] run title @a title [{"text":"TIE!","bold":true,"color":"gray"}]
+
+title @a[tag=!falseWin,tag=!lobby,tag=!voidLose,tag=!void,tag=!tie] subtitle {"text":"WINS","color":"gold"}
+
 title @a times 5 120 5
 
 #Stop abilities
@@ -64,8 +73,9 @@ kill @e[type=marker,tag=kyloHitPos]
 
 #Play sounds for ending
 execute if entity @a[tag=partyLeader,tag=aprilFools] as @a[tag=win,tag=!void,tag=!voidLose] at @s run playsound minecraft:soundeffect.laugh master @a ~ ~ ~ 100000 1
-execute unless entity @a[tag=partyLeader,tag=aprilFools] as @a[tag=win,tag=!aprilFools,tag=!falseWin,tag=!stolen,tag=!void,tag=!voidLose] unless entity @s[scores={team=1..}] at @s run function du-in:kit/all/winline
+execute unless entity @a[tag=partyLeader,tag=aprilFools] as @a[tag=win,tag=!aprilFools,tag=!falseWin,tag=!stolen,tag=!void,tag=!voidLose,tag=!tie] unless entity @s[scores={team=1..}] at @s run function du-in:kit/all/winline
 execute as @a[tag=win,tag=stolen] at @s run function du-in:kit/all/win_music/start
+execute as @a[tag=win,tag=tie] at @s run function du-in:kit/all/win_music/start
 
 execute if entity @a[scores={team=1..},tag=!void,tag=!voidLose] at @r run function du-in:kit/all/win_music/start
 

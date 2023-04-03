@@ -1,4 +1,6 @@
 #If a player has equal to or more than required kill amount, add tag win
+execute if score #main cBluePoints = #main cRedPoints run tag @a add win
+
 execute if score #main cBluePoints = #main classicMost run tag @a[tag=team2] add win
 execute if score #main cRedPoints = #main classicMost run tag @s[tag=team1] add win
 
