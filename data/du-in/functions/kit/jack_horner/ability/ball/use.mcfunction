@@ -1,6 +1,7 @@
 tag @s add ponderOrb
 tag @r[tag=!ponderOrb] add pondered
 effect give @a[tag=!ponderOrb,tag=pondered] glowing 3 2 true
+playsound minecraft:jack_horner.orb hostile @a ~ ~ ~ 1 1
 tag @s remove ponderOrb
 
 effect give @s speed 3 2 true

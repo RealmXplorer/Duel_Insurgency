@@ -27,7 +27,9 @@ execute if entity @s[scores={kit=19}] run playsound minecraft:palps.line.win voi
 
 execute if entity @s[scores={kit=23}] run playsound minecraft:nick.line.win voice @a ~ ~ ~ 100 1
 execute if entity @s[scores={kit=26}] run playsound minecraft:jack_horner.win voice @a[tag=!musicOff] ~ ~ ~ 100 1
-execute if entity @s[scores={kit=27}] run playsound minecraft:puss.win voice @a[tag=!musicOff] ~ ~ ~ 100 1
+execute if entity @s[scores={kit=27}] unless entity @s[scores={pussSkin=1}] run playsound minecraft:puss.win voice @a[tag=!musicOff] ~ ~ ~ 100 1
+execute if entity @s[scores={kit=27,pussSkin=1}] run playsound minecraft:kitty.win voice @a[tag=!musicOff] ~ ~ ~ 100 1
+
 execute if entity @s[scores={kit=28}] run playsound minecraft:death.whistle.mark voice @a[tag=!musicOff] ~ ~ ~ 100 1
 
 #execute if entity @s[scores={kit=31}] run playsound minecraft:judy.line.win voice @a ~ ~ ~ 100 1
