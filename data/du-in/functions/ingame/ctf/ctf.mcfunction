@@ -27,13 +27,17 @@ execute if entity @e[type=marker,tag=blueFlag,tag=captured] unless entity @a[tag
 execute if score #main blueFlagCooldown matches ..0 at @e[tag=blueFlagItem] run execute as @a[tag=team1,distance=..1,tag=!teamDead] run function du-in:ingame/ctf/blue/blue_flag_get
 execute if score #main redFlagCooldown matches ..0 at @e[tag=redFlagItem] run execute as @a[tag=team2,distance=..1,tag=!teamDead] run function du-in:ingame/ctf/red/red_flag_get
 
-#CLOSE TO END#
-execute if entity @a[tag=!ctfClose] if score #main bluePoints >= #main ctfClose run function du-in:ingame/ctf/close
-execute if entity @a[tag=!ctfClose] if score #main redPoints >= #main ctfClose run function du-in:ingame/ctf/close
+execute if entity @a[tag=!timedMode] run function du-in:ingame/ctf/default/default
 
-#END#
-execute if entity @a[tag=!ctfEnd] if score #main bluePoints >= #main ctfMax run function du-in:ingame/ctf/win
-execute if entity @a[tag=!ctfEnd] if score #main redPoints >= #main ctfMax run function du-in:ingame/ctf/win
+# #CLOSE TO END#
+execute if entity @a[tag=timedMode] run function du-in:ingame/ctf/timed/timed
+
+# execute if entity @a[tag=!ctfClose] if score #main bluePoints >= #main ctfClose run function du-in:ingame/ctf/close
+# execute if entity @a[tag=!ctfClose] if score #main redPoints >= #main ctfClose run function du-in:ingame/ctf/close
+
+# #END#
+# execute if entity @a[tag=!ctfEnd] if score #main bluePoints >= #main ctfMax run function du-in:ingame/ctf/win
+# execute if entity @a[tag=!ctfEnd] if score #main redPoints >= #main ctfMax run function du-in:ingame/ctf/win
 
 #Clear all banners from those who don't have it#
 clear @a[tag=!flagGot,tag=!working] #minecraft:banners

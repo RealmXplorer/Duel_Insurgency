@@ -4,6 +4,7 @@ scoreboard objectives modify kothTimer displayname [{"text":"KOTH Points ","bold
 
 scoreboard objectives setdisplay sidebar kothTimer
 
+bossbar set bossbar:gametimer players @a
 team join Classic @a[tag=!spectating]
 scoreboard players set @a[tag=!spectating,tag=!working] kothTimer 0
 execute store result score #main maxTimer run scoreboard players get #main gameTimeMax

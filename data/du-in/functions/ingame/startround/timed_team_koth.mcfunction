@@ -8,6 +8,7 @@ execute if score #main tKothCap matches 5000 run scoreboard objectives modify ko
 execute if score #main tKothCap matches 7000 run scoreboard objectives modify kothTeamTimer displayname ["",{"text":"KOTH Team Points ","bold":true,"color":"red"},{"text":"(of 7000)","color":"gray"}]
 execute if score #main tKothCap matches 1500 run scoreboard objectives modify kothTeamTimer displayname ["",{"text":"KOTH Team Points ","bold":true,"color":"red"},{"text":"(of 1500)","color":"gray"}]
 
+bossbar set bossbar:gametimer players @a
 scoreboard players set @a[tag=!spectating,tag=!working] kothTimer 0
 scoreboard objectives setdisplay sidebar kothTeamTimer
 execute store result score #main maxTimer run scoreboard players get #main gameTimeMax

@@ -4,6 +4,7 @@ scoreboard objectives modify classicTeamKills displayname ["",{"text":"Classic K
 
 scoreboard objectives setdisplay sidebar classicTeamKills
 
+bossbar set bossbar:gametimer players @a
 team join Classic @a[tag=!spectating,tag=!teamMode,tag=!AFK]
 scoreboard players set @a[tag=!spectating,tag=!working] killIngame 0
 scoreboard players set @a[tag=!spectating,tag=!working] ctfKills 0

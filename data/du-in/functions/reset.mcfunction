@@ -33,7 +33,7 @@ advancement grant @a[scores={Kills=1000..}] only du-in:death
 advancement grant @a[scores={Kills=5000..}] only du-in:destroyer
 scoreboard players set Red classicTeamKills 0
 scoreboard players set Blue classicTeamKills 0
-scoreboard players set #main classicMost 0
+#scoreboard players set #main classicMost 0
 scoreboard players reset #voting
 scoreboard players set #voting mapWinner 0
 scoreboard players reset @a mapVote
@@ -185,7 +185,7 @@ tag @a remove kitSounds
 tag @a remove countStop
 tag @a remove parry
 xp set @a 0 levels
-scoreboard players set #main classicMost 0
+scoreboard players set #main scoreMost 0
 
 #RESET TEAM KOTH#
 execute if entity @a[tag=lobby,tag=!playing] run scoreboard players set Red kothTeamTimer 0

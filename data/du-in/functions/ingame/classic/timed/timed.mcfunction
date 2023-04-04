@@ -5,13 +5,13 @@
     #When game is half over
     #execute as @a[tag=playing,tag=!chalf] if score @s killIngame >= #main testHalf run function du-in:ingame/classic/default/half
 
-execute as @a[gamemode=!spectator,tag=playing,tag=cIngame,sort=random] if score @s killIngame > #main classicMost store result score #main classicMost run scoreboard players get @s killIngame
+execute as @a[gamemode=!spectator,tag=playing,tag=cIngame,sort=random] if score @s killIngame > #main scoreMost store result score #main scoreMost run scoreboard players get @s killIngame
 
 
-execute if score #main maxTimer = #main timerHalf run function du-in:ingame/classic/timed/half
+execute if score #main maxTimer = #main timerHalf run function du-in:ingame/timed/half
 
 # CLOSE TO END # 
-execute if score #main maxTimer matches 1000 run function du-in:ingame/classic/timed/near_end
+execute if score #main maxTimer matches 1000 run function du-in:ingame/timed/near_end
 
 execute if score #main maxTimer matches ..0 run function du-in:ingame/classic/timed/ending
 

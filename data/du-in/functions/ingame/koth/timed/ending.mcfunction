@@ -1,4 +1,4 @@
-execute as @a if score @s kothTimer = #main kothMost run tag @s add win
+execute as @a if score @s kothTimer = #main scoreMost run tag @s add win
 
 #Add lose to all other players
 execute as @a if score @s kothTimer < @a[tag=win,limit=1] kothTimer run tag @s[tag=kothIngame] add lose

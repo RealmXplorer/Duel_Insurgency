@@ -49,6 +49,7 @@ scoreboard players operation @s[scores={player=0}] player = #main player
 
 #Set map countdown to all players (also acts as a failsafe)
 bossbar set minecraft:map_countdown players @a
+bossbar set bossbar:gametimer players @a
 
 #Give all players saturation
 #effect give @a minecraft:saturation 1000000 100 true

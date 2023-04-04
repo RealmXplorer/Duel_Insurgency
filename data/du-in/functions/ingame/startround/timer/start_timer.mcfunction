@@ -56,7 +56,9 @@ execute if entity @a[tag=kothl,tag=teamMode,tag=partyLeader] run function du-in:
 execute if entity @a[tag=kothl,tag=!teamMode,tag=timedMode,tag=partyLeader] run function du-in:ingame/startround/timed_koth
 execute if entity @a[tag=kothl,tag=teamMode,tag=timedMode,tag=partyLeader] run function du-in:ingame/startround/timed_team_koth
 
-execute if entity @a[tag=ctfl] run function du-in:ingame/startround/ctf
+execute if entity @a[tag=ctfl,tag=!timedMode] run function du-in:ingame/startround/ctf
+execute if entity @a[tag=ctfl,tag=timedMode] run function du-in:ingame/startround/timed_ctf
+
 execute if entity @a[tag=cql] run function du-in:ingame/startround/conquest
 
 

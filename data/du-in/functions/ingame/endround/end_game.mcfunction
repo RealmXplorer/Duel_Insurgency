@@ -76,6 +76,7 @@ execute if entity @a[tag=partyLeader,tag=aprilFools] as @a[tag=win,tag=!void,tag
 execute unless entity @a[tag=partyLeader,tag=aprilFools] as @a[tag=win,tag=!aprilFools,tag=!falseWin,tag=!stolen,tag=!void,tag=!voidLose,tag=!tie] unless entity @s[scores={team=1..}] at @s run function du-in:kit/all/winline
 execute as @a[tag=win,tag=stolen] at @s run function du-in:kit/all/win_music/start
 execute as @a[tag=win,tag=tie] at @s run function du-in:kit/all/win_music/start
+execute as @a[scores={team=1..},tag=win] at @s run function du-in:kit/all/win_music/start
 
 execute if entity @a[scores={team=1..},tag=!void,tag=!voidLose] at @r run function du-in:kit/all/win_music/start
 
