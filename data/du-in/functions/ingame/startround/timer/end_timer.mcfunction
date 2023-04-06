@@ -11,8 +11,8 @@ scoreboard objectives setdisplay list killStreak
 tag @a[tag=!working] remove kitPicked
 tag @a remove spectator
 
-execute if entity @a[tag=playing,tag=dmIngame,tag=teamMode] run execute store result score #main blueTeamCount run team list Blue
-execute if entity @a[tag=playing,tag=dmIngame,tag=teamMode] run execute store result score #main redTeamCount run team list Red
+#execute if entity @a[tag=playing,tag=dmIngame,tag=teamMode] run execute store result score #main blueTeamCount run team list Blue
+#execute if entity @a[tag=playing,tag=dmIngame,tag=teamMode] run execute store result score #main redTeamCount run team list Red
 
 scoreboard players set @a music 0
 

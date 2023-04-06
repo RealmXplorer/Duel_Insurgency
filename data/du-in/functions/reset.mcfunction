@@ -103,7 +103,7 @@ scoreboard players reset * ctfMap
 scoreboard players reset * cqMap
 scoreboard players reset #main map
 tag @a remove flagGot
-scoreboard players reset #main redTeamCount
+#scoreboard players reset #main redTeamCount
 bossbar set minecraft:classicblue color white
 bossbar set minecraft:classicred color white
 tag @a remove dmClose
