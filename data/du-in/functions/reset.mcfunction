@@ -188,8 +188,9 @@ xp set @a 0 levels
 scoreboard players set #main scoreMost 0
 
 #RESET TEAM KOTH#
-execute if entity @a[tag=lobby,tag=!playing] run scoreboard players set Red kothTeamTimer 0
-execute if entity @a[tag=lobby,tag=!playing] run scoreboard players set Blue kothTeamTimer 0
+scoreboard players set * kothTeamTimer 0
+#scoreboard players set Blue kothTeamTimer 0
+
 execute store result score Red kothTeamTimer run scoreboard players get #main kRedPoints
 execute store result score Blue kothTeamTimer run scoreboard players get #main kBluePoints
 
@@ -413,6 +414,6 @@ scoreboard players set @a gameGonerKills 0
 tag @a remove voidLose
 tag @a remove phoenix
 tag @a remove caveSpider
-
+scoreboard players reset @a dmDeath
 scoreboard players set @a diedIngame 0
 #tag @a

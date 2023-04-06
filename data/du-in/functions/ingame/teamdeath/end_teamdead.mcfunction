@@ -1,4 +1,4 @@
-scoreboard players reset @s teamDeaths
+#scoreboard players reset @s teamDeaths
 tag @s remove kitMenu
 clear @s
 function du-in:lobby/item_reset

@@ -42,24 +42,35 @@ execute as @a run attribute @s minecraft:generic.attack_damage base set 1
 bossbar set bossbar:gametimer players @a
 
 tag @a[tag=!working,tag=!musicOff] add song
+#Non-timed classic
 execute if entity @a[tag=cl,tag=!teamMode,tag=!timedMode,tag=partyLeader] run function du-in:ingame/startround/classic
 execute if entity @a[tag=cl,tag=teamMode,tag=!timedMode,tag=partyLeader] run function du-in:ingame/startround/team_classic
-
+#Timed classic
 execute if entity @a[tag=cl,tag=timedMode,tag=!teamMode,tag=partyLeader] run function du-in:ingame/startround/timed_classic
 execute if entity @a[tag=cl,tag=timedMode,tag=teamMode,tag=partyLeader] run function du-in:ingame/startround/timed_team_classic
 
-execute if entity @a[tag=dml] run function du-in:ingame/startround/deathmatch
+#Non-timed Deathmatch
+execute if entity @a[tag=dml,tag=!teamMode,tag=!timedMode] run function du-in:ingame/startround/deathmatch
+execute if entity @a[tag=dml,tag=teamMode,tag=!timedMode] run function du-in:ingame/startround/team_deathmatch
+#Timed Deathmatch
+execute if entity @a[tag=dml,tag=timedMode,tag=!teamMode] run function du-in:ingame/startround/timed_deathmatch
+execute if entity @a[tag=dml,tag=timedMode,tag=teamMode] run function du-in:ingame/startround/timed_team_deathmatch
 
+#Non-timed KOTH
 execute if entity @a[tag=kothl,tag=!teamMode,tag=!timedMode,tag=partyLeader] run function du-in:ingame/startround/koth
 execute if entity @a[tag=kothl,tag=teamMode,tag=partyLeader] run function du-in:ingame/startround/team_koth
-
+#Timed KOTH
 execute if entity @a[tag=kothl,tag=!teamMode,tag=timedMode,tag=partyLeader] run function du-in:ingame/startround/timed_koth
 execute if entity @a[tag=kothl,tag=teamMode,tag=timedMode,tag=partyLeader] run function du-in:ingame/startround/timed_team_koth
 
+#CTF
 execute if entity @a[tag=ctfl,tag=!timedMode] run function du-in:ingame/startround/ctf
 execute if entity @a[tag=ctfl,tag=timedMode] run function du-in:ingame/startround/timed_ctf
 
-execute if entity @a[tag=cql] run function du-in:ingame/startround/conquest
+#Conquest
+execute if entity @a[tag=cql,tag=!timedMode] run function du-in:ingame/startround/conquest
+execute if entity @a[tag=cql,tag=timedMode] run function du-in:ingame/startround/timed_conquest
+
 
 
 execute as @a[scores={kit=1000}] run function du-in:ingame/startround/saac_reset

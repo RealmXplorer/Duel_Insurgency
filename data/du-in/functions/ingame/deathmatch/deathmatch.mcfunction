@@ -1,22 +1,7 @@
-#DEATHMATCH ELIMINATED#
-execute as @a[tag=playing,tag=dmIngame,scores={Lives=..0},tag=!dmOut] run function du-in:ingame/deathmatch/dm_out
-
-#ONE LIFE LEFT#
-execute as @a[tag=dmIngame,scores={Lives=..1},tag=!dmClose] run function du-in:ingame/deathmatch/close
-
-#DEATHMATCH END OF ROUND#
-execute if score #main playerCount matches 2 run function du-in:ingame/deathmatch/finale
-
-#TEAM DEATHMATCH STUFF#
-execute if entity @a[tag=teamMode] run function du-in:ingame/deathmatch/team/teams
-
-#DEATHMATCH ENDING#
-execute if score #main playerCount matches 1 run function du-in:ingame/deathmatch/end
-
-#TIE#
-execute if score #main playerCount matches ..0 run tag @r[tag=dmDead] add win
-
-#tag @a[tag=dmDead] remove playing
+execute if entity @a[tag=!teamMode,tag=!timedMode] run function du-in:ingame/deathmatch/default/default
+execute if entity @a[tag=teamMode,tag=!timedMode] run function du-in:ingame/deathmatch/team/teams
+execute if entity @a[tag=timedMode,tag=!teamMode] run function du-in:ingame/deathmatch/timed/timed
+execute if entity @a[tag=timedMode,tag=teamMode] run function du-in:ingame/deathmatch/team_timed/timed
 
 #MUSIC#
 execute as @a[tag=dmIngame,tag=!musicOff,tag=!startgame,tag=!saac,tag=!bigChungus] at @s run function du-in:music/ingame/deathmatch
