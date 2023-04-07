@@ -1,4 +1,5 @@
-tag @a add krampusPack
+#tag @a add krampusPack
+tag @a add christmas
 scoreboard players set @a wildeSkin 2
 scoreboard players set @a sansSkin 1
 scoreboard players set @a golemSkin 1

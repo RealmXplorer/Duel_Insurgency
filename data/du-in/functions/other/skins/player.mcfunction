@@ -1,5 +1,6 @@
 scoreboard players add @s steveSkin 1
 scoreboard players reset @s[scores={steveSkin=6..}] steveSkin
+clear @s player_head{playerHead:1b}
 
 execute unless entity @s[scores={steveSkin=1..}] run tellraw @s [{"text":"Default Steve ","bold":true,"color":"gold"},{"text":"skin selected!","color":"yellow"}]
 tellraw @s[scores={steveSkin=1}] [{"text":"Alex ","bold":true,"color":"gold"},{"text":"skin selected!","color":"yellow"}]

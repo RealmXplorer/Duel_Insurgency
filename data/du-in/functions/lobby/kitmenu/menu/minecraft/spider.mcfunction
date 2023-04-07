@@ -1,4 +1,4 @@
-execute if entity @s[scores={kitList=..0}] run function du-in:lobby/kitmenu/select/mobs/spider
+execute if entity @s[scores={kitList=..0}] run function du-in:lobby/kitmenu/select/minecraft/spider
 
 item replace entity @s[tag=kitMenu] inventory.7 with minecraft:player_head{spiderHead:1b,display:{Name:'{"text":"Spider","color":"white","bold":true,"italic":false}',Lore:['{"text":"Minecraft","color":"green","bold":true,"italic":true}']},SkullOwner:{Id:[I;924026232,198264679,-1687572293,1513739562],Properties:{textures:[{Value:"eyJ0ZXh0dXJlcyI6eyJTS0lOIjp7InVybCI6Imh0dHA6Ly90ZXh0dXJlcy5taW5lY3JhZnQubmV0L3RleHR1cmUvYzg3YTk2YThjMjNiODNiMzJhNzNkZjA1MWY2Yjg0YzJlZjI0ZDI1YmE0MTkwZGJlNzRmMTExMzg2MjliNWFlZiJ9fX0="}]}},fixedItem:1b,weaponItem:1b,headItem:1b,lobbyItem:1b} 1
 execute if entity @s[scores={kitList=7}] run scoreboard players remove @s kitList 1

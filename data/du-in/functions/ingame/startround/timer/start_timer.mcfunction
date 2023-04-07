@@ -15,6 +15,7 @@ scoreboard players set @a cardPower 0
 #tag @a[tag=exl] add exl
 
 tag @a remove wonGame
+tag @a remove tiedGame
 tag @a remove wasSpect
 #tag @a remove mapOverride
 tag @a[scores={kit=1000},tag=!legMusicOff] add saac

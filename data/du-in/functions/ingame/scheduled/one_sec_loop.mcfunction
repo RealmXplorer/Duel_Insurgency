@@ -11,6 +11,8 @@ execute as @a[gamemode=!spectator,tag=playing,tag=!startgame,tag=!magma] unless 
 
 execute as @a[gamemode=!spectator,tag=playing,tag=!startgame,tag=!pussFear] store result score @s weapCount run clear @s[tag=!kitMenu] #du-in:weapon 0
 
+execute as @a[gamemode=!spectator,tag=playing,tag=!startgame,tag=!pussFear] if score @s weapCount matches 2.. run clear @s[tag=!kitMenu] #du-in:weapon
+
 #Add 1 to score "spawnpoint"
 scoreboard players add @r[tag=playing,gamemode=!spectator,predicate=du-in:chance/half_chance] spawnpoint 1
 

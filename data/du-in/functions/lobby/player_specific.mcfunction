@@ -42,7 +42,3 @@
         #execute if entity @s[scores={kitUse=1..,lobby=1}] run function du-in:lobby/kit_use/gm
         #execute if entity @s[scores={kitUse=1..,lobby=3}] run function du-in:lobby/kit_use/mp
         execute if entity @s[scores={kitUse=1..,lobby=1}] run function du-in:lobby/kit_use/gm
-
-
-# Party Leader gives all players tournament music #
-    execute if entity @s[tag=partyLeader,tag=tournament,tag=tournMode] as @a[tag=!tournament] run tag @s add tournament

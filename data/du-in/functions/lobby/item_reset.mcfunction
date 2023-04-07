@@ -12,5 +12,6 @@ tag @s remove givenRandKit
 tag @s remove givenSpectate
 tag @s remove givenLegendFrom
 tag @s remove givenLegendTo
+tag @s remove givenHideSkins
 tag @s remove givenRandom
 tag @s remove givenTimed

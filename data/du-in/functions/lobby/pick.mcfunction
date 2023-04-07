@@ -1,3 +1,6 @@
+kill @e[tag=shopSpecific]
+kill @e[type=area_effect_cloud,tag=gamemodeLabel]
+
 #Set players gamemode lobby (This lets the game know which map and gamemode to initialize)
 execute if score #gamemode gamemode matches 1 run tag @a[tag=!working] add cl
 execute if score #gamemode gamemode matches 2 run tag @a[tag=!working] add dml
@@ -58,7 +61,6 @@ execute as @a run function du-in:lobby/item_reset
 execute as @a run function du-in:lobby/mapselect/tomap
 kill @e[tag=displayItem]
 function du-in:lobby/mapselect/switch
-kill @e[type=area_effect_cloud,tag=gamemodeLabel]
 
 #Start music
 scoreboard players set @a music 0

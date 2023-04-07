@@ -6,7 +6,7 @@
         execute if entity @a[tag=cIngame] run function du-in:ingame/classic/classic
     
     # Deathmatch Function #
-        execute if entity @a[tag=dmIngame,tag=!timedMode] run function du-in:ingame/deathmatch/deathmatch
+        execute if entity @a[tag=dmIngame] run function du-in:ingame/deathmatch/deathmatch
 
     # KOTH Functions #
         execute if entity @a[tag=kothIngame] run function du-in:ingame/koth/koth

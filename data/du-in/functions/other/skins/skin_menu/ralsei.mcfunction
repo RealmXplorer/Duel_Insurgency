@@ -1,0 +1,6 @@
+execute if entity @s[scores={skinList=..0}] run function du-in:other/skins/ralsei
+
+execute unless entity @s[scores={ralSkin=1..}] run item replace entity @s inventory.13 with minecraft:player_head{ralseiHead:1b,fixedItem:1b,weaponItem:1b,headItem:1b,lobbyItem:1b,display:{Name:'{"text":"Default","color":"white","bold":true,"italic":false}',Lore:['{"text":"Ralsei","color":"#17FFB9","bold":true,"italic":true}']},SkullOwner:{Id:[I;1694033945,-1566817452,-1958054767,-65585814],Properties:{textures:[{Value:"eyJ0ZXh0dXJlcyI6eyJTS0lOIjp7InVybCI6Imh0dHA6Ly90ZXh0dXJlcy5taW5lY3JhZnQubmV0L3RleHR1cmUvM2ZmZmUxZDFjM2E2NTk5ZDZmNGI4MzZiZTUxNDhlNjFiOTdmNTJiNzlmODMzNWUwZjFkMDA1OTU5MjMyMTc2NCJ9fX0="}]}}}
+item replace entity @s[scores={ralSkin=1}] inventory.13 with minecraft:player_head{ralseiHead:1b,fixedItem:1b,weaponItem:1b,headItem:1b,lobbyItem:1b,display:{Name:'{"text":"Timekeeper Ralsei","color":"white","bold":true,"italic":false}',Lore:['{"text":"Ralsei","color":"#17FFB9","bold":true,"italic":true}']},SkullOwner:{Id:[I;-81617903,697581951,-1630698045,1582056172],Properties:{textures:[{Value:"eyJ0ZXh0dXJlcyI6eyJTS0lOIjp7InVybCI6Imh0dHA6Ly90ZXh0dXJlcy5taW5lY3JhZnQubmV0L3RleHR1cmUvYzhkY2M1YTNjOWE4NTQyYjAzMGJiZWU5MjI0MGE4YjRlMzdhNTY1ZDU1ZmQzMWJhYjg4YTE1NjY5NjI3YjE4YyJ9fX0="}]}}}
+
+execute if entity @s[scores={skinList=12}] run scoreboard players remove @s skinList 1
