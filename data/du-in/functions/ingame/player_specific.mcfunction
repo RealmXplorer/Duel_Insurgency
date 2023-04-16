@@ -4,7 +4,7 @@
 
 
 #Return ability
-execute if entity @s[level=1..2,tag=!lobby,tag=!win,tag=!lose,tag=!kitMenu] unless entity @s[scores={palpTimer=-99..}] unless entity @s[scores={gasterTimer=-99..}] run function du-in:kit/all/ability/return
+execute if entity @s[level=1..2,tag=!lobby,tag=!win,tag=!lose,tag=!kitMenu] unless entity @s[scores={palpTimer=-99..}] unless entity @s[scores={gasterTimer=-99..}] unless entity @s[scores={floweyHitTimer=-99..}] run function du-in:kit/all/ability/return
 
 # Stating Game Functions #
     execute if entity @s[tag=startgame] run function du-in:ingame/start_seq

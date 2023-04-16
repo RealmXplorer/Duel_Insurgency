@@ -1,9 +1,9 @@
 #Ability Effects#
 effect give @s[tag=!sabotaged] minecraft:fire_resistance 3 3 true
-effect give @s[tag=!sabotaged] minecraft:regeneration 1 4 true
+effect give @s[tag=!sabotaged] minecraft:regeneration 1 3 true
 effect give @s[tag=sabotaged] minecraft:poison 1 3 true
-effect give @s minecraft:slowness 2 0 true
-effect give @s minecraft:weakness 1 0 true
+effect give @s minecraft:slowness 2 6 true
+#effect give @s minecraft:weakness 1 0 true
 
 clear @s[tag=sabotaged] arrow 2
 
@@ -18,7 +18,7 @@ execute if entity @s[scores={steveSkin=4}] run playsound minecraft:terraria.drin
 execute if entity @s[scores={steveSkin=3}] run playsound minecraft:gaster.back master @a ~ ~ ~ 100 1.5
 
 #Remove hunger if affected by Runza Rex#
-tellraw @s[tag=notEaten,tag=!sabotaged] [{"text":"What a healthy breakfast! You feel restored!","bold":true,"color":"red"}]
+tellraw @s[tag=!sabotaged] [{"text":"What a healthy breakfast! You feel full!","bold":true,"color":"red"}]
 scoreboard players set @s[tag=notEaten,tag=!sabotaged] runzaEat 1
 
 #Clear ability and set cooldown#

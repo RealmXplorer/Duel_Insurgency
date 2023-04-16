@@ -188,7 +188,7 @@ xp set @a 0 levels
 scoreboard players set #main scoreMost 0
 
 #RESET TEAM KOTH#
-scoreboard players set * kothTeamTimer 0
+scoreboard players reset * kothTeamTimer
 #scoreboard players set Blue kothTeamTimer 0
 
 execute store result score Red kothTeamTimer run scoreboard players get #main kRedPoints
@@ -416,4 +416,5 @@ tag @a remove phoenix
 tag @a remove caveSpider
 scoreboard players reset @a dmDeath
 scoreboard players set @a diedIngame 0
+scoreboard players set #main onPoint 0
 #tag @a

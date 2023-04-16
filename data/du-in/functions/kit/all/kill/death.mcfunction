@@ -40,6 +40,7 @@ scoreboard players reset @s[scores={kit=8}] villagerEmeralds
 scoreboard players reset @s[tag=stolen] villagerEmeralds
 execute if entity @a[scores={kit=24}] run scoreboard players reset @s ralseiTimer
 scoreboard players set @s[scores={kit=3},tag=magma] magmaTimer 1
+tag @s[tag=midasTouched] remove midasTouched
 
 #Start Zombie ability
 scoreboard players set @s[tag=grave,tag=!teamDead] zombieTimer 5

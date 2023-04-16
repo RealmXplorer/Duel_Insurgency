@@ -14,3 +14,5 @@ execute store result bossbar minecraft:bluekoth value run scoreboard players get
 execute store result bossbar minecraft:redkoth value run scoreboard players get #main kRedPoints
 execute store result score Red kothTeamTimer run scoreboard players get #main kRedPoints
 execute store result score Blue kothTeamTimer run scoreboard players get #main kBluePoints
+
+execute at @e[type=minecraft:area_effect_cloud,tag=kothObj] run function du-in:ingame/koth/team_hill

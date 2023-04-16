@@ -6,3 +6,5 @@ execute as @a[tag=playing,limit=1,tag=!kothEnd] if score @s kothTimer >= #main k
 
 #END KOTH#
 execute as @a[tag=playing,tag=kothIngame] if score @s kothTimer >= #main kothCap run function du-in:ingame/koth/default/ending
+
+execute at @e[type=minecraft:area_effect_cloud,tag=kothObj] run function du-in:ingame/koth/hill

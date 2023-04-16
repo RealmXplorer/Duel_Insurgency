@@ -10,7 +10,7 @@ tellraw @s[tag=wasSpect] [{"text":"Result: ","color":"gold","bold":false},{"text
 tellraw @s[tag=!fromVoid] [{"text":"\nKills: ","color":"gray","bold":false},{"score":{"name":"*","objective":"gameKills"},"color":"gold","bold":false}]
 tellraw @s[tag=fromVoid] [{"text":"\nGoner Kills: ","color":"gray","bold":false},{"score":{"name":"*","objective":"gameGonerKills"},"color":"gold","bold":false}]
 tellraw @s [{"text":"Deaths: ","color":"gray","bold":false},{"score":{"name":"*","objective":"gameDeaths"},"color":"gold","bold":false}]
-tellraw @s [{"text":"Parries: ","color":"gray","bold":false},{"score":{"name":"*","objective":"gameDeaths"},"color":"gold","bold":false}]
+tellraw @s [{"text":"Parries: ","color":"gray","bold":false},{"score":{"name":"*","objective":"gameParries"},"color":"gold","bold":false}]
 #tellraw @s [{"text":"Damage Dealt: ","color":"gray","bold":false},{"score":{"name":"*","objective":"gameParries"},"color":"gold","bold":false}]
 #tellraw @s [{"text":"Damage Taken: ","color":"gray","bold":false},{"score":{"name":"*","objective":"gameHit"},"color":"gold","bold":false}]
 tellraw @s [{"text":"Win Streak: ","color":"aqua","bold":false},{"score":{"name":"*","objective":"winStreak"},"color":"gold","bold":false}]
