@@ -25,7 +25,7 @@ execute store result score Insurgents matchDeaths run scoreboard players get #ma
 execute if entity @a[tag=!win,scores={gonersKilled=..0},tag=!waveBreak] if score #main wave matches ..1 run function du-in:ingame/void/wave_end
 
 
-execute if predicate du-in:chance/five_chance positioned 97 10 -107 run playsound minecraft:entity.warden.heartbeat master @a ~ ~ ~ 100000 .5
+execute if predicate du-in:chance/five_chance positioned 97 10 -107 run playsound minecraft:entity.warden.heartbeat master @a[tag=!win] ~ ~ ~ 100000 .5
 
 execute as @a[tag=!win] run function du-in:ingame/void/ambience
 
