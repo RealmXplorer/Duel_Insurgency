@@ -1,7 +1,4 @@
 #UNDERTALE CONSTANTS#
-# Other #
-execute if entity @s[scores={kit=9..16,hitLand=1..}] run function du-in:kit/all/undertale/hit
-
 # Chara #
 execute if entity @s[scores={kit=9}] run function du-in:kit/chara/constant
 

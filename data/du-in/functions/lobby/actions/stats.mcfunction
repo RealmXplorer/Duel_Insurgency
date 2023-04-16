@@ -15,4 +15,3 @@ tellraw @s [{"text":"Parries: ","color":"gray","bold":false},{"score":{"name":"*
 #tellraw @s [{"text":"Damage Taken: ","color":"gray","bold":false},{"score":{"name":"*","objective":"gameHit"},"color":"gold","bold":false}]
 tellraw @s [{"text":"Win Streak: ","color":"aqua","bold":false},{"score":{"name":"*","objective":"winStreak"},"color":"gold","bold":false}]
 tellraw @s [{"text":"------------------------------","color":"gray"}]
-#scoreboard players reset @s statsItem

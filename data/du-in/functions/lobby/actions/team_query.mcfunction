@@ -8,5 +8,3 @@ execute unless score #main lobbyTheme matches 1 unless score #main lobbyTheme ma
 execute if score #main lobbyTheme matches 1 run tellraw @s [{"text":"\nGhosts Team: ","color":"dark_purple","bold":true},{"score":{"name":"#main","objective":"blueOnline"},"color":"red","bold":true}]
 execute if score #main lobbyTheme matches 3 run tellraw @s [{"text":"\nElves Team: ","color":"dark_green","bold":true},{"score":{"name":"#main","objective":"blueOnline"},"color":"gold","bold":true}]
 tellraw @s [{"selector":"@a[tag=team2,tag=lobby]"}]
-
-scoreboard players reset @s teamQuery

@@ -7,4 +7,4 @@ execute if entity @s[tag=partyLeader,scores={timedMode=1}] run playsound minecra
 execute unless entity @s[tag=partyLeader,scores={timedMode=1}] run tellraw @a ["",{"text":"Timed Mode","bold":true,"color":"gold"},{"text":" off","color":"red"}]
 execute unless entity @s[tag=partyLeader,scores={timedMode=1}] run playsound minecraft:soundeffect.unlock master @a ~ ~ ~ .2 1.2
 
-scoreboard players reset @s timedItem
+#scoreboard players reset @s timedItem

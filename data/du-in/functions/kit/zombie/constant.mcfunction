@@ -20,8 +20,6 @@ execute if entity @s[level=1] run function du-in:kit/zombie/item
 
 execute if entity @s[tag=kitActions,tag=!flagGot,tag=!badBlock] at @s rotated as @s run function du-in:kit/zombie/ability/set_spawn
 
-#execute as @a[tag=grave,scores={zombieDeath=1..},tag=!teamDead] at @s run scoreboard players set @s zombieTimer 5
-
 scoreboard players remove @s[scores={zombieTimer=-99..}] zombieTimer 1
 
 tag @s[scores={zombieTimer=..1},tag=grave,tag=!teamDead] add zombieRespawn

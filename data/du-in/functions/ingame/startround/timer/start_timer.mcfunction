@@ -81,8 +81,6 @@ scoreboard players reset @a lobby
 #execute as @a at @a run function du-in:music/lobby/stop/kitselect
 scoreboard players reset @a asrielTimer
 scoreboard players add #main gameNum 1
-scoreboard players set @a gameDam 0
-scoreboard players set @a gameHit 0
 scoreboard players set @a gameDeaths 0
 scoreboard players set @a gameKills 0
 scoreboard players set @a gameParries 0

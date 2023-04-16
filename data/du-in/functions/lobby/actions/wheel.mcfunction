@@ -21,9 +21,3 @@ execute if score #main lobbyTheme matches 4 run function du-in:lobby/display/eas
 function du-in:lobby/display/default/text
 
  particle minecraft:cloud -983 15 517 3.5 3.5 3.5 0 300 force
-
-#function du-in:other/afk/end
-
-scoreboard players reset @s gamemodeSwitch
-
-#tag @s remove gamemodeSwitch

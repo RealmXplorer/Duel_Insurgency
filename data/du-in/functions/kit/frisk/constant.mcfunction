@@ -1,4 +1,4 @@
-scoreboard players reset @s[tag=!stolen,scores={hit=5..}] hit
+execute if entity @s[tag=!stolen,scores={hit=5..}] run function du-in:kit/frisk/sounds/hit
 execute if entity @s[tag=!stolen,scores={jump=1..}] run function du-in:kit/frisk/sounds/jump
 
 # FRISK #

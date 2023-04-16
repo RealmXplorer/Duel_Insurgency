@@ -7,11 +7,3 @@ execute if score Blue teamPool matches 2 run function du-in:ingame/deathmatch/te
 #TEAM DEATHMATCH ENDING#
 execute if score Blue teamPool matches ..0 run function du-in:ingame/deathmatch/team/team_end
 execute if score Red teamPool matches ..0 run function du-in:ingame/deathmatch/team/team_end
-
-#RED TEAM DEATHMATCH END OF ROUND#
-#execute if score #main redTeamCount matches 2 run function du-in:ingame/deathmatch/team/team_close
-#execute if score #main blueTeamCount matches 2 run function du-in:ingame/deathmatch/team/team_close
-
-#TEAM DEATHMATCH ENDING#
-#execute if score #main blueTeamCount matches ..0 run function du-in:ingame/deathmatch/team/team_end
-#execute if score #main redTeamCount matches ..0 run function du-in:ingame/deathmatch/team/team_end

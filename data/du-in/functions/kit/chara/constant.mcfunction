@@ -2,7 +2,7 @@ execute if entity @s[tag=!stolen,scores={hit=5..}] run function du-in:kit/chara/
 execute if entity @s[tag=!stolen,scores={jump=1..}] run function du-in:kit/chara/sounds/jump
 
 #CONSTANTS#
-execute if entity @s[scores={charaTimer2=1..}] run particle minecraft:ash ~ ~1.5 ~ 2 2 2 0 10 force
+execute if entity @s[scores={charaTimer=1..}] run particle minecraft:ash ~ ~1.5 ~ 2 2 2 0 10 force
 
 execute if entity @s[tag=kitActions] run function du-in:kit/chara/ability/init
 

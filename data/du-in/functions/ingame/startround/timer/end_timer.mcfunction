@@ -3,16 +3,11 @@ tag @a[tag=lobby,tag=playing] remove lobby
 scoreboard players reset #main startSeq
 gamemode adventure @a[tag=playing]
 
-tag @e[tag=start,tag=startTimer,scores={startTime=80..}] remove start
-
 scoreboard objectives setdisplay belowName Health
 scoreboard objectives setdisplay list killStreak
 
 tag @a[tag=!working] remove kitPicked
 tag @a remove spectator
-
-#execute if entity @a[tag=playing,tag=dmIngame,tag=teamMode] run execute store result score #main blueTeamCount run team list Blue
-#execute if entity @a[tag=playing,tag=dmIngame,tag=teamMode] run execute store result score #main redTeamCount run team list Red
 
 scoreboard players set @a music 0
 

@@ -37,7 +37,7 @@ execute positioned 113 5 -91 run playsound minecraft:soundeffect.voidbell master
 execute positioned 113 5 -91 run playsound minecraft:soundeffect.voidbell master @a ~ ~ ~ 1 2
 
 execute if score #main pylonsDestroyed matches ..2 run scoreboard players set @a gonersKilled 30
-execute if score #main pylonsDestroyed matches 3 run scoreboard players set @a gonersKilled 45
+execute if score #main pylonsDestroyed matches 3 run scoreboard players set @a gonersKilled 30
 
 advancement grant @a[gamemode=!spectator] only du-in:void/void
 

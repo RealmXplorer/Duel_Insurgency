@@ -9,5 +9,3 @@ scoreboard players set @s team 2
 tag @s remove team1
 tag @s add team2
 tag @s add teamPicked
-scoreboard players reset @s joinBlue
-scoreboard players reset @s joinRed

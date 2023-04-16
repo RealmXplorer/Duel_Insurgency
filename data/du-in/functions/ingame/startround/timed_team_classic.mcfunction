@@ -7,7 +7,6 @@ scoreboard objectives setdisplay sidebar classicTeamKills
 bossbar set bossbar:gametimer players @a
 team join Classic @a[tag=!spectating,tag=!teamMode,tag=!AFK]
 scoreboard players set @a[tag=!spectating,tag=!working] killIngame 0
-scoreboard players set @a[tag=!spectating,tag=!working] ctfKills 0
 execute store result score #main maxTimer run scoreboard players get #main gameTimeMax
 bossbar set bossbar:gametimer visible true
 

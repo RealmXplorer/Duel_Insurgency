@@ -33,11 +33,9 @@ advancement grant @a[scores={Kills=1000..}] only du-in:death
 advancement grant @a[scores={Kills=5000..}] only du-in:destroyer
 scoreboard players set Red classicTeamKills 0
 scoreboard players set Blue classicTeamKills 0
-#scoreboard players set #main classicMost 0
 scoreboard players reset #voting
 scoreboard players set #voting mapWinner 0
 scoreboard players reset @a mapVote
-#scoreboard players reset #main kitCountdown
 scoreboard players reset #main mapCountdown
 scoreboard players reset #gamemode gamemode
 bossbar set minecraft:classicred visible false
@@ -47,22 +45,17 @@ bossbar set conquest:red visible false
 bossbar set conquest:blue color white
 bossbar set conquest:red color white
 bossbar set bossbar:gametimer visible false
-scoreboard players set #main cRedPoints 0
 tag @a remove teamMode
 tag @a remove asrielCharge
 tag @a remove dmOut
 tag @a remove dmClose
-scoreboard players set #main cBluePoints 0
 scoreboard players reset * trident
 tag @a remove asrielSaber
 tag @a remove dmClose
-scoreboard players set #main kBluePoints 0
-scoreboard players set #main kRedPoints 0
 
 #DELAY 2#
 scoreboard players reset * kitUse
 scoreboard players reset * kitTimer
-scoreboard players reset * ctfKills
 scoreboard players reset #main redPoints
 scoreboard players reset #main bluePoints
 scoreboard players reset * ctfMap
@@ -81,8 +74,6 @@ scoreboard players add @a[tag=win] Diamonds 100
 scoreboard players add @a[tag=lose] Losses 1
 tag @a remove dmFinale
 scoreboard players reset * flagGot
-scoreboard players set @e kBluePoints 0
-scoreboard players set @e kRedPoints 0
 tag @a remove cdone
 tag @a remove chalf
 tag @a remove kothHalf
@@ -94,21 +85,13 @@ tag @a remove live
 scoreboard players reset * kothTimer
 tag @a remove dmDead
 scoreboard players reset #main playerCount
-scoreboard players reset * hitFail
 scoreboard players reset * killStreak
 scoreboard players reset * killStreakDeaths
-scoreboard players reset * cMap
-scoreboard players reset * kMap
-scoreboard players reset * ctfMap
-scoreboard players reset * cqMap
 scoreboard players reset #main map
 tag @a remove flagGot
-#scoreboard players reset #main redTeamCount
 bossbar set minecraft:classicblue color white
 bossbar set minecraft:classicred color white
 tag @a remove dmClose
-#execute as @a run scoreboard players operation @s compScore = @s winRatio
-#execute as @a run scoreboard players operation @s compScore += @s killDeathRatio
 
 #DELAY 4#
 execute if entity @a[tag=partyLeader,tag=!timeFree,tag=!sidebarDisplay] run scoreboard objectives setdisplay sidebar Kills
@@ -122,7 +105,6 @@ tag @a[tag=!working] remove playing
 
 
 scoreboard objectives setdisplay belowName winStreak
-scoreboard players reset * hitLand
 scoreboard players reset * hit
 tag @a remove armor
 scoreboard objectives setdisplay list Diamonds
@@ -136,7 +118,6 @@ scoreboard players reset #main blueFlagTimer
 scoreboard players reset #main redFlagTimer
 bossbar set bossbar:classic color white
 bossbar set bossbar:gametimer color white
-scoreboard players reset #main blueTeamCount
 scoreboard players set @a wildeTimer 0
 tag @a remove sans
 bossbar set minecraft:redkoth visible false
@@ -156,7 +137,6 @@ tag @a remove cIngame
 #tag @a remove exIngame
 tag @a remove team1
 tag @a remove team2
-scoreboard players reset @e teamCount
 scoreboard players add @a[tag=!spectating,tag=!falseWin] gamesPlayed 1
 scoreboard players add @a[tag=win,tag=!falseWin,tag=!voidLose,tag=!tie] Wins 1
 scoreboard players add @a[tag=win,tag=!falseWin,tag=!voidLose,tag=!tie] winStreak 1
@@ -191,9 +171,6 @@ scoreboard players set #main scoreMost 0
 scoreboard players reset * kothTeamTimer
 #scoreboard players set Blue kothTeamTimer 0
 
-execute store result score Red kothTeamTimer run scoreboard players get #main kRedPoints
-execute store result score Blue kothTeamTimer run scoreboard players get #main kBluePoints
-
 #Reset Attributes#
 execute as @a run attribute @s minecraft:generic.armor base set 0
 execute as @a run attribute @s minecraft:generic.armor_toughness base set 0
@@ -210,9 +187,6 @@ effect clear @a
 execute as @a run function du-in:music/ingame/stop/all
 
 ##RESET GAMEPLAY SCORES AND TAGS
-
-    #Reset ability use score#
-        #scoreboard players reset * abilityUse
 
     #Remove Classic scores and tags#
         tag @a remove closeWin
@@ -232,9 +206,6 @@ execute as @a run function du-in:music/ingame/stop/all
         tag @a remove ring2
         tag @a remove ringMap
         tag @a remove justInRing
-
-    #Reset different hit scores#
-        scoreboard players reset @a palpsHit
 
     #Reset Conquest scores and tags#
         scoreboard players set Blue capturePoints 0
@@ -258,7 +229,6 @@ execute as @a run function du-in:music/ingame/stop/all
         scoreboard players reset @a saacDisTimer
         tag @a remove broken
         scoreboard players set @a saacCarry 0
-        scoreboard players reset @a saacHit
         tag @a remove saac
         scoreboard players reset @a kickstartDrink
         
@@ -371,16 +341,14 @@ summon area_effect_cloud -983 16 517 {Duration:2147483647,Tags:["gamemodeLabel"]
 function du-in:lobby/display/default/text
 
 scoreboard players reset #main matchDeaths
-scoreboard players set #main matchKills 0
 scoreboard players set #main markTimer 0
-scoreboard players reset @a matchKills
+
 tag @a remove deathMark
 tag @a remove deathDouble
 tag @a remove deathAbility
 scoreboard players reset @a deathSwapTimer
 tag @a remove sabotaged
 tag @a remove empower
-scoreboard players reset @a pussDeaths
 tag @a remove gatitoBlade
 
 scoreboard players reset @a ambience

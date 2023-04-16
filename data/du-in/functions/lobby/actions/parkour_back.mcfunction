@@ -8,6 +8,3 @@ tag @s remove subLobby
 #function du-in:other/afk/end
 clear @s
 function du-in:lobby/item_reset
-
-scoreboard players reset @s back
-tag @s remove parkBack

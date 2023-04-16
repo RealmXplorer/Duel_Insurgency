@@ -7,12 +7,12 @@
     #When game is half over
     #execute as @a[tag=playing,tag=!chalf] if score @s killIngame >= #main testHalf run function du-in:ingame/classic/default/half
 
-execute if score #main cBluePoints > #main scoreMost store result score #main scoreMost run scoreboard players get #main cBluePoints
-execute if score #main cRedPoints > #main scoreMost store result score #main scoreMost run scoreboard players get #main cRedPoints
+execute if score #main bluePoints > #main scoreMost store result score #main scoreMost run scoreboard players get #main bluePoints
+execute if score #main redPoints > #main scoreMost store result score #main scoreMost run scoreboard players get #main redPoints
 
 #TEAM CLASSIC SIDEBAR STUFF#
-execute store result score Blue classicTeamKills run scoreboard players get #main cBluePoints
-execute store result score Red classicTeamKills run scoreboard players get #main cRedPoints
+execute store result score Blue classicTeamKills run scoreboard players get #main bluePoints
+execute store result score Red classicTeamKills run scoreboard players get #main redPoints
 
 execute if score #main maxTimer = #main timerHalf run function du-in:ingame/timed/half
 

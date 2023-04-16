@@ -3,6 +3,7 @@ scoreboard objectives setdisplay sidebar
 effect clear @a darkness
 stopsound @a record
 stopsound @a master minecraft:music.suffocation
+stopsound @a ambient minecraft:soundeffect.whisper
 execute positioned 97 20 -107 run playsound minecraft:soundeffect.pylon.destroy master @a ~ ~ ~ 10000
 title @a[tag=!falseWin] title [{"text":"Multiverse Tether","bold":true,"color":"red"}]
 title @a[tag=!falseWin,tag=!lobby] subtitle {"text":"DESTROYED","color":"gold"}

@@ -1,4 +1,4 @@
 clear @s[tag=!shopItem] minecraft:carrot_on_a_stick{shopItem:1b}
 
-execute if entity @s[tag=!shop,gamemode=!creative,tag=!shopItem,tag=!playing,tag=!working,tag=!credits,tag=!parkour] unless score #main lobbyTheme matches 1.. run item replace entity @s hotbar.6 with minecraft:carrot_on_a_stick{CustomModelData:1006,display:{Name:'{"text":"Shop","color":"green","bold":true,"italic":false}',Lore:['{"text":"Right click to use!","color":"dark_purple"}']},fixedItem:1b,weaponItem:1b,shopItem:1b}
+execute if entity @s[tag=!shop,gamemode=!creative,tag=!shopItem,tag=!playing,tag=!working,tag=!credits,tag=!parkour] unless score #main lobbyTheme matches 1.. run item replace entity @s hotbar.6 with minecraft:carrot_on_a_stick{CustomModelData:1006,display:{Name:'{"text":"Settings","color":"green","bold":true,"italic":false}',Lore:['{"text":"Right click to use!","color":"dark_purple"}']},fixedItem:1b,weaponItem:1b,shopItem:1b}
 execute if entity @s[tag=!shop,gamemode=!creative,tag=!shopItem,tag=!playing,tag=!working,tag=!credits,tag=!parkour] if score #main lobbyTheme matches 1.. run function du-in:lobby/item/holiday/holishop

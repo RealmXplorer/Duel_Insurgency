@@ -51,9 +51,6 @@ stopsound @s record
 scoreboard players set @s music 0
 #tag @s remove online
 
-#Reset lobby "back" score
-scoreboard players reset @s back
-
 #Clear player's inventory
 clear @s
 

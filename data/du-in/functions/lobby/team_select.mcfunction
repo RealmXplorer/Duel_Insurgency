@@ -1,11 +1,3 @@
-# Team Specific Functions #
-    execute if entity @s[scores={joinRed=1..,lobby=3}] run function du-in:lobby/actions/pick_red
-
-    execute if entity @s[scores={joinBlue=1..,lobby=3}] run function du-in:lobby/actions/pick_blue
-
-    execute if entity @s[scores={teamQuery=1..,lobby=3}] run function du-in:lobby/actions/team_query
-
-
 # Team Specific Items #
     execute if entity @s[scores={lobby=3},nbt=!{Inventory:[{tag:{fixedItem:1b},id:"minecraft:carrot_on_a_stick",Slot:3b}]},tag=teamMode] run function du-in:lobby/item/red
 

@@ -8,11 +8,11 @@ execute as @a[scores={kothTimer=1..},tag=kothIngame] run function du-in:ingame/k
     #execute as @a[tag=playing,tag=!chalf] if score @s killIngame >= #main testHalf run function du-in:ingame/classic/default/half
 
 #execute as @a[gamemode=!spectator,tag=playing,tag=kothIngame,sort=random] if score @s kothTimer > #main kothMost store result score #main kothMost run scoreboard players get @s kothTimer
-execute if score #main kBluePoints > #main scoreMost store result score #main scoreMost run scoreboard players get #main kBluePoints
-execute if score #main kRedPoints > #main scoreMost store result score #main scoreMost run scoreboard players get #main kRedPoints
+execute if score #main bluePoints > #main scoreMost store result score #main scoreMost run scoreboard players get #main bluePoints
+execute if score #main redPoints > #main scoreMost store result score #main scoreMost run scoreboard players get #main redPoints
 
-execute store result score Red kothTeamTimer run scoreboard players get #main kRedPoints
-execute store result score Blue kothTeamTimer run scoreboard players get #main kBluePoints
+execute store result score Red kothTeamTimer run scoreboard players get #main redPoints
+execute store result score Blue kothTeamTimer run scoreboard players get #main bluePoints
 
 execute if score #main maxTimer = #main timerHalf run function du-in:ingame/timed/half
 

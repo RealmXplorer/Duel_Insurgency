@@ -44,9 +44,6 @@ scoreboard players set @a lobby 3
 tag @a[tag=cl] add cmap
 tag @a[tag=dml] add cmap
 
-#Uncomment this to have the game suggest a random kit to play with if the tournament tag is being used
-#execute if entity @a[tag=partyLeader,tag=tournament] run function du-in:kit_wheel
-
 #Stop all music
 execute as @a run function du-in:music/lobby/stop/parkour
 execute as @a run function du-in:music/lobby/stop/shop

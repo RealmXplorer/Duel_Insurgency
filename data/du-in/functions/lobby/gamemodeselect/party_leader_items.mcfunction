@@ -1,6 +1,3 @@
-    # Enable or Disable Team mode #
-        execute if entity @s[scores={teamPlayMode=1..}] run function du-in:lobby/actions/team_play
-        
     #Team Item
         execute if entity @s[nbt=!{Inventory:[{tag:{fixedItem:1b},id:"minecraft:carrot_on_a_stick",Slot:2b}]}] run function du-in:lobby/item/team
     #Play Item

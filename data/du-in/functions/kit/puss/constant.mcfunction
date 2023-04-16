@@ -20,10 +20,10 @@ execute if entity @s[tag=kitActions,tag=void] run function du-in:kit/puss/abilit
 
 execute if entity @s[tag=secKitActions,tag=!stolen] run function du-in:kit/puss/secondary/switch
 
-execute store result score @s[tag=!stolen,scores={pussDeaths=4..},tag=!void] secCount run clear @s[tag=!kitMenu] warped_fungus_on_a_stick 0
+execute store result score @s[tag=!stolen,scores={gameDeaths=4..},tag=!void] secCount run clear @s[tag=!kitMenu] warped_fungus_on_a_stick 0
 execute store result score @s[tag=!stolen,tag=void] secCount run clear @s[tag=!kitMenu] warped_fungus_on_a_stick 0
 
-execute if entity @s[tag=!stolen,tag=!teamDead,scores={pussDeaths=4..},tag=!void] unless entity @s[scores={secCount=1}] unless entity @s[scores={pussSwapTimer=1..}] run function du-in:kit/puss/secondary/item
+execute if entity @s[tag=!stolen,tag=!teamDead,scores={gameDeaths=4..},tag=!void] unless entity @s[scores={secCount=1}] unless entity @s[scores={pussSwapTimer=1..}] run function du-in:kit/puss/secondary/item
 execute if entity @s[tag=!stolen,tag=!teamDead,tag=void] unless entity @s[scores={secCount=1}] unless entity @s[scores={pussSwapTimer=1..}] run function du-in:kit/puss/secondary/item
 
 execute if entity @s[scores={pussSwapTimer=-1..}] run function du-in:kit/puss/secondary/timer

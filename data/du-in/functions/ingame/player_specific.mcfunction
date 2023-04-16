@@ -80,9 +80,6 @@ scoreboard players set @s[scores={spawnpoint=8..}] spawnpoint 0
 
 #SANS HIT#
 execute if entity @s[scores={sansHitTimer=0..}] run function du-in:kit/sans/ability/timer
-    #scoreboard players remove @s[scores={sansHitTimer=-1..}] sansHitTimer 1
-    #execute if entity @s[scores={sansHitTimer=..0}] unless entity @s[tag=!teamDead,scores={gasterTimer=..79}] run tag @s add armor
-    #scoreboard players reset @s[scores={sansHitTimer=..0}] sansHitTimer
 
 #Kill and Death functions
     execute if entity @s[scores={justdied=1..}] run function du-in:ingame/death
@@ -94,9 +91,6 @@ execute at @e[type=minecraft:marker,tag=spawnPoint,sort=nearest] facing entity @
 
 #End Yharim Ability
 execute if entity @s[scores={yharimTimer=..0}] run function du-in:kit/yharim/ability/timer_reset
-
-#Use vending Machine#
-#execute if entity @a[scores={kit=1000..1001}] if entity @s[scores={ksMachineUse=1..}] run function du-in:kit/saac/vending/init
 
 #Peep the Horror
     execute if entity @a[scores={kit=1002},tag=playing] run scoreboard players remove @s[scores={jermaTimer=-1..}] jermaTimer 1
@@ -133,7 +127,7 @@ execute if entity @s[scores={golemFloat=-1..}] run function du-in:kit/golem/abil
     execute if entity @s[tag=vented,tag=!sus] run function du-in:kit/impostor/vent/vent_fail
 
 #Chara ability head
-execute if entity @s[scores={charaTimer2=-1..}] run function du-in:kit/chara/ability/head
+execute if entity @s[scores={charaTimer=-1..}] run function du-in:kit/chara/ability/head
 
 #Kylo ability
 execute if entity @s[tag=kyloHit,scores={kyloTimer=-99..}] run function du-in:kit/kylo/ability/freeze

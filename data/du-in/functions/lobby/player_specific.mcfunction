@@ -6,18 +6,6 @@
 
 
 
-# K/D Ratio #
-    #execute as @a run scoreboard players operation @s killDeathRatio = @s Kills
-    #execute as @a run scoreboard players operation @s killDeathRatio *= #main multiplier
-    #execute as @a run scoreboard players operation @s killDeathRatio /= @s Deaths
-
-
-
-# Win Ratio #
-    #execute as @a run scoreboard players operation @s winRatio = @s Wins
-    #execute as @a run scoreboard players operation @s winRatio *= #main winMultiplier
-    #execute as @a run scoreboard players operation @s winRatio /= @s gamesPlayed
-
 # Lobby Sidebar #
     execute if entity @s[scores={lobby=1..}] unless entity @a[tag=partyLeader,tag=sidebarDisable] unless entity @a[tag=playing] unless entity @a[tag=working] run function du-in:lobby/misc/sidebar
 
@@ -39,6 +27,4 @@
     # Map Select Functions #
         execute if entity @s[scores={lobby=3}] run function du-in:lobby/map_select
 
-        #execute if entity @s[scores={kitUse=1..,lobby=1}] run function du-in:lobby/kit_use/gm
-        #execute if entity @s[scores={kitUse=1..,lobby=3}] run function du-in:lobby/kit_use/mp
         execute if entity @s[scores={kitUse=1..,lobby=1}] run function du-in:lobby/kit_use/gm

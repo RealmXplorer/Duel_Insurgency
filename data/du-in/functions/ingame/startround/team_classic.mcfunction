@@ -9,7 +9,6 @@ execute if score #main tFFAGoal matches 15 run scoreboard objectives modify clas
 execute if score #main tFFAGoal matches 20 run scoreboard objectives modify classicTeamKills displayname ["",{"text":"Classic Kills ","bold":true,"color":"gold"},{"text":"(of 20)","color":"gray"}]
 
 
-scoreboard players set @a[tag=!spectating,tag=!working] ctfKills 0
 scoreboard objectives setdisplay sidebar classicTeamKills
 #execute if entity @a[tag=!teamMode] run bossbar set bossbar:classic visible true
 bossbar set minecraft:classicred visible true

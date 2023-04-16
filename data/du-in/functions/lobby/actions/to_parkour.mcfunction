@@ -7,6 +7,4 @@ scoreboard players set @s music 0
 clear @s
 title @s title {"text":"","color":"red","bold":true}
 title @s subtitle {"text":"","color":"red","bold":true}
-#function du-in:other/afk/end
 function du-in:lobby/item_reset
-scoreboard players set @s toParkour 0

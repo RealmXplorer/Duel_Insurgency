@@ -1,25 +1,6 @@
 #Party Leader functions
     execute if entity @s[tag=partyLeader] run function du-in:lobby/gamemodeselect/party_leader_items
     
-# Gamemode Select Actions #
-
-    # Gamemode Select Wheel Functionality #
-        execute if entity @s[scores={gamemodeSwitch=1..}] run function du-in:lobby/actions/wheel
-
-    # Play Button Functionality #
-        execute if entity @s[scores={play=1..}] run function du-in:lobby/actions/play
-
-    # Teleport to Shop #
-        execute if entity @s[scores={toShop=1..},tag=!shop] run function du-in:lobby/actions/to_shop
-
-    # Enable or Disable Team mode #
-        #execute if entity @s[scores={teamPlayMode=1..},tag=partyLeader] run function du-in:lobby/actions/team_play
-
-    # Teleport to Parkour #
-        execute if entity @s[scores={toParkour=1..}] run function du-in:lobby/actions/to_parkour
-
-    
-
 # Gamemode Select Inventory Items #
     # Spam Mode Item # (FUNCTIONALITY RUNS THROUGH ITEM FUNCTION)
         execute if entity @s[nbt=!{Inventory:[{tag:{fixedItem:1b},id:"minecraft:cookie",Slot:24b}]},tag=!working,gamemode=!creative,tag=partyLeader,tag=!subLobby] run function du-in:lobby/item/spam

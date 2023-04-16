@@ -10,11 +10,11 @@ scoreboard players set @s weapCount 0
 execute if entity @s[tag=sabotaged] run function du-in:kit/puss/ability/hit
 
 effect give @s speed 2 0 true
-effect give @s[scores={pussDeaths=1..},tag=!sabotaged] strength 2 0 true
-effect give @s[scores={pussDeaths=2..},tag=!sabotaged] speed 2 1 true
-effect give @s[scores={pussDeaths=3..},tag=!sabotaged] strength 3 0 true
-effect give @s[scores={pussDeaths=5..},tag=!sabotaged] haste 3 0 true
-effect give @s[scores={pussDeaths=6..},tag=!sabotaged] speed 3 1 true
+effect give @s[scores={gameDeaths=1..},tag=!sabotaged] strength 2 0 true
+effect give @s[scores={gameDeaths=2..},tag=!sabotaged] speed 2 1 true
+effect give @s[scores={gameDeaths=3..},tag=!sabotaged] strength 3 0 true
+effect give @s[scores={gameDeaths=5..},tag=!sabotaged] haste 3 0 true
+effect give @s[scores={gameDeaths=6..},tag=!sabotaged] speed 3 1 true
 
 playsound minecraft:sans.ability master @a ~ ~ ~ 100 0.95
 particle minecraft:crit ~ ~.1 ~ 0.1 1 0.1 0 100 force

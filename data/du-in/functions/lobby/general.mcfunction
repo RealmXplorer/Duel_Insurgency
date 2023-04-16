@@ -24,10 +24,6 @@ execute at @e[type=marker,tag=lobbyPoint] as @a[distance=..25] unless score @s l
 #Pick gamemode
 execute if score #gamemode gamemode matches 1..5 run function du-in:lobby/pick
 
-#Timer for tournament kit picker
-scoreboard players add #main kitWheel 1
-execute if score #main kitWheel matches 22.. run scoreboard players set #main kitWheel 1
-
 #Give all in Lobby health#
 effect give @a[tag=!playing] minecraft:instant_health 1 100 true
 ##The not playing tag is important for if a player joins mid-match.

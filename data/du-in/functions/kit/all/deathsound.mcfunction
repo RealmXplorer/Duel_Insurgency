@@ -23,7 +23,7 @@ execute if entity @s[scores={kit=8}] run function du-in:kit/villager/sounds/deat
 execute if entity @s[scores={kit=10}] run function du-in:kit/gaster/sounds/death
 
 #UNDERTALE DEATH SOUND#
-execute if entity @s[scores={kit=9..16}] run function du-in:kit/all/undertale/death
+execute if entity @s[scores={kit=9..16}] unless entity @s[scores={kit=10}] run function du-in:kit/all/undertale/death
 
 #KYLO DEATH SOUND#
 execute if entity @s[scores={kit=17}] unless entity @s[scores={kyloSkin=1}] run function du-in:kit/kylo/sounds/death
@@ -52,6 +52,9 @@ execute if entity @s[scores={kit=20}] run playsound minecraft:terraria.golkill m
 
 #Cuphead Death Sound#
 execute if entity @s[scores={kit=21}] run playsound minecraft:cuphead.death master @a ~ ~ ~ 3 1
+
+#Ralsei Death sound
+execute if entity @s[scores={kit=24}] run function du-in:kit/all/undertale/death
 
 #RUNZA DEATH SOUND#
 execute if entity @s[scores={kit=1005}] run playsound minecraft:runza.death master @a ~ ~ ~ 3 1

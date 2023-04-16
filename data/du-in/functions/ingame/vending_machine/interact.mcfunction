@@ -16,4 +16,3 @@ clear @a[tag=vended,scores={kit=1000}] minecraft:green_dye 1
 clear @a[tag=vended,scores={kit=1001}] minecraft:gunpowder 1
 scoreboard players add @a[tag=vended,scores={kit=1000}] saacCarry 1
 tag @a[tag=vended] remove vended
-#scoreboard players reset @s ksMachineUse

@@ -23,7 +23,6 @@ playsound minecraft:entity.ender_dragon.flap master @a ~ ~ ~ 100 0.7
 
 
 scoreboard players set @a[distance=..5,tag=playing,gamemode=!spectator,tag=!teamDead] charaTimer 0
-scoreboard players set @a[distance=..5,tag=playing,gamemode=!spectator,tag=!teamDead] charaTimer2 0
 tag @s[tag=stolen] add kitDone
 tag @s remove sabotaged
 tag @s remove kitActions
