@@ -17,5 +17,5 @@
 
 #Start cooldown
 scoreboard players set @e[type=armor_stand,tag=asgoreFire,tag=!fireTimer] asgoreFire 100
-execute as @e[type=armor_stand,tag=asgoreFire,tag=!fireTimer] run execute store result score @s team run scoreboard players get @a[scores={kit=14},tag=kitActions,sort=nearest,limit=1] team
+execute as @e[type=armor_stand,tag=asgoreFire,tag=!fireTimer] store result score @s team run scoreboard players get @a[scores={kit=14},tag=kitActions,sort=nearest,limit=1] team
 tag @e[type=armor_stand,tag=asgoreFire,tag=!fireTimer,scores={asgoreFire=-99..}] add fireTimer
