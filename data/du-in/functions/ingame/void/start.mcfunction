@@ -4,6 +4,9 @@ advancement revoke @s only du-in:void/interact_void
 kill @e[tag=mapSpecific]
 tag @a remove voidReady
 scoreboard players set #main voidReadyOnline 0
+
+tag @a[tag=kothIngame] add kothMap
+
 tag @a remove cIngame
 tag @a remove dmIngame
 tag @a remove kothIngame
@@ -22,22 +25,105 @@ stopsound @a ambient
 stopsound @a record
 scoreboard players set @a music 0
 scoreboard players set @a ambience 0
+scoreboard players set @a heartBeat 0
 
-tp @a 113 5 -91 135 0
-spawnpoint @a 113 5 -91 135
+execute if score #main pylonsDestroyed matches ..0 run summon marker 10029 41 10030 {Tags:["pylon","mapSpecific"]}
+execute if score #main pylonsDestroyed matches 1 run summon marker 10062 41 10030 {Tags:["pylon","mapSpecific"]}
+execute if score #main pylonsDestroyed matches 2 run summon marker 10062 41 10063 {Tags:["pylon","mapSpecific"]}
+execute if score #main pylonsDestroyed matches 3 run summon marker 10029 41 10063 {Tags:["pylon","mapSpecific"]}
+
+execute if score #main pylonsDestroyed matches ..0 run function du-in:ingame/void/pylon_reset
+execute if score #main pylonsDestroyed matches 1 run setblock 10029 33 10030 air replace
+execute if score #main pylonsDestroyed matches 2 run setblock 10062 33 10030 air replace
+execute if score #main pylonsDestroyed matches 3 run setblock 10062 33 10063 air replace
+
+#Pylon 1
+#10029 41 10030
+
+#/setblock 10029 33 10030 beacon replace
+
+#Player Pylon 1
+#summon marker 10034 42 10035 {Tags:["gonerSpawn","mapSpecific"]}
+#10034 42 10035
+
+
+#Bridge 1-2
+summon marker 10045.0 42 10030.5 {Tags:["gonerSpawn","mapSpecific"]}
+
+#10045.0 42 10030.5
+
+
+#Pylon 2
+#10062 41 10030
+#/setblock 10062 33 10030 beacon replace
+
+#Player pylon 2
+#summon marker 10057 42 10035 {Tags:["gonerSpawn","mapSpecific"]}
+
+#10057 42 10035
+
+
+#Bridge 2-3
+summon marker 10062.5 42 10046.0 {Tags:["gonerSpawn","mapSpecific"]}
+#10062.5 42 10046.0
+
+
+#Pylon 3
+#10062 41 10063
+
+#/setblock 10062 33 10063 beacon replace
+
+#Player pylon 3
+#summon marker 10057 42 10058 {Tags:["gonerSpawn","mapSpecific"]}
+#10057 42 10058
+
+
+#Bridge 3-4
+summon marker 10046.0 42 10063.5 {Tags:["gonerSpawn","mapSpecific"]}
+#10046.0 42 10063.5
+
+
+#Pylon 4
+#10029 41 10063
+
+#/setblock 10029 33 10063 beacon replace
+
+#Player pylon 4
+#summon marker 10034 42 10058 {Tags:["gonerSpawn","mapSpecific"]}
+#10034 42 10058
+
+
+#Bridge 4-1
+summon marker 10029.5 42 10046.0 {Tags:["gonerSpawn","mapSpecific"]}
+#10029.5 42 10046.0 
+
+
+#Center
+#10045.0 42 10047.0
+
+tp @a 10045.0 42 10047.0
+#tp @a 113 5 -91 135 0
+
+spawnpoint @a 10045 42 10047
+#spawnpoint @a 113 5 -91 135
+
+scoreboard players set #main missileCooldown 40
+
 setblock 97 20 -107 minecraft:black_stained_glass
 time set night
 
-execute positioned 113 5 -91 run playsound minecraft:block.end_portal.spawn master @a ~ ~ ~ 1 1.75
-execute positioned 113 5 -91 run playsound minecraft:block.bell.use master @a ~ ~ ~ 1 0.75
-execute positioned 113 5 -91 run playsound minecraft:block.amethyst_block.hit master @a ~ ~ ~ 1 1.5
-execute positioned 113 5 -91 run playsound minecraft:soundeffect.voidbell master @a ~ ~ ~ 1 .5
-execute positioned 113 5 -91 run playsound minecraft:soundeffect.voidbell master @a ~ ~ ~ 1 1
-execute positioned 113 5 -91 run playsound minecraft:soundeffect.voidbell master @a ~ ~ ~ 1 1.5
-execute positioned 113 5 -91 run playsound minecraft:soundeffect.voidbell master @a ~ ~ ~ 1 2
+execute at @a run playsound minecraft:block.end_portal.spawn master @a ~ ~ ~ 1 1.75
+execute at @a run playsound minecraft:block.bell.use master @a ~ ~ ~ 1 0.75
+execute at @a run playsound minecraft:block.amethyst_block.hit master @a ~ ~ ~ 1 1.5
+execute at @a run playsound minecraft:soundeffect.voidbell master @a ~ ~ ~ 1 .5
+execute at @a run playsound minecraft:soundeffect.voidbell master @a ~ ~ ~ 1 1
+execute at @a run playsound minecraft:soundeffect.voidbell master @a ~ ~ ~ 1 1.5
+execute at @a run playsound minecraft:soundeffect.voidbell master @a ~ ~ ~ 1 2
 
-execute if score #main pylonsDestroyed matches ..2 run scoreboard players set @a gonersKilled 30
-execute if score #main pylonsDestroyed matches 3 run scoreboard players set @a gonersKilled 30
+#execute if score #main pylonsDestroyed matches ..2 run scoreboard players set @a gonersKilled 30
+#execute if score #main pylonsDestroyed matches 3 run scoreboard players set @a gonersKilled 30
+
+scoreboard players set @a gonersKilled 30
 
 advancement grant @a[gamemode=!spectator] only du-in:void/void
 

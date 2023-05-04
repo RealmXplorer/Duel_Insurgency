@@ -1,0 +1,5 @@
+#DEFAULT#
+item replace entity @s armor.head with minecraft:player_head{weaponItem:1b,display:{Name:"{\"text\":\"Scraptrap\"}"},SkullOwner:{Id:[I;-1700867596,-438613736,-1483607811,1396970680],Properties:{textures:[{Value:"eyJ0ZXh0dXJlcyI6eyJTS0lOIjp7InVybCI6Imh0dHA6Ly90ZXh0dXJlcy5taW5lY3JhZnQubmV0L3RleHR1cmUvY2I2OWM0MjUwNTNhZjIzMjVlMmJiMjRlNTU0ZmY1MmFmNzBiNTAwMzUzNDYwZWJjMzczNWFkOGIxZmQzNjY2In19fQ=="}]}}} 1
+item replace entity @s armor.chest with minecraft:leather_chestplate{HideFlags:4,Unbreakable:1,display:{Name:'{"text":"Scraptrap Chest"}',color:6710048},weaponItem:1b} 1
+item replace entity @s armor.legs with minecraft:leather_leggings{HideFlags:4,Unbreakable:1,display:{Name:'{"text":"Scraptrap Legs"}',color:5000268},weaponItem:1b} 1
+item replace entity @s armor.feet with minecraft:leather_boots{HideFlags:4,Unbreakable:1,display:{Name:'{"text":"Scraptrap Feet"}',color:4802333},weaponItem:1b} 1

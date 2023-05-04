@@ -1,4 +1,5 @@
-scoreboard players set @s parryDuration 30
+#scoreboard players set @s parryDuration 30
+#scoreboard players set @s parryCooldown 60
 tag @s add parry
 playsound minecraft:soundeffect.parry master @a ~ ~ ~ .3 1
 playsound minecraft:entity.warden.sonic_boom master @a ~ ~ ~ .5 2

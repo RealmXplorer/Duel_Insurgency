@@ -1,6 +1,4 @@
 #   Run GAMEMODES  #
-#scoreboard players set #main voidReadyOnline 0
-#execute as @a[tag=!spectating,tag=!working,tag=voidReady] run scoreboard players add #main voidReadyOnline 1
 
     # Classic Functions #
         execute if entity @a[tag=cIngame] run function du-in:ingame/classic/classic
@@ -17,10 +15,7 @@
     # Conquest Functions #
         execute if entity @a[tag=cqIngame,tag=!win,tag=!lose] run function du-in:ingame/conquest/conquest
 
-    # Extraction Functions #
-        #execute if entity @a[tag=exIngame] run function du-in:ingame/extraction/extraction
-
-    ## HELP ##
+    # HELP ME #
         execute if entity @a[tag=void] run function du-in:ingame/void/void
 
 # General Functions #
@@ -69,9 +64,6 @@ execute as @e[type=armor_stand,tag=asgoreFire,scores={asgoreFire=-99..}] at @s r
 
 execute as @e[type=block_display,tag=flame,scores={flameTimer=-99..}] at @s run function du-in:kit/death/ability/timer
 
-#Countdown Vent score.
-scoreboard players add @a[tag=sus,scores={ventCooldown=..61}] ventCooldown 1
-
 
 
 
@@ -100,7 +92,7 @@ execute as @e[type=falling_block,tag=floweyStem] at @s run function du-in:kit/fl
 #Papyrus Ability bones
 execute as @e[type=marker,scores={papyrusHitTimer=-1..},tag=papyrusFind] at @s run function du-in:kit/papyrus/ability/bones
 
-
+#Jack Horner items
 execute as @e[type=!player,tag=gold,scores={goldTimer=1..}] run function du-in:kit/jack_horner/ability/midas/timer
 
 execute at @e[type=minecraft:marker,tag=poisonApple] unless entity @e[type=minecraft:snowball,distance=..2] run function du-in:kit/jack_horner/ability/poison_apple/explode

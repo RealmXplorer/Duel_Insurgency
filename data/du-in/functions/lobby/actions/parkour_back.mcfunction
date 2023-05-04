@@ -8,3 +8,4 @@ tag @s remove subLobby
 #function du-in:other/afk/end
 clear @s
 function du-in:lobby/item_reset
+#function du-in:lobby/scheduled/gamemode_select

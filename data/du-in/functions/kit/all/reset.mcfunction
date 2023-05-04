@@ -6,9 +6,6 @@ tag @s remove asrielCharge
 tag @s remove asrielSaber
 tag @s remove stolen
 tag @s remove givenStolen
-tag @s remove gasterUse
-tag @s remove sans
-tag @s remove gasterShatter
 tag @s remove kickstarted
 tag @s remove vended
 tag @s remove saacRod

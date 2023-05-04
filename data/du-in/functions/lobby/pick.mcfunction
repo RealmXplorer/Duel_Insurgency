@@ -34,6 +34,8 @@ clear @a
 #tag @a remove givenStats
 tag @a remove givenEx
 
+#schedule clear du-in:lobby/scheduled/gamemode_select
+
 #Set global lobby to 3
 scoreboard players set #main lobby 3
 

@@ -28,3 +28,6 @@ summon painting -201 9 69 {facing:2b,Invulnerable:1b,Tags:["mapSpecific"],varian
 summon painting -198 7 38 {facing:1b,Invulnerable:1b,Tags:["mapSpecific"],variant:"minecraft:wanderer"}
 summon painting -169 7 66 {facing:2b,Invulnerable:1b,Tags:["mapSpecific"],variant:"minecraft:wanderer"}
 summon painting -168 9 40 {facing:1b,Invulnerable:1b,Tags:["mapSpecific"],variant:"minecraft:wanderer"}
+
+execute unless entity @a[tag=partyLeader,tag=nethLock] run summon interaction -163 17 32 {Tags:["voidLock","mapSpecific"],width:0.6f,height:0.6f,response:1b}
+execute if entity @a[tag=partyLeader,tag=nethLock] run summon interaction -163 17 32 {Tags:["usedVoidLock","mapSpecific"],width:0.6f,height:0.6f,response:1b}

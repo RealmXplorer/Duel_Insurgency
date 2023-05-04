@@ -2,9 +2,9 @@ kill @e[type=skeleton]
 tag @a add waveBreak
 setblock 97 20 -107 minecraft:black_concrete
 
-execute positioned 113 5 -91 run playsound minecraft:soundeffect.voidbell master @a ~ ~ ~ 1000 1
-execute positioned 113 5 -91 run playsound minecraft:soundeffect.voidbell master @a ~ ~ ~ 1000 1.5
-execute positioned 113 5 -91 run playsound minecraft:soundeffect.voidbell master @a ~ ~ ~ 1000 0.5
+execute positioned as @e[type=marker,tag=pylon] run playsound minecraft:soundeffect.voidbell master @a ~ ~ ~ 1000 1
+execute positioned as @e[type=marker,tag=pylon] run playsound minecraft:soundeffect.voidbell master @a ~ ~ ~ 1000 1.5
+execute positioned as @e[type=marker,tag=pylon] run playsound minecraft:soundeffect.voidbell master @a ~ ~ ~ 1000 0.5
 
 title @a title " "
 title @a subtitle [{"text":"Wave ","color":"light_purple","bold":true},{"text":"Clear!","color":"dark_purple","bold":true}]

@@ -5,3 +5,7 @@ execute if entity @s[scores={ambience=1}] unless score #main pylonsDestroyed mat
 
 execute if score #main pylonsDestroyed matches 1..2 run function du-in:music/void/corruption
 execute if score #main pylonsDestroyed matches 3 run function du-in:music/void/vain_pursuit
+
+function du-in:ingame/void/ambience
+
+execute at @s if entity @s[distance=..100,y=20,dy=0,tag=!working] run function du-in:ingame/void/platform_return

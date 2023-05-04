@@ -3,6 +3,7 @@ team join lobby @a
 scoreboard players set #main lobby 1
 scoreboard players set @a lobby 1
 tag @a add lobby
+schedule function du-in:lobby/scheduled/one_sec_loop 1s
 scoreboard players set #main winners 0
 gamemode adventure @a[tag=!working,tag=lobby]
 scoreboard players set * music 0

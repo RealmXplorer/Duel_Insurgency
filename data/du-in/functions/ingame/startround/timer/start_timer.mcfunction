@@ -1,48 +1,98 @@
-tag @a add startgame
-stopsound @a record
-tag @a[tag=!kitPicked,tag=!working] add spectating
-clear @a
-execute as @a[tag=spectating] run function du-in:ingame/spect
-scoreboard players reset @a justdied
-tag @a[tag=!working,tag=!spectating] add playing
-scoreboard players set @a[tag=playing,gamemode=!spectator] weapCount 0
-scoreboard players set @a[scores={kit=22}] gumballSwitch 2
-scoreboard players set @a[scores={kit=27}] pussWeapSwitch 2
-scoreboard players set @a[scores={kit=28}] deathWeapSwitch 2
-scoreboard players set #main titleTimer2 80
-scoreboard players set @a cardPower 0
-#tag @a[tag=exl] add exIngame
-#tag @a[tag=exl] add exl
+#Clear lobby schedule
+schedule clear du-in:lobby/scheduled/one_sec_loop
 
+#Mark all players as in start game sequence
+tag @a add startgame
+
+#Stop all other music
+stopsound @a record
+
+#Set all spectators into spectator mode
+tag @a[tag=!kitPicked,tag=!working] add spectating
+execute as @a[tag=spectating] run function du-in:ingame/spect
+scoreboard players reset @a[tag=specating] Lives
+
+#Clear all items
+clear @a
+
+#Reset justdied score
+scoreboard players reset @a justdied
+
+#Give all players in game the "playing" tag
+tag @a[tag=!working,tag=!spectating] add playing
+
+
+##Kit stuff
+    #Give player kit if they don't have one
+    execute unless entity @s[scores={kit=1..}] run tag @s add random
+
+    #Give all players weapons
+    scoreboard players set @a[tag=playing,gamemode=!spectator] weapCount 0
+
+    #Set swap for secondary kits/weapons to 2 (this is to ensure that the weapon actually switches when rightclicked)
+    scoreboard players set @a[scores={kit=22}] gumballSwitch 2
+    scoreboard players set @a[scores={kit=27}] pussWeapSwitch 2
+    scoreboard players set @a[scores={kit=28}] deathWeapSwitch 2
+
+    #Reset scores for certain kits
+    scoreboard players set @a[scores={kit=20}] yharimRage 0
+    scoreboard players reset @a[scores={kit=11}] asrielTimer
+
+    #Give Saac the "saac" tag
+    tag @a[scores={kit=1000},tag=!legMusicOff] add saac
+    execute as @a[scores={kit=1000}] run function du-in:ingame/startround/saac_reset
+
+    #Mark Zombie and Springtrap as undead
+    tag @a[scores={kit=2}] add undead
+    tag @a[scores={kit=5}] add undead
+
+    #Set Cuphead card power to 0 and play announcer
+    scoreboard players set @a cardPower 0
+    execute if entity @a[scores={kit=21}] at @a[scores={kit=21},limit=1] run playsound minecraft:cuphead.announce.start master @a ~ ~ ~ 10 1
+
+    #Give advancements for players who are playing as legendary characters
+    advancement grant @a[tag=!mystery,tag=!mysteryHead,scores={kit=1000..1007}] only du-in:unlock/unlock
+    advancement grant @a[scores={kit=42069}] only du-in:chungus
+
+##
+
+
+#Start next title timer
+scoreboard players set #main titleTimer2 80
+
+#Remove all previous game tags, and start new game stats
 tag @a remove wonGame
 tag @a remove tiedGame
 tag @a remove wasSpect
-#tag @a remove mapOverride
-tag @a[scores={kit=1000},tag=!legMusicOff] add saac
-scoreboard players reset @a[tag=specating] Lives
-#tag @a[scores={kit=20},tag=!stolen] add flamethrower
-#scoreboard players set @a[tag=flamethrower] flamethrowerAmmo 7
+scoreboard players add #main gameNum 1
+scoreboard players set @a gameDeaths 0
+scoreboard players set @a gameKills 0
+scoreboard players set @a gameParries 0
 
-tag @a[scores={kit=2}] add undead
-tag @a[scores={kit=5}] add undead
-
+#Start initial ability cooldown
 xp set @a[tag=playing] 100 levels
+
+#Give all players armor
 tag @a add armor
+
+#Remove tag voteRandom
 tag @a remove voteRandom
+
+#Play countdown sound
 execute at @a run playsound minecraft:soundeffect.countdown master @a[tag=!dmend] ~ ~ ~ 1000000 1 1
-#bossbar set minecraft:kit_countdown visible false
+
+#Hide map countdown
 bossbar set minecraft:map_countdown visible false
-#advancement grant @a[tag=!mystery,tag=!mysteryHead,scores={kit=24}] only du-in:zootopia
-#advancement grant @a[tag=!mystery,tag=!mysteryHead,scores={kit=9..16}] only du-in:undertale
-#advancement grant @a[tag=!mystery,tag=!mysteryHead,scores={kit=1..8}] only du-in:minecraft
-advancement grant @a[tag=!mystery,tag=!mysteryHead,scores={kit=1000..1007}] only du-in:unlock/unlock
-advancement grant @a[scores={kit=42069}] only du-in:chungus
-#tag @a remove mysteryHead
+
+#Set all players base attack to 1
 execute as @a run attribute @s minecraft:generic.attack_damage base set 1
 
+#Make sure all players can see the game timer
 bossbar set bossbar:gametimer players @a
 
+#Start music
 tag @a[tag=!working,tag=!musicOff] add song
+
 #Non-timed classic
 execute if entity @a[tag=cl,tag=!teamMode,tag=!timedMode,tag=partyLeader] run function du-in:ingame/startround/classic
 execute if entity @a[tag=cl,tag=teamMode,tag=!timedMode,tag=partyLeader] run function du-in:ingame/startround/team_classic
@@ -72,30 +122,23 @@ execute if entity @a[tag=ctfl,tag=timedMode] run function du-in:ingame/startroun
 execute if entity @a[tag=cql,tag=!timedMode] run function du-in:ingame/startround/conquest
 execute if entity @a[tag=cql,tag=timedMode] run function du-in:ingame/startround/timed_conquest
 
-
-
-execute as @a[scores={kit=1000}] run function du-in:ingame/startround/saac_reset
-scoreboard players set @a[scores={kit=20}] yharimRage 0
+#Reset Lobby functions, tags, and scores
 scoreboard players reset #main lobby
 scoreboard players reset @a lobby
-#execute as @a at @a run function du-in:music/lobby/stop/kitselect
-scoreboard players reset @a asrielTimer
-scoreboard players add #main gameNum 1
-scoreboard players set @a gameDeaths 0
-scoreboard players set @a gameKills 0
-scoreboard players set @a gameParries 0
-#execute unless entity @a[tag=partyLeader,tag=weatherOff] run gamerule doWeatherCycle true
+execute as @a run function du-in:lobby/item_reset
 tag @a remove ready
 tag @a remove teamPicked
 tag @a remove countStop
+tag @a remove kitMenu
+
+#Schedule ingame functions
 schedule function du-in:ingame/scheduled/one_sec_loop 1s
 #schedule function du-in:ingame/scheduled/five_loop 5s
-execute as @a run function du-in:lobby/item_reset
-tag @a remove noItem
-tag @a remove kitMenu
-#tag @a remove mapOverride
+
+#Join teams
 team join Red @a[scores={team=1}]
 team join Blue @a[scores={team=2}]
-execute if entity @a[scores={kit=21}] at @a[scores={kit=21},limit=1] run playsound minecraft:cuphead.announce.start master @a ~ ~ ~ 10 1
+
+#Reset void functions
 tag @a remove fromVoid
 scoreboard players set #main voidReadyOnline 0

@@ -1,13 +1,19 @@
 tag @a remove waveBreak
-execute positioned 113 5 -91 run playsound minecraft:soundeffect.voidbell master @a ~ ~ ~ 1000 1
-execute positioned 97 20 -107 run playsound minecraft:block.beacon.activate master @a ~ ~ ~ 1000 1
+
+execute positioned as @e[type=marker,tag=pylon] run playsound minecraft:soundeffect.voidbell master @a ~ ~ ~ 1000 1
+execute positioned as @e[type=marker,tag=pylon] run playsound minecraft:block.beacon.activate master @a ~ ~ ~ 1000 1
+
+#execute positioned 113 5 -91 run playsound minecraft:soundeffect.voidbell master @a ~ ~ ~ 1000 1
+#execute positioned 97 20 -107 run playsound minecraft:block.beacon.activate master @a ~ ~ ~ 1000 1
 
 setblock 97 20 -107 minecraft:black_stained_glass
 
 scoreboard players add #main wave 1
 
-execute if score #main pylonsDestroyed matches ..2 run scoreboard players set @a gonersKilled 30
-execute if score #main pylonsDestroyed matches 3 run scoreboard players set @a gonersKilled 30
+scoreboard players set @a gonersKilled 30
+
+#execute if score #main pylonsDestroyed matches ..2 run scoreboard players set @a gonersKilled 30
+#execute if score #main pylonsDestroyed matches 3 run scoreboard players set @a gonersKilled 30
 
 title @a title " "
 title @a subtitle [{"text":"Wave ","color":"light_purple","bold":true},{"score":{"name":"#main","objective":"wave"},"color":"dark_purple","bold":true},{"text":"/2","color":"dark_purple","bold":true}]

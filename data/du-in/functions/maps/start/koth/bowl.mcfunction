@@ -24,3 +24,6 @@ summon painting -434 22 -23 {facing:1b,Invulnerable:1b,Tags:["mapSpecific"],vari
 summon painting -441 14 -49 {facing:2b,Invulnerable:1b,Tags:["mapSpecific"],variant:"minecraft:wanderer"}
 summon painting -410 21 -51 {facing:3b,Invulnerable:1b,Tags:["mapSpecific"],variant:"minecraft:wanderer"}
 summon painting -416 22 -17 {facing:3b,Invulnerable:1b,Tags:["mapSpecific"],variant:"minecraft:wanderer"}
+
+execute unless entity @a[tag=partyLeader,tag=bowlLock] run summon interaction -420 23 -16 {Tags:["voidLock","mapSpecific"],width:0.6f,height:0.6f,response:1b}
+execute if entity @a[tag=partyLeader,tag=bowlLock] run summon interaction -420 23 -16 {Tags:["usedVoidLock","mapSpecific"],width:0.6f,height:0.6f,response:1b}

@@ -16,6 +16,9 @@ scoreboard players set @a kit 0
 tag @a remove kitPicked
 tag @a remove spect
 
+tag @a[tag=ctfl] remove teamMode
+tag @a[tag=cql] remove teamMode
+
 #Join lobby team
 team join lobby @a
 
@@ -82,3 +85,4 @@ title @a times 0 60 0
 title @a title {"text":"","color":"red","bold":true}
 title @a subtitle {"text":"Open inventory for more options!","color":"red","bold":true}
 title @a actionbar {"text":"Open inventory for more options!","color":"red","bold":true}
+#function du-in:lobby/scheduled/gamemode_select

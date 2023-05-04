@@ -117,7 +117,6 @@ scoreboard objectives add ten dummy
 scoreboard objectives add redFlagTimer dummy
 scoreboard objectives add redFlagCooldown dummy
 scoreboard objectives add blueFlagTimer dummy
-scoreboard objectives add blueFlagCooldown dummy
 scoreboard objectives add capturePoints dummy
 scoreboard objectives add classicMost dummy
 scoreboard objectives add classicTeamKills dummy
@@ -316,6 +315,11 @@ scoreboard objectives add winners dummy
 scoreboard objectives add wave dummy
 scoreboard objectives add waveCooldown dummy
 
+scoreboard objectives add heartBeat minecraft.custom:minecraft.play_time
+
+scoreboard objectives add primedTimer dummy
+scoreboard objectives add missileCooldown dummy
+
 scoreboard objectives add gonerChance dummy
 scoreboard objectives add gonerCount dummy
 scoreboard objectives add gonersKilled dummy
@@ -338,3 +342,6 @@ scoreboard objectives modify winStreak displayname {"text":"Win Streak","bold":t
 scoreboard objectives modify Diamonds displayname {"text":"Diamonds","bold":true,"color":"red"}
 
 scoreboard objectives modify GumballClassicFake displayname ["",{"text":"Classic Kills ","bold":true,"color":"gold"},{"text":"(of ??)","color":"gray"}]
+
+schedule clear du-in:main/scheduled
+schedule function du-in:main/scheduled 1s

@@ -7,3 +7,4 @@ clear @s
 function du-in:lobby/item_reset
 tag @s remove credits
 tag @s remove subLobby
+#function du-in:lobby/scheduled/gamemode_select

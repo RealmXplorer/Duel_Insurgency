@@ -12,5 +12,7 @@ kill @e[type=item,tag=redFlagItem]
 #Mark flag as uncaptured
 tag @e[type=marker,tag=redFlag] remove captured
 
+tag @s remove flagGot
+tag @s remove ownFlag
 #End function
 scoreboard players reset #main redFlagTimer

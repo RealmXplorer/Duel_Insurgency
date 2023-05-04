@@ -18,5 +18,8 @@ scoreboard players add @r[tag=playing,gamemode=!spectator,predicate=du-in:chance
 
 execute if score #main matchDeaths matches 8.. if entity @a[scores={kit=28}] run function du-in:kit/death/passive/start
 
+#Give player kit if they don't have one
+execute unless entity @s[scores={kit=1..}] run tag @s add random
+
 #say success
 schedule function du-in:ingame/scheduled/one_sec_loop 1s

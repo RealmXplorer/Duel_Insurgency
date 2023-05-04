@@ -1,3 +1,4 @@
+stopsound @a record
 tag @a add free
 
 tag @a remove win
@@ -15,7 +16,12 @@ tag @a remove d2Lock
 tag @a remove harvestLock
 tag @a remove mirageLock
 tag @a remove mazeLock
-
+tag @a remove mcLock
+tag @a remove zigLock
+tag @a remove nethLock
+tag @a remove moraLock
+tag @a remove duneLock
+tag @a remove bowlLock
 
 scoreboard players set @a music 0
 scoreboard players set @a ambience 0

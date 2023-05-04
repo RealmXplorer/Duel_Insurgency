@@ -1,6 +1,6 @@
 #Run Ability give and secondary gives
     execute if entity @s[scores={kitUse=1..},tag=!startgame,tag=!win,tag=!lose,tag=!kitMenu] run function du-in:kit/all/ability/init
-    execute if entity @s[scores={secKitUse=1..}] run function du-in:kit/all/ability/activate_sec
+    execute if entity @s[scores={secKitUse=1..},tag=!startgame,tag=!win,tag=!lose,tag=!kitMenu] run function du-in:kit/all/ability/activate_sec
 
 
 #Return ability
@@ -16,8 +16,11 @@ execute if entity @s[level=1..2,tag=!lobby,tag=!win,tag=!lose,tag=!kitMenu] unle
     execute if entity @s[predicate=du-in:is_sneaking] run function du-in:ingame/is_sneaking
     execute if entity @s[predicate=!du-in:is_sneaking] run function du-in:ingame/is_not_sneaking
 
+    #Parry Mechanics
     execute if entity @s[tag=parryStart] run function du-in:kit/all/parry/parry_buffer
-
+    execute if entity @s[tag=parry,scores={parryDuration=1..}] run function du-in:kit/all/parry/in_parry
+    scoreboard players reset @s[scores={parryHit=1..}] parryHit
+    scoreboard players reset @s[scores={parryDam=1..}] parryDam
 
 # REGEN TIMER (Except for Zombie) #
     execute if entity @s[scores={healthTimer=200..}] unless entity @s[tag=undead] unless entity @s[scores={kit=19}] run scoreboard players add @s regenTimer 1
@@ -31,14 +34,7 @@ execute if entity @s[level=1..2,tag=!lobby,tag=!win,tag=!lose,tag=!kitMenu] unle
 execute if entity @s[level=1..,tag=!teamDead,tag=!win,tag=!lose,tag=!kitMenu,tag=!startgame,tag=!deathDouble] unless entity @s[scores={deathTimer=0..}] run xp add @s -1 levels
 
 #KILL COMBOS
-    #Initialize and run combo test if player has kill
-        #execute if entity @s[scores={quickKill=1..}] run function du-in:ingame/killstreaks/combo
-
-    #Add to timer if player has kill
-        scoreboard players add @s[tag=killCombo] comboTimer 1
-
-    #Reset Combo scores if timer is reached without kill
-        execute if entity @s[tag=killCombo,scores={comboTimer=60..}] run function du-in:ingame/killstreaks/combo/reset
+execute if entity @s[tag=killCombo] run function du-in:ingame/killstreaks/combo/timer
 
 #HIT COMBO#
     execute if entity @s[scores={comboBreak=1..}] run function du-in:ingame/killstreaks/combo/reset1
@@ -89,25 +85,14 @@ execute if entity @s[scores={sansHitTimer=0..}] run function du-in:kit/sans/abil
 #Set spawnpoints
 execute at @e[type=minecraft:marker,tag=spawnPoint,sort=nearest] facing entity @r[tag=playing] eyes run spawnpoint @s[tag=!grave,tag=!teamMode,tag=!void] ~ ~ ~ ~
 
-#End Yharim Ability
-execute if entity @s[scores={yharimTimer=..0}] run function du-in:kit/yharim/ability/timer_reset
+#Yharim timer
+execute if entity @s[scores={yharimTimer=0..}] run function du-in:kit/yharim/ability/timer
 
 #Peep the Horror
-    execute if entity @a[scores={kit=1002},tag=playing] run scoreboard players remove @s[scores={jermaTimer=-1..}] jermaTimer 1
-    execute if entity @a[scores={kit=1002},tag=playing] if entity @s[tag=peepedHorror,scores={jermaTimer=..1}] run function du-in:kit/jerma/ability/peeped_horror
-
-
-#Give player kit if they don't have one
-execute unless entity @s[scores={kit=1..}] run tag @s add random
-
-#Remove 1 from Yharim Timer
-scoreboard players remove @s[scores={yharimTimer=1..}] yharimTimer 1
+execute if entity @s[scores={jermaTimer=0..}] run function du-in:kit/jerma/ability/timer
 
 #Ralsei Sleep#
 execute if entity @s[scores={ralseiTimer=..70}] run function du-in:kit/ralsei/ability/sleep
-
-scoreboard players reset @s[scores={parryHit=1..}] parryHit
-scoreboard players reset @s[scores={parryDam=1..}] parryDam
 
 #Darwin Timer#
 execute if entity @s[scores={darwinTimer=0..}] run function du-in:kit/gumball/ability/darwin/timer
@@ -119,12 +104,8 @@ execute if entity @s[tag=notEaten] run function du-in:kit/runza/ability/the_hung
 execute if entity @s[scores={golemFloat=-1..}] run function du-in:kit/golem/ability/float
 
 #Venting Mechanics
-    #If on cooldown
-    execute if entity @s[tag=sus,scores={ventCooldown=..59},tag=vented] run function du-in:kit/impostor/vent/vent_cooldown
-    #If not on cooldown and sus
-    execute if entity @s[tag=sus,tag=playing,tag=vented,scores={ventCooldown=60..}] run function du-in:kit/impostor/vent/vent_success
-    #If not sus
-    execute if entity @s[tag=vented,tag=!sus] run function du-in:kit/impostor/vent/vent_fail
+scoreboard players add @s[tag=sus,scores={ventCooldown=..61}] ventCooldown 1
+execute if entity @s[tag=vented] run function du-in:kit/all/vent/init
 
 #Chara ability head
 execute if entity @s[scores={charaTimer=-1..}] run function du-in:kit/chara/ability/head
@@ -135,18 +116,21 @@ execute if entity @s[tag=kyloHit,scores={kyloTimer=-99..}] run function du-in:ki
 #Paz Ability
 execute if entity @s[scores={blakeTimer=-99..}] run function du-in:kit/paz/ability/rubberband
 
+#Jack Horner abilities
 execute if entity @s[scores={unicornTimer=1..}] run function du-in:kit/jack_horner/ability/unicorn_bow/timer
-
 execute if entity @s[tag=midasTouched] run function du-in:kit/jack_horner/ability/midas/freeze
 
+#Death ability
 execute if entity @s[scores={deathAbilityTimer=-99..}] run function du-in:kit/death/ability/ability_timer
 
+#Nick Sabotage ability
 execute if entity @s[scores={sabotageTimer=1..}] run function du-in:kit/nick/ability/sabotage_timer
 
+#Puss ability
 execute if entity @s[scores={pussFearTimer=1..}] run function du-in:kit/puss/ability/fear_timer
 
+#Sans chestplate
 execute if entity @s[scores={sansHitTimer=0..}] unless entity @s[scores={gasterTimer=..79}] unless entity @s[scores={deathTimer=0..}] run item replace entity @s armor.chest with minecraft:leather_chestplate{display:{Name:'{"text":"Gravity","color":"blue","bold":true}',color:2228479},Unbreakable:1b,weaponItem:1b,AttributeModifiers:[{AttributeName:"generic.knockbackResistance",Name:"generic.knockbackResistance",Amount:1,Operation:0,UUIDLeast:928037,UUIDMost:684643}]} 1
 
+#Jungle ambience
 execute if entity @s[predicate=du-in:ambience/jungle_check,tag=!ambOff] run function du-in:maps/ambient/global/jungle
-
-execute if entity @s[tag=parry,scores={parryDuration=1..}] run function du-in:kit/all/parry/in_parry

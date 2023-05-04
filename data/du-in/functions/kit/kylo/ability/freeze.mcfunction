@@ -1,6 +1,6 @@
-execute rotated as @s[scores={kyloTimer=30}] run tp @e[type=marker,tag=kyloHitPos,limit=1,sort=nearest] ~ ~ ~ ~ ~
+execute rotated as @s[scores={kyloTimer=20}] run tp @e[type=marker,tag=kyloHitPos,limit=1,sort=nearest] ~ ~ ~ ~ ~
 
-execute as @e[type=marker,tag=kyloHitPos,sort=nearest,limit=1] at @s rotated as @s run tp @a[tag=kyloHit,limit=1,sort=nearest,scores={kyloTimer=..30}] @s
+execute as @e[type=marker,tag=kyloHitPos,sort=nearest,limit=1] at @s rotated as @s run tp @a[tag=kyloHit,limit=1,sort=nearest,scores={kyloTimer=..20}] @s
 
 scoreboard players remove @s kyloTimer 1
 

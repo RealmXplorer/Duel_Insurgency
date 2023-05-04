@@ -19,13 +19,13 @@ execute if entity @a[scores={lobby=3}] run scoreboard players set #main kitOnlin
 execute as @a[tag=ready,tag=lobby] run scoreboard players add #main kitOnline 1
 
 #Make sure player is in right lobby
-execute at @e[type=marker,tag=lobbyPoint] as @a[distance=..25] unless score @s lobby = #main lobby run function du-in:lobby/reset
+#execute at @e[type=marker,tag=lobbyPoint] as @a[distance=..25] unless score @s lobby = #main lobby run function du-in:lobby/reset
 
 #Pick gamemode
 execute if score #gamemode gamemode matches 1..5 run function du-in:lobby/pick
 
 #Give all in Lobby health#
-effect give @a[tag=!playing] minecraft:instant_health 1 100 true
+#effect give @a[tag=!playing] minecraft:instant_health 1 100 true
 ##The not playing tag is important for if a player joins mid-match.
 
 #Start game#

@@ -12,7 +12,8 @@ execute if entity @s[level=1] run function du-in:kit/cuphead/ability/item
 
 #Abilities initializations
 execute if entity @s[tag=kitActions] run function du-in:kit/cuphead/ability/init
-execute if entity @s[tag=secKitActions,tag=!stolen] run function du-in:kit/cuphead/parry/init
+execute if entity @s[tag=secKitActions,tag=!stolen,tag=!void] run function du-in:kit/cuphead/parry/init
+execute if entity @s[tag=secKitActions,tag=!stolen,tag=void] run function du-in:kit/cuphead/parry/void/init
 
 #WEAPON#
 #execute if entity @s[tag=!teamDead,tag=!stolen] unless entity @s[scores={weapCount=1}] run function du-in:kit/cuphead/weapon

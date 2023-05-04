@@ -111,15 +111,13 @@ scoreboard objectives setdisplay list Diamonds
 tag @a remove stolen
 tag @a remove givenStolen
 #tag @a remove abilities
-tag @a remove gasterUse
-scoreboard players set #main blueFlagCooldown 0
-scoreboard players set #main redFlagCooldown 0
 scoreboard players reset #main blueFlagTimer
 scoreboard players reset #main redFlagTimer
 bossbar set bossbar:classic color white
 bossbar set bossbar:gametimer color white
 scoreboard players set @a wildeTimer 0
-tag @a remove sans
+tag @a remove ownFlag
+tag @a remove otherFlag
 bossbar set minecraft:redkoth visible false
 bossbar set minecraft:bluekoth visible false
 scoreboard players reset * saacMoneyChance
@@ -150,7 +148,6 @@ scoreboard players set @a saacMoneyCheck 0
 scoreboard players set @a saacMoney 0
 scoreboard players set @a saacMoneyDollar 0
 tag @a remove wilde
-tag @a remove gaster
 tag @e remove shutDown
 tag @a remove spect
 scoreboard players reset * healthHit

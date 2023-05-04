@@ -8,3 +8,4 @@ playsound minecraft:entity.ender_dragon.flap master @s ~ ~ ~ 1 1.5
 function du-in:lobby/item_reset
 tag @s remove subLobby
 clear @s
+#function du-in:lobby/scheduled/gamemode_select
