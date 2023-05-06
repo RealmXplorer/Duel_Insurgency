@@ -11,4 +11,4 @@ playsound minecraft:ralsei.sing master @a ~ ~ ~ 100 1
 particle minecraft:crit ~ ~2.25 ~ 3 3 3 0.25 100 force @a
 playsound minecraft:entity.elder_guardian.curse master @a ~ ~ ~ .5 .75
 tag @s remove sabotaged
-tag @s[tag=stolen] add kitDone
+execute if entity @s[tag=stolen] run tag @s add kitDone

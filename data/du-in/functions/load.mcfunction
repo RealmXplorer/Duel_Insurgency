@@ -185,6 +185,11 @@ scoreboard objectives add kitOnline dummy
 scoreboard objectives add kMapRandom dummy
 scoreboard objectives add kothScale dummy
 scoreboard objectives add legMusicToggle dummy
+scoreboard objectives add thrownBarrier minecraft.dropped:barrier
+scoreboard objectives add thrownHead minecraft.dropped:player_head
+scoreboard objectives add thrownFoot minecraft.dropped:minecraft.rabbit_foot
+scoreboard objectives add thrownIronIngot minecraft.dropped:minecraft.iron_ingot
+scoreboard objectives add thrownCookie minecraft.dropped:minecraft.cookie
 
 scoreboard objectives add map1Vote dummy
 scoreboard objectives add map2Vote dummy

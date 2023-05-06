@@ -6,3 +6,5 @@ execute if entity @s[tag=partyLeader,scores={ranMode=1}] run tellraw @a ["",{"te
 execute if entity @s[tag=partyLeader,scores={ranMode=1}] run playsound minecraft:soundeffect.unlock master @a ~ ~ ~ .2 1.5
 execute unless entity @s[tag=partyLeader,scores={ranMode=1}] run tellraw @a ["",{"text":"Random kit each life","bold":true,"color":"gold"},{"text":" off","color":"red"}]
 execute unless entity @s[tag=partyLeader,scores={ranMode=1}] run playsound minecraft:soundeffect.unlock master @a ~ ~ ~ .2 1.2
+
+execute if entity @s[scores={thrownFoot=1..}] run function du-in:other/clear_ground_items

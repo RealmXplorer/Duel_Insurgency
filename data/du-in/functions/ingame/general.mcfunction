@@ -29,7 +29,7 @@
         execute if entity @a[tag=partyLeader,tag=spamClick] as @a[tag=playing] run attribute @s minecraft:generic.attack_speed base set 100
     
     # Kill all In Ground items #
-        kill @e[type=!player,type=!interaction,type=!marker,type=!armor_stand,nbt={inGround:1b}]
+        #kill @e[type=!player,type=!interaction,type=!marker,type=!armor_stand,nbt={inGround:1b}]
 
 
     #Make timer count down

@@ -6,7 +6,7 @@ effect give @s[tag=!sabotaged] minecraft:regeneration 5 2 true
 
 clear @s minecraft:carrot_on_a_stick
 xp set @s[tag=!stolen] 390 levels
-tag @s[tag=stolen] add kitDone
+execute if entity @s[tag=stolen] run tag @s add kitDone
 tag @s remove sabotaged
 tag @s remove springLock
 tag @s remove kitActions

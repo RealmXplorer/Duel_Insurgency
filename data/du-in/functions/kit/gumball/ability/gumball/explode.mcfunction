@@ -6,5 +6,5 @@ effect clear @s speed
 playsound minecraft:gumball.explode master @a ~ ~ ~ 1 1
 playsound minecraft:gumball.success master @a ~ ~ ~ 1 1
 scoreboard players reset @s gumballPursueTimer
-tag @s[tag=stolen] add kitDone
+execute if entity @s[tag=stolen] run tag @s add kitDone
 tag @s remove pursue

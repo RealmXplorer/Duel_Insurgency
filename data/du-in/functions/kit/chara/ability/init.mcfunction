@@ -6,4 +6,4 @@ effect give @s minecraft:speed 5 1 true
 scoreboard players set @s charaTimer 100
 function du-in:kit/chara/particle
 tag @s remove kitActions
-tag @s[tag=stolen] add kitDone
+execute if entity @s[tag=stolen] run tag @s add kitDone

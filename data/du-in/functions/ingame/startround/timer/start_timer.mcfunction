@@ -17,6 +17,7 @@ clear @a
 
 #Reset justdied score
 scoreboard players reset @a justdied
+scoreboard players reset @a mapVote
 
 #Give all players in game the "playing" tag
 tag @a[tag=!working,tag=!spectating] add playing
@@ -133,6 +134,7 @@ tag @a remove kitMenu
 
 #Schedule ingame functions
 schedule function du-in:ingame/scheduled/one_sec_loop 1s
+schedule function du-in:ingame/scheduled/half_sec_loop 10t
 #schedule function du-in:ingame/scheduled/five_loop 5s
 
 #Join teams

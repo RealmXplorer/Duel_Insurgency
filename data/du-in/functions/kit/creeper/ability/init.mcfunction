@@ -13,5 +13,5 @@ playsound minecraft:entity.evoker.cast_spell master @a ~ ~ ~ 100 1
 clear @s minecraft:carrot_on_a_stick
 xp set @s[tag=!stolen] 360 levels
 #tag @a[scores={kit=4,creeperTimer=..10}] remove flash
-#tag @s[tag=stolen] add kitDone
+#execute if entity @s[tag=stolen] run tag @s add kitDone
 tag @s remove kitActions

@@ -27,5 +27,5 @@ xp set @s[tag=!stolen] 385 levels
 
 #End Ability#
 tag @s remove sabotaged
-tag @s[tag=stolen] add kitDone
+execute if entity @s[tag=stolen] run tag @s add kitDone
 tag @s remove kitActions

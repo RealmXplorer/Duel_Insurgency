@@ -7,3 +7,4 @@ execute if entity @s[tag=partyLeader,scores={spamMode=1}] run tellraw @a ["",{"t
 execute if entity @s[tag=partyLeader,scores={spamMode=1}] run playsound minecraft:soundeffect.unlock master @a ~ ~ ~ .2 1.5
 execute unless entity @s[tag=partyLeader,scores={spamMode=1}] run tellraw @a ["",{"text":"Spam Click","bold":true,"color":"gold"},{"text":" off","color":"red"}]
 execute unless entity @s[tag=partyLeader,scores={spamMode=1}] run playsound minecraft:soundeffect.unlock master @a ~ ~ ~ .2 1.2
+execute if entity @s[scores={thrownCookie=1..}] run function du-in:other/clear_ground_items

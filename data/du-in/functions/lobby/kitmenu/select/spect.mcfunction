@@ -9,4 +9,7 @@ clear @s barrier{CustomModelData:101}
 tag @s[tag=!playing] add ready
 team join Ready @s
 tag @s[tag=!playing] add spect
+
+execute if entity @s[scores={thrownBarrier=1..}] run function du-in:other/clear_ground_items
+
 ##

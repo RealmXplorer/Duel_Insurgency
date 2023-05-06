@@ -27,36 +27,41 @@ execute if entity @s[tag=!teamDead,tag=!cIngame,tag=!dmIngame,tag=!kothIngame,ta
 execute unless entity @a[tag=partyLeader,tag=aprilFools] run playsound minecraft:block.glass.break master @s[tag=!startgame,tag=!lose,tag=!win] ~ ~ ~ 1 2
 execute unless entity @a[tag=partyLeader,tag=aprilFools] run playsound minecraft:entity.blaze.hurt master @s[tag=!startgame,tag=!lose,tag=!win] ~ ~ ~ 1 1
 execute if entity @a[tag=partyLeader,tag=aprilFools] run playsound minecraft:soundeffect.table master @s[tag=!startgame,tag=!lose,tag=!win] ~ ~ ~ 1 1
+
 execute unless entity @s[tag=stolen] run function du-in:kit/all/deathsound
 execute if entity @s[tag=stolen] run function du-in:kit/villager/sounds/death
 
 #Stop some abiliies upon death
-scoreboard players reset @s[scores={kit=12}] floweyHitTimer
-scoreboard players set @s[scores={kit=22},tag=pursue] gumballPursueTimer 40
-scoreboard players set @s[scores={kit=22}] darwinTimer 0
-scoreboard players reset @s[scores={kit=4}] creeperTimer
+execute if entity @s[scores={kit=12}] run scoreboard players reset @s floweyHitTimer
+execute if entity @s[scores={kit=22},tag=pursue] run scoreboard players set @s gumballPursueTimer 40
+execute if entity @s[scores={kit=22}] run scoreboard players set @s darwinTimer 0
+execute if entity @s[scores={kit=4}] run scoreboard players reset @s creeperTimer
 execute if entity @a[scores={kit=1002}] run scoreboard players reset @s jermaTimer
-scoreboard players reset @s[scores={kit=8}] villagerEmeralds
-scoreboard players reset @s[tag=stolen] villagerEmeralds
+
+execute if entity @s[scores={kit=8}] run scoreboard players reset @s villagerEmeralds
+execute if entity @s[tag=stolen] run scoreboard players reset @s villagerEmeralds
+
 execute if entity @a[scores={kit=24}] run scoreboard players reset @s ralseiTimer
-scoreboard players set @s[scores={kit=3},tag=magma] magmaTimer 1
-tag @s[tag=midasTouched] remove midasTouched
+
+execute if entity @s[scores={kit=3},tag=magma] run scoreboard players set @s magmaTimer 1
+
+execute if entity @s[tag=midasTouched] run tag @s remove midasTouched
 
 #Start Zombie ability
-scoreboard players set @s[tag=grave,tag=!teamDead] zombieTimer 5
+execute if entity @s[tag=grave,tag=!teamDead] run scoreboard players set @s zombieTimer 5
 
 #clear items
 clear @s minecraft:wither_rose
 clear @s mushroom_stew
-clear @s[scores={kit=8}] minecraft:emerald
-clear @s[tag=stolen] minecraft:emerald
+execute if entity @s[scores={kit=8}] run clear @s minecraft:emerald
+execute if entity @s[tag=stolen] run clear @s minecraft:emerald
 
 #CLEAR TAGS#
 execute if entity @a[scores={kit=17}] run tag @s remove kyloHit
 execute if entity @a[scores={kit=1005}] run tag @s remove notEaten
 
-execute if entity @a[scores={kit=1001}] run scoreboard players remove @s[scores={weaponTier=1..}] weaponTier 1
-clear @s[scores={kit=1001}] #du-in:weapon
+execute if entity @a[scores={kit=1001}] if entity @s[scores={weaponTier=1..}] run scoreboard players remove @s weaponTier 1
+execute if entity @s[scores={kit=1001}] run clear @s #du-in:weapon
 execute if entity @s[scores={kit=1001}] run function du-in:kit/paz/weapon
 
 execute if entity @a[scores={kit=1005}] run tag @s remove runza
@@ -69,4 +74,4 @@ scoreboard players reset @s killStreak
 function du-in:ingame/killstreaks/combo/reset
 
 #Remove a life (only applicable in Deathmatch)
-scoreboard players remove @s[tag=dmIngame] Lives 1
+execute if entity @s[tag=dmIngame] run scoreboard players remove @s Lives 1

@@ -1,24 +1,26 @@
 #End one and five second Loops#
 schedule clear du-in:ingame/scheduled/one_sec_loop
+schedule clear du-in:ingame/scheduled/half_sec_loop
 #schedule clear du-in:ingame/scheduled/five_loop
-
 advancement revoke @a only du-in:void/interact_void
 
-#DELAY 1#
+#Gamemode specific resets
+execute if entity @a[tag=cIngame] run function du-in:ingame/classic/reset
+execute if entity @a[tag=dmIngame] run function du-in:ingame/deathmatch/reset
+execute if entity @a[tag=kothIngame] run function du-in:ingame/koth/reset
+execute if entity @a[tag=ctfIngame] run function du-in:ingame/ctf/reset
+execute if entity @a[tag=cqIngame] run function du-in:ingame/conquest/reset
+
 tag @a remove startgame
-tag @a remove cl
-tag @a remove dml
-tag @a remove kothl
-tag @a remove ctfl
-tag @a remove cql
-#tag @a remove exl
-tag @a remove cmap
 tag @a remove kitPicked
-tag @a remove classicEnd
-#advancement grant @a[tag=win,tag=!falseWin,scores={kit=1..8}] only du-in:minecraftwin
-#advancement grant @a[tag=win,tag=!falseWin,scores={kit=9..16}] only du-in:undertalewin
-#advancement grant @a[tag=win,tag=!falseWin,scores={kit=17..23}] only du-in:starwarswin
-#advancement grant @a[tag=win,tag=!falseWin,scores={kit=24..32}] only du-in:zootopiawin
+
+scoreboard players add @a[tag=!spectating,tag=!falseWin] gamesPlayed 1
+scoreboard players add @a[tag=win,tag=!falseWin,tag=!voidLose,tag=!tie] Wins 1
+scoreboard players add @a[tag=win,tag=!falseWin,tag=!voidLose,tag=!tie] winStreak 1
+scoreboard players set @a[tag=lose,tag=!spectating] winStreak 0
+scoreboard players add @a[tag=win] Diamonds 100
+scoreboard players add @a[tag=lose] Losses 1
+
 advancement grant @a[tag=win,tag=!falseWin,scores={kit=1000..1007},tag=!voidLose] only du-in:unlock/unlockwin
 advancement grant @a[scores={Wins=100..}] only du-in:unstop
 advancement grant @a[scores={Wins=250..}] only du-in:champion
@@ -31,67 +33,52 @@ advancement grant @a[scores={Diamonds=10000..}] only du-in:diamonds/netheriteblo
 advancement grant @a[scores={Kills=500..}] only du-in:genocide
 advancement grant @a[scores={Kills=1000..}] only du-in:death
 advancement grant @a[scores={Kills=5000..}] only du-in:destroyer
-scoreboard players set Red classicTeamKills 0
-scoreboard players set Blue classicTeamKills 0
-scoreboard players reset #voting
-scoreboard players set #voting mapWinner 0
-scoreboard players reset @a mapVote
-scoreboard players reset #main mapCountdown
-scoreboard players reset #gamemode gamemode
-bossbar set minecraft:classicred visible false
-bossbar set minecraft:classicblue visible false
-bossbar set conquest:blue visible false
-bossbar set conquest:red visible false
-bossbar set conquest:blue color white
-bossbar set conquest:red color white
+
+#scoreboard players reset #voting
+#scoreboard players set #voting mapWinner 0
+#scoreboard players reset @a mapVote
+#scoreboard players reset #main mapCountdown
+#scoreboard players reset #gamemode gamemode
+
 bossbar set bossbar:gametimer visible false
+bossbar set bossbar:gametimer color white
+
 tag @a remove teamMode
 tag @a remove asrielCharge
-tag @a remove dmOut
-tag @a remove dmClose
+
 scoreboard players reset * trident
 tag @a remove asrielSaber
-tag @a remove dmClose
+
 
 #DELAY 2#
 scoreboard players reset * kitUse
 scoreboard players reset * kitTimer
 scoreboard players reset #main redPoints
 scoreboard players reset #main bluePoints
-scoreboard players reset * ctfMap
-tag @a remove blueFlag
-tag @a remove redFlag
-bossbar set du-in:bluectf value 0
-bossbar set du-in:redctf value 0
-bossbar set du-in:bluectf visible false
-bossbar set du-in:redctf visible false
-tag @e remove taken
+#tag @a remove blueFlag
+#tag @a remove redFlag
+
+#tag @e remove taken
 scoreboard players reset * team
 scoreboard players reset * deathTimer
 scoreboard players reset * teamDeaths
 tag @a remove teamDead
-scoreboard players add @a[tag=win] Diamonds 100
-scoreboard players add @a[tag=lose] Losses 1
-tag @a remove dmFinale
-scoreboard players reset * flagGot
-tag @a remove cdone
-tag @a remove chalf
-tag @a remove kothHalf
+#tag @a remove dmFinale
+#scoreboard players reset * flagGot
+#tag @a remove cdone
+#tag @a remove chalf
+# tag @a remove kothHalf
 
 #DELAY 3#
-tag @a remove blue
-tag @a remove red
-tag @a remove live
-scoreboard players reset * kothTimer
-tag @a remove dmDead
-scoreboard players reset #main playerCount
+#tag @a remove blue
+#tag @a remove red
+#tag @a remove live
+# scoreboard players reset * kothTimer
+#scoreboard players reset #main playerCount
 scoreboard players reset * killStreak
 scoreboard players reset * killStreakDeaths
 scoreboard players reset #main map
-tag @a remove flagGot
-bossbar set minecraft:classicblue color white
-bossbar set minecraft:classicred color white
-tag @a remove dmClose
+# tag @a remove flagGot
 
 #DELAY 4#
 execute if entity @a[tag=partyLeader,tag=!timeFree,tag=!sidebarDisplay] run scoreboard objectives setdisplay sidebar Kills
@@ -111,15 +98,11 @@ scoreboard objectives setdisplay list Diamonds
 tag @a remove stolen
 tag @a remove givenStolen
 #tag @a remove abilities
-scoreboard players reset #main blueFlagTimer
-scoreboard players reset #main redFlagTimer
-bossbar set bossbar:classic color white
-bossbar set bossbar:gametimer color white
+#bossbar set bossbar:classic color white
 scoreboard players set @a wildeTimer 0
-tag @a remove ownFlag
-tag @a remove otherFlag
-bossbar set minecraft:redkoth visible false
-bossbar set minecraft:bluekoth visible false
+
+# bossbar set minecraft:redkoth visible false
+# bossbar set minecraft:bluekoth visible false
 scoreboard players reset * saacMoneyChance
 scoreboard players set #main kitOnline 0
 
@@ -127,21 +110,18 @@ scoreboard players set #main kitOnline 0
 tag @a[tag=win,tag=!falseWin,tag=!voidLose,tag=!tie] add wonGame
 tag @a[tag=win,tag=!falseWin,tag=!voidLose,tag=tie] add tiedGame
 tag @a[tag=spectating] add wasSpect
-tag @a remove dmIngame
-tag @a remove ctfIngame
-tag @a remove cqIngame
-tag @a remove kothIngame
-tag @a remove cIngame
+
+# tag @a remove dmIngame
+#tag @a remove cqIngame
+# tag @a remove kothIngame
+#tag @a remove cIngame
 #tag @a remove exIngame
 tag @a remove team1
 tag @a remove team2
-scoreboard players add @a[tag=!spectating,tag=!falseWin] gamesPlayed 1
-scoreboard players add @a[tag=win,tag=!falseWin,tag=!voidLose,tag=!tie] Wins 1
-scoreboard players add @a[tag=win,tag=!falseWin,tag=!voidLose,tag=!tie] winStreak 1
-scoreboard players set @a[tag=lose,tag=!spectating] winStreak 0
+
+
 tag @a remove spectating
 tag @a remove killstreak3
-tag @a remove kothHalf
 tag @a remove kickstarted
 tag @a remove vended
 scoreboard players set @a saacMoneyCheck 0
@@ -155,17 +135,17 @@ scoreboard players reset * healthTimer
 tag @a remove grave
 tag @a remove chungus
 tag @a remove saul
-tag @a remove dmBlueFinale
-tag @a remove dmRedFinale
-#tag @a remove kitParticles
+# tag @a remove dmBlueFinale
+# tag @a remove dmRedFinale
 tag @a remove kitSounds
 tag @a remove countStop
 tag @a remove parry
+
 xp set @a 0 levels
 scoreboard players set #main scoreMost 0
 
 #RESET TEAM KOTH#
-scoreboard players reset * kothTeamTimer
+# scoreboard players reset * kothTeamTimer
 #scoreboard players set Blue kothTeamTimer 0
 
 #Reset Attributes#
@@ -186,34 +166,25 @@ execute as @a run function du-in:music/ingame/stop/all
 ##RESET GAMEPLAY SCORES AND TAGS
 
     #Remove Classic scores and tags#
-        tag @a remove closeWin
-        tag @a remove atHalf
-        tag @a remove ffaDone
-        scoreboard players reset * killIngame
+        # tag @a remove closeWin
+        # tag @a remove atHalf
+        # tag @a remove ffaDone
+        # scoreboard players reset * killIngame
 
     #Remove CTF ingame scores and tags#
-        tag @a remove ctfClose
-        tag @a remove ctfEnd
-
-
-    #Reset Ring scores and tags#
-        scoreboard players reset @a ringDeath
-        tag @a remove inRing
-        tag @a remove ring1
-        tag @a remove ring2
-        tag @a remove ringMap
-        tag @a remove justInRing
+        # tag @a remove ctfClose
+        # tag @a remove ctfEnd
 
     #Reset Conquest scores and tags#
-        scoreboard players set Blue capturePoints 0
-        scoreboard players set Red capturePoints 0
-        function du-in:ingame/conquest/reset
-        tag @a remove cqHalf
-        tag @a remove cqClose
-        tag @a remove cqEnd
+        # scoreboard players set Blue capturePoints 0
+        # scoreboard players set Red capturePoints 0
+        # function du-in:ingame/conquest/reset
+        # tag @a remove cqHalf
+        # tag @a remove cqClose
+        # tag @a remove cqEnd
 
-    #Reset Deathmatch scores and tags
-        scoreboard players reset * Lives
+    # #Reset Deathmatch scores and tags
+    #     scoreboard players reset * Lives
 
 
 
@@ -266,12 +237,15 @@ tag @a remove falseWin
 gamerule doWeatherCycle false
 weather clear
 stopsound @a ambient
+
 scoreboard players reset @a ranMode
 scoreboard players reset @a spamMode
 scoreboard players reset @a timedMode
+
 tag @a remove ranMode
 tag @a remove timedMode
 tag @a remove spamMode
+
 tag @a remove springLock
 tag @a remove lorde
 scoreboard players reset @a yharimTimer
@@ -280,30 +254,28 @@ tag @a remove notEaten
 tag @a remove ready
 tag @a remove kitMenu
 tag @a remove kitsListed
-tag @a remove kitPicked
 tag @a remove teamPicked
 function du-in:lobby/item_reset
 scoreboard players reset @a secKitUse
-scoreboard players reset #main startSeq
+
+#scoreboard players reset #main startSeq
 #tag @a add givenStats
 
 #Kill Entities#
-tp @e[type=!player,tag=mapSpecific] 216 0 40
-kill @e[type=!player,tag=mapSpecific]
-kill @e[tag=asgoreFire]
-kill @e[nbt={inGround:1b}]
-kill @e[type=item,nbt={Item:{tag:{weaponItem:1b}}}]
-kill @e[type=!player,tag=grave]
-kill @e[tag=redFlagItem]
-kill @e[tag=blueFlagItem]
-kill @e[type=armor_stand,tag=papyrusBone]
-kill @e[type=marker,tag=kyloHitPos]
-kill @e[type=ender_pearl,tag=blakeTP]
-#kill @e[type=marker,tag=spawnPoint]
-kill @e[tag=clairenField]
-kill @e[tag=slime]
+#tp @e[type=!player,tag=mapSpecific] 216 0 40
+#kill @e[type=!player,tag=mapSpecific]
+#kill @e[tag=asgoreFire]
+#kill @e[nbt={inGround:1b}]
+#kill @e[type=item,nbt={Item:{tag:{weaponItem:1b}}}]
+#kill @e[type=!player,tag=grave]
+#kill @e[type=armor_stand,tag=papyrusBone]
+#kill @e[type=marker,tag=kyloHitPos]
+#kill @e[type=ender_pearl,tag=blakeTP]
+#kill @e[tag=clairenField]
+#kill @e[tag=slime]
 
-bossbar set minecraft:map_countdown visible false
+#bossbar set minecraft:map_countdown visible false
+
 scoreboard players set @a ralseiTP 0
 tag @a remove undead
 scoreboard players set @a TPSounds 0
@@ -323,7 +295,7 @@ tag @a remove super
 tag @a remove magma
 
 scoreboard players reset @a card
-tag @a remove kothEnd
+# tag @a remove kothEnd
 scoreboard players set @a weaponTier 0
 tag @a remove fortniteCard
 
@@ -381,5 +353,6 @@ tag @a remove phoenix
 tag @a remove caveSpider
 scoreboard players reset @a dmDeath
 scoreboard players set @a diedIngame 0
-scoreboard players set #main onPoint 0
-#tag @a
+
+function du-in:lobby/scheduled/gamemode_select
+#scoreboard players set #main onPoint 0

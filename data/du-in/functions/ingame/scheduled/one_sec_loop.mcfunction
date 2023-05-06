@@ -3,7 +3,7 @@
 execute if entity @a[scores={kit=1000..1001}] at @a[tag=playing] as @e[type=minecraft:painting,distance=..30] at @s run function du-in:ingame/vending_machine/vending
 
 #Run as all players (every second)
-execute as @a[tag=playing,tag=!grave] at @s run function du-in:ingame/scheduled/play_half
+execute as @a[tag=playing,tag=!grave] at @s run function du-in:ingame/scheduled/play_one_sec
 
 #Check if player has weapon
 execute as @a[gamemode=!spectator,tag=playing,tag=!startgame] store result score @s Acount run clear @s[tag=!kitMenu] carrot_on_a_stick 0
@@ -20,6 +20,9 @@ execute if score #main matchDeaths matches 8.. if entity @a[scores={kit=28}] run
 
 #Give player kit if they don't have one
 execute unless entity @s[scores={kit=1..}] run tag @s add random
+
+execute if entity @e[type=item] run kill @e[type=item,nbt={Item:{tag:{weaponItem:1b}}}]
+#kill @e[type=!player,type=!interaction,type=!marker,type=!armor_stand,nbt={inGround:1b}]
 
 #say success
 schedule function du-in:ingame/scheduled/one_sec_loop 1s

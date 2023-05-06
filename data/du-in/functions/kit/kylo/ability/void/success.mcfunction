@@ -7,4 +7,4 @@ clear @s minecraft:carrot_on_a_stick
 #execute if entity @s[tag=empower] run scoreboard players add @a[tag=kyloHit,scores={kyloTimer=30}] kyloTimer 20
 tag @s remove sabotaged
 #tag @s remove empower
-tag @s[tag=stolen] add kitDone
+execute if entity @s[tag=stolen] run tag @s add kitDone

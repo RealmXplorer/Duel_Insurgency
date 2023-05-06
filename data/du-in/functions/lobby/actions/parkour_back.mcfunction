@@ -5,7 +5,5 @@ function du-in:music/lobby/stop/parkour
 tp @s -999 13 517 -90 0
 tag @s remove parkour
 tag @s remove subLobby
-#function du-in:other/afk/end
 clear @s
 function du-in:lobby/item_reset
-#function du-in:lobby/scheduled/gamemode_select

@@ -20,7 +20,7 @@ clear @s minecraft:carrot_on_a_stick
 #xp set @s[tag=!stolen] 270 levels
 
 #Switch villager back to their ability
-#tag @s[tag=stolen] add kitDone
+#execute if entity @s[tag=stolen] run tag @s add kitDone
 tag @s remove sabotaged
 #End ability
 tag @s remove kitActions

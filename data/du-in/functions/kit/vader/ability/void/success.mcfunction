@@ -5,4 +5,4 @@ playsound minecraft:vader.hold master @a ~ ~ ~ 100 1.5
 clear @s minecraft:carrot_on_a_stick
 xp set @s[tag=!stolen] 320 levels
 #tellraw @a[distance=0.05..5,tag=playing,gamemode=!spectator,tag=!teamDead] ["",{"text":"You are being choked by Darth Vader!","bold":true,"color":"red"}]
-tag @s[tag=stolen] add kitDone
+execute if entity @s[tag=stolen] run tag @s add kitDone

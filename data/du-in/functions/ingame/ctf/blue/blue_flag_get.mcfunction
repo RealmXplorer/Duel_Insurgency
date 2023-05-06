@@ -12,11 +12,6 @@ execute if entity @s[tag=flagGot] run scoreboard players set #main blueFlagTimer
 tag @s[tag=!flagGot] add otherFlag
 tag @s[tag=!flagGot] add flagGot
 
-#Kill flag item entity
-#execute at @e[type=item,tag=blueFlagItem] as @a[tag=team1,distance=..1,tag=!teamDead] run kill @e[tag=blueFlagItem,limit=1]
-
-#Reset dropped flag timer
-
 #Mark flag as captured
 tag @e[type=marker,tag=blueFlag] add captured
 

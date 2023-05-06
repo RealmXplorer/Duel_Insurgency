@@ -10,11 +10,10 @@
         execute if entity @a[tag=playing] run function du-in:ingame/general
 
     # Run when game ends #
-        execute if entity @a[tag=win,tag=!endSeq] run function du-in:ingame/endround/end_game
+        execute if entity @a[tag=win,tag=!endSeq] run function du-in:ingame/endround/start_ending
         execute if score #main endTime matches 5 run function du-in:reset
-        execute if score #main endTime matches ..1 unless score #main pylonsDestroyed matches 4.. run function du-in:ingame/endround/end_time
-        execute if score #main endTime matches ..1 if score #main pylonsDestroyed matches 4.. run function du-in:ingame/void/free/start
-
+        execute if score #main endTime matches ..1 run function du-in:ingame/endround/end_ending
+        
     #Execute as All players
         execute as @a at @s run function du-in:main/player_specific
 
@@ -29,19 +28,19 @@
         execute if score #main endTime matches 0.. run scoreboard players remove #main endTime 1
 
     # Kill tagged items (Lobby and Ingame items) #
-        kill @e[type=item,nbt={Item:{tag:{weaponItem:1b}}}]
+        #kill @e[type=item,nbt={Item:{tag:{weaponItem:1b}}}]
     
     #Pick a party leader if there is none #
-        execute unless entity @a[tag=partyLeader] if entity @a[tag=!partyLeader,scores={lobby=1..}] run function du-in:other/party_leader
+    #     execute unless entity @a[tag=partyLeader] if entity @a[tag=!partyLeader,scores={lobby=1..}] run function du-in:other/party_leader
 
     # SHUTDOWN Game if not enough players #
-        execute if score #main online matches ..1 unless entity @a[tag=lobby] run function du-in:ingame/shutdown
+    #     execute if score #main online matches ..1 unless entity @a[tag=lobby] run function du-in:ingame/shutdown
 
     #Start Shutdown
         execute if score #main shutdown matches 1.. run function du-in:other/shutdown/init
 
     #Shutdown if party leader is in lobby and a player isn't in lobby
-        execute if entity @a[tag=lobby,tag=partyLeader,tag=!playing,gamemode=adventure,scores={lobby=0..},tag=!win] if entity @a[tag=!lobby] run function du-in:other/shutdown/end
+       # execute if entity @a[tag=lobby,tag=partyLeader,tag=!playing,gamemode=adventure,scores={lobby=0..},tag=!win] if entity @a[tag=!lobby] run function du-in:other/shutdown/end
 
 
     #Track number of players online (If a player has 'devMode' tag, certain functions will run regardless of player count)

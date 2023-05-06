@@ -12,4 +12,4 @@ tag @a[tag=papyrusHit] remove papyrusHit
 execute as @e[type=marker,scores={papyrusHitTimer=30}] as @e[tag=papyrusFind] at @s run function du-in:kit/papyrus/ability/spawn_bones
 
 tag @s remove sabotaged
-tag @s[tag=stolen] add kitDone
+execute if entity @s[tag=stolen] run tag @s add kitDone

@@ -1,5 +1,5 @@
 #Switch villager back to their ability
-tag @s[tag=stolen] add kitDone
+execute if entity @s[tag=stolen] run tag @s add kitDone
 #End ability
 tag @s remove kitActions
 

@@ -8,6 +8,6 @@ execute if entity @s[tag=!stolen,tag=whatTheWhat] run playsound minecraft:gumbal
 execute if entity @s[tag=stolen] run playsound minecraft:entity.villager.no master @a ~ ~ ~ 1 1
 
 tag @s remove whatTheWhat
-tag @s[tag=stolen] add kitDone
+execute if entity @s[tag=stolen] run tag @s add kitDone
 tag @s remove pursue
 scoreboard players reset @s gumballPursueTimer
