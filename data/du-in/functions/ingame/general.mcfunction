@@ -98,4 +98,4 @@ execute as @e[type=!player,tag=gold,scores={goldTimer=1..}] run function du-in:k
 execute at @e[type=minecraft:marker,tag=poisonApple] unless entity @e[type=minecraft:snowball,distance=..2] run function du-in:kit/jack_horner/ability/poison_apple/explode
 
 kill @e[type=minecraft:marker,tag=poisonApple]
-execute at @e[type=minecraft:snowball] run summon minecraft:marker ~ ~ ~ {Tags:["poisonApple"]}
+execute at @e[type=minecraft:snowball] run summon minecraft:marker ~ ~ ~ {Tags:["poisonApple","mapSpecific"]}
