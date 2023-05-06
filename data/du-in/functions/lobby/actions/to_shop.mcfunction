@@ -12,3 +12,4 @@ title @s subtitle {"text":"","color":"red","bold":true}
 #function du-in:other/afk/end
 tag @s add skinMenu
 tag @s[tag=shop] add skinsListed
+function du-in:lobby/scheduled/shop

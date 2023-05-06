@@ -22,3 +22,5 @@ function du-in:lobby/item_reset
 
 #This is to prevent a bug.
 execute if entity @s[scores={kitUseThrow=1..}] run function du-in:other/clear_ground_items
+
+function du-in:lobby/scheduled/credits

@@ -8,3 +8,5 @@ clear @s
 title @s title {"text":"","color":"red","bold":true}
 title @s subtitle {"text":"","color":"red","bold":true}
 function du-in:lobby/item_reset
+
+#function du-in:lobby/scheduled/parkour

@@ -85,4 +85,4 @@ title @a times 0 60 0
 title @a title {"text":"","color":"red","bold":true}
 title @a subtitle {"text":"Open inventory for more options!","color":"red","bold":true}
 title @a actionbar {"text":"Open inventory for more options!","color":"red","bold":true}
-#function du-in:lobby/scheduled/gamemode_select
+function du-in:lobby/scheduled/gamemode_select

@@ -7,3 +7,4 @@ tag @s remove parkour
 tag @s remove subLobby
 clear @s
 function du-in:lobby/item_reset
+function du-in:lobby/scheduled/gamemode_select
