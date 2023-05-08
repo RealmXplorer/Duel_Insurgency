@@ -1,4 +1,4 @@
-kill @e[type=item,nbt={Item:{tag:{weaponItem:1b}}}]
+kill @e[type=item,tag=!displayItem]
 scoreboard players reset @s thrownHead
 scoreboard players reset @s thrownBarrier
 scoreboard players reset @s thrownIronIngot

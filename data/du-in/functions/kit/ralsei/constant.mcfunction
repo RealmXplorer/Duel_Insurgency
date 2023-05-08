@@ -12,10 +12,10 @@ execute unless entity @s[scores={secCount=1}] run item replace entity @s[tag=!st
 #TP Meter Item
 execute if entity @s[tag=!stolen,tag=!teamDead] unless entity @s[scores={triCount=1}] run function du-in:kit/ralsei/tp/item
 
-clear @s[scores={ralseiTP=30..},tag=!stolen] minecraft:gunpowder{CustomModelData:2014}
-clear @s[scores={ralseiTP=60..},tag=!stolen] minecraft:gunpowder{CustomModelData:2015}
-clear @s[scores={ralseiTP=90..},tag=!stolen] minecraft:gunpowder{CustomModelData:2016}
-clear @s[scores={ralseiTP=..119},tag=!stolen] minecraft:gunpowder{CustomModelData:2018}
+#execute if entity @s[scores={ralseiTP=30..},tag=!stolen] run clear @s minecraft:gunpowder{CustomModelData:2014}
+#execute if entity @s[scores={ralseiTP=60..},tag=!stolen] run clear @s minecraft:gunpowder{CustomModelData:2015}
+#execute if entity @s[scores={ralseiTP=90..},tag=!stolen] run clear @s minecraft:gunpowder{CustomModelData:2016}
+#execute if entity @s[scores={ralseiTP=..119},tag=!stolen] run clear @s minecraft:gunpowder{CustomModelData:2018}
 
 #Track number of secondaries and Tp meters in inventory
 execute store result score @s[tag=!stolen] secCount run clear @s[tag=!kitMenu] warped_fungus_on_a_stick 0

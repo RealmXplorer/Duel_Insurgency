@@ -26,7 +26,7 @@ execute if entity @s[tag=!teamDead,tag=!stolen] unless entity @s[scores={weapCou
 #execute store result score @s[tag=!stolen] weapCount run clear @s[tag=!kitMenu] bone 0
 
 
-item replace entity @s[level=1] weapon.offhand with minecraft:carrot_on_a_stick{display:{Name:'{"text":"Bad Time","color":"gold","bold":true,"italic":false,"underlined":false,"strikethrough":false,"obfuscated":false}',Lore:['{"text":"Right click to activate!","color":"dark_purple","bold":true}','[{"text":""}]','{"text":"Teleport behind an enemy,","color":"dark_gray"}','{"text":"avoid attack cooldowns, ","color":"dark_gray"}','{"text":"gain strength","color":"dark_gray"}']},HideFlags:1,Enchantments:[{id:"minecraft:protection",lvl:1s}],CustomModelData:115,weaponItem:1b}
+execute if entity @s[level=1] run item replace entity @s weapon.offhand with minecraft:carrot_on_a_stick{display:{Name:'{"text":"Bad Time","color":"gold","bold":true,"italic":false,"underlined":false,"strikethrough":false,"obfuscated":false}',Lore:['{"text":"Right click to activate!","color":"dark_purple","bold":true}','[{"text":""}]','{"text":"Teleport behind an enemy,","color":"dark_gray"}','{"text":"avoid attack cooldowns, ","color":"dark_gray"}','{"text":"gain strength","color":"dark_gray"}']},HideFlags:1,Enchantments:[{id:"minecraft:protection",lvl:1s}],CustomModelData:115,weaponItem:1b}
 
 attribute @s[tag=!stolen] generic.movement_speed base set 0.15
 #.1425

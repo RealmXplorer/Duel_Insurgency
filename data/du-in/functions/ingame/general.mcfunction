@@ -30,21 +30,19 @@
     
     # Kill all In Ground items #
         #kill @e[type=!player,type=!interaction,type=!marker,type=!armor_stand,nbt={inGround:1b}]
-
+    execute as @e[type=arrow] run kill @s[nbt={inGround:1b}]
+    execute as @e[type=trident] run kill @s[nbt={inGround:1b}]
 
     #Make timer count down
         execute if score #main titleTimer2 matches -99.. run function du-in:ingame/startround/timer/timer
 
 
-tag @a[predicate=du-in:chance/quarter_chance] remove pondered
-
-
 #Clairen ability field functionality
     execute as @e[type=marker,tag=clairenField] at @s run function du-in:kit/clairen/ability/field
 
-    #Give effects when in field
-    effect give @a[tag=inField] minecraft:strength 1 0 true
-    effect give @a[tag=inField] minecraft:glowing 1 0 true
+    #Give effects when in field #Moved to player_specific
+    # effect give @a[tag=inField] minecraft:strength 1 0 true
+    # effect give @a[tag=inField] minecraft:glowing 1 0 true
 
     #Tag projectiles
     tag @e[type=arrow,tag=!projectile] add projectile

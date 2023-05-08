@@ -37,7 +37,7 @@ effect clear @s[scores={floatTimer=1}] minecraft:levitation
 execute if entity @s[scores={parryTimer=0..}] run function du-in:kit/cuphead/parry/timer
 
 #Play Super sound#
-execute if entity @s[scores={cardPower=25..},tag=!super] run function du-in:kit/cuphead/ability/charged_sound
+#execute if entity @s[scores={cardPower=25..},tag=!super] run function du-in:kit/cuphead/card/charged_sound
 
 #Give Cards#
 execute if entity @s[scores={cardPower=5..9}] run function du-in:kit/cuphead/card/card1
@@ -48,7 +48,8 @@ execute if entity @s[scores={cardPower=15..19}] run function du-in:kit/cuphead/c
 
 execute if entity @s[scores={cardPower=20..24}] run function du-in:kit/cuphead/card/card4
 
-item replace entity @s[scores={cardPower=25..}] hotbar.8 with paper{weaponItem:1b,CustomModelData:100} 5
+execute if entity @s[scores={cardPower=25..}] run function du-in:kit/cuphead/card/card5
+#item replace entity @s[scores={cardPower=25..}] hotbar.8 with paper{weaponItem:1b,CustomModelData:100} 5
 
 #Attributes#
 attribute @s[tag=!stolen] minecraft:generic.movement_speed base set 0.13

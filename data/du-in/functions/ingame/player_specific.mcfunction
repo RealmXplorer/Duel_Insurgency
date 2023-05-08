@@ -4,7 +4,7 @@
 
 
 #Return ability
-execute if entity @s[level=1..2,tag=!lobby,tag=!win,tag=!lose,tag=!kitMenu] unless entity @s[scores={palpTimer=-99..}] unless entity @s[scores={gasterTimer=-99..}] unless entity @s[scores={floweyHitTimer=-99..}] run function du-in:kit/all/ability/return
+execute if entity @s[level=1..2,tag=!lobby,tag=!win,tag=!lose,tag=!kitMenu] unless entity @s[scores={palpTimer=-99..}] unless entity @s[scores={gasterTimer=-99..}] unless entity @s[scores={floweyHitTimer=-99..}] unless entity @s[scores={yharimTimer=-99..}] run function du-in:kit/all/ability/return
 
 # Stating Game Functions #
     execute if entity @s[tag=startgame] run function du-in:ingame/start_seq
@@ -85,9 +85,6 @@ execute if entity @s[scores={sansHitTimer=0..}] run function du-in:kit/sans/abil
 #Set spawnpoints
 execute at @e[type=minecraft:marker,tag=spawnPoint,sort=nearest] facing entity @r[tag=playing] eyes run spawnpoint @s[tag=!grave,tag=!teamMode,tag=!void] ~ ~ ~ ~
 
-#Yharim timer
-execute if entity @s[scores={yharimTimer=0..}] run function du-in:kit/yharim/ability/timer
-
 #Peep the Horror
 execute if entity @s[scores={jermaTimer=0..}] run function du-in:kit/jerma/ability/timer
 
@@ -134,3 +131,5 @@ execute if entity @s[scores={sansHitTimer=0..}] unless entity @s[scores={gasterT
 
 #Jungle ambience
 execute if entity @s[predicate=du-in:ambience/jungle_check,tag=!ambOff] run function du-in:maps/ambient/global/jungle
+
+execute if entity @s[tag=inField] run function du-in:kit/clairen/ability/field_effects
