@@ -11,6 +11,7 @@ playsound minecraft:entity.spider.ambient master @a ~ ~ ~ 100 1
 playsound minecraft:entity.spider.ambient master @a ~ ~ ~ 100 1
 playsound minecraft:entity.vex.death master @a ~ ~ ~ 100 1.5
 playsound minecraft:entity.spider.ambient master @a ~ ~ ~ 100 1
+execute if entity @s[predicate=du-in:effect/is_on_fire] run function du-in:kit/spider/ability/fire_particle
 
 clear @s minecraft:carrot_on_a_stick
 xp set @s[tag=!stolen] 260 levels

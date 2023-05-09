@@ -9,5 +9,7 @@ execute if entity @s[scores={kit=8}] unless entity @s[scores={villSkin=1..}] run
 execute if entity @s[scores={kit=8,villSkin=2}] run item replace entity @s armor.head with minecraft:player_head{display:{Name:"{\"text\":\"Witch\"}"},SkullOwner:{Id:[I;816033679,1681476429,-1866795109,-489925513],Properties:{textures:[{Value:"eyJ0ZXh0dXJlcyI6eyJTS0lOIjp7InVybCI6Imh0dHA6Ly90ZXh0dXJlcy5taW5lY3JhZnQubmV0L3RleHR1cmUvYjNlODRhYmIxZTkzMmExN2JhNjI1MmVhMmEzYzEyZjRjMTdmZjhlZGVmNmNhOWQ3YjdjMjBiZTU2OWIyZmNmOSJ9fX0="}]}},weaponItem:1b} 1
 execute if entity @s[scores={kit=8,villSkin=1}] run item replace entity @s armor.head with minecraft:player_head{display:{Name:"{\"text\":\"Illager Scary\"}"},SkullOwner:{Id:[I;-49248431,-611696191,-1839785157,-132825210],Properties:{textures:[{Value:"eyJ0ZXh0dXJlcyI6eyJTS0lOIjp7InVybCI6Imh0dHA6Ly90ZXh0dXJlcy5taW5lY3JhZnQubmV0L3RleHR1cmUvMzdlM2UxZjQyYjJmYjQ2MmJiZjc1NTBmYWRjYTRiMDdiYjFhYWRlMzRkZGZlNjFiZmMwZGQyMjVhYWY2MTBlZSJ9fX0="}]}},weaponItem:1b} 1
 
-tag @s[scores={charaTimer=..1}] add armor
-scoreboard players reset @s[scores={charaTimer=..0}] charaTimer
+
+execute if entity @s[scores={charaTimer=..0}] run tag @s add armor
+#execute if entity @s[scores={charaTimer=..0},tag=stolen] run tag @s add armor
+execute if entity @s[scores={charaTimer=..0}] run scoreboard players reset @s charaTimer

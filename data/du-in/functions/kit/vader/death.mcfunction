@@ -1,0 +1,1 @@
+clear @s minecraft:wither_rose

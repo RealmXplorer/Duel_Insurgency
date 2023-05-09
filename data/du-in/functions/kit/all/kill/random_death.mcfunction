@@ -22,12 +22,15 @@ execute if entity @s[tag=flagGot] run function du-in:ingame/ctf/flag_death
 #Start death timer for team modes
 execute if entity @s[tag=!teamDead,tag=!cIngame,tag=!dmIngame,tag=!kothIngame,tag=teamMode] run function du-in:ingame/teamdeath/death_go
 
+execute if entity @s[tag=sabotaged] run xp set @s 120 levels
+execute if entity @s[tag=sabotaged] run tag @s remove sabotaged
+
 #Play deathsounds
 execute unless entity @a[tag=partyLeader,tag=aprilFools] run playsound minecraft:block.glass.break master @s[tag=!startgame,tag=!lose,tag=!win] ~ ~ ~ 1 2
 execute unless entity @a[tag=partyLeader,tag=aprilFools] run playsound minecraft:entity.blaze.hurt master @s[tag=!startgame,tag=!lose,tag=!win] ~ ~ ~ 1 1
 execute if entity @a[tag=partyLeader,tag=aprilFools] run playsound minecraft:soundeffect.table master @s[tag=!startgame,tag=!lose,tag=!win] ~ ~ ~ 1 1
 execute unless entity @s[tag=stolen] run function du-in:kit/all/deathsound
-execute if entity @s[tag=stolen] run function du-in:kit/villager/sounds/death
+execute if entity @s[tag=stolen] run function du-in:kit/villager/death
 
 #Stop some abiliies upon death
 scoreboard players reset @s floweyHitTimer

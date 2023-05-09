@@ -29,6 +29,9 @@ execute if entity @s[tag=kothIngame] run function du-in:kit/springtrap/passive/k
 
 #Attributes#
 #attribute @s[tag=!stolen,tag=!springLock] generic.movement_speed base set 0.09
-attribute @s[tag=!stolen,tag=!springLock] minecraft:generic.movement_speed base set 0.125
+execute if entity @s[predicate=!du-in:effect/is_on_fire,tag=!stolen,tag=!springLock] run function du-in:kit/springtrap/passive/default
+
+#Burning attributes for if he is on fire.
+execute if entity @s[predicate=du-in:effect/is_on_fire,tag=!stolen] run function du-in:kit/springtrap/passive/burn
 #.1
 attribute @s[tag=!pussFear] generic.knockback_resistance base set 0.25
