@@ -8,6 +8,7 @@ scoreboard players set @a[tag=!spectating] dmDeath 0
 execute store result score #main maxTimer run scoreboard players get #main gameTimeMax
 bossbar set bossbar:gametimer visible true
 
+
 advancement grant @a[tag=playing] only du-in:gamemode/deathmatch
 scoreboard objectives setdisplay sidebar dmDeath
 tag @a remove dml

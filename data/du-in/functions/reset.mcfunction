@@ -1,6 +1,7 @@
 #End one and five second Loops#
 schedule clear du-in:ingame/scheduled/one_sec_loop
 schedule clear du-in:ingame/scheduled/half_sec_loop
+schedule clear du-in:ingame/scheduled/ambience/init
 #schedule clear du-in:ingame/scheduled/five_loop
 advancement revoke @a only du-in:void/interact_void
 
@@ -40,6 +41,7 @@ advancement grant @a[scores={Kills=5000..}] only du-in:destroyer
 #scoreboard players reset #main mapCountdown
 #scoreboard players reset #gamemode gamemode
 
+tag @a remove startgame
 bossbar set bossbar:gametimer visible false
 bossbar set bossbar:gametimer color white
 

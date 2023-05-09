@@ -135,6 +135,9 @@ tag @a remove kitMenu
 #Schedule ingame functions
 schedule function du-in:ingame/scheduled/one_sec_loop 1s
 schedule function du-in:ingame/scheduled/half_sec_loop 10t
+
+function du-in:ingame/scheduled/ambience/init
+
 #schedule function du-in:ingame/scheduled/five_loop 5s
 
 #Join teams

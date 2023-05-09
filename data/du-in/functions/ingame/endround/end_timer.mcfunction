@@ -6,6 +6,7 @@ tag @a add lobby
 schedule function du-in:lobby/scheduled/one_sec_loop 1s
 scoreboard players set #main winners 0
 gamemode adventure @a[tag=!working,tag=lobby]
+execute as @a run function du-in:music/lobby/stop/lobby
 scoreboard players set * music 0
 tp @a[tag=!working] -999 13 517 -90 0
 spawnpoint @a -999 13 517

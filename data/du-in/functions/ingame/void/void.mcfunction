@@ -16,7 +16,7 @@ execute as @a[gamemode=!spectator,tag=void,tag=!win] run function du-in:music/vo
 #spawnpoint @a 113 5 -91 135
 
 #Give all players night vision
-effect give @a[predicate=!du-in:effect/has_night_vision] night_vision infinite 1 true
+effect give @a[predicate=!du-in:effect/has_night_vision,tag=void] night_vision infinite 1 true
 
 #Store goners killed in bossbar
 execute store result bossbar gast:pylon value run scoreboard players get @a[tag=partyLeader,tag=void,limit=1] gonersKilled

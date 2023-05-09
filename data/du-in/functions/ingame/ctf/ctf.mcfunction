@@ -44,4 +44,4 @@ clear @a[tag=!flagGot,tag=!working] #minecraft:banners
 #MUSIC#
 execute as @a[tag=ctfIngame,tag=!startgame,tag=!saac,tag=!bigChungus,tag=!saul] at @s run function du-in:music/ingame/ctf
 
-function du-in:maps/ctf
+#function du-in:maps/ctf

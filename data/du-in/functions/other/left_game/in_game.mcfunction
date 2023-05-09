@@ -2,6 +2,7 @@
 tag @s remove lobby
 
 tag @s remove void
+effect clear @s night_vision
 
 #Make player who left (if they weren't in a game) a spectator
 execute if entity @a[tag=partyLeader,tag=!win,tag=!lose] run tag @s[tag=!playing,tag=!spectating,tag=!working,tag=!dmDead] add spectating
@@ -23,3 +24,9 @@ execute if entity @a[tag=partyLeader,tag=kothIngame] run tag @s add kothIngame
 execute if entity @a[tag=partyLeader,tag=ctfIngame] run tag @s add ctfIngame
 execute if entity @a[tag=partyLeader,tag=cqIngame] run tag @s add cqIngame
 #execute if entity @a[tag=partyLeader,tag=exIngame] run tag @s add exIngame
+
+execute if entity @s[tag=cIngame] run team join Classic
+execute if entity @s[tag=dmIngame] run team join Deathmatch
+execute if entity @s[tag=kothIngame] run team join Classic
+execute if entity @s[tag=team1] run team join Red
+execute if entity @s[tag=team2] run team join Blue

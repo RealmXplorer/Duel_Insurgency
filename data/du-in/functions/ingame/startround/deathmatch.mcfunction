@@ -5,6 +5,7 @@ execute if score @a[tag=partyLeader,limit=1] maxLives matches 10 run scoreboard 
 execute if score @a[tag=partyLeader,limit=1] maxLives matches 1 run scoreboard objectives modify Lives displayname ["",{"text":"Lives ","bold":true,"color":"red"},{"text":"(1 life)","color":"gray"}]
 execute if score @a[tag=partyLeader,limit=1] maxLives matches 3 run scoreboard objectives modify Lives displayname ["",{"text":"Lives ","bold":true,"color":"red"},{"text":"(3 lives)","color":"gray"}]
 
+
 execute store result score @a[tag=dmIngame] Lives run scoreboard players get @a[tag=partyLeader,limit=1] maxLives
 #tag @a[tag=!working,tag=!musicOff] add song
 team join Deathmatch @a[tag=!spectating]

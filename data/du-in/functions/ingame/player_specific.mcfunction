@@ -129,7 +129,4 @@ execute if entity @s[scores={pussFearTimer=1..}] run function du-in:kit/puss/abi
 #Sans chestplate
 execute if entity @s[scores={sansHitTimer=0..}] unless entity @s[scores={gasterTimer=..79}] unless entity @s[scores={deathTimer=0..}] run item replace entity @s armor.chest with minecraft:leather_chestplate{display:{Name:'{"text":"Gravity","color":"blue","bold":true}',color:2228479},Unbreakable:1b,weaponItem:1b,AttributeModifiers:[{AttributeName:"generic.knockbackResistance",Name:"generic.knockbackResistance",Amount:1,Operation:0,UUIDLeast:928037,UUIDMost:684643}]} 1
 
-#Jungle ambience
-execute if entity @s[predicate=du-in:ambience/jungle_check,tag=!ambOff] run function du-in:maps/ambient/global/jungle
-
 execute if entity @s[tag=inField] run function du-in:kit/clairen/ability/field_effects

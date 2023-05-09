@@ -4,6 +4,7 @@ scoreboard objectives modify killIngame displayname ["",{"text":"Classic Kills "
 
 scoreboard objectives setdisplay sidebar killIngame
 
+
 bossbar set bossbar:gametimer players @a
 team join Classic @a[tag=!spectating,tag=!teamMode,tag=!AFK]
 scoreboard players set @a[tag=!spectating,tag=!working] killIngame 0

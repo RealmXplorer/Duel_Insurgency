@@ -31,7 +31,7 @@ execute if entity @a[tag=sus] run summon marker -17 8 2472 {Tags:["vent","mapSpe
 execute if entity @a[tag=sus] run summon marker 30 8 2481 {Tags:["vent","mapSpecific"]}
 execute if entity @a[tag=sus] run summon marker 36 9 2534 {Tags:["vent","mapSpecific"]}
 
-summon marker -53 8 2498 {Tags:["riverAmb","mapSpecific"]}
+#summon marker -53 8 2498 {Tags:["riverAmb","mapSpecific"]}
 
 summon interaction -43 8 2527 {Tags:["ventBlock","mapSpecific"],width:1f,height:1.1f,response:1b}
 summon interaction -17 7 2471 {Tags:["ventBlock","mapSpecific"],width:1f,height:1.1f,response:1b}

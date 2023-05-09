@@ -10,6 +10,7 @@ scoreboard players set Blue teamDeaths 0
 execute store result score #main maxTimer run scoreboard players get #main gameTimeMax
 bossbar set bossbar:gametimer visible true
 
+
 advancement grant @a[tag=playing] only du-in:gamemode/deathmatch
 scoreboard objectives setdisplay sidebar teamDeaths
 tag @a remove dml

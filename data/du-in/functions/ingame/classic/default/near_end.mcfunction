@@ -13,6 +13,7 @@ execute as @a[tag=cIngame,tag=!teamMode,tag=!classicEnd,tag=closeWin] run title 
 #Start end of round music
 tag @a[tag=!working,tag=!win,tag=!lose,tag=cIngame,tag=song] add songEnd
 scoreboard players set @a[tag=song,tag=songEnd] music 0
+#execute as @a[tag=song,tag=songEnd] run function du-in:ingame/scheduled/music/classic/default
 execute as @a[tag=song,tag=songEnd] run function du-in:music/ingame/stop/transition
 tag @a[tag=songEnd] remove song
 
