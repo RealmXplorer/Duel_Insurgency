@@ -8,4 +8,4 @@ execute if entity @s[scores={kit=1000}] run function du-in:kit/nick/ability/sabo
 execute if entity @s[scores={kit=1005}] run function du-in:kit/nick/ability/sabotage_no_ability
 
 #Remove ability
-xp add @s[tag=!sabotaged] 95 levels
+xp add @s[tag=!sabotaged,tag=!grave] 95 levels

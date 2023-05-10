@@ -28,16 +28,4 @@ attribute @s[tag=!stolen] minecraft:generic.movement_speed base set 0.125
 attribute @s[tag=!stolen] minecraft:generic.armor_toughness base set 1.5
 attribute @s[tag=!stolen] minecraft:generic.knockback_resistance base set 0.175
 
-execute if entity @s[scores={Health=18..},tag=!stolen] run item replace entity @s hotbar.8 with wither_rose{display:{Name:'{"text":"Your Life","color":"dark_red","bold":true,"italic":false}',Lore:['{"text":"As your body weakens you feel your strength growing","color":"red","italic":false}']},weaponItem:1b} 6
-execute if entity @s[scores={Health=15..17},tag=!stolen] run item replace entity @s hotbar.8 with wither_rose{display:{Name:'{"text":"Your Life","color":"dark_red","bold":true,"italic":false}',Lore:['{"text":"As your body weakens you feel your strength growing","color":"red","italic":false}']},weaponItem:1b} 5
-execute if entity @s[scores={Health=10..11},tag=!stolen] run item replace entity @s hotbar.8 with wither_rose{display:{Name:'{"text":"Your Life","color":"dark_red","bold":true,"italic":false}',Lore:['{"text":"As your body weakens you feel your strength growing","color":"red","italic":false}']},weaponItem:1b} 4
-execute if entity @s[scores={Health=5..9},tag=!stolen] run item replace entity @s hotbar.8 with wither_rose{display:{Name:'{"text":"Your Life","color":"dark_red","bold":true,"italic":false}',Lore:['{"text":"As your body weakens you feel your strength growing","color":"red","italic":false}']},weaponItem:1b} 3
-execute if entity @s[scores={Health=3..5},tag=!stolen] run item replace entity @s hotbar.8 with wither_rose{display:{Name:'{"text":"Your Life","color":"dark_red","bold":true,"italic":false}',Lore:['{"text":"With your life drained, smite down your foes","color":"red","italic":false}']},weaponItem:1b} 2
-execute if entity @s[scores={Health=..2},tag=!stolen] run item replace entity @s hotbar.8 with wither_rose{display:{Name:'{"text":"Your Life","color":"dark_red","bold":true,"italic":false}',Lore:['{"text":"This the last stand, take revenge on your enemies","color":"red","italic":false}']},weaponItem:1b} 1
-
-execute if entity @s[scores={Health=18..},tag=!stolen] run attribute @s minecraft:generic.attack_damage base set 1
-execute if entity @s[scores={Health=13..17},tag=!stolen] run attribute @s minecraft:generic.attack_damage base set 1.2
-execute if entity @s[scores={Health=10..12},tag=!stolen] run attribute @s minecraft:generic.attack_damage base set 1.3
-execute if entity @s[scores={Health=6..9},tag=!stolen] run attribute @s minecraft:generic.attack_damage base set 1.4
-execute if entity @s[scores={Health=3..5},tag=!stolen] run attribute @s minecraft:generic.attack_damage base set 1.5
-execute if entity @s[scores={Health=..2},tag=!stolen] run attribute @s minecraft:generic.attack_damage base set 2
+execute if entity @s[tag=!stolen] run function du-in:kit/vader/berserk

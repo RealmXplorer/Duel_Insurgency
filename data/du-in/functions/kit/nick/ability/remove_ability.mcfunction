@@ -1,2 +1,2 @@
 clear @s[tag=!springLock] minecraft:carrot_on_a_stick
-xp add @s 120 levels
+xp add @s[tag=!grave] 120 levels
