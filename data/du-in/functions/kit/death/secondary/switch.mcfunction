@@ -9,6 +9,8 @@ clear @s #du-in:weapon
 clear @s #du-in:secondary
 clear @s carrot_on_a_stick
 
+playsound minecraft:death.switch master @a ~ ~ ~
+
 scoreboard players set @s weapCount 0
 scoreboard players set @s deathSwapTimer 30
 

@@ -15,8 +15,8 @@ execute unless entity @s[scores={weapCount=1}] run item replace entity @s[tag=!t
 item replace entity @s[level=1] weapon.offhand with minecraft:carrot_on_a_stick{display:{Name:'{"text":"Spaghetti","color":"gold","bold":true,"italic":false,"underlined":false,"strikethrough":false,"obfuscated":false}',Lore:['{"text":"Right click to activate!","color":"dark_purple","bold":true}','[{"text":""}]','{"text":"Summons bones from the earth","color":"dark_gray"}']},HideFlags:1,Enchantments:[{id:"minecraft:protection",lvl:1s}],CustomModelData:112,weaponItem:1b}
 
 #Ability function
-execute if entity @s[tag=kitActions,tag=!void] run function du-in:kit/papyrus/ability/init
-execute if entity @s[tag=kitActions,tag=void] run function du-in:kit/papyrus/ability/void/init
+execute if entity @s[tag=!void,tag=kitActions] run function du-in:kit/papyrus/ability/init
+execute if entity @s[tag=void,tag=kitActions] run function du-in:kit/papyrus/ability/void/init
 
 attribute @s[tag=!stolen] minecraft:generic.movement_speed base set 0.125
 #.1025

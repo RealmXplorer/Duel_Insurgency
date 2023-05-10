@@ -45,7 +45,6 @@ scoreboard objectives add darwinTimer dummy
 scoreboard objectives add deathAbilityTimer dummy
 scoreboard objectives add deathSwapTimer dummy
 scoreboard objectives add deathTimer dummy
-scoreboard objectives add endTime dummy
 scoreboard objectives add fakeTimer dummy
 scoreboard objectives add flameTimer dummy
 scoreboard objectives add floatTimer dummy

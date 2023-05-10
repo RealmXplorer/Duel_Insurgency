@@ -1,6 +1,7 @@
 
 tag @s[tag=playing] add win
-execute if entity @s[tag=win,tag=playing] run scoreboard players set #main endTime 5
+#execute if entity @s[tag=win,tag=playing] run scoreboard players set #main endTime 5
+execute if entity @s[tag=win,tag=playing] run schedule function du-in:ingame/endround/end_ending 1s
 
 tag @s remove void
 

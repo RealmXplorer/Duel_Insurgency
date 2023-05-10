@@ -34,7 +34,7 @@ execute as @a[tag=!falseWin] at @a run function du-in:music/ingame/stop/all
 execute as @a run function du-in:music/lobby/stop/lobby
 
 #Set endtimer
-scoreboard players set #main endTime 140
+schedule function du-in:ingame/endround/end_ending 7s
 
 #Anyone who does not have win tag, give lose.
 tag @a[tag=!win] add lose

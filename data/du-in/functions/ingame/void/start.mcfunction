@@ -21,11 +21,15 @@ tag @a remove saul
 tag @a remove saac
 tag @a remove bigChungus
 
+schedule clear du-in:ingame/scheduled/ambience/init
 stopsound @a ambient
+
 stopsound @a record
 scoreboard players set @a music 0
-scoreboard players set @a ambience 0
+#scoreboard players set @a ambience 0
 scoreboard players set @a heartBeat 0
+
+function du-in:ingame/void/whisper
 
 execute if score #main pylonsDestroyed matches ..0 run summon marker 10029 41 10030 {Tags:["pylon","mapSpecific"]}
 execute if score #main pylonsDestroyed matches 1 run summon marker 10062 41 10030 {Tags:["pylon","mapSpecific"]}

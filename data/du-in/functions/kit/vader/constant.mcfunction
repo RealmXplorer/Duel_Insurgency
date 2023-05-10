@@ -1,9 +1,6 @@
 execute if entity @s[tag=!stolen,scores={hit=5..}] run function du-in:kit/vader/sounds/hit
 execute if entity @s[tag=!stolen,scores={jump=1..}] run function du-in:kit/jump
 
-
-execute if entity @s[tag=!stolen] run function du-in:kit/vader/sounds/breathactive
-
 #EFFECT#
 #effect give @s[tag=!stolen] minecraft:slowness 1 0 true
 
@@ -18,14 +15,13 @@ execute if entity @s[tag=armor,tag=!stolen] run function du-in:kit/vader/armor
 #Ability#
 item replace entity @s[level=1] weapon.offhand with minecraft:carrot_on_a_stick{display:{Name:'{"text":"Force Grab","color":"gold","bold":true,"italic":false,"underlined":false,"strikethrough":false,"obfuscated":false}',Lore:['{"text":"Right click to activate!","color":"dark_purple","bold":true}','[{"text":""}]','{"text":"I find your lack of","color":"dark_gray"}','{"text":"faith disturbing.","color":"dark_gray"}']},HideFlags:1,Enchantments:[{id:"minecraft:protection",lvl:1s}],CustomModelData:117,weaponItem:1b}
 
-execute if entity @s[tag=kitActions,tag=!void] run function du-in:kit/vader/ability/init
-execute if entity @s[tag=kitActions,tag=void] run function du-in:kit/vader/ability/void/init
+execute if entity @s[tag=!void,tag=kitActions] run function du-in:kit/vader/ability/init
+execute if entity @s[tag=void,tag=kitActions] run function du-in:kit/vader/ability/void/init
 
 #Attribute#
-#attribute @s[tag=!stolen] generic.movement_speed base set 0.095
 attribute @s[tag=!stolen] minecraft:generic.movement_speed base set 0.125
-#.1
 attribute @s[tag=!stolen] minecraft:generic.armor_toughness base set 1.5
 attribute @s[tag=!stolen] minecraft:generic.knockback_resistance base set 0.175
 
+#Breathing and berserk
 execute if entity @s[tag=!stolen] run function du-in:kit/vader/berserk

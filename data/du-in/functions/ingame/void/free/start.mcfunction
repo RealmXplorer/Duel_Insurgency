@@ -24,7 +24,8 @@ tag @a remove duneLock
 tag @a remove bowlLock
 
 scoreboard players set @a music 0
-scoreboard players set @a ambience 0
+#scoreboard players set @a ambience 0
+function du-in:ingame/scheduled/ambience/init
 
 gamemode adventure @a
 
@@ -40,4 +41,3 @@ summon minecraft:block_display 8017.002 5 279.5 {Tags:["voidDoor"],block_state:{
 advancement grant @a[tag=!spectating] only du-in:void/origins
 
 #scoreboard objectives setdisplay sidebar
-scoreboard players reset #main endTime

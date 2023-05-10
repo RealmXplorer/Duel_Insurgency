@@ -1,3 +1,4 @@
+function du-in:kit/vader/sounds/breathactive
 
 execute if entity @s[scores={Health=18..}] run function du-in:kit/vader/passive/one
 execute if entity @s[scores={Health=13..17}] run function du-in:kit/vader/passive/two

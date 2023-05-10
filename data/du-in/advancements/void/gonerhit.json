@@ -26,7 +26,7 @@
 
   "rewards": {
 
-      "function": "du-in:ingame/void/hurt_goner"
+      "function": "du-in:ingame/void/goner/hurt_goner"
 
   }
 

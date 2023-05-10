@@ -7,6 +7,7 @@ stopsound @a record
 stopsound @a master minecraft:music.suffocation
 stopsound @a ambient minecraft:soundeffect.whisper
 stopsound @a master minecraft:entity.warden.heartbeat
+schedule clear du-in:ingame/void/whisper
 execute positioned 97 20 -107 run playsound minecraft:soundeffect.pylon.destroy master @a ~ ~ ~ 10000
 execute if score #main pylonsDestroyed matches 4.. positioned 97 20 -107 run playsound minecraft:block.sculk_shrieker.shriek master @a ~ ~ ~ 100000 .5
 title @a[tag=!falseWin] title [{"text":"Multiverse Tether","bold":true,"color":"red"}]

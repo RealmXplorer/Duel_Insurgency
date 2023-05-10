@@ -1,5 +1,6 @@
 #Movement sounds
-execute if entity @s[tag=!stolen,scores={hit=5..}] run function du-in:kit/puss/sounds/hit
+execute if entity @s[tag=!stolen,scores={hit=5..}] unless entity @s[scores={pusSkin=1}] run function du-in:kit/puss/sounds/hit
+execute if entity @s[tag=!stolen,scores={pussSkin=1,hit=5..}] unless entity @s[scores={pusSkin=1}] run function du-in:kit/puss/sounds/kitty_hit
 execute if entity @s[tag=!stolen,scores={step=150..}] run function du-in:kit/puss/sounds/step
 execute if entity @s[tag=!stolen,scores={sprint=150..}] run function du-in:kit/puss/sounds/step
 execute if entity @s[tag=!stolen,scores={jump=1..}] run function du-in:kit/jump
@@ -15,8 +16,8 @@ execute if entity @s[level=1] run function du-in:kit/puss/ability/item
 execute unless entity @s[scores={weapCount=1}] if entity @s[tag=!teamDead,tag=!stolen,tag=!pussFear] run function du-in:kit/puss/weapon
 
 #Use ability
-execute if entity @s[tag=kitActions,tag=!void] run function du-in:kit/puss/ability/init
-execute if entity @s[tag=kitActions,tag=void] run function du-in:kit/puss/ability/void/init
+execute if entity @s[tag=!void,tag=kitActions] run function du-in:kit/puss/ability/init
+execute if entity @s[tag=void,tag=kitActions] run function du-in:kit/puss/ability/void/init
 
 execute if entity @s[tag=secKitActions,tag=!stolen] run function du-in:kit/puss/secondary/switch
 

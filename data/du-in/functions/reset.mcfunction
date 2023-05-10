@@ -12,6 +12,7 @@ execute if entity @a[tag=kothIngame] run function du-in:ingame/koth/reset
 execute if entity @a[tag=ctfIngame] run function du-in:ingame/ctf/reset
 execute if entity @a[tag=cqIngame] run function du-in:ingame/conquest/reset
 
+scoreboard players reset #main startSeq
 tag @a remove startgame
 tag @a remove kitPicked
 

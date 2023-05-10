@@ -8,8 +8,8 @@ execute if entity @s[tag=!stolen] run attribute @s minecraft:generic.max_health 
 #effect give @s[tag=!stolen] minecraft:speed 1 1 true
 
 #CONSTANTS#
-execute if entity @s[tag=kitActions,tag=!void] run function du-in:kit/sans/ability/init
-execute if entity @s[tag=kitActions,tag=void] run function du-in:kit/sans/ability/void/init
+execute if entity @s[tag=!void,tag=kitActions] run function du-in:kit/sans/ability/init
+execute if entity @s[tag=void,tag=kitActions] run function du-in:kit/sans/ability/void/init
 
 #Armor #
 execute if entity @s[tag=armor,tag=!stolen] run function du-in:kit/sans/armor

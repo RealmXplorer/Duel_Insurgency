@@ -15,7 +15,7 @@
         execute if entity @s[tag=kitMenu] run function du-in:lobby/kitmenu/menu/common
 
     # Set music score for working players to 0 #
-        scoreboard players set @s[tag=working,tag=!song,tag=!songEnd,tag=!shop] music 0
+        #scoreboard players set @s[tag=working,tag=!song,tag=!songEnd,tag=!shop] music 0
 
     # Allow for items to be thrown to activate carrots on sticks #
         execute if entity @s[scores={kitUseThrow=1..}] run function du-in:other/thrown

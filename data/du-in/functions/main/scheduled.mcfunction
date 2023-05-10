@@ -17,4 +17,7 @@
     # SHUTDOWN Game if not enough players #
         execute if score #main online matches ..1 unless entity @a[tag=lobby] run function du-in:ingame/shutdown
 
+#Random kit timer#
+scoreboard players add @a[predicate=du-in:chance/half_chance] random 1
+
 schedule function du-in:main/scheduled 1s
