@@ -39,7 +39,9 @@ execute if entity @s[scores={kit=28}] run playsound minecraft:death.whistle.mark
 execute if entity @s[scores={kit=1001}] run function du-in:kit/paz/sounds/win
 execute if entity @s[scores={kit=1002}] run playsound minecraft:jerma.win voice @a[tag=!lobby] ~ ~ ~ 100 1
 execute if entity @s[scores={kit=1003}] run playsound minecraft:sus.victory record @a[tag=!musicOff,tag=!lobby] ~ ~ ~ 100 1
-execute if entity @s[scores={kit=2015}] run playsound minecraft:saul.win voice @a[tag=!musicOff,tag=!lobby] ~ ~ ~ 100 1
+execute if entity @s[scores={kit=2015}] run playsound minecraft:saul.win record @a[tag=!musicOff,tag=!lobby] ~ ~ ~ 100 1
+execute if entity @s[scores={kit=2015}] run playsound minecraft:saul.winline voice @a[tag=!lobby] ~ ~ ~ 0.5 1
+
 execute if entity @s[scores={kit=42069}] run playsound minecraft:chungus.line.win voice @a[tag=!lobby] ~ ~ ~ 100 1
 
 
