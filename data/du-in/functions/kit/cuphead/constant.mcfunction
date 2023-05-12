@@ -52,6 +52,6 @@ execute if entity @s[scores={cardPower=25..}] run function du-in:kit/cuphead/car
 #item replace entity @s[scores={cardPower=25..}] hotbar.8 with paper{weaponItem:1b,CustomModelData:100} 5
 
 #Attributes#
-attribute @s[tag=!stolen] minecraft:generic.movement_speed base set 0.13
+attribute @s[tag=!stolen] minecraft:generic.movement_speed base set 0.135
 
 execute unless entity @a[tag=partyLeader,tag=weightOff] unless entity @s[scores={cupTimer=0..}] run attribute @s[tag=!stolen,tag=!pussFear,tag=!parry] generic.knockback_resistance base set 0.02

@@ -28,7 +28,7 @@ execute if entity @s[tag=!teamDead,tag=!stolen] unless entity @s[scores={weapCou
 
 execute if entity @s[level=1] run item replace entity @s weapon.offhand with minecraft:carrot_on_a_stick{display:{Name:'{"text":"Bad Time","color":"gold","bold":true,"italic":false,"underlined":false,"strikethrough":false,"obfuscated":false}',Lore:['{"text":"Right click to activate!","color":"dark_purple","bold":true}','[{"text":""}]','{"text":"Teleport behind an enemy,","color":"dark_gray"}','{"text":"avoid attack cooldowns, ","color":"dark_gray"}','{"text":"gain strength","color":"dark_gray"}']},HideFlags:1,Enchantments:[{id:"minecraft:protection",lvl:1s}],CustomModelData:115,weaponItem:1b}
 
-attribute @s[tag=!stolen] generic.movement_speed base set 0.15
+attribute @s[tag=!stolen] generic.movement_speed base set 0.155
 #.1425
 
 #Set Sans head to normal
@@ -37,4 +37,4 @@ item replace entity @s[tag=!stolen,scores={sansSkin=1},level=..164] armor.head w
 
 
 ##Base KB Resistance is 0.
-#attribute @s[tag=!stolen,tag=!pussFear,tag=!parry] generic.knockback_resistance base set 0
+attribute @s[tag=!stolen,tag=!pussFear,tag=!parry] generic.knockback_resistance base set 0

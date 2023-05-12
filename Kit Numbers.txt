@@ -39,4 +39,5 @@ Kit number = character name
 1004 = 'Blank'
 1005 = Runza Rex
 
+2015 = Saul Goodman
 42069 = Big Chungus

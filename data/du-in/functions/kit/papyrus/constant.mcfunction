@@ -18,6 +18,6 @@ item replace entity @s[level=1] weapon.offhand with minecraft:carrot_on_a_stick{
 execute if entity @s[tag=!void,tag=kitActions] run function du-in:kit/papyrus/ability/init
 execute if entity @s[tag=void,tag=kitActions] run function du-in:kit/papyrus/ability/void/init
 
-attribute @s[tag=!stolen] minecraft:generic.movement_speed base set 0.125
+attribute @s[tag=!stolen] minecraft:generic.movement_speed base set 0.1275
 #.1025
 attribute @s[tag=!stolen,tag=!pussFear,tag=!parry] generic.knockback_resistance base set 0.05
