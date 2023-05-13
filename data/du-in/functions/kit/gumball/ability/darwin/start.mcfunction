@@ -8,6 +8,7 @@ execute at @a[tag=noClothes] run playsound minecraft:item.shield.break master @a
 title @a[tag=noClothes] title {"text":" ","color":"red"}
 title @a[tag=noClothes] subtitle {"text":"You are now naked.","color":"red"}
 clear @a[tag=noClothes] #du-in:darwin_armor
+##COPYRIGHT
 playsound minecraft:darwin.ability master @a ~ ~ ~ 10 1
 scoreboard players set @a[tag=noClothes] darwinTimer 100
 effect give @s minecraft:speed 5 2 true

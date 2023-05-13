@@ -1,4 +1,6 @@
 execute if entity @s[predicate=du-in:chance/quarter_chance,tag=cIngame,tag=!stolen,tag=!ranMode] run function du-in:kit/gumball/ability/gumball/fake_classic
+
+##COPYRIGHT
 playsound minecraft:gumball.ability master @a ~ ~ ~ 1 1
 
 tag @s add pursue

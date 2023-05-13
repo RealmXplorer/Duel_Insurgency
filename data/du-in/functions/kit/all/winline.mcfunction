@@ -13,6 +13,8 @@ execute if entity @s[scores={kit=16}] run playsound minecraft:sans.pick record @
 
 execute if entity @s[scores={kit=20}] run playsound minecraft:yharim.win record @a[tag=!musicOff,tag=!lobby] ~ ~ ~ 100 1
 execute if entity @s[scores={kit=21}] run playsound minecraft:cuphead.knockout record @a[tag=!lobby] ~ ~ ~ 100 1
+
+##COPYRIGHT
 execute if entity @s[scores={kit=22}] run playsound minecraft:gumball.win record @a[tag=!musicOff,tag=!lobby] ~ ~ ~ 100 1
 execute if entity @s[scores={kit=25}] run playsound minecraft:clairen.victory record @a[tag=!musicOff,tag=!lobby] ~ ~ ~ 100 1
 
@@ -21,14 +23,17 @@ execute if entity @s[scores={kit=25}] run playsound minecraft:clairen.victory re
 execute if entity @s[scores={kit=5}] run playsound minecraft:springtrap.win voice @a[tag=!musicOff,tag=!lobby] ~ ~ ~ 100 1
 execute if entity @s[scores={kit=5}] run playsound minecraft:springtrap.line voice @a[tag=!lobby] ~ ~ ~ 100 1
 
+##COPYRIGHT
 execute if entity @s[scores={kit=17}] run playsound minecraft:kylo.line.win voice @a[tag=!lobby] ~ ~ ~ 100 1
 execute if entity @s[scores={kit=18}] run playsound minecraft:vader.line.win voice @a[tag=!lobby] ~ ~ ~ 100 1
 execute if entity @s[scores={kit=19}] run playsound minecraft:palps.line.win voice @a[tag=!lobby] ~ ~ ~ 100 1
 
+##COPYRIGHT
 execute if entity @s[scores={kit=23}] run playsound minecraft:nick.line.win voice @a[tag=!lobby] ~ ~ ~ 100 1
 execute if entity @s[scores={kit=26}] run playsound minecraft:jack_horner.win voice @a[tag=!musicOff,tag=!lobby] ~ ~ ~ 100 1
 execute if entity @s[scores={kit=27}] unless entity @s[scores={pussSkin=1}] run playsound minecraft:puss.win voice @a[tag=!musicOff,tag=!lobby] ~ ~ ~ 100 1
 execute if entity @s[scores={kit=27,pussSkin=1}] run playsound minecraft:kitty.win voice @a[tag=!musicOff,tag=!lobby] ~ ~ ~ 100 1
+
 
 execute if entity @s[scores={kit=28}] run playsound minecraft:death.whistle.mark voice @a[tag=!musicOff,tag=!lobby] ~ ~ ~ 100 1
 
@@ -40,6 +45,7 @@ execute if entity @s[scores={kit=1001}] run function du-in:kit/paz/sounds/win
 execute if entity @s[scores={kit=1002}] run playsound minecraft:jerma.win voice @a[tag=!lobby] ~ ~ ~ 100 1
 execute if entity @s[scores={kit=1003}] run playsound minecraft:sus.victory record @a[tag=!musicOff,tag=!lobby] ~ ~ ~ 100 1
 execute if entity @s[scores={kit=2015}] run playsound minecraft:saul.win record @a[tag=!musicOff,tag=!lobby] ~ ~ ~ 100 1
+##COPYRIGHT
 execute if entity @s[scores={kit=2015}] run playsound minecraft:saul.winline voice @a[tag=!lobby] ~ ~ ~ 0.5 1
 
 execute if entity @s[scores={kit=42069}] run playsound minecraft:chungus.line.win voice @a[tag=!lobby] ~ ~ ~ 100 1

@@ -1,4 +1,5 @@
 #CLASSIC#
+##COPYRIGHT
 scoreboard players set @s[tag=song,scores={music=3260..},tag=!songEnd] music 0
 execute if entity @s[tag=song,scores={music=1},tag=!songEnd] run playsound minecraft:music.halloween.ffa record @s ~ ~ ~ 10000000000000000000000000 1 1
 
