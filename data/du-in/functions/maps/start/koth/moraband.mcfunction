@@ -1,15 +1,16 @@
 tellraw @a ["",{"text":"The ","bold":false,"color":"gray"},{"text":"Moraband ","bold":true,"color":"yellow"},{"text":"map has been chosen!","bold":false,"color":"gray"}]
 
 tp @a[tag=!working,scores={spawnpoint=0..2}] 5021 11 5247 40 10
-tp @a[tag=!working,scores={spawnpoint=3..4}] 5021 7 5290 150 -2
-tp @a[tag=!working,scores={spawnpoint=5..6}] 4990 7 5290 -151 -2
+tp @a[tag=!working,scores={spawnpoint=3..4}] 5020 7 5290 150 0
+tp @a[tag=!working,scores={spawnpoint=5..6}] 4991 7 5290 -151 0
 tp @a[tag=!working,scores={spawnpoint=7..}] 4990 11 5247 -36 11
+
 
 function du-in:maps/start/common
 
-summon marker 5021 11 5247 {Tags:["spawnPoint","team1","mapSpecific"]}
-summon marker 5021 7 5290 {Tags:["spawnPoint","team1","mapSpecific"]}
-summon marker 4990 7 5290 {Tags:["spawnPoint","team2","mapSpecific"]}
+summon marker 5021 11 5247 {Tags:["spawnPoint","team2","mapSpecific"]}
+summon marker 5020 7 5290 {Tags:["spawnPoint","team1","mapSpecific"]}
+summon marker 4991 7 5290 {Tags:["spawnPoint","team1","mapSpecific"]}
 summon marker 4990 11 5247 {Tags:["spawnPoint","team2","mapSpecific"]}
 
 summon area_effect_cloud 5006.0 5.75 5269.0 {NoGravity:1b,Duration:2147483647,Tags:["kothObj","mapSpecific"],CustomNameVisible:1b,CustomName:'{"text":"Stand on this point!","color":"red","bold":true}'}
