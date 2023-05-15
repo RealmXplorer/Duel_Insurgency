@@ -1,16 +1,16 @@
 tellraw @a ["",{"text":"The ","bold":false,"color":"gray"},{"text":"Chess ","bold":true,"color":"yellow"},{"text":"map has been chosen!","bold":false,"color":"gray"}]
 
-tp @a[tag=!working,scores={spawnpoint=0..2}] 2013 18 -540 -90 0
-tp @a[tag=!working,scores={spawnpoint=3..4}] 2005 15 -595 90 0
-tp @a[tag=!working,scores={spawnpoint=5..6}] 2060 12 -540 90 0
-tp @a[tag=!working,scores={spawnpoint=7..}] 2052 16 -595 -90 0
+tp @a[tag=!working,scores={spawnpoint=0..2}] 2063 9 -597 -90 0
+tp @a[tag=!working,scores={spawnpoint=3..4}] 2058 6 -542 90 0
+tp @a[tag=!working,scores={spawnpoint=5..6}] 2002 11 -537 90 0
+tp @a[tag=!working,scores={spawnpoint=7..}] 2007 8 -593 -90 0
 
 function du-in:maps/start/common
 
-summon marker 2013 18 -540 {Tags:["spawnPoint","team1","mapSpecific"]}
-summon marker 2005 15 -595 {Tags:["spawnPoint","team1","mapSpecific"]}
-summon marker 2060 12 -540 {Tags:["spawnPoint","team2","mapSpecific"]}
-summon marker 2052 16 -595 {Tags:["spawnPoint","team2","mapSpecific"]}
+summon marker 2063 9 -597 {Tags:["spawnPoint","team1","mapSpecific"]}
+summon marker 2058 6 -542 {Tags:["spawnPoint","team1","mapSpecific"]}
+summon marker 2002 11 -537 {Tags:["spawnPoint","team2","mapSpecific"]}
+summon marker 2007 8 -593 {Tags:["spawnPoint","team2","mapSpecific"]}
 
 #Vents#
 execute if entity @a[tag=sus] run summon marker 2008 8 -564 {Tags:["vent","mapSpecific"]}
