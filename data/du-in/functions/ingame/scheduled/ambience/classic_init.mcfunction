@@ -24,7 +24,8 @@ execute if score #main map matches 8 run function du-in:ingame/scheduled/ambienc
 execute if score #main map matches 9 run function du-in:ingame/scheduled/ambience/forest
 
 #Cliffside
-execute if score #main map matches 10 run playsound minecraft:ambient.wind ambient @s ~ ~ ~ 2 1 1
+#execute if score #main map matches 10 run playsound minecraft:ambient.wind ambient @s ~ ~ ~ 2 1 1
+execute if score #main map matches 10 run function du-in:ingame/scheduled/ambience/forest
 
 #Mirage
 execute if score #main map matches 11 run function du-in:ingame/scheduled/ambience/desert
@@ -33,12 +34,12 @@ execute if score #main map matches 11 run function du-in:ingame/scheduled/ambien
 execute if score #main map matches 12 run playsound minecraft:ambient.wind ambient @s ~ ~ ~ 2 1 1
 
 #Saac House
-execute if score #main map matches 13 run function du-in:ingame/scheduled/ambience/forest
+#execute if score #main map matches 13 run function du-in:ingame/scheduled/ambience/forest
 
 #Chess
 execute if score #main map matches 14 run playsound minecraft:ambient.wind ambient @s ~ ~ ~ 2 1 1
 
 #Harvest
-execute if score #main map matches 15 run function du-in:ingame/scheduled/ambience/forest
+#execute if score #main map matches 15 run function du-in:ingame/scheduled/ambience/forest
 
 ###

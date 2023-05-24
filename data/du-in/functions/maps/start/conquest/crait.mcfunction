@@ -20,10 +20,27 @@ summon marker 10045 4 5053 {Tags:["cqPoint","mapSpecific"]}
 summon marker 10045 4 5099 {Tags:["cqPoint","mapSpecific"]}
 
 #Vending Machines#
-execute if entity @a[scores={kit=1000..1001}] run summon interaction 10049 5 5102 {Tags:["vending","mapSpecific"],width:1.15f,height:2.1f,response:1b}
-execute if entity @a[scores={kit=1000..1001}] run summon interaction 10036 5 5056 {Tags:["vending","mapSpecific"],width:1.15f,height:2.1f,response:1b}
-execute if entity @a[scores={kit=1000..1001}] run summon interaction 10031 5 5008 {Tags:["vending","mapSpecific"],width:1.15f,height:2.1f,response:1b}
+summon interaction 10049 5 5102 {Tags:["vending","stable","mapSpecific"],width:1.15f,height:2.1f,response:1b}
+summon interaction 10036 5 5056 {Tags:["vending","stable","mapSpecific"],width:1.15f,height:2.1f,response:1b}
+summon interaction 10031 5 5008 {Tags:["vending","stable","mapSpecific"],width:1.15f,height:2.1f,response:1b}
 
-summon painting 10032 5 5008 {facing:3b,Invulnerable:1b,Tags:["mapSpecific"],variant:"minecraft:wanderer"}
-summon painting 10037 5 5056 {facing:3b,Invulnerable:1b,Tags:["mapSpecific"],variant:"minecraft:wanderer"}
-summon painting 10049 5 5101 {facing:2b,Invulnerable:1b,Tags:["mapSpecific"],variant:"minecraft:wanderer"}
+summon painting 10032 5 5008 {facing:3b,Invulnerable:1b,Tags:["mapSpecific","vendingPainting"],variant:"minecraft:wanderer"}
+summon painting 10037 5 5056 {facing:3b,Invulnerable:1b,Tags:["mapSpecific","vendingPainting"],variant:"minecraft:wanderer"}
+summon painting 10049 5 5101 {facing:2b,Invulnerable:1b,Tags:["mapSpecific","vendingPainting"],variant:"minecraft:wanderer"}
+
+#Vents
+summon interaction 10048 4 5102 {Tags:["ventBlock","mapSpecific"],width:1f,height:1.1f,response:1b}
+summon interaction 10036 4 5055 {Tags:["ventBlock","mapSpecific"],width:1f,height:1.1f,response:1b}
+summon interaction 10031 4 5007 {Tags:["ventBlock","mapSpecific"],width:1f,height:1.1f,response:1b}
+
+summon marker 10032 5 5006 {Tags:["vent","mapSpecific"]}
+summon marker 10037 5 5054 {Tags:["vent","mapSpecific"]}
+summon marker 10048 5 5101 {Tags:["vent","mapSpecific"]}
+
+#10048 4 5102
+#10036 4 5055
+#10031 4 5007
+
+#10032 5 5006
+#10037 5 5054
+#10048 5 5101

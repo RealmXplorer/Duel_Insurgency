@@ -22,6 +22,7 @@ execute if entity @s[tag=kitActions] run function du-in:kit/impostor/ability/ini
 attribute @s[tag=!stolen] minecraft:generic.movement_speed base set 0.13
 #.105
 attribute @s[tag=!pussFear,tag=!parry] generic.knockback_resistance base set 0.03
+
 #attribute @s minecraft:generic.attack_damage base set 3.0
 #attribute @s minecraft:generic.attack_speed base set 40
 

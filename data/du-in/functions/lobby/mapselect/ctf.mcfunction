@@ -15,10 +15,21 @@ summon area_effect_cloud 228 92 28 {Duration:2147483647,Tags:["displayItem"],Cus
 summon minecraft:item 228 92 28 {NoGravity:1b,Age:-32768,Health:99999,PickupDelay:32767,Tags:["mapLabel","displayItem"],Item:{id:"minecraft:snow_block",Count:1b}}
 summon marker 230 91 28 {Tags:["mapVote","displayItem","vote2"]} 
 
-#Judgement Hall
-summon area_effect_cloud 228 92 26 {Duration:2147483647,Tags:["displayItem"],CustomNameVisible:1b,CustomName:"{\"text\":\"Judgement Hall\",\"color\":\"gold\",\"bold\":true}"}
-summon minecraft:item 228 92 26 {NoGravity:1b,Age:-32768,Health:99999,PickupDelay:32767,Tags:["mapLabel","displayItem"],Item:{id:"minecraft:quartz_pillar",Count:1b}}
-summon marker 230 91 26 {Tags:["mapVote","displayItem","vote1"]} 
+# #Judgement Hall
+# summon area_effect_cloud 228 92 26 {Duration:2147483647,Tags:["displayItem"],CustomNameVisible:1b,CustomName:"{\"text\":\"Judgement Hall\",\"color\":\"gold\",\"bold\":true}"}
+# summon minecraft:item 228 92 26 {NoGravity:1b,Age:-32768,Health:99999,PickupDelay:32767,Tags:["mapLabel","displayItem"],Item:{id:"minecraft:quartz_pillar",Count:1b}}
+# summon marker 230 91 26 {Tags:["mapVote","displayItem","vote1"]} 
+
+#Cliffside
+ summon area_effect_cloud 228 92 26 {Duration:2147483647,Tags:["displayItem"],CustomNameVisible:1b,CustomName:"{\"text\":\"Cliffside Asylum\",\"color\":\"red\",\"bold\":true}"}
+ summon minecraft:item 228 92 26 {NoGravity:1b,Age:-32768,Health:99999,PickupDelay:32767,Tags:["mapLabel","displayItem"],Item:{id:"minecraft:iron_block",Count:1b}}
+ summon marker 230 91 26 {Tags:["mapVote","displayItem","vote1"]} 
+
+
+#Cliffside
+# summon area_effect_cloud 236 92 34 {Duration:2147483647,Tags:["displayItem"],CustomNameVisible:1b,CustomName:"{\"text\":\"Cliffside Asylum\",\"color\":\"red\",\"bold\":true}"}
+# summon minecraft:item 236 92 34 {NoGravity:1b,Age:-32768,Health:99999,PickupDelay:32767,Tags:["mapLabel","displayItem"],Item:{id:"minecraft:iron_block",Count:1b}}
+# summon marker 234 91 34 {Tags:["mapVote","displayItem","vote10"]} 
 
 #Random Map
 summon area_effect_cloud 232 92 37 {Duration:2147483647,Tags:["displayItem"],CustomNameVisible:1b,CustomName:"{\"text\":\"Random Map\",\"color\":\"blue\",\"bold\":true}"}

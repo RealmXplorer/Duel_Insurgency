@@ -29,15 +29,15 @@ summon interaction 18 5 -535 {Tags:["ventBlock","mapSpecific"],width:1f,height:1
 summon interaction -12 5 -539 {Tags:["ventBlock","mapSpecific"],width:1f,height:1.1f,response:1b}
 
 #Set Vending Machines (If a saac is in game)#
-execute if entity @a[scores={kit=1000..1001}] run summon interaction 4 6 -562 {Tags:["vending","mapSpecific"],width:1.15f,height:2.1f,response:1b}
-execute if entity @a[scores={kit=1000..1001}] run summon interaction -13 6 -545 {Tags:["vending","mapSpecific"],width:1.15f,height:2.1f,response:1b}
-execute if entity @a[scores={kit=1000..1001}] run summon interaction 4 6 -528 {Tags:["vending","mapSpecific"],width:1.15f,height:2.1f,response:1b}
-execute if entity @a[scores={kit=1000..1001}] run summon interaction 21 6 -545 {Tags:["vending","mapSpecific"],width:1.15f,height:2.1f,response:1b}
+execute if entity @a[scores={kit=1000..1001}] run summon interaction 4 6 -562 {Tags:["vending","stable","mapSpecific"],width:1.15f,height:2.1f,response:1b}
+execute if entity @a[scores={kit=1000..1001}] run summon interaction -13 6 -545 {Tags:["vending","stable","mapSpecific"],width:1.15f,height:2.1f,response:1b}
+execute if entity @a[scores={kit=1000..1001}] run summon interaction 4 6 -528 {Tags:["vending","stable","mapSpecific"],width:1.15f,height:2.1f,response:1b}
+execute if entity @a[scores={kit=1000..1001}] run summon interaction 21 6 -545 {Tags:["vending","stable","mapSpecific"],width:1.15f,height:2.1f,response:1b}
 
 #Set Vending machine paintings#
-summon painting 4 6 -561 {facing:0b,Invulnerable:1b,Tags:["mapSpecific"],variant:"minecraft:wanderer"}
-summon painting -12 6 -544.5 {facing:3b,Invulnerable:1b,Tags:["mapSpecific"],variant:"minecraft:wanderer"}
-summon painting 4 6 -528.5 {facing:2b,Invulnerable:1b,Tags:["mapSpecific"],variant:"minecraft:wanderer"}
-summon painting 20 6 -544.5 {facing:1b,Invulnerable:1b,Tags:["mapSpecific"],variant:"minecraft:wanderer"}
+summon painting 4 6 -561 {facing:0b,Invulnerable:1b,Tags:["mapSpecific","vendingPainting"],variant:"minecraft:wanderer"}
+summon painting -12 6 -544.5 {facing:3b,Invulnerable:1b,Tags:["mapSpecific","vendingPainting"],variant:"minecraft:wanderer"}
+summon painting 4 6 -528.5 {facing:2b,Invulnerable:1b,Tags:["mapSpecific","vendingPainting"],variant:"minecraft:wanderer"}
+summon painting 20 6 -544.5 {facing:1b,Invulnerable:1b,Tags:["mapSpecific","vendingPainting"],variant:"minecraft:wanderer"}
 
 #execute if entity @a[scores={kit=1000}] run 

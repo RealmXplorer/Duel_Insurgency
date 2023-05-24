@@ -18,10 +18,27 @@ summon marker -1571 29 413 {Tags:["cqPoint","mapSpecific"]}
 weather thunder 100000
 
 #Vending Machines#
-execute if entity @a[scores={kit=1000..1001}] run summon interaction -1568 30 404 {Tags:["vending","mapSpecific"],width:1.15f,height:2.1f,response:1b}
-execute if entity @a[scores={kit=1000..1001}] run summon interaction -1571 32 478 {Tags:["vending","mapSpecific"],width:1.15f,height:2.1f,response:1b}
-execute if entity @a[scores={kit=1000..1001}] run summon interaction -1548 23 432 {Tags:["vending","mapSpecific"],width:1.15f,height:2.1f,response:1b}
+summon interaction -1568 30 404 {Tags:["vending","stable","mapSpecific"],width:1.15f,height:2.1f,response:1b}
+summon interaction -1571 32 478 {Tags:["vending","stable","mapSpecific"],width:1.15f,height:2.1f,response:1b}
+summon interaction -1548 23 432 {Tags:["vending","stable","mapSpecific"],width:1.15f,height:2.1f,response:1b}
 
-summon painting -1568 30 405 {facing:0b,Invulnerable:1b,Tags:["mapSpecific"],variant:"minecraft:wanderer"}
-summon painting -1571 31 477 {facing:2b,Invulnerable:1b,Tags:["mapSpecific"],variant:"minecraft:wanderer"}
-summon painting -1549 23 432 {facing:1b,Invulnerable:1b,Tags:["mapSpecific"],variant:"minecraft:wanderer"}
+summon painting -1568 30 405 {facing:0b,Invulnerable:1b,Tags:["mapSpecific","vendingPainting"],variant:"minecraft:wanderer"}
+summon painting -1571 31 477 {facing:2b,Invulnerable:1b,Tags:["mapSpecific","vendingPainting"],variant:"minecraft:wanderer"}
+summon painting -1549 23 432 {facing:1b,Invulnerable:1b,Tags:["mapSpecific","vendingPainting"],variant:"minecraft:wanderer"}
+
+#Vents
+summon interaction -1549 22 435 {Tags:["ventBlock","mapSpecific"],width:1f,height:1.1f,response:1b}
+summon interaction -1572 31 478 {Tags:["ventBlock","mapSpecific"],width:1f,height:1.1f,response:1b}
+summon interaction -1569 29 404 {Tags:["ventBlock","mapSpecific"],width:1f,height:1.1f,response:1b}
+
+summon marker -1550 23 435 {Tags:["vent","mapSpecific"]}
+summon marker -1573 32 478 {Tags:["vent","mapSpecific"]}
+summon marker -1569 30 405 {Tags:["vent","mapSpecific"]}
+
+#-1549 22 435
+#-1572 31 478
+#-1569 29 404
+
+#-1550 23 435
+#-1573 32 478
+#-1569 30 405

@@ -1,5 +1,9 @@
 tag @s remove shop
 tag @s remove skinMenu
+
+execute if entity @a[tag=!shop] run tp @e[tag=tabba] 216 -100 40
+execute if entity @a[tag=!shop] run kill @e[tag=tabba]
+
 execute unless entity @a[tag=shop] run kill @e[tag=shopSpecific]
 tp @s[tag=!working] -999 13 517 -90 0
 function du-in:music/lobby/stop/shop

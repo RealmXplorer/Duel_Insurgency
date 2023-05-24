@@ -1,6 +1,9 @@
 tp @s 2001 52 1993 90 0
 playsound minecraft:entity.ender_dragon.flap master @a ~ ~ ~ 1 1.5
 
+execute if entity @a[tag=!shop] run summon donkey 1997 52 1999 {Tame:1b,Tags:["tabba"],CustomName:'{"text":"Hugo"}'}
+execute if entity @a[tag=!shop] run summon villager 1973 52 1985 {Invulnerable:1b,PersistenceRequired:1b,CanPickUpLoot:0b,Tags:["tabba"],CustomName:'{"text":"Tabba"}',VillagerData:{profession:"minecraft:butcher"},Offers:{}}
+
 tag @s add shop
 tag @s add subLobby
 function du-in:music/lobby/stop/lobby

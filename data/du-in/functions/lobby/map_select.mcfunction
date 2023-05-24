@@ -50,7 +50,7 @@ execute as @e[type=marker,tag=mapVote] at @s run function du-in:lobby/mapselect/
         scoreboard players add @r[predicate=du-in:chance/half_chance,tag=cql] cqMapRandom 1
     
     #Random Count Reset#
-        scoreboard players set @s[scores={cMapRandom=16..}] cMapRandom 1
+        scoreboard players set @s[scores={cMapRandom=15..}] cMapRandom 1
         scoreboard players set @s[scores={kMapRandom=9..}] kMapRandom 1
         scoreboard players set @s[scores={ctfMapRandom=5..}] ctfMapRandom 1
         scoreboard players set @s[scores={cqMapRandom=1..}] cqMapRandom 1

@@ -2,15 +2,15 @@
 schedule clear du-in:lobby/scheduled/one_sec_loop
 
 #Mark all players as in start game sequence
-tag @a add startgame
+tag @a[tag=!working] add startgame
 
 #Stop all other music
 stopsound @a record
 
 #Set all spectators into spectator mode
 tag @a[tag=!kitPicked,tag=!working] add spectating
-execute as @a[tag=spectating] run function du-in:ingame/spect
-scoreboard players reset @a[tag=specating] Lives
+execute as @a[tag=spectating,tag=!working] run function du-in:ingame/spect
+scoreboard players reset @a[tag=specating,tag=!working] Lives
 
 #Clear all items
 clear @a
@@ -135,6 +135,7 @@ tag @a remove kitMenu
 #Schedule ingame functions
 schedule function du-in:ingame/scheduled/one_sec_loop 1s
 schedule function du-in:ingame/scheduled/half_sec_loop 10t
+function du-in:ingame/scheduled/five_sec_loop
 
 function du-in:ingame/scheduled/ambience/init
 

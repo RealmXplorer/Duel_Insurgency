@@ -1,11 +1,15 @@
 #Kill previous instances
 kill @e[tag=displayItem]
 
-#Saac's House
-summon area_effect_cloud 228 92 22 {Duration:2147483647,Tags:["displayItem"],CustomNameVisible:1b,CustomName:"{\"text\":\"Saac's House\",\"color\":\"yellow\",\"bold\":true}"}
-summon minecraft:item 228 92 22 {NoGravity:1b,Age:-32768,Health:99999,PickupDelay:32767,Tags:["mapLabel","displayItem"],Item:{id:"minecraft:smooth_quartz",Count:1b}}
+#Jermall
+summon area_effect_cloud 228 92 22 {Duration:2147483647,Tags:["displayItem"],CustomNameVisible:1b,CustomName:"{\"text\":\"Jermall\",\"color\":\"yellow\",\"bold\":true}"}
+summon minecraft:item 228 92 22 {NoGravity:1b,Age:-32768,Health:99999,PickupDelay:32767,Tags:["mapLabel","displayItem"],Item:{id:"minecraft:skeleton_skull",Count:1b}}
 summon marker 230 91 22 {Tags:["mapVote","displayItem","vote13"]} 
 
+#Saac's House
+#summon area_effect_cloud 228 92 22 {Duration:2147483647,Tags:["displayItem"],CustomNameVisible:1b,CustomName:"{\"text\":\"Saac's House\",\"color\":\"yellow\",\"bold\":true}"}
+#summon minecraft:item 228 92 22 {NoGravity:1b,Age:-32768,Health:99999,PickupDelay:32767,Tags:["mapLabel","displayItem"],Item:{id:"minecraft:smooth_quartz",Count:1b}}
+#summon marker 230 91 22 {Tags:["mapVote","displayItem","vote13"]} 
 
 #Wishing Star
 summon area_effect_cloud 228 92 24 {Duration:2147483647,Tags:["displayItem"],CustomNameVisible:1b,CustomName:"{\"text\":\"Wishing Star\",\"color\":\"dark_purple\",\"bold\":true}"}
@@ -37,9 +41,14 @@ summon area_effect_cloud 228 92 34 {Tags:["displayItem"],Duration:2147483647,Cus
 summon minecraft:item 228 92 34 {NoGravity:1b,Age:-32768,Health:99999,PickupDelay:32767,Tags:["mapLabel","displayItem"],Item:{id:"minecraft:polished_blackstone_bricks",Count:1b}}
 summon marker 230 91 34 {Tags:["mapVote","displayItem","vote5"]} 
 
-#Cliffside
-summon area_effect_cloud 236 92 34 {Duration:2147483647,Tags:["displayItem"],CustomNameVisible:1b,CustomName:"{\"text\":\"Cliffside Asylum\",\"color\":\"red\",\"bold\":true}"}
-summon minecraft:item 236 92 34 {NoGravity:1b,Age:-32768,Health:99999,PickupDelay:32767,Tags:["mapLabel","displayItem"],Item:{id:"minecraft:iron_block",Count:1b}}
+# #Cliffside
+# summon area_effect_cloud 236 92 34 {Duration:2147483647,Tags:["displayItem"],CustomNameVisible:1b,CustomName:"{\"text\":\"Cliffside Asylum\",\"color\":\"red\",\"bold\":true}"}
+# summon minecraft:item 236 92 34 {NoGravity:1b,Age:-32768,Health:99999,PickupDelay:32767,Tags:["mapLabel","displayItem"],Item:{id:"minecraft:iron_block",Count:1b}}
+# summon marker 234 91 34 {Tags:["mapVote","displayItem","vote10"]} 
+
+#Harvest
+summon area_effect_cloud 236 92 34 {Duration:2147483647,Tags:["displayItem"],CustomNameVisible:1b,CustomName:"{\"text\":\"Harvest\",\"color\":\"#e06e16\",\"bold\":true}"}
+summon minecraft:item 236 92 34 {NoGravity:1b,Age:-32768,Health:99999,PickupDelay:32767,Tags:["mapLabel","displayItem"],Item:{id:"minecraft:jack_o_lantern",Count:1b}}
 summon marker 234 91 34 {Tags:["mapVote","displayItem","vote10"]} 
 
 #Maze
@@ -84,10 +93,16 @@ summon area_effect_cloud 236 92 22 {Duration:2147483647,Tags:["displayItem"],Cus
 summon minecraft:item 236 92 22 {NoGravity:1b,Age:-32768,Health:99999,PickupDelay:32767,Tags:["mapLabel","displayItem"],Item:{id:"minecraft:red_nether_bricks",Count:1b}}
 summon marker 234 91 22 {Tags:["mapVote","displayItem","vote14"]} 
 
-#Harvest
-summon area_effect_cloud 236 92 20 {Duration:2147483647,Tags:["displayItem"],CustomNameVisible:1b,CustomName:"{\"text\":\"Harvest\",\"color\":\"#e06e16\",\"bold\":true}"}
-summon minecraft:item 236 92 20 {NoGravity:1b,Age:-32768,Health:99999,PickupDelay:32767,Tags:["mapLabel","displayItem"],Item:{id:"minecraft:jack_o_lantern",Count:1b}}
-summon marker 234 91 20 {Tags:["mapVote","displayItem","vote15"]} 
+# #Harvest
+# summon area_effect_cloud 236 92 20 {Duration:2147483647,Tags:["displayItem"],CustomNameVisible:1b,CustomName:"{\"text\":\"Harvest\",\"color\":\"#e06e16\",\"bold\":true}"}
+# summon minecraft:item 236 92 20 {NoGravity:1b,Age:-32768,Health:99999,PickupDelay:32767,Tags:["mapLabel","displayItem"],Item:{id:"minecraft:jack_o_lantern",Count:1b}}
+# summon marker 234 91 20 {Tags:["mapVote","displayItem","vote15"]} 
+
+
+#Jermall
+#summon area_effect_cloud 228 92 20 {Duration:2147483647,Tags:["displayItem"],CustomNameVisible:1b,CustomName:"{\"text\":\"Jermall\",\"color\":\"gray\",\"bold\":true}"}
+#summon minecraft:item 228 92 20 {NoGravity:1b,Age:-32768,Health:99999,PickupDelay:32767,Tags:["mapLabel","displayItem"],Item:{id:"minecraft:skeleton_skull",Count:1b}}
+#summon marker 230 91 20 {Tags:["mapVote","displayItem","vote16"]} 
 
 #Ring
 #summon area_effect_cloud 228 92 20 {Duration:2147483647,Tags:["displayItem"],CustomNameVisible:1b,CustomName:"{\"text\":\"The Ring\",\"color\":\"red\",\"bold\":true}"}

@@ -1,5 +1,5 @@
-#Set spawnpoints to furthest spawnpoint.
-##No, I don't know why they have to be set to "nearest"
-execute if entity @s[tag=!teammode] at @e[type=minecraft:marker,tag=spawnPoint,sort=nearest] facing entity @r[tag=playing,tag=!void] eyes run spawnpoint @s ~ ~ ~ ~
-execute if entity @s[tag=teamMode,tag=team1] at @e[type=minecraft:marker,tag=spawnPoint,tag=team1,sort=nearest] facing entity @r[tag=playing,tag=!void] eyes run spawnpoint @s ~ ~ ~ ~
-execute if entity @s[tag=teamMode,tag=team2] at @e[type=minecraft:marker,tag=spawnPoint,tag=team2,sort=nearest] facing entity @r[tag=playing,tag=!void] eyes run spawnpoint @s ~ ~ ~ ~
+#Set Spawnpoints
+execute if entity @s[tag=cIngame] if score #main map matches 7 run function du-in:ingame/spawnpoint/furthest
+execute if entity @s[tag=cIngame] unless score #main map matches 7 run function du-in:ingame/spawnpoint/random
+
+execute if entity @s[tag=!cIngame] run function du-in:ingame/spawnpoint/random

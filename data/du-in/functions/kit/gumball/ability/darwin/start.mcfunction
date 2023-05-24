@@ -1,5 +1,5 @@
-execute if entity @s[tag=!void,tag=!sabotaged] as @a[distance=0.05..3,tag=playing,tag=!teamDead,gamemode=!spectator] unless score @s team = @a[scores={kit=22},tag=kitActions,tag=darwin,limit=1] team run tag @s add noClothes
-execute if entity @s[tag=void] as @e[type=skeleton,tag=gonerThing,distance=0.05..3] at @s run function du-in:kit/gumball/ability/darwin/void
+execute if entity @s[tag=!void,tag=!sabotaged] as @a[distance=0.05..4,tag=playing,tag=!teamDead,gamemode=!spectator] unless score @s team = @a[scores={kit=22},tag=kitActions,tag=darwin,limit=1] team run tag @s add noClothes
+execute if entity @s[tag=void] as @e[type=skeleton,tag=gonerThing,distance=0.05..4] at @s run function du-in:kit/gumball/ability/darwin/void
 tag @s[tag=sabotaged] add noClothes
 
 execute at @a[tag=noClothes] run particle minecraft:poof ~ ~ ~ 0.2 0.7 0.2 0 100 force

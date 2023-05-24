@@ -1,4 +1,4 @@
-execute if entity @s[tag=!sabotaged] as @a[distance=0.05..4,tag=playing,limit=1,sort=nearest,gamemode=!spectator,tag=!teamDead] run function du-in:kit/golem/ability/throw
+execute if entity @s[tag=!sabotaged] as @a[distance=0.05..4,tag=playing,sort=nearest,gamemode=!spectator,tag=!teamDead] unless score @s team = @a[scores={kit=6},tag=kitActions,sort=nearest,limit=1] team run function du-in:kit/golem/ability/throw
 
 execute if entity @s[tag=sabotaged] run function du-in:kit/golem/ability/throw
 tellraw @s[tag=sabotaged] [{"text":"You threw yourself???","bold":true,"color":"red"}]

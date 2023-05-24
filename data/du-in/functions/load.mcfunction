@@ -189,7 +189,7 @@ scoreboard objectives add thrownHead minecraft.dropped:player_head
 scoreboard objectives add thrownFoot minecraft.dropped:minecraft.rabbit_foot
 scoreboard objectives add thrownIronIngot minecraft.dropped:minecraft.iron_ingot
 scoreboard objectives add thrownCookie minecraft.dropped:minecraft.cookie
-
+scoreboard objectives add tabbaTalk dummy
 scoreboard objectives add map1Vote dummy
 scoreboard objectives add map2Vote dummy
 scoreboard objectives add map3Vote dummy
@@ -264,6 +264,7 @@ scoreboard objectives add leaveGame minecraft.custom:leave_game
 scoreboard objectives add realDeath minecraft.custom:deaths
 scoreboard objectives add runzaEat minecraft.used:minecraft.mushroom_stew
 scoreboard objectives add secKitUse minecraft.used:warped_fungus_on_a_stick
+scoreboard objectives add secKitUseThrow minecraft.dropped:minecraft.warped_fungus_on_a_stick
 scoreboard objectives add simSprint minecraft.custom:sprint_one_cm
 scoreboard objectives add simStep minecraft.custom:walk_one_cm
 scoreboard objectives add sprint minecraft.custom:sprint_one_cm

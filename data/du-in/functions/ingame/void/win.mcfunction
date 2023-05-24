@@ -27,10 +27,10 @@ tag @a[scores={lastVoidLock=5},tag=cmap,tag=!timeFree] add mustafarLock
 tag @a[scores={lastVoidLock=6},tag=cmap,tag=!timeFree] add ebbotLock
 tag @a[scores={lastVoidLock=8},tag=cmap,tag=!timeFree] add d2Lock
 tag @a[scores={lastVoidLock=9},tag=cmap,tag=!timeFree] add mazeLock
-tag @a[scores={lastVoidLock=10},tag=cmap,tag=!timeFree] add cliffLock
+tag @a[scores={lastVoidLock=10},tag=cmap,tag=!timeFree] add harvestLock
+#tag @a[scores={lastVoidLock=10},tag=cmap,tag=!timeFree] add cliffLock
 tag @a[scores={lastVoidLock=11},tag=cmap,tag=!timeFree] add mirageLock
-tag @a[scores={lastVoidLock=13},tag=cmap,tag=!timeFree] add shLock
-tag @a[scores={lastVoidLock=15},tag=cmap,tag=!timeFree] add harvestLock
+#tag @a[scores={lastVoidLock=13},tag=cmap,tag=!timeFree] add shLock
 
 tag @a[scores={lastVoidLock=1},tag=kothMap,tag=!timeFree] add zigLock
 tag @a[scores={lastVoidLock=2},tag=kothMap,tag=!timeFree] add nethLock

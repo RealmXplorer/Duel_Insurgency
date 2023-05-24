@@ -54,8 +54,8 @@ execute if entity @a[tag=ctfIngame] at @e[type=marker,tag=redFlag] run setblock 
 execute if entity @a[tag=cqIngame] run function du-in:ingame/conquest/reset_points
 
 #Teleport and kill all map specific entities
-tp @e[type=!player,tag=mapSpecific] 216 0 40
-kill @e[type=!player,tag=mapSpecific]
+#tp @e[type=!player,tag=mapSpecific] 216 0 40
+#kill @e[type=!player,tag=mapSpecific]
 
 #Kill all ingame entities.
 #kill @e[tag=asgoreFire]
@@ -67,6 +67,11 @@ kill @e[type=ender_pearl,tag=blakeTP]
 #kill @e[tag=asgoreArrow]
 #kill @e[type=armor_stand,tag=papyrusBone]
 #kill @e[type=marker,tag=kyloHitPos]
+
+function du-in:maps/jermall/stop
+schedule clear du-in:maps/jermall/stop
+schedule clear du-in:maps/jermall/pick_victim
+schedule clear du-in:maps/jermall/eat_victim
 
 #Play sounds for ending
 execute if entity @a[tag=partyLeader,tag=aprilFools] as @a[tag=win,tag=!void,tag=!voidLose] at @s run playsound minecraft:soundeffect.laugh master @a ~ ~ ~ 100000 1

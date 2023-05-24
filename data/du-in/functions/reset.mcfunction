@@ -1,6 +1,8 @@
 #End one and five second Loops#
 schedule clear du-in:ingame/scheduled/one_sec_loop
+schedule clear du-in:ingame/scheduled/five_sec_loop
 schedule clear du-in:ingame/scheduled/half_sec_loop
+schedule clear du-in:ingame/scheduled/three_sec_loop
 schedule clear du-in:ingame/scheduled/ambience/init
 #schedule clear du-in:ingame/scheduled/five_loop
 advancement revoke @a only du-in:void/interact_void
@@ -144,6 +146,10 @@ tag @a remove kitSounds
 tag @a remove countStop
 tag @a remove parry
 
+tag @a remove monsterTarget
+tag @a remove selectedTarget
+tag @a remove hasOnionRing
+
 xp set @a 0 levels
 scoreboard players set #main scoreMost 0
 
@@ -159,9 +165,6 @@ execute as @a run attribute @s minecraft:generic.max_health base set 20
 execute as @a run attribute @s minecraft:generic.attack_damage base set 0
 execute as @a run attribute @s minecraft:generic.attack_speed base set 4
 execute as @a run attribute @s minecraft:generic.movement_speed base set 0.10000000149
-
-#Clear Effects#
-effect clear @a
 
 #Stop All Music#
 execute as @a run function du-in:music/ingame/stop/all
@@ -258,6 +261,7 @@ tag @a remove ready
 tag @a remove kitMenu
 tag @a remove kitsListed
 tag @a remove teamPicked
+tag @a remove drip
 function du-in:lobby/item_reset
 scoreboard players reset @a secKitUse
 
@@ -354,8 +358,12 @@ scoreboard players set @a gameGonerKills 0
 tag @a remove voidLose
 tag @a remove phoenix
 tag @a remove caveSpider
+tag @a remove sus
 scoreboard players reset @a dmDeath
 scoreboard players set @a diedIngame 0
+
+#Clear Effects#
+effect clear @a
 
 function du-in:lobby/scheduled/gamemode_select
 #scoreboard players set #main onPoint 0

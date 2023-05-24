@@ -10,6 +10,9 @@ execute if entity @s[tag=deathMark] run scoreboard players set #main markTimer 1
 tag @s remove deathMark
 tag @s remove pondered
 
+execute if entity @s[tag=selectedTarget] run tag @s remove monsterTarget
+execute if entity @s[tag=selectedTarget] run tag @s remove selectedTarget
+
 execute if entity @s[tag=sabotaged] run xp set @s 120 levels
 execute if entity @s[tag=sabotaged] run tag @s remove sabotaged
 

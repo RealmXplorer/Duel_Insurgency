@@ -1,0 +1,2 @@
+give @s warped_fungus_on_a_stick{display:{Name:'{"text":"ONION RING!","color":"#e6d881","bold":true}',Lore:['{"text":"Right-click to eat and regain health!"}','{"text":"OOOOOO! Dude, the thing that everybody...","color":"white","bold":false}']},Unbreakable:1b,CustomModelData:2018,weaponItem:1b,HideFlags:4} 1
+tag @s add hasOnionRing

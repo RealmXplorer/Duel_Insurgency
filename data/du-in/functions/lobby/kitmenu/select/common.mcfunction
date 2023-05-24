@@ -3,7 +3,10 @@ clear @s[tag=!kitMenu] #du-in:lobby
 #Set Spectator vote to random and remove tag
 scoreboard players set @s[tag=spect] mapVote -1
 tag @s remove spect
-
+tag @s remove maskless
+tag @s remove drip
+tag @s remove caveSpider
+tag @s remove lorde
 #function du-in:lobby/actions/ready
 
 #Announce and play sounds and particles

@@ -13,6 +13,8 @@ execute unless entity @s[scores={weapCount=1}] run item replace entity @s[tag=!t
 
 #execute store result score @s[tag=!stolen] weapCount run clear @s[tag=!kitMenu] stone_sword 0
 
+execute if entity @s[tag=secKitActions] run function du-in:kit/jerma/secondary/eat_onion
+
 #Ability#
 item replace entity @s[level=1] weapon.offhand with minecraft:carrot_on_a_stick{display:{Name:'[{"text":"«EPIC» ","color":"gold","bold":"true","italic":"true"},{"text":"Peep the Horror","color":"red","bold":true,"italic":false,"underlined":false,"strikethrough":false,"obfuscated":false}]',Lore:['{"text":"Right click to activate!","color":"dark_purple","bold":true}','[{"text":""}]','{"text":"Someone will die","color":"dark_gray"}','{"text":"","color":"dark_gray"}']},HideFlags:1,Enchantments:[{id:"minecraft:protection",lvl:1s}],CustomModelData:2002,weaponItem:1b}
 

@@ -6,6 +6,6 @@ effect give @s minecraft:levitation 1 10 true
 effect give @s minecraft:resistance 2 2 true
 effect give @s minecraft:fire_resistance 2 2 true
 #clear @s warped_fungus_on_a_stick
-scoreboard players add @s cardPower 5
+scoreboard players add @s cardPower 3
 scoreboard players set @s floatTimer 7
-scoreboard players set @s parryTimer 60
+scoreboard players set @s parryTimer 80

@@ -19,6 +19,7 @@
 
     # Allow for items to be thrown to activate carrots on sticks #
         execute if entity @s[scores={kitUseThrow=1..}] run function du-in:other/thrown
+        execute if entity @s[scores={secKitUseThrow=1..}] run function du-in:other/thrown_sec
 
     #Random kit timer reset#
 	scoreboard players set @s[scores={random=29..}] random 1

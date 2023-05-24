@@ -15,8 +15,8 @@ execute at @e[type=marker,tag=blueFlag] run setblock ~ ~ ~ blue_banner destroy
 execute at @e[type=marker,tag=redFlag] run setblock ~ ~ ~ red_banner destroy
 
 #Vending Machines#
-execute if entity @a[scores={kit=1000..1001}] run summon interaction 253 4 426 {Tags:["vending","mapSpecific"],width:1.15f,height:2.1f,response:1b}
-execute if entity @a[scores={kit=1000..1001}] run summon interaction 242 4 515 {Tags:["vending","mapSpecific"],width:1.15f,height:2.1f,response:1b}
+summon interaction 253 4 426 {Tags:["vending","stable","mapSpecific"],width:1.15f,height:2.1f,response:1b}
+summon interaction 242 4 515 {Tags:["vending","stable","mapSpecific"],width:1.15f,height:2.1f,response:1b}
 
-summon painting 253 4 425 {facing:2b,Invulnerable:1b,Tags:["mapSpecific"],variant:"minecraft:wanderer"}
-summon painting 242 4 516 {facing:0b,Invulnerable:1b,Tags:["mapSpecific"],variant:"minecraft:wanderer"}
+summon painting 253 4 425 {facing:2b,Invulnerable:1b,Tags:["mapSpecific","vendingPainting"],variant:"minecraft:wanderer"}
+summon painting 242 4 516 {facing:0b,Invulnerable:1b,Tags:["mapSpecific","vendingPainting"],variant:"minecraft:wanderer"}

@@ -22,3 +22,5 @@ execute as @a[scores={titleTimer=20}] unless entity @a[tag=partyLeader,tag=april
 execute as @a[scores={titleTimer=20}] at @s run playsound minecraft:entity.generic.explode master @s ~ ~ ~ 1000 1
 execute as @a[scores={kit=1002,titleTimer=20},tag=kothIngame] at @s run playsound minecraft:jerma.koth master @a ~ ~ ~ 1000 1
 execute as @a[scores={titleTimer=20}] if entity @a[tag=partyLeader,tag=aprilFools] at @s run playsound minecraft:soundeffect.fart master @s ~ ~ ~ 1000 1
+
+execute as @a[scores={titleTimer=20}] at @s run function du-in:ingame/startround/title/sounds

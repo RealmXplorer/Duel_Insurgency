@@ -7,7 +7,7 @@
 execute if entity @s[level=1..2,tag=!lobby,tag=!win,tag=!lose,tag=!kitMenu] unless entity @s[scores={palpTimer=-99..}] unless entity @s[scores={gasterTimer=-99..}] unless entity @s[scores={floweyHitTimer=-99..}] unless entity @s[scores={yharimTimer=-99..}] run function du-in:kit/all/ability/return
 
 # Stating Game Functions #
-    execute if entity @s[tag=startgame] run function du-in:ingame/start_seq
+    execute if entity @s[tag=startgame,tag=!working] run function du-in:ingame/start_seq
 
 # If a player is dead in team mode #
     execute if entity @s[tag=teamDead,tag=!void] run function du-in:ingame/team_dead
@@ -79,11 +79,6 @@ execute if entity @s[scores={sansHitTimer=0..}] run function du-in:kit/sans/abil
 
 #Kill and Death functions
     execute if entity @s[scores={justdied=1..}] run function du-in:ingame/death
-
-
-
-#Set spawnpoints
-execute at @e[type=minecraft:marker,tag=spawnPoint,sort=nearest] facing entity @r[tag=playing] eyes run spawnpoint @s[tag=!grave,tag=!teamMode,tag=!void] ~ ~ ~ ~
 
 #Peep the Horror
 execute if entity @s[scores={jermaTimer=0..}] run function du-in:kit/jerma/ability/timer

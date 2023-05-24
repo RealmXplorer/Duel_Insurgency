@@ -5,7 +5,7 @@ bossbar set bossbar:gametimer players @a
 
 scoreboard objectives modify flagGot displayname [{"text":"Flag Captures ","bold":true,"color":"blue"}]
 
-execute if score #main map matches 1 at @r run playsound minecraft:soundeffect.judge master @a[tag=!working] ~ ~ ~ 10000 1 1
+#execute if score #main map matches 1 at @r run playsound minecraft:soundeffect.judge master @a[tag=!working] ~ ~ ~ 10000 1 1
 
 #bossbar set du-in:bluectf visible true
 #bossbar set du-in:redctf visible true

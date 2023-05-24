@@ -1,4 +1,5 @@
-kill @e[tag=shopSpecific]
+tp @e[tag=tabba] 216 -100 40
+kill @e[tag=tabba]
 kill @e[type=area_effect_cloud,tag=gamemodeLabel]
 
 #Set players gamemode lobby (This lets the game know which map and gamemode to initialize)
@@ -47,9 +48,11 @@ tag @a[tag=cl] add cmap
 tag @a[tag=dml] add cmap
 
 #Stop all music
-execute as @a run function du-in:music/lobby/stop/parkour
-execute as @a run function du-in:music/lobby/stop/shop
-execute as @a run function du-in:music/lobby/stop/lobby
+#execute as @a run function du-in:music/lobby/stop/parkour
+#execute as @a run function du-in:music/lobby/stop/shop
+#execute as @a run function du-in:music/lobby/stop/lobby
+
+stopsound @a record
 
 #Pass "gamemode" score into new "setGamemode" score for map voting
 execute store result score #main setGamemode run scoreboard players get #gamemode gamemode

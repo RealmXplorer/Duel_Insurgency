@@ -1,4 +1,4 @@
-execute unless entity @s[tag=sabotaged] as @a[distance=0.05..5,tag=playing,sort=nearest,gamemode=!spectator,tag=!teamDead] run function du-in:kit/vader/ability/effect
+execute unless entity @s[tag=sabotaged] as @a[distance=0.05..5,tag=playing,sort=nearest,gamemode=!spectator,tag=!teamDead] unless score @s team = @a[scores={kit=18},tag=kitActions,sort=nearest,limit=1] team run function du-in:kit/vader/ability/effect
 execute if entity @s[tag=sabotaged] run function du-in:kit/vader/ability/effect
 
 playsound minecraft:vader.choke master @a ~ ~ ~ 100 1

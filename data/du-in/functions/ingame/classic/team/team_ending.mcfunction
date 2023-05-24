@@ -9,8 +9,8 @@ execute if score #main bluePoints matches 20.. if entity @a[tag=playing,tag=!win
 execute if score #main redPoints matches 20.. if entity @a[tag=!songEnd,tag=playing,tag=!win,tag=!lose] run tellraw @a ["",{"text":"Red Team","bold":true,"color":"red"},{"text":" is about to win!","bold":true,"color":"gray"}]
 execute if score #main redPoints matches 20.. if entity @a[tag=playing,tag=!win,tag=!lose] run bossbar set minecraft:classicred color red
 
-execute at @a as @a run playsound minecraft:soundeffect.woosh master @s ~ ~ ~ .5 1
-execute at @a as @a run playsound minecraft:soundeffect.woosh master @s ~ ~ ~ .5 2
+execute as @a[tag=!songEnd] at @s run playsound minecraft:soundeffect.woosh master @s ~ ~ ~ .5 1
+execute as @a[tag=!songEnd] at @s run playsound minecraft:soundeffect.woosh master @s ~ ~ ~ .5 2
 
 #Start end of round music
 execute if entity @a[tag=!songEnd,tag=playing,tag=!win,tag=!lose] run tag @a[tag=!working] add songEnd
