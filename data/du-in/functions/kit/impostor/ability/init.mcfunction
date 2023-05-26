@@ -2,7 +2,14 @@ execute as @a[scores={kit=1003},tag=kitActions] at @s unless block ~ ~-1 ~ #du-i
 
 scoreboard players set @e[type=marker,tag=meetingSpot] impostTimer 30
 
+schedule function du-in:kit/impostor/ability/meeting 30t
+
 execute as @a[tag=playing,tag=!spectating,tag=!working] unless score @a[tag=meetingCall,limit=1] team = @s team run tag @s[tag=!flagGot] add meeting
+
+effect give @a[tag=meeting] minecraft:fire_resistance 1 255 true
+
+playsound minecraft:sus.emerg master @a ~ ~ ~ 2000 1
+execute as @a[tag=meeting] at @s run title @a title {"text":"Emergency Meeting!","color":"red","bold":true}
 
 xp set @s[tag=!stolen] 600 levels
 

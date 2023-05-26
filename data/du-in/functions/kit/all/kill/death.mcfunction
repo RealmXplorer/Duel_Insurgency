@@ -90,3 +90,4 @@ function du-in:ingame/killstreaks/combo/reset
 
 #Remove a life (only applicable in Deathmatch)
 execute if entity @s[tag=dmIngame] run scoreboard players remove @s Lives 1
+execute if entity @s[tag=void] run scoreboard players remove @s Lives 1

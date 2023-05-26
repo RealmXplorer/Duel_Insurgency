@@ -1,4 +1,5 @@
 tag @a remove free
+tag @a remove cmap
 stopsound @a ambient
 stopsound @a record minecraft:music.free
 scoreboard players set #main pylonsDestroyed 0
@@ -19,4 +20,4 @@ tag @a remove moraLock
 tag @a remove duneLock
 tag @a remove bowlLock
 
-function du-in:ingame/endround/end_time
+function du-in:ingame/endround/end_ending

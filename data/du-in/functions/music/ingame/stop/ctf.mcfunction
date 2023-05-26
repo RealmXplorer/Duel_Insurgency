@@ -1,6 +1,5 @@
-stopsound @s record minecraft:music.ctf
-stopsound @s record minecraft:music.ctfend
-stopsound @s record minecraft:oldmusic.ctf
-stopsound @s record minecraft:oldmusic.ctfend
-stopsound @s record minecraft:music.legacy.ctf
-stopsound @s record minecraft:music.legacy.ctfend
+stopsound @s record
+
+schedule clear du-in:music/ingame/default/ctf
+schedule clear du-in:music/ingame/oldpack/ctf
+schedule clear du-in:music/ingame/legacy/ctf

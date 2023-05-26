@@ -8,6 +8,7 @@ execute at @a as @a run playsound minecraft:soundeffect.woosh master @s ~ ~ ~ .5
 tag @a[tag=song,tag=!songEnd,tag=!win,tag=!lose] add songEnd
 scoreboard players set @a[tag=song,tag=songEnd] music 0
 execute as @a[tag=song,tag=songEnd] run function du-in:music/ingame/stop/transition
+function du-in:music/ingame/koth
 tag @a remove song
 
 

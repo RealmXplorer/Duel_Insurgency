@@ -3,7 +3,7 @@ execute if entity @s[tag=!stolen,scores={jump=1..}] run function du-in:kit/jump
 
 
 #CONSTANTS#
-execute if score #main titleTimer2 matches 21 run item replace entity @s hotbar.8 with minecraft:arrow 4
+execute if score #main titleTimer2 matches 21 run item replace entity @s hotbar.8 with minecraft:arrow 2
 
 # Armor #
 execute if entity @s[tag=armor,tag=!stolen] run function du-in:kit/player/armor

@@ -341,6 +341,7 @@ execute as @a run function du-in:lobby/item_reset
 #tag @a[tag=!timeFree] add givenStats
 clear @a
 tag @a remove void
+tag @a remove voidOut
 scoreboard players reset @a[tag=lobby] killStreakDeaths
 tag @a remove voidReady
 scoreboard players set @a voidReadyOnline 0

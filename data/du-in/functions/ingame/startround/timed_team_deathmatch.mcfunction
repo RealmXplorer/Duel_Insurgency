@@ -7,6 +7,8 @@ team join Deathmatch @a[tag=!spectating]
 scoreboard players set Red teamDeaths 0
 scoreboard players set Blue teamDeaths 0
 
+schedule function du-in:music/ingame/deathmatch 4s
+
 execute store result score #main maxTimer run scoreboard players get #main gameTimeMax
 bossbar set bossbar:gametimer visible true
 

@@ -8,6 +8,8 @@ execute if score #main kothCap matches 5000 run scoreboard objectives modify kot
 
 scoreboard objectives setdisplay sidebar kothTimer
 
+schedule function du-in:music/ingame/koth 4s
+
 team join Classic @a[tag=!spectating]
 scoreboard players set @a[tag=!spectating,tag=!working] kothTimer 0
 advancement grant @a[tag=playing] only du-in:gamemode/koth

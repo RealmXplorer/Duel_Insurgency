@@ -11,7 +11,7 @@ execute if entity @a[scores={gonersKilled=1..}] run function du-in:ingame/void/s
 #execute if entity @a[scores={gonersKilled=1..}] if score #main wave matches 4 run function du-in:ingame/void/spawn/wave/wave4
 
 #Music
-execute as @a[gamemode=!spectator,tag=void,tag=!win] run function du-in:music/void/void
+execute as @a[gamemode=!spectator,tag=void,tag=!win] run function du-in:ingame/void/player_specific
 
 #spawnpoint @a 113 5 -91 135
 
@@ -28,10 +28,11 @@ execute if entity @a[tag=!win,scores={gonersKilled=..0},tag=!waveBreak] if score
 
 
 #execute if predicate du-in:chance/five_chance positioned as @e[type=marker,tag=pylon] run playsound minecraft:entity.warden.heartbeat master @a[tag=!win] ~ ~ ~ 100000 .5
-scoreboard players remove #main missileCooldown 1
-execute unless entity @a[tag=win] if score #main pylonsDestroyed matches 3 if score #main missileCooldown matches ..0 run function du-in:ingame/void/spawn/missile
+#scoreboard players remove #main missileCooldown 1
+#execute unless entity @a[tag=win] if score #main pylonsDestroyed matches 3 if score #main missileCooldown matches ..0 run function du-in:ingame/void/spawn/missile
 
-execute as @e[tag=missile] at @s anchored eyes run function du-in:ingame/void/missile_chase
+execute if score #main pylonsDestroyed matches 3 as @e[type=armor_stand,tag=missile] at @s anchored eyes run function du-in:ingame/void/goner/missile_chase
+execute if score #main pylonsDestroyed matches 3 as @e[type=armor_stand,tag=missile] at @s if entity @e[tag=projectile,tag=!missile,distance=..1] run function du-in:ingame/void/goner/missile_explode
 
 #Win and Lose conditions
 execute if entity @a[tag=!win,scores={gonersKilled=..0}] if score #main wave matches 2.. run function du-in:ingame/void/win
@@ -39,7 +40,7 @@ execute if entity @a[scores={gonersKilled=..0}] if score #main wave matches 2.. 
 
 execute if score #main waveCooldown matches 1.. run function du-in:ingame/void/wave_break
 
-execute unless score #main pylonsDestroyed matches 3 if score #main matchDeaths matches 2.. unless entity @a[tag=win] run function du-in:ingame/void/lose
-execute if score #main pylonsDestroyed matches 3 if score #main matchDeaths matches 3.. unless entity @a[tag=win] run function du-in:ingame/void/lose
+execute unless score #main pylonsDestroyed matches 3 if score Insurgents playerCount matches ..0 unless entity @a[tag=win] run function du-in:ingame/void/lose
+execute if score #main pylonsDestroyed matches 3 if score Insurgents playerCount matches ..0 unless entity @a[tag=win] run function du-in:ingame/void/lose
 
 #execute as @e[type=skeleton,tag=gonerThing] at @s run function du-in:void/goner_specific

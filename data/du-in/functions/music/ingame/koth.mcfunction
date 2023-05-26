@@ -1,17 +1,17 @@
 #KING OF THE HILL#
-execute if entity @s[tag=!oldPack,tag=!legacy,tag=!halloween,tag=!christmas] run function du-in:music/ingame/default/koth
+execute if entity @a[tag=!oldPack,tag=!legacy,tag=!halloween,tag=!christmas,tag=!saac,tag=!bigChungus,tag=!saul,tag=!musicOff] run function du-in:music/ingame/default/koth
 
 #BETA#
-execute if entity @s[tag=oldPack,tag=!legacy,tag=!halloween,tag=!christmas] run function du-in:music/ingame/oldpack/koth
+execute if entity @a[tag=oldPack,tag=!legacy,tag=!halloween,tag=!christmas,tag=!saac,tag=!bigChungus,tag=!saul,tag=!musicOff] run function du-in:music/ingame/oldpack/koth
 
 #LEGACY#
-execute if entity @s[tag=legacy,tag=!oldPack,tag=!halloween,tag=!christmas] run function du-in:music/ingame/legacy/koth
+execute if entity @a[tag=legacy,tag=!oldPack,tag=!halloween,tag=!christmas,tag=!saac,tag=!bigChungus,tag=!saul,tag=!musicOff] run function du-in:music/ingame/legacy/koth
 
 #HALLOWEEN#
-execute if entity @s[tag=halloween,tag=!oldPack,tag=!legacy,tag=!christmas] run function du-in:music/ingame/halloween/koth
+execute if entity @a[tag=halloween,tag=!oldPack,tag=!legacy,tag=!christmas,tag=!saac,tag=!bigChungus,tag=!saul,tag=!musicOff] run function du-in:music/ingame/halloween/koth
 
 #CHRISTMAS#
-execute if entity @s[tag=christmas,tag=!oldPack,tag=!legacy,tag=!halloween] run function du-in:music/ingame/christmas/koth
+execute if entity @a[tag=christmas,tag=!oldPack,tag=!legacy,tag=!halloween,tag=!saac,tag=!bigChungus,tag=!saul,tag=!musicOff] run function du-in:music/ingame/christmas/koth
 
 #STOP AUDIO#
-execute if entity @s[tag=!songEnd,tag=!song] run function du-in:music/ingame/stop/koth
+#execute if entity @s[tag=!songEnd,tag=!song] run function du-in:music/ingame/stop/koth

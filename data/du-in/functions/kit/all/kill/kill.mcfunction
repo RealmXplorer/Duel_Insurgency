@@ -34,7 +34,6 @@ execute if entity @s[scores={kit=26},tag=!stolen,predicate=du-in:chance/quarter_
 
 scoreboard players add @s Diamonds 3
 execute if entity @s[scores={kit=7},tag=!stolen] run give @s minecraft:arrow 2
-execute if entity @s[scores={kit=7},tag=!stolen,predicate=du-in:chance/half_chance] run give @s minecraft:arrow 1
 
 execute if entity @s[scores={kit=1000}] run function du-in:kit/saac/sounds/lines
 #This also gives Fortnite Card

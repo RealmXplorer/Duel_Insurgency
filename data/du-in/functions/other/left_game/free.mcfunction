@@ -10,6 +10,7 @@ tag @a remove flagGot
 tag @a remove team1
 tag @a remove team2
 tag @a remove void
+tag @a remove voidOut
 tag @a remove lobby
 tag @a remove kothMap
 function du-in:ingame/void/free/start

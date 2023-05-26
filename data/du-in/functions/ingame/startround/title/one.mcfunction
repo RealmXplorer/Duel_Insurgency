@@ -7,6 +7,6 @@ title @a[scores={titleTimer=3}] title {"text":"1    1","color":"#BABABA","bold":
 title @a[scores={titleTimer=2}] title {"text":"1  1","color":"#D1D1D1","bold":true}
 title @a[scores={titleTimer=1}] title {"text":"1","color":"#FFFFFF","bold":true}
 
-execute if entity @a[scores={kit=1001,titleTimer=1}] at @r run playsound minecraft:paz.fnf.one master @a ~ ~ ~ 100000 1
+execute as @a[scores={kit=1001,titleTimer=1}] at @s run playsound minecraft:paz.fnf.one master @s ~ ~ ~ 100000 1
 execute as @a[scores={titleTimer=1}] at @s run playsound minecraft:block.ancient_debris.break master @s ~ ~ ~ 1000 2
 execute as @a[scores={titleTimer=1}] at @s run playsound minecraft:block.bell.use master @s ~ ~ ~ 1000 2

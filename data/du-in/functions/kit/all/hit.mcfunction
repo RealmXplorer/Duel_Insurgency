@@ -9,7 +9,8 @@ advancement revoke @s only du-in:utility/hit
 
     #Palps
     execute if entity @s[scores={kit=19},tag=playing,predicate=du-in:weapon_hold,tag=!stolen] unless entity @s[scores={palpsSkin=1}] run playsound minecraft:saber.land master @a ~ ~ ~ .5 1
-    
+    execute if entity @s[tag=void,scores={kit=19,palpTimer=1..},tag=playing,predicate=du-in:weapon_hold] run function du-in:kit/palps/ability/hit
+
     #Luke
     #execute if entity @s[scores={kit=21},tag=playing,predicate=du-in:weapon_hold,tag=!stolen] run playsound minecraft:saber.land master @a ~ ~ ~ .5 1
 

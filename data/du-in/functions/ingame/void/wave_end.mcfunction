@@ -17,6 +17,7 @@ execute if score #main pylonsDestroyed matches ..2 run tellraw @a [{"text":"The 
 execute if score #main pylonsDestroyed matches 3 run tellraw @a [{"text":"The multiverse quakes...","bold":true,"color":"dark_purple"}]
 
 #scoreboard objectives setdisplay sidebar matchDeaths
+execute as @a[tag=voidOut] run function du-in:ingame/void/void_return
 
 scoreboard players set #main waveCooldown 200
 

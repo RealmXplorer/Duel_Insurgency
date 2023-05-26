@@ -1,8 +1,7 @@
-stopsound @s record minecraft:music.dm
-stopsound @s record minecraft:music.dmend
-stopsound @s record minecraft:oldmusic.dm
-stopsound @s record minecraft:oldmusic.dmend
-stopsound @s record minecraft:legacy.dm
-stopsound @s record minecraft:legacy.dmend
-stopsound @s record minecraft:music.halloween.dm
-stopsound @s record minecraft:music.christmas.dm
+stopsound @s record
+
+schedule clear du-in:music/ingame/default/deathmatch
+schedule clear du-in:music/ingame/halloween/deathmatch
+schedule clear du-in:music/ingame/oldpack/deathmatch
+schedule clear du-in:music/ingame/christmas/deathmatch
+schedule clear du-in:music/ingame/legacy/deathmatch

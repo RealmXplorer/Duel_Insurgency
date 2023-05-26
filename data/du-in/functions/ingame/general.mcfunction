@@ -66,7 +66,7 @@ execute as @e[type=block_display,tag=flame,scores={flameTimer=-99..}] at @s run 
 
 
 #Meeting Spot for Impostor
-    execute if entity @e[type=marker,tag=meetingSpot,scores={impostTimer=0..}] run function du-in:kit/impostor/ability/meeting
+    #execute if entity @e[type=marker,tag=meetingSpot,scores={impostTimer=0..}] run function du-in:kit/impostor/ability/meeting
     execute as @e[type=marker,tag=meetingSpot,scores={impostTimer=0..}] at @s run function du-in:kit/impostor/ability/meeting_spot
 
 #Kill graves when projectiles are near or when the sand is far from the stand

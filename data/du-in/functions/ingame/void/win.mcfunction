@@ -1,21 +1,39 @@
+#Kill goners
 kill @e[type=skeleton]
+
+#Change sidebar
 scoreboard objectives setdisplay sidebar
+
+#Clear darkness effect
 effect clear @a darkness
+
+#Add 1 to pylons destroyed
 scoreboard players add #main pylonsDestroyed 1
 scoreboard players add @a pylonsDestroyed 1
+
+#Stop sounds and music
 stopsound @a record
 stopsound @a master minecraft:music.suffocation
 stopsound @a ambient minecraft:soundeffect.whisper
 stopsound @a master minecraft:entity.warden.heartbeat
-schedule clear du-in:ingame/void/whisper
+
+#Clear all scheduled ambience and music
+function du-in:music/void/schedule_clear
+
+#Play sound of pylon destroyed
 execute positioned 97 20 -107 run playsound minecraft:soundeffect.pylon.destroy master @a ~ ~ ~ 10000
 execute if score #main pylonsDestroyed matches 4.. positioned 97 20 -107 run playsound minecraft:block.sculk_shrieker.shriek master @a ~ ~ ~ 100000 .5
 title @a[tag=!falseWin] title [{"text":"Multiverse Tether","bold":true,"color":"red"}]
 title @a[tag=!falseWin,tag=!lobby] subtitle {"text":"DESTROYED","color":"gold"}
 title @a times 5 120 5
+
+#Replace block to stop beacon beam
 setblock 97 20 -107 minecraft:black_concrete
-#scoreboard players add @a pylonNum 1
+
+#Give advancement
 advancement grant @a[gamemode=!spectator] only du-in:void/void_free
+
+#Hide bossbar
 bossbar set gast:pylon visible false
 execute if score #main pylonsDestroyed matches 4.. run tag @a add timeFree
 execute store result score @a lastVoidLock run scoreboard players get #main map

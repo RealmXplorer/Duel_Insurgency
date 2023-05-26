@@ -1,6 +1,6 @@
 stopsound @a master minecraft:music.suffocation
 stopsound @a record
-schedule clear du-in:ingame/void/whisper
+function du-in:music/void/schedule_clear
 stopsound @a ambient
 execute positioned 97 20 -107 run playsound minecraft:block.beacon.activate master @a ~ ~ ~ 1000 0.5
 execute positioned 97 20 -107 run playsound minecraft:block.beacon.activate master @a ~ ~ ~ 1000 1

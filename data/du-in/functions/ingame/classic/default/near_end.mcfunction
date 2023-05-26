@@ -14,7 +14,9 @@ execute as @a[tag=cIngame,tag=!teamMode,tag=!classicEnd,tag=closeWin] run title 
 tag @a[tag=!working,tag=!win,tag=!lose,tag=cIngame,tag=song] add songEnd
 scoreboard players set @a[tag=song,tag=songEnd] music 0
 #execute as @a[tag=song,tag=songEnd] run function du-in:ingame/scheduled/music/classic/default
-execute as @a[tag=song,tag=songEnd] run function du-in:music/ingame/stop/transition
+#execute as @a[tag=song,tag=songEnd] run function du-in:music/ingame/stop/transition
+stopsound @a[tag=song,tag=songEnd] record
+function du-in:music/ingame/classic
 tag @a[tag=songEnd] remove song
 
 #End Function

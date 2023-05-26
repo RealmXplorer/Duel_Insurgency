@@ -8,6 +8,9 @@ scoreboard objectives modify capturePoints displayname [{"text":"Conquest Points
 execute store result score #main maxTimer run scoreboard players get #main gameTimeMax
 bossbar set bossbar:gametimer visible true
 
+schedule function du-in:music/ingame/conquest 4s
+
+
 scoreboard objectives setdisplay sidebar capturePoints
 advancement grant @a[tag=playing] only du-in:gamemode/conquest
 tag @a remove cql

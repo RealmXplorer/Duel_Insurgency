@@ -16,4 +16,5 @@ execute as @a[tag=!songEnd] at @s run playsound minecraft:soundeffect.woosh mast
 execute if entity @a[tag=!songEnd,tag=playing,tag=!win,tag=!lose] run tag @a[tag=!working] add songEnd
 scoreboard players set @a[tag=song,tag=songEnd] music 0
 execute as @a[tag=song,tag=songEnd] run function du-in:music/ingame/stop/transition
+function du-in:music/ingame/classic
 tag @a[tag=songEnd] remove song

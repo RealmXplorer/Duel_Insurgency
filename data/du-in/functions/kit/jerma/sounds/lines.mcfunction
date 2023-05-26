@@ -1,4 +1,4 @@
-execute if entity @s[tag=!hasOnionRing,predicate=du-in:chance/quarter_chance] run function du-in:kit/jerma/secondary/give_onion
+execute if entity @s[tag=!hasOnionRing,predicate=du-in:chance/half_chance] run function du-in:kit/jerma/secondary/give_onion
 
 playsound minecraft:jerma.kill voice @a[tag=!working] ~ ~ ~ 3100000 1 1
 

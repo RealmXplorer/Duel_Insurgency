@@ -1,12 +1,8 @@
-stopsound @s record minecraft:music.ffa
-stopsound @s record minecraft:music.ffaend
-stopsound @s record minecraft:music.tournamentffa
-stopsound @s record minecraft:music.tournamentffaend
-stopsound @s record minecraft:oldmusic.ffa
-stopsound @s record minecraft:oldmusic.ffaend
-stopsound @s record minecraft:music.legacy.ffa
-stopsound @s record minecraft:music.legacy.ffaend
-stopsound @s record minecraft:oldmusic.tournament
-stopsound @s record minecraft:oldmusic.tournamentend
-stopsound @s record minecraft:music.halloween.ffa
-stopsound @s record minecraft:music.christmas.ffa
+stopsound @s record
+#Stop schedule
+schedule clear du-in:music/ingame/default/classic
+schedule clear du-in:music/ingame/other/tournament
+schedule clear du-in:music/ingame/oldpack/classic
+schedule clear du-in:music/ingame/legacy/classic
+schedule clear du-in:music/ingame/halloween/classic
+schedule clear du-in:music/ingame/christmas/classic

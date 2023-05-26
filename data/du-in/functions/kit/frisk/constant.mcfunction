@@ -6,7 +6,8 @@ execute if entity @s[tag=armor,tag=!stolen] run function du-in:kit/frisk/armor
 
 execute if entity @s[level=1] run function du-in:kit/frisk/ability/item
 
-execute if entity @s[tag=kitActions] run function du-in:kit/frisk/ability/init
+execute if entity @s[tag=!void,tag=kitActions] run function du-in:kit/frisk/ability/init
+execute if entity @s[tag=void,tag=kitActions] run function du-in:kit/frisk/ability/void/init
 
 execute if entity @s[tag=!teamDead,tag=!stolen] unless entity @s[scores={weapCount=1}] run function du-in:kit/frisk/weapon
 

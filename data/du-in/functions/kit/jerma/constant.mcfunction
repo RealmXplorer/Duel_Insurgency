@@ -18,7 +18,8 @@ execute if entity @s[tag=secKitActions] run function du-in:kit/jerma/secondary/e
 #Ability#
 item replace entity @s[level=1] weapon.offhand with minecraft:carrot_on_a_stick{display:{Name:'[{"text":"«EPIC» ","color":"gold","bold":"true","italic":"true"},{"text":"Peep the Horror","color":"red","bold":true,"italic":false,"underlined":false,"strikethrough":false,"obfuscated":false}]',Lore:['{"text":"Right click to activate!","color":"dark_purple","bold":true}','[{"text":""}]','{"text":"Someone will die","color":"dark_gray"}','{"text":"","color":"dark_gray"}']},HideFlags:1,Enchantments:[{id:"minecraft:protection",lvl:1s}],CustomModelData:2002,weaponItem:1b}
 
-execute if entity @s[tag=kitActions] run function du-in:kit/jerma/ability/init
+execute if entity @s[tag=!void,tag=kitActions] run function du-in:kit/jerma/ability/init
+execute if entity @s[tag=void,tag=kitActions] run function du-in:kit/jerma/ability/void/init
 
 #Attributes#
 attribute @s[tag=!stolen] minecraft:generic.movement_speed base set 0.135

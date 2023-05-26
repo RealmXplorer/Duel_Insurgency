@@ -6,6 +6,8 @@ title @s actionbar {"text":"THIS MACHINE IS BROKEN?!?!?!","bold":true,"color":"r
 tag @e[type=interaction,tag=vending] add stable
 tag @e[type=interaction,tag=vending] remove sabotagedMachine
 
+playsound minecraft:soundeffect.zap master @a ~ ~ ~ 10 1
+
 schedule clear du-in:ingame/scheduled/three_sec_loop
 
 tag @a[scores={kit=1003}] add vendingCooldown

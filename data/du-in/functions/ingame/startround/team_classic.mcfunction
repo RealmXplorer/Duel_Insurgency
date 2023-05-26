@@ -8,6 +8,7 @@ execute if score #main tFFAGoal matches 50 run scoreboard objectives modify clas
 execute if score #main tFFAGoal matches 15 run scoreboard objectives modify classicTeamKills displayname ["",{"text":"Classic Kills ","bold":true,"color":"gold"},{"text":"(of 15)","color":"gray"}]
 execute if score #main tFFAGoal matches 20 run scoreboard objectives modify classicTeamKills displayname ["",{"text":"Classic Kills ","bold":true,"color":"gold"},{"text":"(of 20)","color":"gray"}]
 
+schedule function du-in:music/ingame/classic 4s
 
 scoreboard objectives setdisplay sidebar classicTeamKills
 #execute if entity @a[tag=!teamMode] run bossbar set bossbar:classic visible true

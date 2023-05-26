@@ -4,6 +4,7 @@ scoreboard objectives modify killIngame displayname ["",{"text":"Classic Kills "
 
 scoreboard objectives setdisplay sidebar killIngame
 
+schedule function du-in:music/ingame/classic 4s
 
 bossbar set bossbar:gametimer players @a
 team join Classic @a[tag=!spectating,tag=!teamMode,tag=!AFK]

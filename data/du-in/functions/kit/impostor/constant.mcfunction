@@ -15,7 +15,8 @@ execute if entity @s[tag=!teamDead,tag=!stolen] unless entity @s[scores={weapCou
 item replace entity @s[level=1] weapon.offhand with minecraft:carrot_on_a_stick{display:{Name:'[{"text":"«EPIC» ","color":"gold","bold":"true","italic":"true"},{"text":"Emergency Meeting","color":"red","bold":true,"italic":false,"underlined":false,"strikethrough":false,"obfuscated":false}]',Lore:['{"text":"Right click to activate!","color":"dark_purple","bold":true}','[{"text":""}]','{"text":"sus","color":"dark_gray"}','{"text":"","color":"dark_gray"}']},HideFlags:1,Enchantments:[{id:"minecraft:protection",lvl:1s}],CustomModelData:2003,weaponItem:1b}
 
 #Use ability
-execute if entity @s[tag=kitActions] run function du-in:kit/impostor/ability/init
+execute if entity @s[tag=!void,tag=kitActions] run function du-in:kit/impostor/ability/init
+execute if entity @s[tag=void,tag=kitActions] run function du-in:kit/impostor/ability/void/init
 
 #IMPOSTER#
 #execute if entity @s[tag=killLine] run function du-in:kit/impostor/sounds/line

@@ -2,6 +2,7 @@
 tag @s remove lobby
 
 tag @s remove void
+tag @s remove voidOut
 effect clear @s night_vision
 
 #Make player who left (if they weren't in a game) a spectator

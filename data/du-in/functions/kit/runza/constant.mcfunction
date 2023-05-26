@@ -9,7 +9,8 @@ execute unless entity @s[scores={weapCount=1}] run item replace entity @s[tag=!s
 #Ability Item#
 item replace entity @s[level=1] weapon.offhand with minecraft:carrot_on_a_stick{display:{Name:'[{"text":"«EPIC» ","color":"gold","bold":"true","italic":"true"},{"text":"Temperature Tuesday","color":"red","bold":true,"italic":false,"underlined":false,"strikethrough":false,"obfuscated":false}]',Lore:['{"text":"Right click to activate!","color":"dark_purple","bold":true}','[{"text":""}]','{"text":"FREE DEALS!","color":"dark_gray"}','{"text":"","color":"dark_gray"}']},HideFlags:1,Enchantments:[{id:"minecraft:protection",lvl:1s}],CustomModelData:2005,weaponItem:1b}
 
-execute if entity @s[tag=kitActions] run function du-in:kit/runza/ability/init
+execute if entity @s[tag=!void,tag=kitActions] run function du-in:kit/runza/ability/init
+execute if entity @s[tag=void,tag=kitActions] run function du-in:kit/runza/ability/void/init
 
 #RUNZA#
 execute if entity @s[tag=armor,tag=!bigChungus] run function du-in:kit/runza/armor

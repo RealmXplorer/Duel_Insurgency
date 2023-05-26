@@ -24,22 +24,38 @@ tag @a remove bigChungus
 schedule clear du-in:ingame/scheduled/ambience/init
 stopsound @a ambient
 
-stopsound @a record
+function du-in:music/ingame/stop/all
+stopsound @a
 scoreboard players set @a music 0
 #scoreboard players set @a ambience 0
 scoreboard players set @a heartBeat 0
 
 function du-in:ingame/void/whisper
 
-execute if score #main pylonsDestroyed matches ..0 run summon marker 10029 41 10030 {Tags:["pylon","mapSpecific"]}
-execute if score #main pylonsDestroyed matches 1 run summon marker 10062 41 10030 {Tags:["pylon","mapSpecific"]}
-execute if score #main pylonsDestroyed matches 2 run summon marker 10062 41 10063 {Tags:["pylon","mapSpecific"]}
-execute if score #main pylonsDestroyed matches 3 run summon marker 10029 41 10063 {Tags:["pylon","mapSpecific"]}
+scoreboard players set Insurgents playerCount 0
+execute as @a[gamemode=!spectator] run scoreboard players add Insurgents playerCount 1
+scoreboard players set @a[gamemode=!spectator] Lives 1
 
-execute if score #main pylonsDestroyed matches ..0 run function du-in:ingame/void/pylon_reset
-execute if score #main pylonsDestroyed matches 1 run setblock 10029 33 10030 air replace
-execute if score #main pylonsDestroyed matches 2 run setblock 10062 33 10030 air replace
-execute if score #main pylonsDestroyed matches 3 run setblock 10062 33 10063 air replace
+execute unless score #main pylonsDestroyed matches 2.. run function du-in:music/void/suffocation
+#execute if score #main pylonsDestroyed matches 2 run function du-in:music/void/corruption
+#execute if score #main pylonsDestroyed matches 3 run function du-in:music/void/vain_pursuit
+
+#execute if score #main pylonsDestroyed matches ..0 run summon marker 10029 41 10030 {Tags:["pylon","mapSpecific"]}
+#execute if score #main pylonsDestroyed matches 1 run summon marker 10062 41 10030 {Tags:["pylon","mapSpecific"]}
+#execute if score #main pylonsDestroyed matches 2 run summon marker 10062 41 10063 {Tags:["pylon","mapSpecific"]}
+#execute if score #main pylonsDestroyed matches 3 run summon marker 10029 41 10063 {Tags:["pylon","mapSpecific"]}
+
+execute if score #main pylonsDestroyed matches ..0 run function du-in:ingame/void/start/pylon_one
+execute if score #main pylonsDestroyed matches 1 run function du-in:ingame/void/start/pylon_two
+execute if score #main pylonsDestroyed matches 2 run function du-in:ingame/void/start/pylon_three
+execute if score #main pylonsDestroyed matches 3 run function du-in:ingame/void/start/pylon_four
+
+#execute if score #main pylonsDestroyed matches ..0 run function du-in:ingame/void/pylon_reset
+#execute if score #main pylonsDestroyed matches 1 run setblock 10029 33 10030 air replace
+#execute if score #main pylonsDestroyed matches 2 run setblock 10062 33 10030 air replace
+#execute if score #main pylonsDestroyed matches 3 run setblock 10062 33 10063 air replace
+
+#execute if score #main pylonsDestroyed matches 3 run schedule function du-in:ingame/void/spawn/missile 200t
 
 #Pylon 1
 #10029 41 10030
@@ -111,7 +127,7 @@ tp @a 10045.0 42 10047.0
 spawnpoint @a 10045 42 10047
 #spawnpoint @a 113 5 -91 135
 
-scoreboard players set #main missileCooldown 40
+#scoreboard players set #main missileCooldown 40
 
 setblock 97 20 -107 minecraft:black_stained_glass
 time set night
@@ -132,17 +148,11 @@ scoreboard players set @a gonersKilled 30
 advancement grant @a[gamemode=!spectator] only du-in:void/void
 
 execute unless score #main matchDeaths matches 1.. run scoreboard players set Insurgents matchDeaths 0
-#execute store result score Insurgents matchDeaths run scoreboard players get #main matchDeaths
 
-execute if score #main pylonsDestroyed matches ..2 run scoreboard objectives modify matchDeaths displayname ["",{"text":"Match Deaths ","bold":true,"color":"red"},{"text":"(Max 2)","color":"gray"}]
-execute if score #main pylonsDestroyed matches 3 run scoreboard objectives modify matchDeaths displayname ["",{"text":"Match Deaths ","bold":true,"color":"red"},{"text":"(Max 3)","color":"gray"}]
+#execute if score #main pylonsDestroyed matches ..2 run scoreboard objectives modify matchDeaths displayname ["",{"text":"Match Deaths ","bold":true,"color":"red"},{"text":"(Max 2)","color":"gray"}]
+scoreboard objectives modify playerCount displayname ["",{"text":"Players left","bold":true,"color":"red"}]
 
-execute if score #main pylonsDestroyed matches ..0 run tellraw @a [{"text":"The First Pylon ","bold":true,"color":"dark_purple"},{"text":"beckons...","color":"light_purple"}]
-execute if score #main pylonsDestroyed matches 1 run tellraw @a [{"text":"The Second Pylon ","bold":true,"color":"dark_purple"},{"text":"glows intensely...","color":"light_purple"}]
-execute if score #main pylonsDestroyed matches 2 run tellraw @a [{"text":"The Third Pylon ","bold":true,"color":"dark_purple"},{"text":"hums ominously...","color":"light_purple"}]
-execute if score #main pylonsDestroyed matches 3 run tellraw @a [{"text":"It's the end...","bold":true,"color":"dark_purple"}]
-
-scoreboard objectives setdisplay sidebar matchDeaths
+scoreboard objectives setdisplay sidebar playerCount
 
 scoreboard players set #main wave 1
 

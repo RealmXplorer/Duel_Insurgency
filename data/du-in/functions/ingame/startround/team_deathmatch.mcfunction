@@ -8,6 +8,7 @@ execute if score @a[tag=partyLeader,limit=1] maxLives matches 3 run scoreboard o
 execute store result score Red teamPool run scoreboard players get @a[tag=partyLeader,limit=1] maxLives
 execute store result score Blue teamPool run scoreboard players get @a[tag=partyLeader,limit=1] maxLives
 
+schedule function du-in:music/ingame/deathmatch 4s
 
 #scoreboard players set Red teamPool 5
 #scoreboard players set Blue teamPool 5

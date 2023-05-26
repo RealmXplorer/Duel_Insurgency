@@ -1,8 +1,7 @@
-stopsound @s record minecraft:music.koth
-stopsound @s record minecraft:music.kothend
-stopsound @s record minecraft:oldmusic.koth
-stopsound @s record minecraft:oldmusic.kothend
-stopsound @s record minecraft:music.legacy.koth
-stopsound @s record minecraft:music.legacy.kothend
-stopsound @s record minecraft:music.halloween.koth
-stopsound @s record minecraft:music.christmas.koth
+stopsound @s record
+
+schedule clear du-in:music/ingame/default/koth
+schedule clear du-in:music/ingame/oldpack/koth
+schedule clear du-in:music/ingame/halloween/koth
+schedule clear du-in:music/ingame/christmas/koth
+schedule clear du-in:music/ingame/legacy/koth

@@ -10,7 +10,7 @@ execute if entity @a[tag=timedMode,tag=!teamMode] run function du-in:ingame/koth
 execute if entity @a[tag=timedMode,tag=teamMode] run function du-in:ingame/koth/team_timed/timed
 
 #MUSIC#
-execute as @a[tag=kothIngame,tag=!startgame,tag=!saac,tag=!bigChungus,tag=!saul] at @s run function du-in:music/ingame/koth
+#execute as @a[tag=kothIngame,tag=!startgame,tag=!saac,tag=!bigChungus,tag=!saul] at @s run function du-in:music/ingame/koth
 
 #execute at @e[type=minecraft:area_effect_cloud,tag=kothObj] run function du-in:ingame/koth/hill
 

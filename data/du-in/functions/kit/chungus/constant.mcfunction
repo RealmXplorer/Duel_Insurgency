@@ -1,6 +1,6 @@
 execute if entity @s[scores={jump=1..},tag=!stolen] run function du-in:kit/jump
 
-tag @a[tag=!bigChungus,tag=!legMusicOff,tag=!void] add bigChungus
+tag @a[tag=!bigChungus,tag=!legMusicOff,tag=!void,tag=!ctfIngame,tag=!cqIngame] add bigChungus
 tag @s add chungus
 
 #attribute @s minecraft:generic.attack_damage base set 5
