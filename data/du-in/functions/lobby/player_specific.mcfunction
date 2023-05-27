@@ -28,3 +28,5 @@
         execute if entity @s[scores={lobby=3}] run function du-in:lobby/map_select
 
         execute if entity @s[scores={kitUse=1..,lobby=1}] run function du-in:lobby/kit_use/gm
+
+        #execute if score #main pylonsDestroyed matches 3 run function du-in:lobby/void/wind

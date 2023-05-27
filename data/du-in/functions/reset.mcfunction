@@ -4,6 +4,7 @@ schedule clear du-in:ingame/scheduled/five_sec_loop
 schedule clear du-in:ingame/scheduled/half_sec_loop
 schedule clear du-in:ingame/scheduled/three_sec_loop
 schedule clear du-in:ingame/scheduled/ambience/init
+schedule clear du-in:lobby/void/wind
 #schedule clear du-in:ingame/scheduled/five_loop
 advancement revoke @a only du-in:void/interact_void
 
@@ -365,6 +366,8 @@ scoreboard players set @a diedIngame 0
 
 #Clear Effects#
 effect clear @a
+stopsound @a ambient
+execute if score #main pylonsDestroyed matches 3.. run function du-in:lobby/void/wind
 
 function du-in:lobby/scheduled/gamemode_select
 #scoreboard players set #main onPoint 0

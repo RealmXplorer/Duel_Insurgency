@@ -16,4 +16,4 @@
         execute if entity @s[scores={lobby=1},tag=!parkour,tag=!credits,tag=!shop,gamemode=adventure,tag=!working,nbt=!{Inventory:[{tag:{fixedItem:1b},id:"minecraft:carrot_on_a_stick",Slot:17b}]}] run function du-in:lobby/item/credits
 
 # Music #
-    execute unless entity @s[tag=musicOff] run function du-in:music/lobby/lobby
+    execute unless entity @s[tag=musicOff] unless score #main pylonsDestroyed matches 3 run function du-in:music/lobby/lobby

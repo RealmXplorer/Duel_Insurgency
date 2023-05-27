@@ -3,6 +3,7 @@ execute as @e[type=skeleton,sort=random,limit=1,tag=!peepedHorror] run tag @s ad
 execute as @e[type=skeleton,tag=peepedHorror] run function du-in:kit/jerma/ability/peeped_horror
 
 #execute as @a at @s run function du-in:kit/jerma/particle
+function du-in:ingame/void/goner/kill_goner
 
 playsound minecraft:ambient.cave master @a ~ ~ ~ 100 1 1
 playsound minecraft:jerma.peep master @a ~ ~ ~ 100 1 1

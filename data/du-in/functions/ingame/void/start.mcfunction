@@ -20,6 +20,7 @@ tag @a remove flagGot
 tag @a remove saul
 tag @a remove saac
 tag @a remove bigChungus
+tag @a remove inField
 
 schedule clear du-in:ingame/scheduled/ambience/init
 stopsound @a ambient
@@ -37,7 +38,7 @@ execute as @a[gamemode=!spectator] run scoreboard players add Insurgents playerC
 scoreboard players set @a[gamemode=!spectator] Lives 1
 
 execute unless score #main pylonsDestroyed matches 2.. run function du-in:music/void/suffocation
-#execute if score #main pylonsDestroyed matches 2 run function du-in:music/void/corruption
+#execute if score #main pylonsDestroyed matches 2 run function du-in:music/void/pursuit_happiness
 #execute if score #main pylonsDestroyed matches 3 run function du-in:music/void/vain_pursuit
 
 #execute if score #main pylonsDestroyed matches ..0 run summon marker 10029 41 10030 {Tags:["pylon","mapSpecific"]}

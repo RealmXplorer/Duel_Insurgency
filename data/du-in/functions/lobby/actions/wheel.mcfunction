@@ -12,11 +12,13 @@ execute if score #gamemode gamemodeID matches 4 run tellraw @a ["",{"text":"Capt
 execute if score #gamemode gamemodeID matches 5 run tellraw @a ["",{"text":"Conquest ","bold":true,"color":"dark_red"},{"text":"has been ","color":"gray"},{"text":"selected","bold":false,"color":"gray"}]
 #execute if score #gamemode gamemodeID matches 6 run tellraw @a ["",{"text":"Extraction ","bold":true,"color":"yellow"},{"text":"has been ","color":"gray"},{"text":"selected","bold":false,"color":"gray"}]
 
-execute unless score #main lobbyTheme matches 1.. run function du-in:lobby/display/default/display
-execute if score #main lobbyTheme matches 1 run function du-in:lobby/display/halloween/display
-execute if score #main lobbyTheme matches 2 run function du-in:lobby/display/thanks/display
-execute if score #main lobbyTheme matches 3 run function du-in:lobby/display/christmas/display
-execute if score #main lobbyTheme matches 4 run function du-in:lobby/display/easter/display
+execute unless score #main pylonsDestroyed matches 3 unless score #main lobbyTheme matches 1.. run function du-in:lobby/display/default/display
+execute unless score #main pylonsDestroyed matches 3 if score #main lobbyTheme matches 1 run function du-in:lobby/display/halloween/display
+execute unless score #main pylonsDestroyed matches 3 if score #main lobbyTheme matches 2 run function du-in:lobby/display/thanks/display
+execute unless score #main pylonsDestroyed matches 3 if score #main lobbyTheme matches 3 run function du-in:lobby/display/christmas/display
+execute unless score #main pylonsDestroyed matches 3 if score #main lobbyTheme matches 4 run function du-in:lobby/display/easter/display
+
+execute if score #main pylonsDestroyed matches 3 run function du-in:lobby/display/void/display
 
 function du-in:lobby/display/default/text
 

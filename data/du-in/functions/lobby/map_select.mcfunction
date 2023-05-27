@@ -55,4 +55,4 @@ execute as @e[type=marker,tag=mapVote] at @s run function du-in:lobby/mapselect/
         scoreboard players set @s[scores={ctfMapRandom=5..}] ctfMapRandom 1
         scoreboard players set @s[scores={cqMapRandom=1..}] cqMapRandom 1
 
-execute unless entity @s[tag=musicOff] run function du-in:music/lobby/kitselect
+execute unless entity @s[tag=musicOff] unless score #main pylonsDestroyed matches 3 run function du-in:music/lobby/kitselect

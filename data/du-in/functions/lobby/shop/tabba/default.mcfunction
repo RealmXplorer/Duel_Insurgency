@@ -11,4 +11,4 @@ execute if entity @s[scores={tabbaTalk=9}] run tellraw @s ["",{"text":"<","color
 execute if entity @s[scores={tabbaTalk=10}] run tellraw @s ["",{"text":"<","color":"white"},{"text":"Tabba","color":"yellow"},"> If you ask me, it is a little odd that there's constant fighting. Maybe we should be trying to work together?"]
 execute if entity @s[scores={tabbaTalk=11}] run tellraw @s ["",{"text":"<","color":"white"},{"text":"Tabba","color":"yellow"},"> I have this weird feeling that someone or something is watching me..."]
  
-scoreboard players set @s[scores={tabbaTalk=11}] tabbaTalk 8
+scoreboard players set @s[scores={tabbaTalk=11..}] tabbaTalk 8

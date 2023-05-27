@@ -4,4 +4,4 @@
 execute if entity @s[tag=skinMenu] run function du-in:other/skins/skin_menu/common
 
 #Music
-execute unless entity @s[tag=musicOff] run function du-in:music/lobby/shop
+execute unless entity @s[tag=musicOff] unless score #main pylonsDestroyed matches 3 run function du-in:music/lobby/shop

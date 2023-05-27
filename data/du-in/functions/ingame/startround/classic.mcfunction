@@ -12,6 +12,7 @@ scoreboard objectives setdisplay sidebar killIngame
 schedule function du-in:music/ingame/classic 4s
 
 team join Classic @a[tag=!spectating,tag=!teamMode,tag=!AFK]
-scoreboard players set @a[tag=!playing,tag=!spectating,tag=!working] killIngame 0
+scoreboard players reset * killIngame
+scoreboard players set @a[tag=!spectating,tag=!working] killIngame 0
 advancement grant @a[tag=playing] only du-in:gamemode/classic
 tag @a remove cl

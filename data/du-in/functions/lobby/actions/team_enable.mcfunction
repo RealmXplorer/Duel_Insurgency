@@ -3,3 +3,4 @@ tellraw @a ["",{"text":"Team Play ","bold":true,"color":"blue"},{"text":"has bee
 scoreboard players reset @s kitUse
 tag @a add teamMode
 clear @a carrot_on_a_stick{CustomModelData:1016}
+clear @a carrot_on_a_stick{CustomModelData:1042}

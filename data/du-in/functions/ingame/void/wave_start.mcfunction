@@ -21,9 +21,9 @@ title @a subtitle [{"text":"Wave ","color":"light_purple","bold":true},{"score":
 execute if score #main pylonsDestroyed matches ..2 run tellraw @a [{"text":"The Pylon ","bold":true,"color":"dark_purple"},{"text":"reignites!...","color":"light_purple"}]
 execute if score #main pylonsDestroyed matches 3 run tellraw @a [{"text":"The world is ending...","bold":true,"color":"dark_purple"}]
 
-scoreboard players set #main waveCooldown 100
+#scoreboard players set #main waveCooldown 100
 
 bossbar set gast:pylon name ["",{"text":"Pylon Stabilization: ","bold":true,"color":"white"},{"score":{"name":"@r","objective":"gonersKilled"},"color":"red"},{"text":" Goners left","color":"gray"}]
 execute store result bossbar gast:pylon max run scoreboard players get @a[tag=partyLeader,tag=void,limit=1] gonersKilled
 
-scoreboard players set #main waveCooldown 0
+#scoreboard players set #main waveCooldown 0

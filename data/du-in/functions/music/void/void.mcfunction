@@ -3,7 +3,7 @@
 #execute unless score #main pylonsDestroyed matches 1.. run scoreboard players set @s[scores={music=2540..}] music 0
 #execute if entity @s[scores={music=1},tag=!musicOff] unless score #main pylonsDestroyed matches 1.. run playsound minecraft:music.suffocation master @s ~ ~ ~ 0.25 1 1
 
-#execute if entity @s[tag=!musicOff] if score #main pylonsDestroyed matches 1..2 run function du-in:music/void/corruption
+#execute if entity @s[tag=!musicOff] if score #main pylonsDestroyed matches 1..2 run function du-in:music/void/pursuit_happiness
 #execute if entity @s[tag=!musicOff] if score #main pylonsDestroyed matches 3 run function du-in:music/void/vain_pursuit
 
 function du-in:ingame/void/ambience

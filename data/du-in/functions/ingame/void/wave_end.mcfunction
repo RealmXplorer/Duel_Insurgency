@@ -19,7 +19,9 @@ execute if score #main pylonsDestroyed matches 3 run tellraw @a [{"text":"The mu
 #scoreboard objectives setdisplay sidebar matchDeaths
 execute as @a[tag=voidOut] run function du-in:ingame/void/void_return
 
-scoreboard players set #main waveCooldown 200
+#scoreboard players set #main waveCooldown 200
+
+schedule function du-in:ingame/void/wave_start 10s
 
 #bossbar set gast:pylon name ["",{"text":"Pylon Stabilization: ","bold":true,"color":"white"},{"score":{"name":"@r","objective":"gonersKilled"},"color":"red"},{"text":" Goners left","color":"gray"}]
 #execute store result bossbar gast:pylon max run scoreboard players get @r gonersKilled

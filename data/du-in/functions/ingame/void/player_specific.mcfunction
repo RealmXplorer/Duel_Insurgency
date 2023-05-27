@@ -1,5 +1,5 @@
 
-#execute if entity @s[tag=!musicOff] if score #main pylonsDestroyed matches 1..2 run function du-in:music/void/corruption
+#execute if entity @s[tag=!musicOff] if score #main pylonsDestroyed matches 1..2 run function du-in:music/void/pursuit_happiness
 #execute if entity @s[tag=!musicOff] if score #main pylonsDestroyed matches 3 run function du-in:music/void/vain_pursuit
 
 function du-in:ingame/void/ambience

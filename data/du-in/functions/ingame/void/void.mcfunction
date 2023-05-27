@@ -38,7 +38,7 @@ execute if score #main pylonsDestroyed matches 3 as @e[type=armor_stand,tag=miss
 execute if entity @a[tag=!win,scores={gonersKilled=..0}] if score #main wave matches 2.. run function du-in:ingame/void/win
 execute if entity @a[scores={gonersKilled=..0}] if score #main wave matches 2.. run function du-in:ingame/void/explode
 
-execute if score #main waveCooldown matches 1.. run function du-in:ingame/void/wave_break
+#execute if score #main waveCooldown matches 1.. run function du-in:ingame/void/wave_break
 
 execute unless score #main pylonsDestroyed matches 3 if score Insurgents playerCount matches ..0 unless entity @a[tag=win] run function du-in:ingame/void/lose
 execute if score #main pylonsDestroyed matches 3 if score Insurgents playerCount matches ..0 unless entity @a[tag=win] run function du-in:ingame/void/lose

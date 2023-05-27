@@ -20,4 +20,5 @@ tag @a remove moraLock
 tag @a remove duneLock
 tag @a remove bowlLock
 
+function du-in:lobby/display/default/switch
 function du-in:ingame/endround/end_ending
