@@ -12,5 +12,5 @@ execute as @a[tag=songEnd,tag=!oldPack,tag=!legacy,tag=!halloween,tag=!christmas
 
 
 #tag=!oldPack,tag=!legacy,tag=!halloween,tag=!christmas,tag=!saac,tag=!bigChungus,tag=!saul,tag=!musicOff
-execute unless entity @a[tag=songEnd] run schedule function du-in:music/ingame/deathmatch 3340t
-execute if entity @a[tag=songEnd] run schedule function du-in:music/ingame/deathmatch 2560t
+execute unless entity @a[tag=songEnd] run schedule function du-in:music/ingame/default/deathmatch 3340t
+execute if entity @a[tag=songEnd] run schedule function du-in:music/ingame/default/deathmatch 2560t

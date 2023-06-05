@@ -14,5 +14,5 @@ execute as @a[tag=songEnd,tag=!musicOff,tag=!oldPack,tag=!tournament,tag=!legacy
 #scoreboard players set @s[tag=cend,scores={music=1940..},tag=!startgame] music 0
 #execute if entity @s[tag=cend,scores={music=1},tag=!musicOff,tag=!startgame] run playsound minecraft:music.ffaend record @s ~ ~ ~ 1000000 1 1
 
-execute unless entity @a[tag=songEnd] run schedule function du-in:music/ingame/default/classic 2760t
+execute unless entity @a[tag=songEnd] run schedule function du-in:music/ingame/default/classic 2740t
 execute if entity @a[tag=songEnd] run schedule function du-in:music/ingame/default/classic 1940t

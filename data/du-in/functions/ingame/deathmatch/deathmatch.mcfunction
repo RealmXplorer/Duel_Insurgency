@@ -4,6 +4,6 @@ execute if entity @a[tag=timedMode,tag=!teamMode] run function du-in:ingame/deat
 execute if entity @a[tag=timedMode,tag=teamMode] run function du-in:ingame/deathmatch/team_timed/timed
 
 #MUSIC#
-execute as @a[tag=dmIngame,tag=!musicOff,tag=!startgame,tag=!saac,tag=!bigChungus] at @s run function du-in:music/ingame/deathmatch
+#execute as @a[tag=dmIngame,tag=!musicOff,tag=!startgame,tag=!saac,tag=!bigChungus] at @s run function du-in:music/ingame/deathmatch
 
 function du-in:maps/classic

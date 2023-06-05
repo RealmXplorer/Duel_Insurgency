@@ -56,7 +56,4 @@ execute if entity @s[scores={darwinSound=..0}] run function du-in:kit/gumball/ab
 attribute @s[tag=!stolen,tag=!darwin] minecraft:generic.movement_speed base set 0.13
 attribute @s[tag=!stolen,tag=darwin] minecraft:generic.movement_speed base set 0.1475
 
-attribute @s[tag=!stolen,tag=!darwin,tag=!deathMark] minecraft:generic.armor base set 0
-attribute @s[tag=!stolen,tag=darwin,tag=!deathMark] minecraft:generic.armor base set -2
-
 attribute @s[tag=!stolen,tag=!pussFear,tag=!parry] generic.knockback_resistance base set 0.01

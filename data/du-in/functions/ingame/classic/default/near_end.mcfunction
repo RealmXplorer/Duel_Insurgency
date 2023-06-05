@@ -16,6 +16,9 @@ scoreboard players set @a[tag=song,tag=songEnd] music 0
 #execute as @a[tag=song,tag=songEnd] run function du-in:ingame/scheduled/music/classic/default
 #execute as @a[tag=song,tag=songEnd] run function du-in:music/ingame/stop/transition
 stopsound @a[tag=song,tag=songEnd] record
+execute at @a as @a run playsound minecraft:soundeffect.woosh master @s ~ ~ ~ .5 1
+execute at @a as @a run playsound minecraft:soundeffect.woosh master @s ~ ~ ~ .5 2
+execute at @a as @a run playsound minecraft:soundeffect.woosh master @s ~ ~ ~ .5 .5
 function du-in:music/ingame/classic
 tag @a[tag=songEnd] remove song
 

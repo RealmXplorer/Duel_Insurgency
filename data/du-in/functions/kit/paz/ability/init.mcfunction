@@ -5,10 +5,11 @@ kill @e[type=ender_pearl,tag=blakeTP]
 tag @a remove hacker
 
 #Add exemption for executing PAZ
-tag @s add hacker
+tag @s[tag=!sabotaged] add hacker
 
 #Mark all players for DDoS
-execute as @a[tag=!hacker] at @s run summon ender_pearl ~ ~ ~ {NoGravity:1b,Item:{id:"minecraft:ender_pearl",Count:1b,tag:{CustomModelData:100}},Tags:["blakeTP","notAssigned"],Owner:[I;0,0,0,0]}
+execute unless entity @s[tag=sabotaged] as @a[tag=!hacker] at @s run summon ender_pearl ~ ~ ~ {NoGravity:1b,Item:{id:"minecraft:ender_pearl",Count:1b,tag:{CustomModelData:100}},Tags:["blakeTP","notAssigned"],Owner:[I;0,0,0,0]}
+execute if entity @s[tag=sabotaged] run summon ender_pearl ~ ~ ~ {NoGravity:1b,Item:{id:"minecraft:ender_pearl",Count:1b,tag:{CustomModelData:100}},Tags:["blakeTP","notAssigned"],Owner:[I;0,0,0,0]}
 
 #Play sounds
 playsound minecraft:entity.zombie_villager.converted master @a ~ ~ ~ 1 .5
@@ -35,6 +36,9 @@ xp set @s[tag=!stolen] 600 levels
 
 #Remove PAZ teleport exemption
 tag @s remove hacker
+
+#Remove sabotaged
+tag @s remove sabotaged
 
 #End ability
 tag @s remove kitActions

@@ -28,6 +28,7 @@ gamemode adventure @a
 scoreboard players set @a music 0
 #scoreboard players set @a ambience 0
 function du-in:ingame/scheduled/ambience/init
+function du-in:music/free/free
 
 gamemode adventure @a
 

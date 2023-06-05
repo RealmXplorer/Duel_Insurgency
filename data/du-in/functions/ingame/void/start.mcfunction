@@ -144,7 +144,10 @@ execute at @a run playsound minecraft:soundeffect.voidbell master @a ~ ~ ~ 1 2
 #execute if score #main pylonsDestroyed matches ..2 run scoreboard players set @a gonersKilled 30
 #execute if score #main pylonsDestroyed matches 3 run scoreboard players set @a gonersKilled 30
 
-scoreboard players set @a gonersKilled 30
+#scoreboard players set @a gonersKilled 30
+
+scoreboard players set @a gonersKilled 20
+execute as @a[gamemode=!spectator] run scoreboard players add @a gonersKilled 5
 
 advancement grant @a[gamemode=!spectator] only du-in:void/void
 
