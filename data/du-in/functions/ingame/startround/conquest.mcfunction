@@ -7,7 +7,7 @@ execute if score #main cqCap matches 15000 run scoreboard objectives modify capt
 execute if score #main cqCap matches 5000 run scoreboard objectives modify capturePoints displayname ["",{"text":"Conquest Points ","bold":true,"color":"blue"},{"text":"(of 5,000)","color":"gray"}]
 execute if score #main cqCap matches 7000 run scoreboard objectives modify capturePoints displayname ["",{"text":"Conquest Points ","bold":true,"color":"blue"},{"text":"(of 7,000)","color":"gray"}]
 
-schedule function du-in:music/ingame/conquest 4s
+execute unless score #main pylonsDestroyed matches 3 run schedule function du-in:music/ingame/conquest 4s
 
 bossbar set conquest:blue visible true
 bossbar set conquest:red visible true

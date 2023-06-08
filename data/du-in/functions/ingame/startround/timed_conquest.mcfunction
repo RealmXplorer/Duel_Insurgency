@@ -8,7 +8,7 @@ scoreboard objectives modify capturePoints displayname [{"text":"Conquest Points
 execute store result score #main maxTimer run scoreboard players get #main gameTimeMax
 bossbar set bossbar:gametimer visible true
 
-schedule function du-in:music/ingame/conquest 4s
+execute unless score #main pylonsDestroyed matches 3 run schedule function du-in:music/ingame/conquest 4s
 
 
 scoreboard objectives setdisplay sidebar capturePoints

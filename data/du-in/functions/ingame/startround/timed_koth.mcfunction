@@ -4,7 +4,7 @@ scoreboard objectives modify kothTimer displayname [{"text":"KOTH Points ","bold
 
 scoreboard objectives setdisplay sidebar kothTimer
 
-schedule function du-in:music/ingame/koth 4s
+execute unless score #main pylonsDestroyed matches 3 run schedule function du-in:music/ingame/koth 4s
 
 bossbar set bossbar:gametimer players @a
 team join Classic @a[tag=!spectating]

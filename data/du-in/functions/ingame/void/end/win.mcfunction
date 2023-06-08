@@ -56,6 +56,10 @@ tag @a[scores={lastVoidLock=9},tag=cmap,tag=!timeFree] add mazeLock
 tag @a[scores={lastVoidLock=10},tag=cmap,tag=!timeFree] add harvestLock
 #tag @a[scores={lastVoidLock=10},tag=cmap,tag=!timeFree] add cliffLock
 tag @a[scores={lastVoidLock=11},tag=cmap,tag=!timeFree] add mirageLock
+tag @a[scores={lastVoidLock=12},tag=cmap,tag=!timeFree] add wsLock
+tag @a[scores={lastVoidLock=13},tag=cmap,tag=!timeFree] add jermLock
+tag @a[scores={lastVoidLock=14},tag=cmap,tag=!timeFree] add chessLock
+
 #tag @a[scores={lastVoidLock=13},tag=cmap,tag=!timeFree] add shLock
 
 tag @a[scores={lastVoidLock=1},tag=kothMap,tag=!timeFree] add zigLock
@@ -64,6 +68,8 @@ tag @a[scores={lastVoidLock=2},tag=kothMap,tag=!timeFree] add nethLock
 tag @a[scores={lastVoidLock=4},tag=kothMap,tag=!timeFree] add bowlLock
 tag @a[scores={lastVoidLock=5},tag=kothMap,tag=!timeFree] add moraLock
 tag @a[scores={lastVoidLock=6},tag=kothMap,tag=!timeFree] add duneLock
+
+execute as @a[tag=playing] run function du-in:ingame/void/end/dream
 
 tag @a remove kothMap
 tag @a add fromVoid

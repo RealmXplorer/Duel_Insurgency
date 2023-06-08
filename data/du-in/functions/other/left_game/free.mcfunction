@@ -1,4 +1,4 @@
-#function du-in:ingame/void/win
+#function du-in:ingame/void/end/win
 tag @a remove playing
 tag @a remove cIngame
 tag @a remove kothIngame

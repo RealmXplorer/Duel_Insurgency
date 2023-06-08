@@ -19,6 +19,9 @@ tag @a remove nethLock
 tag @a remove moraLock
 tag @a remove duneLock
 tag @a remove bowlLock
+tag @a remove wsLock
+tag @a remove jermLock
+tag @a remove chessLock
 
 schedule clear du-in:music/free/free
 function du-in:lobby/display/default/switch

@@ -31,3 +31,7 @@ execute if entity @a[scores={kit=1000..1001}] run summon interaction 2524 66 10 
 
 summon painting 2523 66 10 {facing:1b,Invulnerable:1b,Tags:["mapSpecific","vendingPainting"],variant:"minecraft:wanderer"}
 summon painting 2504 68 22 {facing:2b,Invulnerable:1b,Tags:["mapSpecific","vendingPainting"],variant:"minecraft:wanderer"}
+
+#Goner Eye#
+execute unless entity @a[tag=partyLeader,tag=wsLock] run summon interaction 2540 69 35 {Tags:["voidLock","mapSpecific"],width:0.6f,height:0.6f,response:1b}
+execute if entity @a[tag=partyLeader,tag=wsLock] run summon interaction 2540 69 35 {Tags:["usedVoidLock","mapSpecific"],width:0.6f,height:0.6f,response:1b}

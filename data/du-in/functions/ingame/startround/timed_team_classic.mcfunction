@@ -4,7 +4,7 @@ scoreboard objectives modify classicTeamKills displayname ["",{"text":"Classic K
 
 scoreboard objectives setdisplay sidebar classicTeamKills
 
-schedule function du-in:music/ingame/classic 4s
+execute unless score #main pylonsDestroyed matches 3 run schedule function du-in:music/ingame/classic 4s
 
 bossbar set bossbar:gametimer players @a
 team join Classic @a[tag=!spectating,tag=!teamMode,tag=!AFK]

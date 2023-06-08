@@ -9,7 +9,7 @@ execute if score #main killCap matches 12 run scoreboard objectives modify killI
 scoreboard objectives setdisplay sidebar killIngame
 
 
-schedule function du-in:music/ingame/classic 4s
+execute unless score #main pylonsDestroyed matches 3 run schedule function du-in:music/ingame/classic 4s
 
 team join Classic @a[tag=!spectating,tag=!teamMode,tag=!AFK]
 scoreboard players reset * killIngame

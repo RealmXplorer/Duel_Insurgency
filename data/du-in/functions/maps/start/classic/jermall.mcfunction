@@ -44,5 +44,10 @@ summon painting -1343 15 877 {facing:1b,Invulnerable:1b,Tags:["mapSpecific","ven
 summon painting -1343 15 871 {facing:1b,Invulnerable:1b,Tags:["mapSpecific","vendingPainting"],variant:"minecraft:wanderer"}
 summon painting -1338 15 913 {facing:2b,Invulnerable:1b,Tags:["mapSpecific","vendingPainting"],variant:"minecraft:wanderer"}
 
+#Goner Eye#
+execute unless entity @a[tag=partyLeader,tag=jermLock] run summon interaction -1367 16 913 {Tags:["voidLock","mapSpecific"],width:0.6f,height:0.6f,response:1b}
+execute if entity @a[tag=partyLeader,tag=jermLock] run summon interaction -1367 16 913 {Tags:["usedVoidLock","mapSpecific"],width:0.6f,height:0.6f,response:1b}
+
+
 #Schedule eat
 schedule function du-in:maps/jermall/pick_victim 15s

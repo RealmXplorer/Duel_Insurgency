@@ -33,3 +33,7 @@ summon painting 2021 11 -594 {facing:0b,Invulnerable:1b,Tags:["mapSpecific","ven
 summon painting 2060 10 -578 {facing:0b,Invulnerable:1b,Tags:["mapSpecific","vendingPainting"],variant:"minecraft:wanderer"}
 summon painting 2005 10 -554 {facing:0b,Invulnerable:1b,Tags:["mapSpecific","vendingPainting"],variant:"minecraft:wanderer"}
 summon painting 2037 9 -549 {facing:2b,Invulnerable:1b,Tags:["mapSpecific","vendingPainting"],variant:"minecraft:wanderer"}
+
+#Goner Eye#
+execute unless entity @a[tag=partyLeader,tag=chessLock] run summon interaction 2021 12 -557 {Tags:["voidLock","mapSpecific"],width:0.6f,height:0.6f,response:1b}
+execute if entity @a[tag=partyLeader,tag=chessLock] run summon interaction 2021 12 -557 {Tags:["usedVoidLock","mapSpecific"],width:0.6f,height:0.6f,response:1b}

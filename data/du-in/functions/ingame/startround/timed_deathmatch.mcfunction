@@ -3,7 +3,7 @@ tag @a add dmIngame
 #tag @a[tag=!working,tag=!musicOff] add song
 team join Deathmatch @a[tag=!spectating]
 
-schedule function du-in:music/ingame/deathmatch 4s
+execute unless score #main pylonsDestroyed matches 3 run schedule function du-in:music/ingame/deathmatch 4s
 
 #execute if entity @a[tag=!teamMode] run execute store result score #main playerCount run team list Deathmatch
 scoreboard players set @a[tag=!spectating] dmDeath 0

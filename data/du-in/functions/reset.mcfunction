@@ -293,6 +293,7 @@ tag @a remove secKitActions
 tag @a remove sus
 scoreboard players reset @a villagerEmeralds
 execute as @a[tag=!timeFree] run function du-in:lobby/actions/stats
+
 tag @a remove maxTP
 tag @a remove rageMeter
 scoreboard players set @a cardPower 0
