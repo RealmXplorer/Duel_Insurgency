@@ -4,7 +4,8 @@ scoreboard players set @e[type=marker,tag=meetingSpot] impostTimer 30
 
 schedule function du-in:kit/impostor/ability/meeting 30t
 
-execute as @a[tag=playing,tag=!spectating,tag=!working] unless score @a[tag=meetingCall,limit=1] team = @s team run tag @s[tag=!flagGot] add meeting
+execute unless entity @s[tag=sabotaged] as @a[tag=playing,tag=!spectating,tag=!working] unless score @a[tag=meetingCall,limit=1] team = @s team run tag @s[tag=!flagGot] add meeting
+tag @s[tag=sabotaged] add meeting
 
 effect give @a[tag=meeting] minecraft:fire_resistance 1 255 true
 
@@ -13,5 +14,6 @@ execute as @a[tag=meeting] at @s run title @a title {"text":"Emergency Meeting!"
 
 xp set @s[tag=!stolen] 600 levels
 
+tag @s remove sabotaged
 tag @s remove meetingCall
 tag @s remove kitActions

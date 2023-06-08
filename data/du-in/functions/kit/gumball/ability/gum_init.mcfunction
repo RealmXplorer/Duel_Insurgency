@@ -7,7 +7,9 @@ tag @s add pursue
 effect give @s minecraft:speed 2 7 true
 clear @s carrot_on_a_stick
 xp set @s[tag=!stolen] 300 levels
-scoreboard players set @s gumSwapTimer 120
-clear @s warped_fungus_on_a_stick
+scoreboard players set @s[tag=!sabotaged] gumSwapTimer 120
+execute if entity @s[tag=sabotage] run function du-in:kit/gumball/ability/gumball/explode
 
+clear @s warped_fungus_on_a_stick
+tag @s remove sabotaged
 tag @s remove kitActions

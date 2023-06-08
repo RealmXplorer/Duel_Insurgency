@@ -8,7 +8,7 @@
         "minecraft:tall_grass",
         "#minecraft:flowers",
         "#minecraft:saplings",
-        "#minecraft:replaceable_plants",
+        "#minecraft:replaceable_by_trees",
         "minecraft:snow"
 
     ]

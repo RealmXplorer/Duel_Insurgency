@@ -116,7 +116,7 @@ execute if entity @s[tag=midasTouched] run function du-in:kit/jack_horner/abilit
 execute if entity @s[scores={deathAbilityTimer=-99..}] run function du-in:kit/death/ability/ability_timer
 
 #Nick Sabotage ability
-execute if entity @s[scores={sabotageTimer=1..}] run function du-in:kit/nick/ability/sabotage_timer
+execute if entity @s[scores={sabotageTimer=1..}] run function du-in:kit/nick/ability/sabotage/timer
 
 #Puss ability
 execute if entity @s[scores={pussFearTimer=1..}] run function du-in:kit/puss/ability/fear_timer
