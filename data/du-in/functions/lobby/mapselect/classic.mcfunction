@@ -112,3 +112,13 @@ summon marker 234 91 22 {Tags:["mapVote","displayItem","vote14"]}
 summon area_effect_cloud 232 92 37 {Duration:2147483647,Tags:["displayItem"],CustomNameVisible:1b,CustomName:"{\"text\":\"Random Map\",\"color\":\"blue\",\"bold\":true}"}
 summon minecraft:item 232 92 37 {NoGravity:1b,Age:-32768,Health:99999,PickupDelay:32767,Tags:["mapLabel","displayItem"],Item:{id:"minecraft:lapis_block",Count:1b}}
 summon marker 232 91 36 {Tags:["mapVote","displayItem","voteRand"]} 
+
+#Saac House
+summon area_effect_cloud 236 92 20 {Duration:2147483647,Tags:["displayItem"],CustomNameVisible:1b,CustomName:"{\"text\":\"Saac's House\",\"color\":\"yellow\",\"bold\":true}"}
+summon minecraft:item 236 92 20 {NoGravity:1b,Age:-32768,Health:99999,PickupDelay:32767,Tags:["mapLabel","displayItem"],Item:{id:"minecraft:smooth_quartz",Count:1b}}
+summon marker 234 91 20 {Tags:["mapVote","displayItem","vote15"]} 
+
+#Escher
+summon area_effect_cloud 228 92 20 {Duration:2147483647,Tags:["displayItem"],CustomNameVisible:1b,CustomName:"{\"text\":\"Escher\",\"color\":\"yellow\",\"bold\":true}"}
+summon minecraft:item 228 92 20 {NoGravity:1b,Age:-32768,Health:99999,PickupDelay:32767,Tags:["mapLabel","displayItem"],Item:{id:"minecraft:smooth_sandstone_stairs",Count:1b}}
+summon marker 228 91 20 {Tags:["mapVote","displayItem","vote16"]} 

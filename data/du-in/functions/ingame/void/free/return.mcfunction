@@ -22,6 +22,8 @@ tag @a remove bowlLock
 tag @a remove wsLock
 tag @a remove jermLock
 tag @a remove chessLock
+tag @a remove shLock
+tag @a remove escLock
 
 schedule clear du-in:music/free/free
 function du-in:lobby/display/default/switch

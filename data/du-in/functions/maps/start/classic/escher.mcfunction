@@ -16,4 +16,29 @@ summon marker 673 8 -608 {Tags:["spawnPoint","team2","mapSpecific"]}
 
 #NO VENTS#
 
-#NO VENDING MACHINES#
+#Default Vents#
+execute if entity @a[tag=sus] run summon marker 682 22 -606 {Tags:["vent","mapSpecific"]}
+execute if entity @a[tag=sus] run summon marker 689 20 -613 {Tags:["vent","mapSpecific"]}
+execute if entity @a[tag=sus] run summon marker 679 15 -612 {Tags:["vent","mapSpecific"]}
+execute if entity @a[tag=sus] run summon marker 676 12 -620 {Tags:["vent","mapSpecific"]}
+
+summon interaction 683 21 -606 {Tags:["ventBlock","mapSpecific"],width:1f,height:1.1f,response:1b}
+summon interaction 688 19 -614 {Tags:["ventBlock","mapSpecific"],width:1f,height:1.1f,response:1b}
+summon interaction 678 14 -611 {Tags:["ventBlock","mapSpecific"],width:1f,height:1.1f,response:1b}
+summon interaction 675 11 -620 {Tags:["ventBlock","mapSpecific"],width:1f,height:1.1f,response:1b}
+
+
+#Default Vending Machines#
+execute if entity @a[scores={kit=1000..1001}] run summon interaction 687 20 -615 {Tags:["vending","stable","mapSpecific"],width:1.15f,height:2.1f,response:1b}
+execute if entity @a[scores={kit=1000..1001}] run summon interaction 685 10 -605 {Tags:["vending","stable","mapSpecific"],width:1.15f,height:2.1f,response:1b}
+execute if entity @a[scores={kit=1000..1001}] run summon interaction 692 12 -607 {Tags:["vending","stable","mapSpecific"],width:1.15f,height:2.1f,response:1b}
+execute if entity @a[scores={kit=1000..1001}] run summon interaction 676 15 -611 {Tags:["vending","stable","mapSpecific"],width:1.15f,height:2.1f,response:1b}
+
+summon painting 687 20 -614 {facing:0b,Invulnerable:1b,Tags:["mapSpecific","vendingPainting"],variant:"minecraft:wanderer"}
+summon painting 685 10 -604 {facing:0b,Invulnerable:1b,Tags:["mapSpecific","vendingPainting"],variant:"minecraft:wanderer"}
+summon painting 692 12 -606 {facing:0b,Invulnerable:1b,Tags:["mapSpecific","vendingPainting"],variant:"minecraft:wanderer"}
+summon painting 677 15 -611 {facing:3b,Invulnerable:1b,Tags:["mapSpecific","vendingPainting"],variant:"minecraft:wanderer"}
+
+#Goner Eye#
+execute unless entity @a[tag=partyLeader,tag=escLock] run summon interaction 683 24 -600 {Tags:["voidLock","mapSpecific"],width:0.6f,height:0.6f,response:1b}
+execute if entity @a[tag=partyLeader,tag=escLock] run summon interaction 683 24 -600 {Tags:["usedVoidLock","mapSpecific"],width:0.6f,height:0.6f,response:1b}

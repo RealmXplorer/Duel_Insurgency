@@ -11,10 +11,14 @@ execute if score #main map matches 10 run function du-in:maps/start/classic/harv
 
 execute if score #main map matches 11 run function du-in:maps/start/classic/mirage
 execute if score #main map matches 12 run function du-in:maps/start/classic/wishing_star
-#execute if score #main map matches 13 run function du-in:maps/start/classic/saac_house
 execute if score #main map matches 13 run function du-in:maps/start/classic/jermall
 execute if score #main map matches 14 run function du-in:maps/start/classic/chess
+
+#Not in random pool
+execute if score #main map matches 15 run function du-in:maps/start/classic/saac_house
+execute if score #main map matches 16 run function du-in:maps/start/classic/escher
+
 #execute if score #main map matches 15 run function du-in:maps/start/classic/harvest
 #execute if score #main map matches 16 run function du-in:maps/start/classic/jermall
 
-execute if score #main map matches 15 run tag @r add mapRandom
+execute if score #main map matches 17 run tag @r add mapRandom

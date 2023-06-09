@@ -59,8 +59,8 @@ tag @a[scores={lastVoidLock=11},tag=cmap,tag=!timeFree] add mirageLock
 tag @a[scores={lastVoidLock=12},tag=cmap,tag=!timeFree] add wsLock
 tag @a[scores={lastVoidLock=13},tag=cmap,tag=!timeFree] add jermLock
 tag @a[scores={lastVoidLock=14},tag=cmap,tag=!timeFree] add chessLock
-
-#tag @a[scores={lastVoidLock=13},tag=cmap,tag=!timeFree] add shLock
+tag @a[scores={lastVoidLock=15},tag=cmap,tag=!timeFree] add shLock
+tag @a[scores={lastVoidLock=16},tag=cmap,tag=!timeFree] add escLock
 
 tag @a[scores={lastVoidLock=1},tag=kothMap,tag=!timeFree] add zigLock
 tag @a[scores={lastVoidLock=2},tag=kothMap,tag=!timeFree] add nethLock
