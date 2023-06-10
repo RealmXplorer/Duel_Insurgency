@@ -1,0 +1,1 @@
+execute as @a[gamemode=adventure] at @s if entity @e[tag=escherDoor,distance=..1] run function du-in:maps/escher/teleport

@@ -19,19 +19,23 @@ execute if entity @a[tag=sus] run summon marker -2495 9 -2470 {Tags:["vent","map
 execute if entity @a[tag=sus] run summon marker -2488 14 -2468 {Tags:["vent","mapSpecific"]}
 execute if entity @a[tag=sus] run summon marker -2458 6 -2474 {Tags:["vent","mapSpecific"]}
 
-summon interaction -2470 3 -2463 {Tags:["ventBlock","mapSpecific"],width:1f,height:1.1f,response:1b}
-summon interaction -2495 8 -2469 {Tags:["ventBlock","mapSpecific"],width:1f,height:1.1f,response:1b}
-summon interaction -2489 13 -2468 {Tags:["ventBlock","mapSpecific"],width:1f,height:1.1f,response:1b}
-summon interaction -2458 5 -2473 {Tags:["ventBlock","mapSpecific"],width:1f,height:1.1f,response:1b}
+summon interaction -2470 3 -2463 {Tags:["ventBlock","mapSpecific"],width:1.05f,height:1.25f,response:1b}
+summon interaction -2495 8 -2469 {Tags:["ventBlock","mapSpecific"],width:1.05f,height:1.25f,response:1b}
+summon interaction -2489 13 -2468 {Tags:["ventBlock","mapSpecific"],width:1.05f,height:1.25f,response:1b}
+summon interaction -2458 5 -2473 {Tags:["ventBlock","mapSpecific"],width:1.05f,height:1.25f,response:1b}
 
 #Vending Machines#
 execute if entity @a[scores={kit=1000..1001}] run summon interaction -2463 7 -2463 {Tags:["vending","stable","mapSpecific"],width:1.15f,height:2.1f,response:1b}
 execute if entity @a[scores={kit=1000..1001}] run summon interaction -2483 7 -2471 {Tags:["vending","stable","mapSpecific"],width:1.15f,height:2.1f,response:1b}
 execute if entity @a[scores={kit=1000..1001}] run summon interaction -2492 8 -2462 {Tags:["vending","stable","mapSpecific"],width:1.15f,height:2.1f,response:1b}
 
-summon painting -2463 7 -2462 {facing:0b,Invulnerable:1b,Tags:["mapSpecific","vendingPainting"],variant:"minecraft:wanderer"}
-summon painting -2491 8 -2462 {facing:3b,Invulnerable:1b,Tags:["mapSpecific","vendingPainting"],variant:"minecraft:wanderer"}
-summon painting -2483 7 -2472 {facing:2b,Invulnerable:1b,Tags:["mapSpecific","vendingPainting"],variant:"minecraft:wanderer"}
+# summon painting -2463 7 -2462 {facing:0b,Invulnerable:1b,Tags:["mapSpecific","vendingPainting"],variant:"minecraft:wanderer"}
+# summon painting -2491 8 -2462 {facing:3b,Invulnerable:1b,Tags:["mapSpecific","vendingPainting"],variant:"minecraft:wanderer"}
+# summon painting -2483 7 -2472 {facing:2b,Invulnerable:1b,Tags:["mapSpecific","vendingPainting"],variant:"minecraft:wanderer"}
+
+execute if entity @a[scores={kit=1000..1001}] run summon armor_stand -2463 7 -2463 {Rotation:[0F,0F],Tags:["vendMachine","mapSpecific"],NoGravity:1b,Silent:1b,Invulnerable:1b,Invisible:1b,NoBasePlate:1b,ArmorItems:[{},{},{},{id:"minecraft:spruce_sapling",Count:1b,tag:{CustomModelData:100}}]}
+execute if entity @a[scores={kit=1000..1001}] run summon armor_stand -2483 7 -2471 {Rotation:[-180F,0F],Tags:["vendMachine","mapSpecific"],NoGravity:1b,Silent:1b,Invulnerable:1b,Invisible:1b,NoBasePlate:1b,ArmorItems:[{},{},{},{id:"minecraft:spruce_sapling",Count:1b,tag:{CustomModelData:100}}]}
+execute if entity @a[scores={kit=1000..1001}] run summon armor_stand -2492 8 -2462 {Rotation:[-90F,0F],Tags:["vendMachine","mapSpecific"],NoGravity:1b,Silent:1b,Invulnerable:1b,Invisible:1b,NoBasePlate:1b,ArmorItems:[{},{},{},{id:"minecraft:spruce_sapling",Count:1b,tag:{CustomModelData:100}}]}
 
 #Goner Eye#
 execute unless entity @a[tag=partyLeader,tag=ebbotLock] run summon interaction -2466 9 -2439 {Tags:["voidLock","mapSpecific"],width:0.6f,height:0.6f,response:1b}

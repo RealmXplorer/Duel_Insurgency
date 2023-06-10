@@ -1,5 +1,3 @@
-team join greenPainting @e[type=minecraft:painting,limit=1,sort=nearest]
-scoreboard players set @e[type=minecraft:painting,limit=1,sort=nearest] paintingColor 5
 
 #Saac
 execute if entity @s[scores={kit=1000}] run scoreboard players remove @s saacMoneyDollar 1

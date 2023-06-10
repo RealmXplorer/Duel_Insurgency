@@ -19,6 +19,6 @@ title @a[scores={team=2}] subtitle {"text":"Blue Team","color":"blue","bold":tru
 
 #tp @a[tag=inRing] 1996 7 1004 -135 0
 
-execute if entity @a[scores={kit=21}] at @a[scores={kit=21},limit=1] run playsound minecraft:cuphead.announce.go master @a ~ ~ ~ 10 1
+execute as @a[scores={kit=21}] at @s run playsound minecraft:cuphead.announce.go master @s ~ ~ ~ 10 1
 
 scoreboard players reset #main titleTimer2

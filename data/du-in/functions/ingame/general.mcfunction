@@ -53,9 +53,6 @@
     execute at @e[type=marker,tag=clairenField] run function du-in:kit/clairen/ability/add_infield
 #at @a[gamemode=!spectator]
 
-#
-execute if entity @a[scores={kit=1000..1001}] as @e[type=painting] run function du-in:ingame/vending_machine/painting
-
 
 #Run as Asgore's firewalls
 execute as @e[type=armor_stand,tag=asgoreFire,scores={asgoreFire=-99..}] at @s run function du-in:kit/asgore/ability/fire_wall

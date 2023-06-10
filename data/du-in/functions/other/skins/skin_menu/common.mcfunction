@@ -21,5 +21,6 @@ execute if entity @s[nbt=!{Inventory:[{tag:{fixedItem:1b},id:"minecraft:player_h
 
 execute if entity @s[nbt=!{Inventory:[{tag:{fixedItem:1b},id:"minecraft:carrot_on_a_stick",Slot:18b}]}] run function du-in:other/skins/skin_menu/display
 execute if entity @s[nbt=!{Inventory:[{tag:{fixedItem:1b},id:"minecraft:barrier",Slot:27b}]}] run function du-in:other/skins/skin_menu/hide_skins
+execute if entity @s[nbt=!{Inventory:[{tag:{fixedItem:1b},id:"minecraft:barrier",Slot:9b}]}] run function du-in:other/skins/skin_menu/default_skins
 
 execute if entity @s[tag=skinsListed] run tag @s remove skinsListed

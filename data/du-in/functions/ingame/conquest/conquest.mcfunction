@@ -7,4 +7,4 @@ execute if entity @a[tag=timedMode] run function du-in:ingame/conquest/timed/tim
 #MUSIC#
 execute as @a[tag=cqIngame,tag=!startGame,tag=!saac,tag=!bigChungus,tag=!saul] at @s run function du-in:music/ingame/conquest
 
-#execute as @a[tag=cqIngame,tag=!ambOff] at @s run function du-in:maps/conquest
+function du-in:maps/conquest

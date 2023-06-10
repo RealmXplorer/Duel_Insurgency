@@ -2,7 +2,7 @@
 kill @e[tag=displayItem]
 
 #Jermall
-summon area_effect_cloud 228 92 22 {Duration:2147483647,Tags:["displayItem"],CustomNameVisible:1b,CustomName:"{\"text\":\"Jermall\",\"color\":\"yellow\",\"bold\":true}"}
+summon area_effect_cloud 228 92 22 {Duration:2147483647,Tags:["displayItem"],CustomNameVisible:1b,CustomName:"{\"text\":\"Jermall\",\"color\":\"red\",\"bold\":true}"}
 summon minecraft:item 228 92 22 {NoGravity:1b,Age:-32768,Health:99999,PickupDelay:32767,Tags:["mapLabel","displayItem"],Item:{id:"minecraft:skeleton_skull",Count:1b}}
 summon marker 230 91 22 {Tags:["mapVote","displayItem","vote13"]} 
 
@@ -84,7 +84,7 @@ summon minecraft:item 236 92 26 {NoGravity:1b,Age:-32768,Health:99999,PickupDela
 summon marker 234 91 26 {Tags:["mapVote","displayItem","vote6"]} 
 
 #Mirage
-summon area_effect_cloud 236 92 24 {Duration:2147483647,Tags:["displayItem"],CustomNameVisible:1b,CustomName:"{\"text\":\"Mirage\",\"color\":\"red\",\"bold\":true}"}
+summon area_effect_cloud 236 92 24 {Duration:2147483647,Tags:["displayItem"],CustomNameVisible:1b,CustomName:"{\"text\":\"Mirage\",\"color\":\"blue\",\"bold\":true}"}
 summon minecraft:item 236 92 24 {NoGravity:1b,Age:-32768,Health:99999,PickupDelay:32767,Tags:["mapLabel","displayItem"],Item:{id:"minecraft:stripped_warped_stem",Count:1b}}
 summon marker 234 91 24 {Tags:["mapVote","displayItem","vote11"]} 
 
@@ -121,4 +121,4 @@ summon marker 234 91 20 {Tags:["mapVote","displayItem","vote15"]}
 #Escher
 summon area_effect_cloud 228 92 20 {Duration:2147483647,Tags:["displayItem"],CustomNameVisible:1b,CustomName:"{\"text\":\"Escher\",\"color\":\"yellow\",\"bold\":true}"}
 summon minecraft:item 228 92 20 {NoGravity:1b,Age:-32768,Health:99999,PickupDelay:32767,Tags:["mapLabel","displayItem"],Item:{id:"minecraft:smooth_sandstone_stairs",Count:1b}}
-summon marker 228 91 20 {Tags:["mapVote","displayItem","vote16"]} 
+summon marker 230 91 20 {Tags:["mapVote","displayItem","vote16"]} 

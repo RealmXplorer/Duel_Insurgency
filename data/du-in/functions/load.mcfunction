@@ -279,7 +279,6 @@ scoreboard objectives add map dummy
 
 scoreboard objectives add matchDeaths dummy
 scoreboard objectives add music minecraft.custom:play_time
-scoreboard objectives add paintingColor dummy
 
 scoreboard objectives add parryCooldown dummy
 scoreboard objectives add parryDam minecraft.custom:minecraft.damage_dealt

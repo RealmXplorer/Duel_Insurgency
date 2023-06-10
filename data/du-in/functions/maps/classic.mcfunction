@@ -14,6 +14,7 @@ execute if score #main map matches 2 run function du-in:maps/hive/constant
 #execute if score #main map matches 14 run function du-in:maps/chess/constant
 #execute if score #main map matches 15 run function du-in:maps/harvest/constant
 execute if score #main map matches 13 run function du-in:maps/jermall/constant
+execute if score #main map matches 16 run function du-in:maps/escher/constant
 
 #execute if predicate du-in:ambience/night_start run function du-in:ingame/scheduled/ambience/night_start
 

@@ -128,18 +128,39 @@ tp @a 10045.0 42 10047.0
 spawnpoint @a 10045 42 10047
 #spawnpoint @a 113 5 -91 135
 
-#scoreboard players set #main missileCooldown 40
+#Vending Machines
+execute if entity @a[scores={kit=1000..1001}] run summon interaction 10057 42 10030 {Tags:["vending","stable","mapSpecific"],width:1.15f,height:2.1f,response:1b}
+execute if entity @a[scores={kit=1000..1001}] run summon interaction 10029 42 10035 {Tags:["vending","stable","mapSpecific"],width:1.15f,height:2.1f,response:1b}
+execute if entity @a[scores={kit=1000..1001}] run summon interaction 10034 42 10063 {Tags:["vending","stable","mapSpecific"],width:1.15f,height:2.1f,response:1b}
+execute if entity @a[scores={kit=1000..1001}] run summon interaction 10062 42 10058 {Tags:["vending","stable","mapSpecific"],width:1.15f,height:2.1f,response:1b}
 
-setblock 97 20 -107 minecraft:black_stained_glass
+execute if entity @a[scores={kit=1000..1001}] run summon armor_stand 10057 42 10030 {Rotation:[90F,0F],Tags:["vendMachine","mapSpecific"],NoGravity:1b,Silent:1b,Invulnerable:1b,Invisible:1b,NoBasePlate:1b,ArmorItems:[{},{},{},{id:"minecraft:spruce_sapling",Count:1b,tag:{CustomModelData:100}}]}
+execute if entity @a[scores={kit=1000..1001}] run summon armor_stand 10029 42 10035 {Rotation:[0F,0F],Tags:["vendMachine","mapSpecific"],NoGravity:1b,Silent:1b,Invulnerable:1b,Invisible:1b,NoBasePlate:1b,ArmorItems:[{},{},{},{id:"minecraft:spruce_sapling",Count:1b,tag:{CustomModelData:100}}]}
+execute if entity @a[scores={kit=1000..1001}] run summon armor_stand 10034 42 10063 {Rotation:[-90F,0F],Tags:["vendMachine","mapSpecific"],NoGravity:1b,Silent:1b,Invulnerable:1b,Invisible:1b,NoBasePlate:1b,ArmorItems:[{},{},{},{id:"minecraft:spruce_sapling",Count:1b,tag:{CustomModelData:100}}]}
+execute if entity @a[scores={kit=1000..1001}] run summon armor_stand 10062 42 10058 {Rotation:[180F,0F],Tags:["vendMachine","mapSpecific"],NoGravity:1b,Silent:1b,Invulnerable:1b,Invisible:1b,NoBasePlate:1b,ArmorItems:[{},{},{},{id:"minecraft:spruce_sapling",Count:1b,tag:{CustomModelData:100}}]}
+
+#Vents
+summon interaction 10067 41 10025 {Tags:["ventBlock","mapSpecific"],width:1.05f,height:1.25f,response:1b}
+summon interaction 10024 41 10025 {Tags:["ventBlock","mapSpecific"],width:1.05f,height:1.25f,response:1b}
+summon interaction 10024 41 10058 {Tags:["ventBlock","mapSpecific"],width:1.05f,height:1.25f,response:1b}
+summon interaction 10067 41 10068 {Tags:["ventBlock","mapSpecific"],width:1.05f,height:1.25f,response:1b}
+
+execute if entity @a[tag=sus] run summon marker 10066 42 10025 {Tags:["vent","mapSpecific"]}
+execute if entity @a[tag=sus] run summon marker 10024 42 10026 {Tags:["vent","mapSpecific"]}
+execute if entity @a[tag=sus] run summon marker 10024 42 10067 {Tags:["vent","mapSpecific"]}
+execute if entity @a[tag=sus] run summon marker 10067 42 10067 {Tags:["vent","mapSpecific"]}
+
+#Time set
 time set night
 
-execute at @a run playsound minecraft:block.end_portal.spawn master @a ~ ~ ~ 1 1.75
-execute at @a run playsound minecraft:block.bell.use master @a ~ ~ ~ 1 0.75
-execute at @a run playsound minecraft:block.amethyst_block.hit master @a ~ ~ ~ 1 1.5
-execute at @a run playsound minecraft:soundeffect.voidbell master @a ~ ~ ~ 1 .5
-execute at @a run playsound minecraft:soundeffect.voidbell master @a ~ ~ ~ 1 1
-execute at @a run playsound minecraft:soundeffect.voidbell master @a ~ ~ ~ 1 1.5
-execute at @a run playsound minecraft:soundeffect.voidbell master @a ~ ~ ~ 1 2
+#Sounds
+execute positioned 10046 42 10047 run playsound minecraft:block.end_portal.spawn master @a ~ ~ ~ 1 1.75
+execute positioned 10046 42 10047 run playsound minecraft:block.bell.use master @a ~ ~ ~ 1 0.75
+execute positioned 10046 42 10047 run playsound minecraft:block.amethyst_block.hit master @a ~ ~ ~ 1 1.5
+execute positioned 10046 42 10047 run playsound minecraft:soundeffect.voidbell master @a ~ ~ ~ 1 .5
+execute positioned 10046 42 10047 run playsound minecraft:soundeffect.voidbell master @a ~ ~ ~ 1 1
+execute positioned 10046 42 10047 run playsound minecraft:soundeffect.voidbell master @a ~ ~ ~ 1 1.5
+execute positioned 10046 42 10047 run playsound minecraft:soundeffect.voidbell master @a ~ ~ ~ 1 2
 
 #execute if score #main pylonsDestroyed matches ..2 run scoreboard players set @a gonersKilled 30
 #execute if score #main pylonsDestroyed matches 3 run scoreboard players set @a gonersKilled 30

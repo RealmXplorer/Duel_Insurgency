@@ -20,9 +20,13 @@ summon interaction -3732 59 1274 {Tags:["vending","stable","mapSpecific"],width:
 summon interaction -3763 57 1254 {Tags:["vending","stable","mapSpecific"],width:1.15f,height:2.1f,response:1b}
 summon interaction -3714 62 1251 {Tags:["vending","stable","mapSpecific"],width:1.15f,height:2.1f,response:1b}
 
-summon painting -3732 59 1273 {facing:2b,Invulnerable:1b,Tags:["mapSpecific","vendingPainting"],variant:"minecraft:wanderer"}
-summon painting -3763 57 1255 {facing:0b,Invulnerable:1b,Tags:["mapSpecific","vendingPainting"],variant:"minecraft:wanderer"}
-summon painting -3715 62 1251 {facing:1b,Invulnerable:1b,Tags:["mapSpecific","vendingPainting"],variant:"minecraft:wanderer"}
+summon armor_stand -3732 59 1274 {Rotation:[180F,0F],Tags:["vendMachine","mapSpecific"],NoGravity:1b,Silent:1b,Invulnerable:1b,Invisible:1b,NoBasePlate:1b,ArmorItems:[{},{},{},{id:"minecraft:spruce_sapling",Count:1b,tag:{CustomModelData:100}}]}
+summon armor_stand -3763 57 1254 {Rotation:[0F,0F],Tags:["vendMachine","mapSpecific"],NoGravity:1b,Silent:1b,Invulnerable:1b,Invisible:1b,NoBasePlate:1b,ArmorItems:[{},{},{},{id:"minecraft:spruce_sapling",Count:1b,tag:{CustomModelData:100}}]}
+summon armor_stand -3714 62 1251 {Rotation:[90F,0F],Tags:["vendMachine","mapSpecific"],NoGravity:1b,Silent:1b,Invulnerable:1b,Invisible:1b,NoBasePlate:1b,ArmorItems:[{},{},{},{id:"minecraft:spruce_sapling",Count:1b,tag:{CustomModelData:100}}]}
+
+# summon painting -3732 59 1273 {facing:2b,Invulnerable:1b,Tags:["mapSpecific","vendingPainting"],variant:"minecraft:wanderer"}
+# summon painting -3763 57 1255 {facing:0b,Invulnerable:1b,Tags:["mapSpecific","vendingPainting"],variant:"minecraft:wanderer"}
+# summon painting -3715 62 1251 {facing:1b,Invulnerable:1b,Tags:["mapSpecific","vendingPainting"],variant:"minecraft:wanderer"}
 
 #-3732 59 1274
 #-3763 57 1254
@@ -33,9 +37,9 @@ summon painting -3715 62 1251 {facing:1b,Invulnerable:1b,Tags:["mapSpecific","ve
 #-3715 62 1251 w
 
 #Vents
-summon interaction -3714 61 1252 {Tags:["ventBlock","mapSpecific"],width:1f,height:1.1f,response:1b}
-summon interaction -3733 58 1274 {Tags:["ventBlock","mapSpecific"],width:1f,height:1.1f,response:1b}
-summon interaction -3762 56 1254 {Tags:["ventBlock","mapSpecific"],width:1f,height:1.1f,response:1b}
+summon interaction -3714 61 1252 {Tags:["ventBlock","mapSpecific"],width:1.05f,height:1.25f,response:1b}
+summon interaction -3733 58 1274 {Tags:["ventBlock","mapSpecific"],width:1.05f,height:1.25f,response:1b}
+summon interaction -3762 56 1254 {Tags:["ventBlock","mapSpecific"],width:1.05f,height:1.25f,response:1b}
 
 summon marker -3715 62 1252 {Tags:["vent","mapSpecific"]}
 summon marker -3734 59 1273 {Tags:["vent","mapSpecific"]}
