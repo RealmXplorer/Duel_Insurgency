@@ -15,8 +15,11 @@ function du-in:maps/start/common
 #Set Spawnpoints#
 summon marker -1333 15 851 {Tags:["spawnPoint","team1","mapSpecific"]}
 summon marker -1336 15 909 {Tags:["spawnPoint","team1","mapSpecific"]}
+summon marker -1349 15 919 {Tags:["spawnPoint","team1","mapSpecific"]}
+
 summon marker -1368 15 907 {Tags:["spawnPoint","team2","mapSpecific"]}
 summon marker -1379 15 864 {Tags:["spawnPoint","team2","mapSpecific"]}
+summon marker -1367 15 852 {Tags:["spawnPoint","team2","mapSpecific"]}
 
 #Set vent block locations#
 summon interaction -1379 14 874 {Tags:["ventBlock","mapSpecific"],width:1.05f,height:1.25f,response:1b}

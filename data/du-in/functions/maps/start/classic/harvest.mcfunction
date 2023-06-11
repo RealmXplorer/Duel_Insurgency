@@ -1,7 +1,7 @@
 tellraw @a ["",{"text":"The ","bold":false,"color":"gray"},{"text":"Harvest ","bold":true,"color":"#e06e16"},{"text":"map has been chosen!","bold":false,"color":"gray"}]
 
 tp @a[tag=!working,scores={spawnpoint=0..2}] 41 8 2523 128 0
-tp @a[tag=!working,scores={spawnpoint=3..4}] 0 8 2458 0 0
+tp @a[tag=!working,scores={spawnpoint=3..4}] -26 8 2474 0 0
 tp @a[tag=!working,scores={spawnpoint=5..6}] -41 8 2540 -135 0
 tp @a[tag=!working,scores={spawnpoint=7..}] -48 8 2498 -90 0
 
@@ -10,7 +10,7 @@ function du-in:maps/start/common
 execute unless score #main lobbyTheme matches 1 run time set 12000
 summon marker -48 8 2498 {Tags:["spawnPoint","team1","mapSpecific"]}
 summon marker -41 8 2540 {Tags:["spawnPoint","team1","mapSpecific"]}
-summon marker 0 8 2458 {Tags:["spawnPoint","team2","mapSpecific"]}
+summon marker -26 8 2474 {Tags:["spawnPoint","team2","mapSpecific"]}
 summon marker 31 10 2534 {Tags:["spawnPoint","team2","mapSpecific"]}
 summon marker 33 8 2477 {Tags:["spawnPoint","team2","mapSpecific"]}
 
