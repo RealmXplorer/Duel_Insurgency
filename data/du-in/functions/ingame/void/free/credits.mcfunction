@@ -57,3 +57,15 @@ title @s[scores={creditsTimer=820}] times 60 60 60
 title @s[scores={creditsTimer=1000}] title {"text":"Thank you","bold":true,"color":"gold"}
 title @s[scores={creditsTimer=1000}] subtitle {"text":"for playing!","bold":false,"color":"blue"}
 title @s[scores={creditsTimer=1000}] times 60 60 100
+
+title @s[tag=lobby,scores={creditsTimer=1240}] title {"text":"","bold":true,"color":"gold"}
+title @s[tag=lobby,scores={creditsTimer=1240}] subtitle {"text":"YOU WANTED THIS","bold":false,"color":"gray"}
+title @s[tag=lobby,scores={creditsTimer=1240}] times 60 20 60
+
+title @s[tag=lobby,scores={creditsTimer=1380}] title {"text":"","bold":true,"color":"gold"}
+title @s[tag=lobby,scores={creditsTimer=1380}] subtitle {"text":"YOU CAME BACK","bold":false,"color":"gray"}
+title @s[tag=lobby,scores={creditsTimer=1380}] times 60 20 60
+
+title @s[tag=lobby,scores={creditsTimer=1520}] title {"text":"","bold":true,"color":"gold"}
+title @s[tag=lobby,scores={creditsTimer=1520}] subtitle {"text":"THE EXPERIMENTS WILL CONTINUE","bold":false,"color":"gray"}
+title @s[tag=lobby,scores={creditsTimer=1520}] times 60 20 60

@@ -7,6 +7,8 @@ schedule clear du-in:ingame/scheduled/ambience/init
 schedule clear du-in:lobby/void/wind
 #schedule clear du-in:ingame/scheduled/five_loop
 advancement revoke @a only du-in:void/interact_void
+advancement revoke @a only du-in:kit/bowl
+advancement revoke @a only du-in:kit/mush_stew
 
 #Gamemode specific resets
 execute if entity @a[tag=cIngame] run function du-in:ingame/classic/reset
@@ -265,24 +267,6 @@ tag @a remove teamPicked
 tag @a remove drip
 function du-in:lobby/item_reset
 scoreboard players reset @a secKitUse
-
-#scoreboard players reset #main startSeq
-#tag @a add givenStats
-
-#Kill Entities#
-#tp @e[type=!player,tag=mapSpecific] 216 0 40
-#kill @e[type=!player,tag=mapSpecific]
-#kill @e[tag=asgoreFire]
-#kill @e[nbt={inGround:1b}]
-#kill @e[type=item,nbt={Item:{tag:{weaponItem:1b}}}]
-#kill @e[type=!player,tag=grave]
-#kill @e[type=armor_stand,tag=papyrusBone]
-#kill @e[type=marker,tag=kyloHitPos]
-#kill @e[type=ender_pearl,tag=blakeTP]
-#kill @e[tag=clairenField]
-#kill @e[tag=slime]
-
-#bossbar set minecraft:map_countdown visible false
 
 scoreboard players set @a ralseiTP 0
 tag @a remove undead

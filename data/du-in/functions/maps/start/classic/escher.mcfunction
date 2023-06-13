@@ -27,20 +27,16 @@ summon interaction 675 11 -620 {Tags:["ventBlock","mapSpecific"],width:1.05f,hei
 
 
 #Default Vending Machines#
-execute if entity @a[scores={kit=1000..1001}] run summon interaction 687 20 -615 {Tags:["vending","stable","mapSpecific"],width:1.15f,height:2.1f,response:1b}
-execute if entity @a[scores={kit=1000..1001}] run summon interaction 685 10 -605 {Tags:["vending","stable","mapSpecific"],width:1.15f,height:2.1f,response:1b}
-execute if entity @a[scores={kit=1000..1001}] run summon interaction 692 12 -607 {Tags:["vending","stable","mapSpecific"],width:1.15f,height:2.1f,response:1b}
-execute if entity @a[scores={kit=1000..1001}] run summon interaction 676 15 -611 {Tags:["vending","stable","mapSpecific"],width:1.15f,height:2.1f,response:1b}
+execute if entity @a[scores={kit=1000..1001}] run summon interaction 687 20 -614 {Tags:["vending","stable","mapSpecific"],width:1.15f,height:2.1f,response:1b}
+execute if entity @a[scores={kit=1000..1001}] run summon interaction 684 10 -604 {Tags:["vending","stable","mapSpecific"],width:1.15f,height:2.1f,response:1b}
+execute if entity @a[scores={kit=1000..1001}] run summon interaction 692 12 -606 {Tags:["vending","stable","mapSpecific"],width:1.15f,height:2.1f,response:1b}
+execute if entity @a[scores={kit=1000..1001}] run summon interaction 677 15 -611 {Tags:["vending","stable","mapSpecific"],width:1.15f,height:2.1f,response:1b}
 
-execute if entity @a[scores={kit=1000..1001}] run summon armor_stand 687 20 -615 {Rotation:[0F,0F],Tags:["vendMachine","mapSpecific"],NoGravity:1b,Silent:1b,Invulnerable:1b,Invisible:1b,NoBasePlate:1b,ArmorItems:[{},{},{},{id:"minecraft:spruce_sapling",Count:1b,tag:{CustomModelData:100}}]}
-execute if entity @a[scores={kit=1000..1001}] run summon armor_stand 685 10 -605 {Rotation:[0F,0F],Tags:["vendMachine","mapSpecific"],NoGravity:1b,Silent:1b,Invulnerable:1b,Invisible:1b,NoBasePlate:1b,ArmorItems:[{},{},{},{id:"minecraft:spruce_sapling",Count:1b,tag:{CustomModelData:100}}]}
-execute if entity @a[scores={kit=1000..1001}] run summon armor_stand 692 12 -607 {Rotation:[0F,0F],Tags:["vendMachine","mapSpecific"],NoGravity:1b,Silent:1b,Invulnerable:1b,Invisible:1b,NoBasePlate:1b,ArmorItems:[{},{},{},{id:"minecraft:spruce_sapling",Count:1b,tag:{CustomModelData:100}}]}
-execute if entity @a[scores={kit=1000..1001}] run summon armor_stand 676 15 -611 {Rotation:[-90F,0F],Tags:["vendMachine","mapSpecific"],NoGravity:1b,Silent:1b,Invulnerable:1b,Invisible:1b,NoBasePlate:1b,ArmorItems:[{},{},{},{id:"minecraft:spruce_sapling",Count:1b,tag:{CustomModelData:100}}]}
+execute if entity @a[scores={kit=1000..1001}] run summon armor_stand 687 20 -614 {Rotation:[0F,0F],Tags:["vendMachine","mapSpecific"],NoGravity:1b,Silent:1b,Invulnerable:1b,Invisible:1b,NoBasePlate:1b,ArmorItems:[{},{},{},{id:"minecraft:spruce_sapling",Count:1b,tag:{CustomModelData:100}}],DisabledSlots:4144959}
+execute if entity @a[scores={kit=1000..1001}] run summon armor_stand 684 10 -604 {Rotation:[0F,0F],Tags:["vendMachine","mapSpecific"],NoGravity:1b,Silent:1b,Invulnerable:1b,Invisible:1b,NoBasePlate:1b,ArmorItems:[{},{},{},{id:"minecraft:spruce_sapling",Count:1b,tag:{CustomModelData:100}}],DisabledSlots:4144959}
+execute if entity @a[scores={kit=1000..1001}] run summon armor_stand 692 12 -606 {Rotation:[0F,0F],Tags:["vendMachine","mapSpecific"],NoGravity:1b,Silent:1b,Invulnerable:1b,Invisible:1b,NoBasePlate:1b,ArmorItems:[{},{},{},{id:"minecraft:spruce_sapling",Count:1b,tag:{CustomModelData:100}}],DisabledSlots:4144959}
+execute if entity @a[scores={kit=1000..1001}] run summon armor_stand 677 15 -611 {Rotation:[-90F,0F],Tags:["vendMachine","mapSpecific"],NoGravity:1b,Silent:1b,Invulnerable:1b,Invisible:1b,NoBasePlate:1b,ArmorItems:[{},{},{},{id:"minecraft:spruce_sapling",Count:1b,tag:{CustomModelData:100}}],DisabledSlots:4144959}
 
-# summon painting 687 20 -614 {facing:0b,Invulnerable:1b,Tags:["mapSpecific","vendingPainting"],variant:"minecraft:wanderer"}
-# summon painting 685 10 -604 {facing:0b,Invulnerable:1b,Tags:["mapSpecific","vendingPainting"],variant:"minecraft:wanderer"}
-# summon painting 692 12 -606 {facing:0b,Invulnerable:1b,Tags:["mapSpecific","vendingPainting"],variant:"minecraft:wanderer"}
-# summon painting 677 15 -611 {facing:3b,Invulnerable:1b,Tags:["mapSpecific","vendingPainting"],variant:"minecraft:wanderer"}
 
 #Goner Eye#
 execute unless entity @a[tag=partyLeader,tag=escLock] run summon interaction 683 24 -600 {Tags:["voidLock","mapSpecific"],width:0.6f,height:0.6f,response:1b}
@@ -97,6 +93,8 @@ summon marker 675.0 24.00 -599.5 {Rotation:[-180.0F,0.0F],Tags:["escherDoor","ma
 summon marker 683.0 18.00 -600.5 {Rotation:[-180.0F,0.0F],Tags:["escherDoor","mapSpecific"]}
 summon marker 689.5 13.00 -609.5 {Rotation:[-180.0F,0.0F],Tags:["escherDoor","mapSpecific"]}
 summon marker 692.0 8.00 -607.5 {Rotation:[-180.0F,0.0F],Tags:["escherDoor","mapSpecific"]}
+
+summon marker 693.0 8.0 -613.5 {Rotation:[-180.0F,0.0F],Tags:["escherDoor","mapSpecific"]}
 
 summon marker 691.5 8.00 -621.0 {Rotation:[-90.0F,0.0F],Tags:["escherDoor","mapSpecific"]}
 summon marker 674.5 12.00 -619.0 {Rotation:[-90.0F,0.0F],Tags:["escherDoor","mapSpecific"]}

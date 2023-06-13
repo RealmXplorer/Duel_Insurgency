@@ -21,6 +21,4 @@ execute if entity @s[scores={papyrusHitTimer=5}] run playsound minecraft:item.sh
 #Kill bone armorstands
 execute if entity @s[scores={papyrusHitTimer=..0}] as @e[tag=papyrusBone,tag=boneIDSet] if score @s player = @e[tag=papyrusFind,scores={papyrusHitTimer=..0},limit=1] player run kill @s
 
-#kill @e[tag=papyrusBone,type=minecraft:armor_stand,distance=..2]
-
 kill @s[scores={papyrusHitTimer=..0}]

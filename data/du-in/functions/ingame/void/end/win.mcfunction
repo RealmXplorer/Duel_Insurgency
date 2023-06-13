@@ -64,10 +64,12 @@ tag @a[scores={lastVoidLock=16},tag=cmap,tag=!timeFree] add escLock
 
 tag @a[scores={lastVoidLock=1},tag=kothMap,tag=!timeFree] add zigLock
 tag @a[scores={lastVoidLock=2},tag=kothMap,tag=!timeFree] add nethLock
-
+tag @a[scores={lastVoidLock=3},tag=kothMap,tag=!timeFree] add endLock
 tag @a[scores={lastVoidLock=4},tag=kothMap,tag=!timeFree] add bowlLock
 tag @a[scores={lastVoidLock=5},tag=kothMap,tag=!timeFree] add moraLock
 tag @a[scores={lastVoidLock=6},tag=kothMap,tag=!timeFree] add duneLock
+tag @a[scores={lastVoidLock=7},tag=kothMap,tag=!timeFree] add prideLock
+tag @a[scores={lastVoidLock=8},tag=kothMap,tag=!timeFree] add chancelLock
 
 execute as @a[tag=playing] run function du-in:ingame/void/end/dream
 

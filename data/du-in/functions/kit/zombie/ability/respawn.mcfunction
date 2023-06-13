@@ -16,8 +16,8 @@ execute if entity @s[tag=!teamDead] run playsound minecraft:entity.ghast.shoot m
 
 xp set @s[tag=!stolen] 350 levels
 tag @s[tag=stolen,tag=givenStolen] add kitDone
-execute if entity @s[scores={zombieTimer=..1}] run kill @e[tag=grave,type=minecraft:armor_stand,limit=1,sort=nearest]
-execute if entity @s[scores={zombieTimer=..1}] run kill @e[tag=grave,type=minecraft:falling_block,limit=1,sort=nearest]
+execute if entity @s[scores={zombieTimer=..1}] run kill @e[type=area_effect_cloud,tag=grave,limit=1,sort=nearest]
+execute if entity @s[scores={zombieTimer=..1}] run kill @e[type=falling_block,tag=grave,limit=1,sort=nearest]
 tag @s remove zombieRespawn
 execute if entity @s[tag=ranMode] run function du-in:kit/all/reset
 tag @s[tag=ranMode] add random

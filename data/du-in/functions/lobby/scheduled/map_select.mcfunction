@@ -1,0 +1,1 @@
+execute at @e[type=marker,tag=voidLocked] run particle minecraft:ash ~ ~0.5 ~ 0.25 0 0.25 0 25 force

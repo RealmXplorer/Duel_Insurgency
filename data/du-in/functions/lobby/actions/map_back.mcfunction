@@ -1,5 +1,10 @@
 #This function returns players to Gamemode select from map select.
 
+#Reset map vote to reset vote displays
+execute at @a run playsound minecraft:entity.ender_dragon.flap master @a ~ ~ ~ 1 1.5
+scoreboard players reset @a mapVote
+execute as @e[type=marker,tag=mapVote] at @s run setblock ~ ~-1 ~ minecraft:red_concrete destroy
+
 #Kill map displays
 kill @e[tag=displayItem]
 
@@ -26,7 +31,6 @@ team join lobby @a
 execute as @a run function du-in:lobby/item_reset
 
 #Teleport players
-execute at @a run playsound minecraft:entity.ender_dragon.flap master @a ~ ~ ~ 1 1.5
 tp @a[tag=!working] -999 13 517 -90 0
 
 #Resets readied player count

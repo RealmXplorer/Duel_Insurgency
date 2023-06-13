@@ -7,7 +7,7 @@
 
 
 # Lobby Sidebar #
-    execute if entity @s[scores={lobby=1..}] unless entity @a[tag=partyLeader,tag=sidebarDisable] unless entity @a[tag=playing] unless entity @a[tag=working] run function du-in:lobby/misc/sidebar
+    execute if entity @s[scores={lobby=1..}] unless entity @a[tag=partyLeader,tag=sidebarDisable] unless score #main pylonsDestroyed matches 3 unless entity @a[tag=playing] unless entity @a[tag=working] run function du-in:lobby/misc/sidebar
 
 
 

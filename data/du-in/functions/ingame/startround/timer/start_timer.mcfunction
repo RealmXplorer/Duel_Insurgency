@@ -1,6 +1,7 @@
 #Clear lobby schedule
 schedule clear du-in:lobby/scheduled/one_sec_loop
 schedule clear du-in:lobby/void/wind
+stopsound @a ambient
 
 #Mark all players as in start game sequence
 tag @a[tag=!working] add startgame

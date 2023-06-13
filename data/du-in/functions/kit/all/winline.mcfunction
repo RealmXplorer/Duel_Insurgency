@@ -53,7 +53,7 @@ execute if entity @s[scores={kit=42069}] run playsound minecraft:chungus.line.wi
 
 #SAAC WIN LINES
 execute if score #main online matches 3.. if entity @s[scores={kit=1000}] run playsound minecraft:saac.line.win voice @a[tag=!lobby] ~ ~ ~ 100 1
-execute if entity @s[scores={kit=1000}] run playsound minecraft:saac.winmusic record @a[tag=!lobby] ~ ~ ~ 10000 1
+#execute if entity @s[scores={kit=1000}] run playsound minecraft:saac.winmusic record @a[tag=!lobby] ~ ~ ~ 10000 1
 
 execute unless score #main online matches 3.. if entity @s[scores={kit=1000}] unless entity @a[scores={kit=1001..1005}] run playsound minecraft:saac.line.win voice @a[tag=!lobby] ~ ~ ~ 100 1
 #execute unless score #main online matches 3.. if entity @s[scores={kit=1000}] if entity @a[scores={kit=1001}] run playsound minecraft:saac.krampus voice @a ~ ~ ~ 100 1

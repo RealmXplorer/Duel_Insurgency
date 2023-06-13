@@ -16,6 +16,9 @@ tag @s add void
 #Teleport a player who was in game to the party leader, (or if party leader is spectating, teleport to other player)
 execute if entity @a[tag=partyLeader,tag=void] run tp @s[tag=spectating] @a[tag=partyLeader,limit=1]
 execute if entity @a[tag=partyLeader,tag=spectating] run tp @s[tag=spectating] @r[tag=void,sort=furthest]
+
+execute store result score @s gonersKilled run scoreboard players get @r[tag=void] gonersKilled
+
 execute if entity @a[tag=partyLeader,tag=spectating] run tp @s[tag=spectating] @r[tag=void]
 
 #Match player who left's music with the party leader

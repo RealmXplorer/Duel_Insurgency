@@ -31,10 +31,10 @@ execute at @e[type=marker,tag=blueFlag,tag=!captured,limit=1] as @a[tag=team2,di
 execute if entity @e[type=marker,tag=redFlag,tag=captured] unless entity @a[tag=flagGot,tag=team2] if score #main redFlagTimer matches ..0 run function du-in:ingame/ctf/red/red_return
 execute if entity @e[type=marker,tag=blueFlag,tag=captured] unless entity @a[tag=flagGot,tag=team1] if score #main blueFlagTimer matches ..0 run function du-in:ingame/ctf/blue/blue_return
 
-execute if entity @a[tag=!timedMode] run function du-in:ingame/ctf/default/default
+execute if entity @a[tag=!timedMode,tag=partyLeader] run function du-in:ingame/ctf/default/default
 
 # #CLOSE TO END#
-execute if entity @a[tag=timedMode] run function du-in:ingame/ctf/timed/timed
+execute if entity @a[tag=timedMode,tag=partyLeader] run function du-in:ingame/ctf/timed/timed
 
 # execute if entity @a[tag=!ctfClose] if score #main bluePoints >= #main ctfClose run function du-in:ingame/ctf/close
 # execute if entity @a[tag=!ctfClose] if score #main redPoints >= #main ctfClose run function du-in:ingame/ctf/close

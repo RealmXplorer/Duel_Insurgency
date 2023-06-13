@@ -53,20 +53,10 @@ execute if entity @a[tag=ctfIngame] at @e[type=marker,tag=redFlag] run setblock 
 #Reset Conquest points
 execute if entity @a[tag=cqIngame] run function du-in:ingame/conquest/reset_points
 
-#Teleport and kill all map specific entities
-#tp @e[type=!player,tag=mapSpecific] 216 0 40
-#kill @e[type=!player,tag=mapSpecific]
-
 #Kill all ingame entities.
-#kill @e[tag=asgoreFire]
 kill @e[nbt={inGround:1b}]
 kill @e[type=item,nbt={Item:{tag:{weaponItem:1b}}}]
 kill @e[type=ender_pearl,tag=blakeTP]
-
-#kill @e[tag=grave,type=!player]
-#kill @e[tag=asgoreArrow]
-#kill @e[type=armor_stand,tag=papyrusBone]
-#kill @e[type=marker,tag=kyloHitPos]
 
 function du-in:maps/jermall/stop
 schedule clear du-in:maps/jermall/stop

@@ -7,6 +7,4 @@ execute as @a[tag=shop] at @s run function du-in:lobby/scheduled/shop
 execute as @a[tag=parkour] at @s run function du-in:lobby/scheduled/parkour
 execute as @a[tag=credits] at @s run function du-in:lobby/scheduled/credits
 
-#say success
-#schedule clear du-in:lobby/scheduled/gamemode_select
 schedule function du-in:lobby/scheduled/one_sec_loop 1s

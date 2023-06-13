@@ -56,6 +56,7 @@
 
 #Run as Asgore's firewalls
 execute as @e[type=armor_stand,tag=asgoreFire,scores={asgoreFire=-99..}] at @s run function du-in:kit/asgore/ability/fire_wall
+# execute as @e[type=block_display,tag=asgoreFire,scores={asgoreFire=-99..}] at @s run function du-in:kit/asgore/ability/fire_wall
 
 execute as @e[type=block_display,tag=flame,scores={flameTimer=-99..}] at @s run function du-in:kit/death/ability/timer
 
@@ -67,8 +68,8 @@ execute as @e[type=block_display,tag=flame,scores={flameTimer=-99..}] at @s run 
     execute as @e[type=marker,tag=meetingSpot,scores={impostTimer=0..}] at @s run function du-in:kit/impostor/ability/meeting_spot
 
 #Kill graves when projectiles are near or when the sand is far from the stand
-    execute as @e[type=armor_stand,tag=grave] at @s run function du-in:kit/zombie/ability/grave_stand
-    execute as @e[type=falling_block,tag=grave] at @s unless entity @e[type=minecraft:armor_stand,tag=grave,distance=..2] run function du-in:kit/zombie/ability/grave_sand
+    execute as @e[type=area_effect_cloud,tag=grave] at @s run function du-in:kit/zombie/ability/grave_stand
+    execute as @e[type=falling_block,tag=grave] at @s unless entity @e[type=area_effect_cloud,tag=grave,distance=..2] run function du-in:kit/zombie/ability/grave_sand
 
 #Slime and magma Cubes after Slime death
     execute as @e[type=slime,scores={slimeTimer=-99..}] at @s run function du-in:kit/slime/death/slime

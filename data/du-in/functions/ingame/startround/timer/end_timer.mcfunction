@@ -20,5 +20,7 @@ title @a[scores={team=2}] subtitle {"text":"Blue Team","color":"blue","bold":tru
 #tp @a[tag=inRing] 1996 7 1004 -135 0
 
 execute as @a[scores={kit=21}] at @s run playsound minecraft:cuphead.announce.go master @s ~ ~ ~ 10 1
+execute at @e[type=armor_stand,tag=vendMachine] run setblock ~ ~1 ~ barrier keep
+execute at @e[type=armor_stand,tag=vendMachine] run setblock ~ ~ ~ light[level=9] keep
 
 scoreboard players reset #main titleTimer2

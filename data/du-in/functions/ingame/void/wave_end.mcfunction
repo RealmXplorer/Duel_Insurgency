@@ -16,6 +16,9 @@ effect give @a instant_health 100 1 true
 execute if score #main pylonsDestroyed matches ..2 run tellraw @a [{"text":"The Pylon ","bold":true,"color":"dark_purple"},{"text":"shutters...","color":"light_purple"}]
 execute if score #main pylonsDestroyed matches 3 run tellraw @a [{"text":"The multiverse quakes...","bold":true,"color":"dark_purple"}]
 
+function du-in:ingame/void/hazard/shock/end_shock
+schedule clear du-in:ingame/void/hazard/shock/prepare
+
 #scoreboard objectives setdisplay sidebar matchDeaths
 execute as @a[tag=voidOut] run function du-in:ingame/void/void_return
 

@@ -53,6 +53,7 @@ tag @a[tag=dml] add cmap
 #execute as @a run function du-in:music/lobby/stop/lobby
 
 stopsound @a record
+schedule clear du-in:music/free/free
 
 #Pass "gamemode" score into new "setGamemode" score for map voting
 execute store result score #main setGamemode run scoreboard players get #gamemode gamemode
@@ -64,6 +65,8 @@ execute as @a run function du-in:lobby/item_reset
 execute as @a run function du-in:lobby/mapselect/tomap
 kill @e[tag=displayItem]
 function du-in:lobby/mapselect/switch
+
+effect clear @s invisibility
 
 #Start music
 scoreboard players set @a music 0

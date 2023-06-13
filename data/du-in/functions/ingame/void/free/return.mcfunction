@@ -23,7 +23,12 @@ tag @a remove wsLock
 tag @a remove jermLock
 tag @a remove chessLock
 tag @a remove shLock
+tag @a remove mustafarLock
 tag @a remove escLock
+tag @a remove chancelLock
+tag @a remove endLock
+tag @a remove prideLock
+
 
 schedule clear du-in:music/free/free
 function du-in:lobby/display/default/switch

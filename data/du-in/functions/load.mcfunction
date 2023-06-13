@@ -190,6 +190,7 @@ scoreboard objectives add thrownFoot minecraft.dropped:minecraft.rabbit_foot
 scoreboard objectives add thrownIronIngot minecraft.dropped:minecraft.iron_ingot
 scoreboard objectives add thrownCookie minecraft.dropped:minecraft.cookie
 scoreboard objectives add tabbaTalk dummy
+scoreboard objectives add tabbaVendingTalk dummy
 scoreboard objectives add map1Vote dummy
 scoreboard objectives add map2Vote dummy
 scoreboard objectives add map3Vote dummy
@@ -252,7 +253,6 @@ scoreboard objectives add healthHit minecraft.custom:minecraft.damage_taken
 scoreboard objectives add healthTimer minecraft.custom:play_time
 scoreboard objectives add Health health
 scoreboard objectives add hit minecraft.custom:minecraft.damage_taken
-scoreboard objectives add jump minecraft.custom:minecraft.jump
 scoreboard objectives add justdied minecraft.custom:deaths
 scoreboard objectives add killedByCreeper minecraft.killed_by:creeper
 scoreboard objectives add killedByPlayer minecraft.killed_by:player
@@ -332,6 +332,8 @@ scoreboard objectives add lastVoidLock dummy
 scoreboard objectives add pylonNum dummy
 scoreboard objectives add pylonsDestroyed dummy
 scoreboard objectives add voidReadyOnline dummy
+scoreboard objectives add pylonFireList dummy
+scoreboard objectives add alarmCount dummy
 
 #Initialization
 scoreboard players set #main ten 10

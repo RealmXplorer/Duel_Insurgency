@@ -2,6 +2,8 @@ execute as @e[type=skeleton,sort=random,limit=1,tag=!peepedHorror] run tag @s ad
 
 execute as @e[type=skeleton,tag=peepedHorror] run function du-in:kit/jerma/ability/peeped_horror
 
+scoreboard players remove @a[scores={gonersKilled=1..}] gonersKilled 1
+
 #execute as @a at @s run function du-in:kit/jerma/particle
 function du-in:ingame/void/goner/kill_goner
 

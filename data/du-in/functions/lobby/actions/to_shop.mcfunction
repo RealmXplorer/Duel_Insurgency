@@ -5,6 +5,14 @@ execute unless entity @a[tag=shop] unless score #main pylonsDestroyed matches 3 
 execute unless entity @a[tag=shop] unless score #main pylonsDestroyed matches 3 run summon villager 1973 52 1985 {Invulnerable:1b,PersistenceRequired:1b,CanPickUpLoot:0b,Tags:["tabba"],CustomName:'{"text":"Tabba"}',VillagerData:{profession:"minecraft:butcher"},Offers:{}}
 execute unless entity @a[tag=shop] unless score #main pylonsDestroyed matches 3 run summon interaction 1974 52 1982 {Tags:["shopDoor","tabba","mapSpecific"],width:1.15f,height:2.1f,response:1b}
 
+#Vending machine
+execute unless entity @a[tag=shop] unless score #main pylonsDestroyed matches 3 run summon interaction 1974 52 2000 {Tags:["shopVending","tabba","mapSpecific"],width:1.15f,height:2.1f,response:1b}
+execute unless entity @a[tag=shop] run summon armor_stand 1974 52 2000 {Rotation:[180F,0F],Tags:["tabba","mapSpecific"],NoGravity:1b,Silent:1b,Invulnerable:1b,Invisible:1b,NoBasePlate:1b,ArmorItems:[{},{},{},{id:"minecraft:spruce_sapling",Count:1b,tag:{CustomModelData:100}}],DisabledSlots:4144959}
+
+#Vent
+execute unless entity @a[tag=shop] run summon interaction 1972 51 2000 {Tags:["shopVent","tabba","mapSpecific"],width:1.05f,height:1.25f,response:1b}
+
+
 tag @s add shop
 tag @s add subLobby
 function du-in:music/lobby/stop/lobby

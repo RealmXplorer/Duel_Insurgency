@@ -1,5 +1,8 @@
 function du-in:reset
 #Teleport and kill all map specific entities
+execute at @e[type=armor_stand,tag=vendMachine] run setblock ~ ~1 ~ air
+execute at @e[type=armor_stand,tag=vendMachine] run setblock ~ ~ ~ air
+
 tp @e[type=!player,tag=mapSpecific] 216 0 40
 kill @e[type=!player,tag=mapSpecific]
 

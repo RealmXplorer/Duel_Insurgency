@@ -8,7 +8,7 @@ execute unless entity @a[tag=shop] run kill @e[tag=tabba]
 
 #Reset Tabba Dialogue
 scoreboard players set @s tabbaTalk 0
-
+scoreboard players set @s tabbaVendingTalk 0
 #execute unless entity @a[tag=shop] run kill @e[tag=shopSpecific]
 
 #Play sound

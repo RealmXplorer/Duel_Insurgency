@@ -7,3 +7,7 @@ gamemode adventure @a[tag=!working]
 tag @a remove spectating
 team join Insurgent @a
 tag @s remove voidOut
+tag @s remove teamDead
+tag @s remove teamMode
+tag @s remove grave
+effect give @s slowness 2 1 true
