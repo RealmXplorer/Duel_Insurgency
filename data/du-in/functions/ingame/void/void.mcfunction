@@ -21,6 +21,9 @@ effect give @a[predicate=!du-in:effect/has_night_vision,tag=void] night_vision i
 #Store goners killed in bossbar
 execute store result bossbar gast:pylon value run scoreboard players get @a[tag=partyLeader,tag=void,limit=1] gonersKilled
 
+scoreboard players set Insurgents playerCount 0
+execute as @a[gamemode=!spectator] run scoreboard players add Insurgents playerCount 1
+
 #Score total players killed here
 #execute store result score Insurgents matchDeaths run scoreboard players get #main matchDeaths
 

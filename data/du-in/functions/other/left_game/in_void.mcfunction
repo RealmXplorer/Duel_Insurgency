@@ -13,6 +13,8 @@ tag @s remove ctfIngame
 tag @s remove cqIngame
 tag @s add void
 
+tag @s remove kitMenu
+
 #Teleport a player who was in game to the party leader, (or if party leader is spectating, teleport to other player)
 execute if entity @a[tag=partyLeader,tag=void] run tp @s[tag=spectating] @a[tag=partyLeader,limit=1]
 execute if entity @a[tag=partyLeader,tag=spectating] run tp @s[tag=spectating] @r[tag=void,sort=furthest]

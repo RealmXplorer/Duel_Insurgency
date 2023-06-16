@@ -51,7 +51,7 @@ tag @a[tag=!working,tag=!spectating] add playing
 
     #Set Cuphead card power to 0 and play announcer
     scoreboard players set @a cardPower 0
-    execute if entity @a[scores={kit=21}] at @a[scores={kit=21},limit=1] run playsound minecraft:cuphead.announce.start master @a ~ ~ ~ 10 1
+    execute as @a[scores={kit=21}] at @s run playsound minecraft:cuphead.announce.start master @s ~ ~ ~ 10 1
 
     #Give advancements for players who are playing as legendary characters
     advancement grant @a[tag=!mystery,tag=!mysteryHead,scores={kit=1000..1007}] only du-in:unlock/unlock
@@ -150,3 +150,5 @@ team join Blue @a[scores={team=2}]
 #Reset void functions
 tag @a remove fromVoid
 scoreboard players set #main voidReadyOnline 0
+
+execute store result score @a map run scoreboard players get #main map

@@ -7,3 +7,4 @@ tag @s add gasterInvisible
 execute if entity @s[scores={gasterTimer=20..}] run function du-in:kit/gaster/ability/shattered_effects
 
 execute if entity @s[scores={gasterTimer=..0}] run function du-in:kit/gaster/ability/shattered_end
+execute if entity @s[scores={gasterTimer=..0},tag=sabotaged] run function du-in:kit/gaster/ability/sabotaged_end

@@ -28,7 +28,7 @@ execute if score #main pylonsDestroyed matches 3 run tellraw @a [{"text":"The wo
 
 #scoreboard players set #main waveCooldown 100
 
-bossbar set gast:pylon name ["",{"text":"Pylon Stabilization: ","bold":true,"color":"white"},{"score":{"name":"@r","objective":"gonersKilled"},"color":"red"},{"text":" Goners left","color":"gray"}]
-execute store result bossbar gast:pylon max run scoreboard players get @a[tag=partyLeader,tag=void,limit=1] gonersKilled
+bossbar set gast:pylon name ["",{"text":"Pylon Stabilization: ","bold":true,"color":"white"},{"score":{"name":"@a[gamemode=adventure,tag=void,limit=1]","objective":"gonersKilled"},"color":"red"},{"text":" Goners left","color":"gray"}]
+execute store result bossbar gast:pylon max run scoreboard players get @a[gamemode=adventure,tag=void,limit=1] gonersKilled
 
 #scoreboard players set #main waveCooldown 0

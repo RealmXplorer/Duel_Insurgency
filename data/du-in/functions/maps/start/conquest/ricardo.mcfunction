@@ -24,14 +24,6 @@ summon armor_stand -3732 59 1274 {Rotation:[180F,0F],Tags:["vendMachine","mapSpe
 summon armor_stand -3763 57 1254 {Rotation:[0F,0F],Tags:["vendMachine","mapSpecific"],NoGravity:1b,Silent:1b,Invulnerable:1b,Invisible:1b,NoBasePlate:1b,ArmorItems:[{},{},{},{id:"minecraft:spruce_sapling",Count:1b,tag:{CustomModelData:100}}],DisabledSlots:4144959}
 summon armor_stand -3714 62 1251 {Rotation:[90F,0F],Tags:["vendMachine","mapSpecific"],NoGravity:1b,Silent:1b,Invulnerable:1b,Invisible:1b,NoBasePlate:1b,ArmorItems:[{},{},{},{id:"minecraft:spruce_sapling",Count:1b,tag:{CustomModelData:100}}],DisabledSlots:4144959}
 
-#-3732 59 1274
-#-3763 57 1254
-#-3714 62 1251
-
-#-3732 59 1273 n
-#-3763 57 1255 s
-#-3715 62 1251 w
-
 #Vents
 summon interaction -3714 61 1252 {Tags:["ventBlock","mapSpecific"],width:1.05f,height:1.25f,response:1b}
 summon interaction -3733 58 1274 {Tags:["ventBlock","mapSpecific"],width:1.05f,height:1.25f,response:1b}
@@ -40,11 +32,3 @@ summon interaction -3762 56 1254 {Tags:["ventBlock","mapSpecific"],width:1.05f,h
 summon marker -3715 62 1252 {Tags:["vent","mapSpecific"]}
 summon marker -3734 59 1273 {Tags:["vent","mapSpecific"]}
 summon marker -3762 57 1255 {Tags:["vent","mapSpecific"]}
-
-#-3714 61 1252
-#-3733 58 1274
-#-3762 56 1254
-
-#-3715 62 1252
-#-3734 59 1273
-#-3762 57 1255
