@@ -32,7 +32,7 @@ execute if entity @s[scores={pussSwapTimer=-1..}] run function du-in:kit/puss/se
 execute if entity @s[scores={pussTimer=-1..}] run function du-in:kit/puss/ability/self_timer
 
 #Base movement speed#
-attribute @s[tag=!stolen] generic.movement_speed base set 0.145
+attribute @s[tag=!stolen] generic.movement_speed base set 0.1525
 
 #Base Weight
 attribute @s[tag=!stolen,tag=!pussFear,tag=!parry] generic.knockback_resistance base set 0
