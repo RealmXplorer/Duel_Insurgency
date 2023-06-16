@@ -1,8 +1,8 @@
-tag @s add pussFear
-clear @s #du-in:weapon
-clear @s #du-in:secondary
-#attribute @s generic.armor base set -3
-playsound minecraft:entity.blaze.death master @s ~ ~ ~ 1 0.5
-tellraw @s [{"text":"You dropped your weapon!","bold":true,"color":"red"}]
-attribute @s[tag=!pussFear] generic.knockback_resistance base set 0
-scoreboard players set @s pussFearTimer 30
+execute if entity @s[tag=!sabotaged] as @a[distance=0.05..4,tag=playing,sort=nearest,gamemode=!spectator,tag=!teamDead] run tag @s add pussHit
+execute as @a[tag=pussHit] if score @s team = @a[scores={kit=27},tag=kitActions,sort=nearest,limit=1] team run tag @s remove pussHit
+execute if entity @s[tag=sabotaged] run tag @s add pussHit
+#execute if entity @s[tag=sabotaged] run function du-in:kit/spider/ability/sabotage/sabotaged_hit
+
+execute if entity @a[tag=pussHit] run function du-in:kit/puss/ability/end_start
+execute unless entity @a[tag=pussHit] run function du-in:kit/all/ability/team
+execute as @a[tag=pussHit] run function du-in:kit/puss/ability/enemy_hit

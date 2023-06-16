@@ -1,4 +1,4 @@
-#scoreboard players set @s parryDuration 30
+scoreboard players set @s parryDuration 30
 #scoreboard players set @s parryCooldown 60
 tag @s add parry
 playsound minecraft:soundeffect.parry master @a ~ ~ ~ .3 1

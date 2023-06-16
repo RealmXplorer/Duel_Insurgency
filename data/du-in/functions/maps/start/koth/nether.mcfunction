@@ -12,7 +12,7 @@ summon marker -184 7 17 {Tags:["spawnPoint","team1","mapSpecific"]}
 summon marker -148 7 55 {Tags:["spawnPoint","team1","mapSpecific"]}
 summon marker -183 7 92 {Tags:["spawnPoint","team1","mapSpecific"]}
 
-summon marker -164 11 34 {Tags:["spawnPoint","team2","mapSpecific"]}
+summon marker -165 11 34 {Tags:["spawnPoint","team2","mapSpecific"]}
 summon marker -165 9 74 {Tags:["spawnPoint","team2","mapSpecific"]}
 summon marker -207 13 76 {Tags:["spawnPoint","team2","mapSpecific"]}
 summon marker -206 9 33 {Tags:["spawnPoint","team2","mapSpecific"]}

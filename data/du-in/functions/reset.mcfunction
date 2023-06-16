@@ -21,6 +21,8 @@ scoreboard players reset #main startSeq
 tag @a remove startgame
 tag @a remove kitPicked
 
+
+scoreboard players reset @a map
 scoreboard players add @a[tag=!spectating,tag=!falseWin] gamesPlayed 1
 scoreboard players add @a[tag=win,tag=!falseWin,tag=!voidLose,tag=!tie] Wins 1
 scoreboard players add @a[tag=win,tag=!falseWin,tag=!voidLose,tag=!tie] winStreak 1

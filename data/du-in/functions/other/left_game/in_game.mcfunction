@@ -10,6 +10,7 @@ effect clear @s night_vision
 
 #Make player who left (if they weren't in a game) a spectator
 execute if entity @a[tag=partyLeader,tag=!win,tag=!lose] run tag @s[tag=!playing,tag=!spectating,tag=!working,tag=!dmDead] add spectating
+execute unless score @s map = #main map run tag @s add spectating
 execute if entity @s[tag=spectating] run function du-in:ingame/spect
 
 #Teleport a player who was in game to the party leader, (or if party leader is spectating, teleport to other player)
