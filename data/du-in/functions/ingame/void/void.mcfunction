@@ -19,7 +19,7 @@ execute as @a[gamemode=!spectator,tag=void,tag=!win] run function du-in:ingame/v
 effect give @a[predicate=!du-in:effect/has_night_vision,tag=void] night_vision infinite 1 true
 
 #Store goners killed in bossbar
-execute store result bossbar gast:pylon value run scoreboard players get @a[tag=partyLeader,tag=void,limit=1] gonersKilled
+execute store result bossbar gast:pylon value run scoreboard players get @a[gamemode=adventure,tag=void,limit=1] gonersKilled
 
 scoreboard players set Insurgents playerCount 0
 execute as @a[gamemode=!spectator] run scoreboard players add Insurgents playerCount 1
@@ -37,9 +37,9 @@ execute if entity @a[tag=!win,scores={gonersKilled=..0},tag=!waveBreak,tag=party
 execute if score #main pylonsDestroyed matches 1.. as @e[type=armor_stand,tag=missile] at @s anchored eyes run function du-in:ingame/void/goner/missile_chase
 execute if score #main pylonsDestroyed matches 1.. as @e[type=armor_stand,tag=missile] at @s if entity @e[tag=projectile,tag=!missile,distance=..1] run function du-in:ingame/void/goner/missile_explode
 
-execute if score #main pylonsDestroyed matches 3.. at @e[type=marker,tag=flamePillarX] run particle minecraft:flame ~ ~ ~ 1 0 0 0 50
-execute if score #main pylonsDestroyed matches 3.. at @e[type=marker,tag=flamePillarZ] run particle minecraft:flame ~ ~ ~ 0 0 1 0 50
-execute if score #main pylonsDestroyed matches 3.. at @e[type=minecraft:block_display,tag=flamePillar] as @a[gamemode=adventure,distance=..2] run damage @s 5 minecraft:in_fire
+execute if score #main pylonsDestroyed matches 2.. at @e[type=marker,tag=flamePillarX] run particle minecraft:flame ~ ~ ~ 1 0 0 0 50
+execute if score #main pylonsDestroyed matches 2.. at @e[type=marker,tag=flamePillarZ] run particle minecraft:flame ~ ~ ~ 0 0 1 0 50
+execute if score #main pylonsDestroyed matches 2.. at @e[type=minecraft:block_display,tag=flamePillar] as @a[gamemode=adventure,distance=..2] run damage @s 5 minecraft:in_fire
 
 execute if score #main pylonsDestroyed matches 3.. if entity @e[type=marker,tag=electro] run function du-in:ingame/void/hazard/shock/effects
 
