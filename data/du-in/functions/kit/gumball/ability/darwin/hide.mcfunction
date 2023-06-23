@@ -1,7 +1,4 @@
-#effect clear @s invisibility
-#effect clear @s slowness
-#kill @e[type=minecraft:tropical_fish,tag=darwinFishReal,limit=1,sort=nearest]
-
+#Revert villager back to default
 tag @s[tag=stolen] remove darwin
 execute if entity @s[tag=stolen] run tag @s add kitDone
 
