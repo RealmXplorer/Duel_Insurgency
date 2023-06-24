@@ -3,7 +3,7 @@ scoreboard players set @s kit 0
 
 #Add tag lobby, set lobby score to 0, and join lobby team
 tag @s add lobby
-scoreboard players set @s lobby 0
+scoreboard players set @s lobby 1
 team join lobby @s
 
 #Teleport to gamemode select

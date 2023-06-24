@@ -17,7 +17,8 @@ playsound minecraft:block.enchantment_table.use master @a ~ ~ ~ 9999 1
 
 scoreboard players set @s darwinSound 100
 clear @s carrot_on_a_stick
-xp set @s[tag=!stolen] 300 levels
+
+tag @s add cooldown
 tag @s remove sabotaged
 scoreboard players set @s gumSwapTimer 120
 clear @s warped_fungus_on_a_stick

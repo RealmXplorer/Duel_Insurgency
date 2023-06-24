@@ -18,4 +18,5 @@ clear @s minecraft:carrot_on_a_stick
 scoreboard players set @s weapCount 0
 
 tag @s remove sabotaged
+tag @s add cooldown
 tag @s remove pussHit

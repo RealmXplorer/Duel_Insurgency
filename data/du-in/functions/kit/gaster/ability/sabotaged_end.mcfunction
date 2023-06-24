@@ -16,5 +16,6 @@ xp set @s[tag=!stolen] 335 levels
 execute if entity @s[tag=stolen] run tag @s add kitDone
 
 tag @s remove sabotaged
+tag @s remove cooldown
 attribute @s minecraft:generic.knockback_resistance base set 0
 scoreboard players reset @s gasterTimer

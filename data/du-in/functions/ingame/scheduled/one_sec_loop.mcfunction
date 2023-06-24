@@ -9,7 +9,7 @@ execute as @a[tag=playing,tag=!grave] at @s run function du-in:ingame/scheduled/
 #function du-in:return_item
 
 execute as @a[gamemode=!spectator,tag=playing,tag=!startgame] store result score @s Acount run clear @s[tag=!kitMenu] carrot_on_a_stick 0
-execute as @a[gamemode=!spectator,tag=playing,tag=!startgame,tag=!magma] unless entity @s[scores={Acount=1}] unless entity @s[level=3..] unless entity @s[scores={palpTimer=-99..}] unless entity @s[scores={yharimTimer=-99..}] unless entity @s[scores={pussTimer=-99..}] unless entity @s[scores={floweyHitTimer=-99..}] unless entity @s[scores={gasterTimer=-99..}] run xp set @s[tag=!grave,tag=!hornerWeapon] 2 levels
+execute as @a[gamemode=!spectator,tag=playing,tag=!startgame,tag=!magma,tag=!cooldown] unless entity @s[scores={Acount=1}] unless entity @s[level=3..] run xp set @s[tag=!grave,tag=!hornerWeapon] 2 levels
 
 execute as @a[gamemode=!spectator,tag=playing,tag=!startgame,tag=!pussFear] store result score @s weapCount run clear @s[tag=!kitMenu] #du-in:weapon 0
 

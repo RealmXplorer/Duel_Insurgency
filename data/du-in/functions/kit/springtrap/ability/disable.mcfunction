@@ -10,5 +10,3 @@ execute if entity @s[tag=stolen] run tag @s add kitDone
 tag @s remove sabotaged
 tag @s remove springLock
 tag @s remove kitActions
-#scoreboard players set @s[tag=stolen,tag=givenStolen,tag=kitDone] kit 8
-#tag @s[tag=kitDone,scores={kit=5}] remove kitDone

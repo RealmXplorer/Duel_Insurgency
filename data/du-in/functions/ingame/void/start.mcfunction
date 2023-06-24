@@ -144,7 +144,7 @@ execute if entity @a[scores={kit=1000..1001}] run summon armor_stand 10062 42 10
 #Vents
 summon interaction 10067 41 10025 {Tags:["ventBlock","mapSpecific"],width:1.05f,height:1.25f,response:1b}
 summon interaction 10024 41 10025 {Tags:["ventBlock","mapSpecific"],width:1.05f,height:1.25f,response:1b}
-summon interaction 10024 41 10058 {Tags:["ventBlock","mapSpecific"],width:1.05f,height:1.25f,response:1b}
+summon interaction 10024 41 10068 {Tags:["ventBlock","mapSpecific"],width:1.05f,height:1.25f,response:1b}
 summon interaction 10067 41 10068 {Tags:["ventBlock","mapSpecific"],width:1.05f,height:1.25f,response:1b}
 
 execute if entity @a[tag=sus] run summon marker 10066 42 10025 {Tags:["vent","mapSpecific"]}

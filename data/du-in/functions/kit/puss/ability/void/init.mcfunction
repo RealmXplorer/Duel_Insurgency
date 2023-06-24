@@ -22,5 +22,6 @@ clear @s minecraft:carrot_on_a_stick
 #Switch villager back to their ability
 #execute if entity @s[tag=stolen] run tag @s add kitDone
 tag @s remove sabotaged
+tag @s add cooldown
 #End ability
 tag @s remove kitActions

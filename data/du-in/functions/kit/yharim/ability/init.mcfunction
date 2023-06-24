@@ -15,4 +15,5 @@ playsound minecraft:entity.ender_dragon.growl master @a ~ ~ ~ .5 .85
 clear @s minecraft:carrot_on_a_stick
 xp set @s[tag=!stolen] 380 levels
 #execute if entity @s[tag=stolen] run tag @s add kitDone
+tag @s add cooldown
 tag @s remove kitActions
