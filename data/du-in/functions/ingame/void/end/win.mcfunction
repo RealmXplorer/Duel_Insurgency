@@ -39,7 +39,7 @@ title @a times 5 120 5
 setblock 97 20 -107 minecraft:black_concrete
 
 #Give advancement
-advancement grant @a[gamemode=!spectator] only du-in:void/void_free
+advancement grant @a[tag=!spectating] only du-in:void/void_free
 
 #Hide bossbar
 bossbar set gast:pylon visible false

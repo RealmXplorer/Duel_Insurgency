@@ -16,6 +16,8 @@ execute if score #main lobbyTheme matches 2 run function du-in:ingame/killmsg/de
 execute if score #main lobbyTheme matches 3 run function du-in:ingame/killmsg/death/christmas
 execute if score #main lobbyTheme matches 4 run function du-in:ingame/killmsg/death/easter
 
+execute if entity @s[tag=fortniteCard] run function du-in:kit/paz/card/lose_card
+
 #Drop flag if player has flag and dies
 execute if entity @s[tag=flagGot] run function du-in:ingame/ctf/flag_death
 

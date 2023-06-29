@@ -1,7 +1,9 @@
 tellraw @a ["",{"text":"The ","bold":false,"color":"gray"},{"text":"Caves ","bold":true,"color":"yellow"},{"text":"map has been chosen!","bold":false,"color":"gray"}]
 tp @a[tag=!working,scores={spawnpoint=0..2}] -15 11 79 -40 1
-tp @a[tag=!working,scores={spawnpoint=3..4}] 24 5 118 140 1
-tp @a[tag=!working,scores={spawnpoint=5..6}] 30 2 79 37 -8
+tp @a[tag=!working,scores={spawnpoint=3}] 24 5 118 140 1
+tp @a[tag=!working,scores={spawnpoint=4}] 17 14 109 135 0
+tp @a[tag=!working,scores={spawnpoint=5}] 30 2 79 37 -8
+tp @a[tag=!working,scores={spawnpoint=6}] -1 15 96 20 0
 tp @a[tag=!working,scores={spawnpoint=7..}] 12 6 89 2 1
 
 function du-in:maps/start/common

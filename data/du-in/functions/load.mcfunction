@@ -166,7 +166,7 @@ scoreboard objectives add ctfScale dummy
 scoreboard objectives add dmScale dummy
 scoreboard objectives add dtScale dummy
 scoreboard objectives add Diamonds dummy
-scoreboard objectives add buy dummy
+#scoreboard objectives add buy dummy
 scoreboard objectives add gameDeaths minecraft.custom:deaths
 scoreboard objectives add gameGonerKills dummy
 scoreboard objectives add gameKills minecraft.custom:player_kills

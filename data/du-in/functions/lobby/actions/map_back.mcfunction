@@ -84,6 +84,9 @@ tag @a remove kitMenu
 scoreboard players set @a kitTheme 1
 scoreboard players set @a kitList 7
 
+
+#Remove tags
+tag @a remove sus
 #Sets title
 title @a times 0 60 0
 title @a title {"text":"","color":"red","bold":true}

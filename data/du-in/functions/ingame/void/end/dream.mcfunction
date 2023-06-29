@@ -60,7 +60,7 @@ execute if entity @s[scores={kit=27},tag=!stolen] run tellraw @s [{"text":"You d
 execute if entity @s[scores={kit=28},tag=!stolen] run tellraw @s [{"text":"You dream of judgement...","color":"gray","italic": true}]
 
 #Saac
-execute if entity @s[scores={kit=1002}] run tellraw @s [{"text":"You dream of kickstarts...","color":"gray","italic": true}]
+execute if entity @s[scores={kit=1000}] run tellraw @s [{"text":"You dream of kickstarts...","color":"gray","italic": true}]
 #Paz
 execute if entity @s[scores={kit=1001}] run tellraw @s [{"text":"You dream of- actually that's really inappropriate...","color":"gray","italic": true}]
 #Jerma

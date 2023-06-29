@@ -18,7 +18,7 @@ execute as @a[gamemode=!spectator] run scoreboard players add @a gonersKilled 12
 #execute if score #main pylonsDestroyed matches ..2 run scoreboard players set @a gonersKilled 30
 #execute if score #main pylonsDestroyed matches 3 run scoreboard players set @a gonersKilled 30
 
-execute if score #main pylonsDestroyed matches 4 run schedule function du-in:ingame/void/hazard/shock/prepare 20s
+execute if score #main pylonsDestroyed matches 3 run schedule function du-in:ingame/void/hazard/shock/prepare 20s
 
 title @a title " "
 title @a subtitle [{"text":"Wave ","color":"light_purple","bold":true},{"score":{"name":"#main","objective":"wave"},"color":"dark_purple","bold":true},{"text":"/2","color":"dark_purple","bold":true}]

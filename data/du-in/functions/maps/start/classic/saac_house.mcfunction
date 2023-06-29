@@ -17,7 +17,7 @@ summon marker -2006 36 -1985 {Tags:["spawnPoint","team2","mapSpecific"]}
 
 #Saac Vents#
 execute if entity @a[tag=sus] run summon marker -2004 36 -1973 {Tags:["vent","mapSpecific"]}
-execute if entity @a[tag=sus] run summon marker -1991 47 -1969 {Tags:["vent","mapSpecific"]}
+#execute if entity @a[tag=sus] run summon marker -1991 47 -1969 {Tags:["vent","mapSpecific"]}
 execute if entity @a[tag=sus] run summon marker -1991 39 -1977 {Tags:["vent","mapSpecific"]}
 execute if entity @a[tag=sus] run summon marker -1992 36 -1949 {Tags:["vent","mapSpecific"]}
 

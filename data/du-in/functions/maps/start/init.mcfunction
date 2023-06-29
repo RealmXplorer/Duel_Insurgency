@@ -2,6 +2,9 @@
 scoreboard players reset #voting
 scoreboard players set #voting mapWinner 0
 
+#Reset map vote colors
+execute as @e[type=marker,tag=mapVote] at @s run setblock ~ ~-1 ~ minecraft:red_concrete destroy
+
 #Kill map select entities
 kill @e[tag=displayItem]
 
