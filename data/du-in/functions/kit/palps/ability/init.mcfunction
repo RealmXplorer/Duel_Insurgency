@@ -1,4 +1,4 @@
-scoreboard players set @s palpTimer 40
+scoreboard players set @s palpTimer 80
 effect give @s minecraft:slowness 3 0 true
 clear @s minecraft:carrot_on_a_stick
 #xp set @s[tag=!stolen] 380 levels
