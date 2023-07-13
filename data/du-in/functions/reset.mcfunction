@@ -21,6 +21,7 @@ scoreboard players reset #main startSeq
 tag @a remove startgame
 tag @a remove kitPicked
 
+bossbar set minecraft:map_countdown visible false
 
 scoreboard players reset @a map
 scoreboard players add @a[tag=!spectating,tag=!falseWin] gamesPlayed 1

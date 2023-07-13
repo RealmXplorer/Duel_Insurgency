@@ -43,6 +43,18 @@ execute unless entity @a[tag=partyLeader,tag=ranMode] run tag @s remove ranMode
 #REMOVE MAP COUNTDOWN BOSSBAR IF NOT IN MAP SELECT
 execute unless entity @a[scores={lobby=3},tag=partyLeader] run bossbar set minecraft:map_countdown visible false
 
+execute unless entity @a[tag=ctfIngame,tag=partyLeader] run bossbar set du-in:bluectf visible false
+execute unless entity @a[tag=ctfIngame,tag=partyLeader] run bossbar set du-in:redctf visible false
+
+execute unless entity @a[tag=cqIngame,tag=partyLeader] run bossbar set conquest:blue visible false
+execute unless entity @a[tag=cqIngame,tag=partyLeader] run bossbar set conquest:red visible false
+
+execute unless entity @a[tag=cIngame,tag=partyLeader,tag=teamMode] run bossbar set minecraft:classicred visible false
+execute unless entity @a[tag=cIngame,tag=partyLeader,tag=teamMode] run bossbar set minecraft:classicblue visible false
+
+execute unless entity @a[tag=kothIngame,tag=partyLeader,tag=teamMode] run bossbar set minecraft:redkoth visible false
+execute unless entity @a[tag=kothIngame,tag=partyLeader,tag=teamMode] run bossbar set minecraft:bluekoth visible false
+
 #Reset items for player who left
 function du-in:lobby/item_reset
 
@@ -62,6 +74,8 @@ execute if entity @a[tag=partyLeader,tag=!teamMode] run tag @s remove teamMode
 execute if entity @a[tag=partyLeader,tag=teamMode] run tag @s add teamMode
 
 #execute store result score @s pylonNum run scoreboard players get @a[tag=partyLeader,limit=1] pylonNum
+
+scoreboard players reset @s map
 
 #RESET KIT MENU
 scoreboard players set @s kitTheme 1

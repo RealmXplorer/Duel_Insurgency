@@ -34,4 +34,6 @@ execute if entity @s[tag=cIngame] run team join Classic
 execute if entity @s[tag=dmIngame] run team join Deathmatch
 execute if entity @s[tag=kothIngame] run team join Classic
 execute if entity @s[tag=team1] run team join Red
+scoreboard players set @s[tag=team1] team 1
+scoreboard players set @s[tag=team2] team 2
 execute if entity @s[tag=team2] run team join Blue

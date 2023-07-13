@@ -1,7 +1,8 @@
 scoreboard players remove @s papyrusHitTimer 1
 
 #Deal damage to non-teammates
-execute unless entity @a[tag=void] if entity @s[scores={papyrusHitTimer=29}] as @a[gamemode=!spectator,distance=..3,tag=playing] unless score @e[type=marker,scores={papyrusHitTimer=29},sort=nearest,limit=1] team = @s team run effect give @s minecraft:instant_damage 5 0 true
+#execute unless entity @a[tag=void] if entity @s[scores={papyrusHitTimer=29}] as @a[gamemode=!spectator,distance=..3,tag=playing] unless score @e[type=marker,scores={papyrusHitTimer=29},sort=nearest,limit=1] team = @s team run effect give @s minecraft:instant_damage 5 0 true
+execute unless entity @a[tag=void] if entity @s[scores={papyrusHitTimer=29}] as @a[gamemode=!spectator,distance=..3,tag=playing] unless score @e[type=marker,scores={papyrusHitTimer=29},sort=nearest,limit=1] team = @s team run damage @s 5 arrow by @a[sort=nearest,scores={papyrusHitTimer=29},limit=1]
 
 execute if entity @a[tag=void] if entity @s[scores={papyrusHitTimer=29}] as @e[type=skeleton,tag=gonerThing,distance=..3] run damage @s 5 minecraft:generic
 
