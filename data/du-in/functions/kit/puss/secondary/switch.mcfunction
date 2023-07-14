@@ -2,8 +2,8 @@ scoreboard players add @s pussWeapSwitch 1
 scoreboard players set @s[scores={pussWeapSwitch=3..}] pussWeapSwitch 1
 
 execute if entity @s[scores={pussWeapSwitch=1}] run tag @s add gatitoBlade
-execute if entity @s[scores={pussWeapSwitch=1}] unless entity @s[scores={pussSkin=1}] run playsound minecraft:puss.gatito voice @a
-execute if entity @s[scores={pussSkin=1,pussWeapSwitch=1}] run playsound minecraft:kitty.gatito voice @a
+#execute if entity @s[scores={pussWeapSwitch=1}] unless entity @s[scores={pussSkin=1}] run playsound minecraft:puss.gatito voice @a
+#execute if entity @s[scores={pussSkin=1,pussWeapSwitch=1}] run playsound minecraft:kitty.gatito voice @a
 
 execute if entity @s[scores={pussWeapSwitch=2}] run tag @s remove gatitoBlade
 

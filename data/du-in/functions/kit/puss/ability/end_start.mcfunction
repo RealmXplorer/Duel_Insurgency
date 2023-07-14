@@ -7,7 +7,7 @@ effect give @s[scores={gameDeaths=5..},tag=!sabotaged] haste 3 0 true
 effect give @s[scores={gameDeaths=6..},tag=!sabotaged] speed 3 1 true
 
 playsound minecraft:sans.ability master @a ~ ~ ~ 1 0.95
-##COPYRIGHT
+##MAYBE COPYRIGHT
 playsound minecraft:puss.ability master @a ~ ~ ~ 100 1
 particle minecraft:crit ~ ~.1 ~ 0.1 1 0.1 0 100 force
 particle minecraft:poof ~ ~.1 ~ 0.1 0.1 0.1 0.05 100 force
