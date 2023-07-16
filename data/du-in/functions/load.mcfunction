@@ -219,7 +219,6 @@ scoreboard objectives add mapRandomVote dummy
 scoreboard objectives add mapVote dummy
 scoreboard objectives add mapWinner dummy
 scoreboard objectives add musicCycle dummy
-scoreboard objectives add musicToggle dummy
 scoreboard objectives add prize dummy
 scoreboard objectives add ranMode dummy
 scoreboard objectives add skinList dummy
