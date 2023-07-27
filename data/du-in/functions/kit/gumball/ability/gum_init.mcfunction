@@ -6,7 +6,7 @@ playsound minecraft:gumball.ability master @a ~ ~ ~ 1 1
 tag @s add pursue
 effect give @s minecraft:speed 2 7 true
 clear @s carrot_on_a_stick
-xp set @s[tag=!stolen] 300 levels
+xp set @s[tag=!stolen] 380 levels
 scoreboard players set @s[tag=!sabotaged] gumSwapTimer 120
 execute if entity @s[tag=sabotage] run function du-in:kit/gumball/ability/gumball/explode
 
