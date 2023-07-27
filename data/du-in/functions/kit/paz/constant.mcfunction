@@ -15,7 +15,8 @@ execute if entity @s[tag=armor,tag=!stolen] run function du-in:kit/paz/armor
 execute if entity @s[level=1] run function du-in:kit/paz/ability/item
 
 #Run ability#
-execute if entity @s[tag=kitActions] run function du-in:kit/paz/ability/init
+execute if entity @s[tag=!void,tag=kitActions] run function du-in:kit/paz/ability/init
+execute if entity @s[tag=void,tag=kitActions] run function du-in:kit/paz/ability/void/init
 
 #Give Fortnite card
 execute if entity @s[tag=!stolen,tag=!teamDead,tag=fortniteCard] unless entity @s[scores={triCount=1}] run item replace entity @s hotbar.8 with minecraft:gunpowder{display:{Name:'{"text":"$19 Fortnite Card","color":"gray","bold":true}',Lore:['{"text":"Who wants it?","color":"gray","bold":false}','{"text":"Use at Vending machine to upgrade weapon!","color":"green","bold":true}']},HideFlags:5,Unbreakable:1b,CustomModelData:2019,weaponItem:1b} 1
