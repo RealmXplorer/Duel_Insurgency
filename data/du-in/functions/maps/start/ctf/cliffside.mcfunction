@@ -1,8 +1,8 @@
 tellraw @a ["",{"text":"The ","bold":false,"color":"gray"},{"text":"Cliffside Asylum ","bold":true,"color":"yellow"},{"text":"map has been chosen!","bold":false,"color":"gray"}]
 
 #Teleport#
-tp @a[tag=!working,scores={spawnpoint=0..2}] 5003 5 -5043 180 0
-tp @a[tag=!working,scores={spawnpoint=3..4}] 4997 5 -5083 90 0
+tp @a[tag=!working,scores={team=1}] 5003 5 -5043 180 0
+tp @a[tag=!working,scores={team=2}] 4997 5 -5083 90 0
 #tp @a[tag=!working,scores={spawnpoint=5..6}] 5010 5 -5058 90 0
 #tp @a[tag=!working,scores={spawnpoint=7..}] 4996 5 -5035 -90 0
 
