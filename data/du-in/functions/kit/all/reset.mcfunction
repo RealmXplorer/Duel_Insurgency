@@ -20,6 +20,8 @@ tag @s remove springLock
 tag @s remove undead
 tag @s remove sus
 tag @s remove maxTP
+tag @s remove deathDouble
+tag @s remove cooldown
 
 #Important below
 tag @s remove kitPicked
