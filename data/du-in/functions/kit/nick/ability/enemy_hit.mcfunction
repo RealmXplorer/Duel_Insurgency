@@ -23,6 +23,9 @@ scoreboard players set @s[scores={kit=3},tag=magma] magmaTimer 0
 tag @s[tag=pursue] add whatTheWhat
 scoreboard players set @s[tag=pursue] gumballPursueTimer 40
 
+scoreboard players set @s[scores={kit=21,cardPower=..5}] cardPower 0
+scoreboard players remove @s[scores={kit=21,cardPower=6..}] cardPower 5
+
 execute if entity @s[tag=stolen] run tag @s add kitDone
 clear @s[tag=stolen] carrot_on_a_stick
 tellraw @s[tag=!sabotaged] [{"text":"You've been hustled!","bold":true,"color":"red"}]

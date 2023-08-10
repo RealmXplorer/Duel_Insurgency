@@ -350,6 +350,7 @@ tag @a remove phoenix
 tag @a remove caveSpider
 tag @a remove sus
 tag @a remove suicide
+tag @a remove boneAttack
 scoreboard players reset @a dmDeath
 scoreboard players set @a diedIngame 0
 

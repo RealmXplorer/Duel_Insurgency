@@ -9,3 +9,5 @@ scoreboard players remove @s cardPower 5
 clear @s minecraft:paper 1
 xp set @s[tag=!stolen] 240 levels
 clear @s carrot_on_a_stick
+execute if entity @s[tag=stolen] run tag @s add kitDone
+tag @s remove sabotaged
