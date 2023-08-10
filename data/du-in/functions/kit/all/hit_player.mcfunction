@@ -16,8 +16,8 @@ execute if entity @s[scores={comboScore=3..},tag=playing] run function du-in:kit
     execute if entity @s[tag=stolen,tag=playing,predicate=du-in:chance/forty_chance] run scoreboard players add @s villagerEmeralds 1
 
 #Saac Money#
-    execute if entity @s[scores={kit=1000},tag=playing,predicate=du-in:chance/third_chance] run function du-in:kit/saac/money/init
-    execute if entity @s[scores={kit=1000},tag=!broken,tag=playing,predicate=du-in:chance/third_chance] run function du-in:kit/saac/passive/break
+    execute if entity @s[scores={kit=1000},tag=playing,predicate=du-in:chance/forty_chance] run function du-in:kit/saac/money/init
+    execute if entity @s[scores={kit=1000},tag=!broken,tag=!pussFear,tag=playing,predicate=du-in:chance/third_chance] run function du-in:kit/saac/passive/break
 
 #Cuphead Card system#
     scoreboard players add @s[scores={kit=21},tag=!stolen] cardPower 1

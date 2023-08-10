@@ -11,12 +11,12 @@ scoreboard players remove @s[scores={saacDisTimer=-99..}] saacDisTimer 1
 #SAAC Weapon#
 execute if entity @s[tag=armor] run function du-in:kit/saac/armor
 
-execute if entity @s[tag=broken,scores={saacDisTimer=..0}] run function du-in:kit/saac/passive/fix
+execute if entity @s[tag=broken,tag=!pussFear,scores={saacDisTimer=..0}] run function du-in:kit/saac/passive/fix
 
-execute if entity @s[tag=!teamDead,tag=!stolen] unless entity @s[scores={weapCount=1}] run function du-in:kit/saac/weapon
+execute if entity @s[tag=!teamDead,tag=!pussFear,tag=!stolen] unless entity @s[scores={weapCount=1}] run function du-in:kit/saac/weapon
 
 #Ability#
-item replace entity @s[level=1] weapon.offhand with minecraft:carrot_on_a_stick{display:{Name:'[{"text":"«EPIC» ","color":"gold","bold":"true","italic":"true"},{"text":"The Great Bamboozle","color":"red","bold":true,"italic":false,"underlined":false,"strikethrough":false,"obfuscated":false}]',Lore:['{"text":"Right click to activate!","color":"dark_purple","bold":true}','[{"text":""}]','{"text":"Wait what..?","color":"dark_gray"}','{"text":"","color":"dark_gray"}']},HideFlags:1,Enchantments:[{id:"minecraft:protection",lvl:1s}],CustomModelData:2000,weaponItem:1b}
+item replace entity @s[level=1] weapon.offhand with minecraft:carrot_on_a_stick{display:{Name:'[{"text":"«EPIC» ","color":"gold","bold":true,"italic":true},{"text":"The Great Bamboozle","color":"red","bold":true,"italic":false,"underlined":false,"strikethrough":false,"obfuscated":false}]',Lore:['{"text":"Right click to activate!","color":"dark_purple","bold":true}','[{"text":""}]','{"text":"Wait what..?","color":"dark_gray"}','{"text":"","color":"dark_gray"}']},HideFlags:1,Enchantments:[{id:"minecraft:protection",lvl:1s}],CustomModelData:2000,weaponItem:1b}
 
 
 execute if entity @s[tag=!void,tag=kitActions,predicate=!du-in:second_held] run function du-in:kit/saac/ability/init
