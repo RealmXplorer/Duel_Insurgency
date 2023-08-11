@@ -10,4 +10,4 @@ playsound minecraft:entity.zombie.infect master @a ~ ~ ~ 2 1
 playsound minecraft:entity.zombie.infect master @a ~ ~ ~ 2 .5
 playsound minecraft:entity.zombie.infect master @a ~ ~ ~ 2 2
 
-execute positioned ^.3 ^ ^2 if entity @s[distance=..25] run function du-in:kit/death/ability/left_raycast
+execute positioned ^.4 ^ ^2 if entity @s[distance=..20] run function du-in:kit/death/ability/left_raycast

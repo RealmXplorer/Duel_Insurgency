@@ -10,7 +10,7 @@ playsound minecraft:soundeffect.parry master @a ~ ~ ~ 100 .5
 playsound minecraft:soundeffect.parry master @a ~ ~ ~ 100 2
 #function du-in:kit/death/ability/raycast
 execute positioned ^-4 ^ ^ if entity @s[distance=..25] run function du-in:kit/death/ability/left_raycast
-execute positioned ^4 ^ ^ if entity @s[distance=..25] run function du-in:kit/death/ability/raycast
+execute positioned ^4 ^ ^ if entity @s[distance=..25] run function du-in:kit/death/ability/right_raycast
 
 #Remove ability from hand
 clear @s minecraft:carrot_on_a_stick
