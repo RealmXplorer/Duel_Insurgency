@@ -3,7 +3,8 @@ tag @a[tag=lobby,tag=playing] remove lobby
 scoreboard players reset #main startSeq
 gamemode adventure @a[tag=playing]
 
-scoreboard objectives setdisplay belowName Health
+#scoreboard objectives setdisplay belowName Health
+scoreboard objectives setdisplay below_name Health
 scoreboard objectives setdisplay list killStreak
 
 tag @a[tag=!working] remove kitPicked

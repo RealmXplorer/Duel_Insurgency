@@ -20,5 +20,10 @@
             "trigger": "minecraft:impossible"
         }
     },
+    "requirements": [
+        [
+            "parkour"
+        ]
+    ],
     "parent": "du-in:root"
 }

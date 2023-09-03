@@ -21,13 +21,13 @@ tag @a remove duneLock
 tag @a remove bowlLock
 tag @a remove wsLock
 tag @a remove jermLock
-tag @a remove chessLock
+tag @a remove hauntedLock
 tag @a remove shLock
 tag @a remove mustafarLock
 tag @a remove escLock
 tag @a remove chancelLock
 tag @a remove endLock
-tag @a remove prideLock
+tag @a remove pazLock
 
 
 schedule clear du-in:music/free/free

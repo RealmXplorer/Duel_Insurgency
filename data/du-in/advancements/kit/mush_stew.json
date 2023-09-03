@@ -15,6 +15,11 @@
             }
         }
     },
+    "requirements": [
+        [
+            "bowl"
+        ]
+    ],
     "rewards": {
         "function": "du-in:kit/runza/runza"
     }

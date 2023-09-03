@@ -23,6 +23,11 @@
       }
 
   },
+  "requirements": [
+      [
+          "killgoner"
+      ]
+  ],
 
   "rewards": {
 

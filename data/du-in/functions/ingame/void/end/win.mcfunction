@@ -15,19 +15,24 @@ execute if score #main pylonsDestroyed matches 3 run function du-in:lobby/displa
 execute if score #main pylonsDestroyed matches 3 run function du-in:lobby/void/wind
 
 #Stop sounds and music
-stopsound @a record
+stopsound @a record minecraft:music.pursuithappiness
 stopsound @a master minecraft:music.suffocation
 stopsound @a ambient minecraft:soundeffect.whisper
 stopsound @a master minecraft:entity.warden.heartbeat
 
+#End environmental hazards
+kill @e[type=marker,tag=bridgeMarker]
+function du-in:ingame/void/hazard/fire/fire_end
+function du-in:ingame/void/hazard/shock/end_shock
+
 #Clear all scheduled ambience and music
 function du-in:music/void/schedule_clear
 
+
 #Play sound of pylon destroyed
-execute positioned 97 20 -107 run playsound minecraft:soundeffect.pylon.destroy master @a ~ ~ ~ 10000
+execute positioned 97 20 -107 unless score #main pylonsDestroyed matches 4.. run playsound minecraft:soundeffect.pylon.destroy master @a ~ ~ ~ 10000
 
 execute if score #main pylonsDestroyed matches 4.. positioned 97 20 -107 run playsound minecraft:block.sculk_shrieker.shriek master @a ~ ~ ~ 100000 .5
-execute if score #main pylonsDestroyed matches 4.. positioned 97 20 -107 run playsound minecraft:soundeffect.countdown master @a ~ ~ ~ 100000 .5
 execute if score #main pylonsDestroyed matches 4.. run title @a[tag=!falseWin] title [{"text":"Multiverse Stability","bold":true,"color":"red"}]
 execute if score #main pylonsDestroyed matches 4.. run title @a[tag=!falseWin,tag=!lobby] subtitle {"text":"COLLAPSING","color":"blue"}
 
@@ -43,6 +48,7 @@ advancement grant @a[tag=!spectating] only du-in:void/void_free
 
 #Hide bossbar
 bossbar set gast:pylon visible false
+bossbar set gast:pylon4 visible false
 execute if score #main pylonsDestroyed matches 4.. run tag @a add timeFree
 execute store result score @a lastVoidLock run scoreboard players get #main map
 tag @a[scores={lastVoidLock=1},tag=cmap,tag=!timeFree] add mcLock
@@ -58,7 +64,7 @@ tag @a[scores={lastVoidLock=10},tag=cmap,tag=!timeFree] add harvestLock
 tag @a[scores={lastVoidLock=11},tag=cmap,tag=!timeFree] add mirageLock
 tag @a[scores={lastVoidLock=12},tag=cmap,tag=!timeFree] add wsLock
 tag @a[scores={lastVoidLock=13},tag=cmap,tag=!timeFree] add jermLock
-tag @a[scores={lastVoidLock=14},tag=cmap,tag=!timeFree] add chessLock
+tag @a[scores={lastVoidLock=14},tag=cmap,tag=!timeFree] add hauntedLock
 tag @a[scores={lastVoidLock=15},tag=cmap,tag=!timeFree] add shLock
 tag @a[scores={lastVoidLock=16},tag=cmap,tag=!timeFree] add escLock
 
@@ -68,10 +74,11 @@ tag @a[scores={lastVoidLock=3},tag=kothMap,tag=!timeFree] add endLock
 tag @a[scores={lastVoidLock=4},tag=kothMap,tag=!timeFree] add bowlLock
 tag @a[scores={lastVoidLock=5},tag=kothMap,tag=!timeFree] add moraLock
 tag @a[scores={lastVoidLock=6},tag=kothMap,tag=!timeFree] add duneLock
-tag @a[scores={lastVoidLock=7},tag=kothMap,tag=!timeFree] add prideLock
+tag @a[scores={lastVoidLock=7},tag=kothMap,tag=!timeFree] add pazLock
 tag @a[scores={lastVoidLock=8},tag=kothMap,tag=!timeFree] add chancelLock
 
-execute as @a[tag=playing] run function du-in:ingame/void/end/dream
+execute as @a[tag=playing] unless score #main pylonsDestroyed matches 4 run function du-in:ingame/void/end/dream
+execute as @a[tag=playing] if score #main pylonsDestroyed matches 4 run function du-in:ingame/void/end/vision
 
 tag @a remove kothMap
 tag @a add fromVoid

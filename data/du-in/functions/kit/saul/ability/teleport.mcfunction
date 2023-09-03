@@ -5,8 +5,6 @@ clear @s minecraft:carrot_on_a_stick
 #Start cooldown
 xp set @s[tag=!stolen] 450 levels
 
-##COPYRIGHT
-#playsound minecraft:saul.ability voice @a ~ ~ ~ 0.5 1
 playsound minecraft:sans.ability voice @a ~ ~ ~ 0.5 1
 playsound minecraft:sans.ability voice @a ~ ~ ~ 0.5 .5
 playsound minecraft:sans.ability voice @a ~ ~ ~ 0.5 2

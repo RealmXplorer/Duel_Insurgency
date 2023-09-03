@@ -32,7 +32,7 @@ scoreboard players set @s Kills 0
 scoreboard players set @s Diamonds 0
 
 #Set player spawnpoint to 1 (This prevents the game from breaking on first game)
-scoreboard players set @s spawnpoint 1
+#scoreboard players set @s spawnpoint 1
 
 #Set Level and exp cap 
 scoreboard players set @s level 0
@@ -50,6 +50,15 @@ scoreboard players operation @s[scores={player=0}] player = #main player
 #Set map countdown to all players (also acts as a failsafe)
 bossbar set minecraft:map_countdown players @a
 bossbar set bossbar:gametimer players @a
+
+#Set attributes
+attribute @s minecraft:generic.armor base set 0
+attribute @s minecraft:generic.armor_toughness base set 0
+attribute @s minecraft:generic.knockback_resistance base set 0
+attribute @s minecraft:generic.max_health base set 20
+attribute @s minecraft:generic.attack_damage base set 0
+attribute @s minecraft:generic.attack_speed base set 4
+attribute @s minecraft:generic.movement_speed base set 0.10000000149
 
 #Give all players saturation
 #effect give @a minecraft:saturation 1000000 100 true

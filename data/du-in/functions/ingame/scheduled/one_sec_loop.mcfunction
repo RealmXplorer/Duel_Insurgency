@@ -1,7 +1,3 @@
-#Kill all items buried in the ground#
-#execute if entity @a[scores={kit=1000..1001}] at @a[tag=playing] as @e[type=minecraft:wandering_trader,tag=vending,distance=..30] at @s run function du-in:ingame/vending_machine/vendor
-execute if entity @a[scores={kit=1000..1001}] at @a[tag=playing] as @e[type=minecraft:painting,distance=..30] at @s run function du-in:ingame/vending_machine/vending
-
 #Run as all players (every second)
 execute as @a[gamemode=adventure,tag=playing,tag=!grave] at @s run function du-in:ingame/scheduled/play_one_sec
 
@@ -17,7 +13,7 @@ execute as @a[gamemode=!spectator,tag=playing,tag=!startgame,tag=!pussFear] if s
 
 
 #Add 1 to score "spawnpoint"
-scoreboard players add @r[tag=playing,gamemode=!spectator,predicate=du-in:chance/half_chance] spawnpoint 1
+#scoreboard players add @r[tag=playing,gamemode=!spectator,predicate=du-in:chance/half_chance] spawnpoint 1
 
 execute if score #main matchDeaths matches 12.. if entity @a[gamemode=adventure,scores={kit=28},tag=!win,tag=!lose] run function du-in:kit/death/passive/start
 

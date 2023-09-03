@@ -19,4 +19,4 @@ item replace entity @s[level=1] weapon.offhand with minecraft:carrot_on_a_stick{
 
 attribute @s[tag=!stolen] generic.movement_speed base set 0.135
 #.1225
-attribute @s[tag=!stolen,tag=!pussFear,tag=!parry] generic.knockback_resistance base set 0.03
+attribute @s[tag=!stolen,tag=!pussFear] generic.knockback_resistance base set 0.03

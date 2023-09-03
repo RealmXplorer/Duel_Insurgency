@@ -99,10 +99,10 @@ summon minecraft:item 236 92 24 {NoGravity:1b,Age:-32768,Health:99999,PickupDela
 execute if entity @a[tag=mirageLock,tag=partyLeader] run summon marker 236 92 24 {Tags:["displayItem","voidLocked"]}
 summon marker 234 91 24 {Tags:["mapVote","displayItem","vote11"]} 
 
-#Chess
-summon area_effect_cloud 236 92 22 {Duration:2147483647,Tags:["displayItem"],CustomNameVisible:1b,CustomName:"{\"text\":\"Chess\",\"color\":\"red\",\"bold\":true}"}
-summon minecraft:item 236 92 22 {NoGravity:1b,Age:-32768,Health:99999,PickupDelay:32767,Tags:["mapLabel","displayItem"],Item:{id:"minecraft:red_nether_bricks",Count:1b}}
-execute if entity @a[tag=chessLock,tag=partyLeader] run summon marker 236 92 22 {Tags:["displayItem","voidLocked"]}
+#Haunted House
+summon area_effect_cloud 236 92 22 {Duration:2147483647,Tags:["displayItem"],CustomNameVisible:1b,CustomName:"{\"text\":\"Haunted House\",\"color\":\"red\",\"bold\":true}"}
+summon minecraft:item 236 92 22 {NoGravity:1b,Age:-32768,Health:99999,PickupDelay:32767,Tags:["mapLabel","displayItem"],Item:{id:"minecraft:cobweb",Count:1b}}
+execute if entity @a[tag=hauntedLock,tag=partyLeader] run summon marker 236 92 22 {Tags:["displayItem","voidLocked"]}
 summon marker 234 91 22 {Tags:["mapVote","displayItem","vote14"]} 
 
 #Saac House

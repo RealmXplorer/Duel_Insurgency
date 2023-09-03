@@ -4,8 +4,8 @@ execute if score Red capturePoints >= #main cqHalf run title @a[tag=cqIngame,tag
 
 #Play sound
 #execute at @a run playsound minecraft:block.anvil.use master @p ~ ~ ~ 1 1.15
-execute at @a as @a run playsound minecraft:soundeffect.woosh master @s ~ ~ ~ .5 1
-execute at @a as @a run playsound minecraft:soundeffect.woosh master @s ~ ~ ~ .5 2
+execute as @a at @s run playsound minecraft:soundeffect.woosh master @s ~ ~ ~ .5 1
+execute as @a at @s run playsound minecraft:soundeffect.woosh master @s ~ ~ ~ .5 2
 
 #End function
 tag @a add cqHalf

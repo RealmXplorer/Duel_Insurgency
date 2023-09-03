@@ -22,7 +22,6 @@ tag @s remove sus
 tag @s remove maxTP
 tag @s remove deathDouble
 tag @s remove cooldown
-tag @s remove boneAttack
 
 #Important below
 tag @s remove kitPicked
@@ -49,6 +48,7 @@ scoreboard players reset @s kickstartDrink
 scoreboard players reset @s card
 scoreboard players reset @s ralseiTP
 
+scoreboard players set @s deathWeapSwitch 0
 
 
 clear @s[tag=!kitMenu]

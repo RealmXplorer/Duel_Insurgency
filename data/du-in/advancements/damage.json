@@ -4,6 +4,11 @@
             "trigger": "minecraft:entity_hurt_player"
         }
     },
+    "requirements": [
+        [
+            "damage"
+        ]
+    ],
     "rewards": {
         "function": "du-in:kit/all/damage"
     }

@@ -8,7 +8,7 @@ tag @a remove hacker
 tag @s[tag=!sabotaged] add hacker
 
 #Mark all players for DDoS
-execute unless entity @s[tag=sabotaged] as @a[tag=!hacker] at @s run summon ender_pearl ~ ~ ~ {NoGravity:1b,Item:{id:"minecraft:ender_pearl",Count:1b,tag:{CustomModelData:100}},Tags:["blakeTP","notAssigned"],Owner:[I;0,0,0,0]}
+execute unless entity @s[tag=sabotaged] as @a[gamemode=!spectator,tag=!hacker] at @s run summon ender_pearl ~ ~ ~ {NoGravity:1b,Item:{id:"minecraft:ender_pearl",Count:1b,tag:{CustomModelData:100}},Tags:["blakeTP","notAssigned"],Owner:[I;0,0,0,0]}
 execute if entity @s[tag=sabotaged] run summon ender_pearl ~ ~ ~ {NoGravity:1b,Item:{id:"minecraft:ender_pearl",Count:1b,tag:{CustomModelData:100}},Tags:["blakeTP","notAssigned"],Owner:[I;0,0,0,0]}
 
 #Play sounds

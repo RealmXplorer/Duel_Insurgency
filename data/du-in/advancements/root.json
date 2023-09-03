@@ -22,5 +22,10 @@
         "play": {
             "trigger": "minecraft:tick"
         }
-    }
+    },
+    "requirements": [
+        [
+            "play"
+        ]
+    ]
 }

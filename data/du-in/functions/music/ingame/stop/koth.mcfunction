@@ -1,4 +1,4 @@
-stopsound @s record
+stopsound @s[tag=!void] record
 
 schedule clear du-in:music/ingame/default/koth
 schedule clear du-in:music/ingame/oldpack/koth

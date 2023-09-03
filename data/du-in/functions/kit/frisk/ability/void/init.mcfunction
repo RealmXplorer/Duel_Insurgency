@@ -2,6 +2,7 @@ execute if entity @s[tag=!sabotaged] run effect give @e[type=skeleton,distance=.
 effect give @s minecraft:weakness 2 255 true
 effect give @s[tag=sabotaged] minecraft:slowness 2 255 true
 effect give @s[tag=!sabotaged] minecraft:fire_resistance 2 255 true
+effect give @s[tag=!sabotaged] minecraft:resistance 2 255 true
 effect give @s[tag=!sabotaged] minecraft:instant_health 1 0 true
 effect give @s[tag=!sabotaged] minecraft:speed 3 1 true
 

@@ -18,6 +18,11 @@
       }
     }
   },
+  "requirements": [
+      [
+          "requirement"
+      ]
+  ],
   "rewards": {
     "function": "du-in:kit/all/hit"
   }

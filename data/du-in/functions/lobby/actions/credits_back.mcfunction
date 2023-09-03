@@ -10,4 +10,6 @@ schedule clear du-in:music/free/free
 function du-in:lobby/item_reset
 tag @s remove credits
 tag @s remove subLobby
+title @s title ""
+title @s subtitle ""
 function du-in:lobby/scheduled/gamemode_select

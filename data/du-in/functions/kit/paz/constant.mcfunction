@@ -26,7 +26,7 @@ execute store result score @s[tag=!stolen] triCount run clear @s[tag=!kitMenu] g
 #Base Speed#
 attribute @s[tag=!stolen] minecraft:generic.movement_speed base set 0.1375
 #Base Weight#
-attribute @s[tag=!stolen,tag=!pussFear,tag=!parry] generic.knockback_resistance base set 0.35
+attribute @s[tag=!stolen,tag=!pussFear] generic.knockback_resistance base set 0.35
 
 #     GET SHIT ON      #
 #   ABSOLUTE SHIITER   #

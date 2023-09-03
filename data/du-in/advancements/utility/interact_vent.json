@@ -10,6 +10,11 @@
       }
     }
   },
+  "requirements": [
+      [
+          "requirement"
+      ]
+  ],
   "rewards": {
     "function": "du-in:ingame/vents/run"
   }

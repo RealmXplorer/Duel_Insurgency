@@ -24,7 +24,8 @@ execute store result score @s[tag=!stolen] triCount run clear @s[tag=!kitMenu] g
 #Ability#
 item replace entity @s[level=1] weapon.offhand with minecraft:carrot_on_a_stick{display:{Name:'{"text":"Lullaby","color":"gold","bold":true,"italic":false,"underlined":false,"strikethrough":false,"obfuscated":false}',Lore:['{"text":"Right click to activate!","color":"dark_purple","bold":true}','[{"text":""}]','{"text":"Puts nearby enemies to sleep","color":"dark_gray"}','{"text":"","color":"dark_gray"}']},HideFlags:1,Enchantments:[{id:"minecraft:protection",lvl:1s}],CustomModelData:132,weaponItem:1b}
 
-execute if entity @s[tag=kitActions] run function du-in:kit/ralsei/ability/init
+execute if entity @s[tag=!void,tag=kitActions] run function du-in:kit/ralsei/ability/init
+execute if entity @s[tag=void,tag=kitActions] run function du-in:kit/ralsei/ability/void/init
 
 #Secondary Ability Use
 execute if entity @s[tag=secKitActions] run function du-in:kit/ralsei/prayer/init

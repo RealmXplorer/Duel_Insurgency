@@ -1,12 +1,12 @@
 scoreboard players set @s[tag=!sabotaged] pussTimer 60
 effect give @s speed 2 0 true
+
 effect give @s[scores={gameDeaths=1..},tag=!sabotaged] strength 1 0 true
-effect give @s[scores={gameDeaths=2..},tag=!sabotaged] speed 2 1 true
-effect give @s[scores={gameDeaths=3..},tag=!sabotaged] strength 1 0 true
-effect give @s[scores={gameDeaths=5..},tag=!sabotaged] haste 1 0 true
+effect give @s[scores={gameDeaths=3..},tag=!sabotaged] speed 2 1 true
+effect give @s[scores={gameDeaths=5..},tag=!sabotaged] strength 2 0 true
+effect give @s[scores={gameDeaths=7..},tag=!sabotaged] haste 2 0 true
 
 playsound minecraft:sans.ability master @a ~ ~ ~ 1 0.95
-##MAYBE COPYRIGHT
 playsound minecraft:puss.ability master @a ~ ~ ~ 100 1
 particle minecraft:crit ~ ~.1 ~ 0.1 1 0.1 0 100 force
 particle minecraft:poof ~ ~.1 ~ 0.1 0.1 0.1 0.05 100 force

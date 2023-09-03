@@ -7,6 +7,12 @@ kill @e[tag=mapSpecific]
 tag @a remove voidReady
 scoreboard players set #main voidReadyOnline 0
 
+schedule function du-in:ingame/void/goner/check 3s
+schedule clear du-in:ingame/scheduled/ambience/init
+schedule clear du-in:maps/jermall/stop
+schedule clear du-in:maps/jermall/pick_victim
+schedule clear du-in:maps/jermall/eat_victim
+
 tag @a[tag=kothIngame] add kothMap
 
 tag @a remove cIngame
@@ -72,6 +78,8 @@ execute if score #main pylonsDestroyed matches 3 run function du-in:ingame/void/
 
 #Bridge 1-2
 summon marker 10045.0 42 10030.5 {Tags:["gonerSpawn","mapSpecific"]}
+summon marker 10053 42 10030 {Tags:["gonerSpawn","mapSpecific"]}
+summon marker 10038 42 10030 {Tags:["gonerSpawn","mapSpecific"]}
 
 #10045.0 42 10030.5
 
@@ -88,6 +96,9 @@ summon marker 10045.0 42 10030.5 {Tags:["gonerSpawn","mapSpecific"]}
 
 #Bridge 2-3
 summon marker 10062.5 42 10046.0 {Tags:["gonerSpawn","mapSpecific"]}
+summon marker 10062 42 10054 {Tags:["gonerSpawn","mapSpecific"]}
+summon marker 10062 42 10039 {Tags:["gonerSpawn","mapSpecific"]}
+
 #10062.5 42 10046.0
 
 
@@ -103,6 +114,9 @@ summon marker 10062.5 42 10046.0 {Tags:["gonerSpawn","mapSpecific"]}
 
 #Bridge 3-4
 summon marker 10046.0 42 10063.5 {Tags:["gonerSpawn","mapSpecific"]}
+summon marker 10038 42 10063 {Tags:["gonerSpawn","mapSpecific"]}
+summon marker 10053 42 10063 {Tags:["gonerSpawn","mapSpecific"]}
+
 #10046.0 42 10063.5
 
 
@@ -118,9 +132,32 @@ summon marker 10046.0 42 10063.5 {Tags:["gonerSpawn","mapSpecific"]}
 
 #Bridge 4-1
 summon marker 10029.5 42 10046.0 {Tags:["gonerSpawn","mapSpecific"]}
+summon marker 10029 42 10039 {Tags:["gonerSpawn","mapSpecific"]}
+summon marker 10029 42 10054 {Tags:["gonerSpawn","mapSpecific"]}
+
 #10029.5 42 10046.0 
 
 
+ summon marker 10066 42 10067 {Tags:["gonerSpawn","mapSpecific"]}
+ summon marker 10066 42 10026 {Tags:["gonerSpawn","mapSpecific"]}
+ summon marker 10025 42 10026 {Tags:["gonerSpawn","mapSpecific"]}
+ summon marker 10025 42 10067 {Tags:["gonerSpawn","mapSpecific"]}
+
+ summon marker 10066 42 10058 {Tags:["gonerSpawn","mapSpecific"]}
+ summon marker 10057 42 10067 {Tags:["gonerSpawn","mapSpecific"]}
+
+ summon marker 10033 42 10068 {Tags:["gonerSpawn","mapSpecific"]}
+ summon marker 10025 42 10058 {Tags:["gonerSpawn","mapSpecific"]}
+
+ summon marker 10024 42 10034 {Tags:["gonerSpawn","mapSpecific"]}
+ summon marker 10033 42 10025 {Tags:["gonerSpawn","mapSpecific"]}
+
+ summon marker 10058 42 10025 {Tags:["gonerSpawn","mapSpecific"]}
+ summon marker 10066 42 10035 {Tags:["gonerSpawn","mapSpecific"]}
+
+#10033 42 10068
+
+#10057 42 10067
 #Center
 #10045.0 42 10047.0
 
@@ -169,7 +206,9 @@ execute positioned 10046 42 10047 run playsound minecraft:soundeffect.voidbell m
 
 #scoreboard players set @a gonersKilled 30
 
-scoreboard players set @a gonersKilled 20
+execute if score #main pylonsDestroyed matches 0 run scoreboard players set @a gonersKilled 10
+execute if score #main pylonsDestroyed matches 1 run scoreboard players set @a gonersKilled 15
+execute unless score #main pylonsDestroyed matches 0..1 run scoreboard players set @a gonersKilled 20
 execute as @a[gamemode=!spectator] run scoreboard players add @a gonersKilled 10
 
 advancement grant @a[gamemode=!spectator] only du-in:void/void
@@ -184,7 +223,7 @@ scoreboard objectives setdisplay sidebar playerCount
 scoreboard players set #main wave 1
 
 title @a title " "
-title @a subtitle [{"text":"Wave ","color":"light_purple","bold":true},{"score":{"name":"#main","objective":"wave"},"color":"dark_purple","bold":true},{"text":"/2","color":"dark_purple","bold":true}]
+execute unless score #main pylonsDestroyed matches 3 run title @a subtitle [{"text":"Wave ","color":"light_purple","bold":true},{"score":{"name":"#main","objective":"wave"},"color":"dark_purple","bold":true},{"text":"/2","color":"dark_purple","bold":true}]
 
 bossbar set gast:pylon name [{"text":"Pylon Stabilization: ","bold":true,"color":"white"},{"score":{"name":"@a[gamemode=adventure,tag=void,limit=1]","objective":"gonersKilled"},"color":"red","bold":true},{"text":" Goners left","color":"gray","bold":true}]
 execute store result bossbar gast:pylon max run scoreboard players get @a[gamemode=adventure,tag=void,limit=1] gonersKilled
@@ -202,7 +241,13 @@ bossbar set minecraft:redkoth visible false
 bossbar set minecraft:classicblue visible false
 bossbar set minecraft:classicred visible false
 
-bossbar set gast:pylon players @a
-bossbar set gast:pylon visible true
+execute unless score #main pylonsDestroyed matches 3 run bossbar set gast:pylon players @a
+execute unless score #main pylonsDestroyed matches 3 run bossbar set gast:pylon visible true
+
+execute if score #main pylonsDestroyed matches 3 run bossbar set gast:pylon4 players @a
+execute if score #main pylonsDestroyed matches 3 run bossbar set gast:pylon4 visible true
+
+bossbar set gast:pylon4 name [{"text":"Time to Pylon shutdown: ","bold":true,"color":"white"},{"text":"SURVIVE","bold":true,"color":"red"}]
+execute store result bossbar gast:pylon4 max run scoreboard players get @a[gamemode=adventure,tag=void,limit=1] pylonTimer
 
 schedule function du-in:ingame/void/spawn/vending 10t

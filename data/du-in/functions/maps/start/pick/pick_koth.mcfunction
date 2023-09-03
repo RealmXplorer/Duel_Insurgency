@@ -4,6 +4,6 @@ execute if score #main map matches 3 run function du-in:maps/start/koth/end
 execute if score #main map matches 4 run function du-in:maps/start/koth/bowl
 execute if score #main map matches 5 run function du-in:maps/start/koth/moraband
 execute if score #main map matches 6 run function du-in:maps/start/koth/dunes
-execute if score #main map matches 7 run function du-in:maps/start/koth/pride_rock
+execute if score #main map matches 7 run function du-in:maps/start/koth/paz_pool
 execute if score #main map matches 8 run function du-in:maps/start/koth/chancel
-execute if score #main map matches 9 run tag @r add mapRandom
+#execute if score #main map matches 9 run tag @r add mapRandom

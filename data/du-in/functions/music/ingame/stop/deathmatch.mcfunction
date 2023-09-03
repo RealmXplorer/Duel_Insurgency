@@ -1,5 +1,4 @@
-stopsound @s record
-
+stopsound @s[tag=!void] record
 schedule clear du-in:music/ingame/default/deathmatch
 schedule clear du-in:music/ingame/halloween/deathmatch
 schedule clear du-in:music/ingame/oldpack/deathmatch

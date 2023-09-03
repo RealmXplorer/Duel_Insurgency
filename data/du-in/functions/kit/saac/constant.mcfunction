@@ -4,8 +4,8 @@ execute if entity @s[scores={jump=1..}] run function du-in:kit/saac/sounds/jump
 
 #Timers
 tag @s[tag=!legMusicOff,tag=!ctfIngame,tag=!cqIngame,tag=!void] add saac
-scoreboard players add @s kickstartKind 1
-scoreboard players set @s[scores={kickstartKind=5..}] kickstartKind 1
+#scoreboard players add @s kickstartKind 1
+#scoreboard players set @s[scores={kickstartKind=5..}] kickstartKind 1
 scoreboard players remove @s[scores={saacDisTimer=-99..}] saacDisTimer 1
 
 #SAAC Weapon#

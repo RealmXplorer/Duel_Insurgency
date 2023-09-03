@@ -21,6 +21,11 @@
       }
 
   },
+    "requirements": [
+        [
+            "damage"
+        ]
+    ],
 
   "rewards": {
 

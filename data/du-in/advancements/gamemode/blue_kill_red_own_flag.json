@@ -20,6 +20,11 @@
         }
       }
     },
+    "requirements": [
+        [
+            "requirement"
+        ]
+    ],
     "rewards": {
       "function": "du-in:ingame/ctf/red/red_flag_get"
     }

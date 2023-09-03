@@ -12,13 +12,14 @@ execute if entity @s[tag=!stolen,tag=!teamDead] unless entity @s[scores={weapCou
 #Ability#
 execute if entity @s[level=1] run function du-in:kit/nick/ability/item
 
-execute if entity @s[tag=kitActions] run function du-in:kit/nick/ability/init
+execute if entity @s[tag=!void,tag=kitActions] run function du-in:kit/nick/ability/init
+execute if entity @s[tag=void,tag=kitActions] run function du-in:kit/nick/ability/void/init
 
 #Armor#
 execute if entity @s[tag=armor,tag=!stolen] run function du-in:kit/nick/armor
 
 #Attributes#
-attribute @s[tag=!stolen,tag=!pussFear,tag=!parry] generic.knockback_resistance base set 0.01
-effect give @s[tag=!stolen] minecraft:night_vision infinite 100 true
+attribute @s[tag=!stolen,tag=!pussFear] generic.knockback_resistance base set 0.01
+effect give @s[predicate=!du-in:effect/has_night_vision,tag=!stolen] minecraft:night_vision infinite 100 true
 attribute @s[tag=!stolen] generic.movement_speed base set 0.14
 #.12

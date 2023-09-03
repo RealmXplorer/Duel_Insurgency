@@ -32,4 +32,4 @@ attribute @s[tag=!stolen,tag=!deathDouble] minecraft:generic.movement_speed base
 attribute @s[tag=!stolen,tag=deathDouble] minecraft:generic.movement_speed base set 0.14
 
 #Base Weight
-attribute @s[tag=!stolen,tag=!pussFear,tag=!parry] generic.knockback_resistance base set 0.23
+attribute @s[tag=!stolen,tag=!pussFear] generic.knockback_resistance base set 0.23

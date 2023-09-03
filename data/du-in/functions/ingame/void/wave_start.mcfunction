@@ -13,7 +13,9 @@ scoreboard players add #main wave 1
 
 #scoreboard players set @a gonersKilled 30
 #execute if score #main online matches 3.. as @a[gamemode=!spectator] run scoreboard players add @a gonersKilled 5
- scoreboard players set @a gonersKilled 20
+execute if score #main pylonsDestroyed matches 0 run scoreboard players set @a gonersKilled 10
+execute if score #main pylonsDestroyed matches 1 run scoreboard players set @a gonersKilled 15
+execute unless score #main pylonsDestroyed matches 0..1 run scoreboard players set @a gonersKilled 20
 execute as @a[gamemode=!spectator] run scoreboard players add @a gonersKilled 12
 #execute if score #main pylonsDestroyed matches ..2 run scoreboard players set @a gonersKilled 30
 #execute if score #main pylonsDestroyed matches 3 run scoreboard players set @a gonersKilled 30

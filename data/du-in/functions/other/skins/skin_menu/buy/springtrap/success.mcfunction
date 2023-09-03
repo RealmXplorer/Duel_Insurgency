@@ -1,4 +1,4 @@
-scoreboard players remove @s Diamonds 450
+scoreboard players remove @s Diamonds 600
 tellraw @s ["",{"text":"Springtrap Skins purchased!","color":"green","bold":true},{"text":" (You now have ","color":"gray"},{"score":{"name":"@s","objective":"Diamonds"},"color":"aqua"},{"text":" diamonds)","color":"gray"}]
 playsound minecraft:entity.player.levelup master @s ~ ~ ~ 1000 1 1
 playsound minecraft:soundeffect.unlock master @s ~ ~ ~ 1000 1 1

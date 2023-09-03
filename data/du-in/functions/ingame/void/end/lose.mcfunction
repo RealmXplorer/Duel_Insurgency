@@ -13,6 +13,7 @@ execute positioned 97 20 -107 run playsound minecraft:goner.mouth.spawn master @
 execute positioned 97 20 -107 run playsound minecraft:goner.mouth.spawn master @a ~ ~ ~ 100000 0.75
 setblock 97 20 -107 minecraft:black_concrete
 bossbar set gast:pylon visible false
+bossbar set gast:pylon4 visible false
 tag @a add fromVoid
 tag @a add voidLose
 tag @a add win

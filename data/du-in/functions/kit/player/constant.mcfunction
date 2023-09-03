@@ -23,7 +23,7 @@ execute if entity @s[tag=kitActions] run function du-in:kit/player/ability/init
 #ATT#
 attribute @s[tag=!stolen] minecraft:generic.movement_speed base set 0.135
 #.1075
-attribute @s[tag=!stolen,tag=!pussFear,tag=!parry] generic.knockback_resistance base set 0.04
+attribute @s[tag=!stolen,tag=!pussFear] generic.knockback_resistance base set 0.04
 
 #SO THIS POWER...
 #OF DETERMINATION

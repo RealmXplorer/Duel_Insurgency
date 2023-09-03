@@ -20,5 +20,10 @@
             "trigger": "minecraft:impossible"
         }
     },
+    "requirements": [
+        [
+            "genocide"
+        ]
+    ],
     "parent": "du-in:kill"
 }

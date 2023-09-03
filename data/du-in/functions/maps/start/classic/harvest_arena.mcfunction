@@ -1,4 +1,6 @@
 tellraw @a ["",{"text":"The ","bold":false,"color":"gray"},{"text":"Harvest Arena ","bold":true,"color":"yellow"},{"text":"map has been chosen!","bold":false,"color":"gray"}]
+
+execute as @a store result score @s spawnpoint run random value 1..8
 tp @a[tag=!working,scores={spawnpoint=0..2}] 1286 9 1286 135 0
 tp @a[tag=!working,scores={spawnpoint=3..4}] 1286 9 1264 45 0
 tp @a[tag=!working,scores={spawnpoint=5..6}] 1264 9 1264 -45 0

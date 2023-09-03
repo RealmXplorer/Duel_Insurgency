@@ -104,7 +104,7 @@ tag @a[tag=!working] remove playing
 # scoreboard players set @a lobby 1
 
 
-scoreboard objectives setdisplay belowName winStreak
+scoreboard objectives setdisplay below_name winStreak
 scoreboard players reset * hit
 tag @a remove armor
 scoreboard objectives setdisplay list Diamonds

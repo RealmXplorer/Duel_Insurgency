@@ -17,4 +17,5 @@ execute if entity @s[level=1] run item replace entity @s weapon.offhand with min
 
 attribute @s[tag=!stolen] generic.movement_speed base set 0.14
 #0.125
-attribute @s[tag=!stolen,tag=!pussFear,tag=!parry] generic.knockback_resistance base set 0.03
+effect give @s[predicate=!du-in:effect/has_night_vision,tag=!stolen] minecraft:night_vision infinite 100 true
+attribute @s[tag=!stolen,tag=!pussFear] generic.knockback_resistance base set 0.03

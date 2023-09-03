@@ -1,13 +1,16 @@
 scoreboard players add @s creditsTimer 1
 
+#Title
 title @s[scores={creditsTimer=20}] title {"text":"Duel","bold":true,"color":"gold"}
 title @s[scores={creditsTimer=20}] subtitle {"text":"Insurgency","bold":true,"color":"blue"}
 title @s[scores={creditsTimer=20}] times 60 20 60
 
+#Commands
 title @s[scores={creditsTimer=160}] title {"text":"Commands","bold":true,"color":"gold"}
 title @s[scores={creditsTimer=160}] subtitle {"text":"Realm_Xplorer & saac_","bold":false,"color":"blue"}
 title @s[scores={creditsTimer=160}] times 60 20 60
 
+#Maps
 title @s[scores={creditsTimer=300}] title {"text":"Maps","bold":true,"color":"gold"}
 title @s[scores={creditsTimer=300}] subtitle {"text":"Draerschresch, nerbski_, Ronnie","bold":false,"color":"blue"}
 title @s[scores={creditsTimer=360}] subtitle {"text":"Ronnie, KingJoe1483, PearApplez","bold":false,"color":"blue"}
@@ -15,57 +18,46 @@ title @s[scores={creditsTimer=420}] subtitle {"text":"ActuallyAnNoob, IGsNas, In
 title @s[scores={creditsTimer=480}] subtitle {"text":"saac_, Realm_Xplorer","bold":false,"color":"blue"}
 title @s[scores={creditsTimer=300}] times 60 120 60
 
-title @s[scores={creditsTimer=540}] title {"text":"Default Music","bold":true,"color":"gold"}
-title @s[scores={creditsTimer=540}] subtitle {"text":"saac_","bold":false,"color":"blue"}
+#Music
+title @s[scores={creditsTimer=540}] title {"text":"Music","bold":true,"color":"gold"}
+title @s[scores={creditsTimer=540}] subtitle {"text":"saac_ (i2o2)","bold":false,"color":"blue"}
 title @s[scores={creditsTimer=540}] times 60 20 60
 
-# title @s[scores={creditsTimer=680}] title {"text":"Credits Music","bold":true,"color":"gold"}
-# title @s[scores={creditsTimer=680}] subtitle {"text":"Hudstone","bold":false,"color":"blue"}
-# title @s[scores={creditsTimer=680}] times 60 20 60
-
-#680-820
-# title @s[scores={creditsTimer=820}] title {"text":"Textures","bold":true,"color":"gold"}
-# title @s[scores={creditsTimer=820}] subtitle {"text":"Ronnie, nerbski_, PearApplez","bold":false,"color":"blue"}
-# title @s[scores={creditsTimer=880}] subtitle {"text":"KingJoe1483, Realm_Xplorer, saac_","bold":false,"color":"blue"}
-# title @s[scores={creditsTimer=940}] subtitle {"text":"Also Try Terraria, Futureazoo, Apex30001111","bold":false,"color":"blue"}
-# title @s[scores={creditsTimer=820}] times 60 60 60
-
+#Textures
 title @s[scores={creditsTimer=680}] title {"text":"Textures","bold":true,"color":"gold"}
 title @s[scores={creditsTimer=680}] subtitle {"text":"Ronnie, nerbski_, PearApplez","bold":false,"color":"blue"}
 title @s[scores={creditsTimer=740}] subtitle {"text":"KingJoe1483, Realm_Xplorer, saac_","bold":false,"color":"blue"}
-title @s[scores={creditsTimer=780}] subtitle {"text":"Also Try Terraria, Futureazoo, Apex30001111","bold":false,"color":"blue"}
+title @s[scores={creditsTimer=800}] subtitle {"text":"Also Try Terraria, Futureazoo, Apex30001111","bold":false,"color":"blue"}
 title @s[scores={creditsTimer=680}] times 60 60 60
 
-#820-1000
-# title @s[scores={creditsTimer=1000}] title {"text":"Other Music","bold":true,"color":"gold"}
-# title @s[scores={creditsTimer=1000}] subtitle {"text":"George Streicher, Endigo, Benny Goodman","bold":false,"color":"blue"}
-# title @s[scores={creditsTimer=1060}] subtitle {"text":"FlashyGoodness, Gareth Coker, PeriTune","bold":false,"color":"blue"}
-# title @s[scores={creditsTimer=1120}] subtitle {"text":"Steve Oxen, VeedahMusic, LuckyRanno","bold":false,"color":"blue"}
-# title @s[scores={creditsTimer=1000}] times 60 60 60
+#Other Music
+title @s[scores={creditsTimer=860}] title {"text":"Other Music","bold":true,"color":"gold"}
+title @s[scores={creditsTimer=860}] subtitle {"text":"George Streicher, Endigo, Benny Goodman","bold":false,"color":"blue"}
+title @s[scores={creditsTimer=920}] subtitle {"text":"FlashyGoodness, Gareth Coker, PeriTune","bold":false,"color":"blue"}
+title @s[scores={creditsTimer=980}] subtitle {"text":"Steve Oxen, VeedahMusic, LuckyRanno","bold":false,"color":"blue"}
+title @s[scores={creditsTimer=860}] times 60 60 60
 
-title @s[scores={creditsTimer=820}] title {"text":"Other Music","bold":true,"color":"gold"}
-title @s[scores={creditsTimer=820}] subtitle {"text":"George Streicher, Endigo, Benny Goodman","bold":false,"color":"blue"}
-title @s[scores={creditsTimer=880}] subtitle {"text":"FlashyGoodness, Gareth Coker, PeriTune","bold":false,"color":"blue"}
-title @s[scores={creditsTimer=940}] subtitle {"text":"Steve Oxen, VeedahMusic, LuckyRanno","bold":false,"color":"blue"}
-title @s[scores={creditsTimer=820}] times 60 60 60
+#Armor textures
+title @s[scores={creditsTimer=1040}] title {"text":"Armor Textures","bold":true,"color":"gold"}
+title @s[scores={creditsTimer=1040}] subtitle {"text":"deo_x, Dreamrage_808, Yogurette","bold":false,"color":"blue"}
+title @s[scores={creditsTimer=1100}] subtitle {"text":"Meatchip, vxxmit, D1maShip","bold":false,"color":"blue"}
+title @s[scores={creditsTimer=1160}] subtitle {"text":"RockstarWolfy7, KrEsHDiE","bold":false,"color":"blue"}
+title @s[scores={creditsTimer=1040}] times 60 60 60
 
-#1000-1180
-# title @s[scores={creditsTimer=1180}] title {"text":"Thank you","bold":true,"color":"gold"}
-# title @s[scores={creditsTimer=1180}] subtitle {"text":"for playing!","bold":false,"color":"blue"}
-# title @s[scores={creditsTimer=1000}] times 60 60 100
+#Thank you
+title @s[scores={creditsTimer=1220}] title {"text":"Thank you","bold":true,"color":"gold"}
+title @s[scores={creditsTimer=1220}] subtitle {"text":"for playing!","bold":false,"color":"blue"}
+title @s[scores={creditsTimer=1220}] times 60 60 100
 
-title @s[scores={creditsTimer=1000}] title {"text":"Thank you","bold":true,"color":"gold"}
-title @s[scores={creditsTimer=1000}] subtitle {"text":"for playing!","bold":false,"color":"blue"}
-title @s[scores={creditsTimer=1000}] times 60 60 100
+#Easter Egg
+title @s[tag=lobby,scores={creditsTimer=1440}] title {"text":"","bold":true,"color":"gold"}
+title @s[tag=lobby,scores={creditsTimer=1440}] subtitle {"text":"YOU WANTED THIS","bold":false,"color":"gray"}
+title @s[tag=lobby,scores={creditsTimer=1440}] times 60 20 60
 
-title @s[tag=lobby,scores={creditsTimer=1240}] title {"text":"","bold":true,"color":"gold"}
-title @s[tag=lobby,scores={creditsTimer=1240}] subtitle {"text":"YOU WANTED THIS","bold":false,"color":"gray"}
-title @s[tag=lobby,scores={creditsTimer=1240}] times 60 20 60
+title @s[tag=lobby,scores={creditsTimer=1580}] title {"text":"","bold":true,"color":"gold"}
+title @s[tag=lobby,scores={creditsTimer=1580}] subtitle {"text":"YOU CAME BACK","bold":false,"color":"gray"}
+title @s[tag=lobby,scores={creditsTimer=1580}] times 60 20 60
 
-title @s[tag=lobby,scores={creditsTimer=1380}] title {"text":"","bold":true,"color":"gold"}
-title @s[tag=lobby,scores={creditsTimer=1380}] subtitle {"text":"YOU CAME BACK","bold":false,"color":"gray"}
-title @s[tag=lobby,scores={creditsTimer=1380}] times 60 20 60
-
-title @s[tag=lobby,scores={creditsTimer=1520}] title {"text":"","bold":true,"color":"gold"}
-title @s[tag=lobby,scores={creditsTimer=1520}] subtitle {"text":"THE EXPERIMENTS WILL CONTINUE","bold":false,"color":"gray"}
-title @s[tag=lobby,scores={creditsTimer=1520}] times 60 20 60
+title @s[tag=lobby,scores={creditsTimer=1720}] title {"text":"","bold":true,"color":"gold"}
+title @s[tag=lobby,scores={creditsTimer=1720}] subtitle {"text":"THE EXPERIMENTS WILL CONTINUE","bold":false,"color":"gray"}
+title @s[tag=lobby,scores={creditsTimer=1720}] times 60 20 60

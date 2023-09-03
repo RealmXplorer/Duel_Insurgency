@@ -20,5 +20,10 @@
             "trigger": "minecraft:impossible"
         }
     },
+    "requirements": [
+        [
+            "quad"
+        ]
+    ],
     "parent": "du-in:triple"
 }

@@ -39,6 +39,11 @@
         }
 
     },
+    "requirements": [
+        [
+            "midas"
+        ]
+    ],
 
     "rewards": {
 

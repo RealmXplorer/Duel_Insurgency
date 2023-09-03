@@ -4,9 +4,6 @@ tag @s[tag=sabotaged] add noClothes
 
 execute as @a[tag=noClothes] at @s run function du-in:kit/gumball/ability/darwin/no_clothes
 
-##copyright
-#playsound minecraft:darwin.ability master @a ~ ~ ~ 10 1
-
 title @s title {"text":"Imagine them ","color":"red"}
 title @s subtitle {"text":"without their clothes on","color":"red"}
 title @s times 1s 10t 1s

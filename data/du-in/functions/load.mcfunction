@@ -107,6 +107,9 @@ scoreboard objectives add villSkin dummy
 scoreboard objectives add wildeSkin dummy
 scoreboard objectives add yharimSkin dummy
 scoreboard objectives add zombSkin dummy
+scoreboard objectives add kyloSkin dummy
+scoreboard objectives add pazSkin dummy
+scoreboard objectives add palpsSkin dummy
 
 #Gamemode objectives
 scoreboard objectives add Acount dummy
@@ -158,15 +161,11 @@ scoreboard objectives add winStreak dummy
 
 #Lobby objectives
 scoreboard objectives add ambienceToggle dummy
-scoreboard objectives add cMapRandom dummy
 scoreboard objectives add conqScale dummy
-scoreboard objectives add cqMapRandom dummy
-scoreboard objectives add ctfMapRandom dummy
 scoreboard objectives add ctfScale dummy
 scoreboard objectives add dmScale dummy
 scoreboard objectives add dtScale dummy
 scoreboard objectives add Diamonds dummy
-#scoreboard objectives add buy dummy
 scoreboard objectives add gameDeaths minecraft.custom:deaths
 scoreboard objectives add gameGonerKills dummy
 scoreboard objectives add gameKills minecraft.custom:player_kills
@@ -181,7 +180,6 @@ scoreboard objectives add killScale dummy
 scoreboard objectives add killStreak dummy
 scoreboard objectives add kitList dummy
 scoreboard objectives add kitOnline dummy
-scoreboard objectives add kMapRandom dummy
 scoreboard objectives add kothScale dummy
 scoreboard objectives add legMusicToggle dummy
 scoreboard objectives add thrownBarrier minecraft.dropped:barrier
@@ -288,7 +286,7 @@ scoreboard objectives add parryWindow dummy
 scoreboard objectives add player dummy
 scoreboard objectives add playerCount dummy
 scoreboard objectives add quickKill dummy
-scoreboard objectives add random dummy
+# scoreboard objectives add random dummy
 
 scoreboard objectives add redPoints dummy
 scoreboard objectives add bluePoints dummy
@@ -333,6 +331,8 @@ scoreboard objectives add pylonsDestroyed dummy
 scoreboard objectives add voidReadyOnline dummy
 scoreboard objectives add pylonFireList dummy
 scoreboard objectives add alarmCount dummy
+
+scoreboard objectives add pylonTimer dummy
 
 #Initialization
 scoreboard players set #main ten 10

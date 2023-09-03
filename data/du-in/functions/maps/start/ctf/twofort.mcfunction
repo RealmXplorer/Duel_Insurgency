@@ -1,6 +1,7 @@
 tellraw @a ["",{"text":"The ","bold":false,"color":"gray"},{"text":"2Fort ","bold":true,"color":"yellow"},{"text":"map has been chosen!","bold":false,"color":"gray"}]
 
 #Teleports#
+execute as @a store result score @s spawnpoint run random value 1..8
 tp @a[tag=!working,scores={team=2,spawnpoint=1..4}] -1030 16 -979 -90 0
 tp @a[tag=!working,scores={team=1,spawnpoint=1..4}] -975 16 -1038 90 0
 tp @a[tag=!working,scores={team=1,spawnpoint=5..}] -1027 16 -1045 -90 0
@@ -32,11 +33,6 @@ summon armor_stand -1012 5 -955 {Rotation:[-90F,0F],Tags:["vendMachine","mapSpec
 summon armor_stand -1006 16 -972 {Rotation:[90F,0F],Tags:["vendMachine","mapSpecific"],NoGravity:1b,Silent:1b,Invulnerable:1b,Invisible:1b,NoBasePlate:1b,ArmorItems:[{},{},{},{id:"minecraft:spruce_sapling",Count:1b,tag:{CustomModelData:100}}],DisabledSlots:4144959}
 summon armor_stand -970 11 -979 {Rotation:[90F,0F],Tags:["vendMachine","mapSpecific"],NoGravity:1b,Silent:1b,Invulnerable:1b,Invisible:1b,NoBasePlate:1b,ArmorItems:[{},{},{},{id:"minecraft:spruce_sapling",Count:1b,tag:{CustomModelData:100}}],DisabledSlots:4144959}
 summon armor_stand -1004 10 -991 {Rotation:[180F,0F],Tags:["vendMachine","mapSpecific"],NoGravity:1b,Silent:1b,Invulnerable:1b,Invisible:1b,NoBasePlate:1b,ArmorItems:[{},{},{},{id:"minecraft:spruce_sapling",Count:1b,tag:{CustomModelData:100}}],DisabledSlots:4144959}
-
-# summon painting -1011 5 -955 {facing:3b,Invulnerable:1b,Tags:["mapSpecific","vendingPainting"],variant:"minecraft:wanderer"}
-# summon painting -1007 16 -972 {facing:1b,Invulnerable:1b,Tags:["mapSpecific","vendingPainting"],variant:"minecraft:wanderer"}
-# summon painting -971 11 -979 {facing:1b,Invulnerable:1b,Tags:["mapSpecific","vendingPainting"],variant:"minecraft:wanderer"}
-# summon painting -1004 10 -992 {facing:2b,Invulnerable:1b,Tags:["mapSpecific","vendingPainting"],variant:"minecraft:wanderer"}
 
 ##Red Side
 summon interaction -1003 10 -1028 {Tags:["vending","stable","mapSpecific"],width:1.15f,height:2.1f,response:1b}

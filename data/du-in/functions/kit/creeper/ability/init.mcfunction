@@ -10,8 +10,8 @@ playsound minecraft:entity.evoker.cast_spell master @a ~ ~ ~ 100 1
 #effect give @s[scores={creeperTimer=..2}] minecraft:resistance 1 100 true
 #execute if entity @s[scores={creeperTimer=0}] run summon minecraft:creeper ~ ~ ~ {Invulnerable:1b,CustomNameVisible:0b,DeathLootTable:"-",PersistenceRequired:1b,NoAI:1b,powered:0b,ExplosionRadius:3.5b,Fuse:0,ignited:1b,Attributes:[{Name:generic.attackKnockback,Base:1}],Silent:1b,Tags:["projectile"]}
 #scoreboard players reset @a[scores={creeperTimer=..-1}] creeperTimer
-clear @s minecraft:carrot_on_a_stick
-xp set @s[tag=!stolen] 360 levels
 #tag @a[scores={kit=4,creeperTimer=..10}] remove flash
 #execute if entity @s[tag=stolen] run tag @s add kitDone
+clear @s minecraft:carrot_on_a_stick
+tag @s add cooldown
 tag @s remove kitActions

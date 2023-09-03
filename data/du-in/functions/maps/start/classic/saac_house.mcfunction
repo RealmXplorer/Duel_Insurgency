@@ -1,4 +1,6 @@
 tellraw @a ["",{"text":"The ","bold":false,"color":"gray"},{"text":"Saac's Literal House ","bold":true,"color":"yellow"},{"text":"map has been chosen!","bold":false,"color":"gray"}]
+
+execute as @a store result score @s spawnpoint run random value 1..8
 tp @a[tag=!working,scores={spawnpoint=0..2}] -2001 36 -1985
 tp @a[tag=!working,scores={spawnpoint=3..4}] -2003 47 -1984
 tp @a[tag=!working,scores={spawnpoint=5..6}] -2013 36 -1947

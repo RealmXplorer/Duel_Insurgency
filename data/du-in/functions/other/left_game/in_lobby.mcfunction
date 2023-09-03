@@ -31,8 +31,6 @@ execute if entity @a[tag=partyLeader,tag=kitMenu,tag=lobby] run scoreboard playe
 execute if entity @a[tag=partyLeader,tag=kitMenu,tag=lobby] run scoreboard players set @s kitList 7
 execute if entity @a[tag=partyLeader,tag=kitMenu,tag=lobby] run tag @s add kitMenu
 
-execute as @a run attribute @s generic.attack_damage base set 0
-
 execute if entity @a[tag=partyLeader,tag=!kitMenu,tag=lobby] run tag @s remove kitMenu
 execute if entity @a[tag=partyLeader,tag=!kitMenu,tag=lobby] run tag @s remove kitPicked
 execute if entity @a[tag=partyLeader,tag=!kitMenu,tag=lobby] run tag @s remove teamPicked
@@ -41,5 +39,13 @@ execute if entity @a[tag=partyLeader,tag=!kitMenu,tag=lobby] run tag @s remove r
 execute if entity @a[tag=partyLeader,tag=!kitMenu,tag=lobby] run scoreboard players set @s kit 0
 
 execute if entity @a[tag=partyLeader,tag=!kitMenu,tag=lobby] run team join lobby @s
+
+attribute @s minecraft:generic.armor base set 0
+attribute @s minecraft:generic.armor_toughness base set 0
+attribute @s minecraft:generic.knockback_resistance base set 0
+attribute @s minecraft:generic.max_health base set 20
+execute as @a run attribute @s minecraft:generic.attack_damage base set 0
+attribute @s minecraft:generic.attack_speed base set 4
+attribute @s minecraft:generic.movement_speed base set 0.10000000149
 
 stopsound @s record

@@ -35,6 +35,11 @@
         }
 
     },
+    "requirements": [
+        [
+            "midas"
+        ]
+    ],
 
     "rewards": {
 

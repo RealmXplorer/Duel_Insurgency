@@ -102,7 +102,7 @@ tag @a[tag=!working] remove playing
 # scoreboard players set @a lobby 1
 
 
-scoreboard objectives setdisplay belowName winStreak
+scoreboard objectives setdisplay below_name winStreak
 scoreboard players reset * hit
 tag @a remove armor
 scoreboard objectives setdisplay list Diamonds
@@ -162,7 +162,7 @@ scoreboard players set #main scoreMost 0
 #RESET TEAM KOTH#
 # scoreboard players reset * kothTeamTimer
 #scoreboard players set Blue kothTeamTimer 0
-
+tag @a remove kothMap
 #Reset Attributes#
 execute as @a run attribute @s minecraft:generic.armor base set 0
 execute as @a run attribute @s minecraft:generic.armor_toughness base set 0
@@ -350,9 +350,10 @@ tag @a remove phoenix
 tag @a remove caveSpider
 tag @a remove sus
 tag @a remove suicide
-tag @a remove boneAttack
 scoreboard players reset @a dmDeath
 scoreboard players set @a diedIngame 0
+
+tag @a remove boneAttack
 
 #Clear Effects#
 effect clear @a

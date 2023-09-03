@@ -20,5 +20,10 @@
             "trigger": "minecraft:impossible"
         }
     },
+    "requirements": [
+        [
+            "unlock"
+        ]
+    ],
     "parent": "du-in:kitpick"
 }

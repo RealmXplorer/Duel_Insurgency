@@ -4,9 +4,9 @@ title @a actionbar {"text":"Time is halfway up!","color":"gold"}
 bossbar set bossbar:gametimer color red
 
 #Playsound
-#execute at @a as @a run playsound minecraft:block.anvil.use master @s ~ ~ ~ 1 1.15
-execute at @a as @a run playsound minecraft:soundeffect.woosh master @s ~ ~ ~ .5 1
-execute at @a as @a run playsound minecraft:soundeffect.woosh master @s ~ ~ ~ .5 2
+#execute as @a at @s run playsound minecraft:block.anvil.use master @s ~ ~ ~ 1 1.15
+execute as @a at @s run playsound minecraft:soundeffect.woosh master @s ~ ~ ~ .5 1
+execute as @a at @s run playsound minecraft:soundeffect.woosh master @s ~ ~ ~ .5 2
 
 #Start end of round music
 tag @a[tag=!working,tag=!win,tag=!lose,tag=song] add songEnd

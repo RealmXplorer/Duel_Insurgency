@@ -19,5 +19,10 @@
             "trigger": "minecraft:impossible"
         }
     },
+    "requirements": [
+        [
+            "void"
+        ]
+    ],
     "parent": "du-in:void/void"
 }

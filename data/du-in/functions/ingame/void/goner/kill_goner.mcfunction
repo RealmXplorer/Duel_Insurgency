@@ -2,6 +2,8 @@ scoreboard players remove @a[scores={gonersKilled=1..}] gonersKilled 1
 
 effect give @a darkness 3 0 true
 effect give @s instant_health 1 0 true
+playsound minecraft:chara.ability master @a ~ ~ ~ 0.5 1.7
+
 execute if entity @s[scores={kit=7},tag=!stolen] run give @s minecraft:arrow 1
 
 execute if entity @s[scores={kit=1001},tag=!fortniteCard] run function du-in:kit/paz/card/give_card

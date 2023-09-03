@@ -20,5 +20,10 @@
             "trigger": "minecraft:impossible"
         }
     },
+    "requirements": [
+        [
+            "unlockwin"
+        ]
+    ],
     "parent": "du-in:unlock/unlock"
 }

@@ -20,5 +20,10 @@
             "trigger": "minecraft:impossible"
         }
     },
+    "requirements": [
+        [
+            "ender"
+        ]
+    ],
     "parent": "du-in:veteran"
 }

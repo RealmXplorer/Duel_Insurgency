@@ -1,4 +1,3 @@
-stopsound @s record
 #Stop schedule
 schedule clear du-in:music/ingame/default/classic
 schedule clear du-in:music/ingame/other/tournament

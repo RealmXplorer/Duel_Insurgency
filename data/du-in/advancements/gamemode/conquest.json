@@ -19,5 +19,10 @@
             "trigger": "minecraft:impossible"
         }
     },
+    "requirements": [
+        [
+            "conquest"
+        ]
+    ],
     "parent": "du-in:gamemode/classic"
 }

@@ -32,7 +32,7 @@ There is an item tag called "weapons" at "du-in/tags/items/weapon.json". This tr
 Maps, similar to characters, have their own value of "map".
 
 The map selected to be played on is determined by two factors:
-	What is the player's gamemode lobby? (cmap for Classic and Deathmatch, kothl for King of the Hill, ctfl for Capture the Flag, etc.)
+	What is the player's gamemode lobby? (cmap for Classic and Deathmatch, kothl for King of the Hill, ctfl for Capture the Flag, and cql for Conquest)
 	What is the map's score?
 
 Maps are voted on in map select. This happens in "du-in/functions/maps/start/init"

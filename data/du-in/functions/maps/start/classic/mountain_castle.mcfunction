@@ -1,6 +1,7 @@
 tellraw @a ["",{"text":"The ","bold":false,"color":"gray"},{"text":"Mountain Castle ","bold":true,"color":"yellow"},{"text":"map has been chosen!","bold":false,"color":"gray"}]
 
 #Teleport#
+execute as @a store result score @s spawnpoint run random value 1..8
 tp @a[tag=!working,scores={spawnpoint=0..2}] -13 11 29 -135 1
 tp @a[tag=!working,scores={spawnpoint=3..4}] 10 11 2 -13 1
 tp @a[tag=!working,scores={spawnpoint=5..6}] -15 5 -15 -44 -20

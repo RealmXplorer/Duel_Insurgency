@@ -1,6 +1,7 @@
 tellraw @a ["",{"text":"The ","bold":false,"color":"gray"},{"text":"Crait ","bold":true,"color":"yellow"},{"text":"map has been chosen!","bold":false,"color":"gray"}]
 
 #Teleports#
+execute as @a store result score @s spawnpoint run random value 1..8
 tp @a[tag=!working,scores={spawnpoint=0..4,team=1}] 10003 3 5002 0 0
 tp @a[tag=!working,scores={spawnpoint=5..,team=1}] 10089 5 5001 0 0
 tp @a[tag=!working,scores={spawnpoint=0..4,team=2}] 10002 5 5089 180 0

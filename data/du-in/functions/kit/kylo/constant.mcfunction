@@ -2,7 +2,7 @@ execute if entity @s[tag=!stolen,scores={hit=5..}] run function du-in:kit/kylo/s
 execute if entity @s[tag=!stolen,scores={jump=1..}] run function du-in:kit/jump
 
 #ARMOR#
-execute if entity @s[tag=armor,tag=!stolen] unless entity @s[scores={kyloSkin=1..}] run function du-in:kit/kylo/armor
+execute if entity @s[tag=armor,tag=!stolen] run function du-in:kit/kylo/armor
 
 #Ability Item#
 item replace entity @s[level=1] weapon.offhand with minecraft:carrot_on_a_stick{display:{Name:'{"text":"Force Freeze","color":"gold","bold":true,"italic":false,"underlined":false,"strikethrough":false,"obfuscated":false}',Lore:['{"text":"Right click to activate!","color":"dark_purple","bold":true}','[{"text":""}]','{"text":"I\'ll show you","color":"dark_gray"}','{"text":"the Dark Side.","color":"dark_gray"}']},HideFlags:1,Enchantments:[{id:"minecraft:protection",lvl:1s}],CustomModelData:116,weaponItem:1b}
@@ -16,5 +16,5 @@ execute unless entity @s[scores={weapCount=1}] run item replace entity @s[tag=!s
 #execute store result score @s[tag=!stolen] weapCount run clear @s[tag=!kitMenu] wooden_sword 0
 
 #Attributes#
-attribute @s[tag=!stolen,tag=!pussFear,tag=!parry] generic.knockback_resistance base set 0.02
+attribute @s[tag=!stolen,tag=!pussFear] generic.knockback_resistance base set 0.02
 attribute @s[tag=!stolen] generic.movement_speed base set 0.145

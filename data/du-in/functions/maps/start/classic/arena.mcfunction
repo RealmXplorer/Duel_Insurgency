@@ -2,6 +2,7 @@
 tellraw @a ["",{"text":"The ","bold":false,"color":"gray"},{"text":"Arena ","bold":true,"color":"yellow"},{"text":"map has been chosen!","bold":false,"color":"gray"}]
 
 #Teleport players
+execute as @a store result score @s spawnpoint run random value 1..8
 tp @a[tag=!working,scores={spawnpoint=0..2}] -7 6 -534 -135 -5
 tp @a[tag=!working,scores={spawnpoint=3..4}] -7 6 -534 -135 -1
 tp @a[tag=!working,scores={spawnpoint=5..6}] 15 6 -556 45 -1
@@ -28,7 +29,7 @@ summon interaction 1 5 -562 {Tags:["ventBlock","mapSpecific"],width:1.05f,height
 summon interaction 18 5 -535 {Tags:["ventBlock","mapSpecific"],width:1.05f,height:1.25f,response:1b}
 summon interaction -12 5 -539 {Tags:["ventBlock","mapSpecific"],width:1.05f,height:1.25f,response:1b}
 
-#Set Vending Machines (If a saac is in game)#
+#Set Vending Machines (If a saac or Paz is in game)#
 execute if entity @a[scores={kit=1000..1001}] run summon interaction 4 6 -562 {Tags:["vending","stable","mapSpecific"],width:1.15f,height:2.1f,response:1b}
 execute if entity @a[scores={kit=1000..1001}] run summon interaction -13 6 -545 {Tags:["vending","stable","mapSpecific"],width:1.15f,height:2.1f,response:1b}
 execute if entity @a[scores={kit=1000..1001}] run summon interaction 4 6 -528 {Tags:["vending","stable","mapSpecific"],width:1.15f,height:2.1f,response:1b}
@@ -38,13 +39,3 @@ execute if entity @a[scores={kit=1000..1001}] run summon armor_stand 4 6 -562 {R
 execute if entity @a[scores={kit=1000..1001}] run summon armor_stand -13 6 -545 {Rotation:[-90F,0F],Tags:["vendMachine","mapSpecific"],NoGravity:1b,Silent:1b,Invulnerable:1b,Invisible:1b,NoBasePlate:1b,ArmorItems:[{},{},{},{id:"minecraft:spruce_sapling",Count:1b,tag:{CustomModelData:100}}],DisabledSlots:4144959}
 execute if entity @a[scores={kit=1000..1001}] run summon armor_stand 4 6 -528 {Rotation:[-180F,0F],Tags:["vendMachine","mapSpecific"],NoGravity:1b,Silent:1b,Invulnerable:1b,Invisible:1b,NoBasePlate:1b,ArmorItems:[{},{},{},{id:"minecraft:spruce_sapling",Count:1b,tag:{CustomModelData:100}}],DisabledSlots:4144959}
 execute if entity @a[scores={kit=1000..1001}] run summon armor_stand 21 6 -545 {Rotation:[90F,0F],Tags:["vendMachine","mapSpecific"],NoGravity:1b,Silent:1b,Invulnerable:1b,Invisible:1b,NoBasePlate:1b,ArmorItems:[{},{},{},{id:"minecraft:spruce_sapling",Count:1b,tag:{CustomModelData:100}}],DisabledSlots:4144959}
-
-#Set Vending machine paintings#
-#summon painting 4 6 -561 {facing:0b,Invulnerable:1b,Tags:["mapSpecific","vendingPainting"],variant:"minecraft:wanderer"}
-#summon painting -12 6 -544.5 {facing:3b,Invulnerable:1b,Tags:["mapSpecific","vendingPainting"],variant:"minecraft:wanderer"}
-#summon painting 4 6 -528.5 {facing:2b,Invulnerable:1b,Tags:["mapSpecific","vendingPainting"],variant:"minecraft:wanderer"}
-#summon painting 20 6 -544.5 {facing:1b,Invulnerable:1b,Tags:["mapSpecific","vendingPainting"],variant:"minecraft:wanderer"}
-
-#execute if entity @a[scores={kit=1000}] run 
-
-# /summon armor_stand ~ ~ ~ {NoGravity:1b,Silent:1b,Invulnerable:1b,Invisible:1b,NoBasePlate:1b,Rotation:[-90F,0F],ArmorItems:[{},{},{},{id:"minecraft:spruce_sapling",Count:1b,tag:{CustomModelData:100}}]}

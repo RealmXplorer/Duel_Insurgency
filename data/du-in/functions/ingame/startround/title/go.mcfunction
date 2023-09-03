@@ -13,7 +13,7 @@ title @a[scores={titleTimer=8}] title {"text":"GO!","color":"#00FFDD","bold":tru
 title @a[scores={titleTimer=6}] title {"text":"GO!","color":"#00A2FF","bold":true}
 title @a[scores={titleTimer=4}] title {"text":"GO!","color":"#002AFF","bold":true}
 title @a[scores={titleTimer=2}] title {"text":"GO!","color":"#5D00FF","bold":true}
-execute as @a[scores={titleTimer=1}] at @s run function du-in:ingame/startround/title/intros
+execute as @a[gamemode=!spectator,scores={titleTimer=1}] at @s run function du-in:ingame/startround/title/intros
 title @a[scores={titleTimer=0}] title {"text":"GO!","color":"#EE00FF","bold":true}
 
 # execute as @a[scores={titleTimer=20}] at @s run playsound minecraft:block.ancient_debris.break master @s ~ ~ ~ 1000 2

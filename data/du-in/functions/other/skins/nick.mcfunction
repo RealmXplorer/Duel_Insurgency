@@ -1,6 +1,6 @@
 scoreboard players add @s wildeSkin 1
 
-scoreboard players reset @s[scores={wildeSkin=5..}] wildeSkin
+scoreboard players reset @s[scores={wildeSkin=6..}] wildeSkin
 function du-in:other/skins/skin_menu/actions/sound
 
 clear @s player_head{nickHead:1b}
@@ -10,4 +10,5 @@ tellraw @s[tag=!defaultSelect,scores={wildeSkin=1}] [{"text":"Officer Wilde ","b
 tellraw @s[tag=!defaultSelect,scores={wildeSkin=2}] [{"text":"Saint Nick ","bold":true,"color":"dark_green"},{"text":"skin selected!","color":"yellow"}]
 tellraw @s[tag=!defaultSelect,scores={wildeSkin=3}] [{"text":"Timekeeper Wilde ","bold":true,"color":"green"},{"text":"skin selected!","color":"yellow"}]
 tellraw @s[tag=!defaultSelect,scores={wildeSkin=4}] [{"text":"Count Wilde ","bold":true,"color":"dark_purple"},{"text":"skin selected!","color":"yellow"}]
+tellraw @s[tag=!defaultSelect,scores={wildeSkin=5}] [{"text":"Swimsuit Wilde ","bold":true,"color":"#ffc16b"},{"text":"skin selected!","color":"yellow"}]
 

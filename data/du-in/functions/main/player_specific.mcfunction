@@ -6,7 +6,7 @@
         execute if entity @s[tag=lobby,tag=!playing] run function du-in:lobby/player_specific
 
     # Functions that run while ingame #
-        execute if entity @s[tag=playing,tag=!spectating] run function du-in:ingame/player_specific
+        execute if entity @s[gamemode=!spectator,tag=playing] run function du-in:ingame/player_specific
 
     # Teleport player to dev area #
         execute if entity @s[scores={toDev=1..}] run function du-in:to_dev
@@ -22,7 +22,7 @@
         execute if entity @s[scores={secKitUseThrow=1..}] run function du-in:other/thrown_sec
 
     #Random kit timer reset#
-	scoreboard players set @s[scores={random=29..}] random 1
+	#scoreboard players set @s[scores={random=29..}] random 1
 
     # If a player has left the game #
         execute if entity @s[scores={leaveGame=1..}] run function du-in:other/left_game/init

@@ -21,5 +21,5 @@ execute if entity @s[tag=void,tag=kitActions] run function du-in:kit/golem/abili
 #attribute @s[tag=!stolen] generic.movement_speed base set 0.1
 attribute @s[tag=!stolen] minecraft:generic.movement_speed base set 0.125
 #.1
-attribute @s[tag=!stolen,tag=!pussFear,tag=!parry] generic.knockback_resistance base set 0.25
+attribute @s[tag=!stolen,tag=!pussFear] generic.knockback_resistance base set 0.25
 

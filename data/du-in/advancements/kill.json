@@ -25,5 +25,10 @@
             }
         }
     },
+    "requirements": [
+        [
+            "kill"
+        ]
+    ],
     "parent": "du-in:root"
 }

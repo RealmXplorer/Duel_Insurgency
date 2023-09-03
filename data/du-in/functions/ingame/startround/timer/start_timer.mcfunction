@@ -5,7 +5,8 @@ stopsound @a ambient
 
 #Mark all players as in start game sequence
 tag @a[tag=!working] add startgame
-
+scoreboard players set @a[scores={kit=1001}] pazSkin 1
+#clear @a[scores={kit=1001}] #du-in:armor
 #Stop all other music
 stopsound @a record
 
@@ -82,7 +83,7 @@ tag @a add armor
 tag @a remove voteRandom
 
 #Play countdown sound
-execute at @a run playsound minecraft:soundeffect.countdown master @a[tag=!dmend] ~ ~ ~ 1000000 1 1
+execute as @a at @s run playsound minecraft:soundeffect.countdown master @s[tag=!dmend] ~ ~ ~ 1000000 1 1
 
 #Hide map countdown
 bossbar set minecraft:map_countdown visible false
