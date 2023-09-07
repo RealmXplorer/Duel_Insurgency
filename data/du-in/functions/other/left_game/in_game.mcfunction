@@ -5,6 +5,7 @@ tag @s remove void
 tag @s remove voidOut
 
 tag @s remove kitMenu
+tag @s remove skinMenu
 
 effect clear @s night_vision
 

@@ -6,7 +6,7 @@ particle minecraft:crit ~ ~1 ~ 0.2 0.2 0.2 0 20 force
 #playsound minecraft:entity.zombie.infect master @a ~ ~ ~ 2 1
 #playsound minecraft:entity.zombie.infect master @a ~ ~ ~ 2 .5
 #playsound minecraft:entity.zombie.infect master @a ~ ~ ~ 2 2
-execute as @a[gamemode=!spectator,tag=playing,distance=..1.25] run damage @s 4 minecraft:generic
+execute as @a[gamemode=!spectator,tag=playing,distance=..1.25] run damage @s 5 minecraft:generic
 
 #execute as @e run damage @s 4 minecraft:generic by @a[scores={kit=21},tag=kitActions,limit=1]
 

@@ -1,5 +1,6 @@
 tag @a add void
 
+effect give @a instant_health 1 100 true
 advancement revoke @s only du-in:void/interact_void
 execute at @e[type=armor_stand,tag=vendMachine] run setblock ~ ~1 ~ air
 execute at @e[type=armor_stand,tag=vendMachine] run setblock ~ ~ ~ air
@@ -223,7 +224,7 @@ scoreboard objectives setdisplay sidebar playerCount
 scoreboard players set #main wave 1
 
 title @a title " "
-execute unless score #main pylonsDestroyed matches 3 run title @a subtitle [{"text":"Wave ","color":"light_purple","bold":true},{"score":{"name":"#main","objective":"wave"},"color":"dark_purple","bold":true},{"text":"/2","color":"dark_purple","bold":true}]
+execute unless score #main pylonsDestroyed matches 0 unless score #main pylonsDestroyed matches 3 run title @a subtitle [{"text":"Wave ","color":"light_purple","bold":true},{"score":{"name":"#main","objective":"wave"},"color":"dark_purple","bold":true},{"text":"/2","color":"dark_purple","bold":true}]
 
 bossbar set gast:pylon name [{"text":"Pylon Stabilization: ","bold":true,"color":"white"},{"score":{"name":"@a[gamemode=adventure,tag=void,limit=1]","objective":"gonersKilled"},"color":"red","bold":true},{"text":" Goners left","color":"gray","bold":true}]
 execute store result bossbar gast:pylon max run scoreboard players get @a[gamemode=adventure,tag=void,limit=1] gonersKilled
