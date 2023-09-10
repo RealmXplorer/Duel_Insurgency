@@ -3,6 +3,8 @@ stopsound @s
 
 #Remove party leader tag from player who left
 tag @s remove partyLeader
+tag @s remove devMode
+scoreboard players reset @s devModeToggle
 
 #Reset all timers for player who left
 scoreboard players reset @s titleTimer
@@ -82,7 +84,7 @@ scoreboard players set @s kitTheme 1
 function du-in:lobby/item_reset
 scoreboard players set @s kitList 7
 tag @s[tag=kitMenu] add kitsListed
-scoreboard players set @s skinList 19
+scoreboard players set @s skinList 20
 tag @s[tag=skinMenu] add skinsListed
 
 #End function

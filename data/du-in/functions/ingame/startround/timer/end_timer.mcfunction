@@ -25,3 +25,5 @@ execute at @e[type=armor_stand,tag=vendMachine] run setblock ~ ~1 ~ barrier keep
 execute at @e[type=armor_stand,tag=vendMachine] run setblock ~ ~ ~ light[level=9] keep
 
 scoreboard players reset #main titleTimer2
+
+item replace entity @a[tag=devMode] hotbar.4 with minecraft:barrier{display:{Name:'{"text":"End Game","color":"red","bold":true,"italic":false,"underlined":false,"strikethrough":false,"obfuscated":false}',Lore:['{"text":"Throw to activate!","color":"dark_purple","bold":true}']},HideFlags:1,Enchantments:[{id:"minecraft:protection",lvl:1s}],weaponItem:1b}

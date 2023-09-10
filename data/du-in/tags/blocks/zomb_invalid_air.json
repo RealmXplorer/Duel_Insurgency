@@ -1,0 +1,12 @@
+{
+    "replace":false,
+    "values": [
+        "#minecraft:liquid",
+        "#minecraft:all_doors",
+        "#minecraft:walls",
+        "#minecraft:fences",
+        "#minecraft:fence_gates",
+        "minecraft:iron_bars"
+
+    ]
+}

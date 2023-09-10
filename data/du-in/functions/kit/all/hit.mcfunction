@@ -23,6 +23,9 @@ advancement revoke @s only du-in:utility/hit
     #Ralsei
     execute if entity @s[scores={kit=24},tag=playing,predicate=du-in:weapon_hold,tag=!stolen] run playsound minecraft:soundeffect.whack master @a ~ ~ ~ .5 1
 
+    #Pool Player
+    execute if entity @s[scores={kit=7,steveSkin=6},tag=playing,predicate=du-in:weapon_hold,tag=!stolen] run playsound minecraft:soundeffect.whack master @a ~ ~ ~ .5 1
+
     #Clairen
     execute if entity @s[scores={kit=25},tag=playing,predicate=du-in:weapon_hold,tag=!stolen] run playsound minecraft:saber.land master @a ~ ~ ~ .5 1
 

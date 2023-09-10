@@ -1,4 +1,5 @@
-summon minecraft:marker ~ ~ ~ {Tags:["clairenField","noTeam","mapSpecific"]}
+execute if entity @s[tag=!sabotaged] run summon minecraft:marker ~ ~ ~ {Tags:["clairenField","noTeam","mapSpecific"]}
+execute if entity @s[tag=sabotaged] run summon minecraft:marker ~ ~ ~ {Tags:["clairenField","noTeam","mapSpecific","sabotaged"]}
 execute store result score @e[type=marker,tag=clairenField,tag=noTeam,limit=1] team run scoreboard players get @s team
 tag @e[type=marker,tag=clairenField,tag=noTeam,scores={team=1..}] remove noTeam
 
@@ -8,5 +9,6 @@ particle minecraft:explosion ~ ~1 ~ 0 0 0 2 1
 
 clear @s minecraft:carrot_on_a_stick
 xp set @s[tag=!stolen] 400 levels
+tag @s remove sabotaged
 execute if entity @s[tag=stolen] run tag @s add kitDone
 tag @s remove kitActions

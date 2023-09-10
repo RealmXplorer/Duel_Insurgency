@@ -30,8 +30,8 @@ execute if entity @s[tag=zombieRespawn] run function du-in:kit/zombie/ability/re
 execute unless block ~ ~-1 ~ #du-in:zomb_invalid run tag @s remove badBlock
 
 execute if block ~ ~-1 ~ #du-in:zomb_invalid rotated as @s run tag @s add badBlock
-execute if block ~ ~ ~ #minecraft:liquid rotated as @s run tag @s add badBlock
-execute if block ~ ~ ~ #minecraft:all_doors rotated as @s run tag @s add badBlock
+execute if block ~ ~ ~ #du-in:zomb_invalid_air rotated as @s run tag @s add badBlock
+#execute if block ~ ~ ~ #minecraft:all_doors rotated as @s run tag @s add badBlock
 
 execute if entity @s[tag=team1] if entity @e[type=marker,tag=blueFlag,distance=..10] rotated as @s run tag @s add badBlock
 execute if entity @s[tag=team2] if entity @e[type=marker,tag=redFlag,distance=..10] rotated as @s run tag @s add badBlock

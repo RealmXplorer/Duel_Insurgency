@@ -41,10 +41,10 @@ tag @a[tag=!win] add lose
 tag @a[tag=voidLose] add lose
 
 #Add exp and levels to players
-execute as @a[tag=!ranMode,tag=!falseWin,tag=!spectating,tag=!voidLose] at @s run function du-in:other/levels
+execute as @a[tag=!falseWin,tag=!spectating,tag=!voidLose,tag=!devMode] at @s run function du-in:other/levels
 
 #Give achievements
-advancement grant @a[tag=win,tag=!falseWin,tag=!spectating,tag=!voidLose,tag=!tie] only du-in:gamemode/win
+advancement grant @a[tag=win,tag=!falseWin,tag=!spectating,tag=!voidLose,tag=!tie,tag=!devMode] only du-in:gamemode/win
 
 #Replace CTF Flags
 execute if entity @a[tag=ctfIngame] at @e[type=marker,tag=blueFlag] run setblock ~ ~ ~ blue_banner destroy

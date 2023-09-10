@@ -21,17 +21,19 @@ scoreboard players reset #main startSeq
 tag @a remove startgame
 tag @a remove kitPicked
 
+execute as @a[tag=randomSkins] run function du-in:other/skins/random
+
 bossbar set minecraft:map_countdown visible false
 
 scoreboard players reset @a map
-scoreboard players add @a[tag=!spectating,tag=!falseWin] gamesPlayed 1
-scoreboard players add @a[tag=win,tag=!falseWin,tag=!voidLose,tag=!tie] Wins 1
-scoreboard players add @a[tag=win,tag=!falseWin,tag=!voidLose,tag=!tie] winStreak 1
-scoreboard players set @a[tag=lose,tag=!spectating] winStreak 0
-scoreboard players add @a[tag=win] Diamonds 100
-scoreboard players add @a[tag=lose] Losses 1
+scoreboard players add @a[tag=!spectating,tag=!falseWin,tag=!devMode] gamesPlayed 1
+scoreboard players add @a[tag=win,tag=!falseWin,tag=!voidLose,tag=!tie,tag=!devMode] Wins 1
+scoreboard players add @a[tag=win,tag=!falseWin,tag=!voidLose,tag=!tie,tag=!devMode] winStreak 1
+scoreboard players set @a[tag=lose,tag=!spectating,tag=!devMode] winStreak 0
+scoreboard players add @a[tag=win,tag=!devMode] Diamonds 100
+scoreboard players add @a[tag=lose,tag=!devMode] Losses 1
 
-advancement grant @a[tag=win,tag=!falseWin,scores={kit=1000..1007},tag=!voidLose] only du-in:unlock/unlockwin
+advancement grant @a[tag=win,tag=!falseWin,scores={kit=1000..1007},tag=!voidLose,tag=!devMode] only du-in:unlock/unlockwin
 advancement grant @a[scores={Wins=100..}] only du-in:unstop
 advancement grant @a[scores={Wins=250..}] only du-in:champion
 advancement grant @a[scores={Wins=500..}] only du-in:champion
@@ -43,6 +45,9 @@ advancement grant @a[scores={Diamonds=10000..}] only du-in:diamonds/netheriteblo
 advancement grant @a[scores={Kills=500..}] only du-in:genocide
 advancement grant @a[scores={Kills=1000..}] only du-in:death
 advancement grant @a[scores={Kills=5000..}] only du-in:destroyer
+
+#For Dev Mode
+scoreboard players reset @a thrownBarrier
 
 #scoreboard players reset #voting
 #scoreboard players set #voting mapWinner 0

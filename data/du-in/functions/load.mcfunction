@@ -111,6 +111,16 @@ scoreboard objectives add kyloSkin dummy
 scoreboard objectives add pazSkin dummy
 scoreboard objectives add palpsSkin dummy
 
+#Settings
+scoreboard objectives add fallDamageSetting dummy
+scoreboard objectives add dayNightSetting dummy
+scoreboard objectives add dayTimeSetting dummy
+scoreboard objectives add sidebarToggle dummy
+scoreboard objectives add teamNameToggle dummy
+scoreboard objectives add ffaNameToggle dummy
+scoreboard objectives add devModeToggle dummy
+scoreboard objectives add skinPreset dummy
+
 #Gamemode objectives
 scoreboard objectives add Acount dummy
 scoreboard objectives add maxTeamLives dummy

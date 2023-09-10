@@ -39,7 +39,8 @@ execute if entity @s[tag=killCombo] run function du-in:ingame/killstreaks/combo/
 #HIT COMBO#
     execute if entity @s[scores={comboBreak=1..}] run function du-in:ingame/killstreaks/combo/reset1
     execute if entity @s[scores={comboHitTimer=20..,comboScore=1..}] run function du-in:ingame/killstreaks/combo/reset3
-#
+    execute if entity @s[scores={comboHitTimer=10..,comboScore=9..}] run function du-in:ingame/killstreaks/combo/reset3
+
 
 #Give armor if player is missing any#
 execute if entity @s[predicate=!du-in:has_armor,gamemode=adventure,tag=!lobby,tag=!teamDead,tag=!working,tag=!kitMenu,tag=!noClothes] unless entity @s[scores={gasterTimer=-99..}] run function du-in:kit/all/armor
@@ -125,3 +126,6 @@ execute if entity @s[scores={pussFearTimer=1..}] run function du-in:kit/puss/abi
 execute if entity @s[scores={sansHitTimer=0..}] unless entity @s[scores={gasterTimer=..79}] unless entity @s[scores={floweyHitTimer=1..}] unless entity @s[scores={deathTimer=0..}] run item replace entity @s armor.chest with minecraft:leather_chestplate{display:{Name:'{"text":"Gravity","color":"blue","bold":true}',color:2228479},Unbreakable:1b,weaponItem:1b,AttributeModifiers:[{AttributeName:"generic.knockbackResistance",Name:"generic.knockbackResistance",Amount:1,Operation:0,UUIDLeast:928037,UUIDMost:684643}]} 1
 
 execute if entity @s[tag=inField] run function du-in:kit/clairen/ability/field_effects
+execute if entity @s[tag=sabotagedField] run function du-in:kit/clairen/ability/sabotaged_field
+
+execute if entity @s[tag=devMode,scores={thrownBarrier=1..}] run tag @s add win 
