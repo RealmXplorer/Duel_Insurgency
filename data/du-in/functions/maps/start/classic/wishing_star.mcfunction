@@ -1,7 +1,6 @@
 tellraw @a ["",{"text":"The ","bold":false,"color":"gray"},{"text":"Wishing Star ","bold":true,"color":"yellow"},{"text":"map has been chosen!","bold":false,"color":"gray"}]
 
 #Teleports#
-execute as @a store result score @s spawnpoint run random value 1..8
 tp @a[tag=!working,scores={spawnpoint=0..2}] 2524 68 54 -90 0
 tp @a[tag=!working,scores={spawnpoint=3..4}] 2547 68 27 -18 0
 tp @a[tag=!working,scores={spawnpoint=5}] 2579 68 37 50 0

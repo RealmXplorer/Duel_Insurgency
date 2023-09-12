@@ -12,14 +12,6 @@ scoreboard players set @s[tag=creepSkins] creepSkin 0
 scoreboard players set @s[tag=flowSkins] flowSkin 0
 scoreboard players set @s[tag=clairenSkins] clairenSkin 0
 
-#If you do not own the skin, reset to 0
-scoreboard players set @s[tag=!nickSkins] wildeSkin 0
-scoreboard players set @s[tag=!sansSkins] sansSkin 0
-scoreboard players set @s[tag=!golemSkins] golemSkin 0
-scoreboard players set @s[tag=!creepSkins] creepSkin 0
-scoreboard players set @s[tag=!flowSkins] flowSkin 0
-scoreboard players set @s[tag=!clairenSkins] clairenSkin 0
-
 #Execute display function
 execute if entity @s[tag=nickSkins] run function du-in:other/skins/skin_menu/nick
 execute if entity @s[tag=sansSkins] run function du-in:other/skins/skin_menu/sans

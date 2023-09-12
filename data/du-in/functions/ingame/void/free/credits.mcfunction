@@ -50,14 +50,14 @@ title @s[scores={creditsTimer=1220}] subtitle {"text":"for playing!","bold":fals
 title @s[scores={creditsTimer=1220}] times 60 60 100
 
 #Easter Egg
-title @s[tag=lobby,scores={creditsTimer=1440}] title {"text":"","bold":true,"color":"gold"}
-title @s[tag=lobby,scores={creditsTimer=1440}] subtitle {"text":"YOU WANTED THIS","bold":false,"color":"gray"}
-title @s[tag=lobby,scores={creditsTimer=1440}] times 60 20 60
+title @s[tag=lobby,tag=beatenGame,scores={creditsTimer=1440}] title {"text":"","bold":true,"color":"gold"}
+title @s[tag=lobby,tag=beatenGame,scores={creditsTimer=1440}] subtitle {"text":"YOU WANTED THIS","bold":false,"color":"gray"}
+title @s[tag=lobby,tag=beatenGame,scores={creditsTimer=1440}] times 60 20 60
 
-title @s[tag=lobby,scores={creditsTimer=1580}] title {"text":"","bold":true,"color":"gold"}
-title @s[tag=lobby,scores={creditsTimer=1580}] subtitle {"text":"YOU CAME BACK","bold":false,"color":"gray"}
-title @s[tag=lobby,scores={creditsTimer=1580}] times 60 20 60
+title @s[tag=lobby,tag=beatenGame,scores={creditsTimer=1580}] title {"text":"","bold":true,"color":"gold"}
+title @s[tag=lobby,tag=beatenGame,scores={creditsTimer=1580}] subtitle {"text":"YOU CAME BACK","bold":false,"color":"gray"}
+title @s[tag=lobby,tag=beatenGame,scores={creditsTimer=1580}] times 60 20 60
 
-title @s[tag=lobby,scores={creditsTimer=1720}] title {"text":"","bold":true,"color":"gold"}
-title @s[tag=lobby,scores={creditsTimer=1720}] subtitle {"text":"THE EXPERIMENTS WILL CONTINUE","bold":false,"color":"gray"}
-title @s[tag=lobby,scores={creditsTimer=1720}] times 60 20 60
+title @s[tag=lobby,tag=beatenGame,scores={creditsTimer=1720}] title {"text":"","bold":true,"color":"gold"}
+title @s[tag=lobby,tag=beatenGame,scores={creditsTimer=1720}] subtitle {"text":"THE EXPERIMENTS WILL CONTINUE","bold":false,"color":"gray"}
+title @s[tag=lobby,tag=beatenGame,scores={creditsTimer=1720}] times 60 20 60

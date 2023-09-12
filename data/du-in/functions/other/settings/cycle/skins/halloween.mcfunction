@@ -21,20 +21,6 @@ scoreboard players set @s[tag=palpsSkins] palpsSkin 0
 scoreboard players set @s[tag=nickSkins] wildeSkin 3
 scoreboard players set @s[tag=villagerSkins] villSkin 1
 
-#If you do not own the skin, reset to 0
-scoreboard players set @s[tag=!charaSkins] charaSkin 0
-scoreboard players set @s[tag=!flowSkins] flowSkin 0
-scoreboard players set @s[tag=!friskSkins] friskSkin 0
-scoreboard players set @s[tag=!gasterSkins] gastSkin 0
-scoreboard players set @s[tag=!playSkins] steveSkin 0
-scoreboard players set @s[tag=!zombSkins] zombSkin 0
-scoreboard players set @s[tag=!springSkins] springSkin 0
-scoreboard players set @s[tag=!asgoreSkins] asgoreSkin 0
-scoreboard players set @s[tag=!slimeSkins] slimeSkin 0
-scoreboard players set @s[tag=!palpsSkins] palpsSkin 0
-scoreboard players set @s[tag=!nickSkins] wildeSkin 0
-scoreboard players set @s[tag=!villagerSkins] villSkin 0
-
 #Execute display function
 execute if entity @s[tag=charaSkins] run function du-in:other/skins/skin_menu/chara
 execute if entity @s[tag=flowSkins] run function du-in:other/skins/skin_menu/flowey

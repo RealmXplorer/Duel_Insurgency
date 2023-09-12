@@ -6,7 +6,9 @@
         "#minecraft:walls",
         "#minecraft:fences",
         "#minecraft:fence_gates",
-        "minecraft:iron_bars"
+        "minecraft:iron_bars",
+        "minecraft:chain",
+        "minecraft:lightning_rod"
 
     ]
 }

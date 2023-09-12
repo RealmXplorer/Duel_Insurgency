@@ -1,6 +1,5 @@
 tellraw @a ["",{"text":"The ","bold":false,"color":"gray"},{"text":"Ziggurat ","bold":true,"color":"yellow"},{"text":"map has been chosen!","bold":false,"color":"gray"}]
 
-execute as @a store result score @s spawnpoint run random value 1..8
 tp @a[tag=!working,scores={spawnpoint=0..2}] 233 6 -1882 -135 -13
 tp @a[tag=!working,scores={spawnpoint=3..4}] 233 6 -1925 -45 -15
 tp @a[tag=!working,scores={spawnpoint=5..6}] 276 6 -1925 45 -15

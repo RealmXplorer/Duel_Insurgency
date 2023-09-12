@@ -2,7 +2,6 @@
 tellraw @a ["",{"text":"The ","bold":false,"color":"gray"},{"text":"Arena ","bold":true,"color":"yellow"},{"text":"map has been chosen!","bold":false,"color":"gray"}]
 
 #Teleport players
-execute as @a store result score @s spawnpoint run random value 1..8
 tp @a[tag=!working,scores={spawnpoint=0..2}] -7 6 -534 -135 -5
 tp @a[tag=!working,scores={spawnpoint=3..4}] -7 6 -534 -135 -1
 tp @a[tag=!working,scores={spawnpoint=5..6}] 15 6 -556 45 -1

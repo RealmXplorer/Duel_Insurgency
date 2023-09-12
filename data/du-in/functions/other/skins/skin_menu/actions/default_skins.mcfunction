@@ -1,4 +1,4 @@
-clear @s barrier{CustomModelData:104}
+clear @s barrier{CustomModelData:105}
 
 tag @s add defaultSelect
 

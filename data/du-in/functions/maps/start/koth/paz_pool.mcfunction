@@ -1,7 +1,6 @@
 tellraw @a ["",{"text":"The ","bold":false,"color":"gray"},{"text":"Paz Pool Party ","bold":true,"color":"yellow"},{"text":"map has been chosen!","bold":false,"color":"gray"}]
 scoreboard players set @a[scores={kit=1001}] pazSkin 1
 
-execute as @a store result score @s spawnpoint run random value 1..8
 tp @a[tag=!working,scores={spawnpoint=0..2}] 571 -32 -7220
 tp @a[tag=!working,scores={spawnpoint=3..4}] 609 -32 -7223
 

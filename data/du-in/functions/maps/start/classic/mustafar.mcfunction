@@ -1,6 +1,5 @@
 tellraw @a ["",{"text":"The ","bold":false,"color":"gray"},{"text":"Mustafar ","bold":true,"color":"yellow"},{"text":"map has been chosen!","bold":false,"color":"gray"}]
 
-execute as @a store result score @s spawnpoint run random value 1..8
 tp @a[tag=!working,scores={spawnpoint=0..2}] 233 5 -316 136 1
 tp @a[tag=!working,scores={spawnpoint=3..4}] 234 6 -358 53 -4
 tp @a[tag=!working,scores={spawnpoint=5..6}] 193 8 -356 -40 1

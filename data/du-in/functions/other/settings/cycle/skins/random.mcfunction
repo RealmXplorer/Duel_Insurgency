@@ -8,28 +8,6 @@ tag @s add randomSkins
 
 function du-in:other/skins/random
 
-#If you do not own the skin, reset to 0
-scoreboard players set @s[tag=!charaSkins] charaSkin 0
-scoreboard players set @s[tag=!clairenSkins] clairenSkin 0
-scoreboard players set @s[tag=!creepSkins] creepSkin 0
-scoreboard players set @s[tag=!flowSkins] flowSkin 0
-scoreboard players set @s[tag=!cupSkins] cupSkin 0
-scoreboard players set @s[tag=!friskSkins] friskSkin 0
-scoreboard players set @s[tag=!gasterSkins] gastSkin 0
-scoreboard players set @s[tag=!golemSkins] golemSkin 0
-scoreboard players set @s[tag=!nickSkins] wildeSkin 0
-scoreboard players set @s[tag=!playSkins] steveSkin 0
-scoreboard players set @s[tag=!pussSkins] pussSkin 0
-scoreboard players set @s[tag=!ralseiSkins] ralSkin 0
-scoreboard players set @s[tag=!sansSkins] sansSkin 0
-scoreboard players set @s[tag=!springSkins] springSkin 0
-scoreboard players set @s[tag=!villagerSkins] villSkin 0
-scoreboard players set @s[tag=!zombSkins] zombSkin 0
-scoreboard players set @s[tag=!kyloSkins] kyloSkin 0
-scoreboard players set @s[tag=!asgoreSkins] asgoreSkin 0
-scoreboard players set @s[tag=!palpsSkins] palpsSkin 0
-scoreboard players set @s[tag=!slimeSkins] slimeSkin 0
-
 #Execute display function
 execute if entity @s[tag=villagerSkins] run function du-in:other/skins/skin_menu/villager
 execute if entity @s[tag=friskSkins] run function du-in:other/skins/skin_menu/frisk
