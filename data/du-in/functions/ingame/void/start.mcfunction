@@ -1,5 +1,7 @@
 tag @a add void
 
+clear @s barrier
+
 effect give @a instant_health 1 100 true
 advancement revoke @s only du-in:void/interact_void
 execute at @e[type=armor_stand,tag=vendMachine] run setblock ~ ~1 ~ air
