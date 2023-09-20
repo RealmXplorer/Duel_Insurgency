@@ -21,6 +21,6 @@ execute if score #main maxTimer matches 1000 run function du-in:ingame/timed/nea
 execute if score #main maxTimer matches ..0 run function du-in:ingame/deathmatch/team_timed/ending
 
 #MUSIC#
-execute as @a[tag=dmIngame,tag=!musicOff,tag=!startgame,tag=!saac,tag=!bigChungus] at @s run function du-in:music/ingame/deathmatch
+#execute as @a[tag=dmIngame,tag=!musicOff,tag=!startgame,tag=!saac,tag=!bigChungus] at @s run function du-in:music/ingame/deathmatch
 
 function du-in:maps/classic

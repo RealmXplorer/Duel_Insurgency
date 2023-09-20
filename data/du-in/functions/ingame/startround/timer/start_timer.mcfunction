@@ -83,7 +83,7 @@ tag @a add armor
 tag @a remove voteRandom
 
 #Play countdown sound
-execute as @a at @s run playsound minecraft:soundeffect.countdown master @s[tag=!dmend] ~ ~ ~ 1000000 1 1
+execute as @a at @s run playsound minecraft:soundeffect.countdown master @s[tag=!dmend] ~ ~ ~ 0.5 1 1
 
 #Hide map countdown
 bossbar set minecraft:map_countdown visible false

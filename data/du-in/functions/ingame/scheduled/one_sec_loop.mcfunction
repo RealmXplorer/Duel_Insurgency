@@ -11,6 +11,7 @@ execute as @a[gamemode=!spectator,tag=playing,tag=!startgame,tag=!pussFear] stor
 
 execute as @a[gamemode=!spectator,tag=playing,tag=!startgame,tag=!pussFear] if score @s weapCount matches 2.. run clear @s[tag=!kitMenu] #du-in:weapon
 
+execute at @e[type=marker,tag=slimePatch] run particle minecraft:item_slime ~ ~ ~ 0 0 0 1 100 normal
 
 #Add 1 to score "spawnpoint"
 #scoreboard players add @r[tag=playing,gamemode=!spectator,predicate=du-in:chance/half_chance] spawnpoint 1

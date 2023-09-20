@@ -97,7 +97,7 @@ scoreboard players reset #main map
 # tag @a remove flagGot
 
 #DELAY 4#
-execute if entity @a[tag=partyLeader,tag=!timeFree,tag=!sidebarDisplay] run scoreboard objectives setdisplay sidebar Kills
+execute if entity @a[tag=partyLeader,tag=!timeFree] unless entity @a[tag=partyLeader,tag=sidebarDisable] run scoreboard objectives setdisplay sidebar Kills
 scoreboard players reset @a[tag=!working] kit
 tag @a[tag=!working] remove playing
 
@@ -160,6 +160,7 @@ tag @a remove parry
 tag @a remove monsterTarget
 tag @a remove selectedTarget
 tag @a remove hasOnionRing
+tag @a remove slimeDeath
 
 xp set @a 0 levels
 scoreboard players set #main scoreMost 0

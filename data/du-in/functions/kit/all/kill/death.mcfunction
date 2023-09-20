@@ -14,6 +14,7 @@ execute if entity @s[tag=selectedTarget] run tag @s remove monsterTarget
 execute if entity @s[tag=selectedTarget] run tag @s remove selectedTarget
 
 execute if entity @s[tag=sabotaged] run xp set @s 120 levels
+execute if entity @s[tag=sabotaged] run clear @s carrot_on_a_stick
 execute if entity @s[tag=sabotaged] run tag @s remove sabotaged
 
 execute if entity @s[tag=fortniteCard] run function du-in:kit/paz/card/lose_card

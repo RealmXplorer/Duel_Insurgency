@@ -17,9 +17,9 @@ execute if entity @s[predicate=du-in:effect/has_speed] run effect clear @s speed
 
 playsound minecraft:entity.blaze.death master @s ~ ~ ~ 1 0.5
 tag @s[scores={kit=1000,saacMoney=0..}] add saacSteal
-scoreboard players set @s[scores={kit=12}] floweyHitTimer 0
-scoreboard players set @s[scores={kit=10}] gasterTimer 5
-scoreboard players set @s[scores={kit=3},tag=magma] magmaTimer 0
+scoreboard players set @s[scores={kit=12,floweyHitTimer=1..}] floweyHitTimer 0
+scoreboard players set @s[scores={kit=10,gasterTimer=6..}] gasterTimer 5
+scoreboard players set @s[scores={kit=3,magmaTimer=1..},tag=magma] magmaTimer 0
 tag @s[tag=pursue] add whatTheWhat
 scoreboard players set @s[tag=pursue] gumballPursueTimer 40
 

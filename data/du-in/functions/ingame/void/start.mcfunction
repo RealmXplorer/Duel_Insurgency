@@ -1,6 +1,6 @@
 tag @a add void
 
-clear @s barrier
+clear @a barrier
 
 effect give @a instant_health 1 100 true
 advancement revoke @s only du-in:void/interact_void

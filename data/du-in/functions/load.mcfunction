@@ -288,7 +288,6 @@ scoreboard objectives add matchDeaths dummy
 scoreboard objectives add music minecraft.custom:play_time
 
 scoreboard objectives add parryCooldown dummy
-scoreboard objectives add parryDam minecraft.custom:minecraft.damage_dealt
 scoreboard objectives add parryHit minecraft.custom:minecraft.damage_taken
 scoreboard objectives add parryDuration dummy
 scoreboard objectives add parryWindow dummy

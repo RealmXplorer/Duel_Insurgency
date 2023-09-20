@@ -23,6 +23,13 @@ playsound minecraft:entity.magma_cube.death master @a ~ ~ ~ 100000 1
 playsound minecraft:entity.magma_cube.jump master @a ~ ~ ~ 100000 1
 playsound minecraft:entity.generic.explode master @a ~ ~ ~ 100000 2
 
+execute as @e[type=marker,tag=slimePatch] if score @s player = @a[scores={kit=3},tag=kitActions,limit=1] player run kill @s
+
+summon minecraft:marker ~ ~ ~ {Tags:["slimePatch","projectile","mapSpecific"]}
+execute store result score @e[type=marker,tag=slimePatch,tag=!nameSet] player run scoreboard players get @s player
+tag @e[type=marker,tag=slimePatch,tag=!nameSet] add nameSet
+
+
 #If sabotaged, end ability
 xp set @s[tag=!stolen,tag=sabotaged] 320 levels
 tag @s[tag=stolen,tag=sabotaged] add kitDone

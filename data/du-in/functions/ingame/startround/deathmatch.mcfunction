@@ -10,7 +10,9 @@ execute unless score #main pylonsDestroyed matches 3 run schedule function du-in
 execute store result score @a[tag=dmIngame] Lives run scoreboard players get @a[tag=partyLeader,limit=1] maxLives
 #tag @a[tag=!working,tag=!musicOff] add song
 team join Deathmatch @a[tag=!spectating]
-execute if entity @a[tag=!teamMode] run execute store result score #main playerCount run team list Deathmatch
+execute unless entity @a[tag=devMode,tag=partyLeader] if entity @a[tag=!teamMode] run execute store result score #main playerCount run team list Deathmatch
+execute if entity @a[tag=devMode,tag=partyLeader] if entity @a[tag=!teamMode] run scoreboard players set #main playerCount 3
+
 advancement grant @a[tag=playing] only du-in:gamemode/deathmatch
 scoreboard objectives setdisplay sidebar Lives
 tag @a remove dml

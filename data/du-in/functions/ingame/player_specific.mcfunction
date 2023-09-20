@@ -20,7 +20,6 @@ execute if entity @s[level=1..2,gamemode=!spectator,tag=!lobby,tag=!win,tag=!los
     execute if entity @s[tag=parryStart] run function du-in:kit/all/parry/parry_buffer
     execute if entity @s[tag=parry,scores={parryDuration=1..}] run function du-in:kit/all/parry/in_parry
     scoreboard players reset @s[scores={parryHit=1..}] parryHit
-    scoreboard players reset @s[scores={parryDam=1..}] parryDam
 
 # REGEN TIMER (Except for Zombie) #
     execute if entity @s[scores={healthTimer=200..}] unless entity @s[tag=undead] unless entity @s[scores={kit=19}] run scoreboard players add @s regenTimer 1

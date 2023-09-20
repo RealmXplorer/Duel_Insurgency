@@ -94,7 +94,7 @@ bossbar set minecraft:classicred color white
 tag @a remove dmClose
 
 #DELAY 4#
-execute if entity @a[tag=partyLeader,tag=!timeFree,tag=!sidebarDisplay] run scoreboard objectives setdisplay sidebar Kills
+execute if entity @a[tag=partyLeader,tag=!timeFree,tag=!sidebarDisable] run scoreboard objectives setdisplay sidebar Kills
 scoreboard players reset @a[tag=!working] kit
 tag @a[tag=!working] remove playing
 

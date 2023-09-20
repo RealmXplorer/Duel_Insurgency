@@ -22,7 +22,7 @@ execute if score #main kothCap matches 5000 run tellraw @a ["",{"text":"KOTH Poi
 execute if score #main kothGoal >= #main kothCap store result score #main kothGoal run scoreboard players get #main kothCap
 execute if score #main kothHalf >= #main kothCap store result score #main kothHalf run scoreboard players get #main kothCap
 execute if score #main kothHalf = #main kothCap run scoreboard players operation #main kothHalf /= #main halfScore
-execute if score #main kothGoal = #main kothCap run scoreboard players remove #main kothGoal 1000
+execute if score #main kothGoal = #main kothCap run scoreboard players remove #main kothGoal 500
 
 #Set bossbar max to new max
 #execute store result bossbar bossbar:koth max run scoreboard players get #main kothCap

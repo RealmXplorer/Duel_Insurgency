@@ -1,12 +1,12 @@
-execute if entity @s[tag=!sabotaged,tag=!void] as @a[distance=0.05..10,tag=playing,tag=!win,tag=!lose,gamemode=!spectator,tag=!teamDead] unless score @s team = @a[tag=kitActions,scores={kit=9},limit=1] team run function du-in:kit/chara/ability/effect
-execute if entity @s[tag=void] as @e[type=skeleton,distance=0.05..10] run function du-in:kit/chara/ability/effect
-execute if entity @s[tag=sabotaged] run function du-in:kit/chara/ability/effect
-clear @s minecraft:carrot_on_a_stick
-xp set @s[tag=!stolen] 460 levels
-effect give @s minecraft:speed 5 1 true
-#effect give @s minecraft:haste 5 1 true
-scoreboard players set @s charaTimer 100
-function du-in:kit/chara/particle
+execute if entity @a[distance=0.05..10,limit=1,sort=nearest,tag=playing,gamemode=!spectator,tag=!teamDead] run function du-in:kit/chara/ability/success
+
+#If player is too far
+execute unless entity @a[distance=0.05..10,tag=playing,limit=1,sort=nearest,gamemode=!spectator,tag=!teamDead] run function du-in:kit/all/ability/far
+
+#If player is same team
+#execute unless entity @a[distance=0.05..6,tag=playing,gamemode=!spectator,tag=!teamDead] if score @s team = @a[scores={kit=17},tag=kitActions,limit=1] team run function du-in:kit/all/ability/team
+
+#execute as @a[tag=kitActions,scores={kit=16}] run tag @s remove kyloHit
+
+#End Ability
 tag @s remove kitActions
-tag @s remove sabotaged
-execute if entity @s[tag=stolen] run tag @s add kitDone
