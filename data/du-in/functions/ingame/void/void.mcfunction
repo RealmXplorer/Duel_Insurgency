@@ -49,3 +49,22 @@ execute unless score #main pylonsDestroyed matches 3 unless score #main pylonsDe
 
 
 execute unless score #main pylonsDestroyed matches 3 if score Insurgents playerCount matches ..0 unless entity @a[tag=win] run function du-in:ingame/void/end/lose
+
+#DARKNESS CREEPING
+#WATCHFUL EYES
+#DARKNESS CREEPING
+#TELLING LIES
+
+
+#AND IN THE UMBRAL RAYS IT BLEEDS
+#LIGHT ESCAPES AND EVIL FEEDS
+
+
+#DARKNESS CREEPING
+#CURSED EARS
+#DARKNESS CREEPING
+#KNOWS YOUR FEARS
+
+
+#SHADOWS BREAK AND VOID THEY WEAVE
+#BRIGHTNESS PURGED TO DARKNESS CLEAVE
