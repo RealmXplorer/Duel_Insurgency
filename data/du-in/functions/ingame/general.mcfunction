@@ -50,7 +50,7 @@
     tag @e[type=minecraft:snowball,tag=!projectile] add projectile
 
     #Run for when players are in Clairen's field
-    execute at @e[type=marker,tag=clairenField] run function du-in:kit/clairen/ability/add_infield
+    #execute as @e[type=marker,tag=clairenField] at @s run function du-in:kit/clairen/ability/add_infield
 #at @a[gamemode=!spectator]
 
 

@@ -37,7 +37,7 @@ execute if score #main map matches 12 run playsound minecraft:ambient.wind ambie
 #execute if score #main map matches 13 run function du-in:ingame/scheduled/ambience/forest
 
 #Haunted House
-execute if score #main map matches 14 run playsound minecraft:ambient.wind ambient @s ~ ~ ~ 0.25 1 1
+#execute if score #main map matches 14 run playsound minecraft:ambient.wind ambient @s ~ ~ ~ 0.25 1 1
 
 #Harvest
 #execute if score #main map matches 15 run function du-in:ingame/scheduled/ambience/forest

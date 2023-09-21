@@ -6,6 +6,12 @@ scoreboard players reset @s[scores={circleTimer=31..}] circleTimer
 scoreboard players set @s[tag=!clairSet] clairenTimer 100
 tag @s[tag=!clairSet] add clairSet
 
+execute if entity @s[tag=!sabotaged] run tag @a[distance=..6,gamemode=!spectator,tag=!inField] add inField
+execute if entity @s[tag=!sabotaged] run tag @a[distance=6..,gamemode=!spectator,tag=inField] remove inField
+
+execute if entity @s[tag=sabotaged] run tag @a[distance=..6,gamemode=!spectator,tag=!sabotagedField] add sabotagedField
+execute if entity @s[tag=sabotaged] run tag @a[distance=6..,gamemode=!spectator,tag=sabotagedField] remove sabotagedField
+
 scoreboard players remove @s[scores={clairenTimer=-1..}] clairenTimer 1
 
 #execute as @a[distance=..8,tag=playing,gamemode=!spectator] run effect give @s minecraft:strength 1 0 true
