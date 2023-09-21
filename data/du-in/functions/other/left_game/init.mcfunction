@@ -15,6 +15,9 @@ scoreboard players reset @s regenTimer
 #Remove flag from player who left
 tag @s remove flagGot
 
+
+execute unless score @s player matches 1.. if entity @s[tag=played] run tag @s remove played
+
 #Remove other tags from player who left
 tag @s remove startgame
 tag @s remove countStop

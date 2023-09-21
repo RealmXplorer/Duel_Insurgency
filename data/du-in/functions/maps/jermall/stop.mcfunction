@@ -1,7 +1,7 @@
 tag @a remove monsterTarget
 tag @a remove selectedTarget
 
-stopsound @a[tag=!void] record
+stopsound @a[tag=!void,tag=!songEnd] record
 scoreboard players set @a music 0
 execute if entity @a[tag=cIngame,tag=!songEnd] run function du-in:music/ingame/classic
 execute if entity @a[tag=dmIngame,tag=!songEnd] run function du-in:music/ingame/deathmatch
