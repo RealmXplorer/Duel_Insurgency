@@ -6,6 +6,8 @@ execute if score Red capturePoints >= #main cqCap run tag @a[scores={team=2}] ad
 execute if score Blue capturePoints >= #main cqCap run tag @a[scores={team=2}] add win
 execute if score Blue capturePoints >= #main cqCap run tag @a[scores={team=1}] add lose
 
+function du-in:ingame/conquest/reset_points
+
 #If spectators tag lose
 tag @a[tag=spectating] add lose
 

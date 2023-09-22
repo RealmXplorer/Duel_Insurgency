@@ -51,7 +51,7 @@ execute if entity @a[tag=ctfIngame] at @e[type=marker,tag=blueFlag] run setblock
 execute if entity @a[tag=ctfIngame] at @e[type=marker,tag=redFlag] run setblock ~ ~ ~ red_banner destroy
 
 #Reset Conquest points
-execute if entity @a[tag=cqIngame] run function du-in:ingame/conquest/reset_points
+#execute if entity @a[tag=cqIngame] run function du-in:ingame/conquest/reset_points
 
 #Kill all ingame entities.
 kill @e[nbt={inGround:1b}]

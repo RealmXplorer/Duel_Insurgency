@@ -41,7 +41,7 @@ title @s[scores={creditsTimer=860}] times 60 60 60
 title @s[scores={creditsTimer=1040}] title {"text":"Armor Textures","bold":true,"color":"gold"}
 title @s[scores={creditsTimer=1040}] subtitle {"text":"deo_x, Dreamrage_808, Yogurette","bold":false,"color":"blue"}
 title @s[scores={creditsTimer=1100}] subtitle {"text":"Meatchip, vxxmit, D1maShip","bold":false,"color":"blue"}
-title @s[scores={creditsTimer=1160}] subtitle {"text":"RockstarWolfy7, KrEsHDiE","bold":false,"color":"blue"}
+title @s[scores={creditsTimer=1160}] subtitle {"text":"RockstarWolfy7, KrEsHDiE, GiganticYassin","bold":false,"color":"blue"}
 title @s[scores={creditsTimer=1040}] times 60 60 60
 
 #Thank you

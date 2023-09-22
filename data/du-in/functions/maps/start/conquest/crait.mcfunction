@@ -37,6 +37,8 @@ summon marker 10032 5 5006 {Tags:["vent","mapSpecific"]}
 summon marker 10037 5 5054 {Tags:["vent","mapSpecific"]}
 summon marker 10048 5 5101 {Tags:["vent","mapSpecific"]}
 
+function du-in:ingame/conquest/reset_points
+
 #10048 4 5102
 #10036 4 5055
 #10031 4 5007

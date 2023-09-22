@@ -32,3 +32,5 @@ summon interaction -3762 56 1254 {Tags:["ventBlock","mapSpecific"],width:1.05f,h
 summon marker -3715 62 1252 {Tags:["vent","mapSpecific"]}
 summon marker -3734 59 1273 {Tags:["vent","mapSpecific"]}
 summon marker -3762 57 1255 {Tags:["vent","mapSpecific"]}
+
+function du-in:ingame/conquest/reset_points

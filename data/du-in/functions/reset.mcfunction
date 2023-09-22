@@ -98,6 +98,7 @@ scoreboard players reset #main map
 
 #DELAY 4#
 execute if entity @a[tag=partyLeader,tag=!timeFree] unless entity @a[tag=partyLeader,tag=sidebarDisable] run scoreboard objectives setdisplay sidebar Kills
+execute if entity @a[tag=partyLeader,tag=!timeFree,tag=sidebarDisable] run scoreboard objectives setdisplay sidebar
 scoreboard players reset @a[tag=!working] kit
 tag @a[tag=!working] remove playing
 
