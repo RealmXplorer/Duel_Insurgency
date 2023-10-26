@@ -3,7 +3,7 @@ scoreboard players remove @s asgoreFire 1
 #If a player walks into the fire wall.
 execute if entity @a[tag=void] as @e[type=skeleton,tag=gonerThing,distance=..1] at @s run function du-in:kit/asgore/ability/void/contact
 
-execute unless entity @a[tag=void] as @a[gamemode=!spectator,distance=..1,tag=playing] at @s unless score @e[tag=asgoreFire,limit=1,sort=nearest] team = @s team run function du-in:kit/asgore/ability/contact
+execute unless entity @a[tag=void] as @a[gamemode=!spectator,distance=...75,tag=playing] at @s unless score @e[tag=asgoreFire,limit=1,sort=nearest] team = @s team run function du-in:kit/asgore/ability/contact
 #execute unless entity @a[tag=void] as @a[gamemode=!spectator,distance=..1,tag=playing,predicate=du-in:effect/is_on_fire] at @s unless block ~ ~ ~ water unless score @e[tag=asgoreFire,limit=1,sort=nearest] team = @s team run function du-in:kit/asgore/ability/contact_fire
 #execute as @e[type=minecraft:arrow,distance=..2] run data modify entity @s {Fire:100}
 #execute as @e[type=minecraft:trident,distance=..2] run data modify entity @s {Fire:100} merge
