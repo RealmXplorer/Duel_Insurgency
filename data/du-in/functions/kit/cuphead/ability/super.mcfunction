@@ -3,8 +3,7 @@ scoreboard players remove @s cupTimer 1
 #execute if entity @s[predicate=du-in:chance/half_chance] run particle minecraft:instant_effect ~ ~1 ~ 0.25 0.5 0.25 0.5 5 force
 attribute @s[tag=!pussFear] generic.knockback_resistance base set 1
 particle minecraft:instant_effect ~ ~1 ~ 0.25 0.25 0.25 0.5 4 force
-execute if entity @s[scores={cupHit=3..}] run effect give @s resistance 2 255 true
-scoreboard players reset @s cupHit
+effect give @s resistance 1 255 true
 
 tag @s[tag=stolen,scores={cupTimer=..0}] add kitDone
 scoreboard players reset @s[scores={cupTimer=..0}] cupTimer

@@ -1,6 +1,6 @@
 
 execute unless score @s team = @a[distance=0.05..3,tag=playing,sort=nearest,limit=1] team run effect give @a[distance=0.05..3,sort=nearest,limit=1,gamemode=!spectator] slowness 1 100 true
-execute unless score @s team = @a[distance=0.05..3,tag=playing,sort=nearest,limit=1] team run damage @a[distance=0.05..3,sort=nearest,limit=1,gamemode=!spectator] 1 arrow by @s
+execute unless score @s team = @a[distance=0.05..3,tag=playing,sort=nearest,limit=1] team run damage @a[distance=0.05..3,sort=nearest,limit=1,gamemode=!spectator] 1.5 arrow by @s
 
 playsound minecraft:cuphead.parry master @a ~ ~ ~ 1 1
 effect give @s minecraft:levitation 1 10 true
