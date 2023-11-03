@@ -13,6 +13,7 @@ playsound minecraft:saac.ability master @a ~ ~ ~ 100 1
 playsound minecraft:entity.zombie_villager.cure master @a ~ ~ ~ 100 2
 playsound minecraft:block.glass.break master @a ~ ~ ~ 100 .8
 playsound minecraft:entity.player.attack.sweep master @a ~ ~ ~ 100 1
+playsound minecraft:sans.ability master @a ~ ~ ~ .5 1.05
 
 
 execute as @a[tag=confusion] at @s run function du-in:kit/saac/ability/confused

@@ -10,7 +10,9 @@ execute as @a[tag=noClothes] at @s run function du-in:kit/gumball/ability/darwin
 
 effect give @s minecraft:speed 5 2 true
 
+##COPYRIGHT?
 playsound minecraft:darwin.ability master @a ~ ~ ~ 9999 1
+playsound minecraft:sans.ability master @a ~ ~ ~ .25 1
 playsound minecraft:entity.player.attack.sweep master @a ~ ~ ~ 9999 1.3
 playsound minecraft:block.enchantment_table.use master @a ~ ~ ~ 9999 1
 

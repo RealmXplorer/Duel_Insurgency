@@ -14,6 +14,7 @@ effect give @s[tag=deathMark,tag=!sabotaged] regeneration 2 0 true
 playsound minecraft:soundeffect.parry master @a ~ ~ ~ 100 1
 playsound minecraft:soundeffect.parry master @a ~ ~ ~ 100 .5
 playsound minecraft:soundeffect.parry master @a ~ ~ ~ 100 2
+playsound minecraft:sans.ability master @a ~ ~ ~ .25 .95
 
 #Send flames
 execute unless entity @s[tag=sabotaged] positioned ^-4 ^ ^ if entity @s[distance=..25] run function du-in:kit/death/ability/left_raycast

@@ -11,13 +11,13 @@ execute if entity @s[tag=!stolen,tag=!teamDead] unless entity @s[scores={secCoun
 execute store result score @s[tag=!stolen] secCount run clear @s[tag=!kitMenu] warped_fungus_on_a_stick 0
 
 #Activate Secondary#
-execute if entity @s[tag=secKitActions,tag=!stolen] run function du-in:kit/yharim/secondary
+execute if entity @s[tag=secKitActions,tag=!stolen] run function du-in:kit/yharim/secondary/init
 
 #Armor#
 execute if entity @s[tag=armor,tag=!stolen] run function du-in:kit/yharim/armor
 
 #Ability#
-execute if entity @s[level=1] run item replace entity @s weapon.offhand with minecraft:carrot_on_a_stick{display:{Name:'[{"text":"Yharim\'s Stimulants","color":"red","bold":true,"italic":false,"underlined":false,"strikethrough":false,"obfuscated":false}]',Lore:['{"text":"Right click to activate!","color":"dark_purple","bold":true}]','[{"text":"Increase defense and resistance","color":"dark_gray"}]','{"text":"to tank damage","color":"dark_gray"}','{"text":"","color":"dark_gray"}']},HideFlags:1,Enchantments:[{id:"minecraft:protection",lvl:1s}],CustomModelData:310,weaponItem:1b}
+execute if entity @s[level=1] run item replace entity @s weapon.offhand with minecraft:carrot_on_a_stick{display:{Name:'[{"text":"Yharim\'s Stimulants","color":"red","bold":true,"italic":false,"underlined":false,"strikethrough":false,"obfuscated":false}]',Lore:['[{"text":"Right click to activate!","color":"dark_purple","bold":true}]','[{"text":"Increase defense and resistance","color":"dark_gray"}]','{"text":"to tank damage","color":"dark_gray"}','{"text":"","color":"dark_gray"}']},HideFlags:1,Enchantments:[{id:"minecraft:protection",lvl:1s}],CustomModelData:310,weaponItem:1b}
 
 execute if entity @s[tag=kitActions] run function du-in:kit/yharim/ability/init
 

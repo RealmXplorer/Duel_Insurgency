@@ -23,6 +23,7 @@ playsound minecraft:item.flintandsteel.use master @a ~ ~ ~ 100000 1
 playsound minecraft:entity.magma_cube.death master @a ~ ~ ~ 100000 1
 playsound minecraft:entity.magma_cube.jump master @a ~ ~ ~ 100000 1
 playsound minecraft:entity.generic.explode master @a ~ ~ ~ 100000 2
+playsound minecraft:sans.ability master @a ~ ~ ~ .5 1.05
 
 execute as @e[type=marker,tag=slimePatch] if score @s player = @a[scores={kit=3},tag=kitActions,limit=1] player run kill @s
 

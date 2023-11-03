@@ -10,4 +10,6 @@ execute if entity @s[scores={magicCount=6},tag=!magicBag,tag=!sabotaged] run fun
 
 execute if entity @s[tag=!magicBag,tag=sabotaged] run function du-in:kit/jack_horner/ability/bug/give
 
+playsound minecraft:sans.ability master @a ~ ~ ~ .15 1.15
+
 tag @s remove kitActions

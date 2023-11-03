@@ -10,6 +10,8 @@ tag @s[tag=sabotaged] add meeting
 effect give @a[tag=meeting] minecraft:fire_resistance 1 255 true
 
 playsound minecraft:sus.emerg master @a ~ ~ ~ 2000 1
+playsound minecraft:sans.ability master @a ~ ~ ~ .25 1
+
 execute as @a[tag=meeting] at @s run title @a title {"text":"Emergency","color":"red","bold":true}
 execute as @a[tag=meeting] at @s run title @a subtitle {"text":"Meeting!","color":"red","bold":true}
 

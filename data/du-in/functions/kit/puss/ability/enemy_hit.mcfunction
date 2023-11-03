@@ -3,6 +3,8 @@ clear @s #du-in:weapon
 clear @s #du-in:secondary
 #attribute @s generic.armor base set -3
 playsound minecraft:entity.blaze.death master @s ~ ~ ~ 1 0.5
+playsound minecraft:sans.ability master @a ~ ~ ~ 1 1.05
+
 tellraw @s [{"text":"You dropped your weapon!","bold":true,"color":"red"}]
 attribute @s[tag=!pussFear] generic.knockback_resistance base set 0
 scoreboard players set @s pussFearTimer 40

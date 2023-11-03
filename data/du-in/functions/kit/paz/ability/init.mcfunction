@@ -13,10 +13,11 @@ execute if entity @s[tag=sabotaged] run summon ender_pearl ~ ~ ~ {NoGravity:1b,I
 
 #Play sounds
 playsound minecraft:entity.zombie_villager.converted master @a ~ ~ ~ 1 .5
-playsound minecraft:ui.button.click master @a ~ ~ ~ 10
+playsound minecraft:ui.button.click master @a ~ ~ ~ 10 1
+playsound minecraft:sans.ability master @a ~ ~ ~ .25 1
 
 #Message
-tellraw @a[tag=!hacker] {"text":"You lost connection!","bold":"true","color":"red"}
+tellraw @a[tag=!hacker] {"text":"You lost connection!","bold":true,"color":"red"}
 
 #Set Enderpearls to player's UUIDs
 execute as @e[type=ender_pearl,tag=blakeTP,tag=notAssigned] at @s run function du-in:kit/paz/ability/set_uuid
