@@ -24,7 +24,7 @@ execute if entity @s[level=1..2,gamemode=!spectator,tag=!lobby,tag=!win,tag=!los
 # REGEN TIMER (Except for Zombie) #
     execute if entity @s[scores={healthTimer=200..}] unless entity @s[tag=undead] unless entity @s[scores={kit=19}] run scoreboard players add @s regenTimer 1
     execute if entity @s[scores={healthTimer=140..},tag=!stolen,tag=undead] run scoreboard players add @s regenTimer 1
-    execute if entity @s[scores={regenTimer=99..}] run function du-in:ingame/regentimer/timer
+    execute if entity @s[scores={regenTimer=100..}] run function du-in:ingame/regentimer/timer
 
     #Reset health timer if player is hit or deals damage
     execute if entity @s[scores={healthHit=1..}] run function du-in:ingame/regentimer/health_dam
