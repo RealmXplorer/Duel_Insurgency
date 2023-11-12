@@ -266,6 +266,8 @@ tag @a remove timedMode
 tag @a remove spamMode
 
 tag @a remove springLock
+
+
 tag @a remove lorde
 scoreboard players reset @a yharimTimer
 tag @a remove runza
@@ -361,6 +363,30 @@ scoreboard players reset @a dmDeath
 scoreboard players set @a diedIngame 0
 
 tag @a remove boneAttack
+
+#Remove all Attributes
+##Springtrap
+execute as @a run attribute @s generic.attack_damage modifier remove f90a6e5b-203f-440c-9f8c-6bb52cc3ab56
+
+##Yharim
+execute as @a run attribute @s generic.movement_speed modifier remove cbda016f-2c7a-4655-a93f-e336ba656dd8
+execute as @a run attribute @s generic.knockback_resistance modifier remove 1234f0a5-4a45-44d9-aa8b-45aed1442cd4
+execute as @a run attribute @s minecraft:generic.armor modifier remove 3b5418c1-b839-4693-af55-f8a28778e52a
+execute as @a run attribute @s minecraft:generic.armor_toughness modifier remove a9f75a0f-575c-4576-9d89-255823159571 
+#Damage (sabotage)
+execute as @a run attribute @s minecraft:generic.attack_damage modifier remove 9a9dafc4-1c54-4fd8-b2cb-0b8dd39dab5a
+
+##Clairen
+execute as @a run attribute @s generic.attack_damage modifier remove 0320fc2c-83b1-45dd-beb9-48f8d0236db2
+
+##Puss
+execute as @a run attribute @s generic.knockback_resistance modifier remove cd29f460-195f-43fe-8c60-48ef046cc7fa
+
+##Death
+execute as @a run attribute @s minecraft:generic.armor modifier remove b36faec5-3a6b-4564-ba7d-2787df4abace
+
+##Cuphead
+execute as @a run attribute @s generic.knockback_resistance modifier remove 8e7bcc8e-a4aa-4d1f-8828-cbea3350bd41
 
 #Clear Effects#
 effect clear @a

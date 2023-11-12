@@ -4,7 +4,7 @@ tag @a[tag=!bigChungus,tag=!legMusicOff,tag=!void,tag=!ctfIngame,tag=!cqIngame] 
 tag @s add chungus
 
 #attribute @s minecraft:generic.attack_damage base set 5
-attribute @s[tag=!parry] minecraft:generic.armor base set 2
+attribute @s minecraft:generic.armor base set 2
 
 execute if entity @s[tag=!teamDead,tag=!stolen] unless entity @s[scores={weapCount=1}] run function du-in:kit/chungus/weapon
 
@@ -19,4 +19,4 @@ tag @s remove killLine
 execute if entity @s[tag=armor] run function du-in:kit/chungus/armor
 attribute @s[tag=!stolen] minecraft:generic.movement_speed base set 0.125
 #.1
-attribute @s[tag=!pussFear] generic.knockback_resistance base set 1
+attribute @s generic.knockback_resistance base set 1

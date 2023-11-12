@@ -1,5 +1,5 @@
 scoreboard players set @s[tag=!sabotaged] pussTimer 60
-effect give @s speed 1 0 true
+effect give @s[tag=!sabotaged] speed 1 0 true
 
 #effect give @s[scores={gameDeaths=1..},tag=!sabotaged] strength 1 0 true
 #effect give @s[scores={gameDeaths=3..},tag=!sabotaged] speed 2 1 true

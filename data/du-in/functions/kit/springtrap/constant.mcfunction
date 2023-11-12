@@ -34,4 +34,4 @@ execute if entity @s[predicate=!du-in:effect/is_on_fire,tag=!stolen,tag=!springL
 #Burning attributes for if he is on fire.
 execute if entity @s[predicate=du-in:effect/is_on_fire,tag=!stolen] run function du-in:kit/springtrap/passive/burn
 #.1
-attribute @s[tag=!pussFear] generic.knockback_resistance base set 0.25
+attribute @s[tag=!stolen] generic.knockback_resistance base set 0.25

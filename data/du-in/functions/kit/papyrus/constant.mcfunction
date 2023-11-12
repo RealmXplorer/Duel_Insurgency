@@ -20,4 +20,4 @@ execute if entity @s[tag=void,tag=kitActions] run function du-in:kit/papyrus/abi
 
 attribute @s[tag=!stolen] minecraft:generic.movement_speed base set 0.1275
 #.1025
-attribute @s[tag=!stolen,tag=!pussFear] generic.knockback_resistance base set 0.05
+attribute @s[tag=!stolen] generic.knockback_resistance base set 0.05

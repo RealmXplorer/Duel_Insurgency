@@ -31,4 +31,4 @@ execute if entity @s[tag=asgoreTrident] run function du-in:kit/jack_horner/abili
 attribute @s[tag=!stolen] minecraft:generic.movement_speed base set 0.135
 
 #Base Weight
-attribute @s[tag=!stolen,tag=!pussFear] generic.knockback_resistance base set 0.35
+attribute @s[tag=!stolen] generic.knockback_resistance base set 0.35

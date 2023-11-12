@@ -40,7 +40,7 @@ execute if entity @s[scores={saacMoneyDollar=3}] run item replace entity @s hotb
 #Attributes#
 attribute @s[tag=!stolen] minecraft:generic.movement_speed base set 0.135
 #.1075
-attribute @s[tag=!pussFear,tag=!parry] generic.knockback_resistance base set 0.03
+attribute @s[tag=!parry] generic.knockback_resistance base set 0.03
 
 #WHO EVEN IS THIS
 #HE IS A VERY

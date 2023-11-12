@@ -27,7 +27,7 @@ execute if entity @s[scores={asrielHitTimer=-1..}] run function du-in:kit/asriel
 scoreboard players set @s[scores={asrielTimer=3..}] asrielTimer 0
 
 #.1075
-attribute @s[tag=!stolen,tag=!pussFear] generic.knockback_resistance base set 0.0375
+attribute @s[tag=!stolen] generic.knockback_resistance base set 0.0375
 
 #MY PRINCE
 #I WEEP

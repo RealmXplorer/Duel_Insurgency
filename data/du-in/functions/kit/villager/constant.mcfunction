@@ -27,4 +27,4 @@ execute if entity @s[scores={vilSansHead=-1..}] run function du-in:kit/villager/
 
 #Attributes#
 attribute @s generic.movement_speed base set 0.13
-attribute @s[tag=!pussFear] generic.knockback_resistance base set 0.035
+attribute @s generic.knockback_resistance base set 0.035

@@ -6,8 +6,7 @@ playsound minecraft:entity.blaze.death master @s ~ ~ ~ 1 0.5
 playsound minecraft:sans.ability master @a ~ ~ ~ 1 1.05
 
 tellraw @s [{"text":"You dropped your weapon!","bold":true,"color":"red"}]
-attribute @s[tag=!pussFear] generic.knockback_resistance base set 0
 scoreboard players set @s pussFearTimer 40
+attribute @s generic.knockback_resistance modifier add cd29f460-195f-43fe-8c60-48ef046cc7fa pussKB -100 add
 
 tag @s remove pussHit
-tag @s remove sabotaged

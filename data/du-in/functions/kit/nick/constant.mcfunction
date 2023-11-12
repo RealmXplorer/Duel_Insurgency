@@ -19,7 +19,7 @@ execute if entity @s[tag=void,tag=kitActions] run function du-in:kit/nick/abilit
 execute if entity @s[tag=armor,tag=!stolen] run function du-in:kit/nick/armor
 
 #Attributes#
-attribute @s[tag=!stolen,tag=!pussFear] generic.knockback_resistance base set 0.01
+attribute @s[tag=!stolen] generic.knockback_resistance base set 0.01
 effect give @s[predicate=!du-in:effect/has_night_vision,tag=!stolen] minecraft:night_vision infinite 100 true
 attribute @s[tag=!stolen] generic.movement_speed base set 0.14
 #.12

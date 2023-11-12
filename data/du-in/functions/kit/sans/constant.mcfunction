@@ -37,4 +37,4 @@ item replace entity @s[tag=!stolen,scores={sansSkin=1},level=..164] armor.head w
 
 
 ##Base KB Resistance is 0.
-attribute @s[tag=!stolen,tag=!pussFear] generic.knockback_resistance base set 0
+attribute @s[tag=!stolen] generic.knockback_resistance base set 0

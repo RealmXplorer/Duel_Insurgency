@@ -12,7 +12,7 @@ execute if entity @s[level=1] run function du-in:kit/slime/ability/item
 execute if entity @s[tag=kitActions] run function du-in:kit/slime/ability/init
 
 #Weapon
-execute if entity @s[tag=!teamDead,tag=!stolen] unless entity @s[scores={weapCount=1}] run function du-in:kit/slime/weapon
+execute if entity @s[tag=!teamDead,tag=!stolen,tag=!pussFear] unless entity @s[scores={weapCount=1}] run function du-in:kit/slime/weapon
 
 #Magma timer
 #scoreboard players remove @s[scores={magmaTimer=-99..}] magmaTimer 1
@@ -27,4 +27,4 @@ execute if entity @s[scores={magmaTimer=-99..}] run function du-in:kit/slime/abi
 effect give @s[tag=!stolen] minecraft:jump_boost infinite 0 true
 
 attribute @s[tag=!stolen] minecraft:generic.movement_speed base set 0.14
-attribute @s[tag=!stolen,tag=!pussFear] generic.knockback_resistance base set 0.015
+attribute @s[tag=!stolen] generic.knockback_resistance base set 0.015

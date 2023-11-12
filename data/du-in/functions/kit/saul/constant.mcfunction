@@ -23,4 +23,4 @@ execute if entity @s[tag=kitActions] run function du-in:kit/saul/ability/init
 attribute @s[tag=!stolen] minecraft:generic.movement_speed base set 0.1375
 
 #Base Weight
-attribute @s[tag=!stolen,tag=!pussFear] generic.knockback_resistance base set 0.35
+attribute @s[tag=!stolen] generic.knockback_resistance base set 0.35

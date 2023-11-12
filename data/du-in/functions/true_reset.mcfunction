@@ -273,6 +273,9 @@ tag @a remove ranMode
 tag @a remove timedMode
 tag @a remove spamMode
 tag @a remove springLock
+
+attribute @s generic.attack_damage modifier remove f90a6e5b-203f-440c-9f8c-6bb52cc3ab56
+
 tag @a remove lorde
 scoreboard players reset @a yharimTimer
 tag @a remove runza
