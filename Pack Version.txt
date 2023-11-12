@@ -1,4 +1,4 @@
-Duel: Insurgency Version: Release 1.0.2
+Duel: Insurgency Version: Release 1.0.3
 
 Duel-Format: 3
 
