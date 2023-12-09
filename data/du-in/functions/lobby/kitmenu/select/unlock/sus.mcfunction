@@ -5,7 +5,7 @@ clear @s player_head{susHead:1b}
 #Play sound
 playsound minecraft:sus.pick master @s ~ ~ ~ 100 1
 #Announce kit pick
-tellraw @s [{"text":"Selected the ","bold":true,"color":"gray"},{"text":"The Impostor ","bold":true,"color":"gold"},{"text":"class!","bold":true,"color":"gray"},{"text":" (sus)","bold":false,"color":"gray","italic":"true"},{"text":" (Click here for kit info!)","bold":false,"color":"white","underlined":true,"clickEvent":{"action":"run_command","value":"/trigger info add 1"}}]
+tellraw @s [{"text":"Selected the ","bold":true,"color":"gray"},{"text":"The Impostor ","bold":true,"color":"gold"},{"text":"class!","bold":true,"color":"gray"},{"text":" (sus)","bold":false,"color":"gray","italic":true},{"text":" (Click here for kit info!)","bold":false,"color":"white","underlined":true,"clickEvent":{"action":"run_command","value":"/trigger info add 1"}}]
 #Set kit score to match kit
 scoreboard players set @s kit 1003
 tag @s add sus
