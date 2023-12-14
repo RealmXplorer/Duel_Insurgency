@@ -14,4 +14,5 @@ execute as @a run function du-in:lobby/item_reset
 clear @a
 time set night
 gamerule doDaylightCycle false
+scoreboard players reset #main dayNightSetting
 tellraw @a [{"text":"Christmas spirit ","bold":true,"color":"dark_green"},{"text":"drifts through the air!","color":"yellow"}]

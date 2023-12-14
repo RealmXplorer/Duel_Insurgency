@@ -19,5 +19,7 @@ scoreboard players set @a music 0
 execute as @a run function du-in:lobby/item_reset
 clear @a
 time set night
+scoreboard players reset #main dayNightSetting
 gamerule doDaylightCycle false
+
 tellraw @a [{"text":"Halloween spirit ","bold":true,"color":"dark_purple"},{"text":"drifts through the air!","color":"yellow"}]

@@ -100,6 +100,6 @@ kill @e[type=minecraft:marker,tag=poisonApple]
 execute at @e[type=minecraft:snowball] run summon minecraft:marker ~ ~ ~ {Tags:["poisonApple","mapSpecific"]}
 
 #Test when it shifts to day or night
-execute if predicate du-in:ambience/night_start run function du-in:ingame/scheduled/ambience/night_start
+execute if predicate du-in:ambience/night_start if score #main dayNightSetting matches 1 run function du-in:ingame/scheduled/ambience/night_start
 
-execute if predicate du-in:ambience/night_end run function du-in:ingame/scheduled/ambience/night_end
+execute if predicate du-in:ambience/night_end if score #main dayNightSetting matches 1 run function du-in:ingame/scheduled/ambience/night_end

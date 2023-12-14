@@ -11,6 +11,8 @@ kill @e[tag=mapSpecific]
 tag @a remove voidReady
 scoreboard players set #main voidReadyOnline 0
 
+team modify Insurgent collisionRule pushOtherTeams
+
 schedule function du-in:ingame/void/goner/check 3s
 schedule clear du-in:ingame/scheduled/ambience/init
 schedule clear du-in:maps/jermall/stop

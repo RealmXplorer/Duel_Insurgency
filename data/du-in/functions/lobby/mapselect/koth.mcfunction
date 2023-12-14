@@ -39,7 +39,7 @@ execute if entity @a[tag=chancelLock,tag=partyLeader] run summon marker 236 92 3
 summon marker 234 91 30 {Tags:["mapVote","displayItem","vote8"]}
 
 #Paz Pool Party
-summon area_effect_cloud 236 92 28 {Duration:2147483647,Tags:["displayItem"],CustomNameVisible:1b,CustomName:"{\"text\":\"Paz Pool Party\",\"color\":\"light_blue\",\"bold\":true}"}
+summon area_effect_cloud 236 92 28 {Duration:2147483647,Tags:["displayItem"],CustomNameVisible:1b,CustomName:"{\"text\":\"Paz Pool Party\",\"color\":\"aqua\",\"bold\":true}"}
 summon minecraft:item 236 92 28 {NoGravity:1b,Age:-32768,Health:99999,PickupDelay:32767,Tags:["mapLabel","displayItem"],Item:{id:"minecraft:water_bucket",Count:1b}}
 execute if entity @a[tag=pazLock,tag=partyLeader] run summon marker 236 92 28 {Tags:["displayItem","voidLocked"]}
 summon marker 234 91 28 {Tags:["mapVote","displayItem","vote7"]} 
