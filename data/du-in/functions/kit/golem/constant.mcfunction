@@ -22,4 +22,7 @@ execute if entity @s[tag=void,tag=kitActions] run function du-in:kit/golem/abili
 attribute @s[tag=!stolen] minecraft:generic.movement_speed base set 0.125
 #.1
 attribute @s[tag=!stolen] generic.knockback_resistance base set 0.25
-
+execute unless entity @a[tag=partyLeader,tag=scaleMode] run attribute @s[tag=!stolen] minecraft:generic.scale base set 1.2
+execute unless entity @a[tag=partyLeader,tag=scaleMode] run attribute @s[tag=!stolen] minecraft:generic.block_interaction_range base set 5
+execute unless entity @a[tag=partyLeader,tag=scaleMode] run attribute @s[tag=!stolen] minecraft:generic.armor base set 4
+execute unless entity @a[tag=partyLeader,tag=scaleMode] run attribute @s[tag=!stolen] generic.attack_damage base set 1.5

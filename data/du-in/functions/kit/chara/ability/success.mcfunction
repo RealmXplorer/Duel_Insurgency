@@ -7,3 +7,5 @@ execute if entity @s[tag=void] as @e[type=skeleton,distance=0.05..10] run functi
 execute as @a[tag=charaMark] run function du-in:kit/chara/ability/effect
 execute unless entity @a[tag=charaMark] run function du-in:kit/all/ability/team
 execute if entity @a[tag=charaMark] run function du-in:kit/chara/ability/cooldown
+
+tag @a remove charaMark

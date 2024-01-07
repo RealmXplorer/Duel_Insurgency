@@ -20,3 +20,4 @@ execute if entity @s[tag=armor] run function du-in:kit/chungus/armor
 attribute @s[tag=!stolen] minecraft:generic.movement_speed base set 0.125
 #.1
 attribute @s generic.knockback_resistance base set 1
+execute unless entity @a[tag=partyLeader,tag=scaleMode] run attribute @s[tag=!stolen] minecraft:generic.scale base set 1.25

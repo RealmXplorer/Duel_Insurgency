@@ -1,9 +1,9 @@
-playsound minecraft:entity.ender_dragon.flap master @s ~ ~ ~ 1 1.5
-
 #kill @e[type=item,nbt={Item:{tag:{weaponItem:1b}}}]
 
 tp @s 156 82 49 90 0
 clear @s
+
+playsound minecraft:entity.ender_dragon.flap master @s ~ ~ ~ 1 1.5
 
 effect give @s invisibility infinite 1 true
 

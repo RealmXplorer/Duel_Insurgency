@@ -72,5 +72,7 @@ execute as @a[scores={team=1..},tag=win,tag=!void,tag=!voidLose,limit=1] at @s r
 
 execute if entity @a[scores={team=1..},tag=!void,tag=!voidLose] at @r run function du-in:kit/all/win_music/start
 
+effect give @a fire_resistance infinite 1 true
+
 #End function
 tag @a add endSeq

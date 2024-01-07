@@ -23,7 +23,9 @@ execute if entity @s[tag=void,tag=kitActions] run function du-in:kit/impostor/ab
 attribute @s minecraft:generic.movement_speed base set 0.13
 #.105
 attribute @s generic.knockback_resistance base set 0.03
-
+execute unless entity @a[tag=partyLeader,tag=scaleMode] run attribute @s[tag=!stolen] minecraft:generic.scale base set 0.9
+execute unless entity @a[tag=partyLeader,tag=scaleMode] run attribute @s[tag=!stolen] minecraft:generic.block_interaction_range base set 4.25
+execute unless entity @a[tag=partyLeader,tag=scaleMode] run attribute @s[tag=!stolen] minecraft:generic.armor base set -2
 #attribute @s minecraft:generic.attack_damage base set 3.0
 #attribute @s minecraft:generic.attack_speed base set 40
 

@@ -10,4 +10,4 @@ effect give @s minecraft:fire_resistance 2 2 true
 #clear @s warped_fungus_on_a_stick
 scoreboard players add @s cardPower 5
 scoreboard players set @s floatTimer 5
-scoreboard players set @s parryTimer 90
+scoreboard players set @s parryTimer 5

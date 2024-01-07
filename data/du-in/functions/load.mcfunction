@@ -119,6 +119,7 @@ scoreboard objectives add sidebarToggle dummy
 scoreboard objectives add teamNameToggle dummy
 scoreboard objectives add ffaNameToggle dummy
 scoreboard objectives add devModeToggle dummy
+scoreboard objectives add scaleModeToggle dummy
 scoreboard objectives add skinPreset dummy
 
 #Gamemode objectives

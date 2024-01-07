@@ -13,6 +13,7 @@ execute if entity @s[tag=!teamDead,tag=!stolen] unless entity @s[scores={weapCou
 
 attribute @s[tag=!stolen] minecraft:generic.movement_speed base set 0.135
 attribute @s[tag=!stolen] generic.knockback_resistance base set 0.0325
+execute unless entity @a[tag=partyLeader,tag=scaleMode] run attribute @s[tag=!stolen] minecraft:generic.scale base set .9
 
 #THE VERY POWER
 #I STUDIED

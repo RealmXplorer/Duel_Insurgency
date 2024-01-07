@@ -1,6 +1,5 @@
 #Teleport and play sound
 tp @s 2001 52 1993 90 0
-playsound minecraft:entity.ender_dragon.flap master @a ~ ~ ~ 1 1.5
 
 #Summon NPCS
 execute unless entity @a[tag=shop] unless score #main pylonsDestroyed matches 3 run summon donkey 1997 52 1999 {Tame:1b,Tags:["tabba"],CustomName:'{"text":"Hugo"}'}
@@ -33,3 +32,4 @@ title @s subtitle {"text":"","color":"red","bold":true}
 tag @s add skinMenu
 tag @s[tag=shop] add skinsListed
 function du-in:lobby/scheduled/shop
+playsound minecraft:entity.ender_dragon.flap master @s ~ ~ ~ 1 1.5

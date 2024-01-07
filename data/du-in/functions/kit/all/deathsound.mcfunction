@@ -39,6 +39,9 @@ execute if entity @s[scores={kit=18}] run function du-in:kit/vader/death
 #PALPS DEATH SOUND#
 execute if entity @s[scores={kit=19}] run playsound minecraft:palpatine.death master @a ~ ~ ~ 3 1
 
+#YHARIM DEATH TIMER RESET
+execute if entity @s[scores={kit=20}] run function du-in:kit/yharim/ability/timer_reset
+
 #SPRINGTRAP DEATH SOUND#
 execute if entity @s[scores={kit=5}] run function du-in:kit/springtrap/death
 

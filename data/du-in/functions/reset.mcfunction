@@ -178,6 +178,8 @@ execute as @a run attribute @s minecraft:generic.max_health base set 20
 execute as @a run attribute @s minecraft:generic.attack_damage base set 0
 execute as @a run attribute @s minecraft:generic.attack_speed base set 4
 execute as @a run attribute @s minecraft:generic.movement_speed base set 0.10000000149
+execute as @a run attribute @s minecraft:generic.scale base set 1
+execute as @a run attribute @s minecraft:generic.block_interaction_range base set 4.5
 
 #Stop All Music#
 execute as @a run function du-in:music/ingame/stop/all

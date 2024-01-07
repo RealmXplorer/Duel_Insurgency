@@ -4,6 +4,8 @@ scoreboard players set @s[scores={gumballSwitch=3..}] gumballSwitch 1
 execute if entity @s[scores={gumballSwitch=1}] run tag @s add darwin
 
 execute if entity @s[scores={gumballSwitch=2}] run tag @s remove darwin
+execute if entity @s[scores={gumballSwitch=2}] run effect clear @s dolphins_grace
+execute if entity @s[scores={gumballSwitch=2}] run effect clear @s water_breathing
 
 scoreboard players set @s weapCount 0
 scoreboard players set @s gumSwapTimer 30

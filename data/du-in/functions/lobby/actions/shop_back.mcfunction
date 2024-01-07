@@ -11,9 +11,6 @@ scoreboard players set @s tabbaTalk 0
 scoreboard players set @s tabbaVendingTalk 0
 #execute unless entity @a[tag=shop] run kill @e[tag=shopSpecific]
 
-#Play sound
-playsound minecraft:entity.ender_dragon.flap master @s ~ ~ ~ 1 1.5
-
 #Teleport to gamemode select
 tp @s[tag=!working] -999 13 517 -90 0
 
@@ -26,3 +23,6 @@ function du-in:lobby/item_reset
 tag @s remove subLobby
 clear @s
 function du-in:lobby/scheduled/gamemode_select
+
+#Play sound
+playsound minecraft:entity.ender_dragon.flap master @s ~ ~ ~ 1 1.5

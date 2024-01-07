@@ -23,6 +23,8 @@ execute if entity @s[tag=!teamDead,tag=!stolen,tag=!pussFear] unless entity @s[s
 attribute @s[tag=!stolen] minecraft:generic.movement_speed base set 0.13
 #.105
 attribute @s[tag=!stolen] generic.knockback_resistance base set 0.06
+execute unless entity @a[tag=partyLeader,tag=scaleMode] run attribute @s[tag=!stolen] minecraft:generic.scale base set .75
+
 
 #MY EXPERIMENTS
 #HAVE FAILED YOU

@@ -1,7 +1,6 @@
 #This function returns players to Gamemode select from map select.
 
 #Reset map vote to reset vote displays
-execute at @a run playsound minecraft:entity.ender_dragon.flap master @a ~ ~ ~ 1 1.5
 scoreboard players reset @a mapVote
 execute as @e[type=marker,tag=mapVote] at @s run setblock ~ ~-1 ~ minecraft:red_concrete destroy
 
@@ -93,3 +92,4 @@ title @a title {"text":"","color":"red","bold":true}
 title @a subtitle {"text":"Open inventory for more options!","color":"red","bold":true}
 title @a actionbar {"text":"Open inventory for more options!","color":"red","bold":true}
 function du-in:lobby/scheduled/gamemode_select
+execute at @a run playsound minecraft:entity.ender_dragon.flap master @a ~ ~ ~ 1 1.5

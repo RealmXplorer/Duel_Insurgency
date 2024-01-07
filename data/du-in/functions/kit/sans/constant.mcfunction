@@ -38,3 +38,6 @@ item replace entity @s[tag=!stolen,scores={sansSkin=1},level=..164] armor.head w
 
 ##Base KB Resistance is 0.
 attribute @s[tag=!stolen] generic.knockback_resistance base set 0
+execute unless entity @a[tag=partyLeader,tag=scaleMode] run attribute @s[tag=!stolen] minecraft:generic.scale base set 0.9
+execute unless entity @a[tag=partyLeader,tag=scaleMode] run attribute @s[tag=!stolen] minecraft:generic.block_interaction_range base set 4.25
+execute unless entity @a[tag=partyLeader,tag=scaleMode] run attribute @s[tag=!stolen] minecraft:generic.armor base set -3

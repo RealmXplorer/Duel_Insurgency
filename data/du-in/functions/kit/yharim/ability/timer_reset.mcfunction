@@ -7,4 +7,5 @@ attribute @s minecraft:generic.attack_damage modifier remove 9a9dafc4-1c54-4fd8-
 tag @s remove cooldown
 tag @s remove sabotaged
 scoreboard players reset @s yharimTimer
+xp set @s[tag=!stolen] 340 levels
 execute if entity @s[tag=stolen] run tag @s add kitDone

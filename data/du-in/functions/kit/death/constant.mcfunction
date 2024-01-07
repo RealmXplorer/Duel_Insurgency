@@ -30,6 +30,8 @@ execute if entity @s[tag=secKitActions,tag=!stolen] run function du-in:kit/death
 #Base movement speed#
 attribute @s[tag=!stolen,tag=!deathDouble] minecraft:generic.movement_speed base set 0.125
 attribute @s[tag=!stolen,tag=deathDouble] minecraft:generic.movement_speed base set 0.14
-
+execute unless entity @a[tag=partyLeader,tag=scaleMode] run attribute @s[tag=!stolen] minecraft:generic.scale base set 1.15
+execute unless entity @a[tag=partyLeader,tag=scaleMode] run attribute @s[tag=!stolen] minecraft:generic.block_interaction_range base set 4.9
+execute unless entity @a[tag=partyLeader,tag=scaleMode] run attribute @s[tag=!stolen] minecraft:generic.armor base set 3
 #Base Weight
 attribute @s[tag=!stolen,tag=!pussFear] generic.knockback_resistance base set 0.23

@@ -103,3 +103,5 @@ execute at @e[type=minecraft:snowball] run summon minecraft:marker ~ ~ ~ {Tags:[
 execute if predicate du-in:ambience/night_start if score #main dayNightSetting matches 1 run function du-in:ingame/scheduled/ambience/night_start
 
 execute if predicate du-in:ambience/night_end if score #main dayNightSetting matches 1 run function du-in:ingame/scheduled/ambience/night_end
+
+execute if entity @a[scores={thrownBarrier=1..}] if entity @a[tag=devMode,tag=partyLeader] run tag @a add win 

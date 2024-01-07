@@ -46,3 +46,5 @@ execute if entity @s[tag=!stolen] run attribute @s minecraft:generic.max_health 
 attribute @s[tag=!stolen] generic.movement_speed base set 0.145
 #.1225
 attribute @s[tag=!stolen] generic.knockback_resistance base set 0.01
+
+execute unless entity @a[tag=partyLeader,tag=scaleMode] run attribute @s[tag=!stolen] minecraft:generic.scale base set .9

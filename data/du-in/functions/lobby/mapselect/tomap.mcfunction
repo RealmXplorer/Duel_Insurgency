@@ -8,7 +8,7 @@
 tp @s[tag=!spectator,tag=!working] 232 91 36 180 0
 #kill @e[tag=displayItem]
 #function du-in:lobby/mapselect/switch
-tag @s remove mystery
+#tag @s remove mystery
 execute as @a run function du-in:music/lobby/stop/kitselect
 #execute if entity @s[tag=teamMode] run tp @s[tag=teamMode,tag=!spectator] 512 5 528 0 0
 bossbar set minecraft:kit_countdown visible false

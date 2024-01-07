@@ -127,4 +127,8 @@ execute if entity @s[scores={sansHitTimer=0..}] unless entity @s[scores={gasterT
 execute if entity @s[tag=inField] run function du-in:kit/clairen/ability/field_effects
 execute if entity @s[tag=sabotagedField] run function du-in:kit/clairen/ability/sabotaged_field
 
-execute if entity @s[tag=devMode,scores={thrownBarrier=1..}] run tag @s add win 
+attribute @s[tag=skrunkMode] minecraft:generic.scale base set 0.2
+attribute @s[tag=skrunkMode] minecraft:generic.block_interaction_range base set 4
+
+#attribute @s[tag=skrunkMode] minecraft:generic.scale base set 5
+#attribute @s[tag=skrunkMode] minecraft:generic.block_interaction_range base set 10

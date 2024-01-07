@@ -54,3 +54,4 @@ execute if entity @s[scores={cardPower=25..}] run function du-in:kit/cuphead/car
 #Attributes#
 attribute @s[tag=!stolen] minecraft:generic.movement_speed base set 0.135
 attribute @s[tag=!stolen] generic.knockback_resistance base set 0.02
+execute unless entity @a[tag=partyLeader,tag=scaleMode] run attribute @s[tag=!stolen] minecraft:generic.scale base set .9

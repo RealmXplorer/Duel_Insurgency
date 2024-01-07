@@ -1,0 +1,1 @@
+return run execute as @e[type=trident,nbt={HasBeenShot:false}] on origin if entity @s[tag=asgoreThrown]

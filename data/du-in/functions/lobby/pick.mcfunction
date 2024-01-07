@@ -62,7 +62,7 @@ execute store result score #main setGamemode run scoreboard players get #gamemod
 execute as @a run function du-in:lobby/item_reset
 
 #Teleport players to map select
-execute as @a run function du-in:lobby/mapselect/tomap
+#execute as @a run function du-in:lobby/mapselect/tomap
 kill @e[tag=displayItem]
 function du-in:lobby/mapselect/switch
 
@@ -70,6 +70,42 @@ effect clear @s invisibility
 
 #Start music
 scoreboard players set @a music 0
+
+
+
+tp @a[tag=!spectator,tag=!working] 232 91 36 180 0
+#kill @e[tag=displayItem]
+#function du-in:lobby/mapselect/switch
+#tag @a remove mystery
+execute as @a run function du-in:music/lobby/stop/kitselect
+#execute if entity @s[tag=teamMode] run tp @s[tag=teamMode,tag=!spectator] 512 5 528 0 0
+bossbar set minecraft:kit_countdown visible false
+scoreboard players set #main kitOnline 0
+tag @a remove ready
+team leave @a[team=Ready]
+
+scoreboard players set #main mapCountdown 300
+function du-in:lobby/item_reset
+clear @a
+#execute unless entity @a[tag=teamMode] run bossbar set minecraft:map_countdown visible true
+#execute unless entity @a[tag=teamMode] run bossbar set minecraft:map_countdown visible true
+bossbar set minecraft:map_countdown visible true
+#bossbar set minecraft:map_countdown visible true
+
+playsound minecraft:entity.ender_dragon.flap master @a ~ ~ ~ 1 1.5
+scoreboard players set @a kitTheme 1
+scoreboard players set @a kitList 7
+tag @a add kitMenu
+
+#scoreboard players set @s[tag=!teamMode] lobby 3
+scoreboard players set @a lobby 3
+scoreboard players set #main lobby 3
+#scoreboard players set @s[tag=teamMode] lobby 4
+#execute if entity @s[tag=teamMode] run scoreboard players set #main lobby 4
+title @a times 0 60 0
+title @a title {"text":"","color":"red","bold":true}
+title @a[tag=!teamMode] subtitle {"text":"Open inventory to select a character!","color":"red","bold":true}
+title @a[tag=teamMode] subtitle {"text":"Pick a team and open inventory to select a character!","color":"red","bold":true}
 
 #End function
 scoreboard players reset #gamemode gamemode
