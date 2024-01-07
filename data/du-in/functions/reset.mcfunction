@@ -295,6 +295,7 @@ execute as @a[tag=!timeFree] run function du-in:lobby/actions/stats
 tag @a remove maxTP
 tag @a remove rageMeter
 scoreboard players set @a cardPower 0
+scoreboard players reset @a yharimRageDuration
 tag @a remove darwin
 tag @a remove maskless
 scoreboard players reset * gumballClassicFake
@@ -365,6 +366,7 @@ scoreboard players reset @a dmDeath
 scoreboard players set @a diedIngame 0
 
 tag @a remove boneAttack
+tag @a remove enraged
 
 #Remove all Attributes
 ##Springtrap
@@ -377,6 +379,11 @@ execute as @a run attribute @s minecraft:generic.armor modifier remove 3b5418c1-
 execute as @a run attribute @s minecraft:generic.armor_toughness modifier remove a9f75a0f-575c-4576-9d89-255823159571 
 #Damage (sabotage)
 execute as @a run attribute @s minecraft:generic.attack_damage modifier remove 9a9dafc4-1c54-4fd8-b2cb-0b8dd39dab5a
+
+#Rage
+execute as @a run attribute @s generic.attack_damage modifier remove 9ea2728b-7a81-441a-a8d1-9775741f6a41
+execute as @a run attribute @s generic.movement_speed modifier remove e6633dad-b6ec-4d0b-9708-59197e5e5112
+execute as @a run attribute @s generic.attack_speed modifier remove 614e6bbe-4551-448f-a380-b0d5652c8b02
 
 ##Clairen
 execute as @a run attribute @s generic.attack_damage modifier remove 0320fc2c-83b1-45dd-beb9-48f8d0236db2

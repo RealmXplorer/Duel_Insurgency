@@ -13,6 +13,8 @@ execute store result score @s[tag=!stolen] secCount run clear @s[tag=!kitMenu] w
 #Activate Secondary#
 execute if entity @s[tag=secKitActions,tag=!stolen] run function du-in:kit/yharim/secondary/init
 
+execute if entity @s[scores={yharimRageDuration=0..}] run function du-in:kit/yharim/secondary/in_rage
+
 #Armor#
 execute if entity @s[tag=armor,tag=!stolen] run function du-in:kit/yharim/armor
 
@@ -24,8 +26,8 @@ execute if entity @s[tag=kitActions] run function du-in:kit/yharim/ability/init
 execute if entity @s[scores={yharimTimer=0..}] run function du-in:kit/yharim/ability/timer
 
 #Add Yharim Rage#
-execute if entity @s[gamemode=!spectator,tag=!rageMeter,tag=!stolen,tag=!void] if entity @a[distance=0.05..3.5,tag=playing,gamemode=!spectator] unless score @a[distance=0.05..3.5,tag=playing,gamemode=!spectator,limit=1] team = @s team run function du-in:kit/yharim/secondary/charge
-execute if entity @s[gamemode=!spectator,tag=!rageMeter,tag=!stolen,tag=void] if entity @e[type=skeleton,tag=gonerThing,distance=0.05..3.5] run function du-in:kit/yharim/secondary/charge
+execute if entity @s[gamemode=!spectator,tag=!enraged,tag=!rageMeter,tag=!stolen,tag=!void] if entity @a[distance=0.05..3.5,tag=playing,gamemode=!spectator] unless score @a[distance=0.05..3.5,tag=playing,gamemode=!spectator,limit=1] team = @s team run function du-in:kit/yharim/secondary/charge
+execute if entity @s[gamemode=!spectator,tag=!enraged,tag=!rageMeter,tag=!stolen,tag=void] if entity @e[type=skeleton,tag=gonerThing,distance=0.05..3.5] run function du-in:kit/yharim/secondary/charge
 
 
 #Attributes#
