@@ -52,5 +52,5 @@ scoreboard players set @s deathWeapSwitch 0
 
 #Attributes
 attribute @s generic.attack_damage modifier remove f90a6e5b-203f-440c-9f8c-6bb52cc3ab56
-
+attribute @s generic.scale base set 1
 clear @s[tag=!kitMenu]

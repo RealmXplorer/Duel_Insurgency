@@ -27,7 +27,7 @@ execute if entity @s[scores={kit=10}] run playsound minecraft:gaster.intro voice
 
 execute if entity @s[scores={kit=12}] run playsound minecraft:flowey.intro voice @a ~ ~ ~ 1 1
 
-execute if entity @s[scores={kit=20}] run tellraw @a ["",{"selector":"@s","color":"AF4BFF","bold":true},{"text":" has awoken!","color":"AF4BFF","bold":true}]
+execute if entity @s[scores={kit=20}] run tellraw @a ["",{"selector":"@s","color":"#AF4BFF","bold":true},{"text":" has awoken!","color":"#AF4BFF","bold":true}]
 execute if entity @s[scores={kit=20}] run playsound minecraft:ui.toast.in voice @a ~ ~ ~ 1 .5
 
 execute if entity @s[scores={kit=1002},tag=kothIngame] run playsound minecraft:jerma.koth voice @a ~ ~ ~ 1000 1
