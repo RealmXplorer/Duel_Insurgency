@@ -24,11 +24,9 @@ execute if entity @s[tag=sabotaged] run function du-in:kit/asgore/ability/contac
 
 #Remove ability from hand
 clear @s minecraft:carrot_on_a_stick
-#Start cooldown
-xp set @s[tag=!stolen] 340 levels
 
-#Switch villager back to their ability
-execute if entity @s[tag=stolen] run tag @s add kitDone
+#Go into cooldown
+tag @s add cooldown
 
 tag @s remove sabotaged
 #End ability

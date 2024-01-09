@@ -1,1 +1,0 @@
-execute if score #main map matches 3 run function du-in:maps/ricardo/constant

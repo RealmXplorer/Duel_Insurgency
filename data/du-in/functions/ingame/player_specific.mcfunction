@@ -45,9 +45,6 @@ execute if entity @s[tag=killCombo] run function du-in:ingame/killstreaks/combo/
 execute if entity @s[predicate=!du-in:has_armor,gamemode=adventure,tag=!lobby,tag=!teamDead,tag=!working,tag=!kitMenu,tag=!noClothes] unless entity @s[scores={gasterTimer=-99..}] run function du-in:kit/all/armor
 
 # KIT FUNCTIONS #
-    # General UNLOCK int functions #
-        execute if entity @s[scores={kit=1000..}] run function du-in:kit/all/setleg
-
     # General Set 1 int functions #
         execute if entity @s[scores={kit=1..8},tag=!kitMenu] run function du-in:kit/all/set1
         execute if entity @s[tag=stolen,tag=!kitMenu] run function du-in:kit/villager/constant
@@ -61,9 +58,8 @@ execute if entity @s[predicate=!du-in:has_armor,gamemode=adventure,tag=!lobby,ta
     # General Set 4 functions #
         execute if entity @s[scores={kit=25..999},tag=!kitMenu] run function du-in:kit/all/set4
 
-#Reset spawnpoint score
-#scoreboard players set @s[scores={spawnpoint=8..}] spawnpoint 0
-
+    # General UNLOCK int functions #
+        execute if entity @s[scores={kit=1000..}] run function du-in:kit/all/setleg
 
 #STEP STOP#
     execute if entity @s[scores={simStep=..0}] run function du-in:ingame/steptrack/step_stop
@@ -99,9 +95,6 @@ execute if entity @s[scores={golemFloat=-1..}] run function du-in:kit/golem/abil
 scoreboard players add @s[tag=sus,scores={ventCooldown=..61}] ventCooldown 1
 execute if entity @s[tag=vented] run function du-in:kit/all/vent/init
 
-#Chara ability head
-execute if entity @s[scores={charaTimer=-1..}] run function du-in:kit/chara/ability/head
-
 #Kylo ability
 execute if entity @s[tag=kyloHit,scores={kyloTimer=-99..}] run function du-in:kit/kylo/ability/freeze
 
@@ -111,9 +104,6 @@ execute if entity @s[scores={blakeTimer=-99..}] run function du-in:kit/paz/abili
 #Jack Horner abilities
 execute if entity @s[scores={unicornTimer=1..}] run function du-in:kit/jack_horner/ability/unicorn_bow/timer
 execute if entity @s[tag=midasTouched] run function du-in:kit/jack_horner/ability/midas/freeze
-
-#Death ability
-execute if entity @s[scores={deathAbilityTimer=-99..}] run function du-in:kit/death/ability/ability_timer
 
 #Nick Sabotage ability
 execute if entity @s[scores={sabotageTimer=1..}] run function du-in:kit/nick/ability/sabotage/timer
@@ -127,8 +117,11 @@ execute if entity @s[scores={sansHitTimer=0..}] unless entity @s[scores={gasterT
 execute if entity @s[tag=inField] run function du-in:kit/clairen/ability/field_effects
 execute if entity @s[tag=sabotagedField] run function du-in:kit/clairen/ability/sabotaged_field
 
-attribute @s[tag=skrunkMode] minecraft:generic.scale base set 0.2
-attribute @s[tag=skrunkMode] minecraft:generic.block_interaction_range base set 4
+    # SPAM CLICK MODE #
+        execute if entity @a[tag=partyLeader,tag=spamClick] run attribute @s minecraft:generic.attack_speed base set 100
+
+#attribute @s[tag=skrunkMode] minecraft:generic.scale base set 0.2
+#attribute @s[tag=skrunkMode] minecraft:generic.block_interaction_range base set 4
 
 #attribute @s[tag=skrunkMode] minecraft:generic.scale base set 5
 #attribute @s[tag=skrunkMode] minecraft:generic.block_interaction_range base set 10

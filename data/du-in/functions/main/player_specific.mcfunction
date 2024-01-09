@@ -29,6 +29,7 @@
 
     #Give player with Random tag a random kit#
         execute if entity @s[tag=random] run function du-in:kit/all/random
+        execute if entity @s[tag=randomLeg] run function du-in:kit/all/random_legend
 
     #
 

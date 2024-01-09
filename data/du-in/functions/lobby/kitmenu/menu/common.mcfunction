@@ -12,6 +12,7 @@ execute if entity @s[scores={kitTheme=2..},nbt=!{Inventory:[{tag:{fixedItem:1b},
 
 #Random button
 execute if entity @s[scores={kitTheme=1..},nbt=!{Inventory:[{tag:{fixedItem:1b},id:"minecraft:barrier",Slot:28b}]}] run function du-in:lobby/kitmenu/menu/random
+execute unless entity @s[tag=!pazUnlocked,tag=!saacUnlocked,tag=!runzaUnlocked,tag=!impostUnlocked,tag=!jermaUnlocked] if entity @s[scores={kitTheme=0},nbt=!{Inventory:[{tag:{fixedItem:1b},id:"minecraft:barrier",Slot:28b}]}] run function du-in:lobby/kitmenu/menu/random_legend
 
 #Spectate button
 execute if entity @s[scores={kitTheme=1..},tag=!playing,nbt=!{Inventory:[{tag:{fixedItem:1b},id:"minecraft:barrier",Slot:35b}]}] run function du-in:lobby/kitmenu/menu/spectate

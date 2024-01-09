@@ -27,6 +27,9 @@ execute if entity @s[tag=kitActions] run function du-in:kit/death/ability/init
 
 execute if entity @s[tag=secKitActions,tag=!stolen] run function du-in:kit/death/secondary/switch
 
+#Death ability
+execute if entity @s[scores={deathAbilityTimer=0..}] run function du-in:kit/death/ability/ability_timer
+
 #Base movement speed#
 attribute @s[tag=!stolen,tag=!deathDouble] minecraft:generic.movement_speed base set 0.125
 attribute @s[tag=!stolen,tag=deathDouble] minecraft:generic.movement_speed base set 0.14

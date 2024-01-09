@@ -12,4 +12,15 @@ execute if entity @a[tag=timedMode,tag=teamMode,tag=partyLeader] run function du
 #MUSIC#
 #execute as @a[tag=cIngame,tag=!musicOff,tag=!startgame,tag=!saac,tag=!bigChungus,tag=!saul] at @s run function du-in:music/ingame/classic
 
-function du-in:maps/classic
+#function du-in:maps/classic
+
+
+#Map stuff
+execute if score #main map matches 2 run function du-in:maps/hive/constant
+
+
+execute if score #main map matches 6 as @a[gamemode=!spectator,tag=!devMode] at @s if entity @s[y=-1,dy=-6] run kill @s
+execute if score #main map matches 13 run function du-in:maps/jermall/constant
+execute if score #main map matches 14 as @a[gamemode=!spectator] at @s if entity @s[distance=..100,y=5,dy=-2,tag=!working] run kill @s
+
+execute if score #main map matches 16 run function du-in:maps/escher/constant
