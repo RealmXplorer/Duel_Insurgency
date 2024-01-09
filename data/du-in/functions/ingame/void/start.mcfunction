@@ -89,6 +89,12 @@ summon marker 10038 42 10030 {Tags:["gonerSpawn","mapSpecific"]}
 
 #10045.0 42 10030.5
 
+#Center
+summon marker 10053 42 10046 {Tags:["gonerSpawn","mapSpecific"]}
+summon marker 10045 42 10039 {Tags:["gonerSpawn","mapSpecific"]}
+summon marker 10046 42 10055 {Tags:["gonerSpawn","mapSpecific"]}
+summon marker 10038 42 10047 {Tags:["gonerSpawn","mapSpecific"]}
+
 
 #Pylon 2
 #10062 41 10030

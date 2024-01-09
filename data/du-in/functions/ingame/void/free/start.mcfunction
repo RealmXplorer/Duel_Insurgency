@@ -29,7 +29,8 @@ scoreboard players set @a music 0
 #scoreboard players set @a ambience 0
 function du-in:ingame/scheduled/ambience/init
 stopsound @a record
-function du-in:music/free/free
+#function du-in:music/free/free
+execute as @a[tag=free,tag=!musicOff] at @s run playsound minecraft:music.free record @s ~ ~ ~ 1 1 1
 
 gamemode adventure @a
 

@@ -265,7 +265,7 @@ scoreboard players reset @a timedMode
 
 tag @a remove ranMode
 tag @a remove timedMode
-tag @a remove spamMode
+tag @a remove spamClick
 
 tag @a remove springLock
 
