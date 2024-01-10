@@ -1,4 +1,9 @@
 tag @a add void
+execute as @a[tag=spamClick] run attribute @s generic.attack_speed base set 4.0
+tag @a remove spamClick
+tag @a remove ranMode
+
+execute if score #main map matches 13 run fill -1332 21 850 -1379 21 915 minecraft:iron_block replace minecraft:barrier
 
 clear @a barrier
 

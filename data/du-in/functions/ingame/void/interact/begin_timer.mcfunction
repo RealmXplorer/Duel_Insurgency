@@ -7,3 +7,4 @@ effect give @a[tag=playing] weakness 4 10 true
 effect give @a[tag=playing] resistance 4 10 true
 effect give @a[tag=playing] fire_resistance 4 10 true
 effect give @a[tag=playing] darkness 4 10 true
+
