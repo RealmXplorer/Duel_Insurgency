@@ -2,7 +2,7 @@
     #effect give @s minecraft:instant_health 100 100 true
     
     #If a player is working, up their attack damage attribute
-    execute if entity @s[tag=working] run attribute @s minecraft:generic.attack_damage base set 1
+    #execute if entity @s[tag=working] run attribute @s minecraft:generic.attack_damage base set 1
 
 
 
