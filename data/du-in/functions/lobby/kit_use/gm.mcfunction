@@ -1,13 +1,13 @@
 # Gamemode Select Actions #
     #Switch into and out of Teammode
-    execute if entity @s[tag=partyLeader,predicate=du-in:lobby/team_hold,tag=!teamMode] run function du-in:lobby/actions/team_enable
-    execute if entity @s[tag=partyLeader,predicate=du-in:lobby/team_hold,tag=teamMode] run function du-in:lobby/actions/team_disable
+    execute if entity @s[predicate=du-in:lobby/team_hold,tag=!teamMode] run function du-in:lobby/actions/team_enable
+    execute if entity @s[predicate=du-in:lobby/team_hold,tag=teamMode] run function du-in:lobby/actions/team_disable
 
     #Switch Gamemodes#
-    execute if entity @s[tag=partyLeader,predicate=du-in:lobby/wheel_hold] run function du-in:lobby/actions/wheel
+    execute if entity @s[predicate=du-in:lobby/wheel_hold] run function du-in:lobby/actions/wheel
 
     #Start Game
-    execute if entity @s[tag=partyLeader,predicate=du-in:lobby/play_hold] run function du-in:lobby/actions/play
+    execute if entity @s[predicate=du-in:lobby/play_hold] run function du-in:lobby/actions/play
 
     #Go to Shop
     execute if entity @s[tag=!shop,predicate=du-in:lobby/shop_hold] run function du-in:lobby/actions/to_shop
