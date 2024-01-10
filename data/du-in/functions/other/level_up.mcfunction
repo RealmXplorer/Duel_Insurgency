@@ -17,7 +17,7 @@ scoreboard players operation @s expCap *= #main ten
 scoreboard players operation @s expCap += #main hundred
 
 #Give diamonds
-scoreboard players add @s Diamonds 100
+scoreboard players add @s Diamonds 10
 
 #Reset exp
 scoreboard players set @s exp 0

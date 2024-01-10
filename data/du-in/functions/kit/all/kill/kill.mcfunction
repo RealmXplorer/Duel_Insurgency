@@ -32,7 +32,7 @@ execute if entity @a[tag=partyLeader,tag=aprilFools] run playsound minecraft:sou
 execute if entity @s[scores={kit=16},tag=!stolen,predicate=du-in:chance/quarter_chance] run playsound minecraft:sans.sans master @a ~ ~ ~ 1 1
 execute if entity @s[scores={kit=26},tag=!stolen,predicate=du-in:chance/quarter_chance] run playsound minecraft:jack_horner.bumbum record @s ~ ~ ~ 1 1
 
-scoreboard players add @s Diamonds 3
+scoreboard players add @s Diamonds 2
 execute if entity @s[scores={kit=7},tag=!stolen] run give @s minecraft:arrow 2
 
 execute if entity @s[scores={kit=1000}] run function du-in:kit/saac/sounds/lines

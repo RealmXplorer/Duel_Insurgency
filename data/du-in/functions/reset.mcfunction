@@ -30,7 +30,7 @@ execute unless entity @a[tag=devMode] run scoreboard players add @a[tag=!spectat
 execute unless entity @a[tag=devMode] run scoreboard players add @a[tag=win,tag=!falseWin,tag=!voidLose,tag=!tie] Wins 1
 execute unless entity @a[tag=devMode] run scoreboard players add @a[tag=win,tag=!falseWin,tag=!voidLose,tag=!tie] winStreak 1
 execute unless entity @a[tag=devMode] run scoreboard players set @a[tag=lose,tag=!spectating] winStreak 0
-execute unless entity @a[tag=devMode] run scoreboard players add @a[tag=win] Diamonds 100
+execute unless entity @a[tag=devMode] run scoreboard players add @a[tag=win] Diamonds 25
 execute unless entity @a[tag=devMode] run scoreboard players add @a[tag=lose] Losses 1
 
 execute unless entity @a[tag=devMode] run advancement grant @a[tag=win,tag=!falseWin,scores={kit=1000..1007},tag=!voidLose] only du-in:unlock/unlockwin
