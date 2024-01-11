@@ -18,7 +18,7 @@ execute if entity @s[scores={kit=2015}] run playsound minecraft:saul.win record 
 #SAAC WIN LINES
 execute if score #main online matches 3.. if entity @s[scores={kit=1000}] run playsound minecraft:saac.line.win voice @a[tag=!lobby] ~ ~ ~ 100 1
 
-execute unless score #main online matches 3.. if entity @s[scores={kit=1000}] unless entity @a[scores={kit=1001..1005}] run playsound minecraft:saac.line.win voice @a[tag=!lobby] ~ ~ ~ 100 1
+execute unless score #main online matches 3.. if entity @s[scores={kit=1000}] unless entity @a[scores={kit=1001..1004}] run playsound minecraft:saac.line.win voice @a[tag=!lobby] ~ ~ ~ 100 1
 #execute unless score #main online matches 3.. if entity @s[scores={kit=1000}] if entity @a[scores={kit=1001}] run playsound minecraft:saac.krampus voice @a ~ ~ ~ 100 1
 execute unless score #main online matches 3.. if entity @s[scores={kit=1000}] if entity @a[scores={kit=1003}] run playsound minecraft:saac.sus voice @a[tag=!lobby] ~ ~ ~ 100 1
-execute unless score #main online matches 3.. if entity @s[scores={kit=1000}] if entity @a[scores={kit=1005}] run playsound minecraft:saac.runza voice @a[tag=!lobby] ~ ~ ~ 100 1
+execute unless score #main online matches 3.. if entity @s[scores={kit=1000}] if entity @a[scores={kit=1004}] run playsound minecraft:saac.runza voice @a[tag=!lobby] ~ ~ ~ 100 1

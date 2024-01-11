@@ -1,9 +1,6 @@
 #LET US ERASE THIS POINTLESS EXISTENCE
 #AND MOVE ON TO THE NEXT
 
-#Other#
-#execute if entity @s[scores={jump=1..},tag=!stolen] run function du-in:kit/jump
-
 #Clairen#
 execute if entity @s[scores={kit=25}] run function du-in:kit/clairen/constant
 
@@ -15,3 +12,6 @@ execute if entity @s[scores={kit=27}] run function du-in:kit/puss/constant
 
 #Death#
 execute if entity @s[scores={kit=28}] run function du-in:kit/death/constant
+
+#Death#
+execute if entity @s[scores={kit=29}] run function du-in:kit/yoda/constant

@@ -1,5 +1,6 @@
 scoreboard players set @s palpTimer 80
 effect give @s minecraft:slowness 3 0 true
+
 clear @s minecraft:carrot_on_a_stick
 #xp set @s[tag=!stolen] 380 levels
 playsound minecraft:block.sculk_sensor.clicking master @a ~ ~ ~ 20 1.5 1

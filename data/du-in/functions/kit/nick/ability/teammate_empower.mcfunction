@@ -10,7 +10,7 @@ execute if entity @s[scores={kit=11}] run function du-in:kit/nick/ability/empowe
 #execute if entity @s[scores={kit=24}] run function du-in:kit/nick/ability/sabotage/sabotage
 #execute if entity @s[scores={kit=26}] run function du-in:kit/nick/ability/sabotage/sabotage
 #execute if entity @s[scores={kit=1000}] run function du-in:kit/nick/ability/sabotage/sabotage
-#execute if entity @s[scores={kit=1005}] run function du-in:kit/nick/ability/sabotage/sabotage
+#execute if entity @s[scores={kit=1004}] run function du-in:kit/nick/ability/sabotage/sabotage
 
 #Remove ability
 #execute unless entity @s[tag=sabotaged] run function du-in:kit/nick/ability/remove_ability

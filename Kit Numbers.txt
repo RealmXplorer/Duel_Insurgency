@@ -31,13 +31,13 @@ Kit number = character name
 26 = Big Jack Horner
 27 = Puss in Boots
 28 = Death
+29 = Yoda
 
 1000 = Saac
 1001 = PearApplez
 1002 = Jerma985
 1003 = The Impostor
-1004 = 'Blank'
-1005 = Runza Rex
+1004 = Runza Rex
 
 2015 = Saul Goodman
 42069 = Big Chungus

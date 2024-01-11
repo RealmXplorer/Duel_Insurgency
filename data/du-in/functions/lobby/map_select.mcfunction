@@ -1,6 +1,3 @@
-# Map Select Actions #
-    execute if entity @s[scores={kitUse=1..}] run function du-in:lobby/kit_use/mp
-
     # Team Mode Functions #
         execute if entity @s[tag=teamMode] run function du-in:lobby/team_select
 
@@ -56,3 +53,6 @@ execute as @e[type=marker,tag=mapVote] at @s run function du-in:lobby/mapselect/
         #scoreboard players set @s[scores={cqMapRandom=1..}] cqMapRandom 1
 
 execute unless entity @s[tag=musicOff] unless score #main pylonsDestroyed matches 3 run function du-in:music/lobby/kitselect
+
+# Map Select Actions #
+    execute if entity @s[scores={kitUse=1..}] run function du-in:lobby/kit_use/mp

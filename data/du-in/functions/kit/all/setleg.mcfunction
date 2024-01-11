@@ -12,7 +12,7 @@ execute if entity @s[scores={kit=1002}] run function du-in:kit/jerma/constant
 execute if entity @s[scores={kit=1003}] run function du-in:kit/impostor/constant
 
 #RUNZA REX#
-execute if entity @s[scores={kit=1005}] run function du-in:kit/runza/constant
+execute if entity @s[scores={kit=1004}] run function du-in:kit/runza/constant
 
 
 #KIT MUSIC#

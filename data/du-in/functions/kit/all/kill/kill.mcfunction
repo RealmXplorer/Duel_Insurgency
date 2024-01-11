@@ -40,7 +40,7 @@ execute if entity @s[scores={kit=1000}] run function du-in:kit/saac/sounds/lines
 execute if entity @s[scores={kit=1001}] run function du-in:kit/paz/sounds/lines
 execute if entity @s[scores={kit=1002}] run function du-in:kit/jerma/sounds/lines
 execute if entity @s[scores={kit=1003}] run function du-in:kit/impostor/sounds/line
-execute if entity @s[scores={kit=1005}] run function du-in:kit/runza/sounds/line
+execute if entity @s[scores={kit=1004}] run function du-in:kit/runza/sounds/line
 
 #CUSTOM KILLSOUNDS#
 #execute if entity @s[scores={kit=1001}] run playsound minecraft:krampus.ring master @s ~ ~ ~ 1 1

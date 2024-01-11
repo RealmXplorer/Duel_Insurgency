@@ -68,7 +68,7 @@ execute if entity @s[tag=grave,tag=!teamDead] run scoreboard players set @s zomb
 #clear items
 #execute if entity @s[scores={kit=18}] run clear @s minecraft:wither_rose
 
-execute if entity @a[scores={kit=1005}] run clear @s mushroom_stew
+execute if entity @a[scores={kit=1004}] run clear @s mushroom_stew
 
 #execute if entity @s[scores={kit=8}] run clear @s minecraft:emerald
 #execute if entity @s[tag=stolen] run clear @s minecraft:emerald

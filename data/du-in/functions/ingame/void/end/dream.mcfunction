@@ -67,9 +67,8 @@ execute if entity @s[scores={kit=1001}] run tellraw @s [{"text":"You dream of- a
 execute if entity @s[scores={kit=1002}] run tellraw @s [{"text":"Someone dreams of you, apparently...","color":"gray","italic": true}]
 #Impostor
 execute if entity @s[scores={kit=1003}] run tellraw @s [{"text":"You dream of sneaking away...","color":"gray","italic": true}]
-#No one is 1004
 #Runza
-execute if entity @s[scores={kit=1005}] run tellraw @s [{"text":"You dream of cold temperatures...","color":"gray","italic": true}]
+execute if entity @s[scores={kit=1004}] run tellraw @s [{"text":"You dream of cold temperatures...","color":"gray","italic": true}]
 #Saul
 execute if entity @s[scores={kit=2015}] run tellraw @s [{"text":"You dream of winning a case...","color":"gray","italic": true}]
 #Chungus

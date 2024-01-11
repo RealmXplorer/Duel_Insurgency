@@ -41,13 +41,9 @@ tag @a remove dml
 tag @a remove kothl
 tag @a remove ctfl
 tag @a remove cql
-#tag @a remove exl
 tag @a remove cmap
 tag @a remove ready
 scoreboard players reset #gamemode gamemode
-#tag @a remove ranMode
-#tag @a remove spamClick
-#tag @a remove teamMode
 
 #Removes stopped countdown tag
 tag @a remove countStop
@@ -67,16 +63,20 @@ scoreboard players set @a lobby 1
 scoreboard players set #main mapCountdown 300
 bossbar set minecraft:map_countdown visible false
 
+#Resets team specific tags and scores
+tag @a remove team1
+tag @a remove team2
+scoreboard players reset @a team
+
+#Clear items
+#clear @s carrot_on_a_stick{redItem:1b}
+#clear @s carrot_on_a_stick{blueItem:1b}
+
 #Set music to 0 (starts gamemode select music)
 scoreboard players set @a music 0
 
 #Resets map score
 scoreboard players reset #main map
-
-#Resets team specific tags and scores
-tag @a remove team1
-tag @a remove team2
-scoreboard players reset @a team
 
 #Removes kitMenu and resets it
 tag @a remove kitMenu

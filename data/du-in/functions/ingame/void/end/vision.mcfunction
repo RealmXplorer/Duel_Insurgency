@@ -67,9 +67,8 @@ execute if entity @s[scores={kit=1001}] run tellraw @s [{"text":"I can't even de
 execute if entity @s[scores={kit=1002}] run tellraw @s [{"text":"You hear the calls of someone called \"Chat\"...","color":"gray","italic": true}]
 #Impostor
 execute if entity @s[scores={kit=1003}] run tellraw @s [{"text":"You feel the coldness of space...","color":"gray","italic": true}]
-#No one is 1004
 #Runza
-execute if entity @s[scores={kit=1005}] run tellraw @s [{"text":"You smell the aroma of fresh Runzas...","color":"gray","italic": true}]
+execute if entity @s[scores={kit=1004}] run tellraw @s [{"text":"You smell the aroma of fresh Runzas...","color":"gray","italic": true}]
 #Saul
 execute if entity @s[scores={kit=2015}] run tellraw @s [{"text":"You see riches beyond compare...","color":"gray","italic": true}]
 #Chungus
