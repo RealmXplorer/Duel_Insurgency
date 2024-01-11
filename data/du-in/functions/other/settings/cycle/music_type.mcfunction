@@ -1,3 +1,4 @@
+advancement revoke @s only du-in:shop/interact_jukebox
 scoreboard players add @s musicCycle 1
 execute if entity @s[scores={musicCycle=5..},tag=!secret] run scoreboard players set @s musicCycle 0
 execute if entity @s[scores={musicCycle=7..},tag=secret] run scoreboard players set @s musicCycle 0
@@ -15,4 +16,3 @@ execute if entity @s[scores={musicCycle=5}] run function du-in:other/settings/cy
 execute if entity @s[scores={musicCycle=6}] run function du-in:other/settings/cycle/music/christmas_music
 
 
-setblock ~-1 ~1 ~ stone_button[facing=east] destroy

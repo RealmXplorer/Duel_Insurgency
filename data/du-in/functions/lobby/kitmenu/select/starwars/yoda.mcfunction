@@ -3,7 +3,7 @@ execute if entity @s[tag=playing] run function du-in:kit/all/reset
 scoreboard players enable @s info
 clear @s player_head{yodaHead:1b}
 #Play sound
-playsound minecraft:yoda.voice master @s ~ ~ ~ 100 1
+playsound minecraft:yoda.hit master @s ~ ~ ~ 100 1
 #Set kit score to match kit
 scoreboard players set @s kit 29
 #Announce kit pick

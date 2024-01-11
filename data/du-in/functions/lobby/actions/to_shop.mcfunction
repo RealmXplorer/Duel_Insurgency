@@ -13,6 +13,11 @@ execute unless entity @a[tag=shop] run summon armor_stand 1974 52 2000 {Rotation
 #Vent
 execute unless entity @a[tag=shop] run summon interaction 1972 51 2000 {Tags:["shopVent","tabba","mapSpecific"],width:1.05f,height:1.25f,response:1b}
 
+#Jukebox
+execute unless entity @a[tag=shop] run summon interaction 1977 52 1987 {Tags:["jukeBox","tabba","mapSpecific"],width:1.05f,height:1.25f,response:1b}
+execute unless entity @a[tag=shop] run summon area_effect_cloud 1977 52.75 1987 {Duration:2147483647,Tags:["tabba"],CustomNameVisible:1b,CustomName:"{\"text\":\"Music\",\"color\":\"green\",\"bold\":true}"}
+
+
 #Add tags
 tag @s add shop
 tag @s add subLobby
