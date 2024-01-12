@@ -23,6 +23,7 @@ tag @a remove wsLock
 tag @a remove jermLock
 tag @a remove hauntedLock
 tag @a remove shLock
+tag @a remove wwLock
 tag @a remove mustafarLock
 tag @a remove escLock
 tag @a remove chancelLock

@@ -67,6 +67,7 @@ tag @a[scores={lastVoidLock=13},tag=cmap,tag=!timeFree] add jermLock
 tag @a[scores={lastVoidLock=14},tag=cmap,tag=!timeFree] add hauntedLock
 tag @a[scores={lastVoidLock=15},tag=cmap,tag=!timeFree] add shLock
 tag @a[scores={lastVoidLock=16},tag=cmap,tag=!timeFree] add escLock
+tag @a[scores={lastVoidLock=17},tag=cmap,tag=!timeFree] add wwLock
 
 tag @a[scores={lastVoidLock=1},tag=kothMap,tag=!timeFree] add zigLock
 tag @a[scores={lastVoidLock=2},tag=kothMap,tag=!timeFree] add nethLock
