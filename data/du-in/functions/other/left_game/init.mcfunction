@@ -46,7 +46,8 @@ execute if entity @a[tag=partyLeader,tag=ranMode] run tag @s add ranMode
 execute unless entity @a[tag=partyLeader,tag=ranMode] run tag @s remove ranMode
 
 #REMOVE MAP COUNTDOWN BOSSBAR IF NOT IN MAP SELECT
-execute unless entity @a[scores={lobby=3},tag=partyLeader] run bossbar set minecraft:map_countdown visible false
+#execute unless entity @a[scores={lobby=3},tag=partyLeader] run bossbar set minecraft:map_countdown visible false
+execute unless entity @a[scores={lobby=2},tag=partyLeader] run bossbar set minecraft:map_countdown visible false
 
 execute unless entity @a[tag=ctfIngame,tag=partyLeader] run bossbar set du-in:bluectf visible false
 execute unless entity @a[tag=ctfIngame,tag=partyLeader] run bossbar set du-in:redctf visible false

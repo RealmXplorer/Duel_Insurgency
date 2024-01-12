@@ -29,11 +29,12 @@ scoreboard players set @s kitTheme 1
 scoreboard players set @s kitList 7
 tag @s add kitMenu
 
-#scoreboard players set @s[tag=!teamMode] lobby 3
-scoreboard players set @s lobby 3
-scoreboard players set #main lobby 3
-#scoreboard players set @s[tag=teamMode] lobby 4
-#execute if entity @s[tag=teamMode] run scoreboard players set #main lobby 4
+#scoreboard players set @s lobby 3
+#scoreboard players set #main lobby 3
+
+scoreboard players set @s lobby 2
+scoreboard players set #main lobby 2
+
 title @a times 0 60 0
 title @s title {"text":"","color":"red","bold":true}
 title @s[tag=!teamMode] subtitle {"text":"Open inventory to select a character!","color":"red","bold":true}

@@ -38,10 +38,12 @@ tag @a remove givenEx
 #schedule clear du-in:lobby/scheduled/gamemode_select
 
 #Set global lobby to 3
-scoreboard players set #main lobby 3
+#scoreboard players set #main lobby 3
+scoreboard players set #main lobby 2
 
 #Set player lobby to 3
-scoreboard players set @a lobby 3
+#scoreboard players set @a lobby 3
+scoreboard players set @a lobby 2
 
 #If in Classic or Deathmatch, let game know to use same map pool
 tag @a[tag=cl] add cmap
@@ -97,11 +99,12 @@ scoreboard players set @a kitTheme 1
 scoreboard players set @a kitList 7
 tag @a add kitMenu
 
-#scoreboard players set @s[tag=!teamMode] lobby 3
-scoreboard players set @a lobby 3
-scoreboard players set #main lobby 3
-#scoreboard players set @s[tag=teamMode] lobby 4
-#execute if entity @s[tag=teamMode] run scoreboard players set #main lobby 4
+#scoreboard players set @a lobby 3
+#scoreboard players set #main lobby 3
+
+scoreboard players set @a lobby 2
+scoreboard players set #main lobby 2
+
 title @a times 0 60 0
 title @a title {"text":"","color":"red","bold":true}
 title @a[tag=!teamMode] subtitle {"text":"Open inventory to select a character!","color":"red","bold":true}

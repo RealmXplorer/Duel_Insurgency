@@ -17,7 +17,8 @@ execute if entity @a[tag=teamMode] run function du-in:lobby/team_count
 #execute as @a[tag=team1] run scoreboard players add #main redOnline 1
 
 #Test for number of people with kit picked
-execute if entity @a[scores={lobby=3}] run scoreboard players set #main kitOnline 0
+#execute if entity @a[scores={lobby=3}] run scoreboard players set #main kitOnline 0
+execute if entity @a[scores={lobby=2}] run scoreboard players set #main kitOnline 0
 execute as @a[tag=ready,tag=lobby] run scoreboard players add #main kitOnline 1
 
 #Pick gamemode
