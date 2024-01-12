@@ -42,4 +42,7 @@ execute if score #main map matches 12 run playsound minecraft:ambient.wind ambie
 #Harvest
 #execute if score #main map matches 15 run function du-in:ingame/scheduled/ambience/forest
 
+#Wild West
+execute if score #main map matches 17 run function du-in:ingame/scheduled/ambience/desert
+
 ###
