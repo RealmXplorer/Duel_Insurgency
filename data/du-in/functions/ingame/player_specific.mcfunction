@@ -121,7 +121,7 @@ execute if entity @s[tag=sabotagedField] run function du-in:kit/clairen/ability/
         execute if entity @a[tag=partyLeader,tag=spamClick] run attribute @s minecraft:generic.attack_speed base set 100
 
 #attribute @s[tag=skrunkMode] minecraft:generic.scale base set 0.2
-#attribute @s[tag=skrunkMode] minecraft:generic.block_interaction_range base set 4
+#attribute @s[tag=skrunkMode] minecraft:player.block_interaction_range base set 4
 
 #attribute @s[tag=skrunkMode] minecraft:generic.scale base set 5
-#attribute @s[tag=skrunkMode] minecraft:generic.block_interaction_range base set 10
+#attribute @s[tag=skrunkMode] minecraft:player.block_interaction_range base set 10
