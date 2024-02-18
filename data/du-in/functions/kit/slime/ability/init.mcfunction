@@ -13,7 +13,7 @@ tag @s[tag=!sabotaged] add armor
 #Start ability timer and give fire resist
 scoreboard players set @s[tag=!sabotaged] magmaTimer 60
 effect give @s[tag=!sabotaged] minecraft:fire_resistance 3 0 true
-effect give @s[tag=!sabotaged] minecraft:jump_boost 3 1 true
+effect give @s[tag=!sabotaged] minecraft:jump_boost 3 0 true
 
 #Play particles and sounds
 particle minecraft:flame ~ ~ ~ 0.5 1 0.5 0 50 force

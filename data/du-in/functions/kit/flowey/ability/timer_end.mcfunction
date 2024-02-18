@@ -1,5 +1,5 @@
 effect clear @s minecraft:invisibility
-effect clear @s minecraft:jump_boost
+attribute @s minecraft:generic.jump_strength modifier remove 6554983a-9201-41da-a774-48f15063a223
 effect clear @s[tag=sabotaged] minecraft:slowness
 
 xp set @s[tag=!stolen] 360 levels

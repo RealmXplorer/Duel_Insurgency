@@ -9,6 +9,8 @@ attribute @s minecraft:generic.movement_speed base set 0.10000000149
 attribute @s minecraft:generic.scale base set 1
 attribute @s minecraft:player.block_interaction_range base set 4.5
 attribute @s minecraft:generic.jump_strength base set 0.42
+attribute @s minecraft:generic.gravity base set 0.08
+#attribute @s minecraft:player.block_break_speed base set 1
 
 #Remove Modifiers
 ##Springtrap
@@ -38,3 +40,10 @@ attribute @s minecraft:generic.armor modifier remove b36faec5-3a6b-4564-ba7d-278
 
 ##Cuphead
 attribute @s generic.knockback_resistance modifier remove 8e7bcc8e-a4aa-4d1f-8828-cbea3350bd41
+
+##Flowey
+attribute @s minecraft:generic.jump_strength modifier remove 6554983a-9201-41da-a774-48f15063a223
+
+##Team Dead Effects
+attribute @s minecraft:generic.jump_strength modifier remove 76c91af4-d86d-4e55-8df9-fd2c247d45db
+attribute @s minecraft:generic.attack_damage modifier remove dd3713c4-bf98-4d8b-bc6f-c5368dd7bd45

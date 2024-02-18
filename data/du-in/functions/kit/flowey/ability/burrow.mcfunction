@@ -15,7 +15,8 @@ effect give @s[tag=!sabotaged] minecraft:fire_resistance 1 255 true
 effect give @s minecraft:weakness 1 255 true
 effect give @s[tag=!sabotaged] minecraft:speed 1 2 true
 effect give @s[tag=sabotaged] minecraft:slowness 1 200 true
-effect give @s minecraft:jump_boost 1 240 true
+attribute @s minecraft:generic.jump_strength modifier add 6554983a-9201-41da-a774-48f15063a223 floweyJump -100 add
+
 effect give @s[tag=!sabotaged] minecraft:invisibility 1 1 true
 
 #Dirt particles#

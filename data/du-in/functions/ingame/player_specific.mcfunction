@@ -10,7 +10,7 @@ execute if entity @s[level=1..2,gamemode=!spectator,tag=!lobby,tag=!win,tag=!los
     execute if entity @s[tag=startgame,tag=!working] run function du-in:ingame/start_seq
 
 # If a player is dead in team mode #
-    execute if entity @s[tag=teamDead,tag=!void] run function du-in:ingame/team_dead
+    execute if entity @s[tag=teamDead,tag=!void,scores={deathTimer=0..}] run function du-in:ingame/teamdeath/dead_effects
 
 #Give glow if sneaking, remove glow if not
     execute if entity @s[predicate=du-in:is_sneaking] run function du-in:ingame/is_sneaking
