@@ -17,8 +17,8 @@ execute unless items entity @s inventory.19 minecraft:player_head run function d
 
 execute unless items entity @s inventory.17 minecraft:player_head run function du-in:other/skins/skin_menu/villager
 execute unless items entity @s inventory.16 minecraft:player_head run function du-in:other/skins/skin_menu/frisk
-
 execute unless items entity @s inventory.15 minecraft:player_head run function du-in:other/skins/skin_menu/flowey
+
 execute unless items entity @s inventory.14 minecraft:player_head run function du-in:other/skins/skin_menu/golem
 execute unless items entity @s inventory.13 minecraft:player_head run function du-in:other/skins/skin_menu/ralsei
 execute unless items entity @s inventory.12 minecraft:player_head run function du-in:other/skins/skin_menu/sans
