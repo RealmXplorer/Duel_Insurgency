@@ -1,10 +1,5 @@
 execute if entity @s[tag=skinsListed] run scoreboard players set @s skinList 20
 
-#execute if entity @s[nbt=!{Inventory:[{tag:{fixedItem:1b},id:"minecraft:player_head",Slot:31b}]}] run function du-in:other/skins/skin_menu/slime
-#execute if entity @s[nbt=!{Inventory:[{tag:{fixedItem:1b},id:"minecraft:player_head",Slot:30b}]}] run function du-in:other/skins/skin_menu/palps
-#execute if entity @s[nbt=!{Inventory:[{tag:{fixedItem:1b},id:"minecraft:player_head",Slot:29b}]}] run function du-in:other/skins/skin_menu/asgore
-#execute if entity @s[nbt=!{Inventory:[{tag:{fixedItem:1b},id:"minecraft:player_head",Slot:28b}]}] run function du-in:other/skins/skin_menu/kylo
-
 execute unless items entity @s inventory.22 minecraft:player_head run function du-in:other/skins/skin_menu/slime
 execute unless items entity @s inventory.21 minecraft:player_head run function du-in:other/skins/skin_menu/palps
 execute unless items entity @s inventory.20 minecraft:player_head run function du-in:other/skins/skin_menu/asgore
@@ -22,6 +17,7 @@ execute unless items entity @s inventory.19 minecraft:player_head run function d
 
 execute unless items entity @s inventory.17 minecraft:player_head run function du-in:other/skins/skin_menu/villager
 execute unless items entity @s inventory.16 minecraft:player_head run function du-in:other/skins/skin_menu/frisk
+
 execute unless items entity @s inventory.15 minecraft:player_head run function du-in:other/skins/skin_menu/flowey
 execute unless items entity @s inventory.14 minecraft:player_head run function du-in:other/skins/skin_menu/golem
 execute unless items entity @s inventory.13 minecraft:player_head run function du-in:other/skins/skin_menu/ralsei

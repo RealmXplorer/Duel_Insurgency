@@ -1,6 +1,6 @@
 scoreboard players add @s flowSkin 1
 scoreboard players reset @s[scores={flowSkin=3..}] flowSkin
-clear @s player_head{floweyHead:1b}
+clear @s player_head[custom_data={du-in:'floweyHead'}]
 
 function du-in:other/skins/skin_menu/actions/sound
 

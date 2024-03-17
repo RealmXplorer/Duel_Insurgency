@@ -1,4 +1,4 @@
-clear @s player_head{villagerHead:1b}
+clear @s player_head[custom_data={du-in:'villagerHead'}]
 
 scoreboard players add @s villSkin 1
 scoreboard players reset @s[scores={villSkin=3..}] villSkin
