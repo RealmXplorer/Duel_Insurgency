@@ -1,5 +1,5 @@
 #TERRARIA GOLEM#
-item replace entity @s armor.head with minecraft:player_head{display:{Name:"{\"text\":\"Terraria Golem\"}"},weaponItem:1b,SkullOwner:{Id:[I;1224490280,587221666,-2097683818,1282182721],Properties:{textures:[{Value:"eyJ0ZXh0dXJlcyI6eyJTS0lOIjp7InVybCI6Imh0dHA6Ly90ZXh0dXJlcy5taW5lY3JhZnQubmV0L3RleHR1cmUvYzM5MGY0Yjg1YzkzYjZlNzUxMGFkNWE2NDQ3Y2JiN2Q2NWMxMDk5MTRlOWJkNzU2YzFkNzY2ZjIzMmNlYmNhZiJ9fX0="}]}}} 1
-item replace entity @s armor.chest with minecraft:leather_chestplate{display:{Name:'{"text":"Terraria Golem Chest"}',color:5777948},weaponItem:1b,HideFlags:4,Unbreakable:1b} 1
-item replace entity @s armor.legs with minecraft:leather_leggings{display:{Name:'{"text":"Terraria Golem Legs"}',color:5777948},weaponItem:1b,HideFlags:4,Unbreakable:1b} 1
-item replace entity @s armor.feet with minecraft:leather_boots{display:{Name:'{"text":"Terraria Golem Feet"}',color:5777948},weaponItem:1b,HideFlags:4,Unbreakable:1b} 1
+item replace entity @s armor.head with minecraft:player_head{display:{Name:"{\"text\":\"Terraria Golem\"}"},du-in:weaponItem,SkullOwner:{Id:[I;1224490280,587221666,-2097683818,1282182721],Properties:{textures:[{Value:"eyJ0ZXh0dXJlcyI6eyJTS0lOIjp7InVybCI6Imh0dHA6Ly90ZXh0dXJlcy5taW5lY3JhZnQubmV0L3RleHR1cmUvYzM5MGY0Yjg1YzkzYjZlNzUxMGFkNWE2NDQ3Y2JiN2Q2NWMxMDk5MTRlOWJkNzU2YzFkNzY2ZjIzMmNlYmNhZiJ9fX0="}]}}} 1
+item replace entity @s armor.chest with minecraft:leather_chestplate{display:{Name:'{"text":"Terraria Golem Chest"}',color:5777948},du-in:weaponItem,HideFlags:4,Unbreakable:1b} 1
+item replace entity @s armor.legs with minecraft:leather_leggings{display:{Name:'{"text":"Terraria Golem Legs"}',color:5777948},du-in:weaponItem,HideFlags:4,Unbreakable:1b} 1
+item replace entity @s armor.feet with minecraft:leather_boots{display:{Name:'{"text":"Terraria Golem Feet"}',color:5777948},du-in:weaponItem,HideFlags:4,Unbreakable:1b} 1

@@ -1,7 +1,7 @@
 #Reset all scores for kit if playing
 execute if entity @s[tag=playing] run function du-in:kit/all/reset
 scoreboard players enable @s info
-clear @s player_head{kyloHead:1b}
+clear @s player_head[custom_data={du-in:'kyloHead'}]
 #Play sound
 playsound minecraft:kylo.voice master @s ~ ~ ~ 100 1
 #Announce kit pick

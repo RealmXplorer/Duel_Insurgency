@@ -1,5 +1,5 @@
 #DEFAULT#
-item replace entity @s armor.head with minecraft:player_head{display:{Name:"{\"text\":\"Cave Spider\"}"},SkullOwner:{Id:[I;1208755157,-1292090154,-1307858249,643126204],Properties:{textures:[{Value:"eyJ0ZXh0dXJlcyI6eyJTS0lOIjp7InVybCI6Imh0dHA6Ly90ZXh0dXJlcy5taW5lY3JhZnQubmV0L3RleHR1cmUvZWNjYzRhMzJkNDVkNzRlOGIxNGVmMWZmZDU1Y2Q1ZjM4MWEwNmQ0OTk5MDgxZDUyZWFlYTEyZTEzMjkzZTIwOSJ9fX0="}]}},weaponItem:1b} 1
-item replace entity @s armor.chest with minecraft:leather_chestplate{Unbreakable:1,HideFlags:4,display:{Name:'{"text":"Cave Critter Chest"}',color:3353638},weaponItem:1b} 1
-item replace entity @s armor.legs with minecraft:leather_leggings{Unbreakable:1,HideFlags:4,display:{Name:'{"text":"Cave Critter Legs"}',color:3024930},weaponItem:1b} 1
-item replace entity @s armor.feet with minecraft:leather_boots{Unbreakable:1,HideFlags:4,display:{Name:'{"text":"Cave Critter Feet"}',color:3024930},weaponItem:1b} 1
+item replace entity @s armor.head with minecraft:player_head{display:{Name:"{\"text\":\"Cave Spider\"}"},SkullOwner:{Id:[I;1208755157,-1292090154,-1307858249,643126204],Properties:{textures:[{Value:"eyJ0ZXh0dXJlcyI6eyJTS0lOIjp7InVybCI6Imh0dHA6Ly90ZXh0dXJlcy5taW5lY3JhZnQubmV0L3RleHR1cmUvZWNjYzRhMzJkNDVkNzRlOGIxNGVmMWZmZDU1Y2Q1ZjM4MWEwNmQ0OTk5MDgxZDUyZWFlYTEyZTEzMjkzZTIwOSJ9fX0="}]}},du-in:weaponItem} 1
+item replace entity @s armor.chest with minecraft:leather_chestplate{Unbreakable:1,HideFlags:4,display:{Name:'{"text":"Cave Critter Chest"}',color:3353638},du-in:weaponItem} 1
+item replace entity @s armor.legs with minecraft:leather_leggings{Unbreakable:1,HideFlags:4,display:{Name:'{"text":"Cave Critter Legs"}',color:3024930},du-in:weaponItem} 1
+item replace entity @s armor.feet with minecraft:leather_boots{Unbreakable:1,HideFlags:4,display:{Name:'{"text":"Cave Critter Feet"}',color:3024930},du-in:weaponItem} 1

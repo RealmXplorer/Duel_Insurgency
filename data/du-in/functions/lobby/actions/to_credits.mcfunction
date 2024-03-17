@@ -1,4 +1,4 @@
-#kill @e[type=item,nbt={Item:{tag:{weaponItem:1b}}}]
+#kill @e[type=item,nbt={Item:{tag:{du-in:weaponItem}}}]
 
 tp @s 156 82 49 90 0
 clear @s

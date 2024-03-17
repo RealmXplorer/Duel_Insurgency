@@ -18,10 +18,10 @@ execute if entity @s[tag=secKitActions,tag=!stolen,tag=void] run function du-in:
 #WEAPON#
 #execute if entity @s[tag=!teamDead,tag=!stolen] unless entity @s[scores={weapCount=1}] run function du-in:kit/cuphead/weapon
 
-execute if entity @s[tag=!stolen,tag=!teamDead] unless entity @s[scores={secCount=1}] run item replace entity @s hotbar.0 with warped_fungus_on_a_stick{display:{Name:'{"text":"Devil\'s Horn","color":"#EF0AFF","bold":true}',Lore:['{"text":"Jump in the air and right click near enemy"}','{"text":"or projectile to parry!"}','{"text":"","color":"light_gray","bold":true}','{"text":"I didn\'t know this was a hat!","color":"white","bold":false}','{"text":"It wasn\'t...","color":"red","bold":false}']},Unbreakable:1b,CustomModelData:2014,weaponItem:1b,HideFlags:4,AttributeModifiers:[{AttributeName:"generic.attack_damage",Name:"generic.attack_damage",Amount:2.75,Operation:0,UUID:[I;1200076442,258100954,-1565177410,1292513131],Slot:"mainhand"},{AttributeName:"generic.attack_speed",Name:"generic.attack_speed",Amount:40,Operation:0,UUID:[I;150931488,-224377682,-1476605358,-249302083],Slot:"mainhand"}]} 1
+execute if entity @s[tag=!stolen,tag=!teamDead] unless entity @s[scores={secCount=1}] run item replace entity @s hotbar.0 with warped_fungus_on_a_stick{display:{Name:'{"text":"Devil\'s Horn","color":"#EF0AFF","bold":true}',Lore:['{"text":"Jump in the air and right click near enemy"}','{"text":"or projectile to parry!"}','{"text":"","color":"light_gray","bold":true}','{"text":"I didn\'t know this was a hat!","color":"white","bold":false}','{"text":"It wasn\'t...","color":"red","bold":false}']},Unbreakable:1b,CustomModelData:2014,du-in:weaponItem,HideFlags:4,AttributeModifiers:[{AttributeName:"generic.attack_damage",Name:"generic.attack_damage",Amount:2.75,Operation:0,UUID:[I;1200076442,258100954,-1565177410,1292513131],Slot:"mainhand"},{AttributeName:"generic.attack_speed",Name:"generic.attack_speed",Amount:40,Operation:0,UUID:[I;150931488,-224377682,-1476605358,-249302083],Slot:"mainhand"}]} 1
 
 #Give Secondary#
-#execute if entity @s[tag=!stolen,tag=!teamDead] unless entity @s[scores={secCount=1}] unless entity @s[scores={parryTimer=1..}] run item replace entity @s hotbar.1 with warped_fungus_on_a_stick{display:{Name:'{"text":"Parry","color":"#EF0AFF","bold":true}',Lore:['{"text":"Jump in the air and right click near enemy or projectile to parry!"}']},Unbreakable:1b,CustomModelData:2014,weaponItem:1b} 1
+#execute if entity @s[tag=!stolen,tag=!teamDead] unless entity @s[scores={secCount=1}] unless entity @s[scores={parryTimer=1..}] run item replace entity @s hotbar.1 with warped_fungus_on_a_stick{display:{Name:'{"text":"Parry","color":"#EF0AFF","bold":true}',Lore:['{"text":"Jump in the air and right click near enemy or projectile to parry!"}']},Unbreakable:1b,CustomModelData:2014,du-in:weaponItem} 1
 
 #Check for secondary#
 execute store result score @s[tag=!stolen,tag=!pussFear] secCount run clear @s[tag=!kitMenu] warped_fungus_on_a_stick 0
@@ -49,7 +49,7 @@ execute if entity @s[scores={cardPower=15..19}] run function du-in:kit/cuphead/c
 execute if entity @s[scores={cardPower=20..24}] run function du-in:kit/cuphead/card/card4
 
 execute if entity @s[scores={cardPower=25..}] run function du-in:kit/cuphead/card/card5
-#item replace entity @s[scores={cardPower=25..}] hotbar.8 with paper{weaponItem:1b,CustomModelData:100} 5
+#item replace entity @s[scores={cardPower=25..}] hotbar.8 with paper{du-in:weaponItem,CustomModelData:100} 5
 
 #Attributes#
 attribute @s[tag=!stolen] minecraft:generic.movement_speed base set 0.135

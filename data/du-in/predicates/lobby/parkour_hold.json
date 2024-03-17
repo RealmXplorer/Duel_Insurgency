@@ -8,7 +8,7 @@
         "items": [
           "minecraft:carrot_on_a_stick"
         ],
-        "nbt": "{parkourItem:1b}"
+        "nbt": "{du-in:parkourItem}"
       }
     }
   }

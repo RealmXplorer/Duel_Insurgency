@@ -11,7 +11,7 @@ execute if entity @s[tag=armor,tag=!stolen] run function du-in:kit/yoda/armor
 execute if entity @s[level=1] run function du-in:kit/yoda/ability/item
 
 #Weapon#
-execute unless entity @s[scores={weapCount=1}] run item replace entity @s[tag=!stolen,tag=!teamDead] hotbar.0 with stone_sword{display:{Name:'{"text":"Saber of the Grandmaster","color":"#21ad28","bold":true}'},HideFlags:5,Unbreakable:1b,CustomModelData:113,Enchantments:[{}],AttributeModifiers:[{AttributeName:"generic.attack_damage",Name:"generic.attack_damage",Slot:"mainhand",Amount:3.75,Operation:0,UUID:[I;1008240078,1007044323,1045695083,1042762522]},{AttributeName:"generic.attack_speed",Name:"generic.attack_speed",Slot:"mainhand",Amount:-2.15,Operation:0,UUID:[I;1008240078,1007044323,1045695083,1042762522]}],weaponItem:1b} 1
+execute unless entity @s[scores={weapCount=1}] run item replace entity @s[tag=!stolen,tag=!teamDead] hotbar.0 with stone_sword{display:{Name:'{"text":"Saber of the Grandmaster","color":"#21ad28","bold":true}'},HideFlags:5,Unbreakable:1b,CustomModelData:113,Enchantments:[{}],AttributeModifiers:[{AttributeName:"generic.attack_damage",Name:"generic.attack_damage",Slot:"mainhand",Amount:3.75,Operation:0,UUID:[I;1008240078,1007044323,1045695083,1042762522]},{AttributeName:"generic.attack_speed",Name:"generic.attack_speed",Slot:"mainhand",Amount:-2.15,Operation:0,UUID:[I;1008240078,1007044323,1045695083,1042762522]}],du-in:weaponItem} 1
 
 #Use ability
 execute if entity @s[tag=kitActions] run function du-in:kit/yoda/ability/init

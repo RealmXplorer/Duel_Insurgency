@@ -1,5 +1,5 @@
 #DEFAULT#
-item replace entity @s armor.feet with minecraft:leather_boots{HideFlags:4,Unbreakable:1,display:{Name:'{"text":"Timekeeper Ralsei Feet"}',color:2181178},weaponItem:1b} 1
-item replace entity @s armor.legs with minecraft:leather_leggings{HideFlags:4,Unbreakable:1,display:{Name:'{"text":"Timekeeper Ralsei Legss"}',color:460808},weaponItem:1b} 1
-item replace entity @s armor.chest with minecraft:leather_chestplate{HideFlags:4,Unbreakable:1,display:{Name:'{"text":"Timekeeper Ralsei Chest"}',color:5098638},weaponItem:1b} 1
-item replace entity @s armor.head with minecraft:player_head{display:{Name:"{\"text\":\"Timekeeper Ralsei\"}"},SkullOwner:{Id:[I;-81617903,697581951,-1630698045,1582056172],Properties:{textures:[{Value:"eyJ0ZXh0dXJlcyI6eyJTS0lOIjp7InVybCI6Imh0dHA6Ly90ZXh0dXJlcy5taW5lY3JhZnQubmV0L3RleHR1cmUvYzhkY2M1YTNjOWE4NTQyYjAzMGJiZWU5MjI0MGE4YjRlMzdhNTY1ZDU1ZmQzMWJhYjg4YTE1NjY5NjI3YjE4YyJ9fX0="}]}},weaponItem:1b} 1
+item replace entity @s armor.feet with minecraft:leather_boots{HideFlags:4,Unbreakable:1,display:{Name:'{"text":"Timekeeper Ralsei Feet"}',color:2181178},du-in:weaponItem} 1
+item replace entity @s armor.legs with minecraft:leather_leggings{HideFlags:4,Unbreakable:1,display:{Name:'{"text":"Timekeeper Ralsei Legss"}',color:460808},du-in:weaponItem} 1
+item replace entity @s armor.chest with minecraft:leather_chestplate{HideFlags:4,Unbreakable:1,display:{Name:'{"text":"Timekeeper Ralsei Chest"}',color:5098638},du-in:weaponItem} 1
+item replace entity @s armor.head with minecraft:player_head{display:{Name:"{\"text\":\"Timekeeper Ralsei\"}"},SkullOwner:{Id:[I;-81617903,697581951,-1630698045,1582056172],Properties:{textures:[{Value:"eyJ0ZXh0dXJlcyI6eyJTS0lOIjp7InVybCI6Imh0dHA6Ly90ZXh0dXJlcy5taW5lY3JhZnQubmV0L3RleHR1cmUvYzhkY2M1YTNjOWE4NTQyYjAzMGJiZWU5MjI0MGE4YjRlMzdhNTY1ZDU1ZmQzMWJhYjg4YTE1NjY5NjI3YjE4YyJ9fX0="}]}},du-in:weaponItem} 1

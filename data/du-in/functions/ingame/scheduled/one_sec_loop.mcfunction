@@ -21,7 +21,7 @@ execute if score #main matchDeaths matches 12.. if entity @a[gamemode=adventure,
 #Give player kit if they don't have one
 #execute unless entity @s[scores={kit=1..}] run tag @s add random
 
-#execute if entity @e[type=item] run kill @e[type=item,nbt={Item:{tag:{weaponItem:1b}}}]
+#execute if entity @e[type=item] run kill @e[type=item,nbt={Item:{tag:{du-in:weaponItem}}}]
 execute as @e[type=item,tag=!displayItem] run kill @s
 
 #kill @e[type=!player,type=!interaction,type=!marker,type=!armor_stand,nbt={inGround:1b}]

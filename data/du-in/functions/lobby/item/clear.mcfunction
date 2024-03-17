@@ -1,2 +1,2 @@
 clear @s[tag=!kitRemoveItem] minecraft:carrot_on_a_stick{CustomModelData:1001}
-item replace entity @s[gamemode=!creative,tag=!playing,tag=!working] hotbar.2 with minecraft:carrot_on_a_stick{CustomModelData:1001,display:{Name:'{"text":"Clear Kit","color":"red","bold":true,"italic":false}',Lore:['{"text":"Right click to use!","color":"dark_purple"}']},fixedItem:1b,weaponItem:1b}
+item replace entity @s[gamemode=!creative,tag=!playing,tag=!working] hotbar.2 with minecraft:carrot_on_a_stick{CustomModelData:1001,display:{Name:'{"text":"Clear Kit","color":"red","bold":true,"italic":false}',Lore:['{"text":"Right click to use!","color":"dark_purple"}']},fixedItem:1b,du-in:weaponItem}

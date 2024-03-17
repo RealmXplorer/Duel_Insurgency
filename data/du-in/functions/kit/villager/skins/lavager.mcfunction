@@ -1,5 +1,5 @@
 #LAVAGER#
-item replace entity @s armor.head with minecraft:player_head{display:{Name:"{\"text\":\"Lavager\"}"},weaponItem:1b,SkullOwner:{Id:[I;667494496,1213549279,-1628020036,407046590],Properties:{textures:[{Value:"eyJ0ZXh0dXJlcyI6eyJTS0lOIjp7InVybCI6Imh0dHA6Ly90ZXh0dXJlcy5taW5lY3JhZnQubmV0L3RleHR1cmUvY2ZmNjIxMWQ3M2NmYjdkYjZkNDY3OWVlYzk0ZDQwMmZkYTM0MzhjOWZjYzAzODU3NTczZTYzMzY5MjkxYTRiZSJ9fX0="}]}}} 1
-item replace entity @s armor.chest with minecraft:leather_chestplate{Unbreakable:1,display:{Name:'{"text":"Magma Chest"}',color:1116163},weaponItem:1b} 1
-item replace entity @s armor.legs with minecraft:leather_leggings{Unbreakable:1,display:{Name:'{"text":"Magma Legs"}',color:3017728},weaponItem:1b} 1
-item replace entity @s armor.feet with minecraft:leather_boots{Unbreakable:1,display:{Name:'{"text":"Magma Feet"}',color:3017728},weaponItem:1b} 1
+item replace entity @s armor.head with minecraft:player_head{display:{Name:"{\"text\":\"Lavager\"}"},du-in:weaponItem,SkullOwner:{Id:[I;667494496,1213549279,-1628020036,407046590],Properties:{textures:[{Value:"eyJ0ZXh0dXJlcyI6eyJTS0lOIjp7InVybCI6Imh0dHA6Ly90ZXh0dXJlcy5taW5lY3JhZnQubmV0L3RleHR1cmUvY2ZmNjIxMWQ3M2NmYjdkYjZkNDY3OWVlYzk0ZDQwMmZkYTM0MzhjOWZjYzAzODU3NTczZTYzMzY5MjkxYTRiZSJ9fX0="}]}}} 1
+item replace entity @s armor.chest with minecraft:leather_chestplate{Unbreakable:1,display:{Name:'{"text":"Magma Chest"}',color:1116163},du-in:weaponItem} 1
+item replace entity @s armor.legs with minecraft:leather_leggings{Unbreakable:1,display:{Name:'{"text":"Magma Legs"}',color:3017728},du-in:weaponItem} 1
+item replace entity @s armor.feet with minecraft:leather_boots{Unbreakable:1,display:{Name:'{"text":"Magma Feet"}',color:3017728},du-in:weaponItem} 1

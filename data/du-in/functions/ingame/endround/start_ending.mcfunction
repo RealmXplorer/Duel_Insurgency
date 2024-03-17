@@ -55,7 +55,7 @@ execute if entity @a[tag=ctfIngame] at @e[type=marker,tag=redFlag] run setblock 
 
 #Kill all ingame entities.
 kill @e[nbt={inGround:1b}]
-kill @e[type=item,nbt={Item:{tag:{weaponItem:1b}}}]
+kill @e[type=item,nbt={Item:{tag:{du-in:weaponItem}}}]
 kill @e[type=ender_pearl,tag=blakeTP]
 
 function du-in:maps/jermall/stop

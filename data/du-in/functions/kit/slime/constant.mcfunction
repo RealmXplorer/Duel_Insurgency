@@ -7,7 +7,7 @@ execute if entity @s[tag=!stolen,scores={jump=1..}] run function du-in:kit/slime
 execute if entity @s[tag=armor,tag=!stolen] run function du-in:kit/slime/armor
 
 #Ability
-#item replace entity @s[level=1] weapon.offhand with minecraft:carrot_on_a_stick{display:{Name:'{"text":"Magma Pulse","color":"gold","bold":true,"italic":false,"underlined":false,"strikethrough":false,"obfuscated":false}',Lore:['{"text":"Right click to activate!","color":"dark_purple","bold":true}','[{"text":""}]','{"text":"Summon your inner ","color":"dark_gray"}','{"text":"magma cube to ","color":"dark_gray"}','{"text":"unleash the flames","color":"dark_gray"}']},HideFlags:1,Enchantments:[{id:"minecraft:protection",lvl:1s}],CustomModelData:102,weaponItem:1b}
+#item replace entity @s[level=1] weapon.offhand with minecraft:carrot_on_a_stick{display:{Name:'{"text":"Magma Pulse","color":"gold","bold":true,"italic":false,"underlined":false,"strikethrough":false,"obfuscated":false}',Lore:['{"text":"Right click to activate!","color":"dark_purple","bold":true}','[{"text":""}]','{"text":"Summon your inner ","color":"dark_gray"}','{"text":"magma cube to ","color":"dark_gray"}','{"text":"unleash the flames","color":"dark_gray"}']},HideFlags:1,Enchantments:[{id:"minecraft:protection",lvl:1s}],CustomModelData:102,du-in:weaponItem}
 execute if entity @s[level=1] run function du-in:kit/slime/ability/item
 execute if entity @s[tag=kitActions] run function du-in:kit/slime/ability/init
 

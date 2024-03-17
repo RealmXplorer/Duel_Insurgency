@@ -1,2 +1,2 @@
 clear @s minecraft:carrot_on_a_stick{CustomModelData:1000}
-item replace entity @s[tag=!playing,gamemode=!creative,tag=!working] hotbar.0 with minecraft:carrot_on_a_stick{CustomModelData:1000,display:{Name:'{"text":"Ready Up","color":"green","bold":true,"italic":false}',Lore:['{"text":"Right click to use!","color":"dark_purple"}']},fixedItem:1b,weaponItem:1b}
+item replace entity @s[tag=!playing,gamemode=!creative,tag=!working] hotbar.0 with minecraft:carrot_on_a_stick{CustomModelData:1000,display:{Name:'{"text":"Ready Up","color":"green","bold":true,"italic":false}',Lore:['{"text":"Right click to use!","color":"dark_purple"}']},fixedItem:1b,du-in:weaponItem}

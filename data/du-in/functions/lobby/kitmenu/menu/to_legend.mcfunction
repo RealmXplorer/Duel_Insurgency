@@ -1,3 +1,3 @@
 execute if entity @s[tag=givenLegendTo,scores={kitTheme=1..}] run function du-in:lobby/kitmenu/select/legend_switch_to
-item replace entity @s[tag=kitMenu,scores={kitTheme=1..}] inventory.21 with minecraft:carrot_on_a_stick{toItem:1b,CustomModelData:3000,display:{Name:'{"text":"Legendary","color":"gold","bold":true,"italic":false}'},headItem:1b,weaponItem:1b,fixedItem:1b,lobbyItem:1b}
+item replace entity @s[tag=kitMenu,scores={kitTheme=1..}] inventory.21 with minecraft:carrot_on_a_stick{toItem:1b,CustomModelData:3000,display:{Name:'{"text":"Legendary","color":"gold","bold":true,"italic":false}'},headItem:1b,du-in:weaponItem,fixedItem:1b,lobbyItem:1b}
 tag @s[scores={kitTheme=1..}] add givenLegendTo

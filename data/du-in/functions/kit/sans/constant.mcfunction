@@ -26,14 +26,14 @@ execute if entity @s[tag=!teamDead,tag=!stolen] unless entity @s[scores={weapCou
 #execute store result score @s[tag=!stolen] weapCount run clear @s[tag=!kitMenu] bone 0
 
 
-execute if entity @s[level=1] run item replace entity @s weapon.offhand with minecraft:carrot_on_a_stick{display:{Name:'{"text":"Bad Time","color":"gold","bold":true,"italic":false,"underlined":false,"strikethrough":false,"obfuscated":false}',Lore:['{"text":"Right click to activate!","color":"dark_purple","bold":true}','[{"text":""}]','{"text":"Teleport behind an enemy,","color":"dark_gray"}','{"text":"avoid attack cooldowns, ","color":"dark_gray"}','{"text":"gain strength","color":"dark_gray"}']},HideFlags:1,Enchantments:[{id:"minecraft:protection",lvl:1s}],CustomModelData:115,weaponItem:1b}
+execute if entity @s[level=1] run item replace entity @s weapon.offhand with minecraft:carrot_on_a_stick{display:{Name:'{"text":"Bad Time","color":"gold","bold":true,"italic":false,"underlined":false,"strikethrough":false,"obfuscated":false}',Lore:['{"text":"Right click to activate!","color":"dark_purple","bold":true}','[{"text":""}]','{"text":"Teleport behind an enemy,","color":"dark_gray"}','{"text":"avoid attack cooldowns, ","color":"dark_gray"}','{"text":"gain strength","color":"dark_gray"}']},HideFlags:1,Enchantments:[{id:"minecraft:protection",lvl:1s}],CustomModelData:115,du-in:weaponItem}
 
 attribute @s[tag=!stolen] generic.movement_speed base set 0.155
 #.1425
 
 #Set Sans head to normal
-execute unless entity @s[scores={sansSkin=1..}] run item replace entity @s[level=..164,tag=!stolen] armor.head with minecraft:player_head{display:{Name:"{\"text\":\"Sans\"}"},SkullOwner:{Id:[I;1075612150,944654141,-1270342541,-1555910951],Properties:{textures:[{Value:"eyJ0ZXh0dXJlcyI6eyJTS0lOIjp7InVybCI6Imh0dHA6Ly90ZXh0dXJlcy5taW5lY3JhZnQubmV0L3RleHR1cmUvOTVhZWY4ZDczYzZiM2I5N2Q3YjU3MTZmY2EyMTVmNWViYTY3OTkyMTJkMTFlYjYzZTE1ODg5NDBkMWUyMWI3MyJ9fX0="}]}},weaponItem:1b} 1
-item replace entity @s[tag=!stolen,scores={sansSkin=1},level=..164] armor.head with minecraft:player_head{display:{Name:"{\"text\":\"Sans\"}"},SkullOwner:{Id:[I;-1361811219,-379894067,-1830054592,-906781659],Properties:{textures:[{Value:"eyJ0ZXh0dXJlcyI6eyJTS0lOIjp7InVybCI6Imh0dHA6Ly90ZXh0dXJlcy5taW5lY3JhZnQubmV0L3RleHR1cmUvOThhMjJmZmU1NjdhMzc2ZjliNjcyMjg5M2I4YzczZjJlYzU4YTk1ZGMxMmYxYjY3ZmUzNTUwMTU3ZmQ4NmI2YyJ9fX0="}]}},weaponItem:1b} 1
+execute unless entity @s[scores={sansSkin=1..}] run item replace entity @s[level=..164,tag=!stolen] armor.head with minecraft:player_head{display:{Name:"{\"text\":\"Sans\"}"},SkullOwner:{Id:[I;1075612150,944654141,-1270342541,-1555910951],Properties:{textures:[{Value:"eyJ0ZXh0dXJlcyI6eyJTS0lOIjp7InVybCI6Imh0dHA6Ly90ZXh0dXJlcy5taW5lY3JhZnQubmV0L3RleHR1cmUvOTVhZWY4ZDczYzZiM2I5N2Q3YjU3MTZmY2EyMTVmNWViYTY3OTkyMTJkMTFlYjYzZTE1ODg5NDBkMWUyMWI3MyJ9fX0="}]}},du-in:weaponItem} 1
+item replace entity @s[tag=!stolen,scores={sansSkin=1},level=..164] armor.head with minecraft:player_head{display:{Name:"{\"text\":\"Sans\"}"},SkullOwner:{Id:[I;-1361811219,-379894067,-1830054592,-906781659],Properties:{textures:[{Value:"eyJ0ZXh0dXJlcyI6eyJTS0lOIjp7InVybCI6Imh0dHA6Ly90ZXh0dXJlcy5taW5lY3JhZnQubmV0L3RleHR1cmUvOThhMjJmZmU1NjdhMzc2ZjliNjcyMjg5M2I4YzczZjJlYzU4YTk1ZGMxMmYxYjY3ZmUzNTUwMTU3ZmQ4NmI2YyJ9fX0="}]}},du-in:weaponItem} 1
 
 
 ##Base KB Resistance is 0.
