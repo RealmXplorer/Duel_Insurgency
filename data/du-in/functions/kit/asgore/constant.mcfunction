@@ -19,7 +19,7 @@ execute if entity @s[level=1] run item replace entity @s weapon.offhand with min
 execute if entity @s[tag=kitActions] run function du-in:kit/asgore/ability/init
 
 #Weapon
-execute unless entity @s[tag=thrown] unless entity @s[scores={weapCount=1}] run item replace entity @s[tag=!thrown,tag=!stolen,tag=!teamDead] hotbar.0 with minecraft:trident{display:{Name:'{"text":"Trident of Kings","color":"gray","bold":true}'},HideFlags:5,Unbreakable:1b,AttributeModifiers:[{AttributeName:"generic.attack_damage",Name:"generic.attack_damage",Amount:5,Operation:0,UUID:[I;-211992548,1576947317,-1129991297,-262630306],Slot:"mainhand"},{AttributeName:"generic.attack_speed",Name:"generic.attack_speed",Amount:-2.35,Operation:0,UUID:[I;-1214682839,817254077,-1521696113,-1915908566],Slot:"mainhand"}],du-in:weaponItem} 1
+execute unless entity @s[tag=thrown] unless entity @s[scores={weapCount=1}] run item replace entity @s[tag=!thrown,tag=!stolen,tag=!teamDead] hotbar.0 with minecraft:trident[custom_name='{"text":"Trident of Kings","color":"gray","bold":true}',unbreakable={show_in_tooltip:false},attribute_modifiers={modifiers:[{type:"generic.attack_damage",name:"generic.attack_damage",amount:5,operation:"add_value",uuid:[I;587005605,-71940022,-1831877638,1219070476],slot:"mainhand"},{type:"generic.attack_speed",name:"generic.attack_speed",amount:-2.35,operation:"add_value",uuid:[I;-1101001144,122440415,-1088561833,-1009306776],slot:"mainhand"}],show_in_tooltip:false}] 1
 
 #ASGORE ATTRIBUTES#
 
