@@ -1,7 +1,7 @@
 #Reset all scores for kit if playing
 execute if entity @s[tag=playing] run function du-in:kit/all/reset
 scoreboard players enable @s info
-clear @s player_head{yodaHead:1b}
+clear @s player_head[custom_data={du-in:'yodaHead'}]
 #Play sound
 playsound minecraft:yoda.hit master @s ~ ~ ~ 100 1
 #Set kit score to match kit
