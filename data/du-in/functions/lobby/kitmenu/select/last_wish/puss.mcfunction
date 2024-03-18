@@ -1,7 +1,7 @@
 #Reset all scores for kit if playing
 execute if entity @s[tag=playing] run function du-in:kit/all/reset
 scoreboard players enable @s info
-clear @s player_head{pussHead:1b}
+clear @s player_head[custom_data={du-in:'pussHead'}]
 
 #Play sound
 #playsound minecraft:asgore.voice master @s ~ ~ ~ 100 1
