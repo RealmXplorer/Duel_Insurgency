@@ -68,10 +68,6 @@ tag @a remove team1
 tag @a remove team2
 scoreboard players reset @a team
 
-#Clear items
-#clear @s carrot_on_a_stick{redItem:1b}
-#clear @s carrot_on_a_stick{blueItem:1b}
-
 #Set music to 0 (starts gamemode select music)
 scoreboard players set @a music 0
 

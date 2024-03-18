@@ -4,15 +4,18 @@
 # Map Select Items #
     # Give Back-Item #
         #execute if entity @s[scores={lobby=3},tag=partyLeader,nbt=!{Inventory:[{id:"minecraft:carrot_on_a_stick",Slot:8b}]}] run function du-in:lobby/item/back
-        execute if entity @s[scores={lobby=2},tag=partyLeader,nbt=!{Inventory:[{id:"minecraft:carrot_on_a_stick",Slot:8b}]}] run function du-in:lobby/item/back
+        #execute if entity @s[scores={lobby=2},tag=partyLeader,nbt=!{Inventory:[{id:"minecraft:carrot_on_a_stick",Slot:8b}]}] run function du-in:lobby/item/back
+        execute unless items entity @s[scores={lobby=2},tag=partyLeader] hotbar.8 minecraft:carrot_on_a_stick run function du-in:lobby/item/back
 
     # Give Countdown Item #
         #execute if entity @s[scores={lobby=3},tag=partyLeader,nbt=!{Inventory:[{id:"minecraft:carrot_on_a_stick",Slot:0b}]}] run function du-in:lobby/item/count
-        execute if entity @s[scores={lobby=2},tag=partyLeader,nbt=!{Inventory:[{id:"minecraft:carrot_on_a_stick",Slot:0b}]}] run function du-in:lobby/item/count
+        #execute if entity @s[scores={lobby=2},tag=partyLeader,nbt=!{Inventory:[{id:"minecraft:carrot_on_a_stick",Slot:0b}]}] run function du-in:lobby/item/count
+        execute unless items entity @s[scores={lobby=2},tag=partyLeader] hotbar.0 minecraft:carrot_on_a_stick run function du-in:lobby/item/count
 
     # Give Quickplay Item #
         #execute if entity @s[scores={lobby=3},tag=!teamMode,nbt=!{Inventory:[{id:"minecraft:carrot_on_a_stick",Slot:4b}]}] run function du-in:lobby/item/quick
-        execute if entity @s[scores={lobby=2},tag=!teamMode,nbt=!{Inventory:[{id:"minecraft:carrot_on_a_stick",Slot:4b}]}] run function du-in:lobby/item/quick
+        #execute if entity @s[scores={lobby=2},tag=!teamMode,nbt=!{Inventory:[{id:"minecraft:carrot_on_a_stick",Slot:4b}]}] run function du-in:lobby/item/quick
+        execute unless items entity @s[scores={lobby=2},tag=!teamMode] hotbar.4 minecraft:carrot_on_a_stick run function du-in:lobby/item/quick
 
  #execute if entity @s[tag=mapRandom] run function du-in:maps/start/random
 
