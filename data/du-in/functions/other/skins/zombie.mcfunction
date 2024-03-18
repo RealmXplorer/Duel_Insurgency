@@ -1,4 +1,4 @@
-clear @s player_head{zombieHead:1b}
+clear @s player_head[custom_data={du-in:'zombieHead'}]
 
 scoreboard players add @s zombSkin 1
 scoreboard players reset @s[scores={zombSkin=5..}] zombSkin
