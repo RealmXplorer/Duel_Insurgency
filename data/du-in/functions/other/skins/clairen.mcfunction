@@ -1,6 +1,6 @@
 scoreboard players add @s clairenSkin 1
 
-clear @s player_head{clairenHead:1b}
+clear @s player_head[custom_data={du-in:'clairenHead'}]
 
 scoreboard players reset @s[scores={clairenSkin=2..}] clairenSkin
 function du-in:other/skins/skin_menu/actions/sound
