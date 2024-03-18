@@ -40,7 +40,6 @@ execute unless items entity @s inventory.5 minecraft:player_head run function du
 execute unless items entity @s inventory.4 minecraft:player_head run function du-in:other/skins/skin_menu/gaster
 execute unless items entity @s inventory.3 minecraft:player_head run function du-in:other/skins/skin_menu/clairen
 execute unless items entity @s inventory.2 minecraft:player_head run function du-in:other/skins/skin_menu/nick
-
 execute unless items entity @s inventory.1 minecraft:player_head run function du-in:other/skins/skin_menu/cuphead
 
 #execute if entity @s[nbt=!{Inventory:[{tag:{fixedItem:1b},id:"minecraft:carrot_on_a_stick",Slot:18b}]}] run function du-in:other/skins/skin_menu/display

@@ -1,6 +1,6 @@
 scoreboard players add @s cupSkin 1
 
-clear @s player_head{cupHead:1b}
+clear @s player_head[custom_data={du-in:'cupHead'}]
 
 scoreboard players reset @s[scores={cupSkin=3..}] cupSkin
 function du-in:other/skins/skin_menu/actions/sound
