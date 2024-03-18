@@ -1,4 +1,4 @@
-clear @s player_head{sansHead:1b}
+clear @s player_head[custom_data={du-in:'sansHead'}]
 
 scoreboard players add @s sansSkin 1
 scoreboard players reset @s[scores={sansSkin=2..}] sansSkin
