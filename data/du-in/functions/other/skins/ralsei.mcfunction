@@ -1,4 +1,4 @@
-clear @s player_head{ralseiHead:1b}
+clear @s player_head[custom_data={du-in:'ralseiHead'}]
 
 scoreboard players add @s ralSkin 1
 scoreboard players reset @s[scores={ralSkin=4..}] ralSkin
