@@ -3,7 +3,7 @@ scoreboard players add @s wildeSkin 1
 scoreboard players reset @s[scores={wildeSkin=6..}] wildeSkin
 function du-in:other/skins/skin_menu/actions/sound
 
-clear @s player_head{nickHead:1b}
+clear @s player_head[custom_data={du-in:'nickHead'}]
 
 execute unless entity @s[scores={wildeSkin=1..}] run tellraw @s[tag=!defaultSelect] [{"text":"Default Nick Wilde ","bold":true,"color":"gold"},{"text":"skin selected!","color":"yellow"}]
 tellraw @s[tag=!defaultSelect,scores={wildeSkin=1}] [{"text":"Officer Wilde ","bold":true,"color":"dark_blue"},{"text":"skin selected!","color":"yellow"}]
