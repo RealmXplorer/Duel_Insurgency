@@ -7,18 +7,25 @@ execute if entity @s[scores={kitTheme=4}] run function du-in:lobby/kitmenu/menu/
 execute if entity @s[scores={kitTheme=5}] run function du-in:lobby/kitmenu/menu/grab_bag
 
 #Menu change icons
-execute if entity @s[scores={kitTheme=1..4},nbt=!{Inventory:[{tag:{fixedItem:1b},id:"minecraft:barrier",Slot:9b}]}] run function du-in:lobby/kitmenu/menu/next
-execute if entity @s[scores={kitTheme=2..},nbt=!{Inventory:[{tag:{fixedItem:1b},id:"minecraft:barrier",Slot:27b}]}] run function du-in:lobby/kitmenu/menu/prev
+#execute if entity @s[scores={kitTheme=1..4},nbt=!{Inventory:[{tag:{fixedItem:1b},id:"minecraft:barrier",Slot:9b}]}] run function du-in:lobby/kitmenu/menu/next
+#execute if entity @s[scores={kitTheme=2..},nbt=!{Inventory:[{tag:{fixedItem:1b},id:"minecraft:barrier",Slot:27b}]}] run function du-in:lobby/kitmenu/menu/prev
+execute unless items entity @s[scores={kitTheme=1..4}] inventory.0 minecraft:barrier run function du-in:lobby/kitmenu/menu/next
+execute unless items entity @s[scores={kitTheme=2..}] inventory.18 minecraft:barrier run function du-in:lobby/kitmenu/menu/prev
 
 #Random button
-execute if entity @s[scores={kitTheme=0},nbt=!{Inventory:[{tag:{fixedItem:1b},id:"minecraft:barrier",Slot:28b}]}] run function du-in:lobby/kitmenu/menu/random_legend
-execute if entity @s[scores={kitTheme=1..},nbt=!{Inventory:[{tag:{fixedItem:1b},id:"minecraft:barrier",Slot:28b}]}] run function du-in:lobby/kitmenu/menu/random
+#execute if entity @s[scores={kitTheme=0},nbt=!{Inventory:[{tag:{fixedItem:1b},id:"minecraft:barrier",Slot:28b}]}] run function du-in:lobby/kitmenu/menu/random_legend
+#execute if entity @s[scores={kitTheme=1..},nbt=!{Inventory:[{tag:{fixedItem:1b},id:"minecraft:barrier",Slot:28b}]}] run function du-in:lobby/kitmenu/menu/random
+
+execute unless items entity @s[scores={kitTheme=0}] inventory.19 minecraft:barrier run function du-in:lobby/kitmenu/menu/random_legend
+execute unless items entity @s[scores={kitTheme=1..}] inventory.19 minecraft:barrier run function du-in:lobby/kitmenu/menu/random
 
 #Spectate button
-execute if entity @s[scores={kitTheme=1..},tag=!playing,nbt=!{Inventory:[{tag:{fixedItem:1b},id:"minecraft:barrier",Slot:35b}]}] run function du-in:lobby/kitmenu/menu/spectate
+#execute if entity @s[scores={kitTheme=1..},tag=!playing,nbt=!{Inventory:[{tag:{fixedItem:1b},id:"minecraft:barrier",Slot:35b}]}] run function du-in:lobby/kitmenu/menu/spectate
+execute unless items entity @s[scores={kitTheme=1..},tag=!playing] inventory.26 minecraft:barrier run function du-in:lobby/kitmenu/menu/spectate
 
 #To legendary
-execute if entity @s[scores={kitTheme=1..},nbt=!{Inventory:[{tag:{fixedItem:1b},id:"minecraft:carrot_on_a_stick",Slot:30b}]}] run function du-in:lobby/kitmenu/menu/to_legend
+#execute if entity @s[scores={kitTheme=1..},nbt=!{Inventory:[{tag:{fixedItem:1b},id:"minecraft:carrot_on_a_stick",Slot:30b}]}] run function du-in:lobby/kitmenu/menu/to_legend
+execute unless items entity @s[scores={kitTheme=1..}] inventory.21 minecraft:carrot_on_a_stick run function du-in:lobby/kitmenu/menu/to_legend
 
 #Give info on character
 execute if entity @s[scores={info=1..}] run function du-in:lobby/kitmenu/select/info

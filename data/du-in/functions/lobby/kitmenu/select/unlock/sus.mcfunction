@@ -1,7 +1,7 @@
 #Reset all scores for kit if playing
 execute if entity @s[tag=playing] run function du-in:kit/all/reset
 scoreboard players enable @s info
-clear @s player_head{susHead:1b}
+clear @s player_head[custom_data={du-in:'susHead'}]
 #Play sound
 playsound minecraft:sus.pick master @s ~ ~ ~ 100 1
 #Announce kit pick

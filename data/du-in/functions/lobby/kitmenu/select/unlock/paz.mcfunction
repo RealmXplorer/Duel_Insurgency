@@ -1,7 +1,7 @@
 #Reset all scores for kit if playing
 execute if entity @s[tag=playing] run function du-in:kit/all/reset
 scoreboard players enable @s info
-clear @s player_head{pazHead:1b}
+clear @s player_head[custom_data={du-in:'pazHead'}]
 #Play sound
 #playsound minecraft:saac.ability2 master @s ~ ~ ~ 100 1
 #Announce kit pick
