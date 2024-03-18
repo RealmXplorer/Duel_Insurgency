@@ -1,6 +1,6 @@
 scoreboard players add @s gastSkin 1
 
-clear @s player_head{gasterHead:1b}
+clear @s player_head[custom_data={du-in:'gasterHead'}]
 
 scoreboard players reset @s[scores={gastSkin=3..}] gastSkin
 function du-in:other/skins/skin_menu/actions/sound
