@@ -1,7 +1,7 @@
 scoreboard players add @s charaSkin 1
 scoreboard players reset @s[scores={charaSkin=2..}] charaSkin
 
-clear @s minecraft:player_head{charaHead:1b}
+clear @s minecraft:player_head[custom_data={du-in:'charaHead'}]
 
 function du-in:other/skins/skin_menu/actions/sound
 
