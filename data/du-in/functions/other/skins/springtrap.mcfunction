@@ -1,4 +1,4 @@
-clear @s player_head{springHead:1b}
+clear @s player_head[custom_data={du-in:'springHead'}]
 
 scoreboard players add @s springSkin 1
 scoreboard players reset @s[scores={springSkin=5..}] springSkin
