@@ -16,7 +16,7 @@ execute if entity @s[tag=!teamDead,tag=!stolen] unless entity @s[scores={weapCou
 #execute store result score @s[tag=!stolen] weapCount run clear @s[tag=!kitMenu] wooden_sword 0
 
 #Give Zombie ability#
-execute if entity @s[level=1] run function du-in:kit/zombie/item
+execute if entity @s[level=1] run function du-in:kit/zombie/ability/item
 
 execute if entity @s[tag=kitActions,tag=!flagGot,tag=!badBlock] at @s rotated as @s run function du-in:kit/zombie/ability/set_spawn
 
