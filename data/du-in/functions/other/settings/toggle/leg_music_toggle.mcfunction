@@ -1,8 +1,6 @@
 scoreboard players add @s legMusicToggle 1
 execute if entity @s[scores={legMusicToggle=2..}] run scoreboard players set @s legMusicToggle 0
 
-#clear @s barrier{CustomModelData:101}
-
 execute if entity @s[scores={legMusicToggle=1}] run tag @s add legMusicOff
 execute unless entity @s[scores={legMusicToggle=1}] run tag @s remove legMusicOff
 

@@ -1,7 +1,4 @@
 
-#clear @s barrier{CustomModelData:104}
-
-#tag @s add defaultSelect
 tellraw @s [{"text":"Halloween skins ","bold":true,"color":"dark_purple"},{"text":"selected!","color":"yellow"}]
 playsound minecraft:entity.zombie_villager.converted master @s ~ ~ ~ 1 2
 
@@ -35,5 +32,3 @@ execute if entity @s[tag=palpsSkins] run function du-in:other/skins/skin_menu/pa
 execute if entity @s[tag=nickSkins] run function du-in:other/skins/skin_menu/nick
 execute if entity @s[tag=villagerSkins] run function du-in:other/skins/skin_menu/villager
 
-#tag @s remove defaultSelect
-#execute if entity @s[scores={thrownBarrier=1..}] run function du-in:other/clear_ground_items

@@ -3,12 +3,15 @@
   "entity": "this",
   "predicate": {
     "type": "minecraft:player",
+    "type_specific": {
+      "type": "minecraft:player"
+    },
     "equipment": {
       "mainhand": {
-        "items": [
-          "minecraft:carrot_on_a_stick"
-        ],
-        "nbt": "{du-in:countItem}"
+        "items": "minecraft:carrot_on_a_stick",
+        "components": {
+          "minecraft:custom_data": {du-in:'countItem'}
+        }
       }
     }
   }

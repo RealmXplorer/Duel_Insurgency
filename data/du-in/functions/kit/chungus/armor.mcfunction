@@ -1,5 +1,5 @@
-item replace entity @s armor.head with minecraft:player_head{display:{Name:"{\"text\":\"Big Chungus\"}"},du-in:weaponItem,SkullOwner:{Id:[I;-1422274543,-1674883992,-2042114192,298265553],Properties:{textures:[{Value:"eyJ0ZXh0dXJlcyI6eyJTS0lOIjp7InVybCI6Imh0dHA6Ly90ZXh0dXJlcy5taW5lY3JhZnQubmV0L3RleHR1cmUvYzNiMzg2MTQzYWNiZGE5NmQwNjkxNzg5OGZjYmI3YmMwYTJkY2VlOTNmNWU1OWNhNWI3M2U2NzgzZTVjMSJ9fX0="}]}}} 1
-item replace entity @s armor.chest with minecraft:leather_chestplate{display:{Name:'{"text":"Big Chungus Chest"}',color:8491153},HideFlags:4,Unbreakable:1b,du-in:weaponItem} 1
-item replace entity @s armor.legs with minecraft:leather_leggings{display:{Name:'{"text":"Big Chungus Legs"}',color:8491153},HideFlags:4,Unbreakable:1b,du-in:weaponItem} 1
-item replace entity @s armor.feet with minecraft:leather_boots{display:{Name:'{"text":"Big Chungus Feet"}',color:8491153},HideFlags:4,Unbreakable:1b,du-in:weaponItem} 1
+item replace entity @s armor.head with minecraft:player_head[custom_name='{"text":"Big Chungus","color":"white","bold":true,"italic":false}',profile={id:[I;-1422274543,-1674883992,-2042114192,298265553],name:"",properties:[{name:"textures",value:"eyJ0ZXh0dXJlcyI6eyJTS0lOIjp7InVybCI6Imh0dHA6Ly90ZXh0dXJlcy5taW5lY3JhZnQubmV0L3RleHR1cmUvYzNiMzg2MTQzYWNiZGE5NmQwNjkxNzg5OGZjYmI3YmMwYTJkY2VlOTNmNWU1OWNhNWI3M2U2NzgzZTVjMSJ9fX0="}]}] 1
+item replace entity @s armor.chest with leather_chestplate[custom_name='{"text":"Big Chungus Chest"}',unbreakable={show_in_tooltip:false},dyed_color={rgb:8491153,show_in_tooltip:false}]
+item replace entity @s armor.legs with leather_leggings[custom_name='{"text":"Big Chungus Legs"}',unbreakable={show_in_tooltip:false},dyed_color={rgb:8491153,show_in_tooltip:false}]
+item replace entity @s armor.feet with leather_boots[custom_name='{"text":"Big Chungus Feet"}',unbreakable={show_in_tooltip:false},dyed_color={rgb:8491153,show_in_tooltip:false}]
 tag @s remove armor

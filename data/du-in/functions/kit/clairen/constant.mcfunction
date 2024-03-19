@@ -13,7 +13,7 @@ execute if entity @s[tag=armor,tag=!stolen] run function du-in:kit/clairen/armor
 # Ability #
 execute if entity @s[tag=kitActions] run function du-in:kit/clairen/ability/init
 
-execute if entity @s[level=1] run item replace entity @s weapon.offhand with minecraft:carrot_on_a_stick{display:{Name:'{"text":"Energy Field","color":"gold","bold":true,"italic":false,"underlined":false,"strikethrough":false,"obfuscated":false}',Lore:['{"text":"Right click to activate!","color":"dark_purple","bold":true}','[{"text":""}]','{"text":"Creates and energy field","color":"dark_gray"}','{"text":"blocking projectiles and","color":"dark_gray"}','{"text":"strengthening all within.","color":"dark_gray"}']},HideFlags:1,Enchantments:[{id:"minecraft:protection",lvl:1s}],CustomModelData:417,du-in:weaponItem}
+execute if entity @s[level=1] run item replace entity @s weapon.offhand with minecraft:carrot_on_a_stick[custom_name='{"text":"Energy Field","color":"gold","bold":true,"italic":false,"underlined":false,"strikethrough":false,"obfuscated":false}',lore=['{"text":"Right click to activate!","color":"dark_purple","bold":true}','[{"text":""}]','{"text":"Creates and energy field","color":"dark_gray"}','{"text":"blocking projectiles and","color":"dark_gray"}','{"text":"strengthening all within.","color":"dark_gray"}'],enchantment_glint_override=true,custom_model_data=417]
 
 attribute @s[tag=!stolen] generic.movement_speed base set 0.14
 #0.125

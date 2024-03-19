@@ -1,8 +1,6 @@
 scoreboard players add @s devModeToggle 1
 execute if entity @s[scores={devModeToggle=2..}] run scoreboard players set @s devModeToggle 0
 
-#clear @s barrier{CustomModelData:101}
-
 execute if entity @s[scores={devModeToggle=1}] run tag @s add devMode
 
 

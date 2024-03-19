@@ -4,14 +4,14 @@
   "predicate": {
     "type": "minecraft:player",
     "type_specific": {
-      "type": "player"
+      "type": "minecraft:player"
     },
     "equipment": {
       "mainhand": {
-        "items": [
-          "minecraft:warped_fungus_on_a_stick"
-        ],
-        "nbt": "{CustomModelData:2002}"
+        "items": "minecraft:warped_fungus_on_a_stick",
+        "components": {
+          "minecraft:custom_model_data": 2002
+        }
       }
     }
   }

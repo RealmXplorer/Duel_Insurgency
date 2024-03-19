@@ -13,7 +13,7 @@ execute if entity @s[scores={trident=1..}] run function du-in:kit/asgore/passive
 execute if entity @s[tag=thrown,scores={tridentTimer=0..}] run function du-in:kit/asgore/passive/timer
 
 #Ability item
-execute if entity @s[level=1] run item replace entity @s weapon.offhand with minecraft:carrot_on_a_stick{display:{Name:'{"text":"Firewall","color":"gold","bold":true,"italic":false,"underlined":false,"strikethrough":false,"obfuscated":false}',Lore:['{"text":"Right click to activate!","color":"dark_purple","bold":true}','[{"text":""}]','{"text":"Summons a wall of ","color":"dark_gray"}','{"text":"fire at the position ","color":"dark_gray"}','{"text":"you are looking.","color":"dark_gray"}']},HideFlags:1,Enchantments:[{id:"minecraft:protection",lvl:1s}],CustomModelData:113,du-in:weaponItem}
+execute if entity @s[level=1] run item replace entity @s weapon.offhand with minecraft:carrot_on_a_stick[custom_name='{"text":"Firewall","color":"gold","bold":true,"italic":false,"underlined":false,"strikethrough":false,"obfuscated":false}',lore=['{"text":"Right click to activate!","color":"dark_purple","bold":true}','[{"text":""}]','{"text":"Summons a wall of ","color":"dark_gray"}','{"text":"fire at the position ","color":"dark_gray"}','{"text":"you are looking.","color":"dark_gray"}'],enchantment_glint_override=true,custom_model_data=113]
 
 #Ability function
 execute if entity @s[tag=kitActions] run function du-in:kit/asgore/ability/init

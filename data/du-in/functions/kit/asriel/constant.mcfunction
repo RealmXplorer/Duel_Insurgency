@@ -11,7 +11,7 @@ execute if entity @s[scores={asrielHitTimer=0..,asrielTimer=1}] run playsound mi
 execute if entity @s[tag=armor,tag=!stolen] run function du-in:kit/asriel/armor
 
 #ABILITY#
-item replace entity @s[level=1] weapon.offhand with minecraft:carrot_on_a_stick{display:{Name:'{"text":"Shocker Breaker","color":"gold","bold":true,"italic":false,"underlined":false,"strikethrough":false,"obfuscated":false}',Lore:['{"text":"Right click to activate!","color":"dark_purple","bold":true}','[{"text":""}]','{"text":"Summons lightning from the sky where you are looking.","color":"dark_gray"}']},HideFlags:1,Enchantments:[{id:"minecraft:protection",lvl:1s}],CustomModelData:110,du-in:weaponItem}
+item replace entity @s[level=1] weapon.offhand with minecraft:carrot_on_a_stick[custom_name='{"text":"Shocker Breaker","color":"gold","bold":true,"italic":false,"underlined":false,"strikethrough":false,"obfuscated":false}',lore=['{"text":"Right click to activate!","color":"dark_purple","bold":true}','[{"text":""}]','{"text":"Summons lightning from the sky where you are looking.","color":"dark_gray"}'],enchantment_glint_override=true,custom_model_data=110]
 
 execute if entity @s[tag=kitActions] run function du-in:kit/asriel/ability/init
 #WEAPON#

@@ -1,8 +1,6 @@
 scoreboard players add @s scaleModeToggle 1
 execute if entity @s[scores={scaleModeToggle=2..}] run scoreboard players set @s scaleModeToggle 0
 
-#clear @s barrier{CustomModelData:101}
-
 execute if entity @s[scores={scaleModeToggle=1}] run tag @s remove scaleMode
 
 

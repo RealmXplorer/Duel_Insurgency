@@ -5,7 +5,7 @@ tag @s add teamPicked
 #tag @s remove mysteryHead
 scoreboard players reset @s mapVote
 execute if entity @s[tag=!spect] run tellraw @a [{"selector":"@s[tag=!spect]","bold":true},{"text":" is spectating this round!","bold":true,"color":"gray"}]
-clear @s barrier{CustomModelData:101}
+clear @s barrier[custom_model_data=101]
 tag @s[tag=!playing] add ready
 team join Ready @s
 tag @s[tag=!playing] add spect

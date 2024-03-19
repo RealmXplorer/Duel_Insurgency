@@ -1,8 +1,6 @@
 scoreboard players add @s sidebarToggle 1
 execute if entity @s[scores={sidebarToggle=2..}] run scoreboard players set @s sidebarToggle 0
 
-#clear @s barrier{CustomModelData:101}
-
 execute if entity @s[scores={sidebarToggle=1}] run tag @s add sidebarDisable
 execute if entity @s[scores={sidebarToggle=1}] run scoreboard objectives setdisplay sidebar
 

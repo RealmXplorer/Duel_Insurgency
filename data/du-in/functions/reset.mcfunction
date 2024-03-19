@@ -306,9 +306,9 @@ scoreboard players set @a parryDuration 0
 scoreboard players set @a parryCooldown 0
 
 #Create new gamemode select label
-kill @e[type=area_effect_cloud,tag=gamemodeLabel]
-summon area_effect_cloud -983 16 517 {Duration:2147483647,Tags:["gamemodeLabel"],CustomNameVisible:1b}
-function du-in:lobby/display/default/text
+#kill @e[type=area_effect_cloud,tag=gamemodeLabel]
+#summon area_effect_cloud -983 16 517 {Duration:2147483647,Tags:["gamemodeLabel"],CustomNameVisible:1b}
+#function du-in:lobby/display/default/text
 
 scoreboard players reset #main matchDeaths
 scoreboard players set #main markTimer 0
@@ -326,13 +326,10 @@ scoreboard players reset @a localAmb
 #WINEND#
 
 #END ROUND#
-#tp @a[tag=!working] -999 13 517 -90 0
-#spawnpoint @a -999 13 517
 title @a[tag=partyLeader,tag=!timeFree] title {"text":"","color":"red","bold":true}
 title @a[tag=partyLeader,tag=!timeFree] subtitle {"text":"Open inventory for more options!","color":"red","bold":true}
 title @a[tag=partyLeader,tag=!timeFree] actionbar {"text":"Open inventory for more options!","color":"red","bold":true}
 execute as @a run function du-in:lobby/item_reset
-#tag @a[tag=!timeFree] add givenStats
 clear @a
 tag @a remove void
 tag @a remove voidOut

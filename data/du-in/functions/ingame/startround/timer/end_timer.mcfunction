@@ -26,4 +26,4 @@ execute at @e[type=armor_stand,tag=vendMachine] run setblock ~ ~ ~ light[level=9
 
 scoreboard players reset #main titleTimer2
 
-execute if entity @a[tag=devMode,tag=partyLeader] run item replace entity @a hotbar.4 with minecraft:barrier{display:{Name:'{"text":"End Game","color":"red","bold":true,"italic":false,"underlined":false,"strikethrough":false,"obfuscated":false}',Lore:['{"text":"Throw to activate!","color":"dark_purple","bold":true}']},HideFlags:1,Enchantments:[{id:"minecraft:protection",lvl:1s}],du-in:weaponItem}
+execute if entity @a[tag=devMode,tag=partyLeader] run item replace entity @a hotbar.4 with minecraft:barrier[custom_name='{"text":"End Game","color":"red","bold":true,"italic":false}',lore=['{"text":"Throw to activate!","color":"dark_purple","bold":true}'],enchantment_glint_override=true]

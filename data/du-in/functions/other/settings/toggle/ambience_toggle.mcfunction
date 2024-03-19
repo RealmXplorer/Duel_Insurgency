@@ -1,8 +1,6 @@
 scoreboard players add @s ambienceToggle 1
 execute if entity @s[scores={ambienceToggle=2..}] run scoreboard players set @s ambienceToggle 0
 
-#clear @s barrier{CustomModelData:101}
-
 execute if entity @s[scores={ambienceToggle=1}] run tag @s add ambOff
 execute unless entity @s[scores={ambienceToggle=1}] run tag @s remove ambOff
 
