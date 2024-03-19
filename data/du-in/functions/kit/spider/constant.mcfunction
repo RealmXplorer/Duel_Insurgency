@@ -6,7 +6,7 @@ execute if entity @s[tag=!stolen,scores={jump=1..}] run function du-in:kit/spide
 #EFFECTS#
 
 # SPIDER #
-execute unless entity @s[scores={weapCount=1}] run item replace entity @s[tag=!stolen,tag=!teamDead] hotbar.0 with minecraft:stone_sword{display:{Name:'{"text":"Webbed Sword","color":"gray","bold":true}'},HideFlags:5,Unbreakable:1b,CustomModelData:105,du-in:weaponItem,AttributeModifiers:[{AttributeName:"generic.attack_damage",Name:"generic.attack_damage",Amount:4.75,Operation:0,UUID:[I;-1208756985,1490898231,-1402752434,913687444],Slot:"mainhand"},{AttributeName:"generic.attack_speed",Name:"generic.attack_speed",Amount:-2.5,Operation:0,UUID:[I;150931488,-224377682,-1476605358,-249302083],Slot:"mainhand"}]} 1
+execute unless entity @s[scores={weapCount=1}] run item replace entity @s[tag=!stolen,tag=!teamDead] hotbar.0 with minecraft:stone_sword[custom_name='{"text":"Webbed Sword","color":"gray","bold":true}',custom_model_data=105unbreakable={show_in_tooltip:false},attribute_modifiers={modifiers:[{type:"generic.attack_damage",name:"generic.attack_damage",amount:4.75,operation:"add_value",uuid:[I;-1565978830,575685968,-2096242647,-1036010337],slot:"mainhand"},{type:"generic.attack_speed",name:"generic.attack_speed",amount:-2.5,operation:"add_value",uuid:[I;2035841867,-1330032826,-2035473273,2079461311],slot:"mainhand"}],show_in_tooltip:false}] 1
 
 
 execute if entity @s[tag=!void,tag=kitActions] run function du-in:kit/spider/ability/init
@@ -14,7 +14,7 @@ execute if entity @s[tag=void,tag=kitActions] run function du-in:kit/spider/abil
 
 execute if entity @s[tag=armor,tag=!stolen] run function du-in:kit/spider/armor
 
-item replace entity @s[level=1] weapon.offhand with minecraft:carrot_on_a_stick{display:{Name:'{"text":"Web Blast","color":"gold","bold":true,"italic":false,"underlined":false,"strikethrough":false,"obfuscated":false}',Lore:['{"text":"Right click to activate!","color":"dark_purple","bold":true}','[{"text":""}]','{"text":"Shoots a blast of webs ","color":"dark_gray"}','{"text":"that slows nearby ","color":"dark_gray"}','{"text":"opponents.","color":"dark_gray"}']},HideFlags:1,Enchantments:[{id:"minecraft:protection",lvl:1s}],CustomModelData:100,du-in:weaponItem}
+item replace entity @s[level=1] weapon.offhand with minecraft:carrot_on_a_stick[custom_name='{"text":"Web Blast","color":"gold","bold":true,"italic":false}',lore=['{"text":"Right click to activate!","color":"dark_purple","bold":true}','[{"text":""}]','{"text":"Shoots a blast of webs ","color":"dark_gray"}','{"text":"that slows nearby ","color":"dark_gray"}','{"text":"opponents.","color":"dark_gray"}'],enchantment_glint_override=true,custom_model_data=100]
 
 
 attribute @s[tag=!stolen] generic.movement_speed base set 0.135

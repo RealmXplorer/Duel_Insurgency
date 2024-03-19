@@ -14,7 +14,7 @@ execute if entity @s[tag=armor,tag=!stolen] run function du-in:kit/saul/armor
 execute if entity @s[level=1] run function du-in:kit/saul/ability/item
 
 #Weapon#
-execute unless entity @s[scores={weapCount=1}] run item replace entity @s[tag=!teamDead,tag=!stolen] hotbar.0 with minecraft:bone{display:{Name:"{\"text\":\"Book of Laws\",\"color\":\"gray\",\"bold\":true,\"italic\":true}"},AttributeModifiers:[{AttributeName:"generic.attack_damage",Name:"generic.attack_damage",Slot:"mainhand",Amount:3,Operation:0,UUID:[I;1021276089,1080769028,1088179457,1762458658]},{AttributeName:"generic.attack_speed",Name:"generic.attack_speed",Amount:40,Operation:0,UUID:[I;150931488,-224377682,-1476605358,-249302083],Slot:"mainhand"}],CustomModelData:105,HideFlags:2,du-in:weaponItem} 1
+execute unless entity @s[scores={weapCount=1}] run item replace entity @s[tag=!teamDead,tag=!stolen] hotbar.0 with minecraft:bone[custom_name='{"text":"Book of Laws","color":"gray","bold":true,"italic":true}',custom_model_data=105,attribute_modifiers={modifiers:[{type:"generic.attack_damage",name:"generic.attack_damage",amount:3,operation:"add_value",uuid:[I;-920799432,1464551851,-2076901484,-178503328],slot:"mainhand"},{type:"generic.attack_speed",name:"generic.attack_speed",amount:40,operation:"add_value",uuid:[I;-833360657,-2050012590,-1601667883,67575120],slot:"mainhand"}],show_in_tooltip:false}] 1
 
 #Use ability
 execute if entity @s[tag=kitActions] run function du-in:kit/saul/ability/init

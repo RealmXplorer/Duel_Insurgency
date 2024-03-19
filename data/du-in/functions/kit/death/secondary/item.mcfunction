@@ -1,4 +1,4 @@
-item replace entity @s[tag=!deathDouble] hotbar.1 with warped_fungus_on_a_stick{display:{Name:'{"text":"Sicklestaff","color":"dark_gray","bold":true}',Lore:['{"text":"Right click to switch to Sicklestaff!"}']},Unbreakable:1b,CustomModelData:2017,du-in:weaponItem} 1
-item replace entity @s[tag=deathDouble] hotbar.1 with warped_fungus_on_a_stick{display:{Name:'{"text":"Double Sickles","color":"dark_gray","bold":true}',Lore:['{"text":"Right click to switch to double sickles!"}']},Unbreakable:1b,CustomModelData:2017,du-in:weaponItem} 1
+item replace entity @s[tag=!deathDouble] hotbar.1 with warped_fungus_on_a_stick[custom_name='{"text":"Sicklestaff","color":"dark_gray","bold":true}',lore=['{"text":"Right click to switch to Sicklestaff!"}'],custom_model_data=2017,unbreakable={show_in_tooltip:false},enchantment_glint_override=true] 1
+item replace entity @s[tag=deathDouble] hotbar.1 with warped_fungus_on_a_stick[custom_name='{"text":"Double Sickles","color":"dark_gray","bold":true}',lore=['{"text":"Right click to switch to double sickles!"}'],custom_model_data=2017,unbreakable={show_in_tooltip:false},enchantment_glint_override=true] 1
 #ff9f21
 #0392FF

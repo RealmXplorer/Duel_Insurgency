@@ -1,5 +1,10 @@
 #DEFAULT#
-item replace entity @s armor.head with minecraft:player_head{du-in:weaponItem,display:{Name:"{\"text\":\"Ms. Chalice\"}"},SkullOwner:{Id:[I;-769844474,-1113439278,-1590773033,1473452272],Properties:{textures:[{Value:"eyJ0ZXh0dXJlcyI6eyJTS0lOIjp7InVybCI6Imh0dHA6Ly90ZXh0dXJlcy5taW5lY3JhZnQubmV0L3RleHR1cmUvNDhiNzc2NDk5MGU0Y2M4YzcwNmJkNmQ2NWUzYzJjMzRmNzkzZjUzMjJiZTc5NmE0YTcwMjExNzJiODdhOGJlMyJ9fX0="}]}}}
-item replace entity @s armor.chest with minecraft:leather_chestplate{Unbreakable:1,HideFlags:4,display:{Name:'{"text":"Ms. Chalice Chest"}',color:1644825},du-in:weaponItem} 1
-item replace entity @s armor.legs with minecraft:leather_leggings{Unbreakable:1,HideFlags:4,display:{Name:'{"text":"Ms. Chalice Legs"}',color:10739967},du-in:weaponItem} 1
-item replace entity @s armor.feet with minecraft:leather_boots{Unbreakable:1,HideFlags:4,display:{Name:'{"text":"Ms. Chalice Feet"}',color:16237162},du-in:weaponItem} 1
+#item replace entity @s armor.head with minecraft:player_head{du-in:weaponItem,display:{Name:"{\"text\":\"Ms. Chalice\"}"},SkullOwner:{Id:[I;-769844474,-1113439278,-1590773033,1473452272],Properties:{textures:[{Value:"eyJ0ZXh0dXJlcyI6eyJTS0lOIjp7InVybCI6Imh0dHA6Ly90ZXh0dXJlcy5taW5lY3JhZnQubmV0L3RleHR1cmUvNDhiNzc2NDk5MGU0Y2M4YzcwNmJkNmQ2NWUzYzJjMzRmNzkzZjUzMjJiZTc5NmE0YTcwMjExNzJiODdhOGJlMyJ9fX0="}]}}}
+#item replace entity @s armor.chest with minecraft:leather_chestplate{Unbreakable:1,HideFlags:4,display:{Name:'{"text":"Ms. Chalice Chest"}',color:1644825},du-in:weaponItem} 1
+#item replace entity @s armor.legs with minecraft:leather_leggings{Unbreakable:1,HideFlags:4,display:{Name:'{"text":"Ms. Chalice Legs"}',color:10739967},du-in:weaponItem} 1
+#item replace entity @s armor.feet with minecraft:leather_boots{Unbreakable:1,HideFlags:4,display:{Name:'{"text":"Ms. Chalice Feet"}',color:16237162},du-in:weaponItem} 1
+
+item replace entity @s armor.head with minecraft:player_head[custom_name='{"text":"Ms. Chalice","color":"white","bold":true,"italic":false}',profile={id:[I;-769844474,-1113439278,-1590773033,1473452272],name:"",properties:[{name:"textures",value:"eyJ0ZXh0dXJlcyI6eyJTS0lOIjp7InVybCI6Imh0dHA6Ly90ZXh0dXJlcy5taW5lY3JhZnQubmV0L3RleHR1cmUvNDhiNzc2NDk5MGU0Y2M4YzcwNmJkNmQ2NWUzYzJjMzRmNzkzZjUzMjJiZTc5NmE0YTcwMjExNzJiODdhOGJlMyJ9fX0="}]}] 1
+item replace entity @s armor.chest with leather_chestplate[custom_name='{"text":"Ms. Chalice Chest"}',unbreakable={show_in_tooltip:false},dyed_color={rgb:1644825,show_in_tooltip:false}] 1
+item replace entity @s armor.legs with leather_leggings[custom_name='{"text":"Ms. Chalice Legs"}',unbreakable={show_in_tooltip:false},dyed_color={rgb:10739967,show_in_tooltip:false}] 1
+item replace entity @s armor.feet with leather_boots[custom_name='{"text":"Ms. Chalice Feet"}',unbreakable={show_in_tooltip:false},dyed_color={rgb:16237162,show_in_tooltip:false}] 1

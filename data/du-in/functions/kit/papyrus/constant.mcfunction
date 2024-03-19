@@ -9,10 +9,10 @@ execute if entity @e[type=armor_stand,scores={papyrusHitTimer=-1..}] run functio
 # PAPYRUS #
 execute if entity @s[tag=armor,tag=!stolen] run function du-in:kit/papyrus/armor
 
-execute unless entity @s[scores={weapCount=1}] run item replace entity @s[tag=!teamDead,tag=!stolen] hotbar.0 with minecraft:bone{display:{Name:"{\"text\":\"Really Cool Normal Attack\",\"color\":\"gray\",\"bold\":true,\"italic\":true}"},Enchantments:[{id:"minecraft:knockback",lvl:1}],AttributeModifiers:[{AttributeName:"generic.attack_damage",Name:"generic.attack_damage",Slot:"mainhand",Amount:3,Operation:0,UUID:[I;1021276089,1080769028,1088179457,1762458658]},{AttributeName:"generic.attack_speed",Name:"generic.attack_speed",Amount:40,Operation:0,UUID:[I;150931488,-224377682,-1476605358,-249302083],Slot:"mainhand"}],CustomModelData:100,HideFlags:2,du-in:weaponItem} 1
+execute unless entity @s[scores={weapCount=1}] run item replace entity @s[tag=!teamDead,tag=!stolen] hotbar.0 with minecraft:bone[custom_name='{"text":"Really Cool Normal Attack","color":"gray","bold":true,"italic":true}',enchantments={levels:{"minecraft:knockback":1}},custom_model_data=100,unbreakable={show_in_tooltip:false},attribute_modifiers={modifiers:[{type:"generic.attack_damage",name:"generic.attack_damage",amount:3,operation:"add_value",uuid:[I;2064214019,646136323,-1880707802,1050924522],slot:"mainhand"},{type:"generic.attack_speed",name:"generic.attack_speed",amount:40,operation:"add_value",uuid:[I;-622910054,-790870669,-1771129311,460430924],slot:"mainhand"}],show_in_tooltip:false}] 1
 
 #Ability Item
-item replace entity @s[level=1] weapon.offhand with minecraft:carrot_on_a_stick{display:{Name:'{"text":"Spaghetti","color":"gold","bold":true,"italic":false,"underlined":false,"strikethrough":false,"obfuscated":false}',Lore:['{"text":"Right click to activate!","color":"dark_purple","bold":true}','[{"text":""}]','{"text":"Summons bones from the earth","color":"dark_gray"}']},HideFlags:1,Enchantments:[{id:"minecraft:protection",lvl:1s}],CustomModelData:112,du-in:weaponItem}
+item replace entity @s[level=1] weapon.offhand with minecraft:carrot_on_a_stick[custom_name='{"text":"Spaghetti","color":"gold","bold":true,"italic":false}',lore=['{"text":"Right click to activate!","color":"dark_purple","bold":true}','[{"text":""}]','{"text":"Summons bones from the earth","color":"dark_gray"}'],enchantment_glint_override=true,custom_model_data=112]
 
 #Ability function
 execute if entity @s[tag=!void,tag=kitActions] run function du-in:kit/papyrus/ability/init

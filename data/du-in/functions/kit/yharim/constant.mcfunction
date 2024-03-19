@@ -4,7 +4,7 @@ execute if entity @s[tag=!stolen,scores={step=175..}] run function du-in:kit/yha
 execute if entity @s[tag=!stolen,scores={sprint=175..}] run function du-in:kit/yharim/sounds/step
 
 #Weapons#
-execute unless entity @s[scores={weapCount=1}] run item replace entity @s[tag=!stolen,tag=!teamDead] hotbar.0 with minecraft:stone_sword{display:{Name:"[{\"text\":\"Yharim's Ultisword\",\"color\":\"#e31e4f\",\"bold\":true,\"italic\":false}]"},HideFlags:5,Unbreakable:1b,CustomModelData:115,du-in:weaponItem,AttributeModifiers:[{AttributeName:"generic.attack_damage",Name:"generic.attack_damage",Amount:4,Operation:0,UUID:[I;-1208756985,1490898231,-1402752434,913687444],Slot:"mainhand"},{AttributeName:"generic.attack_speed",Name:"generic.attack_speed",Amount:-2,Operation:0,UUID:[I;150931488,-224377682,-1476605358,-249302083],Slot:"mainhand"}]} 1
+execute unless entity @s[scores={weapCount=1}] run item replace entity @s[tag=!stolen,tag=!teamDead] hotbar.0 with minecraft:stone_sword[custom_name='[{"text":"Yharim\'s Ultisword","color":"#e31e4f","bold":true,"italic":false}]',custom_model_data=115,unbreakable={show_in_tooltip:false},attribute_modifiers={modifiers:[{type:"generic.attack_damage",name:"generic.attack_damage",amount:4,operation:"add_value",uuid:[I;-630440244,-997046647,-1606288818,1185157089],slot:"mainhand"},{type:"generic.attack_speed",name:"generic.attack_speed",amount:-2,operation:"add_value",uuid:[I;563925252,835208961,-1119387443,-1654645792],slot:"mainhand"}],show_in_tooltip:false}] 1
 execute if entity @s[tag=!stolen,tag=!teamDead] unless entity @s[scores={secCount=1}] run function du-in:kit/yharim/secondary/rage_meter
 
 #Track Secondary Item
@@ -19,7 +19,7 @@ execute if entity @s[scores={yharimRageDuration=0..}] run function du-in:kit/yha
 execute if entity @s[tag=armor,tag=!stolen] run function du-in:kit/yharim/armor
 
 #Ability#
-execute if entity @s[level=1] run item replace entity @s weapon.offhand with minecraft:carrot_on_a_stick{display:{Name:'[{"text":"Yharim\'s Stimulants","color":"red","bold":true,"italic":false,"underlined":false,"strikethrough":false,"obfuscated":false}]',Lore:['[{"text":"Right click to activate!","color":"dark_purple","bold":true}]','[{"text":"Increase defense and resistance","color":"dark_gray"}]','{"text":"to tank damage","color":"dark_gray"}','{"text":"","color":"dark_gray"}']},HideFlags:1,Enchantments:[{id:"minecraft:protection",lvl:1s}],CustomModelData:310,du-in:weaponItem}
+execute if entity @s[level=1] run item replace entity @s weapon.offhand with minecraft:carrot_on_a_stick[custom_model_data='[{"text":"Yharim\'s Stimulants","color":"red","bold":true,"italic":false}]',lore=['[{"text":"Right click to activate!","color":"dark_purple","bold":true}]','[{"text":"Increase defense and resistance","color":"dark_gray"}]','{"text":"to tank damage","color":"dark_gray"}','{"text":"","color":"dark_gray"}'],enchantment_glint_override=true,custom_model_data=310]
 
 execute if entity @s[tag=kitActions] run function du-in:kit/yharim/ability/init
 

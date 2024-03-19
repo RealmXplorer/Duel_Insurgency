@@ -19,7 +19,7 @@ attribute @s generic.attack_speed modifier add 614e6bbe-4551-448f-a380-b0d5652c8
 #effect give @s minecraft:haste 2 0 true
 
 #Clear and reset secondary
-clear @s minecraft:warped_fungus_on_a_stick{CustomModelData:2007}
+clear @s minecraft:warped_fungus_on_a_stick[custom_model_data=2007]
 scoreboard players set @s yharimRage 0
 tag @s remove rageMeter
 

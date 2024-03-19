@@ -1,5 +1,10 @@
-#DEFAULT#
-item replace entity @s armor.feet with minecraft:leather_boots{HideFlags:4,Unbreakable:1,display:{Name:'{"text":"Chapter I Feet"}',color:1315860},du-in:weaponItem} 1
-item replace entity @s armor.legs with minecraft:leather_leggings{HideFlags:4,Unbreakable:1,display:{Name:'{"text":"Chapter I Legs"}',color:4761714},du-in:weaponItem} 1
-item replace entity @s armor.chest with minecraft:leather_chestplate{HideFlags:4,Unbreakable:1,display:{Name:'{"text":"Chapter I Chest"}',color:6679455},du-in:weaponItem} 1
-item replace entity @s armor.head with minecraft:player_head{display:{Name:"{\"text\":\"Ralsei\"}"},SkullOwner:{Id:[I;924884906,1914781765,-1494739371,705814821],Properties:{textures:[{Value:"eyJ0ZXh0dXJlcyI6eyJTS0lOIjp7InVybCI6Imh0dHA6Ly90ZXh0dXJlcy5taW5lY3JhZnQubmV0L3RleHR1cmUvYTA3OTg5NzcyMTI1NzcwZTEzYzNiZTlhOWM2Y2VjNDAwZTAwNmY5YzQyMDAxMDFiZmFiNjAwZGE0NGQ3ZjE0NiJ9fX0="}]}},du-in:weaponItem} 1
+#Chapter I#
+# item replace entity @s armor.feet with minecraft:leather_boots{HideFlags:4,Unbreakable:1,display:{Name:'{"text":"Chapter I Feet"}',color:1315860},du-in:weaponItem} 1
+# item replace entity @s armor.legs with minecraft:leather_leggings{HideFlags:4,Unbreakable:1,display:{Name:'{"text":"Chapter I Legs"}',color:4761714},du-in:weaponItem} 1
+# item replace entity @s armor.chest with minecraft:leather_chestplate{HideFlags:4,Unbreakable:1,display:{Name:'{"text":"Chapter I Chest"}',color:6679455},du-in:weaponItem} 1
+# item replace entity @s armor.head with minecraft:player_head{display:{Name:"{\"text\":\"Ralsei\"}"},SkullOwner:{Id:[I;924884906,1914781765,-1494739371,705814821],Properties:{textures:[{Value:"eyJ0ZXh0dXJlcyI6eyJTS0lOIjp7InVybCI6Imh0dHA6Ly90ZXh0dXJlcy5taW5lY3JhZnQubmV0L3RleHR1cmUvYTA3OTg5NzcyMTI1NzcwZTEzYzNiZTlhOWM2Y2VjNDAwZTAwNmY5YzQyMDAxMDFiZmFiNjAwZGE0NGQ3ZjE0NiJ9fX0="}]}},du-in:weaponItem} 1
+
+item replace entity @s armor.head with minecraft:player_head[custom_name='{"text":"Ralsei","color":"white","bold":true,"italic":false}',profile={id:[I;924884906,1914781765,-1494739371,705814821],name:"",properties:[{name:"textures",value:"eyJ0ZXh0dXJlcyI6eyJTS0lOIjp7InVybCI6Imh0dHA6Ly90ZXh0dXJlcy5taW5lY3JhZnQubmV0L3RleHR1cmUvYTA3OTg5NzcyMTI1NzcwZTEzYzNiZTlhOWM2Y2VjNDAwZTAwNmY5YzQyMDAxMDFiZmFiNjAwZGE0NGQ3ZjE0NiJ9fX0="}]}] 1
+item replace entity @s armor.chest with leather_chestplate[custom_name='{"text":"Chapter I Chest"}',unbreakable={show_in_tooltip:false},dyed_color={rgb:6679455,show_in_tooltip:false}] 1
+item replace entity @s armor.legs with leather_leggings[custom_name='{"text":"Chapter I Legs"}',unbreakable={show_in_tooltip:false},dyed_color={rgb:4761714,show_in_tooltip:false}] 1
+item replace entity @s armor.feet with leather_boots[custom_name='{"text":"Chapter I Feet"}',unbreakable={show_in_tooltip:false},dyed_color={rgb:1315860,show_in_tooltip:false}] 1

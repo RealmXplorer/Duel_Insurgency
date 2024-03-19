@@ -1,5 +1,10 @@
-#TERRARIA PLAYER#
-item replace entity @s armor.head with minecraft:player_head{display:{Name:"{\"text\":\"Warden's Helmet\"}"},du-in:weaponItem,SkullOwner:{Id:[I;-772786896,167657582,-1326237280,845652956],Properties:{textures:[{Value:"eyJ0ZXh0dXJlcyI6eyJTS0lOIjp7InVybCI6Imh0dHA6Ly90ZXh0dXJlcy5taW5lY3JhZnQubmV0L3RleHR1cmUvZTVlYjBiZDg1YWFkZGYwZDI5ZWQwODJlYWMwM2ZjYWRlNDNkMGVlODAzYjBlODE2MmFkZDI4YTYzNzlmYjU0ZSJ9fX0="}]}}} 1
-item replace entity @s armor.chest with minecraft:leather_chestplate{display:{Name:'{"text":"Necron\'s Chestplate","color":"#F870FF","bold":true}',color:15155516},du-in:weaponItem,Unbreakable:1b} 1
-item replace entity @s armor.legs with minecraft:leather_leggings{display:{Name:'{"text":"Necron\'s Leggings","color":"#F870FF","bold":true}',color:15162428},du-in:weaponItem,Unbreakable:1b} 1
-item replace entity @s armor.feet with leather_boots{display:{Name:'{"text":"Necron\'s Boots","color":"#F870FF","bold":true}',color:15167036},du-in:weaponItem,Unbreakable:1b} 1
+#SKYBLOCK PLAYER#
+# item replace entity @s armor.head with minecraft:player_head{display:{Name:"{\"text\":\"Warden's Helmet\"}"},du-in:weaponItem,SkullOwner:{Id:[I;-772786896,167657582,-1326237280,845652956],Properties:{textures:[{Value:"eyJ0ZXh0dXJlcyI6eyJTS0lOIjp7InVybCI6Imh0dHA6Ly90ZXh0dXJlcy5taW5lY3JhZnQubmV0L3RleHR1cmUvZTVlYjBiZDg1YWFkZGYwZDI5ZWQwODJlYWMwM2ZjYWRlNDNkMGVlODAzYjBlODE2MmFkZDI4YTYzNzlmYjU0ZSJ9fX0="}]}}} 1
+# item replace entity @s armor.chest with minecraft:leather_chestplate{display:{Name:'{"text":"Necron\'s Chestplate","color":"#F870FF","bold":true}',color:15155516},du-in:weaponItem,Unbreakable:1b} 1
+# item replace entity @s armor.legs with minecraft:leather_leggings{display:{Name:'{"text":"Necron\'s Leggings","color":"#F870FF","bold":true}',color:15162428},du-in:weaponItem,Unbreakable:1b} 1
+# item replace entity @s armor.feet with leather_boots{display:{Name:'{"text":"Necron\'s Boots","color":"#F870FF","bold":true}',color:15167036},du-in:weaponItem,Unbreakable:1b} 1
+
+item replace entity @s armor.head with minecraft:player_head[custom_name='{"text":"Warden\'s Helmet","color":"white","bold":true,"italic":false}',profile={id:[I;-772786896,167657582,-1326237280,845652956],name:"",properties:[{name:"textures",value:"eyJ0ZXh0dXJlcyI6eyJTS0lOIjp7InVybCI6Imh0dHA6Ly90ZXh0dXJlcy5taW5lY3JhZnQubmV0L3RleHR1cmUvZTVlYjBiZDg1YWFkZGYwZDI5ZWQwODJlYWMwM2ZjYWRlNDNkMGVlODAzYjBlODE2MmFkZDI4YTYzNzlmYjU0ZSJ9fX0="}]}] 1
+item replace entity @s armor.chest with leather_chestplate[custom_name='{"text":"Necron\'s Chestplate"}',unbreakable={show_in_tooltip:false},dyed_color={rgb:15155516,show_in_tooltip:false}] 1
+item replace entity @s armor.legs with leather_leggings[custom_name='{"text":"Necron\'s Leggings"}',unbreakable={show_in_tooltip:false},dyed_color={rgb:15162428,show_in_tooltip:false}] 1
+item replace entity @s armor.feet with leather_boots[custom_name='{"text":"Necron\'s Boots"}',unbreakable={show_in_tooltip:false},dyed_color={rgb:15167036,show_in_tooltip:false}] 1

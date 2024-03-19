@@ -2,12 +2,12 @@
 execute if entity @s[scores={hit=5..}] run function du-in:kit/runza/sounds/hit
 execute if entity @s[tag=!stolen,scores={jump=1..}] run function du-in:kit/jump
 
-execute unless entity @s[scores={weapCount=1}] run item replace entity @s[tag=!stolen,tag=!teamDead] hotbar.0 with minecraft:stone_sword{display:{Name:'{"text":"The Dodecaburger","color":"gray","bold":true}'},HideFlags:5,Unbreakable:1b,CustomModelData:121,du-in:weaponItem,AttributeModifiers:[{AttributeName:"generic.attack_damage",Name:"generic.attack_damage",Amount:4.75,Operation:0,UUID:[I;-1208756985,1490898231,-1402752434,913687444],Slot:"mainhand"},{AttributeName:"generic.attack_speed",Name:"generic.attack_speed",Amount:-2,Operation:0,UUID:[I;150931488,-224377682,-1476605358,-249302083],Slot:"mainhand"}]} 1
+execute unless entity @s[scores={weapCount=1}] run item replace entity @s[tag=!stolen,tag=!teamDead] hotbar.0 with minecraft:stone_sword[custom_name='{"text":"The Dodecaburger","color":"gray","bold":true}',custom_model_data=121,unbreakable={show_in_tooltip:false},attribute_modifiers={modifiers:[{type:"generic.attack_damage",name:"generic.attack_damage",amount:4.75,operation:"add_value",uuid:[I;-1883124048,-1151316396,-1491141208,32963101],slot:"mainhand"},{type:"generic.attack_speed",name:"generic.attack_speed",amount:-2,operation:"add_value",uuid:[I;-318252724,-873774100,-1178663040,-1953097197],slot:"mainhand"}],show_in_tooltip:false}] 1
 
 #execute store result score @s[tag=!stolen] weapCount run clear @s[tag=!kitMenu] stone_sword 0
 
 #Ability Item#
-item replace entity @s[level=1] weapon.offhand with minecraft:carrot_on_a_stick{display:{Name:'[{"text":"«EPIC» ","color":"gold","bold":"true","italic":"true"},{"text":"Temperature Tuesday","color":"red","bold":true,"italic":false,"underlined":false,"strikethrough":false,"obfuscated":false}]',Lore:['{"text":"Right click to activate!","color":"dark_purple","bold":true}','[{"text":""}]','{"text":"FREE DEALS!","color":"dark_gray"}','{"text":"","color":"dark_gray"}']},HideFlags:1,Enchantments:[{id:"minecraft:protection",lvl:1s}],CustomModelData:2005,du-in:weaponItem}
+item replace entity @s[level=1] weapon.offhand with minecraft:carrot_on_a_stick[custom_name='[{"text":"«EPIC» ","color":"gold","bold":"true","italic":"true"},{"text":"Temperature Tuesday","color":"red","bold":true,"italic":false}]',lore=['{"text":"Right click to activate!","color":"dark_purple","bold":true}','[{"text":""}]','{"text":"FREE DEALS!","color":"dark_gray"}','{"text":"","color":"dark_gray"}'],enchantment_glint_override=true,custom_model_data=2005]
 
 execute if entity @s[tag=!void,tag=kitActions] run function du-in:kit/runza/ability/init
 execute if entity @s[tag=void,tag=kitActions] run function du-in:kit/runza/ability/void/init
