@@ -5,7 +5,7 @@ execute if entity @s[tag=!sabotaged,predicate=!du-in:effect/is_poisoned] run eff
 execute if entity @s[tag=sabotaged,predicate=!du-in:effect/is_withered] run effect give @s minecraft:wither 3 1 true
 
 #effect give @s minecraft:strength 1 1 true
-attribute @s generic.attack_damage modifier add f90a6e5b-203f-440c-9f8c-6bb52cc3ab56 springlockDamage 6.0 add
+attribute @s generic.attack_damage modifier add f90a6e5b-203f-440c-9f8c-6bb52cc3ab56 springlockDamage 6.0 add_value
 effect give @s minecraft:resistance 1 0 true
 
 #effect give @s minecraft:mining_fatigue 1 0 true

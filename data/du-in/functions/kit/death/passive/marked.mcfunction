@@ -5,8 +5,8 @@ execute at @s[tag=!deathMark,scores={kit=28}] run playsound minecraft:death.whis
 tag @s add deathMark
 
 effect give @s[tag=!deathAbility] glowing infinite 0 true
-execute unless entity @s[scores={kit=28}] run attribute @s minecraft:generic.armor modifier add b36faec5-3a6b-4564-ba7d-2787df4abace deathWhistleBuff -10 add
+execute unless entity @s[scores={kit=28}] run attribute @s minecraft:generic.armor modifier add b36faec5-3a6b-4564-ba7d-2787df4abace deathWhistleBuff -10 add_value
 
 
-attribute @s[scores={kit=28}] minecraft:generic.armor modifier add b36faec5-3a6b-4564-ba7d-2787df4abace deathWhistleBuff 2.0 add
+attribute @s[scores={kit=28}] minecraft:generic.armor modifier add b36faec5-3a6b-4564-ba7d-2787df4abace deathWhistleBuff 2.0 add_value
 #attribute @s[scores={kit=28}] minecraft:generic.armor base set 6
