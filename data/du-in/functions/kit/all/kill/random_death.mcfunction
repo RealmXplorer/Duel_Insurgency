@@ -60,7 +60,7 @@ tag @s remove ring1
 tag @s remove ring2
 tag @s remove notEaten
 tag @s remove runza
-tag @s remove magma
+#tag @s remove magma
 tag @s remove deathDouble
 tag @s remove midasTouched
 execute if entity @s[tag=springLock] run function du-in:kit/springtrap/ability/disable

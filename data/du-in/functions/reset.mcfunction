@@ -157,6 +157,7 @@ tag @a remove saul
 tag @a remove kitSounds
 tag @a remove countStop
 tag @a remove parry
+tag @a remove cooldown
 
 tag @a remove monsterTarget
 tag @a remove selectedTarget

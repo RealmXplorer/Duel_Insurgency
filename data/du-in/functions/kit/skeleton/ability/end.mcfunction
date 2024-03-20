@@ -8,7 +8,6 @@ clear @s #du-in:reset
 
 #Set Slime's armor and weapon back to normal
 tag @s remove magma
-tag @s remove cooldown
 scoreboard players set @s weapCount 0
 tag @s add armor
 
