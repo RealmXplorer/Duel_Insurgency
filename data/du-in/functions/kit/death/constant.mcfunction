@@ -13,8 +13,11 @@ execute if entity @s[level=1] run function du-in:kit/death/ability/item
 #WEAPON#
 execute unless entity @s[scores={weapCount=1}] if entity @s[tag=!teamDead,tag=!stolen] run function du-in:kit/death/weapon
 
-#SECONDARY#
-execute unless items entity @s[tag=!teamDead,tag=!stolen,tag=!pussFear] hotbar.* warped_fungus_on_a_stick[count=1] unless entity @s[scores={deathSwapTimer=1..}] run function du-in:kit/death/secondary/item
+
+#Check for if they have secondary
+execute store result score @s[tag=!stolen] secCount run clear @s[tag=!kitMenu] warped_fungus_on_a_stick 0
+
+execute if entity @s[tag=!stolen,tag=!teamDead] unless entity @s[scores={secCount=1}] unless entity @s[scores={deathSwapTimer=1..}] run function du-in:kit/death/secondary/item
 
 #Weapon switch cooldown timer
 execute if entity @s[scores={deathSwapTimer=-1..}] run function du-in:kit/death/secondary/timer

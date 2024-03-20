@@ -29,6 +29,8 @@ execute if entity @s[tag=!teamDead,tag=!stolen] unless entity @s[scores={weapCou
 #Secondary Give#
 execute if entity @s[tag=!stolen,tag=!teamDead] unless entity @s[scores={secCount=1}] unless entity @s[scores={gumSwapTimer=1..}] run function du-in:kit/gumball/secondary/item
 
+#execute unless items entity @s[tag=!teamDead,tag=!stolen] hotbar.* warped_fungus_on_a_stick[count=1] unless entity @s[scores={gumSwapTimer=1..}] run function du-in:kit/gumball/secondary/item
+
 #Kit switch cooldown timer
 execute if entity @s[scores={gumSwapTimer=-1..}] run function du-in:kit/gumball/secondary/timer
 #scoreboard players remove @s[scores={gumSwapTimer=0..}] gumSwapTimer 1
