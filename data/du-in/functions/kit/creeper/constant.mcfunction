@@ -3,7 +3,7 @@ execute if entity @s[tag=!stolen,scores={jump=1..}] run function du-in:kit/creep
 
 # CREEPER #
 execute if entity @s[tag=!stolen,tag=!teamDead] unless entity @s[scores={weapCount=1}] run function du-in:kit/creeper/weapon
-#execute store result score @s[tag=!stolen] weapCount run clear @s[tag=!kitMenu] wooden_axe 0
+
 
 execute if entity @s[tag=armor,tag=!stolen] run function du-in:kit/creeper/armor
 

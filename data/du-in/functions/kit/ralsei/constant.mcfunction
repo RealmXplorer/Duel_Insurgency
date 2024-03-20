@@ -18,7 +18,7 @@ execute store result score @s[tag=!stolen] secCount run clear @s[tag=!kitMenu] w
 execute store result score @s[tag=!stolen] triCount run clear @s[tag=!kitMenu] gunpowder 0
 
 #Ability#
-item replace entity @s[level=1] weapon.offhand with minecraft:carrot_on_a_stick[custom_name='{"text":"Lullaby","color":"gold","bold":true,"italic":false}',lore=['{"text":"Right click to activate!","color":"dark_purple","bold":true}','[{"text":""}]','{"text":"Puts nearby enemies to sleep","color":"dark_gray"}','{"text":"","color":"dark_gray"}'],enchantment_glint_override=true,custom_model_data=132]
+execute if entity @s[level=1] run function du-in:kit/ralsei/ability/item
 
 execute if entity @s[tag=!void,tag=kitActions] run function du-in:kit/ralsei/ability/init
 execute if entity @s[tag=void,tag=kitActions] run function du-in:kit/ralsei/ability/void/init

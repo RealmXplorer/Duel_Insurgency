@@ -16,8 +16,7 @@ execute if entity @s[tag=broken,tag=!pussFear,scores={saacDisTimer=..0}] run fun
 execute if entity @s[tag=!teamDead,tag=!pussFear,tag=!stolen] unless entity @s[scores={weapCount=1}] run function du-in:kit/saac/weapon
 
 #Ability#
-item replace entity @s[level=1] weapon.offhand with minecraft:carrot_on_a_stick[custom_name='[{"text":"«EPIC» ","color":"gold","bold":true,"italic":true},{"text":"The Great Bamboozle","color":"red","bold":true,"italic":false}]',lore=['{"text":"Right click to activate!","color":"dark_purple","bold":true}','[{"text":""}]','{"text":"Wait what..?","color":"dark_gray"}','{"text":"","color":"dark_gray"}'],enchantment_glint_override=true,custom_model_data=2000]
-
+execute if entity @s[level=1] run function du-in:kit/saac/ability/item
 
 execute if entity @s[tag=!void,tag=kitActions,predicate=!du-in:second_held] run function du-in:kit/saac/ability/init
 execute if entity @s[tag=void,tag=kitActions,predicate=!du-in:second_held] run function du-in:kit/saac/ability/void/init

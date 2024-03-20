@@ -24,9 +24,6 @@ execute if entity @s[tag=unicornBow] run function du-in:kit/jack_horner/ability/
 
 execute if entity @s[tag=asgoreTrident] run function du-in:kit/jack_horner/ability/trident/run
 
-#scoreboard players add @s[predicate=du-in:chance/half_chance] magicCount 1
-#scoreboard players set @s[scores={magicCount=7..}] magicCount 1
-
 #Base movement speed#
 attribute @s[tag=!stolen] minecraft:generic.movement_speed base set 0.135
 execute unless entity @a[tag=partyLeader,tag=scaleMode] run attribute @s[tag=!stolen] minecraft:generic.scale base set 1.175

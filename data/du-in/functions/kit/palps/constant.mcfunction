@@ -3,7 +3,6 @@ execute if entity @s[tag=!stolen,scores={jump=1..}] run function du-in:kit/jump
 
 #Weapons#
 execute unless entity @s[scores={weapCount=1}] if entity @s[tag=!stolen,tag=!teamDead] run function du-in:kit/palps/weapon
-#execute store result score @s[tag=!stolen] weapCount run clear @s[tag=!kitMenu] stone_sword 0
 
 #Armor#
 execute if entity @s[tag=armor,tag=!stolen] run function du-in:kit/palps/armor

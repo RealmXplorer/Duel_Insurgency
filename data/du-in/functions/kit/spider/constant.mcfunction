@@ -14,8 +14,7 @@ execute if entity @s[tag=void,tag=kitActions] run function du-in:kit/spider/abil
 
 execute if entity @s[tag=armor,tag=!stolen] run function du-in:kit/spider/armor
 
-item replace entity @s[level=1] weapon.offhand with minecraft:carrot_on_a_stick[custom_name='{"text":"Web Blast","color":"gold","bold":true,"italic":false}',lore=['{"text":"Right click to activate!","color":"dark_purple","bold":true}','[{"text":""}]','{"text":"Shoots a blast of webs ","color":"dark_gray"}','{"text":"that slows nearby ","color":"dark_gray"}','{"text":"opponents.","color":"dark_gray"}'],enchantment_glint_override=true,custom_model_data=100]
-
+execute if entity @s[level=1] run function du-in:kit/spider/ability/item
 
 attribute @s[tag=!stolen] generic.movement_speed base set 0.135
 #.1225

@@ -1,0 +1,2 @@
+function du-in:kit/all/ability/return
+item replace entity @s weapon.offhand with minecraft:carrot_on_a_stick[custom_name='{"text":"Firewall","color":"gold","bold":true,"italic":false}',lore=['{"text":"Right click to activate!","color":"dark_purple","bold":true}','[{"text":""}]','{"text":"Summons a wall of ","color":"dark_gray"}','{"text":"fire at the position ","color":"dark_gray"}','{"text":"you are looking.","color":"dark_gray"}'],enchantment_glint_override=true,custom_model_data=113]

@@ -6,8 +6,7 @@ execute if entity @s[scores={jump=1..},tag=!stolen] run function du-in:kit/nick/
 tag @s[tag=!stolen] add wilde
 
 #Nick Wilde#
-execute if entity @s[tag=!stolen,tag=!teamDead] unless entity @s[scores={weapCount=1}] run function du-in:kit/nick/weapon
-#execute store result score @s[tag=!stolen] weapCount run clear @s[tag=!kitMenu] stone_sword 0
+execute unless entity @s[scores={weapCount=1}] if entity @s[tag=!stolen,tag=!teamDead] run function du-in:kit/nick/weapon
 
 #Ability#
 execute if entity @s[level=1] run function du-in:kit/nick/ability/item

@@ -4,7 +4,7 @@
 
 
 #Return ability
-execute if entity @s[level=1..2,gamemode=!spectator,tag=!lobby,tag=!win,tag=!lose,tag=!kitMenu,tag=!cooldown] run function du-in:kit/all/ability/return
+#execute if entity @s[level=1..2,gamemode=!spectator,tag=!lobby,tag=!win,tag=!lose,tag=!kitMenu,tag=!cooldown] run function du-in:kit/all/ability/return
 
 # Stating Game Functions #
     execute if entity @s[tag=startgame,tag=!working] run function du-in:ingame/start_seq

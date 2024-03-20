@@ -7,8 +7,7 @@ execute if entity @s[tag=!stolen,scores={jump=1..}] run function du-in:kit/golem
 #effect give @s[tag=!stolen] minecraft:slowness 1 0 true
 
 # GOLEM #
-execute if entity @s[tag=!stolen,tag=!teamDead] unless entity @s[scores={weapCount=1}] run function du-in:kit/golem/weapon
-#execute store result score @s[tag=!stolen] weapCount run clear @s[tag=!kitMenu] stone_axe 0
+execute unless entity @s[scores={weapCount=1}] if entity @s[tag=!stolen,tag=!teamDead] run function du-in:kit/golem/weapon
 
 execute if entity @s[tag=armor,tag=!stolen] run function du-in:kit/golem/armor
 

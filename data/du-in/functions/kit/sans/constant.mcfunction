@@ -16,8 +16,7 @@ execute if entity @s[tag=armor,tag=!stolen] run function du-in:kit/sans/armor
 
 execute if entity @s[tag=!teamDead,tag=!stolen] unless entity @s[scores={weapCount=1}] run function du-in:kit/sans/weapon
 
-
-execute if entity @s[level=1] run item replace entity @s weapon.offhand with minecraft:carrot_on_a_stick[custom_name='{"text":"Bad Time","color":"gold","bold":true,"italic":false}',lore=['{"text":"Right click to activate!","color":"dark_purple","bold":true}','[{"text":""}]','{"text":"Teleport behind an enemy,","color":"dark_gray"}','{"text":"avoid attack cooldowns, ","color":"dark_gray"}','{"text":"gain strength","color":"dark_gray"}'],enchantment_glint_override=true,custom_model_data=115]
+execute if entity @s[level=1] run function du-in:kit/sans/ability/item
 
 attribute @s[tag=!stolen] generic.movement_speed base set 0.155
 

@@ -127,7 +127,6 @@ scoreboard objectives add scaleModeToggle dummy
 scoreboard objectives add skinPreset dummy
 
 #Gamemode objectives
-scoreboard objectives add Acount dummy
 scoreboard objectives add maxTeamLives dummy
 scoreboard objectives add mapWinner dummy
 scoreboard objectives add ten dummy

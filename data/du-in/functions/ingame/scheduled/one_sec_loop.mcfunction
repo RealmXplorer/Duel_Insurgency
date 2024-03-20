@@ -1,31 +1,13 @@
 #Run as all players (every second)
-execute as @a[gamemode=adventure,tag=playing,tag=!grave] at @s run function du-in:ingame/scheduled/play_one_sec
-
-#Check if player has weapon
-#function du-in:return_item
-
-execute as @a[gamemode=!spectator,tag=playing,tag=!startgame] store result score @s Acount run clear @s[tag=!kitMenu] carrot_on_a_stick 0
-#execute as @a[gamemode=!spectator,tag=playing,tag=!startgame,tag=!magma,tag=!cooldown] unless entity @s[scores={Acount=1}] unless entity @s[level=3..] run xp set @s[tag=!grave,tag=!hornerWeapon] 2 levels
-execute as @a[gamemode=!spectator,tag=playing,tag=!startgame,tag=!cooldown] unless entity @s[scores={Acount=1}] unless entity @s[level=3..] run xp set @s[tag=!grave,tag=!hornerWeapon] 2 levels
-
-execute as @a[gamemode=!spectator,tag=playing,tag=!startgame,tag=!pussFear] store result score @s weapCount run clear @s[tag=!kitMenu] #du-in:weapon 0
-
-execute as @a[gamemode=!spectator,tag=playing,tag=!startgame,tag=!pussFear] if score @s weapCount matches 2.. run clear @s[tag=!kitMenu] #du-in:weapon
+execute as @a[gamemode=!spectator,tag=playing,tag=!grave] at @s run function du-in:ingame/scheduled/play_one_sec
 
 execute at @e[type=marker,tag=slimePatch] run particle minecraft:item_slime ~ ~ ~ 0 0 0 1 100 normal
 
-#Add 1 to score "spawnpoint"
-#scoreboard players add @r[tag=playing,gamemode=!spectator,predicate=du-in:chance/half_chance] spawnpoint 1
 
 execute if score #main matchDeaths matches 12.. if entity @a[gamemode=adventure,scores={kit=28},tag=!win,tag=!lose] run function du-in:kit/death/passive/start
 
-#Give player kit if they don't have one
-#execute unless entity @s[scores={kit=1..}] run tag @s add random
 
-#execute if entity @e[type=item] run kill @e[type=item,nbt={Item:{tag:{du-in:weaponItem}}}]
 execute as @e[type=item,tag=!displayItem] run kill @s
-
-#kill @e[type=!player,type=!interaction,type=!marker,type=!armor_stand,nbt={inGround:1b}]
 
 #say success
 schedule function du-in:ingame/scheduled/one_sec_loop 1s

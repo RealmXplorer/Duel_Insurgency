@@ -1,5 +1,7 @@
 tag @s add springLock
-function du-in:kit/springtrap/ability/item
+xp set @s 20 levels
+clear @s carrot_on_a_stick
+#function du-in:kit/springtrap/ability/item
 playsound minecraft:springtrap.jumpscare master @a ~ ~ ~ .5 1
 playsound minecraft:sans.ability master @a ~ ~ ~ .25 1.05
 function du-in:kit/springtrap/particle

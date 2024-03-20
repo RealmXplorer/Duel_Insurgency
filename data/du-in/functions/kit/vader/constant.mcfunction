@@ -13,7 +13,7 @@ execute unless entity @s[scores={weapCount=1}] run item replace entity @s[tag=!s
 execute if entity @s[tag=armor,tag=!stolen] run function du-in:kit/vader/armor
 
 #Ability#
-item replace entity @s[level=1] weapon.offhand with minecraft:carrot_on_a_stick[custom_name='{"text":"Force Grab","color":"gold","bold":true,"italic":false}',lore=['{"text":"Right click to activate!","color":"dark_purple","bold":true}','[{"text":""}]','{"text":"I find your lack of","color":"dark_gray"}','{"text":"faith disturbing.","color":"dark_gray"}'],enchantment_glint_override=true,custom_model_data=117]
+execute if entity @s[level=1] run function du-in:kit/vader/ability/item
 
 execute if entity @s[tag=!void,tag=kitActions] run function du-in:kit/vader/ability/init
 execute if entity @s[tag=void,tag=kitActions] run function du-in:kit/vader/ability/void/init

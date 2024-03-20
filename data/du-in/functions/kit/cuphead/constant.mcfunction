@@ -16,11 +16,7 @@ execute if entity @s[tag=secKitActions,tag=!stolen,tag=!void] run function du-in
 execute if entity @s[tag=secKitActions,tag=!stolen,tag=void] run function du-in:kit/cuphead/parry/void/init
 
 #WEAPON#
-#execute if entity @s[tag=!teamDead,tag=!stolen] unless entity @s[scores={weapCount=1}] run function du-in:kit/cuphead/weapon
-execute if entity @s[tag=!stolen,tag=!teamDead] unless entity @s[scores={secCount=1}] run item replace entity @s hotbar.0 with warped_fungus_on_a_stick[custom_name='{"text":"Devil\'s Horn","color":"#EF0AFF","bold":true}',lore=['{"text":"Jump in the air and right click near enemy"}','{"text":"or projectile to parry!"}','{"text":" ","color":"gray","bold":true}','{"text":"I didn\'t know this was a hat!","color":"white","bold":false}','{"text":"It wasn\'t...","color":"red","bold":false}'],custom_model_data=2014,enchantment_glint_override=true,unbreakable={show_in_tooltip:false},attribute_modifiers={modifiers:[{type:"generic.attack_damage",name:"generic.attack_damage",amount:2.75,operation:"add_value",uuid:[I;-617610664,-1279309107,-1394978828,526365776],slot:"mainhand"},{type:"generic.attack_speed",name:"generic.attack_speed",amount:40,operation:"add_value",uuid:[I;-847327216,80102297,-1192907867,-269969953],slot:"mainhand"}],show_in_tooltip:false}] 1
-
-#Check for secondary#
-execute store result score @s[tag=!stolen,tag=!pussFear] secCount run clear @s[tag=!kitMenu] warped_fungus_on_a_stick 0
+execute unless items entity @s[tag=!teamDead,tag=!stolen,tag=!pussFear] hotbar.* warped_fungus_on_a_stick[count=1] run item replace entity @s hotbar.0 with warped_fungus_on_a_stick[custom_name='{"text":"Devil\'s Horn","color":"#EF0AFF","bold":true}',lore=['{"text":"Jump in the air and right click near enemy"}','{"text":"or projectile to parry!"}','{"text":" ","color":"gray","bold":true}','{"text":"I didn\'t know this was a hat!","color":"white","bold":false}','{"text":"It wasn\'t...","color":"red","bold":false}'],custom_model_data=2014,enchantment_glint_override=true,unbreakable={show_in_tooltip:false},attribute_modifiers={modifiers:[{type:"generic.attack_damage",name:"generic.attack_damage",amount:2.75,operation:"add_value",uuid:[I;-617610664,-1279309107,-1394978828,526365776],slot:"mainhand"},{type:"generic.attack_speed",name:"generic.attack_speed",amount:40,operation:"add_value",uuid:[I;-847327216,80102297,-1192907867,-269969953],slot:"mainhand"}],show_in_tooltip:false}] 1
 
 #Super ability#
 execute if entity @s[scores={cupTimer=0..}] run function du-in:kit/cuphead/ability/super

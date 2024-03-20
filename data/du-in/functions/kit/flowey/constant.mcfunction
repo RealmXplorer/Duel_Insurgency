@@ -17,9 +17,6 @@ execute if entity @s[scores={floweyHitTimer=-1..},tag=!lose] run function du-in:
 #WEAPON COUNT#
 execute if entity @s[tag=!teamDead,tag=!stolen,tag=!pussFear] unless entity @s[scores={weapCount=1}] unless entity @s[scores={floweyHitTimer=0..}] run function du-in:kit/flowey/weapon
 
-#execute store result score @s[tag=!stolen] weapCount run clear @s[tag=!kitMenu] wooden_sword 0
-#execute store result score @s[tag=!stolen] weapCount run clear @s[tag=!kitMenu] #du-in:weapon 0
-
 attribute @s[tag=!stolen] minecraft:generic.movement_speed base set 0.13
 #.105
 attribute @s[tag=!stolen] generic.knockback_resistance base set 0.06
