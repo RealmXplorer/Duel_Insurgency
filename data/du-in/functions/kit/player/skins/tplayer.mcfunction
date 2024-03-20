@@ -1,9 +1,4 @@
 #TERRARIA PLAYER#
-# item replace entity @s armor.head with minecraft:player_head{display:{Name:"{\"text\":\"Terraria Player\"}"},du-in:weaponItem,SkullOwner:{Id:[I;-1424340984,-242136467,-1341135019,-1786758919],Properties:{textures:[{Value:"eyJ0ZXh0dXJlcyI6eyJTS0lOIjp7InVybCI6Imh0dHA6Ly90ZXh0dXJlcy5taW5lY3JhZnQubmV0L3RleHR1cmUvNTQzYTlmYWJkZTIyMmIxODUxMmY3ZmMzZjk1ZjI4YTlkYzRmODg3MGM5ZTMyNDYxZGU5NTYwM2M4YTJhNTY3YiJ9fX0="}]}}} 1
-# item replace entity @s armor.chest with minecraft:leather_chestplate{display:{Name:'{"text":"Terraria Player Chest"}',color:10079826},du-in:weaponItem,HideFlags:4,Unbreakable:1b} 1
-# item replace entity @s armor.legs with minecraft:leather_leggings{display:{Name:'{"text":"Terraria Player Legs"}',color:15630378},du-in:weaponItem,HideFlags:4,Unbreakable:1b} 1
-# item replace entity @s armor.feet with minecraft:leather_boots{display:{Name:'{"text":"Terraria Player Feet"}',color:6710088},du-in:weaponItem,HideFlags:4,Unbreakable:1b} 1
-
 item replace entity @s armor.head with minecraft:player_head[custom_name='{"text":"Terraria Player","color":"white","bold":true,"italic":false}',profile={id:[I;-1424340984,-242136467,-1341135019,-1786758919],name:"",properties:[{name:"textures",value:"eyJ0ZXh0dXJlcyI6eyJTS0lOIjp7InVybCI6Imh0dHA6Ly90ZXh0dXJlcy5taW5lY3JhZnQubmV0L3RleHR1cmUvNTQzYTlmYWJkZTIyMmIxODUxMmY3ZmMzZjk1ZjI4YTlkYzRmODg3MGM5ZTMyNDYxZGU5NTYwM2M4YTJhNTY3YiJ9fX0="}]}] 1
 item replace entity @s armor.chest with leather_chestplate[custom_name='{"text":"Terraria Player Chest"}',unbreakable={show_in_tooltip:false},dyed_color={rgb:10079826,show_in_tooltip:false}] 1
 item replace entity @s armor.legs with leather_leggings[custom_name='{"text":"Terraria Player Legs"}',unbreakable={show_in_tooltip:false},dyed_color={rgb:15630378,show_in_tooltip:false}] 1

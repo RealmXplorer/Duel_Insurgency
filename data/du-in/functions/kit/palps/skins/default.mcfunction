@@ -1,8 +1,4 @@
-# item replace entity @s armor.head with minecraft:player_head{display:{Name:"{\"text\":\"Emperor Palpatine\"}"},du-in:weaponItem,SkullOwner:{Id:[I;1802316670,791628963,-1622859676,677073006],Properties:{textures:[{Value:"eyJ0ZXh0dXJlcyI6eyJTS0lOIjp7InVybCI6Imh0dHA6Ly90ZXh0dXJlcy5taW5lY3JhZnQubmV0L3RleHR1cmUvM2MxZjIxMjgzZDc3NTAzYjJlYzY0MWE3N2E4ZTY3YTJjNGViYjU4N2Q1M2MyYjRmMDg2NGExNjk3NjUxMGU3In19fQ=="}]}}} 1
-# item replace entity @s armor.chest with minecraft:leather_chestplate{display:{Name:'{"text":"Palpatine Chest"}',color:0},HideFlags:4,Unbreakable:1b,du-in:weaponItem} 1
-# item replace entity @s armor.legs with minecraft:leather_leggings{display:{Name:'{"text":"Palpatine Legs"}',color:0},HideFlags:4,Unbreakable:1b,du-in:weaponItem} 1
-# item replace entity @s armor.feet with minecraft:leather_boots{display:{Name:'{"text":"Palpatine Feet"}',color:0},HideFlags:4,Unbreakable:1b,du-in:weaponItem} 1
-
+#DEFAULT#
 item replace entity @s armor.head with minecraft:player_head[custom_name='{"text":"Emperor Palpatine","color":"white","bold":true,"italic":false}',profile={id:[I;1802316670,791628963,-1622859676,677073006],name:"",properties:[{name:"textures",value:"eyJ0ZXh0dXJlcyI6eyJTS0lOIjp7InVybCI6Imh0dHA6Ly90ZXh0dXJlcy5taW5lY3JhZnQubmV0L3RleHR1cmUvM2MxZjIxMjgzZDc3NTAzYjJlYzY0MWE3N2E4ZTY3YTJjNGViYjU4N2Q1M2MyYjRmMDg2NGExNjk3NjUxMGU3In19fQ=="}]}] 1
 item replace entity @s armor.chest with leather_chestplate[custom_name='{"text":"Palpatine Chest"}',unbreakable={show_in_tooltip:false},dyed_color={rgb:0,show_in_tooltip:false}] 1
 item replace entity @s armor.legs with leather_leggings[custom_name='{"text":"Palpatine Legs"}',unbreakable={show_in_tooltip:false},dyed_color={rgb:0,show_in_tooltip:false}] 1

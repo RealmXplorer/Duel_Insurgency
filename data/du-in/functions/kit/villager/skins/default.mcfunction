@@ -1,9 +1,4 @@
 #DEFAULT#
-# item replace entity @s armor.head with minecraft:player_head{display:{Name:"{\"text\":\"Villager\"}"},du-in:weaponItem,SkullOwner:{Id:[I;1480608382,-1588769976,-1183003207,-1970401256],Properties:{textures:[{Value:"eyJ0ZXh0dXJlcyI6eyJTS0lOIjp7InVybCI6Imh0dHA6Ly90ZXh0dXJlcy5taW5lY3JhZnQubmV0L3RleHR1cmUvNDFiODMwZWI0MDgyYWNlYzgzNmJjODM1ZTQwYTExMjgyYmI1MTE5MzMxNWY5MTE4NDMzN2U4ZDM1NTU1ODMifX19"}]}}}
-# item replace entity @s armor.chest with minecraft:leather_chestplate{HideFlags:4,Unbreakable:1,display:{Name:'{"text":"Villager Chest"}',color:6192150},du-in:weaponItem} 1
-# item replace entity @s armor.legs with minecraft:leather_leggings{HideFlags:4,Unbreakable:1,display:{Name:'{"text":"Villager Legs"}',color:6192150},du-in:weaponItem} 1
-# item replace entity @s armor.feet with minecraft:leather_boots{HideFlags:4,Unbreakable:1,display:{Name:'{"text":"Villager Feet"}',color:4673362},du-in:weaponItem} 1
-
 item replace entity @s armor.head with minecraft:player_head[custom_name='{"text":"Villager","color":"white","bold":true,"italic":false}',profile={id:[I;1480608382,-1588769976,-1183003207,-1970401256],name:"",properties:[{name:"textures",value:"eyJ0ZXh0dXJlcyI6eyJTS0lOIjp7InVybCI6Imh0dHA6Ly90ZXh0dXJlcy5taW5lY3JhZnQubmV0L3RleHR1cmUvNDFiODMwZWI0MDgyYWNlYzgzNmJjODM1ZTQwYTExMjgyYmI1MTE5MzMxNWY5MTE4NDMzN2U4ZDM1NTU1ODMifX19"}]}] 1
 item replace entity @s armor.chest with leather_chestplate[custom_name='{"text":"Villager Chest"}',unbreakable={show_in_tooltip:false},dyed_color={rgb:6192150,show_in_tooltip:false}] 1
 item replace entity @s armor.legs with leather_leggings[custom_name='{"text":"Villager Legs"}',unbreakable={show_in_tooltip:false},dyed_color={rgb:6192150,show_in_tooltip:false}] 1

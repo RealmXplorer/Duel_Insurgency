@@ -1,9 +1,4 @@
 # #ALEX#
-# item replace entity @s armor.head with minecraft:player_head{display:{Name:"{\"text\":\"Alex\"}"},du-in:weaponItem,SkullOwner:{Id:[I;-731408145,-304985227,-1778597514,158507129],Properties:{textures:[{Value:"eyJ0ZXh0dXJlcyI6eyJTS0lOIjp7InVybCI6Imh0dHA6Ly90ZXh0dXJlcy5taW5lY3JhZnQubmV0L3RleHR1cmUvNjNiMDk4OTY3MzQwZGFhYzUyOTI5M2MyNGUwNDkxMDUwOWIyMDhlN2I5NDU2M2MzZWYzMWRlYzdiMzc1MCJ9fX0="}]}}} 1
-# item replace entity @s armor.chest with minecraft:leather_chestplate{display:{Name:'{"text":"Alex Chest"}',color:7784333},HideFlags:4,Unbreakable:1b,du-in:weaponItem} 1
-# item replace entity @s armor.legs with minecraft:leather_leggings{display:{Name:'{"text":"Alex Legs"}',color:9263677},HideFlags:4,Unbreakable:1b,du-in:weaponItem} 1
-# item replace entity @s armor.feet with minecraft:leather_boots{display:{Name:'{"text":"Alex Feet"}',color:6842472},HideFlags:4,Unbreakable:1b,du-in:weaponItem} 1
-
 item replace entity @s armor.head with minecraft:player_head[custom_name='{"text":"Alex","color":"white","bold":true,"italic":false}',profile={id:[I;-731408145,-304985227,-1778597514,158507129],name:"",properties:[{name:"textures",value:"eyJ0ZXh0dXJlcyI6eyJTS0lOIjp7InVybCI6Imh0dHA6Ly90ZXh0dXJlcy5taW5lY3JhZnQubmV0L3RleHR1cmUvNjNiMDk4OTY3MzQwZGFhYzUyOTI5M2MyNGUwNDkxMDUwOWIyMDhlN2I5NDU2M2MzZWYzMWRlYzdiMzc1MCJ9fX0="}]}] 1
 item replace entity @s armor.chest with leather_chestplate[custom_name='{"text":"Alex Chest"}',unbreakable={show_in_tooltip:false},dyed_color={rgb:7784333,show_in_tooltip:false}] 1
 item replace entity @s armor.legs with leather_leggings[custom_name='{"text":"Alex Legs"}',unbreakable={show_in_tooltip:false},dyed_color={rgb:9263677,show_in_tooltip:false}] 1

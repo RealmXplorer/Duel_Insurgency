@@ -1,8 +1,4 @@
-# item replace entity @s armor.head with minecraft:player_head{display:{Name:"{\"text\":\"Christmas Clairen\"}"},SkullOwner:{Id:[I;362162431,-1389739602,-1387506468,-619197374],Properties:{textures:[{Value:"eyJ0ZXh0dXJlcyI6eyJTS0lOIjp7InVybCI6Imh0dHA6Ly90ZXh0dXJlcy5taW5lY3JhZnQubmV0L3RleHR1cmUvYzM5NWZmMDFiZDVmYjVkM2I1YWNiZTU1OWM0NDlhOThhZjlkYzE5YjMwMjJhOTg5NTI3Yzg3MTAzNTZhODYzZSJ9fX0="}]}},du-in:weaponItem} 1
-# item replace entity @s armor.chest with minecraft:leather_chestplate{display:{Name:'{"text":"Festive Clairen Chest"}',color:5811278},HideFlags:4,Unbreakable:1b,du-in:weaponItem} 1
-# item replace entity @s armor.legs with minecraft:leather_leggings{display:{Name:'{"text":"Festive Clairen Legs"}',color:3485005},HideFlags:4,Unbreakable:1b,du-in:weaponItem} 1
-# item replace entity @s armor.feet with minecraft:leather_boots{display:{Name:'{"text":"Festive Clairen Feet"}',color:5481547},HideFlags:4,Unbreakable:1b,du-in:weaponItem} 1
-
+#FESTIVE CLAIREN#
 item replace entity @s armor.head with minecraft:player_head[custom_name='{"text":"Festive Clairen","color":"white","bold":true,"italic":false}',profile={id:[I;362162431,-1389739602,-1387506468,-619197374],name:"",properties:[{name:"textures",value:"eyJ0ZXh0dXJlcyI6eyJTS0lOIjp7InVybCI6Imh0dHA6Ly90ZXh0dXJlcy5taW5lY3JhZnQubmV0L3RleHR1cmUvYzM5NWZmMDFiZDVmYjVkM2I1YWNiZTU1OWM0NDlhOThhZjlkYzE5YjMwMjJhOTg5NTI3Yzg3MTAzNTZhODYzZSJ9fX0="}]}] 1
 item replace entity @s armor.chest with leather_chestplate[custom_name='{"text":"Festive Clairen Chest"}',unbreakable={show_in_tooltip:false},dyed_color={rgb:5811278,show_in_tooltip:false}]
 item replace entity @s armor.legs with leather_leggings[custom_name='{"text":"Festive Clairen Legs"}',unbreakable={show_in_tooltip:false},dyed_color={rgb:3485005,show_in_tooltip:false}]
