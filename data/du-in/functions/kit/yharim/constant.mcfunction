@@ -19,7 +19,8 @@ execute if entity @s[scores={yharimRageDuration=0..}] run function du-in:kit/yha
 execute if entity @s[tag=armor,tag=!stolen] run function du-in:kit/yharim/armor
 
 #Ability#
-execute if entity @s[level=1] run item replace entity @s weapon.offhand with minecraft:carrot_on_a_stick[custom_model_data='[{"text":"Yharim\'s Stimulants","color":"red","bold":true,"italic":false}]',lore=['[{"text":"Right click to activate!","color":"dark_purple","bold":true}]','[{"text":"Increase defense and resistance","color":"dark_gray"}]','{"text":"to tank damage","color":"dark_gray"}','{"text":"","color":"dark_gray"}'],enchantment_glint_override=true,custom_model_data=310]
+execute if entity @s[level=1] run item replace entity @s weapon.offhand with minecraft:carrot_on_a_stick[custom_name='[{"text":"Yharim\'s Stimulants","color":"red","bold":true,"italic":false}]',lore=['[{"text":"Right click to activate!","color":"dark_purple","bold":true}]','[{"text":"Increase defense and resistance","color":"dark_gray"}]','{"text":"to tank damage","color":"dark_gray"}','{"text":"","color":"dark_gray"}'],enchantment_glint_override=true,custom_model_data=310]
+
 
 execute if entity @s[tag=kitActions] run function du-in:kit/yharim/ability/init
 
