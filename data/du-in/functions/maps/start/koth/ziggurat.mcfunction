@@ -1,4 +1,4 @@
-tellraw @a ["",{"text":"The ","bold":false,"color":"gray"},{"text":"Ziggurat ","bold":true,"color":"yellow"},{"text":"map has been chosen!","bold":false,"color":"gray"}]
+tellraw @a ["",{"text":"The ","bold":false,"color":"gray"},{"text":"Ziggurat ","bold":true,"color":"#f5f0eb"},{"text":"map has been chosen!","bold":false,"color":"gray"}]
 
 tp @a[tag=!working,scores={spawnpoint=0..2}] 233 6 -1882 -135 -13
 tp @a[tag=!working,scores={spawnpoint=3..4}] 233 6 -1925 -45 -15

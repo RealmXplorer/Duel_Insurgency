@@ -1,4 +1,4 @@
-tellraw @a ["",{"text":"The ","bold":false,"color":"gray"},{"text":"San Ricardo ","bold":true,"color":"yellow"},{"text":"map has been chosen!","bold":false,"color":"gray"}]
+tellraw @a ["",{"text":"The ","bold":false,"color":"gray"},{"text":"San Ricardo ","bold":true,"color":"#fceaa2"},{"text":"map has been chosen!","bold":false,"color":"gray"}]
 
 #Teleports#
 tp @a[tag=!working,scores={team=1}] -3752 57 1239 -25.25 -5

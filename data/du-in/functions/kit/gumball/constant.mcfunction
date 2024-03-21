@@ -23,7 +23,7 @@ execute if entity @s[tag=secKitActions,tag=!stolen] run function du-in:kit/gumba
 
 
 #Weapon Give#
-execute if entity @s[tag=!teamDead,tag=!stolen] unless entity @s[scores={weapCount=1}] run function du-in:kit/gumball/weapon
+execute unless entity @s[scores={weapCount=1}] if entity @s[tag=!teamDead,tag=!stolen] run function du-in:kit/gumball/weapon
 
 
 #Secondary Give#

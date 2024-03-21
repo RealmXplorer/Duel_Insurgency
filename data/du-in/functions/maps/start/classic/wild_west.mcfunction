@@ -1,4 +1,4 @@
-tellraw @a ["",{"text":"The ","bold":false,"color":"gray"},{"text":"Wild West ","bold":true,"color":"yellow"},{"text":"map has been chosen!","bold":false,"color":"gray"}]
+tellraw @a ["",{"text":"The ","bold":false,"color":"gray"},{"text":"Wild West ","bold":true,"color":"#c7976d"},{"text":"map has been chosen!","bold":false,"color":"gray"}]
 
 tp @a[tag=!working,scores={spawnpoint=0..2}] -4136 21 97
 tp @a[tag=!working,scores={spawnpoint=3..4}] -4163 20 79

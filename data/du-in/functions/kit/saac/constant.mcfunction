@@ -13,7 +13,7 @@ execute if entity @s[tag=armor] run function du-in:kit/saac/armor
 
 execute if entity @s[tag=broken,tag=!pussFear,scores={saacDisTimer=..0}] run function du-in:kit/saac/passive/fix
 
-execute if entity @s[tag=!teamDead,tag=!pussFear,tag=!stolen] unless entity @s[scores={weapCount=1}] run function du-in:kit/saac/weapon
+execute unless entity @s[scores={weapCount=1}] if entity @s[tag=!teamDead,tag=!pussFear,tag=!stolen] run function du-in:kit/saac/weapon
 
 #Ability#
 execute if entity @s[level=1] run function du-in:kit/saac/ability/item

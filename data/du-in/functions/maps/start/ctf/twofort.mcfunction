@@ -1,4 +1,4 @@
-tellraw @a ["",{"text":"The ","bold":false,"color":"gray"},{"text":"2Fort ","bold":true,"color":"yellow"},{"text":"map has been chosen!","bold":false,"color":"gray"}]
+tellraw @a ["",{"text":"The ","bold":false,"color":"gray"},{"text":"2Fort ","bold":true,"color":"gold"},{"text":"map has been chosen!","bold":false,"color":"gray"}]
 
 #Teleports#
 tp @a[tag=!working,scores={team=2,spawnpoint=1..4}] -1030 16 -979 -90 0

@@ -1,4 +1,4 @@
-tellraw @a ["",{"text":"The ","bold":false,"color":"gray"},{"text":"Clouds ","bold":true,"color":"yellow"},{"text":"map has been chosen!","bold":false,"color":"gray"}]
+tellraw @a ["",{"text":"The ","bold":false,"color":"gray"},{"text":"Clouds ","bold":true,"color":"#ebfaf6"},{"text":"map has been chosen!","bold":false,"color":"gray"}]
 
 #Teleports#
 tp @a[tag=!working,scores={team=1}] -388 19 494 135 5

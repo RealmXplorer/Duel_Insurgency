@@ -1,4 +1,4 @@
-tellraw @a ["",{"text":"The ","bold":false,"color":"gray"},{"text":"Haunted House ","bold":true,"color":"yellow"},{"text":"map has been chosen!","bold":false,"color":"gray"}]
+tellraw @a ["",{"text":"The ","bold":false,"color":"gray"},{"text":"Haunted House ","bold":true,"color":"#b31e1e"},{"text":"map has been chosen!","bold":false,"color":"gray"}]
 
 
 tp @a[tag=!working,scores={spawnpoint=..2}] 0 11 2438 180 0

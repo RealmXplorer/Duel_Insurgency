@@ -11,7 +11,7 @@ execute if entity @s[level=1] run function du-in:kit/slime/ability/item
 execute if entity @s[tag=kitActions] run function du-in:kit/slime/ability/init
 
 #Weapon
-execute if entity @s[tag=!teamDead,tag=!stolen,tag=!pussFear] unless entity @s[scores={weapCount=1}] run function du-in:kit/slime/weapon
+execute unless entity @s[scores={weapCount=1}] if entity @s[tag=!teamDead,tag=!stolen,tag=!pussFear] run function du-in:kit/slime/weapon
 
 #Magma timer
 execute if entity @s[scores={magmaTimer=-99..}] run function du-in:kit/slime/ability/timer

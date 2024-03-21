@@ -1,4 +1,4 @@
-tellraw @a ["",{"text":"The ","bold":false,"color":"gray"},{"text":"Cliffside Asylum ","bold":true,"color":"yellow"},{"text":"map has been chosen!","bold":false,"color":"gray"}]
+tellraw @a ["",{"text":"The ","bold":false,"color":"gray"},{"text":"Cliffside Asylum ","bold":true,"color":"#81d6c1"},{"text":"map has been chosen!","bold":false,"color":"gray"}]
 
 #Teleport#
 tp @a[tag=!working,scores={team=1}] 5003 5 -5043 180 0

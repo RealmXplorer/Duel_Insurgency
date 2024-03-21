@@ -1,4 +1,4 @@
-tellraw @a [{"text":"The ","bold":false,"color":"gray"},{"text":"Judgement Hall ","bold":true,"color":"yellow"},{"text":"map has been chosen!","bold":false,"color":"gray"}]
+tellraw @a [{"text":"The ","bold":false,"color":"gray"},{"text":"Judgement Hall ","bold":true,"color":"gold"},{"text":"map has been chosen!","bold":false,"color":"gray"}]
 
 tp @a[tag=!working,scores={team=1}] 251 4 527 180 0
 tp @a[tag=!working,scores={team=2}] 252 4 412 0 0

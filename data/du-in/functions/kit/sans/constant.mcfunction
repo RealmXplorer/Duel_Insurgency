@@ -14,7 +14,7 @@ execute if entity @s[tag=void,tag=kitActions] run function du-in:kit/sans/abilit
 #Armor #
 execute if entity @s[tag=armor,tag=!stolen] run function du-in:kit/sans/armor
 
-execute if entity @s[tag=!teamDead,tag=!stolen] unless entity @s[scores={weapCount=1}] run function du-in:kit/sans/weapon
+execute unless entity @s[scores={weapCount=1}] if entity @s[tag=!teamDead,tag=!stolen] run function du-in:kit/sans/weapon
 
 execute if entity @s[level=1] run function du-in:kit/sans/ability/item
 

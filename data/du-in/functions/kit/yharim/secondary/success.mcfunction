@@ -7,7 +7,7 @@ particle minecraft:flame ~ ~1 ~ 1 1 1 0 20 force
 particle minecraft:angry_villager ~ ~2 ~ 0.25 0 0.01 0 20 force
 
 #Give Effects
-scoreboard players set @s yharimRageDuration 40
+scoreboard players set @s yharimRageDuration 60
 tag @s add enraged
 
 attribute @s generic.attack_damage modifier add 9ea2728b-7a81-441a-a8d1-9775741f6a41 yharimRageDamage 6.0 add_value

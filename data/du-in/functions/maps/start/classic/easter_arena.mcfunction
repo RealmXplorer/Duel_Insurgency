@@ -1,4 +1,4 @@
-tellraw @a ["",{"text":"The ","bold":false,"color":"gray"},{"text":"Arena ","bold":true,"color":"yellow"},{"text":"map has been chosen!","bold":false,"color":"gray"}]
+tellraw @a ["",{"text":"The ","bold":false,"color":"gray"},{"text":"Arena ","bold":true,"color":"#bbf792"},{"text":"map has been chosen!","bold":false,"color":"gray"}]
 
 tp @a[tag=!working,scores={spawnpoint=0..2}] 920 10 501 -90 0
 tp @a[tag=!working,scores={spawnpoint=3..4}] 942 10 501 -180 0

@@ -12,7 +12,7 @@ execute if entity @s[tag=armor,tag=!stolen] run function du-in:kit/zombie/armor
 execute if entity @s[tag=grave] run function du-in:kit/zombie/ability/check
 
 #Give Zombie Weapon#
-execute if entity @s[tag=!teamDead,tag=!stolen] unless entity @s[scores={weapCount=1}] run function du-in:kit/zombie/weapon
+execute unless entity @s[scores={weapCount=1}] if entity @s[tag=!teamDead,tag=!stolen] run function du-in:kit/zombie/weapon
 #execute store result score @s[tag=!stolen] weapCount run clear @s[tag=!kitMenu] wooden_sword 0
 
 #Give Zombie ability#

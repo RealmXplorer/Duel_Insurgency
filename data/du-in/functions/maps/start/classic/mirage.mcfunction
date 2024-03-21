@@ -1,4 +1,4 @@
-tellraw @a ["",{"text":"The ","bold":false,"color":"gray"},{"text":"Mirage ","bold":true,"color":"yellow"},{"text":"map has been chosen!","bold":false,"color":"gray"}]
+tellraw @a ["",{"text":"The ","bold":false,"color":"gray"},{"text":"Mirage ","bold":true,"color":"#fcecd4"},{"text":"map has been chosen!","bold":false,"color":"gray"}]
 
 tp @a[tag=!working,scores={spawnpoint=0}] -2283 8 189 90 0
 tp @a[tag=!working,scores={spawnpoint=1}] -2309 10 195 0 0

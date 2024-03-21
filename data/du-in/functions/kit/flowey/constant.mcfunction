@@ -15,7 +15,7 @@ execute if entity @s[tag=kitActions] run function du-in:kit/flowey/ability/init
 execute if entity @s[scores={floweyHitTimer=-1..},tag=!lose] run function du-in:kit/flowey/ability/burrow
 
 #WEAPON COUNT#
-execute if entity @s[tag=!teamDead,tag=!stolen,tag=!pussFear] unless entity @s[scores={weapCount=1}] unless entity @s[scores={floweyHitTimer=0..}] run function du-in:kit/flowey/weapon
+execute unless entity @s[scores={weapCount=1}] if entity @s[tag=!teamDead,tag=!stolen,tag=!pussFear] unless entity @s[scores={floweyHitTimer=0..}] run function du-in:kit/flowey/weapon
 
 attribute @s[tag=!stolen] minecraft:generic.movement_speed base set 0.13
 #.105

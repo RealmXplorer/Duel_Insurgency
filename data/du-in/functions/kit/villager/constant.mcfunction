@@ -8,7 +8,7 @@ tag @s remove wilde
 execute if entity @s[tag=armor] run function du-in:kit/villager/armor
 
 #Villager Weapon
-execute if entity @s[tag=!teamDead] unless entity @s[scores={weapCount=1}] run function du-in:kit/villager/weapon
+execute unless entity @s[scores={weapCount=1}] if entity @s[tag=!teamDead] run function du-in:kit/villager/weapon
 
 execute if entity @s[tag=kitActions,tag=!stolen] run function du-in:kit/villager/ability/init
 

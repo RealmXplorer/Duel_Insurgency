@@ -9,7 +9,7 @@ execute if entity @s[tag=armor] run function du-in:kit/impostor/armor
 
 tag @s[tag=!stolen] add sus
 
-execute if entity @s[tag=!teamDead,tag=!stolen] unless entity @s[scores={weapCount=1}] run function du-in:kit/impostor/weapon
+execute unless entity @s[scores={weapCount=1}] if entity @s[tag=!teamDead,tag=!stolen] run function du-in:kit/impostor/weapon
 
 #Ability Item#
 execute if entity @s[level=1] run function du-in:kit/impostor/ability/item

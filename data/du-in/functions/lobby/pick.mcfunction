@@ -11,11 +11,11 @@ execute if score #gamemode gamemode matches 5 run tag @a[tag=!working] add cql
 #execute if score #gamemode gamemode matches 6 run tag @a[tag=!working] add exl
 
 #Announce the gamemode selected
-execute if score #gamemode gamemode matches 1 run tellraw @a [{"text":"The ","bold":false,"color":"gray"},{"text":"Classic ","bold":true,"color":"yellow"},{"text":"gamemode has been chosen!","bold":false,"color":"gray"}]
-execute if score #gamemode gamemode matches 2 run tellraw @a [{"text":"The ","bold":false,"color":"gray"},{"text":"Deathmatch ","bold":true,"color":"yellow"},{"text":"gamemode has been chosen!","bold":false,"color":"gray"}]
-execute if score #gamemode gamemode matches 3 run tellraw @a [{"text":"The ","bold":false,"color":"gray"},{"text":"King of the Hill ","bold":true,"color":"yellow"},{"text":"gamemode has been chosen!","bold":false,"color":"gray"}]
-execute if score #gamemode gamemode matches 4 run tellraw @a [{"text":"The ","bold":false,"color":"gray"},{"text":"Capture the Flag ","bold":true,"color":"yellow"},{"text":"gamemode has been chosen!","bold":false,"color":"gray"}]
-execute if score #gamemode gamemode matches 5 run tellraw @a [{"text":"The ","bold":false,"color":"gray"},{"text":"Conquest ","bold":true,"color":"yellow"},{"text":"gamemode has been chosen!","bold":false,"color":"gray"}]
+execute if score #gamemode gamemode matches 1 run tellraw @a [{"text":"The ","bold":false,"color":"gray"},{"text":"Classic ","bold":true,"color":"gold"},{"text":"gamemode has been chosen!","bold":false,"color":"gray"}]
+execute if score #gamemode gamemode matches 2 run tellraw @a [{"text":"The ","bold":false,"color":"gray"},{"text":"Deathmatch ","bold":true,"color":"red"},{"text":"gamemode has been chosen!","bold":false,"color":"gray"}]
+execute if score #gamemode gamemode matches 3 run tellraw @a [{"text":"The ","bold":false,"color":"gray"},{"text":"King of the Hill ","bold":true,"color":"green"},{"text":"gamemode has been chosen!","bold":false,"color":"gray"}]
+execute if score #gamemode gamemode matches 4 run tellraw @a [{"text":"The ","bold":false,"color":"gray"},{"text":"Capture the Flag ","bold":true,"color":"aqua"},{"text":"gamemode has been chosen!","bold":false,"color":"gray"}]
+execute if score #gamemode gamemode matches 5 run tellraw @a [{"text":"The ","bold":false,"color":"gray"},{"text":"Conquest ","bold":true,"color":"dark_red"},{"text":"gamemode has been chosen!","bold":false,"color":"gray"}]
 #execute if score #gamemode gamemode matches 6 run tellraw @a [{"text":"The ","bold":false,"color":"gray"},{"text":"Extraction ","bold":true,"color":"yellow"},{"text":"gamemode has been chosen!","bold":false,"color":"gray"}]
 
 #Auto set CTF and Conquest to team mode.

@@ -12,8 +12,8 @@ execute if entity @s[tag=armor,tag=!stolen] run function du-in:kit/player/armor
 execute if entity @s[level=1] run function du-in:kit/player/ability/item
 
 
-execute if entity @s[tag=!teamDead,tag=!stolen] unless entity @s[scores={weapCount=1}] run function du-in:kit/player/weapon
-execute if entity @s[tag=!teamDead,tag=!stolen] unless entity @s[scores={secCount=1}] run function du-in:kit/player/bow
+execute unless entity @s[scores={weapCount=1}] if entity @s[tag=!teamDead,tag=!stolen] run function du-in:kit/player/weapon
+execute unless entity @s[scores={secCount=1}] if entity @s[tag=!teamDead,tag=!stolen] run function du-in:kit/player/bow
 
 #execute store result score @s[tag=!stolen] weapCount run clear @s[tag=!kitMenu] wooden_sword 0
 execute store result score @s[tag=!stolen] secCount run clear @s[tag=!kitMenu] bow 0

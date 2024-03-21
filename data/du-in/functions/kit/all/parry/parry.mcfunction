@@ -6,6 +6,7 @@ playsound minecraft:entity.warden.sonic_boom master @a ~ ~ ~ .5 2
 playsound minecraft:entity.breeze.deflect master @a ~ ~ ~ 1 1
 particle minecraft:sonic_boom ~ ~1 ~ -0.5 0 0 .2 0
 effect give @s minecraft:resistance 1 10 true
+attribute @s generic.knockback_resistance modifier add 37007289-4186-4632-85f3-f535c545d04a parryKB 0.1 add_value
 title @s title {"text":""}
 title @s subtitle {"text":"🛡 Parry! 🛡","color":"blue"}
 title @s times 0 15 5

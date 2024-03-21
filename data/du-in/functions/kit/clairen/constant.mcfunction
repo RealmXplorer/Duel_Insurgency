@@ -3,7 +3,7 @@ execute if entity @s[tag=!stolen,scores={hit=5..}] run function du-in:kit/claire
 
 
 # Weapon #
-execute if entity @s[tag=!stolen,tag=!teamDead] unless entity @s[scores={weapCount=1}] run function du-in:kit/clairen/weapon
+execute unless entity @s[scores={weapCount=1}] if entity @s[tag=!stolen,tag=!teamDead] run function du-in:kit/clairen/weapon
 
 # Armor #
 execute if entity @s[tag=armor,tag=!stolen] run function du-in:kit/clairen/armor

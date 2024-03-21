@@ -15,6 +15,5 @@ scoreboard players set @s weapCount 0
 tag @s add armor
 
 #End ability and start cooldown
-xp set @s[tag=!stolen] 320 levels
+xp set @s[tag=!stolen] 360 levels
 execute if entity @s[tag=stolen] run tag @s add kitDone
-scoreboard players reset @s magmaTimer

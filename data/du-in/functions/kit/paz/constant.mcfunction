@@ -6,7 +6,7 @@ execute if entity @s[tag=!stolen,scores={jump=1..}] run function du-in:kit/jump
 
 
 #Give Weapon
-execute if entity @s[tag=!teamDead,tag=!stolen] unless entity @s[scores={weapCount=1}] run function du-in:kit/paz/weapon
+execute unless entity @s[scores={weapCount=1}] if entity @s[tag=!teamDead,tag=!stolen] run function du-in:kit/paz/weapon
 
 # ARMOR #
 execute if entity @s[tag=armor,tag=!stolen] run function du-in:kit/paz/armor

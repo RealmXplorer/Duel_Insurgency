@@ -47,3 +47,6 @@ attribute @s minecraft:generic.jump_strength modifier remove 6554983a-9201-41da-
 ##Team Dead Effects
 attribute @s minecraft:generic.jump_strength modifier remove 76c91af4-d86d-4e55-8df9-fd2c247d45db
 attribute @s minecraft:generic.attack_damage modifier remove dd3713c4-bf98-4d8b-bc6f-c5368dd7bd45
+
+##Parry
+attribute @s generic.knockback_resistance modifier remove 37007289-4186-4632-85f3-f535c545d04a

@@ -1,4 +1,4 @@
-tellraw @a ["",{"text":"The ","bold":false,"color":"gray"},{"text":"Paz Pool Party ","bold":true,"color":"yellow"},{"text":"map has been chosen!","bold":false,"color":"gray"}]
+tellraw @a ["",{"text":"The ","bold":false,"color":"gray"},{"text":"Paz Pool Party ","bold":true,"color":"#ffc2f3"},{"text":"map has been chosen!","bold":false,"color":"gray"}]
 scoreboard players set @a[scores={kit=1001}] pazSkin 1
 
 tp @a[tag=!working,scores={spawnpoint=0..2}] 571 -32 -7220

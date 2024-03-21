@@ -1,4 +1,4 @@
-tellraw @a ["",{"text":"The ","bold":false,"color":"gray"},{"text":"Dust 2 ","bold":true,"color":"yellow"},{"text":"map has been chosen!","bold":false,"color":"gray"}]
+tellraw @a ["",{"text":"The ","bold":false,"color":"gray"},{"text":"Dust 2 ","bold":true,"color":"#f7db92"},{"text":"map has been chosen!","bold":false,"color":"gray"}]
 
 #Teleport#
 tp @a[tag=!working,scores={spawnpoint=0..2}] 15035 18 995 65 15
