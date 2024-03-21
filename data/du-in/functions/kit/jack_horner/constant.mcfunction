@@ -24,11 +24,8 @@ execute if entity @s[tag=unicornBow] run function du-in:kit/jack_horner/ability/
 
 execute if entity @s[tag=asgoreTrident] run function du-in:kit/jack_horner/ability/trident/run
 
-#Base movement speed#
+#ATTRIBUTES#
 attribute @s[tag=!stolen] minecraft:generic.movement_speed base set 0.135
-execute unless entity @a[tag=partyLeader,tag=scaleMode] run attribute @s[tag=!stolen] minecraft:generic.scale base set 1.175
-execute unless entity @a[tag=partyLeader,tag=scaleMode] run attribute @s[tag=!stolen] minecraft:player.block_interaction_range base set 4.9
-execute unless entity @a[tag=partyLeader,tag=scaleMode] run attribute @s[tag=!stolen] minecraft:generic.armor base set 3
-
-#Base Weight
 attribute @s[tag=!stolen] generic.knockback_resistance base set 0.35
+
+execute unless entity @a[tag=partyLeader,tag=scaleMode] if entity @s[tag=!stolen] run function du-in:kit/all/size/bigger

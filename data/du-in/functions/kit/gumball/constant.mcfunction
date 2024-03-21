@@ -61,8 +61,6 @@ attribute @s[tag=!stolen,tag=darwin] minecraft:generic.movement_speed base set 0
 effect give @s[tag=darwin] dolphins_grace infinite 1 true
 effect give @s[tag=darwin] water_breathing infinite 1 true
 
-execute unless entity @a[tag=partyLeader,tag=scaleMode] run attribute @s[tag=!stolen] minecraft:generic.scale base set 0.85
-execute unless entity @a[tag=partyLeader,tag=scaleMode] run attribute @s[tag=!stolen] minecraft:player.block_interaction_range base set 4.15
-execute unless entity @a[tag=partyLeader,tag=scaleMode] run attribute @s[tag=!stolen] minecraft:generic.armor base set -3
+execute unless entity @a[tag=partyLeader,tag=scaleMode] if entity @s[tag=!stolen] run function du-in:kit/all/size/smaller
 
 attribute @s[tag=!stolen] generic.knockback_resistance base set 0.01

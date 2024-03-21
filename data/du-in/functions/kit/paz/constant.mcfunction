@@ -23,13 +23,12 @@ execute if entity @s[tag=!stolen,tag=!teamDead,tag=fortniteCard] unless entity @
 
 execute store result score @s[tag=!stolen] triCount run clear @s[tag=!kitMenu] gunpowder 0
 
-#Base Speed#
+#Attributes
 attribute @s[tag=!stolen] minecraft:generic.movement_speed base set 0.1375
-#Base Weight#
 attribute @s[tag=!stolen] generic.knockback_resistance base set 0.35
-execute unless entity @a[tag=partyLeader,tag=scaleMode] run attribute @s[tag=!stolen] minecraft:generic.scale base set 0.8
-execute unless entity @a[tag=partyLeader,tag=scaleMode] run attribute @s[tag=!stolen] minecraft:player.block_interaction_range base set 4.15
-execute unless entity @a[tag=partyLeader,tag=scaleMode] run attribute @s[tag=!stolen] minecraft:generic.armor base set -3
+
+    #Size
+    execute unless entity @a[tag=partyLeader,tag=scaleMode] if entity @s[tag=!stolen] run function du-in:kit/all/size/tiny
 
 #     GET SHIT ON      #
 #   ABSOLUTE SHIITER   #

@@ -23,10 +23,7 @@ attribute @s[tag=!stolen] minecraft:generic.movement_speed base set 0.125
 attribute @s[tag=!stolen] minecraft:generic.armor_toughness base set 1.5
 attribute @s[tag=!stolen] minecraft:generic.knockback_resistance base set 0.175
 
-execute unless entity @a[tag=partyLeader,tag=scaleMode] run attribute @s[tag=!stolen] minecraft:generic.scale base set 1.15
-execute unless entity @a[tag=partyLeader,tag=scaleMode] run attribute @s[tag=!stolen] minecraft:player.block_interaction_range base set 4.9
-execute unless entity @a[tag=partyLeader,tag=scaleMode] run attribute @s[tag=!stolen] minecraft:generic.armor base set 3
-execute unless entity @a[tag=partyLeader,tag=scaleMode] run attribute @s[tag=!stolen] generic.attack_damage base set 1.5
+execute unless entity @a[tag=partyLeader,tag=scaleMode] if entity @s[tag=!stolen] run function du-in:kit/all/size/big
 
 #Breathing and berserk
 execute if entity @s[tag=!stolen] run function du-in:kit/vader/berserk

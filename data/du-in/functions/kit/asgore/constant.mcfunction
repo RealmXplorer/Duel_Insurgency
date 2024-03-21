@@ -25,13 +25,10 @@ execute unless entity @s[scores={weapCount=1}] if entity @s[tag=!thrown,tag=!sto
 #ASGORE ATTRIBUTES#
 
 #Size
-execute unless entity @a[tag=partyLeader,tag=scaleMode] run attribute @s[tag=!stolen] minecraft:generic.scale base set 1.2
-execute unless entity @a[tag=partyLeader,tag=scaleMode] run attribute @s[tag=!stolen] minecraft:generic.armor base set 3.5
-execute unless entity @a[tag=partyLeader,tag=scaleMode] run attribute @s[tag=!stolen] minecraft:player.block_interaction_range base set 5
-execute unless entity @a[tag=partyLeader,tag=scaleMode] run attribute @s[tag=!stolen] minecraft:generic.armor base set 4
+execute unless entity @a[tag=partyLeader,tag=scaleMode] if entity @s[tag=!stolen] run function du-in:kit/all/size/huge
 
 #Weight and speed
-attribute @s[tag=!stolen] minecraft:generic.armor_toughness base set 1
+#attribute @s[tag=!stolen] minecraft:generic.armor_toughness base set 1
 attribute @s[tag=!stolen] minecraft:generic.movement_speed base set 0.125
 attribute @s[tag=!stolen] generic.knockback_resistance base set 0.15
 

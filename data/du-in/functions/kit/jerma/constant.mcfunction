@@ -23,10 +23,8 @@ execute if entity @s[tag=void,tag=kitActions] run function du-in:kit/jerma/abili
 
 #Attributes#
 attribute @s[tag=!stolen] minecraft:generic.movement_speed base set 0.135
-#.11
 attribute @s[tag=!stolen] generic.knockback_resistance base set 0.04
-execute unless entity @a[tag=partyLeader,tag=scaleMode] run attribute @s[tag=!stolen] minecraft:generic.scale base set 0.8
-execute unless entity @a[tag=partyLeader,tag=scaleMode] run attribute @s[tag=!stolen] minecraft:player.block_interaction_range base set 4.15
-execute unless entity @a[tag=partyLeader,tag=scaleMode] run attribute @s[tag=!stolen] minecraft:generic.armor base set -3
+
+execute unless entity @a[tag=partyLeader,tag=scaleMode] if entity @s[tag=!stolen] run function du-in:kit/all/size/tiny
 
 #WHAT THE FUCK#

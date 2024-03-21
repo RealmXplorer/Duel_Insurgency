@@ -20,7 +20,9 @@ execute unless entity @s[scores={weapCount=1}] if entity @s[tag=!teamDead,tag=!s
 attribute @s[tag=!stolen] minecraft:generic.movement_speed base set 0.13
 #.105
 attribute @s[tag=!stolen] generic.knockback_resistance base set 0.06
-execute unless entity @a[tag=partyLeader,tag=scaleMode] run attribute @s[tag=!stolen] minecraft:generic.scale base set .75
+
+execute unless entity @a[tag=partyLeader,tag=scaleMode] if entity @s[tag=!stolen] run function du-in:kit/all/size/tiny
+
 
 
 #MY EXPERIMENTS

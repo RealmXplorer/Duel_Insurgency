@@ -19,16 +19,12 @@ execute if entity @s[tag=!void,tag=kitActions] run function du-in:kit/impostor/a
 execute if entity @s[tag=void,tag=kitActions] run function du-in:kit/impostor/ability/void/init
 
 #IMPOSTER#
-#execute if entity @s[tag=killLine] run function du-in:kit/impostor/sounds/line
 attribute @s minecraft:generic.movement_speed base set 0.13
-#.105
 attribute @s generic.knockback_resistance base set 0.03
-execute unless entity @a[tag=partyLeader,tag=scaleMode] run attribute @s[tag=!stolen] minecraft:generic.scale base set 0.9
-execute unless entity @a[tag=partyLeader,tag=scaleMode] run attribute @s[tag=!stolen] minecraft:player.block_interaction_range base set 4.25
-execute unless entity @a[tag=partyLeader,tag=scaleMode] run attribute @s[tag=!stolen] minecraft:generic.armor base set -2
-#attribute @s minecraft:generic.attack_damage base set 3.0
-#attribute @s minecraft:generic.attack_speed base set 40
 
+execute unless entity @a[tag=partyLeader,tag=scaleMode] if entity @s[tag=!stolen] run function du-in:kit/all/size/small
+
+#Test Impostor Meeting Spot
 execute unless block ~ ~-1 ~ #du-in:zomb_invalid run tag @s remove badBlock
 
 execute if block ~ ~-1 ~ #du-in:zomb_invalid rotated as @s run tag @s add badBlock

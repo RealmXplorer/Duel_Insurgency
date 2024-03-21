@@ -24,10 +24,7 @@ attribute @s[tag=!stolen] minecraft:generic.movement_speed base set 0.13
 attribute @s[tag=!stolen] generic.knockback_resistance base set 0.035
 
 #Size
-execute unless entity @a[tag=partyLeader,tag=scaleMode] run attribute @s[tag=!stolen] minecraft:generic.scale base set 0.9
-execute unless entity @a[tag=partyLeader,tag=scaleMode] run attribute @s[tag=!stolen] minecraft:player.block_interaction_range base set 4.25
-execute unless entity @a[tag=partyLeader,tag=scaleMode] run attribute @s[tag=!stolen] minecraft:generic.armor base set -2
-
+execute unless entity @a[tag=partyLeader,tag=scaleMode] if entity @s[tag=!stolen] run function du-in:kit/all/size/small
 
 #A shame the one who looks for me has not yet found me.
 #Maybe, you and I, can find him first.

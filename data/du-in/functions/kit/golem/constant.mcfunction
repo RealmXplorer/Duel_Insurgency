@@ -16,12 +16,7 @@ execute if entity @s[level=1] run function du-in:kit/golem/ability/item
 execute if entity @s[tag=!void,tag=kitActions] run function du-in:kit/golem/ability/init
 execute if entity @s[tag=void,tag=kitActions] run function du-in:kit/golem/ability/void/init
 
-#GOLEM#
-#attribute @s[tag=!stolen] generic.movement_speed base set 0.1
+#ATTRIBUTES#
 attribute @s[tag=!stolen] minecraft:generic.movement_speed base set 0.125
-#.1
 attribute @s[tag=!stolen] generic.knockback_resistance base set 0.25
-execute unless entity @a[tag=partyLeader,tag=scaleMode] run attribute @s[tag=!stolen] minecraft:generic.scale base set 1.2
-execute unless entity @a[tag=partyLeader,tag=scaleMode] run attribute @s[tag=!stolen] minecraft:player.block_interaction_range base set 5
-execute unless entity @a[tag=partyLeader,tag=scaleMode] run attribute @s[tag=!stolen] minecraft:generic.armor base set 4
-execute unless entity @a[tag=partyLeader,tag=scaleMode] run attribute @s[tag=!stolen] generic.attack_damage base set 1.5
+execute unless entity @a[tag=partyLeader,tag=scaleMode] if entity @s[tag=!stolen] run function du-in:kit/all/size/huge
