@@ -18,6 +18,8 @@ tp @s[tag=!working] -999 13 517 -90 0
 function du-in:music/lobby/stop/shop
 scoreboard players set @s music 0
 
+function du-in:lobby/shop/drinks/reset
+
 #Reset functions and schedule gamemode select.
 function du-in:lobby/item_reset
 tag @s remove subLobby
