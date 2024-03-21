@@ -9,4 +9,3 @@ execute unless entity @s[scores={kit=28}] run attribute @s minecraft:generic.arm
 
 
 attribute @s[scores={kit=28}] minecraft:generic.armor modifier add b36faec5-3a6b-4564-ba7d-2787df4abace deathWhistleBuff 2.0 add_value
-#attribute @s[scores={kit=28}] minecraft:generic.armor base set 6
