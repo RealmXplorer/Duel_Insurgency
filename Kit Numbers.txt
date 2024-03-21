@@ -32,6 +32,7 @@ Kit number = character name
 27 = Puss in Boots
 28 = Death
 29 = Yoda
+30 = Skeleton
 
 1000 = Saac
 1001 = PearApplez
