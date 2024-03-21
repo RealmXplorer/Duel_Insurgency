@@ -68,6 +68,11 @@ execute if entity @s[scores={kit=24}] run function du-in:kit/all/undertale/death
 #Yoda Death#
 execute if entity @s[scores={kit=29}] run function du-in:kit/yoda/sounds/death
 
+#Skeleton Death#
+execute if entity @s[scores={kit=30}] unless entity @s[scores={skeletonMode=1..}] run playsound minecraft:entity.skeleton.death master @a ~ ~ ~ 3 1
+execute if entity @s[scores={kit=30,skeletonMode=1}] run playsound minecraft:entity.stray.death master @a ~ ~ ~ 3 1
+execute if entity @s[scores={kit=30,skeletonMode=2}] run playsound minecraft:entity.bogged.death master @a ~ ~ ~ 3 1
+
 #PAZ DEATH#
 execute if entity @s[scores={kit=1001}] run function du-in:kit/paz/death
 

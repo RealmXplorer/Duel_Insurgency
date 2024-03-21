@@ -13,5 +13,8 @@ execute if entity @s[scores={kit=27}] run function du-in:kit/puss/constant
 #Death#
 execute if entity @s[scores={kit=28}] run function du-in:kit/death/constant
 
-#Death#
+#Yoda#
 execute if entity @s[scores={kit=29}] run function du-in:kit/yoda/constant
+
+#Skeleton#
+execute if entity @s[scores={kit=30}] run function du-in:kit/skeleton/constant

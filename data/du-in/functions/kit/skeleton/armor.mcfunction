@@ -1,5 +1,4 @@
-execute unless entity @s[scores={slimeSkin=1}] if entity @s[tag=!magma] run function du-in:kit/slime/skins/default
-execute unless entity @s[scores={slimeSkin=1}] if entity @s[tag=magma] run function du-in:kit/slime/skins/magma
-execute if entity @s[tag=!magma,scores={slimeSkin=1}] run function du-in:kit/slime/skins/slimer
-execute if entity @s[tag=magma,scores={slimeSkin=1}] run function du-in:kit/slime/skins/puft
+execute unless entity @s[scores={skeletonMode=1..}] run function du-in:kit/skeleton/skins/default
+execute if entity @s[scores={skeletonMode=1}] run function du-in:kit/skeleton/skins/stray
+execute if entity @s[scores={skeletonMode=2}] run function du-in:kit/skeleton/skins/bogged
 tag @s remove armor

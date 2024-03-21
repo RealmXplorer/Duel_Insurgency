@@ -90,6 +90,7 @@ scoreboard objectives add unicornTimer dummy
 scoreboard objectives add yharimTimer dummy
 scoreboard objectives add zombieTimer dummy
 scoreboard objectives add yharimRageDuration dummy
+scoreboard objectives add skeletonMode dummy
 
 #Skins
 scoreboard objectives add asgoreSkin dummy
