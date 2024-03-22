@@ -34,7 +34,7 @@ tag @a remove cqIngame
 tag @a remove team1
 tag @a remove team2
 tag @a remove flagGot
-
+tag @a remove glowing
 
 tag @a remove saul
 tag @a remove saac

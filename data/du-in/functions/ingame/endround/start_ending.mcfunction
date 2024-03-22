@@ -4,16 +4,10 @@ execute if score #main winners matches 2.. run tag @a[tag=!teamMode] add tie
 execute if entity @a[tag=team1,tag=win,tag=!falseWin,tag=!voidLose,tag=!void] if entity @a[tag=team2,tag=win,tag=!falseWin,tag=!voidLose,tag=!void] run tag @a add tie
 
 #Normal
-#title @a[tag=!teamMode,tag=!falseWin,tag=!lobby,tag=!voidLose,tag=!void,tag=!tie] title {"text":"","bold":true,"color":"gold","extra":[{"selector":"@a[tag=win,tag=!falseWin,tag=!void]"}]}
-#title @a[tag=!teamMode,tag=!falseWin,tag=!lobby,tag=!voidLose,tag=!void,tag=tie] title {"text":"TIE!","bold":true,"color":"gray"}
 execute if entity @a[tag=!teamMode,tag=!falseWin,tag=!lobby,tag=!voidLose,tag=!void] run function du-in:ingame/endround/default_title
 
 #Team
 execute if entity @a[tag=teamMode,tag=win,tag=!falseWin,tag=!voidLose,tag=!void] run function du-in:ingame/endround/team_title
-
-# execute if entity @a[tag=team1,tag=win,tag=!falseWin,tag=!voidLose,tag=!void] run title @a title [{"text":"RED TEAM","bold":true,"color":"red"}]
-# execute if entity @a[tag=team2,tag=win,tag=!falseWin,tag=!voidLose,tag=!void] run title @a title [{"text":"BLUE TEAM","bold":true,"color":"blue"}]
-# execute if entity @a[tag=team1,tag=win,tag=!falseWin,tag=!voidLose,tag=!void,tag=tie] run title @a title [{"text":"TIE!","bold":true,"color":"gray"}]
 
 #Wins subtitle(only if not tied)
 title @a[tag=!falseWin,tag=!lobby,tag=!voidLose,tag=!void,tag=!tie] subtitle {"text":"WINS","color":"gold"}
@@ -50,12 +44,9 @@ advancement grant @a[tag=win,tag=!falseWin,tag=!spectating,tag=!voidLose,tag=!ti
 execute if entity @a[tag=ctfIngame] at @e[type=marker,tag=blueFlag] run setblock ~ ~ ~ blue_banner destroy
 execute if entity @a[tag=ctfIngame] at @e[type=marker,tag=redFlag] run setblock ~ ~ ~ red_banner destroy
 
-#Reset Conquest points
-#execute if entity @a[tag=cqIngame] run function du-in:ingame/conquest/reset_points
-
 #Kill all ingame entities.
 kill @e[nbt={inGround:1b}]
-kill @e[type=item,nbt={Item:{tag:{du-in:weaponItem}}}]
+kill @e[type=item,tag=!displayItem]
 kill @e[type=ender_pearl,tag=blakeTP]
 
 function du-in:maps/jermall/stop

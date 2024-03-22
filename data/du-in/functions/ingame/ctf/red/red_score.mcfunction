@@ -21,3 +21,4 @@ title @a subtitle [{"text":"Flag Captured!","color":"red","bold":true}]
 #Remove tag "flagGot"
 tag @s remove flagGot
 tag @s remove otherFlag
+tag @s remove glowing

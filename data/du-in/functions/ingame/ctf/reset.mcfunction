@@ -19,4 +19,5 @@ tag @a remove ctfClose
 tag @a remove ctfEnd
 
 tag @a remove flagGot
+tag @a remove glowing
 scoreboard players reset * flagGot

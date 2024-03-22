@@ -12,5 +12,7 @@ tag @e[type=marker,tag=blueFlag] remove captured
 
 tag @s remove ownFlag
 tag @s remove flagGot
+tag @s remove glowing
+
 #End function
 scoreboard players reset #main blueFlagTimer

@@ -12,5 +12,6 @@ tag @e[type=marker,tag=redFlag] remove captured
 
 tag @s remove flagGot
 tag @s remove ownFlag
+tag @s remove glowing
 #End function
 scoreboard players reset #main redFlagTimer

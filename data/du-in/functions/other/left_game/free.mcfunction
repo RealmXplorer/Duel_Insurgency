@@ -7,6 +7,7 @@ tag @a remove cqIngame
 tag @a remove song
 tag @a remove songEnd
 tag @a remove flagGot
+tag @a remove glowing
 tag @a remove team1
 tag @a remove team2
 tag @a remove void

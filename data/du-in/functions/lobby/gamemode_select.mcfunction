@@ -1,23 +1,18 @@
 ##MANY OF THESE NOW RUN IN THE SCHEDULED FUNCTION
 # Gamemode Select Inventory Items #
         #Team Item
-        #execute if entity @s[tag=partyLeader,nbt=!{Inventory:[{id:"minecraft:carrot_on_a_stick",Slot:2b}]}] run function du-in:lobby/item/team
         execute unless items entity @s[tag=partyLeader] hotbar.2 minecraft:carrot_on_a_stick run function du-in:lobby/item/team
 
     # Spam Mode Item # (FUNCTIONALITY RUNS THROUGH ITEM FUNCTION)
-        #execute if entity @s[tag=partyLeader,tag=!working,gamemode=!creative,tag=!subLobby,nbt=!{Inventory:[{id:"minecraft:cookie",Slot:24b}]}] run function du-in:lobby/item/spam
         execute unless items entity @s[tag=partyLeader,tag=!working,gamemode=!creative,tag=!subLobby] inventory.15 minecraft:cookie run function du-in:lobby/item/spam
 
     # Random Mode Item # (FUNCTIONALITY RUNS THROUGH ITEM FUNCTION)
-        #execute if entity @s[tag=partyLeader,tag=!working,gamemode=!creative,tag=!subLobby,nbt=!{Inventory:[{id:"minecraft:rabbit_foot",Slot:20b}]}] run function du-in:lobby/item/random_mode
         execute unless items entity @s[tag=partyLeader,tag=!working,gamemode=!creative,tag=!subLobby] inventory.11 minecraft:rabbit_foot run function du-in:lobby/item/random_mode
 
     # Timed Mode Item # (FUNCTIONALITY RUNS THROUGH ITEM FUNCTION)
-        #execute if entity @s[tag=partyLeader,tag=!working,gamemode=!creative,tag=!subLobby,nbt=!{Inventory:[{id:"minecraft:iron_ingot",Slot:22b}]}] run function du-in:lobby/item/timed_mode
         execute unless items entity @s[tag=partyLeader,tag=!working,gamemode=!creative,tag=!subLobby] inventory.13 minecraft:iron_ingot run function du-in:lobby/item/timed_mode
 
     # Credits Item # (FUNCTIONALITY THROUGH ITEM FUNCTION)
-        #execute if entity @s[tag=!parkour,tag=!credits,tag=!shop,gamemode=adventure,tag=!working,nbt=!{Inventory:[{id:"minecraft:carrot_on_a_stick",Slot:17b}]}] run function du-in:lobby/item/credits
         execute unless items entity @s[tag=partyLeader,tag=!working,gamemode=!creative,tag=!subLobby] inventory.8 minecraft:carrot_on_a_stick run function du-in:lobby/item/credits
 
 # Music #

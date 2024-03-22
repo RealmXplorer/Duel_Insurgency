@@ -1,5 +1,6 @@
 #Add inField to all in field
 tag @a[distance=..6,gamemode=!spectator,tag=!inField] add inField
+tag @a[tag=inField] add glowing
 
 #Remove inField from all outside of field
 execute as @a[distance=6..,gamemode=!spectator,tag=inField] run function du-in:kit/clairen/ability/remove_infield

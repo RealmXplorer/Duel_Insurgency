@@ -1,12 +1,9 @@
 #CONDITIONALLY RUNNING FUNCTIONS
-    #General functions run if one player fulfills criteria
-    #Player specific functions run AS all players fulfilling said criteria
 
     # Functions that run while in lobby #
         execute if entity @a[tag=lobby,tag=!playing] run function du-in:lobby/general
 
     # Functions that run while ingame #
-        #execute as @a[tag=playing,tag=!spectating] at @s run function du-in:ingame/player_specific
         execute if entity @a[tag=playing] run function du-in:ingame/general
 
     # Run when game ends #

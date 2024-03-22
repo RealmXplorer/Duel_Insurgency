@@ -1,11 +1,3 @@
-# Lobby Status Effects #
-    #effect give @s minecraft:instant_health 100 100 true
-    
-    #If a player is working, up their attack damage attribute
-    #execute if entity @s[tag=working] run attribute @s minecraft:generic.attack_damage base set 1
-
-
-
 # Lobby Sidebar #
     execute if entity @s[scores={lobby=1..}] unless entity @a[tag=partyLeader,tag=sidebarDisable] unless score #main pylonsDestroyed matches 3 unless entity @a[tag=playing] unless entity @a[tag=working] run function du-in:lobby/misc/sidebar
 
@@ -25,9 +17,6 @@
         execute if entity @s[tag=parkour] run function du-in:lobby/parkour
         
     # Map Select Functions #
-        #execute if entity @s[scores={lobby=3}] run function du-in:lobby/map_select
         execute if entity @s[scores={lobby=2}] run function du-in:lobby/map_select
 
         execute if entity @s[scores={kitUse=1..,lobby=1}] run function du-in:lobby/kit_use/gm
-
-        #execute if score #main pylonsDestroyed matches 3 run function du-in:lobby/void/wind

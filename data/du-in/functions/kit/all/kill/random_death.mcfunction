@@ -10,6 +10,7 @@ scoreboard players add #main matchDeaths 1
 execute if entity @s[tag=deathMark] run scoreboard players set #main markTimer 10
 tag @s remove deathMark
 tag @s remove pondered
+tag @s remove glowing
 execute unless score #main lobbyTheme matches 1.. run function du-in:ingame/killmsg/death/default
 execute if score #main lobbyTheme matches 1 run function du-in:ingame/killmsg/death/halloween
 execute if score #main lobbyTheme matches 2 run function du-in:ingame/killmsg/death/thanks

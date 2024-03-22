@@ -10,6 +10,7 @@ execute if entity @s[tag=flagGot] run scoreboard players set #main blueFlagTimer
 
 #Give player tag for getting flag
 tag @s[tag=!flagGot] add otherFlag
+tag @s[tag=!flagGot] add glowing
 tag @s[tag=!flagGot] add flagGot
 
 #Mark flag as captured

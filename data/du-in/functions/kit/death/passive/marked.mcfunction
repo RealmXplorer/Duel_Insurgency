@@ -2,6 +2,7 @@ execute if entity @s[tag=!deathMark] unless entity @s[scores={kit=28}] run tellr
 execute if entity @s[tag=!deathMark,scores={kit=28}] run tellraw @a [{"selector":"@s[tag=!deathMark]","bold":true},{"text":" has come for everyone!","bold":true,"color":"dark_red"}]
 execute at @s[tag=!deathMark] unless entity @s[scores={kit=28}] run playsound minecraft:death.whistle.mark master @s ~ ~ ~ 1 1
 execute at @s[tag=!deathMark,scores={kit=28}] run playsound minecraft:death.whistle.mark master @a ~ ~ ~ 1 1
+tag @s[tag=!deathMark] add glowing
 tag @s add deathMark
 
 effect give @s[tag=!deathAbility] glowing infinite 0 true

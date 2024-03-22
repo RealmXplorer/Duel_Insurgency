@@ -71,30 +71,20 @@ scoreboard players reset * kitUse
 scoreboard players reset * kitTimer
 scoreboard players reset #main redPoints
 scoreboard players reset #main bluePoints
-#tag @a remove blueFlag
-#tag @a remove redFlag
 
-#tag @e remove taken
+
+
 scoreboard players reset * team
 scoreboard players reset * deathTimer
 scoreboard players reset * teamDeaths
 tag @a remove teamDead
-#tag @a remove dmFinale
-#scoreboard players reset * flagGot
-#tag @a remove cdone
-#tag @a remove chalf
-# tag @a remove kothHalf
 
-#DELAY 3#
-#tag @a remove blue
-#tag @a remove red
-#tag @a remove live
-# scoreboard players reset * kothTimer
-#scoreboard players reset #main playerCount
+
+
 scoreboard players reset * killStreak
 scoreboard players reset * killStreakDeaths
 scoreboard players reset #main map
-# tag @a remove flagGot
+
 
 #DELAY 4#
 execute if entity @a[tag=partyLeader,tag=!timeFree] unless entity @a[tag=partyLeader,tag=sidebarDisable] run scoreboard objectives setdisplay sidebar Kills
@@ -103,10 +93,6 @@ scoreboard players reset @a[tag=!working] kit
 tag @a[tag=!working] remove playing
 
 
-# team join lobby @a
-# scoreboard players set #main lobby 1 
-# scoreboard players set @a lobby 1
-
 
 scoreboard objectives setdisplay below_name winStreak
 scoreboard players reset * hit
@@ -114,12 +100,10 @@ tag @a remove armor
 scoreboard objectives setdisplay list Diamonds
 tag @a remove stolen
 tag @a remove givenStolen
-#tag @a remove abilities
-#bossbar set bossbar:classic color white
+
 scoreboard players set @a wildeTimer 0
 
-# bossbar set minecraft:redkoth visible false
-# bossbar set minecraft:bluekoth visible false
+
 scoreboard players reset * saacMoneyChance
 scoreboard players set #main kitOnline 0
 
@@ -128,11 +112,7 @@ tag @a[tag=win,tag=!falseWin,tag=!voidLose,tag=!tie] add wonGame
 tag @a[tag=win,tag=!falseWin,tag=!voidLose,tag=tie] add tiedGame
 tag @a[tag=spectating] add wasSpect
 
-# tag @a remove dmIngame
-#tag @a remove cqIngame
-# tag @a remove kothIngame
-#tag @a remove cIngame
-#tag @a remove exIngame
+
 tag @a remove team1
 tag @a remove team2
 
@@ -315,6 +295,7 @@ scoreboard players reset #main matchDeaths
 scoreboard players set #main markTimer 0
 
 tag @a remove deathMark
+tag @a remove glowing
 tag @a remove deathDouble
 tag @a remove deathAbility
 scoreboard players reset @a deathSwapTimer

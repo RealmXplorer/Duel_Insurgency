@@ -1,6 +1,7 @@
 #Give player tag for getting flag
 tag @s add flagGot
 tag @s add otherFlag
+tag @s add glowing
 
 #Destroy flag
 execute at @e[type=marker,tag=blueFlag] run setblock ~ ~ ~ air destroy
