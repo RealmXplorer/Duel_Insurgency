@@ -12,7 +12,8 @@ clear @s carrot_on_a_stick
 
 #Set Slime's armor and weapon back to normal
 scoreboard players set @s weapCount 0
-tag @s add armor
+function du-in:kit/all/armor
+#tag @s add armor
 
 #End ability and start cooldown
 xp set @s[tag=!stolen] 360 levels

@@ -27,7 +27,8 @@ tag @s remove cooldown
 tag @s remove kitPicked
 
 
-tag @s[tag=!kitMenu,tag=!teamDead] add armor
+#tag @s[tag=!kitMenu,tag=!teamDead] add armor
+execute if entity @s[tag=!kitMenu,tag=!teamDead] run function du-in:kit/all/armor
 scoreboard players reset @s asrielHitTimer
 scoreboard players reset @s asrielTimer
 scoreboard players reset @s tridentTimer

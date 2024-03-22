@@ -1,0 +1,2 @@
+execute if entity @s[tag=!stolen,tag=undead] run scoreboard players add @s regenTimer 1
+execute if entity @s[scores={healthTimer=200..},tag=!undead] unless entity @s[scores={kit=19}] run scoreboard players add @s regenTimer 1

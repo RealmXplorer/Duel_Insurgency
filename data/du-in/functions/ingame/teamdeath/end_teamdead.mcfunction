@@ -11,7 +11,7 @@ attribute @s minecraft:generic.attack_damage modifier remove dd3713c4-bf98-4d8b-
 execute if entity @s[tag=!grave,tag=!hornerWeapon] unless entity @s[level=1..] run xp add @s 2 levels
 title @s actionbar {"text":""}
 item replace entity @s[scores={kit=7}] hotbar.2 with arrow 2
-tag @s add armor
+#tag @s add armor
 execute if entity @s[tag=grave] run function du-in:kit/zombie/ability/team_respawn
 scoreboard players reset @s deathTimer
 tag @s remove teamDead

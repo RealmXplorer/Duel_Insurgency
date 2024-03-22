@@ -10,7 +10,8 @@ clear @s #du-in:reset
 tag @s remove magma
 tag @s remove cooldown
 scoreboard players set @s weapCount 0
-tag @s add armor
+function du-in:kit/all/armor
+#tag @s add armor
 
 #End ability and start cooldown
 xp set @s[tag=!stolen] 320 levels

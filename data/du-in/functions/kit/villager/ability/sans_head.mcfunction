@@ -1,4 +1,3 @@
 scoreboard players remove @s vilSansHead 1
 
-tag @a[scores={vilSansHead=..0}] add armor
-scoreboard players reset @a[scores={vilSansHead=..0}] vilSansHead
+execute if entity @s[scores={vilSansHead=..0}] run function du-in:kit/villager/ability/revert_sans_head

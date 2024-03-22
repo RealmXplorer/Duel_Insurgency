@@ -20,7 +20,7 @@
 
 # General Functions #
     # Random death  Mode clear #
-        execute if entity @a[tag=ranMode] as @e[type=player,tag=deathTest,distance=0..] positioned 216 -100 40 run function du-in:ingame/random_death
+        #execute if entity @a[tag=ranMode] as @e[type=player,tag=deathTest,distance=0..] positioned 216 -100 40 run function du-in:ingame/random_death
     
     # Kill all In Ground items and mark projectiles#
         execute as @e[type=arrow] run function du-in:ingame/entities/projectiles

@@ -9,7 +9,8 @@ clear @s
 
 #Replace weapon and armor with magma variants
 scoreboard players set @s[tag=!sabotaged] weapCount 0
-tag @s[tag=!sabotaged] add armor
+execute if entity @s[tag=!sabotaged] run function du-in:kit/all/armor
+#tag @s[tag=!sabotaged] add armor
 
 #Start ability timer and give fire resist
 scoreboard players set @s[tag=!sabotaged] magmaTimer 60

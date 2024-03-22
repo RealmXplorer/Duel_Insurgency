@@ -77,7 +77,7 @@ scoreboard players set @a gameParries 0
 xp set @a[tag=playing] 100 levels
 
 #Give all players armor
-tag @a add armor
+#tag @a add armor
 
 #Remove tag voteRandom
 tag @a remove voteRandom

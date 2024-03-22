@@ -4,8 +4,8 @@ execute if entity @s[tag=!stolen,scores={jump=1..}] run function du-in:kit/jump
 tag @s remove gaster
 tag @s remove wilde
 
-#Villager Armor#
-execute if entity @s[tag=armor] run function du-in:kit/villager/armor
+#Villager Armor# - Moved to kit/all/armor
+#execute if entity @s[tag=armor] run function du-in:kit/villager/armor
 
 #Villager Weapon
 execute unless entity @s[scores={weapCount=1}] if entity @s[tag=!teamDead] run function du-in:kit/villager/weapon
@@ -18,10 +18,8 @@ execute if entity @s[level=1,tag=!stolen] run function du-in:kit/villager/abilit
 
 execute if entity @s[scores={villagerEmeralds=1..}] run function du-in:kit/villager/emeralds
 
-#scoreboard players remove @s[scores={vilSansHead=-1..}] vilSansHead 1
-#tag @a[scores={vilSansHead=..1}] add armor
-#scoreboard players reset @a[scores={vilSansHead=..0}] vilSansHead
 
+#Head revert
 execute if entity @s[tag=stolen,tag=givenStolen,tag=kitDone] run function du-in:kit/villager/ability/revert
 execute if entity @s[scores={vilSansHead=-1..}] run function du-in:kit/villager/ability/sans_head
 

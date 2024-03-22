@@ -9,7 +9,7 @@ execute if entity @s[tag=kitActions] run function du-in:kit/chara/ability/init
 execute unless entity @s[scores={weapCount=1}] if entity @s[tag=!stolen,tag=!teamDead] run function du-in:kit/chara/weapon
 
 #Armor#
-execute if entity @s[tag=armor,tag=!stolen] run function du-in:kit/chara/armor
+#execute if entity @s[tag=armor,tag=!stolen] run function du-in:kit/chara/armor
 
 #Ability item#
 execute if entity @s[level=1] run function du-in:kit/chara/ability/item

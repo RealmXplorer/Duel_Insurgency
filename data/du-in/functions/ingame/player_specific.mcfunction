@@ -1,10 +1,6 @@
-#Run Ability give and secondary gives
-    execute if entity @s[scores={kitUse=1..},tag=!startgame,tag=!win,tag=!lose,tag=!kitMenu] run function du-in:kit/all/ability/init
-    execute if entity @s[scores={secKitUse=1..},tag=!startgame,tag=!win,tag=!lose,tag=!kitMenu] run function du-in:kit/all/ability/activate_sec
-
-
-#Return ability
-#execute if entity @s[level=1..2,gamemode=!spectator,tag=!lobby,tag=!win,tag=!lose,tag=!kitMenu,tag=!cooldown] run function du-in:kit/all/ability/return
+#Run Ability and Secondaries
+    execute if entity @s[scores={kitUse=1..},tag=!win,tag=!lose,tag=!kitMenu,tag=!startgame] run function du-in:kit/all/ability/init
+    execute if entity @s[scores={secKitUse=1..},tag=!win,tag=!lose,tag=!kitMenu,tag=!startgame] run function du-in:kit/all/ability/activate_sec
 
 # Stating Game Functions #
     execute if entity @s[tag=startgame,tag=!working] run function du-in:ingame/start_seq
@@ -22,8 +18,7 @@
     scoreboard players reset @s[scores={parryHit=1..}] parryHit
 
 # REGEN TIMER (Except for Zombie) #
-    execute if entity @s[scores={healthTimer=200..}] unless entity @s[tag=undead] unless entity @s[scores={kit=19}] run scoreboard players add @s regenTimer 1
-    execute if entity @s[scores={healthTimer=140..},tag=!stolen,tag=undead] run scoreboard players add @s regenTimer 1
+    execute if entity @s[scores={healthTimer=140..}] run function du-in:ingame/regentimer/start_regen
     execute if entity @s[scores={regenTimer=100..}] run function du-in:ingame/regentimer/timer
 
     #Reset health timer if player is hit or deals damage
@@ -37,12 +32,10 @@ execute if entity @s[tag=killCombo] run function du-in:ingame/killstreaks/combo/
 
 #HIT COMBO#
     execute if entity @s[scores={comboBreak=1..}] run function du-in:ingame/killstreaks/combo/reset1
-    execute if entity @s[scores={comboHitTimer=20..,comboScore=1..}] run function du-in:ingame/killstreaks/combo/reset3
-    execute if entity @s[scores={comboHitTimer=10..,comboScore=9..}] run function du-in:ingame/killstreaks/combo/reset3
-
+    execute if entity @s[scores={comboHitTimer=10..},comboScore=1..] run function du-in:ingame/killstreaks/combo/expire
 
 #Give armor if player is missing any#
-execute if entity @s[predicate=!du-in:has_armor,gamemode=adventure,tag=!lobby,tag=!teamDead,tag=!working,tag=!kitMenu,tag=!noClothes] unless entity @s[scores={gasterTimer=-99..}] run function du-in:kit/all/armor
+execute if entity @s[predicate=!du-in:has_armor,tag=!gasterInvisible,tag=!teamDead,tag=!working,tag=!kitMenu,tag=!noClothes] run function du-in:kit/all/armor_reset
 
 # KIT FUNCTIONS #
     # General Set 1 int functions #
@@ -59,7 +52,7 @@ execute if entity @s[predicate=!du-in:has_armor,gamemode=adventure,tag=!lobby,ta
         execute if entity @s[scores={kit=25..999},tag=!kitMenu] run function du-in:kit/all/set4
 
     # General UNLOCK int functions #
-        execute if entity @s[scores={kit=1000..}] run function du-in:kit/all/setleg
+        execute if entity @s[scores={kit=1000..},tag=!kitMenu] run function du-in:kit/all/setleg
 
 #STEP STOP#
     execute if entity @s[scores={simStep=..0}] run function du-in:ingame/steptrack/step_stop
@@ -118,11 +111,5 @@ execute if entity @s[scores={sansHitTimer=0..}] unless entity @s[scores={gasterT
 execute if entity @s[tag=inField] run function du-in:kit/clairen/ability/field_effects
 execute if entity @s[tag=sabotagedField] run function du-in:kit/clairen/ability/sabotaged_field
 
-    # SPAM CLICK MODE #
-        execute if entity @a[tag=partyLeader,tag=spamClick] run attribute @s minecraft:generic.attack_speed base set 100
-
-#attribute @s[tag=skrunkMode] minecraft:generic.scale base set 0.2
-#attribute @s[tag=skrunkMode] minecraft:player.block_interaction_range base set 4
-
-#attribute @s[tag=skrunkMode] minecraft:generic.scale base set 5
-#attribute @s[tag=skrunkMode] minecraft:player.block_interaction_range base set 10
+# SPAM CLICK MODE #
+    execute if entity @a[tag=partyLeader,tag=spamClick] run attribute @s minecraft:generic.attack_speed base set 100

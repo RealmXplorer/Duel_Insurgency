@@ -6,7 +6,7 @@ execute if entity @s[tag=!stolen,scores={jump=1..},tag=!gasterInvisible] unless 
 execute unless entity @s[scores={weapCount=1}] if entity @s[tag=!teamDead,tag=!stolen,tag=!gasterInvisible,tag=!pussFear] run function du-in:kit/gaster/weapon
 
 # GASTER #
-execute if entity @s[tag=armor,tag=!stolen,tag=!gasterInvisible] run function du-in:kit/gaster/armor
+#execute if entity @s[tag=armor,tag=!stolen,tag=!gasterInvisible] run function du-in:kit/gaster/armor
 
 execute if entity @s[level=1,tag=!gasterInvisible] run function du-in:kit/gaster/ability/item
 

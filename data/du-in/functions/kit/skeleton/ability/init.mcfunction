@@ -14,7 +14,8 @@ clear @s #du-in:weapon
 clear @s carrot_on_a_stick
 
 #Change armor
-tag @s add armor
+#tag @s add armor
+function du-in:kit/all/armor
 
 #Play particles and sounds
 particle minecraft:flame ~ ~ ~ 0.5 1 0.5 0 50 force
