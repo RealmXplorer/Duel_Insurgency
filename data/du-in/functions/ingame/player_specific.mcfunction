@@ -32,7 +32,7 @@ execute if entity @s[tag=killCombo] run function du-in:ingame/killstreaks/combo/
 
 #HIT COMBO#
     execute if entity @s[scores={comboBreak=1..}] run function du-in:ingame/killstreaks/combo/reset1
-    execute if entity @s[scores={comboHitTimer=10..},comboScore=1..] run function du-in:ingame/killstreaks/combo/expire
+    execute if entity @s[scores={comboHitTimer=10..,comboScore=1..}] run function du-in:ingame/killstreaks/combo/expire
 
 #Give armor if player is missing any#
 execute if entity @s[predicate=!du-in:has_armor,tag=!gasterInvisible,tag=!teamDead,tag=!working,tag=!kitMenu,tag=!noClothes] run function du-in:kit/all/armor_reset
