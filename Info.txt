@@ -6,6 +6,7 @@ A lot runs through "du-in/functions/main".
 
 Functions labelled as "player_specific" are run by an "as" statement, and therefore are run by every player applicable by the call statement.
 Functions labelled as "general" are run as the world, and therefore are not tied to a player.
+	Some of these functions are kept as "scheduled" so as to alleviate the server a little bit.
 
 There are hidden "du-in/functions/spookmode" and "du-in/functions/festive" functions that will switch the theme over to Halloween and Christmas respectively, while setting all online player's skins to the theme.
 	These do not trigger in-game, and must be triggered with "/function"
