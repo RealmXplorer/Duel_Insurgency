@@ -1,3 +1,3 @@
 ##GO BACK NOW IN SCHEDULED FUNCTION
 
-function du-in:ingame/void/free/credits
+function du-in:void/free/credits

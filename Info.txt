@@ -68,3 +68,6 @@ Maps are voted on in map select. This happens in "du-in/functions/maps/start/ini
 	This is only important if adding a new classic map, as you will need to uncomment maps 16-20. 
 
 "du-in/functions/maps/start/classic/arena" is a good base, as Arena contains all normal map information.
+
+VOID -------------------------------------------------------------------------------------------------------------------------------------------------
+All information relating to the hidden Pylon gamemode is stored under "du-in:ingame/void".

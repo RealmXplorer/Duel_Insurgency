@@ -16,6 +16,6 @@
       ]
   ],
   "rewards": {
-    "function": "du-in:ingame/void/interact/interact"
+    "function": "du-in:void/interact/interact"
   }
 }

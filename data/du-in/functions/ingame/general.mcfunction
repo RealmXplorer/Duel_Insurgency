@@ -16,7 +16,7 @@
         execute if entity @a[tag=cqIngame,tag=!win,tag=!lose] run function du-in:ingame/conquest/conquest
 
     # HELP ME #
-        execute if entity @a[tag=void] run function du-in:ingame/void/void
+        execute if entity @a[tag=void] run function du-in:void/void
 
 # General Functions #
     # Random death  Mode clear #

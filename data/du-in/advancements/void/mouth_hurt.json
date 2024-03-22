@@ -31,7 +31,7 @@
 
   "rewards": {
 
-      "function": "du-in:ingame/void/goner/mouth_hurt"
+      "function": "du-in:void/goner/mouth_hurt"
 
   }
 

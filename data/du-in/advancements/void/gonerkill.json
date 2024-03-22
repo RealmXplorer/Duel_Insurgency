@@ -31,7 +31,7 @@
 
   "rewards": {
 
-      "function": "du-in:ingame/void/goner/kill_goner"
+      "function": "du-in:void/goner/kill_goner"
 
   }
 

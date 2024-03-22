@@ -1,1 +1,1 @@
-function du-in:ingame/void/free/return
+function du-in:void/free/return

@@ -1,4 +1,4 @@
-#function du-in:ingame/void/end/win
+#function du-in:void/end/win
 tag @a remove playing
 tag @a remove cIngame
 tag @a remove kothIngame
@@ -14,7 +14,7 @@ tag @a remove void
 tag @a remove voidOut
 tag @a remove lobby
 tag @a remove kothMap
-function du-in:ingame/void/free/start
+function du-in:void/free/start
 team leave @a
 tag @a remove win
 tag @a remove tie

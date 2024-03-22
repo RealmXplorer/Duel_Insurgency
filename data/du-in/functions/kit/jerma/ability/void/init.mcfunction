@@ -5,7 +5,7 @@ execute as @e[type=skeleton,tag=peepedHorror] run function du-in:kit/jerma/abili
 scoreboard players remove @a[scores={gonersKilled=1..}] gonersKilled 1
 
 #execute as @a at @s run function du-in:kit/jerma/particle
-function du-in:ingame/void/goner/kill_goner
+function du-in:void/goner/kill_goner
 
 playsound minecraft:ambient.cave master @a ~ ~ ~ 100 1 1
 playsound minecraft:jerma.peep master @a ~ ~ ~ 100 1 1

@@ -1,0 +1,8 @@
+summon marker 10062 42 10037 {Tags:["flamePillarX","flameMarker","mapSpecific"]}
+summon marker 10062 42 10023 {Tags:["flamePillarX","flameMarker","mapSpecific"]}
+summon marker 10069 42 10030 {Tags:["flamePillarZ","flameMarker","mapSpecific"]}
+summon marker 10055 42 10030 {Tags:["flamePillarZ","flameMarker","mapSpecific"]}
+
+execute at @e[type=marker,tag=flameMarker,limit=1] run playsound minecraft:block.beacon.activate master @a ~ ~ ~ 100 .75
+
+schedule function du-in:void/hazard/fire/summon_fire 3s
