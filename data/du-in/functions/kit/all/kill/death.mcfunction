@@ -24,14 +24,14 @@ execute if entity @s[tag=fortniteCard] run function du-in:kit/paz/card/lose_card
 #execute if entity @s[scores={kit=3},tag=!stolen] run function du-in:kit/slime/death/init
 
 #Death messages (depending on holiday theme)
-execute unless score #main lobbyTheme matches 1.. run function du-in:ingame/killmsg/death/default
-execute if score #main lobbyTheme matches 1 run function du-in:ingame/killmsg/death/halloween
-execute if score #main lobbyTheme matches 2 run function du-in:ingame/killmsg/death/thanks
-execute if score #main lobbyTheme matches 3 run function du-in:ingame/killmsg/death/christmas
-execute if score #main lobbyTheme matches 4 run function du-in:ingame/killmsg/death/easter
+execute unless score #main lobbyTheme matches 1.. run function du-in:kit/all/kill/kill_msg/death/default
+execute if score #main lobbyTheme matches 1 run function du-in:kit/all/kill/kill_msg/death/halloween
+execute if score #main lobbyTheme matches 2 run function du-in:kit/all/kill/kill_msg/death/thanks
+execute if score #main lobbyTheme matches 3 run function du-in:kit/all/kill/kill_msg/death/christmas
+execute if score #main lobbyTheme matches 4 run function du-in:kit/all/kill/kill_msg/death/easter
 
 #Start death timer for team modes
-execute if entity @s[tag=!teamDead,tag=!cIngame,tag=!dmIngame,tag=!kothIngame,tag=teamMode] run function du-in:ingame/teamdeath/death_go
+execute if entity @s[tag=!teamDead,tag=!cIngame,tag=!dmIngame,tag=!kothIngame,tag=teamMode] run function du-in:ingame/team_death/death_go
 
 #Play deathsounds
 execute unless entity @a[tag=partyLeader,tag=aprilFools] run playsound minecraft:block.glass.break master @s[tag=!startgame,tag=!lose,tag=!win] ~ ~ ~ 1 2
@@ -39,7 +39,7 @@ execute unless entity @a[tag=partyLeader,tag=aprilFools] run playsound minecraft
 
 execute if entity @a[tag=partyLeader,tag=aprilFools] run playsound minecraft:soundeffect.table master @s[tag=!startgame,tag=!lose,tag=!win] ~ ~ ~ 1 1
 
-execute unless entity @s[tag=stolen] run function du-in:kit/all/deathsound
+execute unless entity @s[tag=stolen] run function du-in:kit/all/death_sound
 execute if entity @s[tag=stolen] run function du-in:kit/villager/death
 
 #Stop some abiliies upon death

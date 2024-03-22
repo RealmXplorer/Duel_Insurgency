@@ -6,7 +6,7 @@
     execute if entity @s[tag=startgame,tag=!working] run function du-in:ingame/start_seq
 
 # If a player is dead in team mode #
-    execute if entity @s[tag=teamDead,tag=!void,scores={deathTimer=0..}] run function du-in:ingame/teamdeath/dead_effects
+    execute if entity @s[tag=teamDead,tag=!void,scores={deathTimer=0..}] run function du-in:ingame/team_death/dead_effects
 
 #Give glow if sneaking, remove glow if not
     execute if entity @s[predicate=du-in:is_sneaking] run function du-in:ingame/is_sneaking
@@ -52,7 +52,7 @@ execute if entity @s[predicate=!du-in:has_armor,tag=!gasterInvisible,tag=!teamDe
         execute if entity @s[scores={kit=25..999},tag=!kitMenu] run function du-in:kit/all/set4
 
     # General UNLOCK int functions #
-        execute if entity @s[scores={kit=1000..},tag=!kitMenu] run function du-in:kit/all/setleg
+        execute if entity @s[scores={kit=1000..},tag=!kitMenu] run function du-in:kit/all/set_legend
 
 #STEP STOP#
     execute if entity @s[scores={simStep=..0}] run function du-in:ingame/steptrack/step_stop

@@ -11,11 +11,11 @@ execute if entity @s[scores={quickKill=1..}] run function du-in:ingame/killstrea
 #Detect Killstreak
 execute if entity @s[scores={killStreak=3..}] run function du-in:ingame/killstreak
 
-execute unless score #main lobbyTheme matches 1.. unless entity @s[scores={justdied=1..}] run function du-in:ingame/killmsg/default
-execute if score #main lobbyTheme matches 1 unless entity @s[scores={justdied=1..}] run function du-in:ingame/killmsg/halloween
-execute if score #main lobbyTheme matches 2 unless entity @s[scores={justdied=1..}] run function du-in:ingame/killmsg/thanks
-execute if score #main lobbyTheme matches 3 unless entity @s[scores={justdied=1..}] run function du-in:ingame/killmsg/christmas
-execute if score #main lobbyTheme matches 4 unless entity @s[scores={justdied=1..}] run function du-in:ingame/killmsg/easter
+execute unless score #main lobbyTheme matches 1.. unless entity @s[scores={justdied=1..}] run function du-in:kit/all/kill/kill_msg/default
+execute if score #main lobbyTheme matches 1 unless entity @s[scores={justdied=1..}] run function du-in:kit/all/kill/kill_msg/halloween
+execute if score #main lobbyTheme matches 2 unless entity @s[scores={justdied=1..}] run function du-in:kit/all/kill/kill_msg/thanks
+execute if score #main lobbyTheme matches 3 unless entity @s[scores={justdied=1..}] run function du-in:kit/all/kill/kill_msg/christmas
+execute if score #main lobbyTheme matches 4 unless entity @s[scores={justdied=1..}] run function du-in:kit/all/kill/kill_msg/easter
 
 execute if entity @a[scores={justdied=1,killStreak=3..4}] run tellraw @a {"selector":"@s","color":"gold","bold":false,"extra":[{"text":" has ended ","color":"gray","bold":false},{"selector":"@a[scores={justdied=1,killStreak=3..4}]","color":"dark_red","bold":false},{"text":"'s 3 player killstreak!","bold":true,"color":"gray"}]}
 execute if entity @a[scores={justdied=1,killStreak=5..}] run tellraw @a {"selector":"@s","color":"gold","bold":false,"extra":[{"text":" has ended ","color":"gray","bold":false},{"selector":"@a[scores={justdied=1,killStreak=5..}]","color":"dark_red","bold":false},{"text":"'s 5 player killstreak!","bold":true,"color":"gray"}]}

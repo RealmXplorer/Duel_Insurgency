@@ -1,2 +1,0 @@
-#execute unless entity @s[scores={kit=8},tag=stolen] unless entity @s[scores={kit=1..4,kit=6..16}] run tag @s add kitParticles
-execute if entity @s[predicate=!du-in:second_held] run tag @s add kitActions
