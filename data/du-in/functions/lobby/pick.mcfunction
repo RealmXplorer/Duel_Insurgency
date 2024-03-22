@@ -49,11 +49,7 @@ scoreboard players set @a lobby 2
 tag @a[tag=cl] add cmap
 tag @a[tag=dml] add cmap
 
-#Stop all music
-#execute as @a run function du-in:music/lobby/stop/parkour
-#execute as @a run function du-in:music/lobby/stop/shop
-#execute as @a run function du-in:music/lobby/stop/lobby
-
+#Stop Music
 stopsound @a record
 schedule clear du-in:music/free/free
 
@@ -64,11 +60,12 @@ execute store result score #main setGamemode run scoreboard players get #gamemod
 execute as @a run function du-in:lobby/item_reset
 
 #Teleport players to map select
-#execute as @a run function du-in:lobby/mapselect/tomap
 kill @e[tag=displayItem]
 function du-in:lobby/mapselect/switch
 
-effect clear @s invisibility
+#Clear Effects
+effect clear @s
+function du-in:lobby/shop/drinks/reset
 
 #Start music
 scoreboard players set @a music 0
