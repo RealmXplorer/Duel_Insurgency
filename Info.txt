@@ -1,6 +1,19 @@
+OVERVIEW -------------------------------------------------------------------------------------------------------------------------------------------------
 Objectives and tags (usually) follow camelCase.
 functions and folders usually follow snake_case.
 
+A lot runs through "du-in/functions/main".
+
+Functions labelled as "player_specific" are run by an "as" statement, and therefore are run by every player applicable by the call statement.
+Functions labelled as "general" are run as the world, and therefore are not tied to a player.
+
+There are hidden "du-in/functions/spookmode" and "du-in/functions/festive" functions that will switch the theme over to Halloween and Christmas respectively, while setting all online player's skins to the theme.
+	These do not trigger in-game, and must be triggered with "/function"
+
+There is a hidden "du-in/functions/reset_skins" function that resets all skin scores and removes all skin ownership. It does not refund.
+	This can also only be triggered by "/function"
+
+KITS -------------------------------------------------------------------------------------------------------------------------------------------------
 Template for characters are found in "du-in/functions/kit/template"
 
 Legendary characters are sometimes referred to as "unlocked", and always have a "kit" value of 1000 or higher.
@@ -20,11 +33,7 @@ Some outside functions are needed for certain aspects to characters
 		"du-in/functions/lobby/kitmenu/select/" contains all the functions for selecting a character from the kit menu.
 		"du-in/functions/lobby/kitmenu/menu/" contains all the functions for displaying a character in the kit menu.
 
-There are hidden "du-in/functions/spookmode" and "du-in/functions/festive" functions that will switch the theme over to Halloween and Christmas respectively, while setting all online player's skins to the theme.
-	These do not trigger in-game, and must be triggered with "/function"
-
-There is a hidden "du-in/functions/reset_skins" function that resets all skin scores and removes all skin ownership. It does not refund.
-	This can also only be triggered by "/function"
+Kits' sizes are determined by one of 6 functions called in "du-in/functions/kit/all/size/".
 
 Tag "kitActions" runs when a player with tag "playing" right clicks a carrot on a stick.
 	This activates the character's main ability.
@@ -33,13 +42,14 @@ Tag "kitActions" runs when a player with tag "playing" right clicks a carrot on 
 Tag "armor" runs when a "playing" player is not wearing armor (with a few exceptions).
 	This gives the player the armor for their selected kit.
 		-As of Datapack 5.0, this still works, but most default characters will now use "kit/all/armor"
-		
+
 Tag "secKitActions" run when a player with tag "playing" right clicks a warped fungus on a stick.
 	This activates the character's secondary ability.
 
 There is an item tag called "weapons" at "du-in/tags/items/weapon.json". This tracks all main weapons to keep them in players inventories.
 	-If an item that currently isn't being used as a weapon in the game is added, it will need to be added to this file.
 
+MAPS -------------------------------------------------------------------------------------------------------------------------------------------------
 Maps, similar to characters, have their own value of "map".
 
 The map selected to be played on is determined by two factors:
