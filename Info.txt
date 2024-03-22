@@ -8,21 +8,32 @@ Legendary characters are sometimes referred to as "unlocked", and always have a 
 Some functions for the character are kept in the "du-in/functions/kit/all/" folder.
 	Setting a normal "kit" score to a character is kept in "du-in/functions/kit/all/set(1,2,3,4)"
 		Legendary characters are kept in "du-in/functions/kit/all/set_legend"
-	Deathsounds are kept in "du-in/functions/kit/all/deathsound"
+	Deathsounds are kept in "du-in/functions/kit/all/death_sound"
 	Win voicelines are kept in "du-in/functions/kit/all/winline"
 	Inflicting damage kept in "du-in/functions/kit/all/hit"
+	Inflicting damage on a player is kept in "du-in/functions/kit/all/hit_player"
 	Necessary functions for resetting character data on death happens in "du-in/functions/kit/all/kill/death"
 
 Some outside functions are needed for certain aspects to characters
-	"du-in/functions/main/player_specific" contains "random" value, which limits random character selection pool. (if a character is added, it will need to be increased from 26)
+	"du-in/functions/main/player_specific" contains "random" value, which limits random character selection pool. (if a character is added, it will need to be increased from 30)
 	"du-in/functions/lobby/kitmenu/" contains two folders that set up the character selection page.
+		"du-in/functions/lobby/kitmenu/select/" contains all the functions for selecting a character from the kit menu.
+		"du-in/functions/lobby/kitmenu/menu/" contains all the functions for displaying a character in the kit menu.
 
 There are hidden "du-in/functions/spookmode" and "du-in/functions/festive" functions that will switch the theme over to Halloween and Christmas respectively, while setting all online player's skins to the theme.
 	These do not trigger in-game, and must be triggered with "/function"
 
+There is a hidden "du-in/functions/reset_skins" function that resets all skin scores and removes all skin ownership. It does not refund.
+	This can also only be triggered by "/function"
+
 Tag "kitActions" runs when a player with tag "playing" right clicks a carrot on a stick.
 	This activates the character's main ability.
+		-As of Datapack 5.0, this still works, but most default characters will now use "kit/all/ability/activate"
 
+Tag "armor" runs when a "playing" player is not wearing armor (with a few exceptions).
+	This gives the player the armor for their selected kit.
+		-As of Datapack 5.0, this still works, but most default characters will now use "kit/all/armor"
+		
 Tag "secKitActions" run when a player with tag "playing" right clicks a warped fungus on a stick.
 	This activates the character's secondary ability.
 
