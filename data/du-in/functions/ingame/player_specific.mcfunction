@@ -1,5 +1,5 @@
 #Run Ability and Secondaries
-    execute unless items entity @s[scores={kitUse=1..},tag=!win,tag=!lose,tag=!kitMenu,tag=!startgame] weapon.mainhand #du-in:secondary run function du-in:kit/all/ability/init
+    execute if entity @s[scores={kitUse=1..},tag=!win,tag=!lose,tag=!kitMenu,tag=!startgame] run function du-in:kit/all/ability/init
     execute if entity @s[scores={secKitUse=1..},tag=!win,tag=!lose,tag=!kitMenu,tag=!startgame] run function du-in:kit/all/ability/activate_sec
 
 # Stating Game Functions #
