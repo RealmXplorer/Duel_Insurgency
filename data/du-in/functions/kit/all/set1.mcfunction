@@ -17,7 +17,7 @@ execute if entity @s[scores={kit=5}] run function du-in:kit/springtrap/constant
 execute if entity @s[scores={kit=6}] run function du-in:kit/golem/constant
 
 # Player #
-execute if entity @s[scores={kit=7}] run function du-in:kit/player/constant
+execute if entity @s[scores={kit=7}] run function du-in:kit/player/init
 
 # Villager #
 execute if entity @s[scores={kit=8}] run function du-in:kit/villager/constant

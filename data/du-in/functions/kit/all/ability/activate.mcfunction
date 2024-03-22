@@ -1,5 +1,12 @@
 #Gives tag "kitActions" when carrot on a stick is rightclicked
-#execute if entity @s[predicate=!du-in:second_held] run tag @s add kitActions
-execute unless items entity @s weapon.mainhand #du-in:secondary run tag @s add kitActions
+tag @s add kitActions
+
+execute if entity @s[scores={kit=3}] run function du-in:kit/slime/ability/init
+
+execute if entity @s[scores={kit=7}] run function du-in:kit/player/ability/init
+execute if entity @s[scores={kit=8}] run function du-in:kit/villager/ability/init
+
+execute if entity @s[scores={kit=9}] run function du-in:kit/chara/ability/init
+execute if entity @s[scores={kit=10}] run function du-in:kit/gaster/ability/init
 
 scoreboard players reset @s kitUse

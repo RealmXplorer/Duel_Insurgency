@@ -1,7 +1,6 @@
 execute if entity @s[scores={hit=5..}] run function du-in:kit/villager/sounds/hit
-execute if entity @s[tag=!stolen,scores={jump=1..}] run function du-in:kit/jump
+execute if entity @s[scores={jump=1..}] run function du-in:kit/jump
 
-tag @s remove gaster
 tag @s remove wilde
 
 #Villager Armor# - Moved to kit/all/armor
@@ -10,7 +9,8 @@ tag @s remove wilde
 #Villager Weapon
 execute unless entity @s[scores={weapCount=1}] if entity @s[tag=!teamDead] run function du-in:kit/villager/weapon
 
-execute if entity @s[tag=kitActions,tag=!stolen] run function du-in:kit/villager/ability/init
+#Activate Ability - Now in kit/all/ability/activate
+#execute if entity @s[tag=kitActions,tag=!stolen] run function du-in:kit/villager/ability/init
 
 #Villager Ability Item
 execute if entity @s[level=1,tag=!stolen] run function du-in:kit/villager/ability/item

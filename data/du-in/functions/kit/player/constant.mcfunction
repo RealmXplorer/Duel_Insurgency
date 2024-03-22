@@ -1,29 +1,23 @@
-execute if entity @s[tag=!stolen,scores={hit=5..}] run function du-in:kit/player/sounds/hit
-execute if entity @s[tag=!stolen,scores={jump=1..}] run function du-in:kit/jump
-
+#SOUNDS#
+execute if entity @s[scores={hit=5..}] run function du-in:kit/player/sounds/hit
+execute if entity @s[scores={jump=1..}] run function du-in:kit/jump
 
 #CONSTANTS#
 execute if score #main titleTimer2 matches 21 run item replace entity @s hotbar.8 with minecraft:arrow 2
 
-# Armor #
+# Armor # - Moved to kit/all/armor
 #execute if entity @s[tag=armor,tag=!stolen] run function du-in:kit/player/armor
 
-#Ability#
-execute if entity @s[level=1] run function du-in:kit/player/ability/item
-
-
+#WEAPONS#
 execute unless entity @s[scores={weapCount=1}] if entity @s[tag=!teamDead,tag=!stolen] run function du-in:kit/player/weapon
 execute unless entity @s[scores={secCount=1}] if entity @s[tag=!teamDead,tag=!stolen] run function du-in:kit/player/bow
 
-#execute store result score @s[tag=!stolen] weapCount run clear @s[tag=!kitMenu] wooden_sword 0
-execute store result score @s[tag=!stolen] secCount run clear @s[tag=!kitMenu] bow 0
+#TEST BOW COUNT#
+execute store result score @s secCount run clear @s[tag=!kitMenu] bow 0
 
-execute if entity @s[tag=kitActions] run function du-in:kit/player/ability/init
-
-#ATT#
-attribute @s[tag=!stolen] minecraft:generic.movement_speed base set 0.135
-#.1075
-attribute @s[tag=!stolen] generic.knockback_resistance base set 0.04
+#ATTRIBUTES#
+attribute @s minecraft:generic.movement_speed base set 0.135
+attribute @s generic.knockback_resistance base set 0.04
 
 #SO THIS POWER...
 #OF DETERMINATION

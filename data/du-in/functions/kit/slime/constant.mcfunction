@@ -4,15 +4,12 @@ execute if entity @s[scores={sprint=150..}] run function du-in:kit/slime/sounds/
 execute if entity @s[scores={jump=1..}] run function du-in:kit/slime/sounds/jump
 
 # SLIME #
-#execute if entity @s[tag=armor] run function du-in:kit/slime/armor
+#execute if entity @s[tag=armor,tag=!stolen] run function du-in:kit/slime/armor
 
 #Weapon
 execute unless entity @s[scores={weapCount=1}] if entity @s[tag=!teamDead,tag=!pussFear] run function du-in:kit/slime/weapon
 
-#Magma timer
-execute if entity @s[scores={magmaTimer=-99..}] run function du-in:kit/slime/ability/timer
-
-#ATT#
+#ATTRIBUTES#
 attribute @s minecraft:generic.jump_strength base set 0.51
 attribute @s generic.knockback_resistance base set 0.015
 

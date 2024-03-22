@@ -1,9 +1,9 @@
 #UNDERTALE CONSTANTS#
 # Chara #
-execute if entity @s[scores={kit=9}] run function du-in:kit/chara/constant
+execute if entity @s[scores={kit=9}] run function du-in:kit/chara/init
 
 # Gaster #
-execute if entity @s[scores={kit=10}] run function du-in:kit/gaster/constant
+execute if entity @s[scores={kit=10}] run function du-in:kit/gaster/init
 
 # Asriel#
 execute if entity @s[scores={kit=11}] run function du-in:kit/asriel/constant

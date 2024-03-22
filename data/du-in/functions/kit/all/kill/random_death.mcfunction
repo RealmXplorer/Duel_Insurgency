@@ -47,7 +47,6 @@ scoreboard players set @s magmaTimer 1
 scoreboard players reset @s bugHit
 scoreboard players set @s[tag=grave,tag=!teamDead] zombieTimer 5
 clear @s minecraft:wither_rose
-#tag @s[tag=springLock] add kitActions
 
 #CLEAR TAGS#
 tag @s remove kyloHit
