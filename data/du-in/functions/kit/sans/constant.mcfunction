@@ -5,7 +5,6 @@ execute if entity @s[tag=!stolen,scores={jump=1..}] run function du-in:kit/sans/
 
 #EFFECTS#
 execute if entity @s[tag=!stolen] run attribute @s minecraft:generic.max_health base set 10
-#effect give @s[tag=!stolen] minecraft:speed 1 1 true
 
 #CONSTANTS#
 execute if entity @s[tag=!void,tag=kitActions] run function du-in:kit/sans/ability/init
