@@ -2,7 +2,7 @@
 execute if entity @s[scores={kit=1}] run function du-in:kit/spider/constant
 
 # Zombie #
-execute if entity @s[scores={kit=2}] run function du-in:kit/zombie/constant
+execute if entity @s[scores={kit=2}] run function du-in:kit/zombie/init
 
 # Slime #
 execute if entity @s[scores={kit=3}] run function du-in:kit/slime/init

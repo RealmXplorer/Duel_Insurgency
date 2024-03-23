@@ -3,7 +3,7 @@ tag @s add armor
 
 #Set 1
 execute if entity @s[scores={kit=1},tag=!stolen] run function du-in:kit/spider/armor
-
+execute if entity @s[scores={kit=2},tag=!stolen] run function du-in:kit/zombie/armor
 execute if entity @s[scores={kit=3},tag=!stolen] run function du-in:kit/slime/armor
 
 execute if entity @s[scores={kit=7},tag=!stolen] run function du-in:kit/player/armor
