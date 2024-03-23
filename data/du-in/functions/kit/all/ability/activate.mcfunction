@@ -41,6 +41,16 @@ execute if entity @s[scores={kit=28}] run function du-in:kit/death/ability/init
 
 execute if entity @s[scores={kit=29}] run function du-in:kit/yoda/ability/init
 
+#Legendary
+execute if entity @s[scores={kit=1000}] run function du-in:kit/saac/ability/init
+execute if entity @s[scores={kit=1001}] run function du-in:kit/paz/ability/init
+execute if entity @s[scores={kit=1002}] run function du-in:kit/jerma/ability/init
+execute if entity @s[scores={kit=1003}] run function du-in:kit/impostor/ability/init
+execute if entity @s[scores={kit=1004}] run function du-in:kit/runza/ability/init
+
+execute if entity @s[scores={kit=2015}] run function du-in:kit/saul/ability/init
+execute if entity @s[scores={kit=42069}] run function du-in:kit/chungus/ability/init
+
 #Villager
 execute if entity @s[scores={kit=8}] run function du-in:kit/villager/ability/init
 

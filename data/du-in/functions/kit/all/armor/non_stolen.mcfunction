@@ -41,3 +41,13 @@ execute if entity @s[scores={kit=27}] run function du-in:kit/puss/armor
 execute if entity @s[scores={kit=28}] run function du-in:kit/death/armor
 
 execute if entity @s[scores={kit=29}] run function du-in:kit/yoda/armor
+
+#Legendary
+execute if entity @s[scores={kit=1000}] run function du-in:kit/saac/armor
+execute if entity @s[scores={kit=1001}] run function du-in:kit/paz/armor
+execute if entity @s[scores={kit=1002}] run function du-in:kit/jerma/armor
+execute if entity @s[scores={kit=1003}] run function du-in:kit/impostor/armor
+execute if entity @s[scores={kit=1004}] run function du-in:kit/runza/armor
+
+execute if entity @s[scores={kit=2015}] run function du-in:kit/saul/armor
+execute if entity @s[scores={kit=42069}] run function du-in:kit/chungus/armor
