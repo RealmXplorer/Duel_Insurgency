@@ -4,11 +4,11 @@
 
 
 # Lobby Specific Functions #
-    # Credits Functions #
-        execute if entity @s[tag=credits] run function du-in:lobby/credits
-
     # Gamemode Select Functions #
         execute if entity @s[scores={lobby=1},tag=!shop,tag=!credits,tag=!parkour] run function du-in:lobby/gamemode_select
+        
+    # Credits Functions #
+        execute if entity @s[tag=credits] run function du-in:lobby/credits
 
     # Shop Functions #
         execute if entity @s[tag=shop] run function du-in:lobby/shop
@@ -19,4 +19,4 @@
     # Map Select Functions #
         execute if entity @s[scores={lobby=2}] run function du-in:lobby/map_select
 
-        execute if entity @s[scores={kitUse=1..,lobby=1}] run function du-in:lobby/kit_use/gm
+        #execute if entity @s[scores={kitUse=1..,lobby=1}] run function du-in:lobby/kit_use/gm

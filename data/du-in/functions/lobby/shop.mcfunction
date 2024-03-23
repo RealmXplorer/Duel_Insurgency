@@ -10,3 +10,6 @@ execute if entity @s[scores={drinkCount=1..}] run function du-in:lobby/shop/drin
 execute store result score @s drinkCount run clear @s potion 0
 
 execute if entity @s[scores={drinkMilk=1..}] run function du-in:lobby/shop/drinks/drink_milk
+
+# Shop Actions #
+    execute if entity @s[scores={kitUse=1..}] run function du-in:lobby/kit_use/shop

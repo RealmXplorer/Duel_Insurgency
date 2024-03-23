@@ -10,5 +10,8 @@ execute if entity @s[scores={kit=8}] run function du-in:kit/villager/ability/ini
 
 execute if entity @s[scores={kit=9}] run function du-in:kit/chara/ability/init
 execute if entity @s[scores={kit=10}] run function du-in:kit/gaster/ability/init
+execute if entity @s[scores={kit=11}] run function du-in:kit/asriel/ability/init
+
+execute if entity @s[scores={kit=14}] run function du-in:kit/asgore/ability/init
 
 scoreboard players reset @s kitUse

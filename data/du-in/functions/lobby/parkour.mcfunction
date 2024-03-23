@@ -9,6 +9,9 @@ execute as @a[gamemode=!spectator,tag=parkour] at @s if entity @s[x=680,y=-29,z=
 #Music
 execute unless entity @s[tag=musicOff] unless score #main pylonsDestroyed matches 3 run function du-in:music/lobby/parkour
 
+# Parkour Actions #
+execute if entity @s[scores={kitUse=1..}] run function du-in:lobby/kit_use/parkour
+
 #x=628
 #y=5
 #z=-126

@@ -14,4 +14,6 @@ execute if entity @s[scores={kit=8}] run function du-in:kit/villager/armor
 #Set 2
 execute if entity @s[scores={kit=9}] run function du-in:kit/chara/armor
 execute if entity @s[scores={kit=10}] run function du-in:kit/gaster/armor
+execute if entity @s[scores={kit=11}] run function du-in:kit/asriel/armor
 
+execute if entity @s[scores={kit=14}] run function du-in:kit/asgore/armor
