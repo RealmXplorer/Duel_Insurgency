@@ -1,48 +1,32 @@
 #Sounds#
-execute if entity @s[tag=!stolen,scores={hit=5..}] run function du-in:kit/gumball/sounds/hit
-execute if entity @s[tag=!stolen,scores={step=150..}] run function du-in:kit/gumball/sounds/step
-execute if entity @s[tag=!stolen,scores={sprint=150..}] run function du-in:kit/gumball/sounds/step
-execute if entity @s[tag=!stolen,scores={jump=1..}] run function du-in:kit/jump
+execute if entity @s[scores={hit=5..}] run function du-in:kit/gumball/sounds/hit
+execute if entity @s[scores={step=150..}] run function du-in:kit/gumball/sounds/step
+execute if entity @s[scores={sprint=150..}] run function du-in:kit/gumball/sounds/step
+execute if entity @s[scores={jump=1..}] run function du-in:kit/jump
 
 
 # Armor #
-execute if entity @s[tag=armor,tag=!stolen] run function du-in:kit/gumball/armor
-
-
-#Give ability item#
-execute if entity @s[level=1] run function du-in:kit/gumball/ability/item
-
-
-#Gumball and Darwin abilities#
-execute if entity @s[tag=kitActions,tag=!darwin] run function du-in:kit/gumball/ability/gum_init
-execute if entity @s[tag=kitActions,tag=darwin] run function du-in:kit/gumball/ability/dar_init
-
+#execute if entity @s[tag=armor] run function du-in:kit/gumball/armor
 
 #Tag Gumball and Darwin in and out
-execute if entity @s[tag=secKitActions,tag=!stolen] run function du-in:kit/gumball/switch
-
+execute if entity @s[tag=secKitActions] run function du-in:kit/gumball/switch
 
 #Weapon Give#
-execute unless entity @s[scores={weapCount=1}] if entity @s[tag=!teamDead,tag=!stolen] run function du-in:kit/gumball/weapon
+execute unless entity @s[scores={weapCount=1}] if entity @s[tag=!teamDead] run function du-in:kit/gumball/weapon
 
 
 #Secondary Give#
-execute if entity @s[tag=!stolen,tag=!teamDead] unless entity @s[scores={secCount=1}] unless entity @s[scores={gumSwapTimer=1..}] run function du-in:kit/gumball/secondary/item
-
-#execute unless items entity @s[tag=!teamDead,tag=!stolen] hotbar.* warped_fungus_on_a_stick[count=1] unless entity @s[scores={gumSwapTimer=1..}] run function du-in:kit/gumball/secondary/item
+execute if entity @s[tag=!teamDead] unless entity @s[scores={secCount=1}] unless entity @s[scores={gumSwapTimer=1..}] run function du-in:kit/gumball/secondary/item
 
 #Kit switch cooldown timer
 execute if entity @s[scores={gumSwapTimer=-1..}] run function du-in:kit/gumball/secondary/timer
-#scoreboard players remove @s[scores={gumSwapTimer=0..}] gumSwapTimer 1
-#scoreboard players reset @s[scores={gumSwapTimer=..0}] gumSwapTimer
-
 
 #Reset fake sidebar
 execute if entity @s[scores={fakeTimer=0..}] run function du-in:kit/gumball/ability/gumball/fake_reset
 
 
 #Check for if they have secondary
-execute store result score @s[tag=!stolen] secCount run clear @s[tag=!kitMenu] warped_fungus_on_a_stick 0
+execute store result score @s secCount run clear @s[tag=!kitMenu] warped_fungus_on_a_stick 0
 
 
 #Gumball pursue ability constants
@@ -55,12 +39,12 @@ execute if entity @s[scores={darwinSound=..0}] run function du-in:kit/gumball/ab
 
 
 #Attributes
-attribute @s[tag=!stolen,tag=!darwin] minecraft:generic.movement_speed base set 0.13
-attribute @s[tag=!stolen,tag=darwin] minecraft:generic.movement_speed base set 0.1475
+attribute @s[tag=!darwin] minecraft:generic.movement_speed base set 0.13
+attribute @s[tag=darwin] minecraft:generic.movement_speed base set 0.1475
 
 effect give @s[tag=darwin] dolphins_grace infinite 1 true
 effect give @s[tag=darwin] water_breathing infinite 1 true
 
-execute unless entity @a[tag=partyLeader,tag=scaleMode] if entity @s[tag=!stolen] run function du-in:kit/all/size/smaller
+execute unless entity @a[tag=partyLeader,tag=scaleMode] run function du-in:kit/all/size/smaller
 
-attribute @s[tag=!stolen] generic.knockback_resistance base set 0.01
+attribute @s generic.knockback_resistance base set 0.01

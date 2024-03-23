@@ -1,5 +1,2 @@
-execute if entity @a[distance=0.05..5,tag=playing] run function du-in:kit/nick/ability/near
-
-execute unless entity @a[distance=0.05..5,tag=playing] run function du-in:kit/all/ability/far
-
-tag @s remove kitActions
+execute if entity @s[tag=!void] run function du-in:kit/nick/ability/default_init
+execute if entity @s[tag=void] run function du-in:kit/nick/ability/void/init
