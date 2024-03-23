@@ -3,7 +3,7 @@ execute if entity @s[scores={jump=1..}] run function du-in:kit/jump
 
 tag @s remove wilde
 
-#Villager Armor# - Moved to kit/all/armor
+#Villager Armor# - Moved to kit/all/armor/armor
 #execute if entity @s[tag=armor] run function du-in:kit/villager/armor
 
 #Villager Weapon

@@ -18,7 +18,6 @@ xp set @s[tag=!stolen] 350 levels
 tag @s[tag=stolen,tag=givenStolen] add kitDone
 kill @e[type=area_effect_cloud,tag=grave,limit=1,sort=nearest]
 kill @e[type=minecraft:falling_block,tag=grave,limit=1,sort=nearest]
-tag @s remove zombieRespawn
 execute if entity @s[tag=ranMode] run function du-in:kit/all/reset
 tag @s[tag=ranMode] add random
 scoreboard players reset @s zombieTimer

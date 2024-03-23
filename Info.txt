@@ -42,7 +42,7 @@ Tag "kitActions" runs when a player with tag "playing" right clicks a carrot on 
 
 Tag "armor" runs when a "playing" player is not wearing armor (with a few exceptions).
 	This gives the player the armor for their selected kit.
-		-As of Datapack 5.0, this still works, but most default characters will now use "kit/all/armor"
+		-As of Datapack 5.0, this still works, but most default characters will now use "kit/all/armor/armor"
 
 Tag "secKitActions" run when a player with tag "playing" right clicks a warped fungus on a stick.
 	This activates the character's secondary ability.

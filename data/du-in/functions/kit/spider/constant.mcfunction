@@ -12,7 +12,7 @@ execute unless entity @s[scores={weapCount=1}] run item replace entity @s[tag=!s
 execute if entity @s[tag=!void,tag=kitActions] run function du-in:kit/spider/ability/init
 execute if entity @s[tag=void,tag=kitActions] run function du-in:kit/spider/ability/void/init
 
-#Armor - Moved to kit/all/armor
+#Armor - Moved to kit/all/armor/armor
 #execute if entity @s[tag=armor,tag=!stolen] run function du-in:kit/spider/armor
 
 execute if entity @s[level=1] run function du-in:kit/spider/ability/item

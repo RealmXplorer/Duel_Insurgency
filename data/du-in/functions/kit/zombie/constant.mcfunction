@@ -5,7 +5,7 @@ execute if entity @s[scores={sprint=150..}] run function du-in:kit/zombie/sounds
 execute if entity @s[scores={jump=1..}] run function du-in:kit/zombie/sounds/jump
 
 
-# ZOMBIE Armor# -Armor has been moved to kit/all/armor
+# ZOMBIE Armor# -Armor has been moved to kit/all/armor/armor
 # execute if entity @s[tag=armor] run function du-in:kit/zombie/armor
 
 #Give Zombie Weapon#

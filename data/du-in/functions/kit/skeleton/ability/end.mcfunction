@@ -12,7 +12,7 @@ clear @s carrot_on_a_stick
 
 #Set Slime's armor and weapon back to normal
 scoreboard players set @s weapCount 0
-function du-in:kit/all/armor
+function du-in:kit/all/armor/armor
 #tag @s add armor
 
 #End ability and start cooldown

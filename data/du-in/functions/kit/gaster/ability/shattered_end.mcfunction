@@ -6,7 +6,7 @@ execute if score @s gastSkin matches 1 run particle minecraft:dust 0.75 0.90 1 1
 
 #tag @s add armor
 tag @s remove gasterInvisible
-function du-in:kit/all/armor
+function du-in:kit/all/armor/armor
 
 scoreboard players set @s weapCount 0
 

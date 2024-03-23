@@ -8,7 +8,7 @@ execute if entity @s[scores={kit=2}] run function du-in:kit/zombie/init
 execute if entity @s[scores={kit=3}] run function du-in:kit/slime/init
 
 # Creeper #
-execute if entity @s[scores={kit=4}] run function du-in:kit/creeper/constant
+execute if entity @s[scores={kit=4}] run function du-in:kit/creeper/init
 
 # Springtrap #
 execute if entity @s[scores={kit=5}] run function du-in:kit/springtrap/constant
