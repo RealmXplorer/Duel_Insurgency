@@ -1,3 +1,5 @@
+effect give @s[tag=!sabotaged] minecraft:invisibility 1 255 true
+
 scoreboard players set @s[tag=!sabotaged] gasterTimer 80
 tag @s[tag=!sabotaged] add gasterInvisible
 

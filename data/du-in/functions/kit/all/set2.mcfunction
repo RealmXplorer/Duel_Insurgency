@@ -9,19 +9,19 @@ execute if entity @s[scores={kit=10}] run function du-in:kit/gaster/init
 execute if entity @s[scores={kit=11}] run function du-in:kit/asriel/init
 
 # Flowey #
-execute if entity @s[scores={kit=12}] run function du-in:kit/flowey/constant
+execute if entity @s[scores={kit=12}] run function du-in:kit/flowey/init
 
 # Papyrus #
-execute if entity @s[scores={kit=13}] run function du-in:kit/papyrus/constant
+execute if entity @s[scores={kit=13}] run function du-in:kit/papyrus/init
 
 # Asgore #
 execute if entity @s[scores={kit=14}] run function du-in:kit/asgore/init
 
 # Frisk #
-execute if entity @s[scores={kit=15}] run function du-in:kit/frisk/constant
+execute if entity @s[scores={kit=15}] run function du-in:kit/frisk/init
 
 # Sans #
-execute if entity @s[scores={kit=16}] run function du-in:kit/sans/constant
+execute if entity @s[scores={kit=16}] run function du-in:kit/sans/init
 
 #OH MY PEOPLE
 #WHO HAVE BEEN 

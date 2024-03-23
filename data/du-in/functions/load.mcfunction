@@ -228,6 +228,8 @@ scoreboard objectives add drinkPotion minecraft.used:minecraft.potion
 scoreboard objectives add drinkMilk minecraft.used:minecraft.milk_bucket
 scoreboard objectives add drinkCount dummy
 scoreboard objectives add drinkType dummy
+scoreboard objectives add thrownPotion minecraft.dropped:minecraft.potion
+scoreboard objectives add thrownMilk minecraft.dropped:minecraft.milk_bucket
 
 scoreboard objectives add mapCountdown dummy
 scoreboard objectives add mapRandom dummy

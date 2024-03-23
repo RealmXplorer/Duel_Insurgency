@@ -54,6 +54,7 @@ function du-in:lobby/mapselect/switch
 #Clear Effects
 effect clear @a
 execute as @a run function du-in:lobby/shop/drinks/reset
+execute as @a run function du-in:lobby/shop/drinks/drink_milk
 
 #Start music
 scoreboard players set @a music 0

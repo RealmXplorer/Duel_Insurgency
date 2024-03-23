@@ -7,7 +7,7 @@ tag @s remove wilde
 #execute if entity @s[tag=armor] run function du-in:kit/villager/armor
 
 #Villager Weapon
-execute unless entity @s[scores={weapCount=1}] if entity @s[tag=!teamDead] run function du-in:kit/villager/weapon
+execute unless entity @s[scores={weapCount=1}] if entity @s[tag=!teamDead,tag=!gasterInvisible] unless entity @s[scores={floweyHitTimer=0..}] run function du-in:kit/villager/weapon
 
 #Activate Ability - Now in kit/all/ability/activate
 #execute if entity @s[tag=kitActions,tag=!stolen] run function du-in:kit/villager/ability/init

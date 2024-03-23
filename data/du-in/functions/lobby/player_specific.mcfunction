@@ -6,7 +6,7 @@
 # Lobby Specific Functions #
     # Gamemode Select Functions #
         execute if entity @s[scores={lobby=1},tag=!shop,tag=!credits,tag=!parkour] run function du-in:lobby/gamemode_select
-        
+
     # Credits Functions #
         execute if entity @s[tag=credits] run function du-in:lobby/credits
 

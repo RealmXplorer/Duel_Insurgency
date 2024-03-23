@@ -1,5 +1,5 @@
 # Spider #
-execute if entity @s[scores={kit=1}] run function du-in:kit/spider/constant
+execute if entity @s[scores={kit=1}] run function du-in:kit/spider/init
 
 # Zombie #
 execute if entity @s[scores={kit=2}] run function du-in:kit/zombie/init
@@ -11,10 +11,10 @@ execute if entity @s[scores={kit=3}] run function du-in:kit/slime/init
 execute if entity @s[scores={kit=4}] run function du-in:kit/creeper/init
 
 # Springtrap #
-execute if entity @s[scores={kit=5}] run function du-in:kit/springtrap/constant
+execute if entity @s[scores={kit=5}] run function du-in:kit/springtrap/init
 
 # Golem #
-execute if entity @s[scores={kit=6}] run function du-in:kit/golem/constant
+execute if entity @s[scores={kit=6}] run function du-in:kit/golem/init
 
 # Player #
 execute if entity @s[scores={kit=7}] run function du-in:kit/player/init
