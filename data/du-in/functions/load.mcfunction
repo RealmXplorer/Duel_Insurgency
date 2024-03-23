@@ -227,6 +227,7 @@ scoreboard objectives add map20Vote dummy
 scoreboard objectives add drinkPotion minecraft.used:minecraft.potion
 scoreboard objectives add drinkMilk minecraft.used:minecraft.milk_bucket
 scoreboard objectives add drinkCount dummy
+scoreboard objectives add drinkType dummy
 
 scoreboard objectives add mapCountdown dummy
 scoreboard objectives add mapRandom dummy
