@@ -13,7 +13,7 @@ execute unless entity @s[scores={weapCount=1}] if entity @s[tag=!teamDead,tag=!g
 #execute if entity @s[tag=kitActions,tag=!stolen] run function du-in:kit/villager/ability/init
 
 #Villager Ability Item
-execute if entity @s[level=1,tag=!stolen] run function du-in:kit/villager/ability/item
+#execute if entity @s[level=1,tag=!stolen] run function du-in:kit/villager/ability/item
 
 
 execute if entity @s[scores={villagerEmeralds=1..}] run function du-in:kit/villager/emeralds

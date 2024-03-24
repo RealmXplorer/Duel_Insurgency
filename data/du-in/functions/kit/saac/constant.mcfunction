@@ -15,7 +15,7 @@ execute if entity @s[tag=broken,tag=!pussFear,scores={saacDisTimer=..0}] run fun
 execute unless entity @s[scores={weapCount=1}] if entity @s[tag=!teamDead,tag=!pussFear] run function du-in:kit/saac/weapon
 
 #Ability#
-execute if entity @s[level=1] run function du-in:kit/saac/ability/item
+# execute if entity @s[level=1] run function du-in:kit/saac/ability/item
 
 # execute if entity @s[tag=!void,tag=kitActions,predicate=!du-in:second_held] run function du-in:kit/saac/ability/init
 # execute if entity @s[tag=void,tag=kitActions,predicate=!du-in:second_held] run function du-in:kit/saac/ability/void/init

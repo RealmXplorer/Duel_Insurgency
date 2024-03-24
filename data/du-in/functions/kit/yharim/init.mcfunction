@@ -1,5 +1,5 @@
 #Ability item#
-execute if entity @s[level=1] run function du-in:kit/yharim/ability/item
+#execute if entity @s[level=1] run function du-in:kit/yharim/ability/item
 
 #Activate ability
 #execute if entity @s[tag=kitActions] run function du-in:kit/yharim/ability/init

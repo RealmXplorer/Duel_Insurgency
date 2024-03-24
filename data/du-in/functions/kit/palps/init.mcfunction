@@ -2,7 +2,7 @@
 #execute if entity @s[tag=kitActions] run function du-in:kit/palps/ability/init
 
 #Ability item#
-execute if entity @s[level=1] unless entity @s[scores={palpTimer=-99..}] run function du-in:kit/palps/ability/item
+#execute if entity @s[level=1] unless entity @s[scores={palpTimer=-99..}] run function du-in:kit/palps/ability/item
 
 #Ability function
 execute if entity @s[scores={palpTimer=-99..}] run function du-in:kit/palps/ability/stealing

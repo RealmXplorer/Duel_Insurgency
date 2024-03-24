@@ -1,5 +1,5 @@
 #Ability
-execute if entity @s[level=1] run function du-in:kit/slime/ability/item
+#execute if entity @s[level=1] run function du-in:kit/slime/ability/item
 
 #Activate Ability - Now in kit/all/ability/activate
 #execute if entity @s[tag=kitActions] run function du-in:kit/slime/ability/init

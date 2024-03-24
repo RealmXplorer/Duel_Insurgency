@@ -1,5 +1,5 @@
 #Give ability item#
-execute if entity @s[level=1] run function du-in:kit/gumball/ability/item
+#execute if entity @s[level=1] run function du-in:kit/gumball/ability/item
 
 #Gumball and Darwin abilities#
 #execute if entity @s[tag=kitActions,tag=!darwin] run function du-in:kit/gumball/ability/gum_init

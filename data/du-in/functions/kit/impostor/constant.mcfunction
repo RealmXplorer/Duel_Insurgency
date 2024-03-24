@@ -12,7 +12,7 @@ tag @s add sus
 execute unless entity @s[scores={weapCount=1}] if entity @s[tag=!teamDead] run function du-in:kit/impostor/weapon
 
 #Ability Item#
-execute if entity @s[level=1] run function du-in:kit/impostor/ability/item
+# execute if entity @s[level=1] run function du-in:kit/impostor/ability/item
 
 #Use ability
 # execute if entity @s[tag=!void,tag=kitActions] run function du-in:kit/impostor/ability/init

@@ -2,7 +2,7 @@
 #AND MOVE ON TO THE NEXT
 
 #Clairen#
-execute if entity @s[scores={kit=25}] run function du-in:kit/clairen/init
+execute if entity @s[scores={kit=25},tag=!stolen] run function du-in:kit/clairen/constant
 
 #Jack Horner#
 execute if entity @s[scores={kit=26}] run function du-in:kit/jack_horner/init

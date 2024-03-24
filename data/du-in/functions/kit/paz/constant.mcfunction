@@ -12,7 +12,7 @@ execute unless entity @s[scores={weapCount=1}] if entity @s[tag=!teamDead] run f
 #execute if entity @s[tag=armor] run function du-in:kit/paz/armor
 
 # ITEM #
-execute if entity @s[level=1] run function du-in:kit/paz/ability/item
+# execute if entity @s[level=1] run function du-in:kit/paz/ability/item
 
 #Run ability#
 #execute if entity @s[tag=kitActions] run function du-in:kit/paz/ability/init

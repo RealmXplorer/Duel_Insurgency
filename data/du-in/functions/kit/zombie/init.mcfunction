@@ -3,7 +3,7 @@
 execute if entity @s[tag=grave] run function du-in:kit/zombie/ability/check
 
 #Give Zombie ability#
-execute if entity @s[level=1] run function du-in:kit/zombie/ability/item
+#execute if entity @s[level=1] run function du-in:kit/zombie/ability/item
 
 #Non-Villager functions
 execute if entity @s[tag=!stolen] run function du-in:kit/zombie/constant

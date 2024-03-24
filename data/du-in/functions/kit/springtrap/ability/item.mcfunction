@@ -1,5 +1,4 @@
 #Ability#
-function du-in:kit/all/ability/return
 
 item replace entity @s[tag=!springLock,scores={springSkin=2}] weapon.offhand with minecraft:carrot_on_a_stick[custom_name='{"text":"Clownlocks","color":"gold","bold":true,"italic":false}',lore=['{"text":"Right click to activate!","color":"dark_purple","bold":true}','[{"text":""}]','{"text":"I will come back,","color":"dark_gray"}','{"text":"I always do...","color":"dark_gray"}'],enchantment_glint_override=true,custom_model_data=137]
 item replace entity @s[tag=springLock,scores={springSkin=2}] weapon.offhand with minecraft:carrot_on_a_stick[custom_name='{"text":"Clownlocks","color":"gold","bold":true,"italic":false}',lore=['{"text":"Right click to activate!","color":"dark_purple","bold":true}','[{"text":""}]','{"text":"I will come back,","color":"dark_gray"}','{"text":"I always do...","color":"dark_gray"}'],enchantment_glint_override=true,custom_model_data=138]

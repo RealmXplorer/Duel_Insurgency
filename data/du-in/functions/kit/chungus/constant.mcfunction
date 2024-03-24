@@ -9,7 +9,7 @@ execute unless entity @s[scores={weapCount=1}] if entity @s[tag=!teamDead] run f
 
 #execute if entity @s[tag=kitActions] run function du-in:kit/chungus/ability/init
 
-execute if entity @s[level=1] run function du-in:kit/chungus/ability/item
+# execute if entity @s[level=1] run function du-in:kit/chungus/ability/item
 
 #CHUNGUS#
 tag @s remove killLine

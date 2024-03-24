@@ -13,7 +13,7 @@ execute unless entity @s[scores={weapCount=1}] run item replace entity @s[tag=!t
 execute if entity @s[tag=secKitActions] run function du-in:kit/jerma/secondary/eat_onion
 
 #Ability#
-execute if entity @s[level=1] run function du-in:kit/jerma/ability/item
+# execute if entity @s[level=1] run function du-in:kit/jerma/ability/item
 
 # execute if entity @s[tag=!void,tag=kitActions] run function du-in:kit/jerma/ability/init
 # execute if entity @s[tag=void,tag=kitActions] run function du-in:kit/jerma/ability/void/init

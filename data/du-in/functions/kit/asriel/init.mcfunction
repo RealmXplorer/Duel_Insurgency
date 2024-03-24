@@ -1,6 +1,6 @@
 
 #ABILITY#
-execute if entity @s[level=1] run function du-in:kit/asriel/ability/item
+#execute if entity @s[level=1] run function du-in:kit/asriel/ability/item
 
 #Ability start - Now in kit/all/ability/activate
 #execute if entity @s[tag=kitActions] run function du-in:kit/asriel/ability/init

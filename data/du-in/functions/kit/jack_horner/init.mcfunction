@@ -1,5 +1,5 @@
 # Ability ITEM #
-execute if entity @s[level=1] run function du-in:kit/jack_horner/ability/item
+# execute if entity @s[level=1] run function du-in:kit/jack_horner/ability/item
 
 #Use ability
 # execute if entity @s[tag=kitActions,tag=!magicBag,tag=!void] run function du-in:kit/jack_horner/ability/default_init

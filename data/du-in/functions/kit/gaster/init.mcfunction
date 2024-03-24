@@ -1,5 +1,5 @@
 #Give Ability Item
-execute if entity @s[level=1] run function du-in:kit/gaster/ability/item
+#execute if entity @s[level=1] run function du-in:kit/gaster/ability/item
 
 #Activate ability - Now in kit/all/ability/activate
 #execute if entity @s[tag=kitActions] run function du-in:kit/gaster/ability/init

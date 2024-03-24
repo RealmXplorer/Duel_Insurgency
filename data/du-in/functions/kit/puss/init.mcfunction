@@ -1,5 +1,5 @@
 # Ability ITEM #
-execute if entity @s[level=1] run function du-in:kit/puss/ability/item
+# execute if entity @s[level=1] run function du-in:kit/puss/ability/item
 
 #Use ability
 # execute if entity @s[tag=!void,tag=kitActions] run function du-in:kit/puss/ability/default_init
