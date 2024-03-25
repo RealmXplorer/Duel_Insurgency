@@ -2,14 +2,16 @@
         execute if entity @s[tag=teamMode] run function du-in:lobby/team_select
 
 # Map Select Items #
+    execute if entity @s[tag=partyLeader,gamemode=!creative] run function du-in:lobby/mapselect/leader_items
+
     # Give Back-Item #
-        execute unless items entity @s[scores={lobby=2},tag=partyLeader] hotbar.8 minecraft:carrot_on_a_stick run function du-in:lobby/item/back
+        #execute unless items entity @s[scores={lobby=2},tag=partyLeader] hotbar.8 minecraft:carrot_on_a_stick run function du-in:lobby/item/back
 
     # Give Countdown Item #
-        execute unless items entity @s[scores={lobby=2},tag=partyLeader] hotbar.0 minecraft:carrot_on_a_stick run function du-in:lobby/item/count
+        #execute unless items entity @s[scores={lobby=2},tag=partyLeader] hotbar.0 minecraft:carrot_on_a_stick run function du-in:lobby/item/count
 
     # Give Quickplay Item #
-        execute unless items entity @s[scores={lobby=2},tag=!teamMode] hotbar.4 minecraft:carrot_on_a_stick run function du-in:lobby/item/quick
+        #execute unless items entity @s[scores={lobby=2},tag=!teamMode] hotbar.4 minecraft:carrot_on_a_stick run function du-in:lobby/item/quick
 
 # Map Select Timer Announcements #
     execute if score #main mapCountdown matches 200 run function du-in:lobby/timers/map/ten
