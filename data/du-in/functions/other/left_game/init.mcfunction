@@ -90,7 +90,7 @@ function du-in:lobby/item_reset
 scoreboard players set @s kitList 7
 tag @s[tag=kitMenu] add kitsListed
 scoreboard players set @s skinList 20
-tag @s[tag=skinMenu] add skinsListed
+tag @s add skinsListed
 
 #End function
 scoreboard players reset @s leaveGame

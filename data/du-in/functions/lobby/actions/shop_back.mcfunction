@@ -1,6 +1,6 @@
 #Remove tags for Shop
 tag @s remove shop
-tag @s remove skinMenu
+#tag @s remove skinMenu
 
 #Kill tabba and Hugo if no one else is in shop
 execute unless entity @a[tag=shop] run tp @e[tag=tabba] 216 -100 40

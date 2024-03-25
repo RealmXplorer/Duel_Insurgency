@@ -37,7 +37,7 @@ title @s title {"text":"","color":"red","bold":true}
 title @s subtitle {"text":"","color":"red","bold":true}
 
 #Initiate Skin menu
-tag @s add skinMenu
+#tag @s add skinMenu
 tag @s[tag=shop] add skinsListed
 function du-in:lobby/scheduled/shop
 playsound minecraft:entity.ender_dragon.flap master @s ~ ~ ~ 1 1.5

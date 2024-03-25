@@ -12,7 +12,7 @@ clear @s
 
 #Remove gamemode select sub-lobbies if not in gamemode select
 execute unless entity @s[scores={lobby=1}] run tag @s remove shop
-execute unless entity @s[scores={lobby=1}] run tag @s remove skinMenu
+#execute unless entity @s[scores={lobby=1}] run tag @s remove skinMenu
 execute unless entity @s[scores={lobby=1}] run tag @s remove parkour
 execute unless entity @s[scores={lobby=1}] run tag @s remove credits
 execute unless entity @s[scores={lobby=1}] run tag @s remove subLobby
