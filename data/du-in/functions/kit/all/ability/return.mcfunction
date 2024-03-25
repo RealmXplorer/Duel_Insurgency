@@ -46,7 +46,7 @@ execute if entity @s[scores={kit=27}] run function du-in:kit/puss/ability/item
 execute if entity @s[scores={kit=28}] run function du-in:kit/death/ability/item
 
 execute if entity @s[scores={kit=29}] run function du-in:kit/yoda/ability/item
-#execute if entity @s[scores={kit=30}] run function du-in:kit/skeleton/ability/item
+execute if entity @s[scores={kit=30}] run function du-in:kit/skeleton/ability/item
 #execute if entity @s[scores={kit=31}] run function du-in:kit/ralsei/ability/item
 #execute if entity @s[scores={kit=32}] run function du-in:kit/ralsei/ability/item
 

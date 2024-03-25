@@ -1,5 +1,5 @@
 #Ability
-execute if entity @s[level=1] run function du-in:kit/skeleton/ability/item
+#execute if entity @s[level=1] run function du-in:kit/skeleton/ability/item
 
 execute if entity @s[tag=kitActions] run function du-in:kit/skeleton/ability/init
 
