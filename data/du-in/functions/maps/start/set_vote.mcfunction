@@ -24,4 +24,5 @@
 #$execute if score #voting map$(vote)Vote = #voting mapWinner run scoreboard players set #main map $(vote)
 
 $scoreboard players set #main map $(value)
+scoreboard players reset * mapVote
 execute if score #main map matches -1 run tag @a[limit=1,tag=!working] add voteRandom
