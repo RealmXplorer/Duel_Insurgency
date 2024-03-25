@@ -11,9 +11,9 @@ summon marker -3752 57 1239 {Tags:["spawnPoint","team1","mapSpecific"]}
 summon marker -3752 62 1293 {Tags:["spawnPoint","team2","mapSpecific"]}
 
 #Points#
-summon marker -3739 58 1266 {Tags:["cqPoint","mapSpecific"]}
-summon marker -3764 56 1261 {Tags:["cqPoint","mapSpecific"]}
-summon marker -3719 61 1251 {Tags:["cqPoint","mapSpecific"]}
+summon marker -3739 58 1266 {Tags:["cqPoint","gameObject","mapSpecific"]}
+summon marker -3764 56 1261 {Tags:["cqPoint","gameObject","mapSpecific"]}
+summon marker -3719 61 1251 {Tags:["cqPoint","gameObject","mapSpecific"]}
 
 #Vending Machines#
 summon interaction -3732 59 1274 {Tags:["vending","stable","mapSpecific"],width:1.15f,height:2.1f,response:1b}

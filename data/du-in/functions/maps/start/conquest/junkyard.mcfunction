@@ -11,9 +11,9 @@ summon marker -1614 34 455 {Tags:["spawnPoint","team1","mapSpecific"]}
 summon marker -1602 30 396 {Tags:["spawnPoint","team2","mapSpecific"]}
 
 #Points#
-summon marker -1570 31 473 {Tags:["cqPoint","mapSpecific"]}
-summon marker -1554 22 432 {Tags:["cqPoint","mapSpecific"]}
-summon marker -1571 29 413 {Tags:["cqPoint","mapSpecific"]}
+summon marker -1570 31 473 {Tags:["cqPoint","gameObject","mapSpecific"]}
+summon marker -1554 22 432 {Tags:["cqPoint","gameObject","mapSpecific"]}
+summon marker -1571 29 413 {Tags:["cqPoint","gameObject","mapSpecific"]}
 
 weather thunder 100000
 
