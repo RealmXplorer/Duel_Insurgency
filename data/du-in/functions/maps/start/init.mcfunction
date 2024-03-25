@@ -43,6 +43,7 @@ execute as @a[tag=notVoted] run function du-in:maps/start/start_vote
 
 #Set the map score to the highest voted map
 function du-in:maps/start/set_vote with storage du-in:finalvote map
+#function du-in:maps/start/set_vote with storage du-in:mapscore map
 #function du-in:maps/start/set_vote
 
 #If random map wins vote, run

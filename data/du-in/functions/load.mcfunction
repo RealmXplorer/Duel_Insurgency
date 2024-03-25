@@ -130,6 +130,7 @@ scoreboard objectives add skinPreset dummy
 #Gamemode objectives
 scoreboard objectives add maxTeamLives dummy
 scoreboard objectives add mapWinner dummy
+scoreboard objectives add mapWinnerValue dummy
 scoreboard objectives add ten dummy
 scoreboard objectives add redFlagTimer dummy
 scoreboard objectives add redFlagCooldown dummy
