@@ -86,7 +86,7 @@ execute if entity @s[tag=notEaten] run function du-in:kit/runza/ability/the_hung
 execute if entity @s[scores={golemFloat=-1..}] run function du-in:kit/golem/ability/float
 
 #Venting Mechanics
-scoreboard players add @s[tag=sus,scores={ventCooldown=..61}] ventCooldown 1
+# scoreboard players add @s[tag=sus,scores={ventCooldown=..61}] ventCooldown 1
 execute if entity @s[tag=vented] run function du-in:kit/all/vent/init
 
 #Kylo ability
