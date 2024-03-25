@@ -14,14 +14,7 @@ execute if score #main map matches 12 run function du-in:maps/start/classic/wish
 execute if score #main map matches 13 run function du-in:maps/start/classic/jermall
 execute if score #main map matches 14 run function du-in:maps/start/classic/haunted_house
 
-#Not in random pool
 execute if score #main map matches 15 run function du-in:maps/start/classic/saac_house
 execute if score #main map matches 16 run function du-in:maps/start/classic/escher
 
-#
 execute if score #main map matches 17 run function du-in:maps/start/classic/wild_west
-
-#execute if score #main map matches 15 run function du-in:maps/start/classic/harvest
-#execute if score #main map matches 16 run function du-in:maps/start/classic/jermall
-
-#execute if score #main map matches 17 run tag @r add mapRandom
