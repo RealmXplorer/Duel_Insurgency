@@ -12,8 +12,6 @@ execute unless entity @s[scores={weapCount=1}] run item replace entity @s[tag=!t
 
 #RUNZA#
 #execute if entity @s[tag=armor,tag=!bigChungus] run function du-in:kit/runza/armor
-#RUNZA#
-#execute if entity @s[tag=killLine] run function du-in:kit/runza/sounds/line
 
 attribute @s minecraft:generic.movement_speed base set 0.135
 attribute @s generic.knockback_resistance base set 0.04

@@ -25,14 +25,13 @@ execute unless entity @a[tag=partyLeader,tag=aprilFools] run playsound minecraft
 execute unless entity @a[tag=partyLeader,tag=aprilFools] run playsound minecraft:block.anvil.land master @s ~ ~ ~ 1 2
 execute if entity @a[tag=partyLeader,tag=aprilFools] run playsound minecraft:soundeffect.boom master @s ~ ~ ~ 1 1
 
-#playsound minecraft:block.soul_soil.break master @s ~ ~ ~ 1 1
-#playsound minecraft:block.note_block.basedrum master @s ~ ~ ~ 1 1
-#playsound minecraft:block.chain.place master @s ~ ~ ~ 1 1
-
 execute if entity @s[scores={kit=16},tag=!stolen,predicate=du-in:chance/quarter_chance] run playsound minecraft:sans.sans master @a ~ ~ ~ 1 1
 execute if entity @s[scores={kit=26},tag=!stolen,predicate=du-in:chance/quarter_chance] run playsound minecraft:jack_horner.bumbum record @s ~ ~ ~ 1 1
 
+#Rewards#
 scoreboard players add @s Diamonds 2
+scoreboard players add @s exp 1
+
 execute if entity @s[scores={kit=7},tag=!stolen] run give @s minecraft:arrow 2
 
 execute if entity @s[scores={kit=30,skeletonMode=1}] run give @s tipped_arrow[potion_contents={potion:"minecraft:slowness"}] 1
@@ -46,6 +45,4 @@ execute if entity @s[scores={kit=1003}] run function du-in:kit/impostor/sounds/l
 execute if entity @s[scores={kit=1004}] run function du-in:kit/runza/sounds/line
 
 #CUSTOM KILLSOUNDS#
-#execute if entity @s[scores={kit=1001}] run playsound minecraft:krampus.ring master @s ~ ~ ~ 1 1
 execute if entity @s[scores={kit=20}] run playsound minecraft:soundeffect.combo master @s ~ ~ ~ 1 .5
-execute if entity @s[scores={kit=1000..}] run tag @s add killLine

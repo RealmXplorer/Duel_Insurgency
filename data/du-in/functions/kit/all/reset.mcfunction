@@ -9,7 +9,6 @@ tag @s remove givenStolen
 tag @s remove kickstarted
 tag @s remove vended
 tag @s remove saacRod
-tag @s remove killLine
 tag @s remove badBlock
 tag @s remove broken
 #tag @s remove bigChungus

@@ -185,9 +185,6 @@ execute as @a run function du-in:music/ingame/stop/all
 
 ##RESET KIT SCORES AND TAGS
 
-    #Remove Kill voiceline tag#
-        tag @a remove killLine
-    
     #Reset Saac scores and Tags#
         scoreboard players reset @a saacDisTimer
         tag @a remove broken

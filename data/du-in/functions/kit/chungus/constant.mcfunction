@@ -11,9 +11,6 @@ execute unless entity @s[scores={weapCount=1}] if entity @s[tag=!teamDead] run f
 
 # execute if entity @s[level=1] run function du-in:kit/chungus/ability/item
 
-#CHUNGUS#
-tag @s remove killLine
-
 #BIG CHUNGUS#
 #execute if entity @s[tag=armor] run function du-in:kit/chungus/armor
 attribute @s minecraft:generic.movement_speed base set 0.125
