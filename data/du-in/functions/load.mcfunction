@@ -204,6 +204,7 @@ scoreboard objectives add thrownIronIngot minecraft.dropped:minecraft.iron_ingot
 scoreboard objectives add thrownCookie minecraft.dropped:minecraft.cookie
 scoreboard objectives add tabbaTalk dummy
 scoreboard objectives add tabbaVendingTalk dummy
+scoreboard objectives add map-1Vote dummy
 scoreboard objectives add map1Vote dummy
 scoreboard objectives add map2Vote dummy
 scoreboard objectives add map3Vote dummy
