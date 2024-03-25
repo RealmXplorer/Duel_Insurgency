@@ -12,7 +12,7 @@ summon marker -448 22 -13 {Tags:["spawnPoint","team1","mapSpecific"]}
 summon marker -404 18 -13 {Tags:["spawnPoint","team2","mapSpecific"]}
 summon marker -404 21 -55 {Tags:["spawnPoint","team2","mapSpecific"]}
 
-summon area_effect_cloud -425.5 11.75 -34.5 {NoGravity:1b,Duration:2147483647,Tags:["kothObj","mapSpecific"],CustomNameVisible:1b,CustomName:'{"text":"Stand on this point!","color":"red","bold":true}'}
+summon area_effect_cloud -425.5 11.75 -34.5 {NoGravity:1b,Duration:2147483647,Tags:["kothObj","gameObject","mapSpecific"],CustomNameVisible:1b,CustomName:'{"text":"Stand on this point!","color":"red","bold":true}'}
 
 #Vending Machines#
 execute if entity @a[scores={kit=1000..1001}] run summon interaction -441 14 -48 {Tags:["vending","stable","mapSpecific"],width:1.15f,height:2.1f,response:1b}

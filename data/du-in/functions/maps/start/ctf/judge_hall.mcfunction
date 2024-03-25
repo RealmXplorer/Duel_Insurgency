@@ -8,8 +8,8 @@ function du-in:maps/start/common
 summon marker 251 4 527 {Tags:["spawnPoint","team1","mapSpecific"]}
 summon marker 251 4 412 {Tags:["spawnPoint","team2","mapSpecific"]}
 
-summon marker 248 4 527 {Tags:["ctfFlag","redFlag","mapSpecific"]}
-summon marker 248 4 413 {Tags:["ctfFlag","blueFlag","mapSpecific"]}
+summon marker 248 4 527 {Tags:["ctfFlag","redFlag","gameObject","mapSpecific"]}
+summon marker 248 4 413 {Tags:["ctfFlag","blueFlag","gameObject","mapSpecific"]}
 
 execute at @e[type=marker,tag=blueFlag] run setblock ~ ~ ~ blue_banner destroy
 execute at @e[type=marker,tag=redFlag] run setblock ~ ~ ~ red_banner destroy

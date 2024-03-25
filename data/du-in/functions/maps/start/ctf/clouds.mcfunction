@@ -11,8 +11,8 @@ summon marker -388 19 494 {Tags:["spawnPoint","team1","mapSpecific"]}
 summon marker -455 19 471 {Tags:["spawnPoint","team2","mapSpecific"]}
 
 #Flags#
-summon marker -464 27 463 {Tags:["ctfFlag","blueFlag","mapSpecific"]}
-summon marker -379 27 502 {Tags:["ctfFlag","redFlag","mapSpecific"]}
+summon marker -464 27 463 {Tags:["ctfFlag","blueFlag","gameObject","mapSpecific"]}
+summon marker -379 27 502 {Tags:["ctfFlag","redFlag","gameObject","mapSpecific"]}
 
 execute at @e[type=marker,tag=blueFlag] run setblock ~ ~ ~ blue_banner destroy
 execute at @e[type=marker,tag=redFlag] run setblock ~ ~ ~ red_banner destroy

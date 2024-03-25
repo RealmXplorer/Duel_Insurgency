@@ -41,8 +41,8 @@ summon armor_stand 5008 5 -5090 {Rotation:[180F,0F],Tags:["vendMachine","mapSpec
 #execute if entity @a[tag=partyLeader,tag=cliffLock] run summon interaction 4996 6 -5012 {Tags:["usedVoidLock","mapSpecific"],width:0.6f,height:0.6f,response:1b}
 weather rain 40d
 
-summon marker 5012 10 -5093 {Tags:["ctfFlag","blueFlag","mapSpecific"]}
-summon marker 5003 5 -5019 {Tags:["ctfFlag","redFlag","mapSpecific"]}
+summon marker 5012 10 -5093 {Tags:["ctfFlag","blueFlag","gameObject","mapSpecific"]}
+summon marker 5003 5 -5019 {Tags:["ctfFlag","redFlag","gameObject","mapSpecific"]}
 
 execute at @e[type=marker,tag=blueFlag] run setblock ~ ~ ~ blue_banner destroy
 execute at @e[type=marker,tag=redFlag] run setblock ~ ~ ~ red_banner destroy
