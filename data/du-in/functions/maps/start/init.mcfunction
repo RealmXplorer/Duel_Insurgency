@@ -2,7 +2,7 @@
 scoreboard players reset #voting
 scoreboard players set #voting mapWinner 0
 
-tag @a add notVoted
+#tag @a add notVoted
 
 #Reset map vote colors
 execute as @e[type=marker,tag=mapVote] at @s run setblock ~ ~-1 ~ minecraft:red_concrete destroy
@@ -37,13 +37,14 @@ kill @e[tag=displayItem]
 execute at @a run playsound minecraft:entity.ender_dragon.flap master @a ~ ~ ~ 1 1.5
 
 #Find map with highest vote
-execute as @a[tag=notVoted] run function du-in:maps/start/start_vote
+#execute as @a[tag=notVoted] run function du-in:maps/start/start_vote
+execute as @a run function du-in:maps/start/start_vote
 
 #function du-in:maps/start/compare_vote
 
 #Set the map score to the highest voted map
-function du-in:maps/start/set_vote with storage du-in:finalvote map
-#function du-in:maps/start/set_vote with storage du-in:mapscore map
+#function du-in:maps/start/set_vote with storage du-in:finalvote map
+function du-in:maps/start/set_vote with storage du-in:mapscore map
 #function du-in:maps/start/set_vote
 
 #If random map wins vote, run

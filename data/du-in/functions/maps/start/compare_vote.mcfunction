@@ -21,11 +21,13 @@
 # execute if score #voting map20Vote > #voting mapWinner store result score #voting mapWinner run scoreboard players get #voting map20Vote
 # execute if score #voting mapRandomVote > #voting mapWinner store result score #voting mapWinner run scoreboard players get #voting mapRandomVote
 
-$execute if score #voting map$(vote)Vote > #voting mapWinner store result score #voting mapWinner run scoreboard players get #voting map$(vote)Vote
+#$execute if score #voting map$(vote)Vote > #voting mapWinner store result score #voting mapWinner run scoreboard players get #voting map$(vote)Vote
+
+$execute if score #map$(vote) mapVote > #voting mapWinner store result score #voting mapWinner run scoreboard players get #map$(vote) mapVote
 
 execute store result storage du-in:finalvote map.vote int 1 run scoreboard players get #voting mapWinner
 
-#$execute if score #voting map$(vote)Vote = #voting mapWinner store result score #voting mapWinnerValue run scoreboard players get @s mapVote
-#execute store result storage du-in:mapscore map.value int 1 run scoreboard players get #voting mapWinnerValue
+$execute if score #map$(vote) mapVote = #voting mapWinner store result score #voting mapWinnerValue run scoreboard players get @s mapVote
+execute store result storage du-in:mapscore map.value int 1 run scoreboard players get #voting mapWinnerValue
 
-tag @s remove notVoted
+#tag @s remove notVoted
