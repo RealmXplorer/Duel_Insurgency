@@ -49,12 +49,6 @@ advancement grant @a[scores={Kills=5000..}] only du-in:destroyer
 #For Dev Mode
 scoreboard players reset @a thrownBarrier
 
-#scoreboard players reset #voting
-#scoreboard players set #voting mapWinner 0
-#scoreboard players reset @a mapVote
-#scoreboard players reset #main mapCountdown
-#scoreboard players reset #gamemode gamemode
-
 tag @a remove startgame
 bossbar set bossbar:gametimer visible false
 bossbar set bossbar:gametimer color white

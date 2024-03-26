@@ -1,3 +1,5 @@
+#Find what Map is being voted for
 execute store result storage du-in:mapvote map.vote int 1 run scoreboard players get @s mapVote
-#function du-in:maps/start/tally_votes
+
+#Start Tally
 function du-in:maps/start/tally_votes with storage du-in:mapvote map

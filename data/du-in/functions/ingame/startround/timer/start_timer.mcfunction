@@ -80,7 +80,7 @@ xp set @a[tag=playing] 100 levels
 #tag @a add armor
 
 #Remove tag voteRandom
-tag @a remove voteRandom
+#tag @a remove voteRandom
 
 #Play countdown sound
 execute as @a at @s run playsound minecraft:soundeffect.countdown master @s[tag=!dmend] ~ ~ ~ 0.5 1 1

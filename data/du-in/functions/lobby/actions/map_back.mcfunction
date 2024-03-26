@@ -49,8 +49,7 @@ scoreboard players reset #gamemode gamemode
 tag @a remove countStop
 
 #Removes random map vote tag
-tag @a remove voteRandom
-tag @a remove mapRandom
+#tag @a remove voteRandom
 
 #Clears inventories of players
 clear @a[tag=!working]
