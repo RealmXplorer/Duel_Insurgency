@@ -20,8 +20,8 @@
         execute if score #main shutdown matches 1.. run function du-in:other/shutdown/init
 
     #Track number of players online (If a player has 'devMode' tag, certain functions will run regardless of player count)
-        execute unless entity @a[tag=devMode] run function du-in:other/playercount/default
-        execute if entity @a[tag=devMode] run function du-in:other/playercount/dev_mode
+        execute unless entity @a[tag=devMode] run function du-in:other/player_count/default
+        execute if entity @a[tag=devMode] run function du-in:other/player_count/dev_mode
 
 #I SEE YOU WERE LOOKING
 #FOR ME?
