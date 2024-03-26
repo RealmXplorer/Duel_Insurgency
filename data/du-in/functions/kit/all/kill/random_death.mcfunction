@@ -51,11 +51,6 @@ clear @s minecraft:wither_rose
 #CLEAR TAGS#
 tag @s remove kyloHit
 tag @s remove darwin
-#tag @s remove anakinPulled
-#tag @s remove close
-#tag @s remove lukePulled
-#tag @s remove charaFear
-tag @s remove inRing
 tag @s remove ring1
 tag @s remove ring2
 tag @s remove notEaten
@@ -93,4 +88,4 @@ attribute @s generic.armor base set 0
 attribute @s generic.max_health base set 20
 execute if entity @s[tag=!stolen,scores={kit=2}] run tag @s add undead
 execute if entity @s[tag=!stolen,scores={kit=5}] run tag @s add undead
-tag @s[tag=!grave] add deathTest
+#tag @s[tag=!grave] add deathTest
