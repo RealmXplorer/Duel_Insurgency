@@ -1,2 +1,0 @@
-clear @s minecraft:carrot_on_a_stick[custom_model_data=1000]
-item replace entity @s[tag=!playing,gamemode=!creative,tag=!working] hotbar.0 with minecraft:carrot_on_a_stick[custom_name='{"text":"Ready Up","color":"green","bold":true,"italic":false}',lore=['{"text":"Right click to use!","color":"dark_purple"}'],custom_model_data=1000]
