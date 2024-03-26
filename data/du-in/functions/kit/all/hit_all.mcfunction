@@ -1,4 +1,4 @@
-advancement revoke @s only du-in:utility/hit
+advancement revoke @s only du-in:utility/hit_all
 
 #Saber / Hit sounds#
     #Kylo

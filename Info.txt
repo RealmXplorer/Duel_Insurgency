@@ -24,7 +24,7 @@ Some functions for the character are kept in the "du-in/functions/kit/all/" fold
 		Legendary characters are kept in "du-in/functions/kit/all/set_legend"
 	Deathsounds are kept in "du-in/functions/kit/all/death_sound"
 	Win voicelines are kept in "du-in/functions/kit/all/winline"
-	Inflicting damage kept in "du-in/functions/kit/all/hit"
+	Inflicting damage kept in "du-in/functions/kit/all/hit_all"
 	Inflicting damage on a player is kept in "du-in/functions/kit/all/hit_player"
 	Necessary functions for resetting character data on death happens in "du-in/functions/kit/all/kill/death"
 

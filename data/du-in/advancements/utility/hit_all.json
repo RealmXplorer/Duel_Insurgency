@@ -24,6 +24,6 @@
       ]
   ],
   "rewards": {
-    "function": "du-in:kit/all/hit"
+    "function": "du-in:kit/all/hit_all"
   }
 }
