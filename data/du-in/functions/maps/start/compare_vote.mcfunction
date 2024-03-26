@@ -29,5 +29,3 @@ execute store result storage du-in:finalvote map.vote int 1 run scoreboard playe
 
 $execute if score #map$(vote) mapVote = #voting mapWinner store result score #voting mapWinnerValue run scoreboard players get @s mapVote
 execute store result storage du-in:mapscore map.value int 1 run scoreboard players get #voting mapWinnerValue
-
-#tag @s remove notVoted

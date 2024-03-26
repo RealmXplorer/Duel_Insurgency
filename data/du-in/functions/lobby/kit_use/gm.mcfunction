@@ -15,14 +15,5 @@
     #Go to Parkour
     execute if items entity @s[tag=!parkour,tag=!shop] weapon.mainhand carrot_on_a_stick[custom_data={du-in:'parkourItem'}] run function du-in:lobby/actions/to_parkour
 
-    #Go Back from Shop
-    #execute if items entity @s[tag=shop,tag=!parkour,tag=!credits] weapon.mainhand carrot_on_a_stick[custom_data={du-in:'backItem'}] run function du-in:lobby/actions/shop_back
-
-    #Go Back from Parkour
-    #execute if items entity @s[tag=!shop,tag=parkour] weapon.mainhand carrot_on_a_stick[custom_data={du-in:'backItem'}] run function du-in:lobby/actions/parkour_back
-
-    #Go Back from Credits
-    #execute if items entity @s[tag=credits,tag=!parkour,tag=!shop] weapon.mainhand carrot_on_a_stick[custom_data={du-in:'backItem'}] run function du-in:lobby/actions/credits_back
-
 #End Function
     scoreboard players reset @s kitUse
