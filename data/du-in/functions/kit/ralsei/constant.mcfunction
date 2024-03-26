@@ -21,8 +21,7 @@ execute store result score @s[tag=!kitMenu] triCount run clear @s gunpowder 0
 execute if entity @s[tag=secKitActions] run function du-in:kit/ralsei/prayer/init
 
 #TP Counting and sounds
-execute if entity @s[tag=!void,scores={ralseiTP=..119}] if entity @a[distance=0.05..3,gamemode=!spectator] unless score @a[distance=0.05..3,tag=playing,gamemode=!spectator,limit=1] team = @s team run function du-in:kit/ralsei/tp/count
-execute if entity @s[tag=void,scores={ralseiTP=..119}] if entity @e[type=skeleton,distance=0.05..3,tag=gonerThing] run function du-in:kit/ralsei/tp/count
+execute if entity @s[scores={ralseiTP=..119}] run function du-in:kit/ralsei/tp_count
 
 #Max TP
 execute if entity @s[scores={ralseiTP=120..},tag=!maxTP] run function du-in:kit/ralsei/tp/max
