@@ -24,4 +24,4 @@ execute if entity @s[predicate=du-in:effect/is_on_fire] run function du-in:kit/s
 
 attribute @s generic.knockback_resistance base set 0.25
 
-execute unless entity @a[tag=partyLeader,tag=scaleMode] run function du-in:kit/all/size/big
+execute unless entity @a[tag=scaleMode,tag=partyLeader] run function du-in:kit/all/size/big

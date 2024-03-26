@@ -19,4 +19,4 @@ execute if entity @s[scores={sansSkin=1},level=..164] run item replace entity @s
 attribute @s generic.knockback_resistance base set 0
 attribute @s generic.movement_speed base set 0.155
 attribute @s minecraft:generic.max_health base set 10
-execute unless entity @a[tag=partyLeader,tag=scaleMode] run function du-in:kit/all/size/small
+execute unless entity @a[tag=scaleMode,tag=partyLeader] run function du-in:kit/all/size/small

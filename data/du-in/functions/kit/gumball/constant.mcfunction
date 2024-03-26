@@ -45,6 +45,6 @@ attribute @s[tag=darwin] minecraft:generic.movement_speed base set 0.1475
 effect give @s[tag=darwin] dolphins_grace infinite 1 true
 effect give @s[tag=darwin] water_breathing infinite 1 true
 
-execute unless entity @a[tag=partyLeader,tag=scaleMode] run function du-in:kit/all/size/smaller
+execute unless entity @a[tag=scaleMode,tag=partyLeader] run function du-in:kit/all/size/smaller
 
 attribute @s generic.knockback_resistance base set 0.01

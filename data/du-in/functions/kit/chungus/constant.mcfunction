@@ -16,4 +16,4 @@ execute unless entity @s[scores={weapCount=1}] if entity @s[tag=!teamDead] run f
 attribute @s minecraft:generic.movement_speed base set 0.125
 #.1
 attribute @s generic.knockback_resistance base set 1
-execute unless entity @a[tag=partyLeader,tag=scaleMode] run attribute @s minecraft:generic.scale base set 1.25
+execute unless entity @a[tag=scaleMode,tag=partyLeader] run attribute @s minecraft:generic.scale base set 1.25

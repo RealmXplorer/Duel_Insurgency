@@ -8,7 +8,7 @@ execute unless entity @s[scores={weapCount=1}] if entity @s[tag=!teamDead] run f
 
 attribute @s minecraft:generic.movement_speed base set 0.135
 attribute @s generic.knockback_resistance base set 0.0325
-execute unless entity @a[tag=partyLeader,tag=scaleMode] run function du-in:kit/all/size/small
+execute unless entity @a[tag=scaleMode,tag=partyLeader] run function du-in:kit/all/size/small
 
 #THE VERY POWER
 #I STUDIED

@@ -24,6 +24,6 @@ execute if entity @s[tag=secKitActions] run function du-in:kit/jerma/secondary/e
 attribute @s minecraft:generic.movement_speed base set 0.135
 attribute @s generic.knockback_resistance base set 0.04
 
-execute unless entity @a[tag=partyLeader,tag=scaleMode] run function du-in:kit/all/size/tiny
+execute unless entity @a[tag=scaleMode,tag=partyLeader] run function du-in:kit/all/size/tiny
 
 #WHAT THE FUCK#

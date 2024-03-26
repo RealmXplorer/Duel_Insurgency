@@ -16,6 +16,6 @@ attribute @s generic.knockback_resistance base set 0.01
 attribute @s generic.movement_speed base set 0.14
 
 #Size
-execute unless entity @a[tag=partyLeader,tag=scaleMode] run function du-in:kit/all/size/small
+execute unless entity @a[tag=scaleMode,tag=partyLeader] run function du-in:kit/all/size/small
 
 effect give @s[predicate=!du-in:effect/has_night_vision] minecraft:night_vision infinite 100 true

@@ -22,4 +22,4 @@ attribute @s[tag=!stolen] generic.knockback_resistance base set 0.09
 attribute @s[tag=!stolen] minecraft:generic.movement_speed base set 0.125
 
 #Size
-execute unless entity @a[tag=partyLeader,tag=scaleMode] if entity @s[tag=!stolen] run function du-in:kit/all/size/huge
+execute unless entity @a[tag=scaleMode,tag=partyLeader] if entity @s[tag=!stolen] run function du-in:kit/all/size/huge

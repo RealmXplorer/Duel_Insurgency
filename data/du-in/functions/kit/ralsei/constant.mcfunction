@@ -30,4 +30,4 @@ execute if entity @s[scores={ralseiTP=120..},tag=!maxTP] run function du-in:kit/
 attribute @s minecraft:generic.max_health base set 14
 attribute @s generic.movement_speed base set 0.145
 attribute @s generic.knockback_resistance base set 0.01
-execute unless entity @a[tag=partyLeader,tag=scaleMode] run function du-in:kit/all/size/small
+execute unless entity @a[tag=scaleMode,tag=partyLeader] run function du-in:kit/all/size/small

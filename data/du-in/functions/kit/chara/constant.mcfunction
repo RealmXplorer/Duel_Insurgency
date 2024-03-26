@@ -14,7 +14,7 @@ attribute @s minecraft:generic.movement_speed base set 0.13
 attribute @s generic.knockback_resistance base set 0.035
 
 #Size
-execute unless entity @a[tag=partyLeader,tag=scaleMode] run function du-in:kit/all/size/small
+execute unless entity @a[tag=scaleMode,tag=partyLeader] run function du-in:kit/all/size/small
 
 #A shame the one who looks for me has not yet found me.
 #Maybe, you and I, can find him first.

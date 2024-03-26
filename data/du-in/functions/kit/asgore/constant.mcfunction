@@ -18,7 +18,7 @@ execute unless entity @s[scores={weapCount=1}] if entity @s[tag=!thrown,tag=!tea
 
 #ASGORE ATTRIBUTES#
 #Size
-execute unless entity @a[tag=partyLeader,tag=scaleMode] run function du-in:kit/all/size/huge
+execute unless entity @a[tag=scaleMode,tag=partyLeader] run function du-in:kit/all/size/huge
 #Weight and speed
 #attribute @s minecraft:generic.armor_toughness base set 1
 attribute @s minecraft:generic.movement_speed base set 0.125
