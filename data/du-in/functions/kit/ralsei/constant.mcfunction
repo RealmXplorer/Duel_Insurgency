@@ -20,11 +20,12 @@ execute store result score @s[tag=!kitMenu] triCount run clear @s gunpowder 0
 #Secondary Ability Use
 execute if entity @s[tag=secKitActions] run function du-in:kit/ralsei/prayer/init
 
-#TP Counting and sounds
-execute if entity @s[scores={ralseiTP=..119}] run function du-in:kit/ralsei/tp_count
+#TP Counting and Max
+execute if entity @s[tag=!maxTP,scores={ralseiTP=..120}] run function du-in:kit/ralsei/tp_track
 
-#Max TP
-execute if entity @s[scores={ralseiTP=120..},tag=!maxTP] run function du-in:kit/ralsei/tp/max
+# execute if entity @s[scores={ralseiTP=..119}] run function du-in:kit/ralsei/tp_count
+# #Max TP
+# execute if entity @s[tag=!maxTP,scores={ralseiTP=120..}] run function du-in:kit/ralsei/tp/max
 
 #Attributes#
 attribute @s minecraft:generic.max_health base set 14
