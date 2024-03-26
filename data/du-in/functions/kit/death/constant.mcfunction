@@ -12,7 +12,7 @@ execute unless entity @s[scores={weapCount=1}] if entity @s[tag=!teamDead] run f
 
 
 #Check for if they have secondary
-execute store result score @s secCount run clear @s[tag=!kitMenu] warped_fungus_on_a_stick 0
+execute store result score @s secCount run clear @s warped_fungus_on_a_stick 0
 
 execute unless entity @s[scores={secCount=1}] unless entity @s[scores={deathSwapTimer=1..}] if entity @s[tag=!teamDead] run function du-in:kit/death/secondary/item
 

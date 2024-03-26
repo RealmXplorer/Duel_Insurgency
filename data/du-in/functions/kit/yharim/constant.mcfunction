@@ -8,7 +8,7 @@ execute unless entity @s[scores={weapCount=1}] run item replace entity @s[tag=!t
 execute unless entity @s[scores={secCount=1}] if entity @s[tag=!teamDead] run function du-in:kit/yharim/secondary/rage_meter
 
 #Track Secondary Item
-execute store result score @s secCount run clear @s[tag=!kitMenu] warped_fungus_on_a_stick 0
+execute store result score @s secCount run clear @s warped_fungus_on_a_stick 0
 
 #Activate Secondary#
 execute if entity @s[tag=secKitActions] run function du-in:kit/yharim/secondary/init

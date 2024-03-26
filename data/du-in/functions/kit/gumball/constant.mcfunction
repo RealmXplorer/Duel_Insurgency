@@ -26,7 +26,7 @@ execute if entity @s[scores={fakeTimer=0..}] run function du-in:kit/gumball/abil
 
 
 #Check for if they have secondary
-execute store result score @s secCount run clear @s[tag=!kitMenu] warped_fungus_on_a_stick 0
+execute store result score @s secCount run clear @s warped_fungus_on_a_stick 0
 
 
 #Gumball pursue ability constants

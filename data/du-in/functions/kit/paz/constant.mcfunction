@@ -20,7 +20,7 @@ execute unless entity @s[scores={weapCount=1}] if entity @s[tag=!teamDead] run f
 #Give Fortnite card
 execute if entity @s[tag=fortniteCard,tag=!teamDead] unless entity @s[scores={triCount=1}] run item replace entity @s hotbar.8 with minecraft:gunpowder[custom_name='{"text":"$19 Fortnite Card","color":"gray","bold":true}',lore=['{"text":"Who wants it?","color":"gray","bold":false}','{"text":"Use at Vending machine to upgrade weapon!","color":"green","bold":true}'],custom_model_data=2019] 1
 
-execute store result score @s triCount run clear @s[tag=!kitMenu] gunpowder 0
+execute store result score @s triCount run clear @s gunpowder 0
 
 #Attributes
 attribute @s minecraft:generic.movement_speed base set 0.1375

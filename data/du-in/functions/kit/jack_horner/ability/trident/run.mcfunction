@@ -1,5 +1,5 @@
 #Count Tridents
-execute store result score @s[gamemode=!spectator] tridentCount run clear @s[tag=!kitMenu] trident 0
+execute store result score @s[gamemode=!spectator] tridentCount run clear @s trident 0
 
 #Test throw
 execute if entity @s[scores={trident=1..}] run function du-in:kit/asgore/passive/trident

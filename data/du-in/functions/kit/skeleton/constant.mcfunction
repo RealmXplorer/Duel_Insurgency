@@ -16,7 +16,7 @@ execute unless entity @s[scores={weapCount=1}] unless entity @s[scores={skeleton
 
 execute unless entity @s[scores={secCount=1}] if entity @s[scores={skeletonMode=1..}] if entity @s[tag=!teamDead] run function du-in:kit/skeleton/bow
 
-execute store result score @s secCount run clear @s[tag=!kitMenu] bow 0
+execute store result score @s secCount run clear @s bow 0
 
 execute unless items entity @s[scores={skeletonMode=1..}] hotbar.* #minecraft:arrows run function du-in:kit/skeleton/ability/end
 

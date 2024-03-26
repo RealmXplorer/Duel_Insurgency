@@ -14,8 +14,8 @@ execute unless entity @s[scores={secCount=1}] run item replace entity @s[tag=!te
 execute unless entity @s[scores={triCount=1}] if entity @s[tag=!teamDead] run function du-in:kit/ralsei/tp/item
 
 #Track number of secondaries and Tp meters in inventory
-execute store result score @s[tag=!kitMenu] secCount run clear @s warped_fungus_on_a_stick 0
-execute store result score @s[tag=!kitMenu] triCount run clear @s gunpowder 0
+execute store result score @s secCount run clear @s warped_fungus_on_a_stick 0
+execute store result score @s triCount run clear @s gunpowder 0
 
 #Secondary Ability Use
 execute if entity @s[tag=secKitActions] run function du-in:kit/ralsei/prayer/init
