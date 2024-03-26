@@ -32,6 +32,7 @@ tag @a[tag=!spectating] add playing
 
     #Give all players weapons
     scoreboard players set @a[tag=playing,gamemode=!spectator] weapCount 0
+    execute as @a[tag=playing,gamemode=!spectator] run function du-in:kit/all/weapon/init
 
     #Set swap for secondary kits/weapons to 2 (this is to ensure that the weapon actually switches when rightclicked)
     scoreboard players set @a[scores={kit=22}] gumballSwitch 2

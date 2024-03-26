@@ -8,7 +8,7 @@ execute if entity @s[tag=sabotaged] run function du-in:kit/asgore/ability/contac
 clear @s
 
 #Replace weapon and armor with magma variants
-scoreboard players set @s[tag=!sabotaged] weapCount 0
+execute if entity @s[tag=!sabotaged] run function du-in:kit/all/weapon/init
 execute if entity @s[tag=!sabotaged] run function du-in:kit/all/armor/armor
 #tag @s[tag=!sabotaged] add armor
 

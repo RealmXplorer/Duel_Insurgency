@@ -1,5 +1,5 @@
 #Reset "voting"'s scores
-scoreboard players reset #main
+#scoreboard players reset #main 
 scoreboard players set #main mapWinner 0
 
 #tag @a add notVoted
@@ -21,9 +21,11 @@ function du-in:maps/start/set_vote with storage du-in:mapscore map
 
 #If random map wins vote, run
 #execute as @a[tag=voteRandom] run function du-in:maps/start/random
+#execute if score #main map matches -1 run function du-in:maps/start/random
+#execute if score #main map matches -1 as @a[tag=partyLeader] run function du-in:maps/start/random
 
 #Start game sequence depending on which map is chosen
-execute if score #main mapCountdown matches 1 run function du-in:maps/start/pick/init
+#execute if score #main mapCountdown matches 1 run function du-in:maps/start/pick/init
 
 #End function
 scoreboard players reset #main mapCountdown

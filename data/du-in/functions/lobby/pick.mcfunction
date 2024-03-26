@@ -40,8 +40,7 @@ tag @a[tag=dml] add cmap
 stopsound @a record
 schedule clear du-in:music/free/free
 
-#Pass "gamemode" score into new "setGamemode" score for map voting
-execute store result score #main setGamemode run scoreboard players get #main gamemode
+function du-in:lobby/mapselect/switch
 
 #Reset all item tags
 execute as @a run function du-in:lobby/item_reset
@@ -78,6 +77,3 @@ title @a times 0 60 0
 title @a title {"text":"","color":"red","bold":true}
 title @a[tag=!teamMode] subtitle {"text":"Open inventory to select a character!","color":"red","bold":true}
 title @a[tag=teamMode] subtitle {"text":"Pick a team and open inventory to select a character!","color":"red","bold":true}
-
-#End function
-scoreboard players reset #main gamemode

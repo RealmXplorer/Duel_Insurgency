@@ -185,7 +185,7 @@ scoreboard objectives add Diamonds dummy
 scoreboard objectives add gameDeaths minecraft.custom:deaths
 scoreboard objectives add gameGonerKills dummy
 scoreboard objectives add gameKills minecraft.custom:player_kills
-scoreboard objectives add gamemodeID dummy
+#scoreboard objectives add gamemode dummy
 scoreboard objectives add gameNum dummy
 scoreboard objectives add gameParries dummy
 scoreboard objectives add gamesPlayed dummy
@@ -312,7 +312,7 @@ scoreboard objectives add redPoints dummy
 scoreboard objectives add bluePoints dummy
 scoreboard objectives add scoreMost dummy
 scoreboard objectives add secCount dummy
-scoreboard objectives add setGamemode dummy
+#scoreboard objectives add setGamemode dummy
 scoreboard objectives add gamemode dummy
 
 scoreboard objectives add shutdown dummy
