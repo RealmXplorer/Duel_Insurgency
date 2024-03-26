@@ -25,9 +25,7 @@ bossbar set minecraft:map_countdown visible true
 #bossbar set minecraft:map_countdown visible true
 
 playsound minecraft:entity.ender_dragon.flap master @s ~ ~ ~ 1 1.5
-scoreboard players set @s kitTheme 1
-scoreboard players set @s kitList 7
-tag @s add kitMenu
+function du-in:lobby/kitmenu/init
 
 #scoreboard players set @s lobby 3
 #scoreboard players set #main lobby 3

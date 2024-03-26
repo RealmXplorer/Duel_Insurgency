@@ -9,7 +9,7 @@ execute if entity @s[scores={jump=1..}] run function du-in:kit/zombie/sounds/jum
 # execute if entity @s[tag=armor] run function du-in:kit/zombie/armor
 
 #Give Zombie Weapon#
-execute unless entity @s[scores={weapCount=1}] if entity @s[tag=!teamDead] run function du-in:kit/zombie/weapon
+#execute unless entity @s[scores={weapCount=1}] if entity @s[tag=!teamDead] run function du-in:kit/zombie/weapon
 
 #Weight#
 attribute @s generic.movement_speed base set 0.135

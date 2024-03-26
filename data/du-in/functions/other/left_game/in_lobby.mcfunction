@@ -27,18 +27,9 @@ execute if entity @a[tag=partyLeader,tag=cql] run tag @s add cql
 execute if entity @a[tag=partyLeader,tag=cmap] run tag @s add cmap
 
 #In gamemode select
-execute if entity @a[tag=partyLeader,tag=kitMenu,tag=lobby] run scoreboard players set @s kitTheme 1
-execute if entity @a[tag=partyLeader,tag=kitMenu,tag=lobby] run scoreboard players set @s kitList 7
-execute if entity @a[tag=partyLeader,tag=kitMenu,tag=lobby] run tag @s add kitMenu
+execute if entity @a[tag=partyLeader,tag=kitMenu,tag=lobby] run function du-in:lobby/kitmenu/init
 
-execute if entity @a[tag=partyLeader,tag=!kitMenu,tag=lobby] run tag @s remove kitMenu
-execute if entity @a[tag=partyLeader,tag=!kitMenu,tag=lobby] run tag @s remove kitPicked
-execute if entity @a[tag=partyLeader,tag=!kitMenu,tag=lobby] run tag @s remove teamPicked
-execute if entity @a[tag=partyLeader,tag=!kitMenu,tag=lobby] run tag @s remove spect
-execute if entity @a[tag=partyLeader,tag=!kitMenu,tag=lobby] run tag @s remove ready
-execute if entity @a[tag=partyLeader,tag=!kitMenu,tag=lobby] run scoreboard players set @s kit 0
-
-execute if entity @a[tag=partyLeader,tag=!kitMenu,tag=lobby] run team join lobby @s
+execute if entity @a[tag=partyLeader,tag=!kitMenu,tag=lobby] run function du-in:other/left_game/not_in_kit_menu
 
 attribute @s minecraft:generic.armor base set 0
 attribute @s minecraft:generic.armor_toughness base set 0

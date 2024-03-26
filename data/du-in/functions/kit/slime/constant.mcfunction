@@ -7,7 +7,7 @@ execute if entity @s[scores={jump=1..}] run function du-in:kit/slime/sounds/jump
 #execute if entity @s[tag=armor,tag=!stolen] run function du-in:kit/slime/armor
 
 #Weapon
-execute unless entity @s[scores={weapCount=1}] if entity @s[tag=!teamDead] run function du-in:kit/slime/weapon
+#execute unless entity @s[scores={weapCount=1}] if entity @s[tag=!teamDead] run function du-in:kit/slime/weapon
 
 #ATTRIBUTES#
 attribute @s minecraft:generic.jump_strength base set 0.51

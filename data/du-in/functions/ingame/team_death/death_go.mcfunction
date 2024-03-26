@@ -14,7 +14,5 @@ clear @s[tag=!cIngame,tag=!dmIngame,tag=!kothIngame]
 function du-in:lobby/item_reset
 
 #Initialize kit selection
-scoreboard players set @s[tag=!cIngame,tag=!dmIngame,tag=!kothIngame,tag=!grave,tag=!ranMode] kitTheme 1
-scoreboard players set @s[tag=!cIngame,tag=!dmIngame,tag=!kothIngame,tag=!grave,tag=!ranMode] kitList 7
-tag @s[tag=!cIngame,tag=!dmIngame,tag=!kothIngame,tag=!grave,tag=!ranMode] add kitMenu
+execute if entity @s[tag=!cIngame,tag=!dmIngame,tag=!kothIngame,tag=!grave,tag=!ranMode] run function du-in:lobby/kitmenu/init
 clear @s[tag=!cIngame,tag=!dmIngame,tag=!kothIngame] #du-in:armor
