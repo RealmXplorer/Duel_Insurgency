@@ -9,8 +9,7 @@ tag @s add sus
 scoreboard players add @s[scores={ventCooldown=..61}] ventCooldown 1
 
 #Weapon#
-execute unless entity @s[scores={weapCount=1}] run item replace entity @s[tag=!teamDead] hotbar.0 with minecraft:stone_sword[custom_name='{"text":"Serial Killer Knife","color":"gray","bold":true}',lore=['{"text":"The power of all serial killers combined!","color":"gray","bold":true}'],unbreakable={show_in_tooltip:false},custom_model_data=119,attribute_modifiers={modifiers:[{type:"generic.attack_damage",name:"generic.attack_damage",amount:4.75,operation:"add_value",uuid:[I;-1676859321,1954169104,-1445761286,746181978],slot:"mainhand"},{type:"generic.attack_speed",name:"generic.attack_speed",amount:-2,operation:"add_value",uuid:[I;1795934236,490032927,-1398378028,1812706020],slot:"mainhand"}],show_in_tooltip:false}] 1
-
+execute unless entity @s[scores={weapCount=1}] if entity @s[tag=!teamDead ]run function du-in:kit/jerma/weapon
 
 execute if entity @s[tag=secKitActions] run function du-in:kit/jerma/secondary/eat_onion
 

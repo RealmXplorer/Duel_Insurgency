@@ -4,7 +4,7 @@ execute if entity @s[scores={step=175..}] run function du-in:kit/yharim/sounds/s
 execute if entity @s[scores={sprint=175..}] run function du-in:kit/yharim/sounds/step
 
 #Weapons#
-execute unless entity @s[scores={weapCount=1}] run item replace entity @s[tag=!teamDead] hotbar.0 with minecraft:stone_sword[custom_name='[{"text":"Yharim\'s Ultisword","color":"#e31e4f","bold":true,"italic":false}]',custom_model_data=115,unbreakable={show_in_tooltip:false},attribute_modifiers={modifiers:[{type:"generic.attack_damage",name:"generic.attack_damage",amount:4,operation:"add_value",uuid:[I;-630440244,-997046647,-1606288818,1185157089],slot:"mainhand"},{type:"generic.attack_speed",name:"generic.attack_speed",amount:-2,operation:"add_value",uuid:[I;563925252,835208961,-1119387443,-1654645792],slot:"mainhand"}],show_in_tooltip:false}] 1
+execute unless entity @s[scores={weapCount=1}] if entity @s[tag=!teamDead] run function du-in:kit/yharim/weapon
 execute unless entity @s[scores={secCount=1}] if entity @s[tag=!teamDead] run function du-in:kit/yharim/secondary/rage_meter
 
 #Track Secondary Item

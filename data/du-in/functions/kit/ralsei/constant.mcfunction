@@ -5,7 +5,7 @@ execute if entity @s[scores={jump=1..}] run function du-in:kit/jump
 #execute if entity @s[tag=armor] run function du-in:kit/ralsei/armor
 
 #Weapons#
-execute unless entity @s[scores={weapCount=1}] run item replace entity @s[tag=!teamDead] hotbar.0 with minecraft:wooden_sword[custom_name='{"text":"Scarf","color":"gray","bold":true}',custom_model_data=119,unbreakable={show_in_tooltip:false},attribute_modifiers={modifiers:[{type:"generic.attack_damage",name:"generic.attack_damage",amount:4,operation:"add_value",uuid:[I;-642737571,446644550,-1245639932,307175481],slot:"mainhand"},{type:"generic.attack_speed",name:"generic.attack_speed",amount:-2,operation:"add_value",uuid:[I;668712849,-1993060669,-1160341246,-1661154571],slot:"mainhand"}],show_in_tooltip:false}] 1
+execute unless entity @s[scores={weapCount=1}] if entity @s[tag=!teamDead] run function du-in:kit/ralsei/weapon
 
 #Heal Prayer#
 execute unless entity @s[scores={secCount=1}] run item replace entity @s[tag=!teamDead] hotbar.1 with minecraft:warped_fungus_on_a_stick[custom_name='{"text":"Heal Prayer","color":"#e31e4f","bold":true}',lore=['{"text":"Right click to use!","color":"green","bold":true}'],custom_model_data=2019,unbreakable={show_in_tooltip:false}] 1

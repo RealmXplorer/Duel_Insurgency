@@ -8,7 +8,7 @@ execute if entity @s[scores={jump=1..}] run function du-in:kit/jump
 # execute if entity @s[tag=armor] run function du-in:kit/yoda/armor
 
 #Weapon#
-execute unless entity @s[scores={weapCount=1}] run item replace entity @s[tag=!teamDead] hotbar.0 with stone_sword[custom_name='{"text":"Saber of the Grandmaster","color":"#21ad28","bold":true}',enchantment_glint_override=true,custom_model_data=113,unbreakable={show_in_tooltip:false},attribute_modifiers={modifiers:[{type:"generic.attack_damage",name:"generic.attack_damage",amount:3.75,operation:"add_value",uuid:[I;-168437874,152782582,-2000443009,1993441999],slot:"mainhand"},{type:"generic.attack_speed",name:"generic.attack_speed",amount:-2.15,operation:"add_value",uuid:[I;279341438,1343704567,-1994473705,-471868331],slot:"mainhand"}],show_in_tooltip:false}] 1
+execute unless entity @s[scores={weapCount=1}] if entity @s[tag=!teamDead] run function du-in:kit/yoda/weapon
 
 #Base movement speed#
 attribute @s generic.movement_speed base set 0.1525

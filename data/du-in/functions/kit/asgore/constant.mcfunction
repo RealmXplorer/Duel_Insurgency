@@ -13,8 +13,7 @@ execute if entity @s[scores={trident=1..}] run function du-in:kit/asgore/passive
 execute if entity @s[tag=thrown,scores={tridentTimer=0..}] run function du-in:kit/asgore/passive/timer
 
 #Weapon
-execute unless entity @s[scores={weapCount=1}] if entity @s[tag=!thrown,tag=!teamDead] run item replace entity @s hotbar.0 with minecraft:trident[custom_name='{"text":"Trident of Kings","color":"gray","bold":true}',unbreakable={show_in_tooltip:false},attribute_modifiers={modifiers:[{type:"generic.attack_damage",name:"generic.attack_damage",amount:5,operation:"add_value",uuid:[I;587005605,-71940022,-1831877638,1219070476],slot:"mainhand"},{type:"generic.attack_speed",name:"generic.attack_speed",amount:-2.35,operation:"add_value",uuid:[I;-1101001144,122440415,-1088561833,-1009306776],slot:"mainhand"}],show_in_tooltip:false}] 1
-
+execute unless entity @s[scores={weapCount=1}] if entity @s[tag=!thrown,tag=!teamDead] run function du-in:kit/asgore/weapon
 
 #ASGORE ATTRIBUTES#
 #Size

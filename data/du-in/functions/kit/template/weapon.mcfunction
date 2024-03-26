@@ -1,0 +1,2 @@
+#Weapon#
+item replace entity @s hotbar.0 with minecraft:bone{display:{Name:"{\"text\":\"Template\",\"color\":\"gray\",\"bold\":true,\"italic\":true}"},AttributeModifiers:[{AttributeName:"generic.attack_damage",Name:"generic.attack_damage",Slot:"mainhand",Amount:2.75,Operation:0,UUID:[I;1021276089,1080769028,1088179457,1762458658]},{AttributeName:"generic.attack_speed",Name:"generic.attack_speed",Amount:40,Operation:0,UUID:[I;150931488,-224377682,-1476605358,-249302083],Slot:"mainhand"}],CustomModelData:100,HideFlags:2,du-in:weaponItem} 1
