@@ -10,7 +10,7 @@ execute if entity @a[scores={lobby=2}] run scoreboard players set #main kitOnlin
 execute as @a[tag=ready,tag=lobby] run scoreboard players add #main kitOnline 1
 
 #Pick gamemode
-execute if score #gamemode gamemode matches 1..5 run function du-in:lobby/pick
+execute if score #main gamemode matches 1..5 run function du-in:lobby/pick
 
 #Start game#
 execute if score #main startSeq matches 1.. run function du-in:ingame/startround/timer/start_timer

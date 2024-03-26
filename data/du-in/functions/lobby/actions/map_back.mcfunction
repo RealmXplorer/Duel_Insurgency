@@ -43,7 +43,7 @@ tag @a remove ctfl
 tag @a remove cql
 tag @a remove cmap
 tag @a remove ready
-scoreboard players reset #gamemode gamemode
+scoreboard players reset #main gamemode
 
 #Removes stopped countdown tag
 tag @a remove countStop
