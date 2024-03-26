@@ -1,9 +1,9 @@
 tellraw @a ["",{"text":"The ","bold":false,"color":"gray"},{"text":"Saac's Literal House ","bold":true,"color":"#0dd9e0"},{"text":"map has been chosen!","bold":false,"color":"gray"}]
 
-tp @a[tag=!working,scores={spawnpoint=0..2}] -2001 36 -1985
-tp @a[tag=!working,scores={spawnpoint=3..4}] -2003 47 -1984
-tp @a[tag=!working,scores={spawnpoint=5..6}] -2013 36 -1947
-tp @a[tag=!working,scores={spawnpoint=7..}] -1992 39 -1994
+tp @a[scores={spawnpoint=0..2}] -2001 36 -1985
+tp @a[scores={spawnpoint=3..4}] -2003 47 -1984
+tp @a[scores={spawnpoint=5..6}] -2013 36 -1947
+tp @a[scores={spawnpoint=7..}] -1992 39 -1994
 
 function du-in:maps/start/common
 

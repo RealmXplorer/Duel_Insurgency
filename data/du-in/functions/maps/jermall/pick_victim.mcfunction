@@ -1,4 +1,4 @@
-execute as @r[tag=playing,gamemode=!spectator,tag=!working,tag=!monsterTarget,limit=1] run tag @s add monsterTarget
+execute as @r[tag=playing,gamemode=!spectator,tag=!monsterTarget,limit=1] run tag @s add monsterTarget
 
 stopsound @a record
 

@@ -1,8 +1,8 @@
 tellraw @a ["",{"text":"The ","bold":false,"color":"gray"},{"text":"Clouds ","bold":true,"color":"#ebfaf6"},{"text":"map has been chosen!","bold":false,"color":"gray"}]
 
 #Teleports#
-tp @a[tag=!working,scores={team=1}] -388 19 494 135 5
-tp @a[tag=!working,scores={team=2}] -455 19 471 -45 1
+tp @a[scores={team=1}] -388 19 494 135 5
+tp @a[scores={team=2}] -455 19 471 -45 1
 
 function du-in:maps/start/common
 

@@ -1,8 +1,8 @@
 #Find player with most kills
-execute as @a[scores={killIngame=1..},tag=playing,tag=!working,tag=cIngame,sort=random] if score @s killIngame > #main classicMost store result score #main classicMost run scoreboard players get @s killIngame
+execute as @a[scores={killIngame=1..},tag=playing,tag=cIngame,sort=random] if score @s killIngame > #main classicMost store result score #main classicMost run scoreboard players get @s killIngame
 
 #Add tag to track player with most kills
-execute as @a[scores={killIngame=1..},tag=playing,tag=!working,tag=cIngame,sort=random] if score @s killIngame = #main classicMost run tag @s add mostKills
+execute as @a[scores={killIngame=1..},tag=playing,tag=cIngame,sort=random] if score @s killIngame = #main classicMost run tag @s add mostKills
 
 #Set bossbar value to player with most kills
 execute store result bossbar bossbar:classic value run scoreboard players get @a[tag=mostKills,limit=1] killIngame

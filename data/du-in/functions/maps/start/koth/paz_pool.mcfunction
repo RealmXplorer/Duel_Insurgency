@@ -1,11 +1,11 @@
 tellraw @a ["",{"text":"The ","bold":false,"color":"gray"},{"text":"Paz Pool Party ","bold":true,"color":"#ffc2f3"},{"text":"map has been chosen!","bold":false,"color":"gray"}]
 scoreboard players set @a[scores={kit=1001}] pazSkin 1
 
-tp @a[tag=!working,scores={spawnpoint=0..2}] 571 -32 -7220
-tp @a[tag=!working,scores={spawnpoint=3..4}] 609 -32 -7223
+tp @a[scores={spawnpoint=0..2}] 571 -32 -7220
+tp @a[scores={spawnpoint=3..4}] 609 -32 -7223
 
-tp @a[tag=!working,scores={spawnpoint=5..6}] 612 -33 -7250
-tp @a[tag=!working,scores={spawnpoint=7..}] 568 -33 -7249
+tp @a[scores={spawnpoint=5..6}] 612 -33 -7250
+tp @a[scores={spawnpoint=7..}] 568 -33 -7249
 
 function du-in:maps/start/common
 

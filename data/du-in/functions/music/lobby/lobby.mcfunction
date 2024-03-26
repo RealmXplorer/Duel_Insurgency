@@ -14,6 +14,3 @@ execute if entity @s[tag=tournament,tag=!fromVoid] run function du-in:music/lobb
 
 #VOID#
 execute if entity @s[tag=fromVoid] run function du-in:music/lobby/void
-
-execute if entity @s[tag=working] run function du-in:music/lobby/stop/lobby
-#execute if entity @s[tag=parkour] run function du-in:music/lobby/stop/lobby

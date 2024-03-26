@@ -8,4 +8,4 @@
 
 function du-in:void/ambience
 
-execute at @s if entity @s[distance=..100,y=20,dy=0,tag=!working] run function du-in:void/platform_return
+execute at @s if entity @s[distance=..100,y=20,dy=0] run function du-in:void/platform_return

@@ -13,4 +13,5 @@ bossbar set minecraft:redkoth visible false
 bossbar set minecraft:bluekoth visible false
 
 tag @a remove kothIngame
+tag @a remove kothMap
 scoreboard players set #main onPoint 0

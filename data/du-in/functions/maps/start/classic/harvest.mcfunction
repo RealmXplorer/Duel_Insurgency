@@ -1,9 +1,9 @@
 tellraw @a ["",{"text":"The ","bold":false,"color":"gray"},{"text":"Harvest ","bold":true,"color":"#e06e16"},{"text":"map has been chosen!","bold":false,"color":"gray"}]
 
-tp @a[tag=!working,scores={spawnpoint=0..2}] 41 8 2523 128 0
-tp @a[tag=!working,scores={spawnpoint=3..4}] -26 8 2474 0 0
-tp @a[tag=!working,scores={spawnpoint=5..6}] -41 8 2540 -135 0
-tp @a[tag=!working,scores={spawnpoint=7..}] -48 8 2498 -90 0
+tp @a[scores={spawnpoint=0..2}] 41 8 2523 128 0
+tp @a[scores={spawnpoint=3..4}] -26 8 2474 0 0
+tp @a[scores={spawnpoint=5..6}] -41 8 2540 -135 0
+tp @a[scores={spawnpoint=7..}] -48 8 2498 -90 0
 
 function du-in:maps/start/common
 

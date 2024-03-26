@@ -36,8 +36,8 @@ gamemode adventure @a
 
 team leave @a
 
-tp @a[tag=!working] 7974 7 265
-spawnpoint @a[tag=!working] 7974 7 265
+tp @a 7974 7 265
+spawnpoint @a 7974 7 265
 
 scoreboard players set @a creditsTimer 0
 

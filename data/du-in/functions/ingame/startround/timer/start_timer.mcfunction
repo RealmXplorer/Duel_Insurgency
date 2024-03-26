@@ -4,16 +4,16 @@ schedule clear du-in:lobby/void/wind
 stopsound @a ambient
 
 #Mark all players as in start game sequence
-tag @a[tag=!working] add startgame
+tag @a add startgame
 scoreboard players set @a[scores={kit=1001}] pazSkin 1
 #clear @a[scores={kit=1001}] #du-in:armor
 #Stop all other music
 stopsound @a record
 
 #Set all spectators into spectator mode
-tag @a[tag=!kitPicked,tag=!working] add spectating
-execute as @a[tag=spectating,tag=!working] run function du-in:ingame/spect
-scoreboard players reset @a[tag=specating,tag=!working] Lives
+tag @a[tag=!kitPicked] add spectating
+execute as @a[tag=spectating] run function du-in:ingame/spect
+scoreboard players reset @a[tag=specating] Lives
 
 #Clear all items
 clear @a
@@ -23,7 +23,7 @@ scoreboard players reset @a justdied
 scoreboard players reset @a mapVote
 
 #Give all players in game the "playing" tag
-tag @a[tag=!working,tag=!spectating] add playing
+tag @a[tag=!spectating] add playing
 
 
 ##Kit stuff
@@ -76,9 +76,6 @@ scoreboard players set @a gameParries 0
 #Start initial ability cooldown
 xp set @a[tag=playing] 100 levels
 
-#Give all players armor
-#tag @a add armor
-
 #Remove tag voteRandom
 #tag @a remove voteRandom
 
@@ -95,7 +92,7 @@ execute as @a run attribute @s minecraft:generic.attack_damage base set 1
 bossbar set bossbar:gametimer players @a
 
 #Start music
-tag @a[tag=!working,tag=!musicOff] add song
+tag @a[tag=!musicOff] add song
 
 #Non-timed classic
 execute if entity @a[tag=cl,tag=!teamMode,tag=!timedMode,tag=partyLeader] run function du-in:ingame/startround/classic

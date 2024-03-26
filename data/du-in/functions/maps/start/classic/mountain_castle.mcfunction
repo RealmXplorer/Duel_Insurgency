@@ -1,10 +1,10 @@
 tellraw @a ["",{"text":"The ","bold":false,"color":"gray"},{"text":"Mountain Castle ","bold":true,"color":"#b5b1aa"},{"text":"map has been chosen!","bold":false,"color":"gray"}]
 
 #Teleport#
-tp @a[tag=!working,scores={spawnpoint=0..2}] -13 11 29 -135 1
-tp @a[tag=!working,scores={spawnpoint=3..4}] 10 11 2 -13 1
-tp @a[tag=!working,scores={spawnpoint=5..6}] -15 5 -15 -44 -20
-tp @a[tag=!working,scores={spawnpoint=7..}] 15 19 4 -1 1
+tp @a[scores={spawnpoint=0..2}] -13 11 29 -135 1
+tp @a[scores={spawnpoint=3..4}] 10 11 2 -13 1
+tp @a[scores={spawnpoint=5..6}] -15 5 -15 -44 -20
+tp @a[scores={spawnpoint=7..}] 15 19 4 -1 1
 
 function du-in:maps/start/common
 

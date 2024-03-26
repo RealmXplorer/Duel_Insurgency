@@ -1,10 +1,10 @@
 tellraw @a ["",{"text":"The ","bold":false,"color":"gray"},{"text":"Haunted House ","bold":true,"color":"#b31e1e"},{"text":"map has been chosen!","bold":false,"color":"gray"}]
 
 
-tp @a[tag=!working,scores={spawnpoint=..2}] 0 11 2438 180 0
-tp @a[tag=!working,scores={spawnpoint=3..4}] 21 11 2420 0 0
-tp @a[tag=!working,scores={spawnpoint=5..6}] -21 11 2420 0 0
-tp @a[tag=!working,scores={spawnpoint=7..}] 9 11 2418 0 0
+tp @a[scores={spawnpoint=..2}] 0 11 2438 180 0
+tp @a[scores={spawnpoint=3..4}] 21 11 2420 0 0
+tp @a[scores={spawnpoint=5..6}] -21 11 2420 0 0
+tp @a[scores={spawnpoint=7..}] 9 11 2418 0 0
 
 function du-in:maps/start/common
 

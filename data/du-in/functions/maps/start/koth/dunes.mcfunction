@@ -1,9 +1,9 @@
 tellraw @a ["",{"text":"The ","bold":false,"color":"gray"},{"text":"Dunesday ","bold":true,"color":"#ecedbe"},{"text":"map has been chosen!","bold":false,"color":"gray"}]
 
-tp @a[tag=!working,scores={spawnpoint=0..2}] 50045 8 200000 45 -19
-tp @a[tag=!working,scores={spawnpoint=3..4}] 50000 5 200000 -44 -23
-tp @a[tag=!working,scores={spawnpoint=5..6}] 50000 9 200045 -135 -18
-tp @a[tag=!working,scores={spawnpoint=7..}] 50045 7 200045 130 -30.5
+tp @a[scores={spawnpoint=0..2}] 50045 8 200000 45 -19
+tp @a[scores={spawnpoint=3..4}] 50000 5 200000 -44 -23
+tp @a[scores={spawnpoint=5..6}] 50000 9 200045 -135 -18
+tp @a[scores={spawnpoint=7..}] 50045 7 200045 130 -30.5
 
 function du-in:maps/start/common
 

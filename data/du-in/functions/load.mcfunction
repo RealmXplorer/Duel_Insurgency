@@ -294,7 +294,6 @@ scoreboard objectives add trident minecraft.used:minecraft.trident
 scoreboard objectives add level dummy
 scoreboard objectives add lobby dummy
 scoreboard objectives add lobbyTheme dummy
-scoreboard objectives add localAmb dummy
 scoreboard objectives add map dummy
 
 scoreboard objectives add matchDeaths dummy
@@ -308,7 +307,6 @@ scoreboard objectives add parryWindow dummy
 scoreboard objectives add player dummy
 scoreboard objectives add playerCount dummy
 scoreboard objectives add quickKill dummy
-# scoreboard objectives add random dummy
 
 scoreboard objectives add redPoints dummy
 scoreboard objectives add bluePoints dummy

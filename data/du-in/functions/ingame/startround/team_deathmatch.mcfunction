@@ -10,12 +10,6 @@ execute store result score Blue teamPool run scoreboard players get @a[tag=party
 
 execute unless score #main pylonsDestroyed matches 3 run schedule function du-in:music/ingame/deathmatch 4s
 
-#scoreboard players set Red teamPool 5
-#scoreboard players set Blue teamPool 5
-
-#tag @a[tag=!working,tag=!musicOff] add song
-#team join Deathmatch @a[tag=!spectating]
-#execute if entity @a[tag=!teamMode] run execute store result score #main playerCount run team list Deathmatch
 advancement grant @a[tag=playing] only du-in:gamemode/deathmatch
 scoreboard objectives setdisplay sidebar teamPool
 tag @a remove dml

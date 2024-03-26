@@ -1,9 +1,9 @@
 tellraw @a ["",{"text":"The ","bold":false,"color":"gray"},{"text":"Mt. Ebbot ","bold":true,"color":"#528231"},{"text":"map has been chosen!","bold":false,"color":"gray"}]
 
-tp @a[tag=!working,scores={spawnpoint=0..2}] -2500 1 -2500 -43 -6
-tp @a[tag=!working,scores={spawnpoint=3..4}] -2455 2 -2500 47 -1
-tp @a[tag=!working,scores={spawnpoint=5..6}] -2459 8 -2459 101 12
-tp @a[tag=!working,scores={spawnpoint=7..}] -2487 7 -2461 -90 15
+tp @a[scores={spawnpoint=0..2}] -2500 1 -2500 -43 -6
+tp @a[scores={spawnpoint=3..4}] -2455 2 -2500 47 -1
+tp @a[scores={spawnpoint=5..6}] -2459 8 -2459 101 12
+tp @a[scores={spawnpoint=7..}] -2487 7 -2461 -90 15
 
 function du-in:maps/start/common
 

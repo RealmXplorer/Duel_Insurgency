@@ -82,7 +82,7 @@ execute if entity @a[tag=partyLeader,tag=teamMode] run tag @s add teamMode
 
 #execute store result score @s pylonNum run scoreboard players get @a[tag=partyLeader,limit=1] pylonNum
 
-scoreboard players reset @s map
+#scoreboard players reset @s map
 
 #RESET KIT MENU
 scoreboard players set @s kitTheme 1

@@ -6,9 +6,7 @@ execute if entity @s[tag=!voidReady] run playsound minecraft:soundeffect.unlock 
 
 tag @s add voidReady
 scoreboard players add #main voidReadyOnline 1
-#execute as @a[tag=!spectating,tag=!working,tag=voidReady] run scoreboard players add #main voidReadyOnline 1
 tellraw @a [{"text":"The Void shakes loose ","color":"red","bold":true},{"text":"(","color":"white","bold":true},{"score":{"name":"#main","objective":"voidReadyOnline"},"color":"white","bold":true},{"text":"/","color":"white","bold":true},{"score":{"name":"#main","objective":"online"},"color":"white","bold":true},{"text":")","color":"white","bold":true}]
 
-#scoreboard players set #main voidReadyOnline 2
 execute if entity @a[tag=devMode,tag=partyLeader] run function du-in:void/interact/begin_timer
 execute if score #main voidReadyOnline = #main online run function du-in:void/interact/begin_timer

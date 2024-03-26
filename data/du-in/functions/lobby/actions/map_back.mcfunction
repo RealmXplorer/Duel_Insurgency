@@ -30,7 +30,7 @@ team join lobby @a
 execute as @a run function du-in:lobby/item_reset
 
 #Teleport players
-tp @a[tag=!working] -999 13 517 -90 0
+tp @a -999 13 517 -90 0
 
 #Resets readied player count
 scoreboard players set #main kitOnline 0
@@ -52,7 +52,7 @@ tag @a remove countStop
 #tag @a remove voteRandom
 
 #Clears inventories of players
-clear @a[tag=!working]
+clear @a
 
 #Set personal and global lobby score to 1
 scoreboard players set #main lobby 1

@@ -5,15 +5,15 @@ tag @a remove kitMenu
 tag @a add quickMatch
 
 #Add random kit#
-tag @a[tag=!working,tag=!kitPicked,tag=!spect] add random
+tag @a[tag=!kitPicked,tag=!spect] add random
 
 #Make it so players do not go into spectator, unless they already are#
-tag @a[tag=!working,tag=!kitPicked,tag=!spect] add kitPicked
+tag @a[tag=!kitPicked,tag=!spect] add kitPicked
 
 title @a subtitle {"text":""}
 
 #Pick random map#
-#tag @r[tag=!working] add voteRandom
+#tag @r add voteRandom
 #execute as @a[tag=voteRandom] run function du-in:maps/start/random
 
 function du-in:maps/start/random

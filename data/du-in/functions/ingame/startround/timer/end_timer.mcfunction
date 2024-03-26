@@ -7,7 +7,7 @@ gamemode adventure @a[tag=playing]
 scoreboard objectives setdisplay below_name Health
 scoreboard objectives setdisplay list killStreak
 
-tag @a[tag=!working] remove kitPicked
+tag @a remove kitPicked
 tag @a remove spectator
 
 scoreboard players set @a music 0

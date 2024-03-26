@@ -1,4 +1,4 @@
-execute if entity @s[tag=!sabotaged] as @a[tag=playing,tag=!spectating,tag=!working] unless score @a[scores={kit=1000},tag=kitActions,limit=1] team = @s team run tag @s add confusion
+execute if entity @s[tag=!sabotaged] as @a[tag=playing,tag=!spectating] unless score @a[scores={kit=1000},tag=kitActions,limit=1] team = @s team run tag @s add confusion
 tag @s[tag=sabotaged] add confusion
 
 clear @s minecraft:carrot_on_a_stick

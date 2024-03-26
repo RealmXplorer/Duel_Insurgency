@@ -1,9 +1,9 @@
 tellraw @a ["",{"text":"The ","bold":false,"color":"gray"},{"text":"Moraband ","bold":true,"color":"#e83a63"},{"text":"map has been chosen!","bold":false,"color":"gray"}]
 
-tp @a[tag=!working,scores={spawnpoint=0..2}] 5021 11 5247 40 10
-tp @a[tag=!working,scores={spawnpoint=3..4}] 5020 7 5290 150 0
-tp @a[tag=!working,scores={spawnpoint=5..6}] 4991 7 5290 -151 0
-tp @a[tag=!working,scores={spawnpoint=7..}] 4990 11 5247 -36 11
+tp @a[scores={spawnpoint=0..2}] 5021 11 5247 40 10
+tp @a[scores={spawnpoint=3..4}] 5020 7 5290 150 0
+tp @a[scores={spawnpoint=5..6}] 4991 7 5290 -151 0
+tp @a[scores={spawnpoint=7..}] 4990 11 5247 -36 11
 
 
 function du-in:maps/start/common

@@ -1,10 +1,10 @@
 tellraw @a ["",{"text":"The ","bold":false,"color":"gray"},{"text":"Hive ","bold":true,"color":"#ffd859"},{"text":"map has been chosen!","bold":false,"color":"gray"}]
 
 #TELEPORT#
-tp @a[tag=!working,scores={spawnpoint=0..2}] 73 5 37 40 -4
-tp @a[tag=!working,scores={spawnpoint=3..4}] 73 5 74 142 -12
-tp @a[tag=!working,scores={spawnpoint=5..6}] 36 5 73 -137 -5
-tp @a[tag=!working,scores={spawnpoint=7..}] 36 5 36 -12 1
+tp @a[scores={spawnpoint=0..2}] 73 5 37 40 -4
+tp @a[scores={spawnpoint=3..4}] 73 5 74 142 -12
+tp @a[scores={spawnpoint=5..6}] 36 5 73 -137 -5
+tp @a[scores={spawnpoint=7..}] 36 5 36 -12 1
 
 function du-in:maps/start/common
 

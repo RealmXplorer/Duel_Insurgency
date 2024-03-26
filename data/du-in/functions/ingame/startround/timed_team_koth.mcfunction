@@ -11,13 +11,11 @@ execute if score #main tKothCap matches 5000 run scoreboard objectives modify ko
 execute unless score #main pylonsDestroyed matches 3 run schedule function du-in:music/ingame/koth 4s
 
 bossbar set bossbar:gametimer players @a
-scoreboard players set @a[tag=!spectating,tag=!working] kothTimer 0
+scoreboard players set @a[tag=!spectating] kothTimer 0
 scoreboard objectives setdisplay sidebar kothTeamTimer
 scoreboard players set Red kothTeamTimer 0
 scoreboard players set Blue kothTeamTimer 0
 execute store result score #main maxTimer run scoreboard players get #main gameTimeMax
 bossbar set bossbar:gametimer visible true
-#bossbar set minecraft:redkoth visible true
-#bossbar set minecraft:bluekoth visible true
 advancement grant @a[tag=playing] only du-in:gamemode/koth
 tag @a remove kothl

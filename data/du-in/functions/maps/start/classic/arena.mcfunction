@@ -2,10 +2,10 @@
 tellraw @a ["",{"text":"The ","bold":false,"color":"gray"},{"text":"Arena ","bold":true,"color":"#f5f5f5"},{"text":"map has been chosen!","bold":false,"color":"gray"}]
 
 #Teleport players
-tp @a[tag=!working,scores={spawnpoint=0..2}] -7 6 -534 -135 -5
-tp @a[tag=!working,scores={spawnpoint=3..4}] -7 6 -534 -135 -1
-tp @a[tag=!working,scores={spawnpoint=5..6}] 15 6 -556 45 -1
-tp @a[tag=!working,scores={spawnpoint=7..}] -7 6 -556 -45 1
+tp @a[scores={spawnpoint=0..2}] -7 6 -534 -135 -5
+tp @a[scores={spawnpoint=3..4}] -7 6 -534 -135 -1
+tp @a[scores={spawnpoint=5..6}] 15 6 -556 45 -1
+tp @a[scores={spawnpoint=7..}] -7 6 -556 -45 1
 
 #Run common functions (These must be run before every game)
 function du-in:maps/start/common

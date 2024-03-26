@@ -1,9 +1,9 @@
 tellraw @a ["",{"text":"The ","bold":false,"color":"gray"},{"text":"Ziggurat ","bold":true,"color":"#f5f0eb"},{"text":"map has been chosen!","bold":false,"color":"gray"}]
 
-tp @a[tag=!working,scores={spawnpoint=0..2}] 233 6 -1882 -135 -13
-tp @a[tag=!working,scores={spawnpoint=3..4}] 233 6 -1925 -45 -15
-tp @a[tag=!working,scores={spawnpoint=5..6}] 276 6 -1925 45 -15
-tp @a[tag=!working,scores={spawnpoint=7..}] 276 6 -1882 135 -15
+tp @a[scores={spawnpoint=0..2}] 233 6 -1882 -135 -13
+tp @a[scores={spawnpoint=3..4}] 233 6 -1925 -45 -15
+tp @a[scores={spawnpoint=5..6}] 276 6 -1925 45 -15
+tp @a[scores={spawnpoint=7..}] 276 6 -1882 135 -15
 
 #233 6 -1882
 #233 6 -1925

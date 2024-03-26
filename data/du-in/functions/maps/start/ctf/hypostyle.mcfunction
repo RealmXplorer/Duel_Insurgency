@@ -1,7 +1,7 @@
 tellraw @a ["",{"text":"The ","bold":false,"color":"gray"},{"text":"Hypostyle ","bold":true,"color":"#91a8ed"},{"text":"map has been chosen!","bold":false,"color":"gray"}]
 
-tp @a[tag=!working,scores={team=2}] -820 9 -38 0 0
-tp @a[tag=!working,scores={team=1}] -775 9 -20 -180 0
+tp @a[scores={team=2}] -820 9 -38 0 0
+tp @a[scores={team=1}] -775 9 -20 -180 0
 
 function du-in:maps/start/common
 

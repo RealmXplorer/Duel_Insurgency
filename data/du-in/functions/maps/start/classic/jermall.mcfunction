@@ -2,10 +2,10 @@
 tellraw @a ["",{"text":"The ","bold":false,"color":"gray"},{"text":"Jermall ","bold":true,"color":"#cc2176"},{"text":"map has been chosen!","bold":false,"color":"gray"}]
 
 #Teleport players
-tp @a[tag=!working,scores={spawnpoint=0..2}] -1333 15 851 31 0
-tp @a[tag=!working,scores={spawnpoint=3..4}] -1336 15 909 -12 -6
-tp @a[tag=!working,scores={spawnpoint=5..6}] -1368 15 907 -136 -0
-tp @a[tag=!working,scores={spawnpoint=7..}] -1379 15 864 -80 0
+tp @a[scores={spawnpoint=0..2}] -1333 15 851 31 0
+tp @a[scores={spawnpoint=3..4}] -1336 15 909 -12 -6
+tp @a[scores={spawnpoint=5..6}] -1368 15 907 -136 -0
+tp @a[scores={spawnpoint=7..}] -1379 15 864 -80 0
 
 fill -1332 21 850 -1379 21 915 minecraft:iron_block replace minecraft:barrier
 

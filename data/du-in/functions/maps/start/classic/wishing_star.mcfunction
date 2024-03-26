@@ -1,11 +1,11 @@
 tellraw @a ["",{"text":"The ","bold":false,"color":"gray"},{"text":"Wishing Star ","bold":true,"color":"#f571e5"},{"text":"map has been chosen!","bold":false,"color":"gray"}]
 
 #Teleports#
-tp @a[tag=!working,scores={spawnpoint=0..2}] 2524 68 54 -90 0
-tp @a[tag=!working,scores={spawnpoint=3..4}] 2547 68 27 -18 0
-tp @a[tag=!working,scores={spawnpoint=5}] 2579 68 37 50 0
-tp @a[tag=!working,scores={spawnpoint=6}] 2547 68 82 -162 0
-tp @a[tag=!working,scores={spawnpoint=7..}] 2579 68 71 125 0
+tp @a[scores={spawnpoint=0..2}] 2524 68 54 -90 0
+tp @a[scores={spawnpoint=3..4}] 2547 68 27 -18 0
+tp @a[scores={spawnpoint=5}] 2579 68 37 50 0
+tp @a[scores={spawnpoint=6}] 2547 68 82 -162 0
+tp @a[scores={spawnpoint=7..}] 2579 68 71 125 0
 
 function du-in:maps/start/common
 

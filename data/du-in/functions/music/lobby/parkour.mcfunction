@@ -3,5 +3,3 @@ execute if entity @s[scores={music=1},tag=!oldPack] run playsound minecraft:musi
 
 #BETA#
 execute if entity @s[tag=oldPack] run function du-in:music/lobby/oldpack/parkour
-
-execute if entity @s[tag=working] run function du-in:music/lobby/stop/parkour

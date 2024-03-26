@@ -8,7 +8,7 @@ execute unless score #main pylonsDestroyed matches 3 run schedule function du-in
 
 bossbar set bossbar:gametimer players @a
 team join Classic @a[tag=!spectating,tag=!teamMode,tag=!AFK]
-scoreboard players set @a[tag=!spectating,tag=!working] killIngame 0
+scoreboard players set @a[tag=!spectating] killIngame 0
 execute store result score #main maxTimer run scoreboard players get #main gameTimeMax
 bossbar set bossbar:gametimer visible true
 

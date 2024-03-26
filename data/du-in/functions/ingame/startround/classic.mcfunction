@@ -13,6 +13,6 @@ execute unless score #main pylonsDestroyed matches 3 run schedule function du-in
 
 team join Classic @a[tag=!spectating,tag=!teamMode,tag=!AFK]
 scoreboard players reset * killIngame
-scoreboard players set @a[tag=!spectating,tag=!working] killIngame 0
+scoreboard players set @a[tag=!spectating] killIngame 0
 advancement grant @a[tag=playing] only du-in:gamemode/classic
 tag @a remove cl

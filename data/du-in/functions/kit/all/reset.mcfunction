@@ -11,7 +11,6 @@ tag @s remove vended
 tag @s remove saacRod
 tag @s remove badBlock
 tag @s remove broken
-#tag @s remove bigChungus
 tag @s remove thrown
 tag @s remove kitDone
 tag @s remove wilde
@@ -32,7 +31,6 @@ scoreboard players reset @s asrielHitTimer
 scoreboard players reset @s asrielTimer
 scoreboard players reset @s tridentTimer
 scoreboard players reset @s trident
-scoreboard players set @s wildeTimer 0
 scoreboard players reset @s saacMoneyChance
 scoreboard players set @s saacMoneyCheck 0
 scoreboard players set @s saacMoney 0

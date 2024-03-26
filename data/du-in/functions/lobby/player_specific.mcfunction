@@ -1,5 +1,5 @@
 # Lobby Sidebar #
-    execute if entity @s[scores={lobby=1..}] unless entity @a[tag=partyLeader,tag=sidebarDisable] unless score #main pylonsDestroyed matches 3 unless entity @a[tag=playing] unless entity @a[tag=working] run function du-in:lobby/misc/sidebar
+    execute if entity @s[scores={lobby=1..}] unless entity @a[tag=partyLeader,tag=sidebarDisable] unless score #main pylonsDestroyed matches 3 unless entity @a[tag=playing] run function du-in:lobby/misc/sidebar
 
 
 
@@ -18,5 +18,3 @@
         
     # Map Select Functions #
         execute if entity @s[scores={lobby=2}] run function du-in:lobby/map_select
-
-        #execute if entity @s[scores={kitUse=1..,lobby=1}] run function du-in:lobby/kit_use/gm

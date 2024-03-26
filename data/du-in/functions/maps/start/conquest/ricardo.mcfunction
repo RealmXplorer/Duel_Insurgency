@@ -1,8 +1,8 @@
 tellraw @a ["",{"text":"The ","bold":false,"color":"gray"},{"text":"San Ricardo ","bold":true,"color":"#fceaa2"},{"text":"map has been chosen!","bold":false,"color":"gray"}]
 
 #Teleports#
-tp @a[tag=!working,scores={team=1}] -3752 57 1239 -25.25 -5
-tp @a[tag=!working,scores={team=2}] -3752 62 1293 -154 6
+tp @a[scores={team=1}] -3752 57 1239 -25.25 -5
+tp @a[scores={team=2}] -3752 62 1293 -154 6
 
 function du-in:maps/start/common
 

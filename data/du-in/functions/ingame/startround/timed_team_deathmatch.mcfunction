@@ -1,9 +1,8 @@
 tag @a add dmIngame
 
-#tag @a[tag=!working,tag=!musicOff] add song
+
 team join Deathmatch @a[tag=!spectating]
 
-#execute if entity @a[tag=!teamMode] run execute store result score #main playerCount run team list Deathmatch
 scoreboard players set Red teamDeaths 0
 scoreboard players set Blue teamDeaths 0
 

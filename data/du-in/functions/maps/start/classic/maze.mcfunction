@@ -1,9 +1,9 @@
 tellraw @a ["",{"text":"The ","bold":false,"color":"gray"},{"text":"Maze ","bold":true,"color":"#99cc21"},{"text":"map has been chosen!","bold":false,"color":"gray"}]
 
-tp @a[tag=!working,scores={spawnpoint=0..2}] 651 31 -579 -135 5
-tp @a[tag=!working,scores={spawnpoint=3..4}] 651 31 -622 -45 5
-tp @a[tag=!working,scores={spawnpoint=5..6}] 694 31 -621 20 3
-tp @a[tag=!working,scores={spawnpoint=7..}] 694 31 -579 160 5
+tp @a[scores={spawnpoint=0..2}] 651 31 -579 -135 5
+tp @a[scores={spawnpoint=3..4}] 651 31 -622 -45 5
+tp @a[scores={spawnpoint=5..6}] 694 31 -621 20 3
+tp @a[scores={spawnpoint=7..}] 694 31 -579 160 5
 
 function du-in:maps/start/common
 

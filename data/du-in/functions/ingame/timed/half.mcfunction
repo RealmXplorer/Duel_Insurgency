@@ -9,7 +9,7 @@ execute as @a at @s run playsound minecraft:soundeffect.woosh master @s ~ ~ ~ .5
 execute as @a at @s run playsound minecraft:soundeffect.woosh master @s ~ ~ ~ .5 2
 
 #Start end of round music
-tag @a[tag=!working,tag=!win,tag=!lose,tag=song] add songEnd
+tag @a[tag=!win,tag=!lose,tag=song] add songEnd
 scoreboard players set @a[tag=song,tag=songEnd] music 0
 execute as @a[tag=song,tag=songEnd] run function du-in:music/ingame/stop/transition
 execute if entity @a[tag=cIngame] run function du-in:music/ingame/classic

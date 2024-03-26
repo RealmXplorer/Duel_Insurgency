@@ -5,7 +5,7 @@
 
 #function du-in:lobby/mapselect/switch
 #tp @s[tag=!spectator,tag=!teamMode] 232 91 36 180 0
-tp @s[tag=!spectator,tag=!working] 232 91 36 180 0
+tp @s[tag=!spectator] 232 91 36 180 0
 #kill @e[tag=displayItem]
 #function du-in:lobby/mapselect/switch
 #tag @s remove mystery

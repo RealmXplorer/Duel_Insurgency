@@ -1,7 +1,7 @@
 tellraw @a ["",{"text":"The ","bold":false,"color":"gray"},{"text":"End ","bold":true,"color":"#aa77d9"},{"text":"map has been chosen!","bold":false,"color":"gray"}]
 
-tp @a[tag=!working,scores={spawnpoint=0..4}] -387 16 246 -145 0
-tp @a[tag=!working,scores={spawnpoint=5..}] -345 16 201 45 0
+tp @a[scores={spawnpoint=0..4}] -387 16 246 -145 0
+tp @a[scores={spawnpoint=5..}] -345 16 201 45 0
 
 function du-in:maps/start/common
 

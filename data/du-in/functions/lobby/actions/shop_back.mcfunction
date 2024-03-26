@@ -1,6 +1,5 @@
 #Remove tags for Shop
 tag @s remove shop
-#tag @s remove skinMenu
 
 #Kill tabba and Hugo if no one else is in shop
 execute unless entity @a[tag=shop] run tp @e[tag=tabba] 216 -100 40
@@ -12,7 +11,7 @@ scoreboard players set @s tabbaVendingTalk 0
 #execute unless entity @a[tag=shop] run kill @e[tag=shopSpecific]
 
 #Teleport to gamemode select
-tp @s[tag=!working] -999 13 517 -90 0
+tp @s -999 13 517 -90 0
 
 #Stop shop music and start new music
 function du-in:music/lobby/stop/shop

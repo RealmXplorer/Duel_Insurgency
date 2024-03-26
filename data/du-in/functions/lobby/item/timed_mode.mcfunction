@@ -5,4 +5,4 @@ execute if score #main pylonsDestroyed matches 3 run item replace entity @s inve
 
 tag @s add givenTimed
 
-#[gamemode=!creative,tag=!playing,tag=!working]
+#[gamemode=!creative,tag=!playing]

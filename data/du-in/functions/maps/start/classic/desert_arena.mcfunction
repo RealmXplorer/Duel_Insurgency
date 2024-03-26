@@ -1,9 +1,9 @@
 tellraw @a ["",{"text":"The ","bold":false,"color":"gray"},{"text":"Desert Arena ","bold":true,"color":"yellow"},{"text":"map has been chosen!","bold":false,"color":"gray"}]
 
-tp @a[tag=!working,scores={spawnpoint=0..2}] -2747 6 -5949 -180 0
-tp @a[tag=!working,scores={spawnpoint=3..4}] -2726 6 -5970 90 0
-tp @a[tag=!working,scores={spawnpoint=5..6}] -2747 6 -5991 0 0
-tp @a[tag=!working,scores={spawnpoint=7..}] -2768 6 -5970 -90 0
+tp @a[scores={spawnpoint=0..2}] -2747 6 -5949 -180 0
+tp @a[scores={spawnpoint=3..4}] -2726 6 -5970 90 0
+tp @a[scores={spawnpoint=5..6}] -2747 6 -5991 0 0
+tp @a[scores={spawnpoint=7..}] -2768 6 -5970 -90 0
 
 function du-in:maps/start/common
 
