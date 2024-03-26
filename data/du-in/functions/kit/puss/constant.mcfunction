@@ -8,19 +8,19 @@ execute if entity @s[scores={jump=1..}] run function du-in:kit/jump
 #execute if entity @s[tag=armor] run function du-in:kit/puss/armor
 
 # Ability ITEM #
-execute if entity @s[level=1] run function du-in:kit/puss/ability/item
+#execute if entity @s[level=1] run function du-in:kit/puss/ability/item
 
 #WEAPON#
-execute unless entity @s[scores={weapCount=1}] if entity @s[tag=!teamDead,tag=!pussFear] run function du-in:kit/puss/weapon
+execute unless entity @s[scores={weapCount=1}] if entity @s[tag=!teamDead] run function du-in:kit/puss/weapon
 
 #Use ability
 execute if entity @s[tag=secKitActions] run function du-in:kit/puss/secondary/switch
 
-execute store result score @s[scores={gameDeaths=4..},tag=!void] secCount run clear @s[tag=!kitMenu] warped_fungus_on_a_stick 0
-execute store result score @s[tag=void] secCount run clear @s[tag=!kitMenu] warped_fungus_on_a_stick 0
+execute store result score @s[scores={gameDeaths=4..},tag=!void,tag=!kitMenu] secCount run clear @s warped_fungus_on_a_stick 0
+execute store result score @s[tag=void,tag=!kitMenu] secCount run clear @s warped_fungus_on_a_stick 0
 
-execute if entity @s[tag=!teamDead,scores={gameDeaths=4..},tag=!void] unless entity @s[scores={secCount=1}] unless entity @s[scores={pussSwapTimer=1..}] run function du-in:kit/puss/secondary/item
-execute if entity @s[tag=!teamDead,tag=void] unless entity @s[scores={secCount=1}] unless entity @s[scores={pussSwapTimer=1..}] run function du-in:kit/puss/secondary/item
+#Secondary Item
+execute unless entity @s[scores={secCount=1}] unless entity @s[scores={pussSwapTimer=1..}] if entity @s[tag=!teamDead] run function du-in:kit/puss/secondary
 
 execute if entity @s[scores={pussSwapTimer=-1..}] run function du-in:kit/puss/secondary/timer
 

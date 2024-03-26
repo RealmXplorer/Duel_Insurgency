@@ -10,11 +10,11 @@ execute unless entity @s[scores={weapCount=1}] run item replace entity @s[tag=!t
 execute unless entity @s[scores={secCount=1}] run item replace entity @s[tag=!teamDead] hotbar.1 with minecraft:warped_fungus_on_a_stick[custom_name='{"text":"Heal Prayer","color":"#e31e4f","bold":true}',lore=['{"text":"Right click to use!","color":"green","bold":true}'],custom_model_data=2019,unbreakable={show_in_tooltip:false}] 1
 
 #TP Meter Item
-execute if entity @s[tag=!teamDead] unless entity @s[scores={triCount=1}] run function du-in:kit/ralsei/tp/item
+execute unless entity @s[scores={triCount=1}] if entity @s[tag=!teamDead] run function du-in:kit/ralsei/tp/item
 
 #Track number of secondaries and Tp meters in inventory
-execute store result score @s secCount run clear @s[tag=!kitMenu] warped_fungus_on_a_stick 0
-execute store result score @s triCount run clear @s[tag=!kitMenu] gunpowder 0
+execute store result score @s[tag=!kitMenu] secCount run clear @s warped_fungus_on_a_stick 0
+execute store result score @s[tag=!kitMenu] triCount run clear @s gunpowder 0
 
 #Secondary Ability Use
 execute if entity @s[tag=secKitActions] run function du-in:kit/ralsei/prayer/init

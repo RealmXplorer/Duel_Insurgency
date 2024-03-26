@@ -18,7 +18,7 @@ execute unless entity @s[scores={weapCount=1}] if entity @s[tag=!teamDead] run f
 #execute if entity @s[tag=kitActions] run function du-in:kit/paz/ability/init
 
 #Give Fortnite card
-execute if entity @s[tag=!teamDead,tag=fortniteCard] unless entity @s[scores={triCount=1}] run item replace entity @s hotbar.8 with minecraft:gunpowder[custom_name='{"text":"$19 Fortnite Card","color":"gray","bold":true}',lore=['{"text":"Who wants it?","color":"gray","bold":false}','{"text":"Use at Vending machine to upgrade weapon!","color":"green","bold":true}'],custom_model_data=2019] 1
+execute if entity @s[tag=fortniteCard,tag=!teamDead] unless entity @s[scores={triCount=1}] run item replace entity @s hotbar.8 with minecraft:gunpowder[custom_name='{"text":"$19 Fortnite Card","color":"gray","bold":true}',lore=['{"text":"Who wants it?","color":"gray","bold":false}','{"text":"Use at Vending machine to upgrade weapon!","color":"green","bold":true}'],custom_model_data=2019] 1
 
 execute store result score @s triCount run clear @s[tag=!kitMenu] gunpowder 0
 

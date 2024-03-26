@@ -7,7 +7,7 @@ execute if entity @s[scores={jump=1..}] run function du-in:kit/flowey/sounds/jum
 # execute if entity @s[tag=armor] unless entity @s[scores={floweyHitTimer=0..}] run function du-in:kit/flowey/armor
 
 #WEAPON COUNT#
-execute unless entity @s[scores={weapCount=1}] if entity @s[tag=!teamDead,tag=!pussFear] unless entity @s[scores={floweyHitTimer=0..}] run function du-in:kit/flowey/weapon
+execute unless entity @s[scores={weapCount=1}] if entity @s[tag=!teamDead] unless entity @s[scores={floweyHitTimer=0..}] run function du-in:kit/flowey/weapon
 
 #ATTRIBUTES
 attribute @s minecraft:generic.movement_speed base set 0.13

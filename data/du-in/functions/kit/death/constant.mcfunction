@@ -14,7 +14,7 @@ execute unless entity @s[scores={weapCount=1}] if entity @s[tag=!teamDead] run f
 #Check for if they have secondary
 execute store result score @s secCount run clear @s[tag=!kitMenu] warped_fungus_on_a_stick 0
 
-execute if entity @s[tag=!teamDead] unless entity @s[scores={secCount=1}] unless entity @s[scores={deathSwapTimer=1..}] run function du-in:kit/death/secondary/item
+execute unless entity @s[scores={secCount=1}] unless entity @s[scores={deathSwapTimer=1..}] if entity @s[tag=!teamDead] run function du-in:kit/death/secondary/item
 
 #Weapon switch cooldown timer
 execute if entity @s[scores={deathSwapTimer=-1..}] run function du-in:kit/death/secondary/timer
@@ -29,4 +29,4 @@ attribute @s[tag=deathDouble] minecraft:generic.movement_speed base set 0.14
 execute unless entity @a[tag=partyLeader,tag=scaleMode] run function du-in:kit/all/size/big
 
 #Base Weight
-attribute @s[tag=!pussFear] generic.knockback_resistance base set 0.23
+attribute @s generic.knockback_resistance base set 0.23

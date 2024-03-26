@@ -16,7 +16,7 @@ execute unless entity @s[scores={weapCount=1}] if entity @s[tag=!teamDead] run f
 
 
 #Secondary Give#
-execute if entity @s[tag=!teamDead] unless entity @s[scores={secCount=1}] unless entity @s[scores={gumSwapTimer=1..}] run function du-in:kit/gumball/secondary/item
+execute unless entity @s[scores={secCount=1}] unless entity @s[scores={gumSwapTimer=1..}] if entity @s[tag=!teamDead] run function du-in:kit/gumball/secondary/item
 
 #Kit switch cooldown timer
 execute if entity @s[scores={gumSwapTimer=-1..}] run function du-in:kit/gumball/secondary/timer
