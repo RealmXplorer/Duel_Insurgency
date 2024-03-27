@@ -1,3 +1,4 @@
+#When Grave is used to respawn, play sound
 execute unless entity @s[scores={zombSkin=1..}] run playsound minecraft:entity.zombie.ambient master @a ~ ~ ~ 100000 0.1 1
 execute if entity @s[scores={zombSkin=1}] run playsound minecraft:entity.husk.ambient master @a ~ ~ ~ 100000 0.1 1
 execute if entity @s[scores={zombSkin=2}] run playsound minecraft:entity.drowned.ambient master @a ~ ~ ~ 100000 0.1 1

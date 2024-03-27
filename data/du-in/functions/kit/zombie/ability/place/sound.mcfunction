@@ -1,5 +1,5 @@
 #Set Block
-execute unless entity @s[scores={zombSkin=1..2}] unless entity @s[scores={zombSkin=4}] run summon minecraft:falling_block ~ ~ ~ {BlockState:{Name:"minecraft:stone_brick_wall"},NoGravity:1b,Time:-2147483648,DropItem:0b,HurtEntities:0b,FallHurtMax:0,FallHurtAmount:0f,Tags:["grave","projectile","mapSpecific"]}
-execute if entity @s[scores={zombSkin=1}] run summon minecraft:falling_block ~ ~ ~ {BlockState:{Name:"minecraft:sandstone_wall"},NoGravity:1b,Time:-2147483648,DropItem:0b,HurtEntities:0b,FallHurtMax:0,FallHurtAmount:0f,Tags:["grave","projectile","mapSpecific"]}
-execute if entity @s[scores={zombSkin=2}] run summon minecraft:falling_block ~ ~ ~ {BlockState:{Name:"minecraft:prismarine_wall"},NoGravity:1b,Time:-2147483648,DropItem:0b,HurtEntities:0b,FallHurtMax:0,FallHurtAmount:0f,Tags:["grave","projectile","mapSpecific"]}
-execute if entity @s[scores={zombSkin=4}] run summon minecraft:falling_block ~ ~ ~ {BlockState:{Name:"minecraft:lightning_rod"},NoGravity:1b,Time:-2147483648,DropItem:0b,HurtEntities:0b,FallHurtMax:0,FallHurtAmount:0f,Tags:["grave","projectile","mapSpecific"]}
+execute unless entity @s[scores={zombSkin=1..3}] run playsound minecraft:entity.zombie.hurt master @a ~ ~ ~ 100 1
+execute if entity @s[scores={zombSkin=1}] run playsound minecraft:entity.husk.hurt master @a ~ ~ ~ 100 1
+execute if entity @s[scores={zombSkin=2}] run playsound minecraft:entity.drowned.hurt master @a ~ ~ ~ 100 1
+execute if entity @s[scores={zombSkin=3}] run playsound minecraft:terraria.zombhit master @a ~ ~ ~ 100 1
