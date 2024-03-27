@@ -39,7 +39,7 @@ execute as @e[type=block_display,tag=flame,scores={flameTimer=-99..}] at @s run 
 
 
 #Kill graves when projectiles are near or when the sand is far from the stand
-    execute as @e[type=area_effect_cloud,tag=grave] at @s run function du-in:kit/zombie/ability/grave_stand
+    execute as @e[type=area_effect_cloud,tag=grave] at @s run function du-in:kit/zombie/ability/grave/stand
     execute as @e[type=falling_block] at @s run function du-in:ingame/entities/falling_block
 
 #Slime functions

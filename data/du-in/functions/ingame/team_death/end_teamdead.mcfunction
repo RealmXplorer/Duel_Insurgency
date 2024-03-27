@@ -12,6 +12,8 @@ execute if entity @s[tag=!grave,tag=!hornerWeapon] unless entity @s[level=1..] r
 title @s actionbar {"text":""}
 item replace entity @s[scores={kit=7}] hotbar.2 with arrow 2
 #tag @s add armor
-execute if entity @s[tag=grave] run function du-in:kit/zombie/ability/team_respawn
+#execute if entity @s[tag=grave] run function du-in:kit/zombie/ability/team_respawn
+execute if entity @s[tag=grave] run function du-in:kit/zombie/ability/respawn
+
 scoreboard players reset @s deathTimer
 tag @s remove teamDead

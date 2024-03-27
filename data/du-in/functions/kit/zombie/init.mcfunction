@@ -12,7 +12,7 @@ execute if entity @s[tag=!stolen] run function du-in:kit/zombie/constant
 # execute if entity @s[tag=kitActions,tag=!flagGot,tag=!badBlock] at @s rotated as @s run function du-in:kit/zombie/ability/set_spawn
 
 #Zombie timer
-execute if entity @s[scores={zombieTimer=-99..}] run function du-in:kit/zombie/ability/timer
+execute if entity @s[scores={zombieTimer=0..}] run function du-in:kit/zombie/ability/timer
 
 #Zombie Spawnpoint Validity Checker#
 execute unless block ~ ~-1 ~ #du-in:zomb_invalid run tag @s remove badBlock
