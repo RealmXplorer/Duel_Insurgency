@@ -21,12 +21,15 @@ scoreboard objectives add saacMoneyDollar dummy
 scoreboard objectives add TPSound dummy
 scoreboard objectives add ventCooldown dummy
 scoreboard objectives add villagerEmeralds dummy
-scoreboard objectives add villSansHead dummy
+#scoreboard objectives add villSansHead dummy
+scoreboard objectives add sansHead dummy
+
 scoreboard objectives add weaponTier dummy
 scoreboard objectives add yharimRage dummy
 scoreboard objectives add yodaTimer dummy
 scoreboard objectives add yodaDamage minecraft.custom:damage_taken
 scoreboard objectives add yodaAbsorb dummy
+scoreboard objectives add sauronTimer dummy
 
 #Timers
 scoreboard objectives add ambience dummy

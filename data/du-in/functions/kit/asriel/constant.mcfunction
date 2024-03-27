@@ -4,7 +4,9 @@ execute if entity @s[scores={sprint=150..}] run function du-in:kit/asriel/sounds
 execute if entity @s[scores={jump=1..}] run function du-in:kit/asriel/sounds/jump
 
 #EFFECTS#
-execute if entity @s[tag=!win] run function du-in:kit/asriel/passive/go
+execute if entity @s[tag=!asrielCharge,scores={asrielHitLand=280..319}] run function du-in:kit/asriel/passive/ready
+
+execute if entity @s[scores={asrielSaberTimer=0..}] run function du-in:kit/asriel/passive/cooldown
 
 #ARMOR# -Now in kit/all/armor/armor
 #execute if entity @s[tag=armor] run function du-in:kit/asriel/armor

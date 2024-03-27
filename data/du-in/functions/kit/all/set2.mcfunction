@@ -21,7 +21,7 @@ execute if entity @s[scores={kit=14},tag=!stolen] run function du-in:kit/asgore/
 execute if entity @s[scores={kit=15},tag=!stolen] run function du-in:kit/frisk/constant
 
 # Sans #
-execute if entity @s[scores={kit=16},tag=!stolen] run function du-in:kit/sans/constant
+execute if entity @s[scores={kit=16}] run function du-in:kit/sans/init
 
 #OH MY PEOPLE
 #WHO HAVE BEEN 

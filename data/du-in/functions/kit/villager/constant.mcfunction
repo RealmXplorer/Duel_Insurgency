@@ -21,7 +21,6 @@ execute if entity @s[scores={villagerEmeralds=1..}] run function du-in:kit/villa
 
 #Head revert
 execute if entity @s[tag=stolen,tag=givenStolen,tag=kitDone] run function du-in:kit/villager/ability/revert
-execute if entity @s[scores={vilSansHead=-1..}] run function du-in:kit/villager/ability/sans_head
 
 #Attributes#
 attribute @s generic.movement_speed base set 0.13

@@ -1,0 +1,28 @@
+{
+    "criteria": {
+      "requirement": {
+        "trigger": "minecraft:player_killed_entity",
+        "conditions": {
+          "player": [
+            {
+              "condition": "minecraft:entity_properties",
+              "entity": "this"
+            }
+          ],
+          "entity": {
+            "type": "minecraft:player",
+            "nbt": "{Tags:[\"hasRing\"]}"
+          }
+        }
+      }
+    },
+    "requirements": [
+        [
+            "requirement"
+        ]
+    ],
+    "rewards": {
+      "function": "du-in:kit/sauron/ring/give_ring"
+    }
+  }
+  

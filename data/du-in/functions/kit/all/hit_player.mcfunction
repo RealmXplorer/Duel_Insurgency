@@ -10,6 +10,8 @@ scoreboard players add @s comboScore 1
 #Combos Sounds
 execute if entity @s[scores={comboScore=3..},tag=playing] run function du-in:kit/all/combo_sounds/init
 
+#Asriel Saber#
+execute if entity @s[tag=asrielCharge] run function du-in:kit/asriel/passive/damage
 
 #Villager Emerald System#
     execute if entity @s[scores={kit=8},tag=playing,predicate=du-in:chance/forty_chance] run scoreboard players add @s villagerEmeralds 1
