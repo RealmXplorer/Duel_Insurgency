@@ -64,7 +64,7 @@ execute if entity @s[predicate=!du-in:has_armor,predicate=!du-in:effect/is_invis
     execute if entity @s[scores={simSprint=1..}] run function du-in:ingame/steptrack/sprint_go
 
 #SANS HIT#
-execute if entity @s[scores={sansHitTimer=0..}] run function du-in:kit/sans/ability/timer
+execute if entity @s[scores={sansHitTimer=0..}] run function du-in:kit/sans/ability/hit/timer
 
 #Kill and Death functions
     execute if entity @s[scores={justdied=1..}] run function du-in:ingame/death
