@@ -1,10 +1,8 @@
 execute if entity @s[tag=!empower,predicate=!du-in:effect/is_on_fire] as @a[tag=spiderHit] run function du-in:kit/spider/ability/effect_normal
-
-execute if entity @s[tag=empower,predicate=!du-in:effect/is_on_fire] as @a[tag=spiderHit] run function du-in:kit/spider/ability/effect_empower
+execute if entity @s[tag=empower,predicate=!du-in:effect/is_on_fire] as @a[tag=spiderHit] run function du-in:kit/spider/ability/empower/effect
 
 execute if entity @s[tag=!empower,predicate=du-in:effect/is_on_fire] as @a[tag=spiderHit] run function du-in:kit/spider/ability/effect_fire
-
-execute if entity @s[tag=empower,predicate=du-in:effect/is_on_fire] as @a[tag=spiderHit] run function du-in:kit/spider/ability/effect_empower_fire
+execute if entity @s[tag=empower,predicate=du-in:effect/is_on_fire] as @a[tag=spiderHit] run function du-in:kit/spider/ability/empower/effect_fire
 
 execute as @a[tag=spiderHit] at @s run playsound minecraft:block.honey_block.slide master @s ~ ~ ~ 1 1
 

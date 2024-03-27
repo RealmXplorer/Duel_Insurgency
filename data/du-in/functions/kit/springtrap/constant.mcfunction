@@ -9,13 +9,6 @@ execute if entity @s[scores={jump=1..}] run function du-in:kit/springtrap/sounds
 # Weapons #
 #execute unless entity @s[scores={weapCount=1}] if entity @s[tag=!teamDead] run function du-in:kit/springtrap/weapon
 
-#I Always Come Back#
-execute if entity @s[tag=cIngame] run function du-in:kit/springtrap/passive/classic
-
-execute if entity @s[tag=dmIngame] run function du-in:kit/springtrap/passive/deathmatch
-
-execute if entity @s[tag=kothIngame] run function du-in:kit/springtrap/passive/koth
-
 #Attributes#
 execute if entity @s[predicate=!du-in:effect/is_on_fire,tag=!springLock] run function du-in:kit/springtrap/passive/default
 
