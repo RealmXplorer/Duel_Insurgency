@@ -370,6 +370,7 @@ scoreboard objectives modify winStreak displayname {"text":"Win Streak","bold":t
 scoreboard objectives modify Diamonds displayname {"text":"Diamonds","bold":true,"color":"red"}
 
 scoreboard objectives modify GumballClassicFake displayname ["",{"text":"Classic Kills ","bold":true,"color":"gold"},{"text":"(of ??)","color":"gray"}]
+forceload add -994 527 -972 507
 
 schedule clear du-in:main/scheduled
 schedule function du-in:main/scheduled 1s
