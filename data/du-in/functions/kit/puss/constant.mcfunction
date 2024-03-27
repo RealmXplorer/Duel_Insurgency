@@ -11,7 +11,7 @@ execute if entity @s[scores={jump=1..}] run function du-in:kit/jump
 #execute if entity @s[level=1] run function du-in:kit/puss/ability/item
 
 #WEAPON#
-execute unless entity @s[scores={weapCount=1}] if entity @s[tag=!teamDead] run function du-in:kit/puss/weapon
+# execute unless entity @s[scores={weapCount=1}] if entity @s[tag=!teamDead] run function du-in:kit/puss/weapon
 
 #Use ability
 execute if entity @s[tag=secKitActions] run function du-in:kit/puss/secondary/switch

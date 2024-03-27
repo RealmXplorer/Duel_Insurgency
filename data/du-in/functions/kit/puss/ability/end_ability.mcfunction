@@ -1,6 +1,6 @@
 scoreboard players reset @s pussTimer
-
-scoreboard players set @s weapCount 0
+function du-in:kit/all/weapon/init
+# scoreboard players set @s weapCount 0
 
 #Start cooldown
 xp set @s[tag=!stolen] 340 levels

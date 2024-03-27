@@ -1,6 +1,7 @@
 #Remove tags and reset weapon value
 tag @s remove asgoreTrident
-scoreboard players set @s weapCount 0
+# scoreboard players set @s weapCount 0
+function du-in:kit/all/weapon/init
 scoreboard players reset @s tridentTimer
 
 #Start cooldown

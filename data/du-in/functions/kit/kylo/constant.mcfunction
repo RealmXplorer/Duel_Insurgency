@@ -5,7 +5,7 @@ execute if entity @s[scores={jump=1..}] run function du-in:kit/jump
 # execute if entity @s[tag=armor] run function du-in:kit/kylo/armor
 
 #WEAPON#
-execute unless entity @s[scores={weapCount=1}] if entity @s[tag=!teamDead] run function du-in:kit/kylo/weapon
+# execute unless entity @s[scores={weapCount=1}] if entity @s[tag=!teamDead] run function du-in:kit/kylo/weapon
 
 #Attributes#
 attribute @s generic.knockback_resistance base set 0.02

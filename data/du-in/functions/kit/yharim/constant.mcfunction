@@ -4,7 +4,7 @@ execute if entity @s[scores={step=175..}] run function du-in:kit/yharim/sounds/s
 execute if entity @s[scores={sprint=175..}] run function du-in:kit/yharim/sounds/step
 
 #Weapons#
-execute unless entity @s[scores={weapCount=1}] if entity @s[tag=!teamDead] run function du-in:kit/yharim/weapon
+# execute unless entity @s[scores={weapCount=1}] if entity @s[tag=!teamDead] run function du-in:kit/yharim/weapon
 execute unless entity @s[scores={secCount=1}] if entity @s[tag=!teamDead] run function du-in:kit/yharim/secondary/rage_meter
 
 #Track Secondary Item

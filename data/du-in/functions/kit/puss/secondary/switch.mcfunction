@@ -11,7 +11,8 @@ clear @s #du-in:weapon
 clear @s #du-in:secondary
 #clear @s carrot_on_a_stick
 
-scoreboard players set @s weapCount 0
+# scoreboard players set @s weapCount 0
+function du-in:kit/all/weapon/init
 scoreboard players set @s pussSwapTimer 20
 
 #execute unless entity @s[level=1..] unless entity @s[scores={pussTimer=-99..}] run xp add @s 30 levels

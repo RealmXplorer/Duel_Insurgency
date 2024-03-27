@@ -11,7 +11,8 @@ clear @s carrot_on_a_stick
 
 playsound minecraft:death.switch master @a ~ ~ ~
 
-scoreboard players set @s weapCount 0
+#scoreboard players set @s weapCount 0
+function du-in:kit/death/weapon
 scoreboard players set @s deathSwapTimer 20
 
 execute unless entity @s[level=1..] run xp add @s 3 levels

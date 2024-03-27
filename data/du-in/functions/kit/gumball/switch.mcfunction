@@ -7,7 +7,8 @@ execute if entity @s[scores={gumballSwitch=2}] run tag @s remove darwin
 execute if entity @s[scores={gumballSwitch=2}] run effect clear @s dolphins_grace
 execute if entity @s[scores={gumballSwitch=2}] run effect clear @s water_breathing
 
-scoreboard players set @s weapCount 0
+#scoreboard players set @s weapCount 0
+function du-in:kit/gumball/weapon
 scoreboard players set @s gumSwapTimer 30
 clear @s
 execute unless entity @s[level=1..] run xp add @s 30 levels

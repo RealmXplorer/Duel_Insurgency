@@ -1,7 +1,8 @@
 scoreboard players set @s[tag=!sabotaged] pussTimer 80
 execute as @e[type=skeleton,tag=gonerThing,distance=0.05..5] run function du-in:kit/puss/ability/void/hit
 
-scoreboard players set @s weapCount 0
+# scoreboard players set @s weapCount 0
+function du-in:kit/all/weapon/init
 
 #execute anchored eyes facing entity @s eyes run summon marker ^ ^ ^1.25 {Tags:["tpMark"]}
 

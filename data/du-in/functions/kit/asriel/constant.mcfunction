@@ -10,7 +10,7 @@ execute if entity @s[tag=!win] run function du-in:kit/asriel/passive/go
 #execute if entity @s[tag=armor] run function du-in:kit/asriel/armor
 
 #WEAPON#
-execute unless entity @s[scores={weapCount=1}] if entity @s[tag=!teamDead,tag=!asrielSaber] run function du-in:kit/asriel/weapon
+# execute unless entity @s[scores={weapCount=1}] if entity @s[tag=!teamDead,tag=!asrielSaber] run function du-in:kit/asriel/weapon
 
 attribute @s minecraft:generic.movement_speed base set 0.1325
 attribute @s generic.knockback_resistance base set 0.0375

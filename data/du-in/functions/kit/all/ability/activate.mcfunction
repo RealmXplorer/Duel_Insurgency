@@ -40,6 +40,9 @@ execute if entity @s[scores={kit=27}] run function du-in:kit/puss/ability/init
 execute if entity @s[scores={kit=28}] run function du-in:kit/death/ability/init
 
 execute if entity @s[scores={kit=29}] run function du-in:kit/yoda/ability/init
+execute if entity @s[scores={kit=30}] run function du-in:kit/skeleton/ability/init
+execute if entity @s[scores={kit=31}] run function du-in:kit/sauron/ability/init
+execute if entity @s[scores={kit=32}] run function du-in:kit/avatar/ability/init
 
 #Legendary
 execute if entity @s[scores={kit=1000}] run function du-in:kit/saac/ability/init

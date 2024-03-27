@@ -6,7 +6,7 @@ execute if entity @s[scores={jump=1..}] run function du-in:kit/nick/sounds/jump
 tag @s add wilde
 
 #Nick Wilde#
-execute unless entity @s[scores={weapCount=1}] if entity @s[tag=!stolen,tag=!teamDead] run function du-in:kit/nick/weapon
+# execute unless entity @s[scores={weapCount=1}] if entity @s[tag=!stolen,tag=!teamDead] run function du-in:kit/nick/weapon
 
 #Armor#
 #execute if entity @s[tag=armor] run function du-in:kit/nick/armor

@@ -14,7 +14,7 @@ execute if entity @s[level=1] run function du-in:kit/sauron/ability/item
 execute if entity @s[tag=kitActions] run function du-in:kit/sauron/ability/init
 
 #WEAPON#
-execute unless entity @s[scores={weapCount=1}] if entity @s[tag=!stolen,tag=!teamDead] run function du-in:kit/sauron/weapon
+# execute unless entity @s[scores={weapCount=1}] if entity @s[tag=!stolen,tag=!teamDead] run function du-in:kit/sauron/weapon
 
 #Attributes
 attribute @s[tag=!stolen] generic.knockback_resistance base set 0.09

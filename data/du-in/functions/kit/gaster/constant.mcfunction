@@ -3,7 +3,7 @@ execute if entity @s[scores={hit=5..,gastSkin=2}] run function du-in:kit/gaster/
 execute if entity @s[scores={jump=1..},tag=!gasterInvisible] unless entity @s[scores={gastSkin=2}] run function du-in:kit/gaster/sounds/jump
 
 #Weapons#
-execute unless entity @s[scores={weapCount=1}] if entity @s[tag=!teamDead,tag=!gasterInvisible] run function du-in:kit/gaster/weapon
+#execute unless entity @s[scores={weapCount=1}] if entity @s[tag=!teamDead,tag=!gasterInvisible] run function du-in:kit/gaster/weapon
 
 # GASTER #
 #execute if entity @s[tag=armor,tag=!gasterInvisible] run function du-in:kit/gaster/armor

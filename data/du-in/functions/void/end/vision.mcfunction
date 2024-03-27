@@ -58,6 +58,14 @@ execute if entity @s[scores={kit=26},tag=!stolen] run tellraw @s [{"text":"You f
 execute if entity @s[scores={kit=27},tag=!stolen] run tellraw @s [{"text":"You feel the embrace of Kitty and Perrito...","color":"gray","italic": true}]
 #Death
 execute if entity @s[scores={kit=28},tag=!stolen] run tellraw @s [{"text":"You see a man running from you...","color":"gray","italic": true}]
+#Yoda
+execute if entity @s[scores={kit=29},tag=!stolen] run tellraw @s [{"text":"You see a new hope...","color":"gray","italic": true}]
+#Skeleton
+execute if entity @s[scores={kit=30},tag=!stolen] run tellraw @s [{"text":"You see the sweet embrace of the grave...","color":"gray","italic": true}]
+#Sauron
+execute if entity @s[scores={kit=31},tag=!stolen] run tellraw @s [{"text":"You see fires of Mount Doom...","color":"gray","italic": true}]
+#Aang
+execute if entity @s[scores={kit=32},tag=!stolen] run tellraw @s [{"text":"You hear Katara and Sokka call your name...","color":"gray","italic": true}]
 
 #Saac
 execute if entity @s[scores={kit=1000}] run tellraw @s [{"text":"You black out...","color":"gray","italic": true}]

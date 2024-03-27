@@ -5,7 +5,7 @@ execute if entity @s[scores={sprint=150..}] run function du-in:kit/golem/sounds/
 execute if entity @s[scores={jump=1..}] run function du-in:kit/golem/sounds/jump
 
 # WEAPON #
-execute unless entity @s[scores={weapCount=1}] if entity @s[tag=!teamDead] run function du-in:kit/golem/weapon
+# execute unless entity @s[scores={weapCount=1}] if entity @s[tag=!teamDead] run function du-in:kit/golem/weapon
 
 #ARMOR# - Now in kit/all/armor/armor
 # execute if entity @s[tag=armor] run function du-in:kit/golem/armor

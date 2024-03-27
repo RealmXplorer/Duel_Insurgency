@@ -12,7 +12,7 @@ execute if entity @s[level=1] run function du-in:kit/skeleton/ability/item
 execute if entity @s[tag=kitActions] run function du-in:kit/skeleton/ability/init
 
 #Weapon
-execute unless entity @s[scores={weapCount=1}] unless entity @s[scores={skeletonMode=1..}] if entity @s[tag=!teamDead] run function du-in:kit/skeleton/weapon
+# execute unless entity @s[scores={weapCount=1}] unless entity @s[scores={skeletonMode=1..}] if entity @s[tag=!teamDead] run function du-in:kit/skeleton/weapon
 
 execute unless entity @s[scores={secCount=1}] if entity @s[scores={skeletonMode=1..}] if entity @s[tag=!teamDead] run function du-in:kit/skeleton/bow
 

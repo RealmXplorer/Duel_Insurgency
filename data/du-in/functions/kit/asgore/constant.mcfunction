@@ -13,7 +13,7 @@ execute if entity @s[scores={trident=1..}] run function du-in:kit/asgore/passive
 execute if entity @s[tag=thrown,scores={tridentTimer=0..}] run function du-in:kit/asgore/passive/timer
 
 #Weapon
-execute unless entity @s[scores={weapCount=1}] if entity @s[tag=!thrown,tag=!teamDead] run function du-in:kit/asgore/weapon
+# execute unless entity @s[scores={weapCount=1}] if entity @s[tag=!thrown,tag=!teamDead] run function du-in:kit/asgore/weapon
 
 #ASGORE ATTRIBUTES#
 #Size

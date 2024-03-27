@@ -2,7 +2,7 @@
 execute if entity @s[scores={hit=5..}] run function du-in:kit/runza/sounds/hit
 execute if entity @s[scores={jump=1..}] run function du-in:kit/jump
 
-execute unless entity @s[scores={weapCount=1}] if entity @s[tag=!teamDead] run function du-in:kit/runza/weapon
+# execute unless entity @s[scores={weapCount=1}] if entity @s[tag=!teamDead] run function du-in:kit/runza/weapon
 #Ability Item#
 # execute if entity @s[level=1] run function du-in:kit/runza/ability/item
 

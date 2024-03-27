@@ -7,7 +7,7 @@ execute if entity @s[scores={jump=1..}] run function du-in:kit/papyrus/sounds/ju
 # execute if entity @s[tag=armor] run function du-in:kit/papyrus/armor
 
 #Weapon
-execute unless entity @s[scores={weapCount=1}] if entity @s[tag=!teamDead] run function du-in:kit/papyrus/weapon
+# execute unless entity @s[scores={weapCount=1}] if entity @s[tag=!teamDead] run function du-in:kit/papyrus/weapon
 
 #ATTRIBUTES
 attribute @s minecraft:generic.movement_speed base set 0.1275

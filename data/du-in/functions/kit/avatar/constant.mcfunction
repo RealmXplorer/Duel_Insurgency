@@ -13,7 +13,7 @@ execute if entity @s[level=1] run function du-in:kit/avatar/ability/item
 execute if entity @s[tag=kitActions] run function du-in:kit/avatar/ability/init
 
 #WEAPON#
-execute unless entity @s[scores={weapCount=1}] if entity @s[tag=!stolen,tag=!teamDead] run function du-in:kit/avatar/weapon
+# execute unless entity @s[scores={weapCount=1}] if entity @s[tag=!stolen,tag=!teamDead] run function du-in:kit/avatar/weapon
 
 #ATTRIBUTES
 attribute @s[tag=!stolen] minecraft:generic.movement_speed base set 0.1325

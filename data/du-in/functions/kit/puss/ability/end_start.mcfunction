@@ -14,7 +14,8 @@ particle minecraft:poof ~ ~.1 ~ 0.1 0.1 0.1 0.05 100 force
 #Remove ability from hand
 clear @s minecraft:carrot_on_a_stick
 
-scoreboard players set @s weapCount 0
+# scoreboard players set @s weapCount 0
+function du-in:kit/all/weapon/init
 
 tag @s remove sabotaged
 tag @s add cooldown

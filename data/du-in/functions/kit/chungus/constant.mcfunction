@@ -5,7 +5,7 @@ tag @s add chungus
 
 attribute @s minecraft:generic.armor base set 2
 
-execute unless entity @s[scores={weapCount=1}] if entity @s[tag=!teamDead] run function du-in:kit/chungus/weapon
+# execute unless entity @s[scores={weapCount=1}] if entity @s[tag=!teamDead] run function du-in:kit/chungus/weapon
 
 #execute if entity @s[tag=kitActions] run function du-in:kit/chungus/ability/init
 

@@ -2,7 +2,7 @@ execute if entity @s[scores={hit=5..}] run function du-in:kit/palps/sounds/hit
 execute if entity @s[scores={jump=1..}] run function du-in:kit/jump
 
 #Weapons#
-execute unless entity @s[scores={weapCount=1}] if entity @s[tag=!teamDead] run function du-in:kit/palps/weapon
+# execute unless entity @s[scores={weapCount=1}] if entity @s[tag=!teamDead] run function du-in:kit/palps/weapon
 
 #Armor#
 #execute if entity @s[tag=armor] run function du-in:kit/palps/armor

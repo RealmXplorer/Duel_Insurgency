@@ -12,7 +12,7 @@ execute if entity @s[scores={jump=1..}] run function du-in:kit/jump
 execute if entity @s[tag=secKitActions] run function du-in:kit/gumball/switch
 
 #Weapon Give#
-execute unless entity @s[scores={weapCount=1}] if entity @s[tag=!teamDead] run function du-in:kit/gumball/weapon
+# execute unless entity @s[scores={weapCount=1}] if entity @s[tag=!teamDead] run function du-in:kit/gumball/weapon
 
 
 #Secondary Give#

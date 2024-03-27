@@ -12,7 +12,7 @@ scoreboard players remove @s[scores={saacDisTimer=-99..}] saacDisTimer 1
 
 execute if entity @s[tag=broken,scores={saacDisTimer=..0}] run function du-in:kit/saac/passive/fix
 
-execute unless entity @s[scores={weapCount=1}] if entity @s[tag=!teamDead] run function du-in:kit/saac/weapon
+# execute unless entity @s[scores={weapCount=1}] if entity @s[tag=!teamDead] run function du-in:kit/saac/weapon
 
 #Ability#
 # execute if entity @s[level=1] run function du-in:kit/saac/ability/item

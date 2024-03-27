@@ -41,6 +41,9 @@ execute if entity @s[scores={kit=27}] run function du-in:kit/puss/armor
 execute if entity @s[scores={kit=28}] run function du-in:kit/death/armor
 
 execute if entity @s[scores={kit=29}] run function du-in:kit/yoda/armor
+execute if entity @s[scores={kit=30}] run function du-in:kit/skeleton/armor
+execute if entity @s[scores={kit=31}] run function du-in:kit/sauron/armor
+execute if entity @s[scores={kit=32}] run function du-in:kit/avatar/armor
 
 #Legendary
 execute if entity @s[scores={kit=1000}] run function du-in:kit/saac/armor

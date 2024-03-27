@@ -58,6 +58,14 @@ execute if entity @s[scores={kit=26},tag=!stolen] run tellraw @s [{"text":"You d
 execute if entity @s[scores={kit=27},tag=!stolen] run tellraw @s [{"text":"You dream of new adventures...","color":"gray","italic": true}]
 #Death
 execute if entity @s[scores={kit=28},tag=!stolen] run tellraw @s [{"text":"You dream of judgement...","color":"gray","italic": true}]
+#Yoda
+execute if entity @s[scores={kit=29},tag=!stolen] run tellraw @s [{"text":"You dream of your order restored...","color":"gray","italic": true}]
+#Skeleton
+execute if entity @s[scores={kit=30},tag=!stolen] run tellraw @s [{"text":"You dream of sprawling fields...","color":"gray","italic": true}]
+#Sauron
+execute if entity @s[scores={kit=31},tag=!stolen] run tellraw @s [{"text":"You dream of utter darkness...","color":"gray","italic": true}]
+#Aang
+execute if entity @s[scores={kit=32},tag=!stolen] run tellraw @s [{"text":"You dream of your friends...","color":"gray","italic": true}]
 
 #Saac
 execute if entity @s[scores={kit=1000}] run tellraw @s [{"text":"You dream of kickstarts...","color":"gray","italic": true}]

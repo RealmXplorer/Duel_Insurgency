@@ -9,7 +9,7 @@ execute if score #main titleTimer2 matches 21 run item replace entity @s hotbar.
 #execute if entity @s[tag=armor,tag=!stolen] run function du-in:kit/player/armor
 
 #WEAPONS#
-execute unless entity @s[scores={weapCount=1}] if entity @s[tag=!teamDead,tag=!stolen] run function du-in:kit/player/weapon
+# execute unless entity @s[scores={weapCount=1}] if entity @s[tag=!teamDead,tag=!stolen] run function du-in:kit/player/weapon
 execute unless entity @s[scores={secCount=1}] if entity @s[tag=!teamDead,tag=!stolen] run function du-in:kit/player/bow
 
 #TEST BOW COUNT#

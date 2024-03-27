@@ -14,7 +14,7 @@ tag @a[tag=!saul,tag=!legMusicOff,tag=!void,tag=!ctfIngame,tag=!cqIngame] add sa
 # execute if entity @s[level=1] run function du-in:kit/saul/ability/item
 
 #Weapon#
-execute unless entity @s[scores={weapCount=1}] if entity @s[tag=!teamDead] run function du-in:kit/saul/weapon
+# execute unless entity @s[scores={weapCount=1}] if entity @s[tag=!teamDead] run function du-in:kit/saul/weapon
 
 #Use ability
 #execute if entity @s[tag=kitActions] run function du-in:kit/saul/ability/init

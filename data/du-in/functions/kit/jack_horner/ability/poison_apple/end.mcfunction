@@ -1,5 +1,6 @@
 clear @s snowball
-scoreboard players set @s weapCount 0
+function du-in:kit/all/weapon/init
+#scoreboard players set @s weapCount 0
 
 #Remove ability from hand
 #clear @s minecraft:carrot_on_a_stick

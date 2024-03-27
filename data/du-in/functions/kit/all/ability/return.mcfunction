@@ -47,8 +47,8 @@ execute if entity @s[scores={kit=28}] run function du-in:kit/death/ability/item
 
 execute if entity @s[scores={kit=29}] run function du-in:kit/yoda/ability/item
 execute if entity @s[scores={kit=30}] run function du-in:kit/skeleton/ability/item
-#execute if entity @s[scores={kit=31}] run function du-in:kit/ralsei/ability/item
-#execute if entity @s[scores={kit=32}] run function du-in:kit/ralsei/ability/item
+execute if entity @s[scores={kit=31}] run function du-in:kit/sauron/ability/item
+execute if entity @s[scores={kit=32}] run function du-in:kit/avatar/ability/item
 
 #Set Legendary
 execute if entity @s[scores={kit=1000}] run function du-in:kit/saac/ability/item

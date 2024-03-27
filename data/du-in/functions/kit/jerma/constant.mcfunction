@@ -9,7 +9,7 @@ tag @s add sus
 scoreboard players add @s[scores={ventCooldown=..61}] ventCooldown 1
 
 #Weapon#
-execute unless entity @s[scores={weapCount=1}] if entity @s[tag=!teamDead ]run function du-in:kit/jerma/weapon
+# execute unless entity @s[scores={weapCount=1}] if entity @s[tag=!teamDead ]run function du-in:kit/jerma/weapon
 
 execute if entity @s[tag=secKitActions] run function du-in:kit/jerma/secondary/eat_onion
 
