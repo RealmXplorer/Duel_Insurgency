@@ -1,5 +1,6 @@
-execute if entity @s[tag=kitsListed] run scoreboard players set @s kitList 7
+execute if entity @s[tag=kitsListed] run scoreboard players set @s kitList 8
 
+execute unless items entity @s inventory.8 minecraft:player_head run function du-in:lobby/kitmenu/menu/minecraft/skeleton
 execute unless items entity @s inventory.7 minecraft:player_head run function du-in:lobby/kitmenu/menu/minecraft/spider
 execute unless items entity @s inventory.6 minecraft:player_head run function du-in:lobby/kitmenu/menu/minecraft/zombie
 execute unless items entity @s inventory.5 minecraft:player_head run function du-in:lobby/kitmenu/menu/minecraft/slime

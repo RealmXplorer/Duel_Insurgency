@@ -76,7 +76,7 @@ scoreboard players reset #main map
 #Removes kitMenu and resets it
 tag @a remove kitMenu
 scoreboard players set @a kitTheme 1
-scoreboard players set @a kitList 7
+scoreboard players set @a kitList 8
 
 
 #Remove tags
