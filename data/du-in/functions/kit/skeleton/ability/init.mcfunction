@@ -4,8 +4,8 @@ clear @s #minecraft:arrows
 scoreboard players add @s[tag=!sabotaged] skeletonMode 1
 scoreboard players set @s[scores={skeletonMode=3..},tag=!sabotaged] skeletonMode 1
 
-item replace entity @s[scores={skeletonMode=1}] hotbar.8 with tipped_arrow[potion_contents={potion:"minecraft:slowness"}] 3
-item replace entity @s[scores={skeletonMode=2}] hotbar.8 with tipped_arrow[potion_contents={potion:"minecraft:poison"}] 3
+item replace entity @s[scores={skeletonMode=1}] hotbar.8 with tipped_arrow[custom_name='{"text":"Slowness Arrows","color":"gold","bold":true,"italic":false}',lore=['{"text":"Throw or use to go back to sword mode","color":"dark_purple","bold":true}'],potion_contents={potion:"minecraft:slowness"}] 3
+item replace entity @s[scores={skeletonMode=2}] hotbar.8 with tipped_arrow[custom_name='{"text":"Poison Arrows","color":"gold","bold":true,"italic":false}',lore=['{"text":"Throw or use to go back to sword mode","color":"dark_purple","bold":true}'],potion_contents={potion:"minecraft:poison"}] 3
 
 execute if entity @s[tag=sabotaged] run function du-in:kit/skeleton/ability/sabotaged
 
