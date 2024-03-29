@@ -8,9 +8,9 @@ execute if entity @s[scores={gumballSwitch=2}] run effect clear @s dolphins_grac
 execute if entity @s[scores={gumballSwitch=2}] run effect clear @s water_breathing
 
 #scoreboard players set @s weapCount 0
-function du-in:kit/gumball/weapon
 scoreboard players set @s gumSwapTimer 30
 clear @s
+function du-in:kit/gumball/weapon
 execute unless entity @s[level=1..] run xp add @s 30 levels
 playsound minecraft:entity.player.attack.sweep master @a ~ ~ ~ 2 1.25
 particle minecraft:dust 1 1 1 1 ~ ~1 ~ .5 .5 .5 1 100 force

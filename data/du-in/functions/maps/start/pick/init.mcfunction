@@ -7,4 +7,3 @@ execute if entity @a[tag=ctfl,tag=partyLeader] run function du-in:maps/start/pic
 
 #End function
 tag @a remove quickMatch
-#tag @a remove voteRandom

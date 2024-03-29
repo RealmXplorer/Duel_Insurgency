@@ -14,9 +14,6 @@ execute if entity @s[scores={jump=1..}] run function du-in:kit/skeleton/sounds/j
 #Weapon
 # execute unless entity @s[scores={weapCount=1}] unless entity @s[scores={skeletonMode=1..}] if entity @s[tag=!teamDead] run function du-in:kit/skeleton/weapon
 
-execute unless entity @s[scores={secCount=1}] if entity @s[scores={skeletonMode=1..}] if entity @s[tag=!teamDead] run function du-in:kit/skeleton/bow
-
-execute store result score @s secCount run clear @s bow 0
-
 #ATT#
 attribute @s generic.knockback_resistance base set 0.015
+attribute @s generic.movement_speed base set 0.1325

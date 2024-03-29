@@ -34,8 +34,8 @@ scoreboard players add @s exp 1
 
 execute if entity @s[scores={kit=7},tag=!stolen] run give @s minecraft:arrow 2
 
-execute if entity @s[scores={kit=30,skeletonMode=1}] run give @s tipped_arrow[potion_contents={potion:"minecraft:slowness"}] 1
-execute if entity @s[scores={kit=30,skeletonMode=2}] run give @s tipped_arrow[potion_contents={potion:"minecraft:poison"}] 1
+execute if entity @s[scores={kit=30,skeletonMode=1}] run give @s tipped_arrow[custom_name='{"text":"Slowness Arrows","color":"gold","bold":true,"italic":false}',lore=['{"text":"Throw or use to go back to sword mode","color":"dark_purple","bold":true}'],potion_contents={potion:"minecraft:slowness"}] 1
+execute if entity @s[scores={kit=30,skeletonMode=2}] run give @s tipped_arrow[custom_name='{"text":"Poison Arrows","color":"gold","bold":true,"italic":false}',lore=['{"text":"Throw or use to go back to sword mode","color":"dark_purple","bold":true}'],potion_contents={potion:"minecraft:poison"}] 1
 
 execute if entity @s[scores={kit=1000}] run function du-in:kit/saac/sounds/lines
 #This also gives Fortnite Card

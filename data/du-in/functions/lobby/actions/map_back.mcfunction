@@ -48,9 +48,6 @@ tag @a remove ready
 #Removes stopped countdown tag
 tag @a remove countStop
 
-#Removes random map vote tag
-#tag @a remove voteRandom
-
 #Clears inventories of players
 clear @a
 

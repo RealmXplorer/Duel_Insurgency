@@ -17,5 +17,6 @@ function du-in:kit/all/armor/armor
 #tag @s add armor
 
 #End ability and start cooldown
-xp set @s[tag=!stolen] 360 levels
+xp set @s[tag=!stolen] 300 levels
+tag @s remove cooldown
 execute if entity @s[tag=stolen] run tag @s add kitDone

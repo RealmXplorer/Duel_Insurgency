@@ -13,9 +13,6 @@ tag @a[tag=!kitPicked,tag=!spect] add kitPicked
 title @a subtitle {"text":""}
 
 #Pick random map#
-#tag @r add voteRandom
-#execute as @a[tag=voteRandom] run function du-in:maps/start/random
-
 function du-in:maps/start/random
 
 #Reset map countdown timer
