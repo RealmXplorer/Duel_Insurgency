@@ -22,7 +22,7 @@
         ]
     ],
     "rewards": {
-      "function": "du-in:kit/sauron/ring/give_ring"
+      "function": "du-in:kit/sauron/ring/ring_killed"
     }
   }
   

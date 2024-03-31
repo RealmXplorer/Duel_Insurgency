@@ -10,7 +10,8 @@ execute if entity @s[tag=deathMark] run scoreboard players set #main markTimer 1
 tag @s remove deathMark
 tag @s remove pondered
 tag @s remove glowing
-tag @s remove hasRing
+
+execute if entity @s[scores={killedByPlayer=1..}] run function du-in:kit/sauron/ring/lose_ring
 
 execute if entity @s[tag=selectedTarget] run tag @s remove monsterTarget
 execute if entity @s[tag=selectedTarget] run tag @s remove selectedTarget

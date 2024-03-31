@@ -21,8 +21,9 @@ scoreboard objectives add saacMoneyDollar dummy
 scoreboard objectives add TPSound dummy
 scoreboard objectives add ventCooldown dummy
 scoreboard objectives add villagerEmeralds dummy
-#scoreboard objectives add villSansHead dummy
 scoreboard objectives add sansHead dummy
+scoreboard objectives add ringCount dummy
+scoreboard objectives add ringTimer dummy
 
 scoreboard objectives add weaponTier dummy
 scoreboard objectives add yharimRage dummy
@@ -188,7 +189,6 @@ scoreboard objectives add Diamonds dummy
 scoreboard objectives add gameDeaths minecraft.custom:deaths
 scoreboard objectives add gameGonerKills dummy
 scoreboard objectives add gameKills minecraft.custom:player_kills
-#scoreboard objectives add gamemode dummy
 scoreboard objectives add gameNum dummy
 scoreboard objectives add gameParries dummy
 scoreboard objectives add gamesPlayed dummy
@@ -208,28 +208,6 @@ scoreboard objectives add thrownIronIngot minecraft.dropped:minecraft.iron_ingot
 scoreboard objectives add thrownCookie minecraft.dropped:minecraft.cookie
 scoreboard objectives add tabbaTalk dummy
 scoreboard objectives add tabbaVendingTalk dummy
-# scoreboard objectives add map-1Vote dummy
-# scoreboard objectives add map1Vote dummy
-# scoreboard objectives add map2Vote dummy
-# scoreboard objectives add map3Vote dummy
-# scoreboard objectives add map4Vote dummy
-# scoreboard objectives add map5Vote dummy
-# scoreboard objectives add map6Vote dummy
-# scoreboard objectives add map7Vote dummy
-# scoreboard objectives add map8Vote dummy
-# scoreboard objectives add map9Vote dummy
-# scoreboard objectives add map10Vote dummy
-# scoreboard objectives add map11Vote dummy
-# scoreboard objectives add map12Vote dummy
-# scoreboard objectives add map13Vote dummy
-# scoreboard objectives add map14Vote dummy
-# scoreboard objectives add map15Vote dummy
-# scoreboard objectives add map16Vote dummy
-# scoreboard objectives add map17Vote dummy
-# scoreboard objectives add map18Vote dummy
-# scoreboard objectives add map19Vote dummy
-# scoreboard objectives add map20Vote dummy
-#scoreboard objectives add mapRandomVote dummy
 
 scoreboard objectives add drinkPotion minecraft.used:minecraft.potion
 scoreboard objectives add drinkMilk minecraft.used:minecraft.milk_bucket
@@ -267,7 +245,6 @@ scoreboard objectives add expCap dummy
 
 scoreboard objectives add jump minecraft.custom:minecraft.jump
 scoreboard objectives add comboBreak minecraft.custom:minecraft.damage_taken
-#scoreboard objectives add cupHit minecraft.custom:minecraft.damage_taken
 scoreboard objectives add asrielHitLand minecraft.custom:minecraft.damage_dealt
 scoreboard objectives add crossbowShoot minecraft.used:crossbow
 scoreboard objectives add diedIngame minecraft.custom:deaths

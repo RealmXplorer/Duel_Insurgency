@@ -113,3 +113,5 @@ execute if entity @s[tag=sabotagedField] run function du-in:kit/clairen/ability/
 
 # SPAM CLICK MODE #
     execute if entity @a[tag=partyLeader,tag=spamClick] run attribute @s minecraft:generic.attack_speed base set 100
+
+execute if entity @s[tag=hasRing] run function du-in:kit/sauron/ring/has_ring
