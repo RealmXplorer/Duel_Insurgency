@@ -248,6 +248,8 @@ execute as @a run function du-in:music/ingame/stop/all
         tag @a remove deathAbility
         scoreboard players reset @a deathSwapTimer
 
+tag @a remove hasRing
+
 ##INGAME TAG AND SCORE RESETS
 #Sub-Gamemodes
     scoreboard players reset @a ranMode
