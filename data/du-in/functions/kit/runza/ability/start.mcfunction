@@ -1,3 +1,4 @@
+scoreboard players set @s runzaEat 0
 tag @s add runza
 tag @s add notEaten
 playsound minecraft:entity.player.burp master @s ~ ~ ~ 20 0 1

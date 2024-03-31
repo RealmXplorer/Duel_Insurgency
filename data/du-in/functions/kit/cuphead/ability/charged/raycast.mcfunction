@@ -11,4 +11,4 @@ execute as @a[gamemode=!spectator,tag=playing,distance=..1.25] run damage @s 5 m
 #execute as @e run damage @s 4 minecraft:generic by @a[scores={kit=21},tag=kitActions,limit=1]
 
 
-execute positioned ^ ^ ^1 if entity @s[distance=..10] run function du-in:kit/cuphead/ability/charged/raycast
+execute positioned ^ ^ ^1 if entity @s[distance=..15] run function du-in:kit/cuphead/ability/charged/raycast
