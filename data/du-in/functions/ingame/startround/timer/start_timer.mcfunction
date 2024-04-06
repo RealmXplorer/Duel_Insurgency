@@ -38,6 +38,8 @@ tag @a[tag=!spectating] add playing
     scoreboard players set @a[scores={kit=22}] gumballSwitch 2
     scoreboard players set @a[scores={kit=27}] pussWeapSwitch 2
     scoreboard players set @a[scores={kit=28}] deathWeapSwitch 2
+    tag @a[scores={kit=31},limit=1] add hasRing
+    execute as @a[tag=hasRing,scores={kit=31}] run function du-in:kit/sauron/weapon
 
     #Reset scores for certain kits
     scoreboard players set @a[scores={kit=20}] yharimRage 0
