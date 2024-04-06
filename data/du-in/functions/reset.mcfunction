@@ -314,6 +314,7 @@ tag @a remove caveSpider
 tag @a remove suicide
 scoreboard players reset @a dmDeath
 scoreboard players set @a diedIngame 0
+scoreboard players reset @a ringTimer
 
 tag @a remove boneAttack
 

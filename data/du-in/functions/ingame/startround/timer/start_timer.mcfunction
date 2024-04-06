@@ -31,15 +31,15 @@ tag @a[tag=!spectating] add playing
     execute unless entity @s[scores={kit=1..}] run tag @s add random
 
     #Give all players weapons
+    tag @a[scores={kit=31},limit=1] add hasRing
     scoreboard players set @a[tag=playing,gamemode=!spectator] weapCount 0
     execute as @a[tag=playing,gamemode=!spectator] run function du-in:kit/all/weapon/init
+    execute as @a[tag=hasRing] run function du-in:kit/sauron/ring/give_ring
 
     #Set swap for secondary kits/weapons to 2 (this is to ensure that the weapon actually switches when rightclicked)
     scoreboard players set @a[scores={kit=22}] gumballSwitch 2
     scoreboard players set @a[scores={kit=27}] pussWeapSwitch 2
     scoreboard players set @a[scores={kit=28}] deathWeapSwitch 2
-    tag @a[scores={kit=31},limit=1] add hasRing
-    execute as @a[tag=hasRing,scores={kit=31}] run function du-in:kit/sauron/weapon
 
     #Reset scores for certain kits
     scoreboard players set @a[scores={kit=20}] yharimRage 0

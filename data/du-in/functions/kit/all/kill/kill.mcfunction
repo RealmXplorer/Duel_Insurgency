@@ -46,3 +46,5 @@ execute if entity @s[scores={kit=1004}] run function du-in:kit/runza/sounds/line
 
 #CUSTOM KILLSOUNDS#
 execute if entity @s[scores={kit=20}] run playsound minecraft:soundeffect.combo master @s ~ ~ ~ 1 .5
+
+execute if entity @s[tag=hasRing] unless entity @s[scores={kit=31}] run scoreboard players add @s ringTimer 5
