@@ -2,7 +2,8 @@ effect give @s minecraft:mining_fatigue 2 1 true
 effect give @s minecraft:slowness 2 2 true
 
 execute unless score @s gastSkin matches 1 run particle minecraft:smoke ~ ~1.5 ~ 0.2 0.5 0.2 0 150 force
-execute if score @s gastSkin matches 1 run particle minecraft:dust 0.75 0.90 1 1 ~ ~1.5 ~ 0.2 0.5 0.2 0 150 force
+# execute if score @s gastSkin matches 1 run particle minecraft:dust 0.75 0.90 1 1 ~ ~1.5 ~ 0.2 0.5 0.2 0 150 force
+execute if score @s gastSkin matches 1 run particle minecraft:dust{color:[0.75, 0.90, 1.0],scale:1.0} ~ ~1.5 ~ 0.2 0.5 0.2 0 150 force
 
 #tag @s add armor
 tag @s remove gasterInvisible
