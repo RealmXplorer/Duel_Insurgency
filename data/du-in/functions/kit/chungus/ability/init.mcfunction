@@ -1,5 +1,7 @@
 execute as @a[distance=0.05..,tag=playing,gamemode=!spectator,tag=!teamDead] unless score @s team = @a[tag=kitActions,scores={kit=42069},limit=1] team run function du-in:kit/chungus/ability/throw
-particle minecraft:block dirt ~ ~ ~ 3 0 3 0 500 force
+# particle minecraft:block dirt ~ ~ ~ 3 0 3 0 500 force
+particle minecraft:block{block_state:{"minecraft:dirt"}} ~ ~ ~ 3 0 3 0 500 force
+
 playsound minecraft:block.gravel.hit master @a ~ ~ ~ 1 1
 playsound minecraft:block.gravel.hit master @a ~ ~ ~ 1 .5
 playsound minecraft:block.gravel.hit master @a ~ ~ ~ 1 2
