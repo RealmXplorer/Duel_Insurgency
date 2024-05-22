@@ -1,7 +1,4 @@
 {
-
-    "__comment": "Made with TheDestruc7i0n's advancements generator: https://advancements.thedestruc7i0n.ca",
-
     "criteria": {
 
         "midas": {
@@ -20,7 +17,7 @@
 
                                 "item": "minecraft:stick",
 
-                                "nbt": "{CustomModelData:105}"
+                                "nbt": "{CustomModelData:106}"
 
                             }
 
@@ -43,7 +40,7 @@
 
     "rewards": {
 
-        "function": "du-in:kit/jack_horner/ability/midas/use"
+        "function": "du-in:kit/jack_horner/ability/bug/touch"
 
     }
 

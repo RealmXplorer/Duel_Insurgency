@@ -1,12 +1,9 @@
 {
-
-  "__comment": "Made with TheDestruc7i0n's advancements generator: https://advancements.thedestruc7i0n.ca",
-
   "criteria": {
 
       "killgoner": {
 
-          "trigger": "minecraft:player_hurt_entity",
+          "trigger": "minecraft:player_killed_entity",
 
           "conditions": {
 
@@ -14,7 +11,7 @@
 
                   "type": "minecraft:skeleton",
 
-                  "nbt": "{Tags:[\"gonerEye\"]}"
+                  "nbt": "{Tags:[\"gonerThing\"]}"
 
               }
 
@@ -31,7 +28,7 @@
 
   "rewards": {
 
-      "function": "du-in:void/goner/eye_hurt"
+      "function": "du-in:void/goner/kill_goner"
 
   }
 

@@ -2,39 +2,39 @@ OVERVIEW -----------------------------------------------------------------------
 Objectives and tags (usually) follow camelCase.
 functions and folders usually follow snake_case.
 
-A lot runs through "du-in/functions/main".
+A lot runs through "du-in/function/main".
 
 Functions labelled as "player_specific" are run by an "as" statement, and therefore are run by every player applicable by the call statement.
 Functions labelled as "general" are run as the world, and therefore are not tied to a player.
 	Some of these functions are kept as "scheduled" so as to alleviate the server a little bit.
 
-There are hidden "du-in/functions/spookmode" and "du-in/functions/festive" functions that will switch the theme over to Halloween and Christmas respectively, while setting all online player's skins to the theme.
+There are hidden "du-in/function/spookmode" and "du-in/function/festive" functions that will switch the theme over to Halloween and Christmas respectively, while setting all online player's skins to the theme.
 	These do not trigger in-game, and must be triggered with "/function"
 
-There is a hidden "du-in/functions/reset_skins" function that resets all skin scores and removes all skin ownership. It does not refund.
+There is a hidden "du-in/function/reset_skins" function that resets all skin scores and removes all skin ownership. It does not refund.
 	This can also only be triggered by "/function"
 
 KITS -------------------------------------------------------------------------------------------------------------------------------------------------
-Template for characters are found in "du-in/functions/kit/template"
+Template for characters are found in "du-in/function/kit/template"
 
 Legendary characters are sometimes referred to as "unlocked", and always have a "kit" value of 1000 or higher.
 
-Some functions for the character are kept in the "du-in/functions/kit/all/" folder.
-	Setting a normal "kit" score to a character is kept in "du-in/functions/kit/all/set(1,2,3,4)"
-		Legendary characters are kept in "du-in/functions/kit/all/set_legend"
-	Deathsounds are kept in "du-in/functions/kit/all/death_sound"
-	Win voicelines are kept in "du-in/functions/kit/all/winline"
-	Inflicting damage kept in "du-in/functions/kit/all/hit_all"
-	Inflicting damage on a player is kept in "du-in/functions/kit/all/hit_player"
-	Necessary functions for resetting character data on death happens in "du-in/functions/kit/all/kill/death"
+Some functions for the character are kept in the "du-in/function/kit/all/" folder.
+	Setting a normal "kit" score to a character is kept in "du-in/function/kit/all/set(1,2,3,4)"
+		Legendary characters are kept in "du-in/function/kit/all/set_legend"
+	Deathsounds are kept in "du-in/function/kit/all/death_sound"
+	Win voicelines are kept in "du-in/function/kit/all/winline"
+	Inflicting damage kept in "du-in/function/kit/all/hit_all"
+	Inflicting damage on a player is kept in "du-in/function/kit/all/hit_player"
+	Necessary functions for resetting character data on death happens in "du-in/function/kit/all/kill/death"
 
 Some outside functions are needed for certain aspects to characters
-	"du-in/functions/main/player_specific" contains "random" value, which limits random character selection pool. (if a character is added, it will need to be increased from 30)
-	"du-in/functions/lobby/kitmenu/" contains two folders that set up the character selection page.
-		"du-in/functions/lobby/kitmenu/select/" contains all the functions for selecting a character from the kit menu.
-		"du-in/functions/lobby/kitmenu/menu/" contains all the functions for displaying a character in the kit menu.
+	"du-in/function/main/player_specific" contains "random" value, which limits random character selection pool. (if a character is added, it will need to be increased from 30)
+	"du-in/function/lobby/kitmenu/" contains two folders that set up the character selection page.
+		"du-in/function/lobby/kitmenu/select/" contains all the function for selecting a character from the kit menu.
+		"du-in/function/lobby/kitmenu/menu/" contains all the function for displaying a character in the kit menu.
 
-Kits' sizes are determined by one of 6 functions called in "du-in/functions/kit/all/size/".
+Kits' sizes are determined by one of 6 functions called in "du-in/function/kit/all/size/".
 
 Tag "kitActions" runs when a player with tag "playing" right clicks a carrot on a stick.
 	This activates the character's main ability.
@@ -57,18 +57,18 @@ The map selected to be played on is determined by two factors:
 	What is the player's gamemode lobby? (cmap for Classic and Deathmatch, kothl for King of the Hill, ctfl for Capture the Flag, and cql for Conquest)
 	What is the map's score?
 
-Maps are voted on in map select. This happens in "du-in/functions/maps/start/init"
+Maps are voted on in map select. This happens in "du-in/function/maps/start/init"
 	This is not important unless you are adding more than 20 maps.
 
-"du-in/functions/maps/start/pick/init" determines the gamemode being played, and runs depending on that.
-	The child functions begin the map sequence and set everything up for the selected map.
+"du-in/function/maps/start/pick/init" determines the gamemode being played, and runs depending on that.
+	The child function begin the map sequence and set everything up for the selected map.
 
-"du-in/functions/lobby/mapselect/~gamemode" (~gamemode can be replaced with classic, conquest, koth, etc.) sets up the map voting icons and voting markers. 
+"du-in/function/lobby/mapselect/~gamemode" (~gamemode can be replaced with classic, conquest, koth, etc.) sets up the map voting icons and voting markers. 
 
-"du-in/functions/lobby/mapselect/map_vote" runs the base for when a player "casts" a vote.
+"du-in/function/lobby/mapselect/map_vote" runs the base for when a player "casts" a vote.
 	This is only important if adding a new classic map, as you will need to uncomment maps 16-20. 
 
-"du-in/functions/maps/start/classic/arena" is a good base, as Arena contains all normal map information.
+"du-in/function/maps/start/classic/arena" is a good base, as Arena contains all normal map information.
 
 VOID -------------------------------------------------------------------------------------------------------------------------------------------------
 All information relating to the hidden Pylon gamemode is stored under "du-in:ingame/void".

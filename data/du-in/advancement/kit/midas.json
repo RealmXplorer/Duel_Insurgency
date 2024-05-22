@@ -1,12 +1,9 @@
 {
-
-    "__comment": "Made with TheDestruc7i0n's advancements generator: https://advancements.thedestruc7i0n.ca",
-
     "criteria": {
 
         "midas": {
 
-            "trigger": "minecraft:player_hurt_entity",
+            "trigger": "minecraft:entity_hurt_player",
 
             "conditions": {
 
@@ -20,11 +17,15 @@
 
                                 "item": "minecraft:stick",
 
-                                "nbt": "{CustomModelData:106}"
+                                "nbt": "{CustomModelData:105}"
 
                             }
 
-                        }
+                        },
+
+                        "type": "minecraft:player",
+
+                        "nbt": "{Tags:[\"midasHand\"]}"
 
                     }
 
@@ -43,8 +44,9 @@
 
     "rewards": {
 
-        "function": "du-in:kit/jack_horner/ability/bug/touch"
+        "function": "du-in:kit/jack_horner/ability/midas/touch"
 
     }
 
 }
+

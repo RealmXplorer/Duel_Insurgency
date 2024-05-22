@@ -1,12 +1,9 @@
 {
-
-  "__comment": "Made with TheDestruc7i0n's advancements generator: https://advancements.thedestruc7i0n.ca",
-
   "criteria": {
 
       "killgoner": {
 
-          "trigger": "minecraft:player_killed_entity",
+          "trigger": "minecraft:player_hurt_entity",
 
           "conditions": {
 
@@ -31,7 +28,7 @@
 
   "rewards": {
 
-      "function": "du-in:void/goner/mouth_kill"
+      "function": "du-in:void/goner/mouth_hurt"
 
   }
 

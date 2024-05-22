@@ -1,12 +1,9 @@
 {
-
-    "__comment": "Made with TheDestruc7i0n's advancements generator: https://advancements.thedestruc7i0n.ca",
-
     "criteria": {
 
         "midas": {
 
-            "trigger": "minecraft:entity_hurt_player",
+            "trigger": "minecraft:player_hurt_entity",
 
             "conditions": {
 
@@ -24,11 +21,7 @@
 
                             }
 
-                        },
-
-                        "type": "minecraft:player",
-
-                        "nbt": "{Tags:[\"midasHand\"]}"
+                        }
 
                     }
 
@@ -47,9 +40,8 @@
 
     "rewards": {
 
-        "function": "du-in:kit/jack_horner/ability/midas/touch"
+        "function": "du-in:kit/jack_horner/ability/midas/use"
 
     }
 
 }
-

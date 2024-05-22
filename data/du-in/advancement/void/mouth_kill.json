@@ -1,7 +1,4 @@
 {
-
-  "__comment": "Made with TheDestruc7i0n's advancements generator: https://advancements.thedestruc7i0n.ca",
-
   "criteria": {
 
       "killgoner": {
@@ -14,7 +11,7 @@
 
                   "type": "minecraft:skeleton",
 
-                  "nbt": "{Tags:[\"gonerThing\"]}"
+                  "nbt": "{Tags:[\"gonerMouth\"]}"
 
               }
 
@@ -31,7 +28,7 @@
 
   "rewards": {
 
-      "function": "du-in:void/goner/kill_goner"
+      "function": "du-in:void/goner/mouth_kill"
 
   }
 
