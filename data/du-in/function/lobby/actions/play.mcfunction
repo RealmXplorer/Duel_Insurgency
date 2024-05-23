@@ -1,6 +1,6 @@
 execute unless score #main online matches ..1 run playsound minecraft:block.end_portal.spawn master @a ~ ~ ~ 0.5 2
-execute unless score #main online matches ..1 run playsound minecraft:block.bell.use master @a ~ ~ ~ 1 1
-execute unless score #main online matches ..1 run playsound minecraft:block.amethyst_block.hit master @a ~ ~ ~ 1 2
+execute unless score #main online matches ..1 run playsound minecraft:block.bell.use master @a ~ ~ ~ 0.5 1
+execute unless score #main online matches ..1 run playsound minecraft:block.amethyst_block.hit master @a ~ ~ ~ 0.5 2
 
 #execute unless score #main online matches ..1 store result score #main gamemode run scoreboard players get #main gamemode
 execute unless score #main online matches ..1 run function du-in:lobby/pick

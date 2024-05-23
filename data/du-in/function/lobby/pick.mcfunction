@@ -70,7 +70,7 @@ function du-in:lobby/item_reset
 clear @a
 bossbar set minecraft:map_countdown visible true
 
-playsound minecraft:entity.ender_dragon.flap master @a ~ ~ ~ 1 1.5
+playsound minecraft:entity.ender_dragon.flap master @a ~ ~ ~ 0.5 1.5
 execute as @a run function du-in:lobby/kitmenu/init
 
 title @a times 0 60 0

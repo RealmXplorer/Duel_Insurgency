@@ -60,7 +60,6 @@ tag @a[tag=!spectating] add playing
     #Give advancements for players who are playing as legendary characters
     advancement grant @a[tag=!mystery,tag=!mysteryHead,scores={kit=1000..1007}] only du-in:unlock/unlock
     advancement grant @a[scores={kit=42069}] only du-in:chungus
-
 ##
 
 
@@ -85,8 +84,8 @@ execute as @a at @s run playsound minecraft:soundeffect.countdown master @s[tag=
 #Hide map countdown
 bossbar set minecraft:map_countdown visible false
 
-#Set all players base attack to 1
-execute as @a run attribute @s minecraft:generic.attack_damage base set 1
+#Set all players' attributes
+execute as @a run function du-in:kit/all/attribute/set
 
 #Make sure all players can see the game timer
 bossbar set bossbar:gametimer players @a

@@ -17,11 +17,11 @@ execute if entity @s[tag=thrown,scores={tridentTimer=0..}] run function du-in:ki
 
 #ASGORE ATTRIBUTES#
 #Size
-execute unless entity @a[tag=scaleMode,tag=partyLeader] run function du-in:kit/all/size/huge
-#Weight and speed
-#attribute @s minecraft:generic.armor_toughness base set 1
-attribute @s minecraft:generic.movement_speed base set 0.125
-attribute @s generic.knockback_resistance base set 0.15
+# execute unless entity @a[tag=scaleMode,tag=partyLeader] run function du-in:kit/all/size/huge
+# #Weight and speed
+# #attribute @s minecraft:generic.armor_toughness base set 1
+# attribute @s minecraft:generic.movement_speed base set 0.125
+# attribute @s generic.knockback_resistance base set 0.15
 
 #MY KING
 #TRULY A SHAME

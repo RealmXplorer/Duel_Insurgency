@@ -48,6 +48,6 @@ scoreboard players reset @s ralseiTP
 scoreboard players set @s deathWeapSwitch 0
 
 #Attributes
-function du-in:kit/all/attribute_reset
+function du-in:kit/all/attribute/reset
 
 clear @s[tag=!kitMenu]

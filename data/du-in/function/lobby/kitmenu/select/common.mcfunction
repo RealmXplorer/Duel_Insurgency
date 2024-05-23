@@ -18,7 +18,7 @@ execute if entity @s[tag=!kitPicked] run playsound minecraft:block.deepslate_til
 execute if entity @s[tag=!kitPicked] run playsound minecraft:block.netherite_block.break master @a ~ ~ ~ 1 .5
 execute if entity @s[tag=!kitPicked] run particle minecraft:composter ~ ~1 ~ 0.25 0.5 0.25 0 20 force
 
-execute if entity @s[tag=playing] run function du-in:kit/all/attribute_reset
+execute if entity @s[tag=playing] run function du-in:kit/all/attribute/reset
 
 execute if entity @s[scores={thrownHead=1..}] run function du-in:other/clear_ground_items
 

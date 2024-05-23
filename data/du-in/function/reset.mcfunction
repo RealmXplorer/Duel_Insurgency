@@ -116,7 +116,7 @@ xp set @a 0 levels
 scoreboard players set #main scoreMost 0
 
 #Reset Attributes#
-execute as @a run function du-in:kit/all/attribute_reset
+execute as @a run function du-in:kit/all/attribute/reset
 
 #Stop All Music#
 execute as @a run function du-in:music/ingame/stop/all
