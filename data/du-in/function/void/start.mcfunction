@@ -57,25 +57,11 @@ execute as @a[gamemode=!spectator] run scoreboard players add Insurgents playerC
 scoreboard players set @a[gamemode=!spectator] Lives 1
 
 execute unless score #main pylonsDestroyed matches 2.. run function du-in:music/void/suffocation
-#execute if score #main pylonsDestroyed matches 2 run function du-in:music/void/pursuit_happiness
-#execute if score #main pylonsDestroyed matches 3 run function du-in:music/void/vain_pursuit
-
-#execute if score #main pylonsDestroyed matches ..0 run summon marker 10029 41 10030 {Tags:["pylon","mapSpecific"]}
-#execute if score #main pylonsDestroyed matches 1 run summon marker 10062 41 10030 {Tags:["pylon","mapSpecific"]}
-#execute if score #main pylonsDestroyed matches 2 run summon marker 10062 41 10063 {Tags:["pylon","mapSpecific"]}
-#execute if score #main pylonsDestroyed matches 3 run summon marker 10029 41 10063 {Tags:["pylon","mapSpecific"]}
 
 execute if score #main pylonsDestroyed matches ..0 run function du-in:void/start/pylon_one
 execute if score #main pylonsDestroyed matches 1 run function du-in:void/start/pylon_two
 execute if score #main pylonsDestroyed matches 2 run function du-in:void/start/pylon_three
 execute if score #main pylonsDestroyed matches 3 run function du-in:void/start/pylon_four
-
-#execute if score #main pylonsDestroyed matches ..0 run function du-in:void/pylon_reset
-#execute if score #main pylonsDestroyed matches 1 run setblock 10029 33 10030 air replace
-#execute if score #main pylonsDestroyed matches 2 run setblock 10062 33 10030 air replace
-#execute if score #main pylonsDestroyed matches 3 run setblock 10062 33 10063 air replace
-
-#execute if score #main pylonsDestroyed matches 3 run schedule function du-in:void/spawn/missile 200t
 
 #Pylon 1
 #10029 41 10030

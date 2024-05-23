@@ -318,9 +318,6 @@ scoreboard objectives add waveCooldown dummy
 
 scoreboard objectives add heartBeat minecraft.custom:minecraft.play_time
 
-scoreboard objectives add primedTimer dummy
-scoreboard objectives add missileCooldown dummy
-
 scoreboard objectives add gonerChance dummy
 scoreboard objectives add gonerCount dummy
 scoreboard objectives add gonersKilled dummy

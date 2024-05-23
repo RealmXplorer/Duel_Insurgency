@@ -3,9 +3,6 @@ schedule clear du-in:music/void/vain_pursuit
 schedule clear du-in:music/void/pursuit_happiness
 schedule clear du-in:void/whisper
 
-schedule clear du-in:void/spawn/missile
-schedule clear du-in:void/goner/missile_sound
-
 schedule clear du-in:void/hazard/fire/fire_end
 schedule clear du-in:void/hazard/fire/pick_pylon
 schedule clear du-in:void/hazard/fire/summon_fire

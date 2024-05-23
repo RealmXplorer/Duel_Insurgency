@@ -7,12 +7,6 @@ schedule function du-in:void/hazard/shock/prepare 20s
 tellraw @a [{"text":"It's the end...","bold":true,"color":"dark_purple"}]
 #scoreboard objectives modify matchDeaths displayname ["",{"text":"Match Deaths ","bold":true,"color":"red"},{"text":"(Max 3)","color":"gray"}]
 
-summon marker 10029 52 10063 {Tags:["missileSpawn","mapSpecific"]}
-summon marker 10029 52 10030 {Tags:["missileSpawn","mapSpecific"]}
-summon marker 10062 52 10063 {Tags:["missileSpawn","mapSpecific"]}
-summon marker 10062 52 10030 {Tags:["missileSpawn","mapSpecific"]}
-
-
 execute as @a at @s run playsound minecraft:music.vain_pursuit record @s ~ ~ ~ 1000 1 1
 
 schedule function du-in:void/end/win 180s
