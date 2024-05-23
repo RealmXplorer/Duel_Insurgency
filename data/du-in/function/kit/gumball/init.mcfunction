@@ -1,10 +1,3 @@
-#Give ability item#
-#execute if entity @s[level=1] run function du-in:kit/gumball/ability/item
-
-#Gumball and Darwin abilities#
-#execute if entity @s[tag=kitActions,tag=!darwin] run function du-in:kit/gumball/ability/gum_init
-#execute if entity @s[tag=kitActions,tag=darwin] run function du-in:kit/gumball/ability/dar_init
-
 #Gumball pursue ability constants
 execute if entity @s[tag=pursue,tag=!darwin] run function du-in:kit/gumball/ability/gumball/pursue
 
