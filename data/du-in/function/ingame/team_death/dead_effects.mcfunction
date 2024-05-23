@@ -6,8 +6,9 @@ effect give @s minecraft:blindness 2 2 true
 effect give @s minecraft:mining_fatigue 1 100 true
 
 #Attribute effects
-attribute @s minecraft:generic.jump_strength modifier add 76c91af4-d86d-4e55-8df9-fd2c247d45db teamDeadJump -100 add_value
-attribute @s minecraft:generic.attack_damage modifier add dd3713c4-bf98-4d8b-bc6f-c5368dd7bd45 teamDeadAttack -100 add_value
+attribute @s minecraft:generic.jump_strength modifier add team_dead -100 add_value
+
+attribute @s minecraft:generic.attack_damage modifier add team_dead -100 add_value
 
 #Countdown while dead
 execute if entity @s[scores={deathCountdown=..0}] run function du-in:ingame/team_death/countdown

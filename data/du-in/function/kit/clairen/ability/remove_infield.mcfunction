@@ -1,3 +1,3 @@
-attribute @s generic.attack_damage modifier remove 0320fc2c-83b1-45dd-beb9-48f8d0236db2
+attribute @s generic.attack_damage modifier remove clairen_damage
 tag @s remove glowing
 tag @s remove inField

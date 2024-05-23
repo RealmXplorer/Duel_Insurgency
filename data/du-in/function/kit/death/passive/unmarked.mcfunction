@@ -1,3 +1,3 @@
-attribute @s minecraft:generic.armor modifier remove b36faec5-3a6b-4564-ba7d-2787df4abace
+attribute @s minecraft:generic.armor modifier remove death_whistle_buff
 tag @s remove deathMark
 tag @s remove glowing

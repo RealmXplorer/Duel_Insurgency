@@ -14,15 +14,15 @@ attribute @s minecraft:generic.gravity base set 0.08
 
 #Remove Modifiers
 ##Springtrap
-attribute @s generic.attack_damage modifier remove f90a6e5b-203f-440c-9f8c-6bb52cc3ab56
+attribute @s generic.attack_damage modifier remove springlock_damage
 
 ##Yharim
-attribute @s generic.movement_speed modifier remove cbda016f-2c7a-4655-a93f-e336ba656dd8
-attribute @s generic.knockback_resistance modifier remove 1234f0a5-4a45-44d9-aa8b-45aed1442cd4
-attribute @s minecraft:generic.armor modifier remove 3b5418c1-b839-4693-af55-f8a28778e52a
-attribute @s minecraft:generic.armor_toughness modifier remove a9f75a0f-575c-4576-9d89-255823159571 
+attribute @s generic.movement_speed modifier remove yharim_ability
+attribute @s generic.knockback_resistance modifier remove yharim_ability
+attribute @s minecraft:generic.armor modifier remove yharim_ability
+attribute @s minecraft:generic.armor_toughness modifier remove yharim_ability
 #Damage (sabotage)
-attribute @s minecraft:generic.attack_damage modifier remove 9a9dafc4-1c54-4fd8-b2cb-0b8dd39dab5a
+attribute @s minecraft:generic.attack_damage modifier remove yharim_ability
 
 #Rage
 attribute @s generic.attack_damage modifier remove 9ea2728b-7a81-441a-a8d1-9775741f6a41
@@ -30,25 +30,27 @@ attribute @s generic.movement_speed modifier remove e6633dad-b6ec-4d0b-9708-5919
 attribute @s generic.attack_speed modifier remove 614e6bbe-4551-448f-a380-b0d5652c8b02
 
 ##Clairen
-attribute @s generic.attack_damage modifier remove 0320fc2c-83b1-45dd-beb9-48f8d0236db2
+attribute @s generic.attack_damage modifier remove clairen_damage
 
 ##Puss
-attribute @s generic.knockback_resistance modifier remove cd29f460-195f-43fe-8c60-48ef046cc7fa
+attribute @s generic.knockback_resistance modifier remove puss_kb
 
 ##Death
-attribute @s minecraft:generic.armor modifier remove b36faec5-3a6b-4564-ba7d-2787df4abace
+attribute @s minecraft:generic.armor modifier remove death_whistle_buff
 
 ##Cuphead
-attribute @s generic.knockback_resistance modifier remove 8e7bcc8e-a4aa-4d1f-8828-cbea3350bd41
+attribute @s generic.knockback_resistance modifier remove cuphead_ult
 
 ##Flowey
-attribute @s minecraft:generic.jump_strength modifier remove 6554983a-9201-41da-a774-48f15063a223
+attribute @s minecraft:generic.jump_strength modifier remove flowey_jump
 
 ##Team Dead Effects
-attribute @s minecraft:generic.jump_strength modifier remove 76c91af4-d86d-4e55-8df9-fd2c247d45db
-attribute @s minecraft:generic.attack_damage modifier remove dd3713c4-bf98-4d8b-bc6f-c5368dd7bd45
+attribute @s minecraft:generic.jump_strength modifier remove team_dead
+attribute @s minecraft:generic.attack_damage modifier remove team_dead
 
 ##Parry
-attribute @s generic.knockback_resistance modifier remove 37007289-4186-4632-85f3-f535c545d04a
-attribute @s generic.armor modifier remove b3bae1c5-1089-46d6-b6c2-c59cfa6e5242
-attribute @s generic.armor_toughness modifier remove 91eea5df-48ec-402a-ad0c-13a07b16a00a
+attribute @s generic.knockback_resistance modifier remove parry
+attribute @s generic.armor modifier remove parry
+attribute @s generic.armor_toughness modifier remove parry
+
+##COME BACK TO THIS

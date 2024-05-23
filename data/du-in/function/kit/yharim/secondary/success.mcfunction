@@ -10,9 +10,9 @@ particle minecraft:angry_villager ~ ~2 ~ 0.25 0 0.01 0 20 force
 scoreboard players set @s yharimRageDuration 60
 tag @s add enraged
 
-attribute @s generic.attack_damage modifier add 9ea2728b-7a81-441a-a8d1-9775741f6a41 yharimRageDamage 6.0 add_value
-attribute @s generic.movement_speed modifier add e6633dad-b6ec-4d0b-9708-59197e5e5112 yharimRageSpeed 0.025 add_value
-attribute @s generic.attack_speed modifier add 614e6bbe-4551-448f-a380-b0d5652c8b02 yharimRageHaste 0.4 add_value
+attribute @s generic.attack_damage modifier add yharim_rage 6.0 add_value
+attribute @s generic.movement_speed modifier add yharim_rage 0.025 add_value
+attribute @s generic.attack_speed modifier add yharim_rage 0.4 add_value
 
 #effect give @s minecraft:strength 2 1 true
 #effect give @s minecraft:speed 2 0 true
