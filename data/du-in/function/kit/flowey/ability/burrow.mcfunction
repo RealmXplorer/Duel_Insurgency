@@ -4,11 +4,10 @@ clear @s
 
 #If player is nearby#
 #execute unless entity @a[tag=void] run function du-in:kit/flowey/ability/default_hit
-execute unless entity @a[tag=void] unless entity @s[tag=sabotaged] as @a[gamemode=!spectator,tag=playing,distance=.5..2,limit=1] unless score @a[scores={floweyHitTimer=0..},limit=1,sort=nearest] team = @s team at @s run function du-in:kit/flowey/ability/default_hit
+execute unless entity @a[tag=void] unless entity @s[tag=sabotaged] as @a[gamemode=!spectator,tag=playing,distance=.5..2,limit=1] unless score @p[scores={floweyHitTimer=0..}] team = @s team at @s run function du-in:kit/flowey/ability/default_hit
 
 execute if entity @a[tag=void] as @e[type=skeleton,distance=.5..2,tag=gonerThing] at @s run function du-in:kit/flowey/ability/void_hit
 
-#as @a[tag=playing,distance=.5..2,limit=1] unless score @a[scores={floweyHitTimer=0..},limit=1,sort=nearest] team = @s team at @s run 
 #Give effects#
 effect give @s[tag=!sabotaged] minecraft:resistance 1 255 true
 effect give @s[tag=!sabotaged] minecraft:fire_resistance 1 255 true

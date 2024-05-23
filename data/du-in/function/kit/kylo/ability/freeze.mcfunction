@@ -1,11 +1,11 @@
-execute rotated as @s[scores={kyloTimer=20}] run tp @e[type=marker,tag=kyloHitPos,limit=1,sort=nearest] ~ ~ ~ ~ ~
+execute rotated as @s[scores={kyloTimer=20}] run tp @n[type=marker,tag=kyloHitPos] ~ ~ ~ ~ ~
 
-execute as @e[type=marker,tag=kyloHitPos,sort=nearest,limit=1] at @s rotated as @s run tp @a[tag=kyloHit,limit=1,sort=nearest,scores={kyloTimer=..20}] @s
+execute as @n[type=marker,tag=kyloHitPos] at @s rotated as @s run tp @p[tag=kyloHit,scores={kyloTimer=..20}] @s
 
 scoreboard players remove @s kyloTimer 1
 
 particle minecraft:crit ~ ~1 ~ .3 .5 .3 0 10 force
 
-execute if entity @s[scores={kyloTimer=..3}] run kill @e[type=marker,tag=kyloHitPos,limit=1,sort=nearest]
+execute if entity @s[scores={kyloTimer=..3}] run kill @n[type=marker,tag=kyloHitPos]
 tag @s[scores={kyloTimer=..0}] remove kyloHit
 scoreboard players reset @s[scores={kyloTimer=..0}] kyloTimer

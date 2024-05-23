@@ -1,5 +1,4 @@
-tag @e[type=skeleton,tag=gonerThing,distance=0.05..5,sort=nearest,limit=1] add papyrusHit
-#tag @s[tag=sabotaged] add papyrusHit
+tag @n[type=skeleton,tag=gonerThing,distance=0.05..5] add papyrusHit
 function du-in:kit/papyrus/particle
 clear @s minecraft:carrot_on_a_stick
 xp set @s[tag=!stolen] 250 levels

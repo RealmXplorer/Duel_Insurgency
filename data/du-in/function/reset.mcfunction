@@ -105,7 +105,6 @@ tag @a remove team2
 
 tag @a remove spectating
 tag @a remove killstreak3
-tag @e remove shutDown
 tag @a remove spect
 scoreboard players reset * healthHit
 scoreboard players reset * healthTimer

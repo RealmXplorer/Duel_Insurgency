@@ -21,9 +21,9 @@ playsound minecraft:entity.ghast.shoot master @a ~ ~ ~ 100000 .5 1
 xp set @s[tag=!stolen] 350 levels
 tag @s[tag=stolen,tag=givenStolen] add kitDone
 
-kill @e[type=area_effect_cloud,tag=grave,limit=1,sort=nearest]
-kill @e[type=falling_block,tag=grave,limit=1,sort=nearest]
-#execute if entity @s[scores={zombieTimer=..1}] run 
+kill @n[type=area_effect_cloud,tag=grave]
+kill @n[type=falling_block,tag=grave]
+
 
 execute if entity @s[tag=ranMode] run function du-in:kit/all/reset
 tag @s[tag=ranMode] add random

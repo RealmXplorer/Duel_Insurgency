@@ -14,7 +14,6 @@ scoreboard players add #main redPoints 1
 tellraw @a ["",{"text":"Red Team","bold":true,"color":"red"},{"text":" has captured the ","color":"gray"},{"text":"Blue ","bold":true,"color":"blue"},{"text":"flag!","color":"gray"}]
 playsound minecraft:entity.ender_dragon.growl master @a ~ ~ ~ 999999 1
 playsound minecraft:entity.player.levelup master @a ~ ~ ~ 999999 1
-#title @a title [{"text":"Blue ","bold":true,"color":"blue"},{"text":"flag captured!","color":"red"}]
 title @a title [{"text":"Blue ","bold":true,"color":"blue"}]
 title @a subtitle [{"text":"Flag Captured!","color":"red","bold":true}]
 

@@ -1,4 +1,4 @@
-tp @s ~ ~ ~ facing entity @e[type=skeleton,tag=gonerThing,tag=sansHit,limit=1,sort=nearest] feet
+tp @s ~ ~ ~ facing entity @n[type=skeleton,tag=gonerThing,tag=sansHit] feet
 function du-in:kit/sans/ability/effect
 #scoreboard players set @a[tag=sansHit] sansHitTimer 60
 

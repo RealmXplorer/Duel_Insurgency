@@ -14,9 +14,6 @@ execute unless entity @a[tag=win] run function du-in:void/spawn/wave/wave1
 #Upon Win
 execute if entity @a[scores={pylonTimer=..0},tag=partyLeader] run function du-in:void/end/explode
 
-#Lose condition
-#execute if score Insurgents playerCount matches ..0 unless entity @a[tag=win] run function du-in:void/end/lose
-
 #Set bossbar max
 bossbar set gast:pylon4 max 3600
 

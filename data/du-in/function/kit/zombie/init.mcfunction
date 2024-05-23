@@ -21,7 +21,6 @@ execute if block ~ ~-1 ~ #du-in:zomb_invalid rotated as @s run tag @s add badBlo
 execute if block ~ ~ ~ #du-in:zomb_invalid_air rotated as @s run tag @s add badBlock
 
 execute if entity @s[tag=teamMode] if entity @e[type=marker,tag=gameObject,distance=..10] rotated as @s run tag @s add badBlock
-# execute if entity @s[tag=team2] if entity @e[type=marker,tag=redFlag,distance=..10] rotated as @s run tag @s add badBlock
 
 execute if entity @s[tag=kothIngame] if entity @e[type=area_effect_cloud,tag=gameObject,distance=..10] rotated as @s run tag @s add badBlock
 

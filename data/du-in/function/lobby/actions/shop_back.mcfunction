@@ -8,7 +8,6 @@ execute unless entity @a[tag=shop] run kill @e[tag=tabba]
 #Reset Tabba Dialogue
 scoreboard players set @s tabbaTalk 0
 scoreboard players set @s tabbaVendingTalk 0
-#execute unless entity @a[tag=shop] run kill @e[tag=shopSpecific]
 
 #Teleport to gamemode select
 tp @s -999 13 517 -90 0

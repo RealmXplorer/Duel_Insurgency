@@ -1,7 +1,7 @@
 tag @e[type=interaction,tag=vending] add stable
 tag @e[type=interaction,tag=vending] remove sabotagedMachine
 
-execute as @e[type=interaction,distance=..7,tag=vending,sort=nearest,limit=1] run tag @s add sabotagedMachine
+execute as @n[type=interaction,distance=..7,tag=vending] run tag @s add sabotagedMachine
 
 tag @e[type=interaction,tag=vending,tag=sabotagedMachine] remove stable
 
