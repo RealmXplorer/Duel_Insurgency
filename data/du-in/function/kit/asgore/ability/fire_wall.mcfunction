@@ -4,7 +4,7 @@ scoreboard players remove @s asgoreFire 1
 execute if entity @a[tag=void] as @e[type=skeleton,tag=gonerThing,distance=..1] at @s run function du-in:kit/asgore/ability/void/contact
 
 #If a player walks into the fire wall.
-execute unless entity @a[tag=void] as @a[gamemode=!spectator,distance=...75,tag=playing] at @s unless score @e[tag=asgoreFire,limit=1,sort=nearest] team = @s team run function du-in:kit/asgore/ability/contact
+execute unless entity @a[tag=void] as @a[gamemode=!spectator,distance=...75,tag=playing] at @s unless score @n[tag=asgoreFire] team = @s team run function du-in:kit/asgore/ability/contact
 
 #Particle and sounds
 particle minecraft:flame ~ ~1 ~ 0.2 0.4 0.2 0 3 force
