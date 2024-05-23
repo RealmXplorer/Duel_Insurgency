@@ -4,9 +4,6 @@ advancement revoke @s only du-in:utility/hit_player
 scoreboard players set @s comboHitTimer 0
 scoreboard players add @s comboScore 1
 
-#execute if entity @s[tag=voidReady] run tellraw @a [{"text":"The Void reaffirms its grasp...","bold":true,"color":"red"}]
-#tag @s remove voidReady
-
 #Combos Sounds
 execute if entity @s[scores={comboScore=3..},tag=playing] run function du-in:kit/all/combo_sounds/init
 
@@ -14,12 +11,11 @@ execute if entity @s[scores={comboScore=3..},tag=playing] run function du-in:kit
 execute if entity @s[tag=asrielCharge] run function du-in:kit/asriel/passive/damage
 
 #Villager Emerald System#
-    execute if entity @s[scores={kit=8},tag=playing,predicate=du-in:chance/forty_chance] run scoreboard players add @s villagerEmeralds 1
-    execute if entity @s[tag=stolen,tag=playing,predicate=du-in:chance/forty_chance] run scoreboard players add @s villagerEmeralds 1
+    execute if entity @s[scores={kit=8}] run function du-in:kit/villager/hit
+    execute if entity @s[tag=stolen] run function du-in:kit/villager/hit
 
 #Saac Money#
-    execute if entity @s[scores={kit=1000},tag=playing,predicate=du-in:chance/forty_chance] run function du-in:kit/saac/money/init
-    execute if entity @s[scores={kit=1000},tag=!broken,tag=playing,predicate=du-in:chance/quarter_chance,predicate=du-in:weapon_hold] run function du-in:kit/saac/passive/break
+    execute if entity @s[scores={kit=1000},tag=playing] run function du-in:kit/saac/passive/hit
 
 #Cuphead Card system#
     scoreboard players add @s[scores={kit=21},tag=!stolen] cardPower 1
