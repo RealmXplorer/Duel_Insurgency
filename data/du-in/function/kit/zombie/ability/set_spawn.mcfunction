@@ -5,8 +5,7 @@ spawnpoint @s ~ ~ ~ ~
 clear @s minecraft:carrot_on_a_stick
 
 #Particles and sounds
-particle minecraft:block{block_state:{"minecraft:dirt"}} ~ ~ ~ 0.3 0 0.3 1 50 force
-
+particle minecraft:block{block_state:"minecraft:dirt"} ~ ~ ~ 0.3 0 0.3 1 50 force
 playsound minecraft:sans.ability master @a ~ ~ ~ .25 1
 playsound minecraft:block.grass.break master @a ~ ~ ~ 100 .7
 playsound minecraft:entity.evoker.cast_spell master @a ~ ~ ~ 100 1

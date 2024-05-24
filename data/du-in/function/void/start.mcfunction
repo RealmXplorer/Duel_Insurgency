@@ -9,8 +9,8 @@ clear @a barrier
 
 effect give @a instant_health 1 100 true
 advancement revoke @s only du-in:void/interact_void
-execute at @e[type=armor_stand,tag=vendMachine] run setblock ~ ~1 ~ air
-execute at @e[type=armor_stand,tag=vendMachine] run setblock ~ ~ ~ air
+execute at @e[type=armor_stand,tag=vendMachine] run fill ~ ~ ~ ~ ~1 ~ air
+
 function du-in:ingame/conquest/reset_points
 kill @e[tag=mapSpecific]
 tag @a remove voidReady
