@@ -15,7 +15,7 @@
 
                             "type": "minecraft:arrow",
 
-                            "nbt": "{ShotFromCrossbow:1b}"
+                            "nbt": "{weapon:{id:'minecraft:crossbow'}}"
 
                         },
 
