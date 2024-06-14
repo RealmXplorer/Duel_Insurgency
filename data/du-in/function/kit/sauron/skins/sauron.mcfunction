@@ -1,0 +1,5 @@
+item replace entity @s armor.head with minecraft:player_head[custom_name='{"text":"Sauron","color":"white","bold":true,"italic":false}',profile={id:[I;-613736842,-1984082575,-1081877781,-766895780],name:"",properties:[{name:"textures",value:"eyJ0ZXh0dXJlcyI6eyJTS0lOIjp7InVybCI6Imh0dHA6Ly90ZXh0dXJlcy5taW5lY3JhZnQubmV0L3RleHR1cmUvZGNjMDQ2NmExNjRhMDRiM2E0NmYzNmI3NDM0MmVlZWY4MWNlNzZlZTFhZWQ0YzU4NDAzNjBlNTFmZGNkZmVjMiJ9fX0="}]}] 1
+item replace entity @s armor.chest with leather_chestplate[custom_name='{"text":"Sauron Chest"}',unbreakable={show_in_tooltip:false},dyed_color={rgb:4408135,show_in_tooltip:false}]
+item replace entity @s armor.legs with leather_leggings[custom_name='{"text":"Sauron Legs"}',unbreakable={show_in_tooltip:false},dyed_color={rgb:2039590,show_in_tooltip:false}]
+item replace entity @s armor.feet with leather_boots[custom_name='{"text":"Sauron Feet"}',unbreakable={show_in_tooltip:false},dyed_color={rgb:4408135,show_in_tooltip:false}]
+tag @s remove armor
