@@ -1,52 +1,30 @@
 {
     "criteria": {
-
-        "midas": {
-
-            "trigger": "minecraft:entity_hurt_player",
-
-            "conditions": {
-
-                "damage": {
-
-                    "source_entity": {
-
-                        "equipment": {
-
-                            "mainhand": {
-
-                                "item": "minecraft:stick",
-
-                                "nbt": "{CustomModelData:105}"
-
-                            }
-
-                        },
-
-                        "type": "minecraft:player",
-
-                        "nbt": "{Tags:[\"midasHand\"]}"
-
-                    }
-
+      "midas": {
+        "trigger": "minecraft:entity_hurt_player",
+        "conditions": {
+          "damage": {
+            "source_entity": {
+              "type": "minecraft:player",
+              "equipment": {
+                "mainhand": {
+                  "items": "minecraft:stick",
+                  "components": {
+                    "minecraft:custom_model_data": 105
+                  }
                 }
-
+              }
             }
-
+          }
         }
-
+      }
     },
     "requirements": [
-        [
-            "midas"
-        ]
+      [
+        "midas"
+      ]
     ],
-
     "rewards": {
-
-        "function": "du-in:kit/jack_horner/ability/midas/touch"
-
+      "function": "du-in:kit/jack_horner/ability/midas/touch"
     }
-
-}
-
+  }

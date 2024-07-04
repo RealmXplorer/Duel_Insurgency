@@ -1,47 +1,30 @@
 {
     "criteria": {
-
-        "midas": {
-
-            "trigger": "minecraft:player_hurt_entity",
-
-            "conditions": {
-
-                "damage": {
-
-                    "source_entity": {
-
-                        "equipment": {
-
-                            "mainhand": {
-
-                                "item": "minecraft:stick",
-
-                                "nbt": "{CustomModelData:105}"
-
-                            }
-
-                        }
-
-                    }
-
+      "midas": {
+        "trigger": "minecraft:player_hurt_entity",
+        "conditions": {
+          "damage": {
+            "source_entity": {
+              "type": "minecraft:player",
+              "equipment": {
+                "mainhand": {
+                  "items": "minecraft:stick",
+                  "components": {
+                    "minecraft:custom_model_data": 105
+                  }
                 }
-
+              }
             }
-
+          }
         }
-
+      }
     },
     "requirements": [
-        [
-            "midas"
-        ]
+      [
+        "midas"
+      ]
     ],
-
     "rewards": {
-
-        "function": "du-in:kit/jack_horner/ability/midas/use"
-
+      "function": "du-in:kit/jack_horner/ability/midas/use"
     }
-
-}
+  }  

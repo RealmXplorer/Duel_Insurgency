@@ -2,4 +2,3 @@ item replace entity @s armor.head with minecraft:player_head[custom_name='{"text
 item replace entity @s armor.chest with leather_chestplate[custom_name='{"text":"Sauron Chest"}',unbreakable={show_in_tooltip:false},dyed_color={rgb:4408135,show_in_tooltip:false}]
 item replace entity @s armor.legs with leather_leggings[custom_name='{"text":"Sauron Legs"}',unbreakable={show_in_tooltip:false},dyed_color={rgb:2039590,show_in_tooltip:false}]
 item replace entity @s armor.feet with leather_boots[custom_name='{"text":"Sauron Feet"}',unbreakable={show_in_tooltip:false},dyed_color={rgb:4408135,show_in_tooltip:false}]
-tag @s remove armor

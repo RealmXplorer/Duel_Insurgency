@@ -3,7 +3,7 @@ execute store result score @s drinkType run random value 1..6
 function du-in:other/skins/skin_menu/actions/purchase_sound
 
 #Food#
-execute if entity @s[scores={drinkType=1}] run give @s stone_sword[custom_model_data=109,food={nutrition:4,saturation_modifier:0.1,can_always_eat:true},custom_name='{"text":"Pawpsicle","color":"#FF0A6C","bold":true}',unbreakable={show_in_tooltip:false}]
+execute if entity @s[scores={drinkType=1}] run give @s stone_sword[custom_model_data=109,food={nutrition:4,saturation:0.1,can_always_eat:true},custom_name='{"text":"Pawpsicle","color":"#FF0A6C","bold":true}',unbreakable={show_in_tooltip:false}]
 
 #Drink
 execute if entity @s[scores={drinkType=2}] run give @s potion[custom_name='{"text":"The Big Boy","color":"#148AFF","bold":true}',custom_data={du-in:'bigBoy'},potion_contents={custom_color:2058751}] 1

@@ -4,7 +4,7 @@ summon minecraft:block_display ~ ~1 ~ {Tags:["flame","notSet","projectile"],bloc
 #summon minecraft:marker ~ ~1 ~ {Tags:["flame","notSet","projectile"]}
 
 scoreboard players set @e[type=block_display,tag=flame,tag=notSet] flameTimer 100
-execute as @e[type=block_display,tag=flame,tag=notSet] store result score @s team run scoreboard players get @p[scores={kit=14},tag=kitActions] team
+execute as @e[type=block_display,tag=flame,tag=notSet] store result score @s team run scoreboard players get @p[scores={kit=28},tag=kitActions] team
 tag @e[type=block_display,tag=flame,tag=notSet,scores={flameTimer=1..}] remove notSet
 playsound minecraft:entity.zombie.infect master @a ~ ~ ~ 2 1
 playsound minecraft:entity.zombie.infect master @a ~ ~ ~ 2 .5

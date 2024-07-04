@@ -2,4 +2,3 @@ item replace entity @s armor.head with minecraft:player_head[minecraft:custom_na
 item replace entity @s armor.chest with leather_chestplate[custom_name='{"text":"Wraith Chest"}',unbreakable={show_in_tooltip:false},dyed_color={rgb:2500134,show_in_tooltip:false}]
 item replace entity @s armor.legs with leather_leggings[custom_name='{"text":"Wraith Legs"}',unbreakable={show_in_tooltip:false},dyed_color={rgb:263172,show_in_tooltip:false}]
 item replace entity @s armor.feet with leather_boots[custom_name='{"text":"Wraith Feet"}',unbreakable={show_in_tooltip:false},dyed_color={rgb:263172,show_in_tooltip:false}]
-tag @s remove armor

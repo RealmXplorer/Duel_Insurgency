@@ -5,6 +5,7 @@ scoreboard players reset @s villagerEmeralds
 
 #Reset stolen abilities
 execute if entity @s[scores={kit=3},tag=magma] run scoreboard players set @s magmaTimer 1
+execute if entity @s[scores={kit=4,creeperTimer=1..}] run tag @s remove cooldown
 execute if entity @s[scores={kit=4}] run scoreboard players reset @s creeperTimer
 execute if entity @s[scores={kit=5},tag=springLock] run function du-in:kit/springtrap/ability/disable
 execute if entity @s[scores={kit=12}] run scoreboard players reset @s floweyHitTimer
