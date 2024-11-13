@@ -1,5 +1,5 @@
 tag @a add void
-execute as @a[tag=spamClick] run attribute @s generic.attack_speed base set 4.0
+execute as @a[tag=spamClick] run attribute @s attack_speed base set 4.0
 tag @a remove spamClick
 tag @a remove ranMode
 

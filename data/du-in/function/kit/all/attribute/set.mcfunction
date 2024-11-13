@@ -48,4 +48,4 @@ execute if entity @s[scores={kit=1004}] run function du-in:kit/runza/attribute
 execute if entity @s[scores={kit=2015}] run function du-in:kit/saul/attribute
 execute if entity @s[scores={kit=42069}] run function du-in:kit/chungus/attribute
 
-attribute @s minecraft:generic.attack_damage base set 1
+attribute @s minecraft:attack_damage base set 1

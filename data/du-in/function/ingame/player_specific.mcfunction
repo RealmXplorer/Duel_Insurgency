@@ -105,13 +105,13 @@ execute if entity @s[scores={sabotageTimer=1..}] run function du-in:kit/nick/abi
 execute if entity @s[scores={pussFearTimer=1..}] run function du-in:kit/puss/ability/fear_timer
 
 #Sans chestplate
-execute if entity @s[scores={sansHitTimer=0..}] unless entity @s[scores={gasterTimer=..79}] unless entity @s[scores={floweyHitTimer=1..}] unless entity @s[scores={deathTimer=0..}] run item replace entity @s armor.chest with minecraft:leather_chestplate[custom_name='{"text":"Gravity","color":"blue","bold":true}',unbreakable={show_in_tooltip:false},attribute_modifiers={modifiers:[{type:"generic.knockback_resistance",id:"generic.knockback_resistance",amount:1,operation:"add_value"}],show_in_tooltip:true},dyed_color={rgb:2228479}] 1
+execute if entity @s[scores={sansHitTimer=0..}] unless entity @s[scores={gasterTimer=..79}] unless entity @s[scores={floweyHitTimer=1..}] unless entity @s[scores={deathTimer=0..}] run item replace entity @s armor.chest with minecraft:leather_chestplate[custom_name='{"text":"Gravity","color":"blue","bold":true}',unbreakable={show_in_tooltip:false},attribute_modifiers={modifiers:[{type:"knockback_resistance",id:"knockback_resistance",amount:1,operation:"add_value"}],show_in_tooltip:true},dyed_color={rgb:2228479}] 1
 
 #Clairen Field
 execute if entity @s[tag=inField] run function du-in:kit/clairen/ability/field_effects
 execute if entity @s[tag=sabotagedField] run function du-in:kit/clairen/ability/sabotaged_field
 
 # SPAM CLICK MODE #
-    execute if entity @a[tag=partyLeader,tag=spamClick] run attribute @s minecraft:generic.attack_speed base set 100
+    execute if entity @a[tag=partyLeader,tag=spamClick] run attribute @s minecraft:attack_speed base set 100
 
 execute if entity @s[tag=hasRing] run function du-in:kit/sauron/ring/has_ring

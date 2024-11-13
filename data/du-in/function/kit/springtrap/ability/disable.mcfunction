@@ -3,7 +3,7 @@ playsound minecraft:entity.vex.death master @a ~ ~ ~ 1 .5
 playsound minecraft:sans.ability master @a ~ ~ ~ .25 .95
 function du-in:kit/springtrap/particle
 effect give @s[tag=!sabotaged] minecraft:regeneration 5 2 true
-attribute @s generic.attack_damage modifier remove springlock_damage
+attribute @s attack_damage modifier remove springlock_damage
 
 
 clear @s minecraft:carrot_on_a_stick

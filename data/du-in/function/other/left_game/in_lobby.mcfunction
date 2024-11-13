@@ -31,12 +31,12 @@ execute if entity @a[tag=partyLeader,tag=kitMenu,tag=lobby] run function du-in:l
 
 execute if entity @a[tag=partyLeader,tag=!kitMenu,tag=lobby] run function du-in:other/left_game/not_in_kit_menu
 
-attribute @s minecraft:generic.armor base set 0
-attribute @s minecraft:generic.armor_toughness base set 0
-attribute @s minecraft:generic.knockback_resistance base set 0
-attribute @s minecraft:generic.max_health base set 20
-execute as @a run attribute @s minecraft:generic.attack_damage base set 0
-attribute @s minecraft:generic.attack_speed base set 4
-attribute @s minecraft:generic.movement_speed base set 0.10000000149
+attribute @s minecraft:armor base set 0
+attribute @s minecraft:armor_toughness base set 0
+attribute @s minecraft:knockback_resistance base set 0
+attribute @s minecraft:max_health base set 20
+execute as @a run attribute @s minecraft:attack_damage base set 0
+attribute @s minecraft:attack_speed base set 4
+attribute @s minecraft:movement_speed base set 0.10000000149
 
 stopsound @s record

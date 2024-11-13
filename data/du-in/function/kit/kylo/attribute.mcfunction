@@ -1,3 +1,3 @@
 #Attributes#
-attribute @s generic.knockback_resistance base set 0.02
-attribute @s generic.movement_speed base set 0.145
+attribute @s knockback_resistance base set 0.02
+attribute @s movement_speed base set 0.145

@@ -2,10 +2,10 @@ scoreboard players add @s deathWeapSwitch 1
 scoreboard players set @s[scores={deathWeapSwitch=3..}] deathWeapSwitch 1
 
 execute if entity @s[scores={deathWeapSwitch=1}] run tag @s add deathDouble
-execute if entity @s[scores={deathWeapSwitch=1}] run attribute @s minecraft:generic.movement_speed base set 0.14
+execute if entity @s[scores={deathWeapSwitch=1}] run attribute @s minecraft:movement_speed base set 0.14
 
 execute if entity @s[scores={deathWeapSwitch=2}] run tag @s remove deathDouble
-execute if entity @s[scores={deathWeapSwitch=2}] run attribute @s minecraft:generic.movement_speed base set 0.125
+execute if entity @s[scores={deathWeapSwitch=2}] run attribute @s minecraft:movement_speed base set 0.125
 
 
 clear @s #du-in:weapon
