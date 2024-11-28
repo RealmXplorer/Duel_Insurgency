@@ -8,7 +8,7 @@
 execute if entity @s[scores={palpTimer=-99..}] run function du-in:kit/palps/ability/stealing
 
 #Attributes#
-execute unless entity @s[scores={palpTimer=2..}] run attribute @s[tag=!deathMark] minecraft:generic.armor base set 0
+execute unless entity @s[scores={palpTimer=2..}] run attribute @s[tag=!deathMark] minecraft:armor base set 0
 
 #NON VILLAGER
 execute if entity @s[tag=!stolen] run function du-in:kit/palps/constant

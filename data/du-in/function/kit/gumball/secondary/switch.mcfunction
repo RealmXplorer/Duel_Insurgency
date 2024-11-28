@@ -2,10 +2,10 @@ scoreboard players add @s gumballSwitch 1
 scoreboard players set @s[scores={gumballSwitch=3..}] gumballSwitch 1
 
 execute if entity @s[scores={gumballSwitch=1}] run tag @s add darwin
-execute if entity @s[scores={gumballSwitch=1}] run attribute @s minecraft:generic.movement_speed base set 0.1475
+execute if entity @s[scores={gumballSwitch=1}] run attribute @s minecraft:movement_speed base set 0.1475
 
 execute if entity @s[scores={gumballSwitch=2}] run tag @s remove darwin
-execute if entity @s[scores={gumballSwitch=2}] run attribute @s minecraft:generic.movement_speed base set 0.13
+execute if entity @s[scores={gumballSwitch=2}] run attribute @s minecraft:movement_speed base set 0.13
 execute if entity @s[scores={gumballSwitch=2}] run effect clear @s dolphins_grace
 execute if entity @s[scores={gumballSwitch=2}] run effect clear @s water_breathing
 

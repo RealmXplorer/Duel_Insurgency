@@ -52,13 +52,13 @@ bossbar set minecraft:map_countdown players @a
 bossbar set bossbar:gametimer players @a
 
 #Set attributes
-attribute @s minecraft:generic.armor base set 0
-attribute @s minecraft:generic.armor_toughness base set 0
-attribute @s minecraft:generic.knockback_resistance base set 0
-attribute @s minecraft:generic.max_health base set 20
-attribute @s minecraft:generic.attack_damage base set 0
-attribute @s minecraft:generic.attack_speed base set 4
-attribute @s minecraft:generic.movement_speed base set 0.10000000149
+attribute @s minecraft:armor base set 0
+attribute @s minecraft:armor_toughness base set 0
+attribute @s minecraft:knockback_resistance base set 0
+attribute @s minecraft:max_health base set 20
+attribute @s minecraft:attack_damage base set 0
+attribute @s minecraft:attack_speed base set 4
+attribute @s minecraft:movement_speed base set 0.10000000149
 
 #Give all players saturation
 #effect give @a minecraft:saturation 1000000 100 true

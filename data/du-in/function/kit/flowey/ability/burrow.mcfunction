@@ -14,7 +14,7 @@ effect give @s[tag=!sabotaged] minecraft:fire_resistance 1 255 true
 effect give @s minecraft:weakness 1 255 true
 effect give @s[tag=!sabotaged] minecraft:speed 1 2 true
 effect give @s[tag=sabotaged] minecraft:slowness 1 200 true
-attribute @s minecraft:generic.jump_strength modifier add flowey_jump -100 add_value
+attribute @s minecraft:jump_strength modifier add flowey_jump -100 add_value
 
 effect give @s[tag=!sabotaged] minecraft:invisibility 1 1 true
 
