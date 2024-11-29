@@ -1,10 +1,5 @@
 #DEFAULT#
-# item replace entity @s armor.head with minecraft:player_head{du-in:weaponItem,display:{Name:"{\"text\":\"Darwin\"}"},SkullOwner:{Id:[I;126546635,1214137600,-2141091194,959774819],Properties:{textures:[{Value:"eyJ0ZXh0dXJlcyI6eyJTS0lOIjp7InVybCI6Imh0dHA6Ly90ZXh0dXJlcy5taW5lY3JhZnQubmV0L3RleHR1cmUvYjIzOTM0OTI0ZWVmMzFhMDkzZjNlY2ZhMjI2ODgyNjk4ZTBlOTdlN2FiOWY1YjQxY2VhNjI3M2U5NWQ4YTFmYyJ9fX0="}]}}}
-# item replace entity @s armor.chest with minecraft:leather_chestplate{Unbreakable:1,HideFlags:4,display:{Name:'{"text":"Darwin Chest"}',color:16743183},du-in:weaponItem} 1
-# item replace entity @s armor.legs with minecraft:leather_leggings{Unbreakable:1,HideFlags:4,display:{Name:'{"text":"Darwin Legs"}',color:16743183},du-in:weaponItem} 1
-# item replace entity @s armor.feet with minecraft:leather_boots{Unbreakable:1,HideFlags:4,display:{Name:'{"text":"Darwin Feet"}',color:3780912},du-in:weaponItem} 1
-
 item replace entity @s armor.head with minecraft:player_head[custom_name='{"text":"Darwin","color":"white","bold":true,"italic":false}',profile={id:[I;126546635,1214137600,-2141091194,959774819],name:"",properties:[{name:"textures",value:"eyJ0ZXh0dXJlcyI6eyJTS0lOIjp7InVybCI6Imh0dHA6Ly90ZXh0dXJlcy5taW5lY3JhZnQubmV0L3RleHR1cmUvYjIzOTM0OTI0ZWVmMzFhMDkzZjNlY2ZhMjI2ODgyNjk4ZTBlOTdlN2FiOWY1YjQxY2VhNjI3M2U5NWQ4YTFmYyJ9fX0="}]}] 1
-item replace entity @s armor.chest with leather_chestplate[custom_name='{"text":"Darwin Chest"}',unbreakable={show_in_tooltip:false},dyed_color={rgb:16743183,show_in_tooltip:false}] 1
-item replace entity @s armor.legs with leather_leggings[custom_name='{"text":"Darwin Legs"}',unbreakable={show_in_tooltip:false},dyed_color={rgb:16743183,show_in_tooltip:false}] 1
-item replace entity @s armor.feet with leather_boots[custom_name='{"text":"Darwin Feet"}',unbreakable={show_in_tooltip:false},dyed_color={rgb:3780912,show_in_tooltip:false}] 1
+item replace entity @s armor.chest with leather_chestplate[custom_name='{"text":"Darwin Chest"}',unbreakable={show_in_tooltip:false},dyed_color={rgb:16743183,show_in_tooltip:false},equippable={slot:"chest",model:"du-in:darwin"}] 1
+item replace entity @s armor.legs with leather_leggings[custom_name='{"text":"Darwin Legs"}',unbreakable={show_in_tooltip:false},dyed_color={rgb:16743183,show_in_tooltip:false},equippable={slot:"legs",model:"du-in:darwin"}] 1
+item replace entity @s armor.feet with leather_boots[custom_name='{"text":"Darwin Feet"}',unbreakable={show_in_tooltip:false},dyed_color={rgb:3780912,show_in_tooltip:false},equippable={slot:"feet",model:"du-in:darwin"}] 1

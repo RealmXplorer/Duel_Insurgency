@@ -1,5 +1,5 @@
 #DEFAULT#
 item replace entity @s armor.head with minecraft:player_head[custom_name='{"text":"Chara","color":"white","bold":true,"italic":false}',profile={id:[I;867896025,-2025831227,-1696125005,-2071803774],name:"",properties:[{name:"textures",value:"eyJ0ZXh0dXJlcyI6eyJTS0lOIjp7InVybCI6Imh0dHA6Ly90ZXh0dXJlcy5taW5lY3JhZnQubmV0L3RleHR1cmUvNzkzNzM0YmMyNTY1Mzc2MzAxZmJiNzE2NmZkNGQxNGM3NjE3ZTUwOTdiM2VjMmQ0ODZhZmFkNGIwNTgifX19"}]}] 1
-item replace entity @s armor.chest with leather_chestplate[custom_name='{"text":"Chara Chest"}',unbreakable={show_in_tooltip:false},dyed_color={rgb:8439583,show_in_tooltip:false}]
-item replace entity @s armor.legs with leather_leggings[custom_name='{"text":"Chara Legs"}',unbreakable={show_in_tooltip:false},dyed_color={rgb:8606770,show_in_tooltip:false}]
-item replace entity @s armor.feet with leather_boots[custom_name='{"text":"Chara Feet"}',unbreakable={show_in_tooltip:false},dyed_color={rgb:8606770,show_in_tooltip:false}]
+item replace entity @s armor.chest with leather_chestplate[custom_name='{"text":"Chara Chest"}',unbreakable={show_in_tooltip:false},dyed_color={rgb:8439583,show_in_tooltip:false},equippable={slot:"chest",model:"du-in:chara"}]
+item replace entity @s armor.legs with leather_leggings[custom_name='{"text":"Chara Legs"}',unbreakable={show_in_tooltip:false},dyed_color={rgb:8606770,show_in_tooltip:false},equippable={slot:"legs",model:"du-in:chara"}]
+item replace entity @s armor.feet with leather_boots[custom_name='{"text":"Chara Feet"}',unbreakable={show_in_tooltip:false},dyed_color={rgb:8606770,show_in_tooltip:false},equippable={slot:"feet",model:"du-in:chara"}]

@@ -1,5 +1,5 @@
 #DEFAULT#
 item replace entity @s armor.head with minecraft:player_head[custom_name='{"text":"Kylo Ren","color":"white","bold":true,"italic":false}',profile={id:[I;-406935807,479740128,-1623587579,-2139132646],name:"",properties:[{name:"textures",value:"eyJ0ZXh0dXJlcyI6eyJTS0lOIjp7InVybCI6Imh0dHA6Ly90ZXh0dXJlcy5taW5lY3JhZnQubmV0L3RleHR1cmUvNGRkM2ZkM2U5ZDFhYzI5YjczZmZjODgxYWI2MTk1NThlN2ZjZjg4NWE4NmI5MjM3NDA2ZDM4YTUyNTExMTU4MiJ9fX0="}]}] 1
-item replace entity @s armor.chest with leather_chestplate[custom_name='{"text":"Kylo Ren Chest"}',unbreakable={show_in_tooltip:false},dyed_color={rgb:2171169,show_in_tooltip:false}] 1
-item replace entity @s armor.legs with leather_leggings[custom_name='{"text":"Kylo Ren Legs"}',unbreakable={show_in_tooltip:false},dyed_color={rgb:2171169,show_in_tooltip:false}] 1
-item replace entity @s armor.feet with leather_boots[custom_name='{"text":"Kylo Ren Feet"}',unbreakable={show_in_tooltip:false},dyed_color={rgb:2171169,show_in_tooltip:false}] 1
+item replace entity @s armor.chest with leather_chestplate[custom_name='{"text":"Kylo Ren Chest"}',unbreakable={show_in_tooltip:false},dyed_color={rgb:2171169,show_in_tooltip:false},equippable={slot:"chest",model:"du-in:kylo"}] 1
+item replace entity @s armor.legs with leather_leggings[custom_name='{"text":"Kylo Ren Legs"}',unbreakable={show_in_tooltip:false},dyed_color={rgb:2171169,show_in_tooltip:false},equippable={slot:"legs",model:"du-in:kylo"}] 1
+item replace entity @s armor.feet with leather_boots[custom_name='{"text":"Kylo Ren Feet"}',unbreakable={show_in_tooltip:false},dyed_color={rgb:2171169,show_in_tooltip:false},equippable={slot:"feet",model:"du-in:kylo"}] 1

@@ -25,6 +25,7 @@ function du-in:lobby/scheduled/credits
 tag @s add credits
 tag @s add subLobby
 
+clear @s carrot_on_a_stick[item_model="filled_map"]
 
 #Resets item status
 function du-in:lobby/item_reset

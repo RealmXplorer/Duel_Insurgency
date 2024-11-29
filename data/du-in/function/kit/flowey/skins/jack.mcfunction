@@ -1,5 +1,5 @@
 #DEFAULT#
 item replace entity @s armor.head with minecraft:player_head[custom_name='{"text":"Jack O\'Lantern","color":"white","bold":true,"italic":false}',profile={id:[I;-1136136984,1523600937,-1461406966,-1097708017],name:"",properties:[{name:"textures",value:"eyJ0ZXh0dXJlcyI6eyJTS0lOIjp7InVybCI6Imh0dHA6Ly90ZXh0dXJlcy5taW5lY3JhZnQubmV0L3RleHR1cmUvNzYxM2U2NWVkZWZlNTY2MzgwOTE0M2RmZThhMmRlNjNiNzUwYTQ1NDc5OTRiNzllN2I5MmJhOTdiZWFlYWU0YyJ9fX0="}]}] 1
-item replace entity @s armor.chest with leather_chestplate[custom_name='{"text":"Jack o Lantern Chest"}',unbreakable={show_in_tooltip:false},dyed_color={rgb:3350048,show_in_tooltip:false}] 1
-item replace entity @s armor.legs with leather_leggings[custom_name='{"text":"Jack o Lantern Legs"}',unbreakable={show_in_tooltip:false},dyed_color={rgb:5393462,show_in_tooltip:false}] 1
-item replace entity @s armor.feet with leather_boots[custom_name='{"text":"Jack o Lantern Feet"}',unbreakable={show_in_tooltip:false},dyed_color={rgb:8348216,show_in_tooltip:false}] 1
+item replace entity @s armor.chest with leather_chestplate[custom_name='{"text":"Jack o Lantern Chest"}',unbreakable={show_in_tooltip:false},dyed_color={rgb:3350048,show_in_tooltip:false},equippable={slot:"chest",model:"du-in:jack"}] 1
+item replace entity @s armor.legs with leather_leggings[custom_name='{"text":"Jack o Lantern Legs"}',unbreakable={show_in_tooltip:false},dyed_color={rgb:5393462,show_in_tooltip:false},equippable={slot:"legs",model:"du-in:jack"}] 1
+item replace entity @s armor.feet with leather_boots[custom_name='{"text":"Jack o Lantern Feet"}',unbreakable={show_in_tooltip:false},dyed_color={rgb:8348216,show_in_tooltip:false},equippable={slot:"feet",model:"du-in:jack"}] 1
