@@ -1,47 +1,30 @@
 {
     "criteria": {
-
-        "midas": {
-
-            "trigger": "minecraft:player_hurt_entity",
-
-            "conditions": {
-
-                "damage": {
-
-                    "source_entity": {
-
-                        "equipment": {
-
-                            "mainhand": {
-
-                                "item": "minecraft:stick",
-
-                                "nbt": "{CustomModelData:106}"
-
-                            }
-
-                        }
-
-                    }
-
+      "midas": {
+        "trigger": "minecraft:player_hurt_entity",
+        "conditions": {
+          "damage": {
+            "source_entity": {
+              "type": "minecraft:player",
+              "equipment": {
+                "mainhand": {
+                  "items": "minecraft:stick",
+                  "components": {
+                    "minecraft:item_model": "du-in:other/bug"
+                  }
                 }
-
+              }
             }
-
+          }
         }
-
+      }
     },
     "requirements": [
-        [
-            "midas"
-        ]
+      [
+        "midas"
+      ]
     ],
-
     "rewards": {
-
-        "function": "du-in:kit/jack_horner/ability/bug/touch"
-
+      "function": "du-in:kit/jack_horner/ability/bug/touch"
     }
-
-}
+  }  

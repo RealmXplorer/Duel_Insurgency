@@ -19,7 +19,7 @@ attribute @s attack_speed modifier add yharim_rage 0.4 add_value
 #effect give @s minecraft:haste 2 0 true
 
 #Clear and reset secondary
-clear @s minecraft:warped_fungus_on_a_stick[custom_model_data=2007]
+clear @s minecraft:warped_fungus_on_a_stick[item_model="du-in:other/full_rage"]
 scoreboard players set @s yharimRage 0
 tag @s remove rageMeter
 

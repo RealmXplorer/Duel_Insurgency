@@ -1,2 +1,2 @@
-clear @s minecraft:carrot_on_a_stick[custom_model_data=1003]
-item replace entity @s[gamemode=!creative] hotbar.8 with minecraft:carrot_on_a_stick[custom_model_data=1003,custom_name='{"text":"Go Back","color":"red","bold":true,"italic":false}',lore=['{"text":"Right click to use!","color":"dark_purple"}'],custom_data={du-in:'backItem'}]
+clear @s minecraft:carrot_on_a_stick[item_model="du-in:lobby/back"]
+item replace entity @s[gamemode=!creative] hotbar.8 with minecraft:carrot_on_a_stick[item_model="du-in:lobby/back",custom_name='{"text":"Go Back","color":"red","bold":true,"italic":false}',lore=['{"text":"Right click to use!","color":"dark_purple"}'],custom_data={du-in:'backItem'}]

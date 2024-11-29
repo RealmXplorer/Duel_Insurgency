@@ -18,4 +18,4 @@ particle minecraft:composter ~ ~1.5 ~ 2 1 2 0 30 force
 scoreboard players set @s ralseiTP 0
 tag @s remove maxTP
 
-clear @s minecraft:gunpowder[custom_model_data=2018]
+clear @s minecraft:gunpowder[item_model="du-in:other/tp4"]

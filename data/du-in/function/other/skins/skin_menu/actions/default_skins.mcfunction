@@ -1,4 +1,4 @@
-clear @s barrier[custom_model_data=105]
+clear @s barrier[item_model="filled_map"]
 
 tag @s add defaultSelect
 

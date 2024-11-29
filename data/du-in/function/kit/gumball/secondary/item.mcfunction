@@ -1,4 +1,4 @@
-execute if entity @s[tag=!darwin] run item replace entity @s hotbar.1 with warped_fungus_on_a_stick[custom_name='{"text":"Darwin","color":"#ff9f21","bold":true}',lore=['{"text":"Right click to tag Darwin in!"}'],custom_model_data=2015,enchantment_glint_override=true,unbreakable={show_in_tooltip:false}] 1
-execute if entity @s[tag=darwin] run item replace entity @s hotbar.1 with warped_fungus_on_a_stick[custom_name='{"text":"Gumball","color":"#0392FF","bold":true}',lore=['{"text":"Right click to tag Gumball in!"}'],custom_model_data=2016,enchantment_glint_override=true,unbreakable={show_in_tooltip:false}] 1
+execute if entity @s[tag=!darwin] run item replace entity @s hotbar.1 with warped_fungus_on_a_stick[custom_name='{"text":"Darwin","color":"#ff9f21","bold":true}',lore=['{"text":"Right click to tag Darwin in!"}'],item_model="du-in:other/darwin",enchantment_glint_override=true,unbreakable={show_in_tooltip:false}] 1
+execute if entity @s[tag=darwin] run item replace entity @s hotbar.1 with warped_fungus_on_a_stick[custom_name='{"text":"Gumball","color":"#0392FF","bold":true}',lore=['{"text":"Right click to tag Gumball in!"}'],item_model="du-in:other/gumball",enchantment_glint_override=true,unbreakable={show_in_tooltip:false}] 1
 #ff9f21
 #0392FF

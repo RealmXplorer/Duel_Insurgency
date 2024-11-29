@@ -10,7 +10,7 @@
                 "mainhand": {
                   "items": "minecraft:stick",
                   "components": {
-                    "minecraft:custom_model_data": 105
+                    "minecraft:item_model": "du-in:other/midas"
                   }
                 }
               }

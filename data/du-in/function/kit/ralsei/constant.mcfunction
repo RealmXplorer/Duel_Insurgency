@@ -2,7 +2,7 @@ execute if entity @s[scores={hit=5..}] run function du-in:kit/ralsei/sounds/hit
 execute if entity @s[scores={jump=1..}] run function du-in:kit/jump
 
 #Heal Prayer#
-execute unless entity @s[scores={secCount=1}] run item replace entity @s[tag=!teamDead] hotbar.1 with minecraft:warped_fungus_on_a_stick[custom_name='{"text":"Heal Prayer","color":"#e31e4f","bold":true}',lore=['{"text":"Right click to use!","color":"green","bold":true}'],custom_model_data=2019,unbreakable={show_in_tooltip:false}] 1
+execute unless entity @s[scores={secCount=1}] run item replace entity @s[tag=!teamDead] hotbar.1 with minecraft:warped_fungus_on_a_stick[custom_name='{"text":"Heal Prayer","color":"#e31e4f","bold":true}',lore=['{"text":"Right click to use!","color":"green","bold":true}'],item_model="du-in:abilities/heal_prayer",unbreakable={show_in_tooltip:false}] 1
 
 #TP Meter Item
 execute unless entity @s[scores={triCount=1}] if entity @s[tag=!teamDead] run function du-in:kit/ralsei/tp/item

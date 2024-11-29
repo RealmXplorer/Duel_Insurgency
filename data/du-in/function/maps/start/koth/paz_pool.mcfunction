@@ -21,8 +21,8 @@ summon area_effect_cloud 592.9 -33 -7239.0 {NoGravity:1b,Duration:2147483647,Tag
 execute if entity @a[scores={kit=1000..1001}] run summon interaction 570 -33 -7246 {Tags:["vending","stable","mapSpecific"],width:1.15f,height:2.1f,response:1b}
 execute if entity @a[scores={kit=1000..1001}] run summon interaction 608 -33 -7230 {Tags:["vending","stable","mapSpecific"],width:1.15f,height:2.1f,response:1b}
 
-execute if entity @a[scores={kit=1000..1001}] run summon armor_stand 570 -33 -7246 {Rotation:[0F,0F],Tags:["vendMachine","mapSpecific"],NoGravity:1b,Silent:1b,Invulnerable:1b,Invisible:1b,NoBasePlate:1b,DisabledSlots:4144959,ArmorItems:[{},{},{},{id:"minecraft:spruce_sapling",count:1,components:{"minecraft:custom_model_data":100}}]}
-execute if entity @a[scores={kit=1000..1001}] run summon armor_stand 608 -33 -7230 {Rotation:[90F,0F],Tags:["vendMachine","mapSpecific"],NoGravity:1b,Silent:1b,Invulnerable:1b,Invisible:1b,NoBasePlate:1b,DisabledSlots:4144959,ArmorItems:[{},{},{},{id:"minecraft:spruce_sapling",count:1,components:{"minecraft:custom_model_data":100}}]}
+execute if entity @a[scores={kit=1000..1001}] run summon armor_stand 570 -33 -7246 {Rotation:[0F,0F],Tags:["vendMachine","mapSpecific"],NoGravity:1b,Silent:1b,Invulnerable:1b,Invisible:1b,NoBasePlate:1b,DisabledSlots:4144959,ArmorItems:[{},{},{},{id:"minecraft:spruce_sapling",count:1,components:{"minecraft:item_model":"du-in:other/vending_machine"}}]}
+execute if entity @a[scores={kit=1000..1001}] run summon armor_stand 608 -33 -7230 {Rotation:[90F,0F],Tags:["vendMachine","mapSpecific"],NoGravity:1b,Silent:1b,Invulnerable:1b,Invisible:1b,NoBasePlate:1b,DisabledSlots:4144959,ArmorItems:[{},{},{},{id:"minecraft:spruce_sapling",count:1,components:{"minecraft:item_model":"du-in:other/vending_machine"}}]}
 
 #Goner Eye
 execute unless entity @a[tag=partyLeader,tag=pazLock] run summon interaction 612 -33 -7231 {Tags:["voidLock","mapSpecific"],width:0.6f,height:0.6f,response:1b}

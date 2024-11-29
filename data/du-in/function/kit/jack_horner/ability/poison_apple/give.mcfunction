@@ -1,7 +1,7 @@
 clear @s minecraft:carrot_on_a_stick
 tag @s add poisonApple
 clear @s stone_axe
-item replace entity @s hotbar.0 with minecraft:snowball[custom_name='{"text":"Poison Apples","color":"gold","bold":true,"italic":false}',lore=['{"text":"Right click to throw!","color":"dark_purple","bold":true}','[{"text":""}]','{"text":"Explode on ","color":"dark_gray"}','{"text":"impact. ","color":"dark_gray"}'],custom_model_data=100] 3
+item replace entity @s hotbar.0 with minecraft:snowball[custom_name='{"text":"Poison Apples","color":"gold","bold":true,"italic":false}',lore=['{"text":"Right click to throw!","color":"dark_purple","bold":true}','[{"text":""}]','{"text":"Explode on ","color":"dark_gray"}','{"text":"impact. ","color":"dark_gray"}'],item_model="du-in:weapons/poisonapple"] 3
 playsound minecraft:jack_horner.bag voice @a ~ ~ ~ 1 1
 tag @s add hornerWeapon
 tag @s add magicBag
