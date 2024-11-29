@@ -1,7 +1,5 @@
 #DEFAULT#
-#The armor is named for the Optifine custom textures. 
-item replace entity @s armor.legs with minecraft:leather_leggings{HideFlags:4,Unbreakable:1,display:{Name:'{"text":"Template Legs"}',color:0},du-in:weaponItem} 1
-item replace entity @s armor.feet with minecraft:leather_boots{HideFlags:4,Unbreakable:1,display:{Name:'{"text":"Template Feet"}',color:0},du-in:weaponItem} 1
-item replace entity @s armor.chest with minecraft:leather_chestplate{HideFlags:4,Unbreakable:1,display:{Name:'{"text":"Template Chest"}',color:0},du-in:weaponItem} 1
-item replace entity @s armor.head with minecraft:player_head{du-in:weaponItem,display:{Name:"{\"text\":\"Template\"}"},SkullOwner:{Id:[I;-847629707,-1011593993,-2048760807,-2341734],Properties:{textures:[{Value:"eyJ0ZXh0dXJlcyI6eyJTS0lOIjp7InVybCI6Imh0dHA6Ly90ZXh0dXJlcy5taW5lY3JhZnQubmV0L3RleHR1cmUvMjJiY2FjZWViNDE2MmY0MDBkNDQ3NDMzMTU5MzJhYzgyMGQzMTE5YWM4OTg2YTAxNjFhNzI2MTYxY2NjOTNmYyJ9fX0="}]}}}
-tag @s remove armor
+item replace entity @s armor.head with minecraft:player_head[custom_name='{"text":"Spider","color":"white","bold":true,"italic":false}',profile={id:[I;924026232,198264679,-1687572293,1513739562],name:"",properties:[{name:"textures",value:"eyJ0ZXh0dXJlcyI6eyJTS0lOIjp7InVybCI6Imh0dHA6Ly90ZXh0dXJlcy5taW5lY3JhZnQubmV0L3RleHR1cmUvYzg3YTk2YThjMjNiODNiMzJhNzNkZjA1MWY2Yjg0YzJlZjI0ZDI1YmE0MTkwZGJlNzRmMTExMzg2MjliNWFlZiJ9fX0="}]}] 1
+item replace entity @s armor.chest with leather_chestplate[custom_name='{"text":"Spider Chest"}',unbreakable={show_in_tooltip:false},dyed_color={rgb:3353638,show_in_tooltip:false},equippable={slot:"chest",model:"du-in:spider"}] 1
+item replace entity @s armor.legs with leather_leggings[custom_name='{"text":"Spider Legs"}',unbreakable={show_in_tooltip:false},dyed_color={rgb:3024930,show_in_tooltip:false},equippable={slot:"legs",model:"du-in:spider"}] 1
+item replace entity @s armor.feet with leather_boots[custom_name='{"text":"Spider Feet"}',unbreakable={show_in_tooltip:false},dyed_color={rgb:3024930,show_in_tooltip:false},equippable={slot:"feet",model:"du-in:spider"}] 1

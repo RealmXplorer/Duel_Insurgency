@@ -1,0 +1,19 @@
+{
+  "display": {
+    "icon": {
+      "id": "minecraft:bedrock"
+    },
+    "title": "Thingy",
+    "description": "Test",
+    "frame": "task",
+    "show_toast": true,
+    "announce_to_chat": true,
+    "hidden": false
+  },
+  "criteria": {
+    "test_1_0": {
+      "trigger": "minecraft:impossible"
+    }
+  },
+  "parent": "du-in:root"
+}
