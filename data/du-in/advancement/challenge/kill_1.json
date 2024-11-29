@@ -1,19 +1,25 @@
 {
   "display": {
     "icon": {
-      "id": "minecraft:bedrock"
+      "id": "minecraft:stone_sword"
     },
-    "title": "Thingy",
-    "description": "Test",
+    "title": "Humble Beginnings",
+    "description": "Get 10 kills while playing Duel: Insurgency",
     "frame": "task",
     "show_toast": true,
     "announce_to_chat": true,
     "hidden": false
   },
   "criteria": {
-    "test_1_0": {
+    "duel_0": {
       "trigger": "minecraft:impossible"
     }
+  },
+
+  "rewards": {
+
+      "function": "du-in:other/challenge/common"
+
   },
   "parent": "du-in:root"
 }

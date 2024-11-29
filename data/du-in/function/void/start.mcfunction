@@ -214,7 +214,7 @@ execute if score #main pylonsDestroyed matches 1 run scoreboard players set @a g
 execute unless score #main pylonsDestroyed matches 0..1 run scoreboard players set @a gonersKilled 20
 execute as @a[gamemode=!spectator] run scoreboard players add @a gonersKilled 10
 
-advancement grant @a[gamemode=!spectator] only du-in:void/void
+advancement grant @a[tag=void] only du-in:void/void
 
 execute unless score #main matchDeaths matches 1.. run scoreboard players set Insurgents matchDeaths 0
 

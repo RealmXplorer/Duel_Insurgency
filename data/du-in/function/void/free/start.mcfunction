@@ -40,6 +40,8 @@ spawnpoint @a 7974 7 265
 
 scoreboard players set @a creditsTimer 0
 
+advancement grant @a[tag=free] only du-in:void/origins
+
 bossbar set gast:pylon4 visible false
 summon minecraft:block_display 8017.002 5 279.5 {Tags:["voidDoor"],block_state:{Name:"minecraft:black_concrete"},interpolation_duration:0,start_interpolation:0,transformation:[1.000f, 0.000f, 0.000f,-0.500f,0.000f, 2.000f, 0.000f,-1.000f,0.000f, 0.000f, 0.010f,-0.005f,0.000f, 0.000f, 0.000f,1.000f],Rotation:[90F,0F]}
 

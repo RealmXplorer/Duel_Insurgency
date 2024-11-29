@@ -1,0 +1,25 @@
+{
+  "display": {
+    "icon": {
+      "id": "minecraft:golden_sword"
+    },
+    "title": "The Insurgency",
+    "description": "Win a match of Classic",
+    "frame": "task",
+    "show_toast": true,
+    "announce_to_chat": true,
+    "hidden": false
+  },
+  "criteria": {
+    "duel_0": {
+      "trigger": "minecraft:impossible"
+    }
+  },
+
+  "rewards": {
+
+      "function": "du-in:other/challenge/common"
+
+  },
+  "parent": "du-in:challenge/duel_reborn"
+}

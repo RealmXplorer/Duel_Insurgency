@@ -1,0 +1,25 @@
+{
+  "display": {
+    "icon": {
+      "id": "minecraft:purple_banner"
+    },
+    "title": "Flagged and Reported",
+    "description": "Win a match of Capture the Flag",
+    "frame": "task",
+    "show_toast": true,
+    "announce_to_chat": true,
+    "hidden": false
+  },
+  "criteria": {
+    "duel_0": {
+      "trigger": "minecraft:impossible"
+    }
+  },
+
+  "rewards": {
+
+      "function": "du-in:other/challenge/common"
+
+  },
+  "parent": "du-in:challenge/duel_reborn"
+}

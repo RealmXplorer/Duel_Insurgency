@@ -20,3 +20,6 @@ tag @a remove ctfEnd
 tag @a remove flagGot
 tag @a remove glowing
 scoreboard players reset * flagGot
+
+advancement grant @a[tag=win,tag=!devMode] only du-in:challenge/ctf_win
+

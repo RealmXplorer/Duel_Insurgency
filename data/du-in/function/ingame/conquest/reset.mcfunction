@@ -13,4 +13,5 @@ bossbar set conquest:red visible false
 bossbar set conquest:blue color white
 bossbar set conquest:red color white
 
+advancement grant @a[tag=win,tag=!devMode] only du-in:challenge/conquest_win
 tag @a remove cqIngame

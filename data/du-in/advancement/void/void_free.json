@@ -7,7 +7,7 @@
             "text": "Destroy the first of the 4 pylons..."
         },
         "icon": {
-            "item": "minecraft:black_concrete_powder"
+            "id": "minecraft:black_concrete_powder"
         },
         "frame": "goal",
         "show_toast": true,
@@ -24,5 +24,11 @@
             "void"
         ]
     ],
+
+    "rewards": {
+  
+        "function": "du-in:other/challenge/rare"
+  
+    },
     "parent": "du-in:void/void"
 }

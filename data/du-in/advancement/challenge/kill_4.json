@@ -1,0 +1,25 @@
+{
+  "display": {
+    "icon": {
+      "id": "minecraft:netherite_sword"
+    },
+    "title": "Abbadon",
+    "description": "Get 5,000 kills while playing Duel: Insurgency",
+    "frame": "challenge",
+    "show_toast": true,
+    "announce_to_chat": true,
+    "hidden": false
+  },
+  "criteria": {
+    "duel_0": {
+      "trigger": "minecraft:impossible"
+    }
+  },
+
+  "rewards": {
+
+      "function": "du-in:other/challenge/hard"
+
+  },
+  "parent": "du-in:challenge/kill_3"
+}

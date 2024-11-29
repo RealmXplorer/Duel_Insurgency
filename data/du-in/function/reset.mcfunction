@@ -33,6 +33,17 @@ execute unless entity @a[tag=devMode] run scoreboard players set @a[tag=lose,tag
 execute unless entity @a[tag=devMode] run scoreboard players add @a[tag=win] Diamonds 25
 execute unless entity @a[tag=devMode] run scoreboard players add @a[tag=lose] Losses 1
 
+#Advancements
+execute unless entity @a[tag=devMode] run advancement grant @a[scores={Diamonds=200..}] only du-in:challenge/diamond_1
+execute unless entity @a[tag=devMode] run advancement grant @a[scores={Diamonds=1000..}] only du-in:challenge/diamond_2
+execute unless entity @a[tag=devMode] run advancement grant @a[scores={Diamonds=5000..}] only du-in:challenge/diamond_3
+execute unless entity @a[tag=devMode] run advancement grant @a[scores={Diamonds=10000..}] only du-in:challenge/diamond_4
+
+execute unless entity @a[tag=devMode] run advancement grant @a[scores={Kills=10..}] only du-in:challenge/kill_1
+execute unless entity @a[tag=devMode] run advancement grant @a[scores={Kills=100..}] only du-in:challenge/kill_2
+execute unless entity @a[tag=devMode] run advancement grant @a[scores={Kills=500..}] only du-in:challenge/kill_3
+execute unless entity @a[tag=devMode] run advancement grant @a[scores={Kills=5000..}] only du-in:challenge/kill_4
+
 #For Dev Mode
 scoreboard players reset @a thrownBarrier
 

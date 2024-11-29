@@ -1,0 +1,25 @@
+{
+  "display": {
+    "icon": {
+      "id": "minecraft:diamond"
+    },
+    "title": "Diamonds!",
+    "description": "Earn 200 Diamonds while playing Duel: Insurgency",
+    "frame": "task",
+    "show_toast": true,
+    "announce_to_chat": true,
+    "hidden": false
+  },
+  "criteria": {
+    "duel_0": {
+      "trigger": "minecraft:impossible"
+    }
+  },
+
+  "rewards": {
+
+      "function": "du-in:other/challenge/common"
+
+  },
+  "parent": "du-in:root"
+}

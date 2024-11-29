@@ -18,4 +18,5 @@ bossbar set minecraft:classicblue visible false
 bossbar set minecraft:classicblue color white
 bossbar set minecraft:classicred color white
 
+advancement grant @a[tag=win,tag=!devMode] only du-in:challenge/classic_win
 tag @a remove cIngame

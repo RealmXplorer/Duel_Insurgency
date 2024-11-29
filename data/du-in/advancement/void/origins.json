@@ -7,7 +7,7 @@
             "text": "Return home, or what's left of it..."
         },
         "icon": {
-            "item": "minecraft:grass_block"
+            "id": "minecraft:grass_block"
         },
         "frame": "goal",
         "show_toast": true,
@@ -24,5 +24,11 @@
             "void"
         ]
     ],
+
+    "rewards": {
+  
+        "function": "du-in:other/challenge/hard"
+  
+    },
     "parent": "du-in:void/void_free"
 }

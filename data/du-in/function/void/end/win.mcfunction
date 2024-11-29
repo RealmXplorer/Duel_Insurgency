@@ -78,6 +78,8 @@ tag @a[scores={lastVoidLock=8},tag=kothMap,tag=!timeFree] add chancelLock
 execute as @a[tag=playing] unless score #main pylonsDestroyed matches 4 run function du-in:void/end/dream
 execute as @a[tag=playing] if score #main pylonsDestroyed matches 4 run function du-in:void/end/vision
 
+advancement grant @a[tag=win] only du-in:void/void_free
+
 tag @a remove kothMap
 tag @a add fromVoid
 tag @a add win

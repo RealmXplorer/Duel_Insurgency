@@ -137,6 +137,8 @@ function du-in:ingame/scheduled/ambience/init
 
 #schedule function du-in:ingame/scheduled/five_loop 5s
 
+advancement grant @a[tag=playing,tag=!devMode] only du-in:challenge/duel_reborn
+
 #Join teams
 team join Red @a[scores={team=1}]
 team join Blue @a[scores={team=2}]
