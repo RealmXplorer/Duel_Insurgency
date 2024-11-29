@@ -1,4 +1,3 @@
-advancement grant @a[tag=win,tag=!falseWin,tag=!spectating,tag=!voidLose,tag=!tie] only du-in:gamemode/dmwin
 
 tag @a remove dml
 tag @a remove cmap

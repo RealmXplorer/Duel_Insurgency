@@ -12,5 +12,4 @@ execute unless score #main pylonsDestroyed matches 3 run schedule function du-in
 
 
 scoreboard objectives setdisplay sidebar capturePoints
-advancement grant @a[tag=playing] only du-in:gamemode/conquest
 tag @a remove cql

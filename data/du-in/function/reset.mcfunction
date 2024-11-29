@@ -33,19 +33,6 @@ execute unless entity @a[tag=devMode] run scoreboard players set @a[tag=lose,tag
 execute unless entity @a[tag=devMode] run scoreboard players add @a[tag=win] Diamonds 25
 execute unless entity @a[tag=devMode] run scoreboard players add @a[tag=lose] Losses 1
 
-execute unless entity @a[tag=devMode] run advancement grant @a[tag=win,tag=!falseWin,scores={kit=1000..1007},tag=!voidLose] only du-in:unlock/unlockwin
-advancement grant @a[scores={Wins=100..}] only du-in:unstop
-advancement grant @a[scores={Wins=250..}] only du-in:champion
-advancement grant @a[scores={Wins=500..}] only du-in:champion
-advancement grant @a[scores={Wins=750..}] only du-in:ender
-advancement grant @a[scores={Diamonds=100..}] only du-in:diamonds/diamond
-advancement grant @a[scores={Diamonds=1000..}] only du-in:diamonds/diamondblock
-advancement grant @a[scores={Diamonds=5000..}] only du-in:diamonds/netherite
-advancement grant @a[scores={Diamonds=10000..}] only du-in:diamonds/netheriteblock
-advancement grant @a[scores={Kills=500..}] only du-in:genocide
-advancement grant @a[scores={Kills=1000..}] only du-in:death
-advancement grant @a[scores={Kills=5000..}] only du-in:destroyer
-
 #For Dev Mode
 scoreboard players reset @a thrownBarrier
 

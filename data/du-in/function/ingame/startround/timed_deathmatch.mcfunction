@@ -9,6 +9,5 @@ execute store result score #main maxTimer run scoreboard players get #main gameT
 bossbar set bossbar:gametimer visible true
 
 
-advancement grant @a[tag=playing] only du-in:gamemode/deathmatch
 scoreboard objectives setdisplay sidebar dmDeath
 tag @a remove dml

@@ -16,5 +16,4 @@ scoreboard players set Red kothTeamTimer 0
 scoreboard players set Blue kothTeamTimer 0
 bossbar set minecraft:redkoth visible true
 bossbar set minecraft:bluekoth visible true
-advancement grant @a[tag=playing] only du-in:gamemode/koth
 tag @a remove kothl

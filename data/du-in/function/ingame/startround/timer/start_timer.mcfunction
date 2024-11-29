@@ -57,9 +57,6 @@ tag @a[tag=!spectating] add playing
     scoreboard players set @a cardPower 0
     execute as @a[scores={kit=21}] at @s run playsound minecraft:cuphead.announce.start master @s ~ ~ ~ 10 1
 
-    #Give advancements for players who are playing as legendary characters
-    advancement grant @a[tag=!mystery,tag=!mysteryHead,scores={kit=1000..1007}] only du-in:unlock/unlock
-    advancement grant @a[scores={kit=42069}] only du-in:chungus
 ##
 
 

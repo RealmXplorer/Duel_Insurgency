@@ -12,5 +12,4 @@ scoreboard players set @a[tag=!spectating] killIngame 0
 execute store result score #main maxTimer run scoreboard players get #main gameTimeMax
 bossbar set bossbar:gametimer visible true
 
-advancement grant @a[tag=playing] only du-in:gamemode/classic
 tag @a remove cl

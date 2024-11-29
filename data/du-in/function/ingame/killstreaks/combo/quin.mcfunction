@@ -6,4 +6,3 @@ playsound minecraft:soundeffect.boom master @a ~ ~ ~ .5 2
 playsound minecraft:kill.quint master @a ~ ~ ~ 10000 1 1
 title @s title {"text":"","bold":false,"color":"red"}
 title @s subtitle {"text":"☠☠☠☠☠","bold":false,"color":"blue"}
-advancement grant @s only du-in:quin

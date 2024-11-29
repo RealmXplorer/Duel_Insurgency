@@ -16,5 +16,4 @@ bossbar set du-in:redctf visible true
 scoreboard objectives setdisplay sidebar flagGot
 scoreboard players set Red flagGot 0
 scoreboard players set Blue flagGot 0
-advancement grant @a[tag=playing] only du-in:gamemode/ctf
 tag @a remove ctfl

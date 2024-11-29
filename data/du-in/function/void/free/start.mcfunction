@@ -1,6 +1,5 @@
 tag @a add free
 tag @a add beatenGame
-advancement grant @a[tag=!spectating] only du-in:void/origins
 
 tag @a remove win
 tag @a remove lose

@@ -22,8 +22,6 @@ execute if entity @s[tag=playing] run function du-in:kit/all/attribute/reset
 
 execute if entity @s[scores={thrownHead=1..}] run function du-in:other/clear_ground_items
 
-advancement grant @s only du-in:kitpick
-
 #End function
 tag @s[tag=!playing] add kitPicked
 tag @s[tag=!playing] add ready

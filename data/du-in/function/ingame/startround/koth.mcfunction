@@ -12,5 +12,4 @@ execute unless score #main pylonsDestroyed matches 3 run schedule function du-in
 
 team join Classic @a[tag=!spectating]
 scoreboard players set @a[tag=!spectating] kothTimer 0
-advancement grant @a[tag=playing] only du-in:gamemode/koth
 tag @a remove kothl

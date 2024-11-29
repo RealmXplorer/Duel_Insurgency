@@ -12,6 +12,5 @@ team join Deathmatch @a[tag=!spectating]
 execute unless entity @a[tag=devMode,tag=partyLeader] if entity @a[tag=!teamMode] run execute store result score #main playerCount run team list Deathmatch
 execute if entity @a[tag=devMode,tag=partyLeader] if entity @a[tag=!teamMode] run scoreboard players set #main playerCount 3
 
-advancement grant @a[tag=playing] only du-in:gamemode/deathmatch
 scoreboard objectives setdisplay sidebar Lives
 tag @a remove dml

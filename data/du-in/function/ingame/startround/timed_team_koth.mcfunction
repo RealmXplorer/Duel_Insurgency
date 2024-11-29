@@ -17,5 +17,4 @@ scoreboard players set Red kothTeamTimer 0
 scoreboard players set Blue kothTeamTimer 0
 execute store result score #main maxTimer run scoreboard players get #main gameTimeMax
 bossbar set bossbar:gametimer visible true
-advancement grant @a[tag=playing] only du-in:gamemode/koth
 tag @a remove kothl

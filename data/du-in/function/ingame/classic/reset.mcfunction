@@ -1,4 +1,3 @@
-advancement grant @a[tag=win,tag=!falseWin,tag=!spectating,tag=!voidLose,tag=!tie] only du-in:gamemode/cwin
 
 tag @a remove cl
 tag @a remove classicEnd
