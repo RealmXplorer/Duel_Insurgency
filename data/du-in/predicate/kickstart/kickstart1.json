@@ -10,7 +10,7 @@
       "mainhand": {
         "items": "minecraft:warped_fungus_on_a_stick",
         "components": {
-          "minecraft:item_model": "du-in:other/kickstart2"
+          "minecraft:item_model": "du-in:other/kickstart1"
         }
       }
     }
