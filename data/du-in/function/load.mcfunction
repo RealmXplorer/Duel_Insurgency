@@ -95,6 +95,8 @@ scoreboard objectives add yharimTimer dummy
 scoreboard objectives add zombieTimer dummy
 scoreboard objectives add yharimRageDuration dummy
 scoreboard objectives add skeletonMode dummy
+scoreboard objectives add jermaWeapon dummy
+scoreboard objectives add jermaOnion dummy
 
 #Skins
 scoreboard objectives add asgoreSkin dummy
