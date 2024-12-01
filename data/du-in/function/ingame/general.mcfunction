@@ -28,6 +28,9 @@
         execute if score #main titleTimer2 matches -99.. run function du-in:ingame/startround/timer/timer
 
 
+#Asgore Trident thrown
+execute as @e[type=trident] on origin run function du-in:kit/asgore/passive/trident
+
 #Asgore's fire walls
 execute as @e[type=armor_stand,tag=asgoreFire,scores={asgoreFire=-99..}] at @s run function du-in:kit/asgore/ability/fire_wall
 
