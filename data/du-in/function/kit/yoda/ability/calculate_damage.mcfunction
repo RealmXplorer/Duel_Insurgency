@@ -2,9 +2,10 @@ execute if entity @s[tag=!sabotaged,tag=!void] run tag @a[distance=0.05..5,tag=p
 execute if entity @s[tag=!sabotaged] as @a[tag=yodaMark] if score @s team = @a[tag=kitActions,limit=1,tag=playing,scores={kit=29}] team run tag @s remove yodaMark
 tag @s[tag=sabotaged] add yodaMark
 
+execute store result storage du-in:yoda_damage yodaAbsorb.value int 1 run scoreboard players get @s yodaAbsorb
+
 execute if entity @s[tag=void] as @e[type=skeleton,distance=0.05..5] run function du-in:kit/yoda/ability/explode with storage du-in:yoda_damage yodaAbsorb
 
-execute store result storage du-in:yoda_damage yodaAbsorb.value int 1 run scoreboard players get @s yodaAbsorb
 #function du-in:kit/yoda/ability/explode with storage du-in:yoda_damage yodaAbsorb
 
 execute as @a[tag=yodaMark] run function du-in:kit/yoda/ability/explode with storage du-in:yoda_damage yodaAbsorb
