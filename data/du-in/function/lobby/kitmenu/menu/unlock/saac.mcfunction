@@ -1,5 +1,5 @@
 #Pick / Purchase
-execute if entity @s[scores={kitList=..0}] run function du-in:lobby/kitmenu/select/unlock/saac
+execute if entity @s[scores={kitList=..0}] run function du-in:lobby/kitmenu/select/unlock/saac with storage du-in:main player
 # execute if entity @s[scores={kitList=..0},tag=!saacUnlocked] run function du-in:kit/saac/buy/buy
 
 #Head Display

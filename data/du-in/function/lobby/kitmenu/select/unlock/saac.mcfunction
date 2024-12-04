@@ -6,6 +6,7 @@ clear @s player_head[custom_data={du-in:'saacHead'}]
 playsound minecraft:saac.ability2 master @s ~ ~ ~ 100 1
 #Announce kit pick
 scoreboard players set @s kit 1000
+data modify storage duel:player$(current) character set value {"char":"saac"}
 tellraw @s [{"text":"Selected the ","bold":true,"color":"gray"},{"text":"Saac ","bold":true,"color":"gold"},{"text":"class! ","bold":true,"color":"gray"},{"text":"(Click here for kit info!)","bold":false,"color":"white","underlined":true,"clickEvent":{"action":"run_command","value":"/trigger info add 1"}}]
 #Set kit score to match kit
 #Tell player about kit
