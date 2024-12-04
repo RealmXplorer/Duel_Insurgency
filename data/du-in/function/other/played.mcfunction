@@ -47,16 +47,6 @@ scoreboard players add @s player 0
 execute if entity @s[scores={player=0}] run scoreboard players add #main player 1
 scoreboard players operation @s[scores={player=0}] player = #main player
 
-#Create custom player storage
-    #Set global "num" value to 0.
-    data modify storage du-in:main player set value {"num":0}
-
-    #Set the global storage's "num" value to the current player's "playerNum"
-    execute store result storage du-in:main player.num int 1 run scoreboard players get @s player
-
-    #Create a new storage using that player's "playerNum"
-    function du-in:storage/player with storage du-in:main player
-
 #Set map countdown to all players (also acts as a failsafe)
 bossbar set minecraft:map_countdown players @a
 bossbar set bossbar:gametimer players @a

@@ -1,3 +1,4 @@
+scoreboard players set @s[scores={floweyHitTimer=1..}] floweyHitTimer 1
 scoreboard players set @s golemFloat 5
 
 effect give @s minecraft:levitation 1 25 true

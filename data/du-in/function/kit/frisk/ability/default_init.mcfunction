@@ -1,9 +1,11 @@
-execute if entity @s[tag=!sabotaged] run effect give @a[distance=.05..5,tag=playing,gamemode=!spectator,tag=!teamDead] minecraft:weakness 3 255 true
+execute if entity @s[tag=!sabotaged] as @a[distance=.05..5,tag=playing,gamemode=!spectator,tag=!teamDead] run function du-in:kit/frisk/ability/hit
 effect give @s minecraft:weakness 2 255 true
 effect give @s[tag=sabotaged] minecraft:slowness 2 255 true
 effect give @s[tag=!sabotaged] minecraft:fire_resistance 2 255 true
 effect give @s[tag=!sabotaged] minecraft:instant_health 1 0 true
 effect give @s[tag=!sabotaged] minecraft:speed 3 1 true
+#effect clear @s[tag=!sabotaged] minecraft:poison
+#effect clear @s[tag=!sabotaged] minecraft:wither
 
 #If player is on team
 execute if entity @s[tag=!sabotaged] as @a[distance=0.05..5,tag=playing,gamemode=!spectator,tag=!teamDead] if score @s team = @a[tag=kitActions,limit=1,tag=playing,scores={kit=15}] team run function du-in:kit/frisk/ability/team
