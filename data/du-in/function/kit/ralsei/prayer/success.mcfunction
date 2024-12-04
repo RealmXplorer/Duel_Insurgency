@@ -2,7 +2,7 @@
 effect give @s minecraft:instant_health 1 3 true
 
 #Heal Team#
-execute as @a[distance=0.05..5,tag=playing,gamemode=!spectator,tag=!teamDead] if score @s team = @a[scores={kit=24},tag=maxTP,tag=secKitActions,limit=1] team run effect give @s minecraft:instant_health 1 2 true
+execute as @a[distance=0.05..5,tag=playing,gamemode=!spectator,tag=!teamDead] if score @s team = @a[scores={kit=24},tag=maxTP,tag=secKitActions,limit=1] team run function du-in:kit/ralsei/prayer/heal_team
 
 #Damage Enemy Undead#
 execute if entity @s[distance=0.05..5,tag=playing,gamemode=!spectator,tag=!teamDead,tag=undead] unless score @s team = @a[scores={kit=24},tag=maxTP,tag=secKitActions,limit=1] team run function du-in:kit/ralsei/prayer/undead

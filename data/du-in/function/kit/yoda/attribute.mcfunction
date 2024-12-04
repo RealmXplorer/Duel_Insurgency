@@ -6,3 +6,6 @@ execute unless entity @a[tag=scaleMode,tag=partyLeader] run function du-in:kit/a
 
 #Base Weight
 attribute @s knockback_resistance base set 0
+
+#Jump Height
+attribute @s minecraft:jump_strength base set 0.47
