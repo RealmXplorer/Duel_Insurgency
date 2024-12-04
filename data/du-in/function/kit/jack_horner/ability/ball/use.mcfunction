@@ -6,6 +6,7 @@ playsound minecraft:jack_horner.orb hostile @a ~ ~ ~ 1 1
 tag @s remove ponderOrb
 
 effect give @s speed 3 2 true
+
 playsound minecraft:entity.evoker.cast_spell master @a
 playsound minecraft:sans.ability master @a ~ ~ ~ .1 1
 

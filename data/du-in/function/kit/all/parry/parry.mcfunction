@@ -6,6 +6,9 @@ playsound minecraft:entity.warden.sonic_boom master @a ~ ~ ~ .5 2
 playsound minecraft:entity.breeze.deflect master @a ~ ~ ~ 1 1
 particle minecraft:sonic_boom ~ ~1 ~ -0.5 0 0 .2 0
 effect give @s minecraft:resistance 1 10 true
+#effect clear @s minecraft:levitation
+#effect clear @s minecraft:poison
+#effect clear @s minecraft:wither
 
 attribute @s minecraft:armor modifier add parry 100 add_value
 attribute @s armor_toughness modifier add parry 100 add_value
