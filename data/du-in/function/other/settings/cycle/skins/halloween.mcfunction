@@ -19,16 +19,16 @@ scoreboard players set @s[tag=nickSkins] wildeSkin 3
 scoreboard players set @s[tag=villagerSkins] villSkin 1
 
 #Execute display function
-execute if entity @s[tag=charaSkins] run function du-in:other/skins/skin_menu/chara
-execute if entity @s[tag=flowSkins] run function du-in:other/skins/skin_menu/flowey
-execute if entity @s[tag=friskSkins] run function du-in:other/skins/skin_menu/frisk
-execute if entity @s[tag=gasterSkins] run function du-in:other/skins/skin_menu/gaster
-execute if entity @s[tag=playSkins] run function du-in:other/skins/skin_menu/player
-execute if entity @s[tag=zombSkins] run function du-in:other/skins/skin_menu/zombie
-execute if entity @s[tag=springSkins] run function du-in:other/skins/skin_menu/springtrap
-execute if entity @s[tag=asgoreSkins] run function du-in:other/skins/skin_menu/asgore
-execute if entity @s[tag=slimeSkins] run function du-in:other/skins/skin_menu/slime
-execute if entity @s[tag=palpsSkins] run function du-in:other/skins/skin_menu/palps
-execute if entity @s[tag=nickSkins] run function du-in:other/skins/skin_menu/nick
-execute if entity @s[tag=villagerSkins] run function du-in:other/skins/skin_menu/villager
+execute if entity @s[tag=charaSkins] run function du-in:skins/skin_menu/chara
+execute if entity @s[tag=flowSkins] run function du-in:skins/skin_menu/flowey
+execute if entity @s[tag=friskSkins] run function du-in:skins/skin_menu/frisk
+execute if entity @s[tag=gasterSkins] run function du-in:skins/skin_menu/gaster
+execute if entity @s[tag=playSkins] run function du-in:skins/skin_menu/player
+execute if entity @s[tag=zombSkins] run function du-in:skins/skin_menu/zombie
+execute if entity @s[tag=springSkins] run function du-in:skins/skin_menu/springtrap
+execute if entity @s[tag=asgoreSkins] run function du-in:skins/skin_menu/asgore
+execute if entity @s[tag=slimeSkins] run function du-in:skins/skin_menu/slime
+execute if entity @s[tag=palpsSkins] run function du-in:skins/skin_menu/palps
+execute if entity @s[tag=nickSkins] run function du-in:skins/skin_menu/nick
+execute if entity @s[tag=villagerSkins] run function du-in:skins/skin_menu/villager
 

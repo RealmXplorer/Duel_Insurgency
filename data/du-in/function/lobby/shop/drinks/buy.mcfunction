@@ -1,6 +1,6 @@
 scoreboard players remove @s Diamonds 5
 execute store result score @s drinkType run random value 1..7
-function du-in:other/skins/skin_menu/actions/purchase_sound
+function du-in:skins/skin_menu/actions/purchase_sound
 
 #Food#
 ##TEST

@@ -21,7 +21,7 @@ scoreboard players reset #main startSeq
 tag @a remove startgame
 tag @a remove kitPicked
 
-execute as @a[tag=randomSkins] run function du-in:other/skins/random
+execute as @a[tag=randomSkins] run function du-in:skins/random
 
 execute as @a run function du-in:storage/reset
 

@@ -1,4 +1,5 @@
 #Pick / Purchase
+#execute if entity @s[scores={kitList=..0}] run function du-in:lobby/kitmenu/select/unlock/jerma with storage du-in:main player
 execute if entity @s[scores={kitList=..0}] run function du-in:lobby/kitmenu/select/unlock/jerma
 
 #Head Displays
