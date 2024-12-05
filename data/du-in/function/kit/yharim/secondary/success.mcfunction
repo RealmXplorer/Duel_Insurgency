@@ -7,7 +7,7 @@ particle minecraft:flame ~ ~1 ~ 1 1 1 0 20 force
 particle minecraft:angry_villager ~ ~2 ~ 0.25 0 0.01 0 20 force
 
 #Give Effects
-#effect clear @s minecraft:weakness
+effect clear @s minecraft:weakness
 scoreboard players set @s yharimRageDuration 60
 tag @s add enraged
 
