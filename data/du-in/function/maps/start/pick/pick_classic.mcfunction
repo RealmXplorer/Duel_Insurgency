@@ -18,3 +18,4 @@ execute if score #main map matches 15 run function du-in:maps/start/classic/saac
 execute if score #main map matches 16 run function du-in:maps/start/classic/escher
 
 execute if score #main map matches 17 run function du-in:maps/start/classic/wild_west
+execute if score #main map matches 18 run function du-in:maps/start/classic/ricardo

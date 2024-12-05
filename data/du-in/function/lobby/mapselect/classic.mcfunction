@@ -2,7 +2,13 @@
 kill @e[tag=displayItem]
 
 ##Left Side
-#Escher
+#San Ricardo
+summon area_effect_cloud 228 92 16 {Duration:2147483647,Tags:["displayItem"],CustomNameVisible:1b,CustomName:"{\"text\":\"San Ricardo\",\"color\":\"gold\",\"bold\":true}"}
+summon minecraft:item 228 92 16 {NoGravity:1b,Age:-32768,Health:99999,PickupDelay:32767,Tags:["mapLabel","displayItem"],Item:{id:"minecraft:sandstone",Count:1b}}
+# execute if entity @a[tag=escLock,tag=partyLeader] run summon marker 228 92 18 {Tags:["displayItem","voidLocked"]} 
+summon marker 230 91 16 {Tags:["mapVote","displayItem","vote18"]} 
+
+#Wild West
 summon area_effect_cloud 228 92 18 {Duration:2147483647,Tags:["displayItem"],CustomNameVisible:1b,CustomName:"{\"text\":\"Wild West\",\"color\":\"gold\",\"bold\":true}"}
 summon minecraft:item 228 92 18 {NoGravity:1b,Age:-32768,Health:99999,PickupDelay:32767,Tags:["mapLabel","displayItem"],Item:{id:"minecraft:red_sandstone",Count:1b}}
 execute if entity @a[tag=escLock,tag=partyLeader] run summon marker 228 92 18 {Tags:["displayItem","voidLocked"]} 
