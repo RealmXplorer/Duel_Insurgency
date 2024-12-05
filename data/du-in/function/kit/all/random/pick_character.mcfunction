@@ -1,6 +1,4 @@
 
-#data modify storage du-in:player$(current) kit set value {"kit":"spider"}
-
 #Set 1
 $execute if entity @s[scores={kit=1}] run data modify storage du-in:player$(current) kit set value {"kit":"spider"}
 $execute if entity @s[scores={kit=2}] run data modify storage du-in:player$(current) kit set value {"kit":"zombie"}
@@ -11,7 +9,6 @@ $execute if entity @s[scores={kit=5}] run data modify storage du-in:player$(curr
 $execute if entity @s[scores={kit=6}] run data modify storage du-in:player$(current) kit set value {"kit":"golem"}
 $execute if entity @s[scores={kit=7}] run data modify storage du-in:player$(current) kit set value {"kit":"player"}
 $execute if entity @s[scores={kit=8}] run data modify storage du-in:player$(current) kit set value {"kit":"villager"}
-
 
 #Set 2
 $execute if entity @s[scores={kit=9}] run data modify storage du-in:player$(current) kit set value {"kit":"chara"}
@@ -46,4 +43,11 @@ $execute if entity @s[scores={kit=30}] run data modify storage du-in:player$(cur
 $execute if entity @s[scores={kit=31}] run data modify storage du-in:player$(current) kit set value {"kit":"sauron"}
 $execute if entity @s[scores={kit=32}] run data modify storage du-in:player$(current) kit set value {"kit":"avatar"}
 
-#Legendaries can't be stolen!#
+$execute if entity @s[scores={kit=1000}] run data modify storage du-in:player$(current) kit set value {"kit":"saac"}
+$execute if entity @s[scores={kit=1001}] run data modify storage du-in:player$(current) kit set value {"kit":"paz"}
+$execute if entity @s[scores={kit=1002}] run data modify storage du-in:player$(current) kit set value {"kit":"jerma"}
+$execute if entity @s[scores={kit=1003}] run data modify storage du-in:player$(current) kit set value {"kit":"impostor"}
+$execute if entity @s[scores={kit=1004}] run data modify storage du-in:player$(current) kit set value {"kit":"runza"}
+
+$execute if entity @s[scores={kit=2015}] run data modify storage du-in:player$(current) kit set value {"kit":"saul"}
+$execute if entity @s[scores={kit=42069}] run data modify storage du-in:player$(current) kit set value {"kit":"chungus"}

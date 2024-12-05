@@ -1,3 +1,11 @@
+##DATAPACK 6.0
+#Set current player to this player
+#execute store result storage du-in:main player.current int 1 run scoreboard players get @s player
+
+#Find player
+#execute at @s run function du-in:kit/all/attribute/find_kit with storage du-in:main player
+
+##DATAPACK 5.0
 execute if entity @s[scores={kit=1}] run function du-in:kit/spider/attribute
 execute if entity @s[scores={kit=2}] run function du-in:kit/zombie/attribute
 execute if entity @s[scores={kit=3}] run function du-in:kit/slime/attribute
