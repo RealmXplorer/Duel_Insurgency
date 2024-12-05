@@ -1,9 +1,9 @@
 #Steal
 execute if entity @a[distance=.05..5,tag=playing,gamemode=!spectator,tag=!teamDead] unless entity @a[distance=.05..4,tag=playing,scores={kit=8}] unless entity @a[distance=.05..5,tag=playing,scores={kit=1000..}] run tag @s add stolen
 
-#Test Stea;
-execute if entity @a[distance=.05..5,tag=playing,gamemode=!spectator,tag=!teamDead,scores={kit=8}] run function du-in:kit/all/ability/villager
-execute if entity @a[distance=.05..5,tag=playing,gamemode=!spectator,tag=!teamDead,scores={kit=1000..}] run function du-in:kit/all/ability/legendary
+#Test Steal
+execute if entity @a[distance=.05..5,tag=playing,gamemode=!spectator,tag=!teamDead,scores={kit=8}] run function du-in:kit/villager/ability/titles/villager
+execute if entity @a[distance=.05..5,tag=playing,gamemode=!spectator,tag=!teamDead,scores={kit=1000..}] run function du-in:kit/villager/ability/titles/legendary
 execute unless entity @a[distance=.05..5,tag=playing,gamemode=!spectator,tag=!teamDead] unless entity @a[distance=.05..5,tag=playing,scores={kit=8},gamemode=!spectator,tag=!teamDead] run function du-in:kit/all/ability/far
 
 #Clear emerald

@@ -6,7 +6,7 @@ tag @s add kitActions
 #execute store result storage du-in:main player.current int 1 run scoreboard players get @s player
 
 #Find player
-#execute at @s run function du-in:kit/all/ability/find_kit with storage du-in:main player
+#execute at @s run function du-in:kit/all/ability/activate/find_kit with storage du-in:main player
 
 ##DATAPACK 5.0
 #Set 1#

@@ -5,6 +5,14 @@ playsound minecraft:item.bottle.fill_dragonbreath master @s ~ ~ ~ 1 1.3
 particle minecraft:composter ~ ~1 ~ 0.25 0.5 0.25 0 20 force
 clear @s carrot_on_a_stick
 
+##DATAPACK 6.0
+#Set current player to this player
+#execute store result storage du-in:main player.current int 1 run scoreboard players get @s player
+
+#Find player
+#execute at @s run function du-in:kit/all/ability/item/find_kit with storage du-in:main player
+
+##DATAPACK 5.0
 #Set 1
 execute if entity @s[scores={kit=1}] run function du-in:kit/spider/ability/item
 execute if entity @s[scores={kit=2}] run function du-in:kit/zombie/ability/item

@@ -1,6 +1,14 @@
 #ARMOR GIVING#
 tag @s add armor
 
+##DATAPACK 6.0
+#Set current player to this player
+#execute store result storage du-in:main player.current int 1 run scoreboard players get @s player
+
+#Find player
+#execute at @s run function du-in:kit/all/armor/return/find_kit with storage du-in:main player
+
+##DATAPACK 5.0
 #Set 1
 execute if entity @s[scores={kit=1}] run function du-in:kit/spider/armor
 execute if entity @s[scores={kit=2}] run function du-in:kit/zombie/armor
