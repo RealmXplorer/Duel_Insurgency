@@ -1,7 +1,7 @@
 clear @s[tag=!kitMenu] #du-in:lobby
 
 #Set Spectator vote to random and remove tag
-scoreboard players set @s[tag=spect] mapVote -1
+#scoreboard players set @s[tag=spect] mapVote -1
 tag @s remove spect
 tag @s remove maskless
 tag @s remove drip

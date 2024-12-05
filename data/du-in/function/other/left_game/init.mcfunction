@@ -92,5 +92,8 @@ tag @s[tag=kitMenu] add kitsListed
 scoreboard players set @s skinList 20
 tag @s add skinsListed
 
+#Create Storage (or clear kit if created)
+function du-in:storage/create_player
+
 #End function
 scoreboard players reset @s leaveGame

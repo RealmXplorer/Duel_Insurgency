@@ -1,6 +1,6 @@
 
     # Run if a player has not played before #
-        execute if entity @s[tag=!played] run function du-in:other/played
+        execute if entity @s[tag=!played] run function du-in:other/new_player
 
     # Functions that run while in lobby #
         execute if entity @s[tag=lobby,tag=!playing] run function du-in:lobby/player_specific
