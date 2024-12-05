@@ -1,3 +1,5 @@
+#Set storage to currently selected player
+execute if entity @s[scores={kitList=..0}] store result storage du-in:main player.current int 1 run scoreboard players get @s player
 
 #execute if entity @s[scores={kitList=..0}] run function du-in:lobby/kitmenu/select/starwars/palps with storage du-in:main player
 execute if entity @s[scores={kitList=..0}] run function du-in:lobby/kitmenu/select/starwars/palps
