@@ -23,9 +23,6 @@
         execute unless entity @a[tag=devMode] run function du-in:other/player_count/default
         execute if entity @a[tag=devMode] run function du-in:other/player_count/dev_mode
 
-
-execute unless score #main gamemode matches 1.. run say fail!
-
 #I SEE YOU WERE LOOKING
 #FOR ME?
 #IT APPEARS THAT YOU HAVE FOUND

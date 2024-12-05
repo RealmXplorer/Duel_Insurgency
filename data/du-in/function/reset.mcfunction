@@ -23,6 +23,8 @@ tag @a remove kitPicked
 
 execute as @a[tag=randomSkins] run function du-in:other/skins/random
 
+execute as @a run function du-in:storage/reset
+
 bossbar set minecraft:map_countdown visible false
 
 #scoreboard players reset @a map

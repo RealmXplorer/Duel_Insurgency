@@ -25,6 +25,9 @@
         execute if entity @s[tag=random] run function du-in:kit/all/random
         execute if entity @s[tag=randomLeg] run function du-in:kit/all/random_legend
 
+    # #Set storage to currently selected player
+    #     execute store result storage du-in:main player.current int 1 run scoreboard players get @s player
+
     #
 
 #I SEE YOU WERE LOOKING
