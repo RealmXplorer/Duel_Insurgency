@@ -11,6 +11,7 @@ clear @s[tag=stolen] minecraft:carrot_on_a_stick
 
 #Set kit from nearest player
 execute store result score @s[tag=stolen] kit run scoreboard players get @a[distance=0.05..5,tag=playing,limit=1,sort=nearest] kit
+#function du-in:kit/villager/ability/find_kit
 
 #Give tag "darwin" if stolen player is Darwin.
 execute if entity @s[tag=stolen,scores={kit=22}] if entity @a[distance=0.05..5,tag=darwin,scores={kit=22},tag=playing,limit=1,sort=nearest] run tag @s add darwin

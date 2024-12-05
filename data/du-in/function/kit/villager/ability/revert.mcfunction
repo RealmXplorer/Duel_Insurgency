@@ -1,5 +1,6 @@
 scoreboard players set @s kit 8
 scoreboard players reset @s asrielHitTimer
+#function du-in:kit/villager/ability/find_kit
 xp set @s 360 levels
 tag @s remove badBlock
 tag @s remove stolen
