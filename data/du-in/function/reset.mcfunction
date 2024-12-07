@@ -245,6 +245,7 @@ execute as @a run function du-in:music/ingame/stop/all
         scoreboard players set #main markTimer 0
         tag @a remove deathDouble
         tag @a remove deathAbility
+        scoreboard players reset @a deathAbilityTimer
         scoreboard players reset @a deathSwapTimer
 
 tag @a remove hasRing
