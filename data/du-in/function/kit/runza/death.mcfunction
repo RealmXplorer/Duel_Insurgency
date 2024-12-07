@@ -1,0 +1,1 @@
+playsound minecraft:runza.death master @a ~ ~ ~ 3 1

@@ -1,0 +1,1 @@
+playsound minecraft:palpatine.death master @a ~ ~ ~ 3 1

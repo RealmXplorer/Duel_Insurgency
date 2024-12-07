@@ -1,0 +1,1 @@
+function du-in:kit/all/undertale/death

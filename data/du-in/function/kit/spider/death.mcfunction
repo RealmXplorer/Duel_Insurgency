@@ -1,0 +1,1 @@
+playsound minecraft:entity.spider.death master @a ~ ~ ~ 3 1
