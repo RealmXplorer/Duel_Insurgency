@@ -1,6 +1,6 @@
 
 #data modify storage du-in:player$(current) kit set value {"kit":"spider"}
-$execute if entity @s[scores={kit=8}] run data modify storage du-in:player$(current) kit set value {"kit":"villager"}
+$data modify storage du-in:player$(current) kit set value {"kit":"villager"}
 
 #Set 1
 # $execute if entity @s[scores={kit=1}] run data modify storage du-in:player$(current) kit set value {"kit":"spider"}

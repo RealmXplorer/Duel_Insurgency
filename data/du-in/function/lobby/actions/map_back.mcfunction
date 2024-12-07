@@ -16,6 +16,7 @@ function du-in:lobby/display/default/text
 stopsound @a record
 
 #Reset kit values
+execute as @a run function du-in:storage/reset
 scoreboard players set @a kit 0
 tag @a remove kitPicked
 tag @a remove spect
