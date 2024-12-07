@@ -2,5 +2,5 @@ scoreboard players set @s kitTheme 0
 function du-in:lobby/item_reset
 playsound minecraft:ui.button.click master @s ~ ~ ~
 playsound minecraft:block.amethyst_block.step master @s ~ ~ ~ 2 1.5
-clear @s 
+clear @s
 tag @s add kitsListed

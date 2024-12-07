@@ -11,7 +11,7 @@ tellraw @s [{"text":"Selected the ","bold":true,"color":"gray"},{"text":"Jerma "
 
 #Set kit score to match kit
 scoreboard players set @s kit 1002
-#$data modify storage du-in:player$(current) kit set value {"kit":"jerma"}
+$data modify storage du-in:player$(current) kit set value {"kit":"jerma"}
 
 #Add sus tag (allows venting)
 tag @s add sus

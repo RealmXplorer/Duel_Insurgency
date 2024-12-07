@@ -13,13 +13,13 @@ clear @s[tag=stolen] minecraft:carrot_on_a_stick
 execute store result score @s[tag=stolen] kit run scoreboard players get @a[distance=0.05..5,tag=playing,limit=1,sort=nearest] kit
 
 #Set player to current
-#execute store result storage du-in:main player.current int 1 run scoreboard players get @s player
+execute store result storage du-in:main player.current int 1 run scoreboard players get @s player
 
 #Set targeted player to stolen
-#execute as @a[distance=0.05..5,tag=playing,limit=1,sort=nearest] store result storage du-in:main player.stolen int 1 run scoreboard players get @s player
+execute as @a[distance=0.05..5,tag=playing,limit=1,sort=nearest] store result storage du-in:main player.stolen int 1 run scoreboard players get @s player
 
 #Find stolen character
-#function du-in:kit/villager/ability/find_stolen_kit with storage du-in:main player
+function du-in:kit/villager/ability/find_stolen_kit with storage du-in:main player
 
 #Test without this first
 #function du-in:kit/villager/ability/find_kit

@@ -1,7 +1,7 @@
 scoreboard players add @s asgoreSkin 1
 scoreboard players reset @s[scores={asgoreSkin=3..}] asgoreSkin
 clear @s player_head[custom_data={du-in:'asgoreHead'}]
-function du-in:other/skins/skin_menu/actions/sound
+function du-in:skins/skin_menu/actions/sound
 
 execute unless entity @s[scores={asgoreSkin=1..}] run tellraw @s[tag=!defaultSelect] [{"text":"Default Asgore ","bold":true,"color":"gold"},{"text":"skin selected!","color":"yellow"}]
 tellraw @s[tag=!defaultSelect,scores={asgoreSkin=1}] [{"text":"Imp ","bold":true,"color":"red"},{"text":"skin selected!","color":"yellow"}]

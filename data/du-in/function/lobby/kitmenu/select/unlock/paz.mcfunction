@@ -8,7 +8,7 @@ tellraw @s [{"text":"Selected the ","bold":true,"color":"gray"},{"text":"PearApp
 
 #Set kit score to match kit
 scoreboard players set @s kit 1001
-#$data modify storage du-in:player$(current) kit set value {"kit":"paz"}
+$data modify storage du-in:player$(current) kit set value {"kit":"paz"}
 
 #Clear and remove tags
 function du-in:lobby/kitmenu/select/common

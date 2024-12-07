@@ -1,6 +1,6 @@
 #Functionality
-execute if entity @s[scores={skinList=..0},tag=villagerSkins] run function du-in:other/skins/villager
-execute if entity @s[scores={skinList=..0},tag=!villagerSkins] run function du-in:other/skins/skin_menu/buy/villager/try
+execute if entity @s[scores={skinList=..0},tag=villagerSkins] run function du-in:skins/villager
+execute if entity @s[scores={skinList=..0},tag=!villagerSkins] run function du-in:skins/skin_menu/buy/villager/try
 
 
 #Void Head

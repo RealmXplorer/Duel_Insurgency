@@ -8,6 +8,14 @@ execute as @a[gamemode=adventure,tag=parkour] at @s if entity @s[x=680,y=-29,z=-
 
 execute positioned 641 -27 -103 as @a[distance=..5,gamemode=adventure] at @s if entity @s[y=-26,dy=0] run function du-in:lobby/parkour/checkpoint3
 
+#execute as @a[gamemode=adventure,tag=parkour] at @s if entity @s[x=662,y=6,z=-124,dx=32,dy=0,dz=-29] run tp @s 650 13 -125 0 0
+#execute as @a[gamemode=adventure,tag=parkour] at @s if entity @s[x=662,y=6,z=-124,dx=-32,dy=0,dz=29] run tp @s 650 13 -125 0 0
+
+# 662 6 -124
+# 626 6 -95
+
+# dx 32
+# dz -29
 
 #Music
 execute unless entity @s[tag=musicOff] unless score #main pylonsDestroyed matches 3 run function du-in:music/lobby/parkour

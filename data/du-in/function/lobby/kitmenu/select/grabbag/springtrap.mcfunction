@@ -11,7 +11,7 @@ tellraw @s [{"text":"Selected the ","bold":true,"color":"gray"},{"text":"Springt
 
 #Set kit score to match kit
 scoreboard players set @s kit 5
-#$data modify storage du-in:player$(current) kit set value {"kit":"springtrap"}
+$data modify storage du-in:player$(current) kit set value {"kit":"springtrap"}
 tag @s[tag=playing] add undead
 
 #Clear and remove tags

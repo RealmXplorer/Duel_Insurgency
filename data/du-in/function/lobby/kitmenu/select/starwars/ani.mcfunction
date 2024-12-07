@@ -11,7 +11,7 @@ tellraw @s [{"text":"Selected the ","bold":true,"color":"gray"},{"text":"Anakin 
 
 #Set kit score to match kit
 scoreboard players set @s kit 22
-#$data modify storage du-in:player$(current) kit set value {"kit":"ani"}
+$data modify storage du-in:player$(current) kit set value {"kit":"ani"}
 
 #Clear and remove tags
 function du-in:lobby/kitmenu/select/common

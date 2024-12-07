@@ -11,7 +11,7 @@ tellraw @s [{"text":"Selected the ","bold":true,"color":"gray"},{"text":"Saac ",
 
 #Set kit score to match kit
 scoreboard players set @s kit 1000
-#$data modify storage du-in:player$(current) kit set value {"kit":"saac"}
+$data modify storage du-in:player$(current) kit set value {"kit":"saac"}
 
 #Clear and remove tags
 function du-in:lobby/kitmenu/select/common

@@ -1,6 +1,6 @@
 ##Functionality
-execute if entity @s[scores={skinList=..0},tag=asgoreSkins] run function du-in:other/skins/asgore
-execute if entity @s[scores={skinList=..0},tag=!asgoreSkins] run function du-in:other/skins/skin_menu/buy/asgore/try
+execute if entity @s[scores={skinList=..0},tag=asgoreSkins] run function du-in:skins/asgore
+execute if entity @s[scores={skinList=..0},tag=!asgoreSkins] run function du-in:skins/skin_menu/buy/asgore/try
 
 ##Void Head
 execute if score #main pylonsDestroyed matches 3.. run item replace entity @s inventory.20 with minecraft:player_head[custom_data={du-in:'asgoreHead'},custom_name='{"text":"I SEE YOU","color":"gray","bold":true,"italic":false}',lore=['{"text":"Asgore","color":"#8ff0f7","bold":true,"italic":true}'],profile={id:[I;318736035,-1403303440,-1876061664,-609467480],name:"",properties:[{name:"textures",value:"eyJ0ZXh0dXJlcyI6eyJTS0lOIjp7InVybCI6Imh0dHA6Ly90ZXh0dXJlcy5taW5lY3JhZnQubmV0L3RleHR1cmUvYTdlMGE5MGMyYjg0ODU1YzkwMDYzNmNmYzkyNWQ5ZjJkMDc4NjliMGNiZmE1MzhlMjYxMDcyMGI3ZDI0YWVlNSJ9fX0="}]}] 1

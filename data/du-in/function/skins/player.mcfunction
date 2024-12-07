@@ -1,7 +1,7 @@
 scoreboard players add @s steveSkin 1
 scoreboard players reset @s[scores={steveSkin=7..}] steveSkin
 clear @s player_head[custom_data={du-in:'playerHead'}]
-function du-in:other/skins/skin_menu/actions/sound
+function du-in:skins/skin_menu/actions/sound
 
 execute unless entity @s[scores={steveSkin=1..}] run tellraw @s[tag=!defaultSelect] [{"text":"Default Steve ","bold":true,"color":"gold"},{"text":"skin selected!","color":"yellow"}]
 tellraw @s[tag=!defaultSelect,scores={steveSkin=1}] [{"text":"Alex ","bold":true,"color":"gold"},{"text":"skin selected!","color":"yellow"}]

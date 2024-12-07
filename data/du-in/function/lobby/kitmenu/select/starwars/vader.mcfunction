@@ -11,7 +11,7 @@ tellraw @s [{"text":"Selected the ","bold":true,"color":"gray"},{"text":"Darth V
 
 #Set kit score to match kit
 scoreboard players set @s kit 18
-#$data modify storage du-in:player$(current) kit set value {"kit":"vader"}
+$data modify storage du-in:player$(current) kit set value {"kit":"vader"}
 
 #Clear and remove tags
 function du-in:lobby/kitmenu/select/common

@@ -1,6 +1,6 @@
 #Functionality 
-execute if entity @s[scores={skinList=..0},tag=cupSkins] run function du-in:other/skins/cuphead
-execute if entity @s[scores={skinList=..0},tag=!cupSkins] run function du-in:other/skins/skin_menu/buy/cuphead/try
+execute if entity @s[scores={skinList=..0},tag=cupSkins] run function du-in:skins/cuphead
+execute if entity @s[scores={skinList=..0},tag=!cupSkins] run function du-in:skins/skin_menu/buy/cuphead/try
 
 #Void Head
 execute if score #main pylonsDestroyed matches 3.. run item replace entity @s inventory.1 with minecraft:player_head[custom_data={du-in:'cupHead'},custom_name='{"text":"I SEE YOU","color":"gray","bold":true,"italic":false}',lore=['{"text":"Cuphead","color":"#FAE900","bold":true,"italic":true}'],profile={id:[I;318736035,-1403303440,-1876061664,-609467480],name:"",properties:[{name:"textures",value:"eyJ0ZXh0dXJlcyI6eyJTS0lOIjp7InVybCI6Imh0dHA6Ly90ZXh0dXJlcy5taW5lY3JhZnQubmV0L3RleHR1cmUvYTdlMGE5MGMyYjg0ODU1YzkwMDYzNmNmYzkyNWQ5ZjJkMDc4NjliMGNiZmE1MzhlMjYxMDcyMGI3ZDI0YWVlNSJ9fX0="}]}] 1
