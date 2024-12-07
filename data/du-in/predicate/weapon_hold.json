@@ -5,7 +5,7 @@
     "type": "minecraft:player",
     "equipment": {
       "mainhand": {
-        "tag": "du-in:weapon"
+        "items": "#du-in:weapon"
       }
     }
   }

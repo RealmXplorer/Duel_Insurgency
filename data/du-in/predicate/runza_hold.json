@@ -3,9 +3,6 @@
   "entity": "this",
   "predicate": {
     "type": "minecraft:player",
-    "type_specific": {
-      "type": "minecraft:player"
-    },
     "equipment": {
       "mainhand": {
         "items": "minecraft:mushroom_stew"

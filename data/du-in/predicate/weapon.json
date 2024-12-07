@@ -1,6 +1,6 @@
 {
   "condition": "minecraft:match_tool",
   "predicate": {
-    "tag": "du-in:weapon"
+    "items": "#du-in:weapon"
   }
 }
