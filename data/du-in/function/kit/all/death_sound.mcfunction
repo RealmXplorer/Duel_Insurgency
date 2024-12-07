@@ -38,7 +38,6 @@ execute if entity @s[scores={kit=17}] run function du-in:kit/kylo/sounds/death
 #Vader DEATH#
 execute if entity @s[scores={kit=18}] run function du-in:kit/vader/death
 
-
 #PALPS DEATH SOUND#
 execute if entity @s[scores={kit=19}] run playsound minecraft:palpatine.death master @a ~ ~ ~ 3 1
 
