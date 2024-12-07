@@ -1,5 +1,5 @@
 #KILL MESSAGE#
-execute unless entity @s[scores={kit=1000..}] run tellraw @a {"selector":"@s","color":"dark_purple","bold":false,"extra":[{"text":" spooked ","color":"white","bold":false},{"selector":"@a[scores={justdied=1}]","color":"#fc8803","bold":false}]}
+execute unless entity @s[scores={kit=1000..1004}] unless entity @s[scores={kit=42069}] run tellraw @a {"selector":"@s","color":"dark_purple","bold":false,"extra":[{"text":" spooked ","color":"white","bold":false},{"selector":"@a[scores={justdied=1}]","color":"#fc8803","bold":false}]}
 
 execute if entity @s[scores={kit=1000}] run tellraw @a {"selector":"@s","color":"dark_purple","bold":false,"extra":[{"text":" ruined ","color":"white","bold":false},{"selector":"@a[scores={justdied=1}]","color":"#fc8803","bold":false}]}
 execute if entity @s[scores={kit=1001}] run tellraw @a {"selector":"@s","color":"dark_purple","bold":false,"extra":[{"text":" goofed ","color":"white","bold":false},{"selector":"@a[scores={justdied=1}]","color":"#fc8803","bold":false}]}
