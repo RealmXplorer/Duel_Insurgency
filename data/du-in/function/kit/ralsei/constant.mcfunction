@@ -15,4 +15,4 @@ execute store result score @s triCount run clear @s gunpowder 0
 execute if entity @s[tag=secKitActions] run function du-in:kit/ralsei/prayer/init
 
 #TP Counting and Max
-execute if entity @s[tag=!maxTP,scores={ralseiTP=..120}] run function du-in:kit/ralsei/tp_track
+execute if entity @s[tag=!startgame,tag=!maxTP,scores={ralseiTP=..120}] run function du-in:kit/ralsei/tp_track

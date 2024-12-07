@@ -14,8 +14,8 @@ execute if entity @s[tag=secKitActions] run function du-in:kit/yharim/secondary/
 execute if entity @s[scores={yharimRageDuration=0..}] run function du-in:kit/yharim/secondary/in_rage
 
 #Add Yharim Rage#
-execute if entity @s[gamemode=!spectator,tag=!enraged,tag=!rageMeter,tag=!void] if entity @a[distance=0.05..3.5,tag=playing,gamemode=!spectator] unless score @a[distance=0.05..3.5,tag=playing,gamemode=!spectator,limit=1] team = @s team run function du-in:kit/yharim/secondary/charge
-execute if entity @s[gamemode=!spectator,tag=!enraged,tag=!rageMeter,tag=void] if entity @e[type=skeleton,tag=gonerThing,distance=0.05..3.5] run function du-in:kit/yharim/secondary/charge
+execute if entity @s[gamemode=!spectator,tag=!enraged,tag=!rageMeter,tag=!void,tag=!startgame] if entity @a[distance=0.05..3.5,tag=playing,gamemode=!spectator] unless score @a[distance=0.05..3.5,tag=playing,gamemode=!spectator,limit=1] team = @s team run function du-in:kit/yharim/secondary/charge
+execute if entity @s[gamemode=!spectator,tag=!enraged,tag=!rageMeter,tag=void,tag=!startgame] if entity @e[type=skeleton,tag=gonerThing,distance=0.05..3.5] run function du-in:kit/yharim/secondary/charge
 
 #IT IS TRULY
 #A MIRACLE
