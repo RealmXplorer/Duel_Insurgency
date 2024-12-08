@@ -22,7 +22,7 @@ Legendary characters are sometimes referred to as "unlocked", and always have a 
 Some functions for the character are kept in the "du-in/function/kit/all/" folder.
 	Setting a normal "kit" score to a character is kept in "du-in/function/kit/all/set(1,2,3,4)"
 		Legendary characters are kept in "du-in/function/kit/all/set_legend"
-	Deathsounds are kept in "du-in/function/kit/all/death_sound"
+	Death functions are kept in "du-in/function/kit/all/death"
 	Win voicelines are kept in "du-in/function/kit/all/winline"
 	Inflicting damage kept in "du-in/function/kit/all/hit_all"
 	Inflicting damage on a player is kept in "du-in/function/kit/all/hit_player"

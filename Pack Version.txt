@@ -1,4 +1,4 @@
-Duel: Insurgency Version: 1.1.7
+Duel: Insurgency Version: 1.1.8
 
 Duel-Format: 6-beta
 

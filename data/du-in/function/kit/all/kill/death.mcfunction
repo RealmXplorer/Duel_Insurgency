@@ -41,7 +41,7 @@ execute unless entity @a[tag=partyLeader,tag=aprilFools] run playsound minecraft
 
 execute if entity @a[tag=partyLeader,tag=aprilFools] run playsound minecraft:soundeffect.table master @s[tag=!startgame,tag=!lose,tag=!win] ~ ~ ~ 1 1
 
-execute unless entity @s[tag=stolen] run function du-in:kit/all/death_sound
+execute unless entity @s[tag=stolen] run function du-in:kit/all/death
 execute if entity @s[tag=stolen] run function du-in:kit/villager/death
 
 #Stop some abiliies upon death
