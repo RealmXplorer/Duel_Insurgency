@@ -247,6 +247,8 @@ execute as @a run function du-in:music/ingame/stop/all
         tag @a remove deathAbility
         scoreboard players reset @a deathAbilityTimer
         scoreboard players reset @a deathSwapTimer
+        
+        scoreboard players reset @a skeletonMode
 
 tag @a remove hasRing
 

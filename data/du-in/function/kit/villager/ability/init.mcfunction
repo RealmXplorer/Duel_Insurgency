@@ -13,16 +13,13 @@ clear @s[tag=stolen] minecraft:carrot_on_a_stick
 execute store result score @s[tag=stolen] kit run scoreboard players get @a[distance=0.05..5,tag=playing,limit=1,sort=nearest] kit
 
 #Set player to current
-execute store result storage du-in:main player.current int 1 run scoreboard players get @s player
+execute if entity @s[tag=stolen] store result storage du-in:main player.current int 1 run scoreboard players get @s player
 
 #Set targeted player to stolen
-execute as @a[distance=0.05..5,tag=playing,limit=1,sort=nearest] store result storage du-in:main player.stolen int 1 run scoreboard players get @s player
+execute if entity @s[tag=stolen] as @a[distance=0.05..5,tag=playing,limit=1,sort=nearest] store result storage du-in:main player.stolen int 1 run scoreboard players get @s player
 
 #Find stolen character
-function du-in:kit/villager/ability/find_stolen_kit with storage du-in:main player
-
-#Test without this first
-#function du-in:kit/villager/ability/find_kit
+execute if entity @s[tag=stolen] run function du-in:kit/villager/ability/find_stolen_kit with storage du-in:main player
 
 #Give tag "darwin" if stolen player is Darwin.
 execute if entity @s[tag=stolen,scores={kit=22}] if entity @a[distance=0.05..5,tag=darwin,scores={kit=22},tag=playing,limit=1,sort=nearest] run tag @s add darwin
