@@ -9,3 +9,5 @@ attribute @s knockback_resistance base set 0.01
 #Jump Height
 attribute @s[tag=!darwin] minecraft:jump_strength base set 0.42
 attribute @s[tag=darwin] minecraft:jump_strength base set 0.47
+
+attribute @s[tag=darwin] minecraft:water_movement_efficiency base set 1

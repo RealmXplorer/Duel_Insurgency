@@ -1,6 +1,6 @@
 scoreboard players set @s[tag=!empower] asrielHitTimer 15
 scoreboard players set @s[tag=empower] asrielHitTimer 30
-scoreboard players set @s asrielTimer 0
+scoreboard players set @s asrielTimer 5
 
 playsound minecraft:sans.ability master @a ~ ~ ~ .5 1.15
 

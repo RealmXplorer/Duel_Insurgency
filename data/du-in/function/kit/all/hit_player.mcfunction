@@ -15,7 +15,7 @@ execute if entity @s[tag=stolen] run function du-in:kit/villager/damage/player
 execute if entity @s[scores={comboScore=3..},tag=playing] run function du-in:kit/all/combo_sounds/init
 
 #Asriel Saber#
-execute if entity @s[tag=asrielCharge] run function du-in:kit/asriel/passive/damage
+#execute if entity @s[tag=asrielCharge] run function du-in:kit/asriel/passive/damage
 
 #Villager Emerald System#
     #execute if entity @s[scores={kit=8}] run function du-in:kit/villager/hit

@@ -21,5 +21,6 @@ execute if entity @s[scores={fakeTimer=0..}] run function du-in:kit/gumball/abil
 execute store result score @s secCount run clear @s warped_fungus_on_a_stick 0
 
 #Attributes
+attribute @s[tag=darwin] minecraft:water_movement_efficiency base set 1
 effect give @s[tag=darwin] dolphins_grace infinite 1 true
 effect give @s[tag=darwin] water_breathing infinite 1 true

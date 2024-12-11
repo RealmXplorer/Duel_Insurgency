@@ -1,0 +1,1 @@
+execute if entity @s[predicate=du-in:weapon_hold,tag=asrielCharge] run function du-in:kit/asriel/passive/damage
