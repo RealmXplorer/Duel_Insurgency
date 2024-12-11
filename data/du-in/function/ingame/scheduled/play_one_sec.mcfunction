@@ -3,7 +3,7 @@ execute if entity @s[tag=cIngame] if score #main map matches 7 run function du-i
 execute if entity @s[tag=cIngame] unless score #main map matches 7 run function du-in:ingame/spawnpoint/random
 
 #Check if player has ability
-execute unless entity @s[level=3..] unless items entity @s[tag=!startgame,tag=!cooldown,tag=!grave,tag=!hornerWeapon] weapon.offhand minecraft:carrot_on_a_stick run xp set @s 2 levels
+execute unless entity @s[level=3..] unless items entity @s[tag=!startgame,tag=!cooldown,tag=!grave,tag=!hornerWeapon] weapon.offhand #du-in:ability run xp set @s 2 levels
 
 #Check if player has weapon
 execute if entity @s[tag=!startgame,tag=!pussFear,tag=!kitMenu,tag=!teamDead] store result score @s weapCount run clear @s #du-in:weapon 0

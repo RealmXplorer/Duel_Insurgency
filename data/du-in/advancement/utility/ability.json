@@ -1,0 +1,20 @@
+{
+    "criteria": {
+      "ability": {
+        "trigger": "minecraft:consume_item",
+        "conditions": {
+          "item": {
+            "items": "minecraft:coal"
+          }
+        }
+      }
+    },
+    "requirements": [
+      [
+        "ability"
+      ]
+    ],
+    "rewards": {
+      "function": "du-in:test/ability"
+    }
+  }
