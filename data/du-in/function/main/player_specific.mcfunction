@@ -16,7 +16,7 @@
 
     # Allow for items to be thrown to activate carrots on sticks #
         execute if entity @s[scores={kitUseThrow=1..}] run function du-in:other/thrown
-        execute if entity @s[scores={thrownCoal=1..}] run function du-in:other/thrown
+        #execute if entity @s[scores={thrownCoal=1..}] run function du-in:other/thrown
         execute if entity @s[scores={secKitUseThrow=1..}] run function du-in:other/thrown_sec
 
     # If a player has left the game #
