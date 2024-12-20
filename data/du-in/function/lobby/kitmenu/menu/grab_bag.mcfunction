@@ -2,6 +2,10 @@
 execute if entity @s[tag=kitsListed] run scoreboard players set @s kitList 6
 
 #Display Kits
+execute unless items entity @s inventory.10 minecraft:player_head run function du-in:lobby/kitmenu/menu/grabbag/kratos
+
+execute unless items entity @s inventory.8 minecraft:player_head run function du-in:lobby/kitmenu/menu/grabbag/avatar
+execute unless items entity @s inventory.7 minecraft:player_head run function du-in:lobby/kitmenu/menu/grabbag/sauron
 execute unless items entity @s inventory.6 minecraft:player_head run function du-in:lobby/kitmenu/menu/grabbag/cuphead
 execute unless items entity @s inventory.5 minecraft:player_head run function du-in:lobby/kitmenu/menu/grabbag/gumball
 execute unless items entity @s inventory.4 minecraft:player_head run function du-in:lobby/kitmenu/menu/grabbag/nick

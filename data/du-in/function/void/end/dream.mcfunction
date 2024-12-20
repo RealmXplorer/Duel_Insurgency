@@ -66,6 +66,8 @@ execute if entity @s[scores={kit=30},tag=!stolen] run tellraw @s [{"text":"You d
 execute if entity @s[scores={kit=31},tag=!stolen] run tellraw @s [{"text":"You dream of utter darkness...","color":"gray","italic": true}]
 #Aang
 execute if entity @s[scores={kit=32},tag=!stolen] run tellraw @s [{"text":"You dream of your friends...","color":"gray","italic": true}]
+#Kratos
+execute if entity @s[scores={kit=33},tag=!stolen] run tellraw @s [{"text":"You dream of peace...","color":"gray","italic": true}]
 
 #Saac
 execute if entity @s[scores={kit=1000}] run tellraw @s [{"text":"You dream of kickstarts...","color":"gray","italic": true}]
