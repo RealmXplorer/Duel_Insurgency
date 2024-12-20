@@ -14,3 +14,11 @@ execute if entity @s[scores={deathSwapTimer=-1..}] run function du-in:kit/death/
 
 #Use ability
 execute if entity @s[tag=secKitActions] run function du-in:kit/death/secondary/switch
+
+#ODD
+#THIS IS NO BEING
+#THAT I HAVE CONJURED
+
+#HE HAS FOLLOWED THE OTHERS
+#NOW I MUST WATCH
+#NONE CAN ESCAPE HIM
