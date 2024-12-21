@@ -19,6 +19,8 @@ Template for characters are found in "du-in/function/kit/template"
 
 Legendary characters are sometimes referred to as "unlocked", and always have a "kit" value of 1000 or higher.
 
+As of Datapack 6.0, many characters are now automatically run based off their folder name, rather than their kit number. (Kit Numbers are still important)
+
 Some functions for the character are kept in the "du-in/function/kit/all/" folder.
 	Setting a normal "kit" score to a character is kept in "du-in/function/kit/all/set(1,2,3,4)"
 		Legendary characters are kept in "du-in/function/kit/all/set_legend"
