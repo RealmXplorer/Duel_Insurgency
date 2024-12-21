@@ -23,4 +23,7 @@ execute if entity @s[scores={kit=30}] run function du-in:kit/skeleton/init
 execute if entity @s[scores={kit=31},tag=!stolen] run function du-in:kit/sauron/constant
 
 #Aang#
-# execute if entity @s[scores={kit=32}] run function du-in:kit/avatar/init
+execute if entity @s[scores={kit=32}] run function du-in:kit/avatar/init
+
+#Kratos#
+execute if entity @s[scores={kit=33}] run function du-in:kit/kratos/init

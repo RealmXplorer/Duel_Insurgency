@@ -33,6 +33,9 @@ Kit number = character name
 28 = Death
 29 = Yoda
 30 = Skeleton
+31 = Sauron
+32 = Aang
+33 = Kratos
 
 1000 = Saac
 1001 = PearApplez
