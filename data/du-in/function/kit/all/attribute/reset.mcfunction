@@ -31,6 +31,10 @@ attribute @s attack_damage modifier remove yharim_rage
 attribute @s movement_speed modifier remove yharim_rage
 attribute @s attack_speed modifier remove yharim_rage
 
+attribute @s attack_damage modifier remove kratos_rage
+attribute @s movement_speed modifier remove kratos_rage
+attribute @s attack_speed modifier remove kratos_rage
+
 ##Clairen
 attribute @s attack_damage modifier remove clairen_damage
 

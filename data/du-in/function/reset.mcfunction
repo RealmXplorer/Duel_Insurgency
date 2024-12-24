@@ -195,6 +195,12 @@ execute as @a run function du-in:music/ingame/stop/all
         tag @a remove rageMeter
         tag @a remove enraged
 
+    #Kratos#
+        scoreboard players set @a kratosRage 0
+        scoreboard players reset @a kratosTimer
+        scoreboard players reset @a kratosRageDuration
+        tag @a remove kratosRage
+
     #Springtrap#
         tag @a remove springLock
         tag @a remove undead

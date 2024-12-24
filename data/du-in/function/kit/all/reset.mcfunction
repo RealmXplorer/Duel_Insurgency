@@ -43,6 +43,7 @@ scoreboard players reset @s saacDisTimer
 scoreboard players reset @s floweyHitTimer
 scoreboard players set @s saacCarry 0
 scoreboard players set @s yharimRage 0
+scoreboard players set @s kratosRage 0
 scoreboard players reset @s kickstartDrink
 scoreboard players reset @s card
 scoreboard players reset @s ralseiTP

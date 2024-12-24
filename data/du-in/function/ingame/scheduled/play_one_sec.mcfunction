@@ -11,7 +11,7 @@ execute if entity @s[tag=!startgame,tag=!pussFear,tag=!kitMenu,tag=!teamDead] st
 
 #execute if entity @s[tag=!startgame,tag=!pussFear,tag=!kitMenu,tag=!teamDead] unless score @s weapCount matches 1 run clear @s #du-in:weapon
 
-execute if entity @s[tag=!startgame,tag=!pussFear,tag=!kitMenu,tag=!teamDead] unless score @s weapCount matches 1 run function du-in:kit/all/weapon/init
+execute if entity @s[tag=!startgame,tag=!pussFear,tag=!kratosRage,tag=!kitMenu,tag=!teamDead] unless score @s weapCount matches 1 run function du-in:kit/all/weapon/init
 
 execute if entity @s[tag=playing,scores={kit=1002},predicate=du-in:chance/third_chance] run function du-in:kit/jerma/weapon
 

@@ -43,6 +43,7 @@ tag @a[tag=!spectating] add playing
 
     #Reset scores for certain kits
     scoreboard players set @a[scores={kit=20}] yharimRage 0
+    scoreboard players set @a[scores={kit=33}] kratosRage 0
     scoreboard players reset @a[scores={kit=11}] asrielTimer
 
     #Give Saac the "saac" tag

@@ -27,6 +27,7 @@ scoreboard objectives add ringTimer dummy
 
 scoreboard objectives add weaponTier dummy
 scoreboard objectives add yharimRage dummy
+scoreboard objectives add kratosRage dummy
 scoreboard objectives add yodaTimer dummy
 scoreboard objectives add yodaDamage minecraft.custom:damage_taken
 scoreboard objectives add yodaAbsorb dummy
@@ -92,8 +93,10 @@ scoreboard objectives add titleTimer2 dummy
 scoreboard objectives add tridentTimer dummy
 scoreboard objectives add unicornTimer dummy
 scoreboard objectives add yharimTimer dummy
+scoreboard objectives add kratosTimer dummy
 scoreboard objectives add zombieTimer dummy
 scoreboard objectives add yharimRageDuration dummy
+scoreboard objectives add kratosRageDuration dummy
 scoreboard objectives add skeletonMode dummy
 scoreboard objectives add jermaWeapon dummy
 scoreboard objectives add jermaOnion dummy
