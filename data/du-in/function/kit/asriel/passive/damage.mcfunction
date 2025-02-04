@@ -1,5 +1,6 @@
 execute if score @s team = @p[distance=0.05..5,tag=!onTeam] team run tag @p[distance=0.05..5,tag=!onTeam] add onTeam
-execute if entity @s[tag=!void] run effect give @a[distance=0.05..5,tag=!onTeam,gamemode=!spectator] minecraft:instant_damage 1 1 true
+#execute if entity @s[tag=!void] run effect give @a[distance=0.05..5,tag=!onTeam,gamemode=!spectator] minecraft:instant_damage 1 1 true
+execute if entity @s[tag=!void] as @a[distance=0.05..5,tag=!onTeam,gamemode=!spectator] run damage @s 3.25
 execute if entity @s[tag=void] as @e[type=skeleton,distance=0.05..5] run damage @s 8
 tag @a[tag=onTeam] remove onTeam
 tag @s add asrielSaber
