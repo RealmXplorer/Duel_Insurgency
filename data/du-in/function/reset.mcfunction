@@ -16,10 +16,12 @@ execute if entity @a[tag=dmIngame] run function du-in:ingame/deathmatch/reset
 execute if entity @a[tag=kothIngame] run function du-in:ingame/koth/reset
 execute if entity @a[tag=ctfIngame] run function du-in:ingame/ctf/reset
 execute if entity @a[tag=cqIngame] run function du-in:ingame/conquest/reset
+execute if entity @a[tag=lobby] run function du-in:lobby/full_reset
 
 scoreboard players reset #main startSeq
 tag @a remove startgame
 tag @a remove kitPicked
+tag @a remove subLobby
 
 execute as @a[tag=randomSkins] run function du-in:skins/random
 
