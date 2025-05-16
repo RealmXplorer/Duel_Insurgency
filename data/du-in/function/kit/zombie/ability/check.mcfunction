@@ -1,5 +1,6 @@
 tag @s add self
-execute as @e[type=interaction,tag=grave] if score @s player = @a[tag=self,limit=1] player run tag @a[tag=self] add asFound
+#execute as @e[type=interaction,tag=grave] if score @s player = @a[tag=self,limit=1] player run tag @a[tag=self] add asFound
+execute as @e[type=falling_block,tag=grave] if score @s player = @a[tag=self,limit=1] player run tag @a[tag=self] add asFound
 
 execute if entity @s[tag=!asFound,tag=!teamDead] run function du-in:kit/zombie/ability/respawn
 effect give @s[tag=!asFound,tag=!teamDead] minecraft:strength 2 1 true
