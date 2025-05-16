@@ -15,6 +15,6 @@ scoreboard players add @s gameGonerKills 1
 
 execute if predicate du-in:chance/five_chance positioned as @e[type=marker,tag=pylon] run playsound minecraft:block.sculk_shrieker.shriek master @a ~ ~ ~ 100000 .5
 
-bossbar set gast:pylon name [{"text":"Pylon Stabilization: ","bold":true,"color":"white"},{"score":{"name":"@r","objective":"gonersKilled"},"color":"red"},{"text":" Goners left","color":"gray"}]
+bossbar set gast:pylon name [{text:"Pylon Stabilization: ",bold:true,color:white},{"score":{"name":"@r","objective":"gonersKilled"},color:red},{text:" Goners left",color:gray}]
 
 advancement revoke @s only du-in:void/gonerkill

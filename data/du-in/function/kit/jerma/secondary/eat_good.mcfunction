@@ -6,6 +6,6 @@ playsound minecraft:chara.ability master @a ~ ~ ~ 1 1
 playsound minecraft:jerma.onion_ring voice @a ~ ~ ~ 100000 1
 clear @s warped_fungus_on_a_stick
 scoreboard players set @s[tag=notEaten] runzaEat 1
-tellraw @s [{"text":"The onion ring restores you!","bold":true,"color":"green"}]
+tellraw @s [{text:"The onion ring restores you!",bold:true,color:green}]
 tag @s remove hasOnionRing
 tag @s remove secKitActions

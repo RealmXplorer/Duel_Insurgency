@@ -13,11 +13,11 @@ scoreboard players set #main testHalf 1000
 scoreboard players set #main testDone 1000
 
 #Announce settings
-execute if score #main killCap matches 10 run tellraw @a ["",{"text":"Classic Kills ","bold":true,"color":"gold"},{"text":"Max 10","color":"gray"},{"text":" (Default)","bold":true,"color":"green"}]
-execute if score #main killCap matches 7 run tellraw @a ["",{"text":"Classic Kills ","bold":true,"color":"gold"},{"text":"Max 7 (Reborn)","color":"gray"}]
-execute if score #main killCap matches 5 run tellraw @a ["",{"text":"Classic Kills ","bold":true,"color":"gold"},{"text":"Max 5 (Quick)","color":"gray"}]
-execute if score #main killCap matches 12 run tellraw @a ["",{"text":"Classic Kills ","bold":true,"color":"gold"},{"text":"Max 12 (Extended)","color":"gray"}]
-execute if score #main killCap matches 15 run tellraw @a ["",{"text":"Classic Kills ","bold":true,"color":"gold"},{"text":"Max 15 (Prolonged)","color":"gray"}]
+execute if score #main killCap matches 10 run tellraw @a ["",{text:"Classic Kills ",bold:true,color:gold},{text:"Max 10",color:gray},{text:" (Default)",bold:true,color:green}]
+execute if score #main killCap matches 7 run tellraw @a ["",{text:"Classic Kills ",bold:true,color:gold},{text:"Max 7 (Reborn)",color:gray}]
+execute if score #main killCap matches 5 run tellraw @a ["",{text:"Classic Kills ",bold:true,color:gold},{text:"Max 5 (Quick)",color:gray}]
+execute if score #main killCap matches 12 run tellraw @a ["",{text:"Classic Kills ",bold:true,color:gold},{text:"Max 12 (Extended)",color:gray}]
+execute if score #main killCap matches 15 run tellraw @a ["",{text:"Classic Kills ",bold:true,color:gold},{text:"Max 15 (Prolonged)",color:gray}]
 
 #Calculate thresholds based on selected kill cap.
 execute if score #main testGoal >= #main killCap store result score #main testGoal run scoreboard players get #main killCap

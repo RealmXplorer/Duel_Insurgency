@@ -6,7 +6,7 @@ execute if entity @s[scores={jump=1..}] run function du-in:kit/jump
 execute if entity @s[tag=secKitActions] run function du-in:kit/cuphead/parry/init
 
 #WEAPON#
-execute unless entity @s[scores={secCount=1}] if entity @s[tag=!teamDead] run item replace entity @s hotbar.0 with warped_fungus_on_a_stick[custom_name='{"text":"Devil\'s Horn","color":"#EF0AFF","bold":true}',lore=['{"text":"Jump in the air and right click near enemy"}','{"text":"or projectile to parry!"}','{"text":" ","color":"gray","bold":true}','{"text":"I didn\'t know this was a hat!","color":"white","bold":false}','{"text":"It wasn\'t...","color":"red","bold":false}'],item_model="du-in:other/parry",enchantment_glint_override=true,unbreakable={show_in_tooltip:false},attribute_modifiers={modifiers:[{type:"attack_damage",id:"attack_damage",amount:2.95,operation:"add_value",slot:"mainhand"},{type:"attack_speed",id:"attack_speed",amount:40,operation:"add_value",slot:"mainhand"}],show_in_tooltip:true}] 1
+execute unless entity @s[scores={secCount=1}] if entity @s[tag=!teamDead] run item replace entity @s hotbar.0 with warped_fungus_on_a_stick[item_name={text:"Devil\'s Horn",color:"#EF0AFF",bold:true},lore=[{text:"Jump in the air and right click near enemy"},{text:"or projectile to parry!"},{text:" ",color:gray,bold:true},{text:"I didn\'t know this was a hat!",color:white,bold:false},{text:"It wasn\'t...",color:red,bold:false}],item_model="du-in:other/parry",enchantment_glint_override=true,unbreakable={},attribute_modifiers=[{type:"attack_damage",id:"attack_damage",amount:2.95,operation:"add_value",slot:"mainhand"},{type:"attack_speed",id:"attack_speed",amount:40,operation:"add_value",slot:"mainhand"}]] 1
 
 execute store result score @s secCount run clear @s warped_fungus_on_a_stick 0
 

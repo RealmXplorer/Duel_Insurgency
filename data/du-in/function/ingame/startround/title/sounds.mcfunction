@@ -16,7 +16,7 @@ execute if entity @a[tag=partyLeader,tag=aprilFools] run playsound minecraft:sou
 
 # execute if entity @s[scores={kit=6}] run playsound minecraft:entity.iron_golem.hurt master @a ~ ~ ~ 1 .85
 
-# execute if entity @s[scores={kit=7}] run tellraw @s ["",{"selector":"@s","color":"yellow"},{"text":" has joined the game","color":"yellow"}]
+# execute if entity @s[scores={kit=7}] run tellraw @s ["",{selector:"@s",color:yellow},{text:" has joined the game",color:yellow}]
 # execute if entity @s[scores={kit=7}] run playsound minecraft:ui.toast.in master @s ~ ~ ~ 1 1
 
 # execute if entity @s[scores={kit=8}] unless entity @s[scores={villSkin=1..}] run playsound minecraft:entity.villager.ambient master @s ~ ~ ~ 1 1

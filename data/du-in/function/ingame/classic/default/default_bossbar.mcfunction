@@ -11,5 +11,5 @@ execute store result bossbar bossbar:classic value run scoreboard players get @a
 execute as @a[tag=mostKills] if score @s killIngame < #main classicMost run tag @s remove mostKills
 
 #Set bossbar name
-bossbar set bossbar:classic name ["",{"selector":"@a[tag=mostKills,limit=1] ","bold":true,"color":"gold"},{"text":" is in the lead!","bold":true,"color":"red"}]
-execute unless entity @a[tag=mostKills] run bossbar set bossbar:classic name ["",{"text":"Nobody ","bold":true,"color":"red"},{"text":"is in the lead!","bold":true,"color":"red"}]
+bossbar set bossbar:classic name [{selector:'@a[tag=mostKills,limit=1] ', bold:true, color:gold},{text:' is in the lead!', bold:true, color:red}]
+execute unless entity @a[tag=mostKills] run bossbar set bossbar:classic name [{text:'Nobody ', bold:true, color:red},{text:'is in the lead!', bold:true, color:red}]

@@ -1,5 +1,5 @@
-execute if score #main gamemode matches 1 run data modify entity @e[type=area_effect_cloud,tag=gamemodeLabel,limit=1] CustomName set value '{"text":"Classic","color":"white","bold":true}'
-execute if score #main gamemode matches 2 run data modify entity @e[type=area_effect_cloud,tag=gamemodeLabel,limit=1] CustomName set value '{"text":"Deathmatch","color":"white","bold":true}'
-execute if score #main gamemode matches 3 run data modify entity @e[type=area_effect_cloud,tag=gamemodeLabel,limit=1] CustomName set value '{"text":"King of the Hill","color":"white","bold":true}'
-execute if score #main gamemode matches 4 run data modify entity @e[type=area_effect_cloud,tag=gamemodeLabel,limit=1] CustomName set value '{"text":"Capture the Flag","color":"white","bold":true}'
-execute if score #main gamemode matches 5 run data modify entity @e[type=area_effect_cloud,tag=gamemodeLabel,limit=1] CustomName set value '{"text":"Conquest","color":"white","bold":true}'
+execute if score #main gamemode matches 1 run data modify entity @e[type=interaction,tag=gamemodeLabel,limit=1] CustomName set value {text:"Classic",color:white,bold:true}
+execute if score #main gamemode matches 2 run data modify entity @e[type=interaction,tag=gamemodeLabel,limit=1] CustomName set value {text:"Deathmatch",color:white,bold:true}
+execute if score #main gamemode matches 3 run data modify entity @e[type=interaction,tag=gamemodeLabel,limit=1] CustomName set value {text:"King of the Hill",color:white,bold:true}
+execute if score #main gamemode matches 4 run data modify entity @e[type=interaction,tag=gamemodeLabel,limit=1] CustomName set value {text:"Capture the Flag",color:white,bold:true}
+execute if score #main gamemode matches 5 run data modify entity @e[type=interaction,tag=gamemodeLabel,limit=1] CustomName set value {text:"Conquest",color:white,bold:true}

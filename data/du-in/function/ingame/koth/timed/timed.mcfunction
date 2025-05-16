@@ -15,4 +15,4 @@ execute if score #main maxTimer matches 1000 run function du-in:ingame/timed/nea
 
 execute if score #main maxTimer matches ..0 run function du-in:ingame/koth/timed/ending
 
-execute at @e[type=area_effect_cloud,tag=kothObj] run function du-in:ingame/koth/hill
+execute at @e[type=interaction,tag=kothObj] run function du-in:ingame/koth/hill

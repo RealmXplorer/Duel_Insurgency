@@ -17,8 +17,8 @@ execute if score #main lobbyTheme matches 2 unless entity @s[scores={justdied=1.
 execute if score #main lobbyTheme matches 3 unless entity @s[scores={justdied=1..}] run function du-in:kit/all/kill/kill_msg/christmas
 execute if score #main lobbyTheme matches 4 unless entity @s[scores={justdied=1..}] run function du-in:kit/all/kill/kill_msg/easter
 
-execute if entity @a[scores={justdied=1,killStreak=3..4}] run tellraw @a {"selector":"@s","color":"gold","bold":false,"extra":[{"text":" has ended ","color":"gray","bold":false},{"selector":"@a[scores={justdied=1,killStreak=3..4}]","color":"dark_red","bold":false},{"text":"'s 3 player killstreak!","bold":true,"color":"gray"}]}
-execute if entity @a[scores={justdied=1,killStreak=5..}] run tellraw @a {"selector":"@s","color":"gold","bold":false,"extra":[{"text":" has ended ","color":"gray","bold":false},{"selector":"@a[scores={justdied=1,killStreak=5..}]","color":"dark_red","bold":false},{"text":"'s 5 player killstreak!","bold":true,"color":"gray"}]}
+execute if entity @a[scores={justdied=1,killStreak=3..4}] run tellraw @a {selector:"@s",bold:false,color:gold,extra:[{text:" has ended ",bold:false,color:gray},{selector:"@a[scores={justdied=1,killStreak=3..4}]",bold:false,color:dark_red},{text:"'s 3 player killstreak!",bold:true,color:gray}]}
+execute if entity @a[scores={justdied=1,killStreak=5..}] run tellraw @a {selector:"@s",bold:false,color:gold,extra:[{text:" has ended ",bold:false,color:gray},{selector:"@a[scores={justdied=1,killStreak=5..}]",bold:false,color:dark_red},{text:"'s 5 player killstreak!",bold:true,color:gray}]}
 
 #Kill Sounds#
 execute unless entity @a[tag=partyLeader,tag=aprilFools] run playsound minecraft:terraria.golkill master @s ~ ~ ~ .4 2
@@ -34,8 +34,8 @@ scoreboard players add @s exp 1
 
 execute if entity @s[scores={kit=7},tag=!stolen] run give @s minecraft:arrow 2
 
-execute if entity @s[scores={kit=30,skeletonMode=1}] run give @s tipped_arrow[custom_name='{"text":"Slowness Arrows","color":"gold","bold":true,"italic":false}',lore=['{"text":"Throw or use to go back to sword mode","color":"dark_purple","bold":true}'],potion_contents={potion:"minecraft:slowness"}] 1
-execute if entity @s[scores={kit=30,skeletonMode=2}] run give @s tipped_arrow[custom_name='{"text":"Poison Arrows","color":"gold","bold":true,"italic":false}',lore=['{"text":"Throw or use to go back to sword mode","color":"dark_purple","bold":true}'],potion_contents={potion:"minecraft:poison"}] 1
+execute if entity @s[scores={kit=30,skeletonMode=1}] run give @s tipped_arrow[item_name={text:'Slowness Arrows',color:gold,bold:true},lore=[{text:'Throw or use to go back to sword mode',color:dark_purple,bold:true}],potion_contents={potion:"minecraft:slowness"}] 1
+execute if entity @s[scores={kit=30,skeletonMode=2}] run give @s tipped_arrow[item_name={text:'Poison Arrows',color:gold,bold:true},lore=[{text:'Throw or use to go back to sword mode',color:dark_purple,bold:true}],potion_contents={potion:"minecraft:poison"}] 1
 
 execute if entity @s[scores={kit=1000}] run function du-in:kit/saac/sounds/lines
 #This also gives Fortnite Card

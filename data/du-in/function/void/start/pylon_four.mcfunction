@@ -4,8 +4,8 @@ setblock 10062 33 10063 air replace
 schedule function du-in:void/hazard/bridge/pick_bridge 2s
 schedule function du-in:void/hazard/fire/pick_pylon 10s
 schedule function du-in:void/hazard/shock/prepare 20s
-tellraw @a [{"text":"It's the end...","bold":true,"color":"dark_purple"}]
-#scoreboard objectives modify matchDeaths displayname ["",{"text":"Match Deaths ","bold":true,"color":"red"},{"text":"(Max 3)","color":"gray"}]
+tellraw @a [{text:"It's the end...",bold:true,color:dark_purple}]
+#scoreboard objectives modify matchDeaths displayname ["",{text:"Match Deaths ",bold:true,color:red},{text:"(Max 3)",color:gray}]
 
 execute as @a at @s run playsound minecraft:music.vain_pursuit record @s ~ ~ ~ 1000 1 1
 

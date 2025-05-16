@@ -1,6 +1,6 @@
 #If team is close to winning
-execute if score #main bluePoints >= #main ctfClose run tellraw @a ["",{"text":"Blue Team","bold":true,"color":"blue"},{"text":" is about to win!","bold":true,"color":"gray"}]
-execute if score #main redPoints >= #main ctfClose run tellraw @a ["",{"text":"Red Team","bold":true,"color":"red"},{"text":" is about to win!","bold":true,"color":"gray"}]
+execute if score #main bluePoints >= #main ctfClose run tellraw @a [{text:"Blue Team", bold:true, color:blue},{text:" is about to win!", bold:true, color:gray}]
+execute if score #main redPoints >= #main ctfClose run tellraw @a [{text:"Red Team", bold:true, color:red},{text:" is about to win!", bold:true, color:gray}]
 
 #Start end of round music
 tag @a[tag=song] add songEnd

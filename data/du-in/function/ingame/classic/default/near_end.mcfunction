@@ -2,7 +2,7 @@
 execute as @a[tag=playing,tag=cIngame,tag=!classicEnd] if score @s killIngame >= #main testGoal run tag @s add closeWin
 
 #Announce tagged player
-execute as @a[tag=cIngame,tag=!teamMode,tag=!classicEnd,tag=closeWin] run title @s actionbar {"text":"","color":"gold","extra":[{"selector":"@s"},{"text":" is 3 kills away from winning!"}]}
+execute as @a[tag=cIngame,tag=!teamMode,tag=!classicEnd,tag=closeWin] run title @s actionbar {text:'', color:gold, extra:[{selector:'@s'},{text:' is 3 kills away from winning!'}]}
 
 #Play sound
 #execute as @a run playsound minecraft:block.anvil.destroy master @a ~ ~ ~ 2 1.25

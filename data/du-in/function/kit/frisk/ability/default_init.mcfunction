@@ -16,7 +16,7 @@ execute if entity @s[tag=sabotaged] as @a[distance=0.05..5,tag=playing,gamemode=
 clear @s minecraft:carrot_on_a_stick
 xp set @s[tag=!stolen] 360 levels
 
-execute if entity @a[distance=0.05..5,tag=playing,gamemode=!spectator,tag=!teamDead] unless score @s team = @p[distance=0.05..5,tag=playing] team run tellraw @a[distance=0.05..5,tag=playing,gamemode=!spectator,tag=!teamDead] ["",{"text":"You have been weakened by compassion!","bold":true,"color":"red"}]
+execute if entity @a[distance=0.05..5,tag=playing,gamemode=!spectator,tag=!teamDead] unless score @s team = @p[distance=0.05..5,tag=playing] team run tellraw @a[distance=0.05..5,tag=playing,gamemode=!spectator,tag=!teamDead] ["",{text:"You have been weakened by compassion!",bold:true,color:red}]
 
 particle minecraft:heart ~ ~1.5 ~ 0.6 0.6 0.6 0 150 force
 playsound minecraft:sans.ability master @a ~ ~ ~ 100 1

@@ -1,5 +1,5 @@
 #Announce player
-title @a actionbar {"text":"Time is halfway up!","color":"gold"}
+title @a actionbar {text:"Time is halfway up!",color:gold}
 
 bossbar set bossbar:gametimer color red
 

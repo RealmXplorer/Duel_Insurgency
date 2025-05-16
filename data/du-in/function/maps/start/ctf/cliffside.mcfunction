@@ -1,4 +1,4 @@
-tellraw @a ["",{"text":"The ","bold":false,"color":"gray"},{"text":"Cliffside Asylum ","bold":true,"color":"#81d6c1"},{"text":"map has been chosen!","bold":false,"color":"gray"}]
+tellraw @a ["",{text:"The ",bold:false,color:gray},{text:"Cliffside Asylum ",bold:true,color:"#81d6c1"},{text:"map has been chosen!",bold:false,color:gray}]
 
 #Teleport#
 tp @a[scores={team=1}] 5003 5 -5043 180 0
@@ -33,9 +33,9 @@ summon interaction 5005 5 -5015 {Tags:["vending","stable","mapSpecific"],width:1
 summon interaction 5005 5 -5054 {Tags:["vending","stable","mapSpecific"],width:1.15f,height:2.1f,response:1b}
 summon interaction 5008 5 -5090 {Tags:["vending","stable","mapSpecific"],width:1.15f,height:2.1f,response:1b}
 
-summon armor_stand 5005 5 -5015 {Rotation:[180F,0F],Tags:["vendMachine","mapSpecific"],NoGravity:1b,Silent:1b,Invulnerable:1b,Invisible:1b,NoBasePlate:1b,DisabledSlots:4144959,ArmorItems:[{},{},{},{id:"minecraft:spruce_sapling",count:1,components:{"minecraft:item_model":"du-in:other/vending_machine"}}]}
-summon armor_stand 5005 5 -5054 {Rotation:[90F,0F],Tags:["vendMachine","mapSpecific"],NoGravity:1b,Silent:1b,Invulnerable:1b,Invisible:1b,NoBasePlate:1b,DisabledSlots:4144959,ArmorItems:[{},{},{},{id:"minecraft:spruce_sapling",count:1,components:{"minecraft:item_model":"du-in:other/vending_machine"}}]}
-summon armor_stand 5008 5 -5090 {Rotation:[180F,0F],Tags:["vendMachine","mapSpecific"],NoGravity:1b,Silent:1b,Invulnerable:1b,Invisible:1b,NoBasePlate:1b,DisabledSlots:4144959,ArmorItems:[{},{},{},{id:"minecraft:spruce_sapling",count:1,components:{"minecraft:item_model":"du-in:other/vending_machine"}}]}
+summon armor_stand 5005 5 -5015 {Rotation:[180F,0F],Tags:["vendMachine","mapSpecific"],NoGravity:1b,Silent:1b,Invulnerable:1b,Invisible:1b,NoBasePlate:1b,DisabledSlots:4144959,equipment:{head:{id:"minecraft:spruce_sapling",count:1,components:{"minecraft:item_model":"du-in:other/vending_machine"}}}}
+summon armor_stand 5005 5 -5054 {Rotation:[90F,0F],Tags:["vendMachine","mapSpecific"],NoGravity:1b,Silent:1b,Invulnerable:1b,Invisible:1b,NoBasePlate:1b,DisabledSlots:4144959,equipment:{head:{id:"minecraft:spruce_sapling",count:1,components:{"minecraft:item_model":"du-in:other/vending_machine"}}}}
+summon armor_stand 5008 5 -5090 {Rotation:[180F,0F],Tags:["vendMachine","mapSpecific"],NoGravity:1b,Silent:1b,Invulnerable:1b,Invisible:1b,NoBasePlate:1b,DisabledSlots:4144959,equipment:{head:{id:"minecraft:spruce_sapling",count:1,components:{"minecraft:item_model":"du-in:other/vending_machine"}}}}
 
 #execute unless entity @a[tag=partyLeader,tag=cliffLock] run summon interaction 4996 6 -5012 {Tags:["voidLock","mapSpecific"],width:0.6f,height:0.6f,response:1b}
 #execute if entity @a[tag=partyLeader,tag=cliffLock] run summon interaction 4996 6 -5012 {Tags:["usedVoidLock","mapSpecific"],width:0.6f,height:0.6f,response:1b}

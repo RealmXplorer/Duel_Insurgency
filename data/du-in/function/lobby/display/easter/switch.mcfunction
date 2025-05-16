@@ -11,4 +11,4 @@ function du-in:lobby/display/easter/display
 #clone 154 14 96 164 4 121 227 90 13
 clone 206 58 96 216 48 121 227 90 13
 
-tellraw @a ["",{"text":"Easter ","bold":true,"color":"light_purple"},{"text":"lobby theme selected!","color":"yellow"}]
+tellraw @a ["",{text:"Easter ",bold:true,color:light_purple},{text:"lobby theme selected!",color:yellow}]

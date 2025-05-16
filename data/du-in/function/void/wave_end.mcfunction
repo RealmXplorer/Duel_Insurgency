@@ -7,14 +7,14 @@ execute positioned as @e[type=marker,tag=pylon] run playsound minecraft:soundeff
 execute positioned as @e[type=marker,tag=pylon] run playsound minecraft:soundeffect.voidbell master @a ~ ~ ~ 1000 0.5
 
 title @a title " "
-title @a subtitle [{"text":"Wave ","color":"light_purple","bold":true},{"text":"Clear!","color":"dark_purple","bold":true}]
+title @a subtitle [{text:"Wave ",color:light_purple,bold:true},{text:"Clear!",color:dark_purple,bold:true}]
 
 
 execute if score #main matchDeaths matches 1.. run scoreboard players remove #main matchDeaths 1
 effect give @a instant_health 100 1 true
 
-execute if score #main pylonsDestroyed matches ..2 run tellraw @a [{"text":"The Pylon ","bold":true,"color":"dark_purple"},{"text":"shutters...","color":"light_purple"}]
-execute if score #main pylonsDestroyed matches 3 run tellraw @a [{"text":"The multiverse quakes...","bold":true,"color":"dark_purple"}]
+execute if score #main pylonsDestroyed matches ..2 run tellraw @a [{text:"The Pylon ",bold:true,color:dark_purple},{text:"shutters...",color:light_purple}]
+execute if score #main pylonsDestroyed matches 3 run tellraw @a [{text:"The multiverse quakes...",bold:true,color:dark_purple}]
 
 function du-in:void/hazard/shock/end_shock
 schedule clear du-in:void/hazard/shock/prepare
@@ -26,5 +26,5 @@ execute as @a[tag=voidOut] run function du-in:void/void_return
 
 schedule function du-in:void/wave_start 10s
 
-#bossbar set gast:pylon name ["",{"text":"Pylon Stabilization: ","bold":true,"color":"white"},{"score":{"name":"@r","objective":"gonersKilled"},"color":"red"},{"text":" Goners left","color":"gray"}]
+#bossbar set gast:pylon name ["",{text:"Pylon Stabilization: ",bold:true,color:white},{"score":{"name":"@r","objective":"gonersKilled"},color:red},{text:" Goners left",color:gray}]
 #execute store result bossbar gast:pylon max run scoreboard players get @r gonersKilled

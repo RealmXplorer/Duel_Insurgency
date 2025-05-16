@@ -342,14 +342,14 @@ scoreboard players set #main ten 10
 scoreboard players set #main halfScore 2
 scoreboard players set #main hundred 100
 
-scoreboard objectives modify Wins displayname {"text":"Wins","bold":true,"color":"red"}
-scoreboard objectives modify Kills displayname {"text":"Kills","bold":true,"color":"red"}
-scoreboard objectives modify Health displayname {"text":"Health","bold":true,"color":"red"}
+scoreboard objectives modify Wins displayname {text:'Wins', bold:true, color:red}
+scoreboard objectives modify Kills displayname {text:'Kills', bold:true, color:red}
+scoreboard objectives modify Health displayname {text:'Health', bold:true, color:red}
 scoreboard objectives modify Health rendertype hearts
-scoreboard objectives modify winStreak displayname {"text":"Win Streak","bold":true,"color":"aqua"}
-scoreboard objectives modify Diamonds displayname {"text":"Diamonds","bold":true,"color":"red"}
+scoreboard objectives modify winStreak displayname {text:'Win Streak', bold:true, color:aqua}
+scoreboard objectives modify Diamonds displayname {text:'Diamonds', bold:true, color:red}
 
-scoreboard objectives modify GumballClassicFake displayname ["",{"text":"Classic Kills ","bold":true,"color":"gold"},{"text":"(of ??)","color":"gray"}]
+scoreboard objectives modify GumballClassicFake displayname [{text:'Classic Kills ', bold:true, color:gold},{text:'(of ??)', color:gray}]
 forceload add -994 527 -972 507
 
 schedule clear du-in:main/scheduled

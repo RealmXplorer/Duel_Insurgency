@@ -1,7 +1,7 @@
 execute as @e[type=skeleton,tag=gonerThing,distance=0.05..4] run function du-in:kit/golem/ability/throw
 
 #execute if entity @s[tag=sabotaged] run function du-in:kit/golem/ability/throw
-#tellraw @s[tag=sabotaged] [{"text":"You threw yourself???","bold":true,"color":"red"}]
+#tellraw @s[tag=sabotaged] [{text:"You threw yourself???",bold:true,color:red}]
 
 playsound minecraft:entity.iron_golem.hurt master @s ~ ~ ~ 10 1
 

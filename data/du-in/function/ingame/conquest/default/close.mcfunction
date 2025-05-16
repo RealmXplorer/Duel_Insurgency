@@ -1,6 +1,6 @@
 #Announce team about to win
-execute if score Blue capturePoints >= #main cqGoal if entity @a[tag=team2,tag=!cqClose] run tellraw @a ["",{"text":"Blue Team","bold":true,"color":"blue"},{"text":" is about to win!","bold":true,"color":"gray"}]
-execute if score Red capturePoints >= #main cqGoal if entity @a[tag=team1,tag=!cqClose] run tellraw @a ["",{"text":"Red Team","bold":true,"color":"red"},{"text":" is about to win!","bold":true,"color":"gray"}]
+execute if score Blue capturePoints >= #main cqGoal if entity @a[tag=team2,tag=!cqClose] run tellraw @a [{text:'Blue Team', bold:true, color:blue},{text:' is about to win!', bold:true, color:gray}]
+execute if score Red capturePoints >= #main cqGoal if entity @a[tag=team1,tag=!cqClose] run tellraw @a [{text:'Red Team', bold:true, color:red},{text:' is about to win!', bold:true, color:gray}]
 
 #Start end of round music
 tag @a[tag=song] add songEnd

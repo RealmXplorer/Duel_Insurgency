@@ -302,9 +302,9 @@ scoreboard players reset @a ambience
 #WINEND#
 
 #END ROUND#
-title @a[tag=partyLeader,tag=!timeFree] title {"text":"","color":"red","bold":true}
-title @a[tag=partyLeader,tag=!timeFree] subtitle {"text":"Open inventory for more options!","color":"red","bold":true}
-title @a[tag=partyLeader,tag=!timeFree] actionbar {"text":"Open inventory for more options!","color":"red","bold":true}
+title @a[tag=partyLeader,tag=!timeFree] title {text:'', color:red, bold:true}
+title @a[tag=partyLeader,tag=!timeFree] subtitle {text:'Open inventory for more options!', color:red, bold:true}
+title @a[tag=partyLeader,tag=!timeFree] actionbar {text:'Open inventory for more options!', color:red, bold:true}
 execute as @a run function du-in:lobby/item_reset
 clear @a
 tag @a remove void

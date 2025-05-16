@@ -12,11 +12,11 @@ scoreboard players set #main cqGoal 10000000
 scoreboard players set #main cqHalf 10000000
 
 #Announce settings
-execute if score #main cqCap matches 10000 run tellraw @a ["",{"text":"Conquest Points ","bold":true,"color":"gold"},{"text":"Max 10000","color":"gray"},{"text":" (Default)","bold":true,"color":"green"}]
-execute if score #main cqCap matches 7000 run tellraw @a ["",{"text":"Conquest Points ","bold":true,"color":"gold"},{"text":"Max 7000 (Battle)","color":"gray"}]
-execute if score #main cqCap matches 5000 run tellraw @a ["",{"text":"Conquest Points ","bold":true,"color":"gold"},{"text":"Max 5000 (Skirmish)","color":"gray"}]
-execute if score #main cqCap matches 12000 run tellraw @a ["",{"text":"Conquest Points ","bold":true,"color":"gold"},{"text":"Max 12000 (Prolonged Battle)","color":"gray"}]
-execute if score #main cqCap matches 15000 run tellraw @a ["",{"text":"Conquest Points ","bold":true,"color":"gold"},{"text":"Max 15000 (War)","color":"gray"}]
+execute if score #main cqCap matches 10000 run tellraw @a ["",{text:"Conquest Points ",bold:true,color:gold},{text:"Max 10000",color:gray},{text:" (Default)",bold:true,color:green}]
+execute if score #main cqCap matches 7000 run tellraw @a ["",{text:"Conquest Points ",bold:true,color:gold},{text:"Max 7000 (Battle)",color:gray}]
+execute if score #main cqCap matches 5000 run tellraw @a ["",{text:"Conquest Points ",bold:true,color:gold},{text:"Max 5000 (Skirmish)",color:gray}]
+execute if score #main cqCap matches 12000 run tellraw @a ["",{text:"Conquest Points ",bold:true,color:gold},{text:"Max 12000 (Prolonged Battle)",color:gray}]
+execute if score #main cqCap matches 15000 run tellraw @a ["",{text:"Conquest Points ",bold:true,color:gold},{text:"Max 15000 (War)",color:gray}]
 
 #Calculate thresholds
 execute if score #main cqGoal >= #main cqCap store result score #main cqGoal run scoreboard players get #main cqCap

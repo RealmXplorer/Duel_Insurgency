@@ -17,8 +17,8 @@ tp @a -999 13 517 -90 0
 spawnpoint @a -999 13 517
 
 #Create new gamemode select label
-kill @e[type=area_effect_cloud,tag=gamemodeLabel]
-summon area_effect_cloud -983 16 517 {Duration:2147483647,Tags:["gamemodeLabel"],CustomNameVisible:1b}
+kill @e[type=interaction,tag=gamemodeLabel]
+summon interaction -983 16 517 {CustomNameVisible:1b,width:0.1f,height:0.1f,Tags:["gamemodeLabel"]}
 function du-in:lobby/display/default/text
 
 tag @a remove win

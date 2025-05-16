@@ -3,7 +3,7 @@ setblock 10029 33 10030 air replace
 
 schedule function du-in:void/hazard/bridge/pick_bridge 2s
 
-tellraw @a [{"text":"The Second Pylon ","bold":true,"color":"dark_purple"},{"text":"glows intensely...","color":"light_purple"}]
+tellraw @a [{text:"The Second Pylon ",bold:true,color:dark_purple},{text:"glows intensely...",color:light_purple}]
 
 scoreboard players set #gonerMax gonerCount 2
 

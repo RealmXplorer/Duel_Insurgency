@@ -1,4 +1,4 @@
-tellraw @a ["",{"text":"The ","bold":false,"color":"gray"},{"text":"Escher ","bold":true,"color":"#ffefa6"},{"text":"map has been chosen!","bold":false,"color":"gray"}]
+tellraw @a ["",{text:"The ",bold:false,color:gray},{text:"Escher ",bold:true,color:"#ffefa6"},{text:"map has been chosen!",bold:false,color:gray}]
 
 #Teleports#
 tp @a[scores={spawnpoint=0..2}] 675 12 -621 -56 7
@@ -32,10 +32,10 @@ execute if entity @a[scores={kit=1000..1001}] run summon interaction 684 10 -604
 execute if entity @a[scores={kit=1000..1001}] run summon interaction 692 12 -606 {Tags:["vending","stable","mapSpecific"],width:1.15f,height:2.1f,response:1b}
 execute if entity @a[scores={kit=1000..1001}] run summon interaction 677 15 -611 {Tags:["vending","stable","mapSpecific"],width:1.15f,height:2.1f,response:1b}
 
-execute if entity @a[scores={kit=1000..1001}] run summon armor_stand 687 20 -614 {Rotation:[0F,0F],Tags:["vendMachine","mapSpecific"],NoGravity:1b,Silent:1b,Invulnerable:1b,Invisible:1b,NoBasePlate:1b,DisabledSlots:4144959,ArmorItems:[{},{},{},{id:"minecraft:spruce_sapling",count:1,components:{"minecraft:item_model":"du-in:other/vending_machine"}}]}
-execute if entity @a[scores={kit=1000..1001}] run summon armor_stand 684 10 -604 {Rotation:[0F,0F],Tags:["vendMachine","mapSpecific"],NoGravity:1b,Silent:1b,Invulnerable:1b,Invisible:1b,NoBasePlate:1b,DisabledSlots:4144959,ArmorItems:[{},{},{},{id:"minecraft:spruce_sapling",count:1,components:{"minecraft:item_model":"du-in:other/vending_machine"}}]}
-execute if entity @a[scores={kit=1000..1001}] run summon armor_stand 692 12 -606 {Rotation:[0F,0F],Tags:["vendMachine","mapSpecific"],NoGravity:1b,Silent:1b,Invulnerable:1b,Invisible:1b,NoBasePlate:1b,DisabledSlots:4144959,ArmorItems:[{},{},{},{id:"minecraft:spruce_sapling",count:1,components:{"minecraft:item_model":"du-in:other/vending_machine"}}]}
-execute if entity @a[scores={kit=1000..1001}] run summon armor_stand 677 15 -611 {Rotation:[-90F,0F],Tags:["vendMachine","mapSpecific"],NoGravity:1b,Silent:1b,Invulnerable:1b,Invisible:1b,NoBasePlate:1b,DisabledSlots:4144959,ArmorItems:[{},{},{},{id:"minecraft:spruce_sapling",count:1,components:{"minecraft:item_model":"du-in:other/vending_machine"}}]}
+execute if entity @a[scores={kit=1000..1001}] run summon armor_stand 687 20 -614 {Rotation:[0F,0F],Tags:["vendMachine","mapSpecific"],NoGravity:1b,Silent:1b,Invulnerable:1b,Invisible:1b,NoBasePlate:1b,DisabledSlots:4144959,equipment:{head:{id:"minecraft:spruce_sapling",count:1,components:{"minecraft:item_model":"du-in:other/vending_machine"}}}}
+execute if entity @a[scores={kit=1000..1001}] run summon armor_stand 684 10 -604 {Rotation:[0F,0F],Tags:["vendMachine","mapSpecific"],NoGravity:1b,Silent:1b,Invulnerable:1b,Invisible:1b,NoBasePlate:1b,DisabledSlots:4144959,equipment:{head:{id:"minecraft:spruce_sapling",count:1,components:{"minecraft:item_model":"du-in:other/vending_machine"}}}}
+execute if entity @a[scores={kit=1000..1001}] run summon armor_stand 692 12 -606 {Rotation:[0F,0F],Tags:["vendMachine","mapSpecific"],NoGravity:1b,Silent:1b,Invulnerable:1b,Invisible:1b,NoBasePlate:1b,DisabledSlots:4144959,equipment:{head:{id:"minecraft:spruce_sapling",count:1,components:{"minecraft:item_model":"du-in:other/vending_machine"}}}}
+execute if entity @a[scores={kit=1000..1001}] run summon armor_stand 677 15 -611 {Rotation:[-90F,0F],Tags:["vendMachine","mapSpecific"],NoGravity:1b,Silent:1b,Invulnerable:1b,Invisible:1b,NoBasePlate:1b,DisabledSlots:4144959,equipment:{head:{id:"minecraft:spruce_sapling",count:1,components:{"minecraft:item_model":"du-in:other/vending_machine"}}}}
 
 
 #Goner Eye#

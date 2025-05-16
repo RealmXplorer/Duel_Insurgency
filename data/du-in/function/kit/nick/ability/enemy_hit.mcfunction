@@ -29,6 +29,6 @@ scoreboard players remove @s[scores={kit=21,cardPower=6..}] cardPower 5
 
 execute if entity @s[tag=stolen] run tag @s add kitDone
 clear @s[tag=stolen] carrot_on_a_stick
-tellraw @s[tag=!sabotaged] [{"text":"You've been hustled!","bold":true,"color":"red"}]
+tellraw @s[tag=!sabotaged] [{text:"You've been hustled!",bold:true,color:red}]
 
 tag @s remove wildeHit

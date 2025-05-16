@@ -4,7 +4,7 @@ tag @s add defaultSelect
 
 function du-in:other/settings/cycle/skin_presets
 
-# tellraw @s ["",{"text":"All skins set to default!","bold":true,"color":"green"}]
+# tellraw @s ["",{text:"All skins set to default!",bold:true,color:green}]
 # playsound minecraft:entity.zombie_villager.converted master @s ~ ~ ~ 1 2
 
 # #If you own the skin, display default

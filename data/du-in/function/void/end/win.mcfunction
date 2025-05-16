@@ -33,11 +33,11 @@ function du-in:music/void/schedule_clear
 execute positioned 97 20 -107 unless score #main pylonsDestroyed matches 4.. run playsound minecraft:soundeffect.pylon.destroy master @a ~ ~ ~ 10000
 
 execute if score #main pylonsDestroyed matches 4.. positioned 97 20 -107 run playsound minecraft:block.sculk_shrieker.shriek master @a ~ ~ ~ 100000 .5
-execute if score #main pylonsDestroyed matches 4.. run title @a[tag=!falseWin] title [{"text":"Multiverse Stability","bold":true,"color":"red"}]
-execute if score #main pylonsDestroyed matches 4.. run title @a[tag=!falseWin,tag=!lobby] subtitle {"text":"COLLAPSING","color":"blue"}
+execute if score #main pylonsDestroyed matches 4.. run title @a[tag=!falseWin] title [{text:"Multiverse Stability",bold:true,color:red}]
+execute if score #main pylonsDestroyed matches 4.. run title @a[tag=!falseWin,tag=!lobby] subtitle {text:"COLLAPSING",color:blue}
 
-execute unless score #main pylonsDestroyed matches 4.. run title @a[tag=!falseWin] title [{"text":"Multiverse Tether","bold":true,"color":"red"}]
-execute unless score #main pylonsDestroyed matches 4.. run title @a[tag=!falseWin,tag=!lobby] subtitle {"text":"DESTROYED","color":"gold"}
+execute unless score #main pylonsDestroyed matches 4.. run title @a[tag=!falseWin] title [{text:"Multiverse Tether",bold:true,color:red}]
+execute unless score #main pylonsDestroyed matches 4.. run title @a[tag=!falseWin,tag=!lobby] subtitle {text:"DESTROYED",color:gold}
 title @a times 5 120 5
 
 #Replace block to stop beacon beam

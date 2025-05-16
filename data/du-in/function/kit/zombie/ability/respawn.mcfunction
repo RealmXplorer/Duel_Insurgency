@@ -21,7 +21,7 @@ playsound minecraft:entity.ghast.shoot master @a ~ ~ ~ 100000 .5 1
 xp set @s[tag=!stolen] 350 levels
 tag @s[tag=stolen,tag=givenStolen] add kitDone
 
-kill @n[type=area_effect_cloud,tag=grave]
+kill @n[type=interaction,tag=grave]
 kill @n[type=falling_block,tag=grave]
 
 

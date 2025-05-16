@@ -6,4 +6,4 @@ tp @s[scores={spawnpoint=5..6}] 10034.0 42 10059.0
 tp @s[scores={spawnpoint=7..}] 10034.0 42 10035.0
 
 damage @s 4 minecraft:generic
-tellraw @s {"text":"YOU CAN'T RUN","bold":true,"color":"gray"}
+tellraw @s {text:"YOU CAN'T RUN",bold:true,color:gray}

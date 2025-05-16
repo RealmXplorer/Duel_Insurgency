@@ -22,4 +22,4 @@ time set night
 scoreboard players reset #main dayNightSetting
 gamerule doDaylightCycle false
 
-tellraw @a [{"text":"Halloween spirit ","bold":true,"color":"dark_purple"},{"text":"drifts through the air!","color":"yellow"}]
+tellraw @a [{text:'Halloween spirit ', bold:true, color:dark_purple},{text:'drifts through the air!', color:yellow}]

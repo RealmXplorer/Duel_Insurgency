@@ -2,7 +2,7 @@
 scoreboard players add @s level 1
 
 #Announce level up
-tellraw @s [{"text":"Level Up!","color":"gold","bold":true},{"text":" (","color":"gray"},{"score":{"name":"@s","objective":"level"},"color":"blue"},{"text":"✫","color":"blue"},{"text":")","color":"gray"}]
+tellraw @s [{text:"Level Up!",color:gold,bold:true},{text:" (",color:gray},{"score":{"name":"@s","objective":"level"},color:blue},{text:"✫",color:blue},{text:")",color:gray}]
 
 #Play sound
 playsound minecraft:entity.player.levelup master @s

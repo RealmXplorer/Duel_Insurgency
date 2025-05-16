@@ -1,6 +1,6 @@
 tag @a add kothIngame
 
-scoreboard objectives modify kothTimer displayname [{"text":"KOTH Points ","bold":true,"color":"red"}]
+scoreboard objectives modify kothTimer displayname [{text:"KOTH Points ",bold:true,color:red}]
 
 scoreboard objectives setdisplay sidebar kothTimer
 

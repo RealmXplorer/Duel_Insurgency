@@ -4,7 +4,7 @@ scoreboard players enable @s info
 clear @s player_head[custom_data={du-in:'pazHead'}]
 
 #Announce kit pick
-tellraw @s [{"text":"Selected the ","bold":true,"color":"gray"},{"text":"PearApplez ","bold":true,"color":"gold"},{"text":"class! ","bold":true,"color":"gray"},{"text":"(Click here for kit info!)","bold":false,"color":"white","underlined":true,"clickEvent":{"action":"run_command","value":"/trigger info add 1"}}]
+tellraw @s [{text:"Selected the ",bold:true,color:gray},{text:"PearApplez ",bold:true,color:gold},{text:"class! ",bold:true,color:gray},{text:"(Click here for kit info!)",bold:false,color:white,"underlined":true,"click_event":{"action":"run_command","command":"/trigger info add 1"}}]
 
 #Set kit score to match kit
 scoreboard players set @s kit 1001

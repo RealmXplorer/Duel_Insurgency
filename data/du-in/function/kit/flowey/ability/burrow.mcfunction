@@ -23,7 +23,7 @@ execute unless entity @s[tag=sabotaged] run particle minecraft:block{block_state
 
 execute if entity @s[scores={floweyHitTimer=88..}] run particle minecraft:block{block_state:"minecraft:dirt"} ~ ~ ~ 0.5 0.1 0.5 1 100 force
 
-tellraw @s[scores={floweyHitTimer=88},tag=sabotaged] [{"text":"You have been rooted into the ground!","bold":true,"color":"red"}]
+tellraw @s[scores={floweyHitTimer=88},tag=sabotaged] [{text:"You have been rooted into the ground!",bold:true,color:red}]
 
 #Sounds#
 execute unless entity @s[tag=sabotaged] run playsound minecraft:block.gravel.hit master @a ~ ~ ~ 10 1

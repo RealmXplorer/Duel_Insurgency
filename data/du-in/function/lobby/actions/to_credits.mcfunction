@@ -11,8 +11,8 @@ function du-in:music/lobby/stop/lobby
 scoreboard players set @s music 0
 
 #Titles
-title @s title {"text":"","color":"red","bold":true}
-title @s subtitle {"text":"","color":"red","bold":true}
+title @s title {text:"",color:red,bold:true}
+title @s subtitle {text:"",color:red,bold:true}
 
 
 stopsound @s record minecraft:music.free

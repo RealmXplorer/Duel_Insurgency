@@ -13,7 +13,7 @@ tag @a remove song
 
 
 #Announce ending
-execute if score #main redPoints >= #main tKothGoal run tellraw @a ["",{"text":"Red Team","bold":true,"color":"red"},{"text":" is about to win!","bold":true,"color":"gray"}]
-execute if score #main bluePoints >= #main tKothGoal run tellraw @a ["",{"text":"Blue Team","bold":true,"color":"blue"},{"text":" is about to win!","bold":true,"color":"gray"}]
-execute if entity @s[tag=song,tag=songEnd,tag=!teamMode,tag=!startgame] run tellraw @a ["",{"selector":"@s","bold":true,"color":"red"},{"text":" is about to win!","bold":true,"color":"gold"}]
+execute if score #main redPoints >= #main tKothGoal run tellraw @a ["",{text:"Red Team",bold:true,color:red},{text:" is about to win!",bold:true,color:gray}]
+execute if score #main bluePoints >= #main tKothGoal run tellraw @a ["",{text:"Blue Team",bold:true,color:blue},{text:" is about to win!",bold:true,color:gray}]
+execute if entity @s[tag=song,tag=songEnd,tag=!teamMode,tag=!startgame] run tellraw @a ["",{selector:"@s",bold:true,color:red},{text:" is about to win!",bold:true,color:gold}]
 tag @a add kothEnd

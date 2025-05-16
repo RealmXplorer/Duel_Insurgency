@@ -1,5 +1,5 @@
 
-tellraw @s [{"text":"Christmas skins ","bold":true,"color":"dark_green"},{"text":"selected!","color":"yellow"}]
+tellraw @s [{text:"Christmas skins ",bold:true,color:dark_green},{text:"selected!",color:yellow}]
 playsound minecraft:entity.zombie_villager.converted master @s ~ ~ ~ 1 2
 
 function du-in:other/settings/cycle/skins/reset

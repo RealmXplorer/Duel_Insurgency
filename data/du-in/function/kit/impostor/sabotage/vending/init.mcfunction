@@ -7,7 +7,7 @@ tag @e[type=interaction,tag=vending,tag=sabotagedMachine] remove stable
 
 playsound minecraft:block.anvil.break master @a ~ ~ ~ 1 1
 
-title @s actionbar {"text":"Vending Machine Sabotaged!","bold":true,"color":"green"}
+title @s actionbar {text:"Vending Machine Sabotaged!",bold:true,color:green}
 playsound minecraft:soundeffect.zap master @a ~ ~ ~ 1 1
 
 function du-in:ingame/scheduled/three_sec_loop

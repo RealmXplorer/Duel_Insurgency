@@ -1,5 +1,5 @@
 #DEFAULT#
-item replace entity @s armor.head with minecraft:player_head[custom_name='{"text":"Steve","color":"white","bold":true,"italic":false}'] 1
-item replace entity @s armor.chest with leather_chestplate[custom_name='{"text":"Steve Chest"}',unbreakable={show_in_tooltip:false},dyed_color={rgb:2664379,show_in_tooltip:false},equippable={slot:"chest",asset_id:"du-in:steve"}] 1
-item replace entity @s armor.legs with leather_leggings[custom_name='{"text":"Steve Legs"}',unbreakable={show_in_tooltip:false},dyed_color={rgb:3949738,show_in_tooltip:false},equippable={slot:"legs",asset_id:"du-in:steve"}] 1
-item replace entity @s armor.feet with leather_boots[custom_name='{"text":"Steve Feet"}',unbreakable={show_in_tooltip:false},dyed_color={rgb:4673362,show_in_tooltip:false},equippable={slot:"feet",asset_id:"du-in:steve"}] 1
+item replace entity @s armor.head with minecraft:player_head[item_name={text:"Steve",color:white,bold:true}] 1
+item replace entity @s armor.chest with leather_chestplate[item_name={text:"Steve Chest"},unbreakable={},tooltip_display={hidden_components:[dyed_color]},dyed_color=2664379,equippable={slot:"chest",asset_id:"du-in:steve"}] 1
+item replace entity @s armor.legs with leather_leggings[item_name={text:"Steve Legs"},unbreakable={},tooltip_display={hidden_components:[dyed_color]},dyed_color=3949738,equippable={slot:"legs",asset_id:"du-in:steve"}] 1
+item replace entity @s armor.feet with leather_boots[item_name={text:"Steve Feet"},unbreakable={},tooltip_display={hidden_components:[dyed_color]},dyed_color=4673362,equippable={slot:"feet",asset_id:"du-in:steve"}] 1

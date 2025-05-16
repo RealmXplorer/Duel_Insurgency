@@ -1,4 +1,4 @@
-title @a actionbar {"text":"","color":"gold","extra":[{"selector":"@s"},{"text":" is halfway to victory!"}]}
+title @a actionbar {text:"",color:gold,extra:[{selector:"@s"},{text:" is halfway to victory!"}]}
 #execute at @a run playsound minecraft:block.anvil.use master @a ~ ~ ~ 1 1.15
 execute as @a at @s run playsound minecraft:soundeffect.woosh master @s ~ ~ ~ .5 1
 execute as @a at @s run playsound minecraft:soundeffect.woosh master @s ~ ~ ~ .5 2

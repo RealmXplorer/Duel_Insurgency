@@ -8,8 +8,8 @@ execute as @e[type=marker,tag=mapVote] at @s run setblock ~ ~-1 ~ minecraft:red_
 kill @e[tag=displayItem]
 
 #Reset Gamemode Displays
-kill @e[type=area_effect_cloud,tag=gamemodeLabel]
-summon area_effect_cloud -983 16 517 {Duration:2147483647,Tags:["gamemodeLabel"],CustomNameVisible:1b}
+kill @e[type=interaction,tag=gamemodeLabel]
+summon interaction -983 16 517 {CustomNameVisible:1b,width:0.1f,height:0.1f,Tags:["gamemodeLabel"]}
 function du-in:lobby/display/default/text
 
 #Stop music
@@ -81,8 +81,8 @@ scoreboard players set @a kitList 8
 tag @a remove sus
 #Sets title
 title @a times 0 60 0
-title @a title {"text":"","color":"red","bold":true}
-title @a subtitle {"text":"Open inventory for more options!","color":"red","bold":true}
-title @a actionbar {"text":"Open inventory for more options!","color":"red","bold":true}
+title @a title {text:"",color:red,bold:true}
+title @a subtitle {text:"Open inventory for more options!",color:red,bold:true}
+title @a actionbar {text:"Open inventory for more options!",color:red,bold:true}
 function du-in:lobby/scheduled/gamemode_select
 execute at @a run playsound minecraft:entity.ender_dragon.flap master @a ~ ~ ~ 1 1.5

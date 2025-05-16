@@ -22,6 +22,6 @@ scoreboard players set @s lobby 2
 scoreboard players set #main lobby 2
 
 title @a times 0 60 0
-title @s title {"text":"","color":"red","bold":true}
-title @s[tag=!teamMode] subtitle {"text":"Open inventory to select a character!","color":"red","bold":true}
-title @s[tag=teamMode] subtitle {"text":"Pick a team and open inventory to select a character!","color":"red","bold":true}
+title @s title {text:"",color:red,bold:true}
+title @s[tag=!teamMode] subtitle {text:"Open inventory to select a character!",color:red,bold:true}
+title @s[tag=teamMode] subtitle {text:"Pick a team and open inventory to select a character!",color:red,bold:true}

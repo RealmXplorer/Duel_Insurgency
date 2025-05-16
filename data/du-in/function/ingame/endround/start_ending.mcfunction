@@ -10,7 +10,7 @@ execute if entity @a[tag=!teamMode,tag=!falseWin,tag=!lobby,tag=!voidLose,tag=!v
 execute if entity @a[tag=teamMode,tag=win,tag=!falseWin,tag=!voidLose,tag=!void] run function du-in:ingame/endround/team_title
 
 #Wins subtitle(only if not tied)
-title @a[tag=!falseWin,tag=!lobby,tag=!voidLose,tag=!void,tag=!tie] subtitle {"text":"WINS","color":"gold"}
+title @a[tag=!falseWin,tag=!lobby,tag=!voidLose,tag=!void,tag=!tie] subtitle {text:"WINS",color:gold}
 
 title @a times 5 120 5
 

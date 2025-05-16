@@ -14,7 +14,7 @@ attribute @s minecraft:attack_damage modifier add team_dead -100 add_value
 execute if entity @s[scores={deathCountdown=..0}] run function du-in:ingame/team_death/countdown
 
 #Title
-execute unless entity @s[tag=!ranMode] run title @s actionbar {"text":"Open inventory to switch kit!","color":"red","bold":true}
+execute unless entity @s[tag=!ranMode] run title @s actionbar {text:"Open inventory to switch kit!",color:red,bold:true}
 
 #Timer
 scoreboard players remove @s deathCountdown 1

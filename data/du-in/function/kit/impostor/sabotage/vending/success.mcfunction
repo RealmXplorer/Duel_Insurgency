@@ -1,7 +1,7 @@
 effect give @s instant_damage 1 1
 effect give @s blindness 1 2
 
-title @s actionbar {"text":"THIS MACHINE IS BROKEN?!?!?!","bold":true,"color":"red"}
+title @s actionbar {text:"THIS MACHINE IS BROKEN?!?!?!",bold:true,color:red}
 
 tag @e[type=interaction,tag=vending] add stable
 tag @e[type=interaction,tag=vending] remove sabotagedMachine

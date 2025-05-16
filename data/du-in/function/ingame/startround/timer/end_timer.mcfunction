@@ -15,8 +15,8 @@ scoreboard players set @a music 0
 scoreboard players reset @a lobby
 
 title @a times 0 10 5
-title @a[scores={team=1}] subtitle {"text":"Red Team","color":"red","bold":true}
-title @a[scores={team=2}] subtitle {"text":"Blue Team","color":"blue","bold":true}
+title @a[scores={team=1}] subtitle {text:"Red Team",color:red,bold:true}
+title @a[scores={team=2}] subtitle {text:"Blue Team",color:blue,bold:true}
 
 #tp @a[tag=inRing] 1996 7 1004 -135 0
 
@@ -26,4 +26,4 @@ execute at @e[type=armor_stand,tag=vendMachine] run setblock ~ ~ ~ light[level=9
 
 scoreboard players reset #main titleTimer2
 
-execute if entity @a[tag=devMode,tag=partyLeader] run item replace entity @a hotbar.4 with minecraft:barrier[custom_name='{"text":"End Game","color":"red","bold":true,"italic":false}',lore=['{"text":"Throw to activate!","color":"dark_purple","bold":true}'],enchantment_glint_override=true]
+execute if entity @a[tag=devMode,tag=partyLeader] run item replace entity @a hotbar.4 with minecraft:barrier[item_name={text:'End Game',bold:true,color:red},lore=[{text:'Throw to activate!',color:dark_purple,bold:true}],enchantment_glint_override=true]

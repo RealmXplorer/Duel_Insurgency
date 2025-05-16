@@ -2,4 +2,4 @@ execute at @s run summon minecraft:arrow ~ ~2.1 ~ {Motion:[0.0,-10.0,0.0],Fire:7
 effect give @s minecraft:slowness 2 4 true
 effect give @s minecraft:mining_fatigue 2 0 true
 
-tellraw @s [{"text":"You have been caught in a flaming spider web!","bold":true,"color":"red"}]
+tellraw @s [{text:"You have been caught in a flaming spider web!",bold:true,color:red}]

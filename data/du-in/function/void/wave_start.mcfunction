@@ -17,12 +17,12 @@ execute as @a[gamemode=!spectator] run scoreboard players add @a gonersKilled 12
 execute if score #main pylonsDestroyed matches 3 run schedule function du-in:void/hazard/shock/prepare 20s
 
 title @a title " "
-title @a subtitle [{"text":"Wave ","color":"light_purple","bold":true},{"score":{"name":"#main","objective":"wave"},"color":"dark_purple","bold":true},{"text":"/2","color":"dark_purple","bold":true}]
+title @a subtitle [{text:"Wave ",color:light_purple,bold:true},{"score":{"name":"#main","objective":"wave"},color:dark_purple,bold:true},{text:"/2",color:dark_purple,bold:true}]
 
-execute if score #main pylonsDestroyed matches ..2 run tellraw @a [{"text":"The Pylon ","bold":true,"color":"dark_purple"},{"text":"reignites!...","color":"light_purple"}]
-execute if score #main pylonsDestroyed matches 3 run tellraw @a [{"text":"The world is ending...","bold":true,"color":"dark_purple"}]
+execute if score #main pylonsDestroyed matches ..2 run tellraw @a [{text:"The Pylon ",bold:true,color:dark_purple},{text:"reignites!...",color:light_purple}]
+execute if score #main pylonsDestroyed matches 3 run tellraw @a [{text:"The world is ending...",bold:true,color:dark_purple}]
 
 
-bossbar set gast:pylon name ["",{"text":"Pylon Stabilization: ","bold":true,"color":"white"},{"score":{"name":"@a[gamemode=adventure,tag=void,limit=1]","objective":"gonersKilled"},"color":"red","bold":true},{"text":" Goners left","color":"gray","bold":true}]
+bossbar set gast:pylon name ["",{text:"Pylon Stabilization: ",bold:true,color:white},{"score":{"name":"@a[gamemode=adventure,tag=void,limit=1]","objective":"gonersKilled"},color:red,bold:true},{text:" Goners left",color:gray,bold:true}]
 execute store result bossbar gast:pylon max run scoreboard players get @a[gamemode=adventure,tag=void,limit=1] gonersKilled
 

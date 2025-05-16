@@ -7,7 +7,7 @@ clear @s player_head[custom_data={du-in:'aangHead'}]
 #playsound minecraft:nick.voice master @s ~ ~ ~ 100 1
 
 #Announce kit pick
-tellraw @s [{"text":"Selected the ","bold":true,"color":"gray"},{"text":"Aang ","bold":true,"color":"gold"},{"text":"class! ","bold":true,"color":"gray"},{"text":"(Click here for kit info!)","bold":false,"color":"white","underlined":true,"clickEvent":{"action":"run_command","value":"/trigger info add 1"}}]
+tellraw @s [{text:"Selected the ",bold:true,color:gray},{text:"Aang ",bold:true,color:gold},{text:"class! ",bold:true,color:gray},{text:"(Click here for kit info!)",bold:false,color:white,"underlined":true,"click_event":{"action":"run_command","command":"/trigger info add 1"}}]
 
 #Set kit score to match kit
 scoreboard players set @s kit 32

@@ -17,7 +17,7 @@ team modify Blue color dark_green
 team modify displayRedTeam color red
 team modify displayBlueTeam color dark_green
 
-team modify Red prefix {"text":"[Saint] ","bold":true,"color":"red"}
-team modify Blue prefix {"text":"[Elf] ","bold":true,"color":"dark_green"}
+team modify Red prefix {text:"[Saint] ",bold:true,color:red}
+team modify Blue prefix {text:"[Elf] ",bold:true,color:dark_green}
 
-tellraw @a [{"text":"Christmas ","bold":true,"color":"red"},{"text":"lobby theme selected!","color":"yellow"}]
+tellraw @a [{text:"Christmas ",bold:true,color:red},{text:"lobby theme selected!",color:yellow}]

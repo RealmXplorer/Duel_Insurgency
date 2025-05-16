@@ -5,6 +5,6 @@ schedule function du-in:void/hazard/bridge/pick_bridge 2s
 scoreboard players set #main pylonFireList 0
 
 schedule function du-in:void/hazard/fire/pick_pylon 10s
-tellraw @a [{"text":"The Third Pylon ","bold":true,"color":"dark_purple"},{"text":"hums ominously...","color":"light_purple"}]
+tellraw @a [{text:"The Third Pylon ",bold:true,color:dark_purple},{text:"hums ominously...",color:light_purple}]
 
 scoreboard players set #gonerMax gonerCount 4

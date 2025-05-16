@@ -11,11 +11,11 @@ execute as @a[tag=partyLeader,limit=1] if score @s ctfScale matches 5.. run scor
 scoreboard players set #main ctfClose 100
 
 #Announce settings
-execute if score #main ctfMax matches 3 run tellraw @a ["",{"text":"Flag Captures ","bold":true,"color":"gold"},{"text":"Max 3","color":"gray"},{"text":" (Default)","bold":true,"color":"green"}]
-execute if score #main ctfMax matches 5 run tellraw @a ["",{"text":"Flag Captures ","bold":true,"color":"gold"},{"text":"Max 5 (Longer)","color":"gray"}]
-execute if score #main ctfMax matches 7 run tellraw @a ["",{"text":"Flag Captures ","bold":true,"color":"gold"},{"text":"Max 7 (Extended)","color":"gray"}]
-execute if score #main ctfMax matches 1 run tellraw @a ["",{"text":"Flag Captures ","bold":true,"color":"gold"},{"text":"Max 1 (First to Flag)","color":"gray"}]
-execute if score #main ctfMax matches 2 run tellraw @a ["",{"text":"Flag Captures ","bold":true,"color":"gold"},{"text":"Max 2 (Best 2 of 3)","color":"gray"}]
+execute if score #main ctfMax matches 3 run tellraw @a ["",{text:"Flag Captures ",bold:true,color:gold},{text:"Max 3",color:gray},{text:" (Default)",bold:true,color:green}]
+execute if score #main ctfMax matches 5 run tellraw @a ["",{text:"Flag Captures ",bold:true,color:gold},{text:"Max 5 (Longer)",color:gray}]
+execute if score #main ctfMax matches 7 run tellraw @a ["",{text:"Flag Captures ",bold:true,color:gold},{text:"Max 7 (Extended)",color:gray}]
+execute if score #main ctfMax matches 1 run tellraw @a ["",{text:"Flag Captures ",bold:true,color:gold},{text:"Max 1 (First to Flag)",color:gray}]
+execute if score #main ctfMax matches 2 run tellraw @a ["",{text:"Flag Captures ",bold:true,color:gold},{text:"Max 2 (Best 2 of 3)",color:gray}]
 
 #Calculate threshold
 execute if score #main ctfClose >= #main ctfMax store result score #main ctfClose run scoreboard players get #main ctfMax

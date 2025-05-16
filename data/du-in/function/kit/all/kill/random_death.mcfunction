@@ -1,6 +1,6 @@
 # #This function runs in Random kit on death
-# title @s title {"text":"  ","color":"red","bold":true}
-# title @s subtitle {"text":"  ","color":"red","bold":true}
+# title @s title {text:"  ",color:red,bold:true}
+# title @s subtitle {text:"  ",color:red,bold:true}
 
 # execute if entity @s[scores={kit=3},tag=!stolen] run function du-in:kit/slime/death/init
 

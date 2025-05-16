@@ -6,4 +6,4 @@ execute unless entity @a[tag=devMode] run scoreboard players add @s[tag=lose] ex
 execute if score @s exp >= @s expCap run function du-in:other/level_up
 
 #Announce level progress
-execute unless entity @a[tag=devMode] run tellraw @s [{"text":"Level progress:","color":"blue"},{"text":" (","color":"gray"},{"score":{"name":"@s","objective":"exp"},"color":"gray"},{"text":"/","color":"gray"},{"score":{"name":"@s","objective":"expCap"},"color":"gray"},{"text":")","color":"gray"}]
+execute unless entity @a[tag=devMode] run tellraw @s [{text:"Level progress:",color:blue},{text:" (",color:gray},{"score":{"name":"@s","objective":"exp"},color:gray},{text:"/",color:gray},{"score":{"name":"@s","objective":"expCap"},color:gray},{text:")",color:gray}]

@@ -16,7 +16,7 @@ execute if entity @s[scores={kit=4}] run playsound minecraft:entity.creeper.prim
 
 execute if entity @s[scores={kit=6}] run playsound minecraft:entity.iron_golem.hurt voice @a ~ ~ ~ 1 .85
 
-execute if entity @s[scores={kit=7}] run tellraw @a ["",{"selector":"@s","color":"yellow"},{"text":" joined the game","color":"yellow"}]
+execute if entity @s[scores={kit=7}] run tellraw @a ["",{selector:"@s",color:yellow},{text:" joined the game",color:yellow}]
 execute if entity @s[scores={kit=7}] run playsound minecraft:ui.toast.in voice @a ~ ~ ~ 1 1
 
 execute if entity @s[scores={kit=8}] unless entity @s[scores={villSkin=1..}] run playsound minecraft:entity.villager.ambient voice @a ~ ~ ~ 1 1
@@ -27,7 +27,7 @@ execute if entity @s[scores={kit=10}] run playsound minecraft:gaster.intro voice
 
 execute if entity @s[scores={kit=12}] run playsound minecraft:flowey.intro voice @a ~ ~ ~ 1 1
 
-execute if entity @s[scores={kit=20}] run tellraw @a ["",{"selector":"@s","color":"#AF4BFF","bold":true},{"text":" has awoken!","color":"#AF4BFF","bold":true}]
+execute if entity @s[scores={kit=20}] run tellraw @a ["",{selector:"@s",color:"#AF4BFF",bold:true},{text:" has awoken!",color:"#AF4BFF",bold:true}]
 execute if entity @s[scores={kit=20}] run playsound minecraft:ui.toast.in voice @a ~ ~ ~ 1 .5
 
 execute if entity @s[scores={kit=1002},tag=kothIngame] run playsound minecraft:jerma.koth voice @a ~ ~ ~ 1000 1

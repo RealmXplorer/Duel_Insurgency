@@ -13,8 +13,8 @@ team modify Blue color blue
 team modify displayRedTeam color red
 team modify displayBlueTeam color blue
 
-team modify Red prefix {"text":"[Red] ","bold":true,"color":"red"}
-team modify Blue prefix {"text":"[Blue] ","bold":true,"color":"blue"}
+team modify Red prefix {text:"[Red] ",bold:true,color:red}
+team modify Blue prefix {text:"[Blue] ",bold:true,color:blue}
 
 tp @a[tag=!subLobby,tag=!void,tag=!playing] -999 13 517 -90 0
 

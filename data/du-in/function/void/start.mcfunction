@@ -176,10 +176,10 @@ execute if entity @a[scores={kit=1000..1001}] run summon interaction 10029 42 10
 execute if entity @a[scores={kit=1000..1001}] run summon interaction 10034 42 10063 {Tags:["vending","stable","mapSpecific"],width:1.15f,height:2.1f,response:1b}
 execute if entity @a[scores={kit=1000..1001}] run summon interaction 10062 42 10058 {Tags:["vending","stable","mapSpecific"],width:1.15f,height:2.1f,response:1b}
 
-execute if entity @a[scores={kit=1000..1001}] run summon armor_stand 10057 42 10030 {Rotation:[90F,0F],Tags:["vendMachine","mapSpecific"],NoGravity:1b,Silent:1b,Invulnerable:1b,Invisible:1b,NoBasePlate:1b,DisabledSlots:4144959,ArmorItems:[{},{},{},{id:"minecraft:spruce_sapling",count:1,components:{"minecraft:item_model":"du-in:other/vending_machine"}}]}
-execute if entity @a[scores={kit=1000..1001}] run summon armor_stand 10029 42 10035 {Rotation:[0F,0F],Tags:["vendMachine","mapSpecific"],NoGravity:1b,Silent:1b,Invulnerable:1b,Invisible:1b,NoBasePlate:1b,DisabledSlots:4144959,ArmorItems:[{},{},{},{id:"minecraft:spruce_sapling",count:1,components:{"minecraft:item_model":"du-in:other/vending_machine"}}]}
-execute if entity @a[scores={kit=1000..1001}] run summon armor_stand 10034 42 10063 {Rotation:[-90F,0F],Tags:["vendMachine","mapSpecific"],NoGravity:1b,Silent:1b,Invulnerable:1b,Invisible:1b,NoBasePlate:1b,DisabledSlots:4144959,ArmorItems:[{},{},{},{id:"minecraft:spruce_sapling",count:1,components:{"minecraft:item_model":"du-in:other/vending_machine"}}]}
-execute if entity @a[scores={kit=1000..1001}] run summon armor_stand 10062 42 10058 {Rotation:[180F,0F],Tags:["vendMachine","mapSpecific"],NoGravity:1b,Silent:1b,Invulnerable:1b,Invisible:1b,NoBasePlate:1b,DisabledSlots:4144959,ArmorItems:[{},{},{},{id:"minecraft:spruce_sapling",count:1,components:{"minecraft:item_model":"du-in:other/vending_machine"}}]}
+execute if entity @a[scores={kit=1000..1001}] run summon armor_stand 10057 42 10030 {Rotation:[90F,0F],Tags:["vendMachine","mapSpecific"],NoGravity:1b,Silent:1b,Invulnerable:1b,Invisible:1b,NoBasePlate:1b,DisabledSlots:4144959,equipment:{head:{id:"minecraft:spruce_sapling",count:1,components:{"minecraft:item_model":"du-in:other/vending_machine"}}}}
+execute if entity @a[scores={kit=1000..1001}] run summon armor_stand 10029 42 10035 {Rotation:[0F,0F],Tags:["vendMachine","mapSpecific"],NoGravity:1b,Silent:1b,Invulnerable:1b,Invisible:1b,NoBasePlate:1b,DisabledSlots:4144959,equipment:{head:{id:"minecraft:spruce_sapling",count:1,components:{"minecraft:item_model":"du-in:other/vending_machine"}}}}
+execute if entity @a[scores={kit=1000..1001}] run summon armor_stand 10034 42 10063 {Rotation:[-90F,0F],Tags:["vendMachine","mapSpecific"],NoGravity:1b,Silent:1b,Invulnerable:1b,Invisible:1b,NoBasePlate:1b,DisabledSlots:4144959,equipment:{head:{id:"minecraft:spruce_sapling",count:1,components:{"minecraft:item_model":"du-in:other/vending_machine"}}}}
+execute if entity @a[scores={kit=1000..1001}] run summon armor_stand 10062 42 10058 {Rotation:[180F,0F],Tags:["vendMachine","mapSpecific"],NoGravity:1b,Silent:1b,Invulnerable:1b,Invisible:1b,NoBasePlate:1b,DisabledSlots:4144959,equipment:{head:{id:"minecraft:spruce_sapling",count:1,components:{"minecraft:item_model":"du-in:other/vending_machine"}}}}
 
 #Vents
 summon interaction 10067 41 10025 {Tags:["ventBlock","mapSpecific"],width:1.05f,height:1.25f,response:1b}
@@ -218,17 +218,17 @@ advancement grant @a[tag=void] only du-in:void/void
 
 execute unless score #main matchDeaths matches 1.. run scoreboard players set Insurgents matchDeaths 0
 
-#execute if score #main pylonsDestroyed matches ..2 run scoreboard objectives modify matchDeaths displayname ["",{"text":"Match Deaths ","bold":true,"color":"red"},{"text":"(Max 2)","color":"gray"}]
-scoreboard objectives modify playerCount displayname ["",{"text":"Players left","bold":true,"color":"red"}]
+#execute if score #main pylonsDestroyed matches ..2 run scoreboard objectives modify matchDeaths displayname ["",{text:"Match Deaths ",bold:true,color:red},{text:"(Max 2)",color:gray}]
+scoreboard objectives modify playerCount displayname ["",{text:"Players left",bold:true,color:red}]
 
 scoreboard objectives setdisplay sidebar playerCount
 
 scoreboard players set #main wave 1
 
 title @a title " "
-execute unless score #main pylonsDestroyed matches 0 unless score #main pylonsDestroyed matches 3 run title @a subtitle [{"text":"Wave ","color":"light_purple","bold":true},{"score":{"name":"#main","objective":"wave"},"color":"dark_purple","bold":true},{"text":"/2","color":"dark_purple","bold":true}]
+execute unless score #main pylonsDestroyed matches 0 unless score #main pylonsDestroyed matches 3 run title @a subtitle [{text:"Wave ",color:light_purple,bold:true},{"score":{"name":"#main","objective":"wave"},color:dark_purple,bold:true},{text:"/2",color:dark_purple,bold:true}]
 
-bossbar set gast:pylon name [{"text":"Pylon Stabilization: ","bold":true,"color":"white"},{"score":{"name":"@a[gamemode=adventure,tag=void,limit=1]","objective":"gonersKilled"},"color":"red","bold":true},{"text":" Goners left","color":"gray","bold":true}]
+bossbar set gast:pylon name [{text:"Pylon Stabilization: ",bold:true,color:white},{"score":{"name":"@a[gamemode=adventure,tag=void,limit=1]","objective":"gonersKilled"},color:red,bold:true},{text:" Goners left",color:gray,bold:true}]
 execute store result bossbar gast:pylon max run scoreboard players get @a[gamemode=adventure,tag=void,limit=1] gonersKilled
 
 scoreboard players set @a team 1
@@ -250,7 +250,7 @@ execute unless score #main pylonsDestroyed matches 3 run bossbar set gast:pylon 
 execute if score #main pylonsDestroyed matches 3 run bossbar set gast:pylon4 players @a
 execute if score #main pylonsDestroyed matches 3 run bossbar set gast:pylon4 visible true
 
-bossbar set gast:pylon4 name [{"text":"Time to Pylon shutdown: ","bold":true,"color":"white"},{"text":"SURVIVE","bold":true,"color":"red"}]
+bossbar set gast:pylon4 name [{text:"Time to Pylon shutdown: ",bold:true,color:white},{text:"SURVIVE",bold:true,color:red}]
 execute store result bossbar gast:pylon4 max run scoreboard players get @a[gamemode=adventure,tag=void,limit=1] pylonTimer
 
 schedule function du-in:void/spawn/vending 10t

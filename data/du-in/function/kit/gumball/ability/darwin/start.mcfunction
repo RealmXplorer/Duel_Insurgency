@@ -4,8 +4,8 @@ tag @s[tag=sabotaged] add noClothes
 
 execute as @a[tag=noClothes] at @s run function du-in:kit/gumball/ability/darwin/no_clothes
 
-#title @s title {"text":"Imagine them ","color":"red"}
-#title @s subtitle {"text":"without their clothes on","color":"red"}
+#title @s title {text:"Imagine them ",color:red}
+#title @s subtitle {text:"without their clothes on",color:red}
 #title @s times 1s 10t 1s
 
 #effect give @s minecraft:speed 5 2 true

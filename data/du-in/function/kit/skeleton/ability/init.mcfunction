@@ -4,13 +4,13 @@ clear @s #minecraft:arrows
 scoreboard players add @s[tag=!sabotaged] skeletonMode 1
 scoreboard players set @s[scores={skeletonMode=3..},tag=!sabotaged] skeletonMode 1
 
-# item replace entity @s[scores={skeletonMode=1}] hotbar.8 with tipped_arrow[custom_name='{"text":"Slowness Arrows","color":"gold","bold":true,"italic":false}',lore=['{"text":"Throw or use to go back to sword mode","color":"dark_purple","bold":true}'],potion_contents={potion:"minecraft:slowness"}] 4
-# item replace entity @s[scores={skeletonMode=2}] hotbar.8 with tipped_arrow[custom_name='{"text":"Poison Arrows","color":"gold","bold":true,"italic":false}',lore=['{"text":"Throw or use to go back to sword mode","color":"dark_purple","bold":true}'],potion_contents={potion:"minecraft:poison"}] 4
-give @s[scores={skeletonMode=1}] tipped_arrow[custom_name='{"text":"Slowness Arrows","color":"gold","bold":true,"italic":false}',lore=['{"text":"Throw or use to go back to sword mode","color":"dark_purple","bold":true}'],potion_contents={potion:"minecraft:slowness"}] 3
-give @s[scores={skeletonMode=2}] tipped_arrow[custom_name='{"text":"Poison Arrows","color":"gold","bold":true,"italic":false}',lore=['{"text":"Throw or use to go back to sword mode","color":"dark_purple","bold":true}'],potion_contents={potion:"minecraft:poison"}] 3
+# item replace entity @s[scores={skeletonMode=1}] hotbar.8 with tipped_arrow[item_name={text:"Slowness Arrows",color:gold,bold:true},lore=[{text:"Throw or use to go back to sword mode",color:dark_purple,bold:true}],potion_contents={potion:"minecraft:slowness"}] 4
+# item replace entity @s[scores={skeletonMode=2}] hotbar.8 with tipped_arrow[item_name={text:"Poison Arrows",color:gold,bold:true},lore=[{text:"Throw or use to go back to sword mode",color:dark_purple,bold:true}],potion_contents={potion:"minecraft:poison"}] 4
+give @s[scores={skeletonMode=1}] tipped_arrow[item_name={text:"Slowness Arrows",color:gold,bold:true},lore=[{text:"Throw or use to go back to sword mode",color:dark_purple,bold:true}],potion_contents={potion:"minecraft:slowness"}] 3
+give @s[scores={skeletonMode=2}] tipped_arrow[item_name={text:"Poison Arrows",color:gold,bold:true},lore=[{text:"Throw or use to go back to sword mode",color:dark_purple,bold:true}],potion_contents={potion:"minecraft:poison"}] 3
 
-# execute if entity @s[tag=stolen] unless entity @a[scores={kit=30,skeletonMode=2},tag=!stolen,sort=nearest,limit=1] run item replace entity @s hotbar.8 with tipped_arrow[custom_name='{"text":"Slowness Arrows","color":"gold","bold":true,"italic":false}',lore=['{"text":"Throw or use to go back to sword mode","color":"dark_purple","bold":true}'],potion_contents={potion:"minecraft:slowness"}] 1
-# execute if entity @s[tag=stolen] if entity @a[scores={kit=30,skeletonMode=2},tag=!stolen,sort=nearest,limit=1] run item replace entity @s hotbar.8 with tipped_arrow[custom_name='{"text":"Poison Arrows","color":"gold","bold":true,"italic":false}',lore=['{"text":"Throw or use to go back to sword mode","color":"dark_purple","bold":true}'],potion_contents={potion:"minecraft:poison"}] 1
+# execute if entity @s[tag=stolen] unless entity @a[scores={kit=30,skeletonMode=2},tag=!stolen,sort=nearest,limit=1] run item replace entity @s hotbar.8 with tipped_arrow[item_name={text:"Slowness Arrows",color:gold,bold:true},lore=[{text:"Throw or use to go back to sword mode",color:dark_purple,bold:true}],potion_contents={potion:"minecraft:slowness"}] 1
+# execute if entity @s[tag=stolen] if entity @a[scores={kit=30,skeletonMode=2},tag=!stolen,sort=nearest,limit=1] run item replace entity @s hotbar.8 with tipped_arrow[item_name={text:"Poison Arrows",color:gold,bold:true},lore=[{text:"Throw or use to go back to sword mode",color:dark_purple,bold:true}],potion_contents={potion:"minecraft:poison"}] 1
 
 
 execute if entity @s[tag=sabotaged] run function du-in:kit/skeleton/ability/sabotaged

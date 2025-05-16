@@ -2,7 +2,7 @@
 tag @r add partyLeader
 
 #Announce new party leader
-tellraw @a [{"selector":"@a[tag=partyLeader]"},{"text":" is now the party leader!","bold":true,"color":"gold"}]
+tellraw @a [{selector:"@a[tag=partyLeader]"},{text:" is now the party leader!",bold:true,color:gold}]
 
 #Reset lobby music
 execute if score #main lobby matches 1 run stopsound @a[tag=!parkour,tag=!shop] record

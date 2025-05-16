@@ -1,5 +1,5 @@
-title @s[tag=!lose] title {"text":"  ","color":"red","bold":true}
-title @s[tag=!lose] subtitle {"text":"  ","color":"red","bold":true}
+title @s[tag=!lose] title {text:"  ",color:red,bold:true}
+title @s[tag=!lose] subtitle {text:"  ",color:red,bold:true}
 
 #Drop flag if player has flag and dies
 execute if entity @s[tag=flagGot] run function du-in:ingame/ctf/flag_death

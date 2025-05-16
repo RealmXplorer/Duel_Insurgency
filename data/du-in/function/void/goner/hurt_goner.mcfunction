@@ -3,7 +3,7 @@
 scoreboard players set @s comboHitTimer 0
 scoreboard players add @s comboScore 1
 
-#execute if entity @s[tag=voidReady] run tellraw @a [{"text":"The Void reaffirms its grasp...","bold":true,"color":"red"}]
+#execute if entity @s[tag=voidReady] run tellraw @a [{text:"The Void reaffirms its grasp...",bold:true,color:red}]
 #tag @s remove voidReady
 
 #Combos Sounds

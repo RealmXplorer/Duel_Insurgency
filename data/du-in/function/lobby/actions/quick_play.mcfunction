@@ -10,7 +10,7 @@ tag @a[tag=!kitPicked,tag=!spect] add random
 #Make it so players do not go into spectator, unless they already are#
 tag @a[tag=!kitPicked,tag=!spect] add kitPicked
 
-title @a subtitle {"text":""}
+title @a subtitle {text:""}
 
 #Pick random map#
 function du-in:maps/start/random

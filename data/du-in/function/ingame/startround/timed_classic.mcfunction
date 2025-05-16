@@ -1,6 +1,6 @@
 tag @a add cIngame
 
-scoreboard objectives modify killIngame displayname ["",{"text":"Classic Kills ","bold":true,"color":"gold"}]
+scoreboard objectives modify killIngame displayname ["",{text:"Classic Kills ",bold:true,color:gold}]
 
 scoreboard objectives setdisplay sidebar killIngame
 
