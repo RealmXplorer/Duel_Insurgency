@@ -35,6 +35,16 @@ attribute @s attack_damage modifier remove kratos_rage
 attribute @s movement_speed modifier remove kratos_rage
 attribute @s attack_speed modifier remove kratos_rage
 
+##Kratos
+attribute @s movement_speed modifier remove kratos_ability
+attribute @s attack_damage modifier remove kratos_ability
+attribute @s attack_knockback modifier remove kratos_ability
+attribute @s knockback_resistance modifier remove kratos_ability
+attribute @s minecraft:armor modifier remove kratos_ability
+attribute @s minecraft:armor_toughness modifier remove kratos_ability
+#Damage (sabotage)
+attribute @s minecraft:attack_damage modifier remove kratos_attack_sabotage
+
 ##Clairen
 attribute @s attack_damage modifier remove clairen_damage
 

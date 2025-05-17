@@ -1,0 +1,1 @@
+playsound minecraft:flowey.intro voice @a ~ ~ ~ 1 1

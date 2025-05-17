@@ -1,0 +1,1 @@
+playsound minecraft:entity.creeper.primed voice @a ~ ~ ~ 1000 1

@@ -1,0 +1,1 @@
+playsound minecraft:entity.spider.ambient voice @a ~ ~ ~ 1000 1

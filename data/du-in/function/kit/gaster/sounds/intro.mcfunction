@@ -1,0 +1,1 @@
+playsound minecraft:gaster.intro voice @a ~ ~ ~ 1 1

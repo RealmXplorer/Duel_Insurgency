@@ -1,0 +1,2 @@
+#Default Phone#
+item replace entity @s hotbar.0 with minecraft:music_disc_stal[item_name=[{text:"«EPIC» ",bold:true,color:gold},{text:"Combat Phone",color:"#FF9CF8",bold:true}],unbreakable={},item_model="du-in:weapons/phone",attribute_modifiers=[{type:"attack_damage",id:"attack_damage",amount:2.5,operation:"add_value",slot:"mainhand"},{type:"attack_speed",id:"attack_speed",amount:40,operation:"add_value",slot:"mainhand"},{id:"attack_knockback",type:"attack_knockback",amount:1,operation:"add_value",slot:"mainhand"}]] 1

@@ -1,0 +1,1 @@
+playsound minecraft:entity.iron_golem.hurt voice @a ~ ~ ~ 1 .85

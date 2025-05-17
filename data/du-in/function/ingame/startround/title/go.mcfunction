@@ -13,14 +13,15 @@ title @a[scores={titleTimer=8}] title {text:"GO!",color:"#00FFDD",bold:true}
 title @a[scores={titleTimer=6}] title {text:"GO!",color:"#00A2FF",bold:true}
 title @a[scores={titleTimer=4}] title {text:"GO!",color:"#002AFF",bold:true}
 title @a[scores={titleTimer=2}] title {text:"GO!",color:"#5D00FF",bold:true}
-execute as @a[gamemode=!spectator,scores={titleTimer=1}] at @s run function du-in:ingame/startround/title/intros
-title @a[scores={titleTimer=0}] title {text:"GO!",color:"#EE00FF",bold:true}
 
-# execute as @a[scores={titleTimer=20}] at @s run playsound minecraft:block.ancient_debris.break master @s ~ ~ ~ 1000 2
-# execute as @a[scores={titleTimer=20}] at @s run playsound minecraft:block.bell.use master @s ~ ~ ~ 1000 2
-# execute as @a[scores={titleTimer=20}] unless entity @a[tag=partyLeader,tag=aprilFools] at @s run playsound minecraft:entity.ender_dragon.growl master @s ~ ~ ~ 1000 1
-# execute as @a[scores={titleTimer=20}] at @s run playsound minecraft:entity.generic.explode master @s ~ ~ ~ 1000 1
-# execute as @a[scores={kit=1002,titleTimer=20},tag=kothIngame] at @s run playsound minecraft:jerma.koth master @a ~ ~ ~ 1000 1
-# execute as @a[scores={titleTimer=20}] if entity @a[tag=partyLeader,tag=aprilFools] at @s run playsound minecraft:soundeffect.fart master @s ~ ~ ~ 1000 1
+execute as @a[gamemode=!spectator,scores={titleTimer=1}] at @s run function du-in:ingame/startround/title/intros
+
+#Set current player to this player
+execute store result storage du-in:main player.current int 1 run scoreboard players get @s player
+
+#Find player
+execute at @s run function du-in:kit/all/intro/find_kit with storage du-in:main player
+
+title @a[scores={titleTimer=0}] title {text:"GO!",color:"#EE00FF",bold:true}
 
 execute as @a[scores={titleTimer=20}] at @s run function du-in:ingame/startround/title/sounds
