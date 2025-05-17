@@ -177,6 +177,11 @@ execute as @a run function du-in:music/ingame/stop/all
         tag @a remove selectedTarget
         tag @a remove hasOnionRing
     
+    #Jack Black#
+        tag @a remove jackBlack
+        scoreboard players reset @a jockeyTimer
+        tag @a remove chickenJockey
+        
     #Jack Horner#
         scoreboard players set @a magicCount 1
         tag @a remove umbrella

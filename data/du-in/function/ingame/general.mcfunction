@@ -37,6 +37,7 @@ execute as @e[type=armor_stand,tag=asgoreFire,scores={asgoreFire=-99..}] at @s r
 #Death's fire cone
 execute as @e[type=block_display,tag=flame,scores={flameTimer=-99..}] at @s run function du-in:kit/death/ability/timer
 
+execute as @e[type=chicken,scores={jockeyTimer=0..}] run function du-in:kit/jack_black/ability/chicken
 
 #Kill graves when projectiles are near or when the sand is far from the stand
     #execute as @e[type=interaction,tag=grave] at @s run function du-in:kit/zombie/ability/grave/stand

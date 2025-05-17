@@ -79,6 +79,8 @@ execute if entity @s[scores={kit=1002}] run tellraw @s [{text:"You hear the call
 execute if entity @s[scores={kit=1003}] run tellraw @s [{text:"You feel the coldness of space...",color:gray,"italic": true}]
 #Runza
 execute if entity @s[scores={kit=1004}] run tellraw @s [{text:"You smell the aroma of fresh Runzas...",color:gray,"italic": true}]
+#Jack Black#
+execute if entity @s[scores={kit=1005}] run tellraw @s [{text:"You see Dennis...",color:gray,"italic": true}]
 #Saul
 execute if entity @s[scores={kit=2015}] run tellraw @s [{text:"You see riches beyond compare...",color:gray,"italic": true}]
 #Chungus

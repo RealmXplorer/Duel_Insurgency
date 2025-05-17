@@ -78,6 +78,10 @@ execute if entity @s[scores={ralseiTimer=..70}] run function du-in:kit/ralsei/ab
 #Darwin Timer#
 execute if entity @s[scores={darwinTimer=0..}] run function du-in:kit/gumball/ability/darwin/timer
 
+#JACK BLACK Timer#
+execute if entity @s[scores={jockeyTimer=0..}] run function du-in:kit/jack_black/ability/timer
+
+
 #Give hunger for Runza Rex ability
 execute if entity @s[tag=notEaten] run function du-in:kit/runza/ability/the_hunger
 

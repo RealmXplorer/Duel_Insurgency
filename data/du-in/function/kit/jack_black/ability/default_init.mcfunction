@@ -1,21 +1,12 @@
-execute if entity @s[tag=!sabotaged] as @a[tag=playing,tag=!spectating] unless score @a[scores={kit=1000},tag=kitActions,limit=1] team = @s team run tag @s add confusion
-tag @s[tag=sabotaged] add confusion
+execute if entity @s[tag=!sabotaged] as @a[tag=playing,tag=!spectating] unless score @a[scores={kit=1005},tag=kitActions,limit=1] team = @s team run tag @s add chickenJockey
+tag @s[tag=!sabotaged] remove chickenJockey
+tag @s[tag=sabotaged] add chickenJockey
 
+playsound minecraft:jack_black.chicken_jockey master @a ~ ~ ~ 1 1
+
+execute as @a[tag=chickenJockey] run function du-in:kit/jack_black/ability/chicken_jockey
+
+tag @s remove sabotaged
 clear @s minecraft:carrot_on_a_stick
-
-xp set @s[tag=!stolen] 600 levels
-tag @s[tag=!sabotaged] remove confusion
-
-effect give @s minecraft:resistance 3 0 true
-effect give @s minecraft:speed 3 1 true
-
-playsound minecraft:saac.ability master @a ~ ~ ~ 100 1
-playsound minecraft:entity.zombie_villager.cure master @a ~ ~ ~ 100 2
-playsound minecraft:block.glass.break master @a ~ ~ ~ 100 .8
-playsound minecraft:entity.player.attack.sweep master @a ~ ~ ~ 100 1
-playsound minecraft:sans.ability master @a ~ ~ ~ .5 1.05
-
-
-execute as @a[tag=confusion] at @s run function du-in:kit/saac/ability/confused
-
+xp set @s[tag=!stolen] 400 levels
 tag @s remove kitActions

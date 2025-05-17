@@ -1,0 +1,2 @@
+execute unless score #main map matches 2 unless entity @s[tag=kothIngame] run playsound minecraft:jack_black.steve voice @a ~ ~ ~ 1 1
+execute if score #main map matches 2 if entity @s[tag=kothIngame] run playsound minecraft:jack_black.the_nether voice @a ~ ~ ~ 1 1

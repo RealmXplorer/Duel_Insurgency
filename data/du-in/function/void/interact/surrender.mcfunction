@@ -79,6 +79,8 @@ execute if entity @s[scores={kit=1002}] run tellraw @s [{text:"You let go of the
 execute if entity @s[scores={kit=1003}] run tellraw @s [{text:"You let go of your desire to kill...",color:gray,"italic": true}]
 #Runza
 execute if entity @s[scores={kit=1004}] run tellraw @s [{text:"You let go of your burger...",color:gray,"italic": true}]
+#Jack Black
+execute if entity @s[scores={kit=1004}] run tellraw @s [{text:"You let go of your need for creativity...",color:gray,"italic": true}]
 #Saul
 execute if entity @s[scores={kit=2015}] run tellraw @s [{text:"You let go of serving others...",color:gray,"italic": true}]
 #Chungus

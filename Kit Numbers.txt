@@ -42,6 +42,7 @@ Kit number = character name
 1002 = Jerma985
 1003 = The Impostor
 1004 = Runza Rex
+1005 = Jack Black's Steve
 
 2015 = Saul Goodman
 42069 = Big Chungus
