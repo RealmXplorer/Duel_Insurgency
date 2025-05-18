@@ -1,8 +1,6 @@
 execute if entity @s[tag=playing] run function du-in:kit/all/reset
 scoreboard players enable @s info
 
-playsound minecraft:cuphead.pick master @s ~ ~ ~ 100 1
-
 clear @s player_head[custom_data={du-in:'sauronHead'}]
 
 scoreboard players set @s kit 31

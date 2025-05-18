@@ -1,4 +1,4 @@
-scoreboard players set @s kratosTimer 60
+scoreboard players set @s kratosTimer 100
 execute if entity @s[tag=!sabotaged] run function du-in:kit/kratos/ability/effects
 execute if entity @s[tag=sabotaged] run function du-in:kit/kratos/ability/sabotage/sabotaged
 
