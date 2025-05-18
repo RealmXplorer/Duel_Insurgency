@@ -45,6 +45,9 @@ attribute @s minecraft:armor_toughness modifier remove kratos_ability
 #Damage (sabotage)
 attribute @s minecraft:attack_damage modifier remove kratos_attack_sabotage
 
+attribute @s minecraft:movement_speed modifier remove minecraft:speed_corrupt
+attribute @s armor modifier remove armor_corrupt
+
 ##Clairen
 attribute @s attack_damage modifier remove clairen_damage
 

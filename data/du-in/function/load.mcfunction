@@ -25,6 +25,8 @@ scoreboard objectives add sansHead dummy
 scoreboard objectives add ringCount dummy
 scoreboard objectives add ringTimer dummy
 scoreboard objectives add jockeyTimer dummy
+scoreboard objectives add pos dummy
+scoreboard objectives add aangShoot dummy
 
 scoreboard objectives add weaponTier dummy
 scoreboard objectives add yharimRage dummy

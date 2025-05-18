@@ -1,10 +1,8 @@
-scoreboard players remove @s asrielHitTimer 1
+scoreboard players remove @s aangShoot 1
 
-execute if entity @s[scores={asrielHitTimer=0..,asrielTimer=1},tag=!sabotaged] run summon minecraft:lightning_bolt ^ ^ ^5 {Tags:["projectile"]}
-execute if entity @s[scores={asrielHitTimer=0..,asrielTimer=1},tag=sabotaged] run summon minecraft:lightning_bolt ~ ~ ~ {Tags:["projectile"]}
+execute if entity @s[scores={aangShoot=50}] run function du-in:kit/avatar/ability/shoot
+execute if entity @s[scores={aangShoot=39}] run function du-in:kit/avatar/ability/shoot
+execute if entity @s[scores={aangShoot=19}] run function du-in:kit/avatar/ability/shoot
+execute if entity @s[scores={aangShoot=1}] run function du-in:kit/avatar/ability/shoot
 
-tag @s[scores={asrielHitTimer=..1},tag=sabotaged] remove sabotaged
-tag @s[scores={asrielHitTimer=..1},tag=empower] remove empower
-tag @s[scores={asrielHitTimer=..1},tag=stolen] add kitDone
-
-scoreboard players reset @s[scores={asrielHitTimer=..0}] asrielHitTimer
+execute if entity @s[scores={aangShoot=..0}] run function du-in:kit/avatar/ability/end
