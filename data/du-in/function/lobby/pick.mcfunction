@@ -1,6 +1,6 @@
 tp @e[tag=tabba] 216 -100 40
 kill @e[tag=tabba]
-kill @e[type=interaction,tag=gamemodeLabel]
+kill @e[type=text_display,tag=gamemodeLabel]
 
 #Set players gamemode lobby (This lets the game know which map and gamemode to initialize)
 execute if score #main gamemode matches 1 run tag @a add cl

@@ -8,8 +8,8 @@ execute as @e[type=marker,tag=mapVote] at @s run setblock ~ ~-1 ~ minecraft:red_
 kill @e[tag=displayItem]
 
 #Reset Gamemode Displays
-kill @e[type=interaction,tag=gamemodeLabel]
-summon interaction -983 16 517 {CustomNameVisible:1b,width:0.1f,height:0.1f,Tags:["gamemodeLabel"]}
+kill @e[type=text_display,tag=gamemodeLabel]
+summon text_display -983 16 517 {Tags:["gamemodeLabel"],billboard:"center",CustomNameVisible:1b}
 function du-in:lobby/display/default/text
 
 #Stop music

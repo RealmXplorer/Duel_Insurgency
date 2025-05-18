@@ -234,7 +234,6 @@ execute as @a run function du-in:music/ingame/stop/all
         tag @a remove grave
 
     #Slime#
-        tag @a remove slimeDeath
         tag @a remove magma
 
     #Cuphead#
