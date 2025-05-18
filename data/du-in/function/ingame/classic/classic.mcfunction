@@ -18,3 +18,5 @@ execute if entity @a[tag=selectedTarget] if score #main map matches 13 run funct
 execute if score #main map matches 14 as @a[gamemode=adventure] at @s if entity @s[distance=..100,y=5,dy=-2] run kill @s
 
 execute if score #main map matches 16 run function du-in:maps/escher/constant
+
+execute if score #main map matches 19 run particle flame 7432 71 2809 0.2 0.1 0.2 0 1 force

@@ -4,7 +4,6 @@ kill @e[tag=displayItem]
 ##Left Side
 #San Ricardo
 summon minecraft:item 228 92 16 {NoGravity:1b,Age:-32768,Health:99999,PickupDelay:32767,Tags:["mapLabel","displayItem"],Item:{id:"minecraft:sandstone",Count:1b},CustomNameVisible:1b,CustomName:{text:"San Ricardo",color:"gold",bold:true}}
-# execute if entity @a[tag=escLock,tag=partyLeader] run summon marker 228 92 18 {Tags:["displayItem","voidLocked"]} 
 summon marker 230 91 16 {Tags:["mapVote","displayItem","vote18"]} 
 
 #Wild West
@@ -51,6 +50,7 @@ summon marker 230 91 32 {Tags:["mapVote","displayItem","vote4"]}
 summon minecraft:item 228 92 34 {NoGravity:1b,Age:-32768,Health:99999,PickupDelay:32767,Tags:["mapLabel","displayItem"],Item:{id:"minecraft:polished_blackstone_bricks",Count:1b},CustomNameVisible:1b,CustomName:{text:"Mustafar",color:red,bold:true}}
 execute if entity @a[tag=mustafarLock,tag=partyLeader] run summon marker 228 92 34 {Tags:["displayItem","voidLocked"]} 
 summon marker 230 91 34 {Tags:["mapVote","displayItem","vote5"]} 
+
 
 ##Right Side
 #Harvest
@@ -100,6 +100,10 @@ summon marker 234 91 22 {Tags:["mapVote","displayItem","vote14"]}
 summon minecraft:item 236 92 20 {NoGravity:1b,Age:-32768,Health:99999,PickupDelay:32767,Tags:["mapLabel","displayItem"],Item:{id:"minecraft:smooth_quartz",Count:1b},CustomNameVisible:1b,CustomName:{text:"Saac's House",color:"yellow",bold:true}}
 execute if entity @a[tag=shLock,tag=partyLeader] run summon marker 236 92 20 {Tags:["displayItem","voidLocked"]}
 summon marker 234 91 20 {Tags:["mapVote","displayItem","vote15"]} 
+
+#Kiln of the First Flame
+summon minecraft:item 236 92 18 {NoGravity:1b,Age:-32768,Health:99999,PickupDelay:32767,Tags:["mapLabel","displayItem"],Item:{id:"minecraft:iron_sword",Count:1b},CustomNameVisible:1b,CustomName:{text:"First Flame",color:"#e7d8c1",bold:true}}
+summon marker 234 91 18 {Tags:["mapVote","displayItem","vote19"]} 
 
 #Random
 summon minecraft:item 232 92 37 {NoGravity:1b,Age:-32768,Health:99999,PickupDelay:32767,Tags:["mapLabel","displayItem"],Item:{id:"minecraft:lapis_block",Count:1b},CustomNameVisible:1b,CustomName:{text:"Random Map",color:"blue",bold:true}}

@@ -68,6 +68,8 @@ execute if entity @s[scores={kit=31},tag=!stolen] run tellraw @s [{text:"You see
 execute if entity @s[scores={kit=32},tag=!stolen] run tellraw @s [{text:"You hear Katara and Sokka call your name...",color:gray,"italic": true}]
 #Kratos
 execute if entity @s[scores={kit=33},tag=!stolen] run tellraw @s [{text:"You feel the weight of your sins lifted...",color:gray,"italic": true}]
+#Soul of Cinder
+execute if entity @s[scores={kit=34},tag=!stolen] run tellraw @s [{text:"You feel the Fire fade...",color:gray,"italic": true}]
 
 #Saac
 execute if entity @s[scores={kit=1000}] run tellraw @s [{text:"You black out...",color:gray,"italic": true}]

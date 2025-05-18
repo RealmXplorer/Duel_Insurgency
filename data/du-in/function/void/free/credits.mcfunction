@@ -42,13 +42,14 @@ title @s[scores={creditsTimer=1040}] title {text:"Armor Textures",bold:true,colo
 title @s[scores={creditsTimer=1040}] subtitle {text:"deo_x, Dreamrage_808, Yogurette",bold:false,color:blue}
 title @s[scores={creditsTimer=1100}] subtitle {text:"Meatchip, vxxmit, D1maShip",bold:false,color:blue}
 title @s[scores={creditsTimer=1160}] subtitle {text:"RockstarWolfy7, KrEsHDiE, GiganticYassin",bold:false,color:blue}
-#LordOfTheFlames
-title @s[scores={creditsTimer=1040}] times 60 60 60
+title @s[scores={creditsTimer=1220}] subtitle {text:"LordOfTheFlames, omarhafizd",bold:false,color:blue}
+
+title @s[scores={creditsTimer=1040}] times 60 120 60
 
 #Thank you
-title @s[scores={creditsTimer=1220}] title {text:"Thank you",bold:true,color:gold}
-title @s[scores={creditsTimer=1220}] subtitle {text:"for playing!",bold:false,color:blue}
-title @s[scores={creditsTimer=1220}] times 60 60 100
+title @s[scores={creditsTimer=1280}] title {text:"Thank you",bold:true,color:gold}
+title @s[scores={creditsTimer=1280}] subtitle {text:"for playing!",bold:false,color:blue}
+title @s[scores={creditsTimer=1280}] times 60 60 100
 
 #Easter Egg
 title @s[tag=lobby,tag=beatenGame,scores={creditsTimer=1440}] title {text:"",bold:true,color:gold}
