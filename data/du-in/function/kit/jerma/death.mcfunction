@@ -1,1 +1,1 @@
-playsound minecraft:jerma.death master @a ~ ~ ~ 3 1
+playsound minecraft:jerma.death voice @a ~ ~ ~ 3 1

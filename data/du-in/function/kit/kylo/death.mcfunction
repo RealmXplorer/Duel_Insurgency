@@ -1,2 +1,2 @@
-playsound minecraft:kylo.die master @a ~ ~ ~ 3 1
+playsound minecraft:kylo.die voice @a ~ ~ ~ 3 1
  

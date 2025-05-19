@@ -1,2 +1,2 @@
-playsound minecraft:nick.voice master @a ~ ~ ~ 2 1 1
+playsound minecraft:nick.voice voice @a ~ ~ ~ 2 1 1
 scoreboard players reset @s hit

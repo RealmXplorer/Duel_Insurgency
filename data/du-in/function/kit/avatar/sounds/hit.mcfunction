@@ -1,3 +1,3 @@
-playsound minecraft:asriel.voice master @a ~ ~ ~ 2 1 1
-playsound minecraft:undertale.hit master @a ~ ~ ~ 2 1 1
+playsound minecraft:asriel.voice voice @a ~ ~ ~ 2 1 1
+playsound minecraft:undertale.hit voice @a ~ ~ ~ 2 1 1
 scoreboard players reset @s hit

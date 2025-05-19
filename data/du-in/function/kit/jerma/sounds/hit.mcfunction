@@ -1,2 +1,2 @@
-playsound minecraft:jerma.voice master @a ~ ~ ~ 2 1 1
+playsound minecraft:jerma.voice voice @a ~ ~ ~ 2 1 1
 scoreboard players reset @s hit

@@ -1,2 +1,2 @@
-playsound minecraft:kylo.voice master @a ~ ~ ~ 2 1 1
+playsound minecraft:kylo.voice voice @a ~ ~ ~ 2 1 1
 scoreboard players reset @s hit

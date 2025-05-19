@@ -9,7 +9,7 @@ kill @e[tag=displayItem]
 
 #Reset Gamemode Displays
 kill @e[type=text_display,tag=gamemodeLabel]
-summon text_display -983 16 517 {Tags:["gamemodeLabel"],billboard:"center",CustomNameVisible:1b}
+summon text_display -983 16 517 {Tags:["gamemodeLabel"],billboard:"center"}
 function du-in:lobby/display/default/text
 
 #Stop music

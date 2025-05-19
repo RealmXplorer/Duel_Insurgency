@@ -1,1 +1,1 @@
-playsound minecraft:cuphead.death master @a ~ ~ ~ 3 1
+playsound minecraft:cuphead.death voice @a ~ ~ ~ 3 1

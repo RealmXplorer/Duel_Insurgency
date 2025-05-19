@@ -38,7 +38,7 @@ execute if entity @a[scores={kit=1000..1001}] run summon armor_stand 7429 73 283
 execute if entity @a[scores={kit=1000..1001}] run summon armor_stand 7456 72 2808 {Rotation:[-90F,0F],Tags:["vendMachine","mapSpecific"],NoGravity:1b,Silent:1b,Invulnerable:1b,Invisible:1b,NoBasePlate:1b,DisabledSlots:4144959,equipment:{head:{id:"minecraft:spruce_sapling",count:1,components:{"minecraft:item_model":"du-in:other/vending_machine"}}}}
 
 #First Flame#
-summon armor_stand 7432.65 70.5 2810.01 {Marker:1b,NoGravity:1b,DisabledSlots:4144959,Invulnerable:1b,Invisible:1b,NoBasePlate:1b,PersistenceRequired:1b,Tags:["firstFlame","mapSpecific"],Pose:{RightArm:[84f,23f,360f]},equipment:{mainhand:{id:"minecraft:iron_sword",count:1}}}
+summon armor_stand 7432.65 70.75 2810.01 {Marker:1b,NoGravity:1b,DisabledSlots:4144959,Invulnerable:1b,Invisible:1b,NoBasePlate:1b,PersistenceRequired:1b,Tags:["firstFlame","mapSpecific"],Pose:{RightArm:[84f,23f,360f]},equipment:{mainhand:{id:"minecraft:iron_sword",count:1,components:{"minecraft:item_model":"du-in:weapons/coiled_sword"}}}}
 weather thunder 1000d
 time set 12500
 
