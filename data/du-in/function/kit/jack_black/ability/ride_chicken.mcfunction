@@ -1,0 +1,1 @@
+$ride @s[scores={jockeyTimer=0..,player=$(current)}] mount @e[type=chicken,scores={player=$(current)},limit=1]
