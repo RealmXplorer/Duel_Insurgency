@@ -7,6 +7,7 @@ execute at @s run summon chicken ~ ~ ~ {Invulnerable:1b,Tags:["projectile","mapS
 
 ##RETURN HERE
 #execute store result score player @n[type=chicken,tag=notSet,limit=1] run scoreboard players get @s player
+
 scoreboard players set @e[type=chicken,tag=noTimer] jockeyTimer 60
 tag @e[type=chicken,tag=noTimer,scores={jockeyTimer=0..}] remove noTimer
 
