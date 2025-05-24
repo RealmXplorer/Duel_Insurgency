@@ -27,14 +27,11 @@ scoreboard objectives add ringTimer dummy
 scoreboard objectives add jockeyTimer dummy
 scoreboard objectives add pos dummy
 scoreboard objectives add aangShoot dummy
-
-scoreboard objectives add weaponTier dummy
-scoreboard objectives add yharimRage dummy
-scoreboard objectives add kratosRage dummy
-scoreboard objectives add yodaTimer dummy
+scoreboard objectives add skeletonMode dummy
+scoreboard objectives add jermaWeapon dummy
+scoreboard objectives add jermaOnion dummy
 scoreboard objectives add yodaDamage minecraft.custom:damage_taken
 scoreboard objectives add yodaAbsorb dummy
-scoreboard objectives add sauronTimer dummy
 
 #Timers
 scoreboard objectives add ambience dummy
@@ -100,11 +97,13 @@ scoreboard objectives add kratosTimer dummy
 scoreboard objectives add zombieTimer dummy
 scoreboard objectives add yharimRageDuration dummy
 scoreboard objectives add kratosRageDuration dummy
-scoreboard objectives add skeletonMode dummy
-scoreboard objectives add jermaWeapon dummy
-scoreboard objectives add jermaOnion dummy
 scoreboard objectives add seenTimer dummy
 scoreboard objectives add ringInvisTimer dummy
+scoreboard objectives add weaponTier dummy
+scoreboard objectives add yharimRage dummy
+scoreboard objectives add kratosRage dummy
+scoreboard objectives add yodaTimer dummy
+scoreboard objectives add sauronTimer dummy
 
 #Skins
 scoreboard objectives add asgoreSkin dummy
@@ -188,6 +187,9 @@ scoreboard objectives add tKothCap dummy
 scoreboard objectives add tKothGoal dummy
 scoreboard objectives add Wins dummy
 scoreboard objectives add winStreak dummy
+
+scoreboard objectives add inRing dummy
+scoreboard objectives add ringTally dummy
 
 #Lobby objectives
 scoreboard objectives add ambienceToggle dummy

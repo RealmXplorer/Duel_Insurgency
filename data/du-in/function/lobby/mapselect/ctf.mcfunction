@@ -11,11 +11,11 @@ summon minecraft:item 228 92 28 {NoGravity:1b,Age:-32768,Health:99999,PickupDela
 summon marker 230 91 28 {Tags:["mapVote","displayItem","vote2"]} 
 
 #Cliffside
- summon minecraft:item 228 92 26 {NoGravity:1b,Age:-32768,Health:99999,PickupDelay:32767,Tags:["mapLabel","displayItem"],Item:{id:"minecraft:iron_block",count:1},CustomNameVisible:1b,CustomName:{text:"Cliffside Asylum",color:"red",bold:true}}
+ summon minecraft:item 228 92 26 {NoGravity:1b,Age:-32768,Health:99999,PickupDelay:32767,Tags:["mapLabel","displayItem"],Item:{id:"minecraft:stick",count:1,components:{"minecraft:item_model":"du-in:abilities/badge"}},CustomNameVisible:1b,CustomName:{text:"Cliffside Asylum",color:"red",bold:true}}
  summon marker 230 91 26 {Tags:["mapVote","displayItem","vote1"]} 
 
 #Random Map
-summon minecraft:item 232 92 37 {NoGravity:1b,Age:-32768,Health:99999,PickupDelay:32767,Tags:["mapLabel","displayItem"],Item:{id:"minecraft:lapis_block",count:1},CustomNameVisible:1b,CustomName:{text:"Random Map",color:"blue",bold:true}}
+summon minecraft:item 232 92 37 {NoGravity:1b,Age:-32768,Health:99999,PickupDelay:32767,Tags:["mapLabel","displayItem"],Item:{id:"minecraft:lapis_lazuli",count:1,components:{"minecraft:item_model":"du-in:lobby/mystery"}},CustomNameVisible:1b,CustomName:{text:"Random Map",color:"blue",bold:true}}
 summon marker 232 91 36 {Tags:["mapVote","displayItem","voteRand"]} 
 
 

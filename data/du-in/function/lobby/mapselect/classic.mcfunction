@@ -32,7 +32,7 @@ execute if entity @a[tag=mcLock,tag=partyLeader] run summon marker 228 92 26 {Ta
 summon marker 230 91 26 {Tags:["mapVote","displayItem","vote1"]} 
 
 #The Hive
-summon minecraft:item 228 92 28 {NoGravity:1b,Age:-32768,Health:99999,PickupDelay:32767,Tags:["mapLabel","displayItem"],Item:{id:"minecraft:honey_block",count:1},CustomNameVisible:1b,CustomName:{text:"The Hive",color:"gold",bold:true}}
+summon minecraft:item 228 92 28 {NoGravity:1b,Age:-32768,Health:99999,PickupDelay:32767,Tags:["mapLabel","displayItem"],Item:{id:"minecraft:honeycomb",count:1},CustomNameVisible:1b,CustomName:{text:"The Hive",color:"gold",bold:true}}
 execute if entity @a[tag=hiveLock,tag=partyLeader] run summon marker 228 92 28 {Tags:["displayItem","voidLocked"]} 
 summon marker 230 91 28 {Tags:["mapVote","displayItem","vote2"]} 
 
@@ -97,7 +97,7 @@ execute if entity @a[tag=hauntedLock,tag=partyLeader] run summon marker 236 92 2
 summon marker 234 91 22 {Tags:["mapVote","displayItem","vote14"]} 
 
 #Saac House
-summon minecraft:item 236 92 20 {NoGravity:1b,Age:-32768,Health:99999,PickupDelay:32767,Tags:["mapLabel","displayItem"],Item:{id:"minecraft:smooth_quartz",count:1},CustomNameVisible:1b,CustomName:{text:"Saac's House",color:"yellow",bold:true}}
+summon minecraft:item 236 92 20 {NoGravity:1b,Age:-32768,Health:99999,PickupDelay:32767,Tags:["mapLabel","displayItem"],Item:{id:"minecraft:stick",count:1,components:{"minecraft:item_model":"du-in:other/kickstart2"}},CustomNameVisible:1b,CustomName:{text:"Saac's House",color:"yellow",bold:true}}
 execute if entity @a[tag=shLock,tag=partyLeader] run summon marker 236 92 20 {Tags:["displayItem","voidLocked"]}
 summon marker 234 91 20 {Tags:["mapVote","displayItem","vote15"]} 
 
@@ -106,5 +106,5 @@ summon minecraft:item 236 92 18 {NoGravity:1b,Age:-32768,Health:99999,PickupDela
 summon marker 234 91 18 {Tags:["mapVote","displayItem","vote19"]} 
 
 #Random
-summon minecraft:item 232 92 37 {NoGravity:1b,Age:-32768,Health:99999,PickupDelay:32767,Tags:["mapLabel","displayItem"],Item:{id:"minecraft:lapis_block",count:1},CustomNameVisible:1b,CustomName:{text:"Random Map",color:"blue",bold:true}}
+summon minecraft:item 232 92 37 {NoGravity:1b,Age:-32768,Health:99999,PickupDelay:32767,Tags:["mapLabel","displayItem"],Item:{id:"minecraft:lapis_lazuli",count:1,components:{"minecraft:item_model":"du-in:lobby/mystery"}},CustomNameVisible:1b,CustomName:{text:"Random Map",color:"blue",bold:true}}
 summon marker 232 91 36 {Tags:["mapVote","displayItem","voteRand"]} 

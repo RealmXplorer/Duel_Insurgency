@@ -44,5 +44,5 @@ summon marker 234 91 26 {Tags:["mapVote","displayItem","vote6"]}
 
 
 #Random
-summon minecraft:item 232 92 37 {NoGravity:1b,Age:-32768,Health:99999,PickupDelay:32767,Tags:["mapLabel","displayItem"],Item:{id:"minecraft:lapis_block",count:1},CustomNameVisible:1b,CustomName:{text:"Random Map",color:"blue",bold:true}}
+summon minecraft:item 232 92 37 {NoGravity:1b,Age:-32768,Health:99999,PickupDelay:32767,Tags:["mapLabel","displayItem"],Item:{id:"minecraft:lapis_lazuli",count:1,components:{"minecraft:item_model":"du-in:lobby/mystery"}},CustomNameVisible:1b,CustomName:{text:"Random Map",color:"blue",bold:true}}
 summon marker 232 91 36 {Tags:["mapVote","displayItem","voteRand"]} 
