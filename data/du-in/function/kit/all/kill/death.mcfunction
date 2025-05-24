@@ -44,16 +44,18 @@ execute if entity @s[tag=stolen] run function du-in:kit/villager/death
 execute if entity @s[scores={jermaTimer=0..}] run scoreboard players reset @s jermaTimer
 
 
-execute if entity @s[scores={ralseiTimer=0..}] run scoreboard players reset @s ralseiTimer
+scoreboard players reset @s ralseiTimer
 
 execute if entity @s[tag=midasTouched] run tag @s remove midasTouched
 
-execute if entity @s[scores={pussFearTimer=1..}] run scoreboard players set @s pussFearTimer 1
+scoreboard players set @s pussFearTimer 1
 
 #Start Zombie ability
 execute if entity @s[tag=grave,tag=!teamDead] run scoreboard players set @s zombieTimer 5
 
 execute if entity @a[scores={kit=1004}] run clear @s mushroom_stew
+
+scoreboard players reset @s jockeyTimer
 
 #CLEAR TAGS#
 execute if entity @s[tag=kyloHit] run tag @s remove kyloHit

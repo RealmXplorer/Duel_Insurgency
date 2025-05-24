@@ -157,6 +157,9 @@ execute as @a run function du-in:music/ingame/stop/all
     #Saul#
         tag @a remove saul
 
+    #Sauron#
+        tag @a remove looking
+        
     #Asgore#
         scoreboard players reset * tridentTimer
         tag @a remove thrown

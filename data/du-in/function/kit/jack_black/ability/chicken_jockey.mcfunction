@@ -7,6 +7,9 @@ execute at @s run summon chicken ~ ~ ~ {Invulnerable:1b,Tags:["projectile","mapS
 execute store result score @n[type=chicken,tag=notSet,limit=1] player run scoreboard players get @s player
 tag @e[type=chicken,tag=notSet,scores={player=0..}] remove notSet
 
+#Set current player to this player
+execute store result storage du-in:main player.current int 1 run scoreboard players get @s player
+
 #Ride chicken
 execute at @s run function du-in:kit/jack_black/ability/ride_chicken with storage du-in:main player
 
