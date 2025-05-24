@@ -11,8 +11,8 @@ tag @s remove deathMark
 tag @s remove pondered
 tag @s remove glowing
 
-execute if entity @s[scores={killedByPlayer=1..}] run function du-in:kit/sauron/ring/lose_ring
-execute unless entity @s[scores={killedByPlayer=1..}] run function du-in:kit/sauron/ring/drop_ring
+execute if entity @s[scores={killedByPlayer=1..},tag=hasRing] run function du-in:kit/sauron/ring/lose_ring
+execute if entity @s[tag=hasRing] unless entity @s[scores={killedByPlayer=1..}] run function du-in:kit/sauron/ring/drop_ring
 
 execute if entity @s[tag=selectedTarget] run tag @s remove monsterTarget
 execute if entity @s[tag=selectedTarget] run tag @s remove selectedTarget

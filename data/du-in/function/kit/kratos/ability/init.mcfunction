@@ -1,13 +1,13 @@
-function du-in:kit/kratos/ability/rock/throw
-# scoreboard players set @s kratosTimer 100
-# execute if entity @s[tag=!sabotaged] run function du-in:kit/kratos/ability/effects
-# execute if entity @s[tag=sabotaged] run function du-in:kit/kratos/ability/sabotage/sabotaged
+execute if entity @s[tag=!sabotaged] run function du-in:kit/kratos/ability/rock/throw
+execute if entity @s[tag=sabotaged] run function du-in:kit/kratos/ability/sabotage/sabotaged
 
+scoreboard players set @s kratosTimer 100
 
-# playsound minecraft:entity.ender_dragon.growl master @a ~ ~ ~ .5 .85
+playsound minecraft:entity.ender_dragon.growl master @a ~ ~ ~ .5 .85
 
+tag @s remove sabotaged
+clear @s minecraft:carrot_on_a_stick
+tag @s remove kitActions
+xp set @s[tag=!stolen] 340 levels
+execute if entity @s[tag=stolen] run tag @s add kitDone
 
-# clear @s minecraft:carrot_on_a_stick
-# #execute if entity @s[tag=stolen] run tag @s add kitDone
-# tag @s add cooldown
-# tag @s remove kitActions

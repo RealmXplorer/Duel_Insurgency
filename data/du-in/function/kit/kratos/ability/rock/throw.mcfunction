@@ -16,7 +16,7 @@ scoreboard players operation #targetY pos -= #playerY pos
 scoreboard players operation #targetZ pos -= #playerZ pos
 
 # summon the windTest entity
-summon salmon ~ ~1.5 ~ {Silent:1b,Tags:["kratosTest","kratosRock","unsetTime","mapSpecific"]}
+summon salmon ~ ~1.5 ~ {Silent:1b,Invulnerable:1b,Tags:["kratosTest","kratosRock","unsetTime","mapSpecific"]}
 effect give @e[type=salmon,tag=kratosTest] invisibility infinite 1 true
 summon block_display ~ ~ ~ {Tags:["kratosRock","unsetTime","mapSpecific"],block_state:{Name:"minecraft:packed_mud"}}
 
@@ -39,10 +39,3 @@ execute store result score @e[type=block_display,tag=kratosTest,limit=1] player 
 # clean up, ready for the next player
 tag @e[tag=kratosTest] remove kratosTest
 kill @e[tag=direction]
-
-
-tag @s remove sabotaged
-clear @s minecraft:carrot_on_a_stick
-tag @s remove kitActions
-xp set @s[tag=!stolen] 340 levels
-execute if entity @s[tag=stolen] run tag @s add kitDone
