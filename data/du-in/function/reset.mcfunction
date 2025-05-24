@@ -159,6 +159,8 @@ execute as @a run function du-in:music/ingame/stop/all
 
     #Sauron#
         tag @a remove looking
+        scoreboard players reset @a sauronTimer
+        scoreboard players reset @a seenTimer
         
     #Asgore#
         scoreboard players reset * tridentTimer

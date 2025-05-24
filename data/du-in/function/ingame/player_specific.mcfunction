@@ -108,6 +108,8 @@ execute if entity @s[scores={sabotageTimer=1..}] run function du-in:kit/nick/abi
 #Puss ability
 execute if entity @s[scores={pussFearTimer=1..}] run function du-in:kit/puss/ability/fear_timer
 
+execute if entity @s[scores={seenTimer=1..}] run function du-in:kit/sauron/ability/no_ring/timer
+
 #Sans chestplate
 execute if entity @s[scores={sansHitTimer=0..}] unless entity @s[scores={gasterTimer=..79}] unless entity @s[scores={floweyHitTimer=1..}] unless entity @s[scores={deathTimer=0..}] run item replace entity @s armor.chest with minecraft:leather_chestplate[item_name={text:'Gravity',color:blue,bold:true},unbreakable={},tooltip_display={hide_tooltip:true,hidden_components:["dyed_color","unbreakable"]},attribute_modifiers=[{type:"knockback_resistance",id:"knockback_resistance",amount:1,operation:"add_value"}],dyed_color=2228479] 1
 

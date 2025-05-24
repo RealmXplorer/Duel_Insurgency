@@ -41,7 +41,7 @@ execute as @e[type=chicken,scores={jockeyTimer=0..}] run function du-in:kit/jack
 
 #Kill graves when projectiles are near or when the sand is far from the stand
     #execute as @e[type=interaction,tag=grave] at @s run function du-in:kit/zombie/ability/grave/stand
-    #execute as @e[type=falling_block] at @s run function du-in:ingame/entities/falling_block
+    execute as @e[type=falling_block] at @s run function du-in:ingame/entities/falling_block
 
 #Jack Horner midas
 execute as @e[type=!player,tag=gold,scores={goldTimer=1..}] run function du-in:kit/jack_horner/ability/midas/timer

@@ -103,6 +103,7 @@ scoreboard objectives add kratosRageDuration dummy
 scoreboard objectives add skeletonMode dummy
 scoreboard objectives add jermaWeapon dummy
 scoreboard objectives add jermaOnion dummy
+scoreboard objectives add seenTimer dummy
 
 #Skins
 scoreboard objectives add asgoreSkin dummy
