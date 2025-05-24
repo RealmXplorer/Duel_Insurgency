@@ -108,6 +108,8 @@ execute if entity @s[scores={sabotageTimer=1..}] run function du-in:kit/nick/abi
 #Puss ability
 execute if entity @s[scores={pussFearTimer=1..}] run function du-in:kit/puss/ability/fear_timer
 
+#Sauron
+#execute if entity @s[scores={ringInvisTimer=1..}] run function du-in:kit/sauron/ability/with_ring/timer
 execute if entity @s[scores={seenTimer=1..}] run function du-in:kit/sauron/ability/no_ring/timer
 
 #Sans chestplate

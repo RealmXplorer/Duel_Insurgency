@@ -7,6 +7,7 @@ execute store result storage du-in:main player.current int 1 run scoreboard play
 
 #Find player
 execute at @s run function du-in:kit/all/ability/activate/find_kit with storage du-in:main player
+#execute if entity @s[tag=hasRing] run function du-in:kit/sauron/ability/with_ring/init
 
 ##DATAPACK 5.0
 #Set 1#

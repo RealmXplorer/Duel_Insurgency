@@ -104,6 +104,7 @@ scoreboard objectives add skeletonMode dummy
 scoreboard objectives add jermaWeapon dummy
 scoreboard objectives add jermaOnion dummy
 scoreboard objectives add seenTimer dummy
+scoreboard objectives add ringInvisTimer dummy
 
 #Skins
 scoreboard objectives add asgoreSkin dummy

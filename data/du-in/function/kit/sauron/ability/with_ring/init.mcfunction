@@ -1,10 +1,11 @@
+scoreboard players set @s ringInvisTimer 200
+tag @s add ringInvisible
+clear @s #du-in:armor
+attribute @s armor modifier add ring_armor 10 add_value
 
+playsound minecraft:sans.ability master @a ~ ~ ~ 1 1 1
+playsound minecraft:entity.breeze.idle_air master @a ~ ~ ~ 1 0.5
 
-#Play Sounds and Particles
-playsound minecraft:entity.phantom.ambient master @a ~ ~ ~ 1 1.5
-playsound minecraft:entity.vex.ambient master @a ~ ~ ~ 1 1.5
-playsound minecraft:entity.vex.death master @a ~ ~ ~ 1 .75
-playsound minecraft:block.sculk_shrieker.shriek master @a ~ ~ ~ 1 1.25
-playsound minecraft:block.sculk_shrieker.shriek master @a ~ ~ ~ 1 1
-scoreboard players set @s sauronTimer 100
-effect give @s speed 1 0 true
+clear @s carrot_on_a_stick
+tag @s add cooldown
+tag @s remove kitActions

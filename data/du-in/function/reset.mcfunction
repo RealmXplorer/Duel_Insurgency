@@ -159,8 +159,10 @@ execute as @a run function du-in:music/ingame/stop/all
 
     #Sauron#
         tag @a remove looking
+        tag @a remove ringInvisible
         scoreboard players reset @a sauronTimer
         scoreboard players reset @a seenTimer
+        scoreboard players reset @a ringInvisTimer
         
     #Asgore#
         scoreboard players reset * tridentTimer
