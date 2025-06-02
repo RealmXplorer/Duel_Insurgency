@@ -1,5 +1,6 @@
 #DEFAULT GAMEMODE SELECT#
 clone 637 15 33 673 31 69 -1001 11 499 replace force
+fillbiome -1000 10 501 -966 26 534 minecraft:meadow
 
 #KIT SELECT#
 #clone 538 8 54 570 18 72 427 3 40

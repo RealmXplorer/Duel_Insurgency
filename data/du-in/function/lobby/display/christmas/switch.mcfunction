@@ -1,6 +1,7 @@
 function du-in:lobby/display/default/undo
 #clone 637 15 145 673 31 181 -1001 11 499 replace force
 clone 637 66 33 673 82 69 -1001 11 499 replace force
+fillbiome -1000 10 501 -966 26 534 minecraft:snowy_taiga
 
 function du-in:lobby/display/christmas/display
 

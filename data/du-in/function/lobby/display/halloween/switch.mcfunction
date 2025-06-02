@@ -1,6 +1,7 @@
 function du-in:lobby/display/default/undo
 #clone 637 15 71 673 31 107 -1001 11 499 replace force
 clone 637 32 33 673 48 69 -1001 11 499 replace force
+fillbiome -1000 10 501 -966 26 534 du-in:fall
 
 function du-in:lobby/display/halloween/display
 

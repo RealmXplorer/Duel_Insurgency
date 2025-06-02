@@ -11,8 +11,8 @@ execute if entity @s[tag=secKitActions] run function du-in:kit/kratos/secondary/
 execute if entity @s[scores={yharimRageDuration=0..}] run function du-in:kit/kratos/secondary/in_rage
 
 #Add Yharim Rage#
-execute if entity @s[gamemode=!spectator,tag=!enraged,tag=!rageMeter,tag=!void,tag=!startgame] if entity @a[distance=0.05..3.5,tag=playing,gamemode=!spectator] unless score @a[distance=0.05..3.5,tag=playing,gamemode=!spectator,limit=1] team = @s team run function du-in:kit/kratos/secondary/charge
-execute if entity @s[gamemode=!spectator,tag=!enraged,tag=!rageMeter,tag=void,tag=!startgame] if entity @e[type=skeleton,tag=gonerThing,distance=0.05..3.5] run function du-in:kit/kratos/secondary/charge
+#execute if entity @s[gamemode=!spectator,tag=!enraged,tag=!rageMeter,tag=!void,tag=!startgame] if entity @a[distance=0.05..3.5,tag=playing,gamemode=!spectator] unless score @a[distance=0.05..3.5,tag=playing,gamemode=!spectator,limit=1] team = @s team run function du-in:kit/kratos/secondary/charge
+#execute if entity @s[gamemode=!spectator,tag=!enraged,tag=!rageMeter,tag=void,tag=!startgame] if entity @e[type=skeleton,tag=gonerThing,distance=0.05..3.5] run function du-in:kit/kratos/secondary/charge
 
 #Weapons#
 # execute unless entity @s[scores={secCount=1}] if entity @s[tag=!teamDead] run function du-in:kit/kratos/secondary/rage_meter

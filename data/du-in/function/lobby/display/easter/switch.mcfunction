@@ -1,6 +1,7 @@
 function du-in:lobby/display/default/undo
 #clone 637 15 183 673 31 219 -1001 11 499 replace force
 clone 637 83 33 673 99 69 -1001 11 499 replace force
+fillbiome -1000 10 501 -966 26 534 minecraft:cherry_grove
 
 function du-in:lobby/display/easter/display
 
