@@ -47,6 +47,7 @@ scoreboard players set @s kratosRage 0
 scoreboard players reset @s kickstartDrink
 scoreboard players reset @s card
 scoreboard players reset @s ralseiTP
+scoreboard players reset @s skeletonMode
 
 scoreboard players set @s deathWeapSwitch 0
 

@@ -5,3 +5,4 @@ tellraw @s ["",{text:"<",color:white},{text:"Tabba",color:yellow},"> Careful the
 
 scoreboard players reset @s thrownPotion
 scoreboard players reset @s thrownMilk
+#scoreboard players reset @s thrownBottle

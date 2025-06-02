@@ -19,8 +19,8 @@ execute if entity @s[tag=!kitPicked] run playsound minecraft:block.netherite_blo
 execute if entity @s[tag=!kitPicked] run particle minecraft:composter ~ ~1 ~ 0.25 0.5 0.25 0 20 force
 
 execute if entity @s[tag=playing] run function du-in:kit/all/attribute/reset
-
 execute if entity @s[scores={thrownHead=1..}] run function du-in:other/clear_ground_items
+execute if entity @s[tag=playing] run function du-in:kit/all/attribute/set
 
 #End function
 tag @s[tag=!playing] add kitPicked

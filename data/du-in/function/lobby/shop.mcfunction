@@ -15,4 +15,5 @@ execute if entity @s[scores={drinkMilk=1..}] run function du-in:lobby/shop/drink
     execute if entity @s[scores={kitUse=1..}] run function du-in:lobby/kit_use/shop
 
     execute if entity @s[scores={thrownPotion=1..}] run function du-in:lobby/shop/drinks/clear
+    #execute if entity @s[scores={thrownBottle=1..}] run function du-in:lobby/shop/drinks/clear
     execute if entity @s[scores={thrownMilk=1..}] run function du-in:lobby/shop/drinks/clear

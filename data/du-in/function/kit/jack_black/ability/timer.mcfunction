@@ -6,5 +6,5 @@ execute if entity @s[scores={jockeyTimer=1..}] store result storage du-in:main p
 
 execute if entity @s[scores={jockeyTimer=1..}] at @s run function du-in:kit/jack_black/ability/ride_chicken with storage du-in:main player
 
-execute unless entity @s[scores={jockeyTimer=1..}] run ride @s dismount
+execute unless entity @s[scores={jockeyTimer=..2}] run ride @s dismount
 execute unless entity @s[scores={jockeyTimer=1..}] run scoreboard players reset @s jockeyTimer

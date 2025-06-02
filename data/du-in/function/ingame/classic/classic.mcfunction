@@ -19,4 +19,6 @@ execute if score #main map matches 14 as @a[gamemode=adventure] at @s if entity 
 
 execute if score #main map matches 16 run function du-in:maps/escher/constant
 
+execute if score #main map matches 18 run function du-in:maps/ricardo/constant
+
 execute if score #main map matches 19 run particle flame 7432 71 2809 0.2 0.1 0.2 0 1 force
