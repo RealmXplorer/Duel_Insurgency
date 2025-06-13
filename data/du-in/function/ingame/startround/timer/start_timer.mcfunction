@@ -53,6 +53,8 @@ tag @a[tag=!spectating] add playing
     #Mark Zombie and Springtrap as undead
     tag @a[scores={kit=2}] add undead
     tag @a[scores={kit=5}] add undead
+    tag @a[scores={kit=30}] add undead
+    tag @a[scores={kit=34}] add undead
 
     #Set Cuphead card power to 0 and play announcer
     scoreboard players set @a cardPower 0
