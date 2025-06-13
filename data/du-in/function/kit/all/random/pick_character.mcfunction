@@ -43,12 +43,14 @@ $execute if entity @s[scores={kit=30}] run data modify storage du-in:player$(cur
 $execute if entity @s[scores={kit=31}] run data modify storage du-in:player$(current) kit set value {"kit":"sauron"}
 $execute if entity @s[scores={kit=32}] run data modify storage du-in:player$(current) kit set value {"kit":"avatar"}
 $execute if entity @s[scores={kit=33}] run data modify storage du-in:player$(current) kit set value {"kit":"kratos"}
+$execute if entity @s[scores={kit=34}] run data modify storage du-in:player$(current) kit set value {"kit":"cinder"}
 
 $execute if entity @s[scores={kit=1000}] run data modify storage du-in:player$(current) kit set value {"kit":"saac"}
 $execute if entity @s[scores={kit=1001}] run data modify storage du-in:player$(current) kit set value {"kit":"paz"}
 $execute if entity @s[scores={kit=1002}] run data modify storage du-in:player$(current) kit set value {"kit":"jerma"}
 $execute if entity @s[scores={kit=1003}] run data modify storage du-in:player$(current) kit set value {"kit":"impostor"}
 $execute if entity @s[scores={kit=1004}] run data modify storage du-in:player$(current) kit set value {"kit":"runza"}
+$execute if entity @s[scores={kit=1005}] run data modify storage du-in:player$(current) kit set value {"kit":"jack_black"}
 
 $execute if entity @s[scores={kit=2015}] run data modify storage du-in:player$(current) kit set value {"kit":"saul"}
 $execute if entity @s[scores={kit=42069}] run data modify storage du-in:player$(current) kit set value {"kit":"chungus"}
