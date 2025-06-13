@@ -1,2 +1,2 @@
-execute unless entity @s[tag=!teamDead,scores={gasterTimer=..79}] run function du-in:kit/all/armor/armor
+attribute @s knockback_resistance modifier remove sans_hit
 scoreboard players reset @s sansHitTimer

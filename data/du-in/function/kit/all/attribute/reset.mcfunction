@@ -48,6 +48,9 @@ attribute @s minecraft:attack_damage modifier remove kratos_attack_sabotage
 attribute @s minecraft:movement_speed modifier remove minecraft:speed_corrupt
 attribute @s armor modifier remove armor_corrupt
 
+##SANS
+attribute @s knockback_resistance modifier remove sans_hit
+
 ##Clairen
 attribute @s attack_damage modifier remove clairen_damage
 
