@@ -2,14 +2,8 @@
 #Check to see if armor stand is separated from grave#
 execute if entity @s[tag=grave] run function du-in:kit/zombie/ability/check
 
-#Give Zombie ability#
-#execute if entity @s[level=1] run function du-in:kit/zombie/ability/item
-
 #Non-Villager functions
 execute if entity @s[tag=!stolen] run function du-in:kit/zombie/constant
-
-#Ability use# -Moved to kit/all/ability/activate
-# execute if entity @s[tag=kitActions,tag=!flagGot,tag=!badBlock] at @s rotated as @s run function du-in:kit/zombie/ability/set_spawn
 
 #Zombie timer
 execute if entity @s[scores={zombieTimer=0..}] run function du-in:kit/zombie/ability/timer
