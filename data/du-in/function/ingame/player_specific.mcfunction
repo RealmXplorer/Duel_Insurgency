@@ -89,7 +89,6 @@ execute if entity @s[tag=notEaten] run function du-in:kit/runza/ability/the_hung
 execute if entity @s[scores={golemFloat=-1..}] run function du-in:kit/golem/ability/float
 
 #Venting Mechanics
-# scoreboard players add @s[tag=sus,scores={ventCooldown=..61}] ventCooldown 1
 execute if entity @s[tag=vented] run function du-in:kit/all/vent/init
 
 #Kylo ability
@@ -109,7 +108,6 @@ execute if entity @s[scores={sabotageTimer=1..}] run function du-in:kit/nick/abi
 execute if entity @s[scores={pussFearTimer=1..}] run function du-in:kit/puss/ability/fear_timer
 
 #Sauron
-#execute if entity @s[scores={ringInvisTimer=1..}] run function du-in:kit/sauron/ability/with_ring/timer
 execute if entity @s[scores={seenTimer=1..}] run function du-in:kit/sauron/ability/no_ring/timer
 
 #Sans chestplate

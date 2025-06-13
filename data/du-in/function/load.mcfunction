@@ -98,7 +98,6 @@ scoreboard objectives add zombieTimer dummy
 scoreboard objectives add yharimRageDuration dummy
 scoreboard objectives add kratosRageDuration dummy
 scoreboard objectives add seenTimer dummy
-scoreboard objectives add ringInvisTimer dummy
 scoreboard objectives add weaponTier dummy
 scoreboard objectives add yharimRage dummy
 scoreboard objectives add kratosRage dummy

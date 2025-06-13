@@ -36,6 +36,7 @@ Kit number = character name
 31 = Sauron
 32 = Aang
 33 = Kratos
+34 = Soul of Cinder
 
 1000 = Saac
 1001 = PearApplez
