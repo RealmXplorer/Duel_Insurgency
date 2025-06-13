@@ -199,8 +199,10 @@ execute as @a run function du-in:music/ingame/stop/all
         tag @a remove ethicalBug
         tag @a remove hornerWeapon
         tag @a remove phoenix
-        scoreboard players reset @a crossbowShoot
+        tag @a remove drinkMe
 
+        scoreboard players reset @a crossbowShoot
+        scoreboard players reset @a shrunkTimer
     #Yharim#
         scoreboard players set @a yharimRage 0
         tag @a remove lorde

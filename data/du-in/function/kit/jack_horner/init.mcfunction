@@ -8,5 +8,7 @@ execute if entity @s[tag=asgoreTrident] run function du-in:kit/jack_horner/abili
 
 execute if entity @s[tag=theHatchet] run function du-in:kit/jack_horner/ability/hatchet/run
 
+execute if entity @s[scores={shrunkTimer=0..}] run function du-in:kit/jack_horner/ability/drink/timer
+
 #NON VILLAGER
 execute if entity @s[tag=!stolen] run function du-in:kit/jack_horner/constant

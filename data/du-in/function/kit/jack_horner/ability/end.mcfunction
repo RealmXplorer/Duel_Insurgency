@@ -13,4 +13,6 @@ tag @s remove phoenix
 tag @s remove hornerWeapon
 tag @s remove ethicalBug
 tag @s remove midasHand
+tag @s remove drinkMe
+scoreboard players reset @s shrunkTimer
 scoreboard players reset @s crossbowShoot

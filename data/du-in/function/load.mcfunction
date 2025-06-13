@@ -103,6 +103,7 @@ scoreboard objectives add yharimRage dummy
 scoreboard objectives add kratosRage dummy
 scoreboard objectives add yodaTimer dummy
 scoreboard objectives add sauronTimer dummy
+scoreboard objectives add shrunkTimer dummy
 
 #Skins
 scoreboard objectives add asgoreSkin dummy
