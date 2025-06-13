@@ -5,6 +5,7 @@ kill @e[tag=displayItem]
 #San Ricardo
 summon minecraft:item 228 92 16 {NoGravity:1b,Age:-32768,Health:99999,PickupDelay:32767,Tags:["mapLabel","displayItem"],Item:{id:"minecraft:sandstone",count:1},CustomNameVisible:1b,CustomName:{text:"San Ricardo",color:"gold",bold:true}}
 summon marker 230 91 16 {Tags:["mapVote","displayItem","vote18"]} 
+execute if entity @a[tag=ricardoLock,tag=partyLeader] run summon marker 228 92 16 {Tags:["displayItem","voidLocked"]}
 
 #Wild West
 summon minecraft:item 228 92 18 {NoGravity:1b,Age:-32768,Health:99999,PickupDelay:32767,Tags:["mapLabel","displayItem"],Item:{id:"minecraft:red_sandstone",count:1},CustomNameVisible:1b,CustomName:{text:"Wild West",color:"gold",bold:true}}
@@ -104,6 +105,7 @@ summon marker 234 91 20 {Tags:["mapVote","displayItem","vote15"]}
 #Kiln of the First Flame
 summon minecraft:item 236 92 18 {NoGravity:1b,Age:-32768,Health:99999,PickupDelay:32767,Tags:["mapLabel","displayItem"],Item:{id:"minecraft:iron_sword",count:1,components:{"minecraft:item_model":"du-in:weapons/coiled_sword"}},CustomNameVisible:1b,CustomName:{text:"First Flame",color:"#e7d8c1",bold:true}}
 summon marker 234 91 18 {Tags:["mapVote","displayItem","vote19"]} 
+execute if entity @a[tag=flameLock,tag=partyLeader] run summon marker 236 92 18 {Tags:["displayItem","voidLocked"]}
 
 #Random
 summon minecraft:item 232 92 37 {NoGravity:1b,Age:-32768,Health:99999,PickupDelay:32767,Tags:["mapLabel","displayItem"],Item:{id:"minecraft:lapis_lazuli",count:1,components:{"minecraft:item_model":"du-in:lobby/mystery"}},CustomNameVisible:1b,CustomName:{text:"Random Map",color:"blue",bold:true}}

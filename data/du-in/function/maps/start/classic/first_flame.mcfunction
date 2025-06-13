@@ -43,5 +43,5 @@ weather thunder 1000d
 time set 12500
 
 #Goner Eye#
-# execute unless entity @a[tag=partyLeader,tag=d2Lock] run summon interaction 15022 16 1018 {Tags:["voidLock","mapSpecific"],width:0.6f,height:0.6f,response:1b}
-# execute if entity @a[tag=partyLeader,tag=d2Lock] run summon interaction 15022 16 1018 {Tags:["usedVoidLock","mapSpecific"],width:0.6f,height:0.6f,response:1b}
+execute unless entity @a[tag=partyLeader,tag=flameLock] run summon interaction 7447 74 2783 {Tags:["voidLock","mapSpecific"],width:0.6f,height:0.6f,response:1b}
+execute if entity @a[tag=partyLeader,tag=flameLock] run summon interaction 7447 74 2783 {Tags:["usedVoidLock","mapSpecific"],width:0.6f,height:0.6f,response:1b}

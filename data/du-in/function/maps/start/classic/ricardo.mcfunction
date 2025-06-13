@@ -33,3 +33,8 @@ summon marker -3734 59 1273 {Tags:["vent","mapSpecific"]}
 summon marker -3762 57 1255 {Tags:["vent","mapSpecific"]}
 
 function du-in:ingame/conquest/reset_points
+
+#Goner Eye#
+execute unless entity @a[tag=partyLeader,tag=ricardoLock] run summon interaction -3760 57 1230 {Tags:["voidLock","mapSpecific"],width:0.6f,height:0.6f,response:1b}
+execute if entity @a[tag=partyLeader,tag=ricardoLock] run summon interaction -3760 57 1230 {Tags:["usedVoidLock","mapSpecific"],width:0.6f,height:0.6f,response:1b}
+

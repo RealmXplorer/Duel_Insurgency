@@ -9,6 +9,9 @@ tag @a remove hiveLock
 tag @a remove daLock
 tag @a remove ebbotLock
 tag @a remove d2Lock
+tag @a remove flameLock
+tag @a remove ricardoLock
+tag @a remove lgLock
 tag @a remove harvestLock
 tag @a remove mirageLock
 tag @a remove mazeLock
