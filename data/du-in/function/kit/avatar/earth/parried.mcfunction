@@ -1,5 +1,5 @@
 title @s title {text:""}
-title @s subtitle {text:"!!!",color:red}
+title @s subtitle {text:"!!!",color:dark_green}
 title @s times 0 15 5
 
 scoreboard players set @s golemFloat 3
