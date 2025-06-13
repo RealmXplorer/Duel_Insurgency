@@ -17,6 +17,7 @@ attribute @s knockback_resistance modifier add parry 0.1 add_value
 title @s title {text:""}
 title @s subtitle {text:"🛡 Parry! 🛡",color:blue}
 title @s times 0 15 5
-execute if entity @s[tag=!parried] on attacker run function du-in:kit/all/parry/parried
+execute unless entity @s[scores={kit=32}] if entity @s[tag=!parried] on attacker run function du-in:kit/all/parry/parried
+execute if entity @s[scores={kit=32}] if entity @s[tag=!parried] function du-in:kit/avatar/earth/parry
 scoreboard players add @s gameParries 1
 tag @s add parried
