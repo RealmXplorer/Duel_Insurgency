@@ -32,6 +32,8 @@ scoreboard objectives add jermaWeapon dummy
 scoreboard objectives add jermaOnion dummy
 scoreboard objectives add yodaDamage minecraft.custom:damage_taken
 scoreboard objectives add yodaAbsorb dummy
+scoreboard objectives add cinderType dummy
+scoreboard objectives add classSwapTimer dummy
 
 #Timers
 scoreboard objectives add ambience dummy

@@ -271,6 +271,10 @@ execute as @a run function du-in:music/ingame/stop/all
         
         scoreboard players reset @a skeletonMode
 
+    #Cinder
+        scoreboard players reset @a classSwapTimer
+        scoreboard players reset @a cinderType
+        
 tag @a remove hasRing
 
 ##INGAME TAG AND SCORE RESETS
