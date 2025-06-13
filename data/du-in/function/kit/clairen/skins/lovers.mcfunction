@@ -1,0 +1,5 @@
+#FESTIVE CLAIREN#
+item replace entity @s armor.head with minecraft:player_head[profile={id:[I;362162431,-1389739602,-1387506468,-619197374],name:"LoversClairen",properties:[{name:"textures",value:"eyJ0ZXh0dXJlcyI6eyJTS0lOIjp7InVybCI6Imh0dHA6Ly90ZXh0dXJlcy5taW5lY3JhZnQubmV0L3RleHR1cmUvYzM5NWZmMDFiZDVmYjVkM2I1YWNiZTU1OWM0NDlhOThhZjlkYzE5YjMwMjJhOTg5NTI3Yzg3MTAzNTZhODYzZSJ9fX0="}]}] 1
+item replace entity @s armor.chest with leather_chestplate[item_name={text:"Lovers Clairen Chest"},unbreakable={},tooltip_display={hidden_components:[dyed_color]},dyed_color=5811278,equippable={slot:"chest",asset_id:"du-in:lover_clairen"}]
+item replace entity @s armor.legs with leather_leggings[item_name={text:"Lovers Clairen Legs"},unbreakable={},tooltip_display={hidden_components:[dyed_color]},dyed_color=3485005,equippable={slot:"legs",asset_id:"du-in:lover_clairen"}]
+item replace entity @s armor.feet with leather_boots[item_name={text:"Lovers Clairen Feet"},unbreakable={},tooltip_display={hidden_components:[dyed_color]},dyed_color=5481547,equippable={slot:"feet",asset_id:"du-in:lover_clairen"}]
