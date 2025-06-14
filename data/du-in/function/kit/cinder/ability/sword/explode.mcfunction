@@ -1,3 +1,25 @@
-execute if entity @s[predicate=!du-in:effect/is_on_fire] unless block ~ ~ ~ water run summon minecraft:arrow ~ ~2.5 ~ {Motion:[0.0,-10.0,0.0],Fire:750,pickup:0b,player:1b,damage:.7d,Tags:["asgoreFireStarter","mapSpecific"],SoundEvent:"entity.player.hurt_on_fire"}
-damage @s 6 fireball
+#If Golem is close to enemy#
+execute if entity @s[tag=!sabotaged] as @a[distance=0.05..6,gamemode=!spectator,tag=!teamDead] run tag @s add cinderHit
+execute as @a[tag=cinderHit] if score @s team = @p[scores={kit=34},tag=kitActions] team run tag @s remove cinderHit
+tag @s[tag=sabotaged] add cinderHit
 
+execute if entity @s[tag=!sabotaged] if entity @a[gamemode=adventure,distance=0.05..6,tag=!teamDead] unless entity @a[tag=cinderHit] run function du-in:kit/all/ability/team
+
+#particle minecraft:explosion ~ ~1 ~ 1 0 1 0 15 force
+particle minecraft:small_flame ~ ~1 ~ 1 1 1 0.05 50 force
+particle minecraft:flame ~ ~1 ~ 0 0 0 0.4 100 force
+playsound minecraft:cinder.boom master @a ~ ~ ~ 1 1
+particle minecraft:flash ~ ~1 ~ 0 0 0 0 10 normal
+
+effect give @s fire_resistance 2 0 true
+
+execute as @a[tag=cinderHit] at @s run function du-in:kit/cinder/ability/sword/damage
+
+execute if entity @s[tag=sabotaged] run function du-in:kit/cinder/ability/sword/damage
+
+
+clear @s minecraft:carrot_on_a_stick
+xp set @s[tag=!stolen] 360 levels
+tag @s remove sabotaged
+tag @a remove cinderHit
+tag @s add kitDone
