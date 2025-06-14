@@ -8,5 +8,5 @@ execute as @a[tag=chickenJockey] run function du-in:kit/jack_black/ability/chick
 
 tag @s remove sabotaged
 clear @s minecraft:carrot_on_a_stick
-xp set @s[tag=!stolen] 400 levels
+xp set @s[tag=!stolen] 500 levels
 tag @s remove kitActions

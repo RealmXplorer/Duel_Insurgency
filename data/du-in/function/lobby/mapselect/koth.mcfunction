@@ -27,7 +27,7 @@ execute if entity @a[tag=zigLock,tag=partyLeader] run summon marker 228 92 26 {T
 summon marker 230 91 26 {Tags:["mapVote","displayItem","vote1"]} 
 
 #Lao Gai
-summon minecraft:item 228 92 24 {NoGravity:1b,Age:-32768,Health:99999,PickupDelay:32767,Tags:["mapLabel","displayItem"],Item:{id:"minecraft:tuff_bricks",count:1},CustomNameVisible:1b,CustomName:{text:"Lao Gai",color:"white",bold:true}}
+summon minecraft:item 228 92 24 {NoGravity:1b,Age:-32768,Health:99999,PickupDelay:32767,Tags:["mapLabel","displayItem"],Item:{id:"minecraft:tuff_bricks",count:1},CustomNameVisible:1b,CustomName:{text:"Lao Gai",color:"dark_green",bold:true}}
 execute if entity @a[tag=lgLock,tag=partyLeader] run summon marker 228 92 24 {Tags:["displayItem","voidLocked"]}
 summon marker 230 91 24 {Tags:["mapVote","displayItem","vote9"]} 
 

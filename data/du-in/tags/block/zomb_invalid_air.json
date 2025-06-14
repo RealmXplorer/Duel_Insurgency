@@ -8,7 +8,8 @@
         "#minecraft:fence_gates",
         "minecraft:iron_bars",
         "minecraft:chain",
-        "minecraft:lightning_rod"
+        "minecraft:lightning_rod",
+        "minecraft:slime_block"
 
     ]
 }

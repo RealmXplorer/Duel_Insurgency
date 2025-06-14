@@ -1,5 +1,5 @@
 #Add Yharim Rage#
-scoreboard players add @s kratosRage 1
+scoreboard players add @s kratosRage 5
 
 #Fully Charge Rage#
 execute if entity @s[scores={kratosRage=40..}] run clear @s minecraft:warped_fungus_on_a_stick[item_model="du-in:other/empty_rage"]

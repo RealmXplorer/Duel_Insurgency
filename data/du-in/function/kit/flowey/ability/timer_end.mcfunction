@@ -9,3 +9,5 @@ tag @s remove sabotaged
 execute if entity @s[tag=stolen] run tag @s add kitDone
 tag @s remove cooldown
 scoreboard players reset @s floweyHitTimer
+
+function du-in:kit/flowey/weapon

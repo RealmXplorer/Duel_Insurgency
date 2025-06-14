@@ -66,7 +66,7 @@ execute if entity @s[tag=notEaten] run tag @s remove notEaten
 execute if entity @s[tag=runza] run tag @s remove runza
 execute if entity @s[tag=peepedHorror] run tag @s remove peepedHorror
 
-execue if entity @s[shrunkTimer=0..] run function du-in:kit/jack_horner/ability/drink/reset
+execute if entity @s[scores={shrunkTimer=0..}] run function du-in:kit/jack_horner/ability/drink/reset
 
 #KILLSTREAK#
 scoreboard players reset @s killStreak

@@ -55,7 +55,6 @@ summon marker 675.0 14.00 -606.5 {Rotation:[0.0F,-90.0F],Tags:["escherDoor","map
 summon marker 685.0 25.00 -609.5 {Rotation:[0.0F,90.0F],Tags:["escherDoor","mapSpecific"]}
 summon marker 690.5 26.00 -609.0 {Rotation:[0.0F,90.0F],Tags:["escherDoor","mapSpecific"]}
 summon marker 687.5 27.00 -618.0 {Rotation:[0.0F,90.0F],Tags:["escherDoor","mapSpecific"]}
-summon marker 678.0 27.00 -603.5 {Rotation:[0.0F,90.0F],Tags:["escherDoor","mapSpecific"]}
 summon marker 683.0 27.00 -603.5 {Rotation:[0.0F,90.0F],Tags:["escherDoor","mapSpecific"]}
 summon marker 674.0 27.00 -620.5 {Rotation:[0.0F,90.0F],Tags:["escherDoor","mapSpecific"]}
 summon marker 676.5 25.00 -613.0 {Rotation:[0.0F,90.0F],Tags:["escherDoor","mapSpecific"]}

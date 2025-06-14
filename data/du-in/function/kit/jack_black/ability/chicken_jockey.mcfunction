@@ -1,7 +1,7 @@
 scoreboard players set @s jockeyTimer 60
 
 #Summon Chicken
-execute at @s run summon chicken ~ ~ ~ {Invulnerable:1b,Tags:["projectile","mapSpecific","notSet","noTimer"]}
+execute at @s run summon chicken ~ ~ ~ {Tags:["projectile","mapSpecific","notSet","noTimer"]}
 
 #Set player score into chicken
 execute store result score @n[type=chicken,tag=notSet,limit=1] player run scoreboard players get @s player

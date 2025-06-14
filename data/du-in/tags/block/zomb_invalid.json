@@ -3,7 +3,8 @@
     "values": [
         "minecraft:air",
         "#minecraft:liquid",
-        "#minecraft:all_doors"
+        "#minecraft:all_doors",
+        "minecraft:slime_block"
 
     ]
 }
