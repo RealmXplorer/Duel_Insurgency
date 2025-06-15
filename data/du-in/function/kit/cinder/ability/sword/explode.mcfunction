@@ -8,7 +8,7 @@ execute if entity @s[tag=!sabotaged] if entity @a[gamemode=adventure,distance=0.
 #particle minecraft:explosion ~ ~1 ~ 1 0 1 0 15 force
 particle minecraft:small_flame ~ ~1 ~ 1 1 1 0.05 50 force
 particle minecraft:flame ~ ~1 ~ 0 0 0 0.4 100 force
-playsound minecraft:cinder.boom master @a ~ ~ ~ 1 1
+playsound minecraft:cinder.boom master @a ~ ~ ~ 100 1
 particle minecraft:flash ~ ~1 ~ 0 0 0 0 10 normal
 
 effect give @s fire_resistance 2 0 true
