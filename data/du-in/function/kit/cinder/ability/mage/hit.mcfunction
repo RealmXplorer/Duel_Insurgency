@@ -1,0 +1,1 @@
+damage @s 6 explosion by @a[scores={kit=34,cinderMagic=0..},sort=nearest,limit=1]

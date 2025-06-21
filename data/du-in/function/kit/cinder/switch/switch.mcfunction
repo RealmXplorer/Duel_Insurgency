@@ -5,7 +5,7 @@ scoreboard players reset @s[scores={cinderType=3..}] cinderType
 #execute if entity @s[scores={cinderType=1}] run function du-in:kit/cinder/switch/spear
 #execute if entity @s[scores={cinderType=2}] run function du-in:kit/cinder/switch/mage
 
-scoreboard players set @s classSwapTimer 30
+scoreboard players set @s classSwapTimer 60
 clear @s
 function du-in:kit/cinder/weapon
 execute unless entity @s[level=1..] run xp add @s 30 levels

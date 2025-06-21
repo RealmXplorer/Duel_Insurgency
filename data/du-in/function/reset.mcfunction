@@ -278,6 +278,8 @@ execute as @a run function du-in:music/ingame/stop/all
     #Cinder
         scoreboard players reset @a classSwapTimer
         scoreboard players reset @a cinderType
+        scoreboard players reset @a cinderMagic
+        scoreboard players reset @a cinderTimer
         
 tag @a remove hasRing
 

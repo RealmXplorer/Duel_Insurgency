@@ -35,6 +35,7 @@ scoreboard objectives add yodaAbsorb dummy
 scoreboard objectives add cinderType dummy
 scoreboard objectives add classSwapTimer dummy
 scoreboard objectives add cinderTimer dummy
+scoreboard objectives add cinderMagic dummy
 
 #Timers
 scoreboard objectives add ambience dummy
@@ -142,6 +143,7 @@ scoreboard objectives add ffaNameToggle dummy
 scoreboard objectives add devModeToggle dummy
 scoreboard objectives add scaleModeToggle dummy
 scoreboard objectives add skinPreset dummy
+scoreboard objectives add timedMode dummy
 
 #Gamemode objectives
 scoreboard objectives add maxTeamLives dummy
