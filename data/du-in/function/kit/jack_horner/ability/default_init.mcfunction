@@ -1,5 +1,6 @@
 #Give magic ability
 execute store result score @s magicCount run random value 1..7
+#scoreboard players set @s magicCount 2
 
 execute if entity @s[scores={magicCount=1},tag=!sabotaged] run function du-in:kit/jack_horner/ability/poison_apple/give
 execute if entity @s[scores={magicCount=2},tag=!sabotaged] run function du-in:kit/jack_horner/ability/midas/give

@@ -12,11 +12,13 @@ playsound minecraft:entity.player.burp master @a ~ ~ ~ 100 1
 
 scoreboard players set @s shrunkTimer 100
 
+#tag @s add 
 #Remove ability from hand
 clear @s minecraft:carrot_on_a_stick
+tag @s add cooldown
 
 #Start cooldown
-xp set @s[tag=!stolen] 60 levels
+#xp set @s[tag=!stolen] 60 levels
 
 #End ability
-function du-in:kit/jack_horner/ability/end
+#function du-in:kit/jack_horner/ability/end

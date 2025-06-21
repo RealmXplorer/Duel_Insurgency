@@ -4,7 +4,8 @@ execute if entity @s[scores={step=150..}] run function du-in:kit/avatar/sounds/s
 execute if entity @s[scores={sprint=150..}] run function du-in:kit/avatar/sounds/step
 execute if entity @s[scores={jump=1..}] run function du-in:kit/avatar/sounds/jump
 
-execute if block ~ ~ ~ water rotated as @s run effect give @s regeneration 1 0 true
+#Water Healing
+execute if block ~ ~ ~ water rotated as @s run function du-in:kit/avatar/water/heal
 
 #Attributes#
 execute if entity @s[predicate=!du-in:effect/is_on_fire] run function du-in:kit/avatar/fire/default

@@ -1,5 +1,7 @@
 execute unless entity @s[scores={villSkin=1..}] run playsound minecraft:entity.villager.death master @a ~ ~ ~ 3 1
 execute if entity @s[scores={villSkin=1}] run playsound minecraft:entity.vindicator.death master @a ~ ~ ~ 3 1
+execute if entity @s[scores={villSkin=2}] run playsound minecraft:entity.witch.death master @a ~ ~ ~ 3 1
+
  clear @s minecraft:emerald
 scoreboard players reset @s villagerEmeralds
 

@@ -3,3 +3,4 @@ item replace entity @s weapon.offhand with minecraft:carrot_on_a_stick[item_name
 
 #playsound minecraft:jack_horner.phoenix voice @a ~ ~ ~ 1 1
 tag @s add magicBag
+#tag @s remove kitActions

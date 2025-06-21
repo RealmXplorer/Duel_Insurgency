@@ -203,6 +203,10 @@ execute as @a run function du-in:music/ingame/stop/all
 
         scoreboard players reset @a crossbowShoot
         scoreboard players reset @a shrunkTimer
+
+        advancement revoke @a only du-in:kit/midas
+        advancement revoke @a only du-in:kit/touch
+        
     #Yharim#
         scoreboard players set @a yharimRage 0
         tag @a remove lorde
