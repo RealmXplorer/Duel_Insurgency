@@ -1,4 +1,4 @@
-#If Golem is close to enemy#
+#If Cinder is close to enemy#
 execute as @a[distance=0.05..6,gamemode=!spectator,tag=!teamDead] run tag @s add cinderHit
 execute as @a[tag=cinderHit] if score @s team = @p[scores={kit=34},tag=kitActions] team run tag @s remove cinderHit
 
