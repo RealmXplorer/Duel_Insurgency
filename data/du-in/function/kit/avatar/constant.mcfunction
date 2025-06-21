@@ -6,6 +6,12 @@ execute if entity @s[scores={jump=1..}] run function du-in:kit/avatar/sounds/jum
 
 execute if block ~ ~ ~ water rotated as @s run effect give @s regeneration 1 0 true
 
+#Attributes#
+execute if entity @s[predicate=!du-in:effect/is_on_fire] run function du-in:kit/avatar/fire/default
+
+#Burning attributes for if he is on fire.
+execute if entity @s[predicate=du-in:effect/is_on_fire] run function du-in:kit/avatar/fire/burn
+
 #THE ARRIVAL OF SAURON
 #BROUGHT MANY REGRETS
 #I CANNOT SEND HIM BACK
