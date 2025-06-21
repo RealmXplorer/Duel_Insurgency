@@ -5,6 +5,8 @@ tag @s[tag=sabotaged] add golemHit
 
 execute if entity @s[tag=!sabotaged] unless entity @a[tag=golemHit] run function du-in:kit/all/ability/team
 
+execute if entity @s[tag=sabotaged] run function du-in:kit/all/ability/sabotage/effects
+
 execute as @a[tag=golemHit] run function du-in:kit/golem/ability/throw
 
 execute if entity @s[tag=sabotaged] run function du-in:kit/golem/ability/throw

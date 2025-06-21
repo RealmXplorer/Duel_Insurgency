@@ -37,6 +37,7 @@ tag @e[type=marker,tag=slimePatch,tag=!nameSet] add nameSet
 #If sabotaged, end ability
 xp set @s[tag=!stolen,tag=sabotaged] 320 levels
 tag @s[tag=stolen,tag=sabotaged] add kitDone
+execute if entity @s[tag=sabotaged] run function du-in:kit/all/ability/sabotage/effects
 
 #End function
 tag @s remove sabotaged

@@ -3,6 +3,8 @@ execute if entity @s[tag=sabotaged] run summon minecraft:marker ~ ~ ~ {Tags:["cl
 execute store result score @e[type=marker,tag=clairenField,tag=noTeam,limit=1] team run scoreboard players get @s team
 tag @e[type=marker,tag=clairenField,tag=noTeam,scores={team=1..}] remove noTeam
 
+execute if entity @s[tag=sabotaged] run function du-in:kit/all/ability/sabotage/effects
+
 playsound minecraft:clairen.field master @a ~ ~ ~ 1000 1
 playsound minecraft:sans.ability master @a ~ ~ ~ .25 1
 # particle minecraft:dust .75 0 1 2 ~ ~ ~ 2 2 2 2 50

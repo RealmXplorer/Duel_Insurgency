@@ -21,6 +21,7 @@ execute unless entity @s[tag=sabotaged] positioned ^-4 ^ ^ if entity @s[distance
 execute unless entity @s[tag=sabotaged] positioned ^4 ^ ^ if entity @s[distance=..25] run function du-in:kit/death/ability/right_raycast
 
 execute if entity @s[tag=sabotaged] run function du-in:kit/asgore/ability/contact
+execute if entity @s[tag=sabotaged] run function du-in:kit/all/ability/sabotage/effects
 
 #Remove ability from hand
 clear @s minecraft:carrot_on_a_stick

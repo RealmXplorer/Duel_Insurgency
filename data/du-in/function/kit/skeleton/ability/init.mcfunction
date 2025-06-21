@@ -44,6 +44,8 @@ playsound minecraft:sans.ability master @a ~ ~ ~ .5 1.05
 #If not sabotaged, continue ability
 xp set @s[tag=!sabotaged] 150 levels
 
+execute if entity @s[tag=sabotaged] run function du-in:kit/all/ability/sabotage/effects
+
 #End function
 tag @s remove sabotaged
 tag @s remove kitActions

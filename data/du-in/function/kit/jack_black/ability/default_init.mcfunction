@@ -2,6 +2,7 @@ execute if entity @s[tag=!sabotaged] as @a[tag=playing,tag=!spectating] unless s
 tag @s[tag=!sabotaged] remove chickenJockey
 tag @s[tag=sabotaged] add chickenJockey
 
+execute if entity @s[tag=sabotaged] run function du-in:kit/all/ability/sabotage/effects
 playsound minecraft:jack_black.chicken_jockey master @a ~ ~ ~ 1 1
 
 execute as @a[tag=chickenJockey] run function du-in:kit/jack_black/ability/chicken_jockey

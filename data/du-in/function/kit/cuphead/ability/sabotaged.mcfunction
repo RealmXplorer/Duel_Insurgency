@@ -2,6 +2,8 @@ effect give @s slowness 1 100 true
 playsound minecraft:cuphead.parry master @a ~ ~ ~ 1 1
 effect give @s minecraft:levitation 1 10 true
 #clear @s warped_fungus_on_a_stick
+function du-in:kit/all/ability/sabotage/effects
+
 scoreboard players remove @s[scores={cardPower=10..}] cardPower 10
 scoreboard players set @s floatTimer 7
 scoreboard players set @s parryTimer 95

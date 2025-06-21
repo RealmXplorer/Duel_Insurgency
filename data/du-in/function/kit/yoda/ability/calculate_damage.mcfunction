@@ -7,6 +7,7 @@ execute store result storage du-in:yoda_damage yodaAbsorb.value int 1 run scoreb
 execute if entity @s[tag=void] as @e[type=skeleton,distance=0.05..7] run function du-in:kit/yoda/ability/explode with storage du-in:yoda_damage yodaAbsorb
 
 #function du-in:kit/yoda/ability/explode with storage du-in:yoda_damage yodaAbsorb
+execute if entity @s[tag=sabotaged] run function du-in:kit/all/ability/sabotage/effects
 
 execute as @a[tag=yodaMark] run function du-in:kit/yoda/ability/explode with storage du-in:yoda_damage yodaAbsorb
 particle minecraft:explosion ~ ~ ~ 1 1 1 1 10 normal

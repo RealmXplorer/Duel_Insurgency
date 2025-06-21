@@ -5,6 +5,8 @@ execute as @a[tag=vaderHit] run damage @s 1 arrow by @a[scores={kit=18},tag=kitA
 
 execute as @a[tag=vaderHit] run function du-in:kit/vader/ability/effect
 
+execute if entity @s[tag=sabotaged] run function du-in:kit/all/ability/sabotage/effects
+
 execute unless entity @a[tag=vaderHit] run function du-in:kit/all/ability/team
 execute if entity @a[tag=vaderHit] run function du-in:kit/vader/ability/cooldown
 

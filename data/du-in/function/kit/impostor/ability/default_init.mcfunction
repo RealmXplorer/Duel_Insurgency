@@ -7,6 +7,8 @@ schedule function du-in:kit/impostor/ability/meeting 30t
 execute unless entity @s[tag=sabotaged] as @a[tag=playing,tag=!spectating] unless score @a[tag=meetingCall,limit=1] team = @s team run tag @s[tag=!flagGot] add meeting
 tag @s[tag=sabotaged] add meeting
 
+execute if entity @s[tag=sabotaged] run function du-in:kit/all/ability/sabotage/effects
+
 effect give @a[tag=meeting] minecraft:fire_resistance 1 255 true
 
 playsound minecraft:sus.emerg master @a ~ ~ ~ 2000 1

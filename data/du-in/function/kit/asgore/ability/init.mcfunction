@@ -2,6 +2,7 @@
     #This one is tagged to play the extinguish and burning sounds.
     execute unless entity @s[tag=sabotaged] run function du-in:kit/asgore/ability/unsabotaged
     execute if entity @s[tag=sabotaged] run function du-in:kit/asgore/ability/contact
+    execute if entity @s[tag=sabotaged] run function du-in:kit/all/ability/sabotage/effects
 
 #Play Particles and sounds
 particle minecraft:flame ~ ~.1 ~ 0.6 .6 0.6 0 100 force

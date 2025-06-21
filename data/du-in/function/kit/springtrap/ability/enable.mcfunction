@@ -9,5 +9,7 @@ execute if entity @s[predicate=!du-in:effect/is_on_fire] run attribute @s minecr
 execute if entity @s[tag=stolen] run attribute @s minecraft:movement_speed base set 0.13
 effect clear @s[tag=!sabotaged] minecraft:levitation
 effect clear @s[tag=!sabotaged] minecraft:weakness
-damage @s[scores={Health=11..}] 10
+damage @s[scores={Health=6..}] 5
+damage @s[tag=sabotaged] 5
+execute if entity @s[tag=sabotaged] run function du-in:kit/all/ability/sabotage/effects
 tag @s remove kitActions

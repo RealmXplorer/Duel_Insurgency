@@ -1,6 +1,7 @@
 clear @s minecraft:carrot_on_a_stick
 xp set @s[tag=!stolen] 350 levels
 
+function du-in:kit/all/ability/sabotage/effects
 
 effect give @s minecraft:slowness 2 3 true
 #execute if entity @s[tag=!asFound,tag=teamDead] run say Grave gone but you live

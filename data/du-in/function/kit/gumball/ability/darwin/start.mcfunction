@@ -2,6 +2,8 @@ execute if entity @s[tag=!void,tag=!sabotaged] as @a[distance=0.05..4,tag=playin
 execute if entity @s[tag=void] as @e[type=skeleton,tag=gonerThing,distance=0.05..4] at @s run function du-in:kit/gumball/ability/darwin/void
 tag @s[tag=sabotaged] add noClothes
 
+execute if entity @s[tag=sabotaged] run function du-in:kit/all/ability/sabotage/effects
+
 execute as @a[tag=noClothes] at @s run function du-in:kit/gumball/ability/darwin/no_clothes
 
 #title @s title {text:"Imagine them ",color:red}

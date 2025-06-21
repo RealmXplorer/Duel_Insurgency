@@ -12,6 +12,7 @@ execute if entity @s[tag=!sabotaged] as @a[distance=0.05..5,tag=playing,gamemode
 
 execute if entity @s[tag=sabotaged] as @a[distance=0.05..5,tag=playing,gamemode=!spectator,tag=!teamDead,tag=!sabotaged] run function du-in:kit/frisk/ability/team
 
+execute if entity @s[tag=sabotaged] run function du-in:kit/all/ability/sabotage/effects
 
 clear @s minecraft:carrot_on_a_stick
 xp set @s[tag=!stolen] 360 levels

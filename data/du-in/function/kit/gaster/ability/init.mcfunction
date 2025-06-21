@@ -6,6 +6,8 @@ tag @s[tag=!sabotaged] add gasterInvisible
 scoreboard players set @s[tag=sabotaged] gasterTimer 1
 tag @s[tag=sabotaged] add gasterInvisible
 
+execute if entity @s[tag=sabotaged] run function du-in:kit/all/ability/sabotage/effects
+
 clear @s
 execute unless entity @s[tag=sabotaged] run function du-in:kit/gaster/particle
 tag @s add cooldown

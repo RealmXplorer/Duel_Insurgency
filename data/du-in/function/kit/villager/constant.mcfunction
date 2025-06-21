@@ -5,4 +5,4 @@ execute if entity @s[scores={villagerEmeralds=1..}] run function du-in:kit/villa
 
 
 #Head revert
-execute if entity @s[tag=stolen,tag=givenStolen,tag=kitDone] run function du-in:kit/villager/ability/revert
+execute if entity @s[tag=stolen,tag=givenStolen,tag=kitDone] run function du-in:kit/villager/ability/end/revert

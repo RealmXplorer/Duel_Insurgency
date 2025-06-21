@@ -5,6 +5,7 @@ xp set @s[tag=!stolen] 600 levels
 tag @s[tag=!sabotaged] remove runza
 tag @s[tag=!sabotaged] remove notEaten
 effect clear @s[tag=!sabotaged]
+execute if entity @s[tag=sabotaged] run function du-in:kit/all/ability/sabotage/effects
 effect give @s minecraft:speed 3 0 true
 playsound minecraft:runza.ability master @a ~ ~ ~ 100 1
 playsound minecraft:sans.ability master @a ~ ~ ~ 1 1.05

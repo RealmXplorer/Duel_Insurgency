@@ -1,5 +1,7 @@
 scoreboard players set @s[tag=!sabotaged] creeperTimer 40
 scoreboard players set @s[tag=sabotaged] creeperTimer 1
+execute if entity @s[tag=sabotaged] run function du-in:kit/all/ability/sabotage/effects
+
 effect give @s minecraft:speed 2 3 true
 playsound minecraft:entity.creeper.primed master @a ~ ~ ~ 100 1
 

@@ -2,6 +2,7 @@ execute unless entity @s[tag=sabotaged] as @a[distance=0.05..4,gamemode=!spectat
 
 scoreboard players set @s[tag=sabotaged] ralseiTimer 70
 
+execute if entity @s[tag=sabotaged] run function du-in:kit/all/ability/sabotage/effects
 
 execute if entity @s[tag=!sabotaged] unless entity @a[tag=sansHit] run function du-in:kit/all/ability/team
 execute if entity @a[tag=sansHit] run function du-in:kit/sans/ability/tp_test

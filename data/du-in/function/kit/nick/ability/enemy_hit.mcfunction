@@ -1,5 +1,5 @@
 #Remove ability
-execute if entity @s[nbt={Inventory:[{id:"minecraft:carrot_on_a_stick"}]}] run function du-in:kit/nick/ability/enemy_has_ability
+execute if entity @s[nbt={Inventory:[{id:"minecraft:carrot_on_a_stick"}]}] run function du-in:kit/nick/ability/sabotage/sabotage
 
 execute if entity @s[nbt=!{Inventory:[{id:"minecraft:carrot_on_a_stick"}]}] run function du-in:kit/nick/ability/enemy_no_ability
 

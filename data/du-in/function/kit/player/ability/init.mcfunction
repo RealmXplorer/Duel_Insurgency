@@ -19,6 +19,8 @@ execute unless entity @s[scores={steveSkin=3..4}] run playsound minecraft:entity
 execute if entity @s[scores={steveSkin=4}] run playsound minecraft:terraria.drink master @a ~ ~ ~ 100 1
 execute if entity @s[scores={steveSkin=3}] run playsound minecraft:gaster.back master @a ~ ~ ~ 100 1.5
 
+execute if entity @s[tag=sabotaged] run function du-in:kit/all/ability/sabotage/effects
+
 #Remove hunger if affected by Runza Rex#
 tellraw @s[tag=!sabotaged] [{text:"What a healthy breakfast! You feel full!",bold:true,color:green}]
 scoreboard players set @s[tag=notEaten,tag=!sabotaged] runzaEat 1

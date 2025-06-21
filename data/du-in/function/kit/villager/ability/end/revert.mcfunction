@@ -3,7 +3,7 @@ scoreboard players set @s kit 8
 execute store result storage du-in:main player.current int 1 run scoreboard players get @s player
 
 #Find player
-execute at @s run function du-in:kit/villager/ability/revert_kit with storage du-in:main player
+execute at @s run function du-in:kit/villager/ability/end/revert_kit with storage du-in:main player
 
 scoreboard players reset @s asrielHitTimer
 

@@ -9,6 +9,7 @@ effect give @s minecraft:speed 2 7 true
 clear @s carrot_on_a_stick
 xp set @s[tag=!stolen] 380 levels
 scoreboard players set @s[tag=!sabotaged] gumSwapTimer 120
+execute if entity @s[tag=sabotaged] run function du-in:kit/all/ability/sabotage/effects
 execute if entity @s[tag=sabotage] run function du-in:kit/gumball/ability/gumball/explode
 
 clear @s warped_fungus_on_a_stick
