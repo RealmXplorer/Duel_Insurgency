@@ -1,7 +1,7 @@
 #function du-in:kit/sauron/weapon
 #function du-in:kit/sauron/armor
 #If Sauron is close to enemy#
-execute as @a[distance=0.05..6,gamemode=!spectator,tag=!teamDead] run tag @s add sauronHit
+execute as @a[distance=0.05..4,gamemode=!spectator,tag=!teamDead] run tag @s add sauronHit
 execute as @a[tag=sauronHit] if score @s team = @p[scores={kit=31},tag=kitActions] team run tag @s remove sauronHit
 
 #execute if entity @a[gamemode=adventure,distance=0.05..6,tag=!teamDead] unless entity @a[tag=sauronHit] run function du-in:kit/all/ability/team
