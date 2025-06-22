@@ -10,7 +10,7 @@ execute as @a[distance=0.05..5,tag=playing,gamemode=!spectator,tag=!teamDead] if
 
 
 clear @s minecraft:carrot_on_a_stick
-xp set @s[tag=!stolen] 370 levels
+xp set @s[tag=!stolen] 350 levels
 
 
 particle minecraft:electric_spark ~ ~1.5 ~ 0.6 0.6 0.6 0 150 force

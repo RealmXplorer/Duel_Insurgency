@@ -47,6 +47,9 @@ execute if entity @s[scores={jermaTimer=0..}] run scoreboard players reset @s je
 
 scoreboard players reset @s ralseiTimer
 
+function du-in:kit/cinder/ability/mage/end
+scoreboard players reset @s cinderMagic
+
 execute if entity @s[tag=midasTouched] run tag @s remove midasTouched
 
 scoreboard players set @s pussFearTimer 1
