@@ -3,12 +3,12 @@ kill @e[tag=displayItem]
 
 ##Left Side
 #San Ricardo
-summon minecraft:item 228 92 16 {NoGravity:1b,Age:-32768,Health:99999,PickupDelay:32767,Tags:["mapLabel","displayItem"],Item:{id:"minecraft:sandstone",count:1},CustomNameVisible:1b,CustomName:{text:"San Ricardo",color:"gold",bold:true}}
+summon minecraft:item 228 92 16 {NoGravity:1b,Age:-32768,Health:99999,PickupDelay:32767,Tags:["mapLabel","displayItem"],Item:{id:"minecraft:sandstone",count:1},CustomNameVisible:1b,CustomName:{text:"San Ricardo",color:"#ffc500",bold:true}}
 summon marker 230 91 16 {Tags:["mapVote","displayItem","vote18"]} 
 execute if entity @a[tag=ricardoLock,tag=partyLeader] run summon marker 228 92 16 {Tags:["displayItem","voidLocked"]}
 
 #Wild West
-summon minecraft:item 228 92 18 {NoGravity:1b,Age:-32768,Health:99999,PickupDelay:32767,Tags:["mapLabel","displayItem"],Item:{id:"minecraft:red_sandstone",count:1},CustomNameVisible:1b,CustomName:{text:"Wild West",color:"gold",bold:true}}
+summon minecraft:item 228 92 18 {NoGravity:1b,Age:-32768,Health:99999,PickupDelay:32767,Tags:["mapLabel","displayItem"],Item:{id:"minecraft:red_sandstone",count:1},CustomNameVisible:1b,CustomName:{text:"Wild West",color:"#ff8100",bold:true}}
 execute if entity @a[tag=escLock,tag=partyLeader] run summon marker 228 92 18 {Tags:["displayItem","voidLocked"]} 
 summon marker 230 91 18 {Tags:["mapVote","displayItem","vote17"]} 
 
