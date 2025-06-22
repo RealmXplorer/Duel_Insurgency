@@ -1,9 +1,9 @@
 scoreboard players add @s cinderType 1
 scoreboard players reset @s[scores={cinderType=3..}] cinderType
 
-#execute unless entity @s[scores={cinderType=1..}] run function du-in:kit/cinder/switch/sword
-#execute if entity @s[scores={cinderType=1}] run function du-in:kit/cinder/switch/spear
-#execute if entity @s[scores={cinderType=2}] run function du-in:kit/cinder/switch/mage
+execute unless entity @s[scores={cinderType=1..}] run attribute @s minecraft:block_interaction_range base set 4.5
+execute if entity @s[scores={cinderType=1}] run attribute @s minecraft:block_interaction_range base set 5
+execute if entity @s[scores={cinderType=2}] run attribute @s minecraft:block_interaction_range base set 4.5
 
 scoreboard players set @s classSwapTimer 60
 clear @s
