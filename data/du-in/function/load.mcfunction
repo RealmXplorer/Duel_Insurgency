@@ -313,6 +313,7 @@ scoreboard objectives add scoreMost dummy
 scoreboard objectives add secCount dummy
 #scoreboard objectives add setGamemode dummy
 scoreboard objectives add gamemode dummy
+scoreboard objectives add kitTheme dummy
 
 scoreboard objectives add shutdown dummy
 scoreboard objectives add spawnpoint dummy

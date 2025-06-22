@@ -4,7 +4,7 @@ scoreboard players enable @s info
 clear @s player_head[custom_data={du-in:'aangHead'}]
 
 #Play sound
-#playsound minecraft:nick.voice master @s ~ ~ ~ 100 1
+playsound minecraft:avatar.hit master @s ~ ~ ~ 100 1
 
 #Announce kit pick
 tellraw @s [{text:"Selected the ",bold:true,color:gray},{text:"Aang ",bold:true,color:gold},{text:"class! ",bold:true,color:gray},{text:"(Click here for kit info!)",bold:false,color:white,"underlined":true,"click_event":{"action":"run_command","command":"/trigger info add 1"}}]
