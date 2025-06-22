@@ -200,6 +200,7 @@ execute as @a run function du-in:music/ingame/stop/all
         tag @a remove hornerWeapon
         tag @a remove phoenix
         tag @a remove drinkMe
+				tag @a remove theHatchet
 
         scoreboard players reset @a crossbowShoot
         scoreboard players reset @a shrunkTimer
