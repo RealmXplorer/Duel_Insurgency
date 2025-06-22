@@ -1,7 +1,7 @@
 {
   "anvil_cost": 4,
   "description": {
-    "text": "Pogo"
+    "text": "Hopps"
   },
   "effects": {
     "minecraft:post_attack": [
@@ -19,19 +19,21 @@
               "per_level_above_first": 0.35
             },
             "values": [
-              1.2,
-              1.75,
-              2.2
+              0.75,
+              1.25,
+              2
             ]
           },
           "large_particle": {
-            "type": "minecraft:gust_emitter_large"
+            "type": "minecraft:cloud"
           },
-          "radius": 3.5,
+          "radius": 1,
           "small_particle": {
-            "type": "minecraft:gust_emitter_small"
+            "type": "minecraft:dust",
+            "color": 16777215,
+            "scale": 1
           },
-          "sound": "minecraft:entity.rabbit.death"
+          "sound": "minecraft:entity.rabbit.jump"
         },
         "enchanted": "attacker",
         "requirements": {
