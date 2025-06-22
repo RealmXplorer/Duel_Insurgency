@@ -1,6 +1,7 @@
 effect clear @s minecraft:invisibility
 attribute @s minecraft:jump_strength modifier remove flowey_jump
 effect clear @s[tag=sabotaged] minecraft:slowness
+execute if entity @s[tag=!stolen] run function du-in:kit/flowey/weapon
 
 xp set @s[tag=!stolen] 360 levels
 clear @s minecraft:carrot_on_a_stick

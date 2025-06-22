@@ -7,12 +7,9 @@ execute unless entity @s[level=3..] unless items entity @s[tag=!startgame,tag=!c
 
 #Check if player has weapon
 execute if entity @s[tag=!startgame,tag=!pussFear,tag=!kitMenu,tag=!teamDead] store result score @s weapCount run clear @s #du-in:weapon 0
-#execute if entity @s[tag=!startgame,tag=!pussFear,tag=!kitMenu,tag=!teamDead] if score @s weapCount matches 2.. run clear @s #du-in:weapon
-
-#execute if entity @s[tag=!startgame,tag=!pussFear,tag=!kitMenu,tag=!teamDead] unless score @s weapCount matches 1 run clear @s #du-in:weapon
-
 execute if entity @s[tag=!startgame,tag=!pussFear,tag=!kratosRage,tag=!kitMenu,tag=!teamDead] unless score @s weapCount matches 1 run function du-in:kit/all/weapon/init
 
+#Jerma Randomizer
 execute if entity @s[tag=playing,scores={kit=1002},predicate=du-in:chance/third_chance] run function du-in:kit/jerma/weapon
 
 #Spawnpoint stuff

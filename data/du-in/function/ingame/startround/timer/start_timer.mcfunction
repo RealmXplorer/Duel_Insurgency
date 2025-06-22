@@ -32,7 +32,9 @@ tag @a[tag=!spectating] add playing
 
     #Give all players weapons
     tag @a[scores={kit=31},limit=1] add hasRing
-    scoreboard players set @a[tag=playing,gamemode=!spectator] weapCount 0
+    #scoreboard players set @a[tag=playing,gamemode=!spectator] weapCount 0
+    #advancement revoke @s only du-in:utility/weap_count
+    function du-in:kit/all/weapon/start
     execute as @a[tag=playing,gamemode=!spectator] run function du-in:kit/all/weapon/init
     execute as @a[tag=hasRing] run function du-in:kit/sauron/ring/give_ring
 

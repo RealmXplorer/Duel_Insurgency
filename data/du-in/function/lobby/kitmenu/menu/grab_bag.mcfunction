@@ -8,9 +8,8 @@ execute unless items entity @s inventory.10 minecraft:player_head run function d
 execute unless items entity @s inventory.8 minecraft:player_head run function du-in:lobby/kitmenu/menu/grabbag/avatar
 execute unless items entity @s inventory.7 minecraft:player_head run function du-in:lobby/kitmenu/menu/grabbag/sauron
 execute unless items entity @s inventory.6 minecraft:player_head run function du-in:lobby/kitmenu/menu/grabbag/cinder
-execute unless items entity @s inventory.4 minecraft:player_head run function du-in:lobby/kitmenu/menu/grabbag/cuphead
 execute unless items entity @s inventory.5 minecraft:player_head run function du-in:lobby/kitmenu/menu/grabbag/gumball
-execute unless items entity @s inventory.6 minecraft:player_head run function du-in:lobby/kitmenu/menu/grabbag/cinder
+execute unless items entity @s inventory.4 minecraft:player_head run function du-in:lobby/kitmenu/menu/grabbag/cuphead
 execute unless items entity @s inventory.3 minecraft:player_head run function du-in:lobby/kitmenu/menu/grabbag/clairen
 execute unless items entity @s inventory.2 minecraft:player_head run function du-in:lobby/kitmenu/menu/grabbag/yharim
 execute unless items entity @s inventory.1 minecraft:player_head run function du-in:lobby/kitmenu/menu/grabbag/springtrap
