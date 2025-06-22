@@ -4,7 +4,7 @@ execute as @a[tag=cinderHit] if score @s team = @p[scores={kit=34},tag=kitAction
 
 execute if entity @a[gamemode=adventure,distance=0.05..6,tag=!teamDead] unless entity @a[tag=cinderHit] run function du-in:kit/all/ability/team
 
-#particle minecraft:explosion ~ ~1 ~ 1 0 1 0 15 force
+particle minecraft:explosion ~ ~1 ~ 1 0 1 0 15 force
 particle minecraft:small_flame ~ ~1 ~ 1 1 1 0.05 50 force
 particle minecraft:flame ~ ~1 ~ 0 0 0 0.4 100 force
 playsound minecraft:cinder.boom master @a ~ ~ ~ 100 1

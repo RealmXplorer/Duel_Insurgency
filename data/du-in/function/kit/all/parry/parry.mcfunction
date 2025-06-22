@@ -14,9 +14,10 @@ attribute @s minecraft:armor modifier add parry 100 add_value
 attribute @s armor_toughness modifier add parry 100 add_value
 attribute @s knockback_resistance modifier add parry 0.1 add_value
 
-title @s title {text:""}
-title @s subtitle {text:"🛡 Parry! 🛡",color:blue}
+execute unless entity @s[scores={kit=32}] run title @s title {text:""}
+execute unless entity @s[scores={kit=32}] run title @s subtitle {text:"🛡 Parry! 🛡",color:blue}
 title @s times 0 15 5
+
 execute unless entity @s[scores={kit=32}] if entity @s[tag=!parried] on attacker run function du-in:kit/all/parry/parried
 execute if entity @s[scores={kit=32}] if entity @s[tag=!parried] run function du-in:kit/avatar/earth/parry
 scoreboard players add @s gameParries 1
