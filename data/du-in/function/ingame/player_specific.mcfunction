@@ -63,11 +63,11 @@ execute if entity @s[predicate=!du-in:has_armor,predicate=!du-in:effect/is_invis
     execute if entity @s[scores={simSprint=..0}] run function du-in:ingame/steptrack/sprint_stop
     execute if entity @s[scores={simSprint=1..}] run function du-in:ingame/steptrack/sprint_go
 
-#SANS HIT#
-    execute if entity @s[scores={sansHitTimer=0..}] run function du-in:kit/sans/ability/hit/timer
-
 #Kill and Death functions
     execute if entity @s[scores={justdied=1..}] run function du-in:ingame/death
+
+#SANS HIT#
+    execute if entity @s[scores={sansHitTimer=0..}] run function du-in:kit/sans/ability/hit/timer
 
 #Peep the Horror
 execute if entity @s[scores={jermaTimer=0..}] run function du-in:kit/jerma/ability/timer
@@ -109,9 +109,6 @@ execute if entity @s[scores={pussFearTimer=1..}] run function du-in:kit/puss/abi
 
 #Sauron
 execute if entity @s[scores={seenTimer=1..}] run function du-in:kit/sauron/ability/no_ring/timer
-
-#Sans chestplate
-#execute if entity @s[scores={sansHitTimer=0..}] unless entity @s[scores={gasterTimer=..79}] unless entity @s[scores={floweyHitTimer=1..}] unless entity @s[scores={deathTimer=0..}] run item replace entity @s armor.chest with minecraft:leather_chestplate[item_name={text:'Gravity',color:blue,bold:true},unbreakable={},tooltip_display={hide_tooltip:true,hidden_components:["dyed_color","unbreakable"]},attribute_modifiers=[{type:"knockback_resistance",id:"knockback_resistance",amount:1,operation:"add_value"}],dyed_color=2228479] 1
 
 #Clairen Field
 execute if entity @s[tag=inField] run function du-in:kit/clairen/ability/field_effects

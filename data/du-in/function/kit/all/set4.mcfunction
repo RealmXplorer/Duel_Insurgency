@@ -30,3 +30,6 @@ execute if entity @s[scores={kit=33}] run function du-in:kit/kratos/init
 
 #Cinder#
 execute if entity @s[scores={kit=34}] run function du-in:kit/cinder/init
+
+#Judy#
+execute if entity @s[scores={kit=35}] run function du-in:kit/judy/init
