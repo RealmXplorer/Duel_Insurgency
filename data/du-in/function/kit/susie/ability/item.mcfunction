@@ -1,0 +1,1 @@
+item replace entity @s weapon.offhand with minecraft:carrot_on_a_stick[item_name={text:"Lullaby",color:gold,bold:true},lore=[{text:"Right click to activate!",color:dark_purple,bold:true},[{text:""}],{text:"Puts nearby enemies to sleep",color:dark_gray},{text:"",color:dark_gray}],enchantment_glint_override=true,item_model="du-in:abilities/lullaby"]

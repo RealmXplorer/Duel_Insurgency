@@ -1,0 +1,1 @@
+item replace entity @s hotbar.0 with minecraft:wooden_axe[item_name={text:"Axe of Justice",color:gray,bold:true},item_model="du-in:weapons/axe_justice",unbreakable={},attribute_modifiers=[{type:"attack_damage",id:"attack_damage",amount:4.75,operation:"add_value",slot:"mainhand"},{type:"attack_speed",id:"attack_speed",amount:-2.65,operation:"add_value",slot:"mainhand"}]] 1
