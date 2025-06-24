@@ -1,6 +1,6 @@
 #DEFAULT#
-item replace entity @s armor.head with minecraft:player_head[profile={id:[I;1694033945,-1566817452,-1958054767,-65585814],name:"Ralsei",properties:[{name:"textures",value:"eyJ0ZXh0dXJlcyI6eyJTS0lOIjp7InVybCI6Imh0dHA6Ly90ZXh0dXJlcy5taW5lY3JhZnQubmV0L3RleHR1cmUvM2ZmZmUxZDFjM2E2NTk5ZDZmNGI4MzZiZTUxNDhlNjFiOTdmNTJiNzlmODMzNWUwZjFkMDA1OTU5MjMyMTc2NCJ9fX0="}]}] 1
-item replace entity @s armor.chest with leather_chestplate[item_name={text:"Susie Chest"},unbreakable={},tooltip_display={hidden_components:[dyed_color]},dyed_color=3319872,equippable={slot:"chest",asset_id:"du-in:susie"}] 1
-item replace entity @s armor.legs with leather_leggings[item_name={text:"Susie Legs"},unbreakable={},tooltip_display={hidden_components:[dyed_color]},dyed_color=3698782,equippable={slot:"legs",asset_id:"du-in:susie"}] 1
-item replace entity @s armor.feet with leather_boots[item_name={text:"Susie Feet"},unbreakable={},tooltip_display={hidden_components:[dyed_color]},dyed_color=15921906,equippable={slot:"feet",asset_id:"du-in:susie"}] 1
+item replace entity @s armor.head with minecraft:player_head[minecraft:custom_name={"text":"Susie","color":"gold","underlined":true,"bold":true,"italic":false},profile={id:[I;1740161668,-1117172192,-1634989760,-824738097],properties:[{name:"textures",value:"eyJ0ZXh0dXJlcyI6eyJTS0lOIjp7InVybCI6Imh0dHA6Ly90ZXh0dXJlcy5taW5lY3JhZnQubmV0L3RleHR1cmUvMzYxNDEzYTFmMzA2YjA3MzEyYmQ4ZTc2YjJlNGExYjlmNDU3ZmFiODhlY2U3ZmI2ZjVmY2E2ODhhY2NhMjc4NCJ9fX0="}]}] 1
+item replace entity @s armor.chest with leather_chestplate[item_name={text:"Susie Chest"},unbreakable={},tooltip_display={hidden_components:[dyed_color]},dyed_color=1377309,equippable={slot:"chest",asset_id:"du-in:susie"}] 1
+item replace entity @s armor.legs with leather_leggings[item_name={text:"Susie Legs"},unbreakable={},tooltip_display={hidden_components:[dyed_color]},dyed_color=1442325,equippable={slot:"legs",asset_id:"du-in:susie"}] 1
+item replace entity @s armor.feet with leather_boots[item_name={text:"Susie Feet"},unbreakable={},tooltip_display={hidden_components:[dyed_color]},dyed_color=14978315,equippable={slot:"feet",asset_id:"du-in:susie"}] 1
 tag @s remove armor
