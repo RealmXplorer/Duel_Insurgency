@@ -6,10 +6,16 @@
         "#minecraft:wool_carpets",
         "minecraft:moss_carpet",
         "minecraft:tall_grass",
+        "minecraft:short_grass",
         "#minecraft:flowers",
         "#minecraft:saplings",
         "#minecraft:replaceable_by_trees",
-        "minecraft:snow"
+        "minecraft:snow",
+        "minecraft:light",
+        "minecraft:tall_dry_grass",
+        "minecraft:short_dry_grass",
+        "minecraft:leaf_litter",
+        "#minecraft:all_signs"
 
     ]
 }

@@ -36,6 +36,7 @@ scoreboard objectives add cinderType dummy
 scoreboard objectives add classSwapTimer dummy
 scoreboard objectives add cinderTimer dummy
 scoreboard objectives add cinderMagic dummy
+scoreboard objectives add TPSound dummy
 
 #Timers
 scoreboard objectives add ambience dummy

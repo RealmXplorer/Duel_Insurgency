@@ -19,21 +19,21 @@
               "per_level_above_first": 0.35
             },
             "values": [
-              0.75,
-              1.25,
-              2
+              0.8,
+              1.6,
+              2.4
             ]
           },
           "large_particle": {
-            "type": "minecraft:cloud"
+            "type": "minecraft:gust_emitter_small"
           },
-          "radius": 1,
+          "radius": 1.5,
           "small_particle": {
             "type": "minecraft:dust",
             "color": 16777215,
             "scale": 1
           },
-          "sound": "minecraft:entity.rabbit.jump"
+          "sound": "minecraft:entity.player.attack.nodamage"
         },
         "enchanted": "attacker",
         "requirements": {

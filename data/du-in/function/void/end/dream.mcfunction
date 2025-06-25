@@ -70,6 +70,10 @@ execute if entity @s[scores={kit=32},tag=!stolen] run tellraw @s [{text:"You dre
 execute if entity @s[scores={kit=33},tag=!stolen] run tellraw @s [{text:"You dream of peace...",color:gray,"italic": true}]
 #Soul of Cinder
 execute if entity @s[scores={kit=34},tag=!stolen] run tellraw @s [{text:"You dream of flame...",color:gray,"italic": true}]
+#Judy#
+execute if entity @s[scores={kit=35},tag=!stolen] run tellraw @s [{text:"You dream of justice...",color:gray,"italic": true}]
+
+#Susie#
 
 #Saac
 execute if entity @s[scores={kit=1000}] run tellraw @s [{text:"You dream of kickstarts...",color:gray,"italic": true}]

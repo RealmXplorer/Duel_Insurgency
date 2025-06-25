@@ -281,6 +281,9 @@ execute as @a run function du-in:music/ingame/stop/all
         scoreboard players reset @a cinderType
         scoreboard players reset @a cinderMagic
         scoreboard players reset @a cinderTimer
+
+    #Judy
+        tag @a remove judySleep
         
 tag @a remove hasRing
 

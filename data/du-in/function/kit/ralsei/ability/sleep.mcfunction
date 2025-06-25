@@ -16,4 +16,5 @@ execute if entity @s[scores={ralseiTimer=20},predicate=du-in:chance/low_chance] 
 execute if entity @s[scores={ralseiTimer=1..10}] run effect give @s minecraft:slowness 1 6 true
 
 scoreboard players remove @s[scores={ralseiTimer=-1..}] ralseiTimer 1
+tag @s[scores={ralseiTimer=..0}] remove judySleep
 scoreboard players reset @s[scores={ralseiTimer=..0}] ralseiTimer

@@ -70,6 +70,10 @@ execute if entity @s[scores={kit=32},tag=!stolen] run tellraw @s [{text:"You hea
 execute if entity @s[scores={kit=33},tag=!stolen] run tellraw @s [{text:"You feel the weight of your sins lifted...",color:gray,"italic": true}]
 #Soul of Cinder
 execute if entity @s[scores={kit=34},tag=!stolen] run tellraw @s [{text:"You feel the Fire fade...",color:gray,"italic": true}]
+#Judy
+execute if entity @s[scores={kit=35},tag=!stolen] run tellraw @s [{text:"You can see him...",color:gray,"italic": true}]
+#Susie
+
 
 #Saac
 execute if entity @s[scores={kit=1000}] run tellraw @s [{text:"You black out...",color:gray,"italic": true}]
