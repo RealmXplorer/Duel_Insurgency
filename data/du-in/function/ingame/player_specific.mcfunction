@@ -28,11 +28,11 @@
 execute if entity @s[level=1..] run function du-in:kit/all/ability/timer
 
 #KILL COMBOS
-execute if entity @s[tag=killCombo] run function du-in:ingame/killstreaks/combo/timer
+execute if entity @s[tag=killCombo] run function du-in:ingame/kill_combo/timer
 
 #HIT COMBO#
-    execute if entity @s[scores={comboBreak=1..}] run function du-in:ingame/killstreaks/combo/reset1
-    execute if entity @s[scores={comboHitTimer=10..,comboScore=1..}] run function du-in:ingame/killstreaks/combo/expire
+    execute if entity @s[scores={comboBreak=1..}] run function du-in:ingame/kill_combo/reset1
+    execute if entity @s[scores={comboHitTimer=10..,comboScore=1..}] run function du-in:ingame/kill_combo/expire
 
 #Give armor if player is missing any#
 execute if entity @s[predicate=!du-in:has_armor,predicate=!du-in:effect/is_invisible,tag=!teamDead,tag=!kitMenu,tag=!noClothes] run function du-in:kit/all/armor/armor_reset

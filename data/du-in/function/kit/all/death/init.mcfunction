@@ -75,7 +75,7 @@ execute if entity @s[scores={shrunkTimer=0..}] run function du-in:kit/jack_horne
 #KILLSTREAK#
 scoreboard players reset @s killStreak
 
-function du-in:ingame/killstreaks/combo/reset
+function du-in:ingame/kill_combo/reset
 
 #Remove a life (only applicable in Deathmatch)
 execute if entity @s[tag=dmIngame] run scoreboard players remove @s Lives 1

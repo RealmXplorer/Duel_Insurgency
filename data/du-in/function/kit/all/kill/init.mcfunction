@@ -6,7 +6,7 @@ scoreboard players add @s quickKill 1
 scoreboard players add @s killStreak 1
 
 #Detect Double, Triple, Quad or Quin kills#
-execute if entity @s[scores={quickKill=1..}] run function du-in:ingame/killstreaks/combo
+execute if entity @s[scores={quickKill=1..}] run function du-in:ingame/kill_combo/init
 
 #Detect Killstreak
 execute if entity @s[scores={killStreak=3..}] run function du-in:ingame/killstreak
