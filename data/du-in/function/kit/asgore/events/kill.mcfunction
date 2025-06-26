@@ -1,0 +1,1 @@
+#Runs when this kit kills a player.
