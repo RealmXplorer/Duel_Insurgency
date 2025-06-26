@@ -24,11 +24,11 @@ execute if entity @s[tag=sabotaged] run tag @s remove sabotaged
 execute if entity @s[tag=fortniteCard] run function du-in:kit/paz/card/lose_card
 
 #Death messages (depending on holiday theme)
-execute unless score #main lobbyTheme matches 1.. run function du-in:kit/all/kill/kill_msg/death/default
-execute if score #main lobbyTheme matches 1 run function du-in:kit/all/kill/kill_msg/death/halloween
-execute if score #main lobbyTheme matches 2 run function du-in:kit/all/kill/kill_msg/death/thanks
-execute if score #main lobbyTheme matches 3 run function du-in:kit/all/kill/kill_msg/death/christmas
-execute if score #main lobbyTheme matches 4 run function du-in:kit/all/kill/kill_msg/death/easter
+execute unless score #main lobbyTheme matches 1.. run function du-in:kit/all/kill/msg/death/default
+execute if score #main lobbyTheme matches 1 run function du-in:kit/all/kill/msg/death/halloween
+execute if score #main lobbyTheme matches 2 run function du-in:kit/all/kill/msg/death/thanks
+execute if score #main lobbyTheme matches 3 run function du-in:kit/all/kill/msg/death/christmas
+execute if score #main lobbyTheme matches 4 run function du-in:kit/all/kill/msg/death/easter
 
 #Start death timer for team modes
 execute if entity @s[tag=!teamDead,tag=!cIngame,tag=!dmIngame,tag=!kothIngame,tag=teamMode] run function du-in:ingame/team_death/death_go

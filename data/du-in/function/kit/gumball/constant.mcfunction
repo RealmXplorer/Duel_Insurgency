@@ -1,7 +1,7 @@
 #Sounds#
-execute if entity @s[scores={hit=5..}] run function du-in:kit/gumball/sounds/hit
-execute if entity @s[scores={step=150..}] run function du-in:kit/gumball/sounds/step
-execute if entity @s[scores={sprint=150..}] run function du-in:kit/gumball/sounds/step
+execute if entity @s[scores={hit=5..}] run function du-in:kit/gumball/events/hit
+execute if entity @s[scores={step=150..}] run function du-in:kit/gumball/events/step
+execute if entity @s[scores={sprint=150..}] run function du-in:kit/gumball/events/step
 execute if entity @s[scores={jump=1..}] run function du-in:kit/jump
 
 #Tag Gumball and Darwin in and out

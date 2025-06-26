@@ -1,1 +1,0 @@
-$ride @s[scores={player=$(current)}] mount @e[type=armor_stand,tag=judyKick,scores={player=$(current)},limit=1]

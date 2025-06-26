@@ -17,7 +17,7 @@ execute at @s run function du-in:kit/all/winline/find_kit with storage du-in:mai
 # execute if entity @s[scores={kit=5}] run playsound minecraft:springtrap.line voice @a[tag=!lobby] ~ ~ ~ 100 1
 
 # #Legendaries
-# execute if entity @s[scores={kit=1001}] run function du-in:kit/paz/sounds/win
+# execute if entity @s[scores={kit=1001}] run function du-in:kit/paz/events/win
 # execute if entity @s[scores={kit=1002}] run playsound minecraft:jerma.win voice @a[tag=!lobby] ~ ~ ~ 100 1
 # execute if entity @s[scores={kit=1003}] run playsound minecraft:sus.victory record @a[tag=!musicOff,tag=!lobby] ~ ~ ~ 100 1
 # execute if entity @s[scores={kit=2015}] run playsound minecraft:saul.win record @a[tag=!musicOff,tag=!lobby] ~ ~ ~ 100 1

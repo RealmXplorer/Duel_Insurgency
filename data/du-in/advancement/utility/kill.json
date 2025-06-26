@@ -15,6 +15,6 @@
         ]
     ],
     "rewards": {
-        "function": "du-in:kit/all/kill/kill"
+        "function": "du-in:kit/all/kill/init"
     }
 }

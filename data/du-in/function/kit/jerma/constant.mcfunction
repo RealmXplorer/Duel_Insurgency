@@ -1,4 +1,4 @@
-execute if entity @s[scores={hit=5..}] run function du-in:kit/jerma/sounds/hit
+execute if entity @s[scores={hit=5..}] run function du-in:kit/jerma/events/hit
 execute if entity @s[scores={jump=1..}] run function du-in:kit/jump
 
 #Jerma#

@@ -37,6 +37,8 @@ Kit number = character name
 32 = Aang
 33 = Kratos
 34 = Soul of Cinder
+35 = Judy Hopps
+36 = Susie
 
 1000 = Saac
 1001 = PearApplez
