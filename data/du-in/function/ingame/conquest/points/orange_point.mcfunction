@@ -7,7 +7,7 @@
 
     execute if entity @s[scores={pointCap=5..}] unless entity @s[scores={pointCap=102..}] run fill ~-2 ~ ~2 ~2 ~ ~2 minecraft:orange_concrete replace #minecraft:concrete
     execute if entity @s[scores={pointCap=20..}] unless entity @s[scores={pointCap=102..}] run fill ~-2 ~ ~2 ~2 ~ ~1 minecraft:orange_concrete replace #minecraft:concrete
-    execute if entity @s[scores={pointCap=40..}] unless entity @s[scores={pointCap=102..}] run fill ~-2 ~ ~2 ~2 ~ ~ minecraft:orange_concrete replace #minecraft:concrete 
+    execute if entity @s[scores={pointCap=40..}] unless entity @s[scores={pointCap=102..}] run fill ~-2 ~ ~2 ~2 ~ ~ minecraft:orange_concrete replace #minecraft:concrete
     execute if entity @s[scores={pointCap=60..}] unless entity @s[scores={pointCap=102..}] run fill ~-2 ~ ~2 ~2 ~ ~-1 minecraft:orange_concrete replace #minecraft:concrete
     execute if entity @s[scores={pointCap=80..}] unless entity @s[scores={pointCap=102..}] run fill ~-2 ~ ~2 ~2 ~ ~-2 minecraft:orange_concrete replace #minecraft:concrete
     execute if entity @s[scores={pointCap=100..}] unless entity @s[scores={pointCap=102..}] run fill ~ ~ ~ ~ ~ ~ minecraft:orange_stained_glass replace #minecraft:glass

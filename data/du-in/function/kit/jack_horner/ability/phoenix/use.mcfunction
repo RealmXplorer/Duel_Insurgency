@@ -1,5 +1,5 @@
-execute unless entity @s[tag=void] positioned ^ ^ ^1.5 run function du-in:kit/jack_horner/ability/phoenix/raycast
-execute if entity @s[tag=void] positioned ^ ^ ^1.5 run function du-in:kit/jack_horner/ability/phoenix/void/raycast
+execute unless entity @s[tag=void] positioned ~ ~0.5 ~ positioned ^ ^ ^1.5 run function du-in:kit/jack_horner/ability/phoenix/raycast
+execute if entity @s[tag=void] positioned ~ ~0.5 ~ positioned ^ ^ ^1.5 run function du-in:kit/jack_horner/ability/phoenix/void/raycast
 
 playsound minecraft:sans.ability master @a ~ ~ ~ .25 1
 

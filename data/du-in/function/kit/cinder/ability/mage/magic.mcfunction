@@ -8,4 +8,4 @@ playsound minecraft:block.amethyst_block.chime master @a ~ ~ ~ 0.25 1 1
 
 execute as @a[gamemode=!spectator,tag=playing,distance=..1.25] at @s run function du-in:kit/cinder/ability/mage/hit
 
-execute positioned ^ ^ ^1 if entity @s[distance=..15] run function du-in:kit/cinder/ability/mage/magic
+execute positioned ~ ~0.5 ~ positioned ^ ^ ^1 if entity @s[distance=..15] run function du-in:kit/cinder/ability/mage/magic
