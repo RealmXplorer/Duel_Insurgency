@@ -55,7 +55,7 @@ schedule clear du-in:maps/jermall/eat_victim
 
 #Play sounds for ending
 execute if entity @a[tag=partyLeader,tag=aprilFools] as @a[tag=win,tag=!void,tag=!voidLose] at @s run playsound minecraft:soundeffect.laugh master @a ~ ~ ~ 100000 1
-execute unless entity @a[tag=partyLeader,tag=aprilFools] as @a[tag=win,tag=!aprilFools,tag=!falseWin,tag=!stolen,tag=!void,tag=!voidLose,tag=!tie] unless entity @s[scores={team=1..}] at @s run function du-in:kit/all/winline
+execute unless entity @a[tag=partyLeader,tag=aprilFools] as @a[tag=win,tag=!aprilFools,tag=!falseWin,tag=!stolen,tag=!void,tag=!voidLose,tag=!tie] unless entity @s[scores={team=1..}] at @s run function du-in:kit/all/win/init
 execute as @a[tag=win,tag=stolen,tag=!void,tag=!voidLose,limit=1] at @s run function du-in:ingame/endround/win_music
 execute as @a[tag=win,tag=tie,tag=!void,tag=!voidLose,limit=1] at @s run function du-in:ingame/endround/win_music
 execute as @a[scores={team=1..},tag=win,tag=!void,tag=!voidLose,limit=1] at @s run function du-in:ingame/endround/win_music

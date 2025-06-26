@@ -6,7 +6,7 @@ A lot runs through "du-in/function/main".
 
 Functions labelled as "player_specific" are run by an "as" statement, and therefore are run by every player applicable by the call statement.
 Functions labelled as "general" are run as the world, and therefore are not tied to a player.
-	Some of these functions are kept as "scheduled" so as to alleviate the server a little bit.
+	Some of these functions are kept as "scheduled" so as to reduce server overhead.
 
 There are hidden "du-in/function/spookmode" and "du-in/function/festive" functions that will switch the theme over to Halloween and Christmas respectively, while setting all online player's skins to the theme.
 	These do not trigger in-game, and must be triggered with "/function"
@@ -18,39 +18,29 @@ KITS ---------------------------------------------------------------------------
 Template for characters are found in "du-in/function/kit/template"
 
 Legendary characters are sometimes referred to as "unlocked", and always have a "kit" value of 1000 or higher.
+	(If a character has a "kit" value of 1000 or higher, a Villager will not be able to steal from them)
 
-As of Datapack 6.0, many characters are now automatically run based off their folder name, rather than their kit number. (Kit Numbers are still important)
+As of Datapack 6.0, many characters are now automatically run based off their folder name, rather than their kit number. (Kit Numbers are still needed)
+	Most everything kit-based now runs modularly. Adding a character generally only needs a folder, a dedicated number, and a string (based off the name of the file).
 
 Some functions for the character are kept in the "du-in/function/kit/all/" folder.
 	Setting a normal "kit" score to a character is kept in "du-in/function/kit/all/set(1,2,3,4)"
 		Legendary characters are kept in "du-in/function/kit/all/set_legend"
-	Death functions are kept in "du-in/function/kit/all/death"
-	Win voicelines are kept in "du-in/function/kit/all/winline"
-	Inflicting damage kept in "du-in/function/kit/all/hit_all"
-	Inflicting damage on a player is kept in "du-in/function/kit/all/hit_player"
-	Necessary functions for resetting character data on death happens in "du-in/function/kit/all/kill/death"
+	Necessary functions for resetting character data on death happens in "du-in/function/kit/all/death/init_normal" and "du-in/function/kit/all/death/init_normal"
 
 Some outside functions are needed for certain aspects to characters
-	"du-in/function/main/player_specific" contains "random" value, which limits random character selection pool. (if a character is added, it will need to be increased from 30)
+	"du-in/function/main/player_specific" contains "random" value, which limits random character selection pool. (if a character is added, it will need to be increased from its current value)
 	"du-in/function/lobby/kitmenu/" contains two folders that set up the character selection page.
 		"du-in/function/lobby/kitmenu/select/" contains all the function for selecting a character from the kit menu.
 		"du-in/function/lobby/kitmenu/menu/" contains all the function for displaying a character in the kit menu.
 
 Kits' sizes are determined by one of 6 functions called in "du-in/function/kit/all/size/".
 
-Tag "kitActions" runs when a player with tag "playing" right clicks a carrot on a stick.
-	This activates the character's main ability.
-		-As of Datapack 5.0, this still works, but most default characters will now use "kit/all/ability/activate"
-
-Tag "armor" runs when a "playing" player is not wearing armor (with a few exceptions).
-	This gives the player the armor for their selected kit.
-		-As of Datapack 5.0, this still works, but most default characters will now use "kit/all/armor/armor"
-
 Tag "secKitActions" run when a player with tag "playing" right clicks a warped fungus on a stick.
 	This activates the character's secondary ability.
 
 There is an item tag called "weapons" at "du-in/tags/items/weapon.json". This tracks all main weapons to keep them in players inventories.
-	-If an item that currently isn't being used as a weapon in the game is added, it will need to be added to this file.
+	-If an item that currently isn't being used as a weapon in the game is added, it will need to be added to this tag.
 
 MAPS -------------------------------------------------------------------------------------------------------------------------------------------------
 Maps, similar to characters, have their own value of "map".
@@ -63,14 +53,14 @@ Maps are voted on in map select. This happens in "du-in/function/maps/start/init
 	This is not important unless you are adding more than 20 maps.
 
 "du-in/function/maps/start/pick/init" determines the gamemode being played, and runs depending on that.
-	The child function begin the map sequence and set everything up for the selected map.
+	The child function begins the map sequence and sets everything up for the selected map.
 
 "du-in/function/lobby/mapselect/~gamemode" (~gamemode can be replaced with classic, conquest, koth, etc.) sets up the map voting icons and voting markers. 
 
 "du-in/function/lobby/mapselect/map_vote" runs the base for when a player "casts" a vote.
 	This is only important if adding a new classic map, as you will need to uncomment maps 16-20. 
 
-"du-in/function/maps/start/classic/arena" is a good base, as Arena contains all normal map information.
+"du-in/function/maps/start/classic/arena" is a good base, as Arena contains all normal map information (except for Void Locks).
 
 VOID -------------------------------------------------------------------------------------------------------------------------------------------------
 All information relating to the hidden Pylon gamemode is stored under "du-in:ingame/void".

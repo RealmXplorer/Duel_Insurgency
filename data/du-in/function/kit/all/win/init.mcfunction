@@ -5,7 +5,7 @@ stopsound @a voice
 execute store result storage du-in:main player.current int 1 run scoreboard players get @s player
 
 #Find player
-execute at @s run function du-in:kit/all/winline/find_kit with storage du-in:main player
+execute at @s run function du-in:kit/all/win/find_kit with storage du-in:main player
 
 ##DATAPACK 5.0
 # execute unless entity @s[scores={kit=10}] unless entity @s[scores={kit=1000..}] run function du-in:ingame/endround/win_music
