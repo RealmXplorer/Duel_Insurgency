@@ -1,0 +1,1 @@
+playsound minecraft:soundeffect.ut_start master @a ~ ~ ~ 1 1 1
