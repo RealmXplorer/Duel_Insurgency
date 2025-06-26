@@ -1,6 +1,6 @@
 effect give @s minecraft:speed 5 1 true
 clear @s minecraft:carrot_on_a_stick
-scoreboard players set @s charaTimer 100
+scoreboard players set @s charaTimer 80
 
 playsound minecraft:sans.ability master @a ~ ~ ~ .25 .95
 
