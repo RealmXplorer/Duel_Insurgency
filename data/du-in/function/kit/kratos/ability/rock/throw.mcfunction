@@ -1,14 +1,14 @@
 # summon the temporary entity
-summon marker ^ ^ ^1 {Tags:["direction"]}
+summon marker ^ ^ ^1 {Tags:["kratosDirection"]}
 
 # get the coordinates of the player and the entity
 execute store result score #playerX pos run data get entity @s Pos[0] 1000
 execute store result score #playerY pos run data get entity @s Pos[1] 1000
 execute store result score #playerZ pos run data get entity @s Pos[2] 1000
 
-execute store result score #targetX pos as @e[type=marker,tag=direction,limit=1] run data get entity @s Pos[0] 1000
-execute store result score #targetY pos as @e[type=marker,tag=direction,limit=1] run data get entity @s Pos[1] 1000
-execute store result score #targetZ pos as @e[type=marker,tag=direction,limit=1] run data get entity @s Pos[2] 1000
+execute store result score #targetX pos as @e[type=marker,tag=kratosDirection,limit=1] run data get entity @s Pos[0] 1000
+execute store result score #targetY pos as @e[type=marker,tag=kratosDirection,limit=1] run data get entity @s Pos[1] 1000
+execute store result score #targetZ pos as @e[type=marker,tag=kratosDirection,limit=1] run data get entity @s Pos[2] 1000
 
 # do the math
 scoreboard players operation #targetX pos -= #playerX pos
@@ -38,4 +38,4 @@ execute store result score @e[type=block_display,tag=kratosTest,limit=1] player 
 
 # clean up, ready for the next player
 tag @e[tag=kratosTest] remove kratosTest
-kill @e[tag=direction]
+kill @e[tag=kratosDirection]
