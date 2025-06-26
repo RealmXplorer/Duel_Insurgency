@@ -18,6 +18,9 @@ playsound minecraft:entity.player.attack.sweep master @a ~ ~ ~ 100 1
 playsound minecraft:sans.ability master @a ~ ~ ~ .5 1.05
 
 
-execute as @a[tag=confusion] at @s run function du-in:kit/saac/ability/confused
+execute if entity @s[tag=!empower] as @a[tag=confusion] at @s run function du-in:kit/saac/ability/confused
+execute if enttiy @s[tag=empower] as @a[tag=confusion] at @s run function du-in:kit/saac/ability/empowered_confused
 
+tag @s remove sabotaged
+tag @s remove empower
 tag @s remove kitActions

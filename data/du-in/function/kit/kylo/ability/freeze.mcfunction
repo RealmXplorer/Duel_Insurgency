@@ -1,6 +1,9 @@
-execute rotated as @s[scores={kyloTimer=20}] run tp @n[type=marker,tag=kyloHitPos] ~ ~ ~ ~ ~
+#TEST THIS??
+#execute rotated as @s[scores={kyloTimer=20}] run tp @n[type=marker,tag=kyloHitPos] ~ ~ ~ ~ ~
+#execute rotated as @s[scores={kyloTimer=40}] run tp @n[type=marker,tag=kyloHitPos] ~ ~ ~ ~ ~
 
-execute as @n[type=marker,tag=kyloHitPos] at @s rotated as @s run tp @p[tag=kyloHit,scores={kyloTimer=..20}] @s
+#execute as @n[type=marker,tag=kyloHitPos] at @s rotated as @s run tp @p[tag=kyloHit,scores={kyloTimer=..40}] @s
+execute as @n[type=marker,tag=kyloHitPos] at @s rotated as @s run tp @p[tag=kyloHit,scores={kyloTimer=1..}] @s
 
 scoreboard players remove @s kyloTimer 1
 

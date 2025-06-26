@@ -4,7 +4,8 @@ tag @s[tag=sabotaged] add kyloMark
 
 execute if entity @s[tag=sabotaged] run function du-in:kit/all/ability/sabotage/effects
 
-execute as @a[tag=kyloMark] run function du-in:kit/kylo/ability/hit
+execute if entity @s[tag=!empower] as @a[tag=kyloMark] run function du-in:kit/kylo/ability/hit
+execute if entity @s[tag=empower] as @a[tag=kyloMark] run function du-in:kit/kylo/ability/empowered_hit
 
 execute unless entity @a[tag=kyloMark] run function du-in:kit/all/ability/team
 execute if entity @a[tag=kyloMark] run function du-in:kit/kylo/ability/cooldown
