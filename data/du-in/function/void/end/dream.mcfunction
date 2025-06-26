@@ -72,8 +72,10 @@ execute if entity @s[scores={kit=33},tag=!stolen] run tellraw @s [{text:"You dre
 execute if entity @s[scores={kit=34},tag=!stolen] run tellraw @s [{text:"You dream of flame...",color:gray,"italic": true}]
 #Judy#
 execute if entity @s[scores={kit=35},tag=!stolen] run tellraw @s [{text:"You dream of justice...",color:gray,"italic": true}]
-
 #Susie#
+execute if entity @s[scores={kit=36},tag=!stolen] run tellraw @s [{text:"You dream of home...",color:gray,"italic": true}]
+#Knight#
+execute if entity @s[scores={kit=36},tag=!stolen] run tellraw @s [{text:"You do not Dream...",color:gray,"italic": true}]
 
 #Saac
 execute if entity @s[scores={kit=1000}] run tellraw @s [{text:"You dream of kickstarts...",color:gray,"italic": true}]
