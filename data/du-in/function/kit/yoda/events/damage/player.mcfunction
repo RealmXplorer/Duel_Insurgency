@@ -1,0 +1,1 @@
+#Runs when the kit deals damage to a player.

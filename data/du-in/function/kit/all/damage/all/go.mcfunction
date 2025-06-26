@@ -1,2 +1,2 @@
 #Run "hit/player" for selected character
-$execute at @s rotated as @s run function du-in:kit/$(kit)/damage/all
+$execute at @s rotated as @s run function du-in:kit/$(kit)/events/damage/all
