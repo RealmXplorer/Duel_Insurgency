@@ -287,6 +287,9 @@ execute as @a run function du-in:music/ingame/stop/all
         
 tag @a remove hasRing
 
+#HOWW???
+tag @a remove projectile
+
 ##INGAME TAG AND SCORE RESETS
 #Sub-Gamemodes
     scoreboard players reset @a ranMode

@@ -1,6 +1,7 @@
 execute if entity @s[tag=playing] run function du-in:kit/all/reset
 scoreboard players enable @s info
 playsound minecraft:entity.skeleton.ambient master @s ~ ~ ~ 100 1
+playsound minecraft:entity.skeleton.hurt master @s ~ ~ ~ 0.5 1
 clear @s player_head[custom_data={du-in:'skeletonHead'}]
 scoreboard players set @s kit 30
 $data modify storage du-in:player$(current) kit set value {"kit":"skeleton"}
