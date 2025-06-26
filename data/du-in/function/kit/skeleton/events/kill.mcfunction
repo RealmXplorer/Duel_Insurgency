@@ -1,3 +1,3 @@
-
+execute if entity @s[tag=killMsg] run tellraw @a {selector:"@s",color:red,bold:false,extra:[{text:" eliminated ",color:white,bold:false},{selector:"@a[scores={justdied=1}]",color:dark_red,bold:false}]}
 execute if entity @s[scores={skeletonMode=1}] run give @s tipped_arrow[item_name={text:'Slowness Arrows',color:gold,bold:true},lore=[{text:'Throw or use to go back to sword mode',color:dark_purple,bold:true}],potion_contents={potion:"minecraft:slowness"}] 1
 execute if entity @s[scores={skeletonMode=2}] run give @s tipped_arrow[item_name={text:'Poison Arrows',color:gold,bold:true},lore=[{text:'Throw or use to go back to sword mode',color:dark_purple,bold:true}],potion_contents={potion:"minecraft:poison"}] 1

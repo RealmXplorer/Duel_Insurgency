@@ -21,6 +21,6 @@
         ]
     ],
     "rewards": {
-        "function": "du-in:kit/runza/runza"
+        "function": "du-in:kit/runza/ability/clear"
     }
 }

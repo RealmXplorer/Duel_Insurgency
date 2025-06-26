@@ -11,12 +11,14 @@ execute if entity @s[scores={quickKill=1..}] run function du-in:ingame/kill_comb
 #Detect Killstreak
 execute if entity @s[scores={killStreak=3..}] run function du-in:ingame/killstreak
 
+#Kill Messages
 execute unless score #main lobbyTheme matches 1.. unless entity @s[scores={justdied=1..}] run function du-in:kit/all/kill/msg/init
 execute if score #main lobbyTheme matches 1 unless entity @s[scores={justdied=1..}] run function du-in:kit/all/kill/msg/halloween
 execute if score #main lobbyTheme matches 2 unless entity @s[scores={justdied=1..}] run function du-in:kit/all/kill/msg/thanks
 execute if score #main lobbyTheme matches 3 unless entity @s[scores={justdied=1..}] run function du-in:kit/all/kill/msg/christmas
 execute if score #main lobbyTheme matches 4 unless entity @s[scores={justdied=1..}] run function du-in:kit/all/kill/msg/easter
 
+#Run kit-specific functions in "(kit)/events/kill"
 execute at @s run function du-in:kit/all/kill/find_kit with storage du-in:main player
 
 execute if entity @a[scores={justdied=1,killStreak=3..4}] run tellraw @a {selector:"@s",bold:false,color:gold,extra:[{text:" has ended ",bold:false,color:gray},{selector:"@a[scores={justdied=1,killStreak=3..4}]",bold:false,color:dark_red},{text:"'s 3 player killstreak!",bold:true,color:gray}]}
@@ -50,3 +52,5 @@ scoreboard players add @s exp 1
 #execute if entity @s[scores={kit=20}] run playsound minecraft:soundeffect.combo master @s ~ ~ ~ 1 .5
 
 execute if entity @s[tag=hasRing] unless entity @s[scores={kit=31}] run scoreboard players add @s ringTimer 5
+
+tag @s remove killMsg

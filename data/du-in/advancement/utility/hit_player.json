@@ -26,7 +26,7 @@
 
   "rewards": {
 
-      "function": "du-in:kit/all/hit_player"
+      "function": "du-in:kit/all/damage/player/init"
 
   }
 
