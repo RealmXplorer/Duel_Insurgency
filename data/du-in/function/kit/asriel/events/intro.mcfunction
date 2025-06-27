@@ -1,0 +1,1 @@
+playsound minecraft:asriel.laugh master @a ~ ~ ~ 1 1

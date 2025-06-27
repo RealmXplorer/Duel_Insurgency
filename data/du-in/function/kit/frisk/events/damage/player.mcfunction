@@ -1,0 +1,1 @@
+playsound minecraft:soundeffect.ut_hit master @a ~ ~ ~ 0.5 1
