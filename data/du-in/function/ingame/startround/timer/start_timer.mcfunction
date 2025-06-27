@@ -34,7 +34,7 @@ tag @a[tag=!spectating] add playing
     tag @a[scores={kit=31},limit=1] add hasRing
     scoreboard players set @a[tag=playing,gamemode=!spectator] weapCount 0
     #advancement revoke @s only du-in:utility/weap_count
-    function du-in:kit/all/weapon/start
+    function du-in:kit/all/weapon/give
     execute as @a[tag=playing,gamemode=!spectator] run function du-in:kit/all/weapon/init
     execute as @a[tag=hasRing] run function du-in:kit/sauron/ring/give_ring
 
@@ -50,7 +50,7 @@ tag @a[tag=!spectating] add playing
 
     #Give Saac the "saac" tag
     tag @a[scores={kit=1000},tag=!legMusicOff] add saac
-    execute as @a[scores={kit=1000}] run function du-in:ingame/startround/saac_reset
+    #execute as @a[scores={kit=1000}] run function du-in:ingame/startround/saac_reset
 
     #Mark Zombie and Springtrap as undead
     tag @a[scores={kit=2}] add undead

@@ -3,4 +3,4 @@ clear @s music_disc_stal
 scoreboard players set @s saacDisTimer 80
 tag @s add broken
 # scoreboard players set @s weapCount 0
-function du-in:kit/all/weapon/give
+function du-in:kit/saac/weapon
