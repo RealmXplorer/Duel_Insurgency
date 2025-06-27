@@ -7,4 +7,4 @@ execute if entity @s[scores={kratosRage=80..}] run clear @s minecraft:warped_fun
 execute if entity @s[scores={kratosRage=120..}] run clear @s minecraft:warped_fungus_on_a_stick[item_model="du-in:other/rage2"]
 execute if entity @s[scores={kratosRage=160..}] run clear @s minecraft:warped_fungus_on_a_stick[item_model="du-in:other/rage3"]
 
-execute if entity @s[scores={kratosRage=200..}] run function du-in:kit/kratos/secondary/charged_rage
+execute if entity @s[scores={kratosRage=200..},tag=!rageMeter] run function du-in:kit/kratos/secondary/charged_rage
