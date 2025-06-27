@@ -4,7 +4,7 @@ execute if entity @a[distance=.05..5,tag=playing,gamemode=!spectator,tag=!teamDe
 #Test Steal
 execute if entity @a[distance=.05..5,tag=playing,gamemode=!spectator,tag=!teamDead,scores={kit=8}] run function du-in:kit/villager/ability/titles/villager
 execute if entity @a[distance=.05..5,tag=playing,gamemode=!spectator,tag=!teamDead,scores={kit=1000..}] run function du-in:kit/villager/ability/titles/legendary
-execute unless entity @a[distance=.05..5,tag=playing,gamemode=!spectator,tag=!teamDead] unless entity @a[distance=.05..5,tag=playing,scores={kit=8},gamemode=!spectator,tag=!teamDead] run function du-in:kit/all/ability/far
+execute unless entity @a[distance=.05..5,tag=playing,gamemode=!spectator,tag=!teamDead] unless entity @a[distance=.05..5,tag=playing,scores={kit=8},gamemode=!spectator,tag=!teamDead] run function du-in:kit/all/ability/titles/far
 
 #Success Stolen
 execute if entity @s[tag=stolen] run function du-in:kit/villager/ability/stolen

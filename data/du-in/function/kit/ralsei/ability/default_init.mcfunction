@@ -4,10 +4,10 @@
 execute if entity @a[distance=.05..10,tag=playing,gamemode=!spectator,tag=!teamDead,gamemode=!spectator] run function du-in:kit/ralsei/ability/success
 
 #If player is too far
-execute unless entity @a[distance=.05..10,tag=playing,gamemode=!spectator,tag=!teamDead] run function du-in:kit/all/ability/far
+execute unless entity @a[distance=.05..10,tag=playing,gamemode=!spectator,tag=!teamDead] run function du-in:kit/all/ability/titles/far
 
 #If player is on team
-#execute if score @s team = @a[distance=.05..5,tag=playing,gamemode=!spectator,tag=!teamDead,limit=1] team run function du-in:kit/all/ability/team
+#execute if score @s team = @a[distance=.05..5,tag=playing,gamemode=!spectator,tag=!teamDead,limit=1] team run function du-in:kit/all/ability/titles/team
 
 #End ability
 tag @s remove kitActions

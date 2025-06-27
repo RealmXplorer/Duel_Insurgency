@@ -5,5 +5,5 @@ execute if entity @s[tag=sabotaged] run tag @s add pussHit
 execute if entity @s[tag=sabotaged] run function du-in:kit/all/ability/sabotage/effects
 
 execute if entity @a[tag=pussHit] run function du-in:kit/puss/ability/end_start
-execute unless entity @a[tag=pussHit] run function du-in:kit/all/ability/team
+execute unless entity @a[tag=pussHit] run function du-in:kit/all/ability/titles/team
 execute as @a[tag=pussHit] run function du-in:kit/puss/ability/enemy_hit

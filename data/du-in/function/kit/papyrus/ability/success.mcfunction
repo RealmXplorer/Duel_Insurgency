@@ -4,5 +4,5 @@ tag @s[tag=sabotaged] add papyrusHit
 
 execute if entity @s[tag=sabotaged] run function du-in:kit/all/ability/sabotage/effects
 
-execute unless entity @a[tag=!papyrusHit] run function du-in:kit/all/ability/team
+execute unless entity @a[tag=!papyrusHit] run function du-in:kit/all/ability/titles/team
 execute if entity @a[tag=papyrusHit] run function du-in:kit/papyrus/ability/cooldown

@@ -4,7 +4,7 @@
 execute as @a[distance=0.05..4,gamemode=!spectator,tag=!teamDead] run tag @s add sauronHit
 execute as @a[tag=sauronHit] if score @s team = @p[scores={kit=31},tag=kitActions] team run tag @s remove sauronHit
 
-#execute if entity @a[gamemode=adventure,distance=0.05..6,tag=!teamDead] unless entity @a[tag=sauronHit] run function du-in:kit/all/ability/team
+#execute if entity @a[gamemode=adventure,distance=0.05..6,tag=!teamDead] unless entity @a[tag=sauronHit] run function du-in:kit/all/ability/titles/team
 
 particle minecraft:explosion ~ ~1 ~ 1 0 1 0 15 force
 particle minecraft:small_flame ~ ~1 ~ 1 1 1 0.05 50 force

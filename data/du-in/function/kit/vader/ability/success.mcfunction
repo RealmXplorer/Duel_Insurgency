@@ -7,7 +7,7 @@ execute as @a[tag=vaderHit] run function du-in:kit/vader/ability/effect
 
 execute if entity @s[tag=sabotaged] run function du-in:kit/all/ability/sabotage/effects
 
-execute unless entity @a[tag=vaderHit] run function du-in:kit/all/ability/team
+execute unless entity @a[tag=vaderHit] run function du-in:kit/all/ability/titles/team
 execute if entity @a[tag=vaderHit] run function du-in:kit/vader/ability/cooldown
 
 # playsound minecraft:vader.choke master @a ~ ~ ~ 100 1

@@ -4,5 +4,5 @@ execute if entity @s[tag=sabotaged] run tag @s add spiderHit
 
 execute if entity @s[tag=sabotaged] run function du-in:kit/all/ability/sabotage/effects
 
-execute unless entity @a[tag=spiderHit] run function du-in:kit/all/ability/team
+execute unless entity @a[tag=spiderHit] run function du-in:kit/all/ability/titles/team
 execute if entity @a[tag=spiderHit] run function du-in:kit/spider/ability/enemy_hit
