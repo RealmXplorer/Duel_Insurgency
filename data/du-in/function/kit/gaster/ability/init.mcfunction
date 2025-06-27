@@ -4,12 +4,16 @@ scoreboard players set @s[tag=!sabotaged] gasterTimer 80
 tag @s[tag=!sabotaged] add gasterInvisible
 
 scoreboard players set @s[tag=sabotaged] gasterTimer 1
-tag @s[tag=sabotaged] add gasterInvisible
+#tag @s[tag=sabotaged] add gasterInvisible
 
 execute if entity @s[tag=sabotaged] run function du-in:kit/all/ability/sabotage/effects
 
 clear @s
 execute unless entity @s[tag=sabotaged] run function du-in:kit/gaster/particle
+
+attribute @s[tag=!sabotaged] knockback_resistance modifier add gaster_shatter 10 add_value
+attribute @s[tag=!sabotaged] movement_speed modifier add gaster_shatter 0.025 add_value
+
 tag @s add cooldown
 tag @s remove kitActions
 clear @s minecraft:carrot_on_a_stick
