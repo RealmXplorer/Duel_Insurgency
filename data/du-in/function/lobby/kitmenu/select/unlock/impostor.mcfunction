@@ -19,8 +19,8 @@ $data modify storage du-in:player$(current) kit set value {"kit":"impostor"}
 #Add Sus tag (allows venting)
 tag @s add sus
 
-#Chance to drip out amongus
-tag @s[predicate=du-in:chance/quarter_chance] add drip
-
 #Clear and remove tags
 function du-in:lobby/kitmenu/select/common
+
+#Chance to drip out amongus
+tag @s[predicate=du-in:chance/quarter_chance] add drip

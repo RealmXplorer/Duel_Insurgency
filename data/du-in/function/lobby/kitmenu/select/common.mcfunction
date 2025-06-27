@@ -1,13 +1,14 @@
+#Clear lobby items
 clear @s[tag=!kitMenu] #du-in:lobby
 
-#Set Spectator vote to random and remove tag
-#scoreboard players set @s[tag=spect] mapVote -1
+#Remove spectator tag
 tag @s remove spect
+
+#Remove easter egg tags
 tag @s remove maskless
 tag @s remove drip
 tag @s remove caveSpider
 tag @s remove lorde
-#function du-in:lobby/actions/ready
 
 #Announce and play sounds and particles
 execute if entity @s[tag=!kitPicked,tag=!playing] run tellraw @a [{selector:"@s",bold:true},{text:" has picked a kit!",bold:true,color:gray},{text:" (",color:blue},{"score":{"name":"@s","objective":"level"},color:blue},{text:"✫)",color:blue}]

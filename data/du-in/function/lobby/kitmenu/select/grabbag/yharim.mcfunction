@@ -12,7 +12,8 @@ tellraw @s [{text:"Selected the ",bold:true,color:gray},{text:"Yharim ",bold:tru
 #Set kit score to match kit
 scoreboard players set @s kit 20
 $data modify storage du-in:player$(current) kit set value {"kit":"yharim"}
-tag @s[predicate=du-in:chance/ten_chance] add lorde
 
 #Clear and remove tags
 function du-in:lobby/kitmenu/select/common
+
+tag @s[predicate=du-in:chance/ten_chance] add lorde
