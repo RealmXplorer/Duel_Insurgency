@@ -2,7 +2,7 @@ execute if entity @s[scores={hit=5..}] run function du-in:kit/susie/events/hit
 execute if entity @s[scores={jump=1..}] run function du-in:kit/susie/events/jump
 
 #Will Change#
-execute unless entity @s[scores={secCount=1}] run item replace entity @s[tag=!teamDead] hotbar.1 with minecraft:warped_fungus_on_a_stick[item_name={text:"Will Change",color:"#e31e4f",bold:true},lore=[{text:"Right click to use!",color:green,bold:true}],item_model="du-in:abilities/heal_prayer",unbreakable={}] 1
+execute unless entity @s[scores={secCount=1}] run item replace entity @s[tag=!teamDead] hotbar.1 with minecraft:warped_fungus_on_a_stick[item_name={text:"Will Change",color:"#e31e4f",bold:true},lore=[{text:"Right click to use!",color:green,bold:true}],item_model="du-in:abilities/will_change",unbreakable={}] 1
 
 #TP Meter Item
 execute unless entity @s[scores={triCount=1}] if entity @s[tag=!teamDead] run function du-in:kit/susie/tp/item
