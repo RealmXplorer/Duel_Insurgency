@@ -1,7 +1,7 @@
 tellraw @a ["",{text:"The ",bold:false,color:gray},{text:"Paz Pool Party ",bold:true,color:"#ffc2f3"},{text:"map has been chosen!",bold:false,color:gray}]
 
 #Give all players swimsuit skins
-execute as @a[gamemode=!spectator,tag=playing] run function du-in:maps/pool_party/give_swimsuits
+execute as @a[gamemode=!spectator] run function du-in:maps/pool_party/give_swimsuits
 
 tp @a[scores={spawnpoint=0..2}] 571 -32 -7220
 tp @a[scores={spawnpoint=3..4}] 609 -32 -7223
