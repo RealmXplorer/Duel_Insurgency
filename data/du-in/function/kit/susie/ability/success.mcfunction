@@ -21,9 +21,14 @@ execute if entity @s[tag=redBuster] run summon armor_stand ~ ~1 ~ {Invulnerable:
 
 
 # apply motion to susieTest
-execute store result entity @e[type=armor_stand,tag=susieTest,limit=1] Motion[0] double 0.0015 run scoreboard players get #targetX pos
-execute store result entity @e[type=armor_stand,tag=susieTest,limit=1] Motion[1] double 0.0015 run scoreboard players get #targetY pos
-execute store result entity @e[type=armor_stand,tag=susieTest,limit=1] Motion[2] double 0.0015 run scoreboard players get #targetZ pos
+execute if entity @s[tag=!redBuster] store result entity @e[type=armor_stand,tag=susieTest,limit=1] Motion[0] double 0.0015 run scoreboard players get #targetX pos
+execute if entity @s[tag=!redBuster] store result entity @e[type=armor_stand,tag=susieTest,limit=1] Motion[1] double 0.0015 run scoreboard players get #targetY pos
+execute if entity @s[tag=!redBuster] store result entity @e[type=armor_stand,tag=susieTest,limit=1] Motion[2] double 0.0015 run scoreboard players get #targetZ pos
+
+#Red Buster
+execute if entity @s[tag=redBuster] store result entity @e[type=armor_stand,tag=susieTest,limit=1] Motion[0] double 0.0025 run scoreboard players get #targetX pos
+execute if entity @s[tag=redBuster] store result entity @e[type=armor_stand,tag=susieTest,limit=1] Motion[1] double 0.0025 run scoreboard players get #targetY pos
+execute if entity @s[tag=redBuster] store result entity @e[type=armor_stand,tag=susieTest,limit=1] Motion[2] double 0.0025 run scoreboard players get #targetZ pos
 
 scoreboard players set @e[tag=susieTest,tag=unsetTime] susieTimer 30
 tag @e[tag=susieTest,tag=unsetTime,scores={susieTimer=0..}] remove unsetTime
