@@ -1,4 +1,4 @@
-#DEFAULT#
+#Default armor skin#
 item replace entity @s armor.head with minecraft:player_head[profile={id:[I;924026232,198264679,-1687572293,1513739562],name:"Spider",properties:[{name:"textures",value:"eyJ0ZXh0dXJlcyI6eyJTS0lOIjp7InVybCI6Imh0dHA6Ly90ZXh0dXJlcy5taW5lY3JhZnQubmV0L3RleHR1cmUvYzg3YTk2YThjMjNiODNiMzJhNzNkZjA1MWY2Yjg0YzJlZjI0ZDI1YmE0MTkwZGJlNzRmMTExMzg2MjliNWFlZiJ9fX0="}]}] 1
 item replace entity @s armor.chest with leather_chestplate[item_name={text:"Spider Chest"},unbreakable={},tooltip_display={hidden_components:[dyed_color]},dyed_color=3353638,equippable={slot:"chest",asset_id:"du-in:spider"}] 1
 item replace entity @s armor.legs with leather_leggings[item_name={text:"Spider Legs"},unbreakable={},tooltip_display={hidden_components:[dyed_color]},dyed_color=3024930,equippable={slot:"legs",asset_id:"du-in:spider"}] 1
