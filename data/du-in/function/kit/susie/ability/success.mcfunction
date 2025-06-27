@@ -15,26 +15,22 @@ scoreboard players operation #targetX pos -= #playerX pos
 scoreboard players operation #targetY pos -= #playerY pos
 scoreboard players operation #targetZ pos -= #playerZ pos
 
-# summon the windTest entity
-summon salmon ~ ~1.5 ~ {Silent:1b,Invulnerable:1b,Tags:["susieTest","rudeBuster","unsetTime","mapSpecific"]}
-effect give @e[type=salmon,tag=susieTest] invisibility infinite 1 true
-summon block_display ~ ~ ~ {Tags:["rudeBuster","unsetTime","mapSpecific"],block_state:{Name:"minecraft:packed_mud"}}
+# summon the susieTest entity
+execute if entity @s[tag=!redBuster] run summon armor_stand ~ ~1.5 ~ {Invulnerable:1b,Tags:["susieAbility","susieTest","rudeBuster","unsetTime","mapSpecific"]}
+execute if entity @s[tag=redBuster] run summon armor_stand ~ ~1.5 ~ {Invulnerable:1b,Tags:["susieAbility","susieTest","redBuster","unsetTime","mapSpecific"]}
 
-#summon armor_stand ~ ~ ~ {NoGravity:1b,Marker:1b,Invisible:1b,Tags:["rudeBuster"],equipment:{head:{id:"minecraft:packed_mud",count:1}}}
 
-#execute as @e[type=wind_charge,tag=windTest] run function du-in:kit/avatar/ability/shoot
-# apply motion to windTest
-execute store result entity @e[type=salmon,tag=susieTest,limit=1] Motion[0] double 0.0025 run scoreboard players get #targetX pos
-execute store result entity @e[type=salmon,tag=susieTest,limit=1] Motion[1] double 0.0025 run scoreboard players get #targetY pos
-execute store result entity @e[type=salmon,tag=susieTest,limit=1] Motion[2] double 0.0025 run scoreboard players get #targetZ pos
+# apply motion to susieTest
+execute store result entity @e[type=armor_stand,tag=susieTest,limit=1] Motion[0] double 0.0025 run scoreboard players get #targetX pos
+execute store result entity @e[type=armor_stand,tag=susieTest,limit=1] Motion[1] double 0.0025 run scoreboard players get #targetY pos
+execute store result entity @e[type=armor_stand,tag=susieTest,limit=1] Motion[2] double 0.0025 run scoreboard players get #targetZ pos
 
-scoreboard players set @e[tag=rudeBuster,tag=unsetTime] kratosTimer 30
-tag @e[tag=rudeBuster,tag=unsetTime,scores={kratosTimer=0..}] remove unsetTime
+scoreboard players set @e[tag=susieTest,tag=unsetTime] susieTimer 30
+tag @e[tag=susieTest,tag=unsetTime,scores={susieTimer=0..}] remove unsetTime
 
-execute store result score @e[type=salmon,tag=susieTest,limit=1] team run scoreboard players get @s team
+execute store result score @e[type=armor_stand,tag=susieTest,limit=1] team run scoreboard players get @s team
 
-execute store result score @e[type=salmon,tag=susieTest,limit=1] player run scoreboard players get @s player
-execute store result score @e[type=block_display,tag=susieTest,limit=1] player run scoreboard players get @s player
+execute store result score @e[type=armor_stand,tag=susieTest,limit=1] player run scoreboard players get @s player
 
 # clean up, ready for the next player
 tag @e[tag=susieTest] remove susieTest
@@ -49,7 +45,7 @@ execute if entity @s[tag=sabotaged] run function du-in:kit/all/ability/sabotage/
 clear @s minecraft:carrot_on_a_stick
 xp set @s[tag=!stolen] 360 levels
 particle minecraft:note ~ ~2.25 ~ .01 .5 .01 0.25 3 force @a
-playsound minecraft:ralsei.sing master @a ~ ~ ~ 100 1
+
 playsound minecraft:sans.ability master @a ~ ~ ~ 1 1.05
 particle minecraft:crit ~ ~2.25 ~ 3 3 3 0.25 100 force @a
 playsound minecraft:entity.elder_guardian.curse master @a ~ ~ ~ .5 .75
