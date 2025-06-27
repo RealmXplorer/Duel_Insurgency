@@ -48,7 +48,10 @@ xp set @s[tag=!stolen] 360 levels
 particle minecraft:note ~ ~2.25 ~ .01 .5 .01 0.25 3 force @a
 
 playsound minecraft:sans.ability master @a ~ ~ ~ 0.5 1.05
-playsound minecraft:susie.rude_buster.shoot master @a ~ ~ ~ 10 1
+execute if entity @s[tag=!redBuster] run playsound minecraft:susie.rude_buster.shoot master @a ~ ~ ~ 10 1
+execute if entity @s[tag=redBuster] run playsound minecraft:susie.rude_buster.shoot master @a ~ ~ ~ 10 0.75
+execute if entity @s[tag=redBuster] run playsound minecraft:soundeffect.boom master @a ~ ~ ~ 1 0.8
+
 particle minecraft:crit ~ ~2.25 ~ 3 3 3 0.25 100 force @a
 playsound minecraft:entity.elder_guardian.curse master @a ~ ~ ~ .5 .75
 
