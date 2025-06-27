@@ -1,5 +1,6 @@
 scoreboard players remove @s susieTimer 1
 particle minecraft:dust_plume ~ ~ ~ 0.5 0.5 0.5 0 1
+particle minecraft:explosion ~ ~0.5 ~ 0 0 0 0 1
 
 execute if entity @a[tag=void] run function du-in:kit/susie/ability/void/damage
 

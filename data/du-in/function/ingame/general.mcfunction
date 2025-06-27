@@ -41,7 +41,7 @@ execute as @e[type=chicken,scores={jockeyTimer=0..}] run function du-in:kit/jack
 
 execute if entity @e[type=salmon,tag=kratosRock] run function du-in:kit/kratos/ability/rock/track
 
-execute as @e[type=armor_stand,tag=susieAbility,scores={susieTimer=0..}] run function du-in:kit/susie/ability/buster/timer
+execute as @e[type=armor_stand,tag=susieAbility,scores={susieTimer=0..}] at @s run function du-in:kit/susie/ability/buster/timer
 
 #Kill graves when projectiles are near or when the sand is far from the stand
     execute as @e[type=falling_block] at @s run function du-in:ingame/entities/falling_block

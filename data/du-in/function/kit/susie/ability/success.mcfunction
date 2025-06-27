@@ -52,8 +52,9 @@ execute if entity @s[tag=!redBuster] run playsound minecraft:susie.rude_buster.s
 execute if entity @s[tag=redBuster] run playsound minecraft:susie.rude_buster.shoot master @a ~ ~ ~ 10 0.75
 execute if entity @s[tag=redBuster] run playsound minecraft:soundeffect.boom master @a ~ ~ ~ 1 0.8
 
-particle minecraft:crit ~ ~2.25 ~ 3 3 3 0.25 100 force @a
-playsound minecraft:entity.elder_guardian.curse master @a ~ ~ ~ .5 .75
+particle minecraft:crit ~ ~2.25 ~ 0.5 0.5 0.5 0.25 30 force @a
+particle minecraft:infested ~ ~0.5 ~ 0.75 0.5 0.75 0 30
+#playsound minecraft:entity.elder_guardian.curse master @a ~ ~ ~ .5 .75
 
 tag @s remove redBuster
 tag @s remove sabotaged
