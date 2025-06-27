@@ -1,0 +1,1 @@
+#Runs when the kit damages any entity.
