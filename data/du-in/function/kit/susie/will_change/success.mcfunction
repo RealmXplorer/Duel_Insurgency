@@ -3,9 +3,11 @@ tag @s add redBuster
 
 #Particle#
 playsound minecraft:sans.ability master @a ~ ~ ~ 100 1
-#playsound minecraft:chara.ability master @a ~ ~ ~ 100 1
+playsound minecraft:susie.laugh master @a ~ ~ ~ 100 1
 playsound minecraft:entity.ender_dragon.flap master @a ~ ~ ~ 100 0.7
 particle minecraft:composter ~ ~1.5 ~ 2 1 2 0 30 force
+tellraw @s ["",{text:"Your will is changing!",bold:true,color:green}]
+
 
 #Reset#
 scoreboard players set @s ralseiTP 0

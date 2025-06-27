@@ -16,14 +16,14 @@ scoreboard players operation #targetY pos -= #playerY pos
 scoreboard players operation #targetZ pos -= #playerZ pos
 
 # summon the susieTest entity
-execute if entity @s[tag=!redBuster] run summon armor_stand ~ ~1.5 ~ {Invulnerable:1b,Tags:["susieAbility","susieTest","rudeBuster","unsetTime","mapSpecific"]}
-execute if entity @s[tag=redBuster] run summon armor_stand ~ ~1.5 ~ {Invulnerable:1b,Tags:["susieAbility","susieTest","redBuster","unsetTime","mapSpecific"]}
+execute if entity @s[tag=!redBuster] run summon armor_stand ~ ~1 ~ {Invulnerable:1b,Tags:["susieAbility","susieTest","rudeBuster","unsetTime","mapSpecific"]}
+execute if entity @s[tag=redBuster] run summon armor_stand ~ ~1 ~ {Invulnerable:1b,Tags:["susieAbility","susieTest","redBuster","unsetTime","mapSpecific"]}
 
 
 # apply motion to susieTest
-execute store result entity @e[type=armor_stand,tag=susieTest,limit=1] Motion[0] double 0.0025 run scoreboard players get #targetX pos
-execute store result entity @e[type=armor_stand,tag=susieTest,limit=1] Motion[1] double 0.0025 run scoreboard players get #targetY pos
-execute store result entity @e[type=armor_stand,tag=susieTest,limit=1] Motion[2] double 0.0025 run scoreboard players get #targetZ pos
+execute store result entity @e[type=armor_stand,tag=susieTest,limit=1] Motion[0] double 0.0015 run scoreboard players get #targetX pos
+execute store result entity @e[type=armor_stand,tag=susieTest,limit=1] Motion[1] double 0.0015 run scoreboard players get #targetY pos
+execute store result entity @e[type=armor_stand,tag=susieTest,limit=1] Motion[2] double 0.0015 run scoreboard players get #targetZ pos
 
 scoreboard players set @e[tag=susieTest,tag=unsetTime] susieTimer 30
 tag @e[tag=susieTest,tag=unsetTime,scores={susieTimer=0..}] remove unsetTime
@@ -33,8 +33,9 @@ execute store result score @e[type=armor_stand,tag=susieTest,limit=1] team run s
 execute store result score @e[type=armor_stand,tag=susieTest,limit=1] player run scoreboard players get @s player
 
 # clean up, ready for the next player
-tag @e[tag=susieTest] remove susieTest
-kill @e[tag=susieDirection]
+effect give @e[type=armor_stand,tag=susieTest] levitation infinite 0 true
+tag @e[type=armor_stand,tag=susieTest] remove susieTest
+kill @e[type=marker,tag=susieDirection]
 
 
 
@@ -46,10 +47,12 @@ clear @s minecraft:carrot_on_a_stick
 xp set @s[tag=!stolen] 360 levels
 particle minecraft:note ~ ~2.25 ~ .01 .5 .01 0.25 3 force @a
 
-playsound minecraft:sans.ability master @a ~ ~ ~ 1 1.05
+playsound minecraft:sans.ability master @a ~ ~ ~ 0.5 1.05
+playsound minecraft:susie.rude_buster.shoot master @a ~ ~ ~ 10 1
 particle minecraft:crit ~ ~2.25 ~ 3 3 3 0.25 100 force @a
 playsound minecraft:entity.elder_guardian.curse master @a ~ ~ ~ .5 .75
 
+tag @s remove redBuster
 tag @s remove sabotaged
 execute if entity @s[tag=stolen] run tag @s add kitDone
 tag @s remove kitActions
