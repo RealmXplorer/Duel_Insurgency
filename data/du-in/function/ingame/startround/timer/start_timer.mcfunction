@@ -5,8 +5,7 @@ stopsound @a ambient
 
 #Mark all players as in start game sequence
 tag @a add startgame
-scoreboard players set @a[scores={kit=1001}] pazSkin 1
-#clear @a[scores={kit=1001}] #du-in:armor
+
 #Stop all other music
 stopsound @a record
 

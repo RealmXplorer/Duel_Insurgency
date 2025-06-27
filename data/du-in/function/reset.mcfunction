@@ -140,6 +140,7 @@ execute as @a run function du-in:music/ingame/stop/all
         tag @a remove vended
         scoreboard players set @a weaponTier 0
         tag @a remove fortniteCard
+        scoreboard players reset @a pazSkin
 
     #Flowey#
         scoreboard players reset @a floweyHitTimer
