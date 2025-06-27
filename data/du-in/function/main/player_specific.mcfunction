@@ -23,8 +23,8 @@
         execute if entity @s[scores={leaveGame=1..}] run function du-in:other/left_game/init
 
     #Give player with Random tag a random kit#
-        execute if entity @s[tag=random] run function du-in:kit/all/random
-        execute if entity @s[tag=randomLeg] run function du-in:kit/all/random_legend
+        execute if entity @s[tag=random] run function du-in:kit/all/random/roll
+        execute if entity @s[tag=randomLeg] run function du-in:kit/all/random/roll_legend
 
     #
 

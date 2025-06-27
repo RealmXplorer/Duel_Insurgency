@@ -2,7 +2,7 @@
 execute if entity @s[scores={hit=5..}] run function du-in:kit/puss/events/hit
 execute if entity @s[scores={step=150..}] run function du-in:kit/puss/events/step
 execute if entity @s[scores={sprint=150..}] run function du-in:kit/puss/events/step
-execute if entity @s[scores={jump=1..}] run function du-in:kit/jump
+execute if entity @s[scores={jump=1..}] run function du-in:kit/puss/events/jump
 
 #Use ability
 execute if entity @s[tag=secKitActions] run function du-in:kit/puss/secondary/switch

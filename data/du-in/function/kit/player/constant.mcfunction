@@ -1,6 +1,6 @@
 #SOUNDS#
 execute if entity @s[scores={hit=5..}] run function du-in:kit/player/events/hit
-execute if entity @s[scores={jump=1..}] run function du-in:kit/jump
+execute if entity @s[scores={jump=1..}] run function du-in:kit/player/events/jump
 
 #CONSTANTS#
 execute if score #main titleTimer2 matches 21 run item replace entity @s hotbar.8 with minecraft:arrow 2
