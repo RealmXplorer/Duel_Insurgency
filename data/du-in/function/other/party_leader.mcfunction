@@ -11,19 +11,19 @@ execute if score #main lobby matches 1 run scoreboard players set @a[tag=!parkou
 
 ##The following functions and commands test for if the new party leader has different settings enabled
 #Announce gamemode cap changes#
-execute unless score @a[tag=partyLeader,limit=1,tag=!playing] killScale = #main killScale run function du-in:lobby/scales/classicap
-execute unless score @a[tag=partyLeader,limit=1,tag=!playing] dmScale = #main dmScale run function du-in:lobby/scales/dmcap
-execute unless score @a[tag=partyLeader,limit=1,tag=!playing] kothScale = #main kothScale run function du-in:lobby/scales/kothcap
-execute unless score @a[tag=partyLeader,limit=1,tag=!playing] ctfScale = #main ctfScale run function du-in:lobby/scales/ctfcap
-execute unless score @a[tag=partyLeader,limit=1,tag=!playing] conqScale = #main conqScale run function du-in:lobby/scales/conquestcap
+execute unless score @a[tag=partyLeader,limit=1,tag=!playing] killScale = #main killScale run function du-in:other/settings/scales/classicap
+execute unless score @a[tag=partyLeader,limit=1,tag=!playing] dmScale = #main dmScale run function du-in:other/settings/scales/dmcap
+execute unless score @a[tag=partyLeader,limit=1,tag=!playing] kothScale = #main kothScale run function du-in:other/settings/scales/kothcap
+execute unless score @a[tag=partyLeader,limit=1,tag=!playing] ctfScale = #main ctfScale run function du-in:other/settings/scales/ctfcap
+execute unless score @a[tag=partyLeader,limit=1,tag=!playing] conqScale = #main conqScale run function du-in:other/settings/scales/conquestcap
 #TEAM MODES#
-execute unless score @a[tag=partyLeader,limit=1,tag=!playing] tKillScale = #main tKillScale run function du-in:lobby/scales/tclassicap
-execute unless score @a[tag=partyLeader,limit=1,tag=!playing] tKothScale = #main tKothScale run function du-in:lobby/scales/tkothcap
+execute unless score @a[tag=partyLeader,limit=1,tag=!playing] tKillScale = #main tKillScale run function du-in:other/settings/scales/tclassicap
+execute unless score @a[tag=partyLeader,limit=1,tag=!playing] tKothScale = #main tKothScale run function du-in:other/settings/scales/tkothcap
 
 #Announce Death Timer Changes#
-execute unless score @a[tag=partyLeader,limit=1,tag=!playing] dtScale = #main dtScale run function du-in:lobby/scales/death_timer_cap
+execute unless score @a[tag=partyLeader,limit=1,tag=!playing] dtScale = #main dtScale run function du-in:other/settings/scales/death_timer_cap
 
-execute unless score @a[tag=partyLeader,limit=1,tag=!playing] gameTimeScale = #main gameTimeScale run function du-in:lobby/scales/gametimecap
+execute unless score @a[tag=partyLeader,limit=1,tag=!playing] gameTimeScale = #main gameTimeScale run function du-in:other/settings/scales/gametimecap
 
 #Set Main scale to match new party leader's
 execute store result score #main killScale run scoreboard players get @a[tag=partyLeader,limit=1] killScale
