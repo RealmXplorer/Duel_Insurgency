@@ -140,7 +140,6 @@ execute as @a run function du-in:music/ingame/stop/all
         tag @a remove vended
         scoreboard players set @a weaponTier 0
         tag @a remove fortniteCard
-        scoreboard players reset @a pazSkin
 
     #Flowey#
         scoreboard players reset @a floweyHitTimer
@@ -290,6 +289,9 @@ tag @a remove hasRing
 
 #HOWW???
 tag @a remove projectile
+
+#Give back default skins
+execute as @a[tag=poolParty] run function du-in:maps/pool_party/revert
 
 ##INGAME TAG AND SCORE RESETS
 #Sub-Gamemodes
