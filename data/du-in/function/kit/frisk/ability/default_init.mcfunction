@@ -4,6 +4,8 @@ effect give @s[tag=sabotaged] minecraft:slowness 2 255 true
 effect give @s[tag=!sabotaged] minecraft:fire_resistance 2 255 true
 effect give @s[tag=!sabotaged] minecraft:instant_health 1 0 true
 effect give @s[tag=!sabotaged] minecraft:speed 3 1 true
+
+execute if entity @s[tag=!sabotaged] run playsound minecraft:soundeffect.cure master @a ~ ~ ~ 1 1
 effect clear @s[tag=!sabotaged] minecraft:poison
 effect clear @s[tag=!sabotaged] minecraft:wither
 

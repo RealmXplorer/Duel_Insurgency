@@ -2,6 +2,8 @@
 effect give @s minecraft:instant_health 1 1 true
 effect give @s minecraft:speed 2 0 true
 
+playsound minecraft:soundeffect.cure master @a ~ ~ ~ 1 1
+
 effect clear @s minecraft:poison
 effect clear @s minecraft:wither
 
