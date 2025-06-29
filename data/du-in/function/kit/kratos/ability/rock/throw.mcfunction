@@ -36,6 +36,8 @@ execute store result score @e[type=salmon,tag=kratosTest,limit=1] team run score
 execute store result score @e[type=salmon,tag=kratosTest,limit=1] player run scoreboard players get @s player
 execute store result score @e[type=block_display,tag=kratosTest,limit=1] player run scoreboard players get @s player
 
+particle block_crumble{block_state:"minecraft:packed_mud"} ~ ~1 ~ 0.75 0 0.75 1 50 normal
+
 # clean up, ready for the next player
 tag @e[tag=kratosTest] remove kratosTest
 kill @e[tag=kratosDirection]
