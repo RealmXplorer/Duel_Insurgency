@@ -8,6 +8,10 @@ execute as @a[gamemode=adventure,tag=parkour] at @s if entity @s[x=680,y=-29,z=-
 
 execute positioned 641 -27 -103 as @a[distance=..5,gamemode=adventure] at @s if entity @s[y=-26,dy=0] run function du-in:lobby/parkour/checkpoint3
 
+execute positioned 658 24 -34 as @e[distance=..12,y=24] run tp @s 675 -43 -176
+
+execute positioned 611.52 -37.00 -187.56 as @e[distance=..5,y=-37] run tp @s 715 1.18750 -157.480 -143 -0.5
+
 #execute as @a[gamemode=adventure,tag=parkour] at @s if entity @s[x=662,y=6,z=-124,dx=32,dy=0,dz=-29] run tp @s 650 13 -125 0 0
 #execute as @a[gamemode=adventure,tag=parkour] at @s if entity @s[x=662,y=6,z=-124,dx=-32,dy=0,dz=29] run tp @s 650 13 -125 0 0
 
