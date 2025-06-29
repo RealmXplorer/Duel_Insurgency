@@ -4,6 +4,7 @@ kill @n[tag=projectile]
 kill @e[type=armor_stand,tag=asgoreFire,distance=..3.5]
 
 playsound minecraft:cuphead.parry master @a ~ ~ ~ 1 1
+particle explosion ~ ~-0.5 ~ 0 0 0 0 1
 effect give @s minecraft:levitation 1 10 true
 effect give @s minecraft:resistance 2 2 true
 effect give @s minecraft:fire_resistance 2 2 true
