@@ -62,5 +62,9 @@ execute as @e[type=armor_stand,scores={papyrusHitTimer=-1..}] at @s run function
 execute if predicate du-in:ambience/night_start if score #main dayNightSetting matches 1 run function du-in:ingame/scheduled/ambience/night_start
 execute if predicate du-in:ambience/night_end if score #main dayNightSetting matches 1 run function du-in:ingame/scheduled/ambience/night_end
 
+#Desolate Dive
+execute if entity @e[tag=desolateDive] run function du-in:kit/knight/ability/dive
+
+
 #Dev Mode end game
 execute if entity @a[scores={thrownBarrier=1..}] if entity @a[tag=devMode,tag=partyLeader] run tag @a add win
