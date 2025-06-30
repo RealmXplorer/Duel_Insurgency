@@ -2,7 +2,9 @@
 clear @s[tag=!kitMenu] #du-in:lobby
 
 #Remove spectator tag
-tag @s remove spect
+# tag @s remove spect
+tag @s remove spectating
+tag @s remove audience
 
 #Remove easter egg tags
 tag @s remove maskless

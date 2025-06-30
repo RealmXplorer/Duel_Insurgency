@@ -19,7 +19,9 @@ stopsound @a record
 execute as @a run function du-in:storage/reset
 scoreboard players set @a kit 0
 tag @a remove kitPicked
-tag @a remove spect
+#tag @a remove spect
+tag @a remove spectating
+tag @a remove audience
 
 tag @a[tag=ctfl] remove teamMode
 tag @a[tag=cql] remove teamMode
