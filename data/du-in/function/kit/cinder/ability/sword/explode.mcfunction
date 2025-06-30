@@ -1,5 +1,5 @@
 #If Cinder is close to enemy#
-execute as @a[distance=0.05..6,gamemode=!spectator,tag=!teamDead] run tag @s add cinderHit
+execute as @a[gamemode=!spectator,distance=0.05..6,tag=!teamDead] run tag @s add cinderHit
 execute as @a[tag=cinderHit] if score @s team = @p[scores={kit=34},tag=kitActions] team run tag @s remove cinderHit
 
 execute if entity @a[gamemode=adventure,distance=0.05..6,tag=!teamDead] unless entity @a[tag=cinderHit] run function du-in:kit/all/ability/titles/team
