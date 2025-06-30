@@ -10,7 +10,7 @@ tag @a add startgame
 stopsound @a record
 
 #Set all spectators into spectator mode
-tag @a[tag=!kitPicked] add spectating
+#tag @a[tag=!kitPicked] add spectating
 execute as @a[tag=spectating] run function du-in:ingame/spect
 scoreboard players reset @a[tag=specating] Lives
 

@@ -22,7 +22,8 @@
 
 
 # Tell Players to Pick Character #
-    title @a[tag=!kitPicked,tag=!spect,tag=!teamMode] actionbar {text:"Open inventory to select a character!",color:red,bold:true}
+    #title @a[tag=!kitPicked,tag=!spect,tag=!teamMode] actionbar {text:"Open inventory to select a character!",color:red,bold:true}
+    title @a[tag=!kitPicked,tag=!spectating,tag=!teamMode] actionbar {text:"Open inventory to select a character!",color:red,bold:true}
 
 
 execute as @e[type=marker,tag=mapVote] at @s run function du-in:lobby/mapselect/map_vote

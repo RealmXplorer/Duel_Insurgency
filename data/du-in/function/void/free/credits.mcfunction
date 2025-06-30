@@ -44,7 +44,7 @@ title @s[scores={creditsTimer=1040}] subtitle {text:"deo_x, Dreamrage_808, Yogur
 title @s[scores={creditsTimer=1100}] subtitle {text:"Meatchip, vxxmit, D1maShip",bold:false,color:blue}
 title @s[scores={creditsTimer=1160}] subtitle {text:"RockstarWolfy7, KrEsHDiE, GiganticYassin",bold:false,color:blue}
 title @s[scores={creditsTimer=1220}] subtitle {text:"LordOfTheFlames, omarhafizd, PoppiQT",bold:false,color:blue}
-title @s[scores={creditsTimer=1280}] subtitle {text:"eggpathy",bold:false,color:blue}
+title @s[scores={creditsTimer=1280}] subtitle {text:"eggpathy, strawbrysage, nerbski_",bold:false,color:blue}
 
 #Thank you
 title @s[scores={creditsTimer=1340}] times 60 60 100

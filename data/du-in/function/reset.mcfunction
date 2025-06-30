@@ -107,7 +107,8 @@ tag @a remove team2
 
 tag @a remove spectating
 tag @a remove killstreak3
-tag @a remove spect
+#tag @a remove spect
+tag @a remove audience
 scoreboard players reset * healthHit
 scoreboard players reset * healthTimer
 tag @a remove countStop
