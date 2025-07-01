@@ -1,0 +1,133 @@
+***6/23/25:***
+***UPDATE 1.3: UNTIL TOMORROW***
+*Additions*
+-Added Judy Hopps character.
+-Added Susie character.
+-Added Zootopia tab in Kit Select.
+-Added Goner Mouth skin for Gaster.
+	-Can only be selected if you've freed the timelines...
+
+*Balancing*
+-Reduced how long it takes for Sauron's ring to corrupt a ring-bearer. (10s -> 5s)
+-Increased how much Sauron's ring corruption slows the ring-bearer. (-0.025 -> -0.05)
+-Reduced Chara's ability duration. (5s -> 4s)
+-Reduced the level of Slowness Player gets from using their ability. (VII -> V)
+-Increased Nick Wilde's void ability radius. (3.5 -> 4)
+-Increased Sans' base weapon damage. (2.8 -> 3)
+-Increased Sans' ability radius. (4 -> 4.5)
+-Increased Sans' health. (10 -> 12)
+-Increased Asriel's Chaos Saber when in the void. (8 -> 10)
+-Reduced Death’s wall damage on first hit. (0.9 → 0.7)
+-Increased Papyrus's main weapon damage. (3 -> 3.4)
+-Increased Ralsei's main weapon damage. (4 -> 4.5)
+
+*Changes*
+-Moved Nick Wilde from Grab Bag to Zootopia.
+-Re-organized the Grab Bag tab in Kit Select.
+-Added sound effect, chat message, and particles for when the Ring corrupts a player.
+-Added custom kill message variations for more characters.
+	-Nick Wilde
+	-Death
+	-Soul of Cinder
+	-Asriel
+	-Gaster
+-Added more characters that Nick Wilde can empower (when on same team).
+	-Saac
+	-Kylo
+	-Slime
+	-Skeleton
+-Added intro sound effect for Skeleton.
+-Added intro sound effect for Frisk.
+-Added intro sound for Asriel.
+-Frisk now has custom damage sounds.
+-Nick Wilde's Void ability now has heart particles.
+-Nick Wilde has a new appearance.
+-Altered Raycasting abilities to be more at hand-level.
+-Asriel's Chaos Saber ability should give damage credit to him.
+-Converted Gaster shattered effects to attribute modifiers (so that abilities can stack).
+-Some characters will automatically wear their summer skins on Paz Pool Party. 
+	-If you have a skin equipped, it won't override it.
+-Kratos's ability can now harm void enemies.
+-Soul of Cinder's sword explosion ability now harms void enemies.
+-Clairen's field can now block Soul of Cinder's explosion and magic attacks.
+-Clairen's field can now block Jack Horner Phoenix blasts.
+-Clairen's field can now block Cuphead charged abiltiy blasts.
+-Added a small explosion particle when Cuphead does an air parry.
+-Added crumbling block particles to Kratos's rock ability.
+-Added new sound effect for Ralsei's heal spell.
+-Added "cure" sound effect when negative status effects are removed.
+-Added a spare sound effect for when Ralsei and Frisk kill enemies.
+
+*Bug Fixes*
+-Fixed bug where Zombie would not play its intro sounds.
+-Fixed bug where Kratos would make rage charge sound on every hit.
+-Fixed bug where Gaster's weight would get set to 0 after using his ability.
+-Fixed bug where Gaster would still get strength even while sabotaged.
+-Fixed bug where Easter Egg skins would not have a chance to happen.
+-Fixed bug where Paz Easter Egg skin was always selected.
+-Fixed bug where Parry recharge sound would not play if you had successfully landed a parry.
+
+*Internal Changes*
+-Added "du-in:pogo" enchantment.
+-Added "du-in:hopps" enchantment.
+-Updated "du-in:sans_valid" to include new foliage blocks.
+-Aang and Kratos's direction armor stands are now tagged differently.
+-Datapack 6.1
+	-Updated “info.txt”
+	-Moved kill/all/death, suicide, ctf_suicide, and random_death all over to kit/all/death/
+	-Renamed “random_death” to “random_mode”
+	-Merged “ingame/death” with “kit/all/death/init”.
+	-Renamed "kill/kill" to "kill/init"
+	-Kill functions now run modularly.
+	-Renamed "(kit)/sounds/" to "(kit)/events/"
+	-Renamed saac, paz, jerma, impostor, and runza "sounds/line" to "events/kill"
+	-Moved "(kit)/death" to "(kit)/events/death"
+	-Moved “springtrap/particle” to “springtrap/ability/particle”
+	-Moved “clairen/draw_circle” to “clairen/ability/draw_circle”
+	-Moved “clairen/draw_sphere” to “clairen/ability/draw_sphere”
+	-Moved “runza/runza” to “runza/ability/clear”
+	-Moved "gaster/particle" to "gaster/ability/particle".
+	-Merged "gaster/ability/shattered_effects" into "gaster/ability/shattered"
+	-Merged "kit/all/killstreak_lines" into "kit/saac/events/kill" and "kit/impostor/events/kill".
+	-Moved “vader/berserk” to “vader/passive/berserk”.
+	-Moved "(kit)/damage/all", and "(kit)/damage/player" to "(kit)/events/damage/all", and "(kit)/events/damage/player".
+	-Moved the "kill combo" functions out of "ingame/killstreaks/", and made new "ingame/kill_combo/".
+	-Renamed "kit/all/winline/" to "kit/all/win/"
+	-Moved “kit/all/winline” to “kit/all/win/init”
+	-Moved “kit/all/hit_all” to “kit/all/damage/all/init”
+	-Moved “kit/all/hit_player” to “kit/all/damage/player/init”
+	-Moved “kit/all/death” to “kit/all/death/search”
+	-Moved "kit/all/ability/far" to "kit/all/ability/titles/far"
+	-Moved "kit/all/ability/team" to "kit/all/ability/titles/team"
+	-Merged "kit/all/undertale/death" into the individual kits' death functions.
+	-Merged "kit/jump" into all kits' "events/" folder.
+	-Reworked the "kit/all/weapons/' functions to be descending priority
+	-Kill Messages are now modular, giving a tag “killMsg” and running in the new “(kit)/events/kill” function.
+		-Holiday kill messages are not modular, and run the same as before.
+	-Removed “maps/ambient”, as it was unusued.
+	-Moved "lobby/scales/" to "other/settings/scales/"
+	-Removed “startround/saac_reset”
+	-Moved "lobby/misc/sidebar" to "lobby/sidebar". Deleted "lobby/misc" folder.
+	-Deleted "ingame/vending_machine/vendor" as it was no longer used.
+	-Deleted “ingame/vending_machine/has_vended”.
+	-Merged “spect” tag into “spectating” tag.
+
+*Resourcepack Updates*
+-Added Judy armor texture. (unknown)
+-Added Susie armor texture. (by eggpathy)
+-Added Judy hurt sound.
+-Added Judy tranq gun texture. (by Realm_Xplorer)
+-Added Undertale battlestart sound.
+-Replaced Nick Wilde skin textures. (by Nerbski)
+-Added Susie voice sound.
+-Added Susie laugh sound.
+-Added Undertale hit sound.
+-Added Asriel laugh sound.
+-Added Deltarune explode sound.
+-Increased volume for Goner Mouth hit sound.
+-Added Will Change texture. (by Realm_Xplorer)
+-Added Mane Axe texture. (by Realm_Xplorer)
+-Added Rude Buster texture. (by Realm_Xplorer)
+-Added Red Buster texture. (by Realm_Xplorer)
+-Added Ralsei spell and heal spell sound effects.
+-Added Deltarune Spare and cure sound effects.
