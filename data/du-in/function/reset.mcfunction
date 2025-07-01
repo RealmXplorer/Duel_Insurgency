@@ -154,7 +154,6 @@ execute as @a run function du-in:music/ingame/stop/all
 
     #Chungus#
         tag @a remove bigChungus
-        tag @a remove chungus
 
     #Saul#
         tag @a remove saul

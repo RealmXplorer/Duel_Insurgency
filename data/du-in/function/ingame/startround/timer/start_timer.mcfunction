@@ -51,6 +51,9 @@ tag @a[tag=!spectating] add playing
     #tag @a[scores={kit=1000},tag=!legMusicOff] add saac
     #execute as @a[scores={kit=1000}] run function du-in:ingame/startround/saac_reset
 
+    execute if entity @a[scores={kit=2015}] run tag @a[tag=!legMusicOff,tag=!void,tag=!ctfl,tag=!cql] add saul
+    execute if entity @a[scores={kit=42069}] run tag @a[tag=!legMusicOff,tag=!void,tag=!ctfl,tag=!cql] add bigChungus
+
     #Mark Zombie and Springtrap as undead
     tag @a[scores={kit=2}] add undead
     tag @a[scores={kit=5}] add undead
