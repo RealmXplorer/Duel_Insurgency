@@ -6,4 +6,4 @@
         execute unless items entity @s hotbar.0 minecraft:carrot_on_a_stick run function du-in:lobby/item/count
 
     # Give Quickplay Item #
-        execute unless items entity @s hotbar.4 minecraft:carrot_on_a_stick run function du-in:lobby/item/quick
+        execute unless entity @a[tag=partyLeader,tag=specialEvent] unless items entity @s hotbar.4 minecraft:carrot_on_a_stick run function du-in:lobby/item/quick
