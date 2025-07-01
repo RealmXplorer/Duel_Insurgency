@@ -15,3 +15,9 @@ $data modify storage du-in:player$(current) kit set value {"kit":"saac"}
 
 #Clear and remove tags
 function du-in:lobby/kitmenu/select/common
+
+#Play Saac music
+tag @s[tag=!legMusicOff] add saac
+
+#Spawn vending machines
+tag @s add vendingMachine

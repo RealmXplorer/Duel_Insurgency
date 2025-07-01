@@ -12,3 +12,6 @@ $data modify storage du-in:player$(current) kit set value {"kit":"paz"}
 
 #Clear and remove tags
 function du-in:lobby/kitmenu/select/common
+
+#Spawn vending machines
+tag @s add vendingMachine

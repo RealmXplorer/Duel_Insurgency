@@ -16,11 +16,11 @@ tellraw @s [{text:"Selected the ",bold:true,color:gray},{text:"The Impostor ",bo
 scoreboard players set @s kit 1003
 $data modify storage du-in:player$(current) kit set value {"kit":"impostor"}
 
-#Add Sus tag (allows venting)
-tag @s add sus
-
 #Clear and remove tags
 function du-in:lobby/kitmenu/select/common
+
+#Add Sus tag (allows venting)
+tag @s add sus
 
 #Chance to drip out amongus
 tag @s[predicate=du-in:chance/quarter_chance] add drip

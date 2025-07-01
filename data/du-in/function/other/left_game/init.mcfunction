@@ -20,7 +20,8 @@ tag @s remove glowing
 execute unless score @s player matches 1.. if entity @s[tag=played] run tag @s remove played
 
 #Remove other tags from player who left
-tag @s remove startgame
+#tag @s remove startgame
+tag @s remove vendingMachine
 tag @s remove countStop
 
 #Revoke kill advancement (to prevent certain bugs)

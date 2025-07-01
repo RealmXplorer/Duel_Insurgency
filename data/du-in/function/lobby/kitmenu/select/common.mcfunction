@@ -12,6 +12,11 @@ tag @s remove drip
 tag @s remove caveSpider
 tag @s remove lorde
 
+#Remove kit specific tags
+tag @s remove saac
+tag @s remove vendingMachine
+tag @s remove sus
+
 #Announce and play sounds and particles
 execute if entity @s[tag=!kitPicked,tag=!playing] run tellraw @a [{selector:"@s",bold:true},{text:" has picked a kit!",bold:true,color:gray},{text:" (",color:blue},{"score":{"name":"@s","objective":"level"},color:blue},{text:"✫)",color:blue}]
 execute if entity @s[tag=!kitPicked] run playsound minecraft:block.enchantment_table.use master @a ~ ~ ~ 1 1

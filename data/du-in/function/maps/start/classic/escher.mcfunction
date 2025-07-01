@@ -27,15 +27,15 @@ summon interaction 675 11 -620 {Tags:["ventBlock","mapSpecific"],width:1.05f,hei
 
 
 #Default Vending Machines#
-execute if entity @a[scores={kit=1000..1001}] run summon interaction 687 20 -614 {Tags:["vending","stable","mapSpecific"],width:1.15f,height:2.1f,response:1b}
-execute if entity @a[scores={kit=1000..1001}] run summon interaction 684 10 -604 {Tags:["vending","stable","mapSpecific"],width:1.15f,height:2.1f,response:1b}
-execute if entity @a[scores={kit=1000..1001}] run summon interaction 692 12 -606 {Tags:["vending","stable","mapSpecific"],width:1.15f,height:2.1f,response:1b}
-execute if entity @a[scores={kit=1000..1001}] run summon interaction 677 15 -611 {Tags:["vending","stable","mapSpecific"],width:1.15f,height:2.1f,response:1b}
+execute if entity @a[tag=vendingMachine] run summon interaction 687 20 -614 {Tags:["vending","stable","mapSpecific"],width:1.15f,height:2.1f,response:1b}
+execute if entity @a[tag=vendingMachine] run summon interaction 684 10 -604 {Tags:["vending","stable","mapSpecific"],width:1.15f,height:2.1f,response:1b}
+execute if entity @a[tag=vendingMachine] run summon interaction 692 12 -606 {Tags:["vending","stable","mapSpecific"],width:1.15f,height:2.1f,response:1b}
+execute if entity @a[tag=vendingMachine] run summon interaction 677 15 -611 {Tags:["vending","stable","mapSpecific"],width:1.15f,height:2.1f,response:1b}
 
-execute if entity @a[scores={kit=1000..1001}] run summon armor_stand 687 20 -614 {Rotation:[0F,0F],Tags:["vendMachine","mapSpecific"],NoGravity:1b,Silent:1b,Invulnerable:1b,Invisible:1b,NoBasePlate:1b,DisabledSlots:4144959,equipment:{head:{id:"minecraft:spruce_sapling",count:1,components:{"minecraft:item_model":"du-in:other/vending_machine"}}}}
-execute if entity @a[scores={kit=1000..1001}] run summon armor_stand 684 10 -604 {Rotation:[0F,0F],Tags:["vendMachine","mapSpecific"],NoGravity:1b,Silent:1b,Invulnerable:1b,Invisible:1b,NoBasePlate:1b,DisabledSlots:4144959,equipment:{head:{id:"minecraft:spruce_sapling",count:1,components:{"minecraft:item_model":"du-in:other/vending_machine"}}}}
-execute if entity @a[scores={kit=1000..1001}] run summon armor_stand 692 12 -606 {Rotation:[0F,0F],Tags:["vendMachine","mapSpecific"],NoGravity:1b,Silent:1b,Invulnerable:1b,Invisible:1b,NoBasePlate:1b,DisabledSlots:4144959,equipment:{head:{id:"minecraft:spruce_sapling",count:1,components:{"minecraft:item_model":"du-in:other/vending_machine"}}}}
-execute if entity @a[scores={kit=1000..1001}] run summon armor_stand 677 15 -611 {Rotation:[-90F,0F],Tags:["vendMachine","mapSpecific"],NoGravity:1b,Silent:1b,Invulnerable:1b,Invisible:1b,NoBasePlate:1b,DisabledSlots:4144959,equipment:{head:{id:"minecraft:spruce_sapling",count:1,components:{"minecraft:item_model":"du-in:other/vending_machine"}}}}
+execute if entity @a[tag=vendingMachine] run summon armor_stand 687 20 -614 {Rotation:[0F,0F],Tags:["vendMachine","mapSpecific"],NoGravity:1b,Silent:1b,Invulnerable:1b,Invisible:1b,NoBasePlate:1b,DisabledSlots:4144959,equipment:{head:{id:"minecraft:spruce_sapling",count:1,components:{"minecraft:item_model":"du-in:other/vending_machine"}}}}
+execute if entity @a[tag=vendingMachine] run summon armor_stand 684 10 -604 {Rotation:[0F,0F],Tags:["vendMachine","mapSpecific"],NoGravity:1b,Silent:1b,Invulnerable:1b,Invisible:1b,NoBasePlate:1b,DisabledSlots:4144959,equipment:{head:{id:"minecraft:spruce_sapling",count:1,components:{"minecraft:item_model":"du-in:other/vending_machine"}}}}
+execute if entity @a[tag=vendingMachine] run summon armor_stand 692 12 -606 {Rotation:[0F,0F],Tags:["vendMachine","mapSpecific"],NoGravity:1b,Silent:1b,Invulnerable:1b,Invisible:1b,NoBasePlate:1b,DisabledSlots:4144959,equipment:{head:{id:"minecraft:spruce_sapling",count:1,components:{"minecraft:item_model":"du-in:other/vending_machine"}}}}
+execute if entity @a[tag=vendingMachine] run summon armor_stand 677 15 -611 {Rotation:[-90F,0F],Tags:["vendMachine","mapSpecific"],NoGravity:1b,Silent:1b,Invulnerable:1b,Invisible:1b,NoBasePlate:1b,DisabledSlots:4144959,equipment:{head:{id:"minecraft:spruce_sapling",count:1,components:{"minecraft:item_model":"du-in:other/vending_machine"}}}}
 
 
 #Goner Eye#

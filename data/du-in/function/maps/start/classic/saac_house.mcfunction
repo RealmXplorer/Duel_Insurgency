@@ -28,15 +28,15 @@ summon interaction -1991 35 -1948 {Tags:["ventBlock","mapSpecific"],width:1.05f,
 summon interaction -2005 35 -1974 {Tags:["ventBlock","mapSpecific"],width:1.05f,height:1.25f,response:1b}
 
 #Saac Vending Machines#
-execute if entity @a[scores={kit=1000..1001}] run summon interaction -2000 36 -1965 {Tags:["vending","stable","mapSpecific"],width:1.15f,height:2.1f,response:1b}
-execute if entity @a[scores={kit=1000..1001}] run summon interaction -1996 39 -1976 {Tags:["vending","stable","mapSpecific"],width:1.15f,height:2.1f,response:1b}
-#execute if entity @a[scores={kit=1000..1001}] run summon interaction -1995 47 -1975 {Tags:["vending","stable","mapSpecific"],width:1.15f,height:2.1f,response:1b}
-execute if entity @a[scores={kit=1000..1001}] run summon interaction -2007 41 -1979 {Tags:["vending","stable","mapSpecific"],width:1.15f,height:2.1f,response:1b}
+execute if entity @a[tag=vendingMachine] run summon interaction -2000 36 -1965 {Tags:["vending","stable","mapSpecific"],width:1.15f,height:2.1f,response:1b}
+execute if entity @a[tag=vendingMachine] run summon interaction -1996 39 -1976 {Tags:["vending","stable","mapSpecific"],width:1.15f,height:2.1f,response:1b}
+#execute if entity @a[tag=vendingMachine] run summon interaction -1995 47 -1975 {Tags:["vending","stable","mapSpecific"],width:1.15f,height:2.1f,response:1b}
+execute if entity @a[tag=vendingMachine] run summon interaction -2007 41 -1979 {Tags:["vending","stable","mapSpecific"],width:1.15f,height:2.1f,response:1b}
 
-execute if entity @a[scores={kit=1000..1001}] run summon armor_stand -2000 36 -1965 {Rotation:[0F,0F],Tags:["vendMachine","mapSpecific"],NoGravity:1b,Silent:1b,Invulnerable:1b,Invisible:1b,NoBasePlate:1b,DisabledSlots:4144959,equipment:{head:{id:"minecraft:spruce_sapling",count:1,components:{"minecraft:item_model":"du-in:other/vending_machine"}}}}
-execute if entity @a[scores={kit=1000..1001}] run summon armor_stand -1996 39 -1976 {Rotation:[180F,0F],Tags:["vendMachine","mapSpecific"],NoGravity:1b,Silent:1b,Invulnerable:1b,Invisible:1b,NoBasePlate:1b,DisabledSlots:4144959,equipment:{head:{id:"minecraft:spruce_sapling",count:1,components:{"minecraft:item_model":"du-in:other/vending_machine"}}}}
-#execute if entity @a[scores={kit=1000..1001}] run summon armor_stand -1995 47 -1975 {Rotation:[0F,0F],Tags:["vendMachine","mapSpecific"],NoGravity:1b,Silent:1b,Invulnerable:1b,Invisible:1b,NoBasePlate:1b,DisabledSlots:4144959,equipment:{head:{id:"minecraft:spruce_sapling",count:1,components:{"minecraft:item_model":"du-in:other/vending_machine"}}}}
-execute if entity @a[scores={kit=1000..1001}] run summon armor_stand -2007 41 -1979 {Rotation:[-180F,0F],Tags:["vendMachine","mapSpecific"],NoGravity:1b,Silent:1b,Invulnerable:1b,Invisible:1b,NoBasePlate:1b,DisabledSlots:4144959,equipment:{head:{id:"minecraft:spruce_sapling",count:1,components:{"minecraft:item_model":"du-in:other/vending_machine"}}}}
+execute if entity @a[tag=vendingMachine] run summon armor_stand -2000 36 -1965 {Rotation:[0F,0F],Tags:["vendMachine","mapSpecific"],NoGravity:1b,Silent:1b,Invulnerable:1b,Invisible:1b,NoBasePlate:1b,DisabledSlots:4144959,equipment:{head:{id:"minecraft:spruce_sapling",count:1,components:{"minecraft:item_model":"du-in:other/vending_machine"}}}}
+execute if entity @a[tag=vendingMachine] run summon armor_stand -1996 39 -1976 {Rotation:[180F,0F],Tags:["vendMachine","mapSpecific"],NoGravity:1b,Silent:1b,Invulnerable:1b,Invisible:1b,NoBasePlate:1b,DisabledSlots:4144959,equipment:{head:{id:"minecraft:spruce_sapling",count:1,components:{"minecraft:item_model":"du-in:other/vending_machine"}}}}
+#execute if entity @a[tag=vendingMachine] run summon armor_stand -1995 47 -1975 {Rotation:[0F,0F],Tags:["vendMachine","mapSpecific"],NoGravity:1b,Silent:1b,Invulnerable:1b,Invisible:1b,NoBasePlate:1b,DisabledSlots:4144959,equipment:{head:{id:"minecraft:spruce_sapling",count:1,components:{"minecraft:item_model":"du-in:other/vending_machine"}}}}
+execute if entity @a[tag=vendingMachine] run summon armor_stand -2007 41 -1979 {Rotation:[-180F,0F],Tags:["vendMachine","mapSpecific"],NoGravity:1b,Silent:1b,Invulnerable:1b,Invisible:1b,NoBasePlate:1b,DisabledSlots:4144959,equipment:{head:{id:"minecraft:spruce_sapling",count:1,components:{"minecraft:item_model":"du-in:other/vending_machine"}}}}
 
 #Goner Eye#
 execute unless entity @a[tag=partyLeader,tag=shLock] run summon interaction -2000 48 -1970 {Tags:["voidLock","mapSpecific"],width:0.6f,height:0.6f,response:1b}

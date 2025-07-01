@@ -46,7 +46,15 @@ tag @a remove ctfl
 tag @a remove cql
 tag @a remove cmap
 tag @a remove ready
-#scoreboard players reset #main gamemode
+
+#Remove Kit tags
+tag @a remove saac
+tag @a remove sus
+tag @a remove drip
+tag @a remove caveSpider
+tag @a remove lorde
+tag @a remove maskless
+tag @a remove vendingMachine
 
 #Removes stopped countdown tag
 tag @a remove countStop

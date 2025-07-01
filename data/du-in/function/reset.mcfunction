@@ -22,6 +22,7 @@ scoreboard players reset #main startSeq
 tag @a remove startgame
 tag @a remove kitPicked
 tag @a remove subLobby
+tag @a remove vendingMachine
 
 execute as @a[tag=randomSkins] run function du-in:skins/random
 
