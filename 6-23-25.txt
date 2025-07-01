@@ -115,6 +115,7 @@
 *Resourcepack Updates*
 -Added Judy armor texture. (unknown)
 -Added Susie armor texture. (by eggpathy)
+-Added (Hollow) Knight texture. (by strawbrysage) 
 -Added Judy hurt sound.
 -Added Judy tranq gun texture. (by Realm_Xplorer)
 -Added Undertale battlestart sound.
@@ -131,3 +132,5 @@
 -Added Red Buster texture. (by Realm_Xplorer)
 -Added Ralsei spell and heal spell sound effects.
 -Added Deltarune Spare and cure sound effects.
+-Added Pure Nail texture. (by Realm_Xplorer)
+-Added Desolate Dive texture. (by Realm_Xplorer)
