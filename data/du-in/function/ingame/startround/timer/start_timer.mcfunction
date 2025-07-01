@@ -48,7 +48,7 @@ tag @a[tag=!spectating] add playing
     scoreboard players reset @a[scores={kit=11}] asrielTimer
 
     #Give Saac the "saac" tag
-    tag @a[scores={kit=1000},tag=!legMusicOff] add saac
+    #tag @a[scores={kit=1000},tag=!legMusicOff] add saac
     #execute as @a[scores={kit=1000}] run function du-in:ingame/startround/saac_reset
 
     #Mark Zombie and Springtrap as undead

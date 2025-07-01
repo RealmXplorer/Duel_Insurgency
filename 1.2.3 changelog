@@ -108,6 +108,7 @@
 	-Deleted "ingame/vending_machine/vendor" as it was no longer used.
 	-Deleted “ingame/vending_machine/has_vended”.
 	-Merged “spect” tag into “spectating” tag.
+	-Maps now check for new "vendingMachine" tag to decide whether to spawn vending machines (rather than kit score)
 
 *Resourcepack Updates*
 -Added Undertale battlestart sound.

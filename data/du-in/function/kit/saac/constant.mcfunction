@@ -3,7 +3,7 @@ execute if entity @s[scores={hit=5..}] run function du-in:kit/saac/events/hit
 execute if entity @s[scores={jump=1..}] run function du-in:kit/saac/events/jump
 
 #Add Saac Tag
-tag @s[tag=!legMusicOff,tag=!ctfIngame,tag=!cqIngame,tag=!void] add saac
+#tag @s[tag=!legMusicOff,tag=!ctfIngame,tag=!cqIngame,tag=!void] add saac
 
 #Broken phone timer#
 execute if entity @s[scores={saacDisTimer=-99..}] run function du-in:kit/saac/passive/timer
