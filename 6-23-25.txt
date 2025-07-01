@@ -6,6 +6,7 @@
 -Added Zootopia tab in Kit Select.
 -Added Goner Mouth skin for Gaster.
 	-Can only be selected if you've freed the timelines...
+-Added more stages to Parkour, as well as a proper ending. (by noobsquire)
 
 *Balancing*
 -Reduced how long it takes for Sauron's ring to corrupt a ring-bearer. (10s -> 5s)
