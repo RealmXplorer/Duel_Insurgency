@@ -23,7 +23,6 @@ execute if entity @a[tag=partyLeader,tag=dml] run tag @s add dml
 execute if entity @a[tag=partyLeader,tag=kothl] run tag @s add kothl
 execute if entity @a[tag=partyLeader,tag=ctfl] run tag @s add ctfl
 execute if entity @a[tag=partyLeader,tag=cql] run tag @s add cql
-#execute if entity @a[tag=partyLeader,tag=exl] run tag @s add exl
 execute if entity @a[tag=partyLeader,tag=cmap] run tag @s add cmap
 
 #In gamemode select

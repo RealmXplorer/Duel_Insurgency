@@ -26,12 +26,3 @@ execute if entity @a[tag=partyLeader,tag=spectating] run tp @s[tag=spectating] @
 #Match player who left's music with the party leader
 execute if entity @a[tag=partyLeader,tag=song] run tag @s[tag=!musicOff] add song
 execute if entity @a[tag=partyLeader,tag=songEnd] run tag @s[tag=!musicOff] add songEnd
-
-#Match the gamemode tag to the party leader
-#execute if entity @a[tag=partyLeader,tag=dmIngame] run tag @s add dmIngame
-#execute if entity @a[tag=partyLeader,tag=kothIngame] run tag @s add kothIngame
-#execute if entity @a[tag=partyLeader,tag=ctfIngame] run tag @s add ctfIngame
-#execute if entity @a[tag=partyLeader,tag=cqIngame] run tag @s add cqIngame
-
-
-#execute if entity @a[tag=partyLeader,tag=exIngame] run tag @s add exIngame
