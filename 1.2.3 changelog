@@ -56,6 +56,7 @@
 -Added new sound effect for Ralsei's heal spell.
 -Added "cure" sound effect when negative status effects are removed.
 -Added a spare sound effect for when Ralsei and Frisk kill enemies.
+-Changes to post-void game result messages.
 
 *Bug Fixes*
 -Fixed bug where Zombie would not play its intro sounds.
