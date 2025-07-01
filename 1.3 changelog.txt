@@ -10,7 +10,7 @@
 -Added "du-in:hopps" enchantment.
 
 *Resourcepack Updates*
--Added Judy armor texture. (unknown)
+-Added Judy armor texture. (by Nerbski)
 -Added Susie armor texture. (by eggpathy)
 -Added (Hollow) Knight texture. (by strawbrysage) 
 -Added Judy hurt sound.
