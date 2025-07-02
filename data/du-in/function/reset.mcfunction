@@ -1,7 +1,6 @@
 #End one and five second Loops#
 schedule clear du-in:ingame/scheduled/one_sec_loop
 schedule clear du-in:ingame/scheduled/five_sec_loop
-schedule clear du-in:ingame/scheduled/half_sec_loop
 schedule clear du-in:ingame/scheduled/three_sec_loop
 schedule clear du-in:ingame/scheduled/ambience/init
 schedule clear du-in:lobby/void/wind

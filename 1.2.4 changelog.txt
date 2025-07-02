@@ -6,6 +6,11 @@
 -Wind Charges are now properly tagged as projectiles.
 
 *Internal Changes*
--Set up tests for Datapack 6.2 changes.
--Armor Stand tests from "ingame/general" now run in "ingame/entities/armor_stands".
--Merged the test for tridents and asgore's trident into one trident test.
+-Set up tests for various Datapack 6.2 changes.
+-Datapack 6.2
+    -Armor Stand tests from "ingame/general" now run in "ingame/entities/armor_stands".
+    -Merged the test for tridents and asgore's trident into one trident test.
+    -Merged "lobby/scheduled/map_select" into "lobby/scheduled/two_second_loop".
+    -Scheduled functions for game and lobby now run immediately when switching to game or lobby respectively.
+    -Removed "ingame/scheduled/half_sec_loop" as it was called, but not used.
+    -Reorganized "kit/all/weapon/" folder and set tests to be in "ingame/scheduled/play_one_sec".

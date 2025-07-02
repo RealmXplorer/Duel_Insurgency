@@ -1,5 +1,6 @@
 #Clear lobby schedule
 schedule clear du-in:lobby/scheduled/one_sec_loop
+schedule clear du-in:lobby/scheduled/two_sec_loop
 schedule clear du-in:lobby/void/wind
 stopsound @a ambient
 
@@ -32,7 +33,6 @@ tag @a[tag=!spectating] add playing
     #Give all players weapons
     tag @a[scores={kit=31},limit=1] add hasRing
     scoreboard players set @a[tag=playing,gamemode=!spectator] weapCount 0
-    #advancement revoke @s only du-in:utility/weap_count
     function du-in:kit/all/weapon/give
     execute as @a[tag=playing,gamemode=!spectator] run function du-in:kit/all/weapon/init
     execute as @a[tag=hasRing] run function du-in:kit/sauron/ring/give_ring
@@ -136,8 +136,8 @@ tag @a remove countStop
 tag @a remove kitMenu
 
 #Schedule ingame functions
-schedule function du-in:ingame/scheduled/one_sec_loop 1s
-schedule function du-in:ingame/scheduled/half_sec_loop 10t
+# schedule function du-in:ingame/scheduled/one_sec_loop 1s
+function du-in:ingame/scheduled/one_sec_loop
 function du-in:ingame/scheduled/five_sec_loop
 
 function du-in:ingame/scheduled/ambience/init
