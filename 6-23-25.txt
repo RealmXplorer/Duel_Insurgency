@@ -129,6 +129,8 @@
     -Removed "ingame/scheduled/half_sec_loop" as it was called, but not used.
 	-Reorganized "kit/all/weapon/" folder and set tests to be in "ingame/scheduled/play_one_sec".
 	-Created entity type tag "du-in:projectile".
+	-Removed "du-in:other/shutdown/shutdown" as it was unused.
+	-Reorganized "du-in:other/shutdown/".
 
 *Resourcepack Updates*
 -Added Judy armor texture. (by Nerbski)
