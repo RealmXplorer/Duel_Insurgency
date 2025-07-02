@@ -1,4 +1,9 @@
-execute as @a[tag=desolateDive] at @s positioned as @n[type=armor_stand,tag=desolateDive] run tp @s ~ ~1 ~
+#Explosion particles
+#Damage nearby players if not on team
+#Add sound
 
-execute as @e[type=armor_stand,tag=desolateDive] at @s unless block ~ ~ ~ #du-in:sans_valid run playsound minecraft:ralsei.spell master @a ~ ~ ~ 1 1
-execute as @e[type=armor_stand,tag=desolateDive] at @s unless block ~ ~ ~ #du-in:sans_valid run kill @s
+#Testing sound
+playsound minecraft:ralsei.spell master @a ~ ~ ~ 1 1
+
+#Kill armor stand
+kill @s

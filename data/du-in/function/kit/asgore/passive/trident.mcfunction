@@ -1,4 +1,2 @@
-scoreboard players reset @s trident
-tag @s add asgoreThrown
-execute if function du-in:kit/asgore/passive/test_throw at @s run function du-in:kit/asgore/passive/throw
-tag @s remove asgoreThrown
+execute on origin run function du-in:kit/asgore/passive/player_thrown
+function du-in:ingame/entities/projectiles

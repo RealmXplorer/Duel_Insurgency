@@ -1,3 +1,3 @@
 #Kill and tag
-kill @s[nbt={inGround:1b}]
-tag @s[tag=!projectile] add projectile
+execute if entity @s[tag=!projectile] run tag @s add projectile
+execute if entity @s[type=!snowball,nbt={inGround:1b}] run kill @s
