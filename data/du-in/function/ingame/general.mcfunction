@@ -37,11 +37,17 @@ execute as @e[type=armor_stand,tag=asgoreFire,scores={asgoreFire=-99..}] at @s r
 #Death's fire cone
 execute as @e[type=block_display,tag=flame,scores={flameTimer=-99..}] at @s run function du-in:kit/death/ability/timer
 
+#Chicken Jockey
 execute as @e[type=chicken,scores={jockeyTimer=0..}] run function du-in:kit/jack_black/ability/chicken
 
+#Kratos Rock
 execute if entity @e[type=salmon,tag=kratosRock] run function du-in:kit/kratos/ability/rock/track
 
+#Rude Buster
 #execute as @e[type=armor_stand,tag=susieAbility,scores={susieTimer=0..}] at @s run function du-in:kit/susie/ability/buster/timer
+
+#Desolate Dive
+#execute if entity @e[tag=desolateDive] run function du-in:kit/knight/ability/dive
 
 #Kill graves when projectiles are near or when the sand is far from the stand
     execute as @e[type=falling_block] at @s run function du-in:ingame/entities/falling_block
@@ -61,9 +67,6 @@ execute as @e[type=armor_stand,scores={papyrusHitTimer=-1..}] at @s run function
 #Test when it shifts to day or night
 execute if predicate du-in:ambience/night_start if score #main dayNightSetting matches 1 run function du-in:ingame/scheduled/ambience/night_start
 execute if predicate du-in:ambience/night_end if score #main dayNightSetting matches 1 run function du-in:ingame/scheduled/ambience/night_end
-
-#Desolate Dive
-#execute if entity @e[tag=desolateDive] run function du-in:kit/knight/ability/dive
 
 
 #Dev Mode end game
