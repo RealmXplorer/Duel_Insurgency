@@ -38,6 +38,9 @@ execute if entity @s[tag=killCombo] run function du-in:ingame/kill_combo/timer
 execute if entity @s[predicate=!du-in:has_armor,predicate=!du-in:effect/is_invisible,tag=!teamDead,tag=!kitMenu,tag=!noClothes] run function du-in:kit/all/armor/armor_reset
 
 # KIT FUNCTIONS #
+    #General init functions (PROBABLY TOO UNOPTIMIZED TO BE USED)
+        # execute if entity @s[tag=!kitMenu] run function du-in:kit/all/init/find_kit with storage du-in:main player
+
     # General Set 1 int functions #
         execute if entity @s[scores={kit=1..8},tag=!kitMenu] run function du-in:kit/all/set1
         execute if entity @s[tag=stolen,tag=!kitMenu] run function du-in:kit/villager/constant
@@ -63,6 +66,12 @@ execute if entity @s[predicate=!du-in:has_armor,predicate=!du-in:effect/is_invis
     execute if entity @s[scores={simSprint=..0}] run function du-in:ingame/steptrack/sprint_stop
     execute if entity @s[scores={simSprint=1..}] run function du-in:ingame/steptrack/sprint_go
 
+#Possible Datapack 6.2 changes
+    # execute if entity @s[scores={hit=5..}] run function du-in:kit/all/hit/find_kit with storage du-in:main player
+    # execute if entity @s[scores={step=150..}] run function du-in:kit/all/step/find_kit with storage du-in:main player
+    # execute if entity @s[scores={sprint=150..}] run function du-in:kit/all/step/find_kit with storage du-in:main player
+    # execute if entity @s[scores={jump=1..}] run function du-in:kit/all/jump/find_kit with storage du-in:main player
+
 #Kill and Death functions
     execute if entity @s[scores={justdied=1..}] run function du-in:kit/all/death/init
 
@@ -70,51 +79,50 @@ execute if entity @s[predicate=!du-in:has_armor,predicate=!du-in:effect/is_invis
     execute if entity @s[scores={sansHitTimer=0..}] run function du-in:kit/sans/ability/hit/timer
 
 #Peep the Horror
-execute if entity @s[scores={jermaTimer=0..}] run function du-in:kit/jerma/ability/timer
+    execute if entity @s[scores={jermaTimer=0..}] run function du-in:kit/jerma/ability/timer
 
 #Ralsei Sleep#
-execute if entity @s[scores={ralseiTimer=..70}] run function du-in:kit/ralsei/ability/sleep
+    execute if entity @s[scores={ralseiTimer=..70}] run function du-in:kit/ralsei/ability/sleep
 
 #Darwin Timer#
-execute if entity @s[scores={darwinTimer=0..}] run function du-in:kit/gumball/ability/darwin/timer
+    execute if entity @s[scores={darwinTimer=0..}] run function du-in:kit/gumball/ability/darwin/timer
 
 #JACK BLACK Timer#
-execute if entity @s[scores={jockeyTimer=0..}] run function du-in:kit/jack_black/ability/timer
+    execute if entity @s[scores={jockeyTimer=0..}] run function du-in:kit/jack_black/ability/timer
 
 
 #Give hunger for Runza Rex ability
-execute if entity @s[tag=notEaten] run function du-in:kit/runza/ability/the_hunger
+    execute if entity @s[tag=notEaten] run function du-in:kit/runza/ability/the_hunger
 
 #Iron Golem float timer (this helps makes the effect shorter than 1 second)
-execute if entity @s[scores={golemFloat=-1..}] run function du-in:kit/golem/ability/float
+    execute if entity @s[scores={golemFloat=-1..}] run function du-in:kit/golem/ability/float
 
 #Venting Mechanics
-execute if entity @s[tag=vented] run function du-in:kit/all/vent/init
+    execute if entity @s[tag=vented] run function du-in:kit/all/vent/init
 
 #Kylo ability
-execute if entity @s[tag=kyloHit,scores={kyloTimer=-99..}] run function du-in:kit/kylo/ability/freeze
+    execute if entity @s[tag=kyloHit,scores={kyloTimer=-99..}] run function du-in:kit/kylo/ability/freeze
 
 #Paz Ability
-execute if entity @s[scores={blakeTimer=-99..}] run function du-in:kit/paz/ability/rubberband
+    execute if entity @s[scores={blakeTimer=-99..}] run function du-in:kit/paz/ability/rubberband
 
 #Jack Horner abilities
-execute if entity @s[scores={unicornTimer=1..}] run function du-in:kit/jack_horner/ability/unicorn_bow/timer
-execute if entity @s[tag=midasTouched] run function du-in:kit/jack_horner/ability/midas/freeze
+    execute if entity @s[scores={unicornTimer=1..}] run function du-in:kit/jack_horner/ability/unicorn_bow/timer
+    execute if entity @s[tag=midasTouched] run function du-in:kit/jack_horner/ability/midas/freeze
 
 #Nick Sabotage ability
-execute if entity @s[scores={sabotageTimer=1..}] run function du-in:kit/nick/ability/sabotage/timer
+    execute if entity @s[scores={sabotageTimer=1..}] run function du-in:kit/nick/ability/sabotage/timer
 
 #Puss ability
-execute if entity @s[scores={pussFearTimer=1..}] run function du-in:kit/puss/ability/fear_timer
+    execute if entity @s[scores={pussFearTimer=1..}] run function du-in:kit/puss/ability/fear_timer
 
 #Sauron
-execute if entity @s[scores={seenTimer=1..}] run function du-in:kit/sauron/ability/no_ring/timer
+    execute if entity @s[scores={seenTimer=1..}] run function du-in:kit/sauron/ability/no_ring/timer
+    execute if entity @s[tag=hasRing] run function du-in:kit/sauron/ring/has_ring
 
 #Clairen Field
-execute if entity @s[tag=inField] run function du-in:kit/clairen/ability/field_effects
-execute if entity @s[tag=sabotagedField] run function du-in:kit/clairen/ability/sabotaged_field
+    execute if entity @s[tag=inField] run function du-in:kit/clairen/ability/field_effects
+    execute if entity @s[tag=sabotagedField] run function du-in:kit/clairen/ability/sabotaged_field
 
 # SPAM CLICK MODE #
     execute if entity @a[tag=partyLeader,tag=spamClick] run attribute @s minecraft:attack_speed base set 100
-
-execute if entity @s[tag=hasRing] run function du-in:kit/sauron/ring/has_ring
