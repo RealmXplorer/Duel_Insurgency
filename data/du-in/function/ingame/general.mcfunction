@@ -20,10 +20,11 @@
 
 # General Functions #
     # Kill all In Ground items and mark projectiles#
-        execute as @e[type=arrow] run function du-in:ingame/entities/projectiles
+        execute as @e[type=#du-in:projectile] run function du-in:ingame/entities/projectiles
+        #execute as @e[type=arrow] run function du-in:ingame/entities/projectiles
         #execute as @e[type=trident] run function du-in:ingame/entities/projectiles
-        execute as @e[type=snowball] run function du-in:ingame/entities/projectiles
-        execute as @e[type=wind_charge] run function du-in:ingame/entities/projectiles
+        #execute as @e[type=snowball] run function du-in:ingame/entities/projectiles
+        #execute as @e[type=wind_charge] run function du-in:ingame/entities/projectiles
 
     #Make timer count down
         execute if score #main titleTimer2 matches -99.. run function du-in:ingame/startround/timer/timer

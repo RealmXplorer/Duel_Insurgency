@@ -14,3 +14,4 @@
     -Scheduled functions for game and lobby now run immediately when switching to game or lobby respectively.
     -Removed "ingame/scheduled/half_sec_loop" as it was called, but not used.
     -Reorganized "kit/all/weapon/" folder and set tests to be in "ingame/scheduled/play_one_sec".
+    -Created entity type tag "du-in:projectile".
