@@ -1,0 +1,9 @@
+{
+  "replace": false,
+  "values": [
+    "minecraft:snowball",
+    "#minecraft:arrows",
+    "minecraft:trident",
+    "minecraft:wind_charge"
+  ]
+}
