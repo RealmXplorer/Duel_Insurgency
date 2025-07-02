@@ -75,6 +75,7 @@
 -Added "du-in:hopps" enchantment.
 -Updated "du-in:sans_valid" to include new foliage blocks.
 -Aang and Kratos's direction armor stands are now tagged differently.
+-Set up tests for Datapack 6.2 changes.
 -Datapack 6.1
 	-Updated “info.txt”
 	-Moved kill/all/death, suicide, ctf_suicide, and random_death all over to kit/all/death/
@@ -118,6 +119,8 @@
 	-The "saac" tag (which runs Saac's music) is now only added when the kit is picked, rather than constantly.
 	-The "saul" and "bigChungus" tags (which run their music) are now only added at the start of the game.
 	-Removed "chungus" tag as it was unused.
+	-Armor Stand tests from "ingame/general" now run in "ingame/entities/armor_stands".
+	-Merged the test for tridents and asgore's trident into one trident test.
 
 
 
