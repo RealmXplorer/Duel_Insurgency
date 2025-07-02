@@ -69,6 +69,7 @@
 -Fixed bug where Easter Egg skins would not have a chance to happen.
 -Fixed bug where Paz Easter Egg skin was always selected.
 -Fixed bug where Parry recharge sound would not play if you had successfully landed a parry.
+-Wind Charges are now properly tagged as projectiles.
 
 *Internal Changes*
 -Added "du-in:pogo" enchantment.
