@@ -1,5 +1,6 @@
 ***7/2/25:***
 *Changes*
+-Minor change to Tabba's dialogue.
 -Tabba now has full dialogue chains for each pylon.
 -Gaster and Flowey can no longer attempt (and always fail) parries while in their abilities. 
 -Added step sounds for Kylo, Ralsei, and Villager.
@@ -10,7 +11,6 @@
 -Fixed bug where Impostor could vent into a block on Mustafar.
 
 *Internal Changes*
--Set up tests for various Datapack 6.2 changes.
 -Datapack 6.2
     -Armor Stand tests from "ingame/general" now run in "ingame/entities/armor_stands".
     -Merged the test for tridents and asgore's trident into one trident test.

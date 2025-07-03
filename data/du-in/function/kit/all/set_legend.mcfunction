@@ -22,6 +22,6 @@ execute if entity @s[scores={kit=1005}] run function du-in:kit/jack_black/consta
 execute unless entity @s[tag=startgame] unless entity @s[tag=legMusicOff] run function du-in:music/ingame/kit
 
 #EASTER EGG KITS#
-#execute if entity @s[scores={kit=42069}] run function du-in:kit/chungus/constant
+execute if entity @s[scores={kit=42069}] run function du-in:kit/chungus/constant
 
-#execute if entity @s[scores={kit=2015}] run function du-in:kit/saul/constant
+execute if entity @s[scores={kit=2015}] run function du-in:kit/saul/constant

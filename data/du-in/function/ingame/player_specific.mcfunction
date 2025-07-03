@@ -38,9 +38,6 @@ execute if entity @s[tag=killCombo] run function du-in:ingame/kill_combo/timer
 execute if entity @s[predicate=!du-in:has_armor,predicate=!du-in:effect/is_invisible,tag=!teamDead,tag=!kitMenu,tag=!noClothes] run function du-in:kit/all/armor/armor_reset
 
 # KIT FUNCTIONS #
-    #General init functions (PROBABLY TOO UNOPTIMIZED TO BE USED)
-        # execute if entity @s[tag=!kitMenu] run function du-in:kit/all/init/find_kit with storage du-in:main player
-
     # General Set 1 int functions #
         execute if entity @s[scores={kit=1..8},tag=!kitMenu] run function du-in:kit/all/set1
         execute if entity @s[tag=stolen,tag=!kitMenu] run function du-in:kit/villager/constant
@@ -65,13 +62,6 @@ execute if entity @s[predicate=!du-in:has_armor,predicate=!du-in:effect/is_invis
 #SPRINT STOP#
     execute if entity @s[scores={simSprint=..0}] run function du-in:ingame/steptrack/sprint_stop
     execute if entity @s[scores={simSprint=1..}] run function du-in:ingame/steptrack/sprint_go
-
-#Possible Datapack 6.2 changes (MUST TEST PERFORMANCE IMPACTS)
-    execute if entity @s[scores={hit=5..}] run function du-in:kit/all/hit/find_kit with storage du-in:main player
-    execute if entity @s[scores={step=150..}] run function du-in:kit/all/step/find_kit with storage du-in:main player
-    execute if entity @s[scores={sprint=150..}] run function du-in:kit/all/step/find_kit with storage du-in:main player
-    execute if entity @s[scores={jump=1..}] run function du-in:kit/all/jump/find_kit with storage du-in:main player
-
 
 #Kill and Death functions
     execute if entity @s[scores={justdied=1..}] run function du-in:kit/all/death/init

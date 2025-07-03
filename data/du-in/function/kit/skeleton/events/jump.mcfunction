@@ -5,4 +5,4 @@ execute if entity @s[scores={skeletonMode=1}] run playsound minecraft:entity.str
 execute if entity @s[scores={skeletonMode=2}] run playsound minecraft:entity.bogged.step master @a ~ ~ ~ 0.2 1.5
 
 playsound minecraft:entity.player.attack.nodamage master @a ~ ~ ~ 0.2 0.2
-# scoreboard players reset @s jump
+scoreboard players reset @s jump
