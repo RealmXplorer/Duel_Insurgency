@@ -6,6 +6,7 @@
 *Bug Fixes*
 -Wind Charges are now properly tagged as projectiles.
 -Fixed bug where landing parries would reset weight and armor values.
+-Fixed bug where Impostor could vent into a block on Mustafar.
 
 *Internal Changes*
 -Set up tests for various Datapack 6.2 changes.
@@ -50,3 +51,12 @@
     -Moved "lobby/item_reset" to "lobby/reset/item".
     -Moved "lobby/leader_reset" to "lobby/reset/party_leader".
     -Moved "lobby/full_reset" to "lobby/reset/complete".
+    -Renamed "kit/all/vent/vent_success" to "kit/all/vent/success"
+    -Renamed "kit/all/vent/vent_cooldown" to "kit/all/vent/cooldown".
+    -Renamed "kit/all/vent/vent_flag" to "kit/all/vent/flag".
+    -Renamed "kit/all/vent/vent_fail" to "kit/all/vent/fail".
+    -Merged "kit/all/vent/vent_done" into "kit/all/vent/success"
+    -Removed "ingame/vents/"
+    -Removed "ventDone" tag.
+    -Removed "vented" tag.
+    

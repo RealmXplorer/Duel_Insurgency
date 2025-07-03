@@ -14,7 +14,7 @@ summon marker 192 21 -315 {Tags:["spawnPoint","team2","mapSpecific"]}
 
 #Default Vents#
 execute if entity @a[tag=sus] run summon marker 192 8 -352 {Tags:["vent","mapSpecific"]}
-execute if entity @a[tag=sus] run summon marker 192 10 -316 {Tags:["vent","mapSpecific"]}
+execute if entity @a[tag=sus] run summon marker 193 10 -317 {Tags:["vent","mapSpecific"]}
 execute if entity @a[tag=sus] run summon marker 231 6 -341 {Tags:["vent","mapSpecific"]}
 execute if entity @a[tag=sus] run summon marker 203 9 -340 {Tags:["vent","mapSpecific"]}
 

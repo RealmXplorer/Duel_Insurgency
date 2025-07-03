@@ -1,6 +1,9 @@
+#Teleport to vent
 execute rotated as @s at @e[type=minecraft:marker,tag=vent,sort=random,limit=1] run tp @s ~ ~ ~
-tag @s add ventDone
-playsound minecraft:sus.vent master @a ~ ~ ~ 10000 1
-playsound minecraft:sus.vent master @a ~ ~ ~ 10000 1
 
-execute if entity @s[tag=ventDone] run function du-in:kit/all/vent/vent_done
+#Start cooldown
+scoreboard players set @s ventCooldown 60
+
+#Play sounds
+playsound minecraft:sus.vent master @a ~ ~ ~ 10000 1
+playsound minecraft:sus.vent master @a ~ ~ ~ 10000 1

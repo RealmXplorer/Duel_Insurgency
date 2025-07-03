@@ -16,6 +16,6 @@
       ]
   ],
   "rewards": {
-    "function": "function du-in:kit/all/vent/init"
+    "function": "du-in:kit/all/vent/init"
   }
 }

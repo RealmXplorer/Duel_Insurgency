@@ -97,9 +97,6 @@ execute if entity @s[predicate=!du-in:has_armor,predicate=!du-in:effect/is_invis
 #Iron Golem float timer (this helps makes the effect shorter than 1 second)
     execute if entity @s[scores={golemFloat=0..}] run function du-in:kit/golem/ability/float
 
-#Venting Mechanics
-    #execute if entity @s[tag=vented] run function du-in:kit/all/vent/init
-
 #Kylo ability
     execute if entity @s[tag=kyloHit,scores={kyloTimer=0..}] run function du-in:kit/kylo/ability/freeze
 
