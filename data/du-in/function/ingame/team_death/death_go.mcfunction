@@ -11,7 +11,7 @@ tag @s[tag=!cIngame,tag=!dmIngame,tag=!kothIngame] add teamDead
 clear @s[tag=!cIngame,tag=!dmIngame,tag=!kothIngame]
 
 #Clear item tags
-function du-in:lobby/item_reset
+function du-in:lobby/reset/item
 
 #Initialize kit selection
 execute if entity @s[tag=!cIngame,tag=!dmIngame,tag=!kothIngame,tag=!grave,tag=!ranMode] run function du-in:lobby/kitmenu/init

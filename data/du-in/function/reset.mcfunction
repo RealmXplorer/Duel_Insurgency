@@ -322,7 +322,7 @@ tag @a remove ready
 tag @a remove kitMenu
 tag @a remove kitsListed
 tag @a remove teamPicked
-function du-in:lobby/item_reset
+function du-in:lobby/reset/item
 
 execute as @a[tag=!timeFree] run function du-in:lobby/actions/stats
 
@@ -338,7 +338,7 @@ scoreboard players reset @a ambience
 title @a[tag=partyLeader,tag=!timeFree] title {text:'', color:red, bold:true}
 title @a[tag=partyLeader,tag=!timeFree] subtitle {text:'Open inventory for more options!', color:red, bold:true}
 title @a[tag=partyLeader,tag=!timeFree] actionbar {text:'Open inventory for more options!', color:red, bold:true}
-execute as @a run function du-in:lobby/item_reset
+execute as @a run function du-in:lobby/reset/item
 clear @a
 tag @a remove void
 tag @a remove voidOut

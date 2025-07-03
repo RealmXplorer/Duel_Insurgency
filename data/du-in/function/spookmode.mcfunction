@@ -16,7 +16,7 @@ scoreboard players set #main lobbyTheme 1
 function du-in:lobby/display/halloween/switch
 stopsound @a
 scoreboard players set @a music 0
-execute as @a run function du-in:lobby/item_reset
+execute as @a run function du-in:lobby/reset/item
 clear @a
 time set night
 scoreboard players reset #main dayNightSetting

@@ -7,7 +7,7 @@ scoreboard players set @s music 0
 effect clear @s invisibility
 clear @s
 schedule clear du-in:music/free/free
-function du-in:lobby/item_reset
+function du-in:lobby/reset/item
 tag @s remove credits
 tag @s remove subLobby
 title @s title ""

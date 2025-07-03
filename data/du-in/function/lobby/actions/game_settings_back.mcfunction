@@ -5,4 +5,4 @@ tp @s 2001 52 1993 90 0
 tag @s remove gameSettings
 
 #Return item
-function du-in:lobby/item/game_settings
+function du-in:lobby/shop/item/game_settings

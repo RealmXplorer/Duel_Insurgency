@@ -30,7 +30,7 @@ tag @a[tag=cql] remove teamMode
 team join lobby @a
 
 #Reset all item tagsd
-execute as @a run function du-in:lobby/item_reset
+execute as @a run function du-in:lobby/reset/item
 
 #Teleport players
 tp @a -999 13 517 -90 0

@@ -28,7 +28,7 @@ tag @s add subLobby
 clear @s carrot_on_a_stick[item_model="filled_map"]
 
 #Resets item status
-function du-in:lobby/item_reset
+function du-in:lobby/reset/item
 
 #This is to prevent a bug.
 execute if entity @s[scores={kitUseThrow=1..}] run function du-in:other/clear_ground_items

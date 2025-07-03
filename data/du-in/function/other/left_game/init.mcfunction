@@ -63,7 +63,7 @@ execute unless entity @a[tag=kothIngame,tag=partyLeader,tag=teamMode] run bossba
 execute unless entity @a[tag=kothIngame,tag=partyLeader,tag=teamMode] run bossbar set minecraft:bluekoth visible false
 
 #Reset items for player who left
-function du-in:lobby/item_reset
+function du-in:lobby/reset/item
 
 #Set music to 0 for player who left
 stopsound @s record
@@ -86,7 +86,7 @@ execute if entity @a[tag=partyLeader,tag=teamMode] run tag @s add teamMode
 
 #RESET KIT MENU
 scoreboard players set @s kitTheme 1
-function du-in:lobby/item_reset
+function du-in:lobby/reset/item
 scoreboard players set @s kitList 8
 tag @s[tag=kitMenu] add kitsListed
 scoreboard players set @s skinList 20

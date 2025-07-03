@@ -7,7 +7,7 @@ execute store result score @s lobby run scoreboard players get #main lobby
 
 #If lobby is 0 or more, add the tag lobby
 execute if score #main lobby matches 0.. run tag @s add lobby
-function du-in:lobby/item_reset
+function du-in:lobby/reset/item
 clear @s
 
 #Remove gamemode select sub-lobbies if not in gamemode select

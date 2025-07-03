@@ -1,4 +1,2 @@
-#clear @s minecraft:carrot_on_a_stick[item_model="du-in:lobby/back"]
 clear @s minecraft:carrot_on_a_stick[item_model="du-in:lobby/back"]
-#item replace entity @s[gamemode=!creative] hotbar.8 with minecraft:carrot_on_a_stick[item_model="du-in:lobby/back",item_name={text:"Go Back",color:red,bold:true},lore=[{text:"Right click to use!",color:dark_purple}],custom_data={du-in:'backItem'}]
 item replace entity @s[gamemode=!creative] hotbar.8 with minecraft:carrot_on_a_stick[item_model="du-in:lobby/back",item_name={text:"Go Back",color:red,bold:true},lore=[{text:"Right click to use!",color:dark_purple}],custom_data={du-in:'backItem'},consumable={consume_seconds:0,animation:"none",sound:"block.candle.hit",has_consume_particles:false}]

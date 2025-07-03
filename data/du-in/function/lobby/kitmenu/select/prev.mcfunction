@@ -1,5 +1,5 @@
 scoreboard players remove @s kitTheme 1
-function du-in:lobby/item_reset
+function du-in:lobby/reset/item
 playsound minecraft:ui.button.click master @s ~ ~ ~
 clear @s
 tag @s add kitsListed

@@ -35,4 +35,4 @@ execute store result score #main tKillScale run scoreboard players get @a[tag=pa
 execute store result score #main tkothScale run scoreboard players get @a[tag=partyLeader,limit=1] tKothScale
 
 #Resets
-execute as @a[tag=partyLeader] run function du-in:lobby/leader_reset
+execute as @a[tag=partyLeader] run function du-in:lobby/reset/party_leader

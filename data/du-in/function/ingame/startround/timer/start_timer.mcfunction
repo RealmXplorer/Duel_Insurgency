@@ -129,7 +129,7 @@ execute if entity @a[tag=cql,tag=timedMode] run function du-in:ingame/startround
 #Reset Lobby functions, tags, and scores
 scoreboard players reset #main lobby
 scoreboard players reset @a lobby
-execute as @a run function du-in:lobby/item_reset
+execute as @a run function du-in:lobby/reset/item
 tag @a remove ready
 tag @a remove teamPicked
 tag @a remove countStop

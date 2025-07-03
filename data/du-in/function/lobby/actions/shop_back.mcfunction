@@ -19,7 +19,7 @@ scoreboard players set @s music 0
 function du-in:lobby/shop/drinks/reset
 
 #Reset functions and schedule gamemode select.
-function du-in:lobby/item_reset
+function du-in:lobby/reset/item
 tag @s remove subLobby
 clear @s
 function du-in:lobby/scheduled/gamemode_select

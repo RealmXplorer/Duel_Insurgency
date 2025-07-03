@@ -41,10 +41,8 @@ tag @a[tag=dml] add cmap
 stopsound @a record
 schedule clear du-in:music/free/free
 
-#function du-in:lobby/mapselect/switch
-
 #Reset all item tags
-execute as @a run function du-in:lobby/item_reset
+execute as @a run function du-in:lobby/reset/item
 
 #Teleport players to map select
 kill @e[tag=displayItem]
@@ -67,7 +65,7 @@ tag @a remove ready
 team leave @a[team=Ready]
 
 scoreboard players set #main mapCountdown 300
-function du-in:lobby/item_reset
+function du-in:lobby/reset/item
 clear @a
 bossbar set minecraft:map_countdown visible true
 

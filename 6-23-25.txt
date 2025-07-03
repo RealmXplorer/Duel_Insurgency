@@ -141,6 +141,22 @@
     -Renamed "kit/all/parry/parry_buffer" to "kit/all/parry/buffer".
     -Renamed "kit/all/parry/parry_recharge" to "kit/all/parry/recharge".
     -Renamed "kit/all/parry/end_parry" to "kit/all/parry/end".
+	-Moved "lobby/timers/map/ten" to "lobby/mapselect/timers/ten".
+	-Moved "lobby/timers/map/five" to "lobby/mapselect/timers/five".
+	-Moved "lobby/timers/map/four" to "lobby/mapselect/timers/four".
+	-Moved "lobby/timers/map/three" to "lobby/mapselect/timers/three".
+	-Moved "lobby/timers/map/two" to "lobby/mapselect/timers/two".
+	-Moved "lobby/timers/map/one" to "lobby/mapselect/timers/one".
+	-Removed "lobby/timers/" folder.
+	-Moved "lobby/mapselect/classic" to "lobby/mapselect/display/classic".
+	-Moved "lobby/mapselect/koth" to "lobby/mapselect/display/koth".
+	-Moved "lobby/mapselect/ctf" to "lobby/mapselect/display/ctf".
+	-Moved "lobby/mapselect/conquest" to "lobby/mapselect/display/conquest".
+	-Removed "lobby/mapselect/tomap" as it was unused.
+	-Moved several "player specific" commands in "lobby/mapselect" and into new "lobby/mapselect/general".
+	-Reorganized "lobby/item/" folder into individual folders.
+	-Removed "lobby/item/"
+	-Moved "lobby/item/back" to "lobby/back_item".
 
 *Resourcepack Updates*
 -Added Judy armor texture. (by Nerbski)

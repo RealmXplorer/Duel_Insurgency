@@ -1,7 +1,7 @@
 #scoreboard players reset @s teamDeaths
 tag @s remove kitMenu
 clear @s
-function du-in:lobby/item_reset
+function du-in:lobby/reset/item
 effect clear @s
 
 attribute @s minecraft:jump_strength modifier remove team_dead
