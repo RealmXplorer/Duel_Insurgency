@@ -36,8 +36,6 @@ tag @a[tag=!spectating] add playing
     function du-in:kit/all/weapon/give
     execute as @a[tag=playing,gamemode=!spectator] run function du-in:kit/all/weapon/init
     execute as @a[tag=hasRing] run function du-in:kit/sauron/ring/give_ring
-    execute if entity @s[scores={kit=7}] run item replace entity @s hotbar.8 with minecraft:arrow 2
-
 
     #Set swap for secondary kits/weapons to 2 (this is to ensure that the weapon actually switches when rightclicked)
     scoreboard players set @a[scores={kit=22}] gumballSwitch 2
