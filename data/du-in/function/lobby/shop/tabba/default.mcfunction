@@ -9,7 +9,7 @@ execute if entity @s[scores={tabbaTalk=8}] run tellraw @s ["",{text:"<",color:wh
 execute if entity @s[scores={tabbaTalk=9}] run tellraw @s ["",{text:"<",color:white},{text:"Tabba",color:yellow},"> Learn some of the other mechanics, different characters interact differently with each other! (9/9)"]
 
 execute if entity @s[scores={tabbaTalk=10}] run tellraw @s ["",{text:"<",color:white},{text:"Tabba",color:yellow},"> No, I don't know why all of these worlds are here. How would I know? I'm just from an abandoned indie game."]
-execute if entity @s[scores={tabbaTalk=11}] run tellraw @s ["",{text:"<",color:white},{text:"Tabba",color:yellow},"> If you ask me, it is a little odd that there's constant fighting. Maybe we should be trying to work together?"]
+execute if entity @s[scores={tabbaTalk=11}] run tellraw @s ["",{text:"<",color:white},{text:"Tabba",color:yellow},"> Why is everyone so insistent on fighting? Couldn't we try working together for once?"]
 execute if entity @s[scores={tabbaTalk=12}] run tellraw @s ["",{text:"<",color:white},{text:"Tabba",color:yellow},"> I have this weird feeling that someone or something is watching me..."]
 execute if entity @s[scores={tabbaTalk=13}] run tellraw @s ["",{text:"<",color:white},{text:"Tabba",color:yellow},"> If you want another tutorial, just leave the shop and come back!"]
 
