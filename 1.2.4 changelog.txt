@@ -1,9 +1,11 @@
 ***7/2/25:***
 *Changes*
 -Tabba now has full dialogue chains for each pylon.
+-Gaster and Flowey can no longer attempt (and always fail) parries while in their abilities. 
 
 *Bug Fixes*
 -Wind Charges are now properly tagged as projectiles.
+-Fixed bug where landing parries would reset weight and armor values.
 
 *Internal Changes*
 -Set up tests for various Datapack 6.2 changes.
@@ -24,3 +26,7 @@
     -Added predicate "du-in:no_motion" to detect when an entity isn't moving.
     -Replaced "inGround" NBT check with "du-in:no_motion" check.
     -Advancement "du-in:interact_vent" now runs function "du-in:kit/all/vent/init"
+    -Renamed "kit/all/parry/parry" to "kit/all/parry/init".
+    -Renamed "kit/all/parry/parry_buffer" to "kit/all/parry/buffer".
+    -Renamed "kit/all/parry/parry_recharge" to "kit/all/parry/recharge".
+    -Renamed "kit/all/parry/end_parry" to "kit/all/parry/end".

@@ -24,23 +24,14 @@ scoreboard players set @s conqScale 0
 scoreboard players set @s dtScale 0
 scoreboard players set @s gameTimeScale 0
 
-#scoreboard players set @s pylonNum 0
-
 #Initialize sidebar scores
 scoreboard players set @s Wins 0
 scoreboard players set @s Kills 0
 scoreboard players set @s Diamonds 0
 
-#Set player spawnpoint to 1 (This prevents the game from breaking on first game)
-#scoreboard players set @s spawnpoint 1
-
 #Set Level and exp cap 
 scoreboard players set @s level 0
 scoreboard players set @s expCap 100
-
-#execute store result score @s expCap run scoreboard players get @s level
-#scoreboard players operation @s expCap *= #main ten
-#scoreboard players operation @s expCap += #main hundred
 
 #Set player's custom player number
 scoreboard players add @s player 0
@@ -62,9 +53,6 @@ attribute @s minecraft:max_health base set 20
 attribute @s minecraft:attack_damage base set 0
 attribute @s minecraft:attack_speed base set 4
 attribute @s minecraft:movement_speed base set 0.10000000149
-
-#Give all players saturation
-#effect give @a minecraft:saturation 1000000 100 true
 
 #Tell player of gamemode select options
 title @a times 0 60 0

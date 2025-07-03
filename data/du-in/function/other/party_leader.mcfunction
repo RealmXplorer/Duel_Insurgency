@@ -34,8 +34,5 @@ execute store result score #main conqScale run scoreboard players get @a[tag=par
 execute store result score #main tKillScale run scoreboard players get @a[tag=partyLeader,limit=1] tKillScale
 execute store result score #main tkothScale run scoreboard players get @a[tag=partyLeader,limit=1] tKothScale
 
-
-#tag @a[tag=partyLeader] add online
-
 #Resets
 execute as @a[tag=partyLeader] run function du-in:lobby/leader_reset

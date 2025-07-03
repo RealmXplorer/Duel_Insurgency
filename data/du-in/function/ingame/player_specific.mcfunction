@@ -13,10 +13,10 @@
 
 #Give glow if sneaking, remove glow if not
     execute if entity @s[predicate=du-in:is_sneaking] run function du-in:ingame/is_sneaking
-    execute if entity @s[predicate=!du-in:is_sneaking,tag=!glowing] run function du-in:ingame/is_not_sneaking
+    execute if entity @s[predicate=!du-in:is_sneaking,tag=!glowing] run effect clear @s minecraft:glowing
 
     #Parry Mechanics
-    execute if entity @s[tag=parryStart] run function du-in:kit/all/parry/parry_buffer
+    execute if entity @s[tag=parryStart] run function du-in:kit/all/parry/buffer
     execute if entity @s[tag=parry,scores={parryDuration=0..}] run function du-in:kit/all/parry/in_parry
     scoreboard players reset @s[scores={parryHit=1..}] parryHit
 

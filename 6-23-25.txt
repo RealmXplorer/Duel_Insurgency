@@ -137,6 +137,10 @@
     -Moved "kit/papyrus/ability/spawn_bones" to "kit/ability/bones/spawn".
     -Replaced "inGround" NBT check with "du-in:no_motion" check.
     -Advancement "du-in:interact_vent" now runs function "du-in:kit/all/vent/init"
+    -Renamed "kit/all/parry/parry" to "kit/all/parry/init".
+    -Renamed "kit/all/parry/parry_buffer" to "kit/all/parry/buffer".
+    -Renamed "kit/all/parry/parry_recharge" to "kit/all/parry/recharge".
+    -Renamed "kit/all/parry/end_parry" to "kit/all/parry/end".
 
 *Resourcepack Updates*
 -Added Judy armor texture. (by Nerbski)
