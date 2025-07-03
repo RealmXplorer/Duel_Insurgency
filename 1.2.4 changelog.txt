@@ -60,4 +60,5 @@
     -Removed "ingame/vents/"
     -Removed "ventDone" tag.
     -Removed "vented" tag.
-    
+    -Moved Player's arrow give from "kit/player/constant" to "ingame/startround/timer/end_timer".
+    -Merged "void/interact/void_ready" into "void/interact/surrender".

@@ -93,3 +93,10 @@ execute if entity @s[scores={kit=1004}] run tellraw @s [{text:"You let go of you
 execute if entity @s[scores={kit=2015}] run tellraw @s [{text:"You let go of serving others...",color:gray,"italic": true}]
 #Chungus
 execute if entity @s[scores={kit=42069}] run tellraw @s [{text:"Wha- What are you doing?",color:gray,"italic": true}]
+
+#Sounds and tag
+playsound minecraft:goner.eye.spawn master @a ~ ~ ~ 1000 1
+playsound minecraft:soundeffect.unlock master @a ~ ~ ~ 1000 1 1
+playsound minecraft:soundeffect.unlock master @a ~ ~ ~ 1000 2 1
+playsound minecraft:soundeffect.unlock master @a ~ ~ ~ 1000 .5 1
+tag @s add voidReady
