@@ -4,4 +4,4 @@ execute if entity @s[scores={skeletonMode=1}] run playsound minecraft:entity.str
 
 execute if entity @s[scores={skeletonMode=2}] run playsound minecraft:entity.bogged.hurt master @a ~ ~ ~ 2 1 1
 
-scoreboard players reset @s hit
+# scoreboard players reset @s hit

@@ -1,12 +1,13 @@
 #Movement sounds
-execute if entity @s[scores={hit=5..}] run function du-in:kit/puss/events/hit
-execute if entity @s[scores={step=150..}] run function du-in:kit/puss/events/step
-execute if entity @s[scores={sprint=150..}] run function du-in:kit/puss/events/step
-execute if entity @s[scores={jump=1..}] run function du-in:kit/puss/events/jump
+# execute if entity @s[scores={hit=5..}] run function du-in:kit/puss/events/hit
+# execute if entity @s[scores={step=150..}] run function du-in:kit/puss/events/step
+# execute if entity @s[scores={sprint=150..}] run function du-in:kit/puss/events/step
+# execute if entity @s[scores={jump=1..}] run function du-in:kit/puss/events/jump
 
-#Use ability
+#Switch weapons
 execute if entity @s[tag=secKitActions] run function du-in:kit/puss/secondary/switch
 
+#Test for weapon switch
 execute store result score @s[scores={gameDeaths=4..},tag=!void] secCount run clear @s warped_fungus_on_a_stick 0
 execute store result score @s[tag=void] secCount run clear @s warped_fungus_on_a_stick 0
 

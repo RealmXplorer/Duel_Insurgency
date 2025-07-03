@@ -240,7 +240,6 @@ execute as @a run function du-in:music/ingame/stop/all
         scoreboard players reset * gumballClassicFake
 
     #Nick Wilde#
-        tag @a remove wilde
         tag @a remove sabotaged
         tag @a remove empower
 

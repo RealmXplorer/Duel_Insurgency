@@ -3,7 +3,7 @@
 execute if entity @s[tag=grave] run function du-in:kit/zombie/ability/check
 
 #Non-Villager functions
-execute if entity @s[tag=!stolen] run function du-in:kit/zombie/constant
+#execute if entity @s[tag=!stolen] run function du-in:kit/zombie/constant
 
 #Zombie timer
 execute if entity @s[scores={zombieTimer=0..}] run function du-in:kit/zombie/ability/timer

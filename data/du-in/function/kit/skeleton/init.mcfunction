@@ -10,4 +10,4 @@ execute unless entity @s[scores={secCount=1}] if entity @s[scores={skeletonMode=
 
 execute store result score @s secCount run clear @s bow 0
 
-execute if entity @s[tag=!stolen] run function du-in:kit/skeleton/constant
+#execute if entity @s[tag=!stolen] run function du-in:kit/skeleton/constant

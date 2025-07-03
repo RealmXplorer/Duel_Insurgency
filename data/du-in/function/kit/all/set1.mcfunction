@@ -1,5 +1,5 @@
 # Spider #
-execute if entity @s[scores={kit=1},tag=!stolen] run function du-in:kit/spider/constant
+#execute if entity @s[scores={kit=1},tag=!stolen] run function du-in:kit/spider/constant
 
 # Zombie #
 execute if entity @s[scores={kit=2}] run function du-in:kit/zombie/init

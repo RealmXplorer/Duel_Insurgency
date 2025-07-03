@@ -60,6 +60,7 @@
 -Added a spare sound effect for when Ralsei and Frisk kill enemies.
 -Changes to post-void game result messages.
 -Tabba now has full dialogue chains for each pylon.
+-Added step sounds for Kylo, Ralsei, and Villager.
 
 *Bug Fixes*
 -Fixed bug where Zombie would not play its intro sounds.
@@ -71,6 +72,7 @@
 -Fixed bug where Parry recharge sound would not play if you had successfully landed a parry.
 -Wind Charges are now properly tagged as projectiles.
 -Fixed bug where "lobby/two_sec_loop" would not be cleared at start of game.
+-Fixed bug where Impostor could vent into a block on Mustafar.
 
 *Internal Changes*
 -Added "du-in:pogo" enchantment.
@@ -121,7 +123,7 @@
 	-The "saul" and "bigChungus" tags (which run their music) are now only added at the start of the game.
 	-Removed "chungus" tag as it was unused.
 -Datapack 6.2
-	-Set up tests for Datapack 6.2 changes.
+	-Modularized hit, jump, step, and sprint events for characters.
 	-Armor Stand tests from "ingame/general" now run in "ingame/entities/armor_stands".
 	-Merged the test for tridents and asgore's trident into one trident test.
 	-Merged "lobby/scheduled/map_select" into "lobby/scheduled/two_second_loop".

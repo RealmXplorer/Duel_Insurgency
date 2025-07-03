@@ -13,7 +13,6 @@ tag @s remove badBlock
 tag @s remove broken
 tag @s remove thrown
 tag @s remove kitDone
-tag @s remove wilde
 tag @s remove springLock
 tag @s remove undead
 tag @s remove sus

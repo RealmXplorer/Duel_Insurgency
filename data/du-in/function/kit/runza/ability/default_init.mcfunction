@@ -12,6 +12,10 @@ playsound minecraft:sans.ability master @a ~ ~ ~ 1 1.05
 playsound minecraft:ambient.cave master @a ~ ~ ~ 100 1
 playsound minecraft:block.glass.break master @a ~ ~ ~ 100 .8
 playsound minecraft:entity.player.attack.sweep master @a ~ ~ ~ 100 1
+
+attribute @s minecraft:armor base set 4
+attribute @s minecraft:attack_damage base set 1.5
+
 tag @s remove sabotaged
 tag @s remove runzaRex
 tag @s remove kitActions

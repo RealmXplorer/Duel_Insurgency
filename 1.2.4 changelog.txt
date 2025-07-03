@@ -2,6 +2,7 @@
 *Changes*
 -Tabba now has full dialogue chains for each pylon.
 -Gaster and Flowey can no longer attempt (and always fail) parries while in their abilities. 
+-Added step sounds for Kylo, Ralsei, and Villager.
 
 *Bug Fixes*
 -Wind Charges are now properly tagged as projectiles.

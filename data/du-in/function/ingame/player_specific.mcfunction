@@ -67,10 +67,11 @@ execute if entity @s[predicate=!du-in:has_armor,predicate=!du-in:effect/is_invis
     execute if entity @s[scores={simSprint=1..}] run function du-in:ingame/steptrack/sprint_go
 
 #Possible Datapack 6.2 changes (MUST TEST PERFORMANCE IMPACTS)
-    # execute if entity @s[scores={hit=5..}] run function du-in:kit/all/hit/find_kit with storage du-in:main player
-    # execute if entity @s[scores={step=150..}] run function du-in:kit/all/step/find_kit with storage du-in:main player
-    # execute if entity @s[scores={sprint=150..}] run function du-in:kit/all/step/find_kit with storage du-in:main player
-    # execute if entity @s[scores={jump=1..}] run function du-in:kit/all/jump/find_kit with storage du-in:main player
+    execute if entity @s[scores={hit=5..}] run function du-in:kit/all/hit/find_kit with storage du-in:main player
+    execute if entity @s[scores={step=150..}] run function du-in:kit/all/step/find_kit with storage du-in:main player
+    execute if entity @s[scores={sprint=150..}] run function du-in:kit/all/step/find_kit with storage du-in:main player
+    execute if entity @s[scores={jump=1..}] run function du-in:kit/all/jump/find_kit with storage du-in:main player
+
 
 #Kill and Death functions
     execute if entity @s[scores={justdied=1..}] run function du-in:kit/all/death/init

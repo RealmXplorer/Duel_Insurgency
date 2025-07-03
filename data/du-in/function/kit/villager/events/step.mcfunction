@@ -1,0 +1,1 @@
+playsound minecraft:block.amethyst_block.resonate master @a ~ ~ ~ 0.4 2
