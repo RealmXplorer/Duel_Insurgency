@@ -157,7 +157,11 @@
 	-Reorganized "lobby/item/" folder into individual folders.
 	-Removed "lobby/item/"
 	-Moved "lobby/item/back" to "lobby/back_item".
-
+    -Moved "lobby/pick" to "lobby/actions/pick_gamemode".
+    -Moved "lobby/item_reset" to "lobby/reset/item".
+    -Moved "lobby/leader_reset" to "lobby/reset/party_leader".
+    -Moved "lobby/full_reset" to "lobby/reset/complete".
+	
 *Resourcepack Updates*
 -Added Judy armor texture. (by Nerbski)
 -Added Susie armor texture. (by eggpathy)
