@@ -18,3 +18,11 @@ execute if entity @s[tag=secKitActions] run function du-in:kit/susie/will_change
 
 #TP Counting and Max
 execute if entity @s[tag=!startgame,tag=!maxTP,scores={ralseiTP=..120}] run function du-in:kit/susie/tp_track
+
+#ONE OF THE THREE
+#HER MIGHT IS
+#TRULY INSPIRING
+#SHE SUSPECTS ME
+#THIS WILL NOT DO
+#THE EXPERIMENT
+#MUST CONTINUE 
