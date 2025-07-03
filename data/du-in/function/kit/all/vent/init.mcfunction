@@ -7,3 +7,5 @@
     execute if entity @s[tag=flagGot,tag=sus] run function du-in:kit/all/vent/vent_flag
     #If not sus
     execute if entity @s[tag=!sus] run function du-in:kit/all/vent/vent_fail
+
+advancement revoke @s only du-in:utility/interact_vent

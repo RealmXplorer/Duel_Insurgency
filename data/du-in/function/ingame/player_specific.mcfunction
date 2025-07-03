@@ -2,6 +2,9 @@
     execute if entity @s[scores={kitUse=1..},tag=!win,tag=!lose,tag=!kitMenu,tag=!startgame] run function du-in:kit/all/ability/init
     execute if entity @s[scores={secKitUse=1..},tag=!win,tag=!lose,tag=!kitMenu,tag=!startgame] run function du-in:kit/all/ability/activate_sec
 
+    #Ability timer
+    execute if entity @s[level=1..] run function du-in:kit/all/ability/timer
+
 # Stating Game Functions #
     execute if entity @s[tag=startgame] run function du-in:ingame/start_seq
 
@@ -17,15 +20,12 @@
     execute if entity @s[tag=parry,scores={parryDuration=0..}] run function du-in:kit/all/parry/in_parry
     scoreboard players reset @s[scores={parryHit=1..}] parryHit
 
-# REGEN TIMER (Except for Zombie) #
+# REGEN TIMER (Except for undead) #
     execute if entity @s[scores={healthTimer=140..}] run function du-in:ingame/regentimer/start_regen
     execute if entity @s[scores={regenTimer=100..}] run function du-in:ingame/regentimer/timer
 
     #Reset health timer if player is hit or deals damage
     execute if entity @s[scores={healthHit=1..}] run function du-in:ingame/regentimer/health_dam
-#
-
-execute if entity @s[level=1..] run function du-in:kit/all/ability/timer
 
 #KILL COMBOS
 execute if entity @s[tag=killCombo] run function du-in:ingame/kill_combo/timer
@@ -95,29 +95,29 @@ execute if entity @s[predicate=!du-in:has_armor,predicate=!du-in:effect/is_invis
     execute if entity @s[tag=notEaten] run function du-in:kit/runza/ability/the_hunger
 
 #Iron Golem float timer (this helps makes the effect shorter than 1 second)
-    execute if entity @s[scores={golemFloat=-1..}] run function du-in:kit/golem/ability/float
+    execute if entity @s[scores={golemFloat=0..}] run function du-in:kit/golem/ability/float
 
 #Venting Mechanics
-    execute if entity @s[tag=vented] run function du-in:kit/all/vent/init
+    #execute if entity @s[tag=vented] run function du-in:kit/all/vent/init
 
 #Kylo ability
-    execute if entity @s[tag=kyloHit,scores={kyloTimer=-99..}] run function du-in:kit/kylo/ability/freeze
+    execute if entity @s[tag=kyloHit,scores={kyloTimer=0..}] run function du-in:kit/kylo/ability/freeze
 
 #Paz Ability
-    execute if entity @s[scores={blakeTimer=-99..}] run function du-in:kit/paz/ability/rubberband
+    execute if entity @s[scores={blakeTimer=0..}] run function du-in:kit/paz/ability/rubberband
 
 #Jack Horner abilities
-    execute if entity @s[scores={unicornTimer=1..}] run function du-in:kit/jack_horner/ability/unicorn_bow/timer
+    execute if entity @s[scores={unicornTimer=0..}] run function du-in:kit/jack_horner/ability/unicorn_bow/timer
     execute if entity @s[tag=midasTouched] run function du-in:kit/jack_horner/ability/midas/freeze
 
 #Nick Sabotage ability
-    execute if entity @s[scores={sabotageTimer=1..}] run function du-in:kit/nick/ability/sabotage/timer
+    execute if entity @s[scores={sabotageTimer=0..}] run function du-in:kit/nick/ability/sabotage/timer
 
 #Puss ability
-    execute if entity @s[scores={pussFearTimer=1..}] run function du-in:kit/puss/ability/fear_timer
+    execute if entity @s[scores={pussFearTimer=0..}] run function du-in:kit/puss/ability/fear_timer
 
 #Sauron
-    execute if entity @s[scores={seenTimer=1..}] run function du-in:kit/sauron/ability/no_ring/timer
+    execute if entity @s[scores={seenTimer=0..}] run function du-in:kit/sauron/ability/no_ring/timer
     execute if entity @s[tag=hasRing] run function du-in:kit/sauron/ring/has_ring
 
 #Clairen Field

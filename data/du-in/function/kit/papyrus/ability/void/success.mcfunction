@@ -8,7 +8,7 @@ execute as @e[type=skeleton,tag=gonerThing,tag=papyrusHit] at @s run summon mine
 scoreboard players set @e[type=marker,tag=papyrusFind,tag=!papyrusStart] papyrusHitTimer 30
 tag @e[type=marker,tag=papyrusFind,tag=!papyrusStart] add papyrusStart
 tag @e[type=skeleton,tag=gonerThing,tag=papyrusHit] remove papyrusHit
-execute as @e[type=marker,scores={papyrusHitTimer=30}] as @e[tag=papyrusFind] at @s run function du-in:kit/papyrus/ability/spawn_bones
+execute as @e[type=marker,scores={papyrusHitTimer=30}] as @e[tag=papyrusFind] at @s run function du-in:kit/papyrus/ability/bones/spawn
 
 #tag @s remove sabotaged
 execute if entity @s[tag=stolen] run tag @s add kitDone

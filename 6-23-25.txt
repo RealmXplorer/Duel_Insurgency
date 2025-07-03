@@ -131,6 +131,12 @@
 	-Created entity type tag "du-in:projectile".
 	-Removed "du-in:other/shutdown/shutdown" as it was unused.
 	-Reorganized "du-in:other/shutdown/".
+    -Merged "kit/papyrus/particle" into "kit/papyrus/ability/cooldown".
+    -Moved "kit/papyrus/stand" to "kit/papyrus/ability/bones/stand".
+    -Moved "kit/papyrus/ability/bones" to "kit/papyrus/ability/bones/timer".
+    -Moved "kit/papyrus/ability/spawn_bones" to "kit/ability/bones/spawn".
+    -Replaced "inGround" NBT check with "du-in:no_motion" check.
+    -Advancement "du-in:interact_vent" now runs function "du-in:kit/all/vent/init"
 
 *Resourcepack Updates*
 -Added Judy armor texture. (by Nerbski)

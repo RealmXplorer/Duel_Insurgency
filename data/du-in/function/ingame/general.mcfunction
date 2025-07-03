@@ -65,7 +65,7 @@ execute as @e[type=armor_stand] at @s run function du-in:ingame/entities/armor_s
 execute at @e[type=snowball] run summon minecraft:marker ~ ~ ~ {Tags:["poisonApple","mapSpecific"]}
 
 #Papyrus Stand Particles
-#execute as @e[type=armor_stand,scores={papyrusHitTimer=-1..}] at @s run function du-in:kit/papyrus/stand
+#execute as @e[type=armor_stand,scores={papyrusHitTimer=-1..}] at @s run function du-in:kit/papyrus/bones/stand
 
 #Test when it shifts to day or night
 execute if predicate du-in:ambience/night_start if score #main dayNightSetting matches 1 run function du-in:ingame/scheduled/ambience/night_start

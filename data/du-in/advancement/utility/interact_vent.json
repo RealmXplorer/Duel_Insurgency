@@ -16,6 +16,6 @@
       ]
   ],
   "rewards": {
-    "function": "du-in:ingame/vents/run"
+    "function": "function du-in:kit/all/vent/init"
   }
 }
