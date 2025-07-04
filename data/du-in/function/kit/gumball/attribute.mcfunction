@@ -11,3 +11,5 @@ attribute @s[tag=!darwin] minecraft:jump_strength base set 0.42
 attribute @s[tag=darwin] minecraft:jump_strength base set 0.47
 
 attribute @s[tag=darwin] minecraft:water_movement_efficiency base set 1
+attribute @s[tag=!darwin] minecraft:attack_knockback base set 0
+attribute @s[tag=darwin] minecraft:attack_knockback base set 0.1

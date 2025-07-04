@@ -1,6 +1,6 @@
 #Sounds
-execute if entity @s[scores={hit=5..}] run function du-in:kit/cuphead/events/hit
-execute if entity @s[scores={jump=1..}] run function du-in:kit/cuphead/events/jump
+# execute if entity @s[scores={hit=5..}] run function du-in:kit/cuphead/events/hit
+# execute if entity @s[scores={jump=1..}] run function du-in:kit/cuphead/events/jump
 
 #Abilities initializations
 execute if entity @s[tag=secKitActions] run function du-in:kit/cuphead/parry/init

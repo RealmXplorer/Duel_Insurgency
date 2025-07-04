@@ -12,13 +12,13 @@ execute if entity @s[scores={kit=11}] run function du-in:kit/asriel/init
 execute if entity @s[scores={kit=12}] run function du-in:kit/flowey/init
 
 # Papyrus #
-execute if entity @s[scores={kit=13},tag=!stolen] run function du-in:kit/papyrus/constant
+#execute if entity @s[scores={kit=13},tag=!stolen] run function du-in:kit/papyrus/constant
 
 # Asgore #
 execute if entity @s[scores={kit=14},tag=!stolen] run function du-in:kit/asgore/constant
 
 # Frisk #
-execute if entity @s[scores={kit=15},tag=!stolen] run function du-in:kit/frisk/constant
+#execute if entity @s[scores={kit=15},tag=!stolen] run function du-in:kit/frisk/constant
 
 # Sans #
 execute if entity @s[scores={kit=16}] run function du-in:kit/sans/init

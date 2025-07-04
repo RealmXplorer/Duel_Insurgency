@@ -7,4 +7,3 @@
 execute if entity @s[gamemode=!spectator,tag=!enraged,tag=!rageMeter,tag=!startgame] run function du-in:kit/kratos/secondary/charge
 playsound minecraft:kratos.hit voice @a ~ ~ ~ 0.5 1
  
-scoreboard players reset @s hit

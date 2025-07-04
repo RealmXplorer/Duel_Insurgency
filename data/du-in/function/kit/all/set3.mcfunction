@@ -1,5 +1,5 @@
 # Kylo Ren #
-execute if entity @s[scores={kit=17},tag=!stolen] run function du-in:kit/kylo/constant
+#execute if entity @s[scores={kit=17},tag=!stolen] run function du-in:kit/kylo/constant
 
 # Vader #
 execute if entity @s[scores={kit=18},tag=!stolen] run function du-in:kit/vader/constant

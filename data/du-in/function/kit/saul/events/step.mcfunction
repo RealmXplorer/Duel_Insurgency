@@ -1,2 +1,2 @@
-scoreboard players reset @s step
-scoreboard players reset @s sprint
+#scoreboard players reset @s step
+#scoreboard players reset @s sprint

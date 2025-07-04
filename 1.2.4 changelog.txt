@@ -1,42 +1,56 @@
-***7/2/25:***
+***7/2/25-7/4/25:***
 *Balancing*
 -Reduced Gumball's ability speed. (Speed VIII -> Speed VI)
 -Gumball now a 1 second delay between using his ability and being able to blow up. 
 -Increased Creeper's main weapon damage. (5.25 -> 5.4)
+-Decreased Cuphead's ability cooldown after using a <5 card ability. (340 -> 280)
+-Decreased Cuphead's parry cooldown after using it on a player. (120 -> 90)
+-Halved how long it takes for Ralsei's TP to charge. (120 -> 60)
+-Increased Sans's health. (12 -> 14)
+-Decreased Sans's ability coooldown. (150 -> 130)
+-Increased Sans's main weapon damage. (3 -> 3.25)
+-Increased Sauron's speed duration from no-ring ability. (1s -> 3s)
+-Sauron now gets Strength from no-speed ability.
 
 *Changes*
 -Minor change to Tabba's dialogue.
 -Tabba now has full dialogue chains for each pylon.
 -Gaster and Flowey can no longer attempt (and always fail) parries while in their abilities. 
 -Added step sounds for Kylo, Ralsei, and Villager.
+-Soul of Cinder now gets a 60 tick reduced cooldown when switching to a different loadout.
+	-Only happens once after each ability use.
+-All "item" weapon characters now have a base "attack_knockback" of 0.1.
+	-This helps with starting and maintaining combos.
 
 *Bug Fixes*
 -Wind Charges are now properly tagged as projectiles.
 -Fixed bug where landing parries would reset weight and armor values.
 -Fixed bug where Impostor could vent into a block on Mustafar.
+-Fixed bug where kill functions would get mixed up with other kits.
 
 *Internal Changes*
 -Datapack 6.2
-    -Armor Stand tests from "ingame/general" now run in "ingame/entities/armor_stands".
-    -Merged the test for tridents and asgore's trident into one trident test.
-    -Merged "lobby/scheduled/map_select" into "lobby/scheduled/two_second_loop".
-    -Scheduled functions for game and lobby now run immediately when switching to game or lobby respectively.
-    -Removed "ingame/scheduled/half_sec_loop" as it was called, but not used.
-    -Reorganized "kit/all/weapon/" folder and set tests to be in "ingame/scheduled/play_one_sec".
-    -Created entity type tag "du-in:projectile".
-    -Removed "du-in:other/shutdown/shutdown" as it was unused.
+	-Modularized hit, jump, step, and sprint events for characters.
+	-Armor Stand tests from "ingame/general" now run in "ingame/entities/armor_stands".
+	-Merged the test for tridents and asgore's trident into one trident test.
+	-Merged "lobby/scheduled/map_select" into "lobby/scheduled/two_second_loop".
+	-Scheduled functions for game and lobby now run immediately when switching to game or lobby respectively.
+	-Removed "ingame/scheduled/half_sec_loop" as it was called, but not used.
+	-Reorganized "kit/all/weapon/" folder and set tests to be in "ingame/scheduled/play_one_sec".
+	-Created entity type tag "du-in:projectile".
+	-Removed "du-in:other/shutdown/shutdown" as it was unused.
 	-Reorganized "du-in:other/shutdown/".
-    -Merged "kit/papyrus/particle" into "kit/papyrus/ability/cooldown".
-    -Moved "kit/papyrus/stand" to "kit/papyrus/ability/bones/stand".
-    -Moved "kit/papyrus/ability/bones" to "kit/papyrus/ability/bones/timer".
-    -Moved "kit/papyrus/ability/spawn_bones" to "kit/ability/bones/spawn".
-    -Added predicate "du-in:no_motion" to detect when an entity isn't moving.
-    -Replaced "inGround" NBT check with "du-in:no_motion" check.
-    -Advancement "du-in:interact_vent" now runs function "du-in:kit/all/vent/init"
-    -Renamed "kit/all/parry/parry" to "kit/all/parry/init".
-    -Renamed "kit/all/parry/parry_buffer" to "kit/all/parry/buffer".
-    -Renamed "kit/all/parry/parry_recharge" to "kit/all/parry/recharge".
-    -Renamed "kit/all/parry/end_parry" to "kit/all/parry/end".
+	-Merged "kit/papyrus/particle" into "kit/papyrus/ability/cooldown".
+	-Moved "kit/papyrus/stand" to "kit/papyrus/ability/bones/stand".
+	-Moved "kit/papyrus/ability/bones" to "kit/papyrus/ability/bones/timer".
+	-Moved "kit/papyrus/ability/spawn_bones" to "kit/ability/bones/spawn".
+	-Added predicate "du-in:no_motion" to detect when an entity isn't moving.
+	-Replaced "inGround" NBT check with "du-in:no_motion" check.
+	-Advancement "du-in:interact_vent" now runs function "du-in:kit/all/vent/init"
+	-Renamed "kit/all/parry/parry" to "kit/all/parry/init".
+	-Renamed "kit/all/parry/parry_buffer" to "kit/all/parry/buffer".
+	-Renamed "kit/all/parry/parry_recharge" to "kit/all/parry/recharge".
+	-Renamed "kit/all/parry/end_parry" to "kit/all/parry/end".
 	-Moved "lobby/timers/map/ten" to "lobby/mapselect/timers/ten".
 	-Moved "lobby/timers/map/five" to "lobby/mapselect/timers/five".
 	-Moved "lobby/timers/map/four" to "lobby/mapselect/timers/four".
@@ -53,20 +67,20 @@
 	-Reorganized "lobby/item/" folder into individual folders.
 	-Removed "lobby/item/"
 	-Moved "lobby/item/back" to "lobby/back_item".
-    -Moved "lobby/pick" to "lobby/actions/pick_gamemode".
-    -Moved "lobby/item_reset" to "lobby/reset/item".
-    -Moved "lobby/leader_reset" to "lobby/reset/party_leader".
-    -Moved "lobby/full_reset" to "lobby/reset/complete".
-    -Renamed "kit/all/vent/vent_success" to "kit/all/vent/success"
-    -Renamed "kit/all/vent/vent_cooldown" to "kit/all/vent/cooldown".
-    -Renamed "kit/all/vent/vent_flag" to "kit/all/vent/flag".
-    -Renamed "kit/all/vent/vent_fail" to "kit/all/vent/fail".
-    -Merged "kit/all/vent/vent_done" into "kit/all/vent/success"
-    -Removed "ingame/vents/"
-    -Removed "ventDone" tag.
-    -Removed "vented" tag.
-    -Moved Player's arrow give from "kit/player/constant" to "ingame/startround/timer/end_timer".
-    -Merged "void/interact/void_ready" into "void/interact/surrender".
+	-Moved "lobby/pick" to "lobby/actions/pick_gamemode".
+	-Moved "lobby/item_reset" to "lobby/reset/item".
+	-Moved "lobby/leader_reset" to "lobby/reset/party_leader".
+	-Moved "lobby/full_reset" to "lobby/reset/complete".
+	-Renamed "kit/all/vent/vent_success" to "kit/all/vent/success"
+	-Renamed "kit/all/vent/vent_cooldown" to "kit/all/vent/cooldown".
+	-Renamed "kit/all/vent/vent_flag" to "kit/all/vent/flag".
+	-Renamed "kit/all/vent/vent_fail" to "kit/all/vent/fail".
+	-Merged "kit/all/vent/vent_done" into "kit/all/vent/success"
+	-Removed "ingame/vents/"
+	-Removed "ventDone" tag.
+	-Removed "vented" tag.
+	-Moved Player's arrow give from "kit/player/constant" to "ingame/startround/timer/end_timer".
+	-Merged "void/interact/void_ready" into "void/interact/surrender".
 
 *Resourcepack Changes*
 -Moved "sounds/custom/gaster/spam" to "sounds/custom/spamton/hit".

@@ -5,4 +5,4 @@ execute if entity @s[scores={gasterTimer=-1..}] run function du-in:kit/gaster/ab
 #attribute @s[tag=gasterInvisible] minecraft:knockback_resistance base set 10
 
 #NOT VILLAGER#
-execute if entity @s[tag=!stolen] run function du-in:kit/gaster/constant
+#execute if entity @s[tag=!stolen] run function du-in:kit/gaster/constant

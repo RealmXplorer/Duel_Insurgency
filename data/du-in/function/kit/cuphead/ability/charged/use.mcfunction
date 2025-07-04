@@ -8,6 +8,6 @@ execute if entity @s[tag=void] positioned ^ ^ ^1.5 run function du-in:kit/cuphea
 
 scoreboard players remove @s cardPower 5
 clear @s minecraft:paper 1
-xp set @s[tag=!stolen] 340 levels
+xp set @s[tag=!stolen] 280 levels
 clear @s carrot_on_a_stick
 execute if entity @s[tag=stolen] run tag @s add kitDone

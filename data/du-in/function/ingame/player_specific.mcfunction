@@ -63,6 +63,12 @@ execute if entity @s[predicate=!du-in:has_armor,predicate=!du-in:effect/is_invis
     execute if entity @s[scores={simSprint=..0}] run function du-in:ingame/steptrack/sprint_stop
     execute if entity @s[scores={simSprint=1..}] run function du-in:ingame/steptrack/sprint_go
 
+#Different events
+    execute if entity @s[scores={hit=5..}] run function du-in:kit/all/hit/init
+    execute if entity @s[scores={step=150..}] run function du-in:kit/all/step/init
+    execute if entity @s[scores={sprint=150..}] run function du-in:kit/all/step/init
+    execute if entity @s[scores={jump=1..}] run function du-in:kit/all/jump/init
+
 #Kill and Death functions
     execute if entity @s[scores={justdied=1..}] run function du-in:kit/all/death/init
 

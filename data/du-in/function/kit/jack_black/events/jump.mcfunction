@@ -1,1 +1,1 @@
-scoreboard players reset @s jump
+#scoreboard players reset @s jump

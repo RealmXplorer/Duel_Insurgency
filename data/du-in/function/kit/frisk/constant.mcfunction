@@ -1,5 +1,5 @@
-execute if entity @s[scores={hit=5..}] run function du-in:kit/frisk/events/hit
-execute if entity @s[scores={jump=1..}] run function du-in:kit/frisk/events/jump
+# execute if entity @s[scores={hit=5..}] run function du-in:kit/frisk/events/hit
+# execute if entity @s[scores={jump=1..}] run function du-in:kit/frisk/events/jump
 
 #THE VERY POWER
 #I STUDIED

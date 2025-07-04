@@ -8,7 +8,7 @@
 execute if entity @s[scores={floweyHitTimer=-1..},tag=!lose] run function du-in:kit/flowey/ability/burrow
 
 #Non Villager functions
-execute if entity @s[tag=!stolen] run function du-in:kit/flowey/constant
+#execute if entity @s[tag=!stolen] run function du-in:kit/flowey/constant
 
 
 #MY EXPERIMENTS

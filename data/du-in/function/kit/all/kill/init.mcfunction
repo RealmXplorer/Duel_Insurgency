@@ -18,6 +18,9 @@ execute if score #main lobbyTheme matches 2 unless entity @s[scores={justdied=1.
 execute if score #main lobbyTheme matches 3 unless entity @s[scores={justdied=1..}] run function du-in:kit/all/kill/msg/christmas
 execute if score #main lobbyTheme matches 4 unless entity @s[scores={justdied=1..}] run function du-in:kit/all/kill/msg/easter
 
+#Set current player to this player
+execute store result storage du-in:main player.current int 1 run scoreboard players get @s player
+
 #Run kit-specific functions in "(kit)/events/kill"
 execute at @s run function du-in:kit/all/kill/find_kit with storage du-in:main player
 

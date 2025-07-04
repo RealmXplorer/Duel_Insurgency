@@ -1,8 +1,8 @@
 #Movement sounds
-execute if entity @s[scores={hit=5..}] run function du-in:kit/death/events/hit
-execute if entity @s[scores={step=150..}] run function du-in:kit/death/events/step
-execute if entity @s[scores={sprint=150..}] run function du-in:kit/death/events/step
-execute if entity @s[scores={jump=1..}] run function du-in:kit/death/events/jump
+# execute if entity @s[scores={hit=5..}] run function du-in:kit/death/events/hit
+# execute if entity @s[scores={step=150..}] run function du-in:kit/death/events/step
+# execute if entity @s[scores={sprint=150..}] run function du-in:kit/death/events/step
+# execute if entity @s[scores={jump=1..}] run function du-in:kit/death/events/jump
 
 #Check for if they have secondary
 execute store result score @s secCount run clear @s warped_fungus_on_a_stick 0

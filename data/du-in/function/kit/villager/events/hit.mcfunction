@@ -4,4 +4,3 @@ execute if entity @s[scores={villSkin=2}] run playsound minecraft:entity.witch.h
 
 execute if entity @s[tag=theHatchet] run function du-in:kit/jack_horner/ability/hatchet/end
 
-scoreboard players reset @s hit

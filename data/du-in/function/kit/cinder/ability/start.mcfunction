@@ -9,4 +9,5 @@ effect give @s slowness 1 3 true
 #Finish Ability#
 clear @s carrot_on_a_stick
 tag @s add cooldown
+tag @s add cinderUsed
 tag @s remove kitActions

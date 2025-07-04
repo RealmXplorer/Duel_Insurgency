@@ -9,4 +9,4 @@ effect give @s minecraft:resistance 2 2 true
 effect give @s minecraft:fire_resistance 2 2 true
 scoreboard players add @s cardPower 3
 scoreboard players set @s floatTimer 5
-scoreboard players set @s parryTimer 120
+scoreboard players set @s parryTimer 90
