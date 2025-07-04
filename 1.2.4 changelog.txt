@@ -1,4 +1,9 @@
 ***7/2/25:***
+*Balancing*
+-Reduced Gumball's ability speed. (Speed VIII -> Speed VI)
+-Gumball now a 1 second delay between using his ability and being able to blow up. 
+-Increased Creeper's main weapon damage. (5.25 -> 5.4)
+
 *Changes*
 -Minor change to Tabba's dialogue.
 -Tabba now has full dialogue chains for each pylon.
@@ -62,3 +67,8 @@
     -Removed "vented" tag.
     -Moved Player's arrow give from "kit/player/constant" to "ingame/startround/timer/end_timer".
     -Merged "void/interact/void_ready" into "void/interact/surrender".
+
+*Resourcepack Changes*
+-Moved "sounds/custom/gaster/spam" to "sounds/custom/spamton/hit".
+-Moved "sounds/custom/gaster/spam2" to "sounds/custom/spamton/hit2".
+-Moved "sounds/custom/gaster/laught" to "sounds/custom/spamton/laugh".

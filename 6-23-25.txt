@@ -21,6 +21,9 @@
 -Reduced Death’s wall damage on first hit. (0.9 → 0.7)
 -Increased Papyrus's main weapon damage. (3 -> 3.4)
 -Increased Ralsei's main weapon damage. (4 -> 4.5)
+-Increased Creeper's main weapon damage. (5.25 -> 5.4)
+-Reduced Gumball's ability speed. (Speed VIII -> Speed VI)
+-Gumball now a 1 second delay between using his ability and being able to blow up. 
 
 *Changes*
 -Moved Nick Wilde from Grab Bag to Zootopia.
@@ -124,6 +127,7 @@
 	-The "saul" and "bigChungus" tags (which run their music) are now only added at the start of the game.
 	-Removed "chungus" tag as it was unused.
 -Datapack 6.2
+	-Modularized hit, jump, step, and sprint events for characters.
 	-Armor Stand tests from "ingame/general" now run in "ingame/entities/armor_stands".
 	-Merged the test for tridents and asgore's trident into one trident test.
 	-Merged "lobby/scheduled/map_select" into "lobby/scheduled/two_second_loop".
@@ -186,3 +190,6 @@
 -Added Deltarune Spare and cure sound effects.
 -Added Pure Nail texture. (by Realm_Xplorer)
 -Added Desolate Dive texture. (by Realm_Xplorer)
+-Moved "sounds/custom/gaster/spam" to "sounds/custom/spamton/hit".
+-Moved "sounds/custom/gaster/spam2" to "sounds/custom/spamton/hit2".
+-Moved "sounds/custom/gaster/laught" to "sounds/custom/spamton/laugh".
