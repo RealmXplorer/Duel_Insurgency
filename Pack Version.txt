@@ -1,6 +1,6 @@
-Duel: Insurgency Version: 1.3
+Duel: Insurgency Version: 1.2.4
 
-Duel-Format: 6.1
+Duel-Format: 6.2
 
 
 DARKNESS CREEPING
