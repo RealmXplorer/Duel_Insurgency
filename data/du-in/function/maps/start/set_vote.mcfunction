@@ -1,5 +1,6 @@
 #Set the current map value to the winner's map value.
-$scoreboard players set #main map $(value)
+$execute unless entity @a[tag=specialEvent,tag=partyLeader] run scoreboard players set #main map $(value)
+execute if entity @a[tag=specialEvent,tag=partyLeader] run scoreboard players set #main map 21
 
 #Reset all players (including the fake players) mapVote to reset the tallies.
 scoreboard players reset * mapVote

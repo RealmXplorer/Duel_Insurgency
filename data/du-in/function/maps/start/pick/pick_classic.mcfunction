@@ -21,3 +21,5 @@ execute if score #main map matches 17 run function du-in:maps/start/classic/wild
 execute if score #main map matches 18 run function du-in:maps/start/classic/ricardo
 
 execute if score #main map matches 19 run function du-in:maps/start/classic/first_flame
+
+execute if score #main map matches 21 run function du-in:maps/start/classic/dfc
