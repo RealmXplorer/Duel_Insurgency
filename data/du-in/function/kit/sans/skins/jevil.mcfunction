@@ -1,0 +1,5 @@
+#SANSTA#
+item replace entity @s armor.head with minecraft:player_head[minecraft:custom_name={"text":"Jevil","color":"white","bold":true,"italic":false},profile={id:[I;1625464866,-1389935494,-1547930968,341631364],properties:[{name:"textures",value:"eyJ0ZXh0dXJlcyI6eyJTS0lOIjp7InVybCI6Imh0dHA6Ly90ZXh0dXJlcy5taW5lY3JhZnQubmV0L3RleHR1cmUvYzY3NWFjMzc3M2Q5MjJiNDNhNGI3M2Y2M2VjODFiYTZmMWIyNzk1ZDNkNjVkZGJhODZkYzgyZjBhMjZjZTkyOCJ9fX0="}]}] 1
+item replace entity @s armor.chest with leather_chestplate[item_name={text:"Santa Chest"},unbreakable={},tooltip_display={hidden_components:[dyed_color]},dyed_color=2233426,equippable={slot:"chest",asset_id:"du-in:jevil"}] 1
+item replace entity @s armor.legs with leather_leggings[item_name={text:"Santa Legs"},unbreakable={},tooltip_display={hidden_components:[dyed_color]},dyed_color=6688143,equippable={slot:"legs",asset_id:"du-in:jevil"}] 1
+item replace entity @s armor.feet with leather_boots[item_name={text:"Santa Feet"},unbreakable={},tooltip_display={hidden_components:[dyed_color]},dyed_color=14862126,equippable={slot:"feet",asset_id:"du-in:jevil"}] 1
