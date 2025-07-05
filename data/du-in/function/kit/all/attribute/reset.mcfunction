@@ -45,8 +45,12 @@ attribute @s minecraft:armor_toughness modifier remove kratos_ability
 #Damage (sabotage)
 attribute @s minecraft:attack_damage modifier remove kratos_attack_sabotage
 
+##SAURON
 attribute @s minecraft:movement_speed modifier remove minecraft:speed_corrupt
 attribute @s armor modifier remove armor_corrupt
+
+##CINDER
+attribute @s armor modifier remove cinder_charge
 
 ##SANS
 attribute @s knockback_resistance modifier remove sans_hit
