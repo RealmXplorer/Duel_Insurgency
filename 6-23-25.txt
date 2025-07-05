@@ -6,6 +6,7 @@
 -Added Zootopia tab in Kit Select.
 -Added Goner Mouth skin for Gaster.
 	-Can only be selected if you've freed the timelines...
+-Added Jevil skin for Sans.
 -Added more stages to Parkour, as well as a proper ending. (by noobsquire)
 
 *Balancing*
@@ -185,6 +186,7 @@
 -Added Judy armor texture. (by Nerbski)
 -Added Susie armor texture. (by eggpathy)
 -Added (Hollow) Knight texture. (by strawbrysage) 
+-Added Jevil armor texture. (by AdmiralPie)
 -Added Judy hurt sound.
 -Added Judy tranq gun texture. (by Realm_Xplorer)
 -Added Undertale battlestart sound.
@@ -206,3 +208,8 @@
 -Moved "sounds/custom/gaster/spam" to "sounds/custom/spamton/hit".
 -Moved "sounds/custom/gaster/spam2" to "sounds/custom/spamton/hit2".
 -Moved "sounds/custom/gaster/laught" to "sounds/custom/spamton/laugh".
+-Added Jevil hit sounds.
+-Added Jevil laugh sounds.
+-Added Jevil voicelines.
+-Added Devilsknife texture. (by Realm_Xplorer)
+-Added Jevilstail texture. (by Realm_Xplorer)\

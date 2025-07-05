@@ -3,6 +3,7 @@
 *Additions*
 -Added Judy Hopps character.
 -Added Susie character.
+-Added Jevil skin for Sans.
 -Added more stages to Parkour, as well as a proper ending. (by noobsquire)
 
 *Internal Changes*
@@ -13,6 +14,7 @@
 -Added Judy armor texture. (by Nerbski)
 -Added Susie armor texture. (by eggpathy)
 -Added (Hollow) Knight texture. (by strawbrysage) 
+-Added Jevil armor texture. (by AdmiralPie)
 -Added Judy hurt sound.
 -Added Judy tranq gun texture. (by Realm_Xplorer)
 -Added Susie voice sound.
@@ -23,3 +25,8 @@
 -Added Red Buster texture. (by Realm_Xplorer)
 -Added Pure Nail texture. (by Realm_Xplorer)
 -Added Desolate Dive texture. (by Realm_Xplorer)
+-Added Jevil hit sounds.
+-Added Jevil laugh sounds.
+-Added Jevil voicelines.
+-Added Devilsknife texture. (by Realm_Xplorer)
+-Added Jevilstail texture. (by Realm_Xplorer)
