@@ -1,3 +1,4 @@
+tag @s[tag=empower] add redBuster
 # summon the temporary entity
 summon marker ^ ^ ^1 {Tags:["susieDirection"]}
 
@@ -61,6 +62,7 @@ particle minecraft:crit ~ ~2.25 ~ 0.5 0.5 0.5 0.25 30 force @a
 particle minecraft:infested ~ ~0.5 ~ 0.75 0.5 0.75 0 30
 #playsound minecraft:entity.elder_guardian.curse master @a ~ ~ ~ .5 .75
 
+tag @s remove empower
 tag @s remove redBuster
 tag @s remove sabotaged
 execute if entity @s[tag=stolen] run tag @s add kitDone
