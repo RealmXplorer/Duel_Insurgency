@@ -114,6 +114,9 @@ execute if entity @s[predicate=!du-in:has_armor,predicate=!du-in:effect/is_invis
     execute if entity @s[scores={seenTimer=0..}] run function du-in:kit/sauron/ability/no_ring/timer
     execute if entity @s[tag=hasRing] run function du-in:kit/sauron/ring/has_ring
 
+#Jevil
+    #execute if entity @s[scores={jevilTimer=0..}] run function du-in:kit/jevil/ability/spin
+
 #Clairen Field
     execute if entity @s[tag=inField] run function du-in:kit/clairen/ability/field_effects
     execute if entity @s[tag=sabotagedField] run function du-in:kit/clairen/ability/sabotaged_field

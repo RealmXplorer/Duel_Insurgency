@@ -1,6 +1,8 @@
+#Tag with NEO CHAOS
+tag @s add neoChaos
 
 #Particle#
-playsound minecraft:sans.ability master @a ~ ~ ~ 100 0.9
+playsound minecraft:jevil.neo_chaos master @a ~ ~ ~ 100 1
 
 
 tellraw @a ["",{text:"The air crackles with Freedom!",bold:true,color:dark_purple}]

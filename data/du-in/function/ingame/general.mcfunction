@@ -21,21 +21,13 @@
 # General Functions #
     # Kill all In Ground items and mark projectiles#
         execute as @e[type=#du-in:projectile] run function du-in:ingame/entities/projectiles
-        #execute as @e[type=arrow] run function du-in:ingame/entities/projectiles
-        #execute as @e[type=trident] run function du-in:ingame/entities/projectiles
-        #execute as @e[type=snowball] run function du-in:ingame/entities/projectiles
-        #execute as @e[type=wind_charge] run function du-in:ingame/entities/projectiles
 
     #Make timer count down
         execute if score #main titleTimer2 matches -99.. run function du-in:ingame/startround/timer/timer
 
 
 #Asgore Trident thrown
-#execute as @e[type=trident] on origin run function du-in:kit/asgore/passive/trident
 execute as @e[type=trident] run function du-in:kit/asgore/passive/trident
-
-#Asgore's fire walls
-#execute as @e[type=armor_stand,tag=asgoreFire,scores={asgoreFire=-99..}] at @s run function du-in:kit/asgore/ability/fire_wall
 
 #Death's fire cone
 execute as @e[type=block_display,tag=flame,scores={flameTimer=-99..}] at @s run function du-in:kit/death/ability/timer
@@ -63,9 +55,6 @@ execute as @e[type=armor_stand] at @s run function du-in:ingame/entities/armor_s
 
 #Poison Apples (MUST BE BELOW MARKER FUNCTIONS)
 execute at @e[type=snowball] run summon minecraft:marker ~ ~ ~ {Tags:["poisonApple","mapSpecific"]}
-
-#Papyrus Stand Particles
-#execute as @e[type=armor_stand,scores={papyrusHitTimer=-1..}] at @s run function du-in:kit/papyrus/bones/stand
 
 #Test when it shifts to day or night
 execute if predicate du-in:ambience/night_start if score #main dayNightSetting matches 1 run function du-in:ingame/scheduled/ambience/night_start

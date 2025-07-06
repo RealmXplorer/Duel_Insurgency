@@ -38,6 +38,7 @@ scoreboard objectives add cinderTimer dummy
 scoreboard objectives add cinderMagic dummy
 scoreboard objectives add TPSound dummy
 scoreboard objectives add susieTimer dummy
+scoreboard objectives add jevilTimer dummy
 
 #Timers
 scoreboard objectives add ambience dummy
