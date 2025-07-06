@@ -1,7 +1,5 @@
 scoreboard players add #main shutdownTimer 1
-tag @a[tag=!lobby] add falseWin
-#tag @a[tag=playing] add falseWin
-#tag @a[tag=spectating] add falseWin
+tag @a add falseWin
 
 #Announce and play sound
 execute if score #main shutdownTimer matches 1 run function du-in:other/shutdown/timer/start_display

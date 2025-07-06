@@ -195,6 +195,9 @@
     -Moved "lobby/item_reset" to "lobby/reset/item".
     -Moved "lobby/leader_reset" to "lobby/reset/party_leader".
     -Moved "lobby/full_reset" to "lobby/reset/complete".
+-There are now more checks to ensure all players have a "player" score and storage.
+-Minor changes to game shutdown system.
+	-Should stop giving exp when game is forced to simulate end.
 	
 *Resourcepack Updates*
 -Added Judy armor texture. (by Nerbski)

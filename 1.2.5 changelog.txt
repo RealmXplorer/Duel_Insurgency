@@ -20,6 +20,11 @@
 -Fixed bug where Gumball could not switch to Darwin, and various other issues.
 -Fixed bug where Player would not get their bow.
 
+*Internal Changes*
+-There are now more checks to ensure all players have a "player" score and storage.
+-Minor changes to game shutdown system.
+	-Should stop giving exp when game is forced to simulate end.
+
 *Resourcepack Changes*
 -Added Ralsei death sound.
 -Increased Kratos hit sound volume.
