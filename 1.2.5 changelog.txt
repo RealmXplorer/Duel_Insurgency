@@ -2,3 +2,9 @@
 ***Update 1.2.5:***
 *Balancing*
 -Soul of Cinder now gets 4 armor points when charging ability.
+
+*Changes*
+-Added chance for Ralsei death sound.
+
+*Resourcepack Changes*
+-Added Ralsei death sound.
