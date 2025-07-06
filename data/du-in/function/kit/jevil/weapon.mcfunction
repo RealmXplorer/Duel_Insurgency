@@ -1,0 +1,1 @@
+item replace entity @s hotbar.0 with minecraft:wooden_sword[item_name={text:"Devilsknife",color:gray,bold:true},item_model="du-in:weapons/devilsknife",unbreakable={},attribute_modifiers=[{type:"attack_damage",id:"attack_damage",amount:4.45,operation:"add_value",slot:"mainhand"},{type:"attack_speed",id:"attack_speed",amount:-1.8,operation:"add_value",slot:"mainhand"}]] 1

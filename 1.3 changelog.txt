@@ -3,7 +3,6 @@
 *Additions*
 -Added Judy Hopps character.
 -Added Susie character.
--Added Jevil skin for Sans.
 -Added more stages to Parkour, as well as a proper ending. (by noobsquire)
 
 *Internal Changes*
@@ -30,3 +29,5 @@
 -Added Jevil voicelines.
 -Added Devilsknife texture. (by Realm_Xplorer)
 -Added Jevilstail texture. (by Realm_Xplorer)
+-Added Jevil pirouette sound.
+-Added Knight walking sounds.

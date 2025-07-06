@@ -1,2 +1,1 @@
-#scoreboard players reset @s step
-#scoreboard players reset @s sprint
+playsound minecraft:knight.step voice @a ~ ~ ~ 0.4 1.1 1
