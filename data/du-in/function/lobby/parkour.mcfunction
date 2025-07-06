@@ -14,7 +14,22 @@ execute positioned 611.52 -37.00 -187.56 as @a[distance=..5,y=-37,gamemode=adven
 
 execute positioned 641 -31.00 -103 as @a[distance=..5,y=-26,dy=0,gamemode=adventure] run tp @s 715 1.18750 -157.480 -143 -0.5
 
+#Cave room
 execute as @a[x=628,y=4,z=-178,dx=33,dy=0,dz=-51,gamemode=adventure] run tp @s 643 6 -150 0 0
+
+#Copper room
+execute as @a[x=640,y=2,z=-95,dx=-14,dy=0,dz=-29,gamemode=adventure] run function du-in:lobby/parkour/copper
+execute as @a[x=626,y=2,z=-95,dx=36,dy=0,dz=-8,gamemode=adventure] run function du-in:lobby/parkour/copper
+execute as @a[x=626,y=2,z=-105,dx=36,dy=0,dz=-19,gamemode=adventure] run function du-in:lobby/parkour/copper
+execute as @a[x=642,y=2,z=-95,dx=20,dy=0,dz=-29,gamemode=adventure] run function du-in:lobby/parkour/copper
+
+#642 2 -95 662 2 -124
+
+#626 2 -105 662 2 -124
+
+#626 8 -95 662 6 -103
+
+#640 2 -95 626 8 -124
 
 #execute as @a[gamemode=adventure,tag=parkour] at @s if entity @s[x=662,y=6,z=-124,dx=32,dy=0,dz=-29] run tp @s 650 13 -125 0 0
 #execute as @a[gamemode=adventure,tag=parkour] at @s if entity @s[x=662,y=6,z=-124,dx=-32,dy=0,dz=29] run tp @s 650 13 -125 0 0
