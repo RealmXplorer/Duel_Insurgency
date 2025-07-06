@@ -5,6 +5,9 @@
 -Added Susie character.
 -Added more stages to Parkour, as well as a proper ending. (by noobsquire)
 
+*Changes*
+-Parkour will now save your progress.
+
 *Internal Changes*
 -Added "du-in:pogo" enchantment.
 -Added "du-in:hopps" enchantment.
