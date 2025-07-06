@@ -176,6 +176,7 @@ scoreboard objectives add kothCap dummy
 scoreboard objectives add kothGoal dummy
 scoreboard objectives add kothHalf dummy
 scoreboard objectives add Lives dummy
+scoreboard objectives add checkpoint dummy
 
 scoreboard objectives add maxLives dummy
 scoreboard objectives add maxTeamLives dummy
