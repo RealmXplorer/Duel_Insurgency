@@ -130,12 +130,10 @@ execute as @a run function du-in:music/ingame/stop/all
         tag @a remove broken
         scoreboard players set @a saacCarry 0
         tag @a remove saac
-        scoreboard players reset @a kickstartDrink
         scoreboard players set @a saacMoneyCheck 0
         scoreboard players set @a saacMoney 0
         scoreboard players set @a saacMoneyDollar 0
         tag @a remove kickstarted
-        scoreboard players reset * saacMoneyChance
 
     #Paz#
         tag @a remove vended
@@ -162,8 +160,8 @@ execute as @a run function du-in:music/ingame/stop/all
         tag @a remove ringCorrupted
         scoreboard players reset @a sauronTimer
         scoreboard players reset @a seenTimer
-        scoreboard players reset @a ringInvisTimer
-        
+    #Jevil#
+        tag @a remove neoChaos
     #Asgore#
         scoreboard players reset * tridentTimer
         tag @a remove thrown
@@ -172,7 +170,6 @@ execute as @a run function du-in:music/ingame/stop/all
         tag @a remove badBlock
 
     #Impostor#
-        scoreboard players set @a vent 0
         scoreboard players set @a ventCooldown 0
         tag @a remove drip
 

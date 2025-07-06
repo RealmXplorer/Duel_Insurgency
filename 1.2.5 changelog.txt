@@ -2,6 +2,7 @@
 ***Update 1.2.5:***
 *Balancing*
 -Soul of Cinder now gets 4 armor points when charging ability.
+-Reduced Puss in Boots's max health. (20 -> 14)
 
 *Changes*
 -Added chance for Ralsei death sound.
