@@ -33,6 +33,8 @@
 -Increased Sans's main weapon damage. (3 -> 3.25)
 -Increased Sauron's speed duration from no-ring ability. (1s -> 3s)
 -Sauron now gets Strength from no-speed ability.
+-Soul of Cinder now gets 4 armor points when charging ability.
+-Reduced Puss in Boots's max health. (20 -> 14)
 
 *Changes*
 -Moved Nick Wilde from Grab Bag to Zootopia.
@@ -78,6 +80,7 @@
 	-Only happens once after each ability use.
 -All "item" weapon characters now have a base "attack_knockback" of 0.1.
 	-This helps with starting and maintaining combos.
+-Added chance for Ralsei death sound.
 
 *Bug Fixes*
 -Fixed bug where Zombie would not play its intro sounds.
@@ -212,4 +215,7 @@
 -Added Jevil laugh sounds.
 -Added Jevil voicelines.
 -Added Devilsknife texture. (by Realm_Xplorer)
--Added Jevilstail texture. (by Realm_Xplorer)\
+-Added Jevilstail texture. (by Realm_Xplorer)
+-Added Jevil pirouette sound.
+-Added Knight walking sounds.
+-Added Ralsei death sound.
