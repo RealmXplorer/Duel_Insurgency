@@ -3,6 +3,12 @@ scoreboard players enable @s info
 
 clear @s player_head[custom_data={du-in:'sauronHead'}]
 
+#Sound
+playsound minecraft:entity.iron_golem.hurt master @s ~ ~ ~ .5 .1 1
+playsound minecraft:terraria.golhit master @s ~ ~ ~ 1 .1 1
+playsound minecraft:block.netherite_block.break master @s ~ ~ ~ 1 1
+playsound minecraft:block.heavy_core.hit master @s ~ ~ ~ 1 1
+
 scoreboard players set @s kit 31
 $data modify storage du-in:player$(current) kit set value {"kit":"sauron"}
 

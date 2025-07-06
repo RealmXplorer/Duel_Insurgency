@@ -11,5 +11,7 @@ execute if entity @s[scores={kit=17}] run function du-in:kit/nick/ability/empowe
 execute if entity @s[scores={kit=30}] run function du-in:kit/nick/ability/empower
 #Judy
 execute if entity @s[scores={kit=35}] run function du-in:kit/nick/ability/empower
+#Jevil
+execute if entity @s[scores={kit=38}] run function du-in:kit/nick/ability/empower
 #Saac
 execute if entity @s[scores={kit=1000}] run function du-in:kit/nick/ability/empower

@@ -31,3 +31,4 @@
 -Added Jevilstail texture. (by Realm_Xplorer)
 -Added Jevil pirouette sound.
 -Added Knight walking sounds.
+-Added Jevil scythe sound.

@@ -1,1 +1,1 @@
-execute if entity @s[tag=!stolen] run function du-in:kit/susie/constant
+execute if entity @s[tag=!stolen] run function du-in:kit/jevil/constant

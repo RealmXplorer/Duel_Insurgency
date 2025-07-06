@@ -83,4 +83,7 @@ attribute @s knockback_resistance modifier remove parry
 attribute @s armor modifier remove parry
 attribute @s armor_toughness modifier remove parry
 
+attribute @s minecraft:armor modifier remove parry_resist
+attribute @s minecraft:armor_toughness modifier remove parry_resist
+
 ##COME BACK TO THIS

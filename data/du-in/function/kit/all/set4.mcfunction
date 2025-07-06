@@ -38,4 +38,7 @@ execute if entity @s[scores={kit=35},tag=!stolen] run function du-in:kit/judy/co
 execute if entity @s[scores={kit=36}] run function du-in:kit/susie/init
 
 #Knight#
-#execute if entity @s[scores={kit=37}] run function du-in:kit/knight/init
+execute if entity @s[scores={kit=37}] run function du-in:kit/knight/init
+
+#Jevil
+execute if entity @s[scores={kit=38}] run function du-in:kit/jevil/init

@@ -35,6 +35,7 @@
 -Sauron now gets Strength from no-speed ability.
 -Soul of Cinder now gets 4 armor points when charging ability.
 -Reduced Puss in Boots's max health. (20 -> 14)
+-Increased Jack Horner's Excalibur damage. (5.25 -> 5.35)
 
 *Changes*
 -Moved Nick Wilde from Grab Bag to Zootopia.
@@ -81,6 +82,13 @@
 -All "item" weapon characters now have a base "attack_knockback" of 0.1.
 	-This helps with starting and maintaining combos.
 -Added chance for Ralsei death sound.
+-Parry rework
+	-Parries now block most damage from the hit that initiates it.
+		-You can now visualize the parry window with the armor bar.
+	-Parries now end on death.
+	-Parry cooldowns are now always 4s, even if you miss.
+-Slightly changed Villager's step sounds.
+-Added select sound for Sauron in kit menu.
 
 *Bug Fixes*
 -Fixed bug where Zombie would not play its intro sounds.
@@ -94,6 +102,9 @@
 -Fixed bug where "lobby/two_sec_loop" would not be cleared at start of game.
 -Fixed bug where Impostor could vent into a block on Mustafar.
 -Fixed bug where kill functions would get mixed up with other kits.
+-Fixed bug where Nick Wilde could not sabotage Gumball.
+-Fixed bug where Gumball could not switch to Darwin, and various other issues.
+-Fixed bug where Player would not get their bow.
 
 *Internal Changes*
 -Added "du-in:pogo" enchantment.
@@ -219,3 +230,5 @@
 -Added Jevil pirouette sound.
 -Added Knight walking sounds.
 -Added Ralsei death sound.
+-Added Jevil scythe sound.
+-Increased Kratos hit sound volume.

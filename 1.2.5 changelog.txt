@@ -3,9 +3,23 @@
 *Balancing*
 -Soul of Cinder now gets 4 armor points when charging ability.
 -Reduced Puss in Boots's max health. (20 -> 14)
+-Increased Jack Horner's Excalibur damage. (5.25 -> 5.35)
 
 *Changes*
 -Added chance for Ralsei death sound.
+-Parry rework
+	-Parries now block most damage from the hit that initiates it.
+		-You can now visualize the parry window with the armor bar.
+	-Parries now end on death.
+	-Parry cooldowns are now always 4s, even if you miss.
+-Slightly changed Villager's step sounds.
+-Added select sound for Sauron in kit menu.
+
+*Bug Fixes*
+-Fixed bug where Nick Wilde could not sabotage Gumball.
+-Fixed bug where Gumball could not switch to Darwin, and various other issues.
+-Fixed bug where Player would not get their bow.
 
 *Resourcepack Changes*
 -Added Ralsei death sound.
+-Increased Kratos hit sound volume.

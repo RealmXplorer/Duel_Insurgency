@@ -41,6 +41,10 @@ execute if entity @e[type=salmon,tag=kratosRock] run function du-in:kit/kratos/a
 #Desolate Dive
 #execute if entity @e[type=armor_stand,tag=desolateDive] run function du-in:kit/knight/ability/dive
 
+#Neo Chaos#
+execute as @e[type=minecraft:item_display,tag=devilsKnife] at @s run function du-in:kit/jevil/neo_chaos/scythe
+execute as @e[type=minecraft:block_display,scores={jevilTimer=0..}] at @s run function du-in:kit/jevil/neo_chaos/beam
+
 #Kill graves when projectiles are near or when the sand is far from the stand
     execute as @e[type=falling_block] at @s run function du-in:ingame/entities/falling_block
 

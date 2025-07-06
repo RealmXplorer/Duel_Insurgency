@@ -73,6 +73,9 @@ execute if entity @s[tag=peepedHorror] run tag @s remove peepedHorror
 
 execute if entity @s[scores={shrunkTimer=0..}] run function du-in:kit/jack_horner/ability/drink/reset
 
+#Parry clear#
+execute if entity @s[scores={parryDuration=0..},tag=parry] run scoreboard players set @s parryDuration 0
+
 #KILLSTREAK#
 scoreboard players reset @s killStreak
 

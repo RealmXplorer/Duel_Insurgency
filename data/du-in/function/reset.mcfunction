@@ -160,8 +160,7 @@ execute as @a run function du-in:music/ingame/stop/all
         tag @a remove ringCorrupted
         scoreboard players reset @a sauronTimer
         scoreboard players reset @a seenTimer
-    #Jevil#
-        tag @a remove neoChaos
+
     #Asgore#
         scoreboard players reset * tridentTimer
         tag @a remove thrown
