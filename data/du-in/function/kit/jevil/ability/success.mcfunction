@@ -7,8 +7,6 @@ execute if entity @s[tag=!sabotaged,tag=neoChaos] as @a[tag=playing,gamemode=!sp
 execute if entity @s[tag=sabotaged,tag=neoChaos] run function du-in:kit/jevil/ability/enemy_neo
 
 
-execute as @a[distance=.05..10,tag=playing,gamemode=!spectator,tag=!teamDead,limit=1] if score @s team = @a[scores={kit=38},tag=kitActions,limit=1] team at @s run function du-in:kit/jevil/ability/teammate
-
 execute if entity @s[tag=sabotaged] run function du-in:kit/all/ability/sabotage/effects
 
 clear @s minecraft:carrot_on_a_stick

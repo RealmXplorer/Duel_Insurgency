@@ -76,6 +76,8 @@ execute if entity @s[scores={kit=35},tag=!stolen] run tellraw @s [{text:"You let
 execute if entity @s[scores={kit=36},tag=!stolen] run tellraw @s [{text:"You let go of your fear of loneliness...",color:gray,"italic": true}]
 #Knight
 execute if entity @s[scores={kit=37},tag=!stolen] run tellraw @s [{text:"You let go of your Will...",color:gray,"italic": true}]
+#Jevil
+execute if entity @s[scores={kit=38},tag=!stolen] run tellraw @s [{text:"You let go of your need for fun, fun...",color:gray,"italic": true}]
 
 #Saac
 execute if entity @s[scores={kit=1000}] run tellraw @s [{text:"You let go of your need for quarters...",color:gray,"italic": true}]

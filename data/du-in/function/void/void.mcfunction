@@ -15,6 +15,7 @@ execute if score #main pylonsDestroyed matches 3 run function du-in:void/pylon/p
     #Test enemy numbers
     scoreboard players set #main gonerCount 0
     execute as @e[type=skeleton,tag=gonerThing] run scoreboard players add #main gonerCount 1
+    execute as @e[type=skeleton,tag=gonerThing] if entity @s[scores={jevilTimer=0..}] run function du-in:kit/jevil/ability/spin
 
     #Spawn enemies
     #execute unless score #main pylonsDestroyed matches 3 unless entity @a[tag=win] if entity @a[scores={gonersKilled=1..},tag=partyLeader] run function du-in:void/spawn/wave/wave1

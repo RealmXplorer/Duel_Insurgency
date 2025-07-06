@@ -75,7 +75,9 @@ execute if entity @s[scores={kit=35},tag=!stolen] run tellraw @s [{text:"You can
 #Susie
 execute if entity @s[scores={kit=36},tag=!stolen] run tellraw @s [{text:"You hear the school bell chime...",color:gray,"italic": true}]
 #The Knight
-execute if entity @s[scores={kit=36},tag=!stolen] run tellraw @s [{text:"You are the Hollow Knight...",color:gray,"italic": true}]
+execute if entity @s[scores={kit=37},tag=!stolen] run tellraw @s [{text:"You are the Hollow Knight...",color:gray,"italic": true}]
+#Jevil
+execute if entity @s[scores={kit=38},tag=!stolen] run tellraw @s [{text:"You see beyond the bars that keep you free...",color:gray,"italic": true}]
 
 
 #Saac

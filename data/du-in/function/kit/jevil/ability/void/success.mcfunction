@@ -1,5 +1,5 @@
-effect give @e[type=skeleton,distance=.05..4] slowness infinite 2 true
-execute as @a[distance=.05..4,tag=playing,gamemode=!spectator,tag=!teamDead,limit=1] if score @s team = @a[scores={kit=24},tag=kitActions,limit=1] team at @s run function du-in:kit/ralsei/ability/teammate
+execute if entity @s[tag=!neoChaos] run scoreboard players set @e[type=skeleton,distance=.05..4] jevilTimer 17
+execute if entity @s[tag=neoChaos] run scoreboard players set @e[type=skeleton] jevilTimer 19
 
 clear @s minecraft:carrot_on_a_stick
 xp set @s[tag=!stolen] 360 levels
