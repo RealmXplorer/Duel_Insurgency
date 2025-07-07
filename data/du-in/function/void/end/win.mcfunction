@@ -11,7 +11,7 @@ effect clear @a darkness
 scoreboard players add #main pylonsDestroyed 1
 scoreboard players add @a pylonsDestroyed 1
 
-execute if score #main pylonsDestroyed matches 3 run function du-in:lobby/display/void/switch
+execute if score #main pylonsDestroyed matches 3 run function du-in:lobby/theme/void/switch
 execute if score #main pylonsDestroyed matches 3 run function du-in:lobby/void/wind
 
 #Stop sounds and music

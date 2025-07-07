@@ -319,7 +319,7 @@ tag @a remove kitsListed
 tag @a remove teamPicked
 function du-in:lobby/reset/item
 
-execute as @a[tag=!timeFree] run function du-in:lobby/actions/stats
+execute as @a[tag=!timeFree] run function du-in:other/stats
 
 
 scoreboard players reset #main matchDeaths

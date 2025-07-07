@@ -34,5 +34,5 @@ tag @a remove pazLock
 
 
 schedule clear du-in:music/free/free
-function du-in:lobby/display/default/switch
+function du-in:lobby/theme/default/switch
 function du-in:ingame/endround/end_ending

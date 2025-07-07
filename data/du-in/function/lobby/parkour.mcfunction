@@ -1,28 +1,26 @@
 ##GO BACK NOW IN SCHEDULED FUNCTION
 
-execute if entity @s[tag=parkour,gamemode=adventure] run function du-in:lobby/parkour/player
-
 #Cave room
-execute if entity @s[gamemode=adventure,tag=parkour,x=628,y=5,z=-126,dx=33,dy=0,dz=-51] at @s run function du-in:lobby/parkour/checkpoint1
+execute if entity @s[gamemode=adventure,tag=parkour,x=628,y=5,z=-126,dx=33,dy=0,dz=-51] at @s run function du-in:lobby/parkour/checkpoint/checkpoint1
 
 #checkpoint 1
 execute if entity @s[x=651,y=13,z=-126,dx=-2,dy=3,dz=-1,gamemode=adventure] unless entity @s[scores={checkpoint=1..}] run scoreboard players set @s checkpoint 1
 
 #Copper room
-execute if entity @s[x=640,y=2,z=-95,dx=-14,dy=0,dz=-29,gamemode=adventure] run function du-in:lobby/parkour/copper
-execute if entity @s[x=626,y=2,z=-95,dx=36,dy=0,dz=-8,gamemode=adventure] run function du-in:lobby/parkour/copper
-execute if entity @s[x=626,y=2,z=-105,dx=36,dy=0,dz=-19,gamemode=adventure] run function du-in:lobby/parkour/copper
-execute if entity @s[x=642,y=2,z=-95,dx=20,dy=0,dz=-29,gamemode=adventure] run function du-in:lobby/parkour/copper
+execute if entity @s[x=640,y=2,z=-95,dx=-14,dy=0,dz=-29,gamemode=adventure] run function du-in:lobby/parkour/checkpoint/copper
+execute if entity @s[x=626,y=2,z=-95,dx=36,dy=0,dz=-8,gamemode=adventure] run function du-in:lobby/parkour/checkpoint/copper
+execute if entity @s[x=626,y=2,z=-105,dx=36,dy=0,dz=-19,gamemode=adventure] run function du-in:lobby/parkour/checkpoint/copper
+execute if entity @s[x=642,y=2,z=-95,dx=20,dy=0,dz=-29,gamemode=adventure] run function du-in:lobby/parkour/checkpoint/copper
 
 #The Pit
-execute positioned 641 -27 -103 if entity @s[distance=..5,gamemode=adventure] at @s if entity @s[y=-26,dy=0] run function du-in:lobby/parkour/checkpoint3
+execute positioned 641 -27 -103 if entity @s[distance=..5,gamemode=adventure] at @s if entity @s[y=-26,dy=0] run function du-in:lobby/parkour/checkpoint/checkpoint3
 
 #checkpoint 2
 execute if entity @s[x=641,y=3,z=-103,dx=0,dy=6,dz=-1,gamemode=adventure] unless entity @s[scores={checkpoint=2..}] run scoreboard players set @s checkpoint 2
 
 #Lava Checkpoint
 execute if entity @s[x=636,y=-23,z=-103,dx=-6,dy=4,dz=-4,gamemode=adventure] unless entity @s[scores={checkpoint=3..}] run scoreboard players set @s checkpoint 3
-execute positioned 636 -31 -101 if entity @s[gamemode=adventure,tag=parkour,distance=..58] at @s if entity @s[y=-30,dy=0] run function du-in:lobby/parkour/lava
+execute positioned 636 -31 -101 if entity @s[gamemode=adventure,tag=parkour,distance=..58] at @s if entity @s[y=-30,dy=0] run function du-in:lobby/parkour/checkpoint/lava
 
 #Lava Checkpoint 2
 execute if entity @s[x=636,y=-26,z=-80,dx=0,dy=3,dz=4,gamemode=adventure] unless entity @s[scores={checkpoint=4..}] run scoreboard players set @s checkpoint 4
@@ -48,5 +46,9 @@ execute positioned 641 -31.00 -103 if entity @s[distance=..5,y=-26,dy=0,gamemode
 #Music
 execute unless entity @s[tag=musicOff] unless score #main pylonsDestroyed matches 3 run function du-in:music/lobby/parkour
 
+#Item
+execute unless items entity @s hotbar.4 minecraft:carrot_on_a_stick run function du-in:lobby/parkour/item/restart
+
 # Parkour Actions #
-execute if entity @s[scores={kitUse=1..}] run function du-in:lobby/kit_use/parkour
+execute if entity @s[scores={kitUse=1..}] run function du-in:lobby/parkour/kit_use
+

@@ -55,9 +55,9 @@ Maps are voted on in map select. This happens in "du-in/function/maps/start/init
 "du-in/function/maps/start/pick/init" determines the gamemode being played, and runs depending on that.
 	The child function begins the map sequence and sets everything up for the selected map.
 
-"du-in/function/lobby/mapselect/~gamemode" (~gamemode can be replaced with classic, conquest, koth, etc.) sets up the map voting icons and voting markers. 
+"du-in/function/lobby/map_select/~gamemode" (~gamemode can be replaced with classic, conquest, koth, etc.) sets up the map voting icons and voting markers. 
 
-"du-in/function/lobby/mapselect/map_vote" runs the base for when a player "casts" a vote.
+"du-in/function/lobby/map_select/map_vote" runs the base for when a player "casts" a vote.
 	This is only important if adding a new classic map, as you will need to uncomment maps 16-20. 
 
 "du-in/function/maps/start/classic/arena" is a good base, as Arena contains all normal map information (except for Void Locks).

@@ -7,7 +7,7 @@ scoreboard players set @a creepSkin 1
 scoreboard players set @a flowSkin 1
 scoreboard players set @a clairenSkin 1
 scoreboard players set #main lobbyTheme 1
-function du-in:lobby/display/christmas/switch
+function du-in:lobby/theme/christmas/switch
 stopsound @a
 scoreboard players set @a music 0
 execute as @a run function du-in:lobby/reset/item

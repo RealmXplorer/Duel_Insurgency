@@ -13,7 +13,7 @@ scoreboard players set @a palpsSkin 1
 scoreboard players set @a wildeSkin 4
 scoreboard players set @a villSkin 2
 scoreboard players set #main lobbyTheme 1
-function du-in:lobby/display/halloween/switch
+function du-in:lobby/theme/halloween/switch
 stopsound @a
 scoreboard players set @a music 0
 execute as @a run function du-in:lobby/reset/item

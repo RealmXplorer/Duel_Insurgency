@@ -11,6 +11,7 @@
 *Internal Changes*
 -Added "du-in:pogo" enchantment.
 -Added "du-in:hopps" enchantment.
+-Reorganized "du-in:lobby/".
 
 *Resourcepack Updates*
 -Added Judy armor texture. (by Nerbski)
