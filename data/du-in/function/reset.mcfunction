@@ -3,7 +3,7 @@ schedule clear du-in:ingame/scheduled/one_sec_loop
 schedule clear du-in:ingame/scheduled/five_sec_loop
 schedule clear du-in:ingame/scheduled/three_sec_loop
 schedule clear du-in:ingame/scheduled/ambience/init
-schedule clear du-in:lobby/void/wind
+schedule clear du-in:void/lobby_amb
 #schedule clear du-in:ingame/scheduled/five_loop
 advancement revoke @a only du-in:void/interact_void
 advancement revoke @a only du-in:kit/bowl
@@ -360,6 +360,5 @@ tag @a remove boneAttack
 #Clear Effects#
 effect clear @a
 stopsound @a ambient
-execute if score #main pylonsDestroyed matches 3.. run function du-in:lobby/void/wind
-
+execute if score #main pylonsDestroyed matches 3.. run function du-in:void/lobby_amb
 function du-in:lobby/scheduled/gamemode_select

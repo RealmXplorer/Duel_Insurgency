@@ -1,7 +1,8 @@
 #Clear lobby schedule
 schedule clear du-in:lobby/scheduled/one_sec_loop
 schedule clear du-in:lobby/scheduled/two_sec_loop
-schedule clear du-in:lobby/void/wind
+schedule clear du-in:void/lobby_amb
+
 stopsound @a ambient
 
 #Mark all players as in start game sequence
