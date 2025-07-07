@@ -12,7 +12,7 @@ execute at @s[tag=playing,tag=!stolen] run function du-in:kit/all/damage/player/
 execute if entity @s[tag=stolen] run function du-in:kit/villager/damage/player
 
 #Combos Sounds
-execute if entity @s[scores={comboScore=3..},tag=playing] run function du-in:kit/all/combo_sounds/init
+execute if entity @s[scores={comboScore=3..},tag=playing] run function du-in:ingame/hit_combo/init
 
 #Regen Timer reset
 function du-in:ingame/regentimer/health_dam

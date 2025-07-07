@@ -7,7 +7,7 @@ scoreboard players add @s comboScore 1
 #tag @s remove voidReady
 
 #Combos Sounds
-execute if entity @s[scores={comboScore=3..},tag=playing] run function du-in:kit/all/combo_sounds/init
+execute if entity @s[scores={comboScore=3..},tag=playing] run function du-in:ingame/hit_combo/init
 
 
 #Villager Emerald System#
