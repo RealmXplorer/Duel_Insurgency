@@ -69,6 +69,8 @@ execute if entity @s[predicate=!du-in:has_armor,predicate=!du-in:effect/is_invis
     execute if entity @s[scores={sprint=150..}] run function du-in:kit/all/step/init
     execute if entity @s[scores={jump=1..}] run function du-in:kit/all/jump/init
 
+    execute if entity @s[tag=vendingMode] unless entity @s[scores={kit=1000}] run function du-in:ingame/vending_machine/money_check
+
 #Kill and Death functions
     execute if entity @s[scores={justdied=1..}] run function du-in:kit/all/death/init
 

@@ -16,3 +16,6 @@ execute if entity @s[scores={comboScore=3..},tag=playing] run function du-in:kit
 
 #Regen Timer reset
 function du-in:ingame/regentimer/health_dam
+
+#Vending Mode money
+execute if entity @s[tag=vendingMode,predicate=du-in:chance/forty_chance] run function du-in:kit/saac/money/init

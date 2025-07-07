@@ -6,6 +6,7 @@ execute if entity @s[scores={kit=1001}] run function du-in:kit/paz/card/spend
 
 execute if entity @s[scores={kit=1003}] run function du-in:kit/impostor/sabotage/vending
 
-execute unless entity @s[scores={kit=1000..1001}] unless entity @s[scores={kit=1003}] run function du-in:ingame/vending_machine/wrong_kit
+execute if entity @s[tag=!vendingMode] unless entity @s[scores={kit=1000..1001}] unless entity @s[scores={kit=1003}] run function du-in:ingame/vending_machine/wrong_kit
+execute if entity @s[tag=vendingMode] unless entity @s[scores={kit=1000..1001}] unless entity @s[scores={kit=1003}] run function du-in:kit/saac/vending/vend
 
 #execute if entity @s[tag=vended] run function du-in:ingame/vending_machine/has_vended

@@ -8,3 +8,5 @@ item replace entity @s weapon.mainhand with air
 scoreboard players set @s runzaEat 1
 scoreboard players remove @s saacCarry 1
 tag @s remove secKitActions
+
+advancement revoke @s only du-in:kit/kickstart

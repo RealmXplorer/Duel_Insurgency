@@ -89,6 +89,8 @@
 	-Parry cooldowns are now always 4s, even if you miss.
 -Slightly changed Villager's step sounds.
 -Added select sound for Sauron in kit menu.
+-Parkour will now save your progress.
+-Added item to parkour that lets you restart to the beginning.
 
 *Bug Fixes*
 -Fixed bug where Zombie would not play its intro sounds.

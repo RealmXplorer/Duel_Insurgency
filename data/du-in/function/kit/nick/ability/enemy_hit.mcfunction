@@ -15,7 +15,9 @@ execute if entity @s[predicate=du-in:effect/has_speed] run effect give @s slowne
 execute if entity @s[predicate=du-in:effect/has_speed] run effect clear @s speed
 
 #Steal Saac's Money
-tag @s[scores={kit=1000,saacMoney=0..}] add saacSteal
+#tag @s[scores={kit=1000,saacMoney=0..}] add saacSteal
+execute if entity @s[scores={kit=1000,saacMoney=0..}] run function du-in:kit/saac/money/stolen
+execute if entity @s[tag=vendingMode,scores={saacMoney=0..}] run function du-in:kit/saac/money/stolen
 
 #Pull Characters out of their abilities
 scoreboard players set @s[scores={kit=12,floweyHitTimer=1..}] floweyHitTimer 0

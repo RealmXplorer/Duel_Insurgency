@@ -11,9 +11,6 @@ execute if entity @s[scores={saacDisTimer=-99..}] run function du-in:kit/saac/pa
 #Run Kickstarts
 execute if entity @s[tag=secKitActions] run function du-in:kit/saac/kickstart/init
 
-#Money stolen
-execute if entity @s[tag=saacSteal] run function du-in:kit/saac/money/stolen
-
 #Money
 execute if entity @s[scores={saacMoneyCheck=25..}] run function du-in:kit/saac/money/quarter_item
 

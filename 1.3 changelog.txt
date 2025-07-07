@@ -7,11 +7,17 @@
 
 *Changes*
 -Parkour will now save your progress.
+-Added item to parkour that lets you restart to the beginning.
 
 *Internal Changes*
 -Added "du-in:pogo" enchantment.
 -Added "du-in:hopps" enchantment.
 -Reorganized "du-in:lobby/".
+-Renamed "kit/vader/events/breathactive" to "kit/vader/events/breathe_timer".
+-Merged "kit/vader/passive/berserk" into "kit/vader/constant".
+-Renamed "kit/vader/passive/" to "kit/vader/berserk/".
+-Vader's breathing timer now counts down, rather than up.
+-Removed "kit/saac/vending/init" as it was unused.
 
 *Resourcepack Updates*
 -Added Judy armor texture. (by Nerbski)
