@@ -14,7 +14,7 @@
         execute if entity @s[tag=shop] run function du-in:lobby/shop
     
     # Parkour Functions #
-        execute if entity @s[tag=parkour] run function du-in:lobby/parkour
+        execute if entity @s[tag=parkour,gamemode=adventure] run function du-in:lobby/parkour
         
     # Map Select Functions #
         execute if entity @s[scores={lobby=2}] run function du-in:lobby/map_select
