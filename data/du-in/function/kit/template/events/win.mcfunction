@@ -1,2 +1,2 @@
 #Runs when kit wins the game
-function du-in:ingame/endround/win_music
+function du-in:music/ingame/win

@@ -47,10 +47,6 @@ tag @a[tag=!spectating] add playing
     scoreboard players set @a[scores={kit=33}] kratosRage 0
     scoreboard players reset @a[scores={kit=11}] asrielTimer
 
-    #Give Saac the "saac" tag
-    #tag @a[scores={kit=1000},tag=!legMusicOff] add saac
-    #execute as @a[scores={kit=1000}] run function du-in:ingame/startround/saac_reset
-
     execute if entity @a[scores={kit=2015}] run tag @a[tag=!legMusicOff,tag=!void,tag=!ctfl,tag=!cql] add saul
     execute if entity @a[scores={kit=42069}] run tag @a[tag=!legMusicOff,tag=!void,tag=!ctfl,tag=!cql] add bigChungus
 
@@ -136,13 +132,10 @@ tag @a remove countStop
 tag @a remove kitMenu
 
 #Schedule ingame functions
-# schedule function du-in:ingame/scheduled/one_sec_loop 1s
 function du-in:ingame/scheduled/one_sec_loop
 function du-in:ingame/scheduled/five_sec_loop
 
 function du-in:ingame/scheduled/ambience/init
-
-#schedule function du-in:ingame/scheduled/five_loop 5s
 
 advancement grant @a[tag=playing,tag=!devMode] only du-in:challenge/duel_reborn
 
@@ -154,4 +147,4 @@ team join Blue @a[scores={team=2}]
 tag @a remove fromVoid
 scoreboard players set #main voidReadyOnline 0
 
-execute store result score @a map run scoreboard players get #main map
+#execute store result score @a map run scoreboard players get #main map

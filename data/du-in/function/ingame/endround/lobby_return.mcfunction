@@ -5,8 +5,6 @@ scoreboard players set @a lobby 1
 tag @a add lobby
 function du-in:lobby/scheduled/one_sec_loop
 function du-in:lobby/scheduled/two_sec_loop
-# schedule function du-in:lobby/scheduled/one_sec_loop 1s
-# schedule function du-in:lobby/scheduled/two_sec_loop 2s
 scoreboard players set #main winners 0
 gamemode adventure @a
 

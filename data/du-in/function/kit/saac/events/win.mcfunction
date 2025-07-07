@@ -1,3 +1,6 @@
+#Default Win music
+function du-in:music/ingame/win
+
 #Saac Win Lines
 execute if score #main online matches 3.. run playsound minecraft:saac.line.win voice @a[tag=!lobby] ~ ~ ~ 100 1
 

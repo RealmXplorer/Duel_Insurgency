@@ -27,9 +27,6 @@ tag @a remove song
 execute as @a[tag=!falseWin] at @a run function du-in:music/ingame/stop/all
 execute as @a run function du-in:music/lobby/stop/lobby
 
-#Set endtimer
-schedule function du-in:ingame/endround/end_ending 7s
-
 #Anyone who does not have win tag, give lose.
 tag @a[tag=!win] add lose
 tag @a[tag=voidLose] add lose
@@ -54,15 +51,12 @@ schedule clear du-in:maps/jermall/pick_victim
 schedule clear du-in:maps/jermall/eat_victim
 
 #Play sounds for ending
-execute if entity @a[tag=partyLeader,tag=aprilFools] as @a[tag=win,tag=!void,tag=!voidLose] at @s run playsound minecraft:soundeffect.laugh master @a ~ ~ ~ 100000 1
-execute unless entity @a[tag=partyLeader,tag=aprilFools] as @a[tag=win,tag=!aprilFools,tag=!falseWin,tag=!stolen,tag=!void,tag=!voidLose,tag=!tie] unless entity @s[scores={team=1..}] at @s run function du-in:kit/all/win/init
-execute as @a[tag=win,tag=stolen,tag=!void,tag=!voidLose,limit=1] at @s run function du-in:ingame/endround/win_music
-execute as @a[tag=win,tag=tie,tag=!void,tag=!voidLose,limit=1] at @s run function du-in:ingame/endround/win_music
-execute as @a[scores={team=1..},tag=win,tag=!void,tag=!voidLose,limit=1] at @s run function du-in:ingame/endround/win_music
-
-execute if entity @a[scores={team=1..},tag=!void,tag=!voidLose] at @r run function du-in:ingame/endround/win_music
+execute as @a[tag=win,tag=!void,tag=!voidLose,tag=!falseWin,limit=1] at @s run function du-in:ingame/endround/winning_seq
 
 effect give @a fire_resistance infinite 1 true
+
+#Set endtimer
+schedule function du-in:ingame/endround/end_ending 7s
 
 #End function
 tag @a add endSeq
