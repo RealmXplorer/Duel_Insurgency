@@ -228,6 +228,7 @@ scoreboard objectives add thrownHead minecraft.dropped:player_head
 scoreboard objectives add thrownFoot minecraft.dropped:minecraft.rabbit_foot
 scoreboard objectives add thrownIronIngot minecraft.dropped:minecraft.iron_ingot
 scoreboard objectives add thrownCookie minecraft.dropped:minecraft.cookie
+scoreboard objectives add thrownCocoa minecraft.dropped:minecraft.cocoa_beans
 #scoreboard objectives add thrownCoal minecraft.dropped:minecraft.coal
 scoreboard objectives add tabbaTalk dummy
 scoreboard objectives add tabbaVendingTalk dummy
@@ -247,6 +248,7 @@ scoreboard objectives add mapWinner dummy
 scoreboard objectives add musicCycle dummy
 scoreboard objectives add prize dummy
 scoreboard objectives add ranMode dummy
+scoreboard objectives add vendMode dummy
 scoreboard objectives add skinList dummy
 scoreboard objectives add spamMode dummy
 

@@ -8,7 +8,7 @@
     },
     "equipment": {
       "mainhand": {
-        "items": "minecraft:warped_fungus_on_a_stick",
+        "items": "minecraft:cocoa_beans",
         "components": {
           "minecraft:item_model": "du-in:other/kickstart1"
         }

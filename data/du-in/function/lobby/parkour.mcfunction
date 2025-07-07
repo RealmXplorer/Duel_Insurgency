@@ -24,12 +24,11 @@ execute positioned 636 -31 -101 if entity @s[distance=..58,y=-30,dy=0] run funct
 
 #Lava Checkpoint 2
 execute if entity @s[x=636,y=-26,z=-80,dx=0,dy=3,dz=4] unless entity @s[scores={checkpoint=4..}] run scoreboard players set @s checkpoint 4
-execute if entity @s[x=680,y=-29,z=-76,dx=-60,dy=0,dz=12] run tp @s 636 -26 -74 -90 0
+execute if entity @s[x=620,y=-28,z=-75,dx=60,dy=1,dz=12] run tp @s 636 -26 -74 -90 0
 
 #End region
 execute positioned 658 24 -34 if entity @s[distance=..12,y=24] run tp @s 675 -43 -176
 
-execute if entity @s[x=620,y=-28,z=-75,dx=60,dy=1,dz=12] run tp @s 636 -26 -75
 execute if entity @s[x=679,y=-60,z=-150,dx=-71,dy=-2,dz=-75] run tp @s 675 -47 -176 67 0
 execute if entity @s[x=602,y=-27,z=-75,dx=13,dy=1,dz=12] run tp @s 617 -19 -69 90 0
 execute if entity @s[x=581,y=-9,z=-63,dx=-50,dy=1,dz=-40] run tp @s 600 -9 -68

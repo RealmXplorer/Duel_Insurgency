@@ -22,6 +22,3 @@ scoreboard players reset #main mapCountdown
 
 #Reset lobby score for players#
 scoreboard players reset @a lobby
-
-#Stop Function#
-scoreboard players reset @a quickPlay

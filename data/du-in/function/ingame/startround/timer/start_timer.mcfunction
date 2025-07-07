@@ -5,6 +5,12 @@ schedule clear du-in:void/lobby_amb
 
 stopsound @a ambient
 
+#Prevent a bunch of sounds
+scoreboard players reset @a hit
+scoreboard players reset @a step
+scoreboard players reset @a sprint
+scoreboard players reset @a jump
+
 #Mark all players as in start game sequence
 tag @a add startgame
 
