@@ -20,6 +20,8 @@ scoreboard players operation #targetZ pos -= #playerZ pos
 execute if entity @s[tag=!redBuster] run summon armor_stand ~ ~1 ~ {Invulnerable:1b,Tags:["susieAbility","susieTest","rudeBuster","unsetTime","mapSpecific"]}
 execute if entity @s[tag=redBuster] run summon armor_stand ~ ~1 ~ {Invulnerable:1b,Tags:["susieAbility","susieTest","redBuster","unsetTime","mapSpecific"]}
 
+# summon item_display ~ ~1 ~ {Tags:["susieAbility","rudeBuster","unsetTime","projectile","mapSpecific"],transformation:{scale:[1f,1f,1f]},item:{id:"minecraft:stick",count:1,components:{"minecraft:item_model":"du-in:abilities/rude_buster"}}}
+# summon item_display ~ ~1 ~ {Tags:["susieAbility","redBuster","unsetTime","projectile","mapSpecific"],transformation:{scale:[1f,1f,1f]},item:{id:"minecraft:stick",count:1,components:{"minecraft:item_model":"du-in:abilities/red_buster"}}}
 
 # apply motion to susieTest
 execute if entity @s[tag=!redBuster] store result entity @e[type=armor_stand,tag=susieTest,limit=1] Motion[0] double 0.0015 run scoreboard players get #targetX pos
