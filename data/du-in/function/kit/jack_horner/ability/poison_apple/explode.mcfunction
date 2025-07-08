@@ -3,3 +3,5 @@ summon minecraft:creeper ~ ~ ~ {Invulnerable:1b,CustomNameVisible:0b,DeathLootTa
 particle dust_color_transition{from_color:[0.153f,0.890f,0.071f], scale:3.0f, to_color:[0.024f,0.051f,0.020f]} ~ ~ ~ 1 1 1 100 100 normal
 playsound minecraft:block.moss.break master @a ~ ~ ~ 1000 1
 playsound minecraft:block.moss.fall master @a ~ ~ ~ 1000 1
+
+#kill @s

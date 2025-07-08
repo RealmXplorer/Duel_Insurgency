@@ -3,7 +3,8 @@ tp @s[tag=!sabotaged] @r[tag=playing,gamemode=!spectator,tag=!kitActions]
 damage @s[tag=sabotaged] 18 cactus
 
 #Remove ability from hand
-clear @s minecraft:carrot_on_a_stick
+clear @s #du-in:ability
+
 #Start cooldown
 xp set @s[tag=!stolen] 450 levels
 

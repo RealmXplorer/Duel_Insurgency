@@ -11,7 +11,7 @@ effect clear @s minecraft:wither
 execute as @a[distance=0.05..5,tag=playing,gamemode=!spectator,tag=!teamDead] if score @s team = @a[tag=kitActions,limit=1,tag=playing,scores={kit=34}] team run function du-in:kit/cinder/ability/spear/team
 
 
-clear @s minecraft:carrot_on_a_stick
+clear @s #du-in:ability
 xp set @s[tag=!stolen] 350 levels
 
 

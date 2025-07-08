@@ -9,7 +9,7 @@ execute if entity @s[scores={kit=7},tag=!stolen] run give @s minecraft:arrow 1
 execute if entity @s[scores={kit=1001},tag=!fortniteCard] run function du-in:kit/paz/card/give_card
 execute if entity @s[scores={kit=1000}] run function du-in:kit/saac/money/init
 
-execute if entity @s[scores={kit=1002},tag=!hasOnionRing,predicate=du-in:chance/quarter_chance] run function du-in:kit/jerma/secondary/give_onion
+execute if entity @s[scores={kit=1003},tag=!hasOnionRing,predicate=du-in:chance/quarter_chance] run function du-in:kit/jerma/secondary/give_onion
 
 scoreboard players add @s gameGonerKills 1
 

@@ -1,1 +1,0 @@
-$execute at @s rotated as @s run function du-in:kit/$(kit)/init

@@ -2,7 +2,7 @@
 spawnpoint @s ~ ~ ~ ~
 
 #Clear ability
-clear @s minecraft:carrot_on_a_stick
+clear @s #du-in:ability
 
 #Particles and sounds
 particle minecraft:block{block_state:"minecraft:dirt"} ~ ~ ~ 0.3 0 0.3 1 50 force

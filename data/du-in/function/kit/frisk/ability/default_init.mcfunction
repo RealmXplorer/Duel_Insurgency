@@ -16,7 +16,7 @@ execute if entity @s[tag=sabotaged] as @a[distance=0.05..5,tag=playing,gamemode=
 
 execute if entity @s[tag=sabotaged] run function du-in:kit/all/ability/sabotage/effects
 
-clear @s minecraft:carrot_on_a_stick
+clear @s #du-in:ability
 xp set @s[tag=!stolen] 360 levels
 
 #execute if entity @a[distance=0.05..5,tag=playing,gamemode=!spectator,tag=!teamDead] unless score @s team = @p[distance=0.05..5,tag=playing] team run tellraw @a[distance=0.05..5,tag=playing,gamemode=!spectator,tag=!teamDead] ["",{text:"You have been weakened by compassion!",bold:true,color:red}]

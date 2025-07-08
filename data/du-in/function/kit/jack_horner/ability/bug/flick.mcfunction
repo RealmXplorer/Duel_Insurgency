@@ -5,9 +5,6 @@ execute if entity @s[tag=ethicalBug] run function du-in:kit/all/weapon/init
 #scoreboard players set @s[tag=ethicalBug] weapCount 0
 scoreboard players reset @s[tag=ethicalBug] bugHit
 
-#Remove ability from hand
-#clear @s minecraft:carrot_on_a_stick
-
 #Start cooldown
 xp set @s[tag=!stolen,tag=ethicalBug] 310 levels
 

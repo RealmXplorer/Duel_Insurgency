@@ -40,6 +40,7 @@ scoreboard objectives add TPSound dummy
 scoreboard objectives add susieTimer dummy
 scoreboard objectives add jevilTimer dummy
 scoreboard objectives add judyInspire dummy
+scoreboard objectives add jevilScythe dummy
 
 #Timers
 scoreboard objectives add ambience dummy
@@ -229,7 +230,7 @@ scoreboard objectives add thrownFoot minecraft.dropped:minecraft.rabbit_foot
 scoreboard objectives add thrownIronIngot minecraft.dropped:minecraft.iron_ingot
 scoreboard objectives add thrownCookie minecraft.dropped:minecraft.cookie
 scoreboard objectives add thrownCocoa minecraft.dropped:minecraft.cocoa_beans
-#scoreboard objectives add thrownCoal minecraft.dropped:minecraft.coal
+scoreboard objectives add thrownCoal minecraft.dropped:minecraft.coal
 scoreboard objectives add tabbaTalk dummy
 scoreboard objectives add tabbaVendingTalk dummy
 
@@ -370,7 +371,7 @@ scoreboard objectives modify Health rendertype hearts
 scoreboard objectives modify winStreak displayname {text:'Win Streak', bold:true, color:aqua}
 scoreboard objectives modify Diamonds displayname {text:'Diamonds', bold:true, color:red}
 
-scoreboard objectives modify GumballClassicFake displayname [{text:'Classic Kills ', bold:true, color:gold},{text:'(of ??)', color:gray}]
+scoreboard objectives modify gumballClassicFake displayname [{text:'Classic Kills ', bold:true, color:gold},{text:'(of ??)', color:gray}]
 forceload add -994 527 -972 507
 
 schedule clear du-in:main/scheduled

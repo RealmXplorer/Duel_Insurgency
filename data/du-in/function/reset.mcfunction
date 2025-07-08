@@ -293,7 +293,9 @@ execute as @a[tag=poolParty] run function du-in:maps/pool_party/revert
     scoreboard players reset @a ranMode
     scoreboard players reset @a spamMode
     scoreboard players reset @a timedMode
+    scoreboard players reset @a vendMode
     tag @a remove ranMode
+    tag @a remove vendingMode
     tag @a remove timedMode
     tag @a remove spamClick
 

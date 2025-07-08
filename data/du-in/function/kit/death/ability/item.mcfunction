@@ -1,1 +1,4 @@
 item replace entity @s weapon.offhand with minecraft:carrot_on_a_stick[item_name={text:"Flame Wall",color:dark_purple,bold:true},lore=[{text:"Right click to activate!",color:dark_purple,bold:true},[{text:""}],{text:"Throw a flaming wall ",color:dark_gray},{text:"where you're facing. ",color:dark_gray}],enchantment_glint_override=true,item_model="du-in:abilities/death"]
+#item replace entity @s weapon.offhand with minecraft:coal[item_name={text:"Flame Wall",color:dark_purple,bold:true},lore=[{text:"Right click to activate!",color:dark_purple,bold:true},[{text:""}],{text:"Throw a flaming wall ",color:dark_gray},{text:"where you're facing. ",color:dark_gray}],enchantment_glint_override=true,item_model="du-in:abilities/death",consumable={consume_seconds:0,animation:"none",sound:"intentionally_empty",has_consume_particles:false}]
+
+#,consumable={consume_seconds:0,animation:"none",sound:"intentionally_empty",has_consume_particles:false}

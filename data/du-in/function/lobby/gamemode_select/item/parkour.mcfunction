@@ -1,4 +1,4 @@
-#clear @s minecraft:carrot_on_a_stick[custom_data={du-in:'parkourItem'}]
+clear @s #du-in:ability[custom_data={du-in:'parkourItem'}]
 
 clear @s minecraft:carrot_on_a_stick[custom_data={du-in:'parkourItem'}]
 

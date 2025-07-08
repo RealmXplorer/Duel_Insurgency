@@ -1,1 +1,4 @@
 item replace entity @s weapon.offhand with minecraft:carrot_on_a_stick[item_name={text:'Shocker Breaker',color:gold,bold:true},lore=[{text:'Right click to activate!',color:dark_purple,bold:true},[{text:''}],{text:'Summons lightning from the sky where you are looking.',color:gray}],enchantment_glint_override=true,item_model="du-in:abilities/asriel"]
+#item replace entity @s weapon.offhand with minecraft:coal[item_name={text:'Shocker Breaker',color:gold,bold:true},lore=[{text:'Right click to activate!',color:dark_purple,bold:true},[{text:''}],{text:'Summons lightning from the sky where you are looking.',color:gray}],enchantment_glint_override=true,item_model="du-in:abilities/asriel",consumable={consume_seconds:0,animation:"none",sound:"intentionally_empty",has_consume_particles:false}]
+
+#,consumable={consume_seconds:0,animation:"none",sound:"intentionally_empty",has_consume_particles:false}

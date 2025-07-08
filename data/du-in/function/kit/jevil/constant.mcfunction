@@ -12,5 +12,7 @@ execute store result score @s triCount run clear @s gunpowder 0
 #Secondary Ability Use
 execute if entity @s[tag=secKitActions] run function du-in:kit/jevil/neo_chaos/init
 
+execute if entity @s[scores={jevilScythe=0..}] run function du-in:kit/jevil/neo_chaos/summon
+
 #TP Counting and Max
 execute if entity @s[tag=!startgame,tag=!maxTP,scores={ralseiTP=..120}] run function du-in:kit/jevil/tp_track

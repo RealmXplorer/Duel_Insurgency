@@ -44,8 +44,8 @@ Kit number = character name
 
 1000 = Saac
 1001 = PearApplez
-1002 = Jerma985
-1003 = The Impostor
+1002 = The Impostor
+1003 = Jerma985
 1004 = Runza Rex
 1005 = Jack Black's Steve
 

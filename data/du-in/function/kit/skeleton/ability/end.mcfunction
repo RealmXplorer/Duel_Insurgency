@@ -8,7 +8,8 @@ playsound minecraft:entity.player.attack.sweep master @a ~ ~ ~ 100000 0
 #Clear armor and weapons
 clear @s #du-in:reset
 clear @s #minecraft:arrows
-clear @s carrot_on_a_stick
+clear @s #du-in:ability
+clear @s #du-in:ability
 
 #Set Slime's armor and weapon back to normal
 # scoreboard players set @s weapCount 0

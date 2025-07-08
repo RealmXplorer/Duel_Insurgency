@@ -15,6 +15,6 @@
       ]
     ],
     "rewards": {
-      "function": "du-in:test/ability"
+      "function": "du-in:kit/all/ability/test"
     }
   }

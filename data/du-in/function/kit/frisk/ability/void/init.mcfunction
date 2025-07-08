@@ -10,7 +10,7 @@ effect give @s[tag=!sabotaged] minecraft:speed 3 1 true
 execute as @a[distance=0.05..5,tag=playing,gamemode=!spectator,tag=!teamDead,tag=!sabotaged] run function du-in:kit/frisk/ability/team
 
 
-clear @s minecraft:carrot_on_a_stick
+clear @s #du-in:ability
 xp set @s[tag=!stolen] 360 levels
 
 particle minecraft:heart ~ ~1.5 ~ 0.6 0.6 0.6 0 150 force

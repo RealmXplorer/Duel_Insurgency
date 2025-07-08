@@ -10,7 +10,8 @@ execute if entity @s[scores={deathWeapSwitch=2}] run attribute @s minecraft:move
 
 clear @s #du-in:weapon
 clear @s #du-in:secondary
-clear @s carrot_on_a_stick
+clear @s #du-in:ability
+clear @s coal
 
 playsound minecraft:death.switch master @a ~ ~ ~
 

@@ -1,5 +1,5 @@
 effect give @s minecraft:speed 5 1 true
-clear @s minecraft:carrot_on_a_stick
+clear @s #du-in:ability
 scoreboard players set @s charaTimer 80
 
 playsound minecraft:sans.ability master @a ~ ~ ~ .25 .95

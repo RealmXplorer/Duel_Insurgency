@@ -10,7 +10,7 @@ playsound minecraft:entity.breeze.hurt master @a ~ ~ ~ 1 .5
 tag @s add cooldown
 
 #Remove ability from hand
-clear @s minecraft:carrot_on_a_stick
+clear @s #du-in:ability
 
 #End ability
 tag @s remove kitActions

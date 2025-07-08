@@ -10,7 +10,7 @@ particle minecraft:flash ~ ~1 ~ 0 0 0 0 10 normal
 
 function du-in:kit/cinder/ability/sword/damage
 
-clear @s minecraft:carrot_on_a_stick
+clear @s #du-in:ability
 xp set @s[tag=!stolen] 360 levels
 tag @s remove sabotaged
 tag @a remove cinderHit

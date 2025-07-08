@@ -3,8 +3,6 @@ clear @s crossbow
 #scoreboard players set @s weapCount 0
 function du-in:kit/all/weapon/init
 
-#Remove ability from hand
-#clear @s minecraft:carrot_on_a_stick
 #Start cooldown
 xp set @s[tag=!stolen] 330 levels
 

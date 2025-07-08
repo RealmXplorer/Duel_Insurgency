@@ -83,10 +83,10 @@ execute if entity @s[scores={kit=38},tag=!stolen] run tellraw @s [{text:"You dre
 execute if entity @s[scores={kit=1000}] run tellraw @s [{text:"You dream of kickstarts...",color:gray,"italic": true}]
 #Paz
 execute if entity @s[scores={kit=1001}] run tellraw @s [{text:"You dream of- actually that's really inappropriate...",color:gray,"italic": true}]
-#Jerma
-execute if entity @s[scores={kit=1002}] run tellraw @s [{text:"Someone dreams of you, apparently...",color:gray,"italic": true}]
 #Impostor
-execute if entity @s[scores={kit=1003}] run tellraw @s [{text:"You dream of sneaking away...",color:gray,"italic": true}]
+execute if entity @s[scores={kit=1002}] run tellraw @s [{text:"You dream of sneaking away...",color:gray,"italic": true}]
+#Jerma
+execute if entity @s[scores={kit=1003}] run tellraw @s [{text:"Someone dreams of you, apparently...",color:gray,"italic": true}]
 #Runza
 execute if entity @s[scores={kit=1004}] run tellraw @s [{text:"You dream of cold temperatures...",color:gray,"italic": true}]
 #Jack Black

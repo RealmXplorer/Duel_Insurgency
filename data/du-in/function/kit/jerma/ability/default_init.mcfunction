@@ -9,9 +9,9 @@ execute as @a[tag=peepedHorror] run tellraw @s {text:"You peeped the horror, it 
 
 execute as @a[tag=horrorStart] at @s run function du-in:kit/jerma/particle
 
-execute as @a[tag=playing,gamemode=!spectator] unless score @a[scores={kit=1002},tag=kitActions,limit=1] team = @s team run tag @a remove horrorStart
+execute as @a[tag=playing,gamemode=!spectator] unless score @a[scores={kit=1003},tag=kitActions,limit=1] team = @s team run tag @a remove horrorStart
 
-clear @s minecraft:carrot_on_a_stick
+clear @s #du-in:ability
 xp set @s[tag=!stolen] 600 levels
 effect give @s minecraft:speed 3 1 true
 tag @s remove kitActions

@@ -19,7 +19,7 @@ playsound minecraft:entity.player.attack.sweep master @a ~ ~ ~ 9999 1.3
 playsound minecraft:block.enchantment_table.use master @a ~ ~ ~ 9999 1
 
 scoreboard players set @s darwinSound 100
-clear @s carrot_on_a_stick
+clear @s #du-in:ability
 
 tag @s add cooldown
 tag @s remove sabotaged

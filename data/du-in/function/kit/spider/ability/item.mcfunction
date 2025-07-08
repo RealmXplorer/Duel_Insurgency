@@ -1,1 +1,5 @@
 item replace entity @s weapon.offhand with minecraft:carrot_on_a_stick[item_name={text:"Web Blast",color:gold,bold:true},lore=[{text:"Right click to activate!",color:dark_purple,bold:true},[{text:""}],{text:"Shoots a blast of webs ",color:dark_gray},{text:"that slows nearby ",color:dark_gray},{text:"opponents.",color:dark_gray}],enchantment_glint_override=true,item_model="cobweb"]
+
+#item replace entity @s weapon.offhand with minecraft:coal[item_name={text:"Web Blast",color:gold,bold:true},lore=[{text:"Right click to activate!",color:dark_purple,bold:true},[{text:""}],{text:"Shoots a blast of webs ",color:dark_gray},{text:"that slows nearby ",color:dark_gray},{text:"opponents.",color:dark_gray}],enchantment_glint_override=true,item_model="cobweb",consumable={consume_seconds:0,animation:"none",sound:"intentionally_empty",has_consume_particles:false}]
+
+#,consumable={consume_seconds:0,animation:"none",sound:"intentionally_empty",has_consume_particles:false}

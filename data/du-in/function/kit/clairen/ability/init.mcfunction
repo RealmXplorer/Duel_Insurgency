@@ -13,7 +13,7 @@ particle minecraft:dust{color:[0.75, 0.0, 1.0],scale:2.0} ~ ~ ~ 2 2 2 2 50
 
 particle minecraft:explosion ~ ~1 ~ 0 0 0 2 1
 
-clear @s minecraft:carrot_on_a_stick
+clear @s #du-in:ability
 xp set @s[tag=!stolen] 400 levels
 tag @s remove sabotaged
 execute if entity @s[tag=stolen] run tag @s add kitDone

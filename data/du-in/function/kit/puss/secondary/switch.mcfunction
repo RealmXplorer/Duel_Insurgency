@@ -9,7 +9,7 @@ execute if entity @s[scores={pussWeapSwitch=2}] run tag @s remove gatitoBlade
 
 clear @s #du-in:weapon
 clear @s #du-in:secondary
-#clear @s carrot_on_a_stick
+clear @s #du-in:ability
 
 # scoreboard players set @s weapCount 0
 function du-in:kit/all/weapon/init

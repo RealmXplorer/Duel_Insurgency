@@ -12,7 +12,7 @@ particle minecraft:crit ~ ~.1 ~ 0.1 1 0.1 0 100 force
 particle minecraft:poof ~ ~.1 ~ 0.1 0.1 0.1 0.05 100 force
 
 #Remove ability from hand
-clear @s minecraft:carrot_on_a_stick
+clear @s #du-in:ability
 
 # scoreboard players set @s weapCount 0
 function du-in:kit/all/weapon/init

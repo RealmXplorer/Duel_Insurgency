@@ -1,7 +1,7 @@
 ##Runs kit's ability. These commands are necessary
 
 #Remove ability from hand
-clear @s minecraft:carrot_on_a_stick
+clear @s #du-in:ability
 #Start cooldown
 xp set @s[tag=!stolen] 600 levels
 

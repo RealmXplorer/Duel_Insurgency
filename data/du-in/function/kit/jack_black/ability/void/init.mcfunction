@@ -2,7 +2,7 @@ execute as @e[type=skeleton,tag=gonerThing] run function du-in:kit/jack_black/ab
 
 playsound minecraft:jack_black.chicken_jockey master @a ~ ~ ~ 1 1
 
-clear @s minecraft:carrot_on_a_stick
+clear @s #du-in:ability
 
 xp set @s[tag=!stolen] 600 levels
 tag @s[tag=!sabotaged] remove confusion
