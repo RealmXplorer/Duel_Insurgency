@@ -1,5 +1,3 @@
-##MAKE IT SO ABILITY ONLY RUNS WHEN IN AIR.
-
 summon armor_stand ~ ~-0.1 ~ {Invisible:1b,Invulnerable:1b,Tags:["desolateTest","desolateDive","mapSpecific"]}
 
 execute store result score @e[type=armor_stand,tag=desolateTest,limit=1] team run scoreboard players get @s team

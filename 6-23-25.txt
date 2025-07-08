@@ -206,6 +206,8 @@
 -Reworked Papyrus ability. ***NEEDS TESTING***
 -Jack Horner's Midas touch now runs through the block display. ***NEEDS TESTING***
 -Increased gamerule commandModificationBlockLimit to 999999999.
+-Changed Impostor's kit score to 1002.
+-Changed Jerma's kit score to 1003.
 
 *Resourcepack Updates*
 -Added Judy armor texture. (by Nerbski)
