@@ -370,7 +370,7 @@ scoreboard objectives modify Health rendertype hearts
 scoreboard objectives modify winStreak displayname {text:'Win Streak', bold:true, color:aqua}
 scoreboard objectives modify Diamonds displayname {text:'Diamonds', bold:true, color:red}
 
-scoreboard objectives modify GumballClassicFake displayname [{text:'Classic Kills ', bold:true, color:gold},{text:'(of ??)', color:gray}]
+scoreboard objectives modify gumballClassicFake displayname [{text:'Classic Kills ', bold:true, color:gold},{text:'(of ??)', color:gray}]
 forceload add -994 527 -972 507
 
 schedule clear du-in:main/scheduled

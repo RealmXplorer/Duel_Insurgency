@@ -8,10 +8,10 @@ playsound minecraft:entity.evoker_fangs.attack master @a ~ ~ ~ 100 1
 tag @s add boneAttack
 
 #Summon marker that will do damage
-execute as @p[tag=papyrusHit] at @s run summon minecraft:marker ~ ~ ~ {Invulnerable:1b,PersistenceRequired:1b,Tags:["papyrusFind","projectile"]}
+execute as @p[tag=papyrusHit] at @s run summon minecraft:marker ~ ~ ~ {Tags:["papyrusFind","projectile"]}
 
 #Set timer for marker and summon bones
-execute as @e[type=marker,tag=papyrusFind,tag=!papyrusStart] at @s function du-in:kit/papyrus/ability/bones/spawn
+execute as @e[type=marker,tag=papyrusFind,tag=!papyrusStart] at @s run function du-in:kit/papyrus/ability/bones/spawn
 
 #Remove "hit" tag from marked players
 tag @a[tag=papyrusHit] remove papyrusHit
