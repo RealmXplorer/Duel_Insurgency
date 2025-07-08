@@ -40,6 +40,7 @@ scoreboard objectives add TPSound dummy
 scoreboard objectives add susieTimer dummy
 scoreboard objectives add jevilTimer dummy
 scoreboard objectives add judyInspire dummy
+scoreboard objectives add jevilScythe dummy
 
 #Timers
 scoreboard objectives add ambience dummy
