@@ -47,6 +47,10 @@ execute if entity @a[tag=partyLeader,tag=!free,tag=!playing,tag=!spectating,tag=
 execute if entity @a[tag=partyLeader,tag=ranMode] run tag @s add ranMode
 execute unless entity @a[tag=partyLeader,tag=ranMode] run tag @s remove ranMode
 
+#MATCH PLAYER TO PARTY LEADER'S VENDING MODE#
+execute if entity @a[tag=partyLeader,tag=vendingMode] run tag @s add vendingMode
+execute if entity @a[tag=partyLeader,tag=!vendingMode] run tag @s remove vendingMode
+
 #REMOVE MAP COUNTDOWN BOSSBAR IF NOT IN MAP SELECT
 execute unless entity @a[scores={lobby=2},tag=partyLeader] run bossbar set minecraft:map_countdown visible false
 
