@@ -5,11 +5,11 @@ execute if entity @s[scores={kit=1000}] run function du-in:kit/saac/constant
 #BLAKE#
 execute if entity @s[scores={kit=1001}] run function du-in:kit/paz/constant
 
-#JERMA#
-execute if entity @s[scores={kit=1002}] run function du-in:kit/jerma/constant
-
 #IMPOSTER#
-execute if entity @s[scores={kit=1003}] run function du-in:kit/impostor/constant
+execute if entity @s[scores={kit=1002}] run function du-in:kit/impostor/constant
+
+#JERMA#
+execute if entity @s[scores={kit=1003}] run function du-in:kit/jerma/constant
 
 #RUNZA REX#
 execute if entity @s[scores={kit=1004}] run function du-in:kit/runza/constant

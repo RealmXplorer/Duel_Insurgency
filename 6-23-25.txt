@@ -202,6 +202,10 @@
 -Minor changes to game shutdown system.
 	-Should stop giving exp when game is forced to simulate end.
 -Kickstarts now run off of advancements.
+-Vending Machine sabotages are now run with tag "sus". ***NEEDS TESTING***
+-Reworked Papyrus ability. ***NEEDS TESTING***
+-Jack Horner's Midas touch now runs through the block display. ***NEEDS TESTING***
+-Increased gamerule commandModificationBlockLimit to 999999999.
 
 *Resourcepack Updates*
 -Added Judy armor texture. (by Nerbski)

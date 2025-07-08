@@ -29,9 +29,6 @@
 #Asgore Trident thrown
 execute as @e[type=trident] run function du-in:kit/asgore/passive/trident
 
-#Death's fire cone
-execute as @e[type=block_display,tag=flame,scores={flameTimer=-99..}] at @s run function du-in:kit/death/ability/timer
-
 #Chicken Jockey
 execute as @e[type=chicken,scores={jockeyTimer=0..}] run function du-in:kit/jack_black/ability/chicken
 
@@ -43,19 +40,22 @@ execute if entity @e[type=salmon,tag=kratosRock] run function du-in:kit/kratos/a
 
 #Neo Chaos#
 execute as @e[type=minecraft:item_display,tag=devilsKnife] at @s run function du-in:kit/jevil/neo_chaos/scythe
-execute as @e[type=minecraft:block_display,scores={jevilTimer=0..}] at @s run function du-in:kit/jevil/neo_chaos/beam
-
-#Kill graves when projectiles are near or when the sand is far from the stand
-    execute as @e[type=falling_block] at @s run function du-in:ingame/entities/falling_block
 
 #Jack Horner midas
-execute as @e[type=!player,tag=gold,scores={goldTimer=1..}] run function du-in:kit/jack_horner/ability/midas/timer
+#execute as @e[type=!player,tag=gold,scores={goldTimer=1..}] run function du-in:kit/jack_horner/ability/midas/timer
 
+##ENTITY TESTS
 #Markers
 execute as @e[type=marker] at @s run function du-in:ingame/entities/markers
 
 #Armor Stands
 execute as @e[type=armor_stand] at @s run function du-in:ingame/entities/armor_stands
+
+#Falling Blocks
+execute as @e[type=falling_block] at @s run function du-in:ingame/entities/falling_block
+
+#Block Displays
+execute as @e[type=block_display] at @s run function du-in:ingame/entities/block_display
 
 #Poison Apples (MUST BE BELOW MARKER FUNCTIONS)
 execute at @e[type=snowball] run summon minecraft:marker ~ ~ ~ {Tags:["poisonApple","mapSpecific"]}
@@ -66,4 +66,4 @@ execute if predicate du-in:ambience/night_end if score #main dayNightSetting mat
 
 
 #Dev Mode end game
-execute if entity @a[scores={thrownBarrier=1..}] if entity @a[tag=devMode,tag=partyLeader] run tag @a add win
+execute if entity @a[tag=devMode,tag=partyLeader] if entity @a[scores={thrownBarrier=1..}] run tag @a add win

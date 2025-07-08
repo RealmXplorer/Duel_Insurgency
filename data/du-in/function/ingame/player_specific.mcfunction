@@ -28,7 +28,7 @@
     execute if entity @s[scores={healthHit=1..}] run function du-in:ingame/regentimer/health_dam
 
 #KILL COMBOS
-execute if entity @s[tag=killCombo] run function du-in:ingame/kill_combo/timer
+    execute if entity @s[tag=killCombo] run function du-in:ingame/kill_combo/timer
 
 #HIT COMBO#
     execute if entity @s[scores={comboBreak=1..}] run function du-in:ingame/kill_combo/reset1
@@ -69,6 +69,7 @@ execute if entity @s[predicate=!du-in:has_armor,predicate=!du-in:effect/is_invis
     execute if entity @s[scores={sprint=150..}] run function du-in:kit/all/step/init
     execute if entity @s[scores={jump=1..}] run function du-in:kit/all/jump/init
 
+#Give Money in Vending Mode
     execute if entity @s[tag=vendingMode] unless entity @s[scores={kit=1000}] run function du-in:ingame/vending_machine/money_check
 
 #Kill and Death functions
@@ -88,7 +89,6 @@ execute if entity @s[predicate=!du-in:has_armor,predicate=!du-in:effect/is_invis
 
 #JACK BLACK Timer#
     execute if entity @s[scores={jockeyTimer=0..}] run function du-in:kit/jack_black/ability/timer
-
 
 #Give hunger for Runza Rex ability
     execute if entity @s[tag=notEaten] run function du-in:kit/runza/ability/the_hunger

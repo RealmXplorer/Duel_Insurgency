@@ -10,6 +10,7 @@
 *Changes*
 -Parkour will now save your progress.
 -Added item to parkour that lets you restart to the beginning.
+-Jerma can now sabotaged Vending Machines.
 
 *Internal Changes*
 -Added "du-in:pogo" enchantment.
@@ -21,6 +22,10 @@
 -Vader's breathing timer now counts down, rather than up.
 -Removed "kit/saac/vending/init" as it was unused.
 -Kickstarts now run off of advancements.
+-Vending Machine sabotages are now run with tag "sus". ***NEEDS TESTING***
+-Reworked Papyrus ability. ***NEEDS TESTING***
+-Jack Horner's Midas touch now runs through the block display. ***NEEDS TESTING***
+-Increased gamerule commandModificationBlockLimit to 999999999.
 
 *Resourcepack Updates*
 -Added Judy armor texture. (by Nerbski)

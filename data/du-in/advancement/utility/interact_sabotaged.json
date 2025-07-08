@@ -16,6 +16,6 @@
       ]
   ],
   "rewards": {
-    "function": "du-in:ingame/vending_machine/sabotaged"
+    "function": "du-in:ingame/vending_machine/sabotaged/interact"
   }
 }
