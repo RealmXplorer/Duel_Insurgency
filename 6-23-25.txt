@@ -33,7 +33,7 @@
 -Decreased Sans's ability coooldown. (150 -> 130)
 -Increased Sans's main weapon damage. (3 -> 3.25)
 -Increased Sauron's speed duration from no-ring ability. (1s -> 3s)
--Sauron now gets Strength from no-speed ability.
+-Sauron now gets Strength from no-ring ability.
 -Soul of Cinder now gets 4 armor points when charging ability.
 -Reduced Puss in Boots's max health. (20 -> 14)
 -Increased Jack Horner's Excalibur damage. (5.25 -> 5.35)
@@ -83,7 +83,7 @@
 -All "item" weapon characters now have a base "attack_knockback" of 0.1.
 	-This helps with starting and maintaining combos.
 -Added chance for Ralsei death sound.
--Parry rework
+-Parry Rework
 	-Parries now block most damage from the hit that initiates it.
 		-You can now visualize the parry window with the armor bar.
 	-Parries now end on death.
@@ -234,7 +234,7 @@
 -Added Desolate Dive texture. (by Realm_Xplorer)
 -Moved "sounds/custom/gaster/spam" to "sounds/custom/spamton/hit".
 -Moved "sounds/custom/gaster/spam2" to "sounds/custom/spamton/hit2".
--Moved "sounds/custom/gaster/laught" to "sounds/custom/spamton/laugh".
+-Moved "sounds/custom/gaster/laugh" to "sounds/custom/spamton/laugh".
 -Added Jevil hit sounds.
 -Added Jevil laugh sounds.
 -Added Jevil voicelines.

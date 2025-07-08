@@ -10,7 +10,7 @@
 *Changes*
 -Parkour will now save your progress.
 -Added item to parkour that lets you restart to the beginning.
--Jerma can now sabotaged Vending Machines.
+-Jerma can now sabotage Vending Machines.
 
 *Internal Changes*
 -Added "du-in:pogo" enchantment.
