@@ -11,7 +11,7 @@ playsound minecraft:entity.evoker.cast_spell master @a
 playsound minecraft:sans.ability master @a ~ ~ ~ .1 1
 
 #Remove ability from hand
-#clear @s minecraft:carrot_on_a_stick
+clear @s #du-in:ability
 #Start cooldown
 xp set @s[tag=!stolen] 230 levels
 

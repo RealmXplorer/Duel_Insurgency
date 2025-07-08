@@ -7,7 +7,7 @@ execute if entity @s[scores={cinderType=2}] run attribute @s minecraft:block_int
 
 scoreboard players set @s classSwapTimer 60
 clear @s #du-in:weapon
-#clear @s carrot_on_a_stick
+clear @s #du-in:ability
 clear @s coal
 clear @s warped_fungus_on_a_stick
 function du-in:kit/cinder/weapon

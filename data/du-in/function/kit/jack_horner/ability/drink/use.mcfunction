@@ -14,7 +14,7 @@ scoreboard players set @s shrunkTimer 100
 
 #tag @s add 
 #Remove ability from hand
-#clear @s minecraft:carrot_on_a_stick
+clear @s #du-in:ability
 tag @s add cooldown
 
 #Start cooldown

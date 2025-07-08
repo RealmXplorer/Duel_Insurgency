@@ -15,7 +15,7 @@ playsound minecraft:entity.ghast.shoot master @a ~ ~ ~ 100 1
 playsound minecraft:sans.ability master @a ~ ~ ~ 100 1
 
 #Reset
-#clear @s minecraft:carrot_on_a_stick
+clear @s #du-in:ability
 xp set @s[tag=!stolen] 380 levels
 
 #End ability

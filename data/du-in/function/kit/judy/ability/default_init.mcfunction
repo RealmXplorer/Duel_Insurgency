@@ -6,7 +6,7 @@ playsound minecraft:sans.ability master @a ~ ~ ~ .25 1
 playsound minecraft:item.crossbow.shoot master @a ~ ~ ~ .25 1.5
 
 #Remove ability from hand
-#clear @s minecraft:carrot_on_a_stick
+clear @s #du-in:ability
 
 #Start cooldown
 xp set @s[tag=!stolen] 370 levels

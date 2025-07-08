@@ -14,7 +14,7 @@ effect give @s fire_resistance 2 0 true
 
 execute as @a[tag=cinderHit] at @s run function du-in:kit/cinder/ability/sword/damage
 
-#clear @s minecraft:carrot_on_a_stick
+clear @s #du-in:ability
 xp set @s[tag=!stolen] 350 levels
 tag @a remove cinderHit
 tag @s add kitDone

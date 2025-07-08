@@ -93,8 +93,6 @@
 -Parkour will now save your progress.
 -Added item to parkour that lets you restart to the beginning.
 -Papyrus's sabotaged ability can now harm teammates.
--Abilities now run through an advancement.
--Ability items are now "coal", instead of carrots on sticks.
 
 *Bug Fixes*
 -Fixed bug where Zombie would not play its intro sounds.

@@ -1,6 +1,6 @@
 tag @n[type=skeleton,tag=gonerThing,distance=0.05..5] add papyrusHit
 function du-in:kit/papyrus/particle
-#clear @s minecraft:carrot_on_a_stick
+clear @s #du-in:ability
 xp set @s[tag=!stolen] 250 levels
 
 

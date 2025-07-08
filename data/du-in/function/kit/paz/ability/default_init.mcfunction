@@ -35,7 +35,7 @@ effect give @s speed 2 0 true
 effect give @s strength 2 0 true
 
 #Remove ability from hand
-#clear @s minecraft:carrot_on_a_stick
+clear @s #du-in:ability
 
 #Start cooldown
 xp set @s[tag=!stolen] 600 levels

@@ -4,7 +4,7 @@ execute if entity @s[tag=void] positioned ~ ~0.5 ~ positioned ^ ^ ^1.5 run funct
 playsound minecraft:sans.ability master @a ~ ~ ~ .25 1
 
 #Remove ability from hand
-#clear @s minecraft:carrot_on_a_stick
+clear @s #du-in:ability
 
 #Start cooldown
 xp set @s[tag=!stolen] 320 levels

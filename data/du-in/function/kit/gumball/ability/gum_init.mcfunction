@@ -6,7 +6,7 @@ playsound minecraft:sans.ability master @a ~ ~ ~ .25 1
 
 tag @s add pursue
 effect give @s minecraft:speed 2 5 true
-#clear @s carrot_on_a_stick
+clear @s #du-in:ability
 xp set @s[tag=!stolen] 380 levels
 scoreboard players set @s[tag=!sabotaged] gumSwapTimer 120
 execute if entity @s[tag=sabotaged] run function du-in:kit/all/ability/sabotage/effects

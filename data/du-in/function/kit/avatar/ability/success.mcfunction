@@ -33,6 +33,6 @@ kill @e[tag=AangDirection]
 
 playsound minecraft:sans.ability master @a ~ ~ ~ .5 1.15
 
-#clear @s minecraft:carrot_on_a_stick
+clear @s #du-in:ability
 xp set @s[tag=!stolen] 20 levels
 tag @s[tag=stolen] add kitDone

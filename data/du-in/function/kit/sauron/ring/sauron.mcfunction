@@ -17,6 +17,6 @@ effect give @s fire_resistance 2 0 true
 execute as @a[tag=sauronHit] at @s run function du-in:kit/sauron/ability/ring_returned
 
 attribute @s minecraft:attack_knockback base set 1
-#clear @s carrot_on_a_stick
+clear @s #du-in:ability
 tag @s add cooldown
 xp set @s 100 levels

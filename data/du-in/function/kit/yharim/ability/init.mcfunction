@@ -17,7 +17,7 @@ playsound minecraft:block.copper_trapdoor.open master @a ~ ~ ~ 100 .5
 playsound minecraft:block.copper_trapdoor.open master @a ~ ~ ~ 100 .75
 playsound minecraft:block.copper_trapdoor.open master @a ~ ~ ~ 100 1
 
-#clear @s minecraft:carrot_on_a_stick
+clear @s #du-in:ability
 #execute if entity @s[tag=stolen] run tag @s add kitDone
 tag @s add cooldown
 tag @s remove kitActions

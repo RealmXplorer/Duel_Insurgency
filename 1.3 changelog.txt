@@ -29,8 +29,6 @@
 -Increased gamerule commandModificationBlockLimit to 999999999.
 -Changed Impostor's kit score to 1002.
 -Changed Jerma's kit score to 1003.
--Abilities now run through an advancement.
--Ability items are now "coal", instead of carrots on sticks.
 
 *Resourcepack Updates*
 -Added Judy armor texture. (by Nerbski)

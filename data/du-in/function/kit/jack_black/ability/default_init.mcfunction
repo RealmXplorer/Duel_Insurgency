@@ -8,6 +8,6 @@ playsound minecraft:jack_black.chicken_jockey master @a ~ ~ ~ 1 1
 execute as @a[tag=chickenJockey] run function du-in:kit/jack_black/ability/chicken_jockey
 
 tag @s remove sabotaged
-#clear @s minecraft:carrot_on_a_stick
+clear @s #du-in:ability
 xp set @s[tag=!stolen] 500 levels
 tag @s remove kitActions

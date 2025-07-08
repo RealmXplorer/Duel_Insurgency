@@ -51,7 +51,7 @@ execute if entity @s[tag=sabotaged] run function du-in:kit/all/ability/sabotage/
 
 
 
-#clear @s minecraft:carrot_on_a_stick
+clear @s #du-in:ability
 xp set @s[tag=!stolen] 360 levels
 particle minecraft:note ~ ~2.25 ~ .01 .5 .01 0.25 3 force @a
 
