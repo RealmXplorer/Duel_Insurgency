@@ -7,7 +7,7 @@ playsound minecraft:block.gravel.hit master @a ~ ~ ~ 1 .5
 playsound minecraft:block.gravel.hit master @a ~ ~ ~ 1 2
 
 #Remove ability from hand
-clear @s minecraft:carrot_on_a_stick
+#clear @s minecraft:carrot_on_a_stick
 #Start cooldown
 xp set @s[tag=!stolen] 500 levels
 

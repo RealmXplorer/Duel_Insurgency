@@ -11,6 +11,7 @@
 -Parkour will now save your progress.
 -Added item to parkour that lets you restart to the beginning.
 -Jerma can now sabotage Vending Machines.
+-Papyrus's sabotaged ability can now harm teammates.
 
 *Internal Changes*
 -Added "du-in:pogo" enchantment.
@@ -23,11 +24,13 @@
 -Removed "kit/saac/vending/init" as it was unused.
 -Kickstarts now run off of advancements.
 -Vending Machine sabotages are now run with tag "sus". ***NEEDS TESTING***
--Reworked Papyrus ability. ***NEEDS TESTING***
--Jack Horner's Midas touch now runs through the block display. ***NEEDS TESTING***
+-Reworked Papyrus ability.
+-Added "du-in:midas" entity type tag.
 -Increased gamerule commandModificationBlockLimit to 999999999.
 -Changed Impostor's kit score to 1002.
 -Changed Jerma's kit score to 1003.
+-Abilities now run through an advancement.
+-Ability items are now "coal", instead of carrots on sticks.
 
 *Resourcepack Updates*
 -Added Judy armor texture. (by Nerbski)

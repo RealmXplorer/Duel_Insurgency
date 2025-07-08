@@ -5,4 +5,4 @@ playsound minecraft:cuphead.super master @a ~ ~ ~ 2 1.25
 effect give @s haste 2 255 true
 effect give @s strength 2 1 true
 xp set @s[tag=!stolen] 200 levels
-clear @s carrot_on_a_stick
+#clear @s carrot_on_a_stick

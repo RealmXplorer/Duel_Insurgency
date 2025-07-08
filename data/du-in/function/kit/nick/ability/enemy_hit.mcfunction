@@ -1,7 +1,9 @@
 #Remove ability
-execute if entity @s[nbt={Inventory:[{id:"minecraft:carrot_on_a_stick"}]}] run function du-in:kit/nick/ability/sabotage/sabotage
+#execute if entity @s[nbt={Inventory:[{id:"minecraft:carrot_on_a_stick"}]}] run function du-in:kit/nick/ability/sabotage/sabotage
+#execute if entity @s[nbt=!{Inventory:[{id:"minecraft:carrot_on_a_stick"}]}] run function du-in:kit/nick/ability/enemy_no_ability
 
-execute if entity @s[nbt=!{Inventory:[{id:"minecraft:carrot_on_a_stick"}]}] run function du-in:kit/nick/ability/enemy_no_ability
+execute if items entity @s inventory.* #du-in:ability run function du-in:kit/nick/ability/sabotage/sabotage
+execute unless items entity @s inventory.* #du-in:ability run function du-in:kit/nick/ability/enemy_no_ability
 
 #Particles and Sounds
 particle minecraft:angry_villager ~ ~1 ~ 0.6 .6 0.6 0 25 force
@@ -31,7 +33,8 @@ scoreboard players remove @s[scores={kit=21,cardPower=6..}] cardPower 5
 execute if entity @s[tag=super,scores={kit=21,cardPower=..24}] run tag @s remove super
 
 execute if entity @s[tag=stolen] run tag @s add kitDone
-clear @s[tag=stolen] carrot_on_a_stick
+#clear @s[tag=stolen] carrot_on_a_stick
+clear @s[tag=stolen] coal
 tellraw @s[tag=!sabotaged] [{text:"You've been hustled!",bold:true,color:red}]
 
 tag @s remove wildeHit

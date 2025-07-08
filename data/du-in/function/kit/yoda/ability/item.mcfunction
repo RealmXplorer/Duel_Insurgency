@@ -1,1 +1,5 @@
-item replace entity @s weapon.offhand with minecraft:carrot_on_a_stick[item_name={text:"Force Absorb",color:gold,bold:true},lore=[{text:"Right click to activate!",color:dark_purple,bold:true},[{text:""}],{text:"Absorb incoming damage ",color:dark_gray},{text:"and projectiles and reflect the damage. ",color:dark_gray}],enchantment_glint_override=true,item_model="du-in:abilities/yoda"]
+# item replace entity @s weapon.offhand with minecraft:carrot_on_a_stick[item_name={text:"Force Absorb",color:gold,bold:true},lore=[{text:"Right click to activate!",color:dark_purple,bold:true},[{text:""}],{text:"Absorb incoming damage ",color:dark_gray},{text:"and projectiles and reflect the damage. ",color:dark_gray}],enchantment_glint_override=true,item_model="du-in:abilities/yoda"]
+
+item replace entity @s weapon.offhand with minecraft:coal[item_name={text:"Force Absorb",color:gold,bold:true},lore=[{text:"Right click to activate!",color:dark_purple,bold:true},[{text:""}],{text:"Absorb incoming damage ",color:dark_gray},{text:"and projectiles and reflect the damage. ",color:dark_gray}],enchantment_glint_override=true,item_model="du-in:abilities/yoda",consumable={consume_seconds:0,animation:"none",sound:"intentionally_empty",has_consume_particles:false}]
+
+#,consumable={consume_seconds:0,animation:"none",sound:"intentionally_empty",has_consume_particles:false}

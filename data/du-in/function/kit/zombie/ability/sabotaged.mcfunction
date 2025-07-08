@@ -1,4 +1,4 @@
-clear @s minecraft:carrot_on_a_stick
+#clear @s minecraft:carrot_on_a_stick
 xp set @s[tag=!stolen] 350 levels
 
 function du-in:kit/all/ability/sabotage/effects

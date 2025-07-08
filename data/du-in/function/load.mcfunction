@@ -229,7 +229,7 @@ scoreboard objectives add thrownFoot minecraft.dropped:minecraft.rabbit_foot
 scoreboard objectives add thrownIronIngot minecraft.dropped:minecraft.iron_ingot
 scoreboard objectives add thrownCookie minecraft.dropped:minecraft.cookie
 scoreboard objectives add thrownCocoa minecraft.dropped:minecraft.cocoa_beans
-#scoreboard objectives add thrownCoal minecraft.dropped:minecraft.coal
+scoreboard objectives add thrownCoal minecraft.dropped:minecraft.coal
 scoreboard objectives add tabbaTalk dummy
 scoreboard objectives add tabbaVendingTalk dummy
 

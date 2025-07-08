@@ -11,6 +11,6 @@ playsound minecraft:block.sculk_shrieker.shriek master @a ~ ~ ~ 1 1
 
 
 #End Ability
-clear @s minecraft:carrot_on_a_stick
+#clear @s minecraft:carrot_on_a_stick
 tag @s add cooldown
 tag @s remove kitActions

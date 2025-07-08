@@ -16,7 +16,6 @@ execute if entity @s[tag=sabotaged] run function du-in:kit/skeleton/ability/sabo
 
 #Clear inventory
 clear @s #du-in:weapon
-clear @s carrot_on_a_stick
 
 #Change armor
 function du-in:kit/all/armor/armor

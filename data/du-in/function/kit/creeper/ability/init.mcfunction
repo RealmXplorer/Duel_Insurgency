@@ -10,6 +10,6 @@ particle minecraft:flame ~ ~1.5 ~ 0.5 1 0.5 0.1 100 force
 playsound minecraft:entity.evoker.cast_spell master @a ~ ~ ~ 100 1
 playsound minecraft:sans.ability master @a ~ ~ ~ .25 1
 
-clear @s minecraft:carrot_on_a_stick
+#clear @s minecraft:carrot_on_a_stick
 tag @s add cooldown
 tag @s remove kitActions

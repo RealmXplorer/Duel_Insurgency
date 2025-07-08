@@ -4,4 +4,4 @@ particle dust_color_transition{from_color:[0.153f,0.890f,0.071f], scale:3.0f, to
 playsound minecraft:block.moss.break master @a ~ ~ ~ 1000 1
 playsound minecraft:block.moss.fall master @a ~ ~ ~ 1000 1
 
-kill @s
+#kill @s

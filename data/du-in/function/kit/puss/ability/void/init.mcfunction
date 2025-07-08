@@ -11,7 +11,7 @@ particle minecraft:crit ~ ~.1 ~ 0.1 1 0.1 0 100 force
 particle minecraft:poof ~ ~.1 ~ 0.1 0.1 0.1 0.05 100 force
 
 #Remove ability from hand
-clear @s minecraft:carrot_on_a_stick
+#clear @s minecraft:carrot_on_a_stick
 
 tag @s remove sabotaged
 tag @s add cooldown

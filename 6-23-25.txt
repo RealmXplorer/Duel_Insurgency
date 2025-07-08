@@ -92,6 +92,9 @@
 -Added select sound for Sauron in kit menu.
 -Parkour will now save your progress.
 -Added item to parkour that lets you restart to the beginning.
+-Papyrus's sabotaged ability can now harm teammates.
+-Abilities now run through an advancement.
+-Ability items are now "coal", instead of carrots on sticks.
 
 *Bug Fixes*
 -Fixed bug where Zombie would not play its intro sounds.
@@ -203,8 +206,8 @@
 	-Should stop giving exp when game is forced to simulate end.
 -Kickstarts now run off of advancements.
 -Vending Machine sabotages are now run with tag "sus". ***NEEDS TESTING***
--Reworked Papyrus ability. ***NEEDS TESTING***
--Jack Horner's Midas touch now runs through the block display. ***NEEDS TESTING***
+-Reworked Papyrus ability.
+-Added "du-in:midas" entity type tag.
 -Increased gamerule commandModificationBlockLimit to 999999999.
 -Changed Impostor's kit score to 1002.
 -Changed Jerma's kit score to 1003.

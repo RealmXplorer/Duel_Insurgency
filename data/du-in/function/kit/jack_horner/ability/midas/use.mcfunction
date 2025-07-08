@@ -1,7 +1,4 @@
-#scoreboard players set @s[tag=midasHand] weapCount 0
 
-#Remove ability from hand
-#clear @s minecraft:carrot_on_a_stick
 #Start cooldown
 xp set @s[tag=!stolen,tag=midasHand] 330 levels
 

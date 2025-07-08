@@ -15,7 +15,7 @@ execute unless entity @s[scores={sansSkin=2}] run item replace entity @s[tag=!st
 execute if entity @s[tag=stolen] run function du-in:kit/villager/ability/effects/sans_head
 
 tag @s add cooldown
-clear @s carrot_on_a_stick
-
+#clear @s carrot_on_a_stick
+#clear @s coal
 # xp set @s[tag=!stolen] 200 levels
 # tag @s add kitDone

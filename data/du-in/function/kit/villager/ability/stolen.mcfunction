@@ -1,5 +1,5 @@
 #Clear emerald
-clear @s minecraft:carrot_on_a_stick
+#clear @s minecraft:carrot_on_a_stick
 
 #Set kit from nearest player
 execute store result score @s kit run scoreboard players get @a[distance=0.05..5,tag=playing,limit=1,sort=nearest] kit

@@ -3,7 +3,8 @@ execute if entity @s[tag=!sabotaged] run function du-in:kit/judy/ability/default
 execute if entity @s[tag=sabotaged] run function du-in:kit/judy/ability/sabotage/init
 
 #Remove ability from hand
-clear @s minecraft:carrot_on_a_stick
+#clear @s minecraft:carrot_on_a_stick
+
 #Start cooldown
 xp set @s[tag=!stolen] 370 levels
 

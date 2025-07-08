@@ -1,6 +1,6 @@
 execute as @e[type=skeleton,tag=gonerThing] run effect give @s slowness 4 1 true
 
-clear @s minecraft:carrot_on_a_stick
+#clear @s minecraft:carrot_on_a_stick
 xp set @s[tag=!stolen] 600 levels
 
 effect clear @s[tag=!sabotaged]

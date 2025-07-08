@@ -8,6 +8,6 @@ playsound minecraft:sans.ability master @a ~ ~ ~ 100 0.95
 effect give @s minecraft:speed 2 2 true
 effect clear @s minecraft:levitation
 
-clear @s minecraft:carrot_on_a_stick
+#clear @s minecraft:carrot_on_a_stick
 xp set @s[tag=!stolen] 320 levels
 execute if entity @s[tag=stolen] run tag @s add kitDone

@@ -28,7 +28,7 @@ tellraw @s[tag=!sabotaged] [{text:"What a healthy breakfast! You feel full!",bol
 scoreboard players set @s[tag=notEaten,tag=!sabotaged] runzaEat 1
 
 #Clear ability and set cooldown#
-clear @s minecraft:carrot_on_a_stick
+#clear @s minecraft:carrot_on_a_stick
 xp set @s[tag=!stolen] 385 levels
 
 #End Ability#

@@ -1,6 +1,6 @@
 execute as @e[type=skeleton,tag=gonerThing] run function du-in:kit/saac/ability/void/effect
 
-clear @s minecraft:carrot_on_a_stick
+#clear @s minecraft:carrot_on_a_stick
 
 xp set @s[tag=!stolen] 600 levels
 tag @s[tag=!sabotaged] remove confusion

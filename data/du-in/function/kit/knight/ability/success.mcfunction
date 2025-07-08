@@ -8,8 +8,9 @@ tag @e[type=armor_stand,tag=desolateTest] remove desolateTest
 
 tag @s add diving
 tag @s add cooldown
+
 #Remove ability from hand
-clear @s minecraft:carrot_on_a_stick
+#clear @s minecraft:carrot_on_a_stick
 
 #End ability
 tag @s remove kitActions

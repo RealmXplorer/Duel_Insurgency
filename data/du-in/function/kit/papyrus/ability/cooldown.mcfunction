@@ -17,7 +17,7 @@ execute as @e[type=marker,tag=papyrusFind,tag=!papyrusStart] at @s run function 
 tag @a[tag=papyrusHit] remove papyrusHit
 
 #End Ability
-clear @s minecraft:carrot_on_a_stick
+#clear @s minecraft:carrot_on_a_stick
 xp set @s[tag=!stolen] 250 levels
 tag @s remove sabotaged
 execute if entity @s[tag=stolen] run tag @s add kitDone

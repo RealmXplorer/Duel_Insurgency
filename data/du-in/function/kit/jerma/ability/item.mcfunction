@@ -1,2 +1,6 @@
 #Ability#
-item replace entity @s weapon.offhand with minecraft:carrot_on_a_stick[item_name=[{text:"«EPIC» ",color:gold,bold:true,"italic":true},{text:"Peep the Horror",color:red,bold:true}],lore=[{text:"Right click to activate!",color:dark_purple,bold:true},[{text:""}],{text:"Someone will die",color:dark_gray},{text:"",color:dark_gray}],enchantment_glint_override=true,item_model="du-in:abilities/horror"]
+# item replace entity @s weapon.offhand with minecraft:carrot_on_a_stick[item_name=[{text:"«EPIC» ",color:gold,bold:true,"italic":true},{text:"Peep the Horror",color:red,bold:true}],lore=[{text:"Right click to activate!",color:dark_purple,bold:true},[{text:""}],{text:"Someone will die",color:dark_gray},{text:"",color:dark_gray}],enchantment_glint_override=true,item_model="du-in:abilities/horror"]
+
+item replace entity @s weapon.offhand with minecraft:coal[item_name=[{text:"«EPIC» ",color:gold,bold:true,"italic":true},{text:"Peep the Horror",color:red,bold:true}],lore=[{text:"Right click to activate!",color:dark_purple,bold:true},[{text:""}],{text:"Someone will die",color:dark_gray},{text:"",color:dark_gray}],enchantment_glint_override=true,item_model="du-in:abilities/horror",consumable={consume_seconds:0,animation:"none",sound:"intentionally_empty",has_consume_particles:false}]
+
+#,consumable={consume_seconds:0,animation:"none",sound:"intentionally_empty",has_consume_particles:false}

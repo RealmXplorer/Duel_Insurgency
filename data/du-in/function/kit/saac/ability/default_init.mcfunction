@@ -3,7 +3,8 @@ tag @s[tag=sabotaged] add confusion
 
 execute if entity @s[tag=sabotaged] run function du-in:kit/all/ability/sabotage/effects
 
-clear @s minecraft:carrot_on_a_stick
+#clear @s minecraft:carrot_on_a_stick
+#clear @s minecraft:coal
 
 xp set @s[tag=!stolen] 600 levels
 tag @s[tag=!sabotaged] remove confusion
