@@ -3,6 +3,8 @@
 *Additions*
 -Added Judy Hopps character.
 -Added Susie character.
+-Added new "Vending Machine" sub-mode.
+    -Allows all characters to get and use kickstarts.
 -Added more stages to Parkour, as well as a proper ending. (by noobsquire)
 
 *Changes*
@@ -18,6 +20,7 @@
 -Renamed "kit/vader/passive/" to "kit/vader/berserk/".
 -Vader's breathing timer now counts down, rather than up.
 -Removed "kit/saac/vending/init" as it was unused.
+-Kickstarts now run off of advancements.
 
 *Resourcepack Updates*
 -Added Judy armor texture. (by Nerbski)

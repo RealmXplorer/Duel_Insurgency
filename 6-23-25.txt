@@ -6,7 +6,8 @@
 -Added Zootopia tab in Kit Select.
 -Added Goner Mouth skin for Gaster.
 	-Can only be selected if you've freed the timelines...
--Added Jevil skin for Sans.
+-Added new "Vending Machine" sub-mode.
+    -Allows all characters to get and use kickstarts.
 -Added more stages to Parkour, as well as a proper ending. (by noobsquire)
 
 *Balancing*
@@ -200,7 +201,8 @@
 -There are now more checks to ensure all players have a "player" score and storage.
 -Minor changes to game shutdown system.
 	-Should stop giving exp when game is forced to simulate end.
-	
+-Kickstarts now run off of advancements.
+
 *Resourcepack Updates*
 -Added Judy armor texture. (by Nerbski)
 -Added Susie armor texture. (by eggpathy)
