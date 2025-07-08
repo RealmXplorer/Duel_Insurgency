@@ -21,4 +21,8 @@ execute if entity @s[scores={classSwapTimer=-1..}] run function du-in:kit/cinder
 #Use ability
 execute if entity @s[tag=secKitActions] run function du-in:kit/cinder/switch/switch
 
-#ODD
+#FASCINATING
+#THE POWER OF LIFE
+#AND DEATH
+#CYCLES OF LIGHT
+#AND DARK
