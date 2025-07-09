@@ -17,29 +17,30 @@ scoreboard players operation #targetY pos -= #playerY pos
 scoreboard players operation #targetZ pos -= #playerZ pos
 
 # summon the susieTest entity
-# execute if entity @s[tag=!redBuster] run summon armor_stand ~ ~1 ~ {Invulnerable:1b,Tags:["susieAbility","susieTest","rudeBuster","unsetTime","mapSpecific"]}
-# execute if entity @s[tag=redBuster] run summon armor_stand ~ ~1 ~ {Invulnerable:1b,Tags:["susieAbility","susieTest","redBuster","unsetTime","mapSpecific"]}
+execute if entity @s[tag=!redBuster] run summon armor_stand ~ ~1 ~ {Invisible:1b,Invulnerable:1b,Tags:["susieAbility","susieTest","rudeBuster","unsetTime","mapSpecific","projectile"],Pose:{RightArm:[268f,0f,0f]},equipment:{mainhand:{id:"minecraft:stick",count:1,components:{"minecraft:item_model":"du-in:other/rude_buster"}}}}
+execute if entity @s[tag=redBuster] run summon armor_stand ~ ~1 ~ {Invisible:1b,Invulnerable:1b,Tags:["susieAbility","susieTest","redBuster","unsetTime","mapSpecific","projectile"],Pose:{RightArm:[268f,0f,0f]},equipment:{mainhand:{id:"minecraft:stick",count:1,components:{"minecraft:item_model":"du-in:other/red_buster"}}}}
 
-execute if entity @s[tag=!redBuster] rotated as @s run summon item_display ~ ~1 ~ {Tags:["susieAbility","rudeBuster","unsetTime","projectile","mapSpecific"],width:30f,height:30f,brightness:{sky:15,block:15},transformation:{left_rotation:[0f,0f,0f,1f],right_rotation:[0f,0f,0f,1f],translation:[0f,0f,0f],scale:[500f,500f,500f]},item:{id:"minecraft:stick",count:1,components:{"minecraft:item_model":"du-in:abilities/rude_buster"}}}
-execute if entity @s[tag=redBuster] rotated as @s run summon item_display ~ ~1 ~ {Tags:["susieAbility","redBuster","unsetTime","projectile","mapSpecific"],width:30f,height:30f,brightness:{sky:15,block:15},transformation:{left_rotation:[0f,0f,0f,1f],right_rotation:[0f,0f,0f,1f],translation:[0f,0f,0f],scale:[5f,5f,5f]},item:{id:"minecraft:stick",count:1,components:{"minecraft:item_model":"du-in:abilities/red_buster"}}}
+execute as @e[type=armor_stand,tag=susieAbility,tag=susieTest] at @s rotated as @a[scores={kit=36},tag=kitActions] run tp @s ~ ~ ~ ~ ~ 
+# execute if entity @s[tag=!redBuster] rotated as @s run summon item_display ~ ~1 ~ {Tags:["susieAbility","susieTest","rudeBuster","unsetTime","projectile","mapSpecific"],width:30f,height:30f,brightness:{sky:15,block:15},transformation:{left_rotation:[0f,-7f,0f,3f],right_rotation:[0f,-7f,0f,3f],translation:[0f,0f,0f],scale:[5f,5f,5f]},item:{id:"minecraft:stick",count:1,components:{"minecraft:item_model":"du-in:abilities/rude_buster"}}}
+# execute if entity @s[tag=redBuster] rotated as @s run summon item_display ~ ~1 ~ {Tags:["susieAbility","susieTest","redBuster","unsetTime","projectile","mapSpecific"],width:30f,height:30f,brightness:{sky:15,block:15},transformation:{left_rotation:[0f,-7f,0f,3f],right_rotation:[0f,0f,-7f,3f],translation:[0f,0f,0f],scale:[5f,5f,5f]},item:{id:"minecraft:stick",count:1,components:{"minecraft:item_model":"du-in:abilities/red_buster"}}}
 
 # apply motion to susieTest
-#execute if entity @s[tag=!redBuster] store result entity @e[type=armor_stand,tag=susieTest,limit=1] Motion[0] double 0.0015 run scoreboard players get #targetX pos
-#execute if entity @s[tag=!redBuster] store result entity @e[type=armor_stand,tag=susieTest,limit=1] Motion[1] double 0.0015 run scoreboard players get #targetY pos
-#execute if entity @s[tag=!redBuster] store result entity @e[type=armor_stand,tag=susieTest,limit=1] Motion[2] double 0.0015 run scoreboard players get #targetZ pos
+execute if entity @s[tag=!redBuster] store result entity @e[type=armor_stand,tag=susieTest,limit=1] Motion[0] double 0.0015 run scoreboard players get #targetX pos
+execute if entity @s[tag=!redBuster] store result entity @e[type=armor_stand,tag=susieTest,limit=1] Motion[1] double 0.0015 run scoreboard players get #targetY pos
+execute if entity @s[tag=!redBuster] store result entity @e[type=armor_stand,tag=susieTest,limit=1] Motion[2] double 0.0015 run scoreboard players get #targetZ pos
 
-execute if entity @s[tag=!redBuster] store result entity @e[type=item_display,tag=susieTest,limit=1] Motion[0] double 0.0015 run scoreboard players get #targetX pos
-execute if entity @s[tag=!redBuster] store result entity @e[type=item_display,tag=susieTest,limit=1] Motion[1] double 0.0015 run scoreboard players get #targetY pos
-execute if entity @s[tag=!redBuster] store result entity @e[type=item_display,tag=susieTest,limit=1] Motion[2] double 0.0015 run scoreboard players get #targetZ pos
+# execute if entity @s[tag=!redBuster] store result entity @e[type=item_display,tag=susieTest,limit=1] Motion[0] double 0.0015 run scoreboard players get #targetX pos
+# execute if entity @s[tag=!redBuster] store result entity @e[type=item_display,tag=susieTest,limit=1] Motion[1] double 0.0015 run scoreboard players get #targetY pos
+# execute if entity @s[tag=!redBuster] store result entity @e[type=item_display,tag=susieTest,limit=1] Motion[2] double 0.0015 run scoreboard players get #targetZ pos
 
 #Red Buster
-# execute if entity @s[tag=redBuster] store result entity @e[type=armor_stand,tag=susieTest,limit=1] Motion[0] double 0.0025 run scoreboard players get #targetX pos
-# execute if entity @s[tag=redBuster] store result entity @e[type=armor_stand,tag=susieTest,limit=1] Motion[1] double 0.0025 run scoreboard players get #targetY pos
-# execute if entity @s[tag=redBuster] store result entity @e[type=armor_stand,tag=susieTest,limit=1] Motion[2] double 0.0025 run scoreboard players get #targetZ pos
+execute if entity @s[tag=redBuster] store result entity @e[type=armor_stand,tag=susieTest,limit=1] Motion[0] double 0.0025 run scoreboard players get #targetX pos
+execute if entity @s[tag=redBuster] store result entity @e[type=armor_stand,tag=susieTest,limit=1] Motion[1] double 0.0025 run scoreboard players get #targetY pos
+execute if entity @s[tag=redBuster] store result entity @e[type=armor_stand,tag=susieTest,limit=1] Motion[2] double 0.0025 run scoreboard players get #targetZ pos
 
-execute if entity @s[tag=redBuster] store result entity @e[type=item_display,tag=susieTest,limit=1] Motion[0] double 0.0025 run scoreboard players get #targetX pos
-execute if entity @s[tag=redBuster] store result entity @e[type=item_display,tag=susieTest,limit=1] Motion[1] double 0.0025 run scoreboard players get #targetY pos
-execute if entity @s[tag=redBuster] store result entity @e[type=item_display,tag=susieTest,limit=1] Motion[2] double 0.0025 run scoreboard players get #targetZ pos
+#execute if entity @s[tag=redBuster] store result entity @e[type=item_display,tag=susieTest,limit=1] Motion[0] double 0.0025 run scoreboard players get #targetX pos
+#execute if entity @s[tag=redBuster] store result entity @e[type=item_display,tag=susieTest,limit=1] Motion[1] double 0.0025 run scoreboard players get #targetY pos
+#execute if entity @s[tag=redBuster] store result entity @e[type=item_display,tag=susieTest,limit=1] Motion[2] double 0.0025 run scoreboard players get #targetZ pos
 
 
 scoreboard players set @e[tag=susieTest,tag=unsetTime] susieTimer 30
@@ -49,14 +50,15 @@ tag @e[tag=susieTest,tag=unsetTime,scores={susieTimer=0..}] remove unsetTime
 # execute store result score @e[type=armor_stand,tag=susieTest,limit=1] team run scoreboard players get @s team
 # execute store result score @e[type=armor_stand,tag=susieTest,limit=1] player run scoreboard players get @s player
 
+execute store result score @e[type=armor_stand,tag=susieTest,limit=1] team run scoreboard players get @s team
+execute store result score @e[type=armor_stand,tag=susieTest,limit=1] player run scoreboard players get @s player
+
 execute store result score @e[type=item_display,tag=susieTest,limit=1] team run scoreboard players get @s team
 execute store result score @e[type=item_display,tag=susieTest,limit=1] player run scoreboard players get @s player
 
 # clean up, ready for the next player
-# effect give @e[type=armor_stand,tag=susieTest] levitation infinite 0 true
-# tag @e[type=armor_stand,tag=susieTest] remove susieTest
-effect give @e[type=item_display,tag=susieTest] levitation infinite 0 true
-tag @e[type=item_display,tag=susieTest] remove susieTest
+effect give @e[type=armor_stand,tag=susieTest] levitation infinite 0 true
+tag @e[tag=susieTest] remove susieTest
 
 kill @e[type=marker,tag=susieDirection]
 
