@@ -1,0 +1,21 @@
+{
+  "criteria": {
+    "w": {
+      "trigger": "minecraft:item_durability_changed",
+      "conditions": {
+        "durability": 0,
+        "item": {
+          "items": "minecraft:shield"
+        }
+      }
+    }
+  },
+  "requirements": [
+    [
+      "w"
+    ]
+  ],
+  "rewards": {
+    "function": "du-in:kit/bogo/shield/break"
+  }
+}

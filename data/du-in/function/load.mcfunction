@@ -41,6 +41,8 @@ scoreboard objectives add susieTimer dummy
 scoreboard objectives add jevilTimer dummy
 scoreboard objectives add judyInspire dummy
 scoreboard objectives add jevilScythe dummy
+scoreboard objectives add bogoShieldTimer dummy
+scoreboard objectives add bogoTimer dummy
 
 #Timers
 scoreboard objectives add ambience dummy

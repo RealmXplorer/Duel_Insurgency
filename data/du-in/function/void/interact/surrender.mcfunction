@@ -61,13 +61,13 @@ execute if entity @s[scores={kit=28},tag=!stolen] run tellraw @s [{text:"You let
 #Yoda
 execute if entity @s[scores={kit=29},tag=!stolen] run tellraw @s [{text:"You let go of your failure...",color:gray,"italic": true}]
 #Skeleton
-execute if entity @s[scores={kit=30},tag=!stolen] run tellraw @s [{text:"You let go of your will...",color:gray,"italic": true}]
+execute if entity @s[scores={kit=30},tag=!stolen] run tellraw @s [{text:"You let go of your form...",color:gray,"italic": true}]
 #Sauron
 execute if entity @s[scores={kit=31},tag=!stolen] run tellraw @s [{text:"You let go...",color:gray,"italic": true}]
 #Aang
 execute if entity @s[scores={kit=32},tag=!stolen] run tellraw @s [{text:"You let go of your guilt...",color:gray,"italic": true}]
 #Kratos
-execute if entity @s[scores={kit=33},tag=!stolen] run tellraw @s [{text:"You let go of your distrust...",color:gray,"italic": true}]
+execute if entity @s[scores={kit=33},tag=!stolen] run tellraw @s [{text:"You let go of your rage...",color:gray,"italic": true}]
 #Soul of Cinder
 execute if entity @s[scores={kit=34},tag=!stolen] run tellraw @s [{text:"You let go of the Dark...",color:gray,"italic": true}]
 #Judy
@@ -78,6 +78,8 @@ execute if entity @s[scores={kit=36},tag=!stolen] run tellraw @s [{text:"You let
 execute if entity @s[scores={kit=37},tag=!stolen] run tellraw @s [{text:"You let go of your Will...",color:gray,"italic": true}]
 #Jevil
 execute if entity @s[scores={kit=38},tag=!stolen] run tellraw @s [{text:"You let go of your need for fun, fun...",color:gray,"italic": true}]
+#Bogo
+execute if entity @s[scores={kit=39},tag=!stolen] run tellraw @s [{text:"You let go of your distrust...",color:gray,"italic": true}]
 
 #Saac
 execute if entity @s[scores={kit=1000}] run tellraw @s [{text:"You let go of your need for quarters...",color:gray,"italic": true}]

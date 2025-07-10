@@ -45,6 +45,10 @@ attribute @s minecraft:armor_toughness modifier remove kratos_ability
 #Damage (sabotage)
 attribute @s minecraft:attack_damage modifier remove kratos_attack_sabotage
 
+##Bogo
+attribute @s movement_speed modifier remove bogo_charge
+attribute @s movement_speed modifier remove bogo_charge_build
+
 ##SAURON
 attribute @s minecraft:movement_speed modifier remove minecraft:speed_corrupt
 attribute @s armor modifier remove armor_corrupt

@@ -165,7 +165,7 @@ execute as @a run function du-in:music/ingame/stop/all
         tag @a remove thrown
 
     #Zombie
-        tag @a remove badBlock
+        tag @a remove airBlock
 
     #Impostor#
         scoreboard players set @a ventCooldown 0
@@ -234,7 +234,8 @@ execute as @a run function du-in:music/ingame/stop/all
         scoreboard players set @a judyInspire 0
         tag @a remove inspireFull
         tag @a remove inspireSabotage
-    
+        tag @a remove judySleep
+        
     #Gumball and Darwin
         tag @a remove darwin
         scoreboard players reset * gumballClassicFake
@@ -243,8 +244,16 @@ execute as @a run function du-in:music/ingame/stop/all
         tag @a remove sabotaged
         tag @a remove empower
 
+    #Bogo#
+        tag @a remove bogoCharge
+        scoreboard players reset @a bogoShieldTimer
+        scoreboard players reset @a bogoTimer
+        
     #Zombie#
         tag @a remove grave
+
+    #Knight
+        tag @a remove diving
 
     #Slime#
         tag @a remove magma
@@ -280,9 +289,6 @@ execute as @a run function du-in:music/ingame/stop/all
         scoreboard players reset @a cinderType
         scoreboard players reset @a cinderMagic
         scoreboard players reset @a cinderTimer
-
-    #Judy
-        tag @a remove judySleep
         
 tag @a remove hasRing
 

@@ -1,10 +1,11 @@
 #If Knight is close to enemy#
 execute if entity @s[tag=!void,tag=!sabotaged] as @a[gamemode=!spectator,distance=0.05..6,tag=!teamDead] run tag @s add diveHit
-execute if entity @s[tag=!sabotaged] as @a[tag=diveHit] if score @s team = @p[scores={kit=37},tag=kitActions] team run tag @s remove diveHit
+execute if entity @s[tag=!sabotaged] as @a[tag=diveHit] if score @s team = @p[scores={kit=37},tag=diving] team run tag @s remove diveHit
+execute if entity @s[tag=!sabotaged] as @a[tag=diveHit] if score @s player = @p[scores={kit=37},tag=diving] player run tag @s remove diveHit
 
 #If sabotaged
 execute if entity @s[tag=sabotaged] as @a[gamemode=!spectator,distance=..6,tag=!teamDead] run tag @s add diveHit
-execute if entity @s[tag=sabotaged] as @a[tag=diveHit] unless score @s team = @p[scores={kit=37},tag=kitActions] team run tag @s remove diveHit
+execute if entity @s[tag=sabotaged] as @a[tag=diveHit] unless score @s team = @p[scores={kit=37},tag=diving] team run tag @s remove diveHit
 
 #If in Void
 execute if entity @s[tag=void] as @e[type=skeleton,tag=gonerThing,distance=0.05..6] run function du-in:kit/knight/ability/damage

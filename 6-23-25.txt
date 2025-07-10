@@ -209,12 +209,16 @@
 -Increased gamerule commandModificationBlockLimit to 999999999.
 -Changed Impostor's kit score to 1002.
 -Changed Jerma's kit score to 1003.
+-Added "minecraft:shield" to "du-in:weapons" tag.
+-Changed "badBlock" tag to "airBlock" to test when abilities should be run on ground.
+-Added "groundBlock" tag to test for if an ability should be run in air.
 
 *Resourcepack Updates*
 -Added Judy armor texture. (by Nerbski)
 -Added Susie armor texture. (by eggpathy)
 -Added (Hollow) Knight texture. (by strawbrysage) 
 -Added Jevil armor texture. (by AdmiralPie)
+-Added Chief Bogo armor texture. (by DarthMason4)
 -Added Judy hurt sound.
 -Added Judy tranq gun texture. (by Realm_Xplorer)
 -Added Undertale battlestart sound.

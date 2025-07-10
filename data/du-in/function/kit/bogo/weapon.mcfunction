@@ -1,0 +1,2 @@
+#Gives the kit their weapon
+item replace entity @s hotbar.0 with shield[custom_name={text:"Riot Shield",color:gray,bold:true,italic:false},max_damage=3,blocks_attacks={item_damage:{threshold:1,base:1,factor:0},block_sound:"item.shield.block",disable_sound:"item.shield.break"},attribute_modifiers=[{id:"attack_damage",type:"attack_damage",amount:5,operation:"add_value",slot:"mainhand"},{id:"attack_speed",type:"attack_speed",amount:-2.65,operation:"add_value",slot:"mainhand"}],base_color="black"] 1

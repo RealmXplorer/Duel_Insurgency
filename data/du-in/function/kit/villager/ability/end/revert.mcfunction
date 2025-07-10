@@ -8,7 +8,7 @@ execute at @s run function du-in:kit/villager/ability/end/revert_kit with storag
 scoreboard players reset @s asrielHitTimer
 
 xp set @s 360 levels
-tag @s remove badBlock
+tag @s remove airBlock
 tag @s remove stolen
 tag @s remove givenStolen
 tag @s remove kitDone
