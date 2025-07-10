@@ -253,3 +253,4 @@
 -Added Ralsei death sound.
 -Added Jevil scythe sound.
 -Increased Kratos hit sound volume.
+-Added Shield Bash texture. (by Realm_Xplorer)

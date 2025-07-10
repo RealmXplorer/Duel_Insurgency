@@ -60,3 +60,4 @@
 -Added Jevil pirouette sound.
 -Added Knight walking sounds.
 -Added Jevil scythe sound.
+-Added Shield Bash texture. (by Realm_Xplorer)
