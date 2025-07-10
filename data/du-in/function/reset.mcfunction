@@ -75,7 +75,6 @@ tag @a remove teamDead
 
 
 scoreboard players reset * killStreak
-scoreboard players reset * killStreakDeaths
 scoreboard players reset #main map
 
 
@@ -228,9 +227,14 @@ execute as @a run function du-in:music/ingame/stop/all
         
     #Ralsei#
         scoreboard players set @a ralseiTP 0
-        scoreboard players set @a TPSounds 0
+        scoreboard players set @a TPSound 0
         tag @a remove maxTP
 
+    #Judy#
+        scoreboard players set @a judyInspire 0
+        tag @a remove inspireFull
+        tag @a remove inspireSabotage
+    
     #Gumball and Darwin
         tag @a remove darwin
         scoreboard players reset * gumballClassicFake
@@ -339,12 +343,11 @@ execute as @a run function du-in:lobby/reset/item
 clear @a
 tag @a remove void
 tag @a remove voidOut
-scoreboard players reset @a killStreakDeaths
 tag @a remove voidReady
 scoreboard players set @a voidReadyOnline 0
 
 
-scoreboard players reset #main gonersCount
+scoreboard players reset #main gonerCount
 scoreboard players set #main leastDeaths 0
 scoreboard players reset @a realDeath
 scoreboard players reset @a gonersKilled

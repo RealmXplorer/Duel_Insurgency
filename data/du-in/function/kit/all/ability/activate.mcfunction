@@ -1,6 +1,9 @@
 #Gives tag "kitActions" when carrot on a stick is rightclicked
 tag @s add kitActions
 
+#Judy Inspire
+execute as @a[scores={kit=35},tag=!inspireFull,gamemode=adventure,tag=playing] run function du-in:kit/judy/inspire_track
+
 ##DATAPACK 6.0
 #Set current player to this player
 execute store result storage du-in:main player.current int 1 run scoreboard players get @s player

@@ -51,7 +51,9 @@ tag @a[tag=!spectating] add playing
 
     #Reset scores for certain kits
     scoreboard players set @a[scores={kit=20}] yharimRage 0
+    scoreboard players set @a[scores={kit=24}] ralseiTP 0
     scoreboard players set @a[scores={kit=33}] kratosRage 0
+    scoreboard players set @a[scores={kit=35}] judyInspire 0
     scoreboard players reset @a[scores={kit=11}] asrielTimer
 
     execute if entity @a[scores={kit=2015}] run tag @a[tag=!legMusicOff,tag=!void,tag=!ctfl,tag=!cql] add saul

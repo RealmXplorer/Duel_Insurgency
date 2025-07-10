@@ -1,9 +1,12 @@
-#Heal Self#
-#effect give @s minecraft:instant_health 1 3 true
-
 #Heal Team#
+effect give @s strength 2 0 true
+effect give @s speed 2 0 true
+
+#Teammate
 execute as @a[distance=0.05..5,tag=playing,gamemode=!spectator,tag=!teamDead] if score @s team = @a[scores={kit=35},tag=inspireFull,tag=secKitActions,limit=1] team run function du-in:kit/judy/inspire/activate
 
+#Enemy
+execute as @a[distance=0.05..5,tag=playing,gamemode=!spectator,tag=!teamDead] unless score @s team = @a[scores={kit=35},tag=inspireFull,tag=secKitActions,limit=1] team run function du-in:kit/judy/inspire/enemy
 
 #Particle#
 #particle minecraft:heart ~ ~1.5 ~ 2 2 2 0 25 force
