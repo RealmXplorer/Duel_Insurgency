@@ -3,6 +3,9 @@
 *Additions*
 -Added Judy Hopps character.
 -Added Susie character.
+-Added Jevil character.
+-Added (Hollow) Knight character.
+-Added Chief Bogo character.
 -Added new "Vending Machine" sub-mode.
     -Allows all characters to get and use kickstarts.
 -Added more stages to Parkour, as well as a proper ending. (by noobsquire)

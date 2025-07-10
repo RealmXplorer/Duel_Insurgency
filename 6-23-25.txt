@@ -3,6 +3,9 @@
 *Additions*
 -Added Judy Hopps character.
 -Added Susie character.
+-Added Jevil character.
+-Added (Hollow) Knight character.
+-Added Chief Bogo character.
 -Added Zootopia tab in Kit Select.
 -Added Goner Mouth skin for Gaster.
 	-Can only be selected if you've freed the timelines...
