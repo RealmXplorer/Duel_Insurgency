@@ -15,7 +15,11 @@
 -Added item to parkour that lets you restart to the beginning.
 -Jerma can now sabotage Vending Machines.
 -Papyrus's sabotaged ability can now harm teammates.
-
+-Some maps' biomes will change depending on if you have a fall or spring holiday theme equipped:
+    -Mt. Ebbot
+    -Saac House
+    -Jermall
+    
 *Internal Changes*
 -Added "du-in:pogo" enchantment.
 -Added "du-in:hopps" enchantment.
@@ -35,6 +39,7 @@
 -Added "minecraft:shield" to "du-in:weapons" tag.
 -Changed "badBlock" tag to "airBlock" to test when abilities should be run on ground.
 -Added "groundBlock" tag to test for if an ability should be run in air.
+-Added du-in:spring biome.
 
 *Resourcepack Updates*
 -Added Judy armor texture. (by Nerbski)

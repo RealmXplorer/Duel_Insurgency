@@ -1,6 +1,7 @@
 scoreboard players set @s[tag=!sabotaged,tag=!empower] bogoTimer 30
 scoreboard players set @s[tag=!sabotaged,tag=empower] bogoTimer 50
 
+playsound minecraft:bogo.snort master @a ~ ~ ~ 1 1 1
 
 #SET TIMER, THEN TELEPORT ENTITY USING BELOW COMMAND
 #TELEPORT ENTITY

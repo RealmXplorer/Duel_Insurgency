@@ -7,6 +7,10 @@ tp @a[scores={spawnpoint=7..}] -1992 39 -1994
 
 function du-in:maps/start/common
 
+execute unless score #main lobbyTheme matches 1.. unless biome -2001 36 -1985 plains run fillbiome -2052 24 -1910 -1962 79 -2021 plains
+execute if score #main lobbyTheme matches 1..2 unless biome -2001 36 -1985 du-in:fall run fillbiome -2052 24 -1910 -1962 79 -2021 du-in:fall
+execute if score #main lobbyTheme matches 4 unless biome -2001 36 -1985 du-in:spring run fillbiome -2052 24 -1910 -1962 79 -2021 du-in:spring
+
 #Saac Spawnpoints#
 summon marker -2001 36 -1985 {Tags:["spawnPoint","team1","mapSpecific"]}
 summon marker -2003 47 -1984 {Tags:["spawnPoint","team1","mapSpecific"]}

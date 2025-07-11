@@ -9,6 +9,10 @@ tp @a[scores={spawnpoint=7..}] -1379 15 864 -80 0
 
 fill -1332 21 850 -1379 21 915 minecraft:iron_block replace minecraft:barrier
 
+execute unless score #main lobbyTheme matches 1.. unless biome -1281 17 944 forest run fillbiome -1333 10 814 -1258 20 980 forest
+execute if score #main lobbyTheme matches 1..2 unless biome -1281 17 944 du-in:fall run fillbiome -1333 10 814 -1258 20 980 du-in:fall
+execute if score #main lobbyTheme matches 4 unless biome -1281 17 944 du-in:spring run fillbiome -1333 10 814 -1258 20 980 du-in:spring
+
 #Run common functions (These must be run before every game)
 function du-in:maps/start/common
 

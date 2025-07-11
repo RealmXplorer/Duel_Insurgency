@@ -5,6 +5,11 @@ tp @a[scores={spawnpoint=3..4}] -2455 2 -2500 47 -1
 tp @a[scores={spawnpoint=5..6}] -2459 8 -2459 101 12
 tp @a[scores={spawnpoint=7..}] -2487 7 -2461 -90 15
 
+#Change season based on lobby theme
+execute unless score #main lobbyTheme matches 1.. unless biome -2487 7 -2461 meadow run fillbiome -2517 -6 -2514 -2432 30 -2443 meadow
+execute if score #main lobbyTheme matches 1..2 unless biome -2487 7 -2461 du-in:fall run fillbiome -2517 -6 -2514 -2432 30 -2443 du-in:fall
+execute if score #main lobbyTheme matches 4 unless biome -2487 7 -2461 du-in:spring run fillbiome -2517 -6 -2514 -2432 30 -2443 du-in:spring
+
 function du-in:maps/start/common
 
 summon marker -2500 1 -2500 {Tags:["spawnPoint","team1","mapSpecific"]}

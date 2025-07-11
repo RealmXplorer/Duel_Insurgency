@@ -96,7 +96,11 @@
 -Parkour will now save your progress.
 -Added item to parkour that lets you restart to the beginning.
 -Papyrus's sabotaged ability can now harm teammates.
-
+-Some maps' biomes will change depending on if you have a fall or spring holiday theme equipped:
+    -Mt. Ebbot
+    -Saac House
+    -Jermall
+	
 *Bug Fixes*
 -Fixed bug where Zombie would not play its intro sounds.
 -Fixed bug where Kratos would make rage charge sound on every hit.
