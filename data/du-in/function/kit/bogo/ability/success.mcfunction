@@ -14,7 +14,6 @@ tag @s add cooldown
 clear @s #du-in:ability
 
 #Particles and sounds
-particle minecraft:note ~ ~2.25 ~ .01 .5 .01 0.25 3 force @a
 playsound minecraft:sans.ability master @a ~ ~ ~ 0.5 1.05
 particle minecraft:crit ~ ~2.25 ~ 0.5 0.5 0.5 0.25 30 force @a
-particle minecraft:infested ~ ~0.5 ~ 0.75 0.5 0.75 0 30
+particle minecraft:smoke ~ ~1 ~ 0.5 0.5 0.5 0 50

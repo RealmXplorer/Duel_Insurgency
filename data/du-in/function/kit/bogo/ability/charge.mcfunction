@@ -5,6 +5,7 @@ execute if entity @s[scores={bogoTimer=..40},tag=empower,tag=!bogoCharge] run fu
 execute if entity @s[scores={bogoTimer=..20},tag=!empower,tag=!bogoCharge] run function du-in:kit/bogo/ability/start_charge
 
 execute if entity @s[tag=bogoCharge] if entity @a[distance=0.5..3,gamemode=adventure,tag=playing] run function du-in:kit/bogo/ability/test_player
+execute if entity @s[tag=bogoCharge] run particle minecraft:block{block_state:"minecraft:dirt"} ~ ~ ~ 0.05 0 0.05 1 10 force
 
 execute if entity @s[tag=sabotaged] run function du-in:kit/bogo/ability/sabotaged
 
