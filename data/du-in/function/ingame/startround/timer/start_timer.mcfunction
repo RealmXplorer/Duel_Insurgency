@@ -74,6 +74,7 @@ tag @a[tag=!spectating] add playing
 
 #Start next title timer
 scoreboard players set #main titleTimer2 80
+execute as @a run attribute @s attack_damage modifier add startgame -100 add_value
 
 #Remove all previous game tags, and start new game stats
 tag @a remove wonGame

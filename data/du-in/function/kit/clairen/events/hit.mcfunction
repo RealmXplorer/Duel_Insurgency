@@ -1,1 +1,1 @@
-execute if entity @s run playsound minecraft:clairen.hit voice @a ~ ~ ~ 2 1 1
+playsound minecraft:clairen.hit voice @a ~ ~ ~ 2 1 1

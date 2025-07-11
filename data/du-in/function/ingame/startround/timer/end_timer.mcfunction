@@ -21,6 +21,8 @@ execute as @a[scores={kit=21}] at @s run playsound minecraft:cuphead.announce.go
 execute at @e[type=armor_stand,tag=vendMachine] run setblock ~ ~1 ~ barrier keep
 execute at @e[type=armor_stand,tag=vendMachine] run setblock ~ ~ ~ light[level=9] keep
 
+execute as @a run attribute @s attack_damage modifier remove startgame
+
 scoreboard players reset #main titleTimer2
 
 execute if entity @a[tag=devMode,tag=partyLeader] run item replace entity @a hotbar.4 with minecraft:barrier[item_name={text:'End Game',bold:true,color:red},lore=[{text:'Throw to activate!',color:dark_purple,bold:true}],enchantment_glint_override=true]

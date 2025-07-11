@@ -1,12 +1,9 @@
 #Run Ability and Secondaries
-    execute if entity @s[scores={kitUse=1..},tag=!win,tag=!lose,tag=!kitMenu,tag=!startgame] run function du-in:kit/all/ability/init
+    execute if entity @s[scores={kitUse=1..},tag=!win,tag=!lose,tag=!kitMenu] run function du-in:kit/all/ability/init
     execute if entity @s[scores={secKitUse=1..},tag=!win,tag=!lose,tag=!kitMenu,tag=!startgame] run function du-in:kit/all/ability/activate_sec
 
     #Ability timer
-    execute if entity @s[level=1..] run function du-in:kit/all/ability/timer
-
-# Stating Game Functions #
-    execute if entity @s[tag=startgame] run function du-in:ingame/start_seq
+    execute if entity @s[level=1..,tag=!teamDead,tag=!win,tag=!lose,tag=!kitMenu,tag=!startgame] run function du-in:kit/all/ability/timer
 
 # If a player is dead in team mode #
     execute if entity @s[tag=teamDead,tag=!void,scores={deathTimer=0..}] run function du-in:ingame/team_death/dead_effects
@@ -69,9 +66,6 @@ execute if entity @s[predicate=!du-in:has_armor,predicate=!du-in:effect/is_invis
     execute if entity @s[scores={sprint=150..}] run function du-in:kit/all/step/init
     execute if entity @s[scores={jump=1..}] run function du-in:kit/all/jump/init
 
-#Give Money in Vending Mode
-    execute if entity @s[tag=vendingMode] unless entity @s[scores={kit=1000}] run function du-in:ingame/vending_machine/money_check
-
 #Kill and Death functions
     execute if entity @s[scores={justdied=1..}] run function du-in:kit/all/death/init
 
@@ -125,3 +119,6 @@ execute if entity @s[predicate=!du-in:has_armor,predicate=!du-in:effect/is_invis
 
 # SPAM CLICK MODE #
     execute if entity @a[tag=partyLeader,tag=spamClick] run attribute @s minecraft:attack_speed base set 100
+
+#Give Money in Vending Mode
+    execute if entity @s[tag=vendingMode] unless entity @s[scores={kit=1000}] run function du-in:ingame/vending_machine/money_check

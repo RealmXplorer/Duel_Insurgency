@@ -11,9 +11,6 @@ execute store result score @s triCount run clear @s gunpowder 0
 #Secondary Ability Use
 execute if entity @s[tag=secKitActions] run function du-in:kit/judy/inspire/init
 
-#TP Counting and Max
-# execute if entity @s[tag=!inspireFull,scores={judyInspire=..120}] run function du-in:kit/judy/inspire_track
-
 #WHILE HER INITIATIVE IS
 #TRULY INSPIRING
 #SHE AND THE FOX

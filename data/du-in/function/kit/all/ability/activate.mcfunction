@@ -2,7 +2,7 @@
 tag @s add kitActions
 
 #Judy Inspire
-execute as @a[scores={kit=35},tag=!inspireFull,gamemode=adventure,tag=playing] run function du-in:kit/judy/inspire_track
+execute as @a[scores={kit=35},tag=!inspireFull,tag=!stolen,gamemode=adventure,tag=playing] run function du-in:kit/judy/inspire_track
 
 ##DATAPACK 6.0
 #Set current player to this player
