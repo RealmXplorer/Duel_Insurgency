@@ -41,6 +41,7 @@ Kit number = character name
 36 = Susie
 37 = The Knight
 38 = Jevil
+39 = Chief Bogo
 
 1000 = Saac
 1001 = PearApplez
