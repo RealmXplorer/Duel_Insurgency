@@ -289,8 +289,10 @@ execute as @a run function du-in:music/ingame/stop/all
         scoreboard players reset @a cinderType
         scoreboard players reset @a cinderMagic
         scoreboard players reset @a cinderTimer
-        
+        tag @a remove cinderUsed
+
 tag @a remove hasRing
+tag @a remove chungusThrowdown
 
 #HOWW???
 tag @a remove projectile

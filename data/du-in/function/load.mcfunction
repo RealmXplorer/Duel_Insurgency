@@ -375,5 +375,12 @@ scoreboard objectives modify Diamonds displayname {text:'Diamonds', bold:true, c
 
 scoreboard objectives modify gumballClassicFake displayname [{text:'Classic Kills ', bold:true, color:gold},{text:'(of ??)', color:gray}]
 
+#Add Spectator Team
+team add Spectators
+team modify Spectators collisionRule never
+team modify Spectators color gray
+team modify Spectators nametagVisibility hideForOtherTeams
+team modify Spectators friendlyFire false
+
 schedule clear du-in:main/scheduled
 schedule function du-in:main/scheduled 1s

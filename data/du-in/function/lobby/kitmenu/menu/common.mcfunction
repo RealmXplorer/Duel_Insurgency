@@ -16,7 +16,7 @@ execute unless items entity @s[scores={kitTheme=0}] inventory.19 minecraft:barri
 execute unless items entity @s[scores={kitTheme=1..}] inventory.19 minecraft:barrier run function du-in:lobby/kitmenu/menu/function/random
 
 #Spectate button
-execute unless items entity @s[scores={kitTheme=1..},tag=!playing] inventory.26 minecraft:barrier run function du-in:lobby/kitmenu/menu/function/spectate
+execute unless items entity @s[scores={kitTheme=0..},tag=!playing] inventory.26 minecraft:barrier run function du-in:lobby/kitmenu/menu/function/spectate
 
 #To legendary
 execute unless items entity @s[scores={kitTheme=1..}] inventory.21 minecraft:carrot_on_a_stick run function du-in:lobby/kitmenu/menu/function/to_legend

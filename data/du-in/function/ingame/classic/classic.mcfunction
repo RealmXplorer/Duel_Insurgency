@@ -30,3 +30,6 @@ execute if score #main map matches 18 run function du-in:maps/ricardo/constant
 
 #First Flame embers
 execute if score #main map matches 19 run particle flame 7432 71 2809 0.2 0.1 0.2 0 1 force
+
+#Ricardo kill zone
+execute if entity @a[tag=specialEvent,tag=partyLeader] as @a[tag=audience] at @s run function du-in:maps/dfc/constant

@@ -95,4 +95,4 @@ title @a title {text:"",color:red,bold:true}
 title @a subtitle {text:"Open inventory for more options!",color:red,bold:true}
 title @a actionbar {text:"Open inventory for more options!",color:red,bold:true}
 function du-in:lobby/scheduled/gamemode_select
-execute at @a run playsound minecraft:entity.ender_dragon.flap master @a ~ ~ ~ 1 1.5
+execute at @a[tag=partyLeader] run playsound minecraft:entity.ender_dragon.flap master @a ~ ~ ~ 1 1.5

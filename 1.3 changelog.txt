@@ -10,6 +10,12 @@
     -Allows all characters to get and use kickstarts.
 -Added more stages to Parkour, as well as a proper ending. (by noobsquire)
 
+*Balancing*
+-Reduced Papyrus's knockback on his bone. (1 -> 0.8)
+	-He gets 0.1 from being a spam character, so it's really 0.1 less than before.
+-Increased how long it takes Ralsei to charge TP. (60 -> 80)
+	-Still better than before the buff (120), but a little slower.
+
 *Changes*
 -Parkour will now save your progress.
 -Added item to parkour that lets you restart to the beginning.
@@ -19,7 +25,10 @@
     -Mt. Ebbot
     -Saac House
     -Jermall
-    
+-You can now pick "Spectate Game" in Legendary tab.
+-Renamed "Mystery Kit" to be "Random Kit", and changed name color from blue to green in kit menu.
+-Renamed "Mystery Legendary Kit" to be "Random Legendary Kit", and changed name color from blue to gold in kit menu.
+
 *Internal Changes*
 -Added "du-in:pogo" enchantment.
 -Added "du-in:hopps" enchantment.
@@ -40,6 +49,9 @@
 -Changed "badBlock" tag to "airBlock" to test when abilities should be run on ground.
 -Added "groundBlock" tag to test for if an ability should be run in air.
 -Added du-in:spring biome.
+
+*Bug Fixes*
+-Fixed bug where map select was really loud on going back to gamemode select with many people.
 
 *Resourcepack Updates*
 -Added Judy armor texture. (by Nerbski)

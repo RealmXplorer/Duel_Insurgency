@@ -1,5 +1,7 @@
 tellraw @a ["",{text:"The ",bold:false,color:gray},{text:"DFC ",bold:true,color:yellow},{text:"map has been chosen!",bold:false,color:gray}]
 
+time set 14000
+
 tp @a[tag=!audience,scores={spawnpoint=0..2}] -4293 16 -2293 135 0
 tp @a[tag=!audience,scores={spawnpoint=3..4}] -4303 16 -2293 -135 0
 tp @a[tag=!audience,scores={spawnpoint=5..6}] -4303 16 -2303 -45 0
@@ -17,6 +19,10 @@ summon marker -4293 16 -2293 {Tags:["spawnPoint","team1","mapSpecific"]}
 summon marker -4303 16 -2293 {Tags:["spawnPoint","team1","mapSpecific"]}
 summon marker -4303 16 -2303 {Tags:["spawnPoint","team2","mapSpecific"]}
 summon marker -4293 16 -2303 {Tags:["spawnPoint","team2","mapSpecific"]}
+
+#Vending Machine
+summon interaction -4317 23 -2322 {Tags:["vending","stable","mapSpecific"],width:1.15f,height:2.1f,response:1b}
+summon armor_stand -4317 23 -2322 {Rotation:[-90F,0F],Tags:["vendMachine","mapSpecific"],NoGravity:1b,Silent:1b,Invulnerable:1b,Invisible:1b,NoBasePlate:1b,DisabledSlots:4144959,equipment:{head:{id:"minecraft:spruce_sapling",count:1,components:{"minecraft:item_model":"du-in:other/vending_machine"}}}}
 
 #Default Vents#
 # execute if entity @a[tag=sus] run summon marker -2762 6 -5984 {Tags:["vent","mapSpecific"]}

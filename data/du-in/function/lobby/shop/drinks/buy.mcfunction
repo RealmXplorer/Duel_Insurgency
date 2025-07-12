@@ -1,6 +1,7 @@
-scoreboard players remove @s Diamonds 5
+scoreboard players remove @s[tag=!audience] Diamonds 5
 execute store result score @s drinkType run random value 1..7
-function du-in:skins/skin_menu/actions/purchase_sound
+execute unless entity @s[tag=audience] run function du-in:skins/skin_menu/actions/purchase_sound
+execute if entity @s[tag=audience] run playsound minecraft:soundeffect.vending player @a ~ ~ ~ 1 1 1
 
 #Food#
 ##TEST

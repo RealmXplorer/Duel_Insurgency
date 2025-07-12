@@ -5,9 +5,9 @@ execute if score Red capturePoints >= #main cqGoal if entity @a[tag=team1,tag=!c
 #Start end of round music
 tag @a[tag=song] add songEnd
 execute as @a[tag=song,tag=songEnd] run function du-in:music/ingame/stop/transition
-scoreboard players set @a[tag=song,tag=songEnd] music 0
-function du-in:music/ingame/conquest
+#scoreboard players set @a[tag=song,tag=songEnd] music 0
 tag @a[tag=songEnd] remove song
+function du-in:music/ingame/conquest
 
 #Change bossbar colors
 execute if score Blue capturePoints >= #main cqGoal run bossbar set conquest:blue color red

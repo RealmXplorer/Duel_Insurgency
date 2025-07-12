@@ -8,3 +8,5 @@ execute if entity @s[tag=!stolen] run function du-in:kit/all/win/find_kit with s
 
 #Run villager function if stolen.
 execute if entity @s[tag=stolen] run function du-in:kit/villager/events/win
+
+execute if entity @a[tag=partyLeader,tag=specialEvent] run playsound minecraft:soundeffect.bell master @a ~ ~ ~ 1 1
