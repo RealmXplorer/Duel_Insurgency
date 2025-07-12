@@ -1,11 +1,11 @@
 #Set number of kits to be displayed
-execute if entity @s[tag=kitsListed] run scoreboard players set @s kitList 9
+#execute if entity @s[tag=kitsListed] run scoreboard players set @s kitList 9
 #execute if entity @s[tag=kitsListed] run scoreboard players set @s kitList 10
-#execute if entity @s[tag=kitsListed] run scoreboard players set @s kitList 11
+execute if entity @s[tag=kitsListed] run scoreboard players set @s kitList 11
 
 #Display Kits
-# execute unless items entity @s inventory.12 minecraft:player_head run function du-in:lobby/kitmenu/menu/undertale/jevil
-# execute unless items entity @s inventory.11 minecraft:player_head run function du-in:lobby/kitmenu/menu/undertale/susie
+execute unless items entity @s inventory.12 minecraft:player_head run function du-in:lobby/kitmenu/menu/undertale/jevil
+execute unless items entity @s inventory.11 minecraft:player_head run function du-in:lobby/kitmenu/menu/undertale/susie
 execute unless items entity @s inventory.10 minecraft:player_head run function du-in:lobby/kitmenu/menu/undertale/ralsei
 
 execute unless items entity @s inventory.8 minecraft:player_head run function du-in:lobby/kitmenu/menu/undertale/chara
