@@ -9,6 +9,3 @@ attribute @s knockback_resistance base set 0
 
 #Jump Height
 attribute @s minecraft:jump_strength base set 0.47
-
-#Max Health
-attribute @s minecraft:max_health base set 14

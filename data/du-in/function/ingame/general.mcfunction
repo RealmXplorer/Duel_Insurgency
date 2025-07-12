@@ -67,3 +67,6 @@ execute if predicate du-in:ambience/night_end if score #main dayNightSetting mat
 
 #Dev Mode end game
 execute if entity @a[tag=devMode,tag=partyLeader] if entity @a[scores={thrownBarrier=1..}] run tag @a add win
+
+#KIT MUSIC#
+execute if entity @a[scores={kit=2015..},tag=!startgame] as @a at @s unless entity @s[tag=legMusicOff] run function du-in:music/ingame/easter_egg

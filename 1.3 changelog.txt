@@ -11,10 +11,13 @@
 -Added more stages to Parkour, as well as a proper ending. (by noobsquire)
 
 *Balancing*
+-All characters that are smaller than default now have 14 health.
 -Reduced Papyrus's knockback on his bone. (1 -> 0.8)
 	-He gets 0.1 from being a spam character, so it's really 0.1 less than before.
 -Increased how long it takes Ralsei to charge TP. (60 -> 80)
 	-Still better than before the buff (120), but a little slower.
+-Increased Puss in Boots' sword damage. (3.75 -> 3.85)
+-Increased Puss in Boots' knockback sword damage. (3.25 -> 3.35)
 
 *Changes*
 -Parkour will now save your progress.
@@ -28,6 +31,7 @@
 -You can now pick "Spectate Game" in Legendary tab.
 -Renamed "Mystery Kit" to be "Random Kit", and changed name color from blue to green in kit menu.
 -Renamed "Mystery Legendary Kit" to be "Random Legendary Kit", and changed name color from blue to gold in kit menu.
+-Increased how many particles are created by Soul of Cinder's ability.
 
 *Internal Changes*
 -Added "du-in:pogo" enchantment.
@@ -52,6 +56,7 @@
 
 *Bug Fixes*
 -Fixed bug where map select was really loud on going back to gamemode select with many people.
+-Fixed bug where Big Chungus and Saul music would stack if there were multiple of them.
 
 *Resourcepack Updates*
 -Added Judy armor texture. (by Nerbski)

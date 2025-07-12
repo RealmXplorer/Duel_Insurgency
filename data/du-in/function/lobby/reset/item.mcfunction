@@ -12,4 +12,5 @@ tag @s remove givenLegendTo
 tag @s remove givenHideSkins
 tag @s remove givenDefault
 tag @s remove givenRandom
+tag @s remove givenVending
 tag @s remove givenTimed
