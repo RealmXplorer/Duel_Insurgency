@@ -59,6 +59,7 @@
 -Added (Hollow) Knight texture. (by strawbrysage) 
 -Added Jevil armor texture. (by AdmiralPie)
 -Added Chief Bogo armor texture. (by DarthMason4)
+-Added Roxanne Wolf armor texture. (unknown author)
 -Added Judy hurt sound.
 -Added Judy tranq gun texture. (by Realm_Xplorer)
 -Added Susie voice sound.
@@ -78,3 +79,5 @@
 -Added Knight walking sounds.
 -Added Jevil scythe sound.
 -Added Shield Bash texture. (by Realm_Xplorer)
+-Added Security Breach jumpscare sound.
+-Added Security Breach DLC jumpscare sound.
