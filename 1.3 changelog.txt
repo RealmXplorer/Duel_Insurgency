@@ -6,6 +6,7 @@
 -Added Jevil character.
 -Added (Hollow) Knight character.
 -Added Chief Bogo character.
+-Added Roxanne Wolf skin for Springtrap.
 -Added new "Vending Machine" sub-mode.
     -Allows all characters to get and use kickstarts.
 -Added more stages to Parkour, as well as a proper ending. (by noobsquire)
