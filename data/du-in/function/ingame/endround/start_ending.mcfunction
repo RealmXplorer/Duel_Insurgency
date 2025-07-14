@@ -19,7 +19,7 @@ tag @a[tag=springLock] add kitActions
 scoreboard players reset @a[scores={kit=4}] creeperTimer
 
 #Set all losers to spectator
-gamemode spectator @a[tag=lose]
+gamemode spectator @a[tag=lose,tag=!audience]
 
 #Remove all music tags and stop music
 tag @a remove songEnd

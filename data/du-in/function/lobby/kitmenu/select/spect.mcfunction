@@ -21,7 +21,7 @@ team join Ready @s
 #Mark as spectator
 #tag @s[tag=!playing] add spect
 tag @s[tag=!playing] add spectating
-execute if entity @a[tag=partyLeader,tag=specialEvent] run tag @s[tag=!playing] add audience
+#execute if entity @a[tag=partyLeader,tag=specialEvent] run tag @s[tag=!playing] add audience
 
 #Clear item if thrown item.
 execute if entity @s[scores={thrownBarrier=1..}] run function du-in:other/clear_ground_items

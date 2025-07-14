@@ -61,7 +61,6 @@ scoreboard players reset * trident
 
 #DELAY 2#
 scoreboard players reset * kitUse
-scoreboard players reset * kitTimer
 scoreboard players reset #main redPoints
 scoreboard players reset #main bluePoints
 
@@ -106,8 +105,6 @@ tag @a remove team2
 
 tag @a remove spectating
 tag @a remove killstreak3
-#tag @a remove spect
-tag @a remove audience
 scoreboard players reset * healthHit
 scoreboard players reset * healthTimer
 tag @a remove countStop
@@ -344,9 +341,9 @@ scoreboard players reset @a ambience
 #WINEND#
 
 #END ROUND#
-title @a[tag=partyLeader,tag=!timeFree] title {text:'', color:red, bold:true}
-title @a[tag=partyLeader,tag=!timeFree] subtitle {text:'Open inventory for more options!', color:red, bold:true}
-title @a[tag=partyLeader,tag=!timeFree] actionbar {text:'Open inventory for more options!', color:red, bold:true}
+title @a[tag=partyLeader,tag=!timeFree,tag=!specialEvent] title {text:'', color:red, bold:true}
+title @a[tag=partyLeader,tag=!timeFree,tag=!specialEvent] subtitle {text:'Open inventory for more options!', color:red, bold:true}
+title @a[tag=partyLeader,tag=!timeFree,tag=!specialEvent] actionbar {text:'Open inventory for more options!', color:red, bold:true}
 execute as @a run function du-in:lobby/reset/item
 clear @a
 tag @a remove void
@@ -374,4 +371,4 @@ tag @a remove boneAttack
 effect clear @a
 stopsound @a ambient
 execute if score #main pylonsDestroyed matches 3.. run function du-in:void/lobby_amb
-function du-in:lobby/scheduled/gamemode_select
+execute unless entity @a[tag=partyLeader,tag=specialEvent] run function du-in:lobby/scheduled/gamemode_select

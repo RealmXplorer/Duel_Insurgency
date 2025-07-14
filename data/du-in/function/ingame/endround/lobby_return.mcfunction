@@ -21,6 +21,8 @@ kill @e[type=text_display,tag=gamemodeLabel]
 summon text_display -983 16 517 {billboard:"center",Tags:["gamemodeLabel"],}
 function du-in:lobby/theme/default/text
 
+tag @a remove audience
+tag @a remove specialEvent
 tag @a remove win
 tag @a remove tie
 tag @a remove lose

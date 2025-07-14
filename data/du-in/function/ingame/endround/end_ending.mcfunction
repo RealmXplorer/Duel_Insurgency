@@ -9,3 +9,4 @@ kill @e[type=!player,tag=mapSpecific]
 
 execute unless score #main pylonsDestroyed matches 4.. run function du-in:ingame/endround/lobby_return
 execute if score #main pylonsDestroyed matches 4.. run function du-in:void/free/start
+execute unless entity @a[tag=partyLeader,tag=specialEvent] run function du-in:maps/dfc/end_round

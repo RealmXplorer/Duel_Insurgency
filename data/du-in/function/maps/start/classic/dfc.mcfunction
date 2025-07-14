@@ -7,10 +7,10 @@ tp @a[tag=!audience,scores={spawnpoint=3..4}] -4303 16 -2293 -135 0
 tp @a[tag=!audience,scores={spawnpoint=5..6}] -4303 16 -2303 -45 0
 tp @a[tag=!audience,scores={spawnpoint=7..}] -4293 16 -2303 45 0
 
-tp @a[tag=audience,scores={spawnpoint=0..2}] -4279 23 -2317 45 0
-tp @a[tag=audience,scores={spawnpoint=3..4}] -4279 23 -2279 135 0
-tp @a[tag=audience,scores={spawnpoint=5..6}] -4317 23 -2279 -135 0
-tp @a[tag=audience,scores={spawnpoint=7..}] -4317 23 -2317 -45 0
+# tp @a[tag=audience,scores={spawnpoint=0..2}] -4279 23 -2317 45 0
+# tp @a[tag=audience,scores={spawnpoint=3..4}] -4279 23 -2279 135 0
+# tp @a[tag=audience,scores={spawnpoint=5..6}] -4317 23 -2279 -135 0
+# tp @a[tag=audience,scores={spawnpoint=7..}] -4317 23 -2317 -45 0
 
 function du-in:maps/start/common
 

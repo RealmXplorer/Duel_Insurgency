@@ -204,6 +204,9 @@ scoreboard objectives add winStreak dummy
 scoreboard objectives add inRing dummy
 scoreboard objectives add ringTally dummy
 
+scoreboard objectives add dfcQueue dummy
+scoreboard objectives add dfcMax dummy
+
 #Lobby objectives
 scoreboard objectives add ambienceToggle dummy
 scoreboard objectives add conqScale dummy
@@ -381,6 +384,18 @@ team modify Spectators collisionRule never
 team modify Spectators color gray
 team modify Spectators nametagVisibility hideForOtherTeams
 team modify Spectators friendlyFire false
+
+#Add Ready Team
+team add Ready
+team modify Ready color green
+team modify Ready friendlyFire false
+team modify Ready collisionRule never
+
+#Add Lobby Team
+team add lobby
+team modify lobby color yellow
+team modify lobby friendlyFire false
+team modify lobby collisionRule never
 
 schedule clear du-in:main/scheduled
 schedule function du-in:main/scheduled 1s
