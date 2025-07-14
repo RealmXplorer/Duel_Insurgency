@@ -11,8 +11,11 @@ function du-in:maps/start/common
 #Spawnpoints#
 summon marker -3726 56 1226 {Tags:["spawnPoint","team1","mapSpecific"]}
 summon marker -3752 57 1239 {Tags:["spawnPoint","team1","mapSpecific"]}
+summon marker -3715 62 1245 {Tags:["spawnPoint","team1","mapSpecific"]}
 summon marker -3752 62 1293 {Tags:["spawnPoint","team2","mapSpecific"]}
 summon marker -3722 58 1292 {Tags:["spawnPoint","team2","mapSpecific"]}
+summon marker -3778 55 1261 {Tags:["spawnPoint","team2","mapSpecific"]}
+
 
 #Vending Machines#
 summon interaction -3732 59 1274 {Tags:["vending","stable","mapSpecific"],width:1.15f,height:2.1f,response:1b}
