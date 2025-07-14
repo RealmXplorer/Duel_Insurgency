@@ -47,6 +47,11 @@ summon minecraft:item 236 92 32 {NoGravity:1b,Age:-32768,Health:99999,PickupDela
 execute if entity @a[tag=lgLock,tag=partyLeader] run summon marker 236 92 32 {Tags:["displayItem","voidLocked"]}
 summon marker 234 91 32 {Tags:["mapVote","displayItem","vote9"]} 
 
+#City of Tears
+summon minecraft:item 236 92 34 {NoGravity:1b,Age:-32768,Health:99999,PickupDelay:32767,Tags:["mapLabel","displayItem"],Item:{id:"minecraft:reinforced_deepslate",count:1},CustomNameVisible:1b,CustomName:{text:"City of Tears",color:"dark_blue",bold:true}}
+execute if entity @a[tag=ctLock,tag=partyLeader] run summon marker 236 92 34 {Tags:["displayItem","voidLocked"]}
+summon marker 234 91 34 {Tags:["mapVote","displayItem","vote10"]} 
+
 #Random
 summon minecraft:item 232 92 37 {NoGravity:1b,Age:-32768,Health:99999,PickupDelay:32767,Tags:["mapLabel","displayItem"],Item:{id:"minecraft:lapis_lazuli",count:1,components:{"minecraft:item_model":"du-in:lobby/mystery"}},CustomNameVisible:1b,CustomName:{text:"Random Map",color:"blue",bold:true}}
 summon marker 232 91 36 {Tags:["mapVote","displayItem","voteRand"]} 

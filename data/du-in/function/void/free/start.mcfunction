@@ -23,6 +23,7 @@ tag @a remove mcLock
 tag @a remove zigLock
 tag @a remove nethLock
 tag @a remove moraLock
+tag @a remove ctLock
 tag @a remove duneLock
 tag @a remove bowlLock
 

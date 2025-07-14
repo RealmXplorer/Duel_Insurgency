@@ -15,4 +15,4 @@ execute if entity @s[tag=secKitActions] run function du-in:kit/jevil/neo_chaos/i
 execute if entity @s[scores={jevilScythe=0..}] run function du-in:kit/jevil/neo_chaos/summon
 
 #TP Counting and Max
-execute if entity @s[tag=!startgame,tag=!maxTP,scores={ralseiTP=..120}] run function du-in:kit/jevil/tp_track
+execute if entity @s[tag=!startgame,tag=!maxTP,scores={ralseiTP=..100}] run function du-in:kit/jevil/tp_track

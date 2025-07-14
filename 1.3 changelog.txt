@@ -6,6 +6,7 @@
 -Added Jevil character.
 -Added (Hollow) Knight character.
 -Added Chief Bogo character.
+-Added City of Tears map for King of the Hill.
 -Added new "Vending Machine" sub-mode.
     -Allows all characters to get and use kickstarts.
 -Added more stages to Parkour, as well as a proper ending. (by noobsquire)
@@ -57,6 +58,7 @@
 *Bug Fixes*
 -Fixed bug where map select was really loud on going back to gamemode select with many people.
 -Fixed bug where Big Chungus and Saul music would stack if there were multiple of them.
+-Fixed bug where Lake Lao Gai map could not be chosen in KoTH random.
 
 *Resourcepack Updates*
 -Added Judy armor texture. (by Nerbski)
@@ -86,3 +88,5 @@
 -Added Shield Bash texture. (by Realm_Xplorer)
 -Added Security Breach jumpscare sound.
 -Added Security Breach DLC jumpscare sound.
+-Added Roxy's Keytar texture. (by Realm_Xplorer)
+-Added Burntrap and Burnlock textures. (by Realm_Xplorer and Nerbski)

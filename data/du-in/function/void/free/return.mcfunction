@@ -31,6 +31,7 @@ tag @a remove escLock
 tag @a remove chancelLock
 tag @a remove endLock
 tag @a remove pazLock
+tag @a remove ctLock
 
 
 schedule clear du-in:music/free/free

@@ -17,7 +17,7 @@ execute store result score @s triCount run clear @s gunpowder 0
 execute if entity @s[tag=secKitActions] run function du-in:kit/susie/will_change/init
 
 #TP Counting and Max
-execute if entity @s[tag=!startgame,tag=!maxTP,scores={ralseiTP=..120}] run function du-in:kit/susie/tp_track
+execute if entity @s[tag=!startgame,tag=!maxTP,scores={ralseiTP=..100}] run function du-in:kit/susie/tp_track
 
 #ONE OF THE THREE
 #HER MIGHT IS

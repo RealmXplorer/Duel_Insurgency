@@ -7,3 +7,4 @@ execute if score #main map matches 6 run function du-in:maps/start/koth/dunes
 execute if score #main map matches 7 run function du-in:maps/start/koth/paz_pool
 execute if score #main map matches 8 run function du-in:maps/start/koth/chancel
 execute if score #main map matches 9 run function du-in:maps/start/koth/lao_gai
+execute if score #main map matches 10 run function du-in:maps/start/koth/city_of_tears

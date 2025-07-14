@@ -76,6 +76,7 @@ tag @a[scores={lastVoidLock=6},tag=kothMap,tag=!timeFree] add duneLock
 tag @a[scores={lastVoidLock=7},tag=kothMap,tag=!timeFree] add pazLock
 tag @a[scores={lastVoidLock=8},tag=kothMap,tag=!timeFree] add chancelLock
 tag @a[scores={lastVoidLock=9},tag=kothMap,tag=!timeFree] add lgLock
+tag @a[scores={lastVoidLock=10},tag=kothMap,tag=!timeFree] add ctLock
 
 execute as @a[tag=playing] unless score #main pylonsDestroyed matches 4 run function du-in:void/end/dream
 execute as @a[tag=playing] if score #main pylonsDestroyed matches 4 run function du-in:void/end/vision
