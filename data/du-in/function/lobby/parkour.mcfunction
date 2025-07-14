@@ -17,6 +17,8 @@ execute positioned 641 -27 -103 if entity @s[y=-26,dy=0,distance=..5] run functi
 
 #checkpoint 2
 execute if entity @s[x=641,y=3,z=-103,dx=0,dy=6,dz=-1] unless entity @s[scores={checkpoint=2..}] run scoreboard players set @s checkpoint 2
+execute if entity @s[x=620,y=-28,z=-75,dx=60,dy=1,dz=-13] run tp @s 636 -26 -75 -90 0
+execute if entity @s[x=602,y=-31,z=-143,dx=78,dy=1,dz=67] run tp @s 633 -23 -104 90 0
 
 #Lava Checkpoint
 execute if entity @s[x=636,y=-23,z=-103,dx=-6,dy=4,dz=-4] unless entity @s[scores={checkpoint=3..}] run scoreboard players set @s checkpoint 3
