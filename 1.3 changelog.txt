@@ -36,6 +36,8 @@
 -Increased how many particles are created by Soul of Cinder's ability.
 -Yoda now has lightsaber sounds.
 -Added two new spawnpoints to San Ricardo map for Classic.
+-Altered the Void's spawning to not spawn enemies on top of you.
+-Insurgents team no longer has player collision.
 -Added Rupp to Credits.
 
 *Internal Changes*
