@@ -37,6 +37,7 @@
 -Yoda now has lightsaber sounds.
 -Added two new spawnpoints to San Ricardo map for Classic.
 -Altered the Void's spawning to not spawn enemies on top of you.
+-There is now a 3 second delay between entering the void and goners spawning.
 -Added Rupp to Credits.
 
 *Internal Changes*

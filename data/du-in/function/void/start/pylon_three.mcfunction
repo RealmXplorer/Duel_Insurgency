@@ -7,4 +7,5 @@ scoreboard players set #main pylonFireList 0
 schedule function du-in:void/hazard/fire/pick_pylon 10s
 tellraw @a [{text:"The Third Pylon ",bold:true,color:dark_purple},{text:"hums ominously...",color:light_purple}]
 
-scoreboard players set #gonerMax gonerCount 4
+scoreboard players set #gonerMax gonerCount 0
+schedule function du-in:void/spawn/wave/start3 3s
