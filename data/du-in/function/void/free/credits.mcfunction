@@ -15,8 +15,8 @@ title @s[scores={creditsTimer=300}] times 60 120 60
 title @s[scores={creditsTimer=300}] title {text:"Maps",bold:true,color:gold}
 title @s[scores={creditsTimer=300}] subtitle {text:"Draerschresch, nerbski_, Ronnie",bold:false,color:blue}
 title @s[scores={creditsTimer=360}] subtitle {text:"Ronnie, KingJoe1483, PearApplez",bold:false,color:blue}
-title @s[scores={creditsTimer=420}] subtitle {text:"ActuallyAnNoob, IGsNas, Infinity2437",bold:false,color:blue}
-title @s[scores={creditsTimer=480}] subtitle {text:"saac_, Realm_Xplorer",bold:false,color:blue}
+title @s[scores={creditsTimer=420}] subtitle {text:"noobsquire, IGsNas, Infinity2437",bold:false,color:blue}
+title @s[scores={creditsTimer=480}] subtitle {text:"saac_, Realm_Xplorer, SkoteLuvr",bold:false,color:blue}
 
 #Music
 title @s[scores={creditsTimer=540}] times 60 20 60
@@ -48,35 +48,41 @@ title @s[scores={creditsTimer=1280}] subtitle {text:"eggpathy, strawbrysage, ner
 title @s[scores={creditsTimer=1340}] subtitle {text:"AdmiralPie, DarthMason4",bold:false,color:blue}
 
 #AdmiralPie
+
+#Announcer
+title @s[scores={creditsTimer=1420}] times 60 60 60
+title @s[scores={creditsTimer=1420}] title {text:"Announcer",bold:true,color:gold}
+title @s[scores={creditsTimer=1420}] subtitle {text:"SkoteLuvr",bold:false,color:blue}
+
 #Thank you
-title @s[scores={creditsTimer=1420}] times 60 60 100
-title @s[scores={creditsTimer=1420}] title {text:"Thank you",bold:true,color:gold}
-title @s[scores={creditsTimer=1420}] subtitle {text:"for playing!",bold:false,color:blue}
+title @s[scores={creditsTimer=1600}] times 60 60 100
+title @s[scores={creditsTimer=1600}] title {text:"Thank you",bold:true,color:gold}
+title @s[scores={creditsTimer=1600}] subtitle {text:"for playing!",bold:false,color:blue}
 
 #Easter Egg
-title @s[tag=lobby,tag=beatenGame,scores={creditsTimer=1740}] times 60 20 60
-title @s[tag=lobby,tag=beatenGame,scores={creditsTimer=1740}] title {text:"",bold:true,color:gold}
-title @s[tag=lobby,tag=beatenGame,scores={creditsTimer=1740}] subtitle {text:"I SEE",bold:false,color:gray}
+title @s[tag=lobby,tag=beatenGame,scores={creditsTimer=1820}] times 60 20 60
+title @s[tag=lobby,tag=beatenGame,scores={creditsTimer=1820}] title {text:"",bold:true,color:gold}
+title @s[tag=lobby,tag=beatenGame,scores={creditsTimer=1820}] subtitle {text:"I SEE",bold:false,color:gray}
 
-title @s[tag=lobby,tag=beatenGame,scores={creditsTimer=1880}] times 60 20 60
-title @s[tag=lobby,tag=beatenGame,scores={creditsTimer=1880}] title {text:"",bold:true,color:gold}
-title @s[tag=lobby,tag=beatenGame,scores={creditsTimer=1880}] subtitle {text:"YOUR CURIOSITY",bold:false,color:gray}
+title @s[tag=lobby,tag=beatenGame,scores={creditsTimer=2100}] times 60 20 60
+title @s[tag=lobby,tag=beatenGame,scores={creditsTimer=2100}] title {text:"",bold:true,color:gold}
+title @s[tag=lobby,tag=beatenGame,scores={creditsTimer=2100}] subtitle {text:"YOUR CURIOSITY",bold:false,color:gray}
 
-title @s[tag=lobby,tag=beatenGame,scores={creditsTimer=2020}] times 60 20 60
-title @s[tag=lobby,tag=beatenGame,scores={creditsTimer=2020}] title {text:"",bold:true,color:gold}
-title @s[tag=lobby,tag=beatenGame,scores={creditsTimer=2020}] subtitle {text:"MY EXPERIMENT",bold:false,color:gray}
+title @s[tag=lobby,tag=beatenGame,scores={creditsTimer=2240}] times 60 20 60
+title @s[tag=lobby,tag=beatenGame,scores={creditsTimer=2240}] title {text:"",bold:true,color:gold}
+title @s[tag=lobby,tag=beatenGame,scores={creditsTimer=2240}] subtitle {text:"MY EXPERIMENT",bold:false,color:gray}
 
-title @s[tag=lobby,tag=beatenGame,scores={creditsTimer=2160}] times 60 20 60
-title @s[tag=lobby,tag=beatenGame,scores={creditsTimer=2160}] title {text:"",bold:true,color:gold}
-title @s[tag=lobby,tag=beatenGame,scores={creditsTimer=2160}] subtitle {text:"HOW INTERESTING",bold:false,color:gray}
+title @s[tag=lobby,tag=beatenGame,scores={creditsTimer=2380}] times 60 20 60
+title @s[tag=lobby,tag=beatenGame,scores={creditsTimer=2380}] title {text:"",bold:true,color:gold}
+title @s[tag=lobby,tag=beatenGame,scores={creditsTimer=2380}] subtitle {text:"HOW INTERESTING",bold:false,color:gray}
 
-title @s[tag=lobby,tag=beatenGame,scores={creditsTimer=2300}] times 60 20 60
-title @s[tag=lobby,tag=beatenGame,scores={creditsTimer=2300}] title {text:"",bold:true,color:gold}
-title @s[tag=lobby,tag=beatenGame,scores={creditsTimer=2300}] subtitle {text:"VERY WELL",bold:false,color:gray}
+title @s[tag=lobby,tag=beatenGame,scores={creditsTimer=2520}] times 60 20 60
+title @s[tag=lobby,tag=beatenGame,scores={creditsTimer=2520}] title {text:"",bold:true,color:gold}
+title @s[tag=lobby,tag=beatenGame,scores={creditsTimer=2520}] subtitle {text:"VERY WELL",bold:false,color:gray}
 
-title @s[tag=lobby,tag=beatenGame,scores={creditsTimer=2440}] times 60 20 60
-title @s[tag=lobby,tag=beatenGame,scores={creditsTimer=2440}] title {text:"",bold:true,color:gold}
-title @s[tag=lobby,tag=beatenGame,scores={creditsTimer=2440}] subtitle {text:"THE EXPERIMENTS WILL CONTINUE",bold:false,color:gray}
+title @s[tag=lobby,tag=beatenGame,scores={creditsTimer=2660}] times 60 20 60
+title @s[tag=lobby,tag=beatenGame,scores={creditsTimer=2660}] title {text:"",bold:true,color:gold}
+title @s[tag=lobby,tag=beatenGame,scores={creditsTimer=2660}] subtitle {text:"THE EXPERIMENTS WILL CONTINUE",bold:false,color:gray}
 
 #EVEN NOW
 #YOUR CURIOSITY 
