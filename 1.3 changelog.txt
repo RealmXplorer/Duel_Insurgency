@@ -34,6 +34,7 @@
 -Renamed "Mystery Kit" to be "Random Kit", and changed name color from blue to green in kit menu.
 -Renamed "Mystery Legendary Kit" to be "Random Legendary Kit", and changed name color from blue to gold in kit menu.
 -Increased how many particles are created by Soul of Cinder's ability.
+-Yoda now has lightsaber sounds.
 -Added two new spawnpoints to San Ricardo map for Classic.
 -Added Rupp to Credits.
 
