@@ -31,7 +31,7 @@
           "small_particle": {
             "type": "minecraft:gust_emitter_small"
           },
-          "sound": "minecraft:entity.rabbit.death"
+          "sound": "minecraft:entity.rabbit.jump"
         },
         "enchanted": "attacker",
         "requirements": {

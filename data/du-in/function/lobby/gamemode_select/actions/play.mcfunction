@@ -10,4 +10,4 @@ execute if score #main online matches ..1 run playsound minecraft:block.note_blo
 execute if score #main online matches ..1 run playsound minecraft:block.note_block.didgeridoo master @a ~ ~ ~ 2 0.5 1
 bossbar set minecraft:map_countdown players @a
 
-scoreboard players reset @s play
+#scoreboard players reset @s play

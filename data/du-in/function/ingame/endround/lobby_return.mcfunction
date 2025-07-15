@@ -13,6 +13,12 @@ execute as @a run function du-in:music/lobby/stop/lobby
 scoreboard players set @a music 0
 
 
+# execute if entity @a[tag=partyLeader,tag=specialEvent] run tp @a -4279 23 -2317
+# execute if entity @a[tag=partyLeader,tag=specialEvent] run spawnpoint @a -4279 23 -2317
+
+
+# execute unless entity @a[tag=partyLeader,tag=specialEvent] run function du-in:ingame/endround/default_return
+
 tp @a -999 13 517 -90 0
 spawnpoint @a -999 13 517
 
@@ -21,8 +27,7 @@ kill @e[type=text_display,tag=gamemodeLabel]
 summon text_display -983 16 517 {billboard:"center",Tags:["gamemodeLabel"],}
 function du-in:lobby/theme/default/text
 
-tag @a remove audience
-tag @a remove specialEvent
+#End Function
 tag @a remove win
 tag @a remove tie
 tag @a remove lose

@@ -163,6 +163,7 @@ execute as @a run function du-in:music/ingame/stop/all
 
     #Zombie
         tag @a remove airBlock
+        tag @a remove groundBlock
 
     #Impostor#
         scoreboard players set @a ventCooldown 0
@@ -289,6 +290,8 @@ execute as @a run function du-in:music/ingame/stop/all
         tag @a remove cinderUsed
 
 tag @a remove hasRing
+tag @a remove sauronHit
+tag @a remove wildeHit
 tag @a remove chungusThrowdown
 
 #HOWW???
@@ -371,4 +374,5 @@ tag @a remove boneAttack
 effect clear @a
 stopsound @a ambient
 execute if score #main pylonsDestroyed matches 3.. run function du-in:void/lobby_amb
-execute unless entity @a[tag=partyLeader,tag=specialEvent] run function du-in:lobby/scheduled/gamemode_select
+#execute unless entity @a[tag=partyLeader,tag=specialEvent] run function du-in:lobby/scheduled/gamemode_select
+function du-in:lobby/scheduled/gamemode_select

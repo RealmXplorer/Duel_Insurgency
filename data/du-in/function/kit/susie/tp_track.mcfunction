@@ -3,4 +3,4 @@ execute if entity @s[tag=!void] if entity @a[distance=0.05..3,gamemode=!spectato
 execute if entity @s[tag=void] if entity @e[type=skeleton,distance=0.05..3,tag=gonerThing] run function du-in:kit/susie/tp/count
 
 #Max TP
-execute if entity @s[scores={ralseiTP=100..}] run function du-in:kit/susie/tp/max
+execute if entity @s[scores={ralseiTP=120..}] run function du-in:kit/susie/tp/max

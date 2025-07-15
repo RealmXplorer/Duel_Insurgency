@@ -9,6 +9,8 @@ playsound minecraft:anakin.voice master @s ~ ~ ~ 100 1
 #Announce kit pick
 tellraw @s [{text:"Selected the ",bold:true,color:gray},{text:"Anakin ",bold:true,color:gold},{text:"class! ",bold:true,color:gray},{text:"(Click here for kit info!)",bold:false,color:white,"underlined":true,"click_event":{"action":"run_command","command":"/trigger info add 1"}}]
 
+execute if entity @a[tag=partyLeader,tag=specialEvent] run tellraw @a [{selector:"@s",bold:true},{text:" has picked the ",bold:true,color:gray},{text:"Anakin ",bold:true,color:gold},{text:"class! ",bold:true,color:gray}]
+
 #Set kit score to match kit
 scoreboard players set @s kit 22
 $data modify storage du-in:player$(current) kit set value {"kit":"ani"}

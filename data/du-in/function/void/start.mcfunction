@@ -53,7 +53,7 @@ scoreboard players set @a heartBeat 0
 function du-in:void/whisper
 
 scoreboard players set Insurgents playerCount 0
-execute as @a[gamemode=!spectator] run scoreboard players add Insurgents playerCount 1
+execute as @a[gamemode=!spectator,tag=!specating] run scoreboard players add Insurgents playerCount 1
 scoreboard players set @a[gamemode=!spectator] Lives 1
 
 execute unless score #main pylonsDestroyed matches 2.. run function du-in:music/void/suffocation

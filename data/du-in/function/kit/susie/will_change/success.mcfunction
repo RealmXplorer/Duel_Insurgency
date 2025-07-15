@@ -1,6 +1,6 @@
 #Heal Self#
 tag @s add redBuster
-function du-in:kit/susie/ability/item
+#function du-in:kit/susie/ability/item
 
 #Particle#
 playsound minecraft:sans.ability master @a ~ ~ ~ 100 0.9

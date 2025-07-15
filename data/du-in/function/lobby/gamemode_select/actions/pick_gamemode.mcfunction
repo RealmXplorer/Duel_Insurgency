@@ -57,7 +57,9 @@ execute as @a run function du-in:lobby/shop/drinks/drink_milk
 scoreboard players set @a music 0
 
 
-execute unless entity @a[tag=partyLeader,tag=specialEvent] run tp @a[tag=!spectator] 232 91 36 180 0
+#execute unless entity @a[tag=partyLeader,tag=specialEvent] run tp @a[tag=!spectator] 232 91 36 180 0
+tp @a[tag=!spectator] 232 91 36 180 0
+
 execute as @a run function du-in:music/lobby/stop/kitselect
 bossbar set minecraft:kit_countdown visible false
 scoreboard players set #main kitOnline 0
@@ -70,11 +72,17 @@ clear @a
 bossbar set minecraft:map_countdown visible true
 
 #Add 1 to DFC queue if Special Event
-execute if entity @a[tag=partyLeader,tag=specialEvent] run scoreboard players add #main dfcQueue 1
-execute if entity @a[tag=partyLeader,tag=specialEvent] as @a run function du-in:maps/dfc/lobby_setup
+# execute if entity @a[tag=partyLeader,tag=specialEvent] run scoreboard players add #main dfcQueue 1
+# execute if entity @a[tag=partyLeader,tag=specialEvent] as @a run function du-in:maps/dfc/lobby_setup
 
 playsound minecraft:entity.ender_dragon.flap master @a ~ ~ ~ 0.5 1.5
-execute unless entity @a[tag=partyLeader,tag=specialEvent] as @a run function du-in:lobby/kitmenu/init
+#execute unless entity @a[tag=partyLeader,tag=specialEvent] as @a run function du-in:lobby/kitmenu/init
+
+#Changes
+#execute as @a run function du-in:lobby/kitmenu/init
+scoreboard players set @a kitTheme 1
+scoreboard players set @a kitList 8
+tag @a add kitMenu
 
 title @a times 0 60 0
 title @a title {text:"",color:red,bold:true}

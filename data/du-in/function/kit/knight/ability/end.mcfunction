@@ -1,5 +1,5 @@
 #Start cooldown
-xp set @s[tag=!stolen] 320 levels
+xp set @s[tag=!stolen] 340 levels
 
 tag @s remove cooldown
 tag @s remove diving

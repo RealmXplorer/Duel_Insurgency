@@ -8,7 +8,8 @@ execute if entity @s[tag=audience] run playsound minecraft:soundeffect.vending p
 execute if entity @s[scores={drinkType=1}] run give @s stone_sword[item_model="du-in:weapons/popsicle",food={nutrition:4,saturation:0.1,can_always_eat:true},consumable={consume_seconds:1.6},item_name={text:"Pawpsicle",color:"#FF0A6C",bold:true},unbreakable={}]
 
 #Drink
-execute if entity @s[scores={drinkType=2}] run give @s potion[custom_name={text:"The Big Boy",color:"#148AFF",bold:true,italic:false},custom_data={du-in:'bigBoy'},potion_contents={custom_color:2058751}] 1
+execute if entity @s[tag=audience,scores={drinkType=2}] run give @s potion[custom_name={text:"Skrunk Special",color:"#A80D9E",bold:true,italic:false},custom_data={du-in:'skrunkSpecial'},potion_contents={custom_color:16718251}] 1
+execute if entity @s[scores={drinkType=2},tag=!audience] run give @s potion[custom_name={text:"The Big Boy",color:"#148AFF",bold:true,italic:false},custom_data={du-in:'bigBoy'},potion_contents={custom_color:2058751}] 1
 execute if entity @s[scores={drinkType=3}] run give @s potion[custom_name={text:"Witch's Brew",color:"#A70FFF",bold:true,italic:false},custom_data={du-in:'witchesBrew'},potion_contents={custom_color:11364095}] 1
 execute if entity @s[scores={drinkType=4}] run give @s potion[custom_name={text:"Skrunk Special",color:"#A80D9E",bold:true,italic:false},custom_data={du-in:'skrunkSpecial'},potion_contents={custom_color:16718251}] 1
 execute if entity @s[scores={drinkType=5}] run give @s potion[custom_name={text:"The Rock and Stone",color:"#089DA8",bold:true,italic:false},custom_data={du-in:'rockAndStone'},potion_contents={custom_color:853332}] 1

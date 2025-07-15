@@ -10,7 +10,14 @@ scoreboard players set @s tabbaTalk 0
 scoreboard players set @s tabbaVendingTalk 0
 
 #Teleport to gamemode select
+#This function returns players to Gamemode select from credits
+#execute unless entity @a[tag=partyLeader,tag=specialEvent] run tp @s -999 13 517 -90 0
+
 tp @s -999 13 517 -90 0
+
+#If in special event
+#execute if entity @a[tag=partyLeader,tag=specialEvent] run tp @s -4279 23 -2317
+
 
 #Stop shop music and start new music
 function du-in:music/lobby/stop/shop

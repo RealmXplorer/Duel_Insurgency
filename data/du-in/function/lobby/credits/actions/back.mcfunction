@@ -1,5 +1,10 @@
 #This function returns players to Gamemode select from credits
+#execute unless entity @a[tag=partyLeader,tag=specialEvent] run tp @s -999 13 517 -90 0
 tp @s -999 13 517 -90 0
+
+#If in special event
+#execute if entity @a[tag=partyLeader,tag=specialEvent] run tp @s -4279 23 -2317
+
 #stopsound @s record minecraft:music.credits
 stopsound @s record minecraft:music.free
 stopsound @s record minecraft:music.credits
