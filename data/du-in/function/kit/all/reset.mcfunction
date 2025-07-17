@@ -35,7 +35,7 @@ scoreboard players set @s saacMoneyCheck 0
 scoreboard players set @s saacMoney 0
 scoreboard players set @s saacMoneyDollar 0
 scoreboard players set @s ventCooldown 0
-scoreboard players reset @s asrielHitLand
+scoreboard players reset @s asrielCharge
 scoreboard players reset @s saacDisTimer
 scoreboard players reset @s floweyHitTimer
 scoreboard players set @s saacCarry 0

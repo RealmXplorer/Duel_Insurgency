@@ -28,7 +28,7 @@
 
   "rewards": {
 
-      "function": "du-in:void/goner/hurt_goner"
+      "function": "du-in:kit/all/damage/player/init"
 
   }
 

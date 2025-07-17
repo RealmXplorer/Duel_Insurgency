@@ -59,7 +59,13 @@
 -Added "minecraft:shield" to "du-in:weapons" tag.
 -Changed "badBlock" tag to "airBlock" to test when abilities should be run on ground.
 -Added "groundBlock" tag to test for if an ability should be run in air.
--Added du-in:spring biome.
+-Added "du-in:spring" biome.
+-Merged "ingame/regentimer/health_dam" into respective functions.
+-Merged "ingame/kill_combo/reset1" into "kit/all/hit/init" funcntion.
+-Removed "comboBreak" and "healthHit" scoreboard objectives as they are now run through "hit" objective.
+-Removed "void/goner/hurt_goner" as it now just runs "kit/all/damage/player/init".
+-"asrielTimer" objective is now "dummy" instead of "play_time".
+-Merged regenTimer functions.
 
 *Bug Fixes*
 -Fixed bug where map select was really loud on going back to gamemode select with many people.

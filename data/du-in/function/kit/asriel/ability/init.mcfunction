@@ -1,6 +1,6 @@
 scoreboard players set @s[tag=!empower] asrielHitTimer 15
 scoreboard players set @s[tag=empower] asrielHitTimer 30
-scoreboard players set @s asrielTimer 5
+scoreboard players set @s asrielTimer 1
 
 execute if entity @s[tag=sabotaged] run function du-in:kit/all/ability/sabotage/effects
 

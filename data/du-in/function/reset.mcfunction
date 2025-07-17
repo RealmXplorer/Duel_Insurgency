@@ -140,7 +140,7 @@ execute as @a run function du-in:music/ingame/stop/all
         scoreboard players reset @a floweyHitTimer
 
     #Asriel#
-        scoreboard players reset @a asrielHitLand
+        scoreboard players reset @a asrielCharge
         scoreboard players reset @a asrielTimer
         tag @a remove asrielSaber
         tag @a remove asrielCharge

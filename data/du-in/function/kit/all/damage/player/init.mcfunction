@@ -1,4 +1,5 @@
 advancement revoke @s only du-in:utility/hit_player
+advancement revoke @s only du-in:void/gonerhit
 
 #Combos Count
 scoreboard players set @s comboHitTimer 0
@@ -15,7 +16,12 @@ execute if entity @s[tag=stolen] run function du-in:kit/villager/damage/player
 execute if entity @s[scores={comboScore=3..},tag=playing] run function du-in:ingame/hit_combo/init
 
 #Regen Timer reset
-function du-in:ingame/regentimer/health_dam
+scoreboard players reset @s healthTimer
+scoreboard players set @s regenTimer 0
+
+#Cancel Void start
+execute if entity @s[tag=voidReady] run function du-in:void/interact/reaffirm
+
 
 #Vending Mode money
 execute if entity @s[tag=vendingMode,predicate=du-in:chance/forty_chance] unless entity @s[scores={kit=1000..1002}] run function du-in:kit/saac/money/init

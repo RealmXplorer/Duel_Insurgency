@@ -46,7 +46,7 @@ scoreboard objectives add bogoTimer dummy
 
 #Timers
 scoreboard objectives add ambience dummy
-scoreboard objectives add asrielTimer minecraft.custom:play_time
+scoreboard objectives add asrielTimer dummy
 scoreboard objectives add asrielHitTimer dummy
 scoreboard objectives add asrielSaberTimer dummy
 scoreboard objectives add breatheTimer dummy
@@ -277,11 +277,12 @@ scoreboard objectives add expCap dummy
 
 scoreboard objectives add jump minecraft.custom:minecraft.jump
 #scoreboard objectives add comboBreak minecraft.custom:minecraft.damage_taken
-scoreboard objectives add asrielHitLand minecraft.custom:minecraft.damage_dealt
+#scoreboard objectives add asrielHitLand minecraft.custom:minecraft.damage_dealt
+scoreboard objectives add asrielCharge dummy
 scoreboard objectives add crossbowShoot minecraft.used:crossbow
 scoreboard objectives add diedIngame minecraft.custom:deaths
 scoreboard objectives add Deaths minecraft.custom:deaths
-scoreboard objectives add healthHit minecraft.custom:minecraft.damage_taken
+#scoreboard objectives add healthHit minecraft.custom:minecraft.damage_taken
 scoreboard objectives add healthTimer minecraft.custom:play_time
 scoreboard objectives add Health health
 scoreboard objectives add hit minecraft.custom:minecraft.damage_taken
