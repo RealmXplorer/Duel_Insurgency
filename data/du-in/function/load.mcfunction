@@ -276,7 +276,7 @@ scoreboard objectives add exp dummy
 scoreboard objectives add expCap dummy
 
 scoreboard objectives add jump minecraft.custom:minecraft.jump
-scoreboard objectives add comboBreak minecraft.custom:minecraft.damage_taken
+#scoreboard objectives add comboBreak minecraft.custom:minecraft.damage_taken
 scoreboard objectives add asrielHitLand minecraft.custom:minecraft.damage_dealt
 scoreboard objectives add crossbowShoot minecraft.used:crossbow
 scoreboard objectives add diedIngame minecraft.custom:deaths

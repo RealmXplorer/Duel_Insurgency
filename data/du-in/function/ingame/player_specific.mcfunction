@@ -22,13 +22,13 @@
     execute if entity @s[scores={regenTimer=100..}] run function du-in:ingame/regentimer/timer
 
     #Reset health timer if player is hit or deals damage
-    execute if entity @s[scores={healthHit=1..}] run function du-in:ingame/regentimer/health_dam
+    #execute if entity @s[scores={healthHit=1..}] run function du-in:ingame/regentimer/health_dam
 
 #KILL COMBOS
     execute if entity @s[tag=killCombo] run function du-in:ingame/kill_combo/timer
 
 #HIT COMBO#
-    execute if entity @s[scores={comboBreak=1..}] run function du-in:ingame/kill_combo/reset1
+    #execute if entity @s[scores={comboBreak=1..}] run function du-in:ingame/kill_combo/reset1
     execute if entity @s[scores={comboHitTimer=10..,comboScore=1..}] run function du-in:ingame/kill_combo/expire
 
 #Give armor if player is missing any#
