@@ -9,4 +9,4 @@ execute store result storage du-in:main player.current int 1 run scoreboard play
 #Find player
 execute at @s run function du-in:kit/all/random/set with storage du-in:main player
 
-tag @s remove randomLeg
+#tag @s remove randomLeg

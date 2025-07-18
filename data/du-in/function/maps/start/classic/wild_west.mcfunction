@@ -5,7 +5,7 @@ tp @a[scores={spawnpoint=3..4}] -4163 20 79
 tp @a[scores={spawnpoint=5..6}] -4142 20 78
 tp @a[scores={spawnpoint=7..}] -4134 20 143
 
-function du-in:maps/start/common
+function du-in:ingame/startround/timer/start_timer
 
 #Wild West Spawnpoints#
 summon marker -4136 21 97 {Tags:["spawnPoint","team1","mapSpecific"]}

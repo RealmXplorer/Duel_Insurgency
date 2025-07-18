@@ -1,6 +1,9 @@
 #Random kit mode clears
 execute unless entity @s[tag=grave] run function du-in:kit/all/reset
-tag @s[tag=!grave] add random
+#tag @s[tag=!grave] add random
+       
+execute if entity @s[tag=!grave] run function du-in:kit/all/random/roll
+      
 clear @s
 clear @s minecraft:emerald
 attribute @s armor base set 0

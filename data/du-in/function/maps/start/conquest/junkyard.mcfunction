@@ -4,7 +4,7 @@ tellraw @a ["",{text:"The ",bold:false,color:gray},{text:"Junkyard ",bold:true,c
 tp @a[scores={team=1}] -1614 34 455 -90 0
 tp @a[scores={team=2}] -1602 30 396 0 0
 
-function du-in:maps/start/common
+function du-in:ingame/startround/timer/start_timer
 
 #Spawnpoints#
 summon marker -1614 34 455 {Tags:["spawnPoint","team1","mapSpecific"]}

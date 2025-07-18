@@ -14,7 +14,7 @@ execute if score #main lobbyTheme matches 1..2 unless biome -1281 17 944 du-in:f
 execute if score #main lobbyTheme matches 4 unless biome -1281 17 944 du-in:spring run fillbiome -1333 10 814 -1258 20 980 du-in:spring
 
 #Run common functions (These must be run before every game)
-function du-in:maps/start/common
+function du-in:ingame/startround/timer/start_timer
 
 #Set Spawnpoints#
 summon marker -1333 15 851 {Tags:["spawnPoint","team1","mapSpecific"]}

@@ -14,3 +14,6 @@ scoreboard players set @s regenTimer 0
 
 #Cancel void lock
 execute if entity @s[tag=voidReady] run function du-in:void/interact/reaffirm
+
+#Start parry if taken damage
+execute if entity @s[predicate=du-in:is_sneaking,scores={parryCooldown=..5},predicate=!du-in:effect/is_on_fire,predicate=!du-in:effect/is_poisoned,predicate=!du-in:effect/is_withered,tag=!gasterInvisible] unless entity @s[scores={floweyHitTimer=0..}] run function du-in:kit/all/parry/init

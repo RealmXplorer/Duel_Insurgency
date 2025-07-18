@@ -3,7 +3,7 @@ tellraw @a ["",{text:"The ",bold:false,color:gray},{text:"End ",bold:true,color:
 tp @a[scores={spawnpoint=0..4}] -387 16 246 -145 0
 tp @a[scores={spawnpoint=5..}] -345 16 201 45 0
 
-function du-in:maps/start/common
+function du-in:ingame/startround/timer/start_timer
 
 #Spawnpoints
 summon marker -387 16 246 {Tags:["spawnPoint","team1","mapSpecific"]}

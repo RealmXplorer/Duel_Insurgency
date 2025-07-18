@@ -12,7 +12,8 @@
     #Execute as All players
         execute as @a at @s run function du-in:main/player_specific
 
-    execute if entity @a[tag=free] run function du-in:void/free/general
+    #If Free
+        execute if entity @a[tag=free] run function du-in:void/free/general
 
 # CONSTANTLY RUNNING FUNCTIONS #
 

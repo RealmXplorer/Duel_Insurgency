@@ -24,4 +24,4 @@ execute if entity @s[tag=voidReady] run function du-in:void/interact/reaffirm
 
 
 #Vending Mode money
-execute if entity @s[tag=vendingMode,predicate=du-in:chance/forty_chance] unless entity @s[scores={kit=1000..1002}] run function du-in:kit/saac/money/init
+execute if entity @s[tag=vendingMode,tag=!sus,predicate=du-in:chance/forty_chance] unless entity @s[scores={kit=1000..1001}] run function du-in:kit/saac/money/init

@@ -5,7 +5,7 @@ tp @a[scores={spawnpoint=3..4}] -2003 47 -1984
 tp @a[scores={spawnpoint=5..6}] -2013 36 -1947
 tp @a[scores={spawnpoint=7..}] -1992 39 -1994
 
-function du-in:maps/start/common
+function du-in:ingame/startround/timer/start_timer
 
 execute unless score #main lobbyTheme matches 1.. unless biome -2001 36 -1985 plains run fillbiome -2052 24 -1910 -1962 79 -2021 plains
 execute if score #main lobbyTheme matches 1..2 unless biome -2001 36 -1985 du-in:fall run fillbiome -2052 24 -1910 -1962 79 -2021 du-in:fall

@@ -5,7 +5,7 @@ tp @a[scores={spawnpoint=3..4}] 234 6 -358 53 -4
 tp @a[scores={spawnpoint=5..6}] 193 8 -356 -40 1
 tp @a[scores={spawnpoint=7..}] 192 21 -315 -137 20
 
-function du-in:maps/start/common
+function du-in:ingame/startround/timer/start_timer
 
 summon marker 233 5 -316 {Tags:["spawnPoint","team1","mapSpecific"]}
 summon marker 234 6 -358 {Tags:["spawnPoint","team1","mapSpecific"]}

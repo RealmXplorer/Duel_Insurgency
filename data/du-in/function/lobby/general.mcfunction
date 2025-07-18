@@ -1,6 +1,5 @@
 #Timer for lobby sidebar for scroll
-scoreboard players add #main sidebarTimer 1
-execute if score #main sidebarTimer matches 481.. run scoreboard players set #main sidebarTimer 0
+execute if entity @a[tag=partyLeader,scores={lobby=1..}] unless entity @a[tag=partyLeader,tag=sidebarDisable] unless score #main pylonsDestroyed matches 3 run function du-in:lobby/sidebar
 
 #Test for number of people on team
 execute if entity @a[tag=teamMode] run function du-in:lobby/team_select/team_count
@@ -11,9 +10,3 @@ execute as @a[tag=ready,tag=lobby] run scoreboard players add #main kitOnline 1
 
 #Run if players are in map select
 execute if entity @a[tag=partyLeader,scores={lobby=2}] run function du-in:lobby/map_select/general
-
-#Start game#
-execute if score #main startSeq matches 1.. run function du-in:ingame/startround/timer/start_timer
-
-#Pick Map#
-execute if score #main mapCountdown matches ..1 run function du-in:maps/start/init

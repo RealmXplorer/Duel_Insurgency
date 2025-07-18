@@ -5,7 +5,7 @@ tp @a[scores={spawnpoint=3..4}] -26 8 2474 0 0
 tp @a[scores={spawnpoint=5..6}] -41 8 2540 -135 0
 tp @a[scores={spawnpoint=7..}] -48 8 2498 -90 0
 
-function du-in:maps/start/common
+function du-in:ingame/startround/timer/start_timer
 
 execute unless score #main lobbyTheme matches 1 run time set 12000
 summon marker -48 8 2498 {Tags:["spawnPoint","team1","mapSpecific"]}

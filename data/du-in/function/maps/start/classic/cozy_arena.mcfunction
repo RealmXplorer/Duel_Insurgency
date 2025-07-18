@@ -5,7 +5,7 @@ tp @a[scores={spawnpoint=3..4}] -965 9 1015 45 0
 tp @a[scores={spawnpoint=5..6}] -987 9 1015 -45 0
 tp @a[scores={spawnpoint=7..}] -987 9 1037 -135 0
 
-function du-in:maps/start/common
+function du-in:ingame/startround/timer/start_timer
 
 weather rain 100000
 

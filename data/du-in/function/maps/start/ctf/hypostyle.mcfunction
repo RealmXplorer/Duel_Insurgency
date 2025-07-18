@@ -3,7 +3,7 @@ tellraw @a ["",{text:"The ",bold:false,color:gray},{text:"Hypostyle ",bold:true,
 tp @a[scores={team=2}] -820 9 -38 0 0
 tp @a[scores={team=1}] -775 9 -20 -180 0
 
-function du-in:maps/start/common
+function du-in:ingame/startround/timer/start_timer
 
 summon marker -775 9 -20 {Tags:["spawnPoint","team1","mapSpecific"]}
 summon marker -775 9 -38 {Tags:["spawnPoint","team1","mapSpecific"]}

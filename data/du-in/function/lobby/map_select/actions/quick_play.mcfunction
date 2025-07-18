@@ -5,11 +5,10 @@ tag @a remove kitMenu
 tag @a add quickMatch
 
 #Add random kit#
-#tag @a[tag=!kitPicked,tag=!spect] add random
-tag @a[tag=!kitPicked,tag=!spectating] add random
-
+#tag @a[tag=!kitPicked,tag=!spectating] add random
+execute as @a[tag=!kitPicked,tag=!spectating] run function du-in:kit/all/random/roll
+      
 #Make it so players do not go into spectator, unless they already are
-#tag @a[tag=!kitPicked,tag=!spect] add kitPicked
 tag @a[tag=!kitPicked,tag=!spectating] add kitPicked
 
 title @a subtitle {text:""}

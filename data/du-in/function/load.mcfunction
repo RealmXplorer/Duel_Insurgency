@@ -313,9 +313,9 @@ scoreboard objectives add matchDeaths dummy
 scoreboard objectives add music minecraft.custom:play_time
 
 scoreboard objectives add parryCooldown dummy
-scoreboard objectives add parryHit minecraft.custom:minecraft.damage_taken
+#scoreboard objectives add parryHit minecraft.custom:minecraft.damage_taken
 scoreboard objectives add parryDuration dummy
-scoreboard objectives add parryWindow dummy
+# scoreboard objectives add parryWindow dummy
 
 scoreboard objectives add player dummy
 scoreboard objectives add playerCount dummy
@@ -331,7 +331,7 @@ scoreboard objectives add kitTheme dummy
 
 scoreboard objectives add shutdown dummy
 scoreboard objectives add spawnpoint dummy
-scoreboard objectives add startSeq dummy
+#scoreboard objectives add startSeq dummy
 
 scoreboard objectives add team dummy
 scoreboard objectives add teamDeaths dummy

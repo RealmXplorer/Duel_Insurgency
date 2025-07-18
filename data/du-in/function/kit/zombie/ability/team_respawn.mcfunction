@@ -13,5 +13,6 @@ tag @s[tag=stolen,tag=givenStolen] add kitDone
 kill @n[type=interaction,tag=grave]
 kill @n[type=minecraft:falling_block,tag=grave]
 execute if entity @s[tag=ranMode] run function du-in:kit/all/reset
-tag @s[tag=ranMode] add random
+#tag @s[tag=ranMode] add random
+execute if entity @s[tag=ranMode] run function du-in:kit/all/random/roll
 scoreboard players reset @s zombieTimer

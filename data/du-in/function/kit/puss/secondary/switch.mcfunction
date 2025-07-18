@@ -21,5 +21,3 @@ playsound minecraft:entity.player.attack.sweep master @a ~ ~ ~ 2 1.25
 particle minecraft:dust{color:[1.0, 1.0, 1.0],scale:1.0} ~ ~1 ~ .5 .5 .5 1 100 force
 
 tag @s remove secKitActions
-#[scores={parryWindow=..0}]
-#execute unless entity @s[scores={parryWindow=0..}] run 

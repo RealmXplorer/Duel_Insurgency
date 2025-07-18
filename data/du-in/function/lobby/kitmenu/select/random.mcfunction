@@ -1,7 +1,7 @@
-tag @s add random
+#tag @s add random
 
-
-
+function du-in:kit/all/random/roll
+      
 playsound minecraft:entity.zombie_villager.converted master @s ~ ~ ~ 1 1.5
 
 

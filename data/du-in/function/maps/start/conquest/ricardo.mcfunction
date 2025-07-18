@@ -4,7 +4,7 @@ tellraw @a ["",{text:"The ",bold:false,color:gray},{text:"San Ricardo ",bold:tru
 tp @a[scores={team=1}] -3752 57 1239 -25.25 -5
 tp @a[scores={team=2}] -3752 62 1293 -154 6
 
-function du-in:maps/start/common
+function du-in:ingame/startround/timer/start_timer
 
 #Spawnpoints#
 summon marker -3752 57 1239 {Tags:["spawnPoint","team1","mapSpecific"]}

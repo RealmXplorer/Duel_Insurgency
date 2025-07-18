@@ -12,7 +12,7 @@ tp @a[tag=!audience,scores={spawnpoint=7..}] -4293 16 -2303 45 0
 # tp @a[tag=audience,scores={spawnpoint=5..6}] -4317 23 -2279 -135 0
 # tp @a[tag=audience,scores={spawnpoint=7..}] -4317 23 -2317 -45 0
 
-function du-in:maps/start/common
+function du-in:ingame/startround/timer/start_timer
 
 #Spawnpoints#
 summon marker -4293 16 -2293 {Tags:["spawnPoint","team1","mapSpecific"]}

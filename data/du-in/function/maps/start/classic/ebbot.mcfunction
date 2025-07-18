@@ -10,7 +10,7 @@ execute unless score #main lobbyTheme matches 1.. unless biome -2487 7 -2461 mea
 execute if score #main lobbyTheme matches 1..2 unless biome -2487 7 -2461 du-in:fall run fillbiome -2517 -6 -2514 -2432 30 -2443 du-in:fall
 execute if score #main lobbyTheme matches 4 unless biome -2487 7 -2461 du-in:spring run fillbiome -2517 -6 -2514 -2432 30 -2443 du-in:spring
 
-function du-in:maps/start/common
+function du-in:ingame/startround/timer/start_timer
 
 summon marker -2500 1 -2500 {Tags:["spawnPoint","team1","mapSpecific"]}
 summon marker -2455 2 -2500 {Tags:["spawnPoint","team1","mapSpecific"]}

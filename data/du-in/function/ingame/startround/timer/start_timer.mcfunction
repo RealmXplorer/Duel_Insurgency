@@ -35,7 +35,8 @@ tag @a[tag=!spectating] add playing
 
 ##Kit stuff
     #Give player kit if they don't have one
-    execute unless entity @s[scores={kit=1..}] run tag @s add random
+    #execute unless entity @s[scores={kit=1..}] run tag @s add random
+    execute unless entity @s[scores={kit=1..}] run function du-in:kit/all/random/roll
 
     #Give all players weapons
     tag @a[scores={kit=31},limit=1] add hasRing
@@ -157,4 +158,7 @@ team join Blue @a[scores={team=2}]
 tag @a remove fromVoid
 scoreboard players set #main voidReadyOnline 0
 
-#execute store result score @a map run scoreboard players get #main map
+#Kill any game objects from previous games
+execute at @e[type=armor_stand,tag=vendMachine] run fill ~ ~ ~ ~ ~1 ~ air
+
+kill @e[type=!player,tag=mapSpecific]

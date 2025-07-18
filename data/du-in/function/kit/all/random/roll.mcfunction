@@ -12,7 +12,7 @@ execute store result storage du-in:main player.current int 1 run scoreboard play
 execute at @s run function du-in:kit/all/random/set with storage du-in:main player
 
 #Remove random tag
-tag @s remove random
+#tag @s remove random
 
 #Set Attributes
 execute if entity @s[tag=playing] run function du-in:kit/all/attribute/set

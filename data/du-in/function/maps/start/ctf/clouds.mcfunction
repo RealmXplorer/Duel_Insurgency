@@ -4,7 +4,7 @@ tellraw @a ["",{text:"The ",bold:false,color:gray},{text:"Clouds ",bold:true,col
 tp @a[scores={team=1}] -388 19 494 135 5
 tp @a[scores={team=2}] -455 19 471 -45 1
 
-function du-in:maps/start/common
+function du-in:ingame/startround/timer/start_timer
 
 #Spawnpoints#
 summon marker -388 19 494 {Tags:["spawnPoint","team1","mapSpecific"]}

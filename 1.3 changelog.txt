@@ -62,10 +62,15 @@
 -Added "du-in:spring" biome.
 -Merged "ingame/regentimer/health_dam" into respective functions.
 -Merged "ingame/kill_combo/reset1" into "kit/all/hit/init" funcntion.
--Removed "comboBreak" and "healthHit" scoreboard objectives as they are now run through "hit" objective.
+-Removed "comboBreak", "parryHit", and "healthHit" scoreboard objectives as they are now run through "hit" objective.
 -Removed "void/goner/hurt_goner" as it now just runs "kit/all/damage/player/init".
 -"asrielTimer" objective is now "dummy" instead of "play_time".
 -Merged regenTimer functions.
+-Phased out "random" and "randomLeg" tags to now directly run off functions when needed, rather than constant tag checks.
+-Phased out "killCombo" and "quickKill" tags as it call can now run through simple score checks and advancements.
+-Removed "parryWindow" objective as it was unused.
+-Merged "maps/start/common" into "ingame/startround/timer/start_timer".
+-Removed "startSeq" objective, as its been merged into the map pick functions.
 
 *Bug Fixes*
 -Fixed bug where map select was really loud on going back to gamemode select with many people.

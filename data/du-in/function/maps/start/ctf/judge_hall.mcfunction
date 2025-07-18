@@ -3,7 +3,7 @@ tellraw @a [{text:"The ",bold:false,color:gray},{text:"Judgement Hall ",bold:tru
 tp @a[scores={team=1}] 251 4 527 180 0
 tp @a[scores={team=2}] 252 4 412 0 0
 
-function du-in:maps/start/common
+function du-in:ingame/startround/timer/start_timer
 
 summon marker 251 4 527 {Tags:["spawnPoint","team1","mapSpecific"]}
 summon marker 251 4 412 {Tags:["spawnPoint","team2","mapSpecific"]}

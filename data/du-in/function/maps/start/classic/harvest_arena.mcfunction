@@ -5,7 +5,7 @@ tp @a[scores={spawnpoint=3..4}] 1286 9 1264 45 0
 tp @a[scores={spawnpoint=5..6}] 1264 9 1264 -45 0
 tp @a[scores={spawnpoint=7..}] 1264 9 1286 -135 0
 
-function du-in:maps/start/common
+function du-in:ingame/startround/timer/start_timer
 
 #Thanksgiving Spawnpoints#
 summon marker 1286 9 1286 {Tags:["spawnPoint","team1","mapSpecific"]}

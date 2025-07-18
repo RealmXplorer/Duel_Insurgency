@@ -1,5 +1,4 @@
 #Reset "voting"'s scores
-#scoreboard players reset #main 
 scoreboard players set #main mapWinner 0
 
 #tag @a add notVoted

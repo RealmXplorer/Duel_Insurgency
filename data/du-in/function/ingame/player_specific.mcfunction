@@ -15,16 +15,15 @@
     #Parry Mechanics
     execute if entity @s[tag=parryStart] run function du-in:kit/all/parry/buffer
     execute if entity @s[tag=parry,scores={parryDuration=0..}] run function du-in:kit/all/parry/in_parry
-    scoreboard players reset @s[scores={parryHit=1..}] parryHit
 
 # REGEN TIMER (Except for undead) #
     execute if entity @s[scores={healthTimer=140..}] run function du-in:ingame/regentimer/start_regen
 
 #KILL COMBOS
-    execute if entity @s[tag=killCombo] run function du-in:ingame/kill_combo/timer
+    execute if entity @s[scores={comboTimer=0..}] run function du-in:ingame/kill_combo/timer
 
 #HIT COMBO#
-    execute if entity @s[scores={comboHitTimer=10..,comboScore=1..}] run function du-in:ingame/kill_combo/expire
+    execute if entity @s[scores={comboHitTimer=10..,comboScore=1..}] run function du-in:ingame/hit_combo/expire
 
 #Give armor if player is missing any#
 execute if entity @s[predicate=!du-in:has_armor,predicate=!du-in:effect/is_invisible,tag=!teamDead,tag=!kitMenu,tag=!noClothes] run function du-in:kit/all/armor/armor_reset
@@ -116,4 +115,4 @@ execute if entity @s[predicate=!du-in:has_armor,predicate=!du-in:effect/is_invis
     execute if entity @a[tag=partyLeader,tag=spamClick] run attribute @s minecraft:attack_speed base set 100
 
 #Give Money in Vending Mode
-    execute if entity @s[tag=vendingMode] unless entity @s[scores={kit=1000}] run function du-in:ingame/vending_machine/money_check
+    execute if entity @s[tag=vendingMode,tag=!sus] unless entity @s[scores={kit=1000..1001}] run function du-in:ingame/vending_machine/money_check

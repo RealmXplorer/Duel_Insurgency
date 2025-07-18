@@ -1,6 +1,6 @@
 tag @a remove startgame
 tag @a[tag=lobby,tag=playing] remove lobby
-scoreboard players reset #main startSeq
+#scoreboard players reset #main startSeq
 gamemode adventure @a[tag=playing]
 
 scoreboard objectives setdisplay below_name Health
