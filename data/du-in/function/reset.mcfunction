@@ -29,6 +29,12 @@ execute as @a run function du-in:storage/reset
 
 bossbar set minecraft:map_countdown visible false
 
+#Void stuff
+stopsound @a master minecraft:music.suffocation
+function du-in:music/void/schedule_clear
+bossbar set gast:pylon visible false
+bossbar set gast:pylon4 visible false
+
 #scoreboard players reset @a map
 execute unless entity @a[tag=devMode] run scoreboard players add @a[tag=!spectating,tag=!falseWin] gamesPlayed 1
 execute unless entity @a[tag=devMode] run scoreboard players add @a[tag=win,tag=!falseWin,tag=!voidLose,tag=!tie] Wins 1
