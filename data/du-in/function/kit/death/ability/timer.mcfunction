@@ -1,7 +1,7 @@
 scoreboard players remove @s flameTimer 1
 
-execute if entity @a[tag=void] as @e[type=skeleton,tag=gonerThing,distance=..1] at @s run function du-in:kit/asgore/ability/void/contact
-execute unless entity @a[tag=void] as @a[gamemode=!spectator,distance=..2,tag=playing] unless entity @s[scores={deathAbilityTimer=1..}] at @s unless score @n[type=block_display,tag=flame] team = @s team run function du-in:kit/death/ability/contact
+execute if entity @a[tag=void] as @e[type=skeleton,distance=..1,tag=gonerThing] at @s run function du-in:kit/asgore/ability/void/contact
+execute unless entity @a[tag=void] as @a[gamemode=!spectator,distance=..2,tag=playing] unless entity @s[scores={deathAbilityTimer=1..}] at @s unless score @n[type=block_display,tag=flame,distance=..2] team = @s team run function du-in:kit/death/ability/contact
 
 particle minecraft:flame ~ ~1 ~ 0.2 0.4 0.2 0 3 force
 playsound minecraft:block.fire.ambient master @a[predicate=du-in:chance/five_chance] ~ ~ ~ 10 1

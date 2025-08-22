@@ -27,7 +27,7 @@ data modify block 232 5 27 front_text.messages[0] set value [{"selector":"@a[tag
 #Summon name
 #summon interaction ~ ~.5 ~ {width:0.1,height:0.1,CustomNameVisible:1b,NoGravity:1b,Silent:1b,Invulnerable:1b,Tags:["grave","projectile","mapSpecific"]}
 
-execute as @n[type=falling_block,tag=grave,tag=!nameSet] run function du-in:kit/zombie/ability/grave/init
+execute as @n[type=falling_block,tag=grave,tag=!nameSet,distance=..5] run function du-in:kit/zombie/ability/grave/init
 
 #End ability
 tag @s remove kitActions

@@ -6,5 +6,6 @@
 #execute unless entity @p[distance=..2] run bossbar set bossbar:koth value 0
 #execute unless entity @p[distance=..2] run bossbar set bossbar:koth name ["",{text:"Nobody is on the point!",bold:true,color:red}]
 
+#Add KOTH points
 execute unless entity @a[gamemode=!spectator,tag=playing,distance=..2,tag=!gasterInvisible,tag=!win,tag=!lose,tag=team2] as @a[gamemode=!spectator,tag=playing,distance=..2,tag=!gasterInvisible,tag=!win,tag=!lose,tag=team1] unless entity @s[scores={floweyHitTimer=0..}] unless score #main onPoint matches 2.. run scoreboard players add @s kothTimer 1
 execute unless entity @a[gamemode=!spectator,tag=playing,distance=..2,tag=!gasterInvisible,tag=!win,tag=!lose,tag=team1] as @a[gamemode=!spectator,tag=playing,distance=..2,tag=!gasterInvisible,tag=!win,tag=!lose,tag=team2] unless entity @s[scores={floweyHitTimer=0..}] unless score #main onPoint matches 2.. run scoreboard players add @s kothTimer 1

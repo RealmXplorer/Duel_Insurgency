@@ -141,6 +141,8 @@ execute as @a run function du-in:music/ingame/stop/all
         tag @a remove vended
         scoreboard players set @a weaponTier 0
         tag @a remove fortniteCard
+        tag @a remove blakeDuration
+        scoreboard players reset @a blakeTimer
 
     #Flowey#
         scoreboard players reset @a floweyHitTimer
@@ -157,9 +159,14 @@ execute as @a run function du-in:music/ingame/stop/all
     #Saul#
         tag @a remove saul
 
+    #Sans#
+        tag @a remove sansHitDuration
+        scoreboard players reset @a sansHitTimer
+
     #Sauron#
         tag @a remove looking
         tag @a remove ringCorrupted
+        tag @a remove seenDuration
         scoreboard players reset @a sauronTimer
         scoreboard players reset @a seenTimer
 
@@ -178,6 +185,7 @@ execute as @a run function du-in:music/ingame/stop/all
     #Jerma#
         tag @a remove sus
         scoreboard players reset @a jermaTimer
+        tag @a remove jermaDuration
         tag @a remove peepedHorror
         tag @a remove monsterTarget
         tag @a remove selectedTarget
@@ -186,6 +194,7 @@ execute as @a run function du-in:music/ingame/stop/all
     #Jack Black#
         tag @a remove jackBlack
         scoreboard players reset @a jockeyTimer
+        tag @a remove jockeyDuration
         tag @a remove chickenJockey
         
     #Jack Horner#
@@ -199,10 +208,13 @@ execute as @a run function du-in:music/ingame/stop/all
         tag @a remove hornerWeapon
         tag @a remove phoenix
         tag @a remove drinkMe
-				tag @a remove theHatchet
+		tag @a remove theHatchet
 
         scoreboard players reset @a crossbowShoot
         scoreboard players reset @a shrunkTimer
+        scoreboard players reset @a unicornTimer
+
+        tag @a remove unicornDuration
 
         advancement revoke @a only du-in:kit/midas
         advancement revoke @a only du-in:kit/touch
@@ -242,6 +254,7 @@ execute as @a run function du-in:music/ingame/stop/all
         
     #Gumball and Darwin
         tag @a remove darwin
+        tag @a remove darwinDuration
         scoreboard players reset * gumballClassicFake
 
     #Nick Wilde#

@@ -5,6 +5,8 @@ execute if entity @s[tag=sabotaged] run function du-in:kit/all/ability/sabotage/
 
 tag @a[tag=playing,gamemode=!spectator] add horrorStart
 scoreboard players set @a[tag=peepedHorror,tag=horrorStart] jermaTimer 80
+tag @a[tag=peepedHorror,tag=horrorStart] add jermaDuration
+
 execute as @a[tag=peepedHorror] run tellraw @s {text:"You peeped the horror, it was the funniest thing you've ever seen...",bold:true,color:red}
 
 execute as @a[tag=horrorStart] at @s run function du-in:kit/jerma/particle

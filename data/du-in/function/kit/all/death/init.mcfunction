@@ -43,8 +43,9 @@ execute if entity @a[tag=partyLeader,tag=aprilFools] run playsound minecraft:sou
 execute unless entity @s[tag=stolen] run function du-in:kit/all/death/search
 execute if entity @s[tag=stolen] run function du-in:kit/villager/death
 
-execute if entity @s[scores={jermaTimer=0..}] run scoreboard players reset @s jermaTimer
-
+#execute if entity @s[scores={jermaTimer=0..}] run scoreboard players reset @s jermaTimer
+scoreboard players reset @s jermaTimer
+tag @s remove jermaDuration
 
 scoreboard players reset @s ralseiTimer
 
@@ -61,7 +62,13 @@ execute if entity @s[tag=grave,tag=!teamDead] run scoreboard players set @s zomb
 
 execute if entity @a[scores={kit=1004}] run clear @s mushroom_stew
 
+#Reset Jack Black
 scoreboard players reset @s jockeyTimer
+tag @s remove jockeyDuration
+
+#Reset Jack Horner
+scoreboard players reset @s unicornTimer
+tag @s remove unicornDuration
 
 #CLEAR TAGS#
 execute if entity @s[tag=kyloHit] run tag @s remove kyloHit
