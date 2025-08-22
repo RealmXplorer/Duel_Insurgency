@@ -29,6 +29,7 @@ execute as @e[type=ender_pearl,tag=blakeTP,tag=notAssigned] at @s run function d
 
 #Set rubberband timer
 scoreboard players set @s blakeTimer 60
+tag @s add blakeDuration
 
 #Give Paz bonus effects
 effect give @s speed 2 0 true

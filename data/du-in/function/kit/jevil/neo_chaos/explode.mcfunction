@@ -3,6 +3,7 @@ summon block_display ~ ~0.5 ~ {height:30f,Tags:["devilsKnife","unsetTime","proje
 execute at @e[type=block_display,tag=devilsKnife] run particle minecraft:end_rod ~ ~ ~ 0.25 30 0.25 0 500
 
 scoreboard players set @e[type=block_display,tag=devilsKnife,tag=unsetTime] jevilTimer 10
+tag @e[type=block_display,tag=devilsKnife,tag=unsetTime] add jevilDuration
 tag @e[type=block_display,tag=devilsKnife,tag=unsetTime] remove unsetTime
 
 #Sound

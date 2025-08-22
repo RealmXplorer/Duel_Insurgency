@@ -30,7 +30,8 @@
 execute as @e[type=trident] run function du-in:kit/asgore/passive/trident
 
 #Chicken Jockey
-execute as @e[type=chicken,scores={jockeyTimer=0..}] run function du-in:kit/jack_black/ability/chicken
+#execute as @e[type=chicken,scores={jockeyTimer=0..}] run function du-in:kit/jack_black/ability/chicken
+execute as @e[type=chicken,tag=jockeyDuration] run function du-in:kit/jack_black/ability/chicken
 
 #Kratos Rock
 execute if entity @e[type=salmon,tag=kratosRock] run function du-in:kit/kratos/ability/rock/track

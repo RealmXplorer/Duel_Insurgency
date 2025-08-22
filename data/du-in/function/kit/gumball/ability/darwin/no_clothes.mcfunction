@@ -5,3 +5,4 @@ title @s title {text:" ",color:red}
 title @s subtitle {text:"You are now naked.",color:red}
 clear @s #du-in:darwin_armor
 scoreboard players set @s darwinTimer 100
+tag @s add darwinDuration

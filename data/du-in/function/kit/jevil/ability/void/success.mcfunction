@@ -1,5 +1,8 @@
 execute if entity @s[tag=!neoChaos] run scoreboard players set @e[type=skeleton,distance=.05..4] jevilTimer 17
+execute if entity @s[tag=!neoChaos] run tag @e[type=skeleton,distance=.05..4] add jevilDuration
+
 execute if entity @s[tag=neoChaos] run scoreboard players set @e[type=skeleton] jevilTimer 19
+execute if entity @s[tag=neoChaos] run tag @e[type=skeleton] add jevilDuration
 
 clear @s #du-in:ability
 xp set @s[tag=!stolen] 360 levels

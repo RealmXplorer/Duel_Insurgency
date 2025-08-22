@@ -1,6 +1,6 @@
 execute at @n[type=marker,tag=papyrusFind,tag=projectile,distance=..4] run kill @e[type=armor_stand,tag=papyrusBone,distance=..3]
 
-kill @n[tag=projectile]
+kill @n[tag=projectile,distance=..4]
 kill @e[type=armor_stand,tag=asgoreFire,distance=..3.5]
 
 playsound minecraft:cuphead.parry master @a ~ ~ ~ 1 1

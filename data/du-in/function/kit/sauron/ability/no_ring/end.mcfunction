@@ -3,5 +3,5 @@
 tag @s remove glowing
 #tag @s remove empower
 
-
+tag @s remove seenDuration
 scoreboard players reset @s seenTimer
