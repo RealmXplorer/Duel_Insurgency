@@ -115,6 +115,9 @@ scoreboard objectives add kratosRage dummy
 scoreboard objectives add yodaTimer dummy
 scoreboard objectives add sauronTimer dummy
 scoreboard objectives add shrunkTimer dummy
+scoreboard objectives add beetleDamage dummy
+scoreboard objectives add beetleGhostTimer dummy
+scoreboard objectives add showTimer dummy
 
 #Skins
 scoreboard objectives add asgoreSkin dummy

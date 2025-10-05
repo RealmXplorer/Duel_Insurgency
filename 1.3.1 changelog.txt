@@ -1,9 +1,0 @@
-***8/22/25:***
-***Version 1.3.1: ***
-
-*Internal Changes*
--Many score checks have been switched to tag checks.
--Most "nearest" selectors now use a "distance" check.
-
-*Bug Fixes*
--Fixed bug where Jack Horner's unicorn horn explosion would still occur, even if you died.

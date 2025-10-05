@@ -49,6 +49,7 @@ Kit number = character name
 1003 = Jerma985
 1004 = Runza Rex
 1005 = Jack Black's Steve
+1006 = Beetlejuice
 
 2015 = Saul Goodman
 42069 = Big Chungus

@@ -1,0 +1,1 @@
+# playsound minecraft:paz.fnf.go voice @s ~ ~ ~ 100000 1

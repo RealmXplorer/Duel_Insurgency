@@ -9,7 +9,7 @@ tag @a[tag=peepedHorror,tag=horrorStart] add jermaDuration
 
 execute as @a[tag=peepedHorror] run tellraw @s {text:"You peeped the horror, it was the funniest thing you've ever seen...",bold:true,color:red}
 
-execute as @a[tag=horrorStart] at @s run function du-in:kit/jerma/particle
+execute as @a[tag=horrorStart] at @s run function du-in:kit/jerma/ability/particle
 
 execute as @a[tag=playing,gamemode=!spectator] unless score @a[scores={kit=1003},tag=kitActions,limit=1] team = @s team run tag @a remove horrorStart
 

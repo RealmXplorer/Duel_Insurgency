@@ -41,7 +41,7 @@ execute unless entity @a[tag=devMode] run scoreboard players add @a[tag=win,tag=
 execute unless entity @a[tag=devMode] run scoreboard players add @a[tag=win,tag=!falseWin,tag=!voidLose,tag=!tie] winStreak 1
 execute unless entity @a[tag=devMode] run scoreboard players set @a[tag=lose,tag=!spectating] winStreak 0
 execute unless entity @a[tag=devMode] run scoreboard players add @a[tag=win] Diamonds 25
-execute unless entity @a[tag=devMode] run scoreboard players add @a[tag=lose] Losses 1
+#execute unless entity @a[tag=devMode] run scoreboard players add @a[tag=lose] Losses 1
 
 #Advancements
 execute unless entity @a[tag=devMode] run advancement grant @a[scores={Diamonds=200..}] only du-in:challenge/diamond_1
@@ -308,6 +308,14 @@ execute as @a run function du-in:music/ingame/stop/all
         scoreboard players reset @a cinderTimer
         tag @a remove cinderUsed
 
+    #Beetlejuice
+        scoreboard players reset @a beetleGhostTimer
+        scoreboard players reset @a showTimer
+        tag @a remove beetleJuice
+        tag @a remove showTimeDuration
+        tag @a remove scareDuration
+        tag @a remove maxBeetleDamage
+        
 tag @a remove hasRing
 tag @a remove sauronHit
 tag @a remove wildeHit

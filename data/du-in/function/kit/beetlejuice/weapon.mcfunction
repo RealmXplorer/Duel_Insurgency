@@ -1,0 +1,1 @@
+item replace entity @s hotbar.0 with minecraft:wooden_axe[item_name={text:"Carnival Hammer",color:gray,bold:true},item_model="du-in:weapons/juice_hammer",attribute_modifiers=[{type:"attack_damage",id:"attack_damage",amount:5.4,operation:"add_value"},{type:"attack_speed",id:"attack_speed",amount:-2.65,operation:"add_value"}]] 1

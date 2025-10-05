@@ -1,0 +1,17 @@
+{
+  "criteria": {
+    "beetledamage": {
+      "trigger": "minecraft:entity_hurt_player",
+      "conditions": {
+        "damage": {
+          "source_entity": {
+            "type": "minecraft:vex"
+          }
+        }
+      }
+    }
+  },
+  "rewards": {
+    "function": "du-in:kit/beetlejuice/showtime/hit_by_ghost"
+  }
+}

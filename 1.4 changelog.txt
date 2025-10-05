@@ -1,0 +1,13 @@
+***8/22/25-10/??/25:***
+***Version 1.4: It's Showtime!***
+
+*Internal Changes*
+-Many score checks have been switched to tag checks.
+-Most "nearest" selectors now use a "distance" check.
+
+*Bug Fixes*
+-Fixed bug where Jack Horner's unicorn horn explosion would still occur, even if you died.
+
+*Resourcepack Updates*
+-Added Carnival Hammer skin (by Realm_Xplorer)
+-Added Beetlejuice armor skin (by unknown and Nerbski)
