@@ -1,9 +1,11 @@
 execute if score #main map matches 1 run function du-in:maps/start/classic/mountain_castle
 execute if score #main map matches 2 run function du-in:maps/start/classic/hive
 execute if score #main map matches 3 run function du-in:maps/start/classic/desert_arena
-execute if score #main map matches 4 run function du-in:maps/start/classic/caves
+#Pick caves
+execute if score #main map matches 4 run function du-in:maps/start/pick/pick_caves
 execute if score #main map matches 5 run function du-in:maps/start/classic/mustafar
 execute if score #main map matches 6 run function du-in:maps/start/classic/ebbot
+#Pick Arena
 execute if score #main map matches 7 run function du-in:maps/start/pick/pick_arena
 execute if score #main map matches 8 run function du-in:maps/start/classic/dust_two
 execute if score #main map matches 9 run function du-in:maps/start/classic/maze

@@ -28,4 +28,4 @@ execute if entity @a[tag=!timedMode,tag=partyLeader] run function du-in:ingame/c
 execute if entity @a[tag=timedMode,tag=partyLeader] run function du-in:ingame/ctf/timed/timed
 
 #Clear all banners from those who don't have it#
-clear @a[gamemode=!creative,tag=!flagGot] #minecraft:banners
+clear @a[gamemode=adventure,tag=!flagGot] #minecraft:banners

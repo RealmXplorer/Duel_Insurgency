@@ -1,13 +1,30 @@
 ***8/22/25-10/??/25:***
 ***Version 1.4: It's Showtime!***
+*Additions*
+-Added Beetlejuice Legendary Character.
+-Added "Haunted Caves" variant of The Caves.
+    -Picked when "Halloween" lobby theme is selected.
+    
+*Changes*
+-Changes to Halloween and Thanksgiving Lobby.
+-Changes to Spooky Arena.
+-Added a Vent to Caves, as the map was very lopsided with its vent placement.
 
 *Internal Changes*
 -Many score checks have been switched to tag checks.
 -Most "nearest" selectors now use a "distance" check.
+-Lobby items will now only replace your hotbar and inventory if you are in adventure.
+    -Changed so going into spectator won't clear your items when switching back to creative.
 
 *Bug Fixes*
 -Fixed bug where Jack Horner's unicorn horn explosion would still occur, even if you died.
 
 *Resourcepack Updates*
--Added Carnival Hammer skin (by Realm_Xplorer)
--Added Beetlejuice armor skin (by unknown and Nerbski)
+-Added Carnival Hammer skin. (by Realm_Xplorer)
+-Added Beetlejuice armor skin. (by unknown and Nerbski)
+-Added Carnival Hammer texture. (by Realm_Xplorer)
+-Added Beetlejuice flyer texture. (by Realm_Xplorer)
+-Added Beetlejuice secondary texture. (by Realm_Xplorer)
+-Added Beetlejuice ability texture. (by Realm_Xplorer)
+-Added Beetlejuice hit sounds.
+-Added Beetlejuice death sound. 

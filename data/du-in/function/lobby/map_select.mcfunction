@@ -1,8 +1,8 @@
     # Team Mode Functions #
-        execute if entity @s[tag=teamMode,gamemode=!creative] run function du-in:lobby/team_select
+        execute if entity @s[tag=teamMode,gamemode=adventure] run function du-in:lobby/team_select
 
 # Map Select Items #
-    execute if entity @s[tag=partyLeader,gamemode=!creative] run function du-in:lobby/map_select/leader_items
+    execute if entity @s[tag=partyLeader,gamemode=adventure] run function du-in:lobby/map_select/leader_items
 
 # Map Select Timer Announcements #
     execute if score #main mapCountdown matches 200 run function du-in:lobby/map_select/timers/ten

@@ -1,7 +1,7 @@
 ##GO BACK AND TITLE NOW IN SCHEDULED FUNCTION
 
 #Skin menu
-execute if entity @s[gamemode=!creative] run function du-in:skins/skin_menu/common
+execute if entity @s[gamemode=adventure] run function du-in:skins/skin_menu/common
 
 #Music
 execute unless entity @s[tag=musicOff] unless score #main pylonsDestroyed matches 3 run function du-in:music/lobby/shop

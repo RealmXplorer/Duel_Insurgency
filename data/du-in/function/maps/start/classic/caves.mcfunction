@@ -14,18 +14,20 @@ summon marker 24 5 118 {Tags:["spawnPoint","team1","mapSpecific"]}
 summon marker 30 2 79 {Tags:["spawnPoint","team1","mapSpecific"]}
 summon marker 12 6 89 {Tags:["spawnPoint","team2","mapSpecific"]}
 summon marker 17 14 109 {Tags:["spawnPoint","team2","mapSpecific"]}
-summon marker -1 15 96 {Tags:["spawnPoint","team1","mapSpecific"]}
+summon marker -1 15 96 {Tags:["spawnPoint","team2","mapSpecific"]}
 
 #Default Vents#
 execute if entity @a[tag=sus] run summon marker 6 10 94 {Tags:["vent","mapSpecific"]}
 execute if entity @a[tag=sus] run summon marker 0 14 111 {Tags:["vent","mapSpecific"]}
 execute if entity @a[tag=sus] run summon marker -7 5 113 {Tags:["vent","mapSpecific"]}
 execute if entity @a[tag=sus] run summon marker -8 10 92 {Tags:["vent","mapSpecific"]}
+execute if entity @a[tag=sus] run summon marker 26 6 101 {Tags:["vent","mapSpecific"]}
 
 summon interaction -8 9 91 {Tags:["ventBlock","mapSpecific"],width:1.05f,height:1.25f,response:1b}
 summon interaction -7 4 114 {Tags:["ventBlock","mapSpecific"],width:1.05f,height:1.25f,response:1b}
 summon interaction 6 11 93 {Tags:["ventBlock","mapSpecific"],width:1.05f,height:1.25f,response:1b}
 summon interaction 0 15 112 {Tags:["ventBlock","mapSpecific"],width:1.05f,height:1.25f,response:1b}
+summon interaction 27 5 101 {Tags:["ventBlock","mapSpecific"],width:1.05f,height:1.25f,response:1b}
 
 #Vending Machines#
 execute if entity @a[tag=vendingMachine] run summon interaction 11 6 94 {Tags:["vending","stable","mapSpecific"],width:1.15f,height:2.1f,response:1b}

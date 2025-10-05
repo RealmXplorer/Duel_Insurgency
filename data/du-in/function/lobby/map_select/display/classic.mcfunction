@@ -43,7 +43,8 @@ execute if entity @a[tag=daLock,tag=partyLeader] run summon marker 228 92 30 {Ta
 summon marker 230 91 30 {Tags:["mapVote","displayItem","vote3"]} 
 
 #The Caves
-summon minecraft:item 228 92 32 {NoGravity:1b,Age:-32768,Health:99999,PickupDelay:32767,Tags:["mapLabel","displayItem"],Item:{id:"minecraft:diamond",count:1},CustomNameVisible:1b,CustomName:{text:"The Caves",color:"aqua",bold:true}}
+execute unless score #main lobbyTheme matches 1 run summon minecraft:item 228 92 32 {NoGravity:1b,Age:-32768,Health:99999,PickupDelay:32767,Tags:["mapLabel","displayItem"],Item:{id:"minecraft:diamond",count:1},CustomNameVisible:1b,CustomName:{text:"The Caves",color:"aqua",bold:true}}
+execute if score #main lobbyTheme matches 1 run summon minecraft:item 228 92 32 {NoGravity:1b,Age:-32768,Health:99999,PickupDelay:32767,Tags:["mapLabel","displayItem"],Item:{id:"minecraft:amethyst_shard",count:1},CustomNameVisible:1b,CustomName:{text:"Haunted Caves",color:"#a72cc0",bold:true}}
 execute if entity @a[tag=cavesLock,tag=partyLeader] run summon marker 228 92 32 {Tags:["displayItem","voidLocked"]} 
 summon marker 230 91 32 {Tags:["mapVote","displayItem","vote4"]} 
 
