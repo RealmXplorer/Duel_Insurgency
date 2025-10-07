@@ -4,7 +4,7 @@ execute at @e[type=marker,tag=flamePillarZ] run function du-in:void/hazard/fire/
 execute at @e[type=marker,tag=flameMarker] run function du-in:void/hazard/fire/particle_and_sound
 
 # execute at @e[type=marker,tag=flameMarker] run particle minecraft:flame ~ ~ ~ 1 0 0 .5 50
-# execute at @e[type=marker,tag=flameMarker] run particle minecraft:flash ~ ~ ~ 1 0 0 .5 0
+# execute at @e[type=marker,tag=flameMarker] run particle minecraft:flash{color:0xffffff} ~ ~ ~ 1 0 0 .5 0
 
 # execute at @e[type=marker,tag=flameMarker] run playsound minecraft:soundeffect.parry master @a ~ ~ ~ 100 1
 # execute at @e[type=marker,tag=flameMarker] run playsound minecraft:soundeffect.parry master @a ~ ~ ~ 100 .5

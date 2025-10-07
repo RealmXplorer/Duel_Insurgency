@@ -1,5 +1,5 @@
 #Set spawn
-spawnpoint @s ~ ~ ~ ~
+spawnpoint @s ~ ~ ~ ~ ~
 
 #Clear ability
 clear @s #du-in:ability

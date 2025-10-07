@@ -320,9 +320,13 @@ tag @a remove hasRing
 tag @a remove sauronHit
 tag @a remove wildeHit
 tag @a remove chungusThrowdown
+tag @a remove diveHit
+tag @a remove horrorStart
+tag @a remove redBuster
 
 #HOWW???
 tag @a remove projectile
+tag @a remove ctfClose
 
 #Give back default skins
 execute as @a[tag=poolParty] run function du-in:maps/pool_party/revert

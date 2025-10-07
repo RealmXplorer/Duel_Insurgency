@@ -5,7 +5,7 @@ tp @a[scores={spawnpoint=0..2}] 77 2 214 35 0
 tp @a[scores={spawnpoint=3}] 71 5 253 138 0
 tp @a[scores={spawnpoint=4}] 64 14 244 131 0
 
-tp @a[scores={spawnpoint=5}] 59 6 22 0 0
+tp @a[scores={spawnpoint=5}] 59 6 224 0 0
 tp @a[scores={spawnpoint=6}] 32 11 214 -40 0
 tp @a[scores={spawnpoint=7..}] 46 15 231 12 0
 
@@ -14,7 +14,7 @@ summon marker 77 2 214 {Tags:["spawnPoint","team1","mapSpecific"]}
 summon marker 71 5 253 {Tags:["spawnPoint","team1","mapSpecific"]}
 summon marker 64 14 244 {Tags:["spawnPoint","team1","mapSpecific"]}
 
-summon marker 59 6 22 {Tags:["spawnPoint","team2","mapSpecific"]}
+summon marker 59 6 224 {Tags:["spawnPoint","team2","mapSpecific"]}
 summon marker 32 11 214 {Tags:["spawnPoint","team2","mapSpecific"]}
 summon marker 46 15 231 {Tags:["spawnPoint","team2","mapSpecific"]}
 

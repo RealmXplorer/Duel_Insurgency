@@ -11,7 +11,7 @@ execute if entity @s[tag=sabotaged] run function du-in:kit/all/ability/sabotage/
 
 execute as @a[tag=yodaMark] run function du-in:kit/yoda/ability/explode with storage du-in:yoda_damage yodaAbsorb
 particle minecraft:explosion ~ ~ ~ 1 1 1 1 10 normal
-particle minecraft:flash ~ ~ ~ 1 1 1 1 10
+particle minecraft:flash{color:0xffffff} ~ ~ ~ 1 1 1 1 10
 playsound minecraft:soundeffect.boom master @a ~ ~ ~ 2 .5
 playsound minecraft:entity.warden.sonic_boom master @a ~ ~ ~ 1 1
 #execute if entity @a[tag=yodaMark] run function du-in:kit/chara/ability/cooldown

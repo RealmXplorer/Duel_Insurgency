@@ -12,7 +12,7 @@ execute if entity @s[tag=void] as @e[type=skeleton,tag=gonerThing,distance=0.05.
 
 #Particles and Sounds
 particle minecraft:explosion ~ ~1 ~ 1 0 1 0 15 force
-particle minecraft:flash ~ ~1 ~ 0 0 0 0 10 normal
+particle minecraft:flash{color:0xffffff} ~ ~1 ~ 0 0 0 0 10 normal
 particle minecraft:gust_emitter_small ~ ~1 ~ 1 0 1 2 15 force
 #Testing sound
 playsound minecraft:entity.allay.death master @a ~ ~ ~ 0.75 0.65

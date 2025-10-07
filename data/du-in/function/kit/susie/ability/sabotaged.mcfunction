@@ -2,7 +2,7 @@ playsound minecraft:soundeffect.dr_explode master @a ~ ~ ~ 1 1
 
 damage @s 20 explosion
 particle minecraft:explosion ~ ~1 ~ 1 0 1 0 15 force
-particle minecraft:flash ~ ~1 ~ 0 0 0 0 10 normal
+particle minecraft:flash{color:0xffffff} ~ ~1 ~ 0 0 0 0 10 normal
 
 
 execute if entity @s[tag=sabotaged] run function du-in:kit/all/ability/sabotage/effects

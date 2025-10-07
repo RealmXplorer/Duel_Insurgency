@@ -15,7 +15,7 @@ execute unless entity @s[level=1..] run xp add @s 30 levels
 execute if entity @s[level=180..,tag=cinderUsed] run xp add @s -60 levels
 tag @s remove cinderUsed
 playsound minecraft:cinder.switch master @a ~ ~ ~ 2 1
-particle minecraft:flash ~ ~1 ~ 0 0 0 0 10 normal
+particle minecraft:flash{color:0xffffff} ~ ~1 ~ 0 0 0 0 10 normal
 
 #particle minecraft:dust{color:[1.0, 1.0, 1.0],scale:1.0} ~ ~1 ~ .5 .5 .5 1 100 force
 

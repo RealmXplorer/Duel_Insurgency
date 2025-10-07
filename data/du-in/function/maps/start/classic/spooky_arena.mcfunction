@@ -11,7 +11,7 @@ function du-in:ingame/startround/timer/start_timer
 summon marker -459 9 -506 {Tags:["spawnPoint","team1","mapSpecific"]}
 summon marker -481 9 -506 {Tags:["spawnPoint","team1","mapSpecific"]}
 summon marker -481 9 -484 {Tags:["spawnPoint","team2","mapSpecific"]}
-summon marker -459 9 -483 {Tags:["spawnPoint","team2","mapSpecific"]}
+summon marker -459 9 -484 {Tags:["spawnPoint","team2","mapSpecific"]}
 
 #Halloween Vents#
 execute if entity @a[tag=sus] run summon marker -485 9 -489 {Tags:["vent","mapSpecific"]}

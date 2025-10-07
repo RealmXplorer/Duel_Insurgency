@@ -1,5 +1,5 @@
 particle minecraft:flame ~ ~ ~ 1 0 0 .5 50
-particle minecraft:flash ~ ~ ~ 1 0 0 .5 0
+particle minecraft:flash{color:0xffffff} ~ ~ ~ 1 0 0 .5 0
 
 playsound minecraft:soundeffect.parry master @a ~ ~ ~ 100 1
 playsound minecraft:soundeffect.parry master @a ~ ~ ~ 100 .5
