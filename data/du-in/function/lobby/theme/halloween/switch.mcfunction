@@ -24,4 +24,4 @@ team modify displayBlueTeam color dark_purple
 team modify Red prefix {text:"[Ghoul] ",bold:true,color:gold}
 team modify Blue prefix {text:"[Ghost] ",bold:true,color:dark_purple}
 
-tellraw @a ["",{text:"Halloween ",bold:true,color:dark_purple},{text:"lobby theme selected!",color:yellow}]
+tellraw @a [{text:"Halloween ",bold:true,color:dark_purple},{text:"lobby theme selected!",color:yellow}]

@@ -5,5 +5,5 @@ playsound minecraft:vader.hold master @a ~ ~ ~ 100 1.5
 playsound minecraft:sans.ability master @a ~ ~ ~ .5 .95
 clear @s #du-in:ability
 xp set @s[tag=!stolen] 320 levels
-#tellraw @a[distance=0.05..5,tag=playing,gamemode=!spectator,tag=!teamDead] ["",{text:"You are being choked by Darth Vader!",bold:true,color:red}]
+#tellraw @a[distance=0.05..5,tag=playing,gamemode=!spectator,tag=!teamDead] [{text:"You are being choked by Darth Vader!",bold:true,color:red}]
 execute if entity @s[tag=stolen] run tag @s add kitDone

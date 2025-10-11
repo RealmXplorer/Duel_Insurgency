@@ -13,4 +13,4 @@ function du-in:lobby/theme/thanks/display
 
 clone 206 36 96 216 26 121 227 90 13
 
-tellraw @a ["",{text:"Thanksgiving ",bold:true,color:gold},{text:"lobby theme selected!",color:yellow}]
+tellraw @a [{text:"Thanksgiving ",bold:true,color:gold},{text:"lobby theme selected!",color:yellow}]

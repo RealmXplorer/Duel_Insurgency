@@ -1,16 +1,18 @@
 #Mark players
 tag @s[tag=!sabotaged] add beetleJuice
 
+#AGGRO THRU UUID
 #Summon Vexes
-execute if entity @s[tag=!sabotaged,tag=!teamMode] as @a[gamemode=adventure,tag=playing,tag=!teamDead,tag=!beetleJuice] at @s run summon vex ^ ^ ^-3 {Health:15f,Tags:["beetleGhost","unsetTime","mapSpecific"],life_ticks:3400,attributes:[{id:"minecraft:movement_speed",base:1}]}
+execute if entity @s[tag=!sabotaged,tag=!teamMode] as @a[gamemode=adventure,tag=playing,tag=!teamDead,tag=!beetleJuice] at @s run summon vex ^ ^ ^-3 {Health:15f,Tags:["beetleGhost","unsetTime","mapSpecific"],life_ticks:3400,equipment:{mainhand:{id:"minecraft:iron_sword",count:1}},attributes:[{id:"minecraft:movement_speed",base:34},{id:"minecraft:follow_range",base:100}]}
+
 #Summon Teammode Vexes
-execute if entity @s[tag=!sabotaged,team=Red] as @a[gamemode=adventure,tag=playing,tag=!teamDead,tag=!beetleJuice] unless score @s team = @a[scores={kit=1006},tag=kitActions,limit=1] team at @s run summon vex ^ ^ ^-3 {Team:"Red",Health:15f,Tags:["beetleGhost","unsetTime","mapSpecific"],life_ticks:3400,attributes:[{id:"minecraft:movement_speed",base:1}]}
-execute if entity @s[tag=!sabotaged,team=Blue] as @a[gamemode=adventure,tag=playing,tag=!teamDead,tag=!beetleJuice] unless score @s team = @a[scores={kit=1006},tag=kitActions,limit=1] team at @s run summon vex ^ ^ ^-3 {Team:"Blue",Health:15f,Tags:["beetleGhost","unsetTime","mapSpecific"],life_ticks:3400,attributes:[{id:"minecraft:movement_speed",base:1}]}
+execute if entity @s[tag=!sabotaged,team=Red] as @a[gamemode=adventure,tag=playing,tag=!teamDead,tag=!beetleJuice] unless score @s team = @a[scores={kit=1006},tag=kitActions,limit=1] team at @s run summon vex ^ ^ ^-3 {Team:"Red",Health:15f,Tags:["beetleGhost","unsetTime","mapSpecific"],life_ticks:3400,equipment:{mainhand:{id:"minecraft:iron_sword",count:1}},attributes:[{id:"minecraft:movement_speed",base:34},{id:"minecraft:follow_range",base:100}]}
+execute if entity @s[tag=!sabotaged,team=Blue] as @a[gamemode=adventure,tag=playing,tag=!teamDead,tag=!beetleJuice] unless score @s team = @a[scores={kit=1006},tag=kitActions,limit=1] team at @s run summon vex ^ ^ ^-3 {Team:"Blue",Health:15f,Tags:["beetleGhost","unsetTime","mapSpecific"],life_ticks:3400,equipment:{mainhand:{id:"minecraft:iron_sword",count:1}},attributes:[{id:"minecraft:movement_speed",base:34},{id:"minecraft:follow_range",base:100}]}
 
 execute if entity @s[tag=sabotaged] run summon vex ^ ^ ^-5 {Health:10f,Tags:["beetleGhost","unsetTime"]}
 
 #Set timer
-execute as @e[type=vex,tag=unsetTime] run scoreboard players set @s beetleGhostTimer 100
+execute as @e[type=vex,tag=unsetTime] run scoreboard players set @s beetleGhostTimer 160
 execute at @e[type=vex,tag=unsetTime] run playsound minecraft:entity.vex.charge master @a ~ ~ ~ 1 0.75
 execute at @e[type=vex,tag=unsetTime] run playsound minecraft:entity.happy_ghast.death master @a ~ ~ ~ 0.5 0.5
 

@@ -1,5 +1,5 @@
 #Announce map
-tellraw @a ["",{text:"The ",bold:false,color:gray},{text:"Jermall ",bold:true,color:"#cc2176"},{text:"map has been chosen!",bold:false,color:gray}]
+tellraw @a [{text:"The ",bold:false,color:gray},{text:"Jermall ",bold:true,color:"#cc2176"},{text:"map has been chosen!",bold:false,color:gray}]
 
 #Teleport players
 tp @a[scores={spawnpoint=0..2}] -1333 15 851 31 0

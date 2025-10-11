@@ -1,4 +1,4 @@
-tellraw @a ["",{text:"The ",bold:false,color:gray},{text:"Kiln of the First Flame ",bold:true,color:"#a7a4a2"},{text:"map has been chosen!",bold:false,color:gray}]
+tellraw @a [{text:"The ",bold:false,color:gray},{text:"Kiln of the First Flame ",bold:true,color:"#a7a4a2"},{text:"map has been chosen!",bold:false,color:gray}]
 
 #Teleport#
 tp @a[scores={spawnpoint=0..2}] 7443 73 2786 37.7 2.9

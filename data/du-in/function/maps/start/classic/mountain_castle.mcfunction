@@ -1,4 +1,4 @@
-tellraw @a ["",{text:"The ",bold:false,color:gray},{text:"Mountain Castle ",bold:true,color:"#b5b1aa"},{text:"map has been chosen!",bold:false,color:gray}]
+tellraw @a [{text:"The ",bold:false,color:gray},{text:"Mountain Castle ",bold:true,color:"#b5b1aa"},{text:"map has been chosen!",bold:false,color:gray}]
 
 #Teleport#
 tp @a[scores={spawnpoint=0..2}] -13 11 29 -135 1

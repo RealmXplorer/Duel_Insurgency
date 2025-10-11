@@ -1,4 +1,4 @@
-tellraw @a ["",{text:"The ",bold:false,color:gray},{text:"Harvest Arena ",bold:true,color:"#d96218"},{text:"map has been chosen!",bold:false,color:gray}]
+tellraw @a [{text:"The ",bold:false,color:gray},{text:"Harvest Arena ",bold:true,color:"#d96218"},{text:"map has been chosen!",bold:false,color:gray}]
 
 tp @a[scores={spawnpoint=0..2}] 1286 9 1286 135 0
 tp @a[scores={spawnpoint=3..4}] 1286 9 1264 45 0

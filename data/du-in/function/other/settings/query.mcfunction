@@ -1,4 +1,4 @@
-tellraw @a ["",{text:"Current Settings: ",bold:true,color:white}]
+tellraw @a [{text:"Current Settings: ",bold:true,color:white}]
 function du-in:other/settings/scales/classicap
 function du-in:other/settings/scales/dmcap
 function du-in:other/settings/scales/kothcap

@@ -1,4 +1,4 @@
-tellraw @a ["",{text:"The ",bold:false,color:gray},{text:"Lake Lao Gai ",bold:true,color:"#aff3d9"},{text:"map has been chosen!",bold:false,color:gray}]
+tellraw @a [{text:"The ",bold:false,color:gray},{text:"Lake Lao Gai ",bold:true,color:"#aff3d9"},{text:"map has been chosen!",bold:false,color:gray}]
 
 tp @a[scores={spawnpoint=0..2}] 4976 68 -2295 -60 0
 tp @a[scores={spawnpoint=3..4}] 4976 68 -2277 -118 0

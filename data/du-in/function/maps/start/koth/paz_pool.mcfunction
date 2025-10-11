@@ -1,4 +1,4 @@
-tellraw @a ["",{text:"The ",bold:false,color:gray},{text:"Paz Pool Party ",bold:true,color:"#ffc2f3"},{text:"map has been chosen!",bold:false,color:gray}]
+tellraw @a [{text:"The ",bold:false,color:gray},{text:"Paz Pool Party ",bold:true,color:"#ffc2f3"},{text:"map has been chosen!",bold:false,color:gray}]
 
 #Give all players swimsuit skins
 execute as @a[gamemode=!spectator] run function du-in:maps/pool_party/give_swimsuits

@@ -1,4 +1,4 @@
-tellraw @a ["",{text:"The ",bold:false,color:gray},{text:"Moraband ",bold:true,color:"#e83a63"},{text:"map has been chosen!",bold:false,color:gray}]
+tellraw @a [{text:"The ",bold:false,color:gray},{text:"Moraband ",bold:true,color:"#e83a63"},{text:"map has been chosen!",bold:false,color:gray}]
 
 tp @a[scores={spawnpoint=0..2}] 5021 11 5247 40 10
 tp @a[scores={spawnpoint=3..4}] 5020 7 5290 150 0

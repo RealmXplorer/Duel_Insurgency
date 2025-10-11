@@ -1,4 +1,4 @@
-tellraw @a ["",{text:"The ",bold:false,color:gray},{text:"Escher ",bold:true,color:"#ffefa6"},{text:"map has been chosen!",bold:false,color:gray}]
+tellraw @a [{text:"The ",bold:false,color:gray},{text:"Escher ",bold:true,color:"#ffefa6"},{text:"map has been chosen!",bold:false,color:gray}]
 
 #Teleports#
 tp @a[scores={spawnpoint=0..2}] 675 12 -621 -56 7

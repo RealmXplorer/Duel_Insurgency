@@ -218,8 +218,8 @@ advancement grant @a[tag=void] only du-in:void/void
 
 execute unless score #main matchDeaths matches 1.. run scoreboard players set Insurgents matchDeaths 0
 
-#execute if score #main pylonsDestroyed matches ..2 run scoreboard objectives modify matchDeaths displayname ["",{text:"Match Deaths ",bold:true,color:red},{text:"(Max 2)",color:gray}]
-scoreboard objectives modify playerCount displayname ["",{text:"Players left",bold:true,color:red}]
+#execute if score #main pylonsDestroyed matches ..2 run scoreboard objectives modify matchDeaths displayname [{text:"Match Deaths ",bold:true,color:red},{text:"(Max 2)",color:gray}]
+scoreboard objectives modify playerCount displayname [{text:"Players left",bold:true,color:red}]
 
 scoreboard objectives setdisplay sidebar playerCount
 

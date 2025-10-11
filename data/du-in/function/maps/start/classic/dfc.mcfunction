@@ -1,4 +1,4 @@
-tellraw @a ["",{text:"The ",bold:false,color:gray},{text:"DFC ",bold:true,color:yellow},{text:"map has been chosen!",bold:false,color:gray}]
+tellraw @a [{text:"The ",bold:false,color:gray},{text:"DFC ",bold:true,color:yellow},{text:"map has been chosen!",bold:false,color:gray}]
 
 time set 14000
 

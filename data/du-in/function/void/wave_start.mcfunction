@@ -23,6 +23,6 @@ execute if score #main pylonsDestroyed matches ..2 run tellraw @a [{text:"The Py
 execute if score #main pylonsDestroyed matches 3 run tellraw @a [{text:"The world is ending...",bold:true,color:dark_purple}]
 
 
-bossbar set gast:pylon name ["",{text:"Pylon Stabilization: ",bold:true,color:white},{"score":{"name":"@a[gamemode=adventure,tag=void,limit=1]","objective":"gonersKilled"},color:red,bold:true},{text:" Goners left",color:gray,bold:true}]
+bossbar set gast:pylon name [{text:"Pylon Stabilization: ",bold:true,color:white},{"score":{"name":"@a[gamemode=adventure,tag=void,limit=1]","objective":"gonersKilled"},color:red,bold:true},{text:" Goners left",color:gray,bold:true}]
 execute store result bossbar gast:pylon max run scoreboard players get @a[gamemode=adventure,tag=void,limit=1] gonersKilled
 

@@ -1,4 +1,4 @@
-tellraw @a ["",{text:"The ",bold:false,color:gray},{text:"Caves ",bold:true,color:"#828282"},{text:"map has been chosen!",bold:false,color:gray}]
+tellraw @a [{text:"The ",bold:false,color:gray},{text:"Caves ",bold:true,color:"#828282"},{text:"map has been chosen!",bold:false,color:gray}]
 
 #Spawnpoints
 tp @a[scores={spawnpoint=0..2}] -15 11 79 -40 1

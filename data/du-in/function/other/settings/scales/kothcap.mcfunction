@@ -12,11 +12,11 @@ scoreboard players set #main kothGoal 100000
 scoreboard players set #main kothHalf 100000
 
 #Announce settings
-execute if score #main kothCap matches 2000 run tellraw @a ["",{text:"KOTH Points ",bold:true,color:red},{text:"Max 2000",color:gray},{text:" (Default)",bold:true,color:green}]
-execute if score #main kothCap matches 3000 run tellraw @a ["",{text:"KOTH Points ",bold:true,color:red},{text:"Max 3000 (Extended)",color:gray}]
-execute if score #main kothCap matches 4000 run tellraw @a ["",{text:"KOTH Points ",bold:true,color:red},{text:"Max 4000 (Grueling)",color:gray}]
-execute if score #main kothCap matches 5000 run tellraw @a ["",{text:"KOTH Points ",bold:true,color:red},{text:"Max 5000 (Pain)",color:gray}]
-execute if score #main kothCap matches 6000 run tellraw @a ["",{text:"KOTH Points ",bold:true,color:red},{text:"Max 6000 (Hell)",color:gray}]
+execute if score #main kothCap matches 2000 run tellraw @a [{text:"KOTH Points ",bold:true,color:red},{text:"Max 2000",color:gray},{text:" (Default)",bold:true,color:green}]
+execute if score #main kothCap matches 3000 run tellraw @a [{text:"KOTH Points ",bold:true,color:red},{text:"Max 3000 (Extended)",color:gray}]
+execute if score #main kothCap matches 4000 run tellraw @a [{text:"KOTH Points ",bold:true,color:red},{text:"Max 4000 (Grueling)",color:gray}]
+execute if score #main kothCap matches 5000 run tellraw @a [{text:"KOTH Points ",bold:true,color:red},{text:"Max 5000 (Pain)",color:gray}]
+execute if score #main kothCap matches 6000 run tellraw @a [{text:"KOTH Points ",bold:true,color:red},{text:"Max 6000 (Hell)",color:gray}]
 
 #Calculate thresholds
 execute if score #main kothGoal >= #main kothCap store result score #main kothGoal run scoreboard players get #main kothCap

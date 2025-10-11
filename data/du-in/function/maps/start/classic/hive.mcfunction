@@ -1,4 +1,4 @@
-tellraw @a ["",{text:"The ",bold:false,color:gray},{text:"Hive ",bold:true,color:"#ffd859"},{text:"map has been chosen!",bold:false,color:gray}]
+tellraw @a [{text:"The ",bold:false,color:gray},{text:"Hive ",bold:true,color:"#ffd859"},{text:"map has been chosen!",bold:false,color:gray}]
 
 #TELEPORT#
 tp @a[scores={spawnpoint=0..2}] 73 5 37 40 -4

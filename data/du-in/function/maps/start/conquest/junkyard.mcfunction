@@ -1,4 +1,4 @@
-tellraw @a ["",{text:"The ",bold:false,color:gray},{text:"Junkyard ",bold:true,color:"#c9965b"},{text:"map has been chosen!",bold:false,color:gray}]
+tellraw @a [{text:"The ",bold:false,color:gray},{text:"Junkyard ",bold:true,color:"#c9965b"},{text:"map has been chosen!",bold:false,color:gray}]
 
 #Teleports#
 tp @a[scores={team=1}] -1614 34 455 -90 0

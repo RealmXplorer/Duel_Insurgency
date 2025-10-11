@@ -1,4 +1,4 @@
-tellraw @a ["",{text:"The ",bold:false,color:gray},{text:"Desert Arena ",bold:true,color:yellow},{text:"map has been chosen!",bold:false,color:gray}]
+tellraw @a [{text:"The ",bold:false,color:gray},{text:"Desert Arena ",bold:true,color:yellow},{text:"map has been chosen!",bold:false,color:gray}]
 
 tp @a[scores={spawnpoint=0..2}] -2747 6 -5949 -180 0
 tp @a[scores={spawnpoint=3..4}] -2726 6 -5970 90 0

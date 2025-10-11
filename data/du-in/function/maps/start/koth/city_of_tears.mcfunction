@@ -1,4 +1,4 @@
-tellraw @a ["",{text:"The ",bold:false,color:gray},{text:"City of Tears ",bold:true,color:"#221f9c"},{text:"map has been chosen!",bold:false,color:gray}]
+tellraw @a [{text:"The ",bold:false,color:gray},{text:"City of Tears ",bold:true,color:"#221f9c"},{text:"map has been chosen!",bold:false,color:gray}]
 
 tp @a[scores={spawnpoint=0..2}] -6021 5 -4497 -90 0
 tp @a[scores={spawnpoint=3..4}] -6000 5 -4477 -180 0

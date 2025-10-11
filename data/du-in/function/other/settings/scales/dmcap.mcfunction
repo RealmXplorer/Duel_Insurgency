@@ -8,8 +8,8 @@ execute as @a[tag=partyLeader,limit=1] if score @s dmScale matches 4 run scorebo
 execute as @a[tag=partyLeader,limit=1] if score @s dmScale matches 5.. run scoreboard players set @s dmScale 0
 
 #Announce settings
-execute if score @a[tag=partyLeader,limit=1] maxLives matches 5 run tellraw @a ["",{text:"Deathmatch Lives ",bold:true,color:red},{text:"Max 5",color:gray},{text:" (Default)",bold:true,color:green}]
-execute if score @a[tag=partyLeader,limit=1] maxLives matches 7 run tellraw @a ["",{text:"Deathmatch Lives ",bold:true,color:red},{text:"Max 7 (Lengthy)",color:gray}]
-execute if score @a[tag=partyLeader,limit=1] maxLives matches 10 run tellraw @a ["",{text:"Deathmatch Lives ",bold:true,color:red},{text:"Max 10 (Brutal)",color:gray}]
-execute if score @a[tag=partyLeader,limit=1] maxLives matches 1 run tellraw @a ["",{text:"Deathmatch Lives ",bold:true,color:red},{text:"Max 1 (Instant)",color:gray}]
-execute if score @a[tag=partyLeader,limit=1] maxLives matches 3 run tellraw @a ["",{text:"Deathmatch Lives ",bold:true,color:red},{text:"Max 3 (Quick)",color:gray}]
+execute if score @a[tag=partyLeader,limit=1] maxLives matches 5 run tellraw @a [{text:"Deathmatch Lives ",bold:true,color:red},{text:"Max 5",color:gray},{text:" (Default)",bold:true,color:green}]
+execute if score @a[tag=partyLeader,limit=1] maxLives matches 7 run tellraw @a [{text:"Deathmatch Lives ",bold:true,color:red},{text:"Max 7 (Lengthy)",color:gray}]
+execute if score @a[tag=partyLeader,limit=1] maxLives matches 10 run tellraw @a [{text:"Deathmatch Lives ",bold:true,color:red},{text:"Max 10 (Brutal)",color:gray}]
+execute if score @a[tag=partyLeader,limit=1] maxLives matches 1 run tellraw @a [{text:"Deathmatch Lives ",bold:true,color:red},{text:"Max 1 (Instant)",color:gray}]
+execute if score @a[tag=partyLeader,limit=1] maxLives matches 3 run tellraw @a [{text:"Deathmatch Lives ",bold:true,color:red},{text:"Max 3 (Quick)",color:gray}]
