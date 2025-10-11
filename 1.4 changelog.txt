@@ -5,24 +5,17 @@
 -Added "Haunted Caves" variant of The Caves.
     -Picked when "Halloween" lobby theme is selected.
     
-*Balancing*
--Increased Judy's weapon damage. (3.25 -> 3.4)
--Decreased Judy's ability cooldown. (370 -> 350)
--Decreased the time it takes for Judy's ability to sleep. (70 -> 50)
-
 *Changes*
 -Changes to Halloween and Thanksgiving Lobby.
 -Changes to Spooky Arena.
 -Added a Vent to Caves, as the map was very lopsided with its vent placement.
--Changed how the sound effects played in Parkour.
--Shifted Vending Mode money placement to be in the middle of hotbar to avoid conflicts with secondaries.
 
 *Internal Changes*
 -Many score checks have been switched to tag checks.
 -Most "nearest" selectors now use a "distance" check.
 -Lobby items will now only replace your hotbar and inventory if you are in adventure.
     -Changed so going into spectator won't clear your items when switching back to creative.
--All Parkour checkpoints now have their own function files.
+-Fixed internal JSON bugs with tellraws.
 
 *Bug Fixes*
 -Fixed bug where Jack Horner's unicorn horn explosion would still occur, even if you died.
