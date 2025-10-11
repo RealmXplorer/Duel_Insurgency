@@ -18,8 +18,10 @@
 
 *Bug Fixes*
 -Fixed bug where Jack Horner's unicorn horn explosion would still occur, even if you died.
+-Fixed bug where knight could hit ability anywhere on map if he got close enough once.
 
 *Resourcepack Updates*
+-Updated Count Wilde skin to use new base. (by nerbski_)
 -Added Carnival Hammer skin. (by Realm_Xplorer)
 -Added Beetlejuice armor skin. (by unknown and Nerbski)
 -Added Carnival Hammer texture. (by Realm_Xplorer)

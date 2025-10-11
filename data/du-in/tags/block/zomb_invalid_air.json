@@ -7,7 +7,7 @@
         "#minecraft:fences",
         "#minecraft:fence_gates",
         "minecraft:iron_bars",
-        "minecraft:chain",
+        "#minecraft:chains",
         "minecraft:lightning_rod",
         "minecraft:slime_block"
 

@@ -1,4 +1,4 @@
-tellraw @a ["",{text:"The ",bold:false,color:gray},{text:"Haunted Arena ",bold:true,color:"#a14fe0"},{text:"map has been chosen!",bold:false,color:gray}]
+tellraw @a [{text:"The ",bold:false,color:gray},{text:"Haunted Arena ",bold:true,color:"#a14fe0"},{text:"map has been chosen!",bold:false,color:gray}]
 
 tp @a[scores={spawnpoint=0..2}] -459 9 -506 -45 0
 tp @a[scores={spawnpoint=3..4}] -481 9 -506 -135 0

@@ -26,5 +26,5 @@ execute as @a[tag=voidOut] run function du-in:void/void_return
 
 schedule function du-in:void/wave_start 10s
 
-#bossbar set gast:pylon name ["",{text:"Pylon Stabilization: ",bold:true,color:white},{"score":{"name":"@r","objective":"gonersKilled"},color:red},{text:" Goners left",color:gray}]
+#bossbar set gast:pylon name [{text:"Pylon Stabilization: ",bold:true,color:white},{"score":{"name":"@r","objective":"gonersKilled"},color:red},{text:" Goners left",color:gray}]
 #execute store result bossbar gast:pylon max run scoreboard players get @r gonersKilled

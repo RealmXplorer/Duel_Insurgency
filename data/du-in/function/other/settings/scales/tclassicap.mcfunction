@@ -11,11 +11,11 @@ execute as @a[tag=partyLeader,limit=1] if score @s tKillScale matches 5.. run sc
 scoreboard players set #main tFFAClose 1000
 
 #Announce settings
-execute if score #main tFFAGoal matches 25 run tellraw @a ["",{text:"Team Classic Kills ",bold:true,color:gold},{text:"Max 25",color:gray},{text:" (Default)",bold:true,color:green}]
-execute if score #main tFFAGoal matches 35 run tellraw @a ["",{text:"Team Classic Kills ",bold:true,color:gold},{text:"Max 35 (Extended)",color:gray}]
-execute if score #main tFFAGoal matches 20 run tellraw @a ["",{text:"Team Classic Kills ",bold:true,color:gold},{text:"Max 20 (Faster)",color:gray}]
-execute if score #main tFFAGoal matches 50 run tellraw @a ["",{text:"Team Classic Kills ",bold:true,color:gold},{text:"Max 50 (World War: Duel)",color:gray}]
-execute if score #main tFFAGoal matches 15 run tellraw @a ["",{text:"Team Classic Kills ",bold:true,color:gold},{text:"Max 15 (Quick)",color:gray}]
+execute if score #main tFFAGoal matches 25 run tellraw @a [{text:"Team Classic Kills ",bold:true,color:gold},{text:"Max 25",color:gray},{text:" (Default)",bold:true,color:green}]
+execute if score #main tFFAGoal matches 35 run tellraw @a [{text:"Team Classic Kills ",bold:true,color:gold},{text:"Max 35 (Extended)",color:gray}]
+execute if score #main tFFAGoal matches 20 run tellraw @a [{text:"Team Classic Kills ",bold:true,color:gold},{text:"Max 20 (Faster)",color:gray}]
+execute if score #main tFFAGoal matches 50 run tellraw @a [{text:"Team Classic Kills ",bold:true,color:gold},{text:"Max 50 (World War: Duel)",color:gray}]
+execute if score #main tFFAGoal matches 15 run tellraw @a [{text:"Team Classic Kills ",bold:true,color:gold},{text:"Max 15 (Quick)",color:gray}]
 
 #Calculate threshold
 execute if score #main tFFAClose >= #main tFFAGoal store result score #main tFFAClose run scoreboard players get #main tFFAGoal

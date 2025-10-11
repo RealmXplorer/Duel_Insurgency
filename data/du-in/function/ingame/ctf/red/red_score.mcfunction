@@ -11,7 +11,7 @@ tag @e[type=marker,tag=blueFlag] remove captured
 scoreboard players add #main redPoints 1
 
 #Announce capture and play sounds
-tellraw @a ["",{text:"Red Team",bold:true,color:red},{text:" has captured the ",color:gray},{text:"Blue ",bold:true,color:blue},{text:"flag!",color:gray}]
+tellraw @a [{text:"Red Team",bold:true,color:red},{text:" has captured the ",color:gray},{text:"Blue ",bold:true,color:blue},{text:"flag!",color:gray}]
 playsound minecraft:entity.ender_dragon.growl master @a ~ ~ ~ 999999 1
 playsound minecraft:entity.player.levelup master @a ~ ~ ~ 999999 1
 title @a title [{text:"Blue ",bold:true,color:blue}]
