@@ -30,7 +30,7 @@ tellraw @a[tag=!beetleJuice] {text:"GAAAH!",bold:true,color:red}
 #execute as @e[type=ender_pearl,tag=blakeTP,tag=notAssigned] at @s run function du-in:kit/paz/ability/set_uuid
 
 #Set Ability timer for Beetlejuice
-scoreboard players set @s beetleGhostTimer 100
+scoreboard players set @s beetleGhostTimer 160
 tag @s add scareDuration
 
 #Give Beetlejuice bonus effects

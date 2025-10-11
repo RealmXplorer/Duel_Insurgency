@@ -9,7 +9,7 @@ playsound minecraft:item.crossbow.shoot master @a ~ ~ ~ .25 1.5
 clear @s #du-in:ability
 
 #Start cooldown
-xp set @s[tag=!stolen] 370 levels
+xp set @s[tag=!stolen] 350 levels
 
 #Switch villager back to their ability
 execute if entity @s[tag=stolen] run tag @s add kitDone
