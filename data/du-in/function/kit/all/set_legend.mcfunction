@@ -17,6 +17,8 @@ execute if entity @s[scores={kit=1004}] run function du-in:kit/runza/constant
 #JACK BLACK#
 execute if entity @s[scores={kit=1005}] run function du-in:kit/jack_black/constant
 
+#BEETLEJUICE#
+execute if entity @s[scores={kit=1006}] run function du-in:kit/beetlejuice/constant
 
 #KIT MUSIC#
 execute unless entity @s[tag=startgame] unless entity @s[tag=legMusicOff] run function du-in:music/ingame/kit

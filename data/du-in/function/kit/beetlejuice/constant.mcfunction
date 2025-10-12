@@ -17,6 +17,7 @@ execute unless entity @s[scores={triCount=1}] if entity @s[tag=!teamDead] run fu
 
 #Track number of secondaries and Tp meters in inventory
 execute store result score @s secCount run clear @s warped_fungus_on_a_stick 0
+execute store result score @s triCount run clear @s gunpowder 0
 
 #     GET SHIT ON      #
 #   ABSOLUTE SHIITER   #
