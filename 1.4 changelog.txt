@@ -9,6 +9,7 @@
 -Increased Judy's weapon damage. (3.25 -> 3.4)
 -Decreased Judy's ability cooldown. (370 -> 350)
 -Decreased the time it takes for Judy's ability to sleep. (70 -> 50)
+-Creeper now gets a a Mace when in air from ability.
 
 *Changes*
 -Changes to Halloween and Thanksgiving Lobby.

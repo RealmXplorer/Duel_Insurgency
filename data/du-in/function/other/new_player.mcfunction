@@ -60,8 +60,8 @@ title @a title {text:"",color:red,bold:true}
 title @a subtitle {text:"Open inventory for more options!",color:red,bold:true}
 title @a actionbar {text:"Open inventory for more options!",color:red,bold:true}
 
-execute if entity @a[tag=partyLeader,tag=playing] run scoreboard players set @s leftGame 1
-execute if entity @a[tag=partyLeader,tag=spectating] run scoreboard players set @s leftGame 1
+# execute if entity @a[tag=partyLeader,tag=playing] run scoreboard players set @s leftGame 1
+# execute if entity @a[tag=partyLeader,tag=spectating] run scoreboard players set @s leftGame 1
 
 #End function
 tag @s add played
