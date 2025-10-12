@@ -40,3 +40,4 @@
 -Added Beetlejuice ability texture. (by Realm_Xplorer)
 -Added Beetlejuice hit sounds.
 -Added Beetlejuice death sound. 
+-Retextured Evoker Fangs to look like Sandworms. (by Realm_Xplorer)
