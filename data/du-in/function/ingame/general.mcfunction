@@ -56,7 +56,7 @@ execute as @e[type=falling_block] at @s run function du-in:ingame/entities/falli
 execute as @e[type=block_display] at @s run function du-in:ingame/entities/block_display
 
 #Vexes
-execute as @e[type=vex,scores={beetleGhostTimer=0..}] run function du-in:kit/beetlejuice/ability/timer
+#execute as @e[type=vex,scores={beetleGhostTimer=0..}] run function du-in:kit/beetlejuice/ability/timer
 
 #Poison Apples (MUST BE BELOW MARKER FUNCTIONS)
 execute at @e[type=snowball] run summon minecraft:marker ~ ~ ~ {Tags:["poisonApple","mapSpecific"]}
