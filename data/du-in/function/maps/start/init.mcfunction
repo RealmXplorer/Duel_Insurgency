@@ -13,7 +13,7 @@ kill @e[tag=displayItem]
 execute at @a run playsound minecraft:entity.ender_dragon.flap master @a ~ ~ ~ 1 1.5
 
 #Tally Votes and compare to highest vote
-execute as @a run function du-in:maps/start/start_vote
+execute as @a[tag=!spectating] run function du-in:maps/start/start_vote
 
 #Set the map score to the highest voted map
 function du-in:maps/start/set_vote with storage du-in:mapscore map
