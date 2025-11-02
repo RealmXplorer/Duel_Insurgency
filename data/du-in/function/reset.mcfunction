@@ -315,6 +315,7 @@ execute as @a run function du-in:music/ingame/stop/all
         tag @a remove showTimeDuration
         tag @a remove scareDuration
         tag @a remove maxBeetleDamage
+        scoreboard players set @a beetleDamage 0
         
 tag @a remove hasRing
 tag @a remove sauronHit
@@ -323,10 +324,12 @@ tag @a remove chungusThrowdown
 tag @a remove diveHit
 tag @a remove horrorStart
 tag @a remove redBuster
+tag @a remove inTheModel
 
 #HOWW???
 tag @a remove projectile
 tag @a remove ctfClose
+scoreboard players reset @a Lives
 
 #Give back default skins
 execute as @a[tag=poolParty] run function du-in:maps/pool_party/revert

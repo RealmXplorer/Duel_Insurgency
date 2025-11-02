@@ -1,4 +1,7 @@
 tag @s add showTimeDuration
+tag @a add inTheModel
+
+effect give @a[tag=!showTimeDuration] weakness infinite 1 true
 
 #Summon enderpearl where the players were before
 execute unless entity @s[tag=sabotaged] as @a[gamemode=!spectator] at @s run summon ender_pearl ~ ~ ~ {NoGravity:1b,Owner:[I;0,0,0,0],Tags:["showTimeTP","notAssigned"],Item:{id:"minecraft:ender_pearl",count:1,components:{"minecraft:item_model":"du-in:abilities/disconnect"}}}
@@ -24,9 +27,31 @@ attribute @s scale base set 2
 attribute @s armor base set 1000
 attribute @s armor_toughness base set 1000
 attribute @s attack_damage base set 1000
+attribute @s minecraft:block_interaction_range base set 5
+attribute @s minecraft:entity_interaction_range base set 5
 
 #Message
 tellraw @a[tag=!showTimeDuration] {text:"It's Showtime!",bold:true,color:red}
 
 #Start timer#
-scoreboard players set @s showTimer 100
+scoreboard players set @s showTimer 150
+
+##ABILITY
+#Give Beetlejuice bonus effects
+#effect give @s strength 2 0 true
+
+#Remove ability from hand
+clear @s #du-in:ability
+
+#Start cooldown
+tag @s add cooldown
+#xp set @s[tag=!stolen] 500 levels
+
+#Remove Beetlejuice exemption
+tag @s remove beetleJuice
+
+#Remove sabotaged
+tag @s remove sabotaged
+
+#End ability
+tag @s remove kitActions

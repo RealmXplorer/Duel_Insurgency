@@ -70,6 +70,8 @@ tag @s remove jockeyDuration
 scoreboard players reset @s unicornTimer
 tag @s remove unicornDuration
 
+tag @s remove inTheModel
+
 #CLEAR TAGS#
 execute if entity @s[tag=kyloHit] run tag @s remove kyloHit
 execute if entity @s[tag=notEaten] run tag @s remove notEaten

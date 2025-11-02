@@ -1,4 +1,4 @@
-***8/22/25-10/??/25:***
+***8/22/25-11/01/25:***
 ***Version 1.4: It's Showtime!***
 *Additions*
 -Added Beetlejuice Legendary Character.
@@ -6,7 +6,7 @@
     -Picked when "Halloween" lobby theme is selected.
     
 *Balancing*
--Increased Judy's weapon damage. (3.25 -> 3.4)
+-Increased Judy's weapon damage. (3.25 -> 4)
 -Decreased Judy's ability cooldown. (370 -> 350)
 -Decreased the time it takes for Judy's ability to sleep. (70 -> 50)
 -Creeper now gets a a Mace when in air from ability.
@@ -29,6 +29,7 @@
 *Bug Fixes*
 -Fixed bug where Jack Horner's unicorn horn explosion would still occur, even if you died.
 -Fixed bug where knight could hit ability anywhere on map if he got close enough once.
+-Fixed bug where Jack Black's ability wouldn't force you to ride a chicken.
 
 *Resourcepack Updates*
 -Updated Count Wilde skin to use new base. (by nerbski_)

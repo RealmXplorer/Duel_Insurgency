@@ -11,7 +11,7 @@ tellraw @s [{text:"Selected the ",bold:true,color:gray},{text:"Jerma ",bold:true
 execute if entity @a[tag=partyLeader,tag=specialEvent] run tellraw @a [{selector:"@s",bold:true},{text:" has picked the ",bold:true,color:gray},{text:"Jerma ",bold:true,color:gold},{text:"class! ",bold:true,color:gray}]
 
 #Set kit score to match kit
-scoreboard players set @s kit 1002
+scoreboard players set @s kit 1003
 $data modify storage du-in:player$(current) kit set value {"kit":"jerma"}
 
 #Clear and remove tags

@@ -24,9 +24,9 @@ summon block_display ~ ~ ~ {Tags:["kratosRock","unsetTime","mapSpecific"],block_
 
 #execute as @e[type=wind_charge,tag=windTest] run function du-in:kit/avatar/ability/shoot
 # apply motion to windTest
-execute store result entity @e[type=salmon,tag=kratosTest,limit=1] Motion[0] double 0.0025 run scoreboard players get #targetX pos
-execute store result entity @e[type=salmon,tag=kratosTest,limit=1] Motion[1] double 0.0025 run scoreboard players get #targetY pos
-execute store result entity @e[type=salmon,tag=kratosTest,limit=1] Motion[2] double 0.0025 run scoreboard players get #targetZ pos
+execute store result entity @e[type=salmon,tag=kratosRock,limit=1] Motion[0] double 0.0025 run scoreboard players get #targetX pos
+execute store result entity @e[type=salmon,tag=kratosRock,limit=1] Motion[1] double 0.0025 run scoreboard players get #targetY pos
+execute store result entity @e[type=salmon,tag=kratosRock,limit=1] Motion[2] double 0.0025 run scoreboard players get #targetZ pos
 
 scoreboard players set @e[tag=kratosRock,tag=unsetTime] kratosTimer 30
 tag @e[tag=kratosRock,tag=unsetTime,scores={kratosTimer=0..}] remove unsetTime

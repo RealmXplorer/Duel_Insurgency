@@ -9,6 +9,7 @@ attribute @s minecraft:attack_knockback base set 0
 attribute @s minecraft:movement_speed base set 0.10000000149
 attribute @s minecraft:scale base set 1
 attribute @s minecraft:block_interaction_range base set 4.5
+attribute @s minecraft:entity_interaction_range base set 3.0
 attribute @s minecraft:jump_strength base set 0.42
 attribute @s minecraft:gravity base set 0.08
 attribute @s minecraft:movement_efficiency base set 0

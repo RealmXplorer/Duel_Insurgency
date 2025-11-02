@@ -41,7 +41,7 @@ effect give @s strength 2 0 true
 clear @s #du-in:ability
 
 #Start cooldown
-xp set @s[tag=!stolen] 460 levels
+xp set @s[tag=!stolen] 320 levels
 
 #Remove Beetlejuice exemption
 tag @s remove beetleJuice

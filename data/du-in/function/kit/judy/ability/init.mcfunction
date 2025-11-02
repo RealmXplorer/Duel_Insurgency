@@ -1,3 +1,4 @@
+#tag @s add dartShooter 
 
 execute if entity @s[tag=!sabotaged] run function du-in:kit/judy/ability/default_init
 execute if entity @s[tag=sabotaged] run function du-in:kit/judy/ability/sabotage/init
@@ -6,7 +7,7 @@ execute if entity @s[tag=sabotaged] run function du-in:kit/judy/ability/sabotage
 clear @s #du-in:ability
 
 #Start cooldown
-xp set @s[tag=!stolen] 370 levels
+xp set @s[tag=!stolen] 350 levels
 
 #Switch villager back to their ability
 execute if entity @s[tag=stolen] run tag @s add kitDone
