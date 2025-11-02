@@ -13,7 +13,6 @@
 
 *Changes*
 -Changes to Halloween and Thanksgiving Lobby.
--Changes to Spooky Arena.
 -Added a Vent to Caves, as the map was very lopsided with its vent placement.
 -Changed how the sound effects played in Parkour.
 -Shifted Vending Mode money placement to be in the middle of hotbar to avoid conflicts with secondaries.
