@@ -16,6 +16,7 @@
 -Added a Vent to Caves, as the map was very lopsided with its vent placement.
 -Changed how the sound effects played in Parkour.
 -Shifted Vending Mode money placement to be in the middle of hotbar to avoid conflicts with secondaries.
+-Added a proper icon image for the world.
 
 *Internal Changes*
 -Many score checks have been switched to tag checks.
@@ -40,4 +41,3 @@
 -Added Beetlejuice ability texture. (by Realm_Xplorer)
 -Added Beetlejuice hit sounds.
 -Added Beetlejuice death sound. 
--Retextured Evoker Fangs to look like Sandworms. (by Realm_Xplorer)
