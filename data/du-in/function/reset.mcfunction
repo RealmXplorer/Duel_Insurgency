@@ -355,7 +355,7 @@ execute as @a[tag=poolParty] run function du-in:maps/pool_party/revert
 #MISC#
     tag @a remove kitDone
     tag @a remove falseWin
-    gamerule doWeatherCycle false
+    gamerule advance_weather false
     weather clear
     stopsound @a ambient
     tag @a remove secKitActions

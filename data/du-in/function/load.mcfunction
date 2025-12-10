@@ -118,6 +118,7 @@ scoreboard objectives add shrunkTimer dummy
 scoreboard objectives add beetleDamage dummy
 scoreboard objectives add beetleGhostTimer dummy
 scoreboard objectives add showTimer dummy
+scoreboard objectives add pawbertTimer dummy
 
 #Skins
 scoreboard objectives add asgoreSkin dummy

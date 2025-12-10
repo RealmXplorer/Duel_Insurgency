@@ -45,3 +45,6 @@ execute if entity @s[scores={kit=38}] run function du-in:kit/jevil/init
 
 #Bogo
 execute if entity @s[scores={kit=39}] run function du-in:kit/bogo/init
+
+#Pawbert
+execute if entity @s[scores={kit=40}] run function du-in:kit/pawbert/init

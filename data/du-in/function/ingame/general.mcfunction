@@ -27,7 +27,7 @@
 
 
 #Asgore Trident thrown
-execute as @e[type=trident] run function du-in:kit/asgore/passive/trident
+#execute as @e[type=trident] run function du-in:kit/asgore/passive/trident
 
 #Chicken Jockey
 #execute as @e[type=chicken,scores={jockeyTimer=0..}] run function du-in:kit/jack_black/ability/chicken
@@ -62,12 +62,10 @@ execute as @e[type=block_display] at @s run function du-in:ingame/entities/block
 execute at @e[type=snowball] run summon minecraft:marker ~ ~ ~ {Tags:["poisonApple","mapSpecific"]}
 
 #Test when it shifts to day or night
-execute if predicate du-in:ambience/night_start if score #main dayNightSetting matches 1 run function du-in:ingame/scheduled/ambience/night_start
-execute if predicate du-in:ambience/night_end if score #main dayNightSetting matches 1 run function du-in:ingame/scheduled/ambience/night_end
-
+execute if score #main dayNightSetting matches 1 run function du-in:ingame/scheduled/ambience/night_init
 
 #Dev Mode end game
 execute if entity @a[tag=devMode,tag=partyLeader] if entity @a[scores={thrownBarrier=1..}] run tag @a add win
 
 #KIT MUSIC#
-execute if entity @a[scores={kit=2015..},tag=!startgame] as @a at @s unless entity @s[tag=legMusicOff] run function du-in:music/ingame/easter_egg
+execute if entity @a[scores={kit=2015..},tag=!startgame] as @a[tag=!legMusicOff] at @s run function du-in:music/ingame/easter_egg

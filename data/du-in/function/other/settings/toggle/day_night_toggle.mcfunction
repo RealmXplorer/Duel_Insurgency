@@ -4,10 +4,10 @@ execute if score #main dayNightSetting matches 2 run scoreboard players reset #m
 
 #Fall damage on
 execute if score #main dayNightSetting matches 1 run tellraw @a [{text:"Day-Night Cycle: ",bold:true,color:gold},{text:"True",color:green}]
-execute if score #main dayNightSetting matches 1 run gamerule doDaylightCycle true
+execute if score #main dayNightSetting matches 1 run gamerule advance_time true
 
 #Fall damage off
 execute unless score #main dayNightSetting matches 1 run tellraw @a [{text:"Day-Night Cycle: ",bold:true,color:gold},{text:"False",color:red}]
-execute unless score #main dayNightSetting matches 1 run gamerule doDaylightCycle false
+execute unless score #main dayNightSetting matches 1 run gamerule advance_time false
 
 setblock ~ ~ ~-2 stone_button[facing=north] destroy

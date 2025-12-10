@@ -4,10 +4,10 @@ execute if score #main fallDamageSetting matches 2 run scoreboard players reset 
 
 #Fall damage on
 execute if score #main fallDamageSetting matches 1 run tellraw @a [{text:"Fall Damage: ",bold:true,color:gold},{text:"On",color:green}]
-execute if score #main fallDamageSetting matches 1 run gamerule fallDamage true
+execute if score #main fallDamageSetting matches 1 run gamerule fall_damage true
 
 #Fall damage off
 execute unless score #main fallDamageSetting matches 1 run tellraw @a [{text:"Fall Damage: ",bold:true,color:gold},{text:"Off",color:red},{text:" (Default)",color:gray}]
-execute unless score #main fallDamageSetting matches 1 run gamerule fallDamage false
+execute unless score #main fallDamageSetting matches 1 run gamerule fall_damage false
 
 setblock ~ ~ ~-2 birch_button[facing=north] destroy

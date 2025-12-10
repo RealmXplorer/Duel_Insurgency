@@ -32,7 +32,7 @@ execute store result score #main kothScale run scoreboard players get @a[tag=par
 execute store result score #main ctfScale run scoreboard players get @a[tag=partyLeader,limit=1] ctfScale
 execute store result score #main conqScale run scoreboard players get @a[tag=partyLeader,limit=1] conqScale
 execute store result score #main tKillScale run scoreboard players get @a[tag=partyLeader,limit=1] tKillScale
-execute store result score #main tkothScale run scoreboard players get @a[tag=partyLeader,limit=1] tKothScale
+execute store result score #main tKothScale run scoreboard players get @a[tag=partyLeader,limit=1] tKothScale
 
 #Resets
 execute as @a[tag=partyLeader] run function du-in:lobby/reset/party_leader

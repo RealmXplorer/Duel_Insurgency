@@ -1,19 +1,21 @@
 {
     "replace":false,
     "values": [
+        "#minecraft:swords",
+        "#minecraft:axes",
+        "#minecraft:spears",
+        "minecraft:crossbow",
+        "minecraft:trident",
+        "minecraft:mace",
+        "minecraft:shield",
+        "#minecraft:pickaxes",
+        "#minecraft:shovels",
+        "#minecraft:hoes",
         "minecraft:magma_cream",
         "minecraft:slime_ball",
         "minecraft:bone",
-        "minecraft:crossbow",
-        "minecraft:trident",
-        "minecraft:stone_axe",
-        "minecraft:wooden_axe",
-        "minecraft:stone_sword",
-        "minecraft:wooden_sword",
         "minecraft:music_disc_11",
         "minecraft:music_disc_stal",
-        "minecraft:stick",
-        "minecraft:mace",
-        "minecraft:shield"
+        "minecraft:stick"
     ]
 }

@@ -1,12 +1,12 @@
 {
 	"pack": {
 		"description": "Duel: Insurgency 1.4.1",
-		"min_format": [88,0],
-		"max_format": [88,0]
+		"min_format": [94,1],
+		"max_format": [94,1]
 	},
 	"overlays": { "entries": [{
 		"directory": "example_overlay",
-		"min_format": [88,0],
-		"max_format": [88,0]
+		"min_format": [94,1],
+		"max_format": [94,1]
 	}]}
 }

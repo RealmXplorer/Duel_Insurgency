@@ -1,0 +1,11 @@
+***12/10/25:***
+***Version 1.4.1:***
+*Changes*
+    -Updated to 1.21.11
+
+*Internal Changes*
+    -All tools are now included in the "du-in:weapons" tag.
+    -Added "#minecraft:spears" to the "du-in:weapons" tag.
+    -Updated Gamerules to follow new format.
+    -Moved asgore trident functions into the "projectiles" function.
+    -Merged the two night ambience check functions from "general" into a new function.

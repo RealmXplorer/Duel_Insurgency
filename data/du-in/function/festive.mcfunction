@@ -13,6 +13,6 @@ scoreboard players set @a music 0
 execute as @a run function du-in:lobby/reset/item
 clear @a
 time set night
-gamerule doDaylightCycle false
+gamerule advance_time false
 scoreboard players reset #main dayNightSetting
 tellraw @a [{text:'Christmas spirit ', bold:true, color:dark_green},{text:'drifts through the air!', color:yellow}]
