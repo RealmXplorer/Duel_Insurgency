@@ -80,6 +80,8 @@ execute if entity @s[scores={kit=37},tag=!stolen] run tellraw @s [{text:"You are
 execute if entity @s[scores={kit=38},tag=!stolen] run tellraw @s [{text:"You see beyond the bars that keep you free...",color:gray,"italic": true}]
 #Bogo
 execute if entity @s[scores={kit=39},tag=!stolen] run tellraw @s [{text:"You see Zootopia, free and yet safe...",color:gray,"italic": true}]
+#Pawbert
+execute if entity @s[scores={kit=40},tag=!stolen] run tellraw @s [{text:"You reach out to your family. Their backs are turned...",color:gray,"italic": true}]
 
 
 #Saac

@@ -6,6 +6,9 @@ scoreboard objectives setdisplay sidebar classicTeamKills
 
 execute unless score #main pylonsDestroyed matches 3 run schedule function du-in:music/ingame/classic 4s
 
+#Set Classic mode
+scoreboard players set #Classic gamemode 3
+
 bossbar set bossbar:gametimer players @a
 team join Classic @a[tag=!spectating,tag=!teamMode,tag=!AFK]
 scoreboard players set @a[tag=!spectating] killIngame 0

@@ -9,3 +9,6 @@
     -Updated Gamerules to follow new format.
     -Moved asgore trident functions into the "projectiles" function.
     -Merged the two night ambience check functions from "general" into a new function.
+    -Removed "played" tag in service of simply using the "player" score.
+    -Submodes are now stored as a score in a fake player and tested, rather than testing tags on all players.
+    -Main gamemodes are now tracked via "gamemode" score in "#main", rather than testing tags on all players.

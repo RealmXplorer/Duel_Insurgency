@@ -13,8 +13,4 @@
         #execute if entity @s[scores={thrownCoal=1..}] run function du-in:other/thrown
         execute if entity @s[scores={secKitUseThrow=1..}] run function du-in:other/thrown_sec
 
-    #Give player with Random tag a random kit#
-        #execute if entity @s[tag=random] run function du-in:kit/all/random/roll
-        #execute if entity @s[tag=randomLeg] run function du-in:kit/all/random/roll_legend
-
     #

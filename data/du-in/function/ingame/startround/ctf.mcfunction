@@ -13,6 +13,9 @@ execute unless score #main pylonsDestroyed matches 3 run schedule function du-in
 bossbar set du-in:bluectf visible true
 bossbar set du-in:redctf visible true
 
+#Set submode
+scoreboard players set #CTF gamemode 0
+
 scoreboard objectives setdisplay sidebar flagGot
 scoreboard players set Red flagGot 0
 scoreboard players set Blue flagGot 0

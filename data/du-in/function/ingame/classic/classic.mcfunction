@@ -1,13 +1,14 @@
-#NORMAL CLASSIC STUFF#
-execute if entity @a[tag=!teamMode,tag=!timedMode,tag=partyLeader] run function du-in:ingame/classic/default/default
+#Pick Classic mode (old)#
+# execute if entity @a[tag=!teamMode,tag=!timedMode,tag=partyLeader] run function du-in:ingame/classic/default/default
+# execute if entity @a[tag=teamMode,tag=!timedMode,tag=partyLeader] run function du-in:ingame/classic/team/teams
+# execute if entity @a[tag=timedMode,tag=!teamMode,tag=partyLeader] run function du-in:ingame/classic/timed/timed
+# execute if entity @a[tag=timedMode,tag=teamMode,tag=partyLeader] run function du-in:ingame/classic/team_timed/timed
 
-#TEAM CLASSIC STUFF#
-execute if entity @a[tag=teamMode,tag=!timedMode,tag=partyLeader] run function du-in:ingame/classic/team/teams
-
-#TIMED CLASSIC STUFF
-execute if entity @a[tag=timedMode,tag=!teamMode,tag=partyLeader] run function du-in:ingame/classic/timed/timed
-
-execute if entity @a[tag=timedMode,tag=teamMode,tag=partyLeader] run function du-in:ingame/classic/team_timed/timed
+#Pick Classic mode
+execute if score #Classic gamemode matches 0 run function du-in:ingame/classic/default/default
+execute if score #Classic gamemode matches 1 run function du-in:ingame/classic/team/teams
+execute if score #Classic gamemode matches 2 run function du-in:ingame/classic/timed/timed
+execute if score #Classic gamemode matches 3 run function du-in:ingame/classic/team_timed/timed
 
 ##Map stuff
 #Hive ambience

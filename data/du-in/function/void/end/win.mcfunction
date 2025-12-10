@@ -83,6 +83,8 @@ execute as @a[tag=playing] if score #main pylonsDestroyed matches 4 run function
 
 advancement grant @a[tag=win] only du-in:void/void_free
 
+execute store result score #main gamemode run scoreboard players get #lastMode gamemode
+
 tag @a remove kothMap
 tag @a add fromVoid
 tag @a add win

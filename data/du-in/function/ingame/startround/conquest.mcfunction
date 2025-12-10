@@ -9,6 +9,9 @@ execute if score #main cqCap matches 7000 run scoreboard objectives modify captu
 
 execute unless score #main pylonsDestroyed matches 3 run schedule function du-in:music/ingame/conquest 4s
 
+#Set Mode
+scoreboard players set #Conquest gamemode 0
+
 bossbar set conquest:blue visible true
 bossbar set conquest:red visible true
 scoreboard objectives setdisplay sidebar capturePoints

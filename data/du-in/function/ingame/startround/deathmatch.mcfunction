@@ -7,6 +7,10 @@ execute if score @a[tag=partyLeader,limit=1] maxLives matches 3 run scoreboard o
 
 execute unless score #main pylonsDestroyed matches 3 run schedule function du-in:music/ingame/deathmatch 4s
 
+#Set Deathmatch Mode
+scoreboard players set #DM gamemode 0
+
+
 execute store result score @a[tag=dmIngame,tag=!spectating] Lives run scoreboard players get @a[tag=partyLeader,limit=1] maxLives
 team join Deathmatch @a[tag=!spectating]
 execute unless entity @a[tag=devMode,tag=partyLeader] if entity @a[tag=!teamMode] run execute store result score #main playerCount run team list Deathmatch

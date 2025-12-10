@@ -10,6 +10,9 @@ execute if score #main tFFAGoal matches 20 run scoreboard objectives modify clas
 
 execute unless score #main pylonsDestroyed matches 3 run schedule function du-in:music/ingame/classic 4s
 
+
+scoreboard players set #Classic gamemode 1
+
 scoreboard objectives setdisplay sidebar classicTeamKills
 #execute if entity @a[tag=!teamMode] run bossbar set bossbar:classic visible true
 bossbar set minecraft:classicred visible true

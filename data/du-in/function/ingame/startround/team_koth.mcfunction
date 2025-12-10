@@ -10,6 +10,9 @@ execute if score #main tKothCap matches 5000 run scoreboard objectives modify ko
 
 execute unless score #main pylonsDestroyed matches 3 run schedule function du-in:music/ingame/koth 4s
 
+#Set KOTH Mode
+scoreboard players set #KOTH gamemode 1
+
 scoreboard players set @a[tag=!spectating] kothTimer 0
 scoreboard objectives setdisplay sidebar kothTeamTimer
 scoreboard players set Red kothTeamTimer 0

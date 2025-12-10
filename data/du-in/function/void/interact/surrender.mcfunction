@@ -80,6 +80,8 @@ execute if entity @s[scores={kit=37},tag=!stolen] run tellraw @s [{text:"You let
 execute if entity @s[scores={kit=38},tag=!stolen] run tellraw @s [{text:"You let go of your need for fun, fun...",color:gray,"italic": true}]
 #Bogo
 execute if entity @s[scores={kit=39},tag=!stolen] run tellraw @s [{text:"You let go of your distrust...",color:gray,"italic": true}]
+#Pawbert
+execute if entity @s[scores={kit=40},tag=!stolen] run tellraw @s [{text:"You let go of your need to prove yourself...",color:gray,"italic": true}]
 
 #Saac
 execute if entity @s[scores={kit=1000}] run tellraw @s [{text:"You let go of your need for quarters...",color:gray,"italic": true}]

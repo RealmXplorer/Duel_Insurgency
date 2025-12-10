@@ -1,22 +1,28 @@
 #   Run GAMEMODES  #
 
     # Classic Functions #
-        execute if entity @a[tag=cIngame] run function du-in:ingame/classic/classic
-    
+        #execute if entity @a[tag=cIngame] run function du-in:ingame/classic/classic
+        execute if score #main gamemode matches 1 run function du-in:ingame/classic/classic
+
     # Deathmatch Function #
-        execute if entity @a[tag=dmIngame] run function du-in:ingame/deathmatch/deathmatch
+        #execute if entity @a[tag=dmIngame] run function du-in:ingame/deathmatch/deathmatch
+        execute if score #main gamemode matches 2 run function du-in:ingame/deathmatch/deathmatch
 
     # KOTH Functions #
-        execute if entity @a[tag=kothIngame] run function du-in:ingame/koth/koth
+        #execute if entity @a[tag=kothIngame] run function du-in:ingame/koth/koth
+        execute if score #main gamemode matches 3 run function du-in:ingame/koth/koth
 
     #CTF Functions #
-        execute if entity @a[tag=ctfIngame] run function du-in:ingame/ctf/ctf
+        #execute if entity @a[tag=ctfIngame] run function du-in:ingame/ctf/ctf
+        execute if score #main gamemode matches 4 run function du-in:ingame/ctf/ctf
 
     # Conquest Functions #
-        execute if entity @a[tag=cqIngame,tag=!win,tag=!lose] run function du-in:ingame/conquest/conquest
+        #execute if entity @a[tag=cqIngame,tag=!win,tag=!lose] run function du-in:ingame/conquest/conquest
+        execute if score #main gamemode matches 5 run function du-in:ingame/conquest/conquest
 
     # HELP ME #
-        execute if entity @a[tag=void] run function du-in:void/void
+        #execute if entity @a[tag=void] run function du-in:void/void
+        execute if score #main gamemode matches 6 run function du-in:ingame/void
 
 # General Functions #
     # Kill all In Ground items and mark projectiles#
@@ -54,9 +60,6 @@ execute as @e[type=falling_block] at @s run function du-in:ingame/entities/falli
 
 #Block Displays
 execute as @e[type=block_display] at @s run function du-in:ingame/entities/block_display
-
-#Vexes
-#execute as @e[type=vex,scores={beetleGhostTimer=0..}] run function du-in:kit/beetlejuice/ability/timer
 
 #Poison Apples (MUST BE BELOW MARKER FUNCTIONS)
 execute at @e[type=snowball] run summon minecraft:marker ~ ~ ~ {Tags:["poisonApple","mapSpecific"]}

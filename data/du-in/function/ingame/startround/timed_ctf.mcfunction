@@ -13,6 +13,9 @@ execute unless score #main pylonsDestroyed matches 3 run schedule function du-in
 execute store result score #main maxTimer run scoreboard players get #main gameTimeMax
 bossbar set bossbar:gametimer visible true
 
+#Set submode
+scoreboard players set #CTF gamemode 1
+
 scoreboard objectives setdisplay sidebar flagGot
 scoreboard players set Red flagGot 0
 scoreboard players set Blue flagGot 0

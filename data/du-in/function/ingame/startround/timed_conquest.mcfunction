@@ -5,6 +5,9 @@ bossbar set bossbar:gametimer players @a
 
 scoreboard objectives modify capturePoints displayname [{text:"Conquest Points ",bold:true,color:blue}]
 
+#Set Mode
+scoreboard players set #Conquest gamemode 1
+
 execute store result score #main maxTimer run scoreboard players get #main gameTimeMax
 bossbar set bossbar:gametimer visible true
 

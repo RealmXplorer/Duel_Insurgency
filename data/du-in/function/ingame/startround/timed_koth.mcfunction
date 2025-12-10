@@ -6,6 +6,9 @@ scoreboard objectives setdisplay sidebar kothTimer
 
 execute unless score #main pylonsDestroyed matches 3 run schedule function du-in:music/ingame/koth 4s
 
+#Set KOTH Mode
+scoreboard players set #KOTH gamemode 2
+
 bossbar set bossbar:gametimer players @a
 team join Classic @a[tag=!spectating]
 scoreboard players set @a[tag=!spectating] kothTimer 0

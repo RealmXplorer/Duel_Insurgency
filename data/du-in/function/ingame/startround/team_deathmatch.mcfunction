@@ -5,6 +5,9 @@ execute if score @a[tag=partyLeader,limit=1] maxLives matches 10 run scoreboard 
 execute if score @a[tag=partyLeader,limit=1] maxLives matches 1 run scoreboard objectives modify teamPool displayname [{text:"Lives ",bold:true,color:red},{text:"(1 life)",color:gray}]
 execute if score @a[tag=partyLeader,limit=1] maxLives matches 3 run scoreboard objectives modify teamPool displayname [{text:"Lives ",bold:true,color:red},{text:"(3 lives)",color:gray}]
 
+#Set Deathmatch Mode
+scoreboard players set #DM gamemode 1
+
 execute store result score Red teamPool run scoreboard players get @a[tag=partyLeader,limit=1] maxLives
 execute store result score Blue teamPool run scoreboard players get @a[tag=partyLeader,limit=1] maxLives
 

@@ -14,6 +14,9 @@ execute positioned 97 20 -107 run playsound minecraft:goner.mouth.spawn master @
 setblock 97 20 -107 minecraft:black_concrete
 bossbar set gast:pylon visible false
 bossbar set gast:pylon4 visible false
+
+execute store result score #main gamemode run scoreboard players get #lastMode gamemode
+
 tag @a add fromVoid
 tag @a add voidLose
 tag @a add win

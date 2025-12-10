@@ -17,7 +17,7 @@ tag @s remove flagGot
 tag @s remove glowing
 
 
-execute unless score @s player matches 1.. if entity @s[tag=played] run tag @s remove played
+#execute unless score @s player matches 1.. if entity @s[tag=played] run tag @s remove played
 
 #Remove other tags from player who left
 #tag @s remove startgame

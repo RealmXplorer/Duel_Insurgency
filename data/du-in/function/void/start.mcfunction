@@ -1,3 +1,6 @@
+execute store result score #lastMode gamemode run scoreboard players get #main gamemode
+scoreboard players set #main gamemode 6
+
 tag @a add void
 execute as @a[tag=spamClick] run attribute @s attack_speed base set 4.0
 tag @a remove spamClick

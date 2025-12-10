@@ -22,10 +22,13 @@ execute at @e[type=marker,tag=blueFlag,tag=!captured,limit=1] as @a[tag=team2,di
 execute if entity @e[type=marker,tag=redFlag,tag=captured] unless entity @a[tag=flagGot,tag=team2] if score #main redFlagTimer matches ..0 run function du-in:ingame/ctf/red/red_return
 execute if entity @e[type=marker,tag=blueFlag,tag=captured] unless entity @a[tag=flagGot,tag=team1] if score #main blueFlagTimer matches ..0 run function du-in:ingame/ctf/blue/blue_return
 
-execute if entity @a[tag=!timedMode,tag=partyLeader] run function du-in:ingame/ctf/default/default
+#Select Submode
+execute if score #CTF gamemode matches 0 run function du-in:ingame/ctf/default/default
+execute if score #CTF gamemode matches 1 run function du-in:ingame/ctf/timed/timed
 
-# #CLOSE TO END#
-execute if entity @a[tag=timedMode,tag=partyLeader] run function du-in:ingame/ctf/timed/timed
+#(old)
+# execute if entity @a[tag=!timedMode,tag=partyLeader] run function du-in:ingame/ctf/default/default
+# execute if entity @a[tag=timedMode,tag=partyLeader] run function du-in:ingame/ctf/timed/timed
 
 #Clear all banners from those who don't have it#
 clear @a[gamemode=adventure,tag=!flagGot] #minecraft:banners
