@@ -1,0 +1,30 @@
+{
+    "criteria": {
+      "midas": {
+        "trigger": "minecraft:entity_hurt_player",
+        "conditions": {
+          "damage": {
+            "source_entity": {
+              "type": "minecraft:player",
+              "equipment": {
+                "mainhand": {
+                  "items": "minecraft:blaze_rod",
+                  "components": {
+                    "minecraft:item_model": "du-in:other/venom_filled"
+                  }
+                }
+              }
+            }
+          }
+        }
+      }
+    },
+    "requirements": [
+      [
+        "midas"
+      ]
+    ],
+    "rewards": {
+      "function": "du-in:kit/pawbert/secondary/injected"
+    }
+  }

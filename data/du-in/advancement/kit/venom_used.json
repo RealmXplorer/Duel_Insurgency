@@ -1,0 +1,30 @@
+{
+    "criteria": {
+      "venom": {
+        "trigger": "minecraft:player_hurt_entity",
+        "conditions": {
+          "damage": {
+            "source_entity": {
+              "type": "minecraft:player",
+              "equipment": {
+                "mainhand": {
+                  "items": "minecraft:blaze_rod",
+                  "components": {
+                    "minecraft:item_model": "du-in:other/venom_filled"
+                  }
+                }
+              }
+            }
+          }
+        }
+      }
+    },
+    "requirements": [
+      [
+        "venom"
+      ]
+    ],
+    "rewards": {
+      "function": "du-in:kit/pawbert/secondary/use_venom"
+    }
+  }  

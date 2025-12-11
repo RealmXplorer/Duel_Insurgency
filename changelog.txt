@@ -5,14 +5,17 @@
 
 *Internal Changes*
     -Updated format to "94.1"
-    -All tools are now included in the "du-in:weapons" tag.
-    -Added "#minecraft:spears" to the "du-in:weapons" tag.
+    -All tools are now included in the "du-in:weapons" item tag.
+    -Added "#minecraft:spears" to the "du-in:weapons" item tag.
+    -Added "minecraft:blaze_rod" to the "du-in:secondary" item tag.
     -Updated Gamerules to follow new format.
     -Moved asgore trident functions into the "projectiles" function.
     -Merged the two night ambience check functions from "general" into a new function.
     -Removed "played" tag in service of simply using the "player" score.
     -Submodes are now stored as a score in a fake player and tested, rather than testing tags on all players.
     -Main gamemodes are now tracked via "gamemode" score in "#main", rather than testing tags on all players.
+    -Spam clicking submode is now run through fake player score rather than a tag.
+    -Easter Egg character music is now run through a fake player score.
 
 *Resourcepack Changes*
     -Updated format to "75.0"

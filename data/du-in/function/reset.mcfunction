@@ -61,6 +61,7 @@ bossbar set bossbar:gametimer visible false
 bossbar set bossbar:gametimer color white
 
 tag @a remove teamMode
+scoreboard players set #main team 0
 
 scoreboard players reset * trident
 
@@ -343,7 +344,11 @@ execute as @a[tag=poolParty] run function du-in:maps/pool_party/revert
     tag @a remove ranMode
     tag @a remove vendingMode
     tag @a remove timedMode
-    tag @a remove spamClick
+    #tag @a remove spamClick
+    scoreboard players set #spamClick gamemode 0
+
+#Reset Custom music for Big Chungus and Saul   
+    scoreboard players set #main music 0
 
 #Parry#
     tag @a remove parried

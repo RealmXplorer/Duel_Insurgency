@@ -25,6 +25,8 @@ tag @a remove audience
 
 tag @a[tag=ctfl] remove teamMode
 tag @a[tag=cql] remove teamMode
+execute if entity @a[tag=ctfl] run scoreboard players set #main team 0
+execute if entity @a[tag=cql] run scoreboard players set #main team 0
 
 #Join lobby team
 team join lobby @a

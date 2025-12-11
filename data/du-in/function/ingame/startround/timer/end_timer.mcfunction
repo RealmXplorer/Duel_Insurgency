@@ -12,6 +12,7 @@ tag @a remove spectator
 scoreboard players set @a music 0
 
 scoreboard players reset @a lobby
+scoreboard players reset #main lobby
 
 title @a times 0 10 5
 title @a[scores={team=1}] subtitle {text:"Red Team",color:red,bold:true}

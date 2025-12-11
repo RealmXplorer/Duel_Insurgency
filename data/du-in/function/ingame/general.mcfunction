@@ -22,7 +22,7 @@
 
     # HELP ME #
         #execute if entity @a[tag=void] run function du-in:void/void
-        execute if score #main gamemode matches 6 run function du-in:ingame/void
+        execute if score #main gamemode matches 6 run function du-in:void/void
 
 # General Functions #
     # Kill all In Ground items and mark projectiles#
@@ -70,5 +70,8 @@ execute if score #main dayNightSetting matches 1 run function du-in:ingame/sched
 #Dev Mode end game
 execute if entity @a[tag=devMode,tag=partyLeader] if entity @a[scores={thrownBarrier=1..}] run tag @a add win
 
-#KIT MUSIC#
-execute if entity @a[scores={kit=2015..},tag=!startgame] as @a[tag=!legMusicOff] at @s run function du-in:music/ingame/easter_egg
+#Override music for Saul and Big Chungus#
+execute if score #main music matches 1 as @a[tag=!legMusicOff] at @s run function du-in:music/ingame/easter_egg
+
+# SPAM CLICK MODE #
+    #execute if score #spamClick gamemode matches 1 as @a[gamemode=adventure] run attribute @s minecraft:attack_speed base set 100

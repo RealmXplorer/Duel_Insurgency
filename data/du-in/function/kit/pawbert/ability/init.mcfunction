@@ -1,5 +1,6 @@
-#Go invisible. Lose Axe, but refill Venom Injector. Injector does more damage (?). If hit while invis, pulled out of ability state.
+#Test if sabotaged
+execute if entity @s[tag=!sabotaged] run function du-in:kit/pawbert/ability/success
+execute if entity @s[tag=sabotaged] run function du-in:kit/pawbert/ability/sabotage/sabotaged
 
-clear @s #du-in:ability
-tag @s add cooldown
+#End ability
 tag @s remove kitActions

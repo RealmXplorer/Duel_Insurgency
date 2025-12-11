@@ -57,8 +57,13 @@ tag @a[tag=!spectating] add playing
     scoreboard players set @a[scores={kit=35}] judyInspire 0
     scoreboard players reset @a[scores={kit=11}] asrielTimer
 
+    #Set player tag for easter egg music
     execute if entity @a[scores={kit=2015}] run tag @a[tag=!legMusicOff,tag=!void,tag=!ctfl,tag=!cql] add saul
     execute if entity @a[scores={kit=42069}] run tag @a[tag=!legMusicOff,tag=!void,tag=!ctfl,tag=!cql] add bigChungus
+
+    #Set global variable for easter egg music to true
+    execute if entity @a[scores={kit=2015..},tag=!void,tag=!ctfl,tag=!cql] run scoreboard players set #main music 1
+
 
     #Mark Zombie and Springtrap as undead
     tag @a[scores={kit=2}] add undead

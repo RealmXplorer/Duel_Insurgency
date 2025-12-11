@@ -2,8 +2,9 @@ execute store result score #lastMode gamemode run scoreboard players get #main g
 scoreboard players set #main gamemode 6
 
 tag @a add void
-execute as @a[tag=spamClick] run attribute @s attack_speed base set 4.0
-tag @a remove spamClick
+execute if score #spamClick gamemode matches 1 as @a run attribute @s attack_speed base set 100.0
+#execute as @a[tag=spamClick] run attribute @s attack_speed base set 4.0
+#tag @a remove spamClick
 tag @a remove ranMode
 
 execute if score #main map matches 13 run fill -1332 21 850 -1379 21 915 minecraft:iron_block replace minecraft:barrier

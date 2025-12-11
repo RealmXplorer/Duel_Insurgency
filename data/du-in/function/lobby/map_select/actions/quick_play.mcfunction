@@ -21,3 +21,4 @@ scoreboard players reset #main mapCountdown
 
 #Reset lobby score for players#
 scoreboard players reset @a lobby
+scoreboard players reset #main lobby

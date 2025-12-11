@@ -18,6 +18,7 @@ execute if score #main gamemode matches 5 run tellraw @a [{text:"The ",bold:fals
 
 #Auto set CTF and Conquest to team mode.
 execute if score #main gamemode matches 4.. run tag @a add teamMode
+execute if score #main gamemode matches 4.. run scoreboard players set #main team 1
 
 #Remove Sub-lobby tags
 tag @a remove shop
