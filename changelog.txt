@@ -4,6 +4,7 @@
     -Updated to 1.21.11
 
 *Internal Changes*
+    -Updated format to "94.1"
     -All tools are now included in the "du-in:weapons" tag.
     -Added "#minecraft:spears" to the "du-in:weapons" tag.
     -Updated Gamerules to follow new format.
@@ -12,3 +13,7 @@
     -Removed "played" tag in service of simply using the "player" score.
     -Submodes are now stored as a score in a fake player and tested, rather than testing tags on all players.
     -Main gamemodes are now tracked via "gamemode" score in "#main", rather than testing tags on all players.
+
+*Resourcepack Changes*
+    -Updated format to "75.0"
+    -Added ||Pawbert Lynxley|| armor texture. (by BellowBomb)
