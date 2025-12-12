@@ -1,4 +1,4 @@
-***12/10/25:***
+***12/10/25 - 12/??/25:***
 ***Version 1.4.2:***
 *Changes*
     -Updated to 1.21.11
@@ -16,6 +16,7 @@
     -Main gamemodes are now tracked via "gamemode" score in "#main", rather than testing tags on all players.
     -Spam clicking submode is now run through fake player score rather than a tag.
     -Easter Egg character music is now run through a fake player score.
+    -Armor return system now runs once a second rather than every tick.
 
 *Resourcepack Changes*
     -Updated format to "75.0"

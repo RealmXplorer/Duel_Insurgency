@@ -1,10 +1,9 @@
 #Run Ability and Secondaries
-    # execute if entity @s[scores={kitUse=1..},tag=!win,tag=!lose,tag=!kitMenu] run function du-in:kit/all/ability/init
-    # execute if entity @s[scores={secKitUse=1..},tag=!win,tag=!lose,tag=!kitMenu,tag=!startgame] run function du-in:kit/all/ability/activate_sec
+    execute if entity @s[scores={kitUse=1..},tag=!win,tag=!lose,tag=!kitMenu] run function du-in:kit/all/ability/init
+    execute if entity @s[scores={secKitUse=1..},tag=!win,tag=!lose,tag=!kitMenu,tag=!startgame] run function du-in:kit/all/ability/activate_sec
 
     # #Ability timer
-    # execute if entity @s[level=1..,tag=!teamDead,tag=!win,tag=!lose,tag=!kitMenu,tag=!startgame] run function du-in:kit/all/ability/timer
-    execute if entity @s[tag=!win,tag=!lose,tag=!kitMenu,tag=!startgame] run function du-in:kit/all/ability/main
+    execute if entity @s[level=1..,tag=!teamDead,tag=!win,tag=!lose,tag=!kitMenu,tag=!startgame] run function du-in:kit/all/ability/timer
 
 # If a player is dead in team mode #
     execute if entity @s[tag=teamDead,tag=!void,scores={deathTimer=0..}] run function du-in:ingame/team_death/dead_effects
