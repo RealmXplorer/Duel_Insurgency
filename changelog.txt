@@ -21,3 +21,5 @@
 *Resourcepack Changes*
     -Updated format to "75.0"
     -Added ||Pawbert Lynxley|| armor texture. (by BellowBomb)
+    -Added ||Venom Injector|| textures. (by Realm_Xplorer)
+    -Added ||Venom Vial|| texture. (by Realm_Xplorer)
