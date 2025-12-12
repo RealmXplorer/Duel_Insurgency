@@ -3,6 +3,8 @@
 #This tag makes it so that Pawbert won't be given his axe back while invisible
 tag @s add pawbertInvisible
 clear @s #du-in:weapon
+scoreboard players set @s pawbertTimer 60
+effect give @s resistance 1 0 true
 
 #Refill Venom injector
 tag @s remove venomEmpty

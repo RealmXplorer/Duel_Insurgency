@@ -8,4 +8,4 @@ scoreboard players set @s regenTimer 0
 execute if entity @s[tag=voidReady] run function du-in:void/interact/reaffirm
 
 #Disrupt Pawbert's ability
-execute if entity @s[tag=pawbertInvisible] run function du-in:kit/pawbert/ability/disrupt
+execute if entity @s[tag=pawbertInvisible,scores={pawbertTimer=..50}] run function du-in:kit/pawbert/ability/disrupt
