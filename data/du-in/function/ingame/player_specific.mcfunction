@@ -1,9 +1,10 @@
 #Run Ability and Secondaries
-    execute if entity @s[scores={kitUse=1..},tag=!win,tag=!lose,tag=!kitMenu] run function du-in:kit/all/ability/init
-    execute if entity @s[scores={secKitUse=1..},tag=!win,tag=!lose,tag=!kitMenu,tag=!startgame] run function du-in:kit/all/ability/activate_sec
+    # execute if entity @s[scores={kitUse=1..},tag=!win,tag=!lose,tag=!kitMenu] run function du-in:kit/all/ability/init
+    # execute if entity @s[scores={secKitUse=1..},tag=!win,tag=!lose,tag=!kitMenu,tag=!startgame] run function du-in:kit/all/ability/activate_sec
 
-    #Ability timer
-    execute if entity @s[level=1..,tag=!teamDead,tag=!win,tag=!lose,tag=!kitMenu,tag=!startgame] run function du-in:kit/all/ability/timer
+    # #Ability timer
+    # execute if entity @s[level=1..,tag=!teamDead,tag=!win,tag=!lose,tag=!kitMenu,tag=!startgame] run function du-in:kit/all/ability/timer
+    execute if entity @s[tag=!win,tag=!lose,tag=!kitMenu,tag=!startgame] run function du-in:kit/all/ability/main
 
 # If a player is dead in team mode #
     execute if entity @s[tag=teamDead,tag=!void,scores={deathTimer=0..}] run function du-in:ingame/team_death/dead_effects
@@ -26,7 +27,7 @@
     execute if entity @s[scores={comboHitTimer=10..,comboScore=1..}] run function du-in:ingame/hit_combo/expire
 
 #Give armor if player is missing any#
-execute if entity @s[predicate=!du-in:has_armor,predicate=!du-in:effect/is_invisible,tag=!teamDead,tag=!kitMenu,tag=!noClothes] run function du-in:kit/all/armor/armor_reset
+#execute if entity @s[predicate=!du-in:has_armor,predicate=!du-in:effect/is_invisible,tag=!teamDead,tag=!kitMenu,tag=!noClothes] run function du-in:kit/all/armor/armor_reset
 
 # KIT FUNCTIONS #
     # General Set 1 int functions #
