@@ -2,6 +2,7 @@
 ***Version 1.4.2:***
 *Changes*
     -Updated to 1.21.11
+    -Many sound effects now have variated pitches.
 
 *Internal Changes*
     -Updated format to "94.1"
@@ -23,3 +24,4 @@
     -Added ||Pawbert Lynxley|| armor texture. (by BellowBomb)
     -Added ||Venom Injector|| textures. (by Realm_Xplorer)
     -Added ||Venom Vial|| texture. (by Realm_Xplorer)
+    -Added variated pitches to some sound effects in the sounds.json.
