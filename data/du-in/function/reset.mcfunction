@@ -317,7 +317,14 @@ execute as @a run function du-in:music/ingame/stop/all
         tag @a remove scareDuration
         tag @a remove maxBeetleDamage
         scoreboard players set @a beetleDamage 0
-        
+    
+    #Pawbert
+        scoreboard players reset @a pawbertTimer
+        tag @a remove pawbertDisrupt
+        tag @a remove pawbertInvisible
+        tag @a remove hasVial
+        execute as @a run function du-in:kit/pawbert/secondary/antidote/cure
+
 tag @a remove hasRing
 tag @a remove sauronHit
 tag @a remove wildeHit

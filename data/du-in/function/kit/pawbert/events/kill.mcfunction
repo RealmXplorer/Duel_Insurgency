@@ -1,3 +1,5 @@
 execute if entity @s[tag=killMsg,tag=!stolen] run tellraw @a {selector:"@s",color:red,bold:false,extra:[{text:" overpowered ",color:white,bold:false},{selector:"@a[scores={justdied=1}]",color:dark_red,bold:false},{text:"'s control",color:white,bold:false}]}
 
-execute if entity @s[tag=!hasVial,tag=!stolen] run function du-in:kit/pawbert/secondary/give_vial
+#execute if entity @s[tag=!hasVial,tag=!stolen] run function du-in:kit/pawbert/secondary/give_vial
+
+execute if items entity @s[tag=!stolen] hotbar.* minecraft:blaze_rod[item_model="du-in:other/venom_empty"] unless items entity @s[tag=!stolen] hotbar.* gunpowder run function du-in:kit/pawbert/secondary/give_vial

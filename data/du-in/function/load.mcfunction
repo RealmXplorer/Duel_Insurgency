@@ -43,7 +43,8 @@ scoreboard objectives add judyInspire dummy
 scoreboard objectives add jevilScythe dummy
 scoreboard objectives add bogoShieldTimer dummy
 scoreboard objectives add bogoTimer dummy
-
+scoreboard objectives add antidoteCount dummy
+\
 #Timers
 scoreboard objectives add ambience dummy
 scoreboard objectives add asrielTimer dummy
@@ -119,6 +120,7 @@ scoreboard objectives add beetleDamage dummy
 scoreboard objectives add beetleGhostTimer dummy
 scoreboard objectives add showTimer dummy
 scoreboard objectives add pawbertTimer dummy
+scoreboard objectives add abilityDelay dummy
 
 #Skins
 scoreboard objectives add asgoreSkin dummy

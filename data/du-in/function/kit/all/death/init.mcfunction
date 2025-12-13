@@ -97,6 +97,8 @@ execute if entity @s[tag=void] run scoreboard players remove @s Lives 1
 #If died in random kit mode
 execute if entity @s[tag=ranMode] run function du-in:kit/all/death/random_mode
 
+execute if entity @s[tag=injected] run function du-in:kit/pawbert/secondary/antidote/cure
+
 #End function
 scoreboard players reset @s killedByCreeper
 scoreboard players reset @s killedByPlayer

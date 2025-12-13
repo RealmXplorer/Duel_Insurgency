@@ -2,6 +2,7 @@
 #execute if entity @s[tag=kitsListed] run scoreboard players set @s kitList 1
 #execute if entity @s[tag=kitsListed] run scoreboard players set @s kitList 2
 execute if entity @s[tag=kitsListed] run scoreboard players set @s kitList 3
+#execute if entity @s[tag=kitsListed] run scoreboard players set @s kitList 4
 
 #Display Kits
 #execute unless items entity @s inventory.4 minecraft:player_head run function du-in:lobby/kitmenu/menu/zootopia/pawbert

@@ -123,6 +123,10 @@
 
 # SPAM CLICK MODE #
     #execute if entity @a[tag=partyLeader,tag=spamClick] run attribute @s minecraft:attack_speed base set 100
+    execute if entity @s[tag=injected] run function du-in:kit/pawbert/secondary/antidote/init
+
+#Ability Delay
+    execute if entity @s[scores={abilityDelay=0..}] run function du-in:kit/all/ability/delay
 
 #Give Money in Vending Mode
     execute if entity @s[tag=vendingMode,tag=!sus] unless entity @s[scores={kit=1000..1001}] run function du-in:ingame/vending_machine/money_check

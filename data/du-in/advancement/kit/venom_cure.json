@@ -1,0 +1,23 @@
+{
+    "criteria": {
+      "ability": {
+        "trigger": "minecraft:consume_item",
+        "conditions": {
+          "item": {
+            "items": "minecraft:iron_nugget",
+                  "components": {
+                    "minecraft:item_model": "du-in:other/venom_empty"
+                  }
+          }
+        }
+      }
+    },
+    "requirements": [
+      [
+        "ability"
+      ]
+    ],
+    "rewards": {
+      "function": "du-in:kit/pawbert/secondary/antidote/cure"
+    }
+  }
