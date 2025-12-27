@@ -4,6 +4,10 @@
     -Updated to 1.21.11
     -Many sound effects now have variated pitches.
 
+*Balancing Changes*
+-Springtrap poison 1 -> 2
+
+
 *Internal Changes*
     -Updated format to "94.1"
     -All tools are now included in the "du-in:weapons" item tag.
