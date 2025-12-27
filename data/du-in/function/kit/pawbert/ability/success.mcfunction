@@ -23,7 +23,6 @@ execute if entity @s[tag=void] if entity @e[distance=0.05..4] run function du-in
 tag @a[distance=0.05..3,tag=playing] add wildeHit
 execute as @a[tag=wildeHit] unless score @s team = @p[scores={kit=23},tag=kitActions,distance=..3] team run function du-in:kit/nick/ability/enemy_hit
 
-
 #Start cooldown
 clear @s #du-in:ability
 tag @s add cooldown
