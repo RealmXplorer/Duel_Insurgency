@@ -32,6 +32,8 @@ scoreboard players remove @s[scores={kit=21,cardPower=..5}] cardPower 2
 scoreboard players remove @s[scores={kit=21,cardPower=6..}] cardPower 5
 execute if entity @s[tag=super,scores={kit=21,cardPower=..24}] run tag @s remove super
 
+execute if entity @s[scores={kit=40}] run function du-in:kit/pawbert/secondary/use_venom
+
 execute if entity @s[tag=stolen] run tag @s add kitDone
 clear @s[tag=stolen] #du-in:ability
 tellraw @s[tag=!sabotaged] [{text:"You've been hustled!",bold:true,color:red}]
