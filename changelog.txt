@@ -1,12 +1,14 @@
-***12/10/25 - 12/??/25:***
-***Version 1.4.2:***
+***12/10/25 - ??/??/??:***
+***Version 1.5 - RETURN TO ZOOTOPIA:***
+*Additions:*
+    -Added Pawbert character.
+
 *Changes*
     -Updated to 1.21.11
     -Many sound effects now have variated pitches.
 
 *Balancing Changes*
--Springtrap poison 1 -> 2
-
+    -Increased level of poison from Springtrap's ability. (Poison I -> II).
 
 *Internal Changes*
     -Updated format to "94.1"
