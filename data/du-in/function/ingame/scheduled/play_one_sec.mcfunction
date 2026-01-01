@@ -1,6 +1,6 @@
 #Set Spawnpoints
-execute if entity @s[tag=cIngame] run function du-in:ingame/spawnpoint/init
-execute if entity @s[tag=!cIngame] run function du-in:ingame/spawnpoint/random
+execute if entity @s[tag=cIngame,tag=!grave] run function du-in:ingame/spawnpoint/init
+execute if entity @s[tag=!cIngame,tag=!grave] run function du-in:ingame/spawnpoint/random
 
 #Check if player has ability
 execute unless entity @s[level=3..] unless items entity @s[tag=!startgame,tag=!cooldown,tag=!grave,tag=!hornerWeapon] weapon.offhand #du-in:ability run xp set @s 2 levels

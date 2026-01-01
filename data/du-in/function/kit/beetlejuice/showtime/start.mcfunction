@@ -15,7 +15,7 @@ tag @a add inTheModel
 tp @s -7300 6 -8404
 
 #Player starts
-execute as @a store result score @s spawnpoint run random roll 1..8
+execute as @a store result score @s spawnpoint run random value 1..8
 tp @a[tag=!showTimeDuration,scores={spawnpoint=1..4}] -7319 5 -8390
 tp @a[tag=!showTimeDuration,scores={spawnpoint=5..8}] -7295 5 -8383
 

@@ -6,9 +6,19 @@
 *Changes*
     -Updated to 1.21.11
     -Many sound effects now have variated pitches.
+    -Gumball's ability now plays different particles when he is in delay, and plays a new sound and particle when delay ends.
 
 *Balancing Changes*
     -Increased level of poison from Springtrap's ability. (Poison I -> II).
+    -Decreased Gumball's ability delay. (20t -> 15t).
+    -Health now *properly* scales with size.
+        -Small size (14 HP -> 18 HP).
+        -Smaller size (14 HP -> 16 HP).
+        -Tiny remains at 14 HP.
+
+*Bug Fixes*
+    -Fixed bug where Zombie could lose his weapon forever if his grave was down.
+    -Fixed bug where Beetlejuice's ability would announce spawn rolls during his ability.
 
 *Internal Changes*
     -Updated format to "94.1"

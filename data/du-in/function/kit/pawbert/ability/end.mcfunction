@@ -8,8 +8,8 @@ execute if entity @s[tag=stolen] run function du-in:kit/villager/armor
 effect clear @s invisibility
 
 #Cooldown for if Pawbert is or isn't disrupted
-xp set @s[tag=!stolen,tag=!pawbertDisrupt] 380 levels
-xp set @s[tag=!stolen,tag=pawbertDisrupt] 400 levels
+xp set @s[tag=!stolen,tag=!pawbertDisrupt] 400 levels
+xp set @s[tag=!stolen,tag=pawbertDisrupt] 420 levels
 tag @s remove pawbertDisrupt
 tag @s remove pawbertInvisible
 
