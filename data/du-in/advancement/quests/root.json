@@ -1,0 +1,19 @@
+{
+  "display": {
+    "background": "minecraft:block/quartz_block_bottom",
+    "icon": {
+      "id": "minecraft:smooth_quartz"
+    },
+    "title": "Duel: Insurgency",
+    "description": "Play \"Duel: Insurgency\"",
+    "frame": "task",
+    "show_toast": true,
+    "announce_to_chat": true,
+    "hidden": false
+  },
+  "criteria": {
+    "root_0": {
+      "trigger": "minecraft:tick"
+    }
+  }
+}

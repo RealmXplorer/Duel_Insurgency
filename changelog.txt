@@ -44,5 +44,6 @@
     -Added ||Pawbert Lynxley|| armor texture. (by BellowBomb)
     -Added ||Venom Injector|| textures. (by Realm_Xplorer)
     -Added ||Venom Vial|| texture. (by Realm_Xplorer)
+    -Added ||Lynxlely Journal|| texture. (by Realm_Xplorer)
     -Added variated pitches to some sound effects in the sounds.json.
     -Re-added Flowey's christmas weapon texture (accidentally deleted somehow).
