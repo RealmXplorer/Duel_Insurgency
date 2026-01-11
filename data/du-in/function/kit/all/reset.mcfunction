@@ -21,6 +21,7 @@ tag @s remove deathDouble
 tag @s remove cooldown
 tag @s remove magicBag
 tag @s remove hornerWeapon
+tag @s remove brokenShield
 
 #Important below
 tag @s remove kitPicked

@@ -11,6 +11,8 @@
 *Balancing Changes*
     -Increased level of poison from Springtrap's ability. (Poison I -> II).
     -Decreased Gumball's ability delay. (20t -> 15t).
+    -Reduced Jevil's ability range. (10 blocks -> 4 blocks).
+    -Reduced Skeleton's ability cooldown between modes. (150 -> 100).
     -Health now *properly* scales with size.
         -Small size (14 HP -> 18 HP).
         -Smaller size (14 HP -> 16 HP).
@@ -19,6 +21,8 @@
 *Bug Fixes*
     -Fixed bug where Zombie could lose his weapon forever if his grave was down.
     -Fixed bug where Beetlejuice's ability would announce spawn rolls during his ability.
+    -Fixed bug where Nick Wilde couldn't sabotage Papyrus.
+    -Fixed bug where Bogo could make you permanently lose your weapon in Random Kit on Death.
 
 *Internal Changes*
     -Updated format to "94.1"
@@ -41,3 +45,4 @@
     -Added ||Venom Injector|| textures. (by Realm_Xplorer)
     -Added ||Venom Vial|| texture. (by Realm_Xplorer)
     -Added variated pitches to some sound effects in the sounds.json.
+    -Re-added Flowey's christmas weapon texture (accidentally deleted somehow).
