@@ -406,3 +406,28 @@ team modify lobby collisionRule never
 
 schedule clear du-in:main/scheduled
 schedule function du-in:main/scheduled 1s
+
+#Create score and save number of kits into #main
+    #Easter Egg characters are unique numbers so they will not be scalable.
+
+scoreboard objectives add kitMax dummy
+scoreboard objectives add legMax dummy
+scoreboard objectives add listSize dummy
+scoreboard objectives add listRank dummy
+scoreboard players set #main kitMax 40
+scoreboard players set #main legMax 1006
+
+#Build kit lists
+data modify storage du-in:unlock list set value {"size":7}
+data modify storage du-in:minecraft list set value {"size":8}
+data modify storage du-in:undertale list set value {"size":11}
+data modify storage du-in:starwars list set value {"size":4}
+data modify storage du-in:last_wish list set value {"size":3}
+data modify storage du-in:zootopia list set value {"size":4}
+data modify storage du-in:grabbag list set value {"size":10}
+
+#Allow for new kit
+data modify storage du-in:new_kit kit set value {"name":"","num":0,"group":"",rank:0}
+
+#Build Kit storages
+#data modify storage du-in:zootopia4 kit set value {"name":"pawbert","num":40,"group":"zootopia",rank:4}
