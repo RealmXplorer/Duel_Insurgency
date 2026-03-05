@@ -430,7 +430,7 @@ data modify storage du-in:grabbag list set value {"size":10}
 data modify storage du-in:new_kit kit set value {"name":"","num":0,"group":"",rank:0,slot:0}
 
 #Build Kit storages
-#data modify storage du-in:zootopia1 kit set value {"name":"nick","num":23,"group":"zootopia",rank:1,slot:1}
-#data modify storage du-in:zootopia2 kit set value {"name":"judy","num":35,"group":"zootopia",rank:4,slot:4}
-#data modify storage du-in:zootopia3 kit set value {"name":"bogo","num":38,"group":"zootopia",rank:4,slot:4}
-#data modify storage du-in:zootopia4 kit set value {"name":"pawbert","num":40,"group":"zootopia",rank:4,slot:4}
+data modify storage du-in:zootopia1 kit set value {"name":"nick","num":23,"group":"zootopia",rank:1,slot:1}
+data modify storage du-in:zootopia2 kit set value {"name":"judy","num":35,"group":"zootopia",rank:2,slot:2}
+data modify storage du-in:zootopia3 kit set value {"name":"bogo","num":38,"group":"zootopia",rank:3,slot:3}
+data modify storage du-in:zootopia4 kit set value {"name":"pawbert","num":40,"group":"zootopia",rank:4,slot:4}
