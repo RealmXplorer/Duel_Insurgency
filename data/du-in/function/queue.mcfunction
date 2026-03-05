@@ -5,11 +5,11 @@ scoreboard players reset * dfcQueue
 scoreboard players set #main dfcMax 2
 
 #Match 1
-scoreboard players set nerbski dfcQueue 1
-scoreboard players set Realm_Xplorer dfcQueue 1
+scoreboard players set player1 dfcQueue 1
+scoreboard players set player2 dfcQueue 1
 
 #Match 2
-scoreboard players set Brettster77 dfcQueue 2
-scoreboard players set SkoteLuvr dfcQueue 2
+scoreboard players set player3 dfcQueue 2
+scoreboard players set player4 dfcQueue 2
 
 tag @s add specialEvent
