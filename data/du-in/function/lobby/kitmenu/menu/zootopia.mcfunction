@@ -2,6 +2,7 @@
 execute if entity @s[tag=kitsListed] run scoreboard players set @s kitList 4
 #execute if entity @s[tag=kitsListed] store result score @s kitList run data get storage du-in:zootopia list.size
 
+#CURRENT PROBLEM: FUNCTIONS DO NOT RUN WHEN THEY NEED TO.
 #execute store result storage du-in:zootopia list.current int 1 run scoreboard players get @s kitList
 #function du-in:lobby/kitmenu/menu/zootopia/find with storage du-in:zootopia list
 
