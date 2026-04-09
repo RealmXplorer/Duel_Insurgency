@@ -5,3 +5,7 @@ attribute @s minecraft:armor base set 4
 attribute @s attack_damage base set 1.75
 attribute @s minecraft:movement_efficiency base set 1
 attribute @s minecraft:water_movement_efficiency base set 1
+
+#New Attributes
+attribute @s minecraft:air_drag_modifier base set 0.55
+attribute @s minecraft:friction_modifier base set 0.85

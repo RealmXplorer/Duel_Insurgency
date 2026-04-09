@@ -2,9 +2,9 @@
 execute if entity @s[tag=kitsListed] run scoreboard players set @s kitList 3
 
 #Display Kits
-execute unless items entity @s inventory.3 minecraft:player_head run function du-in:kit/death/menu/select
-execute unless items entity @s inventory.2 minecraft:player_head run function du-in:kit/jack_horner/menu/select
-execute unless items entity @s inventory.1 minecraft:player_head run function du-in:kit/puss/menu/select
+execute unless items entity @s inventory.3 minecraft:player_head run function du-in:kit/death/menu/display
+execute unless items entity @s inventory.2 minecraft:player_head run function du-in:kit/jack_horner/menu/display
+execute unless items entity @s inventory.1 minecraft:player_head run function du-in:kit/puss/menu/display
 
 #Add Last Wish menu display icon
 execute unless items entity @s inventory.9 minecraft:carrot_on_a_stick run function du-in:lobby/kitmenu/menu/last_wish/display

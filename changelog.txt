@@ -4,7 +4,7 @@
     -Added Pawbert character.
 
 *Changes*
-    -Updated to 1.21.11
+    -Updated to 26.2
     -Many sound effects now have variated pitches.
     -Gumball's ability now plays different particles when he is in delay, and plays a new sound and particle when delay ends.
 
@@ -25,7 +25,7 @@
     -Fixed bug where Bogo could make you permanently lose your weapon in Random Kit on Death.
 
 *Internal Changes*
-    -Updated format to "94.1"
+    -Updated format to "101.2"
     -All tools are now included in the "du-in:weapons" item tag.
     -Added "#minecraft:spears" to the "du-in:weapons" item tag.
     -Added "minecraft:blaze_rod" to the "du-in:secondary" item tag.
@@ -38,9 +38,10 @@
     -Spam clicking submode is now run through fake player score rather than a tag.
     -Easter Egg character music is now run through a fake player score.
     -Armor return system now runs once a second rather than every tick.
+    -Moved from “lobby/kitmenu/menu/(franchise)/(char)” and “lobby/kitmenu/select/(franchise)/(char)” to “kit/(char)/menu/display” and “kit/(char)/menu/select”.
 
 *Resourcepack Changes*
-    -Updated format to "75.0"
+    -Updated format to "85.0"
     -Added ||Pawbert Lynxley|| armor texture. (by BellowBomb)
     -Added ||Venom Injector|| textures. (by Realm_Xplorer)
     -Added ||Venom Vial|| texture. (by Realm_Xplorer)
