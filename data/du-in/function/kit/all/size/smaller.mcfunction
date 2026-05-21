@@ -11,5 +11,5 @@ attribute @s minecraft:water_movement_efficiency base set 0.15
 attribute @s minecraft:max_health base set 16
 
 #New Attributes
-attribute @s minecraft:air_drag_modifier base set 0.80
+attribute @s minecraft:air_drag_modifier base set 0.90
 attribute @s minecraft:friction_modifier base set 1.1

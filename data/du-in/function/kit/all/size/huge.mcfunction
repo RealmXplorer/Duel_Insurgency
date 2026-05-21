@@ -7,5 +7,5 @@ attribute @s minecraft:movement_efficiency base set 1
 attribute @s minecraft:water_movement_efficiency base set 1
 
 #New Attributes
-attribute @s minecraft:air_drag_modifier base set 0.55
+attribute @s minecraft:air_drag_modifier base set 0.65
 attribute @s minecraft:friction_modifier base set 0.85
