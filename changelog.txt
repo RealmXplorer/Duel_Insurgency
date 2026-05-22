@@ -17,6 +17,14 @@
         -Small size (14 HP -> 18 HP).
         -Smaller size (14 HP -> 16 HP).
         -Tiny remains at 14 HP.
+    -Air Drag and Friction now changes based off of character size.
+        -Tiny - Air Drag 0.95, Friction 1.15
+        -Smaller - Air Drag: 0.9, Friction: 1.1
+        -Small - Air Drag: 0.85, Friction: 1.05
+        -Medium - Air Drag: 0.8, Friction: 1.0
+        -Big - Air Drag: 0.75, Friction: 0.95
+        -Bigger - Air Drag: 0.7, Friction: 0.9
+        -Huge - Air Drag: 0.65, Friction: 0.85
 
 *Bug Fixes*
     -Fixed bug where Zombie could lose his weapon forever if his grave was down.
