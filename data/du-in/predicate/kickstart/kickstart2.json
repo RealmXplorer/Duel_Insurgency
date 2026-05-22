@@ -2,10 +2,7 @@
   "condition": "minecraft:entity_properties",
   "entity": "this",
   "predicate": {
-    "type": "minecraft:player",
-    "type_specific": {
-      "type": "minecraft:player"
-    },
+    "minecraft:type_specific/player": {},
     "equipment": {
       "mainhand": {
         "items": "minecraft:cocoa_beans",

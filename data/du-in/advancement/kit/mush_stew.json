@@ -5,7 +5,7 @@
             "conditions": {
                 "items": [
                     {
-                        "item": "minecraft:mushroom_stew",
+                        "items": "minecraft:mushroom_stew",
                         "count": {
                             "min": 1,
                             "max": 100

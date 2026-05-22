@@ -13,7 +13,7 @@
             }
           ],
           "entity": {
-            "type": "minecraft:player",
+          "entity_type": "minecraft:player",
             "nbt": "{Tags:[\"flagGot\",\"ownFlag\"]}",
             "team": "Blue"
           }

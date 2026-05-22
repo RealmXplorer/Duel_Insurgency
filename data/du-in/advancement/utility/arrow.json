@@ -1,51 +1,29 @@
 {
-    "criteria": {
-
-        "bow": {
-
-            "trigger": "minecraft:entity_hurt_player",
-
-            "conditions": {
-
-                "damage": {
-
-                    "type": {
-
-                        "direct_entity": {
-
-                            "type": "minecraft:arrow",
-
-                            "nbt": "{weapon:{id:'minecraft:crossbow'}}"
-
-                        },
-
-                        "source_entity": {
-
-                            "type": "minecraft:player"
-
-                        },
-
-                        "is_projectile": true
-
-                    }
-
-                }
-
+  "criteria": {
+    "bow": {
+      "trigger": "minecraft:entity_hurt_player",
+      "conditions": {
+        "damage": {
+          "source_entity": {},
+          "type": {
+            "source_entity": {
+              "minecraft:type_specific/player": {}
+            },
+            "direct_entity": {
+              "minecraft:entity_type": "minecraft:arrow",
+              "minecraft:nbt": "{weapon:{id:'minecraft:crossbow'}}"
             }
-
+          }
         }
-
-    },
-    "requirements": [
-        [
-            "bow"
-        ]
-    ],
-
-    "rewards": {
-
-        "function": "du-in:kit/jack_horner/ability/unicorn_bow/hit"
-
+      }
     }
-
+  },
+  "requirements": [
+    [
+      "bow"
+    ]
+  ],
+  "rewards": {
+    "function": "du-in:kit/jack_horner/ability/unicorn_bow/hit"
+  }
 }
