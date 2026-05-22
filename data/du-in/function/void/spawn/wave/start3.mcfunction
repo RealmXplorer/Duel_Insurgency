@@ -1,1 +1,1 @@
-scoreboard players set #gonerMax gonerCount 4
+scoreboard players set #gonerMax gonerCount 3

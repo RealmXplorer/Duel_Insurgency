@@ -2,6 +2,7 @@ execute store result score #lastMode gamemode run scoreboard players get #main g
 scoreboard players set #main gamemode 6
 
 tag @a add void
+tag @a[tag=spectating] add voidSpect
 execute if score #spamClick gamemode matches 1 as @a run attribute @s attack_speed base set 100.0
 #execute as @a[tag=spamClick] run attribute @s attack_speed base set 4.0
 #tag @a remove spamClick
@@ -214,8 +215,8 @@ execute positioned 10046 42 10047 run playsound minecraft:soundeffect.voidbell m
 #scoreboard players set @a gonersKilled 30
 
 execute if score #main pylonsDestroyed matches 0 run scoreboard players set @a gonersKilled 10
-execute if score #main pylonsDestroyed matches 1 run scoreboard players set @a gonersKilled 15
-execute unless score #main pylonsDestroyed matches 0..1 run scoreboard players set @a gonersKilled 20
+execute if score #main pylonsDestroyed matches 1 run scoreboard players set @a gonersKilled 13
+execute if score #main pylonsDestroyed matches 2 run scoreboard players set @a gonersKilled 17
 execute as @a[gamemode=!spectator] run scoreboard players add @a gonersKilled 10
 
 advancement grant @a[tag=void] only du-in:void/void

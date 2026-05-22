@@ -1,5 +1,6 @@
 #Empty Venom Injector. 
 tag @s add venomEmpty
+execute if entity @s[tag=void] run damage @n[distance=0.3..4,type=skeleton] 20 arrow by @s
 function du-in:kit/pawbert/secondary/item
 
 #End ability if Pawbert lands venom hit

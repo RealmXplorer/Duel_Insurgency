@@ -9,7 +9,7 @@
     execute if entity @e[type=marker,tag=electro] run function du-in:void/hazard/shock/effects
 
 #Enemy Spawns
-execute unless entity @a[tag=win] run function du-in:void/spawn/wave/wave1
+execute unless entity @a[tag=win] if score #main gonerCount <= #gonerMax gonerCount run function du-in:void/spawn/wave/wave1
 
 #Upon Win
 execute if entity @a[scores={pylonTimer=..0},tag=partyLeader] run function du-in:void/end/explode

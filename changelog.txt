@@ -7,6 +7,8 @@
     -Updated to 26.2
     -Many sound effects now have variated pitches.
     -Gumball's ability now plays different particles when he is in delay, and plays a new sound and particle when delay ends.
+    -Tweaked Void balancing.
+    -Gave Villager a void ability.
 
 *Balancing Changes*
     -Increased level of poison from Springtrap's ability. (Poison I -> II).
@@ -31,9 +33,11 @@
     -Fixed bug where Beetlejuice's ability would announce spawn rolls during his ability.
     -Fixed bug where Nick Wilde couldn't sabotage Papyrus.
     -Fixed bug where Bogo could make you permanently lose your weapon in Random Kit on Death.
+    -Fixed bug where void entities could not be damaged by Susie's ability.
+    -Fixed bug where void entities could not be affected by Jevil's abilities.
 
 *Internal Changes*
-    -Updated format to "101.2"
+    -Updated format to "106.0"
     -All tools are now included in the "du-in:weapons" item tag.
     -Added "#minecraft:spears" to the "du-in:weapons" item tag.
     -Added "minecraft:blaze_rod" to the "du-in:secondary" item tag.
@@ -49,10 +53,10 @@
     -Moved from “lobby/kitmenu/menu/(franchise)/(char)” and “lobby/kitmenu/select/(franchise)/(char)” to “kit/(char)/menu/display” and “kit/(char)/menu/select”.
 
 *Resourcepack Changes*
-    -Updated format to "85.0"
-    -Added ||Pawbert Lynxley|| armor texture. (by BellowBomb)
-    -Added ||Venom Injector|| textures. (by Realm_Xplorer)
-    -Added ||Venom Vial|| texture. (by Realm_Xplorer)
-    -Added ||Lynxlely Journal|| texture. (by Realm_Xplorer)
-    -Added variated pitches to some sound effects in the sounds.json.
+    -Updated format to "87.0"
+    -Added Pawbert Lynxley armor texture. (by BellowBomb)
+    -Added Venom Injector textures. (by Realm_Xplorer)
+    -Added Venom Vial texture. (by Realm_Xplorer)
+    -Added Lynxlely Journal texture. (by Realm_Xplorer)
+    -Added variated pitches to some sound effects in sounds.json.
     -Re-added Flowey's christmas weapon texture (accidentally deleted somehow).

@@ -6,7 +6,7 @@ schedule function du-in:void/hazard/bridge/pick_bridge 2s
 tellraw @a [{text:"The Second Pylon ",bold:true,color:dark_purple},{text:"glows intensely...",color:light_purple}]
 
 scoreboard players set #gonerMax gonerCount 0
-schedule function du-in:void/spawn/wave/start1 3s
+schedule function du-in:void/spawn/wave/start2 4s
 
 
 #10046.007 42 10030.5 X
