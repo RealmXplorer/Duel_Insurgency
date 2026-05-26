@@ -1,0 +1,1 @@
+playsound minecraft:pawbert.death master @a ~ ~ ~ 2 1 1

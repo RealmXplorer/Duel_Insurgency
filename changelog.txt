@@ -58,5 +58,7 @@
     -Added Venom Injector textures. (by Realm_Xplorer)
     -Added Venom Vial texture. (by Realm_Xplorer)
     -Added Lynxlely Journal texture. (by Realm_Xplorer)
+    -Added Pawbert hurt sound.
+    -Added Pawbert death sound.
     -Added variated pitches to some sound effects in sounds.json.
     -Re-added Flowey's christmas weapon texture (accidentally deleted somehow).
