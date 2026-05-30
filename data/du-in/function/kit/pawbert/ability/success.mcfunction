@@ -6,7 +6,12 @@ clear @s #du-in:weapon
 scoreboard players set @s pawbertTimer 60
 effect give @s resistance 1 0 true
 
+#Particles
+playsound minecraft:entity.player.breath player @a ~ ~ ~ 0.5 1
+particle minecraft:smoke ~ ~1 ~ 0.2 0.2 0.2 0.01 10
+
 #Refill Venom injector
+execute if entity @s[tag=venomEmpty] run playsound minecraft:item.bottle.fill master @a ~ ~ ~ 1 1 1
 tag @s remove venomEmpty
 function du-in:kit/pawbert/secondary/item
 
@@ -18,7 +23,7 @@ tag @s remove hasVial
 clear @s #du-in:armor
 effect give @s invisibility infinite 1 true
 
-execute if entity @s[tag=void] if entity @e[distance=0.05..4] run function du-in:kit/pawbert/ability/void/near
+execute if entity @s[tag=void] if entity @e[distance=0.05..4,type=skeleton] run function du-in:kit/pawbert/ability/void/near
 
 tag @a[distance=0.05..3,tag=playing] add wildeHit
 execute as @a[tag=wildeHit] unless score @s team = @p[scores={kit=23},tag=kitActions,distance=..3] team run function du-in:kit/nick/ability/enemy_hit
