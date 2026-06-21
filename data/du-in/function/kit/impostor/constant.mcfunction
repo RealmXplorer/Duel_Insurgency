@@ -8,6 +8,9 @@
 #scoreboard players add @s[scores={ventCooldown=..61}] ventCooldown 1
 scoreboard players remove @s[scores={ventCooldown=1..}] ventCooldown 1
 
+#Wire cutter item
+execute if entity @a[tag=vendingMachine] run function du-in:ingame/vending_machine/sabotaged/item/init
+
 #Test Impostor Meeting Spot
 execute unless block ~ ~-1 ~ #du-in:zomb_invalid run tag @s remove airBlock
 

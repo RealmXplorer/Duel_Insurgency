@@ -9,6 +9,7 @@ playsound minecraft:block.gravel.hit master @a ~ ~ ~ 1 1
 playsound minecraft:block.gravel.hit master @a ~ ~ ~ 1 .5
 playsound minecraft:block.gravel.hit master @a ~ ~ ~ 1 2
 playsound minecraft:sans.ability master @a ~ ~ ~ .25 .95
+playsound minecraft:chungus.slam master @a ~ ~ ~ 1 1
 
 #Remove ability from hand
 clear @s #du-in:ability

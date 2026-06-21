@@ -9,6 +9,9 @@
     -Gumball's ability now plays different particles when he is in delay, and plays a new sound and particle when delay ends.
     -Tweaked Void balancing.
     -Gave Villager a void ability.
+    -Added an icon to sus characters that shows when and how they can sabotage vending machines.
+    -Soul of Cinder's "Faith" build type now uses a Spear with Lunge IV.
+    -Big Chungus's ability now has a sound effect.
 
 *Balancing Changes*
     -Increased level of poison from Springtrap's ability. (Poison I -> II).
@@ -58,7 +61,9 @@
     -Added Venom Injector textures. (by Realm_Xplorer)
     -Added Venom Vial texture. (by Realm_Xplorer)
     -Added Lynxlely Journal texture. (by Realm_Xplorer)
+    -Added Wire Cutter texture. (by ReLogic)
     -Added Pawbert hurt sound.
     -Added Pawbert death sound.
+    -Added Chungus Earthquake sounds.
     -Added variated pitches to some sound effects in sounds.json.
     -Re-added Flowey's christmas weapon texture (accidentally deleted somehow).

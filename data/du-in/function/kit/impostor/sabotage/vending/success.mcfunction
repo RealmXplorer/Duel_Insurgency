@@ -11,5 +11,6 @@ playsound minecraft:soundeffect.zap master @a ~ ~ ~ 10 1
 schedule clear du-in:ingame/scheduled/three_sec_loop
 
 tag @a[tag=sus] add vendingCooldown
+clear @s gunpowder
 
 schedule function du-in:kit/impostor/sabotage/vending/cooldown 10s
