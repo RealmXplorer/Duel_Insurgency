@@ -1,8 +1,11 @@
 scoreboard players remove @s papyrusHitTimer 1
 
 #Deal damage to non-teammates
-execute unless entity @a[tag=void] if entity @a[scores={kit=13},tag=boneAttack,tag=!sabotaged] as @a[gamemode=!spectator,distance=..3,tag=playing] unless score @n[type=marker,scores={papyrusHitTimer=..29},distance=..3] team = @s team run damage @s 7 arrow by @p[tag=boneAttack]
-execute unless entity @a[tag=void] if entity @a[scores={kit=13},tag=boneAttack,tag=sabotaged] run damage @s 7 arrow by @p[scores={kit=23}]
+execute unless entity @a[tag=void] if entity @a[scores={kit=13},tag=boneAttack,tag=!sabotaged,tag=!empower] as @a[gamemode=!spectator,distance=..3,tag=playing] unless score @n[type=marker,scores={papyrusHitTimer=..29},distance=..3] team = @s team run damage @s 7 arrow by @p[tag=boneAttack]
+execute unless entity @a[tag=void] if entity @a[scores={kit=13},tag=boneAttack,tag=sabotaged,tag=!empower] run damage @s 7 arrow by @p
+
+execute unless entity @a[tag=void] if entity @a[scores={kit=13},tag=boneAttack,tag=!sabotaged,tag=empower] as @a[gamemode=!spectator,distance=..3,tag=playing] unless score @n[type=marker,scores={papyrusHitTimer=..29},distance=..3] team = @s team run damage @s 11 arrow by @p[tag=boneAttack]
+execute unless entity @a[tag=void] if entity @a[scores={kit=13},tag=boneAttack,tag=sabotaged,tag=empower] run damage @s 11 arrow by @p
 tag @p[tag=boneAttack] remove boneAttack
 
 execute if entity @a[tag=void] if entity @s[scores={papyrusHitTimer=..29}] as @e[type=skeleton,tag=gonerThing,distance=..3] run damage @s 7 minecraft:generic

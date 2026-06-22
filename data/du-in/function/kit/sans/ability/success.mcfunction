@@ -1,6 +1,7 @@
 tp @s ~ ~ ~ facing entity @a[tag=sansHit,limit=1,sort=nearest] feet
 tag @s remove kyloHit
-effect give @s minecraft:strength 3 1 true
+effect give @s[tag=!empower] minecraft:strength 3 1 true
+execute if entity @s[tag=empower] run effect give @s minecraft:strength 3 2 true
 effect give @s minecraft:speed 3 0 true
 effect clear @s minecraft:levitation
 

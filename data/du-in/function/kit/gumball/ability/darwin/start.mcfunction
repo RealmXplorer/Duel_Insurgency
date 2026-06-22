@@ -5,6 +5,7 @@ tag @s[tag=sabotaged] add noClothes
 execute if entity @s[tag=sabotaged] run function du-in:kit/all/ability/sabotage/effects
 
 execute as @a[tag=noClothes] at @s run function du-in:kit/gumball/ability/darwin/no_clothes
+execute if entity @s[tag=empower] run scoreboard players add @a[tag=noClothes] darwinTimer 40
 
 #title @s title {text:"Imagine them ",color:red}
 #title @s subtitle {text:"without their clothes on",color:red}
@@ -23,5 +24,6 @@ clear @s #du-in:ability
 
 tag @s add cooldown
 tag @s remove sabotaged
+tag @s remove empower
 scoreboard players set @s gumSwapTimer 120
 clear @s warped_fungus_on_a_stick

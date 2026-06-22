@@ -1,4 +1,6 @@
-scoreboard players add @s yodaAbsorb 4
+scoreboard players add @s[tag=!empower] yodaAbsorb 4
+execute if entity @s[tag=empower] run scoreboard players add @s yodaAbsorb 6
+
 playsound minecraft:entity.bee.sting master @a ~ ~ ~ 2 .5
 playsound minecraft:yharim.rage.ready master @a ~ ~ ~ 2 1.75
 effect give @s instant_health 1 0 true

@@ -247,6 +247,7 @@ execute as @a run function du-in:music/ingame/stop/all
         scoreboard players set @a ralseiTP 0
         scoreboard players set @a TPSound 0
         tag @a remove maxTP
+        tag @a remove superSleep
 
     #Judy#
         scoreboard players set @a judyInspire 0

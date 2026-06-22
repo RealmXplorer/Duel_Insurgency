@@ -120,6 +120,9 @@
 #Clairen Field
     execute if entity @s[tag=inField] run function du-in:kit/clairen/ability/field_effects
     execute if entity @s[tag=sabotagedField] run function du-in:kit/clairen/ability/sabotaged_field
+    execute if entity @s[tag=empoweredField] run function du-in:kit/clairen/ability/empowered_field
+    execute if entity @s[tag=empoweredSabotageField] run function du-in:kit/clairen/ability/empowered_sabotage_field
+
 
 # SPAM CLICK MODE #
     #execute if entity @a[tag=partyLeader,tag=spamClick] run attribute @s minecraft:attack_speed base set 100

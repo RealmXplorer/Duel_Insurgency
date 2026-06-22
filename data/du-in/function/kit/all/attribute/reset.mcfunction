@@ -25,6 +25,7 @@ tag @s remove tiny
 #Remove Modifiers
 ##Springtrap
 attribute @s attack_damage modifier remove springlock_damage
+attribute @s attack_damage modifier remove empowered_springlocks
 
 ##Yharim
 attribute @s movement_speed modifier remove yharim_ability
@@ -85,6 +86,9 @@ attribute @s minecraft:jump_strength modifier remove flowey_jump
 ##Gaster
 attribute @s knockback_resistance modifier remove gaster_shatter
 attribute @s movement_speed modifier remove gaster_shatter
+
+##Pawbert
+attribute @s attack_damage modifier remove empowered_pawbert
 
 ##Team Dead Effects
 attribute @s minecraft:jump_strength modifier remove team_dead

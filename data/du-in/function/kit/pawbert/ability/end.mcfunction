@@ -1,4 +1,5 @@
 tag @s remove cooldown
+tag @s remove empower
 tag @s remove sabotaged
 
 #Reset
@@ -6,6 +7,7 @@ scoreboard players reset @s pawbertTimer
 execute if entity @s[tag=!stolen] run function du-in:kit/pawbert/armor
 execute if entity @s[tag=stolen] run function du-in:kit/villager/armor
 effect clear @s invisibility
+attribute @s attack_damage modifier remove empowered_pawbert
 
 #Cooldown for if Pawbert is or isn't disrupted
 xp set @s[tag=!stolen,tag=!pawbertDisrupt] 400 levels

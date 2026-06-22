@@ -28,10 +28,12 @@ scoreboard players set @s[scores={kit=3,magmaTimer=1..},tag=magma] magmaTimer 0
 tag @s[tag=pursue] add whatTheWhat
 scoreboard players set @s[tag=pursue] gumballPursueTimer 40
 
+#If affecting Cuphead
 scoreboard players remove @s[scores={kit=21,cardPower=..5}] cardPower 2
 scoreboard players remove @s[scores={kit=21,cardPower=6..}] cardPower 5
 execute if entity @s[tag=super,scores={kit=21,cardPower=..24}] run tag @s remove super
 
+#If affecting pawbert
 execute if entity @s[scores={kit=40}] run function du-in:kit/pawbert/secondary/use_venom
 
 execute if entity @s[tag=stolen] run tag @s add kitDone

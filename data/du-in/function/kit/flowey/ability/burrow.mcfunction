@@ -4,16 +4,19 @@ clear @s
 
 #If player is nearby#
 #execute unless entity @a[tag=void] run function du-in:kit/flowey/ability/default_hit
-execute unless entity @a[tag=void] unless entity @s[tag=sabotaged] as @a[gamemode=!spectator,tag=playing,distance=.5..2,limit=1] unless score @p[scores={floweyHitTimer=0..},distance=..2] team = @s team at @s run function du-in:kit/flowey/ability/default_hit
+execute unless entity @a[tag=void] if entity @s[tag=!sabotaged] as @a[gamemode=!spectator,tag=playing,distance=.5..2,limit=1] unless score @p[scores={floweyHitTimer=0..},distance=..2] team = @s team at @s run function du-in:kit/flowey/ability/default_hit
+execute unless entity @a[tag=void] if entity @s[tag=!sabotaged,tag=empower] as @a[gamemode=!spectator,tag=playing,distance=.5..2,limit=1] unless score @p[scores={floweyHitTimer=0..},distance=..2] team = @s team at @s run function du-in:kit/flowey/ability/empowered_hit
 
-execute if entity @a[tag=void] as @e[type=skeleton,distance=.5..2,tag=gonerThing] at @s run function du-in:kit/flowey/ability/void_hit
+execute if entity @a[tag=void] as @e[distance=.5..2,type=skeleton,tag=gonerThing] at @s run function du-in:kit/flowey/ability/void_hit
 
 #Give effects#
 effect give @s[tag=!sabotaged] minecraft:resistance 1 255 true
 effect give @s[tag=!sabotaged] minecraft:fire_resistance 1 255 true
 effect give @s minecraft:weakness 1 255 true
 effect give @s[tag=!sabotaged] minecraft:speed 1 2 true
-effect give @s[tag=sabotaged] minecraft:slowness 1 200 true
+effect give @s[tag=sabotaged,tag=!empower] minecraft:slowness 1 200 true
+effect give @s[tag=sabotaged,tag=empower] minecraft:slowness 3 200 true
+
 attribute @s minecraft:jump_strength modifier add flowey_jump -100 add_value
 
 effect give @s[tag=!sabotaged] minecraft:invisibility 1 1 true

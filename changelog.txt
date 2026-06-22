@@ -5,6 +5,7 @@
 
 *Changes*
     -Updated to 26.2
+    -Sauron now has an ability with the Ring of Power.
     -Many sound effects now have variated pitches.
     -Gumball's ability now plays different particles when he is in delay, and plays a new sound and particle when delay ends.
     -Tweaked Void balancing.
@@ -12,6 +13,37 @@
     -Added an icon to sus characters that shows when and how they can sabotage vending machines.
     -Soul of Cinder's "Faith" build type now uses a Spear with Lunge IV.
     -Big Chungus's ability now has a sound effect.
+    -Sabotages and empowerments are now removed on death.
+    -Nick Wilde's ability can now be sabotaged.
+    -Sauron's ring of power now empowers the ability of whoever has it.
+    -More characters can have their ability empowered:
+        -Jerma
+        -Gumball and Darwin
+        -Ralsei
+        -Hollow Knight
+        -Zombie
+        -Creeper
+        -Springtrap
+        -Iron Golem
+        -Player
+        -Chara
+        -Gaster
+        -Flowey
+        -Papyrus
+        -Asgore
+        -Frisk
+        -Sans
+        -Darth Vader
+        -Emperor Palpatine
+        -Yharim
+        -Cuphead
+        -Nick Wilde
+        -Clairen
+        -Jack Horner
+        -Puss in Boots
+        -Death
+        -Yoda
+        -Sauron
 
 *Balancing Changes*
     -Increased level of poison from Springtrap's ability. (Poison I -> II).

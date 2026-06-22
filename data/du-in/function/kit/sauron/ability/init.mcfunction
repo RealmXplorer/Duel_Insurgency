@@ -1,6 +1,7 @@
 #Run Ability
 execute if entity @s[tag=sabotaged] run function du-in:kit/sauron/ability/sabotaged
-execute if entity @s[tag=!sabotaged] run function du-in:kit/sauron/ability/normal
+execute if entity @s[tag=!sabotaged,tag=!hasRing] run function du-in:kit/sauron/ability/normal
+execute if entity @s[tag=!sabotaged,tag=hasRing] run function du-in:kit/sauron/ability/ring/init
 
 #Play Sounds and Particles
 playsound minecraft:entity.phantom.ambient master @a ~ ~ ~ 1 1.5

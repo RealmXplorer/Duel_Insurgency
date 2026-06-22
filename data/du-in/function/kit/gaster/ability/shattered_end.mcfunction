@@ -1,8 +1,10 @@
 effect clear @s speed
 effect clear @s invisibility
 
-effect give @s[tag=!sabotaged] minecraft:strength 2 1 true
-effect give @s[tag=sabotaged] minecraft:mining_fatigue 2 1 true
+effect give @s[tag=!sabotaged,tag=!empower] minecraft:strength 2 1 true
+effect give @s[tag=!sabotaged,tag=empower] minecraft:strength 3 3 true
+effect give @s[tag=sabotaged,tag=!empower] minecraft:mining_fatigue 2 1 true
+effect give @s[tag=sabotaged,tag=empower] minecraft:mining_fatigue 3 3 true
 
 effect give @s minecraft:slowness 2 2 true
 
@@ -21,6 +23,7 @@ attribute @s movement_speed modifier remove gaster_shatter
 
 tag @s remove sabotaged
 tag @s remove cooldown
+tag @s remove empower
 xp set @s[tag=!stolen] 335 levels
 execute if entity @s[tag=stolen] run tag @s add kitDone
 scoreboard players reset @s gasterTimer

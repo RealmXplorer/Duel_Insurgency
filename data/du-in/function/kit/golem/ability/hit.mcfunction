@@ -2,6 +2,8 @@ execute if entity @s[tag=!sabotaged] as @a[distance=0.05..4,tag=playing,gamemode
 execute as @a[tag=golemHit] if score @s team = @p[scores={kit=6},tag=kitActions,distance=..4] team run tag @s remove golemHit
 tag @s[tag=sabotaged] add golemHit
 
+#Empowered hit
+execute if entity @s[tag=empower] run tag @a[tag=golemHit] add empoweredGolemHit
 
 execute if entity @s[tag=!sabotaged] unless entity @a[tag=golemHit] run function du-in:kit/all/ability/titles/team
 

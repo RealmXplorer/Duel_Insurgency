@@ -1,5 +1,7 @@
 scoreboard players set @s[tag=!sabotaged] pussTimer 60
-effect give @s[tag=!sabotaged] speed 1 0 true
+effect give @s[tag=!sabotaged,tag=!empower] speed 1 0 true
+effect give @s[tag=empower] speed 2 0 true
+effect give @s[tag=empower] strength 2 0 true
 
 #effect give @s[scores={gameDeaths=1..},tag=!sabotaged] strength 1 0 true
 #effect give @s[scores={gameDeaths=3..},tag=!sabotaged] speed 2 1 true
@@ -18,5 +20,6 @@ clear @s #du-in:ability
 function du-in:kit/all/weapon/init
 
 tag @s remove sabotaged
+tag @s remove empower
 tag @s add cooldown
 tag @s remove pussHit

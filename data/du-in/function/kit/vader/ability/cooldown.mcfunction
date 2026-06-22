@@ -7,3 +7,4 @@ xp set @s[tag=!stolen] 320 levels
 tag @a remove vaderHit
 execute if entity @s[tag=stolen] run tag @s add kitDone
 tag @s remove sabotaged
+tag @s remove empower

@@ -1,25 +1,28 @@
 #Summon Fire wall
+#Row 1
     #This one is tagged to play the extinguish and burning sounds.
     summon minecraft:armor_stand ^ ^ ^2 {Fire:100,Invulnerable:1b,Invisible:1b,Tags:["asgoreFire","projectile","audio","mapSpecific"],NoGravity:1b,DisabledSlots:4144959}
     
-    summon minecraft:armor_stand ^1 ^ ^2 {Fire:100,Invulnerable:1b,Invisible:1b,Tags:["asgoreFire","projectile","mapSpecific"],NoGravity:1b,DisabledSlots:4144959}
-    summon minecraft:armor_stand ^-1 ^ ^2 {Fire:100,Invulnerable:1b,Invisible:1b,Tags:["asgoreFire","projectile","mapSpecific"],NoGravity:1b,DisabledSlots:4144959}
-    summon minecraft:armor_stand ^-.5 ^ ^2 {Fire:100,Invulnerable:1b,Invisible:1b,Tags:["asgoreFire","projectile","mapSpecific"],NoGravity:1b,DisabledSlots:4144959}
-    
     summon minecraft:armor_stand ^.5 ^ ^2 {Fire:100,Invulnerable:1b,Invisible:1b,Tags:["asgoreFire","projectile","mapSpecific"],NoGravity:1b,DisabledSlots:4144959}
-    summon minecraft:armor_stand ^-1.5 ^ ^2 {Fire:100,Invulnerable:1b,Invisible:1b,Tags:["asgoreFire","projectile","mapSpecific"],NoGravity:1b,DisabledSlots:4144959} 
+    summon minecraft:armor_stand ^1 ^ ^2 {Fire:100,Invulnerable:1b,Invisible:1b,Tags:["asgoreFire","projectile","mapSpecific"],NoGravity:1b,DisabledSlots:4144959}
     summon minecraft:armor_stand ^1.5 ^ ^2 {Fire:100,Invulnerable:1b,Invisible:1b,Tags:["asgoreFire","projectile","mapSpecific"],NoGravity:1b,DisabledSlots:4144959}
-    
+
+    summon minecraft:armor_stand ^-.5 ^ ^2 {Fire:100,Invulnerable:1b,Invisible:1b,Tags:["asgoreFire","projectile","mapSpecific"],NoGravity:1b,DisabledSlots:4144959}
+    summon minecraft:armor_stand ^-1 ^ ^2 {Fire:100,Invulnerable:1b,Invisible:1b,Tags:["asgoreFire","projectile","mapSpecific"],NoGravity:1b,DisabledSlots:4144959}
+    summon minecraft:armor_stand ^-1.5 ^ ^2 {Fire:100,Invulnerable:1b,Invisible:1b,Tags:["asgoreFire","projectile","mapSpecific"],NoGravity:1b,DisabledSlots:4144959} 
+
+#Row 2
     summon minecraft:armor_stand ^ ^1 ^2 {Fire:100,Invulnerable:1b,Invisible:1b,Tags:["asgoreFire","projectile","mapSpecific"],NoGravity:1b,DisabledSlots:4144959}
-    summon minecraft:armor_stand ^1 ^1 ^2 {Fire:100,Invulnerable:1b,Invisible:1b,Tags:["asgoreFire","projectile","mapSpecific"],NoGravity:1b,DisabledSlots:4144959} 
-    summon minecraft:armor_stand ^-1 ^1 ^2 {Fire:100,Invulnerable:1b,Invisible:1b,Tags:["asgoreFire","projectile","mapSpecific"],NoGravity:1b,DisabledSlots:4144959}
-    
-    summon minecraft:armor_stand ^-.5 ^1 ^2 {Fire:100,Invulnerable:1b,Invisible:1b,Tags:["asgoreFire","projectile","mapSpecific"],NoGravity:1b,DisabledSlots:4144959}
+
     summon minecraft:armor_stand ^.5 ^1 ^2 {Fire:100,Invulnerable:1b,Invisible:1b,Tags:["asgoreFire","projectile","mapSpecific"],NoGravity:1b,DisabledSlots:4144959}
-    summon minecraft:armor_stand ^-1.5 ^1 ^2 {Fire:100,Invulnerable:1b,Invisible:1b,Tags:["asgoreFire","projectile","mapSpecific"],NoGravity:1b,DisabledSlots:4144959}
+    summon minecraft:armor_stand ^1 ^1 ^2 {Fire:100,Invulnerable:1b,Invisible:1b,Tags:["asgoreFire","projectile","mapSpecific"],NoGravity:1b,DisabledSlots:4144959} 
     summon minecraft:armor_stand ^1.5 ^1 ^2 {Fire:100,Invulnerable:1b,Invisible:1b,Tags:["asgoreFire","projectile","mapSpecific"],NoGravity:1b,DisabledSlots:4144959}
 
-    
+    summon minecraft:armor_stand ^-.5 ^1 ^2 {Fire:100,Invulnerable:1b,Invisible:1b,Tags:["asgoreFire","projectile","mapSpecific"],NoGravity:1b,DisabledSlots:4144959}
+    summon minecraft:armor_stand ^-1 ^1 ^2 {Fire:100,Invulnerable:1b,Invisible:1b,Tags:["asgoreFire","projectile","mapSpecific"],NoGravity:1b,DisabledSlots:4144959}
+    summon minecraft:armor_stand ^-1.5 ^1 ^2 {Fire:100,Invulnerable:1b,Invisible:1b,Tags:["asgoreFire","projectile","mapSpecific"],NoGravity:1b,DisabledSlots:4144959}
+
+    execute if entity @s[tag=empower] run function du-in:kit/asgore/ability/empowered_wall
 
 
 #Start cooldown

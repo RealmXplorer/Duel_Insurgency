@@ -9,7 +9,8 @@ scoreboard players set @s[tag=!clairSet] clairenTimer 100
 tag @s[tag=!clairSet] add clairSet
 
 #Run Field functions
-execute if entity @s[tag=sabotaged] run function du-in:kit/clairen/ability/field/sabotaged
+execute if entity @s[tag=sabotaged,tag=empower] run function du-in:kit/clairen/ability/field/empowered_sabotage
+execute if entity @s[tag=sabotaged,tag=!empower] run function du-in:kit/clairen/ability/field/sabotaged
 execute if entity @s[tag=!sabotaged] run function du-in:kit/clairen/ability/field/unsabotaged
 
 #Countdown and end

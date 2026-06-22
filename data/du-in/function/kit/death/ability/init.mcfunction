@@ -17,8 +17,11 @@ playsound minecraft:soundeffect.parry master @a ~ ~ ~ 100 2
 playsound minecraft:sans.ability master @a ~ ~ ~ .25 .95
 
 #Send flames
-execute unless entity @s[tag=sabotaged] positioned ^-4 ^ ^ if entity @s[distance=..25] run function du-in:kit/death/ability/left_raycast
-execute unless entity @s[tag=sabotaged] positioned ^4 ^ ^ if entity @s[distance=..25] run function du-in:kit/death/ability/right_raycast
+execute if entity @s[tag=!sabotaged,tag=!empower] positioned ^-4 ^ ^ if entity @s[distance=..25] run function du-in:kit/death/ability/left_raycast
+execute if entity @s[tag=!sabotaged,tag=!empower] positioned ^4 ^ ^ if entity @s[distance=..25] run function du-in:kit/death/ability/right_raycast
+
+execute if entity @s[tag=!sabotaged,tag=empower] positioned ^-4 ^ ^ if entity @s[distance=..25] run function du-in:kit/death/ability/empowered/left_raycast
+execute if entity @s[tag=!sabotaged,tag=empower] positioned ^4 ^ ^ if entity @s[distance=..25] run function du-in:kit/death/ability/empowered/right_raycast
 
 execute if entity @s[tag=sabotaged] run function du-in:kit/asgore/ability/contact
 execute if entity @s[tag=sabotaged] run function du-in:kit/all/ability/sabotage/effects

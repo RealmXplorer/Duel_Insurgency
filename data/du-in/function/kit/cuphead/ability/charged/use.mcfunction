@@ -12,3 +12,4 @@ xp set @s[tag=!stolen] 280 levels
 clear @s #du-in:ability
 #clear @s coal
 execute if entity @s[tag=stolen] run tag @s add kitDone
+tag @s remove empower

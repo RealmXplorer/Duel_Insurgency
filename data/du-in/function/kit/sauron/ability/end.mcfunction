@@ -9,5 +9,6 @@ tag @s[tag=stolen] add kitDone
 
 tag @s remove cooldown
 tag @s remove sabotaged
+tag @s remove empower
 
 scoreboard players reset @s sauronTimer

@@ -17,5 +17,7 @@ tag @s remove midasHand
 tag @s remove drinkMe
 tag @s remove thrown
 
+tag @s remove empower
+
 #scoreboard players reset @s shrunkTimer
 scoreboard players reset @s crossbowShoot

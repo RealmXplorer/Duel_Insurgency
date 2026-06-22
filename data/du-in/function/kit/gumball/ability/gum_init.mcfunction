@@ -14,4 +14,5 @@ execute if entity @s[tag=sabotaged] run function du-in:kit/gumball/ability/gumba
 
 clear @s warped_fungus_on_a_stick
 tag @s remove sabotaged
+tag @s remove empower
 tag @s remove kitActions

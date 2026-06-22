@@ -18,6 +18,6 @@ execute as @a[tag=sauronHit] at @s run function du-in:kit/sauron/ability/ring_re
 
 tag @a remove sauronHit
 attribute @s minecraft:attack_knockback base set 1
-clear @s #du-in:ability
+#clear @s #du-in:ability
 tag @s add cooldown
 xp set @s 100 levels

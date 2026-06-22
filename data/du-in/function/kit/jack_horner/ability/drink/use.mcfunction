@@ -2,7 +2,10 @@ attribute @s minecraft:scale base set 0.5
 
 attribute @s minecraft:block_interaction_range base set 4.15
 attribute @s minecraft:armor base set -3.5
-attribute @s attack_damage base set 0.8
+
+execute if entity @s[tag=!empower] run attribute @s attack_damage base set 0.8
+execute if entity @s[tag=empower] run attribute @s attack_damage base set 1.2
+
 attribute @s minecraft:movement_efficiency base set 0
 attribute @s minecraft:water_movement_efficiency base set 0
 
@@ -10,7 +13,8 @@ playsound minecraft:sans.ability master @a ~ ~ ~ .25 1
 playsound minecraft:terraria.drink master @a ~ ~ ~ 1 1
 playsound minecraft:entity.player.burp master @a ~ ~ ~ 100 1
 
-scoreboard players set @s shrunkTimer 100
+execute if entity @s[tag=!empower] run scoreboard players set @s shrunkTimer 100
+execute if entity @s[tag=empower] run scoreboard players set @s shrunkTimer 140
 
 #tag @s add 
 #Remove ability from hand

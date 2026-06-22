@@ -3,7 +3,12 @@
 #This tag makes it so that Pawbert won't be given his axe back while invisible
 tag @s add pawbertInvisible
 clear @s #du-in:weapon
-scoreboard players set @s pawbertTimer 60
+scoreboard players set @s[tag=!empower] pawbertTimer 60
+
+execute if entity @s[tag=empower] run scoreboard players set @s pawbertTimer 80
+execute if entity @s[tag=empower] run attribute @s attack_damage modifier add empowered_pawbert 4 add_value
+
+
 effect give @s resistance 1 0 true
 
 #Particles
@@ -26,7 +31,8 @@ effect give @s invisibility infinite 1 true
 execute if entity @s[tag=void] if entity @e[distance=0.05..4,type=skeleton] run function du-in:kit/pawbert/ability/void/near
 
 tag @a[distance=0.05..3,tag=playing] add wildeHit
-execute as @a[tag=wildeHit] unless score @s team = @p[scores={kit=23},tag=kitActions,distance=..3] team run function du-in:kit/nick/ability/enemy_hit
+execute as @a[tag=wildeHit] unless score @s team = @p[scores={kit=40},tag=kitActions,distance=..3] team run function du-in:kit/nick/ability/enemy_hit
+execute as @a[tag=wildeHit] if score @s team = @p[scores={kit=40},tag=kitActions,distance=..3] team run function du-in:kit/nick/ability/team_hit
 
 #Start cooldown
 clear @s #du-in:ability

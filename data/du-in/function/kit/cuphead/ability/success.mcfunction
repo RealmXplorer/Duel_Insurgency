@@ -1,4 +1,5 @@
-scoreboard players set @s cupTimer 60
+scoreboard players set @s[tag=!empower] cupTimer 60
+execute if entity @s[tag=empower] run scoreboard players set @s cupTimer 80
 tellraw @s [{text:"You are invulnerable!",bold:true,color:red}]
 xp set @s[tag=!stolen] 380 levels
 clear @s #du-in:ability
@@ -8,3 +9,4 @@ scoreboard players reset @s card
 clear @s paper
 scoreboard players set @s cardPower 0
 tag @s remove super
+tag @s remove empower

@@ -3,6 +3,7 @@
     execute unless entity @s[tag=sabotaged] run function du-in:kit/asgore/ability/unsabotaged
     execute if entity @s[tag=sabotaged] run function du-in:kit/asgore/ability/contact
     execute if entity @s[tag=sabotaged] run function du-in:kit/all/ability/sabotage/effects
+    execute if entity @s[tag=sabotaged,tag=empower] run damage @s 4 fireball
 
 #Play Particles and sounds
 particle minecraft:flame ~ ~.1 ~ 0.6 .6 0.6 0 100 force
@@ -20,5 +21,6 @@ xp set @s[tag=!stolen] 380 levels
 
 #End ability
 execute if entity @s[tag=stolen] run tag @s add kitDone
+tag @s remove empower
 tag @s remove sabotaged
 tag @s remove kitActions

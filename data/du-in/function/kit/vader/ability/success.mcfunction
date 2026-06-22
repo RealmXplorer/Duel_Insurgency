@@ -3,7 +3,8 @@ execute as @a[tag=vaderHit] if score @s team = @a[scores={kit=18},tag=kitActions
 execute if entity @s[tag=sabotaged] run tag @s add vaderHit
 execute as @a[tag=vaderHit] run damage @s 1 arrow by @a[scores={kit=18},tag=kitActions,sort=nearest,limit=1]
 
-execute as @a[tag=vaderHit] run function du-in:kit/vader/ability/effect
+execute if entity @s[tag=!empower] as @a[tag=vaderHit] run function du-in:kit/vader/ability/effect
+execute if entity @s[tag=empower] as @a[tag=vaderHit] run function du-in:kit/vader/ability/empowered_effect
 
 execute if entity @s[tag=sabotaged] run function du-in:kit/all/ability/sabotage/effects
 

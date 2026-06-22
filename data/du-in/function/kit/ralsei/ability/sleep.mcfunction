@@ -13,7 +13,8 @@ execute if entity @s[scores={ralseiTimer=11..20}] run effect give @s minecraft:s
 execute if entity @s[scores={ralseiTimer=20}] run playsound minecraft:ralsei.snore master @a ~ ~ ~ 1 1
 execute if entity @s[scores={ralseiTimer=20},predicate=du-in:chance/low_chance] run tellraw @s [{text:"A Mimir",bold:true,color:red}]
 
-execute if entity @s[scores={ralseiTimer=1..10}] run effect give @s minecraft:slowness 1 6 true
+execute if entity @s[tag=!superSleep,scores={ralseiTimer=1..10}] run effect give @s minecraft:slowness 1 6 true
+execute if entity @s[tag=superSleep,scores={ralseiTimer=1..10}] run effect give @s minecraft:slowness 3 6 true
 
 scoreboard players remove @s[scores={ralseiTimer=-1..}] ralseiTimer 1
 tag @s[scores={ralseiTimer=..0}] remove judySleep

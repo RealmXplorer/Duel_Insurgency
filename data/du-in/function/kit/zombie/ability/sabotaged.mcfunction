@@ -4,9 +4,13 @@ xp set @s[tag=!stolen] 350 levels
 function du-in:kit/all/ability/sabotage/effects
 
 effect give @s minecraft:slowness 2 3 true
+execute if entity @s[tag=empower] run effect give @s blindness 2 255 true
+execute if entity @s[tag=empower] run effect give @s slowness 2 4 true
+
 #execute if entity @s[tag=!asFound,tag=teamDead] run say Grave gone but you live
 title @s[tag=!asFound] actionbar {text:"Grave Stolen! You are depressed!",bold:true,color:red}
 playsound minecraft:entity.zombie.ambient master @a ~ ~ ~ 1 .5
 
+tag @s remove empower
 tag @s remove sabotaged
 tag @s remove kitActions

@@ -2,6 +2,9 @@ tag @s remove grave
 
 effect give @s minecraft:speed 2 2 true
 effect give @s minecraft:strength 2 0 true
+execute if entity @s[tag=empower] run effect give @s speed 4 3 true
+execute if entity @s[tag=empower] run effect give @s strength 4 2 true
+
 execute if entity @s[tag=!stolen] run function du-in:kit/zombie/ability/grave/sound
 execute if entity @s[tag=stolen] run playsound minecraft:entity.zombie_villager.ambient master @a ~ ~ ~ 100000 0.1 1
 
@@ -19,6 +22,7 @@ playsound minecraft:entity.ender_dragon.growl master @a ~ ~ ~ 100000 2 1
 playsound minecraft:entity.ghast.shoot master @a ~ ~ ~ 100000 .5 1
 
 xp set @s[tag=!stolen] 350 levels
+tag @s remove empower
 tag @s[tag=stolen,tag=givenStolen] add kitDone
 
 kill @n[type=interaction,tag=grave,distance=..3]
