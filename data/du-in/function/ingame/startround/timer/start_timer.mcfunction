@@ -71,6 +71,8 @@ tag @a[tag=!spectating] add playing
     tag @a[scores={kit=30}] add undead
     tag @a[scores={kit=34}] add undead
 
+    execute if entity @a[tag=vendingMachine] run tag @a[tag=sus] add vendingMachine
+    
     #Set Cuphead card power to 0 and play announcer
     scoreboard players set @a cardPower 0
     execute as @a[scores={kit=21}] at @s run playsound minecraft:cuphead.announce.start master @s ~ ~ ~ 10 1
