@@ -18,15 +18,10 @@ execute at @e[type=marker,tag=blueFlag] run setblock ~ ~ ~ blue_banner destroy
 execute at @e[type=marker,tag=redFlag] run setblock ~ ~ ~ red_banner destroy
 
 #Vending Machines#
-summon interaction -421 18 484 {Tags:["vending","stable","mapSpecific"],width:1.15f,height:2.1f,response:1b}
-summon interaction -423 24 481 {Tags:["vending","stable","mapSpecific"],width:1.15f,height:2.1f,response:1b}
-summon interaction -457 19 472 {Tags:["vending","stable","mapSpecific"],width:1.15f,height:2.1f,response:1b}
-summon interaction -386 19 493 {Tags:["vending","stable","mapSpecific"],width:1.15f,height:2.1f,response:1b}
-
-summon armor_stand -421 18 484 {Rotation:[180F,0F],Tags:["vendMachine","mapSpecific"],NoGravity:1b,Silent:1b,Invulnerable:1b,Invisible:1b,NoBasePlate:1b,DisabledSlots:4144959,equipment:{head:{id:"minecraft:spruce_sapling",count:1,components:{"minecraft:item_model":"du-in:other/vending_machine"}}}}
-summon armor_stand -423 24 481 {Rotation:[0F,0F],Tags:["vendMachine","mapSpecific"],NoGravity:1b,Silent:1b,Invulnerable:1b,Invisible:1b,NoBasePlate:1b,DisabledSlots:4144959,equipment:{head:{id:"minecraft:spruce_sapling",count:1,components:{"minecraft:item_model":"du-in:other/vending_machine"}}}}
-summon armor_stand -457 19 472 {Rotation:[-90F,0F],Tags:["vendMachine","mapSpecific"],NoGravity:1b,Silent:1b,Invulnerable:1b,Invisible:1b,NoBasePlate:1b,DisabledSlots:4144959,equipment:{head:{id:"minecraft:spruce_sapling",count:1,components:{"minecraft:item_model":"du-in:other/vending_machine"}}}}
-summon armor_stand -386 19 493 {Rotation:[90F,0F],Tags:["vendMachine","mapSpecific"],NoGravity:1b,Silent:1b,Invulnerable:1b,Invisible:1b,NoBasePlate:1b,DisabledSlots:4144959,equipment:{head:{id:"minecraft:spruce_sapling",count:1,components:{"minecraft:item_model":"du-in:other/vending_machine"}}}}
+execute if entity @a[tag=vendingMachine] positioned -421 18 484 run function du-in:ingame/vending_machine/place/north
+execute if entity @a[tag=vendingMachine] positioned -423 24 481 run function du-in:ingame/vending_machine/place/south
+execute if entity @a[tag=vendingMachine] positioned -457 19 472 run function du-in:ingame/vending_machine/place/east
+execute if entity @a[tag=vendingMachine] positioned -386 19 493 run function du-in:ingame/vending_machine/place/west
 
 #Vents
 summon marker -451 23 489 {Tags:["vent","mapSpecific"]}

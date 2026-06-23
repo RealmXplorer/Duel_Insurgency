@@ -25,12 +25,7 @@ summon interaction 1289 8 1285 {Tags:["ventBlock","mapSpecific"],width:1.05f,hei
 summon interaction 1272 7 1272 {Tags:["ventBlock","mapSpecific"],width:1.05f,height:1.25f,response:1b}
 
 #Thanksgiving Vending Machines#
-execute if entity @a[tag=vendingMachine] run summon interaction 1258 9 1275 {Tags:["vending","stable","mapSpecific"],width:1.15f,height:2.1f,response:1b}
-execute if entity @a[tag=vendingMachine] run summon interaction 1275 9 1292 {Tags:["vending","stable","mapSpecific"],width:1.15f,height:2.1f,response:1b}
-execute if entity @a[tag=vendingMachine] run summon interaction 1292 9 1275 {Tags:["vending","stable","mapSpecific"],width:1.15f,height:2.1f,response:1b}
-execute if entity @a[tag=vendingMachine] run summon interaction 1275 9 1258 {Tags:["vending","stable","mapSpecific"],width:1.15f,height:2.1f,response:1b}
-
-execute if entity @a[tag=vendingMachine] run summon armor_stand 1258 9 1275 {Rotation:[-90F,0F],Tags:["vendMachine","mapSpecific"],NoGravity:1b,Silent:1b,Invulnerable:1b,Invisible:1b,NoBasePlate:1b,DisabledSlots:4144959,equipment:{head:{id:"minecraft:spruce_sapling",count:1,components:{"minecraft:item_model":"du-in:other/vending_machine"}}}}
-execute if entity @a[tag=vendingMachine] run summon armor_stand 1275 9 1292 {Rotation:[-180F,0F],Tags:["vendMachine","mapSpecific"],NoGravity:1b,Silent:1b,Invulnerable:1b,Invisible:1b,NoBasePlate:1b,DisabledSlots:4144959,equipment:{head:{id:"minecraft:spruce_sapling",count:1,components:{"minecraft:item_model":"du-in:other/vending_machine"}}}}
-execute if entity @a[tag=vendingMachine] run summon armor_stand 1292 9 1275 {Rotation:[90F,0F],Tags:["vendMachine","mapSpecific"],NoGravity:1b,Silent:1b,Invulnerable:1b,Invisible:1b,NoBasePlate:1b,DisabledSlots:4144959,equipment:{head:{id:"minecraft:spruce_sapling",count:1,components:{"minecraft:item_model":"du-in:other/vending_machine"}}}}
-execute if entity @a[tag=vendingMachine] run summon armor_stand 1275 9 1258 {Rotation:[0F,0F],Tags:["vendMachine","mapSpecific"],NoGravity:1b,Silent:1b,Invulnerable:1b,Invisible:1b,NoBasePlate:1b,DisabledSlots:4144959,equipment:{head:{id:"minecraft:spruce_sapling",count:1,components:{"minecraft:item_model":"du-in:other/vending_machine"}}}}
+execute if entity @a[tag=vendingMachine] positioned 1258 9 1275 run function du-in:ingame/vending_machine/place/east
+execute if entity @a[tag=vendingMachine] positioned 1275 9 1292 run function du-in:ingame/vending_machine/place/north
+execute if entity @a[tag=vendingMachine] positioned 1292 9 1275 run function du-in:ingame/vending_machine/place/west
+execute if entity @a[tag=vendingMachine] positioned 1275 9 1258 run function du-in:ingame/vending_machine/place/south

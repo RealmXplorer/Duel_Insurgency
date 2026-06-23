@@ -17,8 +17,11 @@ playsound minecraft:sans.ability master @a ~ ~ ~ .25 1
 execute as @a[tag=meeting] at @s run title @a title {text:"Emergency",color:red,bold:true}
 execute as @a[tag=meeting] at @s run title @a subtitle {text:"Meeting!",color:red,bold:true}
 
+execute if entity @s[tag=empower] as @a[tag=meeting] run damage @s 10 arrow by @n[type=marker,tag=meetingSpot]
+
 xp set @s[tag=!stolen] 600 levels
 
+tag @s remove empower
 tag @s remove sabotaged
 tag @s remove meetingCall
 tag @s remove kitActions

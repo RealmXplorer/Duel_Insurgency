@@ -7,7 +7,11 @@ clear @s #du-in:ability
 xp set @s[tag=!stolen] 600 levels
 tag @s[tag=!sabotaged] remove confusion
 
-effect give @s minecraft:resistance 3 0 true
-effect give @s minecraft:speed 3 1 true
+effect give @s[tag=!empower] minecraft:resistance 3 0 true
+effect give @s[tag=!empower] minecraft:speed 3 1 true
 
+execute if entity @s[tag=empower] run effect give @s minecraft:resistance 3 1 true
+execute if entity @s[tag=empower] run effect give @s minecraft:speed 3 2 true
+
+tag @s remove empower
 tag @s remove kitActions

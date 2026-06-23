@@ -8,10 +8,12 @@ particle minecraft:flame ~ ~1 ~ 0 0 0 0.4 100 force
 playsound minecraft:cinder.boom master @a ~ ~ ~ 100 1
 particle minecraft:flash{color:0xffffff} ~ ~1 ~ 0 0 0 0 10 normal
 
-function du-in:kit/cinder/ability/sword/damage
+execute if entity @s[tag=!empower] run function du-in:kit/cinder/ability/sword/damage
+execute if entity @s[tag=empower] run function du-in:kit/cinder/ability/sword/empowered_damage
 
 clear @s #du-in:ability
 xp set @s[tag=!stolen] 360 levels
 tag @s remove sabotaged
+tag @s remove empower
 tag @a remove cinderHit
 tag @s add kitDone

@@ -33,16 +33,14 @@ attribute @s armor_toughness base set 1000
 attribute @s attack_damage base set 1000
 attribute @s minecraft:block_interaction_range base set 5
 attribute @s minecraft:entity_interaction_range base set 5
+execute if entity @s[tag=empower] run attribute @s minecraft:movement_speed base set 0.16
 
 #Message
 tellraw @a[tag=!showTimeDuration] {text:"It's Showtime!",bold:true,color:red}
 
 #Start timer#
-scoreboard players set @s showTimer 150
-
-##ABILITY
-#Give Beetlejuice bonus effects
-#effect give @s strength 2 0 true
+scoreboard players set @s[tag=!empower] showTimer 150
+execute if entity @s[tag=empower] run scoreboard players set @s showTimer 200
 
 #Remove ability from hand
 clear @s #du-in:ability
@@ -54,8 +52,8 @@ tag @s add cooldown
 #Remove Beetlejuice exemption
 tag @s remove beetleJuice
 
-#Remove sabotaged
-tag @s remove sabotaged
+#Remove empower
+tag @s remove empower
 
 #End ability
 tag @s remove kitActions

@@ -20,4 +20,5 @@ tag @s remove cooldown
 tag @s remove showTimeDuration
 scoreboard players reset @s showTimer
 tag @s remove maxBeetleDamage
+tag @s remove sabotaged
 tag @a remove inTheModel

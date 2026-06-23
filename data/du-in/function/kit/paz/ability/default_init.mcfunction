@@ -23,6 +23,7 @@ playsound minecraft:sans.ability master @a ~ ~ ~ .25 1
 
 #Message
 tellraw @a[tag=!hacker] {text:"You lost connection!",bold:true,color:red}
+execute if entity @s[tag=empower] as @a[tag=!hacker] run damage @s 6 ender_pearl
 
 #Set Enderpearls to player's UUIDs
 execute as @e[type=ender_pearl,tag=blakeTP,tag=notAssigned] at @s run function du-in:kit/paz/ability/set_uuid
@@ -32,8 +33,11 @@ scoreboard players set @s blakeTimer 60
 tag @s add blakeDuration
 
 #Give Paz bonus effects
-effect give @s speed 2 0 true
-effect give @s strength 2 0 true
+effect give @s[tag=!empower] speed 2 0 true
+effect give @s[tag=!empower] strength 2 0 true
+
+execute if entity @s[tag=empower] run effect give @s speed 3 1 true
+execute if entity @s[tag=empower] run effect give @s strength 3 1 true
 
 #Remove ability from hand
 clear @s #du-in:ability
@@ -46,6 +50,9 @@ tag @s remove hacker
 
 #Remove sabotaged
 tag @s remove sabotaged
+
+#Remove empower
+tag @s remove empower
 
 #End ability
 tag @s remove kitActions

@@ -26,16 +26,10 @@ summon interaction 7404 73 2812 {Tags:["ventBlock","mapSpecific"],width:1.05f,he
 summon interaction 7428 73 2831 {Tags:["ventBlock","mapSpecific"],width:1.05f,height:1.25f,response:1b}
 
 #Vending Machines#
-execute if entity @a[tag=vendingMachine] run summon interaction 7431 73 2784 {Tags:["vending","stable","mapSpecific"],width:1.15f,height:2.1f,response:1b}
-execute if entity @a[tag=vendingMachine] run summon interaction 7404 73 2813 {Tags:["vending","stable","mapSpecific"],width:1.15f,height:2.1f,response:1b}
-execute if entity @a[tag=vendingMachine] run summon interaction 7429 73 2831 {Tags:["vending","stable","mapSpecific"],width:1.15f,height:2.1f,response:1b}
-execute if entity @a[tag=vendingMachine] run summon interaction 7456 72 2808 {Tags:["vending","stable","mapSpecific"],width:1.15f,height:2.1f,response:1b}
-
-
-execute if entity @a[tag=vendingMachine] run summon armor_stand 7431 73 2784 {Rotation:[0F,0F],Tags:["vendMachine","mapSpecific"],NoGravity:1b,Silent:1b,Invulnerable:1b,Invisible:1b,NoBasePlate:1b,DisabledSlots:4144959,equipment:{head:{id:"minecraft:spruce_sapling",count:1,components:{"minecraft:item_model":"du-in:other/vending_machine"}}}}
-execute if entity @a[tag=vendingMachine] run summon armor_stand 7404 73 2813 {Rotation:[-90F,0F],Tags:["vendMachine","mapSpecific"],NoGravity:1b,Silent:1b,Invulnerable:1b,Invisible:1b,NoBasePlate:1b,DisabledSlots:4144959,equipment:{head:{id:"minecraft:spruce_sapling",count:1,components:{"minecraft:item_model":"du-in:other/vending_machine"}}}}
-execute if entity @a[tag=vendingMachine] run summon armor_stand 7429 73 2831 {Rotation:[-180F,0F],Tags:["vendMachine","mapSpecific"],NoGravity:1b,Silent:1b,Invulnerable:1b,Invisible:1b,NoBasePlate:1b,DisabledSlots:4144959,equipment:{head:{id:"minecraft:spruce_sapling",count:1,components:{"minecraft:item_model":"du-in:other/vending_machine"}}}}
-execute if entity @a[tag=vendingMachine] run summon armor_stand 7456 72 2808 {Rotation:[90F,0F],Tags:["vendMachine","mapSpecific"],NoGravity:1b,Silent:1b,Invulnerable:1b,Invisible:1b,NoBasePlate:1b,DisabledSlots:4144959,equipment:{head:{id:"minecraft:spruce_sapling",count:1,components:{"minecraft:item_model":"du-in:other/vending_machine"}}}}
+execute if entity @a[tag=vendingMachine] positioned 7431 73 2784 run function du-in:ingame/vending_machine/place/south
+execute if entity @a[tag=vendingMachine] positioned 7404 73 2813 run function du-in:ingame/vending_machine/place/east
+execute if entity @a[tag=vendingMachine] positioned 7429 73 2831 run function du-in:ingame/vending_machine/place/north
+execute if entity @a[tag=vendingMachine] positioned 7456 72 2808 run function du-in:ingame/vending_machine/place/west
 
 #First Flame#
 summon armor_stand 7432.65 70.75 2810.01 {Marker:1b,NoGravity:1b,DisabledSlots:4144959,Invulnerable:1b,Invisible:1b,NoBasePlate:1b,PersistenceRequired:1b,Tags:["firstFlame","mapSpecific"],Pose:{RightArm:[84f,23f,360f]},equipment:{mainhand:{id:"minecraft:iron_sword",count:1,components:{"minecraft:item_model":"du-in:weapons/coiled_sword"}}}}

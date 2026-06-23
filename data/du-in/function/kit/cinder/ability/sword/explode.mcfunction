@@ -12,9 +12,11 @@ particle minecraft:flash{color:0xffffff} ~ ~1 ~ 0 0 0 0 10 normal
 
 effect give @s fire_resistance 2 0 true
 
-execute as @a[tag=cinderHit] at @s run function du-in:kit/cinder/ability/sword/damage
+execute if entity @s[tag=!empower] as @a[tag=cinderHit] at @s run function du-in:kit/cinder/ability/sword/damage
+execute if entity @s[tag=empower] as @a[tag=cinderHit] at @s run function du-in:kit/cinder/ability/sword/empowered_damage
 
 clear @s #du-in:ability
 xp set @s[tag=!stolen] 350 levels
+tag @s remove empower
 tag @a remove cinderHit
 tag @s add kitDone

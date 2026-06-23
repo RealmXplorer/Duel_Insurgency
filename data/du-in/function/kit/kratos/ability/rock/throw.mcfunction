@@ -16,7 +16,8 @@ scoreboard players operation #targetY pos -= #playerY pos
 scoreboard players operation #targetZ pos -= #playerZ pos
 
 # summon the windTest entity
-summon salmon ~ ~1.5 ~ {Silent:1b,Invulnerable:1b,Tags:["kratosTest","kratosRock","unsetTime","mapSpecific"]}
+execute if entity @s[tag=!empower] run summon salmon ~ ~1.5 ~ {Silent:1b,Invulnerable:1b,Tags:["kratosTest","kratosRock","unsetTime","mapSpecific"]}
+execute if entity @s[tag=empower] run summon salmon ~ ~1.5 ~ {Silent:1b,Invulnerable:1b,Tags:["kratosTest","kratosRock","unsetTime","mapSpecific","empower"]}
 effect give @e[type=salmon,tag=kratosTest] invisibility infinite 1 true
 summon block_display ~ ~ ~ {Tags:["kratosRock","unsetTime","mapSpecific"],block_state:{Name:"minecraft:packed_mud"}}
 

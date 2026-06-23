@@ -7,8 +7,14 @@ playsound minecraft:ui.button.click master @a ~ ~ ~ 10
 
 
 #Give Paz bonus effects
-effect give @s speed 2 0 true
-effect give @s strength 2 0 true
+effect give @s[tag=!empower] speed 2 0 true
+effect give @s[tag=!empower] strength 2 0 true
+
+execute if entity @s[tag=empower] run effect give @s speed 3 1 true
+execute if entity @s[tag=empower] run effect give @s strength 3 1 true
+
+#Remove empower
+tag @s remove empower
 
 #Remove ability from hand
 clear @s #du-in:ability

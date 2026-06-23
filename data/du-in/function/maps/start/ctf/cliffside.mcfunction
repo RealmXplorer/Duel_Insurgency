@@ -29,13 +29,9 @@ summon interaction 4996 4 -5051 {Tags:["ventBlock","mapSpecific"],width:1.05f,he
 
 #4999 14 -5056
 #Vending Machines#
-summon interaction 5005 5 -5015 {Tags:["vending","stable","mapSpecific"],width:1.15f,height:2.1f,response:1b}
-summon interaction 5005 5 -5054 {Tags:["vending","stable","mapSpecific"],width:1.15f,height:2.1f,response:1b}
-summon interaction 5008 5 -5090 {Tags:["vending","stable","mapSpecific"],width:1.15f,height:2.1f,response:1b}
-
-summon armor_stand 5005 5 -5015 {Rotation:[180F,0F],Tags:["vendMachine","mapSpecific"],NoGravity:1b,Silent:1b,Invulnerable:1b,Invisible:1b,NoBasePlate:1b,DisabledSlots:4144959,equipment:{head:{id:"minecraft:spruce_sapling",count:1,components:{"minecraft:item_model":"du-in:other/vending_machine"}}}}
-summon armor_stand 5005 5 -5054 {Rotation:[90F,0F],Tags:["vendMachine","mapSpecific"],NoGravity:1b,Silent:1b,Invulnerable:1b,Invisible:1b,NoBasePlate:1b,DisabledSlots:4144959,equipment:{head:{id:"minecraft:spruce_sapling",count:1,components:{"minecraft:item_model":"du-in:other/vending_machine"}}}}
-summon armor_stand 5008 5 -5090 {Rotation:[180F,0F],Tags:["vendMachine","mapSpecific"],NoGravity:1b,Silent:1b,Invulnerable:1b,Invisible:1b,NoBasePlate:1b,DisabledSlots:4144959,equipment:{head:{id:"minecraft:spruce_sapling",count:1,components:{"minecraft:item_model":"du-in:other/vending_machine"}}}}
+execute if entity @a[tag=vendingMachine] positioned 5005 5 -5015 run function du-in:ingame/vending_machine/place/north
+execute if entity @a[tag=vendingMachine] positioned 5005 5 -5054 run function du-in:ingame/vending_machine/place/west
+execute if entity @a[tag=vendingMachine] positioned 5008 5 -5090 run function du-in:ingame/vending_machine/place/north
 
 #execute unless entity @a[tag=partyLeader,tag=cliffLock] run summon interaction 4996 6 -5012 {Tags:["voidLock","mapSpecific"],width:0.6f,height:0.6f,response:1b}
 #execute if entity @a[tag=partyLeader,tag=cliffLock] run summon interaction 4996 6 -5012 {Tags:["usedVoidLock","mapSpecific"],width:0.6f,height:0.6f,response:1b}

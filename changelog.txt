@@ -15,8 +15,9 @@
     -Big Chungus's ability now has a sound effect.
     -Sabotages and empowerments are now removed on death.
     -Nick Wilde's ability can now be sabotaged.
+    -Beetlejuice's ability can now be sabotaged.
     -Sauron's ring of power now empowers the ability of whoever has it.
-    -More characters can have their ability empowered:
+    -All characters can have their ability empowered. Added empowerments to:
         -Jerma
         -Gumball and Darwin
         -Ralsei
@@ -44,6 +45,16 @@
         -Death
         -Yoda
         -Sauron
+        -Aang
+        -Kratos
+        -Soul of Cinder
+        -PearApplez
+        -Impostor
+        -Runza Rex
+        -Jack Black
+        -Beetlejuice
+        -Big Chungus
+        -Saul Goodman
 
 *Balancing Changes*
     -Increased level of poison from Springtrap's ability. (Poison I -> II).
@@ -86,6 +97,9 @@
     -Easter Egg character music is now run through a fake player score.
     -Armor return system now runs once a second rather than every tick.
     -Moved from “lobby/kitmenu/menu/(franchise)/(char)” and “lobby/kitmenu/select/(franchise)/(char)” to “kit/(char)/menu/display” and “kit/(char)/menu/select”.
+    -Vending Machines are now initialized via functions.
+        -Each map now calls "ingame/vending_machine/place/(direction)".
+    
 
 *Resourcepack Changes*
     -Updated format to "87.0"

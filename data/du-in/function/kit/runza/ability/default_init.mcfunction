@@ -1,5 +1,6 @@
 tag @s[tag=!sabotaged] add runzaRex
-execute as @a[tag=playing,tag=!spectating,tag=!runzaRex] at @s unless score @a[scores={kit=1004},tag=kitActions,limit=1] team = @s team run function du-in:kit/runza/ability/start
+execute if entity @s[tag=!empower] as @a[tag=playing,tag=!spectating,tag=!runzaRex] at @s unless score @a[scores={kit=1004},tag=kitActions,limit=1] team = @s team run function du-in:kit/runza/ability/start
+execute if entity @s[tag=empower] as @a[tag=playing,tag=!spectating,tag=!runzaRex] at @s unless score @a[scores={kit=1004},tag=kitActions,limit=1] team = @s team run function du-in:kit/runza/ability/empowered_start
 clear @s #du-in:ability
 xp set @s[tag=!stolen] 600 levels
 tag @s[tag=!sabotaged] remove runza
@@ -16,6 +17,7 @@ playsound minecraft:entity.player.attack.sweep master @a ~ ~ ~ 100 1
 attribute @s minecraft:armor base set 4
 attribute @s minecraft:attack_damage base set 1.5
 
+tag @s remove empower
 tag @s remove sabotaged
 tag @s remove runzaRex
 tag @s remove kitActions

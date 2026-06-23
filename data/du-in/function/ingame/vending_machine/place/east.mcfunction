@@ -1,0 +1,2 @@
+summon armor_stand ~ ~ ~ {Rotation:[-90F,0F],Tags:["vendMachine","mapSpecific"],NoGravity:1b,Silent:1b,Invulnerable:1b,Invisible:1b,NoBasePlate:1b,DisabledSlots:4144959,equipment:{head:{id:"minecraft:spruce_sapling",count:1,components:{"minecraft:item_model":"du-in:other/vending_machine"}}}}
+summon interaction ~ ~ ~ {Tags:["vending","stable","mapSpecific"],width:1.15f,height:2.1f,response:1b}

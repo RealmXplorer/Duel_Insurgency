@@ -15,8 +15,5 @@ execute at @e[type=marker,tag=blueFlag] run setblock ~ ~ ~ blue_banner destroy
 execute at @e[type=marker,tag=redFlag] run setblock ~ ~ ~ red_banner destroy
 
 #Vending Machines#
-summon interaction 253 4 426 {Tags:["vending","stable","mapSpecific"],width:1.15f,height:2.1f,response:1b}
-summon interaction 242 4 515 {Tags:["vending","stable","mapSpecific"],width:1.15f,height:2.1f,response:1b}
-
-summon painting 253 4 425 {facing:2b,Invulnerable:1b,Tags:["mapSpecific","vendingPainting"],variant:"minecraft:wanderer"}
-summon painting 242 4 516 {facing:0b,Invulnerable:1b,Tags:["mapSpecific","vendingPainting"],variant:"minecraft:wanderer"}
+execute if entity @a[tag=vendingMachine] positioned 253 4 426 run function du-in:ingame/vending_machine/place/east
+execute if entity @a[tag=vendingMachine] positioned 242 4 515 run function du-in:ingame/vending_machine/place/east
