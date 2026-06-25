@@ -1,6 +1,7 @@
-execute if entity @s[tag=givenRed] run function du-in:lobby/team_select/actions/pick_red
-tag @s remove givenBlue
-clear @s minecraft:carrot_on_a_stick[custom_data={du-in:'redItem'}]
+execute if entity @s[tag=givenRed,tag=!clearing] run function du-in:lobby/team_select/actions/pick_red
+tag @s[tag=!clearing] remove givenBlue
+clear @s[tag=!clearing] minecraft:carrot_on_a_stick[custom_data={du-in:'redItem'}]
+
 execute unless score #main lobbyTheme matches 1 unless score #main lobbyTheme matches 3 run item replace entity @s[tag=!team1] hotbar.3 with minecraft:carrot_on_a_stick[item_model="red_wool",item_name={text:"Join Red",color:red,bold:true},lore=[{text:"Right click to use!",color:dark_purple}],custom_data={du-in:'redItem'},consumable={consume_seconds:0,animation:"none",sound:"block.candle.hit",has_consume_particles:false}]
 execute unless score #main lobbyTheme matches 1 unless score #main lobbyTheme matches 3 run item replace entity @s[tag=team1] hotbar.3 with minecraft:carrot_on_a_stick[item_model="red_wool",item_name={text:"Join Red",color:red,bold:true},lore=[{text:"Right click to use!",color:dark_purple}],custom_data={du-in:'redItem'},enchantment_glint_override=true,consumable={consume_seconds:0,animation:"none",sound:"block.candle.hit",has_consume_particles:false}]
 
@@ -10,4 +11,4 @@ execute if score #main lobbyTheme matches 1 run item replace entity @s[tag=team1
 execute if score #main lobbyTheme matches 3 run item replace entity @s[tag=!team1] hotbar.3 with minecraft:carrot_on_a_stick[item_model="red_wool",item_name={text:"Join Saints",color:red,bold:true},lore=[{text:"Right click to use!",color:dark_purple}],custom_data={du-in:'redItem'},consumable={consume_seconds:0,animation:"none",sound:"block.candle.hit",has_consume_particles:false}]
 execute if score #main lobbyTheme matches 3 run item replace entity @s[tag=team1] hotbar.3 with minecraft:carrot_on_a_stick[item_model="red_wool",item_name={text:"Join Saints",color:red,bold:true},lore=[{text:"Right click to use!",color:dark_purple}],custom_data={du-in:'redItem'},enchantment_glint_override=true,consumable={consume_seconds:0,animation:"none",sound:"block.candle.hit",has_consume_particles:false}]
 
-tag @s add givenRed
+tag @s[tag=!clearing] add givenRed

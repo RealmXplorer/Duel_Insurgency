@@ -112,4 +112,5 @@
     -Added Pawbert death sound.
     -Added Chungus Earthquake sounds.
     -Added variated pitches to some sound effects in sounds.json.
+    -Added auto-sort teams lobby texture. (by Realm_Xplorer)
     -Re-added Flowey's christmas weapon texture (accidentally deleted somehow).

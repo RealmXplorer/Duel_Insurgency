@@ -6,6 +6,8 @@ tag @s remove givenCredits
 tag @s remove givenNext
 tag @s remove givenPrev
 tag @s remove givenRandKit
+tag @s remove givenSort
+tag @s remove givenClear
 
 execute if entity @s[tag=!subLobby,scores={lobby=1}] at @s run function du-in:lobby/scheduled/gamemode_select
 execute if entity @s[tag=shop] at @s run function du-in:lobby/scheduled/shop

@@ -44,7 +44,7 @@ scoreboard objectives add jevilScythe dummy
 scoreboard objectives add bogoShieldTimer dummy
 scoreboard objectives add bogoTimer dummy
 scoreboard objectives add antidoteCount dummy
-\
+
 #Timers
 scoreboard objectives add ambience dummy
 scoreboard objectives add asrielTimer dummy
@@ -244,6 +244,9 @@ scoreboard objectives add thrownCocoa minecraft.dropped:minecraft.cocoa_beans
 scoreboard objectives add thrownCoal minecraft.dropped:minecraft.coal
 scoreboard objectives add tabbaTalk dummy
 scoreboard objectives add tabbaVendingTalk dummy
+scoreboard objectives add redTeamCount dummy
+scoreboard objectives add blueTeamCount dummy
+
 
 scoreboard objectives add drinkPotion minecraft.used:minecraft.potion
 scoreboard objectives add drinkMilk minecraft.used:minecraft.milk_bucket

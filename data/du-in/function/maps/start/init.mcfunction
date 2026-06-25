@@ -1,3 +1,7 @@
+#
+#execute if score #main team matches 1 if score #main teamOnline < #main online run function du-in:lobby/team_select/actions/sort_husk
+#execute if score #main team matches 1 if score #main teamOnline < #main online run function du-in:lobby/team_select/actions/auto_sort
+
 #Reset "voting"'s scores
 scoreboard players set #main mapWinner 0
 
