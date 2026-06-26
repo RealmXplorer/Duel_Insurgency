@@ -7,6 +7,7 @@
 
 *Changes*
     -Updated to 26.2
+    -Re-added the Lore books.
     -Sauron now has an ability with the Ring of Power.
     -Many sound effects now have variated pitches.
     -Gave Beetlejuice surrender, dream, and vision text.
