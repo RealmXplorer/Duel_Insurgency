@@ -2,11 +2,15 @@
 ***Version 1.5 - RETURN TO ZOOTOPIA:***
 *Additions:*
     -Added Pawbert character.
+        -Pawbert wields an axe and carries his venom injector. His ability allows him to go completely invisible and strike enemies with the injector without detection, but be careful not to be hit while in stealth!
+    -Added an auto-sort teams and clear teams function to Team Select.
 
 *Changes*
     -Updated to 26.2
     -Sauron now has an ability with the Ring of Power.
     -Many sound effects now have variated pitches.
+    -Gave Beetlejuice surrender, dream, and vision text.
+    -Changed some dreams, surrenders, visions, and infos.
     -Gumball's ability now plays different particles when he is in delay, and plays a new sound and particle when delay ends.
     -Tweaked Void balancing.
     -Gave Villager a void ability.
@@ -87,6 +91,8 @@
     -All tools are now included in the "du-in:weapons" item tag.
     -Added "#minecraft:spears" to the "du-in:weapons" item tag.
     -Added "minecraft:blaze_rod" to the "du-in:secondary" item tag.
+    -Changed "surrender","dream","vision", and "info" functions from lists of score checks to a single macro that calls a new "text" function in every character folder based.
+        -Calls which tellraw to use based off of contextual tag or score.
     -Updated Gamerules to follow new format.
     -Moved asgore trident functions into the "projectiles" function.
     -Merged the two night ambience check functions from "general" into a new function.
