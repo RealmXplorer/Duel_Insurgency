@@ -45,15 +45,6 @@
     # General UNLOCK int functions #
         execute if entity @s[scores={kit=1000..},tag=!kitMenu] run function du-in:kit/all/set_legend
 
-#STEP STOP#
-    execute if entity @s[scores={simStep=..0}] run function du-in:ingame/steptrack/step_stop
-    execute if entity @s[scores={simStep=1..}] run function du-in:ingame/steptrack/step_go
-
-
-#SPRINT STOP#
-    execute if entity @s[scores={simSprint=..0}] run function du-in:ingame/steptrack/sprint_stop
-    execute if entity @s[scores={simSprint=1..}] run function du-in:ingame/steptrack/sprint_go
-
 #Different events
     execute if entity @s[scores={hit=5..}] run function du-in:kit/all/hit/init
     execute if entity @s[scores={step=150..}] run function du-in:kit/all/step/init

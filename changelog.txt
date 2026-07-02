@@ -106,6 +106,7 @@
     -Moved from “lobby/kitmenu/menu/(franchise)/(char)” and “lobby/kitmenu/select/(franchise)/(char)” to “kit/(char)/menu/display” and “kit/(char)/menu/select”.
     -Vending Machines are now initialized via functions.
         -Each map now calls "ingame/vending_machine/place/(direction)".
+    -Removed all "steptracK" functions as they were somewhat useless and unnecessary use of resources.
     
 
 *Resourcepack Changes*
