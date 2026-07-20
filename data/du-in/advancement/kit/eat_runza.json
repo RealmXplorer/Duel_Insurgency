@@ -1,0 +1,28 @@
+{
+  "criteria": {
+    "eat_runza": {
+      "trigger": "minecraft:consume_item",
+      "conditions": {
+        "player": {
+          "type": "minecraft:entity_properties",
+          "entity": "this",
+          "predicate": {
+            "minecraft:equipment": {
+              "mainhand": {
+                "items": "minecraft:mushroom_stew"
+              }
+            }
+          }
+        }
+      }
+    }
+  },
+  "requirements": [
+    [
+      "eat_runza"
+    ]
+  ],
+  "rewards": {
+    "function": "du-in:kit/runza/ability/end"
+  }
+}
