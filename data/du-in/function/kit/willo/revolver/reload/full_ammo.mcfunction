@@ -1,0 +1,1 @@
+title @s actionbar [{"color":"red","text":"Full Ammo!"}]

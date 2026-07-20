@@ -1,19 +1,22 @@
 {
   "criteria": {
 
-      "killgoner": {
+      "kill_eye": {
 
           "trigger": "minecraft:player_killed_entity",
 
           "conditions": {
 
               "entity": {
-
+                "type": "minecraft:entity_properties",
+                "entity": "this",
+            "predicate":{
                   "entity_type": "minecraft:skeleton",
 
                   "nbt": "{Tags:[\"gonerEye\"]}"
 
               }
+            }
 
           }
 
@@ -22,7 +25,7 @@
   },
   "requirements": [
       [
-          "killgoner"
+          "kill_eye"
       ]
   ],
 

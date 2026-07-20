@@ -43,6 +43,7 @@ Kit number = character name
 38 = Jevil
 39 = Chief Bogo
 40 = Pawbert Lynxley
+41 = Willo
 
 1000 = Saac
 1001 = PearApplez

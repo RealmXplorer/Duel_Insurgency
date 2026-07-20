@@ -1,8 +1,18 @@
 ***7/11/26 - ??/??/??:***
 ***Version 1.5.1:***
 *Changes*
+-Updated map to 26.3.
+-There are no more I-frames.
 -Harvest now uses the Dappled Forest biome, and features Poplar trees.
 -Beds can no longer be slept in.
+-Signs on San Ricardo are now properly waxed.
 
 *Internal Changes*
+-Updated Advancements and Predicates to follow new 26.3 syntaxes.
 -Added "overworld" and "overworld_caves" dimension_types to alter overworld environment attributes.
+-Added Glass Panes to "minecraft:glass" block tags
+
+*Resourcepack Changes*
+-Added Willo armor textures. (by nerbski)
+-Added Candy Corn texture. (by Realm_Xplorer)
+-Added Revolver sounds.

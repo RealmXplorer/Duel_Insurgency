@@ -1,27 +1,30 @@
 {
   "criteria": {
 
-      "killgoner": {
+      "hurt_mouth": {
 
           "trigger": "minecraft:player_hurt_entity",
 
           "conditions": {
 
               "entity": {
-          "entity_type": "minecraft:skeleton",
-
+                "type": "minecraft:entity_properties",
+                "entity": "this",
+            "predicate":{
+                 "entity_type": "minecraft:skeleton",
                   "nbt": "{Tags:[\"gonerMouth\"]}"
 
               }
 
           }
+        }
 
       }
 
   },
   "requirements": [
       [
-          "killgoner"
+          "hurt_mouth"
       ]
   ],
 

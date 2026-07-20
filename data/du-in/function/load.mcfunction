@@ -44,6 +44,10 @@ scoreboard objectives add jevilScythe dummy
 scoreboard objectives add bogoShieldTimer dummy
 scoreboard objectives add bogoTimer dummy
 scoreboard objectives add antidoteCount dummy
+scoreboard objectives add willoAmmo dummy
+scoreboard objectives add willoStock dummy
+scoreboard objectives add willoReloadTimer minecraft.custom:minecraft.play_time
+scoreboard objectives add willoBulletTravel dummy
 
 #Timers
 scoreboard objectives add ambience dummy

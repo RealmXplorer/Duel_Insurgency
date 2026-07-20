@@ -1,0 +1,28 @@
+{
+  "criteria": {
+    "eat_candy": {
+      "trigger": "minecraft:consume_item",
+      "conditions": {
+        "player": {
+          "type": "minecraft:entity_properties",
+          "entity": "this",
+          "predicate": {
+            "minecraft:equipment": {
+              "mainhand": {
+                "items": "minecraft:copper_nugget"
+              }
+            }
+          }
+        }
+      }
+    }
+  },
+  "requirements": [
+    [
+      "eat_candy"
+    ]
+  ],
+  "rewards": {
+    "function": "du-in:kit/willo/revolver/candy_corn/eat"
+  }
+}

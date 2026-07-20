@@ -1,14 +1,17 @@
 {
   "criteria": {
 
-      "killgoner": {
+      "hurt_goner": {
 
           "trigger": "minecraft:player_hurt_entity",
 
           "conditions": {
 
               "entity": {
-
+                "type": "minecraft:entity_properties",
+                "entity": "this",
+            "predicate":{
+                
                   "entity_type": "minecraft:skeleton",
 
                   "nbt": "{Tags:[\"gonerThing\"]}"
@@ -16,13 +19,14 @@
               }
 
           }
+        }
 
       }
 
   },
   "requirements": [
       [
-          "killgoner"
+          "hurt_goner"
       ]
   ],
 
