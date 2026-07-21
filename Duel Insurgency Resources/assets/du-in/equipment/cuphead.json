@@ -1,0 +1,14 @@
+{
+  "layers": {
+    "humanoid": [
+      {
+        "texture": "du-in:cuphead"
+      }
+    ],
+    "humanoid_leggings": [
+      {
+        "texture": "du-in:cuphead"
+      }
+    ]
+  }
+}

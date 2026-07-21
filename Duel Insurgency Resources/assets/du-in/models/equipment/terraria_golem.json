@@ -1,0 +1,14 @@
+{
+  "layers": {
+    "humanoid": [
+      {
+        "texture": "du-in:terraria_golem"
+      }
+    ],
+    "humanoid_leggings": [
+      {
+        "texture": "du-in:terraria_golem"
+      }
+    ]
+  }
+}

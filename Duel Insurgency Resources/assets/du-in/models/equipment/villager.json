@@ -1,0 +1,14 @@
+{
+  "layers": {
+    "humanoid": [
+      {
+        "texture": "du-in:villager"
+      }
+    ],
+    "humanoid_leggings": [
+      {
+        "texture": "du-in:villager"
+      }
+    ]
+  }
+}

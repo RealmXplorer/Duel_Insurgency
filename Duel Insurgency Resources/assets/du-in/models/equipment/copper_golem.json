@@ -1,0 +1,14 @@
+{
+  "layers": {
+    "humanoid": [
+      {
+        "texture": "du-in:copper_golem"
+      }
+    ],
+    "humanoid_leggings": [
+      {
+        "texture": "du-in:copper_golem"
+      }
+    ]
+  }
+}

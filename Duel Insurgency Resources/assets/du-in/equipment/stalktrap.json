@@ -1,0 +1,14 @@
+{
+  "layers": {
+    "humanoid": [
+      {
+        "texture": "du-in:stalktrap"
+      }
+    ],
+    "humanoid_leggings": [
+      {
+        "texture": "du-in:stalktrap"
+      }
+    ]
+  }
+}

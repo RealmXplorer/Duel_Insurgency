@@ -1,0 +1,14 @@
+{
+  "layers": {
+    "humanoid": [
+      {
+        "texture": "du-in:saac"
+      }
+    ],
+    "humanoid_leggings": [
+      {
+        "texture": "du-in:saac"
+      }
+    ]
+  }
+}

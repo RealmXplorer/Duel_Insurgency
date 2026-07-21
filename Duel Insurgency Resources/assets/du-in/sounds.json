@@ -1,0 +1,374 @@
+{
+	"music.lobby": {
+		"sounds": [
+			"du-in:music/lobby"
+		]
+	},
+	"music.parkour": {
+		"sounds": [
+			"du-in:music/parkour"
+		]
+	},
+	"music.tabba": {
+		"sounds": [
+			"du-in:music/tabba"
+		]
+	},
+	"music.kitselect": {
+		"sounds": [
+			"du-in:custom/kitselect"
+		]
+	},
+	"music.credits": {
+		"sounds": [
+			"du-in:music/credits"
+		]
+	},
+	"music.tournament_lobby": {
+		"sounds": [
+			"du-in:music/tournament_lobby"
+		]
+	},
+
+
+
+	"music.classic": {
+		"sounds": [
+			"du-in:music/classic"
+		]
+	},
+	"music.classic_end": {
+		"sounds": [
+			"du-in:music/classic_end"
+		]
+
+	},
+	"music.deathmatch": {
+		"sounds": [
+			"du-in:music/dm"
+		]
+	},
+	"music.deathmatch_end": {
+		"sounds": [
+			"du-in:music/dm_end"
+		]
+	},
+	"music.koth": {
+		"sounds": [
+			"du-in:music/koth"
+		]
+	},
+	"music.koth_end": {
+		"sounds": [
+			"du-in:music/koth_end"
+		]
+	},
+	"music.ctf": {
+		"sounds": [
+			"du-in:music/ctf"
+		]
+	},
+	"music.ctf_end": {
+		"sounds": [
+			"du-in:music/ctf_end"
+		]
+	},
+	"music.conquest": {
+		"sounds": [
+			"du-in:music/conquest"
+		]
+	},
+	"music.conquest_end": {
+		"sounds": [
+			"du-in:music/conquest_end"
+		]
+	},
+	"music.tournament": {
+		"sounds": [
+			"du-in:music/tournament"
+		]
+	},
+	"music.tournament_end": {
+		"sounds": [
+			"du-in:music/tournament_end"
+		]
+	},
+	"music.win": {
+		"sounds": [
+			"du-in:music/win"
+		]
+	},
+
+	
+
+	"music.saac": {
+		"sounds": [
+			"du-in:music/saac"
+		]
+	},
+	"music.jack_black": {
+		"sounds": [
+			"du-in:music/jack_black"
+		]
+	},
+	"music.saul": {
+		"sounds": [
+			"du-in:music/saul"
+		]
+	},
+	"music.big_chungus": {
+		"sounds": [
+			"du-in:music/chungus"
+		]
+	},
+	"music.big_chungus_end": {
+		"sounds": [
+			"du-in:music/chungus_end"
+		]
+	},
+		"music.jerma_mall": {
+		"sounds": [
+			"du-in:music/jerma_mall"
+		]
+	},
+
+
+
+	"music.kingstead": {
+		"sounds": [
+			"du-in:music/kingstead"
+		]
+	},
+	"music.vain_pursuit": {
+		"sounds": [
+			"du-in:music/vainpursuit"
+		]
+	},
+	"music.pursuithappiness": {
+		"sounds": [
+			"du-in:music/pursuithappiness"
+		]
+	},
+	"music.suffocation": {
+		"sounds": [
+			"du-in:music/suffocation"
+		]
+	},
+	"music.free": {
+		"sounds": [
+			"du-in:music/free"
+		]
+	},
+
+
+
+	"music.halloween.lobby": {
+		"sounds": [
+			"du-in:music/halloween/lobby"
+		]
+	},
+
+
+
+	"music.beta.lobby": {
+		"sounds": [
+			"du-in:music/beta/lobby"
+		]
+	},
+	"music.beta.tabba": {
+		"sounds": [
+			"du-in:music/beta/tabba"
+		]
+	},
+		"music.beta.parkour": {
+		"sounds": [
+			"du-in:music/beta/parkour"
+		]
+	},
+	"music.beta.classic": {
+		"sounds": [
+			"du-in:music/beta/classic"
+		]
+	},
+	"music.beta.classic_end": {
+		"sounds": [
+			"du-in:music/beta/classic_end"
+		]
+	},
+	"music.beta.deathmatch": {
+		"sounds": [
+			"du-in:music/beta/deathmatch"
+		]
+	},
+	"music.beta.deathmatch_end": {
+		"sounds": [
+			"du-in:music/beta/deathmatch_end"
+		]
+	},
+	"music.beta.koth": {
+		"sounds": [
+			"du-in:music/beta/koth"
+		]
+	},
+	"music.beta.koth_end": {
+		"sounds": [
+			"du-in:music/beta/koth_end"
+		]
+	},
+	"music.beta.ctf": {
+		"sounds": [
+			"du-in:music/beta/ctf"
+		]
+	},
+	"music.beta.ctf_end": {
+		"sounds": [
+			"du-in:music/beta/ctf_end"
+		]
+	},
+	"music.beta.conquest": {
+		"sounds": [
+			"du-in:music/beta/conquest"
+		]
+	},
+	"music.beta.conquest_end": {
+		"sounds": [
+			"du-in:music/beta/conquest_end"
+		]
+	},
+	"music.beta.tournament": {
+		"sounds": [
+			"du-in:music/beta/tournament"
+		]
+	},
+	"music.beta.tournament_end": {
+		"sounds": [
+			"du-in:music/beta/tournament_end"
+		]
+	},
+
+
+
+	"music.legacy.classic": {
+		"sounds": [
+			"du-in:music/legacy/classic"
+		]
+	},
+	"music.legacy.classic_end": {
+		"sounds": [
+			"du-in:music/legacy/classic_end"
+		]
+	},
+	"music.legacy.deathmatch": {
+		"sounds": [
+			"du-in:music/legacy/deathmatch"
+		]
+	},
+	"music.legacy.deathmatch_end": {
+		"sounds": [
+			"du-in:music/legacy/deathmatch_end"
+		]
+	},
+	"music.legacy.conquest": {
+		"sounds": [
+			"du-in:music/legacy/conquest"
+		]
+	},
+	"music.legacy.conquest_end": {
+		"sounds": [
+			"du-in:music/legacy/conquest_end"
+		]
+	},
+	"music.legacy.koth": {
+		"sounds": [
+			"du-in:music/legacy/koth"
+		]
+	},
+	"music.legacy.koth_end": {
+		"sounds": [
+			"du-in:music/legacy/koth_end"
+		]
+	},
+	"music.legacy.ctf": {
+		"sounds": [
+			"du-in:music/legacy/ctf"
+		]
+	},
+	"music.legacy.ctf_end": {
+		"sounds": [
+			"du-in:music/legacy/ctf_end"
+		]
+	},
+
+
+
+	"ambient.forest": {
+		"sounds": [
+			"du-in:ambient/forest"
+		]
+	},
+	"ambient.night": {
+		"sounds": [
+			"du-in:ambient/night"
+		]
+	},
+	"ambient.cave": {
+		"sounds": [
+			"du-in:ambient/cave"
+		]
+	},
+	"ambient.jungle": {
+		"sounds": [
+			"du-in:ambient/jungle"
+		]
+	},
+	"ambient.desert": {
+		"sounds": [
+			"du-in:ambient/desert"
+		]
+	},
+	"ambient.river": {
+		"sounds": [
+			"du-in:ambient/river"
+		]
+	},
+	"ambient.wind": {
+		"sounds": [
+			"du-in:ambient/wind"
+		]
+	},
+
+
+
+	"kit.willo.revolver_shoot": {
+		"sounds": [{
+			"name": "du-in:kit/willo/shoot",
+			"pitch": 1
+		},
+		{
+			"name": "du-in:kit/willo/shoot",
+			"pitch": 0.9
+		},
+		{
+			"name": "du-in:kit/willo/shoot",
+			"pitch": 1.1
+		}
+		]
+	},
+	"kit.willo.revolver_reload": {
+		"sounds": [
+			"du-in:kit/willo/reload"
+		]
+	},
+	"kit.willo.revolver_click": {
+		"sounds": [
+			"du-in:kit/willo/empty_click"
+		]
+	},
+	"kit.willo.revolver_whizz": {
+		"sounds": [
+			"du-in:kit/willo/whizz1",
+			"du-in:kit/willo/whizz2",
+			"du-in:kit/willo/whizz3"
+		]
+	}
+}

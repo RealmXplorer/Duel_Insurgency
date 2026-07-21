@@ -1,0 +1,14 @@
+{
+  "layers": {
+    "humanoid": [
+      {
+        "texture": "du-in:roxy"
+      }
+    ],
+    "humanoid_leggings": [
+      {
+        "texture": "du-in:roxy"
+      }
+    ]
+  }
+}

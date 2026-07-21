@@ -1,0 +1,14 @@
+{
+  "layers": {
+    "humanoid": [
+      {
+        "texture": "du-in:timekeeper_ralsei"
+      }
+    ],
+    "humanoid_leggings": [
+      {
+        "texture": "du-in:timekeeper_ralsei"
+      }
+    ]
+  }
+}

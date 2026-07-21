@@ -1,0 +1,14 @@
+{
+  "layers": {
+    "humanoid": [
+      {
+        "texture": "du-in:flowey"
+      }
+    ],
+    "humanoid_leggings": [
+      {
+        "texture": "du-in:flowey"
+      }
+    ]
+  }
+}

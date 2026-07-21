@@ -1,0 +1,14 @@
+{
+  "layers": {
+    "humanoid": [
+      {
+        "texture": "du-in:witch"
+      }
+    ],
+    "humanoid_leggings": [
+      {
+        "texture": "du-in:witch"
+      }
+    ]
+  }
+}

@@ -1,0 +1,14 @@
+{
+  "layers": {
+    "humanoid": [
+      {
+        "texture": "du-in:asriel"
+      }
+    ],
+    "humanoid_leggings": [
+      {
+        "texture": "du-in:asriel"
+      }
+    ]
+  }
+}

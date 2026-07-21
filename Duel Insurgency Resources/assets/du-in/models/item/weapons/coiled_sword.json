@@ -1,0 +1,24 @@
+{
+	"parent": "item/handheld",
+	"display": {
+    "thirdperson_righthand": {
+        "rotation": [ 0, -90, 55 ],
+        "translation": [ 0, 7, 0.5 ]
+    },
+    "thirdperson_lefthand": {
+        "rotation": [ 0, 90, -55 ],
+        "translation": [ 0, 7, 0.5 ]
+    },
+    "firstperson_righthand": {
+        "rotation": [ 0, -90, 25 ],
+        "translation": [ 1.13, 3.2, 1.13 ]
+    },
+    "firstperson_lefthand": {
+        "rotation": [ 0, 90, -25 ],
+        "translation": [ 1.13, 3.2, 1.13 ]
+    }
+},
+	"textures": {
+		"layer0": "du-in:item/weapons/coiled_sword"
+	}
+ }

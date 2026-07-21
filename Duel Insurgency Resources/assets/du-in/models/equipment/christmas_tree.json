@@ -1,0 +1,14 @@
+{
+  "layers": {
+    "humanoid": [
+      {
+        "texture": "du-in:christmas_tree"
+      }
+    ],
+    "humanoid_leggings": [
+      {
+        "texture": "du-in:christmas_tree"
+      }
+    ]
+  }
+}

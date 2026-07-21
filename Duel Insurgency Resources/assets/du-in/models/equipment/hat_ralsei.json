@@ -1,0 +1,14 @@
+{
+  "layers": {
+    "humanoid": [
+      {
+        "texture": "du-in:hat_ralsei"
+      }
+    ],
+    "humanoid_leggings": [
+      {
+        "texture": "du-in:hat_ralsei"
+      }
+    ]
+  }
+}

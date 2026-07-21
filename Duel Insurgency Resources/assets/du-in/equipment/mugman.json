@@ -1,0 +1,14 @@
+{
+  "layers": {
+    "humanoid": [
+      {
+        "texture": "du-in:mugman"
+      }
+    ],
+    "humanoid_leggings": [
+      {
+        "texture": "du-in:mugman"
+      }
+    ]
+  }
+}

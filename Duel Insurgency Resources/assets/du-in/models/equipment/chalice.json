@@ -1,0 +1,14 @@
+{
+  "layers": {
+    "humanoid": [
+      {
+        "texture": "du-in:chalice"
+      }
+    ],
+    "humanoid_leggings": [
+      {
+        "texture": "du-in:chalice"
+      }
+    ]
+  }
+}

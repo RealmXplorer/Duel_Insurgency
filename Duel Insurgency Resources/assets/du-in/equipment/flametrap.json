@@ -1,0 +1,14 @@
+{
+  "layers": {
+    "humanoid": [
+      {
+        "texture": "du-in:flametrap"
+      }
+    ],
+    "humanoid_leggings": [
+      {
+        "texture": "du-in:flametrap"
+      }
+    ]
+  }
+}

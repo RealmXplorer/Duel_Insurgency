@@ -1,0 +1,6 @@
+{
+    "parent": "item/crossbow",
+    "textures": {
+        "layer0": "du-in:item/weapons/unicorn_horn"
+    }
+}

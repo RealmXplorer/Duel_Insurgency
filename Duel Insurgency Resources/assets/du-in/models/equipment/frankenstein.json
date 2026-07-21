@@ -1,0 +1,14 @@
+{
+  "layers": {
+    "humanoid": [
+      {
+        "texture": "du-in:frankenstein"
+      }
+    ],
+    "humanoid_leggings": [
+      {
+        "texture": "du-in:frankenstein"
+      }
+    ]
+  }
+}

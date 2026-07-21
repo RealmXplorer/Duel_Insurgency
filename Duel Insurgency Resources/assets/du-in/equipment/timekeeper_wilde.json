@@ -1,0 +1,14 @@
+{
+  "layers": {
+    "humanoid": [
+      {
+        "texture": "du-in:timekeeper_wilde"
+      }
+    ],
+    "humanoid_leggings": [
+      {
+        "texture": "du-in:timekeeper_wilde"
+      }
+    ]
+  }
+}

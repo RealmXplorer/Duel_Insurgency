@@ -1,0 +1,14 @@
+{
+  "layers": {
+    "humanoid": [
+      {
+        "texture": "du-in:death"
+      }
+    ],
+    "humanoid_leggings": [
+      {
+        "texture": "du-in:death"
+      }
+    ]
+  }
+}

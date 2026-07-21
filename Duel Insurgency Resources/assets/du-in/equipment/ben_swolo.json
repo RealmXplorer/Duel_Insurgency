@@ -1,0 +1,14 @@
+{
+  "layers": {
+    "humanoid": [
+      {
+        "texture": "du-in:ben_swolo"
+      }
+    ],
+    "humanoid_leggings": [
+      {
+        "texture": "du-in:ben_swolo"
+      }
+    ]
+  }
+}

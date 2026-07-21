@@ -1,0 +1,14 @@
+{
+  "layers": {
+    "humanoid": [
+      {
+        "texture": "du-in:spamton"
+      }
+    ],
+    "humanoid_leggings": [
+      {
+        "texture": "du-in:spamton"
+      }
+    ]
+  }
+}

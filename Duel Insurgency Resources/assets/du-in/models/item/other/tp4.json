@@ -1,0 +1,16 @@
+{
+	"parent": "item/generated",
+		"display": {
+    "thirdperson_righthand": {
+        "translation": [ 0, 1, 0 ],
+		"scale": [ 0.75, 0.75, 0.75 ]
+    },
+    "thirdperson_lefthand": {
+        "translation": [ 0, 1, 0 ],
+		"scale": [ 0.75, 0.75, 0.75 ]
+    }
+},
+	"textures": {
+		"layer0": "du-in:item/other/tp4"
+	}
+ }

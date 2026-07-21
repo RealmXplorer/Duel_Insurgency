@@ -1,0 +1,14 @@
+{
+  "layers": {
+    "humanoid": [
+      {
+        "texture": "du-in:dracula"
+      }
+    ],
+    "humanoid_leggings": [
+      {
+        "texture": "du-in:dracula"
+      }
+    ]
+  }
+}
