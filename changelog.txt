@@ -8,6 +8,11 @@
 -Signs on San Ricardo are now properly waxed.
 
 *Internal Changes*
+-Updated Advancements and Predicates to follow new 26.3 syntaxes.
+-Added "overworld" and "overworld_caves" dimension_types to alter overworld environment attributes.
+-Added Glass Panes to "minecraft:glass" block tags.
+-Renamed "oldPack" tag for beta music to "beta".
+-Renamed "music/ingame/oldpack/" and "music/lobby/oldpack/" to "music/ingame/beta/" and "music/lobby/beta/".
 -Renamed and moved music and ambient sources from "minecraft:" to "du-in:".
 -Renamed several music files.
     -"ffa" and "ffaend" are now "classic" and "classic_end" (this goes for Beta and Legacy variants)
@@ -26,9 +31,6 @@
     -"ambient.caveamb" is now "ambient.cave" (possible now that is uses "du-in:" namespacing)
     -"ambient.jungleamb" is now "ambient.jungle"
     -"ambient.nightamb" is now "ambient.night"
--Updated Advancements and Predicates to follow new 26.3 syntaxes.
--Added "overworld" and "overworld_caves" dimension_types to alter overworld environment attributes.
--Added Glass Panes to "minecraft:glass" block tags
 
 *Resourcepack Changes*
 -Moved all music to "du-in:sounds" folder and organized it much better.

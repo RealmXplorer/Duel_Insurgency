@@ -1,4 +1,4 @@
-tag @s remove oldPack
+tag @s remove beta
 tag @s remove tournament
 tag @s remove halloween
 #tag @s remove krampusPack
