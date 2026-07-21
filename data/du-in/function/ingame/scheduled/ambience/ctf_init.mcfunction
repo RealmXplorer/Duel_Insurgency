@@ -1,11 +1,11 @@
 #Judgement Hall
-#execute if score #main map matches 1 run playsound minecraft:ambient.caveamb ambient @s ~ ~ ~ 1 1 1
+#execute if score #main map matches 1 run playsound du-in:ambient.cave ambient @s ~ ~ ~ 1 1 1
 
 #Cliffside
-execute if score #main map matches 1 run playsound minecraft:ambient.wind ambient @s ~ ~ ~ 0.25 1 1
+execute if score #main map matches 1 run playsound du-in:ambient.wind ambient @s ~ ~ ~ 0.25 1 1
 
 #Clouds
-execute if score #main map matches 2 run playsound minecraft:ambient.wind ambient @s ~ ~ ~ 0.25 1 1
+execute if score #main map matches 2 run playsound du-in:ambient.wind ambient @s ~ ~ ~ 0.25 1 1
 
 #Two Fort
 execute if score #main map matches 3 run function du-in:ingame/scheduled/ambience/desert
@@ -14,5 +14,5 @@ execute if score #main map matches 3 run function du-in:ingame/scheduled/ambienc
 execute if score #main map matches 4 run function du-in:ingame/scheduled/ambience/forest
 
 #Clouds
-#execute if score #main map matches 5 run playsound minecraft:ambient.wind ambient @s ~ ~ ~ 2 1 1
+#execute if score #main map matches 5 run playsound du-in:ambient.wind ambient @s ~ ~ ~ 2 1 1
 ###

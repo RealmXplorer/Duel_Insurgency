@@ -8,11 +8,42 @@
 -Signs on San Ricardo are now properly waxed.
 
 *Internal Changes*
+-Renamed and moved music and ambient sources from "minecraft:" to "du-in:".
+-Renamed several music files.
+    -"ffa" and "ffaend" are now "classic" and "classic_end" (this goes for Beta and Legacy variants)
+    -"dm" and "dmend" are now "deathmatch" and "deathmatch_end"
+    -"cqend" is now "conquest_end"
+    -"kothend" is now "koth_end"
+    -"ctfend" is now "ctf_end"
+    -"tournamentffa" and "tournamentffaend" are now "tournament" and "tournament_end"
+    -"tournament.lobby" is now "tournament_lobby"
+    -"oldmusic." is now "music.beta."
+    -"music.win.generic" is now "music.win"
+    -"big.chungus" and "big.chungus.end" is now "music.big_chungus" and "music.big_chungus_end"
+-Simplified ambient sound names.
+    -"ambient.forestamb" is now "ambient.forest" 
+    -"ambient.desertamb" is now "ambient.desert"
+    -"ambient.caveamb" is now "ambient.cave" (possible now that is uses "du-in:" namespacing)
+    -"ambient.jungleamb" is now "ambient.jungle"
+    -"ambient.nightamb" is now "ambient.night"
 -Updated Advancements and Predicates to follow new 26.3 syntaxes.
 -Added "overworld" and "overworld_caves" dimension_types to alter overworld environment attributes.
 -Added Glass Panes to "minecraft:glass" block tags
 
 *Resourcepack Changes*
+-Moved all music to "du-in:sounds" folder and organized it much better.
+-Renamed music to be more consistent and easier to keep track of.
+-Moved kit-specific music tracks from the kit files to the new "du-in:music/" file
+    -"jack_black/music" is now "music/jack_black"
+    -"saac/music" is now "music/saac"
+    -"saul/music" is now "music/saul"
+    -"chungus/big" and "chungus/chungus" are now "music/chungus" and "music/chungus_end"
+-Renamed wordy ambient file names.
+    -"forestamb_day" is now "forest"
+    -"desertamb_day" is now "desert"
+    "nightamb" is now "night"
+    "jungleamb" is now "jungle"
+    "caveamb" is now "cave"
 -Added Willo armor textures. (by nerbski)
 -Added Candy Corn texture. (by Realm_Xplorer)
 -Added Revolver sounds.

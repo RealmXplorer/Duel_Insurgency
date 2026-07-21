@@ -11,7 +11,7 @@ execute as @a[tag=ctfIngame,tag=!ambOff,tag=!void] run function du-in:ingame/sch
 execute as @a[tag=cqIngame,tag=!ambOff,tag=!void] run function du-in:ingame/scheduled/ambience/conquest_init
 
 #Jungle biomes
-execute as @a[predicate=du-in:ambience/jungle_check,tag=!ambOff,tag=!void] run playsound minecraft:ambient.jungleamb ambient @s ~ ~ ~ 1 1 1
+execute as @a[predicate=du-in:ambience/jungle_check,tag=!ambOff,tag=!void] run playsound du-in:ambient.jungle ambient @s ~ ~ ~ 1 1 1
 
 #Free
 execute as @a[tag=free,tag=!ambOff] run function du-in:ingame/scheduled/ambience/forest

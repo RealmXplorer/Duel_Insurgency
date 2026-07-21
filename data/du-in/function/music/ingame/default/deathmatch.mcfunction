@@ -1,14 +1,14 @@
 #DEATHMATCH#
 #scoreboard players set @s[tag=song,scores={music=3340..},tag=!songEnd] music 0
-#execute if entity @s[tag=song,scores={music=1},tag=!musicOff,tag=!songEnd] run playsound minecraft:music.dm record @s ~ ~ ~ 1000000 1 1
+#execute if entity @s[tag=song,scores={music=1},tag=!musicOff,tag=!songEnd] run playsound du-in:music.deathmatch record @s ~ ~ ~ 1000000 1 1
 
-execute as @a[tag=song,tag=!songEnd,tag=!oldPack,tag=!legacy,tag=!halloween,tag=!christmas,tag=!saac,tag=!jackBlack,tag=!bigChungus,tag=!saul,tag=!musicOff] at @s run playsound minecraft:music.dm record @s ~ ~ ~ 1000000 1 1
+execute as @a[tag=song,tag=!songEnd,tag=!oldPack,tag=!legacy,tag=!halloween,tag=!christmas,tag=!saac,tag=!jackBlack,tag=!bigChungus,tag=!saul,tag=!musicOff] at @s run playsound du-in:music.deathmatch record @s ~ ~ ~ 1000000 1 1
 
 #END OF ROUND# 
 #scoreboard players set @s[tag=songEnd,scores={music=2560..}] music 0
-#execute if entity @s[tag=songEnd,scores={music=1},tag=!musicOff] run playsound minecraft:music.dmend record @s ~ ~ ~ 1000000 1 1
+#execute if entity @s[tag=songEnd,scores={music=1},tag=!musicOff] run playsound du-in:music.deathmatch_end record @s ~ ~ ~ 1000000 1 1
 
-execute as @a[tag=songEnd,tag=!oldPack,tag=!legacy,tag=!halloween,tag=!christmas,tag=!saac,tag=!jackBlack,tag=!bigChungus,tag=!saul,tag=!musicOff] at @s run playsound minecraft:music.dmend record @s ~ ~ ~ 1000000 1 1
+execute as @a[tag=songEnd,tag=!oldPack,tag=!legacy,tag=!halloween,tag=!christmas,tag=!saac,tag=!jackBlack,tag=!bigChungus,tag=!saul,tag=!musicOff] at @s run playsound du-in:music.deathmatch_end record @s ~ ~ ~ 1000000 1 1
 
 
 #tag=!oldPack,tag=!legacy,tag=!halloween,tag=!christmas,tag=!saac,tag=!jackBlack,tag=!bigChungus,tag=!saul,tag=!musicOff

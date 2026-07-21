@@ -1,2 +1,2 @@
-stopsound @s record minecraft:music.parkour
-stopsound @s record minecraft:oldmusic.parkour
+stopsound @s record du-in:music.parkour
+stopsound @s record du-in:music.beta.parkour

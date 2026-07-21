@@ -1,7 +1,7 @@
 tag @a remove free
 tag @a remove cmap
 stopsound @a ambient
-stopsound @a record minecraft:music.free
+stopsound @a record du-in:music.free
 scoreboard players set #main pylonsDestroyed 0
 kill @e[type=block_display,tag=void_door]
 tag @a remove cavesLock

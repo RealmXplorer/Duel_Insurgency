@@ -4,4 +4,4 @@ title @s actionbar [{"color":"red","score":{"name":"@s","objective":"willoAmmo"}
 clear @s minecraft:copper_nugget 1
 scoreboard players set @s willoReloadTimer 0
 
-playsound du-in:willo.revolver.reload master @a ~ ~ ~ 1 1
+playsound du-in:kit.willo.revolver_reload master @a ~ ~ ~ 1 1

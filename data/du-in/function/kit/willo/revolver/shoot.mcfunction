@@ -1,5 +1,5 @@
 tag @s add willoShoot
-playsound du-in:willo.revolver.shoot master @a ~ ~ ~ 1 1
+playsound du-in:kit.willo.revolver_shoot master @a ~ ~ ~ 1 1
 
 #execute positioned ~ ~1 ~ positioned ^ ^ ^1 if entity @s[distance=..30] run function du-in:kit/willo/revolver/raycast
 

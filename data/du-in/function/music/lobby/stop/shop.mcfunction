@@ -1,2 +1,2 @@
-stopsound @s record minecraft:music.tabba
-stopsound @s record minecraft:oldmusic.tabba
+stopsound @s record du-in:music.tabba
+stopsound @s record du-in:music.beta.tabba

@@ -1,4 +1,4 @@
-stopsound @a master minecraft:music.suffocation
+stopsound @a master du-in:music.suffocation
 stopsound @a record
 function du-in:music/void/schedule_clear
 stopsound @a ambient

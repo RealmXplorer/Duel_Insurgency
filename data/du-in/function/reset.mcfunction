@@ -31,7 +31,7 @@ execute as @a run function du-in:storage/reset
 bossbar set minecraft:map_countdown visible false
 
 #Void stuff
-stopsound @a master minecraft:music.suffocation
+stopsound @a master du-in:music.suffocation
 function du-in:music/void/schedule_clear
 bossbar set gast:pylon visible false
 bossbar set gast:pylon4 visible false

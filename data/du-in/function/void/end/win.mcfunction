@@ -16,7 +16,7 @@ execute if score #main pylonsDestroyed matches 3 run function du-in:void/lobby_a
 
 #Stop sounds and music
 stopsound @a record minecraft:music.pursuithappiness
-stopsound @a master minecraft:music.suffocation
+stopsound @a master du-in:music.suffocation
 stopsound @a ambient minecraft:soundeffect.whisper
 stopsound @a master minecraft:entity.warden.heartbeat
 

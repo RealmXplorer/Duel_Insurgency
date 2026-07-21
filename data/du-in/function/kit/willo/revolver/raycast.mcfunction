@@ -14,7 +14,7 @@ particle dust_color_transition{from_color:[1.000,1.000,1.000],to_color:[0.412,0.
 #execute if entity @s[tag=!empower] as @a[tag=!inField,gamemode=!spectator,tag=playing,distance=..1.25,tag=!willoShoot] run damage @s 5 minecraft:generic
 #execute if entity @s[tag=empower] as @a[tag=!inField,gamemode=!spectator,tag=playing,distance=..1.25,tag=!willoShoot] run damage @s 10 minecraft:generic
 
-execute if entity @s[tag=!void] positioned ~ ~ ~ as @a[gamemode=!spectator,distance=..1.5,tag=!willoShoot] run playsound du-in:willo.revolver.whizz player @a ~ ~ ~ 1 .75
+execute if entity @s[tag=!void] positioned ~ ~ ~ as @a[gamemode=!spectator,distance=..1.5,tag=!willoShoot] run playsound du-in:kit.willo.revolver_whizz player @a ~ ~ ~ 1 .75
 execute if entity @s[tag=!void] as @a[gamemode=!spectator,distance=..1.25,tag=!willoShoot] run damage @s 5 minecraft:generic
 
 #Void

@@ -10,8 +10,8 @@ execute if entity @s[tag=!woodPass] at @e[type=marker,tag=willoBullet] run parti
 execute if entity @s[tag=woodPass] run particle minecraft:crit ~ ~ ~ 0.2 0.2 0.2 0 1 force
 execute if entity @s[tag=woodPass] run particle dust_color_transition{from_color:[0.510,0.478,0.408],to_color:[0.141,0.141,0.137],scale:1} ~ ~ ~ 0 0 0 0 1 normal
 
-execute if entity @s[tag=!woodPass] run playsound du-in:willo.revolver.whizz player @a[tag=!willoShoot] ~ ~ ~ 0.5 1
-execute if entity @s[tag=woodPass] run playsound du-in:willo.revolver.whizz player @a[tag=!willoShoot] ~ ~ ~ 0.5 .75
+execute if entity @s[tag=!woodPass] run playsound du-in:kit.willo.revolver_whizz player @a[tag=!willoShoot] ~ ~ ~ 0.5 1
+execute if entity @s[tag=woodPass] run playsound du-in:kit.willo.revolver_whizz player @a[tag=!willoShoot] ~ ~ ~ 0.5 .75
 
 #Damage
 execute if entity @s[tag=!woodPass] at @s as @e[type=husk,distance=..1.25,tag=!willoShoot] run damage @s 5 minecraft:generic

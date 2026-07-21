@@ -6,7 +6,7 @@ tp @s -999 13 517 -90 0
 #execute if entity @a[tag=partyLeader,tag=specialEvent] run tp @s -4279 23 -2317
 
 #stopsound @s record minecraft:music.credits
-stopsound @s record minecraft:music.free
+stopsound @s record du-in:music.free
 stopsound @s record minecraft:music.credits
 scoreboard players set @s music 0
 effect clear @s invisibility
