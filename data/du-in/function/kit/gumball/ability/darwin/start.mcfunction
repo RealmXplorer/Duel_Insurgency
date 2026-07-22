@@ -14,8 +14,8 @@ execute if entity @s[tag=empower] run scoreboard players add @a[tag=noClothes] d
 #effect give @s minecraft:speed 5 2 true
 
 ##COPYRIGHT?
-playsound minecraft:darwin.ability master @a ~ ~ ~ 9999 1
-playsound minecraft:sans.ability master @a ~ ~ ~ .25 1
+playsound du-in:kit.darwin.ability master @a ~ ~ ~ 9999 1
+playsound du-in:sfx.ut.ability master @a ~ ~ ~ .25 1
 playsound minecraft:entity.player.attack.sweep master @a ~ ~ ~ 9999 1.3
 playsound minecraft:block.enchantment_table.use master @a ~ ~ ~ 9999 1
 

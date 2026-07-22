@@ -14,7 +14,7 @@ clear @s #du-in:ability
 xp set @s[tag=!stolen] 360 levels
 
 particle minecraft:heart ~ ~1.5 ~ 0.6 0.6 0.6 0 150 force
-playsound minecraft:sans.ability master @a ~ ~ ~ 100 1
+playsound du-in:sfx.ut.ability master @a ~ ~ ~ 100 1
 playsound minecraft:entity.player.levelup master @a ~ ~ ~ 100 0.5
 playsound minecraft:entity.ender_dragon.flap master @a ~ ~ ~ 100 0.7
 

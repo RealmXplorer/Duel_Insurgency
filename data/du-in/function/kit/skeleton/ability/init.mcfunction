@@ -33,7 +33,7 @@ playsound minecraft:entity.evoker.cast_spell master @a ~ ~ ~ 100000 1
 playsound minecraft:item.flintandsteel.use master @a ~ ~ ~ 100000 1
 
 playsound minecraft:entity.generic.explode master @a ~ ~ ~ 100000 2
-playsound minecraft:sans.ability master @a ~ ~ ~ .5 1.05
+playsound du-in:sfx.ut.ability master @a ~ ~ ~ .5 1.05
 
 
 #If not sabotaged, continue ability

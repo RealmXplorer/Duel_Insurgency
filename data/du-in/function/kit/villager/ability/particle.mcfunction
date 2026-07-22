@@ -1,7 +1,7 @@
 particle minecraft:crit ~ ~ ~ 0.2 0.2 0.2 0 50 force
 playsound minecraft:entity.evoker.cast_spell master @a ~ ~ ~ 100 1
 playsound minecraft:item.armor.equip_leather master @a ~ ~ ~ 100 1
-playsound minecraft:sans.ability master @a ~ ~ ~ .25 1.05
+playsound du-in:sfx.ut.ability master @a ~ ~ ~ .25 1.05
 
 execute unless entity @s[scores={villSkin=1..}] run playsound minecraft:entity.witch.celebrate master @a ~ ~ ~ 100 .7
 execute if entity @s[scores={villSkin=1}] run playsound minecraft:entity.vindicator.celebrate master @a ~ ~ ~ 100 0.75

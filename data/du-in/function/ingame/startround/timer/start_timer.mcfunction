@@ -75,7 +75,7 @@ tag @a[tag=!spectating] add playing
     
     #Set Cuphead card power to 0 and play announcer
     scoreboard players set @a cardPower 0
-    execute as @a[scores={kit=21}] at @s run playsound minecraft:cuphead.announce.start master @s ~ ~ ~ 10 1
+    execute as @a[scores={kit=21}] at @s run playsound du-in:kit.cuphead.announce.start master @s ~ ~ ~ 10 1
 
 ##
 

@@ -5,10 +5,10 @@ execute if entity @s[tag=!sabotaged,tag=empower] run function du-in:kit/yharim/a
 execute if entity @s[tag=sabotaged,tag=!empower] run function du-in:kit/yharim/ability/sabotage/sabotaged
 execute if entity @s[tag=sabotaged,tag=empower] run function du-in:kit/yharim/ability/sabotage/empowered_sabotage
 
-playsound minecraft:terraria.drink master @a ~ ~ ~ 20 .1 1
-playsound minecraft:terraria.drink master @a ~ ~ ~ 20 2 1
-playsound minecraft:terraria.golkill master @a ~ ~ ~ 1 .5 1
-playsound minecraft:sans.ability master @a ~ ~ ~ .25 .95
+playsound du-in:sfx.te.drink master @a ~ ~ ~ 20 .1 1
+playsound du-in:sfx.te.drink master @a ~ ~ ~ 20 2 1
+playsound du-in:sfx.te.golkill master @a ~ ~ ~ 1 .5 1
+playsound du-in:sfx.ut.ability master @a ~ ~ ~ .25 .95
 particle minecraft:ash ~ ~2.25 ~ .75 .5 .75 1.25 200 force @a
 #particle minecraft:soul ~ ~1 ~ .1 .1 .1 0.1 50 force @a
 #particle minecraft:soul_fire_flame ~ ~1 ~ .1 .1 .1 0.1 50 force @a

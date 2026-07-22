@@ -1,6 +1,6 @@
 playsound minecraft:vader.choke master @a ~ ~ ~ 100 1
 playsound minecraft:vader.hold master @a ~ ~ ~ 100 1.5
-playsound minecraft:sans.ability master @a ~ ~ ~ .5 .95
+playsound du-in:sfx.ut.ability master @a ~ ~ ~ .5 .95
 
 clear @s #du-in:ability
 xp set @s[tag=!stolen] 320 levels

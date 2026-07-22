@@ -8,7 +8,7 @@ effect give @s[tag=empower] strength 2 0 true
 #effect give @s[scores={gameDeaths=5..},tag=!sabotaged] strength 2 0 true
 #effect give @s[scores={gameDeaths=7..},tag=!sabotaged] haste 2 0 true
 
-playsound minecraft:sans.ability master @a ~ ~ ~ 1 0.95
+playsound du-in:sfx.ut.ability master @a ~ ~ ~ 1 0.95
 playsound minecraft:puss.ability master @a ~ ~ ~ 100 1
 particle minecraft:crit ~ ~.1 ~ 0.1 1 0.1 0 100 force
 particle minecraft:poof ~ ~.1 ~ 0.1 0.1 0.1 0.05 100 force

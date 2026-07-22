@@ -15,8 +15,8 @@ tag @s remove gasterInvisible
 function du-in:kit/all/armor/armor
 function du-in:kit/all/weapon/init
 
-execute unless score @s gastSkin matches 1 run playsound minecraft:gaster.back master @a ~ ~ ~ 100 1
-execute if score @s gastSkin matches 1 run playsound minecraft:ghost.die master @a ~ ~ ~ 100 1
+execute unless score @s gastSkin matches 1 run playsound du-in:kit.gaster.back master @a ~ ~ ~ 100 1
+execute if score @s gastSkin matches 1 run playsound du-in:kit.ghost.die master @a ~ ~ ~ 100 1
 
 attribute @s knockback_resistance modifier remove gaster_shatter
 attribute @s movement_speed modifier remove gaster_shatter

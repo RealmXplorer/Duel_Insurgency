@@ -8,7 +8,7 @@ effect clear @s minecraft:levitation
 scoreboard players set @a[tag=sansHit] sansHitTimer 60
 tag @a[tag=sansHit] add sansHitDuration
 
-playsound minecraft:sans.ability master @a ~ ~ ~ 100 1
+playsound du-in:sfx.ut.ability master @a ~ ~ ~ 100 1
 playsound minecraft:entity.player.attack.sweep master @a ~ ~ ~ 100 0.3
 
 scoreboard players set @s sansHead 35

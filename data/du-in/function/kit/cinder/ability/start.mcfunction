@@ -1,5 +1,5 @@
 #If Golem is close to enemy#
-playsound minecraft:sans.ability master @a ~ ~ ~ .05 1
+playsound du-in:sfx.ut.ability master @a ~ ~ ~ .05 1
 playsound du-in:kit.cinder.magic master @a ~ ~ ~ 100 1
 particle minecraft:smoke ~ ~1 ~ 0.5 0.5 0.5 0 100 force
 

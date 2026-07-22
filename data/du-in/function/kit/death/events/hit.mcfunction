@@ -1,1 +1,1 @@
-playsound minecraft:death.hit voice @a ~ ~ ~
+playsound du-in:kit.death.hit voice @a ~ ~ ~

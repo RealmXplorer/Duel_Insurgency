@@ -4,7 +4,7 @@ effect clear @s poison
 effect clear @s[tag=sabotaged] wither
 
 playsound minecraft:entity.vex.death master @a ~ ~ ~ 1 .5
-playsound minecraft:sans.ability master @a ~ ~ ~ .25 .95
+playsound du-in:sfx.ut.ability master @a ~ ~ ~ .25 .95
 function du-in:kit/springtrap/ability/particle
 effect give @s[tag=!sabotaged] minecraft:regeneration 5 2 true
 attribute @s attack_damage modifier remove springlock_damage

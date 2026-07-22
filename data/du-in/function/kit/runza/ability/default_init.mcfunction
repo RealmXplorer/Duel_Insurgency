@@ -9,7 +9,7 @@ effect clear @s[tag=!sabotaged]
 execute if entity @s[tag=sabotaged] run function du-in:kit/all/ability/sabotage/effects
 effect give @s minecraft:speed 3 0 true
 playsound minecraft:runza.ability master @a ~ ~ ~ 100 1
-playsound minecraft:sans.ability master @a ~ ~ ~ 1 1.05
+playsound du-in:sfx.ut.ability master @a ~ ~ ~ 1 1.05
 playsound minecraft:ambient.cave master @a ~ ~ ~ 100 1
 playsound minecraft:block.glass.break master @a ~ ~ ~ 100 .8
 playsound minecraft:entity.player.attack.sweep master @a ~ ~ ~ 100 1

@@ -14,6 +14,6 @@ execute if entity @s[scores={magicCount=7},tag=!sabotaged] run function du-in:ki
 
 execute if entity @s[tag=sabotaged] run function du-in:kit/jack_horner/ability/bug/give
 
-playsound minecraft:sans.ability master @a ~ ~ ~ .15 1.15
+playsound du-in:sfx.ut.ability master @a ~ ~ ~ .15 1.15
 
 tag @s remove kitActions

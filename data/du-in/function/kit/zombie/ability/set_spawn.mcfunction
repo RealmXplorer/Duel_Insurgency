@@ -6,7 +6,7 @@ clear @s #du-in:ability
 
 #Particles and sounds
 particle minecraft:block{block_state:"minecraft:dirt"} ~ ~ ~ 0.3 0 0.3 1 50 force
-playsound minecraft:sans.ability master @a ~ ~ ~ .25 1
+playsound du-in:sfx.ut.ability master @a ~ ~ ~ .25 1
 playsound minecraft:block.grass.break master @a ~ ~ ~ 100 .7
 playsound minecraft:entity.evoker.cast_spell master @a ~ ~ ~ 100 1
 

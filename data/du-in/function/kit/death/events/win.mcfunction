@@ -1,3 +1,3 @@
 #Default Win music
 #function du-in:music/ingame/win
-playsound minecraft:death.whistle.mark master @a ~ ~ ~ 1 1
+playsound du-in:kit.death.whistle.mark master @a ~ ~ ~ 1 1

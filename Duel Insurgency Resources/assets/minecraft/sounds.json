@@ -1,9 +1,4 @@
 {
-	"sans.ability": {
-		"sounds": [
-			"custom/sans/ability"
-		]
-	},
 	"sans.sans": {
 		"sounds": [
 			"custom/sans/sans"
@@ -34,84 +29,6 @@
 			"name": "custom/sans/voice2",
 			"pitch": 1.1
 		}
-		]
-	},
-	"flowey.voice": {
-		"sounds": [{
-			"name": "custom/flowey/voice",
-			"pitch": 1
-		},
-		{
-			"name": "custom/flowey/voice",
-			"pitch": 0.9
-		},
-		{
-			"name": "custom/flowey/voice",
-			"pitch": 1.1
-		}
-		]
-	},
-	"flowey.intro": {
-		"sounds": [
-			"custom/flowey/intro"
-		]
-	},
-	"flowey.ability": {
-		"sounds": [
-			"custom/flowey/ability"
-		]
-	},
-	"flowey.ability2": {
-		"sounds": [
-			"custom/flowey/ability2"
-		]
-	},
-	"gaster.voice": {
-		"sounds": [
-			{
-				"name": "custom/gaster/voice",
-				"pitch": 1
-			},
-			{
-				"name": "custom/gaster/voice",
-				"pitch": 0.9
-			},
-			{
-				"name": "custom/gaster/voice",
-				"pitch": 1.1
-			},
-			{
-				"name": "custom/gaster/voice2",
-				"pitch": 1
-			},
-			{
-				"name": "custom/gaster/voice2",
-				"pitch": 1.1
-			},
-			{
-				"name": "custom/gaster/voice2",
-				"pitch": 0.9
-			}
-		]
-	},
-	"gaster.ability": {
-		"sounds": [
-			"custom/gaster/ability"
-		]
-	},
-	"gaster.intro": {
-		"sounds": [
-			"custom/gaster/intro"
-		]
-	},
-	"gaster.back": {
-		"sounds": [
-			"custom/gaster/back"
-		]
-	},
-	"gaster.pick": {
-		"sounds": [
-			"custom/gaster/pick"
 		]
 	},
 	"pawbert.voice": {
@@ -162,23 +79,6 @@
 				"name": "custom/papyrus/voice2",
 				"pitch": 1.1
 			}
-		]
-	},
-	
-	"undertale.hit": {
-		"subtitle": "Undertale Hurt",
-		"sounds": [{
-			"name": "custom/sans/hit",
-			"pitch": 1
-		},
-		{
-			"name": "custom/sans/hit",
-			"pitch": 0.9
-		},
-		{
-			"name": "custom/sans/hit",
-			"pitch": 1.1
-		}		
 		]
 	},
 	"kylo.land": {
@@ -622,26 +522,6 @@
 			"custom/jack_black/flint_and_steel"
 		]
 	},
-	"terraria.playhit": {
-		"sounds": [
-			"custom/terraria/playhit"
-		]
-	},
-	"terraria.playkill": {
-		"sounds": [
-			"custom/terraria/playkill"
-		]
-	},
-	"terraria.zombhit": {
-		"sounds": [
-			"custom/terraria/zombhit"
-		]
-	},
-	"terraria.zombkill": {
-		"sounds": [
-			"custom/terraria/zombkill"
-		]
-	},
 	"sus.kill": {
 		"sounds": [
 			"custom/sus/kill"
@@ -650,16 +530,6 @@
 	"sus.vent": {
 		"sounds": [
 			"custom/sus/vent"
-		]
-	},
-	"terraria.golkill": {
-		"sounds": [
-			"custom/terraria/golkill"
-		]
-	},
-	"terraria.golhit": {
-		"sounds": [
-			"custom/terraria/golhit"
 		]
 	},
 	"sus.emerg": {
@@ -691,17 +561,6 @@
 	"sus.line.ks": {
 		"sounds": [
 			"custom/sus/line/killstreak"
-		]
-	},
-	"terraria.drink": {
-		"sounds": [
-			"custom/terraria/drink"
-		]
-	},
-	"terraria.zombamb": {
-		"sounds": [
-			"custom/terraria/zombamb1",
-			"custom/terraria/zombamb2"
 		]
 	},
 	"yharim.rage.ready": {
@@ -772,21 +631,6 @@
 	"runza.death": {
 		"sounds": [
 			"custom/runza/death"
-		]
-	},
-	"ghost.go": {
-		"sounds": [
-			"custom/gaster/ghost"
-		]
-	},
-	"ghost.die": {
-		"sounds": [
-			"custom/gaster/die"
-		]
-	},
-	"ghost.away": {
-		"sounds": [
-			"custom/gaster/away"
 		]
 	},
 	"spamton.hit": {
@@ -1106,122 +950,6 @@
 			"custom/jerma/win2"
 		]
 	},
-	"clairen.field": {
-		"sounds": [
-			"custom/clairen/field"
-		]
-	},
-	"clairen.deflect": {
-		"sounds": [
-			"custom/clairen/deflect"
-		]
-	},
-	"clairen.select": {
-		"sounds": [
-			"custom/clairen/select"
-		]
-	},
-	"clairen.hit": {
-		"sounds": [{
-			"name": "custom/clairen/hit",
-			"pitch": 1
-		},
-		{
-			"name": "custom/clairen/hit",
-			"pitch": 0.9
-		},
-		{
-			"name": "custom/clairen/hit",
-			"pitch": 1.1
-		}
-		]
-	},
-	"cuphead.pick": {
-		"sounds": [
-			"custom/cuphead/pick"
-		]
-	},
-	"cuphead.hit": {
-		"sounds": [
-			"custom/cuphead/hit1",
-			"custom/cuphead/hit2",
-			"custom/cuphead/hit3",
-			"custom/cuphead/hit4"
-		]
-	},
-	"cuphead.ability.charged": {
-		"sounds": [
-			"custom/cuphead/cardability"
-		]
-	},
-	"cuphead.death": {
-		"sounds": [
-			"custom/cuphead/death1",
-			"custom/cuphead/death2"
-		]
-	},
-	"cuphead.parry.charge": {
-		"sounds": [
-			"custom/cuphead/parrycharge1",
-			"custom/cuphead/parrycharge2"
-		]
-	},
-	"cuphead.snap": {
-		"sounds": [
-			"custom/cuphead/snap1",
-			"custom/cuphead/snap2",
-			"custom/cuphead/snap3",
-			"custom/cuphead/snap4",
-			"custom/cuphead/snap5",
-			"custom/cuphead/snap6",
-			"custom/cuphead/snap7"
-		]
-	},
-	"cuphead.super": {
-		"sounds": [
-			"custom/cuphead/super"
-		]
-	},
-	"cuphead.announce.start": {
-		"sounds": [
-			"custom/cuphead/announce/start1",
-			"custom/cuphead/announce/start2",
-			"custom/cuphead/announce/start3",
-			"custom/cuphead/announce/start4",
-			"custom/cuphead/announce/start5"
-		]
-	},
-	"cuphead.announce.go": {
-		"sounds": [
-			"custom/cuphead/announce/go1",
-			"custom/cuphead/announce/go2",
-			"custom/cuphead/announce/go3",
-			"custom/cuphead/announce/go4",
-			"custom/cuphead/announce/go5"
-		]
-	},
-	"cuphead.card": {
-		"sounds": [
-			"custom/cuphead/card"
-		]
-	},
-	"cuphead.super.get": {
-		"sounds": [
-			"custom/cuphead/superget"
-		]
-	},
-	"cuphead.parry": {
-		"sounds": [
-			"custom/cuphead/parry"
-		]
-	},
-	"darwin.step": {
-		"sounds": [
-			"custom/darwin/sneaker1",
-			"custom/darwin/sneaker2",
-			"custom/darwin/sneaker3"
-		]
-	},
 	"gumball.explode": {
 		"sounds": [
 			"custom/gumball/explode"
@@ -1247,23 +975,6 @@
 	"gumball.success": {
 		"sounds": [
 			"custom/gumball/success"
-		]
-	},
-	"darwin.hit": {
-		"sounds": [
-			"custom/darwin/hit1",
-			"custom/darwin/hit2",
-			"custom/darwin/hit3"
-		]
-	},
-	"darwin.ability": {
-		"sounds": [
-			"custom/darwin/ability"
-		]
-	},
-	"darwin.end": {
-		"sounds": [
-			"custom/darwin/end"
 		]
 	},
 	"gumball.bonk": {
@@ -1337,28 +1048,6 @@
 			"custom/paz/hit1",
 			"custom/paz/hit2",
 			"custom/paz/hit3"
-		]
-	},
-	"death.whistle.mark": {
-		"sounds": [
-			"custom/death/shortwhistle"
-		]
-	},
-	"death.switch": {
-		"sounds": [
-			"custom/death/switch"
-		]
-	},
-	"death.hit": {
-		"sounds": [
-			"custom/death/hit1",
-			"custom/death/hit2",
-			"custom/death/hit3"
-		]
-	},
-	"death.whistle.win": {
-		"sounds": [
-			"custom/death/longwhistle"
 		]
 	},
 	"puss.gatito": {

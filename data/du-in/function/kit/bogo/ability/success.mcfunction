@@ -16,6 +16,6 @@ tag @s add cooldown
 clear @s #du-in:ability
 
 #Particles and sounds
-playsound minecraft:sans.ability master @a ~ ~ ~ 0.5 1.05
+playsound du-in:sfx.ut.ability master @a ~ ~ ~ 0.5 1.05
 particle minecraft:crit ~ ~2.25 ~ 0.5 0.5 0.5 0.25 30 force @a
 particle minecraft:smoke ~ ~1 ~ 0.5 0.5 0.5 0 50

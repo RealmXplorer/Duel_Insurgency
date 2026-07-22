@@ -18,7 +18,7 @@ execute if entity @s[tag=sabotaged,tag=empower] as @a[tag=wildeHit] if score @s 
 execute if entity @s[tag=sabotaged,tag=empower] as @a[tag=wildeHit] unless score @s team = @p[scores={kit=23},tag=kitActions,distance=..7] team run function du-in:kit/nick/ability/team_hit
 
 playsound minecraft:nick.hustle master @a ~ ~ ~ 100 1
-playsound minecraft:sans.ability master @a ~ ~ ~ 100 0.95
+playsound du-in:sfx.ut.ability master @a ~ ~ ~ 100 0.95
 
 effect give @s[tag=!sabotaged] minecraft:speed 2 2 true
 effect clear @s[tag=!sabotaged] minecraft:levitation

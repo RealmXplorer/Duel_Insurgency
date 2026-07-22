@@ -1,7 +1,7 @@
 effect give @s[tag=!empower] slowness 1 100 true
 execute if entity @s[tag=empower] run effect give @s slowness 2 100 true
 
-playsound minecraft:cuphead.parry master @a ~ ~ ~ 1 1
+playsound du-in:kit.cuphead.parry master @a ~ ~ ~ 1 1
 effect give @s minecraft:levitation 1 10 true
 #clear @s warped_fungus_on_a_stick
 function du-in:kit/all/ability/sabotage/effects

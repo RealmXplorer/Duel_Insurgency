@@ -3,7 +3,7 @@ execute if entity @s[tag=empower] run effect give @s strength 5 1 true
 clear @s #du-in:ability
 scoreboard players set @s charaTimer 80
 
-playsound minecraft:sans.ability master @a ~ ~ ~ .25 .95
+playsound du-in:sfx.ut.ability master @a ~ ~ ~ .25 .95
 
 #Particles and Sounds
 particle minecraft:smoke ~ ~1.5 ~ 2 2 2 0 500 force

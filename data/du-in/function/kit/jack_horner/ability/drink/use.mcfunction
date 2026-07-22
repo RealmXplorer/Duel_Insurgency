@@ -9,8 +9,8 @@ execute if entity @s[tag=empower] run attribute @s attack_damage base set 1.2
 attribute @s minecraft:movement_efficiency base set 0
 attribute @s minecraft:water_movement_efficiency base set 0
 
-playsound minecraft:sans.ability master @a ~ ~ ~ .25 1
-playsound minecraft:terraria.drink master @a ~ ~ ~ 1 1
+playsound du-in:sfx.ut.ability master @a ~ ~ ~ .25 1
+playsound du-in:sfx.te.drink master @a ~ ~ ~ 1 1
 playsound minecraft:entity.player.burp master @a ~ ~ ~ 100 1
 
 execute if entity @s[tag=!empower] run scoreboard players set @s shrunkTimer 100

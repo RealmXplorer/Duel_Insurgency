@@ -8,7 +8,7 @@ playsound minecraft:entity.creeper.primed master @a ~ ~ ~ 100 1
 #execute if entity @s[scores={creeperTimer=..1}] run execute as @a[distance=0.05..5,tag=playing] if score @s team = @a[limit=1,tag=playing,scores={creeperTimer=..1}] team run effect give @s minecraft:resistance 1 6 true
 particle minecraft:flame ~ ~1.5 ~ 0.5 1 0.5 0.1 100 force
 playsound minecraft:entity.evoker.cast_spell master @a ~ ~ ~ 100 1
-playsound minecraft:sans.ability master @a ~ ~ ~ .25 1
+playsound du-in:sfx.ut.ability master @a ~ ~ ~ .25 1
 
 clear @s #du-in:ability
 tag @s add cooldown

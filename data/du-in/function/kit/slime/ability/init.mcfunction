@@ -23,7 +23,7 @@ playsound minecraft:item.flintandsteel.use master @a ~ ~ ~ 100000 1
 playsound minecraft:entity.magma_cube.death master @a ~ ~ ~ 100000 1
 playsound minecraft:entity.magma_cube.jump master @a ~ ~ ~ 100000 1
 playsound minecraft:entity.generic.explode master @a ~ ~ ~ 100000 2
-playsound minecraft:sans.ability master @a ~ ~ ~ .5 1.05
+playsound du-in:sfx.ut.ability master @a ~ ~ ~ .5 1.05
 
 #If sabotaged, end ability
 xp set @s[tag=!stolen,tag=sabotaged] 320 levels

@@ -29,7 +29,7 @@ execute if entity @a[scores={justdied=1,killStreak=3..4}] run tellraw @a {select
 execute if entity @a[scores={justdied=1,killStreak=5..}] run tellraw @a {selector:"@s",bold:false,color:gold,extra:[{text:" has ended ",bold:false,color:gray},{selector:"@a[scores={justdied=1,killStreak=5..}]",bold:false,color:dark_red},{text:"'s 5 player killstreak!",bold:true,color:gray}]}
 
 #Kill Sounds#
-execute unless entity @a[tag=partyLeader,tag=aprilFools] run playsound minecraft:terraria.golkill master @s ~ ~ ~ .4 2
+execute unless entity @a[tag=partyLeader,tag=aprilFools] run playsound du-in:sfx.te.golkill master @s ~ ~ ~ .4 2
 execute unless entity @a[tag=partyLeader,tag=aprilFools] run playsound minecraft:block.anvil.land master @s ~ ~ ~ 1 2
 execute if entity @a[tag=partyLeader,tag=aprilFools] run playsound du-in:sfx.funny.boom master @s ~ ~ ~ 1 1
 

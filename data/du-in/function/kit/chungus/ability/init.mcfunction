@@ -17,7 +17,7 @@ particle minecraft:block{block_state:"minecraft:dirt"} ~ ~ ~ 3 0 3 0 500 force
 playsound minecraft:block.gravel.hit master @a ~ ~ ~ 1 1
 playsound minecraft:block.gravel.hit master @a ~ ~ ~ 1 .5
 playsound minecraft:block.gravel.hit master @a ~ ~ ~ 1 2
-playsound minecraft:sans.ability master @a ~ ~ ~ .25 .95
+playsound du-in:sfx.ut.ability master @a ~ ~ ~ .25 .95
 playsound du-in:kit.chungus.slam master @a ~ ~ ~ 1 1
 
 #Remove Sabotage and empower

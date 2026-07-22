@@ -4,7 +4,7 @@ execute as @a[tag=wildeHit] run function du-in:kit/nick/ability/team_hit
 
 particle minecraft:heart ~ ~1.5 ~ 2 2 2 0 25 force
 playsound minecraft:nick.hustle master @a ~ ~ ~ 100 1
-playsound minecraft:sans.ability master @a ~ ~ ~ 100 0.95
+playsound du-in:sfx.ut.ability master @a ~ ~ ~ 100 0.95
 
 effect give @s minecraft:speed 2 2 true
 

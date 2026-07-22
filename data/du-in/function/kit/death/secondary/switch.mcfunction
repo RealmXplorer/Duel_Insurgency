@@ -13,7 +13,7 @@ clear @s #du-in:secondary
 clear @s #du-in:ability
 clear @s coal
 
-playsound minecraft:death.switch master @a ~ ~ ~
+playsound du-in:kit.death.switch master @a ~ ~ ~
 
 function du-in:kit/death/weapon
 scoreboard players set @s deathSwapTimer 20

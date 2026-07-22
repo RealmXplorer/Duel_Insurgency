@@ -1,1 +1,1 @@
-playsound minecraft:flowey.intro voice @a ~ ~ ~ 1 1
+playsound du-in:kit.flowey.intro voice @a ~ ~ ~ 1 1

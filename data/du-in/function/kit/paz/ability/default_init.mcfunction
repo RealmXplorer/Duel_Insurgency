@@ -19,7 +19,7 @@ execute if entity @s[tag=sabotaged] run function du-in:kit/all/ability/sabotage/
 #Play sounds
 playsound minecraft:entity.zombie_villager.converted master @a ~ ~ ~ 1 .5
 playsound minecraft:ui.button.click master @a ~ ~ ~ 10 1
-playsound minecraft:sans.ability master @a ~ ~ ~ .25 1
+playsound du-in:sfx.ut.ability master @a ~ ~ ~ .25 1
 
 #Message
 tellraw @a[tag=!hacker] {text:"You lost connection!",bold:true,color:red}

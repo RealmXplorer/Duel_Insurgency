@@ -13,7 +13,7 @@ execute if entity @s[tag=void] as @e[distance=..1.25,type=skeleton] run damage @
 ##TEST REMOVE
 execute as @e[distance=..1.25] run damage @s 5 minecraft:generic
 
-execute as @a[tag=inField,gamemode=!spectator,tag=playing,distance=..1.25] run playsound minecraft:clairen.deflect master @a ~ ~ ~ 1 1
+execute as @a[tag=inField,gamemode=!spectator,tag=playing,distance=..1.25] run playsound du-in:kit.clairen.deflect master @a ~ ~ ~ 1 1
 
 #Hits block
 execute if block ~ ~ ~ #mineable/pickaxe run tag @s add hitStone

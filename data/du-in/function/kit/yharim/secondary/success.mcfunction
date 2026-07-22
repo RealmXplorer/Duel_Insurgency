@@ -1,6 +1,6 @@
 #Play sounds
 playsound minecraft:yharim.rage.use master @a ~ ~ ~ 1 1 1
-playsound minecraft:sans.ability master @a ~ ~ ~ .25 1.05
+playsound du-in:sfx.ut.ability master @a ~ ~ ~ .25 1.05
 
 #Play Particles
 particle minecraft:flame ~ ~1 ~ 1 1 1 0 20 force

@@ -1,4 +1,4 @@
-playsound minecraft:sans.ability master @a ~ ~ ~ .15 1
+playsound du-in:sfx.ut.ability master @a ~ ~ ~ .15 1
 
 xp set @s[tag=!stolen] 360 levels
 clear @s #du-in:ability

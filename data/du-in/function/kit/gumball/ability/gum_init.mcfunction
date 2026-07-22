@@ -2,7 +2,7 @@ execute if entity @s[predicate=du-in:chance/quarter_chance,tag=cIngame,tag=!stol
 
 ##COPYRIGHT?
 playsound minecraft:gumball.ability master @a ~ ~ ~ 1 1
-playsound minecraft:sans.ability master @a ~ ~ ~ .25 1
+playsound du-in:sfx.ut.ability master @a ~ ~ ~ .25 1
 
 tag @s add pursue
 effect give @s minecraft:speed 2 5 true

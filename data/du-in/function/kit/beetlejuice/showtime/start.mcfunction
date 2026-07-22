@@ -21,7 +21,7 @@ tp @a[tag=!showTimeDuration,scores={spawnpoint=5..8}] -7295 5 -8383
 
 tp @a[gamemode=spectator] @r[tag=playing]
 
-playsound minecraft:sans.ability master @a ~ ~ ~ .25 0.75
+playsound du-in:sfx.ut.ability master @a ~ ~ ~ .25 0.75
 playsound minecraft:entity.creaking.spawn master @a ~ ~ ~ 0.5 0.5
 playsound minecraft:entity.elder_guardian.curse master @a ~ ~ ~ 1 1
 playsound du-in:sfx.funny.laugh master @a ~ ~ ~ 100 0.5

@@ -7,7 +7,7 @@ playsound minecraft:entity.iron_golem.attack master @a ~ ~ ~ 100 .1
 playsound minecraft:entity.iron_golem.repair master @a ~ ~ ~ 100 1
 playsound minecraft:entity.iron_golem.hurt master @a ~ ~ ~ 100 1
 playsound minecraft:entity.player.attack.sweep master @a ~ ~ ~ 100 .1
-playsound minecraft:sans.ability master @a ~ ~ ~ .5 1
+playsound du-in:sfx.ut.ability master @a ~ ~ ~ .5 1
 execute if entity @s[tag=empower] run playsound minecraft:entity.iron_golem.repair master @a ~ ~ ~ 1 1.5
 
 clear @s #du-in:ability

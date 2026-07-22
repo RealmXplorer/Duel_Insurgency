@@ -21,11 +21,11 @@ execute unless entity @s[tag=sabotaged] run particle minecraft:heart ~ ~1.5 ~ 0.
 particle minecraft:instant_effect ~ ~1.5 ~ 0.5 0.5 0.5 0.05 100 force
 playsound minecraft:entity.generic.eat master @a ~ ~ ~ 100 1
 playsound minecraft:entity.evoker.cast_spell master @a ~ ~ ~ 100 1
-playsound minecraft:sans.ability master @a ~ ~ ~ .25 1
+playsound du-in:sfx.ut.ability master @a ~ ~ ~ .25 1
 execute unless entity @s[tag=sabotaged] run playsound minecraft:entity.player.levelup master @a ~ ~ ~ 100 .7
 execute unless entity @s[scores={steveSkin=3..4}] run playsound minecraft:entity.player.burp master @a ~ ~ ~ 100 1
-execute if entity @s[scores={steveSkin=4}] run playsound minecraft:terraria.drink master @a ~ ~ ~ 100 1
-execute if entity @s[scores={steveSkin=3}] run playsound minecraft:gaster.back master @a ~ ~ ~ 100 1.5
+execute if entity @s[scores={steveSkin=4}] run playsound du-in:sfx.te.drink master @a ~ ~ ~ 100 1
+execute if entity @s[scores={steveSkin=3}] run playsound du-in:kit.gaster.back master @a ~ ~ ~ 100 1.5
 
 execute if entity @s[tag=sabotaged] run function du-in:kit/all/ability/sabotage/effects
 

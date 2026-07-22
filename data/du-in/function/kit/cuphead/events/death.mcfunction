@@ -1,1 +1,1 @@
-playsound minecraft:cuphead.death voice @a ~ ~ ~ 3 1
+playsound du-in:kit.cuphead.death voice @a ~ ~ ~ 3 1

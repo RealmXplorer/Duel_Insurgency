@@ -38,7 +38,7 @@ execute if entity @s[tag=empower] positioned ^-1 ^ ^ run function du-in:kit/avat
 kill @e[tag=AangDirection]
 
 
-playsound minecraft:sans.ability master @a ~ ~ ~ .5 1.15
+playsound du-in:sfx.ut.ability master @a ~ ~ ~ .5 1.15
 
 clear @s #du-in:ability
 tag @s remove empower

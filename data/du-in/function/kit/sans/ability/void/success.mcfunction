@@ -7,7 +7,7 @@ effect give @s minecraft:strength 3 1 true
 effect give @s minecraft:speed 3 0 true
 effect clear @s minecraft:levitation
 
-playsound minecraft:sans.ability master @a ~ ~ ~ 100 1
+playsound du-in:sfx.ut.ability master @a ~ ~ ~ 100 1
 playsound minecraft:entity.player.attack.sweep master @a ~ ~ ~ 100 0.3
 
 scoreboard players set @s sansHead 35

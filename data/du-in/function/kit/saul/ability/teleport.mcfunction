@@ -9,9 +9,9 @@ clear @s #du-in:ability
 #Start cooldown
 xp set @s[tag=!stolen] 450 levels
 
-playsound minecraft:sans.ability voice @a ~ ~ ~ 0.5 1
-playsound minecraft:sans.ability voice @a ~ ~ ~ 0.5 .5
-playsound minecraft:sans.ability voice @a ~ ~ ~ 0.5 2
+playsound du-in:sfx.ut.ability voice @a ~ ~ ~ 0.5 1
+playsound du-in:sfx.ut.ability voice @a ~ ~ ~ 0.5 .5
+playsound du-in:sfx.ut.ability voice @a ~ ~ ~ 0.5 2
 
 execute if entity @s[tag=sabotaged] run function du-in:kit/all/ability/sabotage/effects
 

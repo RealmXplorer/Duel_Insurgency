@@ -274,6 +274,60 @@
 			{"name":"du-in:sfx/ut/death"}],
 			"subtitle": "Undertale death"
 	},
+	"sfx.ut.ability": {
+		"sounds": [
+			{"name":"du-in:sfx/ut/ability"}],
+			"subtitle": "Ability activates"
+	},
+	"sfx.ut.hurt": {
+		"sounds": [
+		{"name": "du-in:sfx/ut/hit","pitch": 1},
+		{"name": "du-in:sfx/ut/hit","pitch": 0.9},
+		{"name": "du-in:sfx/ut/hit","pitch": 1.1}],
+		"subtitle": "Undertale hurt"
+	},
+
+	"sfx.te.playhit": {
+		"sounds": [
+			{"name":"du-in:sfx/te/playhit"}],
+			"subtitle": "Terraria player hurt"
+	},
+	"sfx.te.playkill": {
+		"sounds": [
+			{"name":"du-in:sfx/te/playkill"}],
+			"subtitle": "Terraria player dies"
+	},
+	"sfx.te.zombhit": {
+		"sounds": [
+			{"name":"du-in:sfx/te/zombhit"}],
+			"subtitle": "Terraria zombie hurt"
+	},
+		"sfx.te.zombamb": {
+		"sounds": [
+			{"name":"du-in:sfx/te/zombamb1"},
+			{"name":"du-in:sfx/te/zombamb2"}],
+			"subtitle": "Terraria zombie growls"
+	},
+	"sfx.te.zombkill": {
+		"sounds": [
+			{"name":"du-in:sfx/te/zombkill"}],
+			"subtitle": "Terraria zombie dies"
+	},
+		"sfx.te.golhit": {
+		"sounds": [
+			{"name":"du-in:sfx/te/golhit"}],
+			"subtitle": "Terraria golem hurt"
+	},
+	"sfx.te.golkill": {
+		"sounds": [
+			{"name":"du-in:sfx/te/golkill"}],
+			"subtitle": "Terraria golem dies"
+	},
+		"sfx.te.drink": {
+		"sounds": [
+			{"name":"du-in:sfx/te/drink"}],
+			"subtitle": "Player drinks potion"
+	},
 
 	"sfx.whack.normal": {
 		"sounds": [
@@ -656,6 +710,228 @@
 		"sounds": [
 			{"name":"du-in:kit/cinder/boom"}],
 			"subtitle": "Soul of Cinder explodes"
+	},
+
+	"kit.clairen.select": {
+		"sounds": [
+			{"name":"du-in:kit/clairen/select"}],
+			"subtitle": "Clairen selected"
+	},
+	"kit.clairen.hit": {
+		"sounds": [
+		{"name":"du-in:kit/clairen/hit","pitch": 1},
+		{"name":"du-in:kit/clairen/hit","pitch": 0.9},
+		{"name":"du-in:kit/clairen/hit","pitch": 1.1}],
+		"subtitle": "Clairen hurt"
+	},
+	"kit.clairen.field": {
+		"sounds": [
+			{"name":"du-in:kit/clairen/field"}],
+			"subtitle": "Clairen's field activates"
+	},
+	"kit.clairen.deflect": {
+		"sounds": [
+			{"name":"du-in:kit/clairen/deflect"}],
+			"subtitle": "Clairen's field deflects projectile"
+	},
+
+	"kit.cuphead.pick": {
+		"sounds": [
+			{"name":"du-in:kit/cuphead/pick"}],
+			"subtitle": "Cuphead selected"
+	},
+	"kit.cuphead.hit": {
+		"sounds": [
+			{"name":"du-in:kit/cuphead/hit1"},
+			{"name":"du-in:kit/cuphead/hit2"},
+			{"name":"du-in:kit/cuphead/hit3"},
+			{"name":"du-in:kit/cuphead/hit4"}],
+			"subtitle": "Cuphead hurt"
+	},
+	"kit.cuphead.ability.charged": {
+		"sounds": [
+			{"name":"du-in:kit/cuphead/cardability"}],
+			"subtitle": "Cuphead shoots laser"
+	},
+	"kit.cuphead.death": {
+		"sounds": [
+			{"name":"du-in:kit/cuphead/death1"},
+			{"name":"du-in:kit/cuphead/death2"}],
+			"subtitle": "Cuphead dies"
+	},
+	"kit.cuphead.parry.charge": {
+		"sounds": [
+			{"name":"du-in:kit/cuphead/parrycharge1"},
+			{"name":"du-in:kit/cuphead/parrycharge2"}],
+			"subtitle": "Cuphead's parry recharges"
+	},
+	"kit.cuphead.snap": {
+		"sounds": [
+			{"name":"du-in:kit/cuphead/snap1"},
+			{"name":"du-in:kit/cuphead/snap2"},
+			{"name":"du-in:kit/cuphead/snap3"},
+			{"name":"du-in:kit/cuphead/snap4"},
+			{"name":"du-in:kit/cuphead/snap5"},
+			{"name":"du-in:kit/cuphead/snap6"},
+			{"name":"du-in:kit/cuphead/snap7"}],
+			"subtitle": "Cuphead snaps fingers"
+	},
+	"kit.cuphead.super": {
+		"sounds": [
+			{"name":"du-in:kit/cuphead/super"}],
+			"subtitle": "Cuphead activates super ability"
+	},
+	"kit.cuphead.announce.start": {
+		"sounds": [
+			{"name":"du-in:kit/cuphead/announce/start1"},
+			{"name":"du-in:kit/cuphead/announce/start2"},
+			{"name":"du-in:kit/cuphead/announce/start3"},
+			{"name":"du-in:kit/cuphead/announce/start4"},
+			{"name":"du-in:kit/cuphead/announce/start5"}],
+			"subtitle": "Cuphead prepares"
+	},
+	"kit.cuphead.announce.go": {
+		"sounds": [
+			{"name":"du-in:kit/cuphead/announce/go1"},
+			{"name":"du-in:kit/cuphead/announce/go2"},
+			{"name":"du-in:kit/cuphead/announce/go3"},
+			{"name":"du-in:kit/cuphead/announce/go4"},
+			{"name":"du-in:kit/cuphead/announce/go5"}],
+			"subtitle": "Cuphead goes"
+	},
+	"kit.cuphead.card": {
+		"sounds": [
+			{"name":"du-in:kit/cuphead/card"}],
+			"subtitle": "Cuphead gets card"
+	},
+	"kit.cuphead.super.get": {
+		"sounds": [
+			{"name":"du-in:kit/cuphead/superget"}],
+			"subtitle": "Cuphead charges super ability"
+	},
+	"kit.cuphead.parry": {
+		"sounds": [
+			{"name":"du-in:kit/cuphead/parry"}],
+			"subtitle": "Cuphead parries"
+	},
+
+	"kit.darwin.step": {
+		"sounds": [
+			{"name":"du-in:kit/darwin/sneaker1"},
+			{"name":"du-in:kit/darwin/sneaker2"},
+			{"name":"du-in:kit/darwin/sneaker3"}],
+			"subtitle": "Darwin's sneakers squeak"
+	},
+	"kit.darwin.hit": {
+		"sounds": [
+			{"name":"du-in:kit/darwin/hit1"},
+			{"name":"du-in:kit/darwin/hit2"},
+			{"name":"du-in:kit/darwin/hit3"}],
+			"subtitle": "Darwin hurt"
+	},
+	"kit.darwin.ability": {
+		"sounds": [
+			{"name":"du-in:kit/darwin/ability"}],
+			"subtitle": "Darwin activates ability"
+	},
+	"kit.darwin.end": {
+		"sounds": [
+			{"name":"du-in:kit/darwin/end"}],
+			"subtitle": "Darwin's ability ends"
+	},
+
+	"kit.death.hit": {
+		"sounds": [
+			{"name":"du-in:kit/death/hit1"},
+			{"name":"du-in:kit/death/hit2"},
+			{"name":"du-in:kit/death/hit3"}],
+			"subtitle": "Death hurt"
+	},
+	"kit.death.whistle.mark": {
+		"sounds": [
+			{"name":"du-in:kit/death/shortwhistle"}
+		],
+		"subtitle": "Death marks a player"
+	},
+	"kit.death.switch": {
+		"sounds": [
+			{"name":"du-in:kit/death/switch"}],
+			"subtitle": "Death switches weapons"
+	},
+	"kit.death.whistle.win": {
+		"sounds": [
+			{"name":"du-in:kit/death/longwhistle"}],
+			"subtitle": "Death wins"
+	},
+
+		"kit.flowey.intro": {
+		"sounds": [
+			"du-in:kit/flowey/intro"
+		]
+	},
+	"kit.flowey.hit": {
+		"sounds": [
+		{"name": "du-in:kit/flowey/voice","pitch": 1},
+		{"name": "du-in:kit/flowey/voice","pitch": 0.9},
+		{"name": "du-in:kit/flowey/voice","pitch": 1.1}],
+		"subtitle": "Flowey hurt"
+	},
+	"kit.flowey.ability": {
+		"sounds": [
+			{"name":"du-in:kit/flowey/ability"}],
+			"subtitle": "Flowey activates ability"
+	},
+	"kit.flowey.ability2": {
+		"sounds": [
+			{"name":"du-in:kit/flowey/ability2"}],
+			"subtitle": "Flowey activates ability"
+	},
+
+	"kit.gaster.pick": {
+		"sounds": [
+			{"name":"du-in:kit/gaster/pick"}],
+			"subtitle": "SELECTED"
+	},
+		"kit.gaster.intro": {
+		"sounds": [
+			{"name":"du-in:kit/gaster/intro"}],
+			"subtitle": "LAUGHTER"
+	},
+	"kit.gaster.hit": {
+		"sounds": [
+			{"name": "du-in:kit/gaster/voice","pitch": 1},
+			{"name": "du-in:kit/gaster/voice","pitch": 0.9},
+			{"name": "du-in:kit/gaster/voice","pitch": 1.1},
+			{"name": "du-in:kit/gaster/voice2","pitch": 1},
+			{"name": "du-in:kit/gaster/voice2","pitch": 1.1},
+			{"name": "du-in:kit/gaster/voice2","pitch": 0.9}],
+			"subtitle": "HURT"
+	},
+	"kit.gaster.ability": {
+		"sounds": [
+			{"name":"du-in:kit/gaster/ability"}],
+			"subtitle": "ABILITY ACTIVATED"
+	},
+	"kit.gaster.back": {
+		"sounds": [
+			{"name":"du-in:kit/gaster/back"}],
+			"subtitle": "ABILITY ENDED"
+	},
+
+	"kit.ghost.go": {
+		"sounds": [
+			{"name":"du-in:kit/ghost/ghost"}],
+			"subtitle": "Ghost ability activates"
+	},
+	"kit.ghost.die": {
+		"sounds": [
+			{"name":"du-in:kit/ghost/die"}],
+			"subtitle": "Ghost ability ends"
+	},
+	"kit.ghost.away": {
+		"sounds": [
+			{"name":"du-in:kit/ghost/away"}],
+			"subtitle": "Ghost disappears"
 	},
 
 	"kit.willo.revolver_shoot": {
