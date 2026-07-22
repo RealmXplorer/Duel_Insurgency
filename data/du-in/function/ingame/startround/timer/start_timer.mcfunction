@@ -97,7 +97,7 @@ scoreboard players set @a gameParries 0
 xp set @a[tag=playing] 100 levels
 
 #Play countdown sound
-execute as @a at @s run playsound minecraft:soundeffect.countdown master @s[tag=!dmend] ~ ~ ~ 0.5 1 1
+execute as @a at @s run playsound du-in:sfx.countdown master @s[tag=!dmend] ~ ~ ~ 0.5 1 1
 
 #Hide map countdown
 bossbar set minecraft:map_countdown visible false

@@ -1,374 +1,685 @@
 {
 	"music.lobby": {
 		"sounds": [
-			"du-in:music/lobby"
-		]
-	},
+			{"name":"du-in:music/lobby","stream":true}]},
 	"music.parkour": {
 		"sounds": [
-			"du-in:music/parkour"
-		]
-	},
+			{"name":"du-in:music/parkour","stream":true}]},
 	"music.tabba": {
 		"sounds": [
-			"du-in:music/tabba"
-		]
-	},
+			{"name":"du-in:music/tabba","stream":true }]},
 	"music.kitselect": {
 		"sounds": [
-			"du-in:custom/kitselect"
-		]
-	},
+			{"name":"du-in:music/kitselect","stream":true}]},
 	"music.credits": {
 		"sounds": [
-			"du-in:music/credits"
-		]
-	},
+			{"name":"du-in:music/credits","stream":true}]},
 	"music.tournament_lobby": {
 		"sounds": [
-			"du-in:music/tournament_lobby"
-		]
-	},
-
+			{"name":"du-in:music/tournament_lobby","stream":true}]},
 
 
 	"music.classic": {
 		"sounds": [
-			"du-in:music/classic"
-		]
-	},
+			{"name":"du-in:music/classic","stream":true}]},
 	"music.classic_end": {
 		"sounds": [
-			"du-in:music/classic_end"
-		]
+			{"name":"du-in:music/classic_end","stream":true}]},
 
-	},
 	"music.deathmatch": {
 		"sounds": [
-			"du-in:music/dm"
-		]
-	},
+			{"name":"du-in:music/deathmatch","stream":true}]},
 	"music.deathmatch_end": {
 		"sounds": [
-			"du-in:music/dm_end"
-		]
-	},
+			{"name":"du-in:music/deathmatch_end","stream":true}]},
+
 	"music.koth": {
 		"sounds": [
-			"du-in:music/koth"
-		]
-	},
+			{"name":"du-in:music/koth","stream":true}]},
 	"music.koth_end": {
 		"sounds": [
-			"du-in:music/koth_end"
-		]
-	},
+			{"name":"du-in:music/koth_end","stream":true}]},
+
 	"music.ctf": {
 		"sounds": [
-			"du-in:music/ctf"
-		]
-	},
+			{"name":"du-in:music/ctf","stream":true}]},
 	"music.ctf_end": {
 		"sounds": [
-			"du-in:music/ctf_end"
-		]
-	},
+			{"name":"du-in:music/ctf_end","stream":true}]},
+
 	"music.conquest": {
 		"sounds": [
-			"du-in:music/conquest"
-		]
-	},
+			{"name":"du-in:music/conquest","stream":true}]},
 	"music.conquest_end": {
 		"sounds": [
-			"du-in:music/conquest_end"
-		]
-	},
+			{"name":"du-in:music/conquest_end","stream":true}]},
+
 	"music.tournament": {
 		"sounds": [
-			"du-in:music/tournament"
-		]
-	},
+			{"name":"du-in:music/tournament","stream":true}]},
 	"music.tournament_end": {
 		"sounds": [
-			"du-in:music/tournament_end"
-		]
-	},
+			{"name":"du-in:music/tournament_end","stream":true}]},
+
 	"music.win": {
 		"sounds": [
-			"du-in:music/win"
-		]
-	},
-
+			{"name":"du-in:music/win","stream":true}]},
 	
 
 	"music.saac": {
 		"sounds": [
-			"du-in:music/saac"
-		]
-	},
+			{"name":"du-in:music/saac","stream":true}]},
 	"music.jack_black": {
 		"sounds": [
-			"du-in:music/jack_black"
-		]
-	},
+			{"name":"du-in:music/jack_black","stream":true}]},
 	"music.saul": {
 		"sounds": [
-			"du-in:music/saul"
-		]
-	},
+			{"name":"du-in:music/saul","stream":true}]},
 	"music.big_chungus": {
 		"sounds": [
-			"du-in:music/chungus"
-		]
-	},
+			{"name":"du-in:music/chungus","stream":true}]},
 	"music.big_chungus_end": {
 		"sounds": [
-			"du-in:music/chungus_end"
-		]
-	},
+			{"name":"du-in:music/chungus_end","stream":true}]},
 		"music.jerma_mall": {
 		"sounds": [
-			"du-in:music/jerma_mall"
-		]
-	},
-
+			{"name":"du-in:music/jerma_mall","stream":true}]},
 
 
 	"music.kingstead": {
 		"sounds": [
-			"du-in:music/kingstead"
-		]
-	},
+			{"name":"du-in:music/kingstead","stream":true}]},
 	"music.vain_pursuit": {
 		"sounds": [
-			"du-in:music/vainpursuit"
-		]
-	},
+			{"name":"du-in:music/vainpursuit","stream":true}]},
 	"music.pursuithappiness": {
 		"sounds": [
-			"du-in:music/pursuithappiness"
-		]
-	},
+			{"name":"du-in:music/pursuithappiness","stream":true}]},
 	"music.suffocation": {
 		"sounds": [
-			"du-in:music/suffocation"
-		]
-	},
+			{"name":"du-in:music/suffocation","stream":true}]},
 	"music.free": {
 		"sounds": [
-			"du-in:music/free"
-		]
-	},
-
+			{"name":"du-in:music/free","stream":true}]},
 
 
 	"music.halloween.lobby": {
 		"sounds": [
-			"du-in:music/halloween/lobby"
-		]
-	},
-
+			{"name":"du-in:music/halloween/lobby","stream":true}]},
 
 
 	"music.beta.lobby": {
 		"sounds": [
-			"du-in:music/beta/lobby"
-		]
-	},
+			{"name":"du-in:music/beta/lobby","stream":true}]},
 	"music.beta.tabba": {
 		"sounds": [
-			"du-in:music/beta/tabba"
-		]
-	},
+			{"name":"du-in:music/beta/tabba","stream":true}]},
 		"music.beta.parkour": {
 		"sounds": [
-			"du-in:music/beta/parkour"
-		]
-	},
+			{"name":"du-in:music/beta/parkour","stream":true}]},
+
 	"music.beta.classic": {
 		"sounds": [
-			"du-in:music/beta/classic"
-		]
-	},
+			{"name":"du-in:music/beta/classic","stream":true}]},
 	"music.beta.classic_end": {
 		"sounds": [
-			"du-in:music/beta/classic_end"
-		]
-	},
+			{"name":"du-in:music/beta/classic_end","stream":true}]},
+
 	"music.beta.deathmatch": {
 		"sounds": [
-			"du-in:music/beta/deathmatch"
-		]
-	},
+			{"name":"du-in:music/beta/deathmatch","stream":true}]},
 	"music.beta.deathmatch_end": {
 		"sounds": [
-			"du-in:music/beta/deathmatch_end"
-		]
-	},
+			{"name":"du-in:music/beta/deathmatch_end","stream":true}]},
+
 	"music.beta.koth": {
 		"sounds": [
-			"du-in:music/beta/koth"
-		]
-	},
+			{"name":"du-in:music/beta/koth","stream":true}]},
 	"music.beta.koth_end": {
 		"sounds": [
-			"du-in:music/beta/koth_end"
-		]
-	},
+			{"name":"du-in:music/beta/koth_end","stream":true}]},
+
 	"music.beta.ctf": {
 		"sounds": [
-			"du-in:music/beta/ctf"
-		]
-	},
+			{"name":"du-in:music/beta/ctf","stream":true}]},
 	"music.beta.ctf_end": {
 		"sounds": [
-			"du-in:music/beta/ctf_end"
-		]
-	},
+			{"name":"du-in:music/beta/ctf_end","stream":true}]},
+
 	"music.beta.conquest": {
 		"sounds": [
-			"du-in:music/beta/conquest"
-		]
-	},
+			{"name":"du-in:music/beta/conquest","stream":true}]},
 	"music.beta.conquest_end": {
 		"sounds": [
-			"du-in:music/beta/conquest_end"
-		]
-	},
+			{"name":"du-in:music/beta/conquest_end","stream":true}]},
+
 	"music.beta.tournament": {
 		"sounds": [
-			"du-in:music/beta/tournament"
-		]
-	},
+			{"name":"du-in:music/beta/tournament","stream":true}]},
 	"music.beta.tournament_end": {
 		"sounds": [
-			"du-in:music/beta/tournament_end"
-		]
-	},
-
+			{"name":"du-in:music/beta/tournament_end","stream":true}]},
 
 
 	"music.legacy.classic": {
 		"sounds": [
-			"du-in:music/legacy/classic"
-		]
-	},
+			{"name":"du-in:music/legacy/classic","stream":true}]},
 	"music.legacy.classic_end": {
 		"sounds": [
-			"du-in:music/legacy/classic_end"
-		]
-	},
+			{"name":"du-in:music/legacy/classic_end","stream":true}]},
+
 	"music.legacy.deathmatch": {
 		"sounds": [
-			"du-in:music/legacy/deathmatch"
-		]
-	},
+			{"name":"du-in:music/legacy/deathmatch","stream":true}]},
 	"music.legacy.deathmatch_end": {
 		"sounds": [
-			"du-in:music/legacy/deathmatch_end"
-		]
-	},
-	"music.legacy.conquest": {
-		"sounds": [
-			"du-in:music/legacy/conquest"
-		]
-	},
-	"music.legacy.conquest_end": {
-		"sounds": [
-			"du-in:music/legacy/conquest_end"
-		]
-	},
+			{"name":"du-in:music/legacy/deathmatch_end","stream":true}]},
+
 	"music.legacy.koth": {
 		"sounds": [
-			"du-in:music/legacy/koth"
-		]
-	},
+			{"name":"du-in:music/legacy/koth","stream":true}]},
 	"music.legacy.koth_end": {
 		"sounds": [
-			"du-in:music/legacy/koth_end"
-		]
-	},
+			{"name":"du-in:music/legacy/koth_end","stream":true}]},
+
 	"music.legacy.ctf": {
 		"sounds": [
-			"du-in:music/legacy/ctf"
-		]
-	},
+			{"name":"du-in:music/legacy/ctf","stream":true}]},
 	"music.legacy.ctf_end": {
 		"sounds": [
-			"du-in:music/legacy/ctf_end"
-		]
-	},
+			{"name":"du-in:music/legacy/ctf_end","stream":true}]},
+
+	"music.legacy.conquest": {
+		"sounds": [
+			{"name":"du-in:music/legacy/conquest","stream":true}]},
+	"music.legacy.conquest_end": {
+		"sounds": [
+			{"name":"du-in:music/legacy/conquest_end","stream":true}]},
 
 
 
 	"ambient.forest": {
 		"sounds": [
-			"du-in:ambient/forest"
-		]
-	},
+			{"name":"du-in:ambient/forest","stream":true}]},
 	"ambient.night": {
 		"sounds": [
-			"du-in:ambient/night"
-		]
-	},
+			{"name":"du-in:ambient/night","stream":true}]},
 	"ambient.cave": {
 		"sounds": [
-			"du-in:ambient/cave"
-		]
-	},
+			{"name":"du-in:ambient/cave","stream":true}]},
 	"ambient.jungle": {
 		"sounds": [
-			"du-in:ambient/jungle"
-		]
-	},
+			{"name":"du-in:ambient/jungle","stream":true}]},
 	"ambient.desert": {
 		"sounds": [
-			"du-in:ambient/desert"
-		]
-	},
+			{"name":"du-in:ambient/desert","stream":true}]},
 	"ambient.river": {
 		"sounds": [
-			"du-in:ambient/river"
-		]
+			{"name":"du-in:ambient/river"}],
+		"subtitle": "Water babbles"
 	},
 	"ambient.wind": {
 		"sounds": [
-			"du-in:ambient/wind"
-		]
+			{"name":"du-in:ambient/wind","stream":true}]},
+
+
+
+	"sfx.saber.land": {
+		"sounds": [
+			{"name":"du-in:sfx/saber/hit"},
+			{"name":"du-in:sfx/saber/hit2"}
+		],
+		"subtitle": "Lightsaber hits"
+	},
+
+	"sfx.ut.judge": {
+		"sounds": [
+			{"name":"du-in:sfx/ut/judge"}],
+			"subtitle": "Judgement bell rings"
+	},
+	"sfx.ut.start": {
+		"sounds": [
+			{"name":"du-in:sfx/ut/start"}],
+			"subtitle": "Undertale start"
+	},
+	"sfx.ut.hit": {
+		"sounds": [
+			{"name":"du-in:sfx/ut/hit1"},
+			{"name":"du-in:sfx/ut/hit2"},
+			{"name":"du-in:sfx/ut/hit3"}],
+			"subtitle": "Undertale hurt"
+	},
+	"sfx.ut.explode": {
+		"sounds": [
+			{"name":"du-in:sfx/ut/explode"}],
+			"subtitle": "Deltarune explosion"
+	},
+	"sfx.ut.fade": {
+		"sounds": [
+			{"name":"du-in:sfx/ut/fade"}],
+			"subtitle": "Undertale fade away"
+	},
+	"sfx.ut.battlestart": {
+		"sounds": [
+			{"name":"du-in:sfx/ut/battlestart"}],
+			"subtitle": "Deltarune battle starts"
+	},
+	"stx.ut.cure": {
+		"sounds": [
+			{"name":"du-in:sfx/ut/cure"}],
+			"subtitle": "Effects cure"
+	},
+	"sfx.ut.death": {
+		"sounds": [
+			{"name":"du-in:sfx/ut/death"}],
+			"subtitle": "Undertale death"
+	},
+
+	"sfx.whack.normal": {
+		"sounds": [
+			{"name":"du-in:sfx/whack/whack1"},
+			{"name":"du-in:sfx/whack/whack2"},
+			{"name":"du-in:sfx/whack/whack3"},
+			{"name":"du-in:sfx/whack/whack4"}],
+			"subtitle": "Whacks"
+	},
+	"sfx.whack.silly": {
+		"sounds": [
+			{"name":"du-in:sfx/whack/silly1"},
+			{"name":"du-in:sfx/whack/silly2"},
+			{"name":"du-in:sfx/whack/silly3"}
+		],
+		"subtitle": "Whacks goofily"
+	},
+
+	"sfx.vending.hum": {
+		"sounds": [
+			{"name":"du-in:sfx/vending/hum"}],
+			"subtitle": "Vending machine hums"
+	},
+	"sfx.vending.dispense": {
+		"sounds": [
+			{"name":"du-in:sfx/vending/dispense"}],
+			"subtitle": "Vending machine dispenses item"
+	},
+	"sfx.vending.kickstart": {
+		"sounds": [
+			{"name":"du-in:sfx/vending/kickstart"}],
+			"subtitle": "Kickstart opens"
+	},
+
+	"sfx.funny.fart": {
+		"sounds": [
+			{"name":"du-in:sfx/funny/fart"}],
+			"subtitle": "Farts"
+	},
+	"sfx.funny.boom": {
+		"sounds": [
+			{"name":"du-in:sfx/funny/boom"}],
+			"subtitle": "Vine booms"
+	},
+	"sfx.funny.laugh": {
+		"sounds": [
+			{"name":"du-in:sfx/funny/laugh"}],
+			"subtitle": "Chimpmunk laughs"
+	},
+	"sfx.funny.table": {
+		"sounds": [
+			{"name":"du-in:sfx/funny/table"}],
+			"subtitle": "Table breaks"
+	},
+		"sfx.funny.squeak": {
+		"sounds": [
+			{"name":"du-in:sfx/funny/squeak"}],
+			"subtitle": "Plushie squeaks"
+	},
+
+	"sfx.void.destroy_pylon": {
+		"sounds": [
+			{"name":"du-in:sfx/void/destroy_pylon"}],
+			"subtitle": "Pylon collapses"
+	},
+	"sfx.void.bell": {
+		"sounds": [
+			{"name":"du-in:sfx/void/bell"}],
+			"subtitle": "Void bell rings"
+	},
+	"sfx.void.enter": {
+		"sounds": [
+			{"name":"du-in:sfx/void/enter"}],
+			"subtitle": "Void Enters"
+	},
+		"sfx.void.whisper": {
+		"sounds": [
+			{"name":"du-in:sfx/void/whisper"}],
+			"subtitle": "Voices whisper"
+	},
+		"sfx.void.sparks": {
+		"sounds": [
+			{"name":"du-in:sfx/void/sparks"}],
+			"subtitle": "Electricity crackles"
+	},
+
+	"sfx.kill.double": {
+		"sounds": [
+			{"name":"du-in:sfx/kill/double"}],
+			"subtitle": "Double kill!"
+	},
+	"sfx.kill.triple": {
+		"sounds": [
+			{"name":"du-in:sfx/kill/triple"}],
+			"subtitle": "Triple kill!"
+	},
+	"sfx.kill.quad": {
+		"sounds": [
+		{"name":"du-in:sfx/kill/quad"}],
+		"subtitle": "Quadruple kill!"
+	},
+	"sfx.kill.quint": {
+		"sounds": [
+		{"name":"du-in:sfx/kill/quint"}],
+		"subtitle": "Quintuple kill!"
+	},
+
+	"sfx.zap": {
+		"sounds": [
+			{"name":"du-in:sfx/zap"}],
+			"subtitle": "Electricity zaps"
+	},
+	"sfx.unlock": {
+		"sounds": [
+			{"name":"du-in:sfx/unlock"}],
+			"subtitle": "Lock clicks"
+	},
+	"sfx.combo": {
+		"sounds": [
+			{"name":"du-in:sfx/epic"}],
+			"subtitle": "Combo lands"
+	},
+	"sfx.countdown": {
+		"sounds": [
+			{"name":"du-in:sfx/countdown"}],
+			"subtitle": "Countdown starts"
+	},
+	"sfx.bell": {
+		"sounds": [
+			{"name":"du-in:sfx/bell"}],
+			"subtitle": "Bell rings"
+	},
+	"sfx.alive": {
+		"sounds": [
+			{"name":"du-in:sfx/alive"}],
+			"subtitle": "Man shouts"
+	},
+	"sfx.parry": {
+		"sounds": [
+			{"name":"du-in:sfx/parry"}],
+			"subtitle": "Player parries"
+	},
+	"sfx.woosh": {
+		"sounds": [
+			{"name":"du-in:sfx/woosh"}],
+			"subtitle": "Something wooshes"
 	},
 
 
 
+	"goner.ear.spawn": {
+		"sounds": [
+			{"name":"du-in:goner/ear/ambient1"},
+			{"name":"du-in:goner/ear/ambient2"}],
+			"subtitle": "Goner Ear whistles"
+	},
+	"goner.ear.hit": {
+		"sounds": [
+		{"name": "du-in:goner/ear/hit","pitch": 1},
+		{"name": "du-in:goner/ear/hit","pitch": 0.9},
+		{"name": "du-in:goner/ear/hit","pitch": 1.1}],
+		"subtitle": "Goner Ear hurt"
+	},
+	"goner.ear.death": {
+		"sounds": [
+			{"name":"du-in:goner/ear/death"}],
+			"subtitle": "Goner Ear dies"
+	},
+
+	"goner.mouth.spawn": {
+		"sounds": [
+			{"name":"du-in:goner/mouth/laugh1"},
+			{"name":"du-in:goner/mouth/laugh2"}],
+			"subtitle": "Goner Mouth laughs"
+	},
+	"goner.mouth.hit": {
+		"sounds": [
+		{"name":"du-in:goner/mouth/hit","pitch": 1 },
+		{"name":"du-in:goner/mouth/hit","pitch": 0.9},
+		{"name":"du-in:goner/mouth/hit","pitch": 1.1}],
+		"subtitle": "Goner Mouth hurt"
+	},
+	"goner.mouth.death": {
+		"sounds": [
+		{"name":"du-in:goner/mouth/death"}],
+		"subtitle": "Goner Mouth dies"
+	},
+
+	"goner.eye.spawn": {
+		"sounds": [
+			{"name":"du-in:goner/eye/blink1"},
+			{"name":"du-in:goner/eye/blink2"}],
+			"subtitle": "Goner Eye blinks"
+	},
+	"goner.eye.hit": {
+		"sounds": [
+		{"name": "du-in:goner/eye/hit","pitch": 1},
+		{"name": "du-in:goner/eye/hit","pitch": 0.9},
+		{"name": "du-in:goner/eye/hit","pitch": 1.1}],
+		"subtitle": "Goner Eye hurt"
+	},
+	"goner.eye.death": {
+		"sounds": [
+			{"name":"du-in:goner/eye/death"}],
+			"subtitle": "Goner Eye dies"
+	},
+	
+	"goner.steve.hit": {
+		"sounds": [
+			{"name": "du-in:goner/steve/hit","pitch": 1},
+			{"name": "du-in:goner/steve/hit","pitch": 0.9},
+			{"name": "du-in:goner/steve/hit","pitch": 1.1},
+			{"name": "du-in:goner/steve/hit2","pitch": 1},
+			{"name": "du-in:goner/steve/hit2","pitch": 0.9},
+			{"name": "du-in:goner/steve/hit2","pitch": 1.1}],
+			"subtitle": "Goner Steve hurt"
+	},
+
+	"goner.missile.chase": {
+		"sounds": [
+			{"name":"du-in:goner/missile/chase"}],
+			"subtitle": "Goner Missle whirs"
+	},
+
+
+
+	"kit.asgore.hit": {
+		"sounds": [
+			{"name":"du-in:kit/asgore/voice","pitch": 1},
+			{"name":"du-in:kit/asgore/voice","pitch": 0.9},
+			{"name":"du-in:kit/asgore/voice","pitch": 1.1},
+			{"name":"du-in:kit/asgore/voice2","pitch": 1},
+			{"name":"du-in:kit/asgore/voice2","pitch": 1.1},
+			{"name":"du-in:kit/asgore/voice2","pitch": 0.9}],
+		"subtitle": "Asgore hurt"
+	},
+	"kit.asgore.ability": {
+		"sounds": [
+			{"name":"du-in:kit/asgore/ability"}],
+			"subtitle": "Asgore ability activates"
+	},
+	"kit.asgore.throw": {
+		"sounds": [
+			{"name":"du-in:kit/asgore/throw"}],
+			"subtitle": "Asgore trident thrown"
+	},
+
+	"kit.asriel.hit": {
+		"sounds": [
+			{"name":"du-in:kit/asriel/voice","pitch": 1},
+			{"name":"du-in:kit/asriel/voice","pitch": 0.9},
+			{"name":"du-in:kit/asriel/voice","pitch": 1.1},
+			{"name":"du-in:kit/asriel/voice2","pitch": 1},
+			{"name":"du-in:kit/asriel/voice2","pitch": 0.9},
+			{"name":"du-in:kit/asriel/voice2","pitch": 1.1}],
+			"subtitle": "Asriel hurt"
+	},
+	"kit.asriel.charge": {
+		"sounds": [
+			{"name":"du-in:kit/asriel/charge"}],
+			"subtitle": "Chaos Saber charges"
+	},
+	"kit.asriel.saber": {
+		"sounds": [
+			{"name":"du-in:kit/asriel/saber"}],
+			"subtitle": "Chaos Saber activates"
+	},
+	"kit.asriel.shock": {
+		"sounds": [
+			{"name":"du-in:kit/asriel/shock"}],
+		"subtitle": "Undertale lightning strikes"
+	},
+	"kit.asriel.back": {
+		"sounds": [
+			{"name":"du-in:kit/asriel/back"}],
+		"subtitle": "Chaos Saber returns"
+	},
+	"kit.asriel.laugh": {
+		"sounds": [
+			{"name":"du-in:kit/asriel/laugh"}],
+		"subtitle": "Asriel laughs"
+	},
+
+	"kit.avatar.hit": {
+		"sounds": [
+			{"name":"du-in:kit/avatar/hit","pitch": 1},
+			{"name":"du-in:kit/avatar/hit","pitch": 0.9},
+			{"name":"du-in:kit/avatar/hit","pitch": 1.1}],
+			"subtitle": "Aang hurt"
+	},
+	"kit.avatar.death": {
+		"sounds": [
+			{"name":"du-in:kit/avatar/death"}],
+		"subtitle": "Aang dies"
+	},
+
+		"kit.beetlejuice.hit": {
+		"sounds": [
+			{"name":"du-in:kit/beetlejuice/hit1"},
+			{"name":"du-in:kit/beetlejuice/hit2"},
+			{"name":"du-in:kit/beetlejuice/hit3"}],
+			"subtitle": "Beetlejuice hurt"
+	},
+		"kit.beetlejuice.death": {
+		"sounds": [
+			{"name":"du-in:kit/beetlejuice/die"}],
+			"subtitle": "Beetlejuice dies"
+	},
+
+	"kit.bogo.hit": {
+		"sounds": [
+			{"name":"du-in:kit/bogo/hit","pitch": 1},
+			{"name":"du-in:kit/bogo/hit","pitch": 0.9},
+			{"name":"du-in:kit/bogo/hit","pitch": 1.1}],
+			"subtitle": "Bogo hurt"
+	},
+	"kit.bogo.bellow": {
+		"sounds": [
+			{"name":"du-in:kit/bogo/bellow"}],
+			"subtitle": "Bogo bellows"
+	},
+	"kit.bogo.snort": {
+		"sounds": [
+			{"name":"du-in:kit/bogo/snort"}],
+			"subtitle": "Bogo snorts"
+	},
+
+	"kit.chara.hit": {
+		"sounds": [
+			{"name": "du-in:kit/chara/voice","pitch": 1},
+			{"name": "du-in:kit/chara/voice","pitch": 0.9},
+			{"name": "du-in:kit/chara/voice","pitch": 1.1},
+			{"name": "du-in:kit/chara/voice2","pitch": 1},
+			{"name": "du-in:kit/chara/voice2","pitch": 0.9},
+			{"name": "du-in:kit/chara/voice2","pitch": 1.1}],
+		"subtitle": "Chara hurt"
+	},
+	"kit.chara.ability": {
+		"sounds": [
+			{"name":"du-in:kit/chara/ability"}],
+			"subtitle": "Chara activates ability"
+	},
+	"kit.chara.fear": {
+		"sounds": [
+			{"name":"du-in:kit/chara/fear"}],
+			"subtitle": "Chara drone"
+	},
+	"kit.chara.jump": {
+		"sounds": [
+			{"name":"du-in:kit/chara/jump"}],
+			"subtitle": "Chara jumps"
+	},
+
+		"kit.chungus.slam": {
+		"sounds": [
+			{"name": "du-in:kit/chungus/slam1"},
+			{"name": "du-in:kit/chungus/slam2"},
+			{"name": "du-in:kit/chungus/slam3"}],
+			"subtitle": "Big Chungus slams earth"
+	},
+
+	"kit.cinder.hit": {
+		"sounds": [
+			{"name":"du-in:kit/cinder/hit1"},
+			{"name":"du-in:kit/cinder/hit2"},
+			{"name":"du-in:kit/cinder/hit3"}],
+			"subtitle": "Soul of Cinder hurt"
+	},
+	"kit.cinder.switch": {
+		"sounds": [
+			{"name":"du-in:kit/cinder/switch"}],
+			"subtitle": "Soul of Cinder switches class"
+	},
+	"kit.cinder.magic": {
+		"sounds": [
+			{"name":"du-in:kit/cinder/magic"}],
+			"subtitle": "Soul of Cinder uses magic"
+	},
+	"kit.cinder.boom": {
+		"sounds": [
+			{"name":"du-in:kit/cinder/boom"}],
+			"subtitle": "Soul of Cinder explodes"
+	},
+
 	"kit.willo.revolver_shoot": {
-		"sounds": [{
-			"name": "du-in:kit/willo/shoot",
-			"pitch": 1
-		},
-		{
-			"name": "du-in:kit/willo/shoot",
-			"pitch": 0.9
-		},
-		{
-			"name": "du-in:kit/willo/shoot",
-			"pitch": 1.1
-		}
-		]
+		"sounds": [
+		{"name":"du-in:kit/willo/shoot","pitch": 1},
+		{"name":"du-in:kit/willo/shoot","pitch": 0.9},
+		{"name":"du-in:kit/willo/shoot","pitch": 1.1}],
+		"subtitle": "Revolver fires"
 	},
 	"kit.willo.revolver_reload": {
 		"sounds": [
-			"du-in:kit/willo/reload"
-		]
+		{"name":"du-in:kit/willo/reload"}],
+		"subtitle": "Revolver reloads"
 	},
 	"kit.willo.revolver_click": {
 		"sounds": [
-			"du-in:kit/willo/empty_click"
-		]
+		{"name":"du-in:kit/willo/empty_click"}],
+		"subtitle": "Revolver clicks"
 	},
 	"kit.willo.revolver_whizz": {
 		"sounds": [
-			"du-in:kit/willo/whizz1",
-			"du-in:kit/willo/whizz2",
-			"du-in:kit/willo/whizz3"
-		]
+		{"name":"du-in:kit/willo/whizz1"},
+		{"name":"du-in:kit/willo/whizz2"},
+		{"name":"du-in:kit/willo/whizz3"}],
+		"subtitle": "Bullet whizzes"
 	}
 }

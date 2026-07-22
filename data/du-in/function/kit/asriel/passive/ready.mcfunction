@@ -1,4 +1,4 @@
-playsound minecraft:asriel.charge master @a ~ ~ ~ 5 1
+playsound du-in:kit.asriel.charge master @a ~ ~ ~ 5 1
 title @s actionbar {text:"Next strong hit will damage enemies and become stars",bold:true,color:green}
 tag @s add asrielCharge
 clear @s wooden_sword

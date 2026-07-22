@@ -3,7 +3,7 @@ execute if entity @s[predicate=du-in:kickstart/kickstart1] run function du-in:ki
 execute if entity @s[predicate=du-in:kickstart/kickstart3] run function du-in:kit/saac/kickstart/red
 execute if entity @s[predicate=du-in:kickstart/kickstart4] run function du-in:kit/saac/kickstart/blue
 
-playsound minecraft:soundeffect.kickstart master @a ~ ~ ~ 10000 1.5
+playsound du-in:sfx.vending.kickstart master @a ~ ~ ~ 10000 1.5
 item replace entity @s weapon.mainhand with air
 #scoreboard players set @s runzaEat 1
 execute if entity @s[tag=notEaten] run advancement grant @s only du-in:kit/eat_runza

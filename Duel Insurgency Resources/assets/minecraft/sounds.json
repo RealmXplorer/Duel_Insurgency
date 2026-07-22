@@ -114,66 +114,6 @@
 			"custom/gaster/pick"
 		]
 	},
-	"asgore.voice": {
-		"sounds": [
-			{
-				"name": "custom/asgore/voice",
-				"pitch": 1
-			},
-			{
-				"name": "custom/asgore/voice",
-				"pitch": 0.9
-			},
-			{
-				"name": "custom/asgore/voice",
-				"pitch": 1.1
-			},
-			{
-				"name": "custom/asgore/voice2",
-				"pitch": 1
-			},
-			{
-				"name": "custom/asgore/voice2",
-				"pitch": 1.1
-			},
-			{
-				"name": "custom/asgore/voice2",
-				"pitch": 0.9
-			}
-		]
-	},
-	"asgore.ability": {
-		"sounds": [
-			"custom/asgore/ability"
-		]
-	},
-	"asgore.throw": {
-		"sounds": [
-			"custom/asgore/throw"
-		]
-	},
-	"avatar.hit": {
-		"sounds": [
-			{
-				"name": "custom/avatar/hit",
-				"pitch": 1
-			},
-						{
-				"name": "custom/avatar/hit",
-				"pitch": 0.9
-			},
-						{
-				"name": "custom/avatar/hit",
-				"pitch": 1.1
-			}
-			
-		]
-	},
-	"avatar.death": {
-		"sounds": [
-			"custom/avatar/death"
-		]
-	},
 	"pawbert.voice": {
 		"sounds": [
 			{
@@ -194,39 +134,6 @@
 	"pawbert.death": {
 		"sounds": [
 			"custom/pawbert/death"
-		]
-	},
-	"chara.voice": {
-		"sounds": [
-			{
-				"name": "custom/chara/voice",
-				"pitch": 1
-			},
-			{
-				"name": "custom/chara/voice",
-				"pitch": 0.9
-			},
-			{
-				"name": "custom/chara/voice",
-				"pitch": 1.1
-			},
-			{
-				"name": "custom/chara/voice2",
-				"pitch": 1
-			},
-			{
-				"name": "custom/chara/voice2",
-				"pitch": 0.9
-			},
-			{
-				"name": "custom/chara/voice2",
-				"pitch": 1.1
-			}
-		]
-	},
-	"chara.ability": {
-		"sounds": [
-			"custom/chara/ability"
 		]
 	},
 	"papyrus.voice": {
@@ -257,59 +164,7 @@
 			}
 		]
 	},
-	"asriel.voice": {
-		"sounds": [
-			{
-				"name": "custom/asriel/voice",
-				"pitch": 1
-			},
-			{
-				"name": "custom/asriel/voice",
-				"pitch": 0.9
-			},
-			{
-				"name": "custom/asriel/voice",
-				"pitch": 1.1
-			},
-			{
-				"name": "custom/asriel/voice2",
-				"pitch": 1
-			},
-			{
-				"name": "custom/asriel/voice2",
-				"pitch": 0.9
-			},
-			{
-				"name": "custom/asriel/voice2",
-				"pitch": 1.1
-			}
-		]
-	},
-	"asriel.charge": {
-		"sounds": [
-			"custom/asriel/charge"
-		]
-	},
-	"asriel.saber": {
-		"sounds": [
-			"custom/asriel/saber"
-		]
-	},
-	"asriel.shock": {
-		"sounds": [
-			"custom/asriel/shock"
-		]
-	},
-	"asriel.back": {
-		"sounds": [
-			"custom/asriel/back"
-		]
-	},
-	"asriel.laugh": {
-		"sounds": [
-			"custom/asriel/laugh"
-		]
-	},
+	
 	"undertale.hit": {
 		"subtitle": "Undertale Hurt",
 		"sounds": [{
@@ -326,11 +181,6 @@
 		}		
 		]
 	},
-	"undertale.die": {
-		"sounds": [
-			"custom/chara/death"
-		]
-	},
 	"kylo.land": {
 		"sounds": [
 			"custom/kylo/hit",
@@ -341,53 +191,6 @@
 	"kylo.fail": {
 		"sounds": [
 			"custom/kylo/fail"
-		]
-	},
-	"soundeffect.judge": {
-		"sounds": [
-			"custom/soundeffect/judge"
-		]
-	},
-	"soundeffect.voidbell": {
-		"sounds": [
-			"custom/soundeffect/voidbell"
-		]
-	},
-	"soundeffect.vending_hum": {
-		"sounds": [
-			"custom/soundeffect/vending_hum"
-		]
-	},
-	"soundeffect.zap": {
-		"sounds": [
-			"custom/soundeffect/zap"
-		]
-	},
-	"soundeffect.unlock": {
-		"sounds": [
-			"custom/soundeffect/unlock"
-		]
-	},
-	"soundeffect.whisper": {
-		"sounds": [
-			"custom/soundeffect/whisper"
-		]
-	},
-	"soundeffect.ut_start": {
-		"sounds": [
-			"custom/soundeffect/ut_start"
-		]
-	},
-	"soundeffect.ut_hit": {
-		"sounds": [
-			"custom/soundeffect/ut_hit1",
-			"custom/soundeffect/ut_hit2",
-			"custom/soundeffect/ut_hit3"
-		]
-	},
-	"soundeffect.dr_explode": {
-		"sounds": [
-			"custom/soundeffect/dr_explode"
 		]
 	},
 	"vader.breathe": {
@@ -408,12 +211,6 @@
 	"vader.hold": {
 		"sounds": [
 			"custom/vader/hold"
-		]
-	},
-	"saber.land": {
-		"sounds": [
-			"custom/saber/hit",
-			"custom/saber/hit2"
 		]
 	},
 	"kylo.voice": {
@@ -533,39 +330,9 @@
 			"custom/yoda/death"
 		]
 	},
-	"kill.double": {
-		"sounds": [
-			"custom/kill/double"
-		]
-	},
-	"kill.triple": {
-		"sounds": [
-			"custom/kill/triple"
-		]
-	},
-	"kill.quad": {
-		"sounds": [
-			"custom/kill/quad"
-		]
-	},
-	"kill.quint": {
-		"sounds": [
-			"custom/kill/quint"
-		]
-	},
 	"palpatine.lightning": {
 		"sounds": [
 			"custom/palps/lightning"
-		]
-	},
-	"chara.fear": {
-		"sounds": [
-			"custom/chara/fear"
-		]
-	},
-	"chara.jump": {
-		"sounds": [
-			"custom/chara/jump"
 		]
 	},
 
@@ -621,31 +388,6 @@
 			"custom/judy/jump"
 		]
 	},
-	"bogo.voice": {
-		"sounds": [{
-			"name": "custom/bogo/hit",
-			"pitch": 1
-		},
-		{
-			"name": "custom/bogo/hit",
-			"pitch": 0.9
-		},
-		{
-			"name": "custom/bogo/hit",
-			"pitch": 1.1
-		}
-		]
-	},
-	"bogo.roar": {
-		"sounds": [
-			"custom/bogo/roar"
-		]
-	},
-	"bogo.snort": {
-		"sounds": [
-			"custom/bogo/snort"
-		]
-	},
 	"player.voice": {
 		"sounds": [{
 			"name": "custom/player/voice",
@@ -661,52 +403,9 @@
 		}
 		]
 	},
-	"goner.steve.voice": {
-		"sounds": [
-			{
-				"name": "custom/goner/steve/hit",
-				"pitch": 1
-			},
-			{
-				"name": "custom/goner/steve/hit",
-				"pitch": 0.9
-			},
-			{
-				"name": "custom/goner/steve/hit",
-				"pitch": 1.1
-			},
-			{
-				"name": "custom/goner/steve/hit2",
-				"pitch": 1
-			},
-			{
-				"name": "custom/goner/steve/hit2",
-				"pitch": 0.9
-			},
-			{
-				"name": "custom/goner/steve/hit2",
-				"pitch": 1.1
-			}
-		]
-	},
-	"undertale.fade": {
-		"sounds": [
-			"custom/soundeffect/fade"
-		]
-	},
 	"kylo.die": {
 		"sounds": [
 			"custom/kylo/die"
-		]
-	},
-	"soundeffect.vending": {
-		"sounds": [
-			"custom/soundeffect/vending"
-		]
-	},
-	"soundeffect.kickstart": {
-		"sounds": [
-			"custom/soundeffect/kickstart"
 		]
 	},
 	"saac.voice": {
@@ -727,40 +426,6 @@
 	"saac.ability2": {
 		"sounds": [
 			"custom/saac/ability2"
-		]
-	},
-	"cinder.hit": {
-		"sounds": [
-			"custom/cinder/hit1",
-			"custom/cinder/hit2",
-			"custom/cinder/hit3"
-		]
-	},
-	"cinder.switch": {
-		"sounds": [
-			"custom/cinder/switch"
-		]
-	},
-	"cinder.magic": {
-		"sounds": [
-			"custom/cinder/magic"
-		]
-	},
-	"cinder.boom": {
-		"sounds": [
-			"custom/cinder/boom"
-		]
-	},
-	"beetlejuice.death": {
-		"sounds": [
-			"custom/beetlejuice/die"
-		]
-	},
-	"beetlejuice.hit": {
-		"sounds": [
-			"custom/beetlejuice/hit1",
-			"custom/beetlejuice/hit2",
-			"custom/beetlejuice/hit3"
 		]
 	},
 	"saac.death": {
@@ -788,11 +453,6 @@
 	"palpatine.death": {
 		"sounds": [
 			"custom/palps/death"
-		]
-	},
-	"soundeffect.combo": {
-		"sounds": [
-			"custom/soundeffect/epic"
 		]
 	},
 	"saac.line.kill": {
@@ -982,11 +642,6 @@
 			"custom/terraria/zombkill"
 		]
 	},
-	"soundeffect.countdown": {
-		"sounds": [
-			"custom/soundeffect/countdown"
-		]
-	},
 	"sus.kill": {
 		"sounds": [
 			"custom/sus/kill"
@@ -1049,13 +704,6 @@
 			"custom/terraria/zombamb2"
 		]
 	},
-	"chungus.slam": {
-		"sounds": [
-			"custom/chungus/slam1",
-			"custom/chungus/slam2",
-			"custom/chungus/slam3"
-		]
-	},
 	"yharim.rage.ready": {
 		"sounds": [
 			"custom/yharim/charged"
@@ -1064,11 +712,6 @@
 	"yharim.rage.use": {
 		"sounds": [
 			"custom/yharim/rage"
-		]
-	},
-	"soundeffect.bell": {
-		"sounds": [
-			"custom/soundeffect/bell"
 		]
 	},
 	"saac.line.orangeks": {
@@ -1286,26 +929,6 @@
 			"custom/saac/interact/runza"
 		]
 	},
-	"soundeffect.fart": {
-		"sounds": [
-			"custom/soundeffect/fart"
-		]
-	},
-	"soundeffect.boom": {
-		"sounds": [
-			"custom/soundeffect/boom"
-		]
-	},
-	"soundeffect.laugh": {
-		"sounds": [
-			"custom/soundeffect/laugh"
-		]
-	},
-	"soundeffect.table": {
-		"sounds": [
-			"custom/soundeffect/table"
-		]
-	},
 	"ralsei.sing": {
 		"sounds": [
 			"custom/ralsei/sing1",
@@ -1404,31 +1027,6 @@
 	"susie.rude_buster.hit": {
 		"sounds": [
 			"custom/susie/rude_hit"
-		]
-	},
-	"soundeffect.whack": {
-		"sounds": [
-			"custom/whack/whack1",
-			"custom/whack/whack2",
-			"custom/whack/whack3",
-			"custom/whack/whack4"
-		]
-	},
-	"soundeffect.sillywhack": {
-		"sounds": [
-			"custom/whack/silly1",
-			"custom/whack/silly2",
-			"custom/whack/silly3"
-		]
-	},
-	"soundeffect.battlestart": {
-		"sounds": [
-			"custom/soundeffect/battlestart"
-		]
-	},
-	"soundeffect.cure": {
-		"sounds": [
-			"custom/soundeffect/cure"
 		]
 	},
 	"ralsei.graze": {
@@ -1678,11 +1276,6 @@
 			"custom/gumball/what"
 		]
 	},
-	"soundeffect.alive": {
-		"sounds": [
-			"custom/soundeffect/alive"
-		]
-	},
 	"paz.cry": {
 		"sounds": [
 			"custom/paz/cry"
@@ -1744,16 +1337,6 @@
 			"custom/paz/hit1",
 			"custom/paz/hit2",
 			"custom/paz/hit3"
-		]
-	},
-	"soundeffect.parry": {
-		"sounds": [
-			"custom/soundeffect/parry"
-		]
-	},
-	"soundeffect.squeak": {
-		"sounds": [
-			"custom/soundeffect/squeak"
 		]
 	},
 	"death.whistle.mark": {
@@ -1904,109 +1487,6 @@
 			"name": "custom/jack_horner/hit2",
 			"pitch": 1.1
 		}
-		]
-	},
-	"soundeffect.woosh": {
-		"sounds": [
-			"custom/soundeffect/woosh"
-		]
-	},
-	
-	"goner.ear.spawn": {
-		"sounds": [
-			"custom/goner/ear/ambient1",
-			"custom/goner/ear/ambient2"
-		]
-	},
-	"goner.ear.hit": {
-		"sounds": [{
-			"name": "custom/goner/ear/hit",
-			"pitch": 1
-		},
-		{
-			"name": "custom/goner/ear/hit",
-			"pitch": 0.9
-		},
-		{
-			"name": "custom/goner/ear/hit",
-			"pitch": 1.1
-		}
-		]
-	},
-	"goner.ear.death": {
-		"sounds": [
-			"custom/goner/ear/death"
-		]
-	},
-	"goner.mouth.spawn": {
-		"sounds": [
-			"custom/goner/mouth/laugh1",
-			"custom/goner/mouth/laugh2"
-		]
-	},
-	"goner.mouth.hit": {
-		"sounds": [{
-			"name":"custom/goner/mouth/hit",
-			"pitch": 1 
-		},
-		{
-			"name":"custom/goner/mouth/hit",
-			"pitch": 0.9
-		},
-		{
-			"name":"custom/goner/mouth/hit",
-			"pitch": 1.1
-		}
-		]
-	},
-	"goner.mouth.death": {
-		"sounds": [
-			"custom/goner/mouth/death"
-		]
-	},
-	"goner.missile.chase": {
-		"sounds": [
-			"custom/goner/missile/chase"
-		]
-	},
-	"goner.sparks": {
-		"sounds": [
-			"custom/goner/sparks"
-		]
-	},
-	"goner.enter": {
-		"sounds": [
-			"custom/goner/enter"
-		]
-	},
-	"goner.eye.spawn": {
-		"sounds": [
-			"custom/goner/eye/blink1",
-			"custom/goner/eye/blink2"
-		]
-	},
-	"goner.eye.hit": {
-		"sounds": [{
-			"name": "custom/goner/eye/hit",
-			"pitch": 1
-		},{
-			"name": "custom/goner/eye/hit",
-			"pitch": 0.9
-		},
-		{
-			"name": "custom/goner/eye/hit",
-			"pitch": 1.1
-		}
-		]
-	},
-	"goner.eye.death": {
-		"sounds": [
-			"custom/goner/eye/death"
-		]
-	},
-	"soundeffect.pylon.destroy": {
-		"sounds": [
-			"custom/goner/break"
 		]
 	}
 }

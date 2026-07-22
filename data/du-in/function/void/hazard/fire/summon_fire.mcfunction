@@ -6,9 +6,9 @@ execute at @e[type=marker,tag=flameMarker] run function du-in:void/hazard/fire/p
 # execute at @e[type=marker,tag=flameMarker] run particle minecraft:flame ~ ~ ~ 1 0 0 .5 50
 # execute at @e[type=marker,tag=flameMarker] run particle minecraft:flash{color:0xffffff} ~ ~ ~ 1 0 0 .5 0
 
-# execute at @e[type=marker,tag=flameMarker] run playsound minecraft:soundeffect.parry master @a ~ ~ ~ 100 1
-# execute at @e[type=marker,tag=flameMarker] run playsound minecraft:soundeffect.parry master @a ~ ~ ~ 100 .5
-# execute at @e[type=marker,tag=flameMarker] run playsound minecraft:soundeffect.parry master @a ~ ~ ~ 100 2
+# execute at @e[type=marker,tag=flameMarker] run playsound du-in:sfx.parry master @a ~ ~ ~ 100 1
+# execute at @e[type=marker,tag=flameMarker] run playsound du-in:sfx.parry master @a ~ ~ ~ 100 .5
+# execute at @e[type=marker,tag=flameMarker] run playsound du-in:sfx.parry master @a ~ ~ ~ 100 2
 
 # execute at @e[type=marker,tag=flameMarker] run playsound minecraft:entity.zombie.infect master @a ~ ~ ~ 100 1
 # execute at @e[type=marker,tag=flameMarker] run playsound minecraft:entity.zombie.infect master @a ~ ~ ~ 100 .5

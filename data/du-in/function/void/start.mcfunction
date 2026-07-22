@@ -204,10 +204,10 @@ time set night
 execute positioned 10046 42 10047 run playsound minecraft:block.end_portal.spawn master @a ~ ~ ~ 1 1.75
 execute positioned 10046 42 10047 run playsound minecraft:block.bell.use master @a ~ ~ ~ 1 0.75
 execute positioned 10046 42 10047 run playsound minecraft:block.amethyst_block.hit master @a ~ ~ ~ 1 1.5
-execute positioned 10046 42 10047 run playsound minecraft:soundeffect.voidbell master @a ~ ~ ~ 1 .5
-execute positioned 10046 42 10047 run playsound minecraft:soundeffect.voidbell master @a ~ ~ ~ 1 1
-execute positioned 10046 42 10047 run playsound minecraft:soundeffect.voidbell master @a ~ ~ ~ 1 1.5
-execute positioned 10046 42 10047 run playsound minecraft:soundeffect.voidbell master @a ~ ~ ~ 1 2
+execute positioned 10046 42 10047 run playsound du-in:sfx.void.bell master @a ~ ~ ~ 1 .5
+execute positioned 10046 42 10047 run playsound du-in:sfx.void.bell master @a ~ ~ ~ 1 1
+execute positioned 10046 42 10047 run playsound du-in:sfx.void.bell master @a ~ ~ ~ 1 1.5
+execute positioned 10046 42 10047 run playsound du-in:sfx.void.bell master @a ~ ~ ~ 1 2
 
 #execute if score #main pylonsDestroyed matches ..2 run scoreboard players set @a gonersKilled 30
 #execute if score #main pylonsDestroyed matches 3 run scoreboard players set @a gonersKilled 30

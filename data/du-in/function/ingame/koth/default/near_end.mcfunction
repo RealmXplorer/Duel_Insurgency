@@ -1,8 +1,8 @@
 #Play sound
 #playsound minecraft:block.anvil.destroy master @a[tag=koth,tag=kothend] ~ ~ ~ 2 1.25
 
-execute as @a at @s run playsound minecraft:soundeffect.woosh master @s ~ ~ ~ .5 1
-execute as @a at @s run playsound minecraft:soundeffect.woosh master @s ~ ~ ~ .5 2
+execute as @a at @s run playsound du-in:sfx.woosh master @s ~ ~ ~ .5 1
+execute as @a at @s run playsound du-in:sfx.woosh master @s ~ ~ ~ .5 2
 
 #Start end of round music
 tag @a[tag=song,tag=!songEnd,tag=!win,tag=!lose,tag=!startgame] add songEnd

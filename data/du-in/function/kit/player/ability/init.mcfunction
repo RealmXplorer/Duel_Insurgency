@@ -10,7 +10,7 @@ effect give @s[tag=sabotaged,tag=empower] minecraft:poison 2 4 true
 
 effect give @s minecraft:slowness 2 4 true
 
-playsound minecraft:soundeffect.cure master @a ~ ~ ~ 1 1
+playsound du-in:sfx.ut.cure master @a ~ ~ ~ 1 1
 effect clear @s[tag=!sabotaged] minecraft:poison
 effect clear @s[tag=!sabotaged] minecraft:wither
 

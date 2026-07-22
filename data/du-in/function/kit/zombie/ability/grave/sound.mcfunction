@@ -5,4 +5,4 @@ execute if entity @s[scores={zombSkin=2}] run playsound minecraft:entity.drowned
 execute if entity @s[scores={zombSkin=3}] run playsound minecraft:terraria.zombamb master @a ~ ~ ~ 100000 0.1 1
 execute if entity @s[scores={zombSkin=4}] run playsound minecraft:entity.lightning_bolt.impact master @a ~ ~ ~ 100000 0.1 1
 execute if entity @s[scores={zombSkin=4}] run playsound minecraft:entity.lightning_bolt.thunder master @a ~ ~ ~ 100000 0.1 1
-execute if entity @s[scores={zombSkin=4}] run playsound minecraft:soundeffect.alive master @a ~ ~ ~ 1 1
+execute if entity @s[scores={zombSkin=4}] run playsound du-in:sfx.alive master @a ~ ~ ~ 1 1

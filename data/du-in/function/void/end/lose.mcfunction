@@ -8,9 +8,9 @@ execute positioned 97 20 -107 run playsound minecraft:block.beacon.activate mast
 title @a[tag=!falseWin] title [{text:"Multiverse Tether",bold:true,color:red}]
 title @a[tag=!falseWin,tag=!lobby] subtitle {text:"STABILIZED",color:dark_red}
 title @a times 5 120 5
-execute positioned 97 20 -107 run playsound minecraft:goner.mouth.spawn master @a ~ ~ ~ 100000 1
-execute positioned 97 20 -107 run playsound minecraft:goner.mouth.spawn master @a ~ ~ ~ 100000 1.25
-execute positioned 97 20 -107 run playsound minecraft:goner.mouth.spawn master @a ~ ~ ~ 100000 0.75
+execute positioned 97 20 -107 run playsound du-in:goner.mouth.spawn master @a ~ ~ ~ 100000 1
+execute positioned 97 20 -107 run playsound du-in:goner.mouth.spawn master @a ~ ~ ~ 100000 1.25
+execute positioned 97 20 -107 run playsound du-in:goner.mouth.spawn master @a ~ ~ ~ 100000 0.75
 setblock 97 20 -107 minecraft:black_concrete
 bossbar set gast:pylon visible false
 bossbar set gast:pylon4 visible false

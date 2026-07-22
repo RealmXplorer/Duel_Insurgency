@@ -7,7 +7,7 @@ execute as @a[tag=cinderHit] if score @s team = @p[scores={kit=34},tag=kitAction
 particle minecraft:explosion ~ ~1 ~ 1 0 1 0 15 force
 particle minecraft:small_flame ~ ~1 ~ 1 1 1 0.05 150 force
 particle minecraft:flame ~ ~1 ~ 0 0 0 0.4 150 force
-playsound minecraft:cinder.boom master @a ~ ~ ~ 100 1
+playsound du-in:kit.cinder.boom master @a ~ ~ ~ 100 1
 particle minecraft:flash{color:0xffffff} ~ ~1 ~ 0 0 0 0 10 normal
 
 effect give @s fire_resistance 2 0 true

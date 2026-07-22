@@ -38,7 +38,7 @@ execute if entity @s[tag=!teamDead,tag=!cIngame,tag=!dmIngame,tag=!kothIngame,ta
 execute unless entity @a[tag=partyLeader,tag=aprilFools] run playsound minecraft:block.glass.break master @s[tag=!startgame,tag=!lose,tag=!win] ~ ~ ~ 1 2
 execute unless entity @a[tag=partyLeader,tag=aprilFools] run playsound minecraft:entity.blaze.hurt master @s[tag=!startgame,tag=!lose,tag=!win] ~ ~ ~ 1 1
 
-execute if entity @a[tag=partyLeader,tag=aprilFools] run playsound minecraft:soundeffect.table master @s[tag=!startgame,tag=!lose,tag=!win] ~ ~ ~ 1 1
+execute if entity @a[tag=partyLeader,tag=aprilFools] run playsound du-in:sfx.funny.table master @s[tag=!startgame,tag=!lose,tag=!win] ~ ~ ~ 1 1
 
 execute unless entity @s[tag=stolen] run function du-in:kit/all/death/search
 execute if entity @s[tag=stolen] run function du-in:kit/villager/death

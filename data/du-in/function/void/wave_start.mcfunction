@@ -1,6 +1,6 @@
 tag @a remove waveBreak
 
-execute positioned as @e[type=marker,tag=pylon] run playsound minecraft:soundeffect.voidbell master @a ~ ~ ~ 1000 1
+execute positioned as @e[type=marker,tag=pylon] run playsound du-in:sfx.void.bell master @a ~ ~ ~ 1000 1
 execute positioned as @e[type=marker,tag=pylon] run playsound minecraft:block.beacon.activate master @a ~ ~ ~ 1000 1
 
 setblock 97 20 -107 minecraft:black_stained_glass

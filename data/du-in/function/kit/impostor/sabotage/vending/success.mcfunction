@@ -6,7 +6,7 @@ title @s actionbar {text:"THIS MACHINE IS BROKEN?!?!?!",bold:true,color:red}
 tag @e[type=interaction,tag=vending] add stable
 tag @e[type=interaction,tag=vending] remove sabotagedMachine
 
-playsound minecraft:soundeffect.zap master @a ~ ~ ~ 10 1
+playsound du-in:sfx.zap master @a ~ ~ ~ 10 1
 
 schedule clear du-in:ingame/scheduled/three_sec_loop
 

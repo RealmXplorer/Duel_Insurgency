@@ -8,10 +8,10 @@ execute if entity @s[tag=!stolen] at @s run function du-in:kit/all/text/find_kit
 execute if entity @s[tag=stolen] run function du-in:kit/villager/text
 
 #Sounds and tag
-playsound minecraft:goner.eye.spawn master @a ~ ~ ~ 1000 1
-playsound minecraft:soundeffect.unlock master @a ~ ~ ~ 1000 1 1
-playsound minecraft:soundeffect.unlock master @a ~ ~ ~ 1000 2 1
-playsound minecraft:soundeffect.unlock master @a ~ ~ ~ 1000 .5 1
+playsound du-in:goner.eye.spawn master @a ~ ~ ~ 1000 1
+playsound du-in:sfx.unlock master @a ~ ~ ~ 1000 1 1
+playsound du-in:sfx.unlock master @a ~ ~ ~ 1000 2 1
+playsound du-in:sfx.unlock master @a ~ ~ ~ 1000 .5 1
 tag @s remove surrender
 tag @s add voidReady
 

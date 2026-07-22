@@ -31,7 +31,7 @@ execute if entity @a[scores={justdied=1,killStreak=5..}] run tellraw @a {selecto
 #Kill Sounds#
 execute unless entity @a[tag=partyLeader,tag=aprilFools] run playsound minecraft:terraria.golkill master @s ~ ~ ~ .4 2
 execute unless entity @a[tag=partyLeader,tag=aprilFools] run playsound minecraft:block.anvil.land master @s ~ ~ ~ 1 2
-execute if entity @a[tag=partyLeader,tag=aprilFools] run playsound minecraft:soundeffect.boom master @s ~ ~ ~ 1 1
+execute if entity @a[tag=partyLeader,tag=aprilFools] run playsound du-in:sfx.funny.boom master @s ~ ~ ~ 1 1
 
 #Rewards#
 scoreboard players add @s Diamonds 2

@@ -24,7 +24,7 @@ tp @a[gamemode=spectator] @r[tag=playing]
 playsound minecraft:sans.ability master @a ~ ~ ~ .25 0.75
 playsound minecraft:entity.creaking.spawn master @a ~ ~ ~ 0.5 0.5
 playsound minecraft:entity.elder_guardian.curse master @a ~ ~ ~ 1 1
-playsound minecraft:soundeffect.laugh master @a ~ ~ ~ 100 0.5
+playsound du-in:sfx.funny.laugh master @a ~ ~ ~ 100 0.5
 
 #Make Beetlejuice big and invincible
 attribute @s scale base set 2

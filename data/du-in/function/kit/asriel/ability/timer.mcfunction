@@ -1,5 +1,5 @@
 #Summon lightning
-execute if entity @s[scores={asrielTimer=0}] run playsound minecraft:asriel.shock master @a ~ ~ ~ 100 1
+execute if entity @s[scores={asrielTimer=0}] run playsound du-in:kit.asriel.shock master @a ~ ~ ~ 100 1
 execute if entity @s[scores={asrielTimer=0},tag=!sabotaged] run summon minecraft:lightning_bolt ^ ^ ^5 {Tags:["projectile"]}
 execute if entity @s[scores={asrielTimer=0},tag=sabotaged] run summon minecraft:lightning_bolt ~ ~ ~ {Tags:["projectile"]}
 scoreboard players add @s asrielTimer 1

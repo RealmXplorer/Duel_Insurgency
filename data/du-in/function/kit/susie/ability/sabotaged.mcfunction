@@ -1,4 +1,4 @@
-playsound minecraft:soundeffect.dr_explode master @a ~ ~ ~ 1 1
+playsound du-in:sfx.ut.explode master @a ~ ~ ~ 1 1
 
 damage @s 20 explosion
 particle minecraft:explosion ~ ~1 ~ 1 0 1 0 15 force

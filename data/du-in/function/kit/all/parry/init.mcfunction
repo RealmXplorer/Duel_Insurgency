@@ -5,7 +5,7 @@ scoreboard players set @s parryDuration 30
 tag @s add parry
 
 #Play effects
-playsound minecraft:soundeffect.parry master @a ~ ~ ~ .3 1
+playsound du-in:sfx.parry master @a ~ ~ ~ .3 1
 playsound minecraft:entity.warden.sonic_boom master @a ~ ~ ~ .5 2
 playsound minecraft:entity.breeze.deflect master @a ~ ~ ~ 1 1
 particle minecraft:sonic_boom ~ ~1 ~ -0.5 0 0 .2 0

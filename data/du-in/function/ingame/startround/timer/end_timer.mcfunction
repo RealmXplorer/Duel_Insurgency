@@ -30,4 +30,4 @@ execute if entity @a[tag=devMode,tag=partyLeader] run item replace entity @a hot
 
 item replace entity @a[scores={kit=7}] hotbar.8 with minecraft:arrow 2
 
-execute if entity @a[tag=partyLeader,tag=specialEvent] at @r run playsound minecraft:soundeffect.bell master @a ~ ~ ~ 1 1
+execute if entity @a[tag=partyLeader,tag=specialEvent] at @r run playsound du-in:sfx.bell master @a ~ ~ ~ 1 1

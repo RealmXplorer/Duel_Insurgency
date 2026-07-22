@@ -9,9 +9,9 @@ execute unless entity @s[scores={sidebarToggle=1}] run scoreboard objectives set
 
 
 execute if entity @s[scores={sidebarToggle=1}] run tellraw @s [{text:"Lobby Sidebar: ",bold:true,color:gold},{text:"Off",color:red}]
-execute if entity @s[scores={sidebarToggle=1}] run playsound minecraft:soundeffect.unlock master @s ~ ~ ~ .2 1.5
+execute if entity @s[scores={sidebarToggle=1}] run playsound du-in:sfx.unlock master @s ~ ~ ~ .2 1.5
 
 execute unless entity @s[scores={sidebarToggle=1}] run tellraw @s [{text:"Lobby Sidebar: ",bold:true,color:gold},{text:"On",color:green},{text:" (Default)",color:gray}]
-execute unless entity @s[scores={sidebarToggle=1}] run playsound minecraft:soundeffect.unlock master @s ~ ~ ~ .2 1.2
+execute unless entity @s[scores={sidebarToggle=1}] run playsound du-in:sfx.unlock master @s ~ ~ ~ .2 1.2
 
 setblock ~ ~ ~2 stone_button[facing=south] destroy

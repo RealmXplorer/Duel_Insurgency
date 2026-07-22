@@ -12,4 +12,4 @@ execute if score #main gamemode matches 4 run clone 627 45 59 635 52 67 -987 12 
 execute if score #main gamemode matches 5 run clone 627 45 68 635 52 76 -987 12 513
 
 
-execute positioned -987 12 513 run playsound minecraft:goner.mouth.spawn master @a ~ ~ ~ 10
+execute positioned -987 12 513 run playsound du-in:goner.mouth.spawn master @a ~ ~ ~ 10

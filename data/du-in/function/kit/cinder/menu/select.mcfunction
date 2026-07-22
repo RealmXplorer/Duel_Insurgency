@@ -4,7 +4,7 @@ scoreboard players enable @s info
 clear @s player_head[custom_data={du-in:'cinderHead'}]
 
 #Play sound
-playsound minecraft:cinder.hit master @s ~ ~ ~ 100 1
+playsound du-in:kit.cinder.hit master @s ~ ~ ~ 100 1
 
 #Announce kit pick
 tellraw @s [{text:"Selected the ",bold:true,color:gray},{text:"Soul of Cinder ",bold:true,color:gold},{text:"class! ",bold:true,color:gray},{text:"(Click here for kit info!)",bold:false,color:white,"underlined":true,"click_event":{"action":"run_command","command":"/trigger info add 1"}}]

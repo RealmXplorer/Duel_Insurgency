@@ -14,7 +14,7 @@ execute if entity @s[scores={gastSkin=1}] run playsound minecraft:ghost.away mas
 execute if entity @s[scores={gastSkin=2}] run playsound minecraft:spamton.laugh master @a ~ ~ ~ 10 1
 
 #Goner Mouth
-execute if entity @s[scores={gastSkin=3}] run playsound minecraft:goner.mouth.spawn master @a ~ ~ ~ 10 1
+execute if entity @s[scores={gastSkin=3}] run playsound du-in:goner.mouth.spawn master @a ~ ~ ~ 10 1
 
 playsound minecraft:sans.ability master @a ~ ~ ~ 100 1
 playsound minecraft:entity.player.attack.weak master @a ~ ~ ~ 100 0.1

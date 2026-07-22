@@ -1,1 +1,1 @@
-playsound minecraft:soundeffect.sillywhack master @a ~ ~ ~ .5 1
+playsound du-in:sfx.whack.silly master @a ~ ~ ~ .5 1

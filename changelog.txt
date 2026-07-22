@@ -7,6 +7,9 @@
 -Beds can no longer be slept in.
 -Signs on San Ricardo are now properly waxed.
 
+*Bug Fixes*
+-Fixed bug where Bogo's hurt sound would not play.
+
 *Internal Changes*
 -Updated Advancements and Predicates to follow new 26.3 syntaxes.
 -Added "overworld" and "overworld_caves" dimension_types to alter overworld environment attributes.
@@ -35,6 +38,7 @@
 
 *Resourcepack Changes*
 -Moved all music to "du-in:sounds" folder and organized it much better.
+-All music and ambient tracks are now streamed.
 -Renamed music to be more consistent and easier to keep track of.
 -Moved kit-specific music tracks from the kit files to the new "du-in:music/" file
     -"jack_black/music" is now "music/jack_black"

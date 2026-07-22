@@ -11,9 +11,9 @@ effect give @s[tag=deathMark,tag=!sabotaged] strength 2 1 true
 effect give @s[tag=deathMark,tag=!sabotaged] regeneration 2 0 true
 
 #Play audio
-playsound minecraft:soundeffect.parry master @a ~ ~ ~ 100 1
-playsound minecraft:soundeffect.parry master @a ~ ~ ~ 100 .5
-playsound minecraft:soundeffect.parry master @a ~ ~ ~ 100 2
+playsound du-in:sfx.parry master @a ~ ~ ~ 100 1
+playsound du-in:sfx.parry master @a ~ ~ ~ 100 .5
+playsound du-in:sfx.parry master @a ~ ~ ~ 100 2
 playsound minecraft:sans.ability master @a ~ ~ ~ .25 .95
 
 #Send flames

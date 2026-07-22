@@ -6,8 +6,8 @@ title @a[tag=cIngame,tag=!chalf] actionbar {text:'', color:gold, extra:[{selecto
 
 #Playsound
 #execute as @a at @s run playsound minecraft:block.anvil.use master @s ~ ~ ~ 1 1.15
-execute as @a at @s run playsound minecraft:soundeffect.woosh master @s ~ ~ ~ .5 1
-execute as @a at @s run playsound minecraft:soundeffect.woosh master @s ~ ~ ~ .5 2
+execute as @a at @s run playsound du-in:sfx.woosh master @s ~ ~ ~ .5 1
+execute as @a at @s run playsound du-in:sfx.woosh master @s ~ ~ ~ .5 2
 #Change bossbar color
 #bossbar set bossbar:classic color pink
 

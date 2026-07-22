@@ -1,1 +1,1 @@
-playsound minecraft:asriel.laugh master @a ~ ~ ~ 1 1
+playsound du-in:kit.asriel.laugh master @a ~ ~ ~ 1 1

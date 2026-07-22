@@ -6,7 +6,7 @@ effect give @s minecraft:fire_resistance 3 255 true
 effect give @s minecraft:instant_health 1 2 true
 effect give @s minecraft:speed 4 2 true
 
-playsound minecraft:soundeffect.cure master @a ~ ~ ~ 1 1
+playsound du-in:sfx.ut.cure master @a ~ ~ ~ 1 1
 effect clear @s minecraft:poison
 effect clear @s minecraft:wither
 

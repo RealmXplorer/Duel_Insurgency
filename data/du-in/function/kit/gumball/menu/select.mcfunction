@@ -1,6 +1,6 @@
 execute if entity @s[tag=playing] run function du-in:kit/all/reset
 scoreboard players enable @s info
-playsound minecraft:soundeffect.sillywhack voice @s ~ ~ ~ 100 1
+playsound du-in:sfx.whack.silly voice @s ~ ~ ~ 100 1
 clear @s player_head[custom_data={du-in:'gumballHead'}]
 scoreboard players set @s kit 22
 $data modify storage du-in:player$(current) kit set value {"kit":"gumball"}

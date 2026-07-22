@@ -5,8 +5,8 @@ bossbar set bossbar:gametimer color red
 
 #Playsound
 #execute as @a at @s run playsound minecraft:block.anvil.use master @s ~ ~ ~ 1 1.15
-execute as @a at @s run playsound minecraft:soundeffect.woosh master @s ~ ~ ~ .5 1
-execute as @a at @s run playsound minecraft:soundeffect.woosh master @s ~ ~ ~ .5 2
+execute as @a at @s run playsound du-in:sfx.woosh master @s ~ ~ ~ .5 1
+execute as @a at @s run playsound du-in:sfx.woosh master @s ~ ~ ~ .5 2
 
 #Start end of round music
 tag @a[tag=!win,tag=!lose,tag=song] add songEnd

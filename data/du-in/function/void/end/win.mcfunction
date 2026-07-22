@@ -17,7 +17,7 @@ execute if score #main pylonsDestroyed matches 3 run function du-in:void/lobby_a
 #Stop sounds and music
 stopsound @a record minecraft:music.pursuithappiness
 stopsound @a master du-in:music.suffocation
-stopsound @a ambient minecraft:soundeffect.whisper
+stopsound @a ambient du-in:sfx.void.whisper
 stopsound @a master minecraft:entity.warden.heartbeat
 
 #End environmental hazards
@@ -30,7 +30,7 @@ function du-in:music/void/schedule_clear
 
 
 #Play sound of pylon destroyed
-execute positioned 97 20 -107 unless score #main pylonsDestroyed matches 4.. run playsound minecraft:soundeffect.pylon.destroy master @a ~ ~ ~ 10000
+execute positioned 97 20 -107 unless score #main pylonsDestroyed matches 4.. run playsound du-in:sfx.void.destroy_pylon master @a ~ ~ ~ 10000
 
 execute if score #main pylonsDestroyed matches 4.. positioned 97 20 -107 run playsound minecraft:block.sculk_shrieker.shriek master @a ~ ~ ~ 100000 .5
 execute if score #main pylonsDestroyed matches 4.. run title @a[tag=!falseWin] title [{text:"Multiverse Stability",bold:true,color:red}]

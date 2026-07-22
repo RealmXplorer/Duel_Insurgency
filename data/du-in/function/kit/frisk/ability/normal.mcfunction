@@ -4,7 +4,7 @@ effect give @s minecraft:fire_resistance 2 255 true
 effect give @s minecraft:instant_health 1 0 true
 effect give @s minecraft:speed 3 1 true
 
-execute if entity @s run playsound minecraft:soundeffect.cure master @a ~ ~ ~ 1 1
+execute if entity @s run playsound du-in:sfx.ut.cure master @a ~ ~ ~ 1 1
 effect clear @s minecraft:poison
 effect clear @s minecraft:wither
 

@@ -1,4 +1,4 @@
-playsound minecraft:asriel.charge master @a ~ ~ ~ 1 2
+playsound du-in:kit.asriel.charge master @a ~ ~ ~ 1 2
 scoreboard players set @s sabotageTimer 80
 tag @s add empower
 effect give @s haste 3 1 true

@@ -11,7 +11,7 @@ tag @s add asrielSaber
 clear @s wooden_sword
 scoreboard players set @s asrielSaberTimer 60
 
-playsound minecraft:asriel.saber master @a ~ ~ ~ 5 1
+playsound du-in:kit.asriel.saber master @a ~ ~ ~ 5 1
 particle minecraft:firework ~ ~ ~ 1 ~ 1 1 100 force
 
 scoreboard players reset @s asrielCharge

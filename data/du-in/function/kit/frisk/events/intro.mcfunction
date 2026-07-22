@@ -1,1 +1,1 @@
-playsound minecraft:soundeffect.ut_start master @a ~ ~ ~ 1 1 1
+playsound du-in:sfx.ut.start master @a ~ ~ ~ 1 1 1
