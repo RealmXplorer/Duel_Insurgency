@@ -4,4 +4,4 @@ give @s minecraft:mushroom_stew[item_name=[{text:"RUNZA™",color:gold,bold:true
 effect clear @s minecraft:saturation
 #effect give @s minecraft:hunger 10 255 true
 
-execute if entity @s[scores={runzaEat=1..}] run function du-in:kit/runza/ability/end
+#execute if entity @s[scores={runzaEat=1..}] run function du-in:kit/runza/ability/end

@@ -5,7 +5,8 @@ execute if entity @s[predicate=du-in:kickstart/kickstart4] run function du-in:ki
 
 playsound minecraft:soundeffect.kickstart master @a ~ ~ ~ 10000 1.5
 item replace entity @s weapon.mainhand with air
-scoreboard players set @s runzaEat 1
+#scoreboard players set @s runzaEat 1
+execute if entity @s[tag=notEaten] run advancement grant @s only du-in:kit/eat_runza
 scoreboard players remove @s saacCarry 1
 tag @s remove secKitActions
 
