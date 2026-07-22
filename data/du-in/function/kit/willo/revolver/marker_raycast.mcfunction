@@ -14,14 +14,14 @@ execute if entity @s[tag=!woodPass] run playsound du-in:kit.willo.revolver_whizz
 execute if entity @s[tag=woodPass] run playsound du-in:kit.willo.revolver_whizz player @a[tag=!willoShoot] ~ ~ ~ 0.5 .75
 
 #Damage
-execute if entity @s[tag=!woodPass] at @s as @e[type=husk,distance=..1.25,tag=!willoShoot] run damage @s 5 minecraft:generic
-execute if entity @s[tag=woodPass] at @s as @e[type=husk,distance=..1.25,tag=!willoShoot] run damage @s 3 minecraft:generic
+# execute if entity @s[tag=!woodPass] at @s as @e[type=husk,distance=..1.25,tag=!willoShoot] run damage @s 5 minecraft:generic
+# execute if entity @s[tag=woodPass] at @s as @e[type=husk,distance=..1.25,tag=!willoShoot] run damage @s 3 minecraft:generic
 
-#execute if entity @s[tag=!void,tag=!woodPass] at @s as @a[distance=..1.25,tag=!willoShoot] run damage @s 5 minecraft:generic
-#execute if entity @s[tag=!void,tag=woodPass] at @s as @a[distance=..1.25,tag=!willoShoot] run damage @s 3 minecraft:generic
+execute if entity @s[tag=!void,tag=!woodPass] at @s as @a[distance=..1.25,tag=!willoShoot] run damage @s 5 minecraft:generic
+execute if entity @s[tag=!void,tag=woodPass] at @s as @a[distance=..1.25,tag=!willoShoot] run damage @s 3 minecraft:generic
 
-#execute if entity @s[tag=void,tag=!woodPass] at @s as @e[type=skeleton,distance=..1.25] run damage @s 5 minecraft:generic
-#execute if entity @s[tag=void,tag=woodPass] at @s as @e[type=skeleton,distance=..1.25] run damage @s 3 minecraft:generic
+execute if entity @s[tag=void,tag=!woodPass] at @s as @e[type=skeleton,distance=..1.25] run damage @s 5 minecraft:generic
+execute if entity @s[tag=void,tag=woodPass] at @s as @e[type=skeleton,distance=..1.25] run damage @s 3 minecraft:generic
 
 #execute if entity @s[tag=!woodPass] at @s as @e[type=husk,distance=..1.25,tag=!willoShoot] run say @s
 
