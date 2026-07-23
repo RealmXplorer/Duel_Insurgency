@@ -48,6 +48,7 @@ scoreboard objectives add willoAmmo dummy
 scoreboard objectives add willoStock dummy
 scoreboard objectives add willoReloadTimer minecraft.custom:minecraft.play_time
 scoreboard objectives add willoBulletTravel dummy
+scoreboard objectives add woodPen dummy
 
 #Timers
 scoreboard objectives add ambience dummy

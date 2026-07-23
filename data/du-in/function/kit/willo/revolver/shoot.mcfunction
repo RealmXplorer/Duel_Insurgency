@@ -7,10 +7,13 @@ playsound du-in:kit.willo.revolver_shoot master @a ~ ~ ~ 1 1
 
 summon marker ^ ^1 ^1 {Tags:["willoBullet","unset","mapSpecific","projectile"]}
 scoreboard players set @e[type=marker,distance=..2,tag=willoBullet,tag=unset] willoBulletTravel 120
-execute as @e[type=marker,tag=willoBullet,sort=nearest,limit=1,distance=..2] rotated as @p[tag=willoShoot] run tp @s ~ ~1 ~ ~ ~
+#execute anchored eyes positioned ^ ^ ^ as @e[type=marker,tag=willoBullet,sort=nearest,limit=1,distance=..2] rotated as @p[tag=willoShoot] run tp @s ~ ~ ~ ~ ~
+execute as @e[type=marker,tag=willoBullet,sort=nearest,limit=1,distance=..2] rotated as @p[tag=willoShoot] run tp @s ~ ~1.2 ~ ~ ~
+
 execute if entity @s[tag=void] run tag @e[type=marker,tag=willoBullet,distance=..2,tag=unset] add void
 tag @e[type=marker,tag=willoBullet,distance=..2,tag=unset] remove unset
-execute as @e[type=marker,tag=willoBullet,distance=..2,tag=!unset] positioned ~ ~1.25 ~ at @s run function du-in:kit/willo/revolver/marker_raycast
+execute as @e[type=marker,tag=willoBullet,distance=..2,tag=!unset] at @s run function du-in:kit/willo/revolver/marker_raycast
+#execute as @e[type=marker,tag=willoBullet,distance=..2,tag=!unset] at @s run function du-in:kit/willo/revolver/marker_raycast
 
 #summon armor_stand ~ ~ ~ {Tags:["trackBullet"],NoGravity:1b,Invulnerable:1b}
 
