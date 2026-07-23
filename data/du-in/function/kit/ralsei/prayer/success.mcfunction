@@ -10,7 +10,7 @@ execute if entity @s[distance=0.05..5,tag=playing,gamemode=!spectator,tag=!teamD
 #Particle#
 particle minecraft:heart ~ ~1.5 ~ 2 2 2 0 25 force
 playsound du-in:sfx.ut.ability master @a ~ ~ ~ 100 1
-playsound minecraft:ralsei.heal_spell master @a ~ ~ ~ 100 1
+playsound du-in:kit.ralsei.heal_spell master @a ~ ~ ~ 100 1
 playsound minecraft:entity.ender_dragon.flap master @a ~ ~ ~ 100 0.7
 particle minecraft:composter ~ ~1.5 ~ 2 1 2 0 30 force
 

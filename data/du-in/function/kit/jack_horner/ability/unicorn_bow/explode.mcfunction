@@ -3,7 +3,7 @@ summon minecraft:creeper ~ ~ ~ {Invulnerable:1b,CustomNameVisible:0b,DeathLootTa
 particle dust_color_transition{from_color:[0.329,0.376,1.000],scale:1,to_color:[1.000,0.000,0.000]} ~ ~ ~ 2 2 2 100 300 normal
 
 particle minecraft:end_rod ~ ~ ~ 3 3 3 1 100 normal
-playsound minecraft:jack_horner.unicorn_explode hostile @a ~ ~ ~ 1 1
+playsound du-in:kit.jack_horner.unicorn_explode hostile @a ~ ~ ~ 1 1
 
 scoreboard players reset @s unicornTimer
 tag @s remove unicornDuration

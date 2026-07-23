@@ -3,7 +3,7 @@ tag @s[tag=!sabotaged] remove chickenJockey
 tag @s[tag=sabotaged] add chickenJockey
 
 execute if entity @s[tag=sabotaged] run function du-in:kit/all/ability/sabotage/effects
-playsound minecraft:jack_black.chicken_jockey master @a ~ ~ ~ 1 1
+playsound du-in:kit.jack_black.chicken_jockey master @a ~ ~ ~ 1 1
 
 execute if entity @s[tag=empower] run effect give @a[tag=chickenJockey] nausea 3 15 true
 execute if entity @s[tag=empower] run effect give @a[tag=chickenJockey] slowness 3 1 true

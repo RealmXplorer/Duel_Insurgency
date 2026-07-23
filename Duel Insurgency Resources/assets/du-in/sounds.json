@@ -242,12 +242,12 @@
 			{"name":"du-in:sfx/ut/start"}],
 			"subtitle": "Undertale start"
 	},
-	"sfx.ut.hit": {
+	"sfx.ut.attack": {
 		"sounds": [
-			{"name":"du-in:sfx/ut/hit1"},
-			{"name":"du-in:sfx/ut/hit2"},
-			{"name":"du-in:sfx/ut/hit3"}],
-			"subtitle": "Undertale hurt"
+			{"name":"du-in:sfx/ut/attack1"},
+			{"name":"du-in:sfx/ut/attack2"},
+			{"name":"du-in:sfx/ut/attack3"}],
+			"subtitle": "Undertale attack"
 	},
 	"sfx.ut.explode": {
 		"sounds": [
@@ -285,6 +285,21 @@
 		{"name": "du-in:sfx/ut/hit","pitch": 0.9},
 		{"name": "du-in:sfx/ut/hit","pitch": 1.1}],
 		"subtitle": "Undertale hurt"
+	},
+	"sfx.ut.heal": {
+		"sounds": [
+			{"name":"du-in:sfx/ut/heal"}],
+			"subtitle": "Player heals"
+	},
+	"sfx.ut.graze": {
+		"sounds": [
+			{"name":"du-in:sfx/ut/graze"}],
+			"subtitle": "TP Graze"
+	},
+	"sfx.ut.spare": {
+		"sounds": [
+			{"name":"du-in:sfx/ut/spare"}],
+			"subtitle": "Undertale spare"
 	},
 
 	"sfx.te.playhit": {
@@ -346,6 +361,19 @@
 		"subtitle": "Whacks goofily"
 	},
 
+	"sfx.christmas.ring": {
+		"sounds": [
+			{"name":"du-in:sfx/christmas/ring"}],
+			"subtitle": "Bell jingles"
+	},
+	"sfx.christmas.jingle": {
+		"sounds": [
+			{"name": "du-in:sfx/christmas/jingle","pitch": 1},
+			{"name": "du-in:sfx/christmas/jingle","pitch": 0.9},
+			{"name": "du-in:sfx/christmas/jingle","pitch": 1.1}],
+			"subtitle": "Jinglebells jingle"
+	},
+
 	"sfx.vending.hum": {
 		"sounds": [
 			{"name":"du-in:sfx/vending/hum"}],
@@ -386,6 +414,11 @@
 		"sounds": [
 			{"name":"du-in:sfx/funny/squeak"}],
 			"subtitle": "Plushie squeaks"
+	},
+		"sfx.funny.bonk": {
+		"sounds": [
+			{"name":"du-in:sfx/funny/bonk"}],
+			"subtitle": "Player gets bonked"
 	},
 
 	"sfx.void.destroy_pylon": {
@@ -665,11 +698,6 @@
 			{"name": "du-in:kit/chara/voice2","pitch": 1.1}],
 		"subtitle": "Chara hurt"
 	},
-	"kit.chara.ability": {
-		"sounds": [
-			{"name":"du-in:kit/chara/ability"}],
-			"subtitle": "Chara activates ability"
-	},
 	"kit.chara.fear": {
 		"sounds": [
 			{"name":"du-in:kit/chara/fear"}],
@@ -678,7 +706,7 @@
 	"kit.chara.jump": {
 		"sounds": [
 			{"name":"du-in:kit/chara/jump"}],
-			"subtitle": "Chara jumps"
+			"subtitle": "Chara jumpscare"
 	},
 
 		"kit.chungus.slam": {
@@ -932,6 +960,540 @@
 		"sounds": [
 			{"name":"du-in:kit/ghost/away"}],
 			"subtitle": "Ghost disappears"
+	},
+
+	"kit.gingerbread.hit": {
+		"sounds": [
+		{"name": "du-in:kit/gingerbread/voice","pitch": 1},
+		{"name": "du-in:kit/gingerbread/voice","pitch": 0.9},
+		{"name": "du-in:kit/gingerbread/voice","pitch": 1.1}],
+		"subtitle": "Gingerbread man hurt"
+	},
+	"kit.gingerbread.death": {
+		"sounds": [
+			{"name":"du-in:kit/gingerbread/death"}],
+			"subtitle": "Gingerbread man dies"
+	},
+
+	"kit.gumball.explode": {
+		"sounds": [
+			{"name":"du-in:kit/gumball/explode"}],
+			"subtitle": "Gumball explodes"
+	},
+	"kit.gumball.ability": {
+		"sounds": [
+			{"name":"du-in:kit/gumball/ability1"}],
+			"subtitle": "Gumball yells"
+	},
+	"kit.gumball.hit": {
+		"sounds": [
+			{"name":"du-in:kit/gumball/hit"},
+			{"name":"du-in:kit/gumball/hit2"},
+			{"name":"du-in:kit/gumball/hit3"}],
+			"subtitle": "Gumball hurt"
+	},
+	"kit.gumball.fail": {
+		"sounds": [
+			{"name":"du-in:kit/gumball/fail"}],
+			"subtitle": "Gumball fails ability"
+	},
+	"kit.gumball.success": {
+		"sounds": [
+			{"name":"du-in:kit/gumball/success"}],
+			"subtitle": "Gumball celebrates"
+	},
+	"kit.gumball.what": {
+		"sounds": [
+			{"name":"du-in:kit/gumball/what"}],
+			"subtitle": "Gumball confused"
+	},
+
+	"kit.jack_black.hit": {
+		"sounds": [
+		{"name": "du-in:kit/jack_black/hit","pitch": 1},
+		{"name": "du-in:kit/jack_black/hit","pitch": 0.9},
+		{"name": "du-in:kit/jack_black/hit","pitch": 1.1}],
+		"subtitle": "Jack Black hurt"
+	},
+	"kit.jack_black.steve": {
+		"sounds": [
+			{"name":"du-in:kit/jack_black/steve"}],
+			"subtitle": "Jack Black says he's Steve"
+	},
+	"kit.jack_black.chicken_jockey": {
+		"sounds": [
+			{"name":"du-in:kit/jack_black/chicken_jockey"}],
+			"subtitle": "Jack Black says 'Chicken Jockey'"
+	},
+	"kit.jack_black.the_nether": {
+		"sounds": [
+			{"name":"du-in:kit/jack_black/the_nether"}],
+			"subtitle": "Jack Black says 'The Nether'"
+	},
+	"kit.jack_black.flint_and_steel": {
+		"sounds": [
+			{"name":"du-in:kit/jack_black/flint_and_steel"}],
+			"subtitle": "Jack Black says 'Flint and Steel'"
+	},
+
+	"kit.jack_horner.hit": {
+		"sounds": [
+		{"name": "du-in:kit/jack_horner/hit","pitch": 1},
+		{"name": "du-in:kit/jack_horner/hit","pitch": 0.9},
+		{"name": "du-in:kit/jack_horner/hit","pitch": 1.1},
+		{"name": "du-in:kit/jack_horner/hit2","pitch": 1},
+		{"name": "du-in:kit/jack_horner/hit2","pitch": 0.9},
+		{"name": "du-in:kit/jack_horner/hit2","pitch": 1.1}],
+		"subtitle": "Jack Horner hurt"
+	},
+	"kit.jack_horner.bag": {
+		"sounds": [
+			{"name":"du-in:kit/jack_horner/bag"}],
+			"subtitle": "Jack Horner opens bag"
+	},
+	"kit.jack_horner.phoenix": {
+		"sounds": [
+			{"name":"du-in:kit/jack_horner/phoenix"}],
+		"subtitle": "Jack horner gets Phoenix"
+	},
+	"kit.jack_horner.unicorn_horn": {
+		"sounds": [
+			{"name":"du-in:kit/jack_horner/unicorn_horn"}],
+			"subtitle": "Jack Horner gets Unicorn Horn"
+	},
+	"kit.jack_horner.unicorn_explode": {
+		"sounds": [
+			{"name":"du-in:kit/jack_horner/unicorn_explode"}],
+			"subtitle": "Player explodes into confetti"
+	},
+	"kit.jack_horner.bug_flick": {
+		"sounds": [
+			{"name":"du-in:kit/jack_horner/bug_flick"}],
+			"subtitle": "Jack Horner flicks ethical bug"
+	},
+	"kit.jack_horner.midas": {
+		"sounds": [
+			{"name":"du-in:kit/jack_horner/midas"}],
+			"subtitle": "Jack Horner gets Midas Touch"
+	},
+	"kit.jack_horner.orb": {
+		"sounds": [
+			{"name":"du-in:kit/jack_horner/orb"}],
+			"subtitle": "Jack Horner uses Crystal Orb"
+	},
+	"kit.jack_horner.bumbum": {
+		"sounds": [
+			{"name":"du-in:kit/jack_horner/bumbum"}],
+			"subtitle": "Jack Horner's sting plays"
+	},
+
+	"kit.jerma.pick": {
+		"sounds": [
+			{"name":"du-in:kit/jerma/pick"}],
+			"subtitle": "Jerma selected"
+	},
+	"kit.jerma.hit": {
+		"sounds": [
+		{"name": "du-in:kit/jerma/hit","pitch": 1},
+		{"name": "du-in:kit/jerma/hit","pitch": 0.9},
+		{"name": "du-in:kit/jerma/hit","pitch": 1.1},
+		{"name": "du-in:kit/jerma/hit2","pitch": 1},
+		{"name": "du-in:kit/jerma/hit2","pitch": 0.9},
+		{"name": "du-in:kit/jerma/hit2","pitch": 1.1}],
+		"subtitle": "Jerma hurt"
+	},
+	"kit.jerma.death": {
+		"sounds": [
+			{"name":"du-in:kit/jerma/death"},
+			{"name":"du-in:kit/jerma/death2"}],
+			"subtitle": "Jerma dies"
+	},
+	"kit.jerma.onion_ring": {
+		"sounds": [
+			{"name":"du-in:kit/jerma/onion"}],
+			"subtitle": "Jerma gets onion ring"
+	},
+	"kit.jerma.peep": {
+		"sounds": [
+			{"name":"du-in:kit/jerma/peep"}],
+			"subtitle": "Jerma reveals the horror"
+	},
+	"kit.jerma.kill": {
+		"sounds": [
+			{"name":"du-in:kit/jerma/kill"},
+			{"name":"du-in:kit/jerma/kill2"},
+			{"name":"du-in:kit/jerma/kill3"}],
+			"subtitle": "Jerma kills player"
+	},
+	"kit.jerma.ctfkill": {
+		"sounds": [
+			{"name":"du-in:kit/jerma/ctfkill"}],
+			"subtitle": "Jerma kills player"
+	},
+	"kit.jerma.koth": {
+		"sounds": [
+			{"name":"du-in:kit/jerma/koth"},
+			{"name":"du-in:kit/jerma/koth2"}],
+			"subtitle": "Jerma complains about KotH"
+	},
+	"kit.jerma.win": {
+		"sounds": [
+			{"name":"du-in:kit/jerma/win"},
+			{"name":"du-in:kit/jerma/win2"}],
+			"subtitle": "Jerma wins"
+	},
+
+	"kit.jevil.intro": {
+		"sounds": [
+			{"name":"du-in:kit/jevil/intro"}],
+			"subtitle": "Jevil selected"
+	},
+	"kit.jevil.hit": {
+		"sounds": [
+		{"name": "du-in:kit/jevil/hit","pitch": 1},
+		{"name": "du-in:kit/jevil/hit","pitch": 0.9},
+		{"name": "du-in:kit/jevil/hit","pitch": 1.1}],
+		"subtitle": "Jevil hurt"
+	},
+	"kit.jevil.win": {
+		"sounds": [
+			{"name":"du-in:kit/jevil/win"}],
+			"subtitle": "Jevil wins"
+	},
+	"kit.jevil.scythe_burst": {
+		"sounds": [
+			{"name":"du-in:kit/jevil/scythe_burst"}],
+			"subtitle": "Jevil's scythes explode"
+	},
+	"kit.jevil.ha": {
+		"sounds": [
+			{"name":"du-in:kit/jevil/ha1"},
+			{"name":"du-in:kit/jevil/ha2"}],
+			"subtitle": "Jevil taunts"
+	},
+	"kit.jevil.laugh": {
+		"sounds": [
+			{"name":"du-in:kit/jevil/laugh1"},
+			{"name":"du-in:kit/jevil/laugh2"}],
+			"subtitle": "Jevil laughs"
+	},
+	"kit.jevil.pirouette": {
+		"sounds": [
+			{"name":"du-in:kit/jevil/pirouette"}],
+			"subtitle": "Jevil pirouettes"
+	},
+	"kit.jevil.neo_chaos": {
+		"sounds": [
+			{"name":"du-in:kit/jevil/neo_chaos"},
+			{"name":"du-in:kit/jevil/kill"}],
+			"subtitle": "Jevil summons Devilsknife"
+	},
+
+	"kit.judy.hit": {
+		"sounds": [
+		{"name":"du-in:kit/judy/hit","pitch": 1},
+		{"name":"du-in:kit/judy/hit","pitch": 0.9},
+		{"name":"du-in:kit/judy/hit","pitch": 1.1}],
+		"subtitle": "Judy Hopps hurt"
+	},
+	"kit.judy.jump": {
+		"sounds": [
+			{"name":"du-in:kit/judy/jump"}],
+			"subtitle": "Judy hops"
+	},
+
+	"kit.kitty.hit": {
+		"sounds": [
+			{"name":"du-in:kit/kitty/hit1"},
+			{"name":"du-in:kit/kitty/hit2"},
+			{"name":"du-in:kit/kitty/hit3"}],
+			"subtitle": "Kitty hurt"
+	},
+	"kit.kitty.gatito": {
+		"sounds": [
+			{"name":"du-in:kit/kitty/gatitoblade"}],
+			"subtitle": "Kitty switches to Gatito Blade"
+	},
+
+	"kit.knight.step": {
+		"sounds": [
+			{"name":"du-in:kit/knight/step1"},
+			{"name":"du-in:kit/knight/step2"},
+			{"name":"du-in:kit/knight/step3"}],
+			"subtitle": "Knight walks"
+	},
+
+	"kit.kratos.hit": {
+		"sounds": [
+		{"name": "du-in:kit/kratos/hit","pitch": 1},
+		{"name": "du-in:kit/kratos/hit","pitch": 0.9},
+		{"name": "du-in:kit/kratos/hit","pitch": 1.1},
+		{"name": "du-in:kit/kratos/hit2","pitch": 1},
+		{"name": "du-in:kit/kratos/hit2","pitch": 0.9},
+		{"name": "du-in:kit/kratos/hit2","pitch": 1.1}],
+		"subtitle": "Kratos hurt"
+	},
+	"kit.kratos.rock": {
+		"sounds": [
+			{"name":"du-in:kit/kratos/rock"}],
+			"subtitle": "Kratos throws rock"
+	},
+	"kit.kratos.rock_punch": {
+		"sounds": [
+			{"name":"du-in:kit/kratos/rock_punch"}],
+			"subtitle": "Rock hits player"
+	},
+
+	"kit.kylo.hit": {
+		"sounds": [
+		{"name": "du-in:kit/kylo/voice","pitch": 1},
+		{"name": "du-in:kit/kylo/voice","pitch": 1.1},
+		{"name": "du-in:kit/kylo/voice","pitch": 0.9},
+		{"name": "du-in:kit/kylo/voice2","pitch": 1},
+		{"name": "du-in:kit/kylo/voice2","pitch": 0.9},
+		{"name": "du-in:kit/kylo/voice2","pitch": 1.1}],
+		"subtitle": "Kylo Ren hurt"
+	},
+	"kit.kylo.death": {
+		"sounds": [
+			{"name":"du-in:kit/kylo/die"}],
+			"subtitle": "Kylo Ren dies"
+	},
+	"kit.kylo.attack": {
+		"sounds": [
+			{"name":"du-in:kit/kylo/hit"},
+			{"name":"du-in:kit/kylo/hit2"},
+			{"name":"du-in:kit/kylo/hit3"}],
+			"subtitle": "Kylo Ren attacks"
+	},
+	"kit.kylo.fail": {
+		"sounds": [
+			{"name":"du-in:kit/kylo/fail"}],
+			"subtitle": "Kylo Ren's attack resisted"
+	},
+	
+	"kit.nick.hit": {
+		"sounds": [
+		{"name": "du-in:kit/nick/voice","pitch": 1},
+		{"name": "du-in:kit/nick/voice","pitch": 0.9},
+		{"name": "du-in:kit/nick/voice","pitch": 1.1},
+		{"name": "du-in:kit/nick/voice2","pitch": 1},
+		{"name": "du-in:kit/nick/voice2","pitch": 0.9},
+		{"name": "du-in:kit/nick/voice2","pitch": 1.1}],
+		"subtitle": "Nick Wilde hurt"
+	},
+	"kit.nick.jump": {
+		"sounds": [
+			{"name": "du-in:kit/nick/jump","pitch": 1},
+			{"name": "du-in:kit/nick/jump","pitch": 0.9},
+			{"name": "du-in:kit/nick/jump","pitch": 1.1},
+			{"name": "du-in:kit/nick/jump2","pitch": 1},
+			{"name": "du-in:kit/nick/jump2","pitch": 0.9},
+			{"name": "du-in:kit/nick/jump2","pitch": 1.1}],
+			"subtitle": "Nick Wilde jumps"
+	},
+	"kit.nick.hustle": {
+		"sounds": [
+			{"name":"du-in:kit/nick/hustle"}],
+			"subtitle": "Nick Wilde hustles"
+	},
+
+	"kit.palps.hit": {
+		"sounds": [
+			{"name": "du-in:kit/palps/voice","pitch": 1},
+			{"name": "du-in:kit/palps/voice","pitch": 0.9},
+			{"name": "du-in:kit/palps/voice","pitch": 1.1},
+			{"name": "du-in:kit/palps/voice2","pitch": 1},
+			{"name": "du-in:kit/palps/voice2","pitch": 0.9},
+			{"name": "du-in:kit/palps/voice2","pitch": 1.1}],
+			"subtitle": "Palpatine hurt"
+	},
+	"kit.palps.death": {
+		"sounds": [
+			{"name":"du-in:kit/palps/death"}],
+			"subtitle": "Palpatine dies"
+	},
+	"kit.palps.force": {
+		"sounds": [
+			{"name":"du-in:kit/palps/push"}],
+			"subtitle": "Palpatine activates ability"
+	},
+	"kit.palps.lifesteal": {
+		"sounds": [
+			{"name":"du-in:kit/palps/pull"}],
+			"subtitle": "Palpatine lifesteals"
+	},
+	"kit.palps.lightning": {
+		"sounds": [
+			{"name":"du-in:kit/palps/lightning"}],
+			"subtitle": "Palpatine uses lightning"
+	},
+
+	"kit.papyrus.hit": {
+		"sounds": [
+			{"name": "du-in:kit/papyrus/voice","pitch": 1},
+			{"name": "du-in:kit/papyrus/voice","pitch": 0.9},
+			{"name": "du-in:kit/papyrus/voice","pitch": 1.1},
+			{"name": "du-in:kit/papyrus/voice2","pitch": 1},
+			{"name": "du-in:kit/papyrus/voice2","pitch": 0.9},
+			{"name": "du-in:kit/papyrus/voice2","pitch": 1.1}],
+			"subtitle": "Papyrus hurt"
+	},
+	"kit.papyrus.warn": {
+		"sounds": [
+			{"name":"du-in:kit/papyrus/attack"}],
+			"subtitle": "Papyrus warns"
+	},
+
+	"kit.pawbert.hit": {
+		"sounds": [
+			{"name": "du-in:kit/pawbert/hit","pitch": 1},
+			{"name": "du-in:kit/pawbert/hit","pitch": 0.9},
+			{"name": "du-in:kit/pawbert/hit","pitch": 1.1}],
+			"subtitle": "Pawbert hurt"
+	},
+	"kit.pawbert.death": {
+		"sounds": [
+			{"name":"du-in:kit/pawbert/death"}],
+			"subtitle": "Pawbert dies"
+	},
+
+	
+	"kit.paz.fnf.hit": {
+		"sounds": [
+			{"name":"du-in:kit/paz/hit1"},
+			{"name":"du-in:kit/paz/hit2"},
+			{"name":"du-in:kit/paz/hit3"}],
+			"subtitle": "PearApplez hurt"
+	},
+	"kit.paz.cry": {
+		"sounds": [
+			{"name":"du-in:kit/paz/cry"}],
+			"subtitle": "PearApplez cries"
+	},
+	"kit.paz.laugh": {
+		"sounds": [
+			{"name":"du-in:kit/paz/laugh"}],
+			"subtitle": "PearApplez laughs"
+	},
+	"kit.paz.snore": {
+		"sounds": [
+			{"name":"du-in:kit/paz/snore"}],
+			"subtitle": "PearApplez snores"
+	},
+	"kit.paz.death": {
+		"sounds": [
+			{"name":"du-in:kit/paz/death"}],
+			"subtitle": "PearApplez dies"
+	},
+	"kit.paz.win": {
+		"sounds": [
+			{"name":"du-in:kit/paz/win"}],
+			"subtitle": "PearApplez wins"
+	},
+	"kit.paz.fortnite.get": {
+		"sounds": [
+			{"name":"du-in:kit/paz/fortnitecard"}],
+			"subtitle": "PearApplez gets Fortnite card"
+	},
+	"kit.paz.fortnite.lose": {
+		"sounds": [
+			{"name":"du-in:kit/paz/nofortnite"}],
+			"subtitle": "PearApplez loses Fortnite card"
+	},
+	"kit.paz.fnf.three": {
+		"sounds": [
+			{"name":"du-in:kit/paz/three"}],
+			"subtitle": "Three"
+	},
+	"kit.paz.fnf.two": {
+		"sounds": [
+			{"name":"du-in:kit/paz/two"}],
+			"subtitle": "Two"
+	},
+	"kit.paz.fnf.one": {
+		"sounds": [
+			{"name":"du-in:kit/paz/one"}],
+			"subtitle": "One"
+	},
+	"kit.paz.fnf.go": {
+		"sounds": [
+			{"name":"du-in:kit/paz/go"}],
+			"subtitle": "Go"
+	},
+
+	"kit.player.hit": {
+		"sounds": [
+		{"name": "du-in:kit/player/voice","pitch": 1},
+		{"name": "du-in:kit/player/voice","pitch": 0.9},
+		{"name": "du-in:kit/player/voice","pitch": 1.1}],
+		"subtitle": "Steve hurt"
+	},
+
+	"kit.puss.hit": {
+		"sounds": [
+			{"name":"du-in:kit/puss/hit1"},
+			{"name":"du-in:kit/puss/hit2"},
+			{"name":"du-in:kit/puss/hit3"}],
+			"subtitle": "Puss hurt"
+	},
+	"kit.puss.gatito": {
+		"sounds": [
+			{"name":"du-in:kit/puss/gatitoblade"}],
+			"subtitle": "Puss equips Gatito Blade"
+	},
+	"kit.puss.ability": {
+		"sounds": [
+			{"name":"du-in:kit/puss/ability"}],
+			"subtitle": "Puss steals weapon"
+	},
+
+	"kit.ralsei.hit": {
+		"sounds": [
+		{"name": "du-in:kit/ralsei/hit","pitch": 1},
+		{"name": "du-in:kit/ralsei/hit","pitch": 0.9},
+		{"name": "du-in:kit/ralsei/hit","pitch": 1.1},
+		{"name": "du-in:kit/ralsei/hit2","pitch": 1},
+		{"name": "du-in:kit/ralsei/hit2","pitch": 0.9},
+		{"name": "du-in:kit/ralsei/hit2","pitch": 1.1}],
+		"subtitle": "Ralsei hurt"
+	},
+	"kit.ralsei.death": {
+		"sounds": [
+			{"name":"du-in:kit/ralsei/death"}],
+			"subtitle": "Ralsei dies"
+	},
+	"kit.ralsei.sing": {
+		"sounds": [
+			{"name":"du-in:kit/ralsei/sing1"},
+			{"name":"du-in:kit/ralsei/sing2"}],
+			"subtitle": "Ralsei sings"
+	},
+	"kit.ralsei.spell": {
+		"sounds": [
+			{"name":"du-in:kit/ralsei/spell"}],
+			"subtitle": "Ralsei casts spell"
+	},
+	"kit.ralsei.heal_spell": {
+		"sounds": [
+			{"name":"du-in:kit/ralsei/heal_spell"}],
+			"subtitle": "Ralsei casts heal spell"
+	},
+	"kit.ralsei.snore": {
+		"sounds": [
+			{"name":"du-in:kit/ralsei/snore"}],
+			"subtitle": "Player falls asleep"
+	},
+
+	"kit.roxy.jumpscare": {
+		"sounds": [
+			"du-in:kit/roxy/jumpscare"
+		]
+	},
+	"kit.roxy.death": {
+		"sounds": [
+			"du-in:kit/roxy/death"
+		]
 	},
 
 	"kit.willo.revolver_shoot": {

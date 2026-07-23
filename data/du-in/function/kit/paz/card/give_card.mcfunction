@@ -1,2 +1,2 @@
 tag @s add fortniteCard
-playsound minecraft:paz.fortnite.get voice @a ~ ~ ~
+playsound du-in:kit.paz.fortnite.get voice @a ~ ~ ~

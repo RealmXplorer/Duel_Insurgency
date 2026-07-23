@@ -1,1 +1,1 @@
-playsound du-in:sfx.ut.hit master @a ~ ~ ~ 0.5 1
+playsound du-in:sfx.ut.attack master @a ~ ~ ~ 0.5 1

@@ -7,7 +7,7 @@ tag @e[type=block_display,tag=devilsKnife,tag=unsetTime] add jevilDuration
 tag @e[type=block_display,tag=devilsKnife,tag=unsetTime] remove unsetTime
 
 #Sound
-playsound minecraft:jevil.scythe_burst master @a ~ ~ ~ 1 1 1
+playsound du-in:kit.jevil.scythe_burst master @a ~ ~ ~ 1 1 1
 
 #Kill scythe
 kill @s

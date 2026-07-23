@@ -1,6 +1,6 @@
 #Play Sounds
 playsound minecraft:entity.evoker.cast_spell master @a ~ ~ ~ 100 1
-playsound minecraft:papyrus.voice master @a ~ ~ ~ 100 .1
+playsound du-in:kit.papyrus.hit master @a ~ ~ ~ 100 .1
 playsound du-in:sfx.ut.ability master @a ~ ~ ~ 100 1
 playsound minecraft:entity.evoker_fangs.attack master @a ~ ~ ~ 100 1
 

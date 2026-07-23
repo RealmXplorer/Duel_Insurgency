@@ -1,1 +1,1 @@
-playsound minecraft:palpatine.death voice @a ~ ~ ~ 3 1
+playsound du-in:kit.palps.death voice @a ~ ~ ~ 3 1

@@ -1,1 +1,1 @@
-# playsound minecraft:paz.fnf.hit master @a ~ ~ ~ 1 1
+# playsound du-in:kit.paz.fnf.hit master @a ~ ~ ~ 1 1

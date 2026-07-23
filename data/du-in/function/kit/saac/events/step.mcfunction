@@ -1,1 +1,1 @@
-playsound minecraft:knight.step voice @a ~ ~ ~ 0.4 0.9 1
+playsound du-in:kit.knight.step voice @a ~ ~ ~ 0.4 0.9 1

@@ -1,1 +1,1 @@
-playsound minecraft:paz.fnf.go voice @s ~ ~ ~ 100000 1
+playsound du-in:kit.paz.fnf.go voice @s ~ ~ ~ 100000 1

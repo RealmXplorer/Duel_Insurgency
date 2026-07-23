@@ -14,4 +14,4 @@ execute if entity @s[tag=sabotaged] run function du-in:kit/all/ability/sabotage/
 
 #Particles
 particle minecraft:heart ~ ~ ~ 1 1 1 1 30 force @a
-playsound du-in:kit.chara.ability master @a ~ ~ ~ 1 1 1
+playsound du-in:sfx.ut.heal master @a ~ ~ ~ 1 1 1

@@ -1,6 +1,6 @@
 execute as @e[type=skeleton,tag=gonerThing] run function du-in:kit/jack_black/ability/void/chicken_jockey
 
-playsound minecraft:jack_black.chicken_jockey master @a ~ ~ ~ 1 1
+playsound du-in:kit.jack_black.chicken_jockey master @a ~ ~ ~ 1 1
 
 clear @s #du-in:ability
 

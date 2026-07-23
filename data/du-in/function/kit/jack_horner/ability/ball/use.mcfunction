@@ -5,7 +5,7 @@ execute if entity @s[tag=!empower] run effect give @a[tag=!ponderOrb,tag=pondere
 execute if entity @s[tag=empower] run effect give @a[tag=!ponderOrb,tag=pondered] glowing 5 2 true
 
 tag @a[tag=!ponderOrb,tag=pondered] add glowing
-playsound minecraft:jack_horner.orb hostile @a ~ ~ ~ 1 1
+playsound du-in:kit.jack_horner.orb hostile @a ~ ~ ~ 1 1
 tag @s remove ponderOrb
 
 effect give @s speed 3 2 true

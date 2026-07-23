@@ -3,7 +3,7 @@ execute as @e[type=skeleton,distance=0.05..4] run team join Insurgent @s
 execute as @a[tag=wildeHit] run function du-in:kit/nick/ability/team_hit
 
 particle minecraft:heart ~ ~1.5 ~ 2 2 2 0 25 force
-playsound minecraft:nick.hustle master @a ~ ~ ~ 100 1
+playsound du-in:kit.nick.hustle master @a ~ ~ ~ 100 1
 playsound du-in:sfx.ut.ability master @a ~ ~ ~ 100 0.95
 
 effect give @s minecraft:speed 2 2 true

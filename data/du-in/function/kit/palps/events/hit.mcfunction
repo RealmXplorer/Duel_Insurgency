@@ -1,1 +1,1 @@
-playsound minecraft:palpatine.voice voice @a ~ ~ ~ 2 1 1
+playsound du-in:kit.palps.hit voice @a ~ ~ ~ 2 1 1

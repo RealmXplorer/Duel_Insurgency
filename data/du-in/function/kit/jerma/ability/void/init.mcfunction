@@ -8,7 +8,7 @@ scoreboard players remove @a[scores={gonersKilled=1..}] gonersKilled 1
 function du-in:void/goner/kill_goner
 
 playsound minecraft:ambient.cave master @a ~ ~ ~ 100 1 1
-playsound minecraft:jerma.peep master @a ~ ~ ~ 100 1 1
+playsound du-in:kit.jerma.peep master @a ~ ~ ~ 100 1 1
 
 clear @s #du-in:ability
 xp set @s[tag=!stolen] 600 levels
