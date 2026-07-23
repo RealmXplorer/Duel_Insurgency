@@ -1496,6 +1496,317 @@
 		]
 	},
 
+	"kit.runza.hit": {
+		"sounds": [
+			{"name":"du-in:kit/runza/hit1"},
+			{"name":"du-in:kit/runza/hit2"},
+			{"name":"du-in:kit/runza/hit3"}],
+			"subtitle": "Runza Rex hurt"
+	},
+	"kit.runza.death": {
+		"sounds": [
+			{"name":"du-in:kit/runza/death"}],
+			"subtitle": "Runza Rex dies"
+	},
+	"kit.runza.ability": {
+		"sounds": [
+			{"name":"du-in:kit/runza/ability1"},
+			{"name":"du-in:kit/runza/ability2"}],
+			"subtitle": "Runza Rex activates ability"
+	},
+	"kit.runza.line.kill": {
+		"sounds": [
+			{"name":"du-in:kit/runza/line/kill1"},
+			{"name":"du-in:kit/runza/line/kill2"},
+			{"name":"du-in:kit/runza/line/kill3"}],
+			"subtitle": "Runza Rex kills a player"
+	},
+
+	"kit.saac.hit": {
+		"sounds": [
+			{"name":"du-in:kit/saac/hit"},
+			{"name":"du-in:kit/saac/hit2"},
+			{"name":"du-in:kit/saac/hit3"},
+			{"name":"du-in:kit/saac/hit4"}],
+		"subtitle": "Saac hurt"
+	},
+	"kit.saac.ability": {
+		"sounds": [
+			{"name":"du-in:kit/saac/ability"},
+			{"name":"du-in:kit/saac/ability3"},
+			{"name":"du-in:kit/saac/ability4"}],
+			"subtitle": "Saac activates ability"
+	},
+	"kit.saac.ability2": {
+		"sounds": [
+			{"name":"du-in:kit/saac/ability2"}],
+		"subtitle": "Saac selected"
+	},
+	"kit.saac.death": {
+		"sounds": [
+			{"name":"du-in:kit/saac/death"},
+			{"name":"du-in:kit/saac/death2"},
+			{"name":"du-in:kit/saac/death3"}],
+			"subtitle": "Saac dies"
+	},
+	"kit.saac.jump": {
+		"sounds": [
+			{"name":"du-in:kit/saac/jump"},
+			{"name":"du-in:kit/saac/jump2"},
+			{"name":"du-in:kit/saac/jump3"}],
+			"subtitle": "Saac jumps"
+	},
+	"kit.saac.ready": {
+		"sounds": [
+			{"name":"du-in:kit/saac/ready"},
+			{"name":"du-in:kit/saac/ready2"},
+			{"name":"du-in:kit/saac/ready3"},
+			{"name":"du-in:kit/saac/ready4"}],
+			"subtitle": "Saac has money"
+	},
+	"kit.saac.line.kill": {
+		"sounds": [
+			{"name":"du-in:kit/saac/line/kill1"},
+			{"name":"du-in:kit/saac/line/kill2"},
+			{"name":"du-in:kit/saac/line/kill3"}],
+			"subtitle": "Saac kills player"
+	},
+	"kit.saac.line.ks": {
+		"sounds": [
+			{"name":"du-in:kit/saac/line/ks"}],
+			"subtitle": "Saac gets killstreak"
+	},
+	"kit.saac.line.low": {
+		"sounds": [
+			{"name":"du-in:kit/saac/line/lowkill1"},
+			{"name":"du-in:kit/saac/line/lowkill2"},
+			{"name":"du-in:kit/saac/line/lowkill3"}],
+			"subtitle": "Saac kills player"
+	},
+	"kit.saac.line.win": {
+		"sounds": [
+			{"name":"du-in:kit/saac/line/win"},
+			{"name":"du-in:kit/saac/line/win2"},
+			{"name":"du-in:kit/saac/line/win3"}],
+			"subtitle": "Saac wins"
+	},
+	"kit.saac.line.orangeks": {
+		"sounds": [
+			{"name":"du-in:kit/saac/line/orangeks"}],
+			"subtitle": "Saac drinks orange kickstart"
+	},
+	"kit.saac.line.blueks": {
+		"sounds": [
+			{"name":"du-in:kit/saac/line/blueks"}],
+			"subtitle": "Saac drinks blue kickstart"
+	},
+	"kit.saac.line.redks": {
+		"sounds": [
+			{"name":"du-in:kit/saac/line/redks"}],
+			"subtitle": "Saac drinks red kickstart"
+	},
+	"kit.saac.line.yellowks": {
+		"sounds": [
+			{"name":"du-in:kit/saac/line/yellowks"}],
+			"subtitle": "Saac drinks yellow kickstart"
+	},
+	"kit.saac.line.break": {
+		"sounds": [
+			{"name":"du-in:kit/saac/line/break"}],
+			"subtitle": "Saac breaks phone"
+	},
+	"kit.saac.line.fix": {
+		"sounds": [
+			{"name":"du-in:kit/saac/line/fix"}],
+			"subtitle": "Saac fixes phone"
+	},
+	"kit.saac.ready2": {
+		"sounds": [
+			{"name":"du-in:kit/saac/saacmoney"}],
+			"subtitle": "Saac gets money"
+	},
+	"kit.saac.robbed": {
+		"sounds": [
+			{"name":"du-in:kit/saac/interact/steal1"},
+			{"name":"du-in:kit/saac/interact/steal2"},
+			{"name":"du-in:kit/saac/interact/steal3"},
+			{"name":"du-in:kit/saac/interact/steal4"}],
+			"subtitle": "Saac robbed"
+	},
+	"kit.saac.sus": {
+		"sounds": [
+			{"name":"du-in:kit/saac/interact/sus"}],
+			"subtitle": "Saac meets Impostor"
+	},
+	"kit.saac.runza": {
+		"sounds": [
+			{"name":"du-in:kit/saac/interact/runza"}],
+			"subtitle": "Saac meets Runza Rex"
+	},
+	
+	"kit.sans.hit": {
+		"sounds": [
+		{"name": "du-in:kit/sans/voice","pitch": 1},
+		{"name": "du-in:kit/sans/voice","pitch": 0.9},
+		{"name": "du-in:kit/sans/voice","pitch": 1.1},
+		{"name": "du-in:kit/sans/voice2","pitch": 1},
+		{"name": "du-in:kit/sans/voice2","pitch": 0.9},
+		{"name": "du-in:kit/sans/voice2","pitch": 1.1}],
+		"subtitle": "Sans hurt"
+	},
+		"kit.sans.sans": {
+		"sounds": [
+			{"name":"du-in:kit/sans/sans"}],
+			"subtitle": "Sans kills player"
+	},
+
+	"kit.saul.hit": {
+		"sounds": [
+		{"name": "du-in:kit/saul/hit1","pitch": 1},
+		{"name": "du-in:kit/saul/hit1","pitch": 0.9},
+		{"name": "du-in:kit/saul/hit1","pitch": 1.1},
+		{"name": "du-in:kit/saul/hit2","pitch": 1},
+		{"name": "du-in:kit/saul/hit2","pitch": 0.9},
+		{"name": "du-in:kit/saul/hit2","pitch": 1.1}],
+		"subtitle": "Saul hurt"
+	},
+	"kit.saul.win": {
+		"sounds": [
+			{"name":"du-in:kit/saul/win"}],
+			"subtitle": "Saul wins"
+	},
+
+	"kit.spamton.hit": {
+		"sounds": [
+		{"name": "du-in:kit/spamton/hit","pitch": 1},
+		{"name": "du-in:kit/spamton/hit","pitch": 0.9},
+		{"name": "du-in:kit/spamton/hit","pitch": 1.1},
+		{"name": "du-in:kit/spamton/hit2","pitch": 1},
+		{"name": "du-in:kit/spamton/hit2","pitch": 0.9},
+		{"name": "du-in:kit/spamton/hit2","pitch": 1.1}],
+		"subtitle": "Spamton hurt"
+	},
+	"kit.spamton.laugh": {
+		"sounds": [
+			{"name":"du-in:kit/spamton/laugh"}],
+			"subtitle": "Spamton laughs"
+	},
+
+	"kit.springtrap.jumpscare": {
+		"sounds": [
+			{"name":"du-in:kit/springtrap/jumpscare"}],
+			"subtitle": "Springtrap screams"
+	},
+	"kit.springtrap.line": {
+		"sounds": [
+			{"name":"du-in:kit/springtrap/line"}],
+			"subtitle": "Springtrap kills players"
+	},
+	"kit.springtrap.death": {
+		"sounds": [
+			{"name":"du-in:kit/springtrap/death"}],
+			"subtitle": "Springtrap dies"
+	},
+
+	"kit.sus.kill": {
+		"sounds": [
+			{"name":"du-in:kit/sus/kill"}],
+			"subtitle": "Impostor kills player"
+	},
+	"kit.sus.vent": {
+		"sounds": [
+			{"name":"du-in:kit/sus/vent"}],
+			"subtitle": "Player vents"
+	},
+	"kit.sus.emerg": {
+		"sounds": [
+			{"name":"du-in:kit/sus/emerg"}],
+			"subtitle": "Impostor calls meeting"
+	},
+	"kit.sus.victory": {
+		"sounds": [
+			{"name":"du-in:kit/sus/victory"}],
+			"subtitle": "Impostor wins"
+	},
+	"kit.sus.pick": {
+		"sounds": [
+			{"name":"du-in:kit/sus/pick"}],
+			"subtitle": "Impostor selected"
+	},
+	"kit.sus.step": {
+		"sounds": [
+			{"name":"du-in:kit/sus/walk"}],
+			"subtitle": "Impostor walks"
+	},
+	"kit.sus.line.kill": {
+		"sounds": [
+			{"name":"du-in:kit/sus/line/kill1"},
+			{"name":"du-in:kit/sus/line/kill2"}],
+			"subtitle": "Impostor kills player"
+	},
+	"kit.sus.line.ks": {
+		"sounds": [
+			{"name":"du-in:kit/sus/line/killstreak"}],
+			"subtitle": "Impostor gets killstreak"
+	},
+
+	"kit.susie.hit": {
+		"sounds": [
+		{"name": "du-in:kit/susie/voice","pitch": 1},
+		{"name": "du-in:kit/susie/voice","pitch": 0.9},
+		{"name": "du-in:kit/susie/voice","pitch": 1.1},
+		{"name": "du-in:kit/susie/voice2","pitch": 1},
+		{"name": "du-in:kit/susie/voice2","pitch": 0.9},
+		{"name": "du-in:kit/susie/voice2","pitch": 1.1}],
+		"subtitle": "Susie hurt"
+	},
+	"kit.susie.laugh": {
+		"sounds": [
+			{"name":"du-in:kit/susie/laugh"}],
+			"subtitle": "Susie laughs"
+	},
+	"kit.susie.rude_buster.shoot": {
+		"sounds": [
+			{"name":"du-in:kit/susie/rude_shoot"}],
+			"subtitle": "Susie throws Rude Buster"
+	},
+	"kit.susie.rude_buster.hit": {
+		"sounds": [
+			{"name":"du-in:kit/susie/rude_hit"}],
+			"subtitle": "Rude Buster hits player"
+	},
+
+	"kit.vader.hit": {
+		"sounds": [
+		{"name": "du-in:kit/vader/voice","pitch": 1},
+		{"name": "du-in:kit/vader/voice","pitch": 0.9},
+		{"name": "du-in:kit/vader/voice","pitch": 1.1},
+		{"name": "du-in:kit/vader/voice2","pitch": 1},
+		{"name": "du-in:kit/vader/voice2","pitch": 0.9},
+		{"name": "du-in:kit/vader/voice2","pitch": 1.1}],
+		"subtitle": "Darth Vader hurt"
+	},
+	"kit.vader.breathe": {
+		"sounds": [
+			{"name":"du-in:kit/vader/breathe"}],
+			"subtitle": "Darth Vader breathes"
+	},
+	"kit.vader.hurtbreathe": {
+		"sounds": [
+			{"name":"du-in:kit/vader/hurtbreathe"}],
+			"subtitle": "Darth Vader breathes hurt"
+	},
+	"kit.vader.choke": {
+		"sounds": [
+			{"name":"du-in:kit/vader/choke"}],
+			"subtitle": "Darth Vader chokes player"
+	},
+	"kit.vader.hold": {
+		"sounds": [
+			{"name":"du-in:kit/vader/hold"}],
+			"subtitle": "Force choke hum"
+	},
+
 	"kit.willo.revolver_shoot": {
 		"sounds": [
 		{"name":"du-in:kit/willo/shoot","pitch": 1},
@@ -1519,5 +1830,33 @@
 		{"name":"du-in:kit/willo/whizz2"},
 		{"name":"du-in:kit/willo/whizz3"}],
 		"subtitle": "Bullet whizzes"
+	},
+
+	"kit.yharim.rage.ready": {
+		"sounds": [
+			{"name":"du-in:kit/yharim/charged"}],
+			"subtitle": "Rage meter filled"
+	},
+	"kit.yharim.rage.use": {
+		"sounds": [
+			{"name":"du-in:kit/yharim/rage"}],
+			"subtitle": "Rage meter activates"
+	},
+		"kit.yoda.hit": {
+		"sounds": [
+		{"name": "du-in:kit/yoda/hit","pitch": 1},
+		{"name": "du-in:kit/yoda/hit","pitch": 0.9},
+		{"name": "du-in:kit/yoda/hit","pitch": 1.1}],
+		"subtitle": "Yoda hurt"
+	},
+	"kit.yoda.laugh": {
+		"sounds": [
+			{"name":"du-in:kit/yoda/laugh"}],
+			"subtitle": "Yoda laughs"
+	},
+	"kit.yoda.death": {
+		"sounds": [
+			{"name":"du-in:kit/yoda/death"}],
+			"subtitle": "Yoda dies"
 	}
 }

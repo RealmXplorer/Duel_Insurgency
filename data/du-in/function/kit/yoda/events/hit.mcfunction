@@ -1,2 +1,2 @@
-playsound minecraft:yoda.hit master @a ~ ~ ~ 2 1 1
+playsound du-in:kit.yoda.hit master @a ~ ~ ~ 2 1 1
  

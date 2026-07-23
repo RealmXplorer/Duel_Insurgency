@@ -4,7 +4,7 @@ clear @s player_head[custom_data={du-in:'susieHead'}]
 scoreboard players enable @s info
 
 #Play sound
-playsound minecraft:susie.laugh master @s ~ ~ ~ 100 1
+playsound du-in:kit.susie.laugh master @s ~ ~ ~ 100 1
 
 #Announce kit pick
 tellraw @s [{text:"Selected the ",bold:true,color:gray},{text:"Susie ",bold:true,color:gold},{text:"class! ",bold:true,color:gray},{text:"(Click here for kit info!)",bold:false,color:white,"underlined":true,"click_event":{"action":"run_command","command":"/trigger info add 1"}}]

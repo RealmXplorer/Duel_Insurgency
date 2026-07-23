@@ -4,7 +4,7 @@ scoreboard players enable @s info
 clear @s player_head[custom_data={du-in:'vaderHead'}]
 
 #Play sound
-playsound minecraft:vader.voice master @s ~ ~ ~ 100 1
+playsound du-in:kit.vader.hit master @s ~ ~ ~ 100 1
 
 #Announce kit pick
 tellraw @s [{text:"Selected the ",bold:true,color:gray},{text:"Darth Vader ",bold:true,color:gold},{text:"class! ",bold:true,color:gray},{text:"(Click here for kit info!)",bold:false,color:white,"underlined":true,"click_event":{"action":"run_command","command":"/trigger info add 1"}}]

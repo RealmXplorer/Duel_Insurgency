@@ -1,5 +1,5 @@
-playsound minecraft:vader.choke master @a ~ ~ ~ 100 1
-playsound minecraft:vader.hold master @a ~ ~ ~ 100 1.5
+playsound du-in:kit.vader.choke master @a ~ ~ ~ 100 1
+playsound du-in:kit.vader.hold master @a ~ ~ ~ 100 1.5
 playsound du-in:sfx.ut.ability master @a ~ ~ ~ .5 .95
 
 clear @s #du-in:ability

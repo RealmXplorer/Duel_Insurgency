@@ -11,7 +11,7 @@ execute if entity @s[scores={gastSkin=1}] run playsound du-in:kit.ghost.go maste
 execute if entity @s[scores={gastSkin=1}] run playsound du-in:kit.ghost.away master @a ~ ~ ~ 100 1
 
 #Spamton
-execute if entity @s[scores={gastSkin=2}] run playsound minecraft:spamton.laugh master @a ~ ~ ~ 10 1
+execute if entity @s[scores={gastSkin=2}] run playsound du-in:kit.spamton.laugh master @a ~ ~ ~ 10 1
 
 #Goner Mouth
 execute if entity @s[scores={gastSkin=3}] run playsound du-in:goner.mouth.spawn master @a ~ ~ ~ 10 1

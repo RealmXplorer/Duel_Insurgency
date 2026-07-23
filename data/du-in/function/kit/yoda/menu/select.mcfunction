@@ -4,7 +4,7 @@ scoreboard players enable @s info
 clear @s player_head[custom_data={du-in:'yodaHead'}]
 
 #Play sound
-playsound minecraft:yoda.hit master @s ~ ~ ~ 100 1
+playsound du-in:kit.yoda.hit master @s ~ ~ ~ 100 1
 
 #Set kit score to match kit
 scoreboard players set @s kit 29

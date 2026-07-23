@@ -1,2 +1,2 @@
 #Saul Win music
-playsound minecraft:saul.win record @a[tag=!musicOff,tag=!lobby] ~ ~ ~ 100 1
+playsound du-in:kit.saul.win record @a[tag=!musicOff,tag=!lobby] ~ ~ ~ 100 1

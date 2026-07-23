@@ -1,1 +1,1 @@
-playsound minecraft:runza.voice master @a ~ ~ ~ 2 1 1
+playsound du-in:kit.runza.hit master @a ~ ~ ~ 2 1 1

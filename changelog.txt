@@ -1,5 +1,8 @@
 ***7/11/26 - ??/??/??:***
 ***Version 1.5.1:***
+*Additions*
+-Added subtitles to all gameplay audio.
+
 *Changes*
 -Updated map to 26.3.
 -There are no more I-frames.
@@ -17,7 +20,7 @@
 -Moved Runza eating test to an advancement.
 -Renamed "oldPack" tag for beta music to "beta".
 -Renamed "music/ingame/oldpack/" and "music/lobby/oldpack/" to "music/ingame/beta/" and "music/lobby/beta/".
--Renamed and moved music and ambient sources from "minecraft:" to "du-in:".
+-Renamed and moved audio sources from "minecraft:" to "du-in:".
 -Renamed several music files.
     -"ffa" and "ffaend" are now "classic" and "classic_end" (this goes for Beta and Legacy variants)
     -"dm" and "dmend" are now "deathmatch" and "deathmatch_end"
@@ -35,9 +38,11 @@
     -"ambient.caveamb" is now "ambient.cave" (possible now that is uses "du-in:" namespacing)
     -"ambient.jungleamb" is now "ambient.jungle"
     -"ambient.nightamb" is now "ambient.night"
+-Renamed all kit sound effects to be under "du-in:kit.[kit].[sound]".
 
 *Resourcepack Changes*
--Moved all music to "du-in:sounds" folder and organized it much better.
+-Moved all Duel-related audio to "du-in:sounds" folder and organized it much better.
+-All audio now uses the object case in the sounds.json and all gameplay audio is now subtitled.
 -All music and ambient tracks are now streamed.
 -Renamed music to be more consistent and easier to keep track of.
 -Moved kit-specific music tracks from the kit files to the new "du-in:music/" file
@@ -51,6 +56,10 @@
     "nightamb" is now "night"
     "jungleamb" is now "jungle"
     "caveamb" is now "cave"
+-All kit "hurt" sounds are now properly ".hit" instead of some being ".voice".
+-All kit sounds are now under "du-in:kit.[kitname].[sound]"
+-Renamed "minecraft:soundeffect." to "du-in:sfx.", and made proper subfolders.
+    -Some sounds from characters such as ralsei have been moved to the sfx folder.
 -Added Willo armor textures. (by nerbski)
 -Added Candy Corn texture. (by Realm_Xplorer)
 -Added Revolver sounds.

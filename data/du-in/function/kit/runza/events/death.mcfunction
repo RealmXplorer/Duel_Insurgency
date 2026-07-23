@@ -1,1 +1,1 @@
-playsound minecraft:runza.death master @a ~ ~ ~ 3 1
+playsound du-in:kit.runza.death master @a ~ ~ ~ 3 1

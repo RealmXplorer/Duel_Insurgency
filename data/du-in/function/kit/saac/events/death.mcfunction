@@ -1,1 +1,1 @@
-playsound minecraft:saac.death master @a ~ ~ ~ 3 1
+playsound du-in:kit.saac.death master @a ~ ~ ~ 3 1

@@ -8,7 +8,7 @@ tag @s[tag=!sabotaged] remove confusion
 effect give @s minecraft:resistance 3 0 true
 effect give @s minecraft:speed 3 1 true
 
-playsound minecraft:saac.ability master @a ~ ~ ~ 100 1
+playsound du-in:kit.saac.ability master @a ~ ~ ~ 100 1
 playsound minecraft:entity.zombie_villager.cure master @a ~ ~ ~ 100 2
 playsound minecraft:block.glass.break master @a ~ ~ ~ 100 .8
 playsound minecraft:entity.player.attack.sweep master @a ~ ~ ~ 100 1

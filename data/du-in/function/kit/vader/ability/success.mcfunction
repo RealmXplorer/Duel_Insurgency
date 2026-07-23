@@ -11,8 +11,8 @@ execute if entity @s[tag=sabotaged] run function du-in:kit/all/ability/sabotage/
 execute unless entity @a[tag=vaderHit] run function du-in:kit/all/ability/titles/team
 execute if entity @a[tag=vaderHit] run function du-in:kit/vader/ability/cooldown
 
-# playsound minecraft:vader.choke master @a ~ ~ ~ 100 1
-# playsound minecraft:vader.hold master @a ~ ~ ~ 100 1.5
+# playsound du-in:kit.vader.choke master @a ~ ~ ~ 100 1
+# playsound du-in:kit.vader.hold master @a ~ ~ ~ 100 1.5
 
 
 # clear @s minecraft:carrot_on_a_stick

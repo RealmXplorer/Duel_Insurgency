@@ -7,7 +7,7 @@ scoreboard players enable @s info
 clear @s player_head[custom_data={du-in:'susHead'}]
 
 #Play sound
-playsound minecraft:sus.pick master @s ~ ~ ~ 100 1
+playsound du-in:kit.sus.pick master @s ~ ~ ~ 100 1
 
 #Announce kit pick
 tellraw @s [{text:"Selected the ",bold:true,color:gray},{text:"The Impostor ",bold:true,color:gold},{text:"class!",bold:true,color:gray},{text:" (sus)",bold:false,color:gray,"italic":true},{text:" (Click here for kit info!)",bold:false,color:white,"underlined":true,"click_event":{"action":"run_command","command":"/trigger info add 1"}}]

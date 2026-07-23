@@ -1,2 +1,2 @@
 ##MAYBE COPYRIGHT
-playsound minecraft:saul.hit voice @a ~ ~ ~ 0.5 1
+playsound du-in:kit.saul.hit voice @a ~ ~ ~ 0.5 1

@@ -3,7 +3,7 @@ execute as @a[scores={kit=1002},tag=kitActions] at @s unless block ~ ~-1 ~ #du-i
 scoreboard players set @e[type=marker,tag=meetingSpot] impostTimer 30
 schedule function du-in:kit/impostor/ability/void/meeting 30t
 
-playsound minecraft:sus.emerg master @a ~ ~ ~ 2000 1
+playsound du-in:kit.sus.emerg master @a ~ ~ ~ 2000 1
 
 execute as @e[type=skeleton,tag=gonerThing] run tag @s add meeting
 

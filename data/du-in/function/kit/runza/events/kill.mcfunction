@@ -1,2 +1,2 @@
 execute if entity @s[tag=killMsg] run tellraw @a {selector:"@s",color:red,bold:false,extra:[{text:" tackled ",color:white,bold:false},{selector:"@a[scores={justdied=1}]",color:dark_red,bold:false}]}
-execute if entity @s[predicate=du-in:chance/thirty_chance] run playsound minecraft:runza.line.kill voice @a ~ ~ ~ 3100100 1 1
+execute if entity @s[predicate=du-in:chance/thirty_chance] run playsound du-in:kit.runza.line.kill voice @a ~ ~ ~ 3100100 1 1

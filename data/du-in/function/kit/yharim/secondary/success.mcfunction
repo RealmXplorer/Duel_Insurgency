@@ -1,5 +1,5 @@
 #Play sounds
-playsound minecraft:yharim.rage.use master @a ~ ~ ~ 1 1 1
+playsound du-in:kit.yharim.rage.use master @a ~ ~ ~ 1 1 1
 playsound du-in:sfx.ut.ability master @a ~ ~ ~ .25 1.05
 
 #Play Particles

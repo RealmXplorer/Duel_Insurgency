@@ -1,2 +1,2 @@
-execute if entity @s[scores={Health=11..}] run playsound minecraft:vader.breathe master @a ~ ~ ~ 0.3 1
-execute if entity @s[scores={Health=..10}] run playsound minecraft:vader.hurtbreathe master @a ~ ~ ~ 0.3 1
+execute if entity @s[scores={Health=11..}] run playsound du-in:kit.vader.breathe master @a ~ ~ ~ 0.3 1
+execute if entity @s[scores={Health=..10}] run playsound du-in:kit.vader.hurtbreathe master @a ~ ~ ~ 0.3 1

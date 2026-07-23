@@ -7,7 +7,7 @@ clear @s minecraft:green_dye
 playsound minecraft:block.chain.break master @a ~ ~ ~ 1 1.5
 
 #Play voiceline if kit is Saac (won't run for other kits in vendingMode)
-execute if entity @s[scores={kit=1000}] run playsound minecraft:saac.robbed master @a ~ ~ ~ 1 1
+execute if entity @s[scores={kit=1000}] run playsound du-in:kit.saac.robbed master @a ~ ~ ~ 1 1
 
 
 playsound minecraft:block.chain.break master @a ~ ~ ~ 1 2

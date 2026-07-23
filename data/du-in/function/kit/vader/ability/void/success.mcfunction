@@ -1,7 +1,7 @@
 effect give @e[type=skeleton,tag=gonerThing,distance=0.05..5] minecraft:levitation 2 0 true
 effect give @e[type=skeleton,tag=gonerThing,distance=0.05..5] minecraft:wither 2 7 true
-playsound minecraft:vader.choke master @a ~ ~ ~ 100 1
-playsound minecraft:vader.hold master @a ~ ~ ~ 100 1.5
+playsound du-in:kit.vader.choke master @a ~ ~ ~ 100 1
+playsound du-in:kit.vader.hold master @a ~ ~ ~ 100 1.5
 playsound du-in:sfx.ut.ability master @a ~ ~ ~ .5 .95
 clear @s #du-in:ability
 xp set @s[tag=!stolen] 320 levels
