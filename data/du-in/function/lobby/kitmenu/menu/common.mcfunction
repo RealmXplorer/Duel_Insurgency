@@ -21,5 +21,8 @@ execute unless items entity @s[scores={kitTheme=0..},tag=!playing] inventory.26 
 #To legendary
 execute unless items entity @s[scores={kitTheme=1..}] inventory.21 minecraft:carrot_on_a_stick run function du-in:lobby/kitmenu/menu/function/to_legend
 
+#Theme Displays
+execute unless items entity @s inventory.9 minecraft:carrot_on_a_stick run function du-in:lobby/kitmenu/menu/theme_display
+
 #Give info on character
 execute if entity @s[scores={info=1..}] run function du-in:lobby/kitmenu/select/info

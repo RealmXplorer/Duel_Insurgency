@@ -14,7 +14,7 @@ execute unless items entity @s inventory.1 minecraft:player_head run function du
 execute unless items entity @s inventory.23 minecraft:carrot_on_a_stick run function du-in:lobby/kitmenu/menu/function/from_legend
 
 #Add Legendary menu display icon
-execute unless items entity @s inventory.9 minecraft:carrot_on_a_stick run function du-in:lobby/kitmenu/menu/unlock/display
+#execute unless items entity @s inventory.9 minecraft:carrot_on_a_stick run function du-in:lobby/kitmenu/menu/display/ul
 
 #End function when all kits are listed
 execute if entity @s[tag=kitsListed] run tag @s remove kitsListed

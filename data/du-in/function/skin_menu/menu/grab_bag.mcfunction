@@ -17,7 +17,7 @@ execute unless items entity @s inventory.2 minecraft:player_head run function du
 execute unless items entity @s inventory.1 minecraft:player_head run function du-in:kit/springtrap/menu/skins/display
 
 #Add Grab Bag menu display icon
-execute unless items entity @s inventory.9 minecraft:carrot_on_a_stick run function du-in:lobby/kitmenu/menu/grabbag/display
+#execute unless items entity @s inventory.9 minecraft:carrot_on_a_stick run function du-in:skin_menu/menu/display/gb
 
 #End function when all kits are listed
 execute if entity @s[tag=skinsListed] run tag @s remove skinsListed

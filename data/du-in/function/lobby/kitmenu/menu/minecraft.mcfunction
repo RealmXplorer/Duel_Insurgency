@@ -12,7 +12,7 @@ execute unless items entity @s inventory.2 minecraft:player_head run function du
 execute unless items entity @s inventory.1 minecraft:player_head run function du-in:kit/villager/menu/display
 
 #Add Minecraft menu display icon
-execute unless items entity @s inventory.9 minecraft:carrot_on_a_stick run function du-in:lobby/kitmenu/menu/minecraft/display
+#execute unless items entity @s inventory.9 minecraft:carrot_on_a_stick run function du-in:lobby/kitmenu/menu/display/mc
 
 #End function when all kits are listed
 execute if entity @s[tag=kitsListed] run tag @s remove kitsListed

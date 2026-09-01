@@ -19,3 +19,6 @@ execute unless items entity @s inventory.26 minecraft:carrot_on_a_stick run func
 
 #To legendary
 execute unless items entity @s[scores={skinTheme=1..}] inventory.21 minecraft:carrot_on_a_stick run function du-in:lobby/kitmenu/menu/function/to_legend
+
+#Theme Displays
+execute unless items entity @s inventory.9 minecraft:carrot_on_a_stick run function du-in:lobby/kitmenu/menu/theme_display
