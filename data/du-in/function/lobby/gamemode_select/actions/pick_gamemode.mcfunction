@@ -26,6 +26,7 @@ tag @a remove gameSettings
 tag @a remove parkour
 tag @a remove credits
 tag @a remove subLobby
+tag @a remove skinMenu
 
 #Clear inventories
 clear @a
