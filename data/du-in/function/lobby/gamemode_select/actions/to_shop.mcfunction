@@ -35,6 +35,8 @@ title @s title {text:"",color:red,bold:true}
 title @s subtitle {text:"",color:red,bold:true}
 
 #Initiate Skin menu
+scoreboard players set @s skinTheme 1
+scoreboard players set @s skinList 8
 tag @s add skinsListed
 function du-in:lobby/scheduled/shop
 playsound minecraft:entity.ender_dragon.flap master @s ~ ~ ~ 1 1.5
