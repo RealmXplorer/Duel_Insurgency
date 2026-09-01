@@ -1,0 +1,4 @@
+clear @s carrot_on_a_stick[custom_data={du-in:'skinDisplayHead'}]
+item replace entity @s[tag=shop] inventory.26 with minecraft:carrot_on_a_stick[custom_data={du-in:'skinDisplayHead'},custom_name={text:"Skins",color:gold,bold:true},item_model="du-in:lobby/crown"] 1
+
+execute if entity @s[scores={kitUseThrow=1..}] run function du-in:other/clear_ground_items

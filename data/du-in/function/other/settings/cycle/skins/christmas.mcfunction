@@ -13,10 +13,10 @@ scoreboard players set @s[tag=flowSkins] flowSkin 0
 scoreboard players set @s[tag=clairenSkins] clairenSkin 0
 
 #Execute display function
-execute if entity @s[tag=nickSkins] run function du-in:skins/skin_menu/nick
-execute if entity @s[tag=sansSkins] run function du-in:skins/skin_menu/sans
-execute if entity @s[tag=golemSkins] run function du-in:skins/skin_menu/golem
-execute if entity @s[tag=creepSkins] run function du-in:skins/skin_menu/creeper
-execute if entity @s[tag=flowSkins] run function du-in:skins/skin_menu/flowey
-execute if entity @s[tag=clairenSkins] run function du-in:skins/skin_menu/clairen
+execute if entity @s[tag=nickSkins] run function du-in:kit/nick/menu/skins/display
+execute if entity @s[tag=sansSkins] run function du-in:kit/sans/menu/skins/display
+execute if entity @s[tag=golemSkins] run function du-in:kit/golem/menu/skins/display
+execute if entity @s[tag=creepSkins] run function du-in:kit/creeper/menu/skins/display
+execute if entity @s[tag=flowSkins] run function du-in:kit/flowey/menu/skins/display
+execute if entity @s[tag=clairenSkins] run function du-in:kit/clairen/menu/skins/select
 

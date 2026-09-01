@@ -1,0 +1,6 @@
+scoreboard players add @s skinTheme 1
+function du-in:lobby/reset/item
+playsound minecraft:ui.button.click master @s ~ ~ ~
+clear @s
+tag @s add skinsListed
+execute if entity @s[scores={thrownBarrier=1..}] run function du-in:other/clear_ground_items

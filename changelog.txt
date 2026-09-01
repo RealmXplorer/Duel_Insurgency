@@ -39,6 +39,7 @@
     -"ambient.jungleamb" is now "ambient.jungle"
     -"ambient.nightamb" is now "ambient.night"
 -Renamed all kit sound effects to be under "du-in:kit.[kit].[sound]".
+-All skin menu functions now run through individual kits' "du-in:kit/[kit]/menu/skins/" folder.
 
 *Resourcepack Changes*
 -Moved all Duel-related audio to "du-in:sounds" folder and organized it much better.

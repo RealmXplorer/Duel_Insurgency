@@ -1,6 +1,6 @@
 scoreboard players remove @s[tag=!audience] Diamonds 5
 execute store result score @s drinkType run random value 1..7
-execute unless entity @s[tag=audience] run function du-in:skins/skin_menu/actions/purchase_sound
+execute unless entity @s[tag=audience] run function du-in:skin_menu/actions/buy_sound
 execute if entity @s[tag=audience] run playsound du-in:sfx.vending.dispense player @a ~ ~ ~ 1 1 1
 
 #Food#

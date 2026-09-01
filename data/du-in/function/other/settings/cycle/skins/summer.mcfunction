@@ -13,8 +13,8 @@ scoreboard players set @s[tag=springSkins] springSkin 3
 scoreboard players set @s[tag=kyloSkins] kyloSkin 0
 
 #Execute display function
-execute if entity @s[tag=nickSkins] run function du-in:skins/skin_menu/nick
-execute if entity @s[tag=playSkins] run function du-in:skins/skin_menu/player
-execute if entity @s[tag=zombSkins] run function du-in:skins/skin_menu/zombie
-execute if entity @s[tag=springSkins] run function du-in:skins/skin_menu/springtrap
-execute if entity @s[tag=kyloSkins] run function du-in:skins/skin_menu/kylo
+execute if entity @s[tag=nickSkins] run function du-in:kit/nick/menu/skins/display
+execute if entity @s[tag=playSkins] run function du-in:kit/player/menu/skins/display
+execute if entity @s[tag=zombSkins] run function du-in:kit/zombie/menu/skins/display
+execute if entity @s[tag=springSkins] run function du-in:kit/springtrap/menu/skins/display
+execute if entity @s[tag=kyloSkins] run function du-in:kit/kylo/menu/skins/display

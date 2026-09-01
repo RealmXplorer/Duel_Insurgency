@@ -10,9 +10,13 @@ tag @s remove givenSpectate
 tag @s remove givenLegendFrom
 tag @s remove givenLegendTo
 tag @s remove givenHideSkins
-tag @s remove givenDefault
+tag @s remove givenPreset
 tag @s remove givenRandom
 tag @s remove givenVending
 tag @s remove givenTimed
 tag @s remove givenSort
 tag @s remove givenClear
+tag @s remove givenSkinLegendFrom
+tag @s remove givenSkinLegendTo
+tag @s remove givenSkinPrev
+tag @s remove givenSkinNext

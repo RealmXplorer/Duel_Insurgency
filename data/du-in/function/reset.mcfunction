@@ -24,7 +24,7 @@ tag @a remove subLobby
 tag @a remove vendingMachine
 tag @a remove voidSpect
 
-execute as @a[tag=randomSkins] run function du-in:skins/random
+execute as @a[tag=randomSkins] run function du-in:skin_menu/actions/random
 
 execute as @a run function du-in:storage/reset
 
