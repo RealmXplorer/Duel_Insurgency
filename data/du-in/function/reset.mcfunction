@@ -379,6 +379,7 @@ tag @a remove ready
 tag @a remove kitMenu
 tag @a remove kitsListed
 tag @a remove teamPicked
+tag @a remove skinMenu
 function du-in:lobby/reset/item
 
 execute as @a[tag=!timeFree] run function du-in:other/stats
