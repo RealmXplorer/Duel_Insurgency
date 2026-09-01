@@ -31,5 +31,7 @@ tag @s remove subLobby
 clear @s
 function du-in:lobby/scheduled/gamemode_select
 
+tag @s remove skinMenu
+
 #Play sound
 playsound minecraft:entity.ender_dragon.flap master @s ~ ~ ~ 1 1.5
