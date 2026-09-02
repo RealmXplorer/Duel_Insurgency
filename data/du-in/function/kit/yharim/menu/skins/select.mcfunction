@@ -1,4 +1,4 @@
-clear @s player_head[custom_data={du-in:'spiderHead'}]
+clear @s player_head[custom_data={du-in:'yharimHead'}]
 function du-in:skin_menu/actions/invalid_skin
 
 # scoreboard players add @s zombSkin 1

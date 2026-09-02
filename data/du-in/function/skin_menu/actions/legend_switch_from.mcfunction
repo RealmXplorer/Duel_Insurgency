@@ -4,4 +4,5 @@ playsound minecraft:ui.button.click master @s ~ ~ ~
 playsound minecraft:block.amethyst_block.step master @s ~ ~ ~ 2 .5
 clear @s
 scoreboard players set @s skinList 8
+function du-in:lobby/scheduled/shop
 tag @s add skinsListed
