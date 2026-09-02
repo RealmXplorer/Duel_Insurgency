@@ -1,11 +1,12 @@
 ***7/11/26 - ??/??/??:***
-***Version 1.5.1:***
+***Version 1.6 - The Last Autumn:***
 *Additions*
 -Added subtitles to all gameplay audio.
 
 *Changes*
 -Updated map to 26.3.
 -There are no more I-frames.
+-Skin menu is now organized the same as the kit menu.
 -Harvest now uses the Dappled Forest biome, and features Poplar trees.
 -Beds can no longer be slept in.
 -Signs on San Ricardo are now properly waxed.
