@@ -12,7 +12,7 @@ tag @s remove voidOut
 scoreboard players reset @s killIngame
 scoreboard players reset @s kothTimer
 
-execute if entity @a[tag=partyLeader,tag=lobby,tag=!subLobby] run tp @s @a[tag=partyLeader,limit=1]
+execute if entity @a[tag=partyLeader,tag=lobby,tag=!subLobby,scores={lobby=0..}] run tp @s @a[tag=partyLeader,limit=1]
 execute if entity @a[tag=partyLeader,tag=lobby,tag=subLobby] run tp @s -999 13 517 -90 0
 
 

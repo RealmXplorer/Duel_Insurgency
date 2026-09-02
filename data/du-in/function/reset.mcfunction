@@ -425,3 +425,5 @@ stopsound @a ambient
 execute if score #main pylonsDestroyed matches 3.. run function du-in:void/lobby_amb
 #execute unless entity @a[tag=partyLeader,tag=specialEvent] run function du-in:lobby/scheduled/gamemode_select
 function du-in:lobby/scheduled/gamemode_select
+
+scoreboard players reset @a Object.map.return

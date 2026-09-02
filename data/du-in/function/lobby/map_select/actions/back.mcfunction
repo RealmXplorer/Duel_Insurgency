@@ -1,7 +1,6 @@
 #This function returns players to Gamemode select from map select.
-
+tag @a[scores={Object.map.return=1},predicate=du-in:chance/low_chance] add Player.accept
 scoreboard players add @a[tag=partyLeader] Object.map.return 1
-tag @a[scores={Object.map.return=1}] add Player.accept
 
 #Reset map vote to reset vote displays
 scoreboard players reset @a mapVote
