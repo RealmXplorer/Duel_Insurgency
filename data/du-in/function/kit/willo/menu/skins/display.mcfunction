@@ -1,7 +1,7 @@
 #Functionality
 execute if entity @s[scores={skinList=..0}] run function du-in:kit/willo/menu/skins/select
 
-execute unless score #main pylonsDestroyed matches 3.. run item replace entity @s inventory.12 with minecraft:player_head[custom_data={du-in:'willoHead'},custom_name={text:"Willo Skins",color:white,bold:true,italic:false},lore=[{text:"None Available!",color:red,bold:true,"italic":true}],profile={id:[I;1468365184,-1779283512,-1591494131,727618947],name:"",properties:[{name:"textures",value:"eyJ0ZXh0dXJlcyI6eyJTS0lOIjp7InVybCI6Imh0dHA6Ly90ZXh0dXJlcy5taW5lY3JhZnQubmV0L3RleHR1cmUvZjViMzZjNmYwMTMzYmVhMzgwY2NmYWE0MGJkMDlkM2IwNGFiN2Q3NWRhZmViNzFiMzNmM2ZhMThkNmU0OWJiMCJ9fX0="}]}] 1
+execute unless score #main pylonsDestroyed matches 3.. run item replace entity @s inventory.12 with minecraft:player_head[custom_data={du-in:'willoHead'},custom_name={text:"Willo Skins",color:white,bold:true,italic:false},lore=[{text:"None Available!",color:red,bold:true,"italic":true}],profile={properties:[{name:"textures",value:"eyJ0ZXh0dXJlcyI6eyJTS0lOIjp7InVybCI6Imh0dHA6Ly90ZXh0dXJlcy5taW5lY3JhZnQubmV0L3RleHR1cmUvMTkxOWQxNTk0YmY4MDlkYjdiNDRiMzc4MmJmOTBhNjlmNDQ5YTg3Y2U1ZDE4Y2I0MGViNjUzZmRlYzI3MjIifX19"}]}] 1
 
 
 # execute if entity @s[scores={skinList=..0},tag=willoSkins] run function du-in:kit/willo/menu/skins/select
