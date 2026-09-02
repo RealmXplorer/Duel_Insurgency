@@ -1,5 +1,8 @@
 #This function returns players to Gamemode select from map select.
 
+scoreboard players add @a[tag=partyLeader] Object.map.return 1
+tag @a[scores={Object.map.return=1}] add Player.accept
+
 #Reset map vote to reset vote displays
 scoreboard players reset @a mapVote
 execute as @e[type=marker,tag=mapVote] at @s run setblock ~ ~-1 ~ minecraft:red_concrete destroy
@@ -35,7 +38,7 @@ team join lobby @a
 execute as @a run function du-in:lobby/reset/item
 
 #Teleport players
-tp @a -999 13 517 -90 0
+tp @a[tag=!Player.accept] -999 13 517 -90 0
 
 #Resets readied player count
 scoreboard players set #main kitOnline 0
@@ -66,7 +69,8 @@ clear @a
 
 #Set personal and global lobby score to 1
 scoreboard players set #main lobby 1
-scoreboard players set @a lobby 1
+scoreboard players set @a[tag=!Player.accept] lobby 1
+scoreboard players set @a[tag=Player.accept] lobby -1
 
 #Reset map countdown and hide bossbar
 scoreboard players set #main mapCountdown 300
@@ -92,9 +96,11 @@ scoreboard players set @a kitList 8
 #Remove tags
 tag @a remove sus
 #Sets title
-title @a times 0 60 0
-title @a title {text:"",color:red,bold:true}
-title @a subtitle {text:"Open inventory for more options!",color:red,bold:true}
-title @a actionbar {text:"Open inventory for more options!",color:red,bold:true}
+title @a[tag=!Player.accept] times 0 60 0
+title @a[tag=!Player.accept] title {text:"",color:red,bold:true}
+title @a[tag=!Player.accept] subtitle {text:"Open inventory for more options!",color:red,bold:true}
+title @a[tag=!Player.accept] actionbar {text:"Open inventory for more options!",color:red,bold:true}
 function du-in:lobby/scheduled/gamemode_select
-execute at @a[tag=partyLeader] run playsound minecraft:entity.ender_dragon.flap master @a ~ ~ ~ 1 1.5
+execute at @a[tag=partyLeader] run playsound minecraft:entity.ender_dragon.flap master @a[tag=!Player.accept] ~ ~ ~ 1 1.5
+
+execute as @a[tag=Player.accept] run function du-in:zz_nowhere/arrival

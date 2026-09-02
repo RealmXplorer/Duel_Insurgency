@@ -443,3 +443,7 @@ data modify storage du-in:zootopia1 kit set value {"name":"nick","num":23,"group
 data modify storage du-in:zootopia2 kit set value {"name":"judy","num":35,"group":"zootopia",rank:2,slot:2}
 data modify storage du-in:zootopia3 kit set value {"name":"bogo","num":38,"group":"zootopia",rank:3,slot:3}
 data modify storage du-in:zootopia4 kit set value {"name":"pawbert","num":40,"group":"zootopia",rank:4,slot:4}
+
+scoreboard objectives add Object.drop.null minecraft.dropped:minecraft.string
+scoreboard objectives add Object.map.return dummy
+scoreboard objectives add Time.add dummy

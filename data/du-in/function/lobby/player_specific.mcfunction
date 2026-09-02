@@ -13,3 +13,5 @@
         
     # Map Select Functions #
         execute if entity @s[scores={lobby=2}] run function du-in:lobby/map_select
+
+        execute if entity @s[scores={lobby=-1},tag=!subLobby] run function du-in:zz_nowhere/the_place
