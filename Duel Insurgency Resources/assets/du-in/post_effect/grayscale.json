@@ -1,0 +1,17 @@
+{
+  "targets": [
+    "minecraft:main"
+  ],
+  "passes": [
+    {
+      "program": "du-in:grayscale",
+      "inputs": [
+        {
+          "sampler_name": "In",
+          "target": "minecraft:main"
+        }
+      ],
+      "output": "minecraft:main"
+    }
+  ]
+}
