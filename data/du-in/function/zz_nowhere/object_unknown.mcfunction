@@ -1,4 +1,5 @@
 tellraw @s {text:"Exception in thread \"main\" java.io.FileNotFoundException: Duel_Insurgency\\dimensions\\minecraft\\overworld\\region\\x_201_z_-12.txt (The system cannot find the file specified)"}
+clear @s
 
 tp @s -999 13 517 -90 0
 
