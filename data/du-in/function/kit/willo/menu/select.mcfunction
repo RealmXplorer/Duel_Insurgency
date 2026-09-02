@@ -8,4 +8,7 @@ $data modify storage du-in:player$(current) kit set value {"kit":"willo"}
 tellraw @s [{text:"Selected the ",bold:true,color:gray},{text:"Willo ",bold:true,color:gold},{text:"class! ",bold:true,color:gray},{text:"(Click here for kit info!)",bold:false,color:white,"underlined":true,"click_event":{"action":"run_command","command":"/trigger info add 1"}}]
 execute if entity @a[tag=partyLeader,tag=specialEvent] run tellraw @a [{selector:"@s",bold:true},{text:" has picked the ",bold:true,color:gray},{text:"Willo ",bold:true,color:gold},{text:"class! ",bold:true,color:gray}]
 
+#Add Sus tag (allows venting)
+tag @s add sus
+
 function du-in:lobby/kitmenu/select/common
