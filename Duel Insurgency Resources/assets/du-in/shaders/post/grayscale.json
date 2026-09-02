@@ -1,9 +1,8 @@
 {
   "vertex": "du-in:post/grayscale",
   "fragment": "du-in:post/grayscale",
+  "uniforms": [],
   "samplers": [
-    {
-      "name": "In"
-    }
+    { "name": "In" }
   ]
 }

@@ -1,10 +1,11 @@
 {
-  "targets": [
-    "minecraft:main"
-  ],
+  "targets": {
+    "minecraft:main": {}
+  },
   "passes": [
     {
-      "program": "du-in:grayscale",
+      "vertex_shader": "du-in:post/grayscale",
+      "fragment_shader": "du-in:post/grayscale",
       "inputs": [
         {
           "sampler_name": "In",
