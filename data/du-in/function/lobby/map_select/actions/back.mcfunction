@@ -1,5 +1,5 @@
 #This function returns players to Gamemode select from map select.
-tag @a[scores={Object.map.return=1},predicate=du-in:chance/quarter_chance] add Player.accept
+tag @a[scores={Object.map.return=1..},predicate=du-in:chance/quarter_chance] add Player.accept
 scoreboard players add @a[tag=partyLeader] Object.map.return 1
 
 #Reset map vote to reset vote displays
