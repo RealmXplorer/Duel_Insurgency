@@ -15,5 +15,8 @@ execute if entity @s[tag=clairenField] run function du-in:kit/clairen/ability/fi
 #Kylo Freeze Spot
 execute if entity @s[tag=kyloHitPos] run function du-in:kit/kylo/ability/marker
 
+#Willo Trap
+execute if entity @s[tag=willoTrap] run function du-in:kit/willo/ability/trap/init
+
 #Kylo Freeze Spot
 #execute if entity @s[tag=willoBullet] run function du-in:kit/willo/revolver/marker_raycast

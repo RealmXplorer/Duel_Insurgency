@@ -14,19 +14,14 @@ execute if entity @s[tag=!woodPass] run playsound du-in:kit.willo.revolver_whizz
 execute if entity @s[tag=woodPass] run playsound du-in:kit.willo.revolver_whizz player @a[tag=!willoShoot] ~ ~ ~ 0.5 .75
 
 #Damage
-execute if entity @s[tag=!woodPass] as @e[type=husk,dx=0] positioned ~-0.99 ~-0.99 ~-0.99 if entity @s[dx=0] positioned ~0.99 ~0.99 ~0.99 run function du-in:kit/willo/revolver/damage_no_pen
-execute if entity @s[tag=woodPass] as @e[type=husk,dx=0] positioned ~-0.99 ~-0.99 ~-0.99 if entity @s[dx=0] positioned ~0.99 ~0.99 ~0.99 run function du-in:kit/willo/revolver/damage_pen
+# execute if entity @s[tag=!woodPass] as @e[type=husk,dx=0] positioned ~-0.99 ~-0.99 ~-0.99 if entity @s[dx=0] positioned ~0.99 ~0.99 ~0.99 run function du-in:kit/willo/revolver/damage_no_pen
+# execute if entity @s[tag=woodPass] as @e[type=husk,dx=0] positioned ~-0.99 ~-0.99 ~-0.99 if entity @s[dx=0] positioned ~0.99 ~0.99 ~0.99 run function du-in:kit/willo/revolver/damage_pen
 
-#execute if entity @s[tag=!woodPass] at @s as @e[type=husk,distance=..1.25,tag=!willoShoot] run damage @s 5 minecraft:generic
-#execute if entity @s[tag=woodPass] at @s as @e[type=husk,distance=..1.25,tag=!willoShoot] run damage @s 3 minecraft:generic
+execute if entity @s[tag=!woodPass,tag=!void] as @a[tag=playing,dx=0] positioned ~-0.99 ~-0.99 ~-0.99 if entity @s[dx=0] positioned ~0.99 ~0.99 ~0.99 run function du-in:kit/willo/revolver/damage_no_pen
+execute if entity @s[tag=woodPass,tag=!void] as @a[tag=playing,dx=0] positioned ~-0.99 ~-0.99 ~-0.99 if entity @s[dx=0] positioned ~0.99 ~0.99 ~0.99 run function du-in:kit/willo/revolver/damage_pen
 
-#execute if entity @s[tag=!void,tag=!woodPass] at @s as @a[distance=..1.25,tag=!willoShoot] run damage @s 5 minecraft:generic
-#execute if entity @s[tag=!void,tag=woodPass] at @s as @a[distance=..1.25,tag=!willoShoot] run damage @s 3 minecraft:generic
-
-#execute if entity @s[tag=void,tag=!woodPass] at @s as @e[type=skeleton,distance=..1.25] run damage @s 5 minecraft:generic
-#execute if entity @s[tag=void,tag=woodPass] at @s as @e[type=skeleton,distance=..1.25] run damage @s 3 minecraft:generic
-
-#execute if entity @s[tag=!woodPass] at @s as @e[type=husk,distance=..1.25,tag=!willoShoot] run say @s
+execute if entity @s[tag=void,tag=!woodPass] as @e[type=skeleton,dx=0] positioned ~-0.99 ~-0.99 ~-0.99 if entity @s[dx=0] positioned ~0.99 ~0.99 ~0.99 run function du-in:kit/willo/revolver/damage_no_pen
+execute if entity @s[tag=void,tag=woodPass] as @e[type=skeleton,dx=0] positioned ~-0.99 ~-0.99 ~-0.99 if entity @s[dx=0] positioned ~0.99 ~0.99 ~0.99 run function du-in:kit/willo/revolver/damage_pen
 
 execute if block ~ ~ ~ #mineable/pickaxe run tag @s add hitStone
 execute if block ~ ~ ~ #mineable/axe run tag @s add hitWood
@@ -47,6 +42,3 @@ execute positioned ^ ^ ^0.65 if entity @s[scores={willoBulletTravel=1..}] run fu
 
 #execute positioned ^ ^ ^1 if entity @s[scores={willoBulletTravel=1..}] run function du-in:kit/willo/revolver/marker_raycast
 execute if entity @s[scores={willoBulletTravel=..0}] run kill @s
-
-#Recursion
-#execute positioned ^ ^ ^1 if entity @s[tag=!hitStone,tag=!hitDirt,tag=!hitWood,distance=..30] run function du-in:kit/willo/revolver/raycast
