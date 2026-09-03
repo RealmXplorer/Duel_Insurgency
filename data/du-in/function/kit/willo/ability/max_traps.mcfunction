@@ -6,7 +6,7 @@
 #Remove stolen
 
 #Or
-
+say fail
 #CANCEL ABILITY
 #Announce failure
 #Play sound

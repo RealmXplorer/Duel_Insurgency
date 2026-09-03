@@ -5,10 +5,10 @@
 
 $scoreboard players remove @a[scores={player=$(current)}] willoTrapCount 1
 
-$execute as @e[type=skeleton,distance=0.5..3] run damage @s 6 explosion by @a[scores={player=$(current)}]
-effect give @e[type=skeleton,distance=0.5..3] slowness 1 0 true
+$execute as @e[type=skeleton,distance=..1] run damage @s 6 explosion by @p[scores={player=$(current)}]
+effect give @e[type=skeleton,distance=..1] slowness 1 0 true
 
 #Play particles and sounds
 
-#execute if entity @a[tag=willoMark] run kill @n[type=armor_stand]
-execute if entity @a[tag=willoMark] run kill @s
+kill @n[type=block_display,tag=willoDisplay]
+kill @s

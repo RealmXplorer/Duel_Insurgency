@@ -415,6 +415,7 @@ tag @a remove suicide
 scoreboard players reset @a dmDeath
 scoreboard players set @a diedIngame 0
 scoreboard players reset @a ringTimer
+scoreboard players set @a willoTrapCount 0
 tag @a remove gasterInvisible
 
 tag @a remove boneAttack
