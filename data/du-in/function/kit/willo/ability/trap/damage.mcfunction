@@ -1,5 +1,6 @@
 execute as @a[distance=0.05..5,tag=playing,sort=nearest,gamemode=!spectator,tag=!teamDead] run tag @s add willoMark
-$execute as @a[tag=willoMark] if score @s team = @a[scores={player=$(player)}] team run tag @s remove willoMark
+$execute as @a[tag=willoMark] if score @s team = @a[scores={player=$(current)}] team run tag @s remove willoMark
+$tag @a[tag=willoMark,scores={player=$(current)}] remove willoMark
 
 #execute if entity @s[tag=!empower] as @a[tag=vaderHit] run function du-in:kit/vader/ability/effect
 #execute if entity @s[tag=empower] as @a[tag=vaderHit] run function du-in:kit/vader/ability/empowered_effect
