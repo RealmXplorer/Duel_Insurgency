@@ -1,6 +1,6 @@
 #Timer for lobby sidebar for scroll
 #execute if entity @a[tag=partyLeader,scores={lobby=1..}] unless entity @a[tag=partyLeader,tag=sidebarDisable] unless score #main pylonsDestroyed matches 3 run function du-in:lobby/sidebar
-execute if score #main lobby matches 1.. unless entity @a[tag=partyLeader,tag=sidebarDisable] unless score #main pylonsDestroyed matches 3 run function du-in:lobby/sidebar
+execute if score #main lobby matches 1.. if entity @a[tag=partyLeader,tag=!sidebarDisable,tag=!Player.accept] unless score #main pylonsDestroyed matches 3 run function du-in:lobby/sidebar
 
 #Test for number of people on team
 #execute if entity @a[tag=teamMode] run function du-in:lobby/team_select/team_count

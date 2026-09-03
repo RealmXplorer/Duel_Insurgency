@@ -1,0 +1,5 @@
+	{
+    "music.man": {
+		"sounds": [
+			{"name":"minecraft:music/leaves","stream":true}]}
+        }
