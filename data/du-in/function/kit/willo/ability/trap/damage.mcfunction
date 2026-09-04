@@ -14,4 +14,5 @@ effect give @a[tag=willoMark] slowness 1 0 true
 #Play particles and sounds
 
 execute if entity @a[tag=willoMark] run kill @n[type=block_display,tag=willoDisplay]
+execute if entity @a[tag=willoMark] run kill @n[type=interaction,tag=willoRemove]
 execute if entity @a[tag=willoMark] run kill @s

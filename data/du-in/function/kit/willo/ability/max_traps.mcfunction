@@ -6,7 +6,7 @@
 #Remove stolen
 
 #Or
-say fail
+say max traps placed
 #CANCEL ABILITY
 #Announce failure
 #Play sound

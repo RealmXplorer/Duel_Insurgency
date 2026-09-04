@@ -5,13 +5,18 @@ execute if entity @s[tag=void] run summon marker ~ ~ ~ {Tags:["willoTrap","owner
 
 summon block_display ~ ~ ~ {Tags:["willoDisplay","mapSpecific"],block_state:{id:"minecraft:heavy_core"}}
 
+#summon interaction to remove trap.
+summon interaction ~ ~ ~ {width:1f,height:1f,response:1b,Tags:["willoRemove","mapSpecific","ownerUnset"]}
+
 #Tie marker to this Willo
 execute store result score @n[type=marker,tag=willoTrap,tag=ownerUnset] player run scoreboard players get @s player 
 tag @n[type=marker,tag=ownerUnset,tag=willoTrap,scores={player=0..}] remove ownerUnset
 
+#Tie Interaction to this Willo
+execute store result score @n[type=interaction,tag=willoRemove,tag=ownerUnset] player run scoreboard players get @s player 
+tag @n[type=interaction,tag=ownerUnset,tag=willoRemove,scores={player=0..}] remove ownerUnset
 
 #Play sound and particles
-
 
 #End Ability
 clear @s #du-in:ability
