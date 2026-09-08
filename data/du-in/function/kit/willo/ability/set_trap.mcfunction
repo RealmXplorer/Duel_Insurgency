@@ -3,10 +3,14 @@ scoreboard players add @s willoTrapCount 1
 execute if entity @s[tag=!void] run summon marker ~ ~ ~ {Tags:["willoTrap","ownerUnset","mapSpecific","projectile"]}
 execute if entity @s[tag=void] run summon marker ~ ~ ~ {Tags:["willoTrap","ownerUnset","mapSpecific","void","projectile"]}
 
-summon block_display ~ ~ ~ {Tags:["willoDisplay","mapSpecific"],block_state:{id:"minecraft:heavy_core"}}
+#execute positioned as @n[type=marker,tag=willoTrap,tag=ownerUnset] run 
+
+summon block_display ~-.5 ~ ~-.5 {Tags:["willoDisplay","mapSpecific"],block_state:{id:"minecraft:heavy_core"}}
 
 #summon interaction to remove trap.
 summon interaction ~ ~ ~ {width:1f,height:1f,response:1b,Tags:["willoRemove","mapSpecific","ownerUnset"]}
+
+#execute at @n[type=marker,tag=willoTrap,tag=ownerUnset] run 
 
 #Tie marker to this Willo
 execute store result score @n[type=marker,tag=willoTrap,tag=ownerUnset] player run scoreboard players get @s player 
