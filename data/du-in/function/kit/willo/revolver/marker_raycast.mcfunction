@@ -17,8 +17,8 @@ execute if entity @s[tag=woodPass] run playsound du-in:kit.willo.revolver_whizz 
 # execute if entity @s[tag=!woodPass] as @e[type=husk,dx=0] positioned ~-0.99 ~-0.99 ~-0.99 if entity @s[dx=0] positioned ~0.99 ~0.99 ~0.99 run function du-in:kit/willo/revolver/damage_no_pen
 # execute if entity @s[tag=woodPass] as @e[type=husk,dx=0] positioned ~-0.99 ~-0.99 ~-0.99 if entity @s[dx=0] positioned ~0.99 ~0.99 ~0.99 run function du-in:kit/willo/revolver/damage_pen
 
-execute if entity @s[tag=!woodPass,tag=!void] as @a[tag=playing,dx=0] positioned ~-0.99 ~-0.99 ~-0.99 if entity @s[dx=0] positioned ~0.99 ~0.99 ~0.99 run function du-in:kit/willo/revolver/damage_no_pen
-execute if entity @s[tag=woodPass,tag=!void] as @a[tag=playing,dx=0] positioned ~-0.99 ~-0.99 ~-0.99 if entity @s[dx=0] positioned ~0.99 ~0.99 ~0.99 run function du-in:kit/willo/revolver/damage_pen
+execute if entity @s[tag=!woodPass,tag=!void] as @a[tag=!willoShoot,tag=playing,dx=0] positioned ~-0.99 ~-0.99 ~-0.99 if entity @s[dx=0] positioned ~0.99 ~0.99 ~0.99 run function du-in:kit/willo/revolver/damage_no_pen
+execute if entity @s[tag=woodPass,tag=!void] as @a[tag=!willoShoot,tag=playing,dx=0] positioned ~-0.99 ~-0.99 ~-0.99 if entity @s[dx=0] positioned ~0.99 ~0.99 ~0.99 run function du-in:kit/willo/revolver/damage_pen
 
 execute if entity @s[tag=void,tag=!woodPass] as @e[type=skeleton,dx=0] positioned ~-0.99 ~-0.99 ~-0.99 if entity @s[dx=0] positioned ~0.99 ~0.99 ~0.99 run function du-in:kit/willo/revolver/damage_no_pen
 execute if entity @s[tag=void,tag=woodPass] as @e[type=skeleton,dx=0] positioned ~-0.99 ~-0.99 ~-0.99 if entity @s[dx=0] positioned ~0.99 ~0.99 ~0.99 run function du-in:kit/willo/revolver/damage_pen
@@ -42,3 +42,4 @@ execute positioned ^ ^ ^0.65 if entity @s[scores={willoBulletTravel=1..}] run fu
 
 #execute positioned ^ ^ ^1 if entity @s[scores={willoBulletTravel=1..}] run function du-in:kit/willo/revolver/marker_raycast
 execute if entity @s[scores={willoBulletTravel=..0}] run kill @s
+#tag @p[tag=willoShoot] remove willoShoot

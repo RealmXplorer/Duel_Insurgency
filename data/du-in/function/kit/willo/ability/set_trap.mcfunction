@@ -1,22 +1,24 @@
 #PLACE function
 scoreboard players add @s willoTrapCount 1
-execute if entity @s[tag=!void] run summon marker ~ ~ ~ {Tags:["willoTrap","ownerUnset","mapSpecific"]}
-execute if entity @s[tag=void] run summon marker ~ ~ ~ {Tags:["willoTrap","ownerUnset","mapSpecific","void"]}
+execute if entity @s[tag=!void] run summon marker ~ ~ ~ {Tags:["willoTrap","ownerUnset","mapSpecific","projectile"]}
+execute if entity @s[tag=void] run summon marker ~ ~ ~ {Tags:["willoTrap","ownerUnset","mapSpecific","void","projectile"]}
 
-#Assign modifiers to marker
-execute if entity @s[tag=sabotaged] run tag @n[type=marker,tag=willoTrap,tag=ownerUnset] add sabotaged
-execute if entity @s[tag=empower] run tag @n[type=marker,tag=willoTrap,tag=ownerUnset] add empower
+#execute positioned as @n[type=marker,tag=willoTrap,tag=ownerUnset] run 
 
-#Summon display (Change if empowered / sabotaged?)
-summon block_display ~ ~ ~ {Tags:["willoDisplay","mapSpecific"],block_state:{Name:"minecraft:heavy_core"}}
+summon block_display ~-.5 ~ ~-.5 {Tags:["willoDisplay","mapSpecific"],block_state:{Name:"minecraft:heavy_core"}}
+
+#summon interaction to remove trap.
+summon interaction ~ ~ ~ {width:1f,height:1f,response:1b,Tags:["willoRemove","mapSpecific","ownerUnset"]}
 
 #Tie marker to this Willo
 execute store result score @n[type=marker,tag=willoTrap,tag=ownerUnset] player run scoreboard players get @s player 
 tag @n[type=marker,tag=ownerUnset,tag=willoTrap,scores={player=0..}] remove ownerUnset
 
+#Tie Interaction to this Willo
+execute store result score @n[type=interaction,tag=willoRemove,tag=ownerUnset] player run scoreboard players get @s player 
+tag @n[type=interaction,tag=ownerUnset,tag=willoRemove,scores={player=0..}] remove ownerUnset
 
 #Play sound and particles
-
 
 #End Ability
 clear @s #du-in:ability
