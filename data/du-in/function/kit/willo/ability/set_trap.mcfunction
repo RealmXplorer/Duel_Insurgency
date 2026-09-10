@@ -3,6 +3,11 @@ scoreboard players add @s willoTrapCount 1
 execute if entity @s[tag=!void] run summon marker ~ ~ ~ {Tags:["willoTrap","ownerUnset","mapSpecific"]}
 execute if entity @s[tag=void] run summon marker ~ ~ ~ {Tags:["willoTrap","ownerUnset","mapSpecific","void"]}
 
+#Assign modifiers to marker
+execute if entity @s[tag=sabotaged] run tag @n[type=marker,tag=willoTrap,tag=ownerUnset] add sabotaged
+execute if entity @s[tag=empower] run tag @n[type=marker,tag=willoTrap,tag=ownerUnset] add empower
+
+#Summon display (Change if empowered / sabotaged?)
 summon block_display ~ ~ ~ {Tags:["willoDisplay","mapSpecific"],block_state:{Name:"minecraft:heavy_core"}}
 
 #Tie marker to this Willo

@@ -1,14 +1,16 @@
-
-
-#execute if entity @s[tag=!empower] as @a[tag=vaderHit] run function du-in:kit/vader/ability/effect
-#execute if entity @s[tag=empower] as @a[tag=vaderHit] run function du-in:kit/vader/ability/empowered_effect
-
+#Remove 1 from placer's willo trap count
 $scoreboard players remove @a[scores={player=$(current)}] willoTrapCount 1
 
-$execute as @e[type=skeleton,distance=0.5..3] run damage @s 6 explosion by @a[scores={player=$(current)}]
-effect give @e[type=skeleton,distance=0.5..3] slowness 1 0 true
+#Default effects
+$execute if entity @s[tag=!empower] as @e[type=skeleton,distance=0.5..3] run damage @s 6 explosion by @a[scores={player=$(current)}]
+execute if entity @s[tag=!empower] run effect give @e[type=skeleton,distance=0.5..3] slowness 1 0 true
+
+#Empowered effects
+$execute if entity @s[tag=empower] as @e[type=skeleton,distance=0.5..3] run damage @s 10 explosion by @a[scores={player=$(current)}]
+execute if entity @s[tag=empower] run effect give @e[type=skeleton,distance=0.5..3] slowness 1 1 true
 
 #Play particles and sounds
+summon evoker_fangs ~ ~ ~ {Warmup:0}
 
-#execute if entity @a[tag=willoMark] run kill @n[type=armor_stand]
-execute if entity @a[tag=willoMark] run kill @s
+#Kill marker
+kill @s
