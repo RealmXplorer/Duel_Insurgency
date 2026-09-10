@@ -13,5 +13,6 @@ execute if entity @s[tag=empower] run effect give @e[type=skeleton,distance=..1]
 summon evoker_fangs ~ ~ ~ {Warmup:0}
 
 #Kill marker
+kill @n[type=interaction,tag=willoRemove]
 kill @n[type=block_display,tag=willoDisplay]
 kill @s
