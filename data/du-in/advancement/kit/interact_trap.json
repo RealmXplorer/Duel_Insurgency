@@ -20,6 +20,6 @@
       ]
   ],
   "rewards": {
-    "function": "du-in:kit/willo/ability/trap/remove"
+    "function": "du-in:kit/willo/ability/trap/remove_start"
   }
 }
