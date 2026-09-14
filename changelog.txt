@@ -16,6 +16,7 @@
 *Bug Fixes*
 -Fixed bug where Bogo's hurt sound would not play.
 -Fixed bug where the lobby display label would not display on returning from map select
+-Fixed bug where Roxanne Wolf's skin could not be selected.
 
 *Internal Changes*
 -Updated Advancements and Predicates to follow new 26.3 syntaxes.
