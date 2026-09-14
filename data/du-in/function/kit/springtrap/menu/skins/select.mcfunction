@@ -1,7 +1,7 @@
 clear @s player_head[custom_data={du-in:'springHead'}]
 
 scoreboard players add @s springSkin 1
-scoreboard players reset @s[scores={springSkin=6..}] springSkin
+scoreboard players reset @s[scores={springSkin=7..}] springSkin
 function du-in:skin_menu/actions/select_sound
 
 execute unless entity @s[scores={springSkin=1..}] run tellraw @s[tag=!pickPreset] [{text:"Default Springtrap ",bold:true,color:gold},{text:"skin selected!",color:yellow}]
@@ -9,4 +9,5 @@ tellraw @s[tag=!pickPreset,scores={springSkin=1}] [{text:"Stalktrap ",bold:true,
 tellraw @s[tag=!pickPreset,scores={springSkin=2}] [{text:"Clowntrap ",bold:true,color:"#b558f5"},{text:"skin selected!",color:yellow}]
 tellraw @s[tag=!pickPreset,scores={springSkin=3}] [{text:"Scraptrap ",bold:true,color:"#b558f5"},{text:"skin selected!",color:yellow}]
 tellraw @s[tag=!pickPreset,scores={springSkin=4}] [{text:"Flametrap ",bold:true,color:"#ff7700"},{text:"skin selected!",color:yellow}]
-tellraw @s[tag=!pickPreset,scores={springSkin=4}] [{text:"Roxanne Wolf ",bold:true,color:"#8f8f8f"},{text:"skin selected!",color:yellow}]
+tellraw @s[tag=!pickPreset,scores={springSkin=5}] [{text:"Roxanne Wolf ",bold:true,color:"#8f8f8f"},{text:"skin selected!",color:yellow}]
+tellraw @s[tag=!pickPreset,scores={springSkin=6}] [{text:"Jack Torrance ",bold:true,color:"#8f8f8f"},{text:"skin selected!",color:yellow}]
