@@ -402,6 +402,8 @@ team modify Spectators color gray
 team modify Spectators nametagVisibility hideForOtherTeams
 team modify Spectators friendlyFire false
 
+gamerule max_block_modifications 999999999
+
 #Add Ready Team
 team add Ready
 team modify Ready color green
