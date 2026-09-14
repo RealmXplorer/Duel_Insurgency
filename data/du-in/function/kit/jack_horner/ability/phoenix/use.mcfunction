@@ -1,5 +1,6 @@
-execute unless entity @s[tag=void] positioned ~ ~0.5 ~ positioned ^ ^ ^1.5 run function du-in:kit/jack_horner/ability/phoenix/raycast
-execute if entity @s[tag=void] positioned ~ ~0.5 ~ positioned ^ ^ ^1.5 run function du-in:kit/jack_horner/ability/phoenix/void/raycast
+tag @s add phoenixShoot
+execute unless entity @s[tag=void] positioned ~ ~0.5 ~ positioned ^ ^ ^1 run function du-in:kit/jack_horner/ability/phoenix/raycast
+execute if entity @s[tag=void] positioned ~ ~0.5 ~ positioned ^ ^ ^1 run function du-in:kit/jack_horner/ability/phoenix/void/raycast
 
 playsound du-in:sfx.ut.ability master @a ~ ~ ~ .25 1
 
@@ -23,6 +24,8 @@ clear @s #du-in:ability
 
 #Start cooldown
 xp set @s[tag=!stolen] 320 levels
+
+tag @s remove phoenixShoot
 
 #End ability
 function du-in:kit/jack_horner/ability/end
