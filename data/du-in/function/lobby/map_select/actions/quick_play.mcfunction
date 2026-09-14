@@ -12,6 +12,7 @@ execute as @a[tag=!kitPicked,tag=!spectating] run function du-in:kit/all/random/
 tag @a[tag=!kitPicked,tag=!spectating] add kitPicked
 
 title @a subtitle {text:""}
+kill @e[tag=displayItem]
 
 #Pick random map
 function du-in:maps/start/random
@@ -22,3 +23,4 @@ scoreboard players reset #main mapCountdown
 #Reset lobby score for players#
 scoreboard players reset @a lobby
 scoreboard players reset #main lobby
+forceload remove 231 6 231 40

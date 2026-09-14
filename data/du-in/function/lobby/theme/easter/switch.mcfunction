@@ -1,3 +1,5 @@
+#forceload add -1002 537 -963 499
+
 function du-in:lobby/theme/default/undo
 #clone 637 15 183 673 31 219 -1001 11 499 replace force
 clone 637 83 33 673 99 69 -1001 11 499 replace force
@@ -13,3 +15,4 @@ function du-in:lobby/theme/easter/display
 clone 206 58 96 216 48 121 227 90 13
 
 tellraw @a [{text:"Easter ",bold:true,color:light_purple},{text:"lobby theme selected!",color:yellow}]
+#forceload remove -1002 537 -963 499

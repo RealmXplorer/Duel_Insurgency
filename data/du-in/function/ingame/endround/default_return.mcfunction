@@ -1,3 +1,4 @@
+#forceload add -1002 537 -963 499
 tp @a -999 13 517 -90 0
 spawnpoint @a -999 13 517
 
@@ -5,3 +6,4 @@ spawnpoint @a -999 13 517
 kill @e[type=text_display,tag=gamemodeLabel]
 summon text_display -983 16 517 {billboard:"center",Tags:["gamemodeLabel"],}
 function du-in:lobby/theme/default/text
+#forceload remove -1002 537 -963 499

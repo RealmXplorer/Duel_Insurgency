@@ -1,3 +1,4 @@
+forceload add 231 6 231 40
 tp @e[tag=tabba] 216 -100 40
 kill @e[tag=tabba]
 kill @e[type=text_display,tag=gamemodeLabel]

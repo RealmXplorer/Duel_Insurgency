@@ -169,3 +169,6 @@ scoreboard players set #main voidReadyOnline 0
 execute at @e[type=armor_stand,tag=vendMachine] run fill ~ ~ ~ ~ ~1 ~ air
 
 kill @e[type=!player,tag=mapSpecific]
+
+#Remove forceload for map select
+#forceload remove 231 6 231 40

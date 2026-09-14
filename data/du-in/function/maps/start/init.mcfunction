@@ -24,3 +24,4 @@ function du-in:maps/start/set_vote with storage du-in:mapscore map
 
 #End function
 scoreboard players reset #main mapCountdown
+forceload remove 231 6 231 40
