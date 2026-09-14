@@ -8,6 +8,9 @@ execute if entity @s[tag=void] positioned ^ ^ ^1.5 run function du-in:kit/cuphea
 
 scoreboard players remove @s cardPower 5
 clear @s minecraft:paper 1
+
+swing @s offhand whack
+
 xp set @s[tag=!stolen] 280 levels
 clear @s #du-in:ability
 #clear @s coal

@@ -24,6 +24,9 @@ tag @n[distance=..2,tag=ownerUnset,tag=willoDisplay,scores={player=0..},type=blo
 
 #Play sound and particles
 
+swing @s[tag=!sabotaged] offhand whack
+swing @s[tag=sabotaged] offhand stab
+
 #End Ability
 clear @s #du-in:ability
 xp set @s[tag=!stolen] 320 levels

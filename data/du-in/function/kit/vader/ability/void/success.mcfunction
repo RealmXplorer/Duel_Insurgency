@@ -3,6 +3,9 @@ effect give @e[type=skeleton,tag=gonerThing,distance=0.05..5] minecraft:wither 2
 playsound du-in:kit.vader.choke master @a ~ ~ ~ 100 1
 playsound du-in:kit.vader.hold master @a ~ ~ ~ 100 1.5
 playsound du-in:sfx.ut.ability master @a ~ ~ ~ .5 .95
+
+swing @s offhand whack
+
 clear @s #du-in:ability
 xp set @s[tag=!stolen] 320 levels
 #tellraw @a[distance=0.05..5,tag=playing,gamemode=!spectator,tag=!teamDead] [{text:"You are being choked by Darth Vader!",bold:true,color:red}]

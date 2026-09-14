@@ -1,6 +1,9 @@
 scoreboard players set @s[tag=!empower] cupTimer 60
 execute if entity @s[tag=empower] run scoreboard players set @s cupTimer 80
 tellraw @s [{text:"You are invulnerable!",bold:true,color:red}]
+
+swing @s offhand whack
+
 xp set @s[tag=!stolen] 380 levels
 clear @s #du-in:ability
 playsound du-in:kit.cuphead.super master @a ~ ~ ~ 1 1

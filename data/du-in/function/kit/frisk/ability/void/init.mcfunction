@@ -18,6 +18,8 @@ playsound du-in:sfx.ut.ability master @a ~ ~ ~ 100 1
 playsound minecraft:entity.player.levelup master @a ~ ~ ~ 100 0.5
 playsound minecraft:entity.ender_dragon.flap master @a ~ ~ ~ 100 0.7
 
+swing @s[tag=!sabotaged] offhand whack
+swing @s[tag=sabotaged] offhand stab
 
 execute if entity @s[tag=stolen] run tag @s add kitDone
 tag @s remove sabotaged

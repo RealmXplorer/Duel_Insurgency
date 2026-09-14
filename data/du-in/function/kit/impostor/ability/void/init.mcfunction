@@ -7,6 +7,9 @@ playsound du-in:kit.sus.emerg master @a ~ ~ ~ 2000 1
 
 execute as @e[type=skeleton,tag=gonerThing] run tag @s add meeting
 
+swing @s[tag=!sabotaged] offhand whack
+swing @s[tag=sabotaged] offhand stab
+
 xp set @s[tag=!stolen] 600 levels
 
 tag @s remove meetingCall

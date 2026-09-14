@@ -6,6 +6,8 @@
 *Changes*
 -Updated map to 26.3.
 -There are no more I-frames.
+-Characters now have animations when using abilities.
+    -"whack" for successful abilities, "none" for failed abilities, and "stab" for sabotaged abilities.
 -Skin menu is now organized the same as the kit menu.
 -Harvest now uses the Dappled Forest biome, and features Poplar trees.
 -Beds can no longer be slept in.

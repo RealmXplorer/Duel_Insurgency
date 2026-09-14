@@ -10,6 +10,9 @@ execute if entity @s[tag=sabotaged] run tag @e[type=armor_stand,tag=desolateTest
 
 tag @e[type=armor_stand,tag=desolateTest] remove desolateTest
 
+swing @s[tag=!sabotaged] offhand whack
+swing @s[tag=sabotaged] offhand stab
+
 tag @s add diving
 tag @s add cooldown
 #Remove ability from hand

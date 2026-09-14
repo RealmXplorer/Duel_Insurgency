@@ -1,3 +1,6 @@
+swing @s[tag=!sabotaged] offhand whack
+swing @s[tag=sabotaged] offhand stab
+
 tag @s add showTimeDuration
 
 effect give @a[tag=!showTimeDuration] weakness infinite 1 true
@@ -27,13 +30,14 @@ playsound minecraft:entity.elder_guardian.curse master @a ~ ~ ~ 1 1
 playsound du-in:sfx.funny.laugh master @a ~ ~ ~ 100 0.5
 
 #Make Beetlejuice big and invincible
-attribute @s scale base set 2
-attribute @s armor base set 1000
-attribute @s armor_toughness base set 1000
-attribute @s attack_damage base set 1000
-attribute @s minecraft:block_interaction_range base set 5
-attribute @s minecraft:entity_interaction_range base set 5
-execute if entity @s[tag=empower] run attribute @s minecraft:movement_speed base set 0.16
+attribute @s[tag=!sabotaged] scale base set 2
+attribute @s[tag=!sabotaged] armor base set 1000
+attribute @s[tag=!sabotaged] armor_toughness base set 1000
+attribute @s[tag=!sabotaged] attack_damage base set 1000
+attribute @s[tag=!sabotaged] minecraft:block_interaction_range base set 5
+attribute @s[tag=!sabotaged] minecraft:entity_interaction_range base set 5
+execute if entity @s[tag=empower,tag=!sabotaged] run attribute @s minecraft:movement_speed base set 0.16
+execute if entity @s[tag=empower,tag=sabotaged] run attribute @s minecraft:movement_speed base set -0.16
 
 #Message
 tellraw @a[tag=!showTimeDuration] {text:"It's Showtime!",bold:true,color:red}

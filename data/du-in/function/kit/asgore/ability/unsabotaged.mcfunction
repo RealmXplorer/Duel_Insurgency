@@ -1,3 +1,5 @@
+swing @s offhand whack
+
 #Summon Fire wall
 #Row 1
     #This one is tagged to play the extinguish and burning sounds.

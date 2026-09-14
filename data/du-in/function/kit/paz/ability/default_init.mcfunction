@@ -39,6 +39,9 @@ effect give @s[tag=!empower] strength 2 0 true
 execute if entity @s[tag=empower] run effect give @s speed 3 1 true
 execute if entity @s[tag=empower] run effect give @s strength 3 1 true
 
+swing @s[tag=!sabotaged] offhand whack
+swing @s[tag=sabotaged] offhand stab
+
 #Remove ability from hand
 clear @s #du-in:ability
 

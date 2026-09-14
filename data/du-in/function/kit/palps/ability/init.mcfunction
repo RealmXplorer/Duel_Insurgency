@@ -1,6 +1,9 @@
 scoreboard players set @s palpTimer 80
 effect give @s minecraft:slowness 3 0 true
 
+swing @s[tag=!sabotaged] offhand whack
+swing @s[tag=sabotaged] offhand stab
+
 clear @s #du-in:ability
 #xp set @s[tag=!stolen] 380 levels
 playsound minecraft:block.sculk_sensor.clicking master @a ~ ~ ~ 20 1.5 1

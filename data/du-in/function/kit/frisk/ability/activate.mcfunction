@@ -9,6 +9,9 @@ effect give @s minecraft:weakness 2 255 true
 #Sabotaged effects
 execute if entity @s[tag=sabotaged] run function du-in:kit/frisk/ability/sabotaged
 
+swing @s[tag=!sabotaged] offhand whack
+swing @s[tag=sabotaged] offhand stab
+
 clear @s #du-in:ability
 xp set @s[tag=!stolen] 360 levels
 

@@ -1,3 +1,6 @@
+swing @s[tag=!sabotaged] offhand whack
+swing @s[tag=sabotaged] offhand stab
+
 scoreboard players set @s[tag=!empower] asrielHitTimer 15
 scoreboard players set @s[tag=empower] asrielHitTimer 30
 scoreboard players set @s asrielTimer 1

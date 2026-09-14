@@ -1,3 +1,5 @@
+swing @s offhand stab
+
 damage @s 10 explosion
 execute if entity @s[tag=empower] run damage @s 5 explosion
 function du-in:kit/all/ability/sabotage/effects

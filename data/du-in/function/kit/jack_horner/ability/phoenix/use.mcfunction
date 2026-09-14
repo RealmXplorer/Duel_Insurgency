@@ -16,6 +16,8 @@ playsound du-in:sfx.ut.ability master @a ~ ~ ~ .25 1
 
 # tag @s remove hornerShoot
 
+swing @s offhand whack
+
 #Remove ability from hand
 clear @s #du-in:ability
 

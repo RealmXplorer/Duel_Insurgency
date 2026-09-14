@@ -1,4 +1,8 @@
 tag @s remove springLock
+
+swing @s[tag=!sabotaged] offhand whack
+swing @s[tag=sabotaged] offhand stab
+
 clear @s #du-in:ability
 effect clear @s poison
 effect clear @s[tag=sabotaged] wither

@@ -1,3 +1,5 @@
+swing @s offhand whack
+
 clear @s #du-in:ability
 tag @s add asgoreTrident
 clear @s stone_axe

@@ -1,4 +1,5 @@
 #scoreboard players set @s aangShoot 190
+swing @s offhand whack
 
 # summon the temporary entity
 summon marker ^ ^ ^1 {Tags:["AangDirection"]}

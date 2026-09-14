@@ -16,6 +16,8 @@ execute if entity @s[tag=empower] run effect give @s strength 3 1 true
 #Remove empower
 tag @s remove empower
 
+swing @s offhand whack
+
 #Remove ability from hand
 clear @s #du-in:ability
 

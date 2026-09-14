@@ -2,6 +2,9 @@ execute as @e[type=skeleton,tag=gonerThing] run function du-in:kit/jack_black/ab
 
 playsound du-in:kit.jack_black.chicken_jockey master @a ~ ~ ~ 1 1
 
+swing @s[tag=!sabotaged] offhand whack
+swing @s[tag=sabotaged] offhand stab
+
 clear @s #du-in:ability
 
 xp set @s[tag=!stolen] 600 levels

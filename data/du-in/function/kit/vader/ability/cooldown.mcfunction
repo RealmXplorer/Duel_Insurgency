@@ -2,6 +2,9 @@ playsound du-in:kit.vader.choke master @a ~ ~ ~ 100 1
 playsound du-in:kit.vader.hold master @a ~ ~ ~ 100 1.5
 playsound du-in:sfx.ut.ability master @a ~ ~ ~ .5 .95
 
+swing @s[tag=!sabotaged] offhand whack
+swing @s[tag=sabotaged] offhand stab
+
 clear @s #du-in:ability
 xp set @s[tag=!stolen] 320 levels
 tag @a remove vaderHit

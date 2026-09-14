@@ -1,5 +1,7 @@
 execute as @e[type=skeleton,distance=0.05..5,tag=gonerThing] run function du-in:kit/kylo/ability/void/hit
 
+swing @s offhand whack
+
 xp set @s[tag=!stolen] 360 levels
 clear @s #du-in:ability
 

@@ -26,6 +26,9 @@ execute if entity @s[tag=!sabotaged,tag=empower] positioned ^4 ^ ^ if entity @s[
 execute if entity @s[tag=sabotaged] run function du-in:kit/asgore/ability/contact
 execute if entity @s[tag=sabotaged] run function du-in:kit/all/ability/sabotage/effects
 
+swing @s[tag=!sabotaged] offhand whack
+swing @s[tag=sabotaged] offhand stab
+
 #Remove ability from hand
 clear @s #du-in:ability
 

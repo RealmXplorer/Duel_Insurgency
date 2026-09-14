@@ -1,5 +1,9 @@
 effect give @s minecraft:speed 5 1 true
 execute if entity @s[tag=empower] run effect give @s strength 5 1 true
+
+swing @s[tag=!sabotaged] offhand whack
+swing @s[tag=sabotaged] offhand stab
+
 clear @s #du-in:ability
 scoreboard players set @s charaTimer 80
 

@@ -1,3 +1,5 @@
+swing @s offhand whack
+
 clear @s #du-in:ability
 tag @s add poisonApple
 clear @s stone_axe

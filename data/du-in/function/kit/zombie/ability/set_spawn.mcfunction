@@ -3,6 +3,8 @@ spawnpoint @s ~ ~ ~ ~ ~
 
 forceload add 232 27
 
+swing @s offhand whack
+
 #Clear ability
 clear @s #du-in:ability
 

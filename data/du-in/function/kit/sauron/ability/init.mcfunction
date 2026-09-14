@@ -10,6 +10,8 @@ playsound minecraft:entity.vex.death master @a ~ ~ ~ 1 .75
 playsound minecraft:block.sculk_shrieker.shriek master @a ~ ~ ~ 1 1.25
 playsound minecraft:block.sculk_shrieker.shriek master @a ~ ~ ~ 1 1
 
+swing @s[tag=!sabotaged] offhand whack
+swing @s[tag=sabotaged] offhand stab
 
 #End Ability
 clear @s #du-in:ability

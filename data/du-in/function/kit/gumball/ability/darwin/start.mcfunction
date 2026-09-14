@@ -19,6 +19,9 @@ playsound du-in:sfx.ut.ability master @a ~ ~ ~ .25 1
 playsound minecraft:entity.player.attack.sweep master @a ~ ~ ~ 9999 1.3
 playsound minecraft:block.enchantment_table.use master @a ~ ~ ~ 9999 1
 
+swing @s[tag=!sabotaged] offhand whack
+swing @s[tag=sabotaged] offhand stab
+
 scoreboard players set @s darwinSound 100
 clear @s #du-in:ability
 

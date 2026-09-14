@@ -1,5 +1,8 @@
 scoreboard players set @s floweyHitTimer 70
 
+swing @s[tag=!sabotaged] offhand whack
+swing @s[tag=sabotaged] offhand stab
+
 #Particles and sounds#
 playsound du-in:kit.flowey.ability master @a ~ ~ ~ 10 1
 playsound du-in:sfx.ut.ability master @a ~ ~ ~ 10 1

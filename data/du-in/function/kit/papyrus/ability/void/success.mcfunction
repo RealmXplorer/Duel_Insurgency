@@ -1,5 +1,8 @@
 tag @n[type=skeleton,tag=gonerThing,distance=0.05..5] add papyrusHit
-function du-in:kit/papyrus/particle
+function du-in:kit/papyrus/ability/particle
+
+swing @s offhand whack
+
 clear @s #du-in:ability
 xp set @s[tag=!stolen] 250 levels
 

@@ -23,6 +23,9 @@ playsound du-in:sfx.ut.ability master @a ~ ~ ~ 100 0.95
 effect give @s[tag=!sabotaged] minecraft:speed 2 2 true
 effect clear @s[tag=!sabotaged] minecraft:levitation
 
+swing @s[tag=!sabotaged] offhand whack
+swing @s[tag=sabotaged] offhand stab
+
 clear @s #du-in:ability
 tag @s remove sabotaged
 tag @s remove empower

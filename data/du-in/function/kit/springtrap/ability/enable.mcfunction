@@ -1,4 +1,8 @@
 tag @s add springLock
+
+swing @s[tag=!sabotaged] offhand whack
+swing @s[tag=sabotaged] offhand stab
+
 xp set @s 20 levels
 clear @s #du-in:ability
 #function du-in:kit/springtrap/ability/item

@@ -66,7 +66,7 @@ kill @e[type=marker,tag=susieDirection]
 
 execute if entity @s[tag=sabotaged] run function du-in:kit/all/ability/sabotage/effects
 
-
+swing @s offhand whack
 
 clear @s #du-in:ability
 xp set @s[tag=!stolen] 360 levels

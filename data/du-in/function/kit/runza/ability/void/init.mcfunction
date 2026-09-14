@@ -1,6 +1,8 @@
 execute if entity @s[tag=!empower] as @e[type=skeleton,tag=gonerThing] run effect give @s slowness 4 1 true
 execute if entity @s[tag=empower] as @e[type=skeleton,tag=gonerThing] run effect give @s slowness 6 3 true
 
+swing @s offhand whack
+
 clear @s #du-in:ability
 xp set @s[tag=!stolen] 600 levels
 

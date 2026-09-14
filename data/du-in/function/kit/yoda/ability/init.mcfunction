@@ -10,6 +10,9 @@ playsound minecraft:entity.breeze.hurt master @a ~ ~ ~ 1 .5
 #Cooldown pause
 tag @s add cooldown
 
+swing @s[tag=!sabotaged] offhand whack
+swing @s[tag=sabotaged] offhand stab
+
 #Remove ability from hand
 clear @s #du-in:ability
 

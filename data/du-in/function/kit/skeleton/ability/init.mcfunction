@@ -11,6 +11,8 @@ execute if entity @s[tag=!empower] run give @s[scores={skeletonMode=2}] tipped_a
 execute if entity @s[tag=empower] run give @s[scores={skeletonMode=1}] tipped_arrow[item_name={text:"Slowness Arrows",color:gold,bold:true},lore=[{text:"Throw or use to go back to sword mode",color:dark_purple,bold:true}],potion_contents={potion:"minecraft:slowness"}] 5
 execute if entity @s[tag=empower] run give @s[scores={skeletonMode=2}] tipped_arrow[item_name={text:"Poison Arrows",color:gold,bold:true},lore=[{text:"Throw or use to go back to sword mode",color:dark_purple,bold:true}],potion_contents={potion:"minecraft:poison"}] 5
 
+swing @s[tag=!sabotaged] offhand whack
+swing @s[tag=sabotaged] offhand stab
 
 execute if entity @s[tag=sabotaged] run function du-in:kit/skeleton/ability/sabotaged
 
