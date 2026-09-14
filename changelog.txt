@@ -70,3 +70,5 @@
 -Added Willo armor textures. (by nerbski)
 -Added Candy Corn texture. (by Realm_Xplorer)
 -Added Revolver sounds.
+-Added Candy corn saber. (by Realm_Xplorer)
+-Added Jack Torrance skin. (by Three_Thumbs)
