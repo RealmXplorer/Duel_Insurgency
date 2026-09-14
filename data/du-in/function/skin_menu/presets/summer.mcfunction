@@ -2,7 +2,7 @@
 tellraw @s [{text:"Summer skins ",bold:true,color:gold},{text:"selected!",color:yellow}]
 playsound minecraft:entity.zombie_villager.converted master @s ~ ~ ~ 1 2
 
-function du-in:other/settings/cycle/skins/reset
+function du-in:skin_menu/presets/reset
 
 
 #If you own the skin, display default
@@ -13,7 +13,7 @@ scoreboard players set @s[tag=springSkins] springSkin 4
 scoreboard players set @s[tag=kyloSkins] kyloSkin 1
 
 #Execute display function
-function du-in:other/settings/cycle/skins/display_reset
+function du-in:skin_menu/presets/display_reset
 
 
 # execute if entity @s[tag=nickSkins] run function du-in:kit/nick/menu/skins/display
