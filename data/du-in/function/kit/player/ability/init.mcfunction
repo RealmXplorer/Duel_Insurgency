@@ -34,6 +34,9 @@ tellraw @s[tag=!sabotaged] [{text:"What a healthy breakfast! You feel full!",bol
 # scoreboard players set @s[tag=notEaten,tag=!sabotaged] runzaEat 1
 execute if entity @s[tag=notEaten,tag=!sabotaged] run advancement grant @s only du-in:kit/eat_runza
 
+swing @s[tag=!sabotaged] offhand whack
+swing @s[tag=sabotaged] offhand stab
+
 #Clear ability and set cooldown#
 clear @s #du-in:ability
 xp set @s[tag=!stolen] 385 levels

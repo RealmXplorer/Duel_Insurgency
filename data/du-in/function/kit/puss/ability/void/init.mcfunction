@@ -10,6 +10,8 @@ effect give @s speed 3 1 true
 particle minecraft:crit ~ ~.1 ~ 0.1 1 0.1 0 100 force
 particle minecraft:poof ~ ~.1 ~ 0.1 0.1 0.1 0.05 100 force
 
+swing @s offhand whack
+
 #Remove ability from hand
 clear @s #du-in:ability
 

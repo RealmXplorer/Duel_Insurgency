@@ -16,6 +16,9 @@ execute as @e[type=marker,tag=papyrusFind,tag=!papyrusStart] at @s run function 
 #Remove "hit" tag from marked players
 tag @a[tag=papyrusHit] remove papyrusHit
 
+swing @s[tag=!sabotaged] offhand whack
+swing @s[tag=sabotaged] offhand stab
+
 #End Ability
 clear @s #du-in:ability
 xp set @s[tag=!stolen] 250 levels

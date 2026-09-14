@@ -1,3 +1,5 @@
+swing @s offhand stab
+
 clear @s #du-in:ability
 xp set @s[tag=!stolen] 350 levels
 

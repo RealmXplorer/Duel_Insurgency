@@ -10,6 +10,8 @@ function du-in:void/goner/kill_goner
 playsound minecraft:ambient.cave master @a ~ ~ ~ 100 1 1
 playsound du-in:kit.jerma.peep master @a ~ ~ ~ 100 1 1
 
+swing @s offhand whack
+
 clear @s #du-in:ability
 xp set @s[tag=!stolen] 600 levels
 effect give @a[distance=..4,gamemode=!spectator] minecraft:speed 3 1 true

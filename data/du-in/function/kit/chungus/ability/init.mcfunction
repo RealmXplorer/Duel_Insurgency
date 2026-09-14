@@ -20,6 +20,9 @@ playsound minecraft:block.gravel.hit master @a ~ ~ ~ 1 2
 playsound du-in:sfx.ut.ability master @a ~ ~ ~ .25 .95
 playsound du-in:kit.chungus.slam master @a ~ ~ ~ 1 1
 
+swing @s[tag=!sabotaged] offhand whack
+swing @s[tag=sabotaged] offhand stab
+
 #Remove Sabotage and empower
 tag @s remove sabotaged
 tag @s remove empower

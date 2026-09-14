@@ -1,3 +1,5 @@
+swing @s offhand whack
+
 #Clear emerald
 clear @s #du-in:ability
 

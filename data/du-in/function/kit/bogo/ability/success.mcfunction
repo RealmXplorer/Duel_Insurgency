@@ -1,5 +1,5 @@
-scoreboard players set @s[tag=!sabotaged,tag=!empower] bogoTimer 30
-scoreboard players set @s[tag=!sabotaged,tag=empower] bogoTimer 50
+scoreboard players set @s[tag=!empower] bogoTimer 30
+scoreboard players set @s[tag=empower] bogoTimer 50
 
 playsound du-in:kit.bogo.snort master @a ~ ~ ~ 1 1 1
 
@@ -11,7 +11,8 @@ attribute @s armor_toughness modifier add bogo_charge_build 8 add_value
 
 #execute if entity @s[tag=sabotaged] run function du-in:kit/bogo/ability/sabotaged
 
-
+swing @s[tag=!sabotaged] offhand whack
+swing @s[tag=sabotaged] offhand stab
 tag @s add cooldown
 clear @s #du-in:ability
 

@@ -3,6 +3,9 @@ tp @s[tag=!sabotaged] @r[tag=playing,gamemode=!spectator,tag=!kitActions]
 damage @s[tag=sabotaged,tag=!empower] 18 cactus
 damage @s[tag=sabotaged,tag=empower] 22 cactus
 
+swing @s[tag=!sabotaged] offhand whack
+swing @s[tag=sabotaged] offhand stab
+
 #Remove ability from hand
 clear @s #du-in:ability
 

@@ -9,6 +9,7 @@ effect give @s slowness 1 3 true
 attribute @s armor modifier add cinder_charge 4.0 add_value
 
 #Finish Ability#
+swing @s offhand whack
 clear @s #du-in:ability
 tag @s add cooldown
 tag @s add cinderUsed

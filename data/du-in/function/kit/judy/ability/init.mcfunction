@@ -3,6 +3,9 @@
 execute if entity @s[tag=!sabotaged] run function du-in:kit/judy/ability/default_init
 execute if entity @s[tag=sabotaged] run function du-in:kit/judy/ability/sabotage/init
 
+swing @s[tag=!sabotaged] offhand whack
+swing @s[tag=sabotaged] offhand stab
+
 #Remove ability from hand
 clear @s #du-in:ability
 

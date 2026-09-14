@@ -4,6 +4,7 @@ damage @s 20 explosion
 particle minecraft:explosion ~ ~1 ~ 1 0 1 0 15 force
 particle minecraft:flash{color:0xffffff} ~ ~1 ~ 0 0 0 0 10 normal
 
+swing @s offhand stab
 
 execute if entity @s[tag=sabotaged] run function du-in:kit/all/ability/sabotage/effects
 

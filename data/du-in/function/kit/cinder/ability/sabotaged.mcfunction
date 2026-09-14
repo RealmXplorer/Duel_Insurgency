@@ -11,6 +11,8 @@ particle minecraft:flash{color:0xffffff} ~ ~1 ~ 0 0 0 0 10 normal
 execute if entity @s[tag=!empower] run function du-in:kit/cinder/ability/sword/damage
 execute if entity @s[tag=empower] run function du-in:kit/cinder/ability/sword/empowered_damage
 
+swing @s offhand stab
+
 clear @s #du-in:ability
 xp set @s[tag=!stolen] 360 levels
 tag @s remove sabotaged

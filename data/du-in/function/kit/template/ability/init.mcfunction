@@ -1,5 +1,8 @@
 ##Runs kit's ability. These commands are necessary
 
+swing @s[tag=!sabotaged] offhand whack
+swing @s[tag=sabotaged] offhand stab
+
 #Remove ability from hand
 clear @s #du-in:ability
 #Start cooldown

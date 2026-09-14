@@ -7,6 +7,10 @@ execute as @a[distance=.05..10,tag=playing,gamemode=!spectator,tag=!teamDead,lim
 execute if entity @s[tag=sabotaged] run function du-in:kit/all/ability/sabotage/effects
 
 execute if entity @s[tag=empower] run tag @a[distance=.05..10,scores={ralseiTimer=1..}] add superSleep
+
+swing @s[tag=!sabotaged] offhand whack
+swing @s[tag=sabotaged] offhand stab
+
 clear @s #du-in:ability
 xp set @s[tag=!stolen] 360 levels
 particle minecraft:note ~ ~2.25 ~ .01 .5 .01 0.25 3 force @a

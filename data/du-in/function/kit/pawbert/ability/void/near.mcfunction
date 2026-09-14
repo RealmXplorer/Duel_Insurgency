@@ -8,6 +8,8 @@ playsound du-in:sfx.ut.ability master @a ~ ~ ~ 100 0.95
 effect give @s minecraft:speed 2 2 true
 effect give @s minecraft:resistance 2 2 true
 
+swing @s offhand whack
+
 clear @s #du-in:ability
 xp set @s[tag=!stolen] 320 levels
 execute if entity @s[tag=stolen] run tag @s add kitDone

@@ -13,6 +13,7 @@ scoreboard players add @a pylonsDestroyed 1
 
 execute if score #main pylonsDestroyed matches 3 run function du-in:lobby/theme/void/switch
 execute if score #main pylonsDestroyed matches 3 run function du-in:void/lobby_amb
+#execute if score #main pylonsDestroyed matches 4.. run forceload add 8054 340 7886 187
 
 #Stop sounds and music
 stopsound @a record minecraft:music.pursuithappiness

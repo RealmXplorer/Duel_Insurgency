@@ -3,6 +3,10 @@ execute if entity @s[tag=sabotaged] run function du-in:kit/asgore/ability/contac
 #Give ability tag, unless sabotaged
 tag @s[tag=!sabotaged] add magma
 tag @s[tag=!sabotaged] add cooldown
+
+swing @s[tag=!sabotaged] offhand whack
+swing @s[tag=sabotaged] offhand stab
+
 #Clear inventory
 clear @s
 

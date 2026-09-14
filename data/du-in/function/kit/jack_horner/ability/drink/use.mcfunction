@@ -16,6 +16,8 @@ playsound minecraft:entity.player.burp master @a ~ ~ ~ 100 1
 execute if entity @s[tag=!empower] run scoreboard players set @s shrunkTimer 100
 execute if entity @s[tag=empower] run scoreboard players set @s shrunkTimer 140
 
+swing @s offhand whack
+
 #tag @s add 
 #Remove ability from hand
 clear @s #du-in:ability

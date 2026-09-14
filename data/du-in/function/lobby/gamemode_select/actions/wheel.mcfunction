@@ -11,6 +11,7 @@ execute if score #main gamemode matches 3 run tellraw @a [{text:"King of the Hil
 execute if score #main gamemode matches 4 run tellraw @a [{text:"Capture the Flag ",bold:true,color:aqua},{text:"has been ",color:gray},{text:"selected",bold:false,color:gray}]
 execute if score #main gamemode matches 5 run tellraw @a [{text:"Conquest ",bold:true,color:dark_red},{text:"has been ",color:gray},{text:"selected",bold:false,color:gray}]
 
+forceload add 681 37 625 74
 execute unless score #main pylonsDestroyed matches 3 unless score #main lobbyTheme matches 1.. run function du-in:lobby/theme/default/display
 execute unless score #main pylonsDestroyed matches 3 if score #main lobbyTheme matches 1 run function du-in:lobby/theme/halloween/display
 execute unless score #main pylonsDestroyed matches 3 if score #main lobbyTheme matches 2 run function du-in:lobby/theme/thanks/display
@@ -18,6 +19,7 @@ execute unless score #main pylonsDestroyed matches 3 if score #main lobbyTheme m
 execute unless score #main pylonsDestroyed matches 3 if score #main lobbyTheme matches 4 run function du-in:lobby/theme/easter/display
 
 execute if score #main pylonsDestroyed matches 3 run function du-in:lobby/theme/void/display
+forceload remove 681 37 625 74
 
 function du-in:lobby/theme/default/text
 

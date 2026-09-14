@@ -10,6 +10,8 @@ particle minecraft:flame ~ ~1.5 ~ 0.5 1 0.5 0.1 100 force
 playsound minecraft:entity.evoker.cast_spell master @a ~ ~ ~ 100 1
 playsound du-in:sfx.ut.ability master @a ~ ~ ~ .25 1
 
+swing @s[tag=!sabotaged] offhand whack
+swing @s[tag=sabotaged] offhand stab
 clear @s #du-in:ability
 tag @s add cooldown
 tag @s remove kitActions

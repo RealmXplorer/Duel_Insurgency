@@ -11,6 +11,7 @@ scoreboard players set @s floatTimer 7
 scoreboard players set @s parryTimer 95
 damage @s 10 generic
 
+swing @s offhand stab
 xp set @s[tag=!stolen] 320 levels
 clear @s #du-in:ability
 execute if entity @s[tag=stolen] run tag @s add kitDone

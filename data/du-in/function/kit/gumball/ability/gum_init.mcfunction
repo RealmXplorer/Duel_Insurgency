@@ -4,6 +4,9 @@ execute if entity @s[predicate=du-in:chance/quarter_chance,tag=cIngame,tag=!stol
 playsound du-in:kit.gumball.ability master @a ~ ~ ~ 1 1
 playsound du-in:sfx.ut.ability master @a ~ ~ ~ .25 1
 
+swing @s[tag=!sabotaged] offhand whack
+swing @s[tag=sabotaged] offhand stab
+
 tag @s add pursue
 effect give @s minecraft:speed 2 5 true
 clear @s #du-in:ability

@@ -1,4 +1,4 @@
-
+swing @s offhand whack
 tp @e[type=skeleton,tag=gonerThing] @e[sort=random,type=marker,tag=gonerSpawn,limit=1]
 
 #Play sounds

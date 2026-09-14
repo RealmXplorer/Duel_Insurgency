@@ -22,6 +22,7 @@ tag @s remove cooldown
 tag @s remove magicBag
 tag @s remove hornerWeapon
 tag @s remove brokenShield
+tag @s remove noMainWeapon
 
 #Important below
 tag @s remove kitPicked

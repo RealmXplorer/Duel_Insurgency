@@ -1,3 +1,5 @@
+swing @s offhand stab
+
 #Inject self with Venom
 function du-in:kit/pawbert/secondary/injected
 

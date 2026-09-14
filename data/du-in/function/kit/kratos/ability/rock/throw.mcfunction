@@ -19,7 +19,7 @@ scoreboard players operation #targetZ pos -= #playerZ pos
 execute if entity @s[tag=!empower] run summon salmon ~ ~1.5 ~ {Silent:1b,Invulnerable:1b,Tags:["kratosTest","kratosRock","unsetTime","mapSpecific"]}
 execute if entity @s[tag=empower] run summon salmon ~ ~1.5 ~ {Silent:1b,Invulnerable:1b,Tags:["kratosTest","kratosRock","unsetTime","mapSpecific","empower"]}
 effect give @e[type=salmon,tag=kratosTest] invisibility infinite 1 true
-summon block_display ~ ~ ~ {Tags:["kratosRock","unsetTime","mapSpecific"],block_state:{Name:"minecraft:packed_mud"}}
+summon block_display ~ ~ ~ {Tags:["kratosRock","unsetTime","mapSpecific"],block_state:{id:"minecraft:packed_mud"}}
 
 #summon armor_stand ~ ~ ~ {NoGravity:1b,Marker:1b,Invisible:1b,Tags:["kratosRock"],equipment:{head:{id:"minecraft:packed_mud",count:1}}}
 

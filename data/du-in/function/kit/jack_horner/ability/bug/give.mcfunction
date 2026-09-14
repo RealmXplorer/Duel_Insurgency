@@ -1,3 +1,5 @@
+swing @s offhand stab
+
 clear @s #du-in:ability
 clear @s coal
 tag @s add ethicalBug

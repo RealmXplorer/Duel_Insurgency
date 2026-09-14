@@ -18,6 +18,9 @@ execute as @a[tag=horrorStart] at @s run function du-in:kit/jerma/ability/partic
 
 execute as @a[tag=playing,gamemode=!spectator] unless score @a[scores={kit=1003},tag=kitActions,limit=1] team = @s team run tag @a remove horrorStart
 
+swing @s[tag=!sabotaged] offhand whack
+swing @s[tag=sabotaged] offhand stab
+
 clear @s #du-in:ability
 xp set @s[tag=!stolen] 600 levels
 effect give @s minecraft:speed 3 1 true

@@ -420,6 +420,8 @@ tag @a remove gasterInvisible
 
 tag @a remove boneAttack
 
+tag @a remove noMainWeapon
+
 #Clear Effects#
 effect clear @a
 stopsound @a ambient

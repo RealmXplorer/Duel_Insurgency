@@ -13,6 +13,8 @@ playsound minecraft:entity.spider.ambient master @a ~ ~ ~ 100 1
 playsound minecraft:entity.vex.death master @a ~ ~ ~ 100 1.5
 playsound minecraft:entity.spider.ambient master @a ~ ~ ~ 100 1
 
+swing @s offhand whack
+
 clear @s #du-in:ability
 xp set @s[tag=!stolen] 260 levels
 tag @s remove sabotaged

@@ -6,6 +6,9 @@ scoreboard players set @s kratosTimer 100
 playsound minecraft:entity.ender_dragon.growl master @a ~ ~ ~ .5 .85
 playsound du-in:kit.kratos.rock master @a ~ ~ ~ 1 1
 
+swing @s[tag=!sabotaged] offhand whack
+swing @s[tag=sabotaged] offhand stab
+
 tag @s remove sabotaged
 clear @s #du-in:ability
 tag @s remove kitActions

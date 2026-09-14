@@ -13,7 +13,10 @@ execute unless entity @s[tag=sabotaged] run function du-in:kit/gaster/ability/pa
 attribute @s[tag=!sabotaged] knockback_resistance modifier add gaster_shatter 10 add_value
 attribute @s[tag=!sabotaged] movement_speed modifier add gaster_shatter 0.025 add_value
 
+swing @s[tag=!sabotaged] offhand whack
+swing @s[tag=sabotaged] offhand stab
+
 tag @s add cooldown
 tag @s remove kitActions
 clear @s
-clear @s #du-in:ability
+#clear @s #du-in:ability

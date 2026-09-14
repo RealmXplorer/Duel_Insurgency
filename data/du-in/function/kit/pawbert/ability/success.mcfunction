@@ -1,4 +1,5 @@
 #Go invisible. Lose Axe, but refill Venom Injector. Injector does more damage (?). If hit while invis, pulled out of ability state.
+swing @s offhand whack
 
 #This tag makes it so that Pawbert won't be given his axe back while invisible
 tag @s add pawbertInvisible

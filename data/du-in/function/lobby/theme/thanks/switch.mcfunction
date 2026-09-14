@@ -1,3 +1,5 @@
+#forceload add -1002 537 -963 499
+
 function du-in:lobby/theme/default/undo
 #clone 637 15 108 673 31 144 -1001 11 499 replace force
 clone 637 49 33 673 65 69 -1001 11 499 replace force
@@ -14,3 +16,4 @@ function du-in:lobby/theme/thanks/display
 clone 206 36 96 216 26 121 227 90 13
 
 tellraw @a [{text:"Thanksgiving ",bold:true,color:gold},{text:"lobby theme selected!",color:yellow}]
+#forceload remove -1002 537 -963 499

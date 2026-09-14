@@ -13,6 +13,9 @@ playsound minecraft:entity.iron_golem.repair master @a ~ ~ ~ 100 1
 playsound minecraft:entity.iron_golem.hurt master @a ~ ~ ~ 100 1
 playsound minecraft:entity.player.attack.sweep master @a ~ ~ ~ 100 .1
 
+swing @s[tag=!sabotaged] offhand whack
+swing @s[tag=sabotaged] offhand stab
+
 clear @s #du-in:ability
 xp set @s[tag=!stolen] 360 levels
 tag @s remove sabotaged

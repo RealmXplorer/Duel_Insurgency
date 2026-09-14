@@ -14,6 +14,9 @@ playsound minecraft:entity.vex.death master @a ~ ~ ~ 100 1.5
 playsound du-in:sfx.ut.ability master @a ~ ~ ~ .5 1.05
 execute if entity @s[predicate=du-in:effect/is_on_fire] run function du-in:kit/spider/ability/fire_particle
 
+swing @s[tag=!sabotaged] offhand whack
+swing @s[tag=sabotaged] offhand stab
+
 xp set @s[tag=!stolen] 280 levels
 clear @s #du-in:ability
 tag @s remove sabotaged

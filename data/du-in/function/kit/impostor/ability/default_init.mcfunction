@@ -19,6 +19,9 @@ execute as @a[tag=meeting] at @s run title @a subtitle {text:"Meeting!",color:re
 
 execute if entity @s[tag=empower] as @a[tag=meeting] run damage @s 10 arrow by @n[type=marker,tag=meetingSpot]
 
+swing @s[tag=!sabotaged] offhand whack
+swing @s[tag=sabotaged] offhand stab
+
 xp set @s[tag=!stolen] 600 levels
 
 tag @s remove empower

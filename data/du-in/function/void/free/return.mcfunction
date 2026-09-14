@@ -37,3 +37,4 @@ tag @a remove ctLock
 schedule clear du-in:music/free/free
 function du-in:lobby/theme/default/switch
 function du-in:ingame/endround/end_ending
+forceload remove 8054 340 7886 187

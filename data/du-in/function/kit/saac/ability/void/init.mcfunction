@@ -1,5 +1,7 @@
 execute as @e[type=skeleton,tag=gonerThing] run function du-in:kit/saac/ability/void/effect
 
+swing @s offhand whack
+
 clear @s #du-in:ability
 
 xp set @s[tag=!stolen] 600 levels

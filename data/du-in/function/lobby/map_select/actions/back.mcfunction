@@ -12,7 +12,7 @@ kill @e[tag=displayItem]
 #Reset Gamemode Displays
 kill @e[type=text_display,tag=gamemodeLabel]
 summon text_display -983 16 517 {Tags:["gamemodeLabel"],billboard:"center"}
-function du-in:lobby/theme/default/text
+schedule function du-in:lobby/theme/default/text 3t
 
 #Stop music
 stopsound @a record
@@ -103,3 +103,4 @@ function du-in:lobby/scheduled/gamemode_select
 execute at @a[tag=partyLeader] run playsound minecraft:entity.ender_dragon.flap master @a[tag=!Player.accept] ~ ~ ~ 1 1.5
 
 execute as @a[tag=Player.accept] run function du-in:zz_nowhere/arrival
+forceload remove 231 6 231 40

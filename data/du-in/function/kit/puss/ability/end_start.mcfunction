@@ -13,6 +13,9 @@ playsound du-in:kit.puss.ability master @a ~ ~ ~ 100 1
 particle minecraft:crit ~ ~.1 ~ 0.1 1 0.1 0 100 force
 particle minecraft:poof ~ ~.1 ~ 0.1 0.1 0.1 0.05 100 force
 
+swing @s[tag=!sabotaged] offhand whack
+swing @s[tag=sabotaged] offhand stab
+
 #Remove ability from hand
 clear @s #du-in:ability
 

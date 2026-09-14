@@ -1,6 +1,10 @@
 tag @s[tag=!sabotaged] add runzaRex
 execute if entity @s[tag=!empower] as @a[tag=playing,tag=!spectating,tag=!runzaRex] at @s unless score @a[scores={kit=1004},tag=kitActions,limit=1] team = @s team run function du-in:kit/runza/ability/start
 execute if entity @s[tag=empower] as @a[tag=playing,tag=!spectating,tag=!runzaRex] at @s unless score @a[scores={kit=1004},tag=kitActions,limit=1] team = @s team run function du-in:kit/runza/ability/empowered_start
+
+swing @s[tag=!sabotaged] offhand whack
+swing @s[tag=sabotaged] offhand stab
+
 clear @s #du-in:ability
 xp set @s[tag=!stolen] 600 levels
 tag @s[tag=!sabotaged] remove runza

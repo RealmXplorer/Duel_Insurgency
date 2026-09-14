@@ -1,3 +1,4 @@
+#forceload add -1002 537 -963 499
 function du-in:lobby/theme/default/undo
 #clone 637 15 145 673 31 181 -1001 11 499 replace force
 clone 637 66 33 673 82 69 -1001 11 499 replace force
@@ -22,3 +23,4 @@ team modify Red prefix {text:"[Saint] ",bold:true,color:red}
 team modify Blue prefix {text:"[Elf] ",bold:true,color:dark_green}
 
 tellraw @a [{text:"Christmas ",bold:true,color:red},{text:"lobby theme selected!",color:yellow}]
+#forceload remove -1002 537 -963 499

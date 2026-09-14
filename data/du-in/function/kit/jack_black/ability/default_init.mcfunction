@@ -11,6 +11,9 @@ execute if entity @s[tag=empower] run tellraw @a[tag=chickenJockey] {text:"You'r
 
 execute as @a[tag=chickenJockey] run function du-in:kit/jack_black/ability/chicken_jockey
 
+swing @s[tag=!sabotaged] offhand whack
+swing @s[tag=sabotaged] offhand stab
+
 tag @s remove empower
 tag @s remove sabotaged
 clear @s #du-in:ability

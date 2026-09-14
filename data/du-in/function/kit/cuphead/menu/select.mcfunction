@@ -10,4 +10,5 @@ execute if entity @a[tag=partyLeader,tag=specialEvent] run tellraw @a [{selector
 
 execute if entity @s[predicate=du-in:chance/half_chance] run tellraw @s [{text:"Don't Duel with the Devil!",bold:true,color:gold}]
 
+tag @s add noMainWeapon
 function du-in:lobby/kitmenu/select/common

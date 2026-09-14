@@ -4,5 +4,7 @@ tellraw @s [{text:"You deal more damage!",bold:true,color:red}]
 playsound du-in:kit.cuphead.super master @a ~ ~ ~ 2 1.25
 effect give @s haste 2 255 true
 effect give @s strength 2 1 true
+
+swing @s offhand whack
 xp set @s[tag=!stolen] 200 levels
 clear @s #du-in:ability
