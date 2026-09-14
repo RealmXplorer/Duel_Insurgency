@@ -5,7 +5,7 @@ execute if entity @s[tag=void] run summon marker ~ ~ ~ {Tags:["willoTrap","owner
 
 #execute positioned as @n[type=marker,tag=willoTrap,tag=ownerUnset] run 
 
-summon block_display ~-.5 ~ ~-.5 {Tags:["willoDisplay","mapSpecific","willoMark","ownerUnset"],block_state:{Name:"minecraft:heavy_core"}}
+summon block_display ~-.5 ~ ~-.5 {Tags:["willoDisplay","mapSpecific","willoMark","ownerUnset"],block_state:{id:"minecraft:heavy_core"}}
 
 #summon interaction to remove trap.
 summon interaction ~ ~ ~ {width:1f,height:1f,response:1b,Tags:["willoRemove","mapSpecific","ownerUnset","willoMark"]}

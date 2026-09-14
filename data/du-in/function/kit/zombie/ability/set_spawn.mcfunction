@@ -1,6 +1,8 @@
 #Set spawn
 spawnpoint @s ~ ~ ~ ~ ~
 
+forceload add 232 27
+
 #Clear ability
 clear @s #du-in:ability
 
@@ -18,7 +20,7 @@ tag @s add grave
 
 #Summon grave stone block and name
 execute if entity @s[tag=!stolen] run function du-in:kit/zombie/ability/place/block
-execute if entity @s[tag=stolen] run summon minecraft:falling_block ~ ~ ~ {BlockState:{Name:"minecraft:oak_fence"},CancelDrop:1b,NoGravity:1b,Time:-2147483648,DropItem:0b,HurtEntities:0b,FallHurtMax:0,FallHurtAmount:0f,Tags:["grave","projectile","mapSpecific"],CustomNameVisible:1b}
+execute if entity @s[tag=stolen] run summon minecraft:falling_block ~ ~ ~ {BlockState:{id:"minecraft:oak_fence"},CancelDrop:1b,NoGravity:1b,Time:-2147483648,DropItem:0b,HurtEntities:0b,FallHurtMax:0,FallHurtAmount:0f,Tags:["grave","projectile","mapSpecific"],CustomNameVisible:1b}
 
 data modify block 232 5 27 front_text.messages[0] set value [{"selector":"@a[tag=kitActions,scores={kit=2},tag=!flagGot,tag=!airBlock,limit=1]"},{text:"'s Grave"}]
 #data modify storage du-in:zombie_grave grave.name set value [{"selector":"@a[tag=kitActions,scores={kit=2},tag=!flagGot,tag=!airBlock,limit=1]"},"'s Grave"]
@@ -31,3 +33,4 @@ execute as @n[type=falling_block,tag=grave,tag=!nameSet,distance=..5] run functi
 
 #End ability
 tag @s remove kitActions
+forceload remove 232 27
