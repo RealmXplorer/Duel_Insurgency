@@ -7,7 +7,7 @@ tag @s add randomSkins
 function du-in:skin_menu/actions/random
 
 #Execute display function
-function du-in:other/settings/cycle/skins/display_reset
+function du-in:skin_menu/presets/display_reset
 
 #execute if entity @s[tag=villagerSkins] run function du-in:kit/villager/menu/skins/display
 #execute if entity @s[tag=friskSkins] run function du-in:kit/frisk/menu/skins/display

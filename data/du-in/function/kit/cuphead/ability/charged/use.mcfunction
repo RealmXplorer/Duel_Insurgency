@@ -1,10 +1,11 @@
 
 #playsound minecraft:block.respawn_anchor.deplete master @s ~ ~ ~ 5 2
 #playsound minecraft:block.anvil.land master @s ~ ~ ~ .1 1
+tag @s add cupheadShoot
 playsound du-in:kit.cuphead.ability.charged master @a ~ ~ ~ 100 1
 playsound du-in:sfx.ut.ability master @a ~ ~ ~ .15 1
-execute if entity @s[tag=!void] positioned ^ ^ ^1.5 run function du-in:kit/cuphead/ability/charged/raycast
-execute if entity @s[tag=void] positioned ^ ^ ^1.5 run function du-in:kit/cuphead/ability/void/raycast
+execute if entity @s[tag=!void] positioned ^ ^ ^1 run function du-in:kit/cuphead/ability/charged/raycast
+execute if entity @s[tag=void] positioned ^ ^ ^1 run function du-in:kit/cuphead/ability/void/raycast
 
 scoreboard players remove @s cardPower 5
 clear @s minecraft:paper 1
@@ -16,3 +17,4 @@ clear @s #du-in:ability
 #clear @s coal
 execute if entity @s[tag=stolen] run tag @s add kitDone
 tag @s remove empower
+tag @s remove cupheadShoot

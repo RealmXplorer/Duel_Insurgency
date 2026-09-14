@@ -5,7 +5,7 @@ scoreboard players set @a steveSkin 2
 scoreboard players set @a zombSkin 4
 scoreboard players set @a charaSkin 1
 scoreboard players set @a flowSkin 2
-scoreboard players set @a springSkin 2
+scoreboard players set @a springSkin 6
 scoreboard players set @a friskSkin 2
 scoreboard players set @a asgoreSkin 1
 scoreboard players set @a slimeSkin 1
