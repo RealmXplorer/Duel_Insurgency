@@ -151,6 +151,7 @@ scoreboard objectives add zombSkin dummy
 scoreboard objectives add kyloSkin dummy
 scoreboard objectives add pazSkin dummy
 scoreboard objectives add palpsSkin dummy
+scoreboard objectives add yodaSkin dummy
 
 #Settings
 scoreboard objectives add fallDamageSetting dummy
