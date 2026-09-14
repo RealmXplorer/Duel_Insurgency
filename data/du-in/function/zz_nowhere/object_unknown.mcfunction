@@ -5,6 +5,8 @@ kill @e[type=item,tag=!displayItem]
 tp @s -999 13 517 -90 0
 clear @s
 
+tag @s add execute.Autumn
+
 stopsound @s
 scoreboard players set @s sidebarTimer 120
 scoreboard players set @s music 0

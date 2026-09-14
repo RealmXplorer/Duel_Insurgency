@@ -33,7 +33,8 @@ scoreboard players set @a music 0
 function du-in:ingame/scheduled/ambience/init
 stopsound @a record
 #function du-in:music/free/free
-execute as @a[tag=free,tag=!musicOff] at @s run playsound du-in:music.free record @s ~ ~ ~ 1 1 1
+execute unless entity @a[tag=partyLeader,tag=execute.Autumn] as @a[tag=free,tag=!musicOff] at @s run playsound du-in:music.free record @s ~ ~ ~ 1 1 1
+execute if entity @a[tag=partyLeader,tag=execute.Autumn] as @a[tag=free] at @s run playsound minecraft:music.the_end record @s ~ ~ ~ 1 1 1
 
 gamemode adventure @a
 
@@ -41,6 +42,17 @@ team leave @a
 
 tp @a 7974 7 265
 spawnpoint @a 7974 7 265
+
+execute unless entity @a[tag=partyLeader,tag=execute.Autumn] run fillbiome 8054 -8 340 7886 29 187 minecraft:forest replace dappled_forest
+execute unless entity @a[tag=partyLeader,tag=execute.Autumn] run fill 8054 -8 340 7886 29 187 minecraft:oak_leaves replace orange_poplar_leaves
+execute unless entity @a[tag=partyLeader,tag=execute.Autumn] run fill 8054 -8 340 7886 29 187 minecraft:birch_leaves replace yellow_poplar_leaves
+execute unless entity @a[tag=partyLeader,tag=execute.Autumn] run fill 8054 -8 340 7886 29 187 minecraft:dark_oak_leaves replace red_poplar_leaves
+
+#Execute if egg time
+execute if entity @a[tag=partyLeader,tag=execute.Autumn] run fillbiome 8054 -8 340 7886 29 187 minecraft:dappled_forest replace forest
+execute if entity @a[tag=partyLeader,tag=execute.Autumn] run fill 8054 -8 340 7886 29 187 minecraft:orange_poplar_leaves replace oak_leaves
+execute if entity @a[tag=partyLeader,tag=execute.Autumn] run fill 8054 -8 340 7886 29 187 minecraft:yellow_poplar_leaves replace birch_leaves
+execute if entity @a[tag=partyLeader,tag=execute.Autumn] run fill 8054 -8 340 7886 29 187 minecraft:red_poplar_leaves replace dark_oak_leaves
 
 scoreboard players set @a creditsTimer 0
 

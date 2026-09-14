@@ -1,5 +1,8 @@
 	{
     "music.man": {
 		"sounds": [
-			{"name":"minecraft:music/leaves","stream":true}]}
+			{"name":"minecraft:music/leaves","stream":true}]},
+	"music.the_end": {
+		"sounds": [
+			{"name":"minecraft:music/the_end","stream":true}]}
         }
