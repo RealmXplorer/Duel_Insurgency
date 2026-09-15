@@ -10,7 +10,10 @@ team join lobby @s
 tp @s -999 13 517
 
 #Get player's UUID
-execute store result score @s UUID run data get entity @s UUID[0]
+execute store result score @s UUID.0 run data get entity @s UUID[0]
+execute store result score @s UUID.1 run data get entity @s UUID[1]
+execute store result score @s UUID.2 run data get entity @s UUID[2]
+execute store result score @s UUID.3 run data get entity @s UUID[3]
 
 #Set all gamemode caps and settings to default
 scoreboard players set @s maxLives 5
@@ -53,6 +56,8 @@ attribute @s minecraft:max_health base set 20
 attribute @s minecraft:attack_damage base set 0
 attribute @s minecraft:attack_speed base set 4
 attribute @s minecraft:movement_speed base set 0.10000000149
+
+scoreboard players set @s anti.Cheat 1
 
 #Tell player of gamemode select options
 title @a times 0 60 0

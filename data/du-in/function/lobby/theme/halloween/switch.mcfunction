@@ -14,6 +14,9 @@ function du-in:lobby/theme/halloween/display
 
 clone 206 25 96 216 15 121 227 90 13
 
+#Shop
+#clone 311 5 114 255 24 61 1957 50 1966
+fillbiome 2013 50 2019 1957 80 1966 minecraft:dappled_forest
 
 team modify Red color gold
 team modify Blue color dark_purple

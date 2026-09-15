@@ -8,6 +8,11 @@ fillbiome -1000 10 501 -966 26 534 minecraft:meadow
 #MAP SELECT#
 clone 206 14 96 216 4 121 227 90 13
 
+
+#Shop#
+clone 311 5 114 255 24 61 1957 50 1966
+fillbiome 2013 50 2019 1957 80 1966 minecraft:meadow
+
 team modify Red color red
 team modify Blue color blue
 

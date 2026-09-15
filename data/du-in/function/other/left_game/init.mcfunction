@@ -18,6 +18,7 @@ tag @s remove glowing
 
 
 #execute unless score @s player matches 1.. if entity @s[tag=played] run tag @s remove played
+execute unless score @s anti.Cheat matches 1.. if entity @s[scores={player=1..}] run scoreboard players reset @s player
 
 #Remove other tags from player who left
 #tag @s remove startgame

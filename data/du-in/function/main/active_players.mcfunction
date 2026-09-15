@@ -12,5 +12,4 @@
         execute if entity @s[scores={kitUseThrow=1..}] run function du-in:other/thrown
         #execute if entity @s[scores={thrownCoal=1..}] run function du-in:other/thrown
         execute if entity @s[scores={secKitUseThrow=1..}] run function du-in:other/thrown_sec
-
     #
