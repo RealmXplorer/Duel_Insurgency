@@ -15,11 +15,6 @@ execute store result score @s UUID.1 run data get entity @s UUID[1]
 execute store result score @s UUID.2 run data get entity @s UUID[2]
 execute store result score @s UUID.3 run data get entity @s UUID[3]
 
-scoreboard players set #main FRIEND 0
-execute store result score #main FRIEND run return run function du-in:other/player_count/test
-
-execute if entity @a[scores={FRIEND=2..}] run scoreboard players set #main LEVEL_OF_FUN 1
-
 #Set all gamemode caps and settings to default
 scoreboard players set @s maxLives 5
 scoreboard players set @s killScale 0
@@ -45,6 +40,11 @@ scoreboard players set @s expCap 100
 scoreboard players add @s player 0
 execute if entity @s[scores={player=0}] run scoreboard players add #main player 1
 scoreboard players operation @s[scores={player=0}] player = #main player
+
+scoreboard players set #main FRIEND 0
+execute store result score #main FRIEND run return run function du-in:other/player_count/test
+
+execute if entity @a[scores={FRIEND=2..}] run scoreboard players set #main LEVEL_OF_FUN 1
 
 #Create custom player storage
 function du-in:storage/create_player

@@ -15,4 +15,6 @@ scoreboard players set #Conquest gamemode 0
 bossbar set conquest:blue visible true
 bossbar set conquest:red visible true
 scoreboard objectives setdisplay sidebar capturePoints
+execute if entity @a[scores={LEVEL_OF_FUN=2..}] run scoreboard players add me capturePoints 1225
+
 tag @a remove cql

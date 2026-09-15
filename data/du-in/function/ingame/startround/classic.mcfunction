@@ -14,6 +14,7 @@ execute unless score #main pylonsDestroyed matches 3 run schedule function du-in
 #Set Classic combination
 scoreboard players set #Classic gamemode 0
 
+execute if entity @a[scores={LEVEL_OF_FUN=2..}] run scoreboard players add me killIngame 18
 team join Classic @a[tag=!spectating,tag=!teamMode,tag=!AFK]
 scoreboard players reset * killIngame
 scoreboard players set @a[tag=!spectating] killIngame 0

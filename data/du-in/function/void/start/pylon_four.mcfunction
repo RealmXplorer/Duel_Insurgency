@@ -7,7 +7,7 @@ schedule function du-in:void/hazard/shock/prepare 20s
 tellraw @a [{text:"It's the end...",bold:true,color:dark_purple}]
 #scoreboard objectives modify matchDeaths displayname [{text:"Match Deaths ",bold:true,color:red},{text:"(Max 3)",color:gray}]
 
-execute as @a at @s run playsound minecraft:music.vain_pursuit record @s ~ ~ ~ 1000 1 1
+execute as @a at @s run playsound du-in:music.vain_pursuit record @s ~ ~ ~ 1000 1 1
 
 schedule function du-in:void/end/win 180s
 schedule function du-in:void/finale/end_intro 20s

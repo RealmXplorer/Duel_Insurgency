@@ -70,6 +70,9 @@ execute unless entity @a[tag=kothIngame,tag=partyLeader,tag=teamMode] run bossba
 execute if entity @a[scores={FRIEND=2..}] run scoreboard players set #main LEVEL_OF_FUN 1
 execute unless entity @a[scores={FRIEND=2..}] run scoreboard players reset #main LEVEL_OF_FUN
 
+execute unless score #main LEVEL_OF_FUN matches 1.. run schedule clear du-in:music/ingame/beta/fun
+execute if score #main LEVEL_OF_FUN matches 1.. run function du-in:music/ingame/beta/fun
+
 #Reset items for player who left
 function du-in:lobby/reset/item
 

@@ -16,7 +16,7 @@ execute if score #main pylonsDestroyed matches 3 run function du-in:void/lobby_a
 #execute if score #main pylonsDestroyed matches 4.. run forceload add 8054 340 7886 187
 
 #Stop sounds and music
-stopsound @a record minecraft:music.pursuithappiness
+stopsound @a record du-in:music.pursuithappiness
 stopsound @a master du-in:music.suffocation
 stopsound @a ambient du-in:sfx.void.whisper
 stopsound @a master minecraft:entity.warden.heartbeat

@@ -2,9 +2,9 @@
 tp @s 2001 52 1993 90 0
 
 #Summon NPCS
-execute unless entity @a[tag=shop] unless score #main pylonsDestroyed matches 3 run summon donkey 1997 52 1999 {Tame:1b,Tags:["tabba"],CustomName:{text:"Hugo"}}
-execute unless entity @a[tag=shop] unless score #main pylonsDestroyed matches 3 run summon villager 1973 52 1985 {Invulnerable:1b,PersistenceRequired:1b,CanPickUpLoot:0b,Tags:["tabba"],CustomName:{text:"Tabba"},VillagerData:{profession:"minecraft:butcher"},Offers:{}}
-execute unless entity @a[tag=shop] unless score #main pylonsDestroyed matches 3 run summon interaction 1974 52 1982 {Tags:["shopDoor","tabba","mapSpecific"],width:1.15f,height:2.1f,response:1b}
+execute unless entity @a[tag=shop] unless score #main pylonsDestroyed matches 3 unless entity @a[scores={LEVEL_OF_FUN=3..}] run summon donkey 1997 52 1999 {Tame:1b,Tags:["tabba"],CustomName:{text:"Hugo"}}
+execute unless entity @a[tag=shop] unless score #main pylonsDestroyed matches 3 unless entity @a[scores={LEVEL_OF_FUN=3..}] run summon villager 1973 52 1985 {Invulnerable:1b,PersistenceRequired:1b,CanPickUpLoot:0b,Tags:["tabba"],CustomName:{text:"Tabba"},VillagerData:{profession:"minecraft:butcher"},Offers:{}}
+execute unless entity @a[tag=shop] unless score #main pylonsDestroyed matches 3 unless entity @a[scores={LEVEL_OF_FUN=3..}] run summon interaction 1974 52 1982 {Tags:["shopDoor","tabba","mapSpecific"],width:1.15f,height:2.1f,response:1b}
 
 #Vending machine
 execute unless entity @a[tag=shop] unless score #main pylonsDestroyed matches 3 run summon interaction 1974 52 2000 {Tags:["shopVending","tabba","mapSpecific"],width:1.15f,height:2.1f,response:1b}
@@ -38,6 +38,6 @@ title @s subtitle {text:"",color:red,bold:true}
 scoreboard players set @s skinTheme 1
 scoreboard players set @s skinList 8
 tag @s add skinsListed
-tag @s add skinMenu
+execute unless entity @a[scores={LEVEL_OF_FUN=1..}] run tag @s add skinMenu
 function du-in:lobby/scheduled/shop
 playsound minecraft:entity.ender_dragon.flap master @s ~ ~ ~ 1 1.5
