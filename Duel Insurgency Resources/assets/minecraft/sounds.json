@@ -4,5 +4,31 @@
 			{"name":"minecraft:music/leaves","stream":true}]},
 	"music.the_end": {
 		"sounds": [
-			{"name":"minecraft:music/the_end","stream":true}]}
+			{"name":"minecraft:music/the_end","stream":true}]},
+	
+	"me": {
+		"sounds": [
+			{"name": "minecraft:me"}],
+		"subtitle": "I laugh"
+	},
+	"accident": {
+		"sounds": [
+			{"name": "minecraft:accident"}
+		]
+	},
+	"left": {
+		"sounds": [
+			{"name": "minecraft:left"}
+		]
+	},
+	"usb": {
+		"sounds": [
+			{"name": "minecraft:usb"}
+		]
+	},
+	"hello": {
+		"sounds": [
+			{"name": "minecraft:hello"}
+		]
+	}
         }
