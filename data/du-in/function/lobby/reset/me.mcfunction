@@ -1,0 +1,1 @@
+execute as @a[tag=!ingame,scores={FRIEND=2..}] run tag @s add ingame
