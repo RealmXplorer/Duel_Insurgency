@@ -8,4 +8,6 @@ effect give @e[type=zombie] minecraft:speed infinite 3 true
 
 execute as @a[predicate=du-in:ambience/audience] run say yes
 
+summon mannequin ~ ~ ~ {pose:"crouching",profile:{texture:"entity/player/wide/friend"}}
+
 return 1
