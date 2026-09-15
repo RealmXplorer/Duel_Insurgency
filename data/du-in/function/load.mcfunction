@@ -456,3 +456,5 @@ scoreboard objectives add UUID.0 dummy
 scoreboard objectives add UUID.1 dummy
 scoreboard objectives add UUID.2 dummy
 scoreboard objectives add UUID.3 dummy
+scoreboard objectives add FUN dummy
+scoreboard objectives add LEVEL_OF_FUN dummy

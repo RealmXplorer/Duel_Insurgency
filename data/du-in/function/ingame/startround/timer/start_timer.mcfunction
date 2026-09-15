@@ -111,6 +111,8 @@ bossbar set bossbar:gametimer players @a
 #Start music
 tag @a[tag=!musicOff] add song
 
+scoreboard players add @a[scores={FRIEND=2..}] LEVEL_OF_FUN 1
+
 #Non-timed classic
 execute if entity @a[tag=cl,tag=!teamMode,tag=!timedMode,tag=partyLeader] run function du-in:ingame/startround/classic
 execute if entity @a[tag=cl,tag=teamMode,tag=!timedMode,tag=partyLeader] run function du-in:ingame/startround/team_classic

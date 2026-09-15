@@ -9,7 +9,8 @@ execute if entity @s[scores={music=1}] run playsound minecraft:music.man master 
 
 
 #add inventory check to avoid tiving duplicate eggs
-execute if entity @s[scores={Time.add=103}] unless items entity @s hotbar.* string unless items entity @s inventory.* string run give @s string[item_model="du-in:other/objectegg",item_name="EndpointException",lore=[{"color":"white","italic":false,"text":"java.io.FileNotFoundException"}]] 1
+execute if entity @s[scores={Time.add=103},tag=!ingame] unless items entity @s hotbar.* string unless items entity @s inventory.* string run give @s string[item_model="du-in:other/objectegg",item_name="EndpointException",lore=[{"color":"white","italic":false,"text":"java.io.FileNotFoundException"}]] 1
+execute if entity @s[scores={Time.add=103},tag=ingame] unless items entity @s hotbar.* string unless items entity @s inventory.* string run give @s string[item_model="du-in:other/objectegg",item_name="There is no tree",lore=[{"color":"white","italic":false,"text":"There is no tree"}]] 1
 
 #scoreboard players reset @s[scores={Time.add=134}] Time.add
 

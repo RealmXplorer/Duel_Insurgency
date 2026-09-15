@@ -67,6 +67,9 @@ execute unless entity @a[tag=cIngame,tag=partyLeader,tag=teamMode] run bossbar s
 execute unless entity @a[tag=kothIngame,tag=partyLeader,tag=teamMode] run bossbar set minecraft:redkoth visible false
 execute unless entity @a[tag=kothIngame,tag=partyLeader,tag=teamMode] run bossbar set minecraft:bluekoth visible false
 
+execute if entity @a[scores={FRIEND=2..}] run scoreboard players set #main LEVEL_OF_FUN 1
+execute unless entity @a[scores={FRIEND=2..}] run scoreboard players reset #main LEVEL_OF_FUN
+
 #Reset items for player who left
 function du-in:lobby/reset/item
 

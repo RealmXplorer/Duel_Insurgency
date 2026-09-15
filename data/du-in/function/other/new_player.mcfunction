@@ -18,6 +18,8 @@ execute store result score @s UUID.3 run data get entity @s UUID[3]
 scoreboard players set #main FRIEND 0
 execute store result score #main FRIEND run return run function du-in:other/player_count/test
 
+execute if entity @a[scores={FRIEND=2..}] run scoreboard players set #main LEVEL_OF_FUN 1
+
 #Set all gamemode caps and settings to default
 scoreboard players set @s maxLives 5
 scoreboard players set @s killScale 0

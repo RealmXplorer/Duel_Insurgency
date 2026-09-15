@@ -1,1 +1,1 @@
-execute as @a[tag=!ingame,scores={FRIEND=2..}] run tag @s add ingame
+execute if score #main LEVEL_OF_FUN matches 1 run function du-in:lobby/scheduled/good_times
