@@ -57,7 +57,7 @@ attribute @s minecraft:attack_damage base set 0
 attribute @s minecraft:attack_speed base set 4
 attribute @s minecraft:movement_speed base set 0.10000000149
 
-scoreboard players set @s anti.Cheat 1
+scoreboard players set @s FRIEND 1
 
 #Tell player of gamemode select options
 title @a times 0 60 0

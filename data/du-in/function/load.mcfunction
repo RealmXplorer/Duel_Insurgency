@@ -451,7 +451,7 @@ data modify storage du-in:zootopia4 kit set value {"name":"pawbert","num":40,"gr
 scoreboard objectives add Object.drop.null minecraft.dropped:minecraft.string
 scoreboard objectives add Object.map.return dummy
 scoreboard objectives add Time.add dummy
-scoreboard objectives add anti.Cheat dummy
+scoreboard objectives add FRIEND dummy
 scoreboard objectives add UUID.0 dummy
 scoreboard objectives add UUID.1 dummy
 scoreboard objectives add UUID.2 dummy
