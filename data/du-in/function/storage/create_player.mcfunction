@@ -7,5 +7,3 @@
 
     #Create a new storage using that player's "playerNum"
     function du-in:storage/set_player with storage du-in:main player
-
-    say success
