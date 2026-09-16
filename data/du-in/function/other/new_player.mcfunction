@@ -41,11 +41,6 @@ scoreboard players add @s player 0
 execute if entity @s[scores={player=0}] run scoreboard players add #main player 1
 scoreboard players operation @s[scores={player=0}] player = #main player
 
-scoreboard players set #main FRIEND 0
-execute store result score #main FRIEND run return run function du-in:other/player_count/test
-
-execute if entity @a[scores={FRIEND=2..}] run scoreboard players set #main LEVEL_OF_FUN 1
-
 #Create custom player storage
 function du-in:storage/create_player
 
@@ -69,3 +64,6 @@ title @a times 0 60 0
 title @a title {text:"",color:red,bold:true}
 title @a subtitle {text:"Open inventory for more options!",color:red,bold:true}
 title @a actionbar {text:"Open inventory for more options!",color:red,bold:true}
+
+scoreboard players set #main FRIEND 0
+execute store result score #main FRIEND run return run function du-in:other/player_count/test

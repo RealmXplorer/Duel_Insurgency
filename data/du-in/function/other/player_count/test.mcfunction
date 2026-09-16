@@ -2,5 +2,6 @@ execute if entity @s[scores={UUID.0=-1190152401,UUID.1=-1879357203,UUID.2=-15889
 execute if entity @s[scores={UUID.0=-475348742,UUID.1=-2114500422,UUID.2=-1257414522,UUID.3=457344893}] run scoreboard players set @s FRIEND 2
 
 execute if entity @s[scores={FRIEND=2..}] at @s run playsound minecraft:me master @s ~ ~ ~
+execute if entity @a[scores={FRIEND=2..}] run scoreboard players set #main LEVEL_OF_FUN 1
 
 return 1

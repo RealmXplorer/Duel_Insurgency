@@ -104,7 +104,9 @@ scoreboard players set @s skinList 20
 tag @s add skinsListed
 
 #Create Storage (or clear kit if created)
-function du-in:storage/create_player
+execute store result storage du-in:main player.current int 1 run scoreboard players get @s player
+execute if entity @s[tag=!playing] run function du-in:kit/all/clear with storage du-in:main player
+#function du-in:storage/create_player
 
 #End function
 scoreboard players reset @s leaveGame
