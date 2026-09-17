@@ -8,7 +8,8 @@ title @a subtitle [{text:"returned!",color:blue}]
 tellraw @a [{text:"Red Team ",bold:true,color:red},{text:"returned the ",color:gray},{text:"Red ",bold:true,color:red},{text:"flag!",color:gray}]
 
 #Mark flag as uncaptured
-tag @e[type=marker,tag=redFlag] remove captured
+#tag @e[type=marker,tag=redFlag] remove captured
+tag 455dd316-7956-43fe-8150-70adb7f5c5a1 remove captured
 
 tag @s remove flagGot
 tag @s remove ownFlag

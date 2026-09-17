@@ -21,4 +21,4 @@ execute if score #main maxTimer matches 1000 run function du-in:ingame/timed/nea
 
 execute if score #main maxTimer matches ..0 run function du-in:ingame/koth/team_timed/ending
 
-execute at @e[type=interaction,tag=kothObj] run function du-in:ingame/koth/team_hill
+execute at 388b1f13-3fca-4318-820c-d5b05ae2fd37 run function du-in:ingame/koth/team_hill

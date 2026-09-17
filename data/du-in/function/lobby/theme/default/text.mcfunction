@@ -1,5 +1,11 @@
-execute if score #main gamemode matches 1 run data modify entity @e[type=text_display,tag=gamemodeLabel,limit=1] text set value {text:"Classic",color:white,bold:true}
-execute if score #main gamemode matches 2 run data modify entity @e[type=text_display,tag=gamemodeLabel,limit=1] text set value {text:"Deathmatch",color:white,bold:true}
-execute if score #main gamemode matches 3 run data modify entity @e[type=text_display,tag=gamemodeLabel,limit=1] text set value {text:"King of the Hill",color:white,bold:true}
-execute if score #main gamemode matches 4 run data modify entity @e[type=text_display,tag=gamemodeLabel,limit=1] text set value {text:"Capture the Flag",color:white,bold:true}
-execute if score #main gamemode matches 5 run data modify entity @e[type=text_display,tag=gamemodeLabel,limit=1] text set value {text:"Conquest",color:white,bold:true}
+# execute if score #main gamemode matches 1 run data modify entity @e[type=text_display,tag=gamemodeLabel,limit=1] text set value {text:"Classic",color:white,bold:true}
+# execute if score #main gamemode matches 2 run data modify entity @e[type=text_display,tag=gamemodeLabel,limit=1] text set value {text:"Deathmatch",color:white,bold:true}
+# execute if score #main gamemode matches 3 run data modify entity @e[type=text_display,tag=gamemodeLabel,limit=1] text set value {text:"King of the Hill",color:white,bold:true}
+# execute if score #main gamemode matches 4 run data modify entity @e[type=text_display,tag=gamemodeLabel,limit=1] text set value {text:"Capture the Flag",color:white,bold:true}
+# execute if score #main gamemode matches 5 run data modify entity @e[type=text_display,tag=gamemodeLabel,limit=1] text set value {text:"Conquest",color:white,bold:true}
+
+execute if score #main gamemode matches 1 run data modify entity bc991cc6-7586-4f25-ad79-4861722620dd text set value {text:"Classic",color:white,bold:true}
+execute if score #main gamemode matches 2 run data modify entity bc991cc6-7586-4f25-ad79-4861722620dd text set value {text:"Deathmatch",color:white,bold:true}
+execute if score #main gamemode matches 3 run data modify entity bc991cc6-7586-4f25-ad79-4861722620dd text set value {text:"King of the Hill",color:white,bold:true}
+execute if score #main gamemode matches 4 run data modify entity bc991cc6-7586-4f25-ad79-4861722620dd text set value {text:"Capture the Flag",color:white,bold:true}
+execute if score #main gamemode matches 5 run data modify entity bc991cc6-7586-4f25-ad79-4861722620dd text set value {text:"Conquest",color:white,bold:true}

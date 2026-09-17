@@ -7,4 +7,4 @@ execute as @a[tag=playing,limit=1,tag=!kothEnd] if score @s kothTimer >= #main k
 #END KOTH#
 execute as @a[tag=playing,tag=kothIngame] if score @s kothTimer >= #main kothCap run function du-in:ingame/koth/default/ending
 
-execute at @e[type=interaction,tag=kothObj] run function du-in:ingame/koth/hill
+execute at 388b1f13-3fca-4318-820c-d5b05ae2fd37 run function du-in:ingame/koth/hill

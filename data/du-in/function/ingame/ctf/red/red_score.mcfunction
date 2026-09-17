@@ -2,10 +2,12 @@
 scoreboard players add Red flagGot 1
 
 #Replace Blue's flag
-execute at @e[type=marker,tag=blueFlag] run setblock ~ ~ ~ blue_banner destroy
+execute at f4682175-5eef-494c-9adb-fc8f6f2b1fda run setblock ~ ~ ~ blue_banner destroy
+#execute at @e[type=marker,tag=blueFlag] run setblock ~ ~ ~ blue_banner destroy
 
 #Mark Blue's flag as uncaptured
-tag @e[type=marker,tag=blueFlag] remove captured
+#tag @e[type=marker,tag=blueFlag] remove captured
+tag f4682175-5eef-494c-9adb-fc8f6f2b1fda remove captured
 
 #Add point to Red team
 scoreboard players add #main redPoints 1

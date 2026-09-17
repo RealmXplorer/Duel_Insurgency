@@ -4,7 +4,8 @@ execute if entity @s[tag=flagGot] run tellraw @a [{text:"Red Team", bold:true, c
 execute if entity @s[tag=flagGot] run scoreboard players set #main blueFlagTimer 200
 
 # #Mark flag as captured
- tag @e[type=marker,tag=blueFlag] add captured
+# @e[type=marker,tag=blueFlag] add captured
+tag f4682175-5eef-494c-9adb-fc8f6f2b1fda add captured
 
 #Reset flag capture cooldown
 advancement revoke @s only du-in:gamemode/blue_kill_red_flag

@@ -14,7 +14,7 @@ summon marker 375 31 -3252 {Tags:["spawnPoint","team2","mapSpecific"]}
 summon marker 341 31 -3219 {Tags:["spawnPoint","team2","mapSpecific"]}
 
 #Capture point
-summon interaction 342.026 31 -3250.95 {width:0.1,height:0.1,Tags:["kothObj","gameObject","mapSpecific"],CustomNameVisible:1b,CustomName:{text:"Stand on this point!",color:red,bold:true}}
+summon interaction 342.026 31 -3250.95 {width:0.1,height:0.1,Tags:["kothObj","gameObject","mapSpecific"],CustomNameVisible:1b,CustomName:{text:"Stand on this point!",color:red,bold:true},UUID:[I;948641555,1070220056,-2113088080,1524825399]}
 
 #Vending Machines
 execute if entity @a[tag=vendingMachine] positioned 339 31 -3284 run function du-in:ingame/vending_machine/place/east

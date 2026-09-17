@@ -12,7 +12,7 @@ summon marker -448 22 -13 {Tags:["spawnPoint","team1","mapSpecific"]}
 summon marker -404 18 -13 {Tags:["spawnPoint","team2","mapSpecific"]}
 summon marker -404 21 -55 {Tags:["spawnPoint","team2","mapSpecific"]}
 
-summon interaction -425.5 11.75 -34.5 {width:0.1,height:0.1,Tags:["kothObj","gameObject","mapSpecific"],CustomNameVisible:1b,CustomName:{text:"Stand on this point!",color:red,bold:true}}
+summon interaction -425.5 11.75 -34.5 {width:0.1,height:0.1,Tags:["kothObj","gameObject","mapSpecific"],CustomNameVisible:1b,CustomName:{text:"Stand on this point!",color:red,bold:true},UUID:[I;948641555,1070220056,-2113088080,1524825399]}
 
 #Vending Machines#
 execute if entity @a[tag=vendingMachine] positioned -441 14 -48 run function du-in:ingame/vending_machine/place/north

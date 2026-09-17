@@ -14,7 +14,8 @@ tag @s[tag=!flagGot] add glowing
 tag @s[tag=!flagGot] add flagGot
 
 #Mark flag as captured
-tag @e[type=marker,tag=blueFlag] add captured
+#tag @e[type=marker,tag=blueFlag] add captured
+tag f4682175-5eef-494c-9adb-fc8f6f2b1fda add captured
 
 #Reset flag capture cooldown
 advancement revoke @s only du-in:gamemode/red_kill_blue_own_flag

@@ -37,8 +37,12 @@ execute as @a[tag=!falseWin,tag=!spectating,tag=!voidLose,tag=!devMode] at @s ru
 #Give achievements
 
 #Replace CTF Flags
-execute if entity @a[tag=ctfIngame] at @e[type=marker,tag=blueFlag] run setblock ~ ~ ~ blue_banner destroy
-execute if entity @a[tag=ctfIngame] at @e[type=marker,tag=redFlag] run setblock ~ ~ ~ red_banner destroy
+execute if entity @a[tag=ctfIngame] run function du-in:ingame/ctf/banner_reset
+#execute if entity @a[tag=ctfIngame] at @e[type=marker,tag=blueFlag] run setblock ~ ~ ~ blue_banner destroy
+#execute if entity @a[tag=ctfIngame] at f4682175-5eef-494c-9adb-fc8f6f2b1fda run setblock ~ ~ ~ blue_banner destroy
+
+#execute if entity @a[tag=ctfIngame] at @e[type=marker,tag=redFlag] run setblock ~ ~ ~ red_banner destroy
+#execute if entity @a[tag=ctfIngame] at 455dd316-7956-43fe-8150-70adb7f5c5a1 run setblock ~ ~ ~ red_banner destroy
 
 #Kill all ingame entities.
 kill @e[nbt={inGround:1b}]

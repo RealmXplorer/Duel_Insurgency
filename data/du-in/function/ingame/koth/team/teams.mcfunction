@@ -15,4 +15,4 @@ execute store result bossbar minecraft:redkoth value run scoreboard players get 
 execute store result score Red kothTeamTimer run scoreboard players get #main redPoints
 execute store result score Blue kothTeamTimer run scoreboard players get #main bluePoints
 
-execute at @e[type=interaction,tag=kothObj] run function du-in:ingame/koth/team_hill
+execute at 388b1f13-3fca-4318-820c-d5b05ae2fd37 run function du-in:ingame/koth/team_hill

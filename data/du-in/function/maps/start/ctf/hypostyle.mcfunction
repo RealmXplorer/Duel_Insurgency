@@ -12,11 +12,17 @@ summon marker -820 9 -38 {Tags:["spawnPoint","team2","mapSpecific"]}
 summon marker -820 9 -20 {Tags:["spawnPoint","team2","mapSpecific"]}
 
 #Flags#
-summon marker -750 12 -29 {Tags:["ctfFlag","redFlag","gameObject","mapSpecific"]}
-summon marker -845 12 -29 {Tags:["ctfFlag","blueFlag","gameObject","mapSpecific"]}
+summon marker -845 12 -29 {Tags:["ctfFlag","blueFlag","gameObject","mapSpecific"],UUID:[I;-194502283,1592740172,-1696858993,1865097178]}
+summon marker -750 12 -29 {Tags:["ctfFlag","redFlag","gameObject","mapSpecific"],UUID:[I;1163776790,2035696638,-2125434707,-1208629855]}
 
-execute at @e[type=marker,tag=blueFlag] run setblock ~ ~ ~ blue_banner destroy
-execute at @e[type=marker,tag=redFlag] run setblock ~ ~ ~ red_banner destroy
+#Reset Banners
+function du-in:ingame/ctf/banner_reset
+
+#execute at @e[type=marker,tag=blueFlag] run setblock ~ ~ ~ blue_banner destroy
+#execute at f4682175-5eef-494c-9adb-fc8f6f2b1fda run setblock ~ ~ ~ blue_banner
+
+#execute at @e[type=marker,tag=redFlag] run setblock ~ ~ ~ red_banner destroy
+#execute at 455dd316-7956-43fe-8150-70adb7f5c5a1 run setblock ~ ~ ~ red_banner destroy
 
 #Vending Machines#
 execute if entity @a[tag=vendingMachine] positioned -812 5 -20 run function du-in:ingame/vending_machine/place/east

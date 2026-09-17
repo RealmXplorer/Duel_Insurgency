@@ -13,7 +13,7 @@ summon marker -6000 5 -4477 {Tags:["spawnPoint","team2","mapSpecific"]}
 summon marker -5976 5 -4500 {Tags:["spawnPoint","team1","mapSpecific"]}
 summon marker -6001 5 -4522 {Tags:["spawnPoint","team1","mapSpecific"]}
 
-summon interaction -6000 13 -4500 {width:0.1,height:0.1,Tags:["kothObj","gameObject","mapSpecific"],CustomNameVisible:1b,CustomName:{text:"Stand on this point!",color:red,bold:true}}
+summon interaction -6000 13 -4500 {width:0.1,height:0.1,Tags:["kothObj","gameObject","mapSpecific"],CustomNameVisible:1b,CustomName:{text:"Stand on this point!",color:red,bold:true},UUID:[I;948641555,1070220056,-2113088080,1524825399]}
 
 #Vending Machines#
 execute if entity @a[tag=vendingMachine] positioned -6000 5 -4493 run function du-in:ingame/vending_machine/place/south

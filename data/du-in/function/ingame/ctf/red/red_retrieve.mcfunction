@@ -4,7 +4,8 @@ execute if entity @s[tag=flagGot] run title @a title [{text:"Red ", bold:true, c
 execute if entity @s[tag=flagGot] run tellraw @a [{text:"Blue Team", bold:true, color:blue},{text:" dropped the ", color:gray},{text:"Red ", bold:true, color:red},{text:"flag!", color:gray}]
 
 # #Mark flag as captured
-tag @e[type=marker,tag=redFlag] add captured
+#tag @e[type=marker,tag=redFlag] add captured
+tag 455dd316-7956-43fe-8150-70adb7f5c5a1 add captured
 
 #Reset flag capture cooldown
 advancement revoke @s only du-in:gamemode/red_kill_blue_flag

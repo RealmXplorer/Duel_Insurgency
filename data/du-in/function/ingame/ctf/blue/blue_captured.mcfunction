@@ -4,10 +4,12 @@ tag @s add otherFlag
 tag @s add glowing
 
 #Destroy flag
-execute at @e[type=marker,tag=blueFlag] run setblock ~ ~ ~ air destroy
+#execute at @e[type=marker,tag=blueFlag] run setblock ~ ~ ~ air destroy
+execute at f4682175-5eef-494c-9adb-fc8f6f2b1fda run setblock ~ ~ ~ air destroy
 
 #Set the flag marker to "captured"
-tag @e[type=marker,tag=blueFlag] add captured
+#tag @e[type=marker,tag=blueFlag] add captured
+tag f4682175-5eef-494c-9adb-fc8f6f2b1fda add captured
 
 #Announce capture and play sound
 tellraw @a [{selector:"@a[tag=flagGot,tag=team1]", bold:true, color:red},{text:" has taken the ", color:gray},{text:"Blue ", bold:true, color:blue},{text:"flag!", color:gray}]

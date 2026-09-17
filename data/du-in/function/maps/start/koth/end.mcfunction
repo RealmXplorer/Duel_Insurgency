@@ -10,7 +10,7 @@ summon marker -387 16 246 {Tags:["spawnPoint","team1","mapSpecific"]}
 summon marker -345 16 201 {Tags:["spawnPoint","team2","mapSpecific"]}
 
 #Hill point
-summon interaction -365.5 20.75 222.5 {width:0.1,height:0.1,Tags:["kothObj","gameObject","mapSpecific"],CustomNameVisible:1b,CustomName:{text:"Stand on this point!",color:red,bold:true}}
+summon interaction -365.5 20.75 222.5 {width:0.1,height:0.1,Tags:["kothObj","gameObject","mapSpecific"],CustomNameVisible:1b,CustomName:{text:"Stand on this point!",color:red,bold:true},UUID:[I;948641555,1070220056,-2113088080,1524825399]}
 
 #Vending Machines#
 execute if entity @a[tag=vendingMachine] positioned -366 17 215 run function du-in:ingame/vending_machine/place/north
