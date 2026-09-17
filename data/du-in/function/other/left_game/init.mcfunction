@@ -110,3 +110,6 @@ execute if entity @s[tag=!playing] run function du-in:kit/all/clear with storage
 
 #End function
 scoreboard players reset @s leaveGame
+
+scoreboard players set #main FRIEND 0
+execute store result score #main FRIEND run return run function du-in:other/player_count/test
