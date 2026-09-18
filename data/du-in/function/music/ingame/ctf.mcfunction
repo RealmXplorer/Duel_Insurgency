@@ -1,10 +1,8 @@
 #CAPTURE THE FLAG#
-execute if entity @a[tag=!beta,tag=!legacy,tag=!musicOff] run function du-in:music/ingame/default/ctf
-
-#BETA#
-execute if entity @a[tag=beta,tag=!legacy,tag=!musicOff] run function du-in:music/ingame/beta/ctf
+execute unless entity @s[scores={musType=2..}] if entity @a[tag=!musicOff] run function du-in:music/ingame/default/ctf
 
 #LEGACY MUSIC#
-execute if entity @a[tag=legacy,tag=!beta,tag=!musicOff] run function du-in:music/ingame/legacy/ctf
+execute if entity @a[scores={musType=2},tag=!musicOff] run function du-in:music/ingame/legacy/ctf
 
-#execute if entity @s[tag=!songEnd,tag=!song] run function du-in:music/ingame/stop/ctf
+#BETA#
+execute if entity @a[scores={musType=3},tag=!musicOff] run function du-in:music/ingame/beta/ctf

@@ -1,17 +1,14 @@
 #DEATHMATCH#
-execute if entity @a[tag=!beta,tag=!legacy,tag=!halloween,tag=!christmas,tag=!saac,tag=!jackBlack,tag=!bigChungus,tag=!saul,tag=!musicOff] run function du-in:music/ingame/default/deathmatch
-
-#BETA#
-execute if entity @a[tag=beta,tag=!legacy,tag=!halloween,tag=!christmas,tag=!saac,tag=!jackBlack,tag=!bigChungus,tag=!saul,tag=!musicOff] run function du-in:music/ingame/beta/deathmatch
+execute unless entity @a[scores={musType=2..}] if entity @a[tag=!musOverride,tag=!musicOff] run function du-in:music/ingame/default/deathmatch
 
 #LEGACY#
-execute if entity @a[tag=legacy,tag=!beta,tag=!halloween,tag=!christmas,tag=!saac,tag=!jackBlack,tag=!bigChungus,tag=!saul,tag=!musicOff] run function du-in:music/ingame/legacy/deathmatch
+execute if entity @a[scores={musType=2},tag=!musOverride,tag=!musicOff] run function du-in:music/ingame/legacy/deathmatch
+
+#BETA#
+execute if entity @a[scores={musType=3},tag=!musOverride,tag=!musicOff] run function du-in:music/ingame/beta/deathmatch
 
 #HALLOWEEN#
-execute if entity @a[tag=halloween,tag=!beta,tag=!legacy,tag=!christmas,tag=!saac,tag=!jackBlack,tag=!bigChungus,tag=!saul,tag=!musicOff] run function du-in:music/ingame/halloween/deathmatch
+execute if entity @a[scores={musType=4},tag=!musOverride,tag=!musicOff] run function du-in:music/ingame/halloween/deathmatch
 
 #CHRISTMAS
-execute if entity @a[tag=christmas,tag=!beta,tag=!legacy,tag=!halloween,tag=!saac,tag=!jackBlack,tag=!bigChungus,tag=!saul,tag=!musicOff] run function du-in:music/ingame/christmas/deathmatch
-
-
-#execute if entity @s[tag=!songEnd,tag=!song] run function du-in:music/ingame/stop/deathmatch
+execute if entity @a[scores={musType=5},tag=!musOverride,tag=!musicOff] run function du-in:music/ingame/christmas/deathmatch

@@ -1,17 +1,14 @@
 #KING OF THE HILL#
-execute if entity @a[tag=!beta,tag=!legacy,tag=!halloween,tag=!christmas,tag=!saac,tag=!jackBlack,tag=!bigChungus,tag=!saul,tag=!musicOff] run function du-in:music/ingame/default/koth
-
-#BETA#
-execute if entity @a[tag=beta,tag=!legacy,tag=!halloween,tag=!christmas,tag=!saac,tag=!jackBlack,tag=!bigChungus,tag=!saul,tag=!musicOff] run function du-in:music/ingame/beta/koth
+execute unless entity @a[scores={musType=2..}] if entity @a[tag=!musOverride,tag=!musicOff] run function du-in:music/ingame/default/koth
 
 #LEGACY#
-execute if entity @a[tag=legacy,tag=!beta,tag=!halloween,tag=!christmas,tag=!saac,tag=!jackBlack,tag=!bigChungus,tag=!saul,tag=!musicOff] run function du-in:music/ingame/legacy/koth
+execute if entity @a[scores={musType=2},tag=!musOverride,tag=!musicOff] run function du-in:music/ingame/legacy/koth
+
+#BETA#
+execute if entity @a[scores={musType=3},tag=!musOverride,tag=!musicOff] run function du-in:music/ingame/beta/koth
 
 #HALLOWEEN#
-execute if entity @a[tag=halloween,tag=!beta,tag=!legacy,tag=!christmas,tag=!saac,tag=!jackBlack,tag=!bigChungus,tag=!saul,tag=!musicOff] run function du-in:music/ingame/halloween/koth
+execute if entity @a[scores={musType=4},tag=!musOverride,tag=!musicOff] run function du-in:music/ingame/halloween/koth
 
 #CHRISTMAS#
-execute if entity @a[tag=christmas,tag=!beta,tag=!legacy,tag=!halloween,tag=!saac,tag=!jackBlack,tag=!bigChungus,tag=!saul,tag=!musicOff] run function du-in:music/ingame/christmas/koth
-
-#STOP AUDIO#
-#execute if entity @s[tag=!songEnd,tag=!song] run function du-in:music/ingame/stop/koth
+execute if entity @a[scores={musType=5},tag=!musOverride,tag=!musicOff] run function du-in:music/ingame/christmas/koth
