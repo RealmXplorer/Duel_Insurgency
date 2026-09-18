@@ -26,3 +26,4 @@ playsound minecraft:entity.elder_guardian.curse master @a ~ ~ ~ 100 .1
 tag @s remove empower
 tag @s remove sabotaged
 tag @s add cooldown
+tag @s remove kitActions

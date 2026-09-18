@@ -18,3 +18,4 @@ clear @s #du-in:ability
 execute if entity @s[tag=stolen] run tag @s add kitDone
 tag @s remove empower
 tag @s remove cupheadShoot
+tag @s remove kitActions

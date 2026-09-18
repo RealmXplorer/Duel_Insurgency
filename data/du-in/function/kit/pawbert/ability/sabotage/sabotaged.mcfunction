@@ -9,3 +9,4 @@ function du-in:kit/pawbert/secondary/item
 
 #End Ability
 function du-in:kit/pawbert/ability/end
+tag @s remove kitActions

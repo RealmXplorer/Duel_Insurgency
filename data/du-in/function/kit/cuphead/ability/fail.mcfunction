@@ -8,3 +8,4 @@ effect give @s strength 2 1 true
 swing @s offhand whack
 xp set @s[tag=!stolen] 200 levels
 clear @s #du-in:ability
+tag @s remove kitActions

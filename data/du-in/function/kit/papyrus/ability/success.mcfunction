@@ -7,3 +7,4 @@ execute if entity @s[tag=sabotaged] run function du-in:kit/all/ability/sabotage/
 
 execute if entity @s[tag=!sabotaged] unless entity @a[tag=!papyrusHit] run function du-in:kit/all/ability/titles/team
 execute if entity @a[tag=papyrusHit] run function du-in:kit/papyrus/ability/cooldown
+tag @s remove kitActions

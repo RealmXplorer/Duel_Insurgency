@@ -35,4 +35,6 @@ clear @s #du-in:ability
 xp set @s[tag=!stolen] 360 levels
 tag @s remove sabotaged
 tag @s remove empower
-tag @s add kitDone
+#??
+tag @s add kitDone 
+tag @s remove kitActions

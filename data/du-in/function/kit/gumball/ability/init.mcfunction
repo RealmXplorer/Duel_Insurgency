@@ -1,4 +1,3 @@
-tag @s remove kitActions
 
 #Test if darwin
 execute if entity @s[tag=!darwin] run return run function du-in:kit/gumball/ability/gum_init

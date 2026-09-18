@@ -13,3 +13,4 @@ clear @s paper
 scoreboard players set @s cardPower 0
 tag @s remove super
 tag @s remove empower
+tag @s remove kitActions

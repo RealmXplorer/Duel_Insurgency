@@ -18,3 +18,4 @@ tag @e[type=skeleton,tag=gonerThing,tag=sansHit] remove sansHit
 
 #Kill TP Marker
 kill @e[type=marker,tag=sansTp]
+tag @s remove kitActions

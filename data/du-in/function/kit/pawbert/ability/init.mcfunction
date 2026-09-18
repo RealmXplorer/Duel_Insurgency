@@ -1,6 +1,5 @@
 #Test if sabotaged
-execute if entity @s[tag=!sabotaged] run function du-in:kit/pawbert/ability/success
-execute if entity @s[tag=sabotaged] run function du-in:kit/pawbert/ability/sabotage/sabotaged
+execute if entity @s[tag=sabotaged] run return run function du-in:kit/pawbert/ability/sabotage/sabotaged
 
-#End ability
-tag @s remove kitActions
+#If not sabotaged
+function du-in:kit/pawbert/ability/success

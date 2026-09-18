@@ -13,3 +13,4 @@ swing @s offhand whack
 clear @s #du-in:ability
 xp set @s[tag=!stolen] 320 levels
 execute if entity @s[tag=stolen] run tag @s add kitDone
+tag @s remove kitActions

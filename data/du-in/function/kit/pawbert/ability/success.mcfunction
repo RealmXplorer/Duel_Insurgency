@@ -38,3 +38,4 @@ execute as @a[tag=wildeHit] if score @s team = @p[scores={kit=40},tag=kitActions
 #Start cooldown
 clear @s #du-in:ability
 tag @s add cooldown
+tag @s remove kitActions

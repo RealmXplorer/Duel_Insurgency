@@ -1,6 +1,8 @@
-execute if entity @s[tag=!sabotaged,tag=!void] run function du-in:kit/villager/ability/success
-execute if entity @s[tag=sabotaged,tag=!void] run function du-in:kit/villager/ability/sabotaged
+#Void
+execute if entity @s[tag=void] run return run function du-in:kit/villager/ability/void/success
 
-execute if entity @s[tag=void] run function du-in:kit/villager/ability/void/success
+#Sabotaged
+execute if entity @s[tag=sabotaged] run return run function du-in:kit/villager/ability/sabotaged
 
-tag @s remove kitActions
+#Default
+function du-in:kit/villager/ability/default_init

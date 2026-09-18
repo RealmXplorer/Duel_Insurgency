@@ -20,3 +20,4 @@ clear @s #du-in:ability
 playsound du-in:sfx.ut.ability master @a ~ ~ ~ 0.5 1.05
 particle minecraft:crit ~ ~2.25 ~ 0.5 0.5 0.5 0.25 30 force @a
 particle minecraft:smoke ~ ~1 ~ 0.5 0.5 0.5 0 50
+tag @s remove kitActions

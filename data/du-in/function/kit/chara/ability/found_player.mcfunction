@@ -35,3 +35,4 @@ playsound du-in:sfx.ut.ability master @a ~ ~ ~ .25 .95
 tag @s remove empower
 tag @s remove sabotaged
 tag @s add cooldown
+tag @s remove kitActions

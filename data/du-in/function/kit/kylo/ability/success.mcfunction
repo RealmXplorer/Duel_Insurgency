@@ -21,6 +21,7 @@ clear @s #du-in:ability
 tag @s remove sabotaged
 tag @s remove empower
 execute if entity @s[tag=stolen] run tag @s add kitDone
+tag @s remove kitActions
 
 #execute if entity @a[tag=kyloMark] run function du-in:kit/kylo/ability/cooldown
 

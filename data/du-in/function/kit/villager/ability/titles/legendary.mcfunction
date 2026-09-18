@@ -4,3 +4,5 @@ playsound minecraft:entity.villager.no master @s ~ ~ ~ 1 1
 playsound minecraft:entity.villager.hurt master @s ~ ~ ~ 1 2
 playsound du-in:sfx.combo master @s ~ ~ ~ 1 2
 title @s actionbar [{text:"You couldn't steal their ability!?",bold:true,color:red}]
+tag @s remove kitActions
+tag @a[scores={kit=1000..},tag=stealTest] remove stealTest

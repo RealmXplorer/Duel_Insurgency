@@ -2,3 +2,5 @@ swing @s offhand stab
 
 function du-in:kit/villager/ability/end/revert
 function du-in:kit/all/ability/sabotage/effects
+
+tag @s remove kitActions

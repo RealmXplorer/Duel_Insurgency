@@ -21,3 +21,4 @@ playsound minecraft:entity.elder_guardian.curse master @a ~ ~ ~ .5 .75
 tag @s remove empower
 tag @s remove sabotaged
 execute if entity @s[tag=stolen] run tag @s add kitDone
+tag @s remove kitActions

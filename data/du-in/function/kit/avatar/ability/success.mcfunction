@@ -45,3 +45,4 @@ clear @s #du-in:ability
 tag @s remove empower
 xp set @s[tag=!stolen] 20 levels
 tag @s[tag=stolen] add kitDone
+tag @s remove kitActions

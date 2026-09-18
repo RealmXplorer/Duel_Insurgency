@@ -22,6 +22,7 @@
 -Updated Advancements and Predicates to follow new 26.3 syntaxes.
 -Chunks are now dynamically forceloaded, offering better performance for the server.
 -Some entities are now loaded and tested via hardcoded UUIDs, rather than dynamic tests. This provides optimizations to KOTH, CTF, and the lobby.
+-Abilities now run through "returns", reducing entity checks for optimizations.
 -Added "overworld" and "overworld_caves" dimension_types to alter overworld environment attributes.
 -Added Glass Panes to "minecraft:glass" block tags.
 -Moved Runza eating test to an advancement.

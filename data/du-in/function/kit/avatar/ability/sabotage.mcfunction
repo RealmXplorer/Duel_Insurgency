@@ -13,3 +13,4 @@ xp set @s[tag=!stolen] 40 levels
 tag @s[tag=stolen] add kitDone
 tag @s remove sabotaged
 tag @s remove empower
+tag @s remove kitActions

@@ -15,3 +15,4 @@ execute as @e[type=marker,scores={papyrusHitTimer=30}] as @e[tag=papyrusFind] at
 
 #tag @s remove sabotaged
 execute if entity @s[tag=stolen] run tag @s add kitDone
+tag @s remove kitActions

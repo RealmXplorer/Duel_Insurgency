@@ -1,5 +1,3 @@
-tag @s remove kitActions
-
 #If sabotaged
 execute if entity @s[tag=sabotaged] run return run function du-in:kit/cuphead/ability/sabotaged
 

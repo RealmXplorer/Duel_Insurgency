@@ -13,3 +13,4 @@ execute if entity @s[tag=stolen] run function du-in:kit/villager/ability/void/st
 #Play sounds and end ability
 # execute if entity @s[tag=stolen,tag=!givenStolen] run function du-in:kit/villager/ability/particle
 # tag @s[tag=!givenStolen,tag=stolen] add givenStolen
+tag @s remove kitActions

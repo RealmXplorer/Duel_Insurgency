@@ -26,3 +26,5 @@ tag @s add cooldown
 tag @s remove empower
 scoreboard players set @s gumSwapTimer 120
 clear @s warped_fungus_on_a_stick
+tag @s remove kitActions
+
