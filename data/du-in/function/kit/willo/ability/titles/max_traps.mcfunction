@@ -1,0 +1,12 @@
+#Or
+#CANCEL ABILITY
+#Announce failure
+#Play sound
+
+playsound minecraft:block.anvil.land master @s ~ ~ ~ 2 1
+playsound minecraft:entity.generic.small_fall master @s ~ ~ ~ 1 1
+playsound minecraft:entity.generic.big_fall master @s ~ ~ ~ 1 1
+playsound minecraft:item.shield.break master @s ~ ~ ~ 1 .75
+title @s actionbar {text:"You're out of traps!",color:red,bold:true}
+swing @s offhand none
+tag @s remove kitActions

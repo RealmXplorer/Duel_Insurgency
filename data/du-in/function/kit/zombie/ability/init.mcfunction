@@ -1,4 +1,5 @@
-execute if entity @s[tag=!sabotaged] run function du-in:kit/zombie/ability/set_spawn
-execute if entity @s[tag=sabotaged] run function du-in:kit/zombie/ability/sabotaged
+#Sabotaged
+execute if entity @s[tag=sabotaged] run return run function du-in:kit/zombie/ability/sabotaged
 
-tag @s remove kitActions
+#Normal
+function du-in:kit/zombie/ability/set_spawn
