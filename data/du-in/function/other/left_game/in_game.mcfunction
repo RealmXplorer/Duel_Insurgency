@@ -15,6 +15,9 @@ execute if entity @s[tag=spectating] run function du-in:ingame/spect
 
 execute if entity @a[scores={kit=2015}] run tag @a[tag=!legMusicOff,tag=!void,tag=!ctfIngame,tag=!cqIngame] add saul
 execute if entity @a[scores={kit=42069}] run tag @a[tag=!legMusicOff,tag=!void,tag=!ctfIngame,tag=!cqIngame] add bigChungus
+#Override tag
+execute if entity @a[scores={kit=2015}] run tag @a[tag=!legMusicOff,tag=!void,tag=!ctfIngame,tag=!cqIngame] add musOverride
+execute if entity @a[scores={kit=42069}] run tag @a[tag=!legMusicOff,tag=!void,tag=!ctfIngame,tag=!cqIngame] add musOverride
 
 #Teleport a player who was in game to the party leader, (or if party leader is spectating, teleport to other player)
 execute if entity @a[tag=partyLeader,tag=playing] if entity @a[tag=playing,distance=50..] run tp @s[tag=playing] @a[tag=partyLeader,limit=1]

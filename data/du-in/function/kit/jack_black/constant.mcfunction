@@ -4,6 +4,7 @@
 
 #Add Jack Black Tag
 tag @s[tag=!legMusicOff,tag=!ctfIngame,tag=!cqIngame,tag=!void] add jackBlack
+tag @s[tag=!legMusicOff,tag=!ctfIngame,tag=!cqIngame,tag=!void] add musOverride
 
 #WHAT IS A
 #CHICKEN JOCKEY?

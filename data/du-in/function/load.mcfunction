@@ -164,6 +164,7 @@ scoreboard objectives add devModeToggle dummy
 scoreboard objectives add scaleModeToggle dummy
 scoreboard objectives add skinPreset dummy
 scoreboard objectives add timedMode dummy
+scoreboard objectives add musType dummy
 
 #Gamemode objectives
 scoreboard objectives add maxTeamLives dummy

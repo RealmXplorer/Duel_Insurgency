@@ -129,11 +129,14 @@ execute as @a run function du-in:music/ingame/stop/all
 
 ##RESET KIT SCORES AND TAGS
 
+    #Legendary music#
+    tag @a[tag=musOverride] remove musOverride
+
     #Saac#
         scoreboard players reset @a saacDisTimer
         tag @a remove broken
         scoreboard players set @a saacCarry 0
-        tag @a remove saac
+        tag @a[tag=saac] remove saac
         scoreboard players set @a saacMoneyCheck 0
         scoreboard players set @a saacMoney 0
         scoreboard players set @a saacMoneyDollar 0
@@ -156,13 +159,13 @@ execute as @a run function du-in:music/ingame/stop/all
         tag @a remove asrielCharge
 
     #Chungus#
-        tag @a remove bigChungus
+        tag @a[tag=bigChungus] remove bigChungus
 
     #Saul#
-        tag @a remove saul
+        tag @a[tag=saul] remove saul
 
     #Sans#
-        tag @a remove sansHitDuration
+        tag @a[tag=sansHitDuration] remove sansHitDuration
         scoreboard players reset @a sansHitTimer
 
     #Sauron#
@@ -194,7 +197,7 @@ execute as @a run function du-in:music/ingame/stop/all
         tag @a remove hasOnionRing
     
     #Jack Black#
-        tag @a remove jackBlack
+        tag @a[tag=jackBlack] remove jackBlack
         scoreboard players reset @a jockeyTimer
         tag @a remove jockeyDuration
         tag @a remove chickenJockey

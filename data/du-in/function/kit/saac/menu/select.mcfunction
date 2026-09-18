@@ -19,6 +19,7 @@ function du-in:lobby/kitmenu/select/common
 
 #Play Saac music
 tag @s[tag=!legMusicOff,tag=!ctfl,tag=!cql] add saac
+tag @s[tag=!legMusicOff,tag=!ctfl,tag=!cql] add musOverride
 
 #Spawn vending machines
 tag @s add vendingMachine

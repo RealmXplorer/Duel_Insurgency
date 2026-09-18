@@ -60,6 +60,7 @@ tag @a remove caveSpider
 tag @a remove lorde
 tag @a remove maskless
 tag @a remove vendingMachine
+tag @a remove musOverride
 
 #Removes stopped countdown tag
 tag @a remove countStop

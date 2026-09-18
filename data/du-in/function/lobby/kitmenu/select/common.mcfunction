@@ -16,6 +16,7 @@ tag @s remove lorde
 tag @s remove saac
 tag @s remove vendingMachine
 tag @s remove sus
+tag @s remove musOverride
 
 #Announce and play sounds and particles
 execute if entity @s[tag=!kitPicked,tag=!playing] unless entity @a[tag=partyLeader,tag=specialEvent] run tellraw @a [{selector:"@s",bold:true},{text:" has picked a kit!",bold:true,color:gray},{text:" (",color:blue},{"score":{"name":"@s","objective":"level"},color:blue},{text:"✫)",color:blue}]

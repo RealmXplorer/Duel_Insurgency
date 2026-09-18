@@ -23,6 +23,7 @@ tag @s remove magicBag
 tag @s remove hornerWeapon
 tag @s remove brokenShield
 tag @s remove noMainWeapon
+tag @s remove musOverride
 
 #Important below
 tag @s remove kitPicked
