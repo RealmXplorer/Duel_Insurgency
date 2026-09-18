@@ -4,10 +4,24 @@ tag @s[tag=sabotaged] add kyloMark
 
 execute if entity @s[tag=sabotaged] run function du-in:kit/all/ability/sabotage/effects
 
-execute if entity @s[tag=!empower] as @a[tag=kyloMark] at @s run function du-in:kit/kylo/ability/hit
-execute if entity @s[tag=empower] as @a[tag=kyloMark] at @s run function du-in:kit/kylo/ability/empowered_hit
+execute unless entity @a[tag=kyloMark] run return run function du-in:kit/all/ability/titles/team
 
-execute unless entity @a[tag=kyloMark] run function du-in:kit/all/ability/titles/team
-execute if entity @a[tag=kyloMark] run function du-in:kit/kylo/ability/cooldown
+execute if entity @s[tag=empower] run tag @a[tag=kyloMark] add kyloEmpowerHit
 
-tag @a remove kyloMark
+#Affect marked players
+execute as @a[tag=kyloMark] at @s run function du-in:kit/kylo/ability/hit
+
+playsound du-in:sfx.ut.ability master @a ~ ~ ~ .15 1
+
+swing @s[tag=!sabotaged] offhand whack
+swing @s[tag=sabotaged] offhand stab
+
+xp set @s[tag=!stolen] 360 levels
+clear @s #du-in:ability
+tag @s remove sabotaged
+tag @s remove empower
+execute if entity @s[tag=stolen] run tag @s add kitDone
+
+#execute if entity @a[tag=kyloMark] run function du-in:kit/kylo/ability/cooldown
+
+#tag @a remove kyloMark

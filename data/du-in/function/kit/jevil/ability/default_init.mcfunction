@@ -1,12 +1,8 @@
-#execute unless score @s team = @a[distance=.05..5,tag=playing,gamemode=!spectator,sort=nearest,tag=!teamDead,limit=1,gamemode=!spectator,tag=!teamDead] team run function du-in:kit/ralsei/ability/success
-
-#If player is in range
-execute if entity @a[distance=.05..4,tag=playing,gamemode=!spectator,tag=!teamDead,gamemode=!spectator] run function du-in:kit/jevil/ability/success
-
-#execute if entity @s[tag=neoChaos] run function du-in:kit/jevil/ability/success
-
-#If player is too far
-execute unless entity @a[distance=.05..4,tag=playing,gamemode=!spectator,tag=!teamDead] run function du-in:kit/all/ability/titles/far
-
 #End ability
 tag @s remove kitActions
+
+#If player is too far
+execute unless entity @a[distance=.05..4,tag=playing,gamemode=!spectator,tag=!teamDead] run return run function du-in:kit/all/ability/titles/far
+
+#If player is in range
+function du-in:kit/jevil/ability/success

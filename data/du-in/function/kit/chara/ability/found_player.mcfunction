@@ -6,7 +6,7 @@ tag @s[tag=sabotaged] add charaMark
 #Break function if no player marked
 execute unless entity @a[tag=charaMark] run return run function du-in:kit/all/ability/titles/team
 
-#function du-in:kit/chara/ability/success
+
 ##RUN IF SUCCESS
 #Effect players
 execute as @a[tag=charaMark] run function du-in:kit/chara/ability/effect
@@ -35,6 +35,3 @@ playsound du-in:sfx.ut.ability master @a ~ ~ ~ .25 .95
 tag @s remove empower
 tag @s remove sabotaged
 tag @s add cooldown
-
-#Remove tag for players
-tag @a remove charaMark

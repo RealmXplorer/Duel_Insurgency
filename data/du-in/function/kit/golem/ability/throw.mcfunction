@@ -8,3 +8,5 @@ damage @s[tag=empoweredGolemHit] 4 generic
 #effect give @s minecraft:instant_damage 1 0 true
 
 tellraw @s [{text:"You got tossed by Iron Golem!",bold:true,color:red}]
+tag @s remove golemHit
+tag @s remove empoweredGolemHit

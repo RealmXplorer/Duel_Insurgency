@@ -1,3 +1,8 @@
-execute if entity @s[tag=kitActions,tag=!magicBag,tag=!void] run function du-in:kit/jack_horner/ability/default_init
-execute if entity @s[tag=kitActions,tag=!magicBag,tag=void] run function du-in:kit/jack_horner/ability/void_init
-execute if entity @s[tag=kitActions,tag=magicBag] run function du-in:kit/jack_horner/ability/init_magic
+#Has Magic
+execute if entity @s[tag=magicBag] run return run function du-in:kit/jack_horner/ability/init_magic
+
+#Void
+execute if entity @s[tag=void] run return run function du-in:kit/jack_horner/ability/void_init
+
+#Default
+function du-in:kit/jack_horner/ability/default_init

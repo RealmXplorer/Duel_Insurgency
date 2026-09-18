@@ -14,7 +14,6 @@ particle minecraft:explosion ~ ~ ~ 1 1 1 1 10 normal
 particle minecraft:flash{color:0xffffff} ~ ~ ~ 1 1 1 1 10
 playsound du-in:sfx.funny.boom master @a ~ ~ ~ 2 .5
 playsound minecraft:entity.warden.sonic_boom master @a ~ ~ ~ 1 1
-#execute if entity @a[tag=yodaMark] run function du-in:kit/chara/ability/success
 
 scoreboard players set @s yodaDamage 0
 tag @a remove yodaMark

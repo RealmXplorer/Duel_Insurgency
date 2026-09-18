@@ -5,9 +5,8 @@ playsound minecraft:entity.zombie_villager.cure master @a ~ ~ ~ 100 1.5
 playsound du-in:kit.vader.choke master @a ~ ~ ~ 100 0.2
 particle minecraft:smoke ~ ~1 ~ 1 1 1 1 200 force
 
-scoreboard players set @s kyloTimer 20
-summon minecraft:marker ~ ~ ~ {Tags:["kyloHitPos","mapSpecific"]}
-execute rotated as @s[scores={kyloTimer=20}] run tp @n[type=marker,tag=kyloHitPos,distance=..2] ~ ~ ~ ~ ~
+#Empowered
+execute if entity @s[tag=kyloEmpowerHit] run return run function du-in:kit/kylo/ability/empowered_start
 
-tellraw @s [{text:"You have been frozen with the Force!",bold:true,color:red}]
-#tag @s remove kyloMark
+#Default
+function du-in:kit/kylo/ability/start

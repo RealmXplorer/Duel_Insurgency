@@ -1,18 +1,9 @@
-execute if entity @s[tag=!sabotaged] as @a[distance=0.05..4,tag=playing,tag=!teamDead,gamemode=!spectator] unless score @s team = @a[scores={kit=22},tag=kitActions,tag=darwin,limit=1] team run tag @s add noClothes
-tag @s[tag=sabotaged] add noClothes
-
-#Break function if no valid players
-execute unless entity @a[tag=noClothes] run return run function du-in:kit/all/ability/titles/team
-
-#Sabotaged
-execute if entity @s[tag=sabotaged] run function du-in:kit/all/ability/sabotage/effects
+execute as @e[type=skeleton,tag=gonerThing,distance=0.05..4] at @s run function du-in:kit/gumball/ability/darwin/void/no_clothes
 
 #Empower
-execute if entity @s[tag=empower] run scoreboard players add @a[tag=noClothes] darwinTimer 40
+execute if entity @s[tag=empower] as @e[type=skeleton,tag=noClothes] run damage @s 4
 
 #Affect marked players
-execute as @a[tag=noClothes] at @s run function du-in:kit/gumball/ability/darwin/no_clothes
-
 #title @s title {text:"Imagine them ",color:red}
 #title @s subtitle {text:"without their clothes on",color:red}
 #title @s times 1s 10t 1s
@@ -32,7 +23,6 @@ scoreboard players set @s darwinSound 100
 clear @s #du-in:ability
 
 tag @s add cooldown
-tag @s remove sabotaged
 tag @s remove empower
 scoreboard players set @s gumSwapTimer 120
 clear @s warped_fungus_on_a_stick
