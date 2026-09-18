@@ -1,3 +1,11 @@
+#If player is too far
+execute unless entity @e[distance=0.05..10,type=skeleton] run return run function du-in:kit/all/ability/titles/far
+
+#If valid
+#function du-in:kit/chara/ability/void/success
+#Effect players
+execute as @e[distance=0.05..10,type=skeleton] run function du-in:kit/chara/ability/effect
+
 effect give @s minecraft:speed 5 1 true
 execute if entity @s[tag=empower] run effect give @s strength 5 1 true
 

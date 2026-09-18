@@ -2,5 +2,8 @@
 #execute if entity @s[tag=!sabotaged,scores={cinderType=1}] run function du-in:kit/cinder/ability/spear/init
 #execute if entity @s[tag=!sabotaged,scores={cinderType=2}] run function du-in:kit/cinder/ability/mage/init
 
-execute if entity @s[tag=sabotaged] run function du-in:kit/cinder/ability/sabotaged
-execute if entity @s[tag=!sabotaged] run function du-in:kit/cinder/ability/start
+#Normal Execute
+execute if entity @s[tag=!sabotaged] run return run function du-in:kit/cinder/ability/start
+
+#If sabotaged
+function du-in:kit/cinder/ability/sabotaged
