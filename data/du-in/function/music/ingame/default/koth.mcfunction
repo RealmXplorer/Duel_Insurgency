@@ -1,13 +1,8 @@
 #KING OF THE HILL#
-# scoreboard players set @s[tag=song,scores={music=3360..},tag=!startgame,tag=!songEnd] music 0
-# execute if entity @s[tag=song,scores={music=1},tag=!startgame,tag=!songEnd] run playsound du-in:music.koth record @s ~ ~ ~ 1000000 1 1
+#End of Round
+execute as @a[tag=songEnd,tag=!musOverride,tag=!musicOff] unless entity @s[scores={musType=2..}] at @s run playsound du-in:music.koth_end record @s ~ ~ ~ 1000000 1 1
+execute if entity @a[tag=songEnd] run return run schedule function du-in:music/ingame/default/koth 2980t
 
-execute as @a[tag=song,tag=!songEnd,tag=!beta,tag=!legacy,tag=!halloween,tag=!christmas,tag=!saac,tag=!jackBlack,tag=!bigChungus,tag=!saul,tag=!musicOff] at @s run playsound du-in:music.koth record @s ~ ~ ~ 1000000 1 1
-
-# scoreboard players set @s[tag=songEnd,scores={music=2980..},tag=!startgame] music 0
-# execute if entity @s[tag=songEnd,scores={music=1},tag=!startgame] run playsound du-in:music.koth_end record @s ~ ~ ~ 1000000 1 1
-
-execute as @a[tag=songEnd,tag=!beta,tag=!legacy,tag=!halloween,tag=!christmas,tag=!saac,tag=!jackBlack,tag=!bigChungus,tag=!saul,tag=!musicOff] run playsound du-in:music.koth_end record @s ~ ~ ~ 1000000 1 1
-
-execute unless entity @a[tag=songEnd] run schedule function du-in:music/ingame/default/koth 3360t
-execute if entity @a[tag=songEnd] run schedule function du-in:music/ingame/default/koth 2980t
+#Default
+execute as @a[tag=song,tag=!musOverride,tag=!musicOff] unless entity @s[scores={musType=2..}] at @s run playsound du-in:music.koth record @s ~ ~ ~ 1000000 1 1
+schedule function du-in:music/ingame/default/koth 3360t
