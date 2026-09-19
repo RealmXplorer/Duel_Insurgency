@@ -96,16 +96,14 @@
     execute if entity @s[scores={sabotageTimer=0..}] run function du-in:kit/nick/ability/sabotage/timer
 
 #Puss ability
-    #execute if entity @s[scores={pussFearTimer=0..}] run function du-in:kit/puss/ability/fear_timer
     execute if entity @s[tag=pussFear] run function du-in:kit/puss/ability/fear_timer
 
 #Sauron
-    #execute if entity @s[scores={seenTimer=0..}] run function du-in:kit/sauron/ability/no_ring/timer
     execute if entity @s[tag=seenDuration] run function du-in:kit/sauron/ability/no_ring/timer
     execute if entity @s[tag=hasRing] run function du-in:kit/sauron/ring/has_ring
 
 #Jevil
-    execute if entity @s[scores={jevilTimer=0..}] run function du-in:kit/jevil/ability/spin
+    execute if score @s jevilTimer matches 0.. run function du-in:kit/jevil/ability/spin
     execute if entity @s[tag=jevilDuration] run function du-in:kit/jevil/ability/spin
 
 #Clairen Field
@@ -114,13 +112,14 @@
     execute if entity @s[tag=empoweredField] run function du-in:kit/clairen/ability/empowered_field
     execute if entity @s[tag=empoweredSabotageField] run function du-in:kit/clairen/ability/empowered_sabotage_field
 
+#Pawbert injection
+ execute if entity @s[tag=injected] run function du-in:kit/pawbert/secondary/antidote/init
 
 # SPAM CLICK MODE #
     #execute if entity @a[tag=partyLeader,tag=spamClick] run attribute @s minecraft:attack_speed base set 100
-    execute if entity @s[tag=injected] run function du-in:kit/pawbert/secondary/antidote/init
 
 #Ability Delay
-    execute if entity @s[scores={abilityDelay=0..}] run function du-in:kit/all/ability/delay
+    execute if score @s abilityDelay matches 0.. run function du-in:kit/all/ability/delay
 
 #Give Money in Vending Mode
-    execute if entity @s[tag=vendingMode,tag=!sus] unless entity @s[scores={kit=1000..1001}] run function du-in:ingame/vending_machine/money_check
+    execute if entity @s[tag=vendingMode,tag=!sus] unless score @s kit matches 1000..1001 run function du-in:ingame/vending_machine/money_check
