@@ -2,22 +2,22 @@
 #execute if entity @s[scores={kit=17},tag=!stolen] run function du-in:kit/kylo/constant
 
 # Vader #
-execute if entity @s[scores={kit=18},tag=!stolen] run function du-in:kit/vader/constant
+execute if score @s[tag=!stolen] kit matches 18 run return run function du-in:kit/vader/constant
 
 # Palpatine #
-execute if entity @s[scores={kit=19}] run function du-in:kit/palps/init
+execute if score @s kit matches 19 run return run function du-in:kit/palps/init
 
 #Yharim#
-execute if entity @s[scores={kit=20}] run function du-in:kit/yharim/init
+execute if score @s kit matches 20 run return run function du-in:kit/yharim/init
 
 # CUPHEAD #
-execute if entity @s[scores={kit=21},tag=!stolen] run function du-in:kit/cuphead/constant
+execute if score @s[tag=!stolen] kit matches 21 run return run function du-in:kit/cuphead/constant
 
 # GUMBALL AND DARWIN #
-execute if entity @s[scores={kit=22}] run function du-in:kit/gumball/init
+execute if score @s kit matches 22 run return run function du-in:kit/gumball/init
 
 # Nick Wilde #
-execute if entity @s[scores={kit=23},tag=!stolen] run function du-in:kit/nick/constant
+execute if score @s[tag=!stolen] kit matches 23 run return run function du-in:kit/nick/constant
 
 # Ralsei #
-execute if entity @s[scores={kit=24},tag=!stolen] run function du-in:kit/ralsei/constant
+execute if score @s[tag=!stolen] kit matches 24 run function du-in:kit/ralsei/constant

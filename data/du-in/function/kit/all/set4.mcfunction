@@ -2,52 +2,52 @@
 #AND MOVE ON TO THE NEXT
 
 #Clairen#
-execute if entity @s[scores={kit=25},tag=!stolen] run function du-in:kit/clairen/constant
+execute if score @s[tag=!stolen] kit matches 25 run return run function du-in:kit/clairen/constant
 
 #Jack Horner#
-execute if entity @s[scores={kit=26}] run function du-in:kit/jack_horner/init
+execute if score @s kit matches 26 run return run function du-in:kit/jack_horner/init
 
 #Puss#
-execute if entity @s[scores={kit=27}] run function du-in:kit/puss/init
+execute if score @s kit matches 27 run return run function du-in:kit/puss/init
 
 #Death#
-execute if entity @s[scores={kit=28}] run function du-in:kit/death/init
+execute if score @s kit matches 28 run return run function du-in:kit/death/init
 
 #Yoda#
-execute if entity @s[scores={kit=29}] run function du-in:kit/yoda/init
+execute if score @s kit matches 29 run return run function du-in:kit/yoda/init
 
 #Skeleton#
-execute if entity @s[scores={kit=30}] run function du-in:kit/skeleton/init
+execute if score @s kit matches 30 run return run function du-in:kit/skeleton/init
 
 #Sauron#
-execute if entity @s[scores={kit=31}] run function du-in:kit/sauron/init
+execute if score @s kit matches 31 run return run function du-in:kit/sauron/init
 
 #Aang#
-execute if entity @s[scores={kit=32}] run function du-in:kit/avatar/init
+execute if score @s kit matches 32 run return run function du-in:kit/avatar/init
 
 #Kratos#
-execute if entity @s[scores={kit=33}] run function du-in:kit/kratos/init
+execute if score @s kit matches 33 run return run function du-in:kit/kratos/init
 
 #Cinder#
-execute if entity @s[scores={kit=34}] run function du-in:kit/cinder/init
+execute if score @s kit matches 34 run return run function du-in:kit/cinder/init
 
 #Judy#
-execute if entity @s[scores={kit=35},tag=!stolen] run function du-in:kit/judy/constant
+execute if score @s[tag=!stolen] kit matches 35 run return run function du-in:kit/judy/constant
 
 #Susie#
-execute if entity @s[scores={kit=36}] run function du-in:kit/susie/init
+execute if score @s kit matches 36 run return run function du-in:kit/susie/init
 
 #Knight#
-execute if entity @s[scores={kit=37}] run function du-in:kit/knight/init
+execute if score @s kit matches 37 run return run function du-in:kit/knight/init
 
 #Jevil
-execute if entity @s[scores={kit=38}] run function du-in:kit/jevil/init
+execute if score @s kit matches 38 run return run function du-in:kit/jevil/init
 
 #Bogo
-execute if entity @s[scores={kit=39}] run function du-in:kit/bogo/init
+execute if score @s kit matches 39 run return run function du-in:kit/bogo/init
 
 #Pawbert
-execute if entity @s[scores={kit=40}] run function du-in:kit/pawbert/init
+execute if score @s kit matches 40 run return run function du-in:kit/pawbert/init
 
 #Willo
-execute if entity @s[scores={kit=41}] run function du-in:kit/willo/init
+execute if score @s kit matches 41 run return run function du-in:kit/willo/init
