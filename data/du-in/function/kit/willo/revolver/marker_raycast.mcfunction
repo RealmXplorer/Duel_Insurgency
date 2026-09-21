@@ -3,8 +3,8 @@ scoreboard players remove @s willoBulletTravel 1
 tp @s ^ ^ ^0.65
 
 #Hasn't hit wood
-execute if entity @s[tag=!woodPass] at @e[type=marker,tag=willoBullet] run particle minecraft:crit ~ ~ ~ 0.2 0.2 0.2 0 1 force
-execute if entity @s[tag=!woodPass] at @e[type=marker,tag=willoBullet] run particle dust_color_transition{from_color:[1.000,1.000,1.000],to_color:[0.412,0.412,0.412],scale:1} ~ ~ ~ 0 0 0 0 1 normal
+execute if entity @s[tag=!woodPass,scores={willoBulletTravel=..110}] at @e[type=marker,tag=willoBullet] run particle minecraft:crit ~ ~ ~ 0.2 0.2 0.2 0 1 force
+execute if entity @s[tag=!woodPass,scores={willoBulletTravel=..110}] at @e[type=marker,tag=willoBullet] run particle dust_color_transition{from_color:[1.000,1.000,1.000],to_color:[0.412,0.412,0.412],scale:1} ~ ~ ~ 0 0 0 0 1 normal
 
 #Hit Wood
 execute if entity @s[tag=woodPass] run particle minecraft:crit ~ ~ ~ 0.2 0.2 0.2 0 1 force
@@ -20,8 +20,8 @@ execute if entity @s[tag=woodPass] run playsound du-in:kit.willo.revolver_whizz 
 execute if entity @s[tag=!woodPass,tag=!void] as @a[tag=!willoShoot,tag=playing,dx=0] positioned ~-0.99 ~-0.99 ~-0.99 if entity @s[dx=0] positioned ~0.99 ~0.99 ~0.99 run function du-in:kit/willo/revolver/damage_no_pen
 execute if entity @s[tag=woodPass,tag=!void] as @a[tag=!willoShoot,tag=playing,dx=0] positioned ~-0.99 ~-0.99 ~-0.99 if entity @s[dx=0] positioned ~0.99 ~0.99 ~0.99 run function du-in:kit/willo/revolver/damage_pen
 
-execute if entity @s[tag=void,tag=!woodPass] as @e[type=skeleton,dx=0] positioned ~-0.99 ~-0.99 ~-0.99 if entity @s[dx=0] positioned ~0.99 ~0.99 ~0.99 run function du-in:kit/willo/revolver/damage_no_pen
-execute if entity @s[tag=void,tag=woodPass] as @e[type=skeleton,dx=0] positioned ~-0.99 ~-0.99 ~-0.99 if entity @s[dx=0] positioned ~0.99 ~0.99 ~0.99 run function du-in:kit/willo/revolver/damage_pen
+execute if entity @s[tag=void,tag=!woodPass] as @e[type=skeleton,dx=0] positioned ~-0.99 ~-0.99 ~-0.99 if entity @s[dx=0] positioned ~0.99 ~0.99 ~0.99 run function du-in:kit/willo/revolver/void/damage
+execute if entity @s[tag=void,tag=woodPass] as @e[type=skeleton,dx=0] positioned ~-0.99 ~-0.99 ~-0.99 if entity @s[dx=0] positioned ~0.99 ~0.99 ~0.99 run function du-in:kit/willo/revolver/void/damage
 
 execute if block ~ ~ ~ #mineable/pickaxe run tag @s add hitStone
 execute if block ~ ~ ~ #mineable/axe run tag @s add hitWood

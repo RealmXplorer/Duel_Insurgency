@@ -1,0 +1,14 @@
+{
+	"parent": "item/generated",
+	"textures": {
+		"layer0": "du-in:item/abilities/amogus"
+	},
+	"display": {
+    "firstperson_righthand": {
+        "scale": [ 0, 0, 0 ]
+    },
+    "firstperson_lefthand": {
+        "scale": [ 0, 0, 0 ]
+    }
+}
+ }

@@ -1,5 +1,6 @@
 #Run map Voting
-    execute as @e[type=marker,tag=mapVote] at @s run function du-in:lobby/map_select/map_vote
+    #execute as @e[type=marker,tag=mapVote] at @s run function du-in:lobby/map_select/map_vote
+    execute as @e[type=marker,tag=mapVote] at @s run function du-in:lobby/map_select/vote/get_score
 
 # Map Select Bossbars #
     execute store result bossbar minecraft:map_countdown value run scoreboard players get #main mapCountdown

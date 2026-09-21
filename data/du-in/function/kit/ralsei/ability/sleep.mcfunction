@@ -17,5 +17,7 @@ execute if entity @s[tag=!superSleep,scores={ralseiTimer=1..10}] run effect give
 execute if entity @s[tag=superSleep,scores={ralseiTimer=1..10}] run effect give @s minecraft:slowness 3 6 true
 
 scoreboard players remove @s[scores={ralseiTimer=-1..}] ralseiTimer 1
-tag @s[scores={ralseiTimer=..0}] remove judySleep
-scoreboard players reset @s[scores={ralseiTimer=..0}] ralseiTimer
+execute if entity @s[scores={ralseiTimer=..0}] run function du-in:kit/ralsei/ability/sleep_end
+# tag @s[scores={ralseiTimer=..0}] remove sleepDuration
+# tag @s[scores={ralseiTimer=..0}] remove judySleep
+# scoreboard players reset @s[scores={ralseiTimer=..0}] ralseiTimer

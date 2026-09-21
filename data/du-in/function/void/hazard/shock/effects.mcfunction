@@ -1,5 +1,5 @@
-execute as @a[x=10046,dx=-1,z=10032,dz=29,y=42] run damage @s 3 minecraft:lightning_bolt
-execute as @a[x=10060,dx=-29,z=10047,dz=-1,y=42] run damage @s 3 minecraft:lightning_bolt
+execute as @a[x=10045,dx=-3,z=10032,dz=29,y=42] run damage @s 3 minecraft:lightning_bolt
+execute as @a[x=10060,dx=-29,z=10046,dz=-3,y=42] run damage @s 3 minecraft:lightning_bolt
 
 particle minecraft:electric_spark 10046 42 10046 -1 0.2 6.5 0 25 force
 particle minecraft:electric_spark 10046 42 10046 6.5 0.2 0.5 0 25 force

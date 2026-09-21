@@ -1,4 +1,3 @@
-#scoreboard players set @a[distance=.05..5,tag=playing,gamemode=!spectator,tag=!teamDead,limit=1] ralseiTimer 70
 execute if entity @s[tag=!sabotaged,tag=!empower] as @a[distance=.05..10,sort=nearest,tag=playing,gamemode=!spectator,tag=!teamDead] unless score @s team = @a[scores={kit=24},sort=nearest,tag=kitActions,limit=1] team at @s run function du-in:kit/ralsei/ability/enemy
 execute if entity @s[tag=sabotaged] run function du-in:kit/ralsei/ability/enemy
 

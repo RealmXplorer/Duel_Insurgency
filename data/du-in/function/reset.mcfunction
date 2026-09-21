@@ -425,6 +425,8 @@ tag @a remove boneAttack
 
 tag @a remove noMainWeapon
 
+execute unless score #main pylonsDestroyed matches 3 run posteffect remove @a du-in:goner
+
 #Clear Effects#
 effect clear @a
 stopsound @a ambient

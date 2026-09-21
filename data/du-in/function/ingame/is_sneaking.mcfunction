@@ -1,5 +1,5 @@
 #Glow while sneaking (Unless Gaster invisible)
-execute if entity @s[predicate=!du-in:effect/is_invisible,gamemode=adventure,tag=!inField] unless entity @s[scores={floweyHitTimer=0..}] run effect give @s minecraft:glowing 1 0 true
+#execute if entity @s[predicate=!du-in:effect/is_invisible,gamemode=adventure,tag=!inField] unless entity @s[scores={floweyHitTimer=0..}] run effect give @s minecraft:glowing 1 0 true
 
 #Test
 #effect give @s[tag=!parryStart] minecraft:resistance 1 10 true

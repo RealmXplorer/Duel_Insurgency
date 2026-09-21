@@ -1483,7 +1483,6 @@
 			{"name":"du-in:kit/ralsei/snore"}],
 			"subtitle": "Player falls asleep"
 	},
-
 	"kit.roxy.jumpscare": {
 		"sounds": [
 			"du-in:kit/roxy/jumpscare"
@@ -1492,6 +1491,16 @@
 	"kit.roxy.death": {
 		"sounds": [
 			"du-in:kit/roxy/death"
+		]
+	},
+	"kit.jack_torrance.jumpscare": {
+		"sounds": [
+			"du-in:kit/jack_torrance/johnny"
+		]
+	},
+	"kit.jack_torrance.hit": {
+		"sounds": [
+			"du-in:kit/jack_torrance/hit"
 		]
 	},
 

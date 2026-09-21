@@ -8,9 +8,9 @@
 # If a player is dead in team mode #
     execute if entity @s[tag=teamDead,tag=!void,scores={deathTimer=0..}] run function du-in:ingame/team_death/dead_effects
 
-#Give glow if sneaking, remove glow if not
+#Attempt parry if sneaking
     execute if entity @s[predicate=du-in:is_sneaking] run function du-in:ingame/is_sneaking
-    execute if entity @s[predicate=!du-in:is_sneaking,tag=!glowing] run effect clear @s minecraft:glowing
+    #execute if entity @s[predicate=!du-in:is_sneaking,tag=!glowing] run effect clear @s minecraft:glowing
 
     #Parry Mechanics
     execute if entity @s[tag=parryStart] run function du-in:kit/all/parry/buffer
@@ -25,6 +25,9 @@
 #HIT COMBO#
     execute if entity @s[scores={comboHitTimer=10..,comboScore=1..}] run function du-in:ingame/hit_combo/expire
 
+#Bhop reset
+    execute if entity @s[scores={jumpResetTimer=20..}] run function du-in:kit/all/attribute/bhop/reset
+    
 #Give armor if player is missing any#
 #execute if entity @s[predicate=!du-in:has_armor,predicate=!du-in:effect/is_invisible,tag=!teamDead,tag=!kitMenu,tag=!noClothes] run function du-in:kit/all/armor/armor_reset
 
@@ -61,7 +64,7 @@
     execute if entity @s[tag=jermaDuration] run function du-in:kit/jerma/ability/timer
 
 #Ralsei Sleep#
-    execute if entity @s[scores={ralseiTimer=..70}] run function du-in:kit/ralsei/ability/sleep
+    execute if entity @s[tag=sleepDuration] run function du-in:kit/ralsei/ability/sleep
 
 #Darwin Timer#
     execute if entity @s[tag=darwinDuration] run function du-in:kit/gumball/ability/darwin/timer

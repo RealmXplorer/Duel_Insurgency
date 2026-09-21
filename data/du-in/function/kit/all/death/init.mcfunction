@@ -41,7 +41,7 @@ execute unless entity @a[tag=partyLeader,tag=aprilFools] run playsound minecraft
 execute if entity @a[tag=partyLeader,tag=aprilFools] run playsound du-in:sfx.funny.table master @s[tag=!startgame,tag=!lose,tag=!win] ~ ~ ~ 1 1
 
 execute unless entity @s[tag=stolen] run function du-in:kit/all/death/search
-execute if entity @s[tag=stolen] run function du-in:kit/villager/death
+execute if entity @s[tag=stolen] run function du-in:kit/villager/events/death
 
 #execute if entity @s[scores={jermaTimer=0..}] run scoreboard players reset @s jermaTimer
 scoreboard players reset @s jermaTimer

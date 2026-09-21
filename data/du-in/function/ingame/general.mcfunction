@@ -1,29 +1,3 @@
-#   Run GAMEMODES  #
-
-    # Classic Functions #
-        #execute if entity @a[tag=cIngame] run function du-in:ingame/classic/classic
-        execute if score #main gamemode matches 1 run function du-in:ingame/classic/classic
-
-    # Deathmatch Function #
-        #execute if entity @a[tag=dmIngame] run function du-in:ingame/deathmatch/deathmatch
-        execute if score #main gamemode matches 2 run function du-in:ingame/deathmatch/deathmatch
-
-    # KOTH Functions #
-        #execute if entity @a[tag=kothIngame] run function du-in:ingame/koth/koth
-        execute if score #main gamemode matches 3 run function du-in:ingame/koth/koth
-
-    #CTF Functions #
-        #execute if entity @a[tag=ctfIngame] run function du-in:ingame/ctf/ctf
-        execute if score #main gamemode matches 4 run function du-in:ingame/ctf/ctf
-
-    # Conquest Functions #
-        #execute if entity @a[tag=cqIngame,tag=!win,tag=!lose] run function du-in:ingame/conquest/conquest
-        execute if score #main gamemode matches 5 run function du-in:ingame/conquest/conquest
-
-    # HELP ME #
-        #execute if entity @a[tag=void] run function du-in:void/void
-        execute if score #main gamemode matches 6 run function du-in:void/void
-
 # General Functions #
     # Kill all In Ground items and mark projectiles#
         execute as @e[type=#du-in:projectile] run function du-in:ingame/entities/projectiles
@@ -75,3 +49,23 @@ execute if score #main music matches 1 as @a[tag=!legMusicOff] at @s run functio
 
 # SPAM CLICK MODE #
     #execute if score #spamClick gamemode matches 1 as @a[gamemode=adventure] run attribute @s minecraft:attack_speed base set 100
+
+#   Run GAMEMODES  #
+
+    # Classic Functions #
+        execute if score #main gamemode matches 1 run return run function du-in:ingame/classic/classic
+
+    # Deathmatch Function #
+        execute if score #main gamemode matches 2 run return run function du-in:ingame/deathmatch/deathmatch
+
+    # KOTH Functions #
+        execute if score #main gamemode matches 3 run return run function du-in:ingame/koth/koth
+
+    #CTF Functions #
+        execute if score #main gamemode matches 4 run return run function du-in:ingame/ctf/ctf
+
+    # Conquest Functions #
+        execute if score #main gamemode matches 5 run return run function du-in:ingame/conquest/conquest
+
+    # HELP ME #
+        execute if score #main gamemode matches 6 run function du-in:void/void

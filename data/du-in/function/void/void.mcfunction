@@ -31,7 +31,7 @@ execute if score #main pylonsDestroyed matches 3 run function du-in:void/pylon/p
     execute as @a[gamemode=!spectator,tag=void,tag=!win] at @s run function du-in:void/player_specific
 
     #Give all players night vision
-    effect give @a[predicate=!du-in:effect/has_night_vision,tag=void] night_vision infinite 1 true
+    #effect give @a[predicate=!du-in:effect/has_night_vision,tag=void] night_vision infinite 1 true
 
     #Get Player count
     scoreboard players set Insurgents playerCount 0

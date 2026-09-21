@@ -260,3 +260,5 @@ bossbar set gast:pylon4 name [{text:"Time to Pylon shutdown: ",bold:true,color:w
 execute store result bossbar gast:pylon4 max run scoreboard players get @a[gamemode=adventure,tag=void,limit=1] pylonTimer
 
 schedule function du-in:void/spawn/vending 10t
+
+posteffect add @a du-in:goner

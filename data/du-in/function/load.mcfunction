@@ -50,6 +50,8 @@ scoreboard objectives add willoReloadTimer minecraft.custom:minecraft.play_time
 scoreboard objectives add willoBulletTravel dummy
 scoreboard objectives add woodPen dummy
 scoreboard objectives add willoTrapCount dummy
+scoreboard objectives add bHop dummy
+scoreboard objectives add willoStandTimer minecraft.custom:minecraft.play_time
 
 #Timers
 scoreboard objectives add ambience dummy
@@ -127,6 +129,8 @@ scoreboard objectives add beetleGhostTimer dummy
 scoreboard objectives add showTimer dummy
 scoreboard objectives add pawbertTimer dummy
 scoreboard objectives add abilityDelay dummy
+scoreboard objectives add jumpResetTimer minecraft.custom:minecraft.play_time
+scoreboard objectives add willoRecoilTimer dummy
 
 #Skins
 scoreboard objectives add asgoreSkin dummy

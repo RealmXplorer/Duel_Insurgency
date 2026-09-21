@@ -1,2 +1,2 @@
 #scoreboard players reset @s parryCooldown
-effect clear @s minecraft:glowing
+#effect clear @s minecraft:glowing

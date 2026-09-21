@@ -1,15 +1,3 @@
-#Pick Classic mode (old)#
-# execute if entity @a[tag=!teamMode,tag=!timedMode,tag=partyLeader] run function du-in:ingame/classic/default/default
-# execute if entity @a[tag=teamMode,tag=!timedMode,tag=partyLeader] run function du-in:ingame/classic/team/teams
-# execute if entity @a[tag=timedMode,tag=!teamMode,tag=partyLeader] run function du-in:ingame/classic/timed/timed
-# execute if entity @a[tag=timedMode,tag=teamMode,tag=partyLeader] run function du-in:ingame/classic/team_timed/timed
-
-#Pick Classic mode
-execute if score #Classic gamemode matches 0 run function du-in:ingame/classic/default/default
-execute if score #Classic gamemode matches 1 run function du-in:ingame/classic/team/teams
-execute if score #Classic gamemode matches 2 run function du-in:ingame/classic/timed/timed
-execute if score #Classic gamemode matches 3 run function du-in:ingame/classic/team_timed/timed
-
 ##Map stuff
 #Hive ambience
 execute if score #main map matches 2 run function du-in:maps/hive/constant
@@ -34,3 +22,9 @@ execute if score #main map matches 19 run particle flame 7432 71 2809 0.2 0.1 0.
 
 #Ricardo kill zone
 execute if entity @a[tag=specialEvent,tag=partyLeader] as @a[tag=audience] at @s run function du-in:maps/dfc/constant
+
+##Run Classic Modes
+execute if score #Classic gamemode matches 0 run return run function du-in:ingame/classic/default/default
+execute if score #Classic gamemode matches 1 run return run function du-in:ingame/classic/team/teams
+execute if score #Classic gamemode matches 2 run return run function du-in:ingame/classic/timed/timed
+execute if score #Classic gamemode matches 3 run function du-in:ingame/classic/team_timed/timed
