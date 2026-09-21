@@ -34,4 +34,4 @@ execute if score #main maxTimer matches ..0 run function du-in:ingame/classic/te
 #CLASSIC BOSSBAR#
     #This runs all the necessary commands for Bossbars
     #Uncomment it to re-enable bossbars
-    #function du-in:ingame/classic/default/default_bossbar
+    #function du-in:ingame/classic/default/default_old_bossbar

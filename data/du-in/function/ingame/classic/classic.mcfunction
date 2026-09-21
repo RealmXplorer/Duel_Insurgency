@@ -24,7 +24,7 @@ execute if score #main map matches 19 run particle flame 7432 71 2809 0.2 0.1 0.
 execute if entity @a[tag=specialEvent,tag=partyLeader] as @a[tag=audience] at @s run function du-in:maps/dfc/constant
 
 ##Run Classic Modes
-execute if score #Classic gamemode matches 0 run return run function du-in:ingame/classic/default/default
-execute if score #Classic gamemode matches 1 run return run function du-in:ingame/classic/team/teams
+#execute if score #Classic gamemode matches 0 run return run function du-in:ingame/classic/default/default_old
+#execute if score #Classic gamemode matches 1 run return run function du-in:ingame/classic/team/teams_old_old
 execute if score #Classic gamemode matches 2 run return run function du-in:ingame/classic/timed/timed
 execute if score #Classic gamemode matches 3 run function du-in:ingame/classic/team_timed/timed

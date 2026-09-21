@@ -30,7 +30,8 @@
 -Ingame music now runs through returns, offering some optimization.
 -Gamemode functions run through returns, offering minor optimization.
 -Map select is now fully scalable, running off of inset scores from UUIDs, rather than tags.
--Restructured constants for kits using returns and "score" subfunctions for some optimizations.
+-Default classic and Team classic is event-based, offering some optimizations.
+-Restructured constants for kits using returns for some optimizations.
 -Added "overworld" and "overworld_caves" dimension_types to alter overworld environment attributes.
 -Added Glass Panes to "minecraft:glass" block tags.
 -Added du-in:retro, du-in:goner, du-in:bw, and du-in:flash posteffects.

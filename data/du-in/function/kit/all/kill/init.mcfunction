@@ -42,3 +42,7 @@ execute if entity @s[tag=hasRing] unless entity @s[scores={kit=31}] run scoreboa
 
 #Allow for another killMsg
 tag @s remove killMsg
+
+#Classic Functions?
+execute if score #Classic gamemode matches 0 run return run function du-in:ingame/classic/default/default
+execute if score #Classic gamemode matches 1 run return run function du-in:ingame/classic/team/teams

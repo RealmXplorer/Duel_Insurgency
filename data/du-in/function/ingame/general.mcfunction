@@ -24,13 +24,14 @@ execute as @e[type=#du-in:midas,tag=gold,scores={goldTimer=1..}] run function du
 
 ##ENTITY TESTS
 #Markers
-execute as @e[type=marker] at @s run function du-in:ingame/entities/markers
+execute as @e[type=marker,tag=!spawnPoint] at @s run function du-in:ingame/entities/markers
 
 #Armor Stands
 execute as @e[type=armor_stand] at @s run function du-in:ingame/entities/armor_stands
 
 #Falling Blocks
-execute as @e[type=falling_block] at @s run function du-in:ingame/entities/falling_block
+#execute as @e[type=falling_block] at @s run function du-in:ingame/entities/falling_block
+execute as @e[type=falling_block,tag=floweyStem] at @s run function du-in:kit/flowey/ability/stem
 
 #Block Displays
 execute as @e[type=block_display] at @s run function du-in:ingame/entities/block_display
