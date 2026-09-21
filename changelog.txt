@@ -1,6 +1,8 @@
 ***7/11/26 - ??/??/??:***
 ***Version 1.6 - The Last Autumn:***
 *Additions*
+-Added Willo character.
+-Added Jack Torrance skin for Springtrap.
 -Added subtitles to all gameplay audio.
 
 *Changes*
