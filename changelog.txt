@@ -6,12 +6,14 @@
 *Changes*
 -Updated map to 26.3.
 -There are no more I-frames.
+-Removed glowing effect when crouching in game.
 -Characters now have animations when using abilities.
     -"whack" for successful abilities, "none" for failed abilities, and "stab" for sabotaged abilities.
 -Skin menu is now organized the same as the kit menu.
 -Harvest now uses the Dappled Forest biome, and features Poplar trees.
 -Beds can no longer be slept in.
 -Signs on San Ricardo are now properly waxed.
+-Added grayscale post effect for the void.
 
 *Bug Fixes*
 -Fixed bug where Bogo's hurt sound would not play.
@@ -29,6 +31,7 @@
 -Restructured constants for kits using returns and "score" subfunctions for some optimizations.
 -Added "overworld" and "overworld_caves" dimension_types to alter overworld environment attributes.
 -Added Glass Panes to "minecraft:glass" block tags.
+-Added du-in:retro, du-in:goner, du-in:bw, and du-in:flash posteffects.
 -Moved Runza eating test to an advancement.
 -Renamed "oldPack" tag for beta music to "beta".
 -Renamed "music/ingame/oldpack/" and "music/lobby/oldpack/" to "music/ingame/beta/" and "music/lobby/beta/".
