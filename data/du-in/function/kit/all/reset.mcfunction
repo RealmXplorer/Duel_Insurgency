@@ -24,6 +24,8 @@ tag @s remove hornerWeapon
 tag @s remove brokenShield
 tag @s remove noMainWeapon
 tag @s remove musOverride
+tag @s remove floweyDuration
+
 
 #Important below
 tag @s remove kitPicked

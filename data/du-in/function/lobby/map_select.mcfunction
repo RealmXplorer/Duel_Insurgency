@@ -1,5 +1,5 @@
-    # Team Mode Functions #
-        execute if entity @s[tag=teamMode,gamemode=adventure] run function du-in:lobby/team_select
+# Team Mode Functions #
+    execute if entity @s[tag=teamMode,gamemode=adventure] run function du-in:lobby/team_select
 
 # Map Select Items #
     execute if entity @s[tag=partyLeader,gamemode=adventure] run function du-in:lobby/map_select/leader_items

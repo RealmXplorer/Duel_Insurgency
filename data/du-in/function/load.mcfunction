@@ -131,6 +131,7 @@ scoreboard objectives add pawbertTimer dummy
 scoreboard objectives add abilityDelay dummy
 scoreboard objectives add jumpResetTimer minecraft.custom:minecraft.play_time
 scoreboard objectives add willoRecoilTimer dummy
+scoreboard objectives add countdownList dummy
 
 #Skins
 scoreboard objectives add asgoreSkin dummy

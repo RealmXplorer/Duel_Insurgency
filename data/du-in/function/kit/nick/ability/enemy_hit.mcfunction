@@ -22,7 +22,7 @@ execute if entity @s[scores={kit=1000,saacMoney=0..}] run function du-in:kit/saa
 execute if entity @s[tag=vendingMode,scores={saacMoney=0..}] run function du-in:kit/saac/money/stolen
 
 #Pull Characters out of their abilities
-scoreboard players set @s[scores={kit=12,floweyHitTimer=1..}] floweyHitTimer 0
+scoreboard players set @s[scores={kit=12,floweyHitTimer=2..}] floweyHitTimer 1
 scoreboard players set @s[scores={kit=10,gasterTimer=6..}] gasterTimer 5
 scoreboard players set @s[scores={kit=3,magmaTimer=1..},tag=magma] magmaTimer 0
 tag @s[tag=pursue] add whatTheWhat
