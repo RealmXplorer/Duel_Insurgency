@@ -1,24 +1,27 @@
+execute if score #Classic gamemode matches 2..3 run function du-in:ingame/timed/timer
+
 ##Map stuff
+
 #Hive ambience
-execute if score #main map matches 2 run function du-in:maps/hive/constant
+execute if score #main map matches 2 run return run function du-in:maps/hive/constant
 
 #Kill zone for Ebbot
-execute if score #main map matches 6 as @a[gamemode=adventure] at @s if entity @s[y=-1,dy=-6] run kill @s
+execute if score #main map matches 6 as @a[gamemode=adventure] at @s if entity @s[y=-1,dy=-6] run return run kill @s
 
 #Jermall monster kill
-execute if entity @a[tag=selectedTarget] if score #main map matches 13 run function du-in:maps/jermall/constant
+execute if entity @a[tag=selectedTarget] if score #main map matches 13 run return run function du-in:maps/jermall/constant
 
 #Kill zone for Wishing star
-execute if score #main map matches 14 as @a[gamemode=adventure] at @s if entity @s[distance=..100,y=5,dy=-2] run kill @s
+execute if score #main map matches 14 as @a[gamemode=adventure] at @s if entity @s[distance=..100,y=5,dy=-2] run return run kill @s
 
 #Escher teleports
-execute if score #main map matches 16 run function du-in:maps/escher/constant
+execute if score #main map matches 16 run return run function du-in:maps/escher/constant
 
 #Ricardo kill zone
-execute if score #main map matches 18 run function du-in:maps/ricardo/constant
+execute if score #main map matches 18 run return run function du-in:maps/ricardo/constant
 
 #First Flame embers
-execute if score #main map matches 19 run particle flame 7432 71 2809 0.2 0.1 0.2 0 1 force
+execute if score #main map matches 19 run return run particle flame 7432 71 2809 0.2 0.1 0.2 0 1 force
 
 #Ricardo kill zone
 execute if entity @a[tag=specialEvent,tag=partyLeader] as @a[tag=audience] at @s run function du-in:maps/dfc/constant
@@ -26,5 +29,5 @@ execute if entity @a[tag=specialEvent,tag=partyLeader] as @a[tag=audience] at @s
 ##Run Classic Modes
 #execute if score #Classic gamemode matches 0 run return run function du-in:ingame/classic/default/default_old
 #execute if score #Classic gamemode matches 1 run return run function du-in:ingame/classic/team/teams_old_old
-execute if score #Classic gamemode matches 2 run return run function du-in:ingame/classic/timed/timed
-execute if score #Classic gamemode matches 3 run function du-in:ingame/classic/team_timed/timed
+#execute if score #Classic gamemode matches 2 run return run function du-in:ingame/classic/timed/timed
+#execute if score #Classic gamemode matches 3 run function du-in:ingame/classic/team_timed/timed

@@ -1,26 +1,20 @@
 # HALF WAY #
-    scoreboard players remove #main maxTimer 1
+    execute unless entity @a[tag=startgame] run scoreboard players remove #main maxTimer 1
     execute store result bossbar bossbar:gametimer value run scoreboard players get #main maxTimer
-
-#Moved Kill functions to "timed_kill"
-#execute as @a[scores={killIngame=1..,team=1..}] run function du-in:ingame/classic/team/team_count
 
     #When game is half over
     #execute as @a[tag=playing,tag=!chalf] if score @s killIngame >= #main testHalf run function du-in:ingame/classic/default/half
 
-#execute if score #main bluePoints > #main scoreMost store result score #main scoreMost run scoreboard players get #main bluePoints
-#execute if score #main redPoints > #main scoreMost store result score #main scoreMost run scoreboard players get #main redPoints
+#Execute on killer now
+# execute as @a[gamemode=!spectator,tag=playing,tag=cIngame,sort=random] if score @s killIngame > #main scoreMost store result score #main scoreMost run scoreboard players get @s killIngame
 
-#TEAM CLASSIC SIDEBAR STUFF#
-#execute store result score Blue classicTeamKills run scoreboard players get #main bluePoints
-#execute store result score Red classicTeamKills run scoreboard players get #main redPoints
 
-# execute if score #main maxTimer = #main timerHalf run function du-in:ingame/timed/half
+#execute if score #main maxTimer = #main timerHalf run function du-in:ingame/timed/half
 
 # CLOSE TO END # 
 # execute if score #main maxTimer matches 1000 run function du-in:ingame/timed/near_end
 
-# execute if score #main maxTimer matches ..0 run function du-in:ingame/classic/team_timed/ending
+# execute if score #main maxTimer matches ..0 run function du-in:ingame/classic/timed/ending
 
     #Starts music
     #execute as @a[tag=playing,tag=!classicEnd] if score @s killIngame >= #main testGoal run function du-in:ingame/classic/default/near_end
