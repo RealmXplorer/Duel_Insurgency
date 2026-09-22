@@ -14,8 +14,8 @@ execute if entity @s[tag=!woodPass] run playsound du-in:kit.willo.revolver_whizz
 execute if entity @s[tag=woodPass] run playsound du-in:kit.willo.revolver_whizz player @a[tag=!willoShoot] ~ ~ ~ 0.5 .75
 
 #Damage
-# execute if entity @s[tag=!woodPass] as @e[type=husk,dx=0] positioned ~-0.99 ~-0.99 ~-0.99 if entity @s[dx=0] positioned ~0.99 ~0.99 ~0.99 run function du-in:kit/willo/revolver/damage_no_pen
-# execute if entity @s[tag=woodPass] as @e[type=husk,dx=0] positioned ~-0.99 ~-0.99 ~-0.99 if entity @s[dx=0] positioned ~0.99 ~0.99 ~0.99 run function du-in:kit/willo/revolver/damage_pen
+#execute if entity @s[tag=!woodPass] as @e[type=husk,dx=0] positioned ~-0.99 ~-0.99 ~-0.99 if entity @s[dx=0] positioned ~0.99 ~0.99 ~0.99 run function du-in:kit/willo/revolver/damage_no_pen
+#execute if entity @s[tag=woodPass] as @e[type=husk,dx=0] positioned ~-0.99 ~-0.99 ~-0.99 if entity @s[dx=0] positioned ~0.99 ~0.99 ~0.99 run function du-in:kit/willo/revolver/damage_pen
 
 execute if entity @s[tag=!woodPass,tag=!void] as @a[tag=!willoShoot,tag=playing,dx=0] positioned ~-0.99 ~-0.99 ~-0.99 if entity @s[dx=0] positioned ~0.99 ~0.99 ~0.99 run function du-in:kit/willo/revolver/damage_no_pen
 execute if entity @s[tag=woodPass,tag=!void] as @a[tag=!willoShoot,tag=playing,dx=0] positioned ~-0.99 ~-0.99 ~-0.99 if entity @s[dx=0] positioned ~0.99 ~0.99 ~0.99 run function du-in:kit/willo/revolver/damage_pen

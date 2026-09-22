@@ -1,1 +1,1 @@
-scoreboard players add @s willoReloadTimer 1
+scoreboard players add @s willoCandyCornTimer 1

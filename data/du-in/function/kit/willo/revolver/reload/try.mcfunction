@@ -1,6 +1,8 @@
 #Get reserve
 execute store result score @s willoStock run clear @s copper_nugget 0
 
+execute if entity @s[scores={willoStock=1..,willoAmmo=..5}] run scoreboard players reset @s willoCancelAnimation
+
 #Test Reload
 execute if entity @s[scores={willoAmmo=6}] run function du-in:kit/willo/revolver/reload/full_ammo
 
