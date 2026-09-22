@@ -22,3 +22,8 @@ tag @s remove willoShoot
 
 tp @s ~ ~ ~ ~ ~-15
 scoreboard players set @s willoRecoilTimer 5
+
+execute store result score @s muzzleFlash run random value 1..4
+execute if entity @s[scores={muzzleFlash=1}] run return run item modify entity @s armor.head du-in:muzzle_flash1
+execute if entity @s[scores={muzzleFlash=2}] run return run item modify entity @s armor.head du-in:muzzle_flash2
+execute if entity @s[scores={muzzleFlash=3}] run return run item modify entity @s armor.head du-in:muzzle_flash3

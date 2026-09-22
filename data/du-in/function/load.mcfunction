@@ -54,6 +54,7 @@ scoreboard objectives add bHop dummy
 scoreboard objectives add willoStandTimer minecraft.custom:minecraft.play_time
 scoreboard objectives add willoCancelAnimation minecraft.custom:minecraft.play_time
 scoreboard objectives add willoCandyCornTimer minecraft.custom:minecraft.play_time
+scoreboard objectives add muzzleFlash dummy
 
 #Timers
 scoreboard objectives add ambience dummy

@@ -1,0 +1,12 @@
+{
+  "type": "minecraft:set_components",
+  "components": {
+    "minecraft:equippable": {
+      "slot": "head",
+      "camera_overlay": "du-in:misc/gunshot2",
+            "equip_sound": {
+        "sound_id": ""
+      }
+    }
+  }
+}
