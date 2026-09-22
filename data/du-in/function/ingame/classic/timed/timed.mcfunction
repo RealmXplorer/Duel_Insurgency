@@ -5,7 +5,8 @@
     #When game is half over
     #execute as @a[tag=playing,tag=!chalf] if score @s killIngame >= #main testHalf run function du-in:ingame/classic/default/half
 
-execute as @a[gamemode=!spectator,tag=playing,tag=cIngame,sort=random] if score @s killIngame > #main scoreMost store result score #main scoreMost run scoreboard players get @s killIngame
+#Execute on killer now
+# execute as @a[gamemode=!spectator,tag=playing,tag=cIngame,sort=random] if score @s killIngame > #main scoreMost store result score #main scoreMost run scoreboard players get @s killIngame
 
 
 #execute if score #main maxTimer = #main timerHalf run function du-in:ingame/timed/half
