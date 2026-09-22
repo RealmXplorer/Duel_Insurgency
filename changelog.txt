@@ -85,4 +85,5 @@
 -Added Revolver sounds.
 -Added Candy corn saber. (by Realm_Xplorer)
 -Added Jack Torrance skin. (by Three_Thumbs)
--Added Willo revolver model and textures. (by nerbski_)
+-Added Willo revolver models and textures. (by nerbski_)
+-Added Candy Corn muzzle flash overlays. (by nerbski_)
