@@ -14,12 +14,12 @@ execute if score #main redPoints > #main scoreMost store result score #main scor
 execute store result score Blue classicTeamKills run scoreboard players get #main bluePoints
 execute store result score Red classicTeamKills run scoreboard players get #main redPoints
 
-execute if score #main maxTimer = #main timerHalf run function du-in:ingame/timed/half
+# execute if score #main maxTimer = #main timerHalf run function du-in:ingame/timed/half
 
 # CLOSE TO END # 
-execute if score #main maxTimer matches 1000 run function du-in:ingame/timed/near_end
+# execute if score #main maxTimer matches 1000 run function du-in:ingame/timed/near_end
 
-execute if score #main maxTimer matches ..0 run function du-in:ingame/classic/team_timed/ending
+# execute if score #main maxTimer matches ..0 run function du-in:ingame/classic/team_timed/ending
 
     #Starts music
     #execute as @a[tag=playing,tag=!classicEnd] if score @s killIngame >= #main testGoal run function du-in:ingame/classic/default/near_end

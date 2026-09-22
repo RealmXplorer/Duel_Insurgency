@@ -18,11 +18,17 @@ execute if score #main gameTimeMax matches 8400 run tellraw @a [{text:"Game Time
 #execute if score #main gameTimeMax matches 15 run tellraw @a [{text:"Classic Kills ",bold:true,color:gold},{text:"Max 15 (Prolonged)",color:gray}]
 
 #Calculate thresholds based on selected kill cap.
-#execute if score #main timerGoal >= #main gameTimeMax store result score #main timerGoal run scoreboard players get #main gameTimeMax
 execute if score #main timerHalf >= #main gameTimeMax store result score #main timerHalf run scoreboard players get #main gameTimeMax
 
 execute if score #main timerHalf = #main gameTimeMax run scoreboard players operation #main timerHalf /= #main halfScore
-#execute if score #main timerGoal = #main gameTimeMax run scoreboard players remove #main timerGoal 2000
+
+execute store result score #main timerClose run scoreboard players get #main gameTimeMax
+scoreboard players remove #main timerClose 1000
+
+#Save into storage
+execute store result storage du-in:gamemode timer.max int 1 run scoreboard players get #main gameTimeMax
+execute store result storage du-in:gamemode timer.half int 1 run scoreboard players get #main timerHalf
+execute store result storage du-in:gamemode timer.close int 1 run scoreboard players get #main timerClose
 
 #Set Bossbar max based on selected number
 execute store result bossbar bossbar:gametimer max run scoreboard players get #main gameTimeMax

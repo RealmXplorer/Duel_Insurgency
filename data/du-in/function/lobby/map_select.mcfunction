@@ -22,3 +22,6 @@ execute unless entity @s[tag=musicOff] unless score #main pylonsDestroyed matche
 
 # Map Select Actions #
     execute if entity @s[scores={kitUse=1..}] run function du-in:lobby/map_select/kit_use
+
+# execute store result score Realm_Xplorer mapCountdown run scoreboard players get #main mapCountdown
+# scoreboard objectives setdisplay sidebar mapCountdown

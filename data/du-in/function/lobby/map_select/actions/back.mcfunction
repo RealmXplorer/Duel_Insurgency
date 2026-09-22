@@ -76,6 +76,12 @@ scoreboard players set @a[tag=Player.accept] lobby -1
 #Reset map countdown and hide bossbar
 scoreboard players set #main mapCountdown 300
 bossbar set minecraft:map_countdown visible false
+# schedule clear du-in:lobby/map_select/timers/ten
+# schedule clear du-in:lobby/map_select/timers/five
+# schedule clear du-in:lobby/map_select/timers/four
+# schedule clear du-in:lobby/map_select/timers/three
+# schedule clear du-in:lobby/map_select/timers/two
+# schedule clear du-in:lobby/map_select/timers/one
 
 #Resets team specific tags and scores
 tag @a remove team1

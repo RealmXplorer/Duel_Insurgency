@@ -11,6 +11,8 @@ scoreboard players set #Conquest gamemode 1
 execute store result score #main maxTimer run scoreboard players get #main gameTimeMax
 bossbar set bossbar:gametimer visible true
 
+function du-in:ingame/conquest/timed/set_timers with storage du-in:gamemode timer
+
 execute unless score #main pylonsDestroyed matches 3 run schedule function du-in:music/ingame/conquest 4s
 
 

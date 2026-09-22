@@ -11,6 +11,7 @@ scoreboard players set @a[tag=!spectating] dmDeath 0
 execute store result score #main maxTimer run scoreboard players get #main gameTimeMax
 bossbar set bossbar:gametimer visible true
 
+function du-in:ingame/deathmatch/timed/set_timers with storage du-in:gamemode timer
 
 scoreboard objectives setdisplay sidebar dmDeath
 tag @a remove dml

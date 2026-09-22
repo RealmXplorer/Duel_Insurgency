@@ -32,6 +32,7 @@
 -Map select is now fully scalable, running off of inset scores from UUIDs, rather than tags.
 -Default classic and Team classic is event-based, offering some optimizations.
 -Restructured constants for kits using returns for some optimizations.
+-Created "Macro-Assisted Schedules", which dynamically front-load timers for timed mode and provide some optimizations.
 -Added "overworld" and "overworld_caves" dimension_types to alter overworld environment attributes.
 -Added Glass Panes to "minecraft:glass" block tags.
 -Added du-in:retro, du-in:goner, du-in:bw, and du-in:flash posteffects.

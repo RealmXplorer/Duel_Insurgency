@@ -9,6 +9,8 @@ execute unless score #main pylonsDestroyed matches 3 run schedule function du-in
 #Set Classic mode
 scoreboard players set #Classic gamemode 2
 
+function du-in:ingame/classic/timed/set_timers with storage du-in:gamemode timer
+
 bossbar set bossbar:gametimer players @a
 team join Classic @a[tag=!spectating,tag=!teamMode,tag=!AFK]
 scoreboard players set @a[tag=!spectating] killIngame 0

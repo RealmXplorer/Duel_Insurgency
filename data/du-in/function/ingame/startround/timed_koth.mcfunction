@@ -9,6 +9,8 @@ execute unless score #main pylonsDestroyed matches 3 run schedule function du-in
 #Set KOTH Mode
 scoreboard players set #KOTH gamemode 2
 
+function du-in:ingame/koth/timed/set_timers with storage du-in:gamemode timer
+
 bossbar set bossbar:gametimer players @a
 team join Classic @a[tag=!spectating]
 scoreboard players set @a[tag=!spectating] kothTimer 0

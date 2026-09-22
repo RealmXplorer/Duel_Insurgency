@@ -8,6 +8,8 @@ scoreboard players set Blue teamDeaths 0
 
 execute unless score #main pylonsDestroyed matches 3 run schedule function du-in:music/ingame/deathmatch 4s
 
+function du-in:ingame/deathmatch/team_timed/set_timers with storage du-in:gamemode timer
+
 #Set Deathmatch Mode
 scoreboard players set #DM gamemode 3
 

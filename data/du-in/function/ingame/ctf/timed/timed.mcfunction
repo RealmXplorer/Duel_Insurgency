@@ -6,9 +6,9 @@ execute if score #main redPoints > #main scoreMost store result score #main scor
 
 
 #CLOSE TO END#
-execute if score #main maxTimer = #main timerHalf run function du-in:ingame/timed/half
+# execute if score #main maxTimer = #main timerHalf run function du-in:ingame/timed/half
 
-# CLOSE TO END # 
-execute if score #main maxTimer matches 1000 run function du-in:ingame/timed/near_end
+# # CLOSE TO END # 
+# execute if score #main maxTimer matches 1000 run function du-in:ingame/timed/near_end
 
-execute if score #main maxTimer matches ..0 run function du-in:ingame/ctf/timed/ending
+# execute if score #main maxTimer matches ..0 run function du-in:ingame/ctf/timed/ending

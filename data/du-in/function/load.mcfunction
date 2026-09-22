@@ -216,6 +216,7 @@ scoreboard objectives add tFFAGoal dummy
 
 scoreboard objectives add timerGoal dummy
 scoreboard objectives add timerHalf dummy
+scoreboard objectives add timerClose dummy
 
 scoreboard objectives add tKothCap dummy
 scoreboard objectives add tKothGoal dummy
@@ -261,7 +262,14 @@ scoreboard objectives add tabbaTalk dummy
 scoreboard objectives add tabbaVendingTalk dummy
 scoreboard objectives add redTeamCount dummy
 scoreboard objectives add blueTeamCount dummy
-
+scoreboard objectives add mapTimerTenLeft dummy
+scoreboard objectives add mapTimerFiveLeft dummy
+scoreboard objectives add mapTimerFourLeft dummy
+scoreboard objectives add mapTimerThreeLeft dummy
+scoreboard objectives add mapTimerTwoLeft dummy
+scoreboard objectives add mapTimerOneLeft dummy
+scoreboard objectives add mapTimerMax dummy
+scoreboard objectives add mapTimerLeft dummy
 
 scoreboard objectives add drinkPotion minecraft.used:minecraft.potion
 scoreboard objectives add drinkMilk minecraft.used:minecraft.milk_bucket
@@ -437,6 +445,9 @@ scoreboard objectives add listSize dummy
 scoreboard objectives add listRank dummy
 scoreboard players set #main kitMax 40
 scoreboard players set #main legMax 1006
+scoreboard players set #main mapTimerMax 300
+
+execute unless score #main timerClose matches 1.. run function du-in:storage/timers/set_storage
 
 #Build kit lists
 data modify storage du-in:unlock list set value {"size":7}
