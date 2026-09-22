@@ -1,0 +1,2 @@
+execute if score #Classic gamemode matches 0 run return run function du-in:ingame/classic/default/default
+execute if score #Classic gamemode matches 1 run return run function du-in:ingame/classic/team/teams
