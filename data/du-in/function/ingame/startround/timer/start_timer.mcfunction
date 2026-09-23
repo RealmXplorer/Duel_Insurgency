@@ -36,50 +36,54 @@ tag @a[tag=!spectating] add playing
 ##Kit stuff
     #Give player kit if they don't have one
     #execute unless entity @s[scores={kit=1..}] run tag @s add random
-    execute unless entity @s[scores={kit=1..}] run function du-in:kit/all/random/roll
+    execute as @a unless entity @s[scores={kit=1..}] run function du-in:kit/all/random/roll
 
     #Give all players weapons
     tag @a[scores={kit=31},limit=1] add hasRing
     scoreboard players set @a[tag=playing,gamemode=!spectator] weapCount 0
     function du-in:kit/all/weapon/give
     execute as @a[tag=playing,gamemode=!spectator] run function du-in:kit/all/weapon/init
+
     execute as @a[tag=hasRing] run function du-in:kit/sauron/ring/give_ring
 
+    #Run Game initialization for certain kits.
+    execute as @a at @s run function du-in:kit/all/game_start/init
+
     #Set swap for secondary kits/weapons to 2 (this is to ensure that the weapon actually switches when rightclicked)
-    scoreboard players set @a[scores={kit=22}] gumballSwitch 2
-    scoreboard players set @a[scores={kit=27}] pussWeapSwitch 2
-    scoreboard players set @a[scores={kit=28}] deathWeapSwitch 2
+    # scoreboard players set @a[scores={kit=22}] gumballSwitch 2
+    # scoreboard players set @a[scores={kit=27}] pussWeapSwitch 2
+    # scoreboard players set @a[scores={kit=28}] deathWeapSwitch 2
 
     #Reset scores for certain kits
-    scoreboard players set @a[scores={kit=20}] yharimRage 0
-    scoreboard players set @a[scores={kit=24}] ralseiTP 0
-    scoreboard players set @a[scores={kit=33}] kratosRage 0
-    scoreboard players set @a[scores={kit=35}] judyInspire 0
-    scoreboard players reset @a[scores={kit=11}] asrielTimer
+    # scoreboard players set @a[scores={kit=20}] yharimRage 0
+    # scoreboard players set @a[scores={kit=24}] ralseiTP 0
+    # scoreboard players set @a[scores={kit=33}] kratosRage 0
+    # scoreboard players set @a[scores={kit=35}] judyInspire 0
+    # scoreboard players reset @a[scores={kit=11}] asrielTimer
     
-    execute as @a[scores={kit=41}] run function du-in:kit/willo/start_game
+    # execute as @a[scores={kit=41}] run function du-in:kit/willo/events/game_start
 
     #Set player tag for easter egg music
-    execute if entity @a[scores={kit=2015}] run tag @a[tag=!legMusicOff,tag=!void,tag=!ctfl,tag=!cql] add saul
-    execute if entity @a[scores={kit=42069}] run tag @a[tag=!legMusicOff,tag=!void,tag=!ctfl,tag=!cql] add bigChungus
+    # execute if entity @a[scores={kit=2015}] run tag @a[tag=!legMusicOff,tag=!void,tag=!ctfl,tag=!cql] add saul
+    # execute if entity @a[scores={kit=42069}] run tag @a[tag=!legMusicOff,tag=!void,tag=!ctfl,tag=!cql] add bigChungus
     #Music override tag
-    execute if entity @a[scores={kit=2015}] run tag @a[tag=!legMusicOff,tag=!void,tag=!ctfl,tag=!cql] add musOverride
-    execute if entity @a[scores={kit=42069}] run tag @a[tag=!legMusicOff,tag=!void,tag=!ctfl,tag=!cql] add musOverride
+    # execute if entity @a[scores={kit=2015}] run tag @a[tag=!legMusicOff,tag=!void,tag=!ctfl,tag=!cql] add musOverride
+    # execute if entity @a[scores={kit=42069}] run tag @a[tag=!legMusicOff,tag=!void,tag=!ctfl,tag=!cql] add musOverride
 
     #Set global variable for easter egg music to true
     execute if entity @a[scores={kit=2015..},tag=!void,tag=!ctfl,tag=!cql] run scoreboard players set #main music 1
     
     #Mark Zombie and Springtrap as undead
-    tag @a[scores={kit=2}] add undead
-    tag @a[scores={kit=5}] add undead
-    tag @a[scores={kit=30}] add undead
-    tag @a[scores={kit=34}] add undead
+    #tag @a[scores={kit=2}] add undead
+    # tag @a[scores={kit=5}] add undead
+    # tag @a[scores={kit=30}] add undead
+    # tag @a[scores={kit=34}] add undead
 
     execute if entity @a[tag=vendingMachine] run tag @a[tag=sus] add vendingMachine
     
     #Set Cuphead card power to 0 and play announcer
-    scoreboard players set @a cardPower 0
-    execute as @a[scores={kit=21}] at @s run playsound du-in:kit.cuphead.announce.start master @s ~ ~ ~ 10 1
+    # scoreboard players set @a cardPower 0
+    # execute as @a[scores={kit=21}] at @s run playsound du-in:kit.cuphead.announce.start master @s ~ ~ ~ 10 1
 
 ##
 

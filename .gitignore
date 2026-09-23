@@ -1,0 +1,26 @@
+# ==========================================
+# macOS System & Finder Artifacts
+# ==========================================
+
+# Core macOS folder attributes & metadata
+.DS_Store
+.DS_Store?
+._*
+
+# Apple double files (created on non-native filesystems like FAT/exFAT)
+.AppleDouble
+.LSOverride
+
+# Files that might be created if a folder is placed on a network share
+.DocumentRevisions-V100
+.Spotlight-V100
+.Trashes
+
+# Volume databases and icon caches
+VolumeIcon.icns
+.VolumeIcon.icns
+
+# Custom folder icons created by the user in Finder
+Icon?
+data/du-in/function/kit/.DS_Store
+data/du-in/function/ingame/.DS_Store
