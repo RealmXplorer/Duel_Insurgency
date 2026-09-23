@@ -2,6 +2,7 @@
     "replace":false,
     "values": [
         "minecraft:player_head",
+        "minecraft:rabbit_hide",
         "minecraft:leather_chestplate",
         "minecraft:leather_leggings",
         "minecraft:leather_boots"

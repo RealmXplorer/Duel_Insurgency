@@ -8,5 +8,7 @@ scoreboard players set @s willoReloadTimer 0
 
 function du-in:kit/willo/revolver/item
 
+#item modify
+
 playsound du-in:kit.willo.revolver_reload master @a ~ ~ ~ 1 1
 tag @s remove reloading
