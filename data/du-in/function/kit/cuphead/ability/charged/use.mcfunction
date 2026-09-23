@@ -4,6 +4,7 @@
 tag @s add cupheadShoot
 playsound du-in:kit.cuphead.ability.charged master @a ~ ~ ~ 100 1
 playsound du-in:sfx.ut.ability master @a ~ ~ ~ .15 1
+scoreboard players set @s raycastStep 120
 execute if entity @s[tag=!void] positioned ^ ^ ^1 run function du-in:kit/cuphead/ability/charged/raycast
 execute if entity @s[tag=void] positioned ^ ^ ^1 run function du-in:kit/cuphead/ability/void/raycast
 

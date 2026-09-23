@@ -26,7 +26,7 @@
     execute if entity @s[scores={comboHitTimer=10..,comboScore=1..}] run function du-in:ingame/hit_combo/expire
 
 #Bhop reset
-    execute if entity @s[scores={jumpResetTimer=20..}] run function du-in:kit/all/attribute/bhop/reset
+    #execute if entity @s[scores={jumpResetTimer=20..}] run function du-in:kit/all/attribute/bhop/reset
     
 #Give armor if player is missing any#
 #execute if entity @s[predicate=!du-in:has_armor,predicate=!du-in:effect/is_invisible,tag=!teamDead,tag=!kitMenu,tag=!noClothes] run function du-in:kit/all/armor/armor_reset

@@ -380,6 +380,8 @@ scoreboard objectives add UUID dummy
 scoreboard objectives add weapCount dummy
 scoreboard objectives add winners dummy
 
+scoreboard objectives add raycastStep dummy
+
 #Void#
 scoreboard objectives add wave dummy
 scoreboard objectives add waveCooldown dummy
