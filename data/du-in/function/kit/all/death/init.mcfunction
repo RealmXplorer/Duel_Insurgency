@@ -1,3 +1,6 @@
+#Remove lostStreak tag if still has it.
+tag @s[tag=lostStreak] remove lostStreak
+
 #If suicide
 execute unless entity @s[scores={killedByPlayer=1..}] if entity @s[tag=cIngame,scores={killIngame=1..}] run function du-in:kit/all/death/suicide
 
@@ -86,7 +89,9 @@ execute if entity @s[scores={shrunkTimer=0..}] run function du-in:kit/jack_horne
 execute if entity @s[scores={parryDuration=0..},tag=parry] run scoreboard players set @s parryDuration 0
 
 #KILLSTREAK#
+tag @s[scores={killStreak=3..}] add lostStreak
 scoreboard players reset @s killStreak
+
 
 function du-in:ingame/kill_combo/reset
 

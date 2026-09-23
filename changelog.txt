@@ -10,8 +10,11 @@
 -Updated map to 26.3.
 -There are no more I-frames.
 -Removed glowing effect when crouching in game.
+-All players are now invisible, forcing players to search for their enemy.
+    -This is toggleable, though Willo will always be invisible as part of her kit.
 -Characters now have animations when using abilities.
     -"whack" for successful abilities, "none" for failed abilities, and "stab" for sabotaged abilities.
+-Messages for when a player ends another killstreak now dynamically shows the real killstreak (instead of just 3 or 5).
 -Skin menu is now organized the same as the kit menu.
 -Harvest now uses the Dappled Forest biome, and features Poplar trees.
 -Beds can no longer be slept in.

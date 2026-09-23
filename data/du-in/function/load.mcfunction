@@ -379,6 +379,7 @@ scoreboard objectives add tridentCount dummy
 scoreboard objectives add UUID dummy
 scoreboard objectives add weapCount dummy
 scoreboard objectives add winners dummy
+scoreboard objectives add invisibleToggle dummy
 
 scoreboard objectives add raycastStep dummy
 

@@ -17,3 +17,6 @@ execute store result score @s secCount run clear @s warped_fungus_on_a_stick 0
 
 execute if entity @s[scores={willoStandTimer=20..}] run function du-in:kit/willo/revolver/candy_corn/increase
 #
+
+#If invisibility is toggled off, keep it on for Willo.
+execute if score #main invisibleToggle matches 1 if entity @s[predicate=!du-in:effect/is_invisible] run effect give @s invisibility infinite 0 true

@@ -11,22 +11,19 @@ execute if entity @s[scores={quickKill=1..}] run function du-in:ingame/kill_comb
 #Detect Killstreak
 execute if entity @s[scores={killStreak=3..}] run function du-in:ingame/killstreak
 
-#Kill Messages
-execute unless score #main lobbyTheme matches 1.. unless entity @s[scores={justdied=1..}] run function du-in:kit/all/kill/msg/init
-execute if score #main lobbyTheme matches 1 unless entity @s[scores={justdied=1..}] run function du-in:kit/all/kill/msg/halloween
-execute if score #main lobbyTheme matches 2 unless entity @s[scores={justdied=1..}] run function du-in:kit/all/kill/msg/thanks
-execute if score #main lobbyTheme matches 3 unless entity @s[scores={justdied=1..}] run function du-in:kit/all/kill/msg/christmas
-execute if score #main lobbyTheme matches 4 unless entity @s[scores={justdied=1..}] run function du-in:kit/all/kill/msg/easter
-
 #Set current player to this player
 execute store result storage du-in:main player.current int 1 run scoreboard players get @s player
 
 #Run kit-specific functions in "(kit)/events/kill"
 execute at @s run function du-in:kit/all/kill/find_kit with storage du-in:main player
 
+#Kill Messages
+execute if entity @s[tag=killMsg] unless entity @s[scores={justdied=1..}] run function du-in:kit/all/kill/msg/init
+#Allow for another killMsg
+tag @s remove killMsg
+
 #Announce if player killed player with Killstreak
-execute if entity @a[scores={justdied=1,killStreak=3..4}] run tellraw @a {selector:"@s",bold:false,color:gold,extra:[{text:" has ended ",bold:false,color:gray},{selector:"@a[scores={justdied=1,killStreak=3..4}]",bold:false,color:dark_red},{text:"'s 3 player killstreak!",bold:true,color:gray}]}
-execute if entity @a[scores={justdied=1,killStreak=5..}] run tellraw @a {selector:"@s",bold:false,color:gold,extra:[{text:" has ended ",bold:false,color:gray},{selector:"@a[scores={justdied=1,killStreak=5..}]",bold:false,color:dark_red},{text:"'s 5 player killstreak!",bold:true,color:gray}]}
+execute if entity @a[scores={justdied=1,killStreak=3..}] run function du-in:ingame/killstreaks/killed
 
 #Kill Sounds#
 execute unless entity @a[tag=partyLeader,tag=aprilFools] run playsound du-in:sfx.te.golkill master @s ~ ~ ~ .4 2
@@ -39,9 +36,6 @@ scoreboard players add @s exp 1
 
 #Increase Ring corruption
 execute if entity @s[tag=hasRing] unless entity @s[scores={kit=31}] run scoreboard players add @s ringTimer 5
-
-#Allow for another killMsg
-tag @s remove killMsg
 
 #Classic Functions
 execute if entity @s[tag=cIngame] run function du-in:kit/all/kill/classic

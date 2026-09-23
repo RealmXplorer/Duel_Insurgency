@@ -24,6 +24,7 @@ tag @a remove kitPicked
 tag @a remove subLobby
 tag @a remove vendingMachine
 tag @a remove voidSpect
+tag @a remove lostStreak
 
 execute as @a[tag=randomSkins] run function du-in:skin_menu/actions/random
 

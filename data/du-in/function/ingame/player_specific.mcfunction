@@ -11,7 +11,8 @@
 #Attempt parry if sneaking
     execute if entity @s[predicate=du-in:is_sneaking] run function du-in:ingame/is_sneaking
     #execute if entity @s[predicate=!du-in:is_sneaking,tag=!glowing] run effect clear @s minecraft:glowing
-
+    execute unless score #main invisibleToggle matches 1 if entity @s[predicate=!du-in:effect/is_invisible] run effect give @s invisibility infinite 0 true
+    
     #Parry Mechanics
     execute if entity @s[tag=parryStart] run function du-in:kit/all/parry/buffer
     execute if entity @s[tag=parry,scores={parryDuration=0..}] run function du-in:kit/all/parry/in_parry
