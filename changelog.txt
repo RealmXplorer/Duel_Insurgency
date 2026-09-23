@@ -42,6 +42,7 @@
 -Added du-in:retro, du-in:goner, du-in:bw, and du-in:flash posteffects.
 -Moved Runza eating test to an advancement.
 -Added "du-in:effect/has_resistance" predicate.
+-Added "kit/all/game_start/" functions, allowing all characters to have a function that runs on game start without hardcoded tests.
 -Added room.Between
 -Renamed "oldPack" tag for beta music to "beta".
 -Renamed "music/ingame/oldpack/" and "music/lobby/oldpack/" to "music/ingame/beta/" and "music/lobby/beta/".
