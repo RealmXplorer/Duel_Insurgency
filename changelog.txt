@@ -3,6 +3,7 @@
 *Additions*
 -Added Willo character.
 -Added Jack Torrance skin for Springtrap.
+-Added small audio cue when a player with resistance takes damage.
 -Added subtitles to all gameplay audio.
 
 *Changes*
@@ -37,6 +38,8 @@
 -Added Glass Panes to "minecraft:glass" block tags.
 -Added du-in:retro, du-in:goner, du-in:bw, and du-in:flash posteffects.
 -Moved Runza eating test to an advancement.
+-Added "du-in:effect/has_resistance" predicate.
+-Added room.Between
 -Renamed "oldPack" tag for beta music to "beta".
 -Renamed "music/ingame/oldpack/" and "music/lobby/oldpack/" to "music/ingame/beta/" and "music/lobby/beta/".
 -Renamed and moved audio sources from "minecraft:" to "du-in:".
