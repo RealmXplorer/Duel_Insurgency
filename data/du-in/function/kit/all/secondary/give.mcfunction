@@ -1,4 +1,4 @@
-#clear @s #du-in:secondary
+clear @s #du-in:secondary
 
 ##DATAPACK 6.0
 #Set current player to this player

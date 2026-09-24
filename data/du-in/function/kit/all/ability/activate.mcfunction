@@ -1,3 +1,4 @@
+#say success (all/ability/activate)
 #Gives tag "kitActions" when carrot on a stick is rightclicked
 tag @s add kitActions
 

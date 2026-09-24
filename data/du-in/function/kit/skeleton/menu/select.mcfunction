@@ -9,10 +9,4 @@ tellraw @s [{text:"Selected the ",bold:true,color:gray},{text:"Skeleton ",bold:t
 #tellraw @s {text:"Spider",color:red,bold:true,extra:[{text:"\n The Spider kit uses its fangs and webs to subdue the enemy.",color:white,bold:false},{text:"\n\n Webbed Sword: ",color:gray,bold:true},{text:"Webbed sword used to damage enemies.",color:white,bold:false},{text:"\n Web Blast: ",color:gold,bold:true},{text:"Creates a blast webs in a radius to slow enemies.",color:white,bold:false}]}
 execute if entity @a[tag=partyLeader,tag=specialEvent] run tellraw @a [{selector:"@s",bold:true},{text:" has picked the ",bold:true,color:gray},{text:"Skeleton ",bold:true,color:gold},{text:"class! ",bold:true,color:gray}]
 
-#This kit has a secondary ability
-tag @s add hasSecond
-
-#This kit has no "main" weapon to test for.
-tag @s add noMainWeapon
-
 function du-in:lobby/kitmenu/select/common

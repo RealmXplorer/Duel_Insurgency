@@ -1,3 +1,5 @@
+#say success
+
 #Has Magic
 execute if entity @s[tag=magicBag] run return run function du-in:kit/jack_horner/ability/init_magic
 

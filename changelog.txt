@@ -37,6 +37,8 @@
 -Secondary give/return functions are now run every second, rather than every tick (like weapons and armor).
 -"triCounts" are now tested every second, and are standardized via "secondary/tracker/item".
     -Only exceptions are Pawbert and PearApplez, as their trackers are unique.
+-Deprecated "weapCount", "secCount", "triCount", "appleCount", and "tridentCount" scores, now uses "execute unless items" to test for missing items.
+-Jack Horner's run functions now operate off his constant function, rather than deferring to "run" functions.
 -Ingame music now runs through returns, offering some optimization.
 -Gamemode functions run through returns, offering minor optimization.
 -Map select is now fully scalable, running off of inset scores from UUIDs, rather than tags.

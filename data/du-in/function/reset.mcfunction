@@ -336,6 +336,7 @@ execute as @a run function du-in:music/ingame/stop/all
         tag @a remove hasVial
         execute as @a run function du-in:kit/pawbert/secondary/antidote/cure
 
+tag @a remove hasTracker
 tag @a remove hasRing
 tag @a remove sauronHit
 tag @a remove wildeHit

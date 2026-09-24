@@ -6,10 +6,11 @@ execute if entity @s[tag=!cIngame,tag=!grave] run function du-in:ingame/spawnpoi
 execute unless entity @s[level=3..] unless items entity @s[tag=!startgame,tag=!cooldown,tag=!grave,tag=!hornerWeapon] weapon.offhand #du-in:ability run xp set @s 2 levels
 
 #Check if player has weapon
-execute if entity @s[tag=!pussFear,tag=!kratosRage,tag=!kitMenu,tag=!teamDead,tag=!noMainWeapon,tag=!pawbertInvisible,tag=!gasterInvisible,tag=!asrielSaber,tag=!floweyDuration,tag=!thrown,tag=!brokenShield] unless entity @s[scores={skeletonMode=1..}] run function du-in:kit/all/weapon/test
+#execute if entity @s[tag=!pussFear,tag=!kratosRage,tag=!kitMenu,tag=!teamDead,tag=!noMainWeapon,tag=!pawbertInvisible,tag=!gasterInvisible,tag=!asrielSaber,tag=!floweyDuration,tag=!thrown,tag=!brokenShield] unless entity @s[scores={skeletonMode=1..}] run function du-in:kit/all/weapon/test
+execute if entity @s[tag=!pussFear,tag=!kratosRage,tag=!kitMenu,tag=!teamDead,tag=!noMainWeapon,tag=!pawbertInvisible,tag=!gasterInvisible,tag=!asrielSaber,tag=!floweyDuration,tag=!thrown,tag=!brokenShield] unless entity @s[scores={skeletonMode=1..}] unless items entity @s container.* #du-in:weapon run function du-in:kit/all/weapon/init
 
 #Check if player has secondary
-execute if entity @s[tag=hasSecond,tag=!stolen,tag=!kitMenu,tag=!teamDead,tag=!pussFear,tag=!secondExempt] run function du-in:kit/all/secondary/test
+execute if entity @s[tag=hasSecond,tag=!stolen,tag=!kitMenu,tag=!teamDead,tag=!pussFear,tag=!secondExempt] unless items entity @s container.* #du-in:secondary run function du-in:kit/all/secondary/give
 
 #Check if player has tracking item
 execute if entity @s[tag=hasTracker,tag=!teamDead] run function du-in:kit/all/secondary/tracker/test

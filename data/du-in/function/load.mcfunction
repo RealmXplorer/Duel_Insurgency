@@ -1,5 +1,5 @@
 #Kit specific
-scoreboard objectives add appleCount dummy
+#scoreboard objectives add appleCount dummy
 scoreboard objectives add asgoreFire dummy
 scoreboard objectives add bugHit dummy
 scoreboard objectives add card dummy
@@ -358,7 +358,7 @@ scoreboard objectives add quickKill dummy
 scoreboard objectives add redPoints dummy
 scoreboard objectives add bluePoints dummy
 scoreboard objectives add scoreMost dummy
-scoreboard objectives add secCount dummy
+#scoreboard objectives add secCount dummy
 #scoreboard objectives add setGamemode dummy
 scoreboard objectives add gamemode dummy
 scoreboard objectives add kitTheme dummy
@@ -374,8 +374,8 @@ scoreboard objectives add teamPool dummy
 
 scoreboard objectives add toDev dummy
 
-scoreboard objectives add triCount dummy
-scoreboard objectives add tridentCount dummy
+#scoreboard objectives add triCount dummy
+#scoreboard objectives add tridentCount dummy
 scoreboard objectives add UUID dummy
 scoreboard objectives add weapCount dummy
 scoreboard objectives add winners dummy
