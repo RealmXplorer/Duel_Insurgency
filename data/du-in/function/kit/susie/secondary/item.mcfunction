@@ -1,0 +1,1 @@
+item replace entity @s hotbar.1 with minecraft:warped_fungus_on_a_stick[item_name={text:"Will Change",color:"#e31e4f",bold:true},lore=[{text:"Right click to use!",color:green,bold:true},{text:"Turns Rude Buster into RED BUSTER",color:gray}],item_model="du-in:other/will_change",unbreakable={}] 1

@@ -8,6 +8,9 @@ execute unless entity @s[level=3..] unless items entity @s[tag=!startgame,tag=!c
 #Check if player has weapon
 execute if entity @s[tag=!pussFear,tag=!kratosRage,tag=!kitMenu,tag=!teamDead,tag=!noMainWeapon,tag=!pawbertInvisible,tag=!gasterInvisible,tag=!asrielSaber,tag=!floweyDuration,tag=!thrown,tag=!brokenShield] unless entity @s[scores={skeletonMode=1..}] run function du-in:kit/all/weapon/test
 
+#Check if player has secondary
+execute if entity @s[tag=hasSecond,tag=!stolen,tag=!kitMenu,tag=!teamDead,tag=!pussFear,tag=!secondExempt] run function du-in:kit/all/secondary/test
+
 #Give armor if player is missing any#
 execute if entity @s[predicate=!du-in:has_armor,predicate=!du-in:effect/is_invisible,tag=!teamDead,tag=!kitMenu,tag=!noClothes] run function du-in:kit/all/armor/armor_reset
 

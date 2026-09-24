@@ -33,21 +33,9 @@
 #execute if entity @s[predicate=!du-in:has_armor,predicate=!du-in:effect/is_invisible,tag=!teamDead,tag=!kitMenu,tag=!noClothes] run function du-in:kit/all/armor/armor_reset
 
 # KIT FUNCTIONS #
-    # General Set 1 int functions #
-        execute if entity @s[scores={kit=1..8},tag=!kitMenu] run function du-in:kit/all/set1
-        execute if entity @s[tag=stolen,tag=!kitMenu] run function du-in:kit/villager/constant
+    # #Set current player to this player
+        #execute if entity @s[tag=!kitMenu] run function du-in:kit/all/init/init
 
-    # General Set 2 int functions #
-        execute if entity @s[scores={kit=9..16},tag=!kitMenu] run function du-in:kit/all/set2
-
-    # General Set 3 int functions #
-        execute if entity @s[scores={kit=17..24},tag=!kitMenu] run function du-in:kit/all/set3
-
-    # General Set 4 functions #
-        execute if entity @s[scores={kit=25..999},tag=!kitMenu] run function du-in:kit/all/set4
-
-    # General UNLOCK int functions #
-        execute if entity @s[scores={kit=1000..},tag=!kitMenu] run function du-in:kit/all/set_legend
 
 #Different events
     execute if entity @s[scores={hit=5..}] run function du-in:kit/all/hit/init

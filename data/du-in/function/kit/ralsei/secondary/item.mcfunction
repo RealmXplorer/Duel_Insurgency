@@ -1,0 +1,1 @@
+item replace entity @s hotbar.1 with minecraft:warped_fungus_on_a_stick[item_name={text:"Heal Prayer",color:"#e31e4f",bold:true},lore=[{text:"Right click to use!",color:green,bold:true},{text:"Heals yourself and allies",color:dark_gray}],item_model="du-in:abilities/heal_prayer",unbreakable={}] 1

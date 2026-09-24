@@ -1,4 +1,3 @@
-
 #Ability timer
 execute if entity @s[scores={pawbertTimer=0..}] run function du-in:kit/pawbert/ability/timer
 

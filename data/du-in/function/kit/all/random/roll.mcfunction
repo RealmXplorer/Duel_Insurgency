@@ -17,3 +17,4 @@ execute at @s run function du-in:kit/all/random/set with storage du-in:main play
 
 #Set Attributes
 execute if entity @s[tag=playing] run function du-in:kit/all/attribute/set
+execute if entity @s[tag=playing] run function du-in:kit/all/game_start/init with storage du-in:main player

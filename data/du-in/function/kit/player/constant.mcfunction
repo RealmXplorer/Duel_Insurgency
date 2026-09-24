@@ -7,10 +7,10 @@
 #execute if score #main titleTimer2 matches 21 run item replace entity @s hotbar.8 with minecraft:arrow 2
 
 #WEAPONS#
-execute unless entity @s[scores={secCount=1}] if entity @s[tag=!teamDead,tag=!stolen] run function du-in:kit/player/bow
+#execute unless entity @s[scores={secCount=1}] if entity @s[tag=!teamDead,tag=!stolen] run function du-in:kit/player/secondary/item
 
 #TEST BOW COUNT#
-execute store result score @s secCount run clear @s bow 0
+#execute store result score @s secCount run clear @s bow 0
 
 #SO THIS POWER...
 #OF DETERMINATION

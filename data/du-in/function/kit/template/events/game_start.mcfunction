@@ -1,0 +1,1 @@
+#Functions that run when a game starts.

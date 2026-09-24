@@ -5,9 +5,9 @@
 # execute if entity @s[scores={jump=1..}] run function du-in:kit/death/events/jump
 
 #Check for if they have secondary
-execute store result score @s secCount run clear @s warped_fungus_on_a_stick 0
+# execute store result score @s secCount run clear @s warped_fungus_on_a_stick 0
 
-execute unless entity @s[scores={secCount=1}] unless entity @s[scores={deathSwapTimer=1..}] if entity @s[tag=!teamDead] run function du-in:kit/death/secondary/item
+# execute unless entity @s[scores={secCount=1}] unless entity @s[scores={deathSwapTimer=1..}] if entity @s[tag=!teamDead] run function du-in:kit/death/secondary/item
 
 #Weapon switch cooldown timer
 execute if entity @s[scores={deathSwapTimer=-1..}] run function du-in:kit/death/secondary/timer

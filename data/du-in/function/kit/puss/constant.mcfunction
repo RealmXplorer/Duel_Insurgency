@@ -8,10 +8,10 @@
 execute if entity @s[tag=secKitActions] run function du-in:kit/puss/secondary/switch
 
 #Test for weapon switch
-execute store result score @s[scores={gameDeaths=4..},tag=!void] secCount run clear @s warped_fungus_on_a_stick 0
-execute store result score @s[tag=void] secCount run clear @s warped_fungus_on_a_stick 0
+#execute store result score @s[scores={gameDeaths=4..},tag=!void] secCount run clear @s warped_fungus_on_a_stick 0
+#execute store result score @s[tag=void] secCount run clear @s warped_fungus_on_a_stick 0
 
 #Secondary Item
-execute unless entity @s[scores={secCount=1}] unless entity @s[scores={pussSwapTimer=1..}] if entity @s[tag=!teamDead] run function du-in:kit/puss/secondary
+execute unless entity @s[scores={secCount=1}] unless entity @s[scores={pussSwapTimer=1..}] if entity @s[tag=!teamDead] run function du-in:kit/puss/secondary/item_old
 
 execute if entity @s[scores={pussSwapTimer=-1..}] run function du-in:kit/puss/secondary/timer

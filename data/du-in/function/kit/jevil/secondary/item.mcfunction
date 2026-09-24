@@ -1,0 +1,1 @@
+item replace entity @s hotbar.1 with minecraft:warped_fungus_on_a_stick[item_name={text:"Neo-Chaos",color:"#e31e4f",bold:true},lore=[{text:"Right click to use!",color:green,bold:true},{text:"Summons a scythe from the sky and drops it where you're looking.",color:gray}],item_model="du-in:abilities/jevilstail",unbreakable={}] 1

@@ -4,10 +4,10 @@
 # execute if entity @s[scores={sprint=175..}] run function du-in:kit/kratos/events/step
 # execute if entity @s[scores={jump=1..}] run function du-in:kit/kratos/events/jump
 
-execute unless entity @s[scores={secCount=1}] if entity @s[tag=!teamDead] run function du-in:kit/kratos/secondary/rage_meter
+#execute unless entity @s[scores={secCount=1}] if entity @s[tag=!teamDead] run function du-in:kit/kratos/secondary/item
 
 #Track Secondary Item
-execute store result score @s secCount run clear @s warped_fungus_on_a_stick 0
+#execute store result score @s secCount run clear @s warped_fungus_on_a_stick 0
 
 #Activate Secondary#
 execute if entity @s[tag=secKitActions] run function du-in:kit/kratos/secondary/init

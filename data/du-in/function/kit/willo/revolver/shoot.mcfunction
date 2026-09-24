@@ -1,5 +1,5 @@
 tag @s add willoShoot
-function du-in:kit/willo/revolver/item
+function du-in:kit/willo/secondary/item
 playsound du-in:kit.willo.revolver_shoot master @a ~ ~ ~ 1 1
 
 summon marker ^ ^1.9 ^.5 {Tags:["willoBullet","unset","mapSpecific","projectile"]}

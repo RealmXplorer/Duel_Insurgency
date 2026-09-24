@@ -1,0 +1,1 @@
+execute if entity @s[scores={gameDeaths=4..}] run tag @s remove secondExempt

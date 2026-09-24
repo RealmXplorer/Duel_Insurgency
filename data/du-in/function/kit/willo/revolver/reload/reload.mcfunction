@@ -6,7 +6,7 @@ execute if entity @s[scores={willoAmmo=..5}] run scoreboard players add @s willo
 clear @s minecraft:copper_nugget 1
 scoreboard players set @s willoReloadTimer 0
 
-function du-in:kit/willo/revolver/item
+function du-in:kit/willo/secondary/item
 
 #item modify
 

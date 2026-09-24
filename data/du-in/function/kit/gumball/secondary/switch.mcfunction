@@ -11,6 +11,8 @@ execute if entity @s[scores={gumballSwitch=2}] run effect clear @s water_breathi
 
 #scoreboard players set @s weapCount 0
 scoreboard players set @s gumSwapTimer 30
+tag @s add secondExempt
+
 clear @s
 function du-in:kit/gumball/weapon
 execute unless entity @s[level=1..] run xp add @s 30 levels

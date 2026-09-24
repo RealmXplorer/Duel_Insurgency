@@ -17,6 +17,7 @@ playsound du-in:kit.death.switch master @a ~ ~ ~
 
 function du-in:kit/death/weapon
 scoreboard players set @s deathSwapTimer 20
+tag @s add secondExempt
 
 execute unless entity @s[level=1..] run xp add @s 3 levels
 playsound minecraft:entity.player.attack.sweep master @a ~ ~ ~ 2 1.25

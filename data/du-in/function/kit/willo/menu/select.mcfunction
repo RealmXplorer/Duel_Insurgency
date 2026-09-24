@@ -11,5 +11,6 @@ execute if entity @a[tag=partyLeader,tag=specialEvent] run tellraw @a [{selector
 #Add Sus tag (allows venting)
 tag @s add sus
 tag @s add noMainWeapon
+tag @s add hasSecond
 
 function du-in:lobby/kitmenu/select/common

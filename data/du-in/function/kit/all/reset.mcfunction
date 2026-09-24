@@ -25,7 +25,8 @@ tag @s remove brokenShield
 tag @s remove noMainWeapon
 tag @s remove musOverride
 tag @s remove floweyDuration
-
+tag @s remove hasSecond
+tag @s remove secondExempt
 
 #Important below
 tag @s remove kitPicked

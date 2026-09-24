@@ -18,6 +18,9 @@ execute if entity @a[tag=ctfIngame] run function du-in:ingame/ctf/reset
 execute if entity @a[tag=cqIngame] run function du-in:ingame/conquest/reset
 execute if entity @a[tag=lobby] run function du-in:lobby/reset/complete
 
+tag @a remove hasSecond
+tag @a remove secondExempt
+
 #scoreboard players reset #main startSeq
 tag @a remove startgame
 tag @a remove kitPicked

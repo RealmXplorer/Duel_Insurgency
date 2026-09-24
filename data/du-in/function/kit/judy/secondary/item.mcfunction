@@ -1,0 +1,1 @@
+item replace entity @s hotbar.1 with minecraft:warped_fungus_on_a_stick[item_name={text:"Inspiration",color:"gold",bold:true},lore=[{text:"Right click to use!",color:green,bold:true},{text:"Empowers teammates, sabotages enemies, and boosts you",color:dark_gray}],item_model="du-in:abilities/badge",unbreakable={}] 1

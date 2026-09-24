@@ -31,6 +31,8 @@
 -Chunks are now dynamically forceloaded, offering better performance for the server.
 -Some entities are now loaded and tested via hardcoded UUIDs, rather than dynamic tests. This provides optimizations to KOTH, CTF, and the lobby.
 -Abilities now run through "returns", reducing entity checks for optimizations.
+-Secondaries are now standardized through a "hasSecond" tag (added on kit pick) and dynamic "secondary/item" function.
+-Secondary give/return functions are now run every second, rather than every tick (like weapons and armor).
 -Ingame music now runs through returns, offering some optimization.
 -Gamemode functions run through returns, offering minor optimization.
 -Map select is now fully scalable, running off of inset scores from UUIDs, rather than tags.
