@@ -1,6 +1,0 @@
-{
-  "type": "minecraft:set_components",
-  "components": {
-    "minecraft:item_model": "du-in:lobby/play"
-  }
-}

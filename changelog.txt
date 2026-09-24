@@ -52,6 +52,7 @@
 -Added "du-in:effect/has_resistance" predicate.
 -Added "kit/all/game_start/" functions, allowing all characters to have a function that runs on game start without hardcoded tests.
 -Added room.Between
+-Removed "loot_table" folder, as it was unused.
 -Renamed "oldPack" tag for beta music to "beta".
 -Renamed "music/ingame/oldpack/" and "music/lobby/oldpack/" to "music/ingame/beta/" and "music/lobby/beta/".
 -Renamed and moved audio sources from "minecraft:" to "du-in:".
