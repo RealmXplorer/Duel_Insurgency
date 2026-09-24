@@ -20,7 +20,10 @@ schedule function du-in:void/finale/ending 174s
 bossbar set gast:pylon4 players @a
 bossbar set gast:pylon4 color white
 bossbar set gast:pylon4 visible true
+bossbar set gast:pylon4 max 3600
+
 scoreboard players set #main pylonTimer 3600
+execute store result bossbar gast:pylon4 value run scoreboard players get #main pylonTimer
 
 scoreboard players set #gonerMax gonerCount 0
 

@@ -1,16 +1,4 @@
 ##Pylons
-#Run if on Pylon 1
-execute if score #main pylonsDestroyed matches 0 run function du-in:void/pylon/pylon1
-
-#Run if on Pylon 2
-execute if score #main pylonsDestroyed matches 1 run function du-in:void/pylon/pylon2
-
-#Run if on Pylon 3
-execute if score #main pylonsDestroyed matches 2 run function du-in:void/pylon/pylon3
-
-#Run if on Pylon 4
-execute if score #main pylonsDestroyed matches 3 run function du-in:void/pylon/pylon4
-
 ##Enemies
     #Test enemy numbers
     scoreboard players set #main gonerCount 0
@@ -39,6 +27,18 @@ execute if score #main pylonsDestroyed matches 3 run function du-in:void/pylon/p
 
 #Lose condition
 execute if score Insurgents playerCount matches ..0 unless entity @a[tag=win] run function du-in:void/end/lose
+
+#Run if on Pylon 1
+execute if score #main pylonsDestroyed matches 0 run return run function du-in:void/pylon/pylon1
+
+#Run if on Pylon 2
+execute if score #main pylonsDestroyed matches 1 run return run function du-in:void/pylon/pylon2
+
+#Run if on Pylon 3
+execute if score #main pylonsDestroyed matches 2 run return run function du-in:void/pylon/pylon3
+
+#Run if on Pylon 4
+execute if score #main pylonsDestroyed matches 3 run function du-in:void/pylon/pylon4
 
 #DARKNESS CREEPING
 #WATCHFUL EYES
