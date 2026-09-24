@@ -257,7 +257,7 @@ execute if score #main pylonsDestroyed matches 3 run bossbar set gast:pylon4 pla
 execute if score #main pylonsDestroyed matches 3 run bossbar set gast:pylon4 visible true
 
 bossbar set gast:pylon4 name [{text:"Time to Pylon shutdown: ",bold:true,color:white},{text:"SURVIVE",bold:true,color:red}]
-execute store result bossbar gast:pylon4 max run scoreboard players get @a[gamemode=adventure,tag=void,limit=1] pylonTimer
+#execute store result bossbar gast:pylon4 max run scoreboard players get @a[gamemode=adventure,tag=void,limit=1] pylonTimer
 
 schedule function du-in:void/spawn/vending 10t
 
