@@ -3,3 +3,6 @@ execute store result score @s willoStock run clear @s copper_nugget 0
 
 scoreboard players set @s willoAmmo 6
 scoreboard players set @s willoReloadTimer 20
+
+tag @s add hasSecond
+tag @s add noMainWeapon

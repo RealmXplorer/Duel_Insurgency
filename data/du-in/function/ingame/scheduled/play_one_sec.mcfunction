@@ -11,6 +11,9 @@ execute if entity @s[tag=!pussFear,tag=!kratosRage,tag=!kitMenu,tag=!teamDead,ta
 #Check if player has secondary
 execute if entity @s[tag=hasSecond,tag=!stolen,tag=!kitMenu,tag=!teamDead,tag=!pussFear,tag=!secondExempt] run function du-in:kit/all/secondary/test
 
+#Check if player has tracking item
+execute if entity @s[tag=hasTracker,tag=!teamDead] run function du-in:kit/all/secondary/tracker/test
+
 #Give armor if player is missing any#
 execute if entity @s[predicate=!du-in:has_armor,predicate=!du-in:effect/is_invisible,tag=!teamDead,tag=!kitMenu,tag=!noClothes] run function du-in:kit/all/armor/armor_reset
 

@@ -6,16 +6,16 @@
 #tag @s add sus
 
 #scoreboard players add @s[scores={ventCooldown=..61}] ventCooldown 1
-scoreboard players remove @s[scores={ventCooldown=1..}] ventCooldown 1
+#scoreboard players remove @s[scores={ventCooldown=1..}] ventCooldown 1
 
 #Wire cutter item
-execute if entity @s[tag=vendingMachine] run function du-in:ingame/vending_machine/sabotaged/item/init
+#execute if entity @s[tag=vendingMachine] run function du-in:ingame/vending_machine/sabotaged/item/init
 
 #Test Impostor Meeting Spot
-execute unless block ~ ~-1 ~ #du-in:zomb_invalid run tag @s remove airBlock
+# execute unless block ~ ~-1 ~ #du-in:zomb_invalid run tag @s remove airBlock
 
-execute if block ~ ~-1 ~ #du-in:zomb_invalid rotated as @s run tag @s add airBlock
-execute if block ~ ~ ~ #minecraft:liquid rotated as @s run tag @s add airBlock
+# execute if block ~ ~-1 ~ #du-in:zomb_invalid rotated as @s run tag @s add airBlock
+# execute if block ~ ~ ~ #minecraft:liquid rotated as @s run tag @s add airBlock
 
 #THIS SPECIMEN
 #STOKES MY CURIOUSITY

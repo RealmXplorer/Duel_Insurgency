@@ -1,22 +1,10 @@
-##MAKE IT SO ABILITY ONLY RUNS WHEN IN AIR.
+#Validate blocks
+execute if block ~ ~-1 ~ #du-in:sans_valid run return run function du-in:kit/all/ability/titles/air
 
-summon armor_stand ~ ~-0.1 ~ {Invisible:1b,Invulnerable:1b,Tags:["desolateTest","desolateDive","mapSpecific"]}
+execute unless block ~ ~-1 ~ #du-in:sans_valid rotated as @s run return run function du-in:kit/all/ability/titles/air
+execute unless block ~ ~ ~ #du-in:sans_valid rotated as @s run return run function du-in:kit/all/ability/titles/air
 
-execute store result score @e[type=armor_stand,tag=desolateTest,limit=1] team run scoreboard players get @s team
-execute store result score @e[type=armor_stand,tag=desolateTest,limit=1] player run scoreboard players get @s player
+execute unless blocks ~ ~ ~ ~ ~.5 ~ ~ ~-.5 ~ all run return run function du-in:kit/all/ability/titles/air
 
-execute if entity @s[tag=void] run tag @e[type=armor_stand,tag=desolateTest] add void
-execute if entity @s[tag=sabotaged] run tag @e[type=armor_stand,tag=desolateTest] add sabotaged
-
-tag @e[type=armor_stand,tag=desolateTest] remove desolateTest
-
-swing @s[tag=!sabotaged] offhand whack
-swing @s[tag=sabotaged] offhand stab
-
-tag @s add diving
-tag @s add cooldown
-#Remove ability from hand
-clear @s #du-in:ability
-
-#End ability
-tag @s remove kitActions
+#If Valid
+function du-in:kit/knight/ability/default_init

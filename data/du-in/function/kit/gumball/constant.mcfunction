@@ -5,7 +5,7 @@
 # execute if entity @s[scores={jump=1..}] run function du-in:kit/gumball/events/jump
 
 #Tag Gumball and Darwin in and out
-execute if entity @s[tag=secKitActions] run function du-in:kit/gumball/secondary/switch
+#execute if entity @s[tag=secKitActions] run function du-in:kit/gumball/secondary/init
 
 #Secondary Give#
 #execute unless entity @s[scores={secCount=1}] unless entity @s[scores={gumSwapTimer=1..}] if entity @s[tag=!teamDead] run function du-in:kit/gumball/secondary/item

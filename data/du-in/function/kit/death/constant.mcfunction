@@ -13,7 +13,7 @@
 execute if entity @s[scores={deathSwapTimer=-1..}] run function du-in:kit/death/secondary/timer
 
 #Use ability
-execute if entity @s[tag=secKitActions] run function du-in:kit/death/secondary/switch
+#execute if entity @s[tag=secKitActions] run function du-in:kit/death/secondary/init
 
 #ODD
 #THIS IS NO BEING

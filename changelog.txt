@@ -31,8 +31,12 @@
 -Chunks are now dynamically forceloaded, offering better performance for the server.
 -Some entities are now loaded and tested via hardcoded UUIDs, rather than dynamic tests. This provides optimizations to KOTH, CTF, and the lobby.
 -Abilities now run through "returns", reducing entity checks for optimizations.
--Secondaries are now standardized through a "hasSecond" tag (added on kit pick) and dynamic "secondary/item" function.
+-Zombie, Impostor, and Hollow Knight ability validity checks now happen on ability execution, rather than their constants.
+-Secondaries are now standardized through a "hasSecond" tag (added on kit pick), and dynamic "secondary/item" and "secondary/init" functions.
+    -Per-tick "secKitActions" tag check is being phased out, but technically still supported.
 -Secondary give/return functions are now run every second, rather than every tick (like weapons and armor).
+-"triCounts" are now tested every second, and are standardized via "secondary/tracker/item".
+    -Only exceptions are Pawbert and PearApplez, as their trackers are unique.
 -Ingame music now runs through returns, offering some optimization.
 -Gamemode functions run through returns, offering minor optimization.
 -Map select is now fully scalable, running off of inset scores from UUIDs, rather than tags.

@@ -10,7 +10,7 @@
 #execute store result score @s secCount run clear @s warped_fungus_on_a_stick 0
 
 #Activate Secondary#
-execute if entity @s[tag=secKitActions] run function du-in:kit/yharim/secondary/init
+#execute if entity @s[tag=secKitActions] run function du-in:kit/yharim/secondary/init
 
 execute if entity @s[scores={yharimRageDuration=0..}] run function du-in:kit/yharim/secondary/in_rage
 

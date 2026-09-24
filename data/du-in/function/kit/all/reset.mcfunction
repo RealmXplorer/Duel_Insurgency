@@ -27,6 +27,7 @@ tag @s remove musOverride
 tag @s remove floweyDuration
 tag @s remove hasSecond
 tag @s remove secondExempt
+tag @s remove hasTracker
 
 #Important below
 tag @s remove kitPicked

@@ -10,7 +10,7 @@
 #execute store result score @s secCount run clear @s warped_fungus_on_a_stick 0
 
 #Activate Secondary#
-execute if entity @s[tag=secKitActions] run function du-in:kit/kratos/secondary/init
+#execute if entity @s[tag=secKitActions] run function du-in:kit/kratos/secondary/init
 execute if entity @s[scores={kratosRageDuration=0..}] run function du-in:kit/kratos/secondary/in_rage
 
 #CURIOUS

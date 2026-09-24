@@ -1,3 +1,4 @@
+clear @s minecraft:gunpowder
 item replace entity @s[scores={ralseiTP=..69},tag=!maxTP] hotbar.8 with minecraft:gunpowder[item_name={text:"Tension Points (Empty)",color:gray,bold:true},lore=[{text:"Get close to enemies to charge!",color:green,bold:true}],item_model="du-in:other/tp_empty",unbreakable={}] 1
 item replace entity @s[scores={ralseiTP=70..99},tag=!maxTP] hotbar.8 with minecraft:gunpowder[item_name={text:"Tension Points",color:gray,bold:true},lore=[{text:"Get close to enemies to charge!",color:green,bold:true}],item_model="du-in:other/tp1",unbreakable={}] 1
 item replace entity @s[scores={ralseiTP=100..129},tag=!maxTP] hotbar.8 with minecraft:gunpowder[item_name={text:"Tension Points",color:gray,bold:true},lore=[{text:"Get close to enemies to charge!",color:green,bold:true}],item_model="du-in:other/tp2",unbreakable={}] 1

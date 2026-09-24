@@ -16,10 +16,10 @@ execute if entity @s[predicate=du-in:effect/is_on_fire] run function du-in:kit/c
 # execute unless entity @s[scores={secCount=1}] unless entity @s[scores={classSwapTimer=1..}] if entity @s[tag=!teamDead] run function du-in:kit/cinder/secondary/item
 
 #Weapon switch cooldown timer
-execute if entity @s[scores={classSwapTimer=-1..}] run function du-in:kit/cinder/switch/timer
+execute if entity @s[scores={classSwapTimer=-1..}] run function du-in:kit/cinder/secondary/timer
 
 #Use ability
-execute if entity @s[tag=secKitActions] run function du-in:kit/cinder/switch/switch
+#execute if entity @s[tag=secKitActions] run function du-in:kit/cinder/secondary/init
 
 #FASCINATING
 #THE POWER OF LIFE

@@ -14,7 +14,5 @@ execute if entity @a[tag=partyLeader,tag=specialEvent] run tellraw @a [{selector
 scoreboard players set @s kit 24
 $data modify storage du-in:player$(current) kit set value {"kit":"ralsei"}
 
-tag @s add hasSecond
-
 #Clear and remove tags
 function du-in:lobby/kitmenu/select/common

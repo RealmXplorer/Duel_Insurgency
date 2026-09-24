@@ -2,7 +2,7 @@ scoreboard players reset @s kitUse
 
 #Return error
 execute if entity @s[tag=flagGot] run return run function du-in:kit/all/ability/titles/flag
-execute if entity @s[tag=airBlock] run return run function du-in:kit/all/ability/titles/ground
+#execute if entity @s[tag=airBlock] run return run function du-in:kit/all/ability/titles/ground
 execute if entity @s[tag=groundBlock] run return run function du-in:kit/all/ability/titles/air
 execute if entity @s[tag=inTheModel] run return run function du-in:kit/all/ability/titles/in_model
 

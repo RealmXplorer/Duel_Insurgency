@@ -17,7 +17,7 @@ execute if score @s kit matches 5 run return run function du-in:kit/springtrap/i
 #execute if entity @s[scores={kit=6},tag=!stolen] run function du-in:kit/golem/constant
 
 # Player #
-execute if score @s[tag=!stolen] kit matches 7 run return run function du-in:kit/player/constant
+#execute if score @s[tag=!stolen] kit matches 7 run return run function du-in:kit/player/constant
 
 # Villager #
 execute if score @s kit matches 8 run return run function du-in:kit/villager/constant

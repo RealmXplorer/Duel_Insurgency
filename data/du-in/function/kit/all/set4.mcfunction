@@ -32,13 +32,13 @@ execute if score @s kit matches 33 run return run function du-in:kit/kratos/init
 execute if score @s kit matches 34 run return run function du-in:kit/cinder/init
 
 #Judy#
-execute if score @s[tag=!stolen] kit matches 35 run return run function du-in:kit/judy/constant
+#execute if score @s[tag=!stolen] kit matches 35 run return run function du-in:kit/judy/constant
 
 #Susie#
 execute if score @s kit matches 36 run return run function du-in:kit/susie/init
 
 #Knight#
-execute if score @s kit matches 37 run return run function du-in:kit/knight/init
+#execute if score @s kit matches 37 run return run function du-in:kit/knight/init
 
 #Jevil
 execute if score @s kit matches 38 run return run function du-in:kit/jevil/init
