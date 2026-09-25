@@ -3,3 +3,4 @@ execute store result storage du-in:main player.current int 1 run scoreboard play
 
 # #Run kit-specific functions in "(kit)/init"
 execute at @s run function du-in:kit/all/init/find_kit with storage du-in:main player
+execute if entity @s[tag=stolen] run function du-in:kit/villager/constant

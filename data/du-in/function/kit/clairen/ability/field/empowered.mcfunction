@@ -1,5 +1,6 @@
 #Add inField to all in field
 tag @a[distance=..6,gamemode=!spectator,tag=!empoweredField] add empoweredField
+tag @a[distance=..6,tag=empoweredField] add inField
 tag @a[tag=inField] add glowing
 
 #Remove inField from all outside of field

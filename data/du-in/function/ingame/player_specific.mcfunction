@@ -25,7 +25,7 @@
 
 #Sus functions
     execute if entity @s[tag=sus] run function du-in:kit/all/sus
-    
+
 #HIT COMBO#
     execute if entity @s[scores={comboHitTimer=10..,comboScore=1..}] run function du-in:ingame/hit_combo/expire
 
@@ -107,14 +107,14 @@
     execute if entity @s[tag=hasRing] run function du-in:kit/sauron/ring/has_ring
 
 #Jevil
-    execute if entity @s[scores={jevilTimer=0..}] run function du-in:kit/jevil/ability/spin
+    #execute if entity @s[scores={jevilTimer=0..}] run function du-in:kit/jevil/ability/spin
     execute if entity @s[tag=jevilDuration] run function du-in:kit/jevil/ability/spin
 
 #Clairen Field
-    execute if entity @s[tag=inField] run function du-in:kit/clairen/ability/field_effects
-    execute if entity @s[tag=sabotagedField] run function du-in:kit/clairen/ability/sabotaged_field
-    execute if entity @s[tag=empoweredField] run function du-in:kit/clairen/ability/empowered_field
-    execute if entity @s[tag=empoweredSabotageField] run function du-in:kit/clairen/ability/empowered_sabotage_field
+    execute if entity @s[tag=inField] run function du-in:kit/clairen/ability/field/effects/field_effects
+    # execute if entity @s[tag=sabotagedField] run function du-in:kit/clairen/ability/field/effects/sabotaged_field
+    # execute if entity @s[tag=empoweredField] run function du-in:kit/clairen/ability/field/effects/empowered_field
+    # execute if entity @s[tag=empoweredSabotageField] run function du-in:kit/clairen/ability/field/effects/empowered_sabotage_field
 
 #Pawbert injection
  execute if entity @s[tag=injected] run function du-in:kit/pawbert/secondary/antidote/init

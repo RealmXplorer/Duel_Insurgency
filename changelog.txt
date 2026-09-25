@@ -33,6 +33,7 @@
 -Some entities are now loaded and tested via hardcoded UUIDs, rather than dynamic tests. This provides optimizations to KOTH, CTF, and the lobby.
 -Abilities now run through "returns", reducing entity checks for optimizations.
 -Zombie, Impostor, and Hollow Knight ability validity checks now happen on ability execution, rather than their constants.
+-Clairen's per-tick ability field check now runs through a centralized using "inField" tag and nesting returns, rather than every variant at once.
 -Secondaries are now standardized through a "hasSecond" tag (added on kit pick), and dynamic "secondary/item" and "secondary/init" functions.
     -Per-tick "secKitActions" tag check is being phased out, but technically still supported.
 -Secondary give/return functions are now run every second, rather than every tick (like weapons and armor).
