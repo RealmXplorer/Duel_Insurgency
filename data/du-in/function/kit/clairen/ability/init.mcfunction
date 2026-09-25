@@ -1,5 +1,10 @@
-execute if entity @s[tag=!sabotaged] run summon minecraft:marker ~ ~ ~ {Tags:["clairenField","noTeam","mapSpecific"]}
-execute if entity @s[tag=sabotaged] run summon minecraft:marker ~ ~ ~ {Tags:["clairenField","noTeam","mapSpecific","sabotaged"]}
+summon minecraft:marker ~ ~ ~ {Tags:["clairenField","noTeam","mapSpecific"]}
+#execute if entity @s[tag=sabotaged,tag=!empower] run summon minecraft:marker ~ ~ ~ {Tags:["clairenField","noTeam","mapSpecific","sabotaged"]}
+#execute if entity @s[tag=!sabotaged,tag=empower] run summon minecraft:marker ~ ~ ~ {Tags:["clairenField","noTeam","mapSpecific","sabotaged","empower"]}
+
+execute if entity @s[tag=sabotaged] run tag @e[type=marker,tag=clairenField,tag=noTeam] add sabotaged
+execute if entity @s[tag=empower] run tag @e[type=marker,tag=clairenField,tag=noTeam] add empower
+
 execute store result score @e[type=marker,tag=clairenField,tag=noTeam,limit=1] team run scoreboard players get @s team
 tag @e[type=marker,tag=clairenField,tag=noTeam,scores={team=1..}] remove noTeam
 
@@ -19,5 +24,6 @@ swing @s[tag=sabotaged] offhand stab
 clear @s #du-in:ability
 xp set @s[tag=!stolen] 400 levels
 tag @s remove sabotaged
+tag @s remove empower
 execute if entity @s[tag=stolen] run tag @s add kitDone
 tag @s remove kitActions
