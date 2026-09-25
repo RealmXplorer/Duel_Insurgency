@@ -45,7 +45,7 @@ tag @a remove saul
 tag @a remove saac
 tag @a remove bigChungus
 tag @a remove musOverride
-execute as @a run function du-in:kit/clairen/ability/remove_infield
+execute as @a run function du-in:kit/clairen/ability/remove_field
 
 schedule clear du-in:ingame/scheduled/ambience/init
 stopsound @a ambient

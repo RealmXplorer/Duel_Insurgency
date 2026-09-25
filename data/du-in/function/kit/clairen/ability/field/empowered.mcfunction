@@ -4,7 +4,7 @@ tag @a[distance=..6,tag=empoweredField] add inField
 tag @a[tag=inField] add glowing
 
 #Remove inField from all outside of field
-execute as @a[distance=6..,gamemode=!spectator,tag=empoweredField] run function du-in:kit/clairen/ability/remove_infield
+#execute as @a[distance=6..,gamemode=!spectator,tag=empoweredField] run function du-in:kit/clairen/ability/remove_field
 
 #Kill projectiles
 #execute as @e[tag=papyrusFind,distance=..8] at @s run kill @e[type=armor_stand,tag=papyrusBone,distance=..3]

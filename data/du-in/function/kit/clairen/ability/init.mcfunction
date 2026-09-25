@@ -5,6 +5,9 @@ summon minecraft:marker ~ ~ ~ {Tags:["clairenField","noTeam","mapSpecific"]}
 execute if entity @s[tag=sabotaged] run tag @e[type=marker,tag=clairenField,tag=noTeam] add sabotaged
 execute if entity @s[tag=empower] run tag @e[type=marker,tag=clairenField,tag=noTeam] add empower
 
+#Set timer
+scoreboard players set @e[type=marker,tag=clairenField,tag=noTeam] clairenTimer 100
+
 execute store result score @e[type=marker,tag=clairenField,tag=noTeam,limit=1] team run scoreboard players get @s team
 tag @e[type=marker,tag=clairenField,tag=noTeam,scores={team=1..}] remove noTeam
 

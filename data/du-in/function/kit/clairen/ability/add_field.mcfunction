@@ -1,3 +1,12 @@
+#Test fields
+#say inField
+execute if entity @s[tag=sabotaged,tag=empower] run return run function du-in:kit/clairen/ability/field/empowered_sabotage
+execute if entity @s[tag=sabotaged] run return run function du-in:kit/clairen/ability/field/sabotaged
+execute if entity @s[tag=empower] run return run function du-in:kit/clairen/ability/field/empowered
+
+#Default
+#function du-in:kit/clairen/ability/field/unsabotaged
+
 #Add inField to all in field
 tag @a[distance=..6,gamemode=!spectator,tag=!inField] add inField
 tag @a[tag=inField] add glowing

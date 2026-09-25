@@ -2,4 +2,4 @@ tag @a[distance=..6,gamemode=!spectator,tag=!sabotagedField,tag=!inField] add sa
 tag @a[distance=..6,tag=sabotagedField] add inField
 
 
-execute as @a[distance=6..,gamemode=!spectator,tag=sabotagedField] run function du-in:kit/clairen/ability/remove_infield
+#execute as @a[distance=6..,gamemode=!spectator,tag=sabotagedField] run function du-in:kit/clairen/ability/remove_field
