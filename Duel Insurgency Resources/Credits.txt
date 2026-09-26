@@ -10,6 +10,10 @@ Realm_Xplorer
 Apex30001111
 Ronnie
 
+Model Credits:
+_saac (i2o2)
+nerbski_
+
 Armor Texture Credits:
 deo_x
 Yogurette
@@ -25,6 +29,7 @@ nerbski_
 AdmiralPie
 DarthMason4
 BellowBomb
+Three_Thumbs
 
 MUSIC:
 Duel: Insurgency OST - i2o2 (a.k.a _saac)
@@ -58,6 +63,7 @@ Better Call Saul Saul Goodman - Bob Odenkirk
 Avatar: The Last Airbender Aang - Zach Tyler Eisen
 Beetlejuice - Michael Keaton
 Zootopia 2 Pawbert Lynxley - Andy Samberg
+The Shining Jack Torrance - Jack Nicholson
 
 OTHER CREDITS:
 LEGO Star Wars: The Complete Saga sounds - TT Games.
@@ -118,3 +124,5 @@ Roxanne Wolf: https://minecraft.novaskin.me/post/5421244813/roxanne
 Beetlejuice: https://novask.in/5230575092
 
 Pawbert: https://www.planetminecraft.com/skin/pawbert-lynxley/
+
+Jack Torrance: https://www.planetminecraft.com/skin/jack-torrance-the-shining-5743743/
