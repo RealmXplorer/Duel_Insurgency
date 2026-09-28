@@ -30,8 +30,8 @@
 
 *Internal Changes*
 -Updated Advancements and Predicates to follow new 26.3 syntaxes.
--Chunks are now dynamically forceloaded, offering better performance for the server.
--Some entities are now loaded and tested via hardcoded UUIDs, rather than dynamic tests. This provides optimizations to KOTH, CTF, and the lobby.
+-Chunks are now dynamically forceloaded, hopefully offering better performance for the server.
+-Some entities are now loaded and tested via hardcoded UUIDs, rather than dynamic tests. This affects KOTH, CTF, and the lobby.
 -Abilities now run through "returns", reducing entity checks for optimizations.
 -Zombie, Impostor, and Hollow Knight ability validity checks now happen on ability execution, rather than their constants.
 -Reorganized Clairen's field-state tests to run based on if players are nearby, rather than all the time.
@@ -44,12 +44,12 @@
     -Only exceptions are Pawbert and PearApplez, as their trackers are unique.
 -Deprecated "weapCount", "secCount", "triCount", "appleCount", and "tridentCount" scores, now uses "execute unless items" to test for missing items.
 -Jack Horner's run functions now operate off his constant function, rather than deferring to "run" functions.
--Ingame music now runs through returns, offering some optimization.
--Gamemode functions run through returns, offering minor optimization.
+-Ingame music now runs through returns.
+-Gamemode functions run through returns
 -Map select is now fully scalable, running off of inset scores from UUIDs, rather than tags.
--Default classic and Team classic is event-based, offering some optimizations.
--Restructured constants for kits using returns for some optimizations.
--Created "Macro-Assisted Schedules", which dynamically front-load timers for timed mode and provide some optimizations.
+-Default classic, Team, Timed, and Timed Team classic is now event-based.
+-Restructured constants for kits using returns.
+-Created "Macro-Assisted Schedules", which dynamically front-load timers for timed mode.
 -Added "overworld" and "overworld_caves" dimension_types to alter overworld environment attributes.
 -Added Glass Panes to "minecraft:glass" block tags.
 -Added du-in:retro, du-in:goner, du-in:bw, and du-in:flash posteffects.
