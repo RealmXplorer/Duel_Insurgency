@@ -32,9 +32,6 @@
 #Bhop reset
     #execute if entity @s[scores={jumpResetTimer=20..}] run function du-in:kit/all/attribute/bhop/reset
     
-#Give armor if player is missing any#
-#execute if entity @s[predicate=!du-in:has_armor,predicate=!du-in:effect/is_invisible,tag=!teamDead,tag=!kitMenu,tag=!noClothes] run function du-in:kit/all/armor/armor_reset
-
 # KIT FUNCTIONS #
     # #Set current player to this player
         #execute if entity @s[tag=!kitMenu] run function du-in:kit/all/init/init
@@ -55,14 +52,14 @@
     # General UNLOCK int functions #
         execute if entity @s[scores={kit=1000..},tag=!kitMenu] run function du-in:kit/all/set_legend
 
-#Different events
-    execute if entity @s[scores={hit=5..}] run function du-in:kit/all/hit/init
-    execute if entity @s[scores={step=150..}] run function du-in:kit/all/step/init
-    execute if entity @s[scores={sprint=150..}] run function du-in:kit/all/step/init
-    execute if entity @s[scores={jump=1..}] run function du-in:kit/all/jump/init
+    #Different events
+        execute if entity @s[scores={hit=5..}] run function du-in:kit/all/hit/init
+        execute if entity @s[scores={step=150..}] run function du-in:kit/all/step/init
+        execute if entity @s[scores={sprint=150..}] run function du-in:kit/all/step/init
+        execute if entity @s[scores={jump=1..}] run function du-in:kit/all/jump/init
 
-#Kill and Death functions
-    execute if entity @s[scores={justdied=1..}] run function du-in:kit/all/death/init
+    #Kill and Death functions
+        execute if entity @s[scores={justdied=1..}] run function du-in:kit/all/death/init
 
 #SANS HIT#
     execute if entity @s[tag=sansHitDuration] run function du-in:kit/sans/ability/hit/timer
@@ -112,9 +109,6 @@
 
 #Clairen Field
     execute if entity @s[tag=inField] run function du-in:kit/clairen/ability/field/effects/field_effects
-    # execute if entity @s[tag=sabotagedField] run function du-in:kit/clairen/ability/field/effects/sabotaged_field
-    # execute if entity @s[tag=empoweredField] run function du-in:kit/clairen/ability/field/effects/empowered_field
-    # execute if entity @s[tag=empoweredSabotageField] run function du-in:kit/clairen/ability/field/effects/empowered_sabotage_field
 
 #Pawbert injection
  execute if entity @s[tag=injected] run function du-in:kit/pawbert/secondary/antidote/init

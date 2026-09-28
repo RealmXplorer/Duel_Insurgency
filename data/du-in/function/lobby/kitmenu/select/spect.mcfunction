@@ -18,6 +18,9 @@ clear @s barrier[item_model="du-in:lobby/spectate"]
 tag @s[tag=!playing] add ready
 team join Ready @s
 
+scoreboard players set #main kitOnline 0
+execute as @a[tag=ready,tag=lobby] run scoreboard players add #main kitOnline 1
+
 #Mark as spectator
 #tag @s[tag=!playing] add spect
 tag @s[tag=!playing] add spectating

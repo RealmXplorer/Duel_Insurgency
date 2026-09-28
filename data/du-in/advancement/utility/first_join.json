@@ -1,0 +1,10 @@
+{
+  "criteria": {
+    "leave": {
+      "trigger": "minecraft:tick"
+    }
+  },
+  "rewards": {
+    "function": "du-in:other/new_player"
+  }
+}

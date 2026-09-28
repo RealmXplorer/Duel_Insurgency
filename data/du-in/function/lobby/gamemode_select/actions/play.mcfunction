@@ -1,3 +1,6 @@
+execute if entity @s[tag=!devMode] run function du-in:other/player_count/default
+execute if entity @s[tag=devMode] run function du-in:other/player_count/dev_mode
+
 execute unless score #main online matches ..1 run playsound minecraft:block.end_portal.spawn master @a ~ ~ ~ 0.5 2
 execute unless score #main online matches ..1 run playsound minecraft:block.bell.use master @a ~ ~ ~ 0.5 1
 execute unless score #main online matches ..1 run playsound minecraft:block.amethyst_block.hit master @a ~ ~ ~ 0.5 2

@@ -14,7 +14,7 @@
     #Pick a party leader if there is none #
         execute unless entity @a[tag=partyLeader] if entity @a[tag=!partyLeader,scores={lobby=1..}] run function du-in:other/party_leader
 
-    # SHUTDOWN Game if not enough players #
-        execute if score #main online matches ..1 unless entity @a[tag=lobby] run function du-in:ingame/shutdown
+    # # SHUTDOWN Game if not enough players #
+    #     execute if score #main online matches ..1 unless entity @a[tag=lobby] run function du-in:ingame/shutdown
 
 schedule function du-in:main/scheduled 1s

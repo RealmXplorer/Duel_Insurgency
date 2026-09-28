@@ -19,6 +19,7 @@ tag @s remove glowing
 
 #execute unless score @s player matches 1.. if entity @s[tag=played] run tag @s remove played
 execute unless score @s FRIEND matches 1.. if entity @s[scores={player=1..}] run scoreboard players reset @s player
+execute unless entity @s[scores={player=1..}] run advancement revoke @s only du-in:utility/first_join
 
 #Remove other tags from player who left
 #tag @s remove startgame

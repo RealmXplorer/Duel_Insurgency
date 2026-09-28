@@ -1,5 +1,9 @@
 tag @a remove startgame
 tag @a[tag=lobby,tag=playing] remove lobby
+
+execute unless entity @a[tag=devMode] run function du-in:other/player_count/default
+execute if entity @a[tag=devMode] run function du-in:other/player_count/dev_mode
+
 #scoreboard players reset #main startSeq
 gamemode adventure @a[tag=playing]
 

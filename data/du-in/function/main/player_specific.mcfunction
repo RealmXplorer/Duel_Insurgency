@@ -1,6 +1,7 @@
 
     # Run if a player has not played before #
-        execute unless entity @s[scores={player=0..}] run function du-in:other/new_player
+        ##SWITCHED TO TICK ADVANCEMENT
+        #execute unless entity @s[scores={player=0..}] run function du-in:other/new_player
 
     # Functions that run while ingame #
         execute if entity @s[gamemode=!spectator] run function du-in:main/active_players

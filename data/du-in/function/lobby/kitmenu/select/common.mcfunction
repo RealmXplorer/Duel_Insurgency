@@ -34,4 +34,8 @@ execute if entity @s[tag=playing] run function du-in:kit/all/attribute/set
 #End function
 tag @s[tag=!playing] add kitPicked
 tag @s[tag=!playing] add ready
+
+scoreboard players set #main kitOnline 0
+execute as @a[tag=ready,tag=lobby] run scoreboard players add #main kitOnline 1
+
 team join Ready @s[tag=!playing] 

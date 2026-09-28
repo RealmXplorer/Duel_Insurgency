@@ -9,6 +9,7 @@
 *Changes*
 -Updated map to 26.3.
 -There are no more I-frames.
+-Map Countdown now always counts down, and will only stop when the party leader pauses.
 -Removed glowing effect when crouching in game.
 -All players are now invisible, forcing players to search for their enemy.
     -This is toggleable, though Willo will always be invisible as part of her kit.
@@ -46,6 +47,11 @@
 -Jack Horner's run functions now operate off his constant function, rather than deferring to "run" functions.
 -Ingame music now runs through returns.
 -Gamemode functions run through returns
+-"new_player" check is now run through a ticking advancement instead of a constant score check.
+-Moved game shutdown functions into "ingame/scheduled", as they aren't needed or used in the lobby.
+-Moved "main" player count checks to be event based in the lobby. Ingame, they have been moved to run every second, rather than every tick.
+-Simplified game cap functions as they did unnecessary checks and math.
+-Moved "shutdown" system to schedules, rather than a score-based tick timer. (Deprecated "shutdownTimer" score)
 -Map select is now fully scalable, running off of inset scores from UUIDs, rather than tags.
 -Default classic, Team, Timed, and Timed Team classic is now event-based.
 -Restructured constants for kits using returns.

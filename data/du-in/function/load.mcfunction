@@ -105,7 +105,7 @@ scoreboard objectives add regenTimer dummy
 scoreboard objectives add saacDisTimer dummy
 scoreboard objectives add sabotageTimer dummy
 scoreboard objectives add sansHitTimer dummy
-scoreboard objectives add shutdownTimer dummy
+#scoreboard objectives add shutdownTimer dummy
 scoreboard objectives add sidebarTimer dummy
 scoreboard objectives add simTimeSp dummy
 scoreboard objectives add simTime dummy

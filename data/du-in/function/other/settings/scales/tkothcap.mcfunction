@@ -7,9 +7,6 @@ execute as @a[tag=partyLeader,limit=1] if score @s tKothScale matches 4 run scor
 #Cycle to first setting
 execute as @a[tag=partyLeader,limit=1] if score @s tKothScale matches 5.. run scoreboard players set @s tKothScale 0
 
-#Initialize threshold
-scoreboard players set #main tKothGoal 100000
-
 #Announce setting
 execute if score #main tKothCap matches 2000 run tellraw @a [{text:"Team KOTH Points ",bold:true,color:red},{text:"Max 2000",color:gray},{text:" (Default)",bold:true,color:green}]
 execute if score #main tKothCap matches 3000 run tellraw @a [{text:"Team KOTH Points ",bold:true,color:red},{text:"Max 3000 (Extended)",color:gray}]
@@ -18,8 +15,8 @@ execute if score #main tKothCap matches 5000 run tellraw @a [{text:"Team KOTH Po
 execute if score #main tKothCap matches 6000 run tellraw @a [{text:"Team KOTH Points ",bold:true,color:red},{text:"Max 6000 (Hell)",color:gray}]
 
 #Calculate threshold
-execute if score #main tKothGoal >= #main tKothCap store result score #main tKothGoal run scoreboard players get #main tKothCap
-execute if score #main tKothGoal = #main tKothCap run scoreboard players remove #main tKothGoal 1000
+execute store result score #main tKothGoal run scoreboard players get #main tKothCap
+scoreboard players remove #main tKothGoal 1000
 
 #Set new max bossbar value
 execute store result bossbar minecraft:redkoth max run scoreboard players get #main tKothCap
