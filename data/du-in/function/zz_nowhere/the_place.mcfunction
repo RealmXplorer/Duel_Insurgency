@@ -5,7 +5,7 @@ tp @s[tag=Player.accept] 188.5 5 -11.021 -90 0
 #stopsound @s
 
 scoreboard players set @s[scores={music=3560..}] music 0
-execute if entity @s[scores={music=1}] run playsound minecraft:music.man master @s ~ ~ ~ 1000000 1 1
+execute if entity @s[scores={music=1},tag=!stump] run playsound minecraft:music.man master @s ~ ~ ~ 1000000 1 1
 
 
 #add inventory check to avoid tiving duplicate eggs

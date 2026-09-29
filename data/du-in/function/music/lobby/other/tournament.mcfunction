@@ -1,3 +1,3 @@
 #TOURNAMENT LOBBY#
 scoreboard players set @s[scores={music=1940..}] music 0
-execute if entity @s[scores={music=1}] run playsound du-in:music.tournament_lobby record @s ~ ~ ~ 1000000 1 1
+execute if entity @s[scores={music=1},tag=!stump] run playsound du-in:music.tournament_lobby record @s ~ ~ ~ 1000000 1 1

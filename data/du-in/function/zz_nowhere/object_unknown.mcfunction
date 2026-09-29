@@ -1,5 +1,4 @@
 tellraw @s[tag=!ingame] {text:"Exception in thread \"main\" java.io.FileNotFoundException: Duel_Insurgency\\dimensions\\minecraft\\overworld\\region\\x_201_z_-12.txt (The system cannot find the file specified)"}
-execute if entity @s[tag=ingame] run playsound minecraft:me master @s ~ ~ ~ 10000
 
 tag @s remove Player.accept
 

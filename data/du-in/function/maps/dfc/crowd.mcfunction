@@ -13,7 +13,11 @@ execute if entity @s[scores={tabbaTalk=11}] run tellraw @s [{text:"How oblivious
 execute if entity @s[scores={tabbaTalk=12}] run tellraw @s [{text:"Me. (12/9)"}]
 execute if entity @s[scores={tabbaTalk=13}] run tellraw @s [{text:"Don't worry, this is the only conversation we'll have. (13/9)"}]
 execute if entity @s[scores={tabbaTalk=14}] run tellraw @s [{text:"You're lucky to have even that! Until next time! (14/9)"}]
-execute if entity @s[scores={tabbaTalk=15}] run playsound minecraft:me master @s ~ ~ ~
+
+execute if entity @s[scores={tabbaTalk=15}] run playsound du-in:kit.gaster.back master @a ~ ~ ~
+execute if entity @s[scores={tabbaTalk=15}] run tp @e[tag=tabba,type=villager] 216 -100 40
+execute if entity @s[scores={tabbaTalk=15}] run kill @e[type=villager,tag=tabba]
+execute if entity @s[scores={tabbaTalk=15}] run tag @a add VillagerTalk
 
 
 scoreboard players set @s[scores={tabbaTalk=15..}] tabbaTalk 14

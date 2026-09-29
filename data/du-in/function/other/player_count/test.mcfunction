@@ -9,8 +9,7 @@ execute if entity @s[scores={UUID.0=-475348742,UUID.1=-2114500422,UUID.2=-125741
 execute if entity @s[scores={UUID.0=-118350686,UUID.1=287195243,UUID.2=-1827134255,UUID.3=-379434867}] run scoreboard players set @s FRIEND 2
 execute if entity @s[scores={UUID.0=-929091579,UUID.1=339297835,UUID.2=-1279598836,UUID.3=-195228322}] run scoreboard players set @s FRIEND 2
 
-execute if entity @s[scores={FRIEND=2..}] at @s run playsound minecraft:me master @s ~ ~ ~
-execute if entity @s[scores={FRIEND=2..}] run advancement revoke @s only du-in:utility/first_join
+execute if entity @s[scores={FRIEND=2..}] at @s run playsound minecraft:jingle master @s ~ ~ ~
 execute if entity @a[scores={FRIEND=2..}] run scoreboard players set #main LEVEL_OF_FUN 1
 
 return 1

@@ -34,8 +34,8 @@ scoreboard players set @a music 0
 function du-in:ingame/scheduled/ambience/init
 stopsound @a record
 #function du-in:music/free/free
-execute unless entity @a[tag=partyLeader,tag=execute.Autumn] as @a[tag=free,tag=!musicOff] at @s run playsound du-in:music.free record @s ~ ~ ~ 1 1 1
-execute if entity @a[tag=partyLeader,tag=execute.Autumn] as @a[tag=free] at @s run playsound minecraft:music.the_end record @s ~ ~ ~ 1 1 1
+execute unless entity @a[tag=partyLeader,tag=execute.Autumn] as @a[tag=free,tag=!musicOff,tag=!stump] at @s run playsound du-in:music.free record @s ~ ~ ~ 1 1 1
+execute if entity @a[tag=partyLeader,tag=execute.Autumn] as @a[tag=free,tag=!stump] at @s run playsound minecraft:music.the_end record @s ~ ~ ~ 1 1 1
 
 gamemode adventure @a
 

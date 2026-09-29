@@ -1,0 +1,18 @@
+{
+  "criteria": {
+    "jump": {
+      "trigger": "minecraft:entity_hurt_player",
+      "conditions": {
+        "damage": {
+          "source_entity": {
+            "minecraft:entity_type": "zombie",
+            "minecraft:nbt": "{Tags:[\"IMAGE_VESSEL\"]}"
+          }
+        }
+      }
+    }
+  },
+  "rewards": {
+    "function": "du-in:other/shutdown/cackle"
+  }
+}

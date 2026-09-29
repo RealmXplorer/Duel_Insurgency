@@ -37,7 +37,7 @@ tag @a[tag=!spectating] add playing
     #Give player kit if they don't have one
     #execute unless entity @s[scores={kit=1..}] run tag @s add random
     execute as @a unless entity @s[scores={kit=1..}] run function du-in:kit/all/random/roll
-    execute as @a[tag=teamMode] unless entity @s[scores={team=1..}] run function du-in:kit/all/random/roll
+    execute as @a[tag=teamMode] unless entity @s[scores={team=1..}] run function du-in:lobby/team_select/actions/team_fallback
 
     #Give all players weapons
     tag @a[scores={kit=31},limit=1] add hasRing
@@ -167,6 +167,8 @@ function du-in:ingame/scheduled/five_sec_loop
 function du-in:ingame/scheduled/ambience/init
 
 advancement grant @a[tag=playing,tag=!devMode] only du-in:challenge/duel_reborn
+
+execute if entity @a[scores={LEVEL_OF_FUN=3..}] run schedule function du-in:ingame/timed/countdown 15s
 
 #Join teams
 team join Red @a[scores={team=1}]

@@ -17,8 +17,8 @@ title @s subtitle {text:"",color:red,bold:true}
 
 stopsound @s record du-in:music.free
 #function du-in:music/free/free
-execute at @s run playsound du-in:music.free record @s[tag=!musicOff,tag=beatenGame] ~ ~ ~ 1 1 1
-execute at @s run playsound minecraft:music.credits record @s[tag=!musicOff,tag=!beatenGame] ~ ~ ~ 1 1 1
+execute at @s run playsound du-in:music.free record @s[tag=!musicOff,tag=beatenGame,tag=!stump] ~ ~ ~ 1 1 1
+execute at @s run playsound minecraft:music.credits record @s[tag=!musicOff,tag=!beatenGame,tag=!stump] ~ ~ ~ 1 1 1
 function du-in:lobby/scheduled/credits
 
 #Add sublobby tags
