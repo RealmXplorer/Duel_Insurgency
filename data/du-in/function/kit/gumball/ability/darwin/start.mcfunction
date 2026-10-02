@@ -1,5 +1,8 @@
-execute if entity @s[tag=!sabotaged] as @a[distance=0.05..4,tag=playing,tag=!teamDead,gamemode=!spectator] unless score @s team = @a[scores={kit=22},tag=kitActions,tag=darwin,limit=1] team run tag @s add noClothes
+execute store result score #main team run scoreboard players get @s team
+
+execute if entity @s[tag=!sabotaged] as @a[distance=0.05..4,tag=playing,tag=!teamDead,gamemode=!spectator] unless score @s team = #main team run tag @s add noClothes
 tag @s[tag=sabotaged] add noClothes
+scoreboard players reset #main team
 
 #Break function if no valid players
 execute unless entity @a[tag=noClothes] run return run function du-in:kit/all/ability/titles/team

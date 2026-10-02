@@ -1,6 +1,8 @@
-execute if entity @s[tag=!sabotaged] as @a[tag=playing,tag=!spectating] unless score @a[scores={kit=1005},tag=kitActions,limit=1] team = @s team run tag @s add chickenJockey
+execute store result score #main team run scoreboard players get @s team
+execute if entity @s[tag=!sabotaged] as @a[tag=playing,tag=!spectating] unless score @s team = #main team run tag @s add chickenJockey
 tag @s[tag=!sabotaged] remove chickenJockey
 tag @s[tag=sabotaged] add chickenJockey
+scoreboard players reset #main team
 
 execute if entity @s[tag=sabotaged] run function du-in:kit/all/ability/sabotage/effects
 playsound du-in:kit.jack_black.chicken_jockey master @a ~ ~ ~ 1 1

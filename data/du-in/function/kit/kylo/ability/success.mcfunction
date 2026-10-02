@@ -1,6 +1,9 @@
-execute if entity @s[tag=!sabotaged] run tag @a[distance=0.05..6,tag=playing,gamemode=!spectator,tag=!teamDead] add kyloMark
-execute if entity @s[tag=!sabotaged] as @a[tag=kyloMark] if score @s team = @a[tag=kitActions,limit=1,tag=playing,scores={kit=17}] team run tag @s remove kyloMark
+execute store result score #main team run scoreboard players get @s team
+
+execute if entity @s[tag=!sabotaged] as @a[distance=0.05..6,tag=playing,gamemode=!spectator,tag=!teamDead] unless score @s team = #main team run tag @s add kyloMark
 tag @s[tag=sabotaged] add kyloMark
+
+scoreboard players reset #main team
 
 execute if entity @s[tag=sabotaged] run function du-in:kit/all/ability/sabotage/effects
 

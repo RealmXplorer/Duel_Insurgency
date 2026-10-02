@@ -1,9 +1,3 @@
-#Ability Item
-#execute if entity @s[level=1] run function du-in:kit/flowey/ability/item
-
-#Start ability# - Now in kit/all/ability/activate
-# execute if entity @s[tag=kitActions] run function du-in:kit/flowey/ability/init
-
 #Burrowing ability
 execute if entity @s[tag=floweyDuration,tag=!lose] run function du-in:kit/flowey/ability/burrow
 

@@ -1,8 +1,11 @@
 function du-in:kit/sauron/ring_attributes
 
+execute store result score #main team run scoreboard players get @s team
+
 #If Sauron is close to enemy#
-execute as @a[distance=0.05..4,gamemode=!spectator,tag=!teamDead,tag=!startgame] run tag @s add sauronHit
-execute as @a[tag=sauronHit] if score @s team = @p[scores={kit=31},tag=kitActions,distance=..4] team run tag @s remove sauronHit
+execute as @a[distance=0.05..4,gamemode=!spectator,tag=!teamDead,tag=!startgame] unless score @s team = #main team run tag @s add sauronHit
+
+scoreboard players reset #main team
 
 #execute if entity @a[gamemode=adventure,distance=0.05..6,tag=!teamDead] unless entity @a[tag=sauronHit] run function du-in:kit/all/ability/titles/team
 

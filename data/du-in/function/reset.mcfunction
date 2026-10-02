@@ -67,7 +67,7 @@ bossbar set bossbar:gametimer visible false
 bossbar set bossbar:gametimer color white
 
 tag @a remove teamMode
-scoreboard players set #main team 0
+scoreboard players set #main teamModeToggle 0
 
 scoreboard players reset * trident
 

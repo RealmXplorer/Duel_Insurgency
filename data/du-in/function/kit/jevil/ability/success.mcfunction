@@ -1,11 +1,15 @@
+execute store result score #main team run scoreboard players get @s team
+
 #scoreboard players set @a[distance=.05..5,tag=playing,gamemode=!spectator,tag=!teamDead,limit=1] ralseiTimer 70
-execute if entity @s[tag=!sabotaged,tag=!empower] as @a[distance=.05..4,sort=nearest,tag=playing,gamemode=!spectator,tag=!teamDead] unless score @s team = @a[scores={kit=38},sort=nearest,tag=kitActions,limit=1] team at @s run function du-in:kit/jevil/ability/enemy
+execute if entity @s[tag=!sabotaged,tag=!empower] as @a[distance=.05..4,sort=nearest,tag=playing,gamemode=!spectator,tag=!teamDead] unless score @s team = #main team at @s run function du-in:kit/jevil/ability/enemy
 execute if entity @s[tag=sabotaged,tag=!empower] run function du-in:kit/jevil/ability/enemy
 
 #NEO CHAOS
-execute if entity @s[tag=!sabotaged,tag=empower] as @a[tag=playing,gamemode=!spectator,tag=!teamDead] unless score @s team = @a[scores={kit=38},sort=nearest,tag=kitActions,limit=1] team at @s run function du-in:kit/jevil/ability/enemy_empower
+execute if entity @s[tag=!sabotaged,tag=empower] as @a[tag=playing,gamemode=!spectator,tag=!teamDead] unless score @s team = #main team at @s run function du-in:kit/jevil/ability/enemy_empower
 execute if entity @s[tag=sabotaged,tag=empower] run function du-in:kit/jevil/ability/enemy_empower
 
+#Reset team for MAIN
+scoreboard players reset #main team
 
 execute if entity @s[tag=sabotaged] run function du-in:kit/all/ability/sabotage/effects
 

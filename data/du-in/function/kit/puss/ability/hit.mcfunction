@@ -1,6 +1,9 @@
-execute if entity @s[tag=!sabotaged] as @a[distance=0.05..4,tag=playing,sort=nearest,gamemode=!spectator,tag=!teamDead] run tag @s add pussHit
-execute as @a[tag=pussHit] if score @s team = @a[scores={kit=27},tag=kitActions,sort=nearest,limit=1] team run tag @s remove pussHit
+execute store result score #main team run scoreboard players get @s team
+
+execute if entity @s[tag=!sabotaged] as @a[distance=0.05..4,tag=playing,sort=nearest,gamemode=!spectator,tag=!teamDead] unless score @s team = #main team run tag @s add pussHit
 tag @s[tag=sabotaged] add pussHit
+
+scoreboard players reset #main team
 
 #End Function if no valid targets
 execute unless entity @a[tag=pussHit] run return run function du-in:kit/all/ability/titles/team

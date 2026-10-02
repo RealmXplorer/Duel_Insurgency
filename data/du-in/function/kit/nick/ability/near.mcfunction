@@ -2,20 +2,23 @@ execute if entity @s[tag=!empower] run tag @a[distance=0.05..5,tag=playing] add 
 execute if entity @s[tag=empower] run tag @a[distance=0.05..7,tag=playing] add wildeHit
 
 #Normal
-execute if entity @s[tag=!sabotaged,tag=!empower] as @a[tag=wildeHit] unless score @s team = @p[scores={kit=23},tag=kitActions,distance=..5] team run function du-in:kit/nick/ability/enemy_hit
-execute if entity @s[tag=!sabotaged,tag=!empower] as @a[tag=wildeHit] if score @s team = @p[scores={kit=23},tag=kitActions,distance=..5] team run function du-in:kit/nick/ability/team_hit
+execute store result score #main team run scoreboard players get @s team
+execute if entity @s[tag=!sabotaged,tag=!empower] as @a[tag=wildeHit] unless score @s team = #main team run function du-in:kit/nick/ability/enemy_hit
+execute if entity @s[tag=!sabotaged,tag=!empower] as @a[tag=wildeHit] if score @s team = #main team run function du-in:kit/nick/ability/team_hit
 
 #Empowered
-execute if entity @s[tag=!sabotaged,tag=empower] as @a[tag=wildeHit] unless score @s team = @p[scores={kit=23},tag=kitActions,distance=..7] team run function du-in:kit/nick/ability/enemy_hit
-execute if entity @s[tag=!sabotaged,tag=empower] as @a[tag=wildeHit] if score @s team = @p[scores={kit=23},tag=kitActions,distance=..7] team run function du-in:kit/nick/ability/team_hit
+execute if entity @s[tag=!sabotaged,tag=empower] as @a[tag=wildeHit] unless score @s team = #main team run function du-in:kit/nick/ability/enemy_hit
+execute if entity @s[tag=!sabotaged,tag=empower] as @a[tag=wildeHit] if score @s team = #main team run function du-in:kit/nick/ability/team_hit
 
 #Sabotaged (Swaps)
-execute if entity @s[tag=sabotaged,tag=!empower] as @a[tag=wildeHit] if score @s team = @p[scores={kit=23},tag=kitActions,distance=..5] team run function du-in:kit/nick/ability/enemy_hit
-execute if entity @s[tag=sabotaged,tag=!empower] as @a[tag=wildeHit] unless score @s team = @p[scores={kit=23},tag=kitActions,distance=..5] team run function du-in:kit/nick/ability/team_hit
+execute if entity @s[tag=sabotaged,tag=!empower] as @a[tag=wildeHit] if score @s team = #main team run function du-in:kit/nick/ability/enemy_hit
+execute if entity @s[tag=sabotaged,tag=!empower] as @a[tag=wildeHit] unless score @s team = #main team run function du-in:kit/nick/ability/team_hit
 
 #Sabotaged Empowered
-execute if entity @s[tag=sabotaged,tag=empower] as @a[tag=wildeHit] if score @s team = @p[scores={kit=23},tag=kitActions,distance=..7] team run function du-in:kit/nick/ability/enemy_hit
-execute if entity @s[tag=sabotaged,tag=empower] as @a[tag=wildeHit] unless score @s team = @p[scores={kit=23},tag=kitActions,distance=..7] team run function du-in:kit/nick/ability/team_hit
+execute if entity @s[tag=sabotaged,tag=empower] as @a[tag=wildeHit] if score @s team = #main team run function du-in:kit/nick/ability/enemy_hit
+execute if entity @s[tag=sabotaged,tag=empower] as @a[tag=wildeHit] unless score @s team = #main team run function du-in:kit/nick/ability/team_hit
+
+scoreboard players reset #main team
 
 playsound du-in:kit.nick.hustle master @a ~ ~ ~ 100 1
 playsound du-in:sfx.ut.ability master @a ~ ~ ~ 100 0.95

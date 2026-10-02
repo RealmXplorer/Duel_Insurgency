@@ -1,7 +1,9 @@
-#If Cinder is close to enemy#
-execute as @a[gamemode=!spectator,distance=0.05..6,tag=!teamDead] run tag @s add cinderHit
-execute as @a[tag=cinderHit] if score @s team = @p[scores={kit=34},tag=kitActions,distance=..6] team run tag @s remove cinderHit
+execute store result score #main team run scoreboard players get @s team
 
+#If Cinder is close to enemy#
+execute as @a[gamemode=!spectator,distance=0.05..6,tag=!teamDead] unless score @s team = #main team run tag @s add cinderHit
+
+scoreboard players reset #main team
 #execute if entity @a[gamemode=adventure,distance=0.05..6,tag=!teamDead] unless entity @a[tag=cinderHit] run function du-in:kit/all/ability/titles/team
 
 particle minecraft:explosion ~ ~1 ~ 1 0 1 0 15 force

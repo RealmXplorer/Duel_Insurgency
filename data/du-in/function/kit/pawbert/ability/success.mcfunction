@@ -31,9 +31,11 @@ effect give @s invisibility infinite 1 true
 
 execute if entity @s[tag=void] if entity @e[distance=0.05..4,type=skeleton] run function du-in:kit/pawbert/ability/void/near
 
+execute store result score #main team run scoreboard players get @s team
 tag @a[distance=0.05..3,tag=playing] add wildeHit
-execute as @a[tag=wildeHit] unless score @s team = @p[scores={kit=40},tag=kitActions,distance=..3] team run function du-in:kit/nick/ability/enemy_hit
-execute as @a[tag=wildeHit] if score @s team = @p[scores={kit=40},tag=kitActions,distance=..3] team run function du-in:kit/nick/ability/team_hit
+execute as @a[tag=wildeHit] unless score @s team = #main team run function du-in:kit/nick/ability/enemy_hit
+execute as @a[tag=wildeHit] if score @s team = #main team run function du-in:kit/nick/ability/team_hit
+scoreboard players reset #main team
 
 #Start cooldown
 clear @s #du-in:ability

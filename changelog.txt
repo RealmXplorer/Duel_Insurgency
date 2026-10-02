@@ -38,6 +38,8 @@
 -Reorganized Clairen's field-state tests to run based on if players are nearby, rather than all the time.
 -Clairen's per-tick ability field check now runs through a centralized using "inField" tag and nesting returns, rather than every variant at once.
 -Clairen's field timer is now set on the field's spawn, rather than checking every tick for a tag inside its entity function.
+-Team checks are now done through the "#main" fake player. They are set on ability use, tested, then reset. This removes the previous second player check.
+-Merged the player checks in relevant abilities to check once and never add the "hit" tags for teammates, rather than give all players the "hit" and remove for teammates.
 -Secondaries are now standardized through a "hasSecond" tag (added on kit pick), and dynamic "secondary/item" and "secondary/init" functions.
     -Per-tick "secKitActions" tag check is being phased out, but technically still supported.
 -Secondary give/return functions are now run every second, rather than every tick (like weapons and armor).
@@ -63,7 +65,6 @@
 -Added "du-in:effect/has_resistance" predicate.
 -Added "kit/all/game_start/" functions, allowing all characters to have a function that runs on game start without hardcoded tests.
 -Added room.Between
--Removed "loot_table" folder, as it was unused.
 -Renamed "oldPack" tag for beta music to "beta".
 -Renamed "music/ingame/oldpack/" and "music/lobby/oldpack/" to "music/ingame/beta/" and "music/lobby/beta/".
 -Renamed and moved audio sources from "minecraft:" to "du-in:".

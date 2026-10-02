@@ -1,5 +1,9 @@
-execute if entity @s[tag=!sabotaged] as @a[tag=playing,tag=!spectating] unless score @a[scores={kit=1000},tag=kitActions,limit=1] team = @s team run tag @s add confusion
+execute store result score #main team run scoreboard players get @s team
+
+execute if entity @s[tag=!sabotaged] as @a[tag=playing,tag=!spectating] unless score @s team = #main team run tag @s add confusion
 tag @s[tag=sabotaged] add confusion
+
+scoreboard players reset #main team
 
 execute if entity @s[tag=sabotaged] run function du-in:kit/all/ability/sabotage/effects
 

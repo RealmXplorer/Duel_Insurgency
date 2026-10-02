@@ -1,6 +1,9 @@
-execute unless entity @s[tag=sabotaged] as @a[distance=0.05..5,tag=playing,sort=nearest,gamemode=!spectator,tag=!teamDead] run tag @s add vaderHit
-execute as @a[tag=vaderHit] if score @s team = @a[scores={kit=18},tag=kitActions,sort=nearest,limit=1] team run tag @s remove vaderHit
+execute store result score #main team run scoreboard players get @s team
+
+execute unless entity @s[tag=sabotaged] as @a[distance=0.05..5,tag=playing,sort=nearest,gamemode=!spectator,tag=!teamDead] unless score @s team = #main team run tag @s add vaderHit
 execute if entity @s[tag=sabotaged] run tag @s add vaderHit
+
+scoreboard players reset #main team
 
 #Break function if no valid players
 execute unless entity @a[tag=vaderHit] run return run function du-in:kit/all/ability/titles/team

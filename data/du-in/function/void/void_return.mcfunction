@@ -9,6 +9,6 @@ team join Insurgent @a
 tag @s remove voidOut
 tag @s remove teamDead
 tag @s remove teamMode
-scoreboard players set #main team 0
+scoreboard players set #main teamModeToggle 0
 tag @s remove grave
 effect give @s slowness 2 1 true

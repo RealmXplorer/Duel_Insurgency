@@ -4,7 +4,9 @@ execute if entity @s[tag=!sabotaged,tag=empower] as @r[tag=playing,gamemode=!spe
 execute if entity @s[tag=sabotaged] run function du-in:kit/jerma/ability/sabotaged
 
 #Start effects
-execute if entity @s[tag=!sabotaged] run tag @a[tag=playing,gamemode=!spectator] add horrorStart
+execute store result score #main team run scoreboard players get @s team
+execute if entity @s[tag=!sabotaged] as @a[tag=playing,gamemode=!spectator] unless score @s team = #main team run tag @s add horrorStart
+scoreboard players reset #main team
 
 #Countdown to Horror
 scoreboard players set @a[tag=peepedHorror,tag=horrorStart] jermaTimer 80
@@ -15,8 +17,6 @@ tag @a[tag=peepedHorror,tag=horrorStart] add jermaDuration
 execute as @a[tag=peepedHorror] run tellraw @s {text:"You peeped the horror, it was the funniest thing you've ever seen...",bold:true,color:red}
 
 execute as @a[tag=horrorStart] at @s run function du-in:kit/jerma/ability/particle
-
-execute as @a[tag=playing,gamemode=!spectator] unless score @a[scores={kit=1003},tag=kitActions,limit=1] team = @s team run tag @a remove horrorStart
 
 swing @s[tag=!sabotaged] offhand whack
 swing @s[tag=sabotaged] offhand stab

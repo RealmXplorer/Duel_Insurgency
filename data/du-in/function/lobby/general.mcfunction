@@ -6,7 +6,7 @@ execute unless entity @a[tag=devMode] run function du-in:other/player_count/defa
 
 #Test for number of people on team
 #execute if entity @a[tag=teamMode] run function du-in:lobby/team_select/team_count
-execute if score #main team matches 1 run function du-in:lobby/team_select/team_count
+execute if score #main teamModeToggle matches 1 run function du-in:lobby/team_select/team_count
 
 #Test for number of people with kit picked
 #execute if entity @a[scores={lobby=2}] run scoreboard players set #main kitOnline 0

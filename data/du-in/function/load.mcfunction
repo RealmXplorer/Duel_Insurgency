@@ -371,6 +371,7 @@ scoreboard objectives add team dummy
 scoreboard objectives add teamDeaths dummy
 scoreboard objectives add teamOnline dummy
 scoreboard objectives add teamPool dummy
+scoreboard objectives add teamModeToggle dummy
 
 scoreboard objectives add toDev dummy
 

@@ -1,5 +1,7 @@
-execute as @a[distance=.05..7,tag=playing,gamemode=!spectator,tag=!teamDead] run function du-in:kit/frisk/ability/hit
-
+execute store result score #main team run scoreboard players get @s team
+execute as @a[distance=.05..7,tag=playing,gamemode=!spectator,tag=!teamDead] unless score @s team = #main team run function du-in:kit/frisk/ability/hit
+execute as @a[distance=.05..7,tag=playing,gamemode=!spectator,tag=!teamDead] if score @s team = #main team run function du-in:kit/frisk/ability/team_empower
+scoreboard players reset #main team
 
 #Empowered effects
 effect give @s minecraft:fire_resistance 3 255 true
@@ -11,4 +13,3 @@ effect clear @s minecraft:poison
 effect clear @s minecraft:wither
 
 #If player is on team
-execute as @a[distance=0.05..7,tag=playing,gamemode=!spectator,tag=!teamDead] if score @s team = @a[tag=kitActions,limit=1,tag=playing,scores={kit=15}] team run function du-in:kit/frisk/ability/team_empower

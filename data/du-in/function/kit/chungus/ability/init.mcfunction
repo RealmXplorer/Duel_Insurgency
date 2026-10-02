@@ -1,6 +1,10 @@
+execute store result score #main team run scoreboard players get @s team
+
 #Normal Ability
-execute if entity @s[tag=!sabotaged,tag=!empower,tag=!void] as @a[distance=0.05..,tag=playing,gamemode=!spectator,tag=!teamDead] unless score @s team = @a[tag=kitActions,scores={kit=42069},limit=1] team run function du-in:kit/chungus/ability/throw
-execute if entity @s[tag=!sabotaged,tag=empower,tag=!void] as @a[distance=0.05..,tag=playing,gamemode=!spectator,tag=!teamDead] unless score @s team = @a[tag=kitActions,scores={kit=42069},limit=1] team run function du-in:kit/chungus/ability/empowered_throw
+execute if entity @s[tag=!sabotaged,tag=!empower,tag=!void] as @a[distance=0.05..,tag=playing,gamemode=!spectator,tag=!teamDead] unless score @s team = #main team run function du-in:kit/chungus/ability/throw
+execute if entity @s[tag=!sabotaged,tag=empower,tag=!void] as @a[distance=0.05..,tag=playing,gamemode=!spectator,tag=!teamDead] unless score @s team = #main team run function du-in:kit/chungus/ability/empowered_throw
+
+scoreboard players reset #main team
 
 #Sabotaged ability
 execute if entity @s[tag=sabotaged,tag=!empower,tag=!void] run function du-in:kit/chungus/ability/throw

@@ -11,10 +11,15 @@ playsound du-in:sfx.ut.cure master @a ~ ~ ~ 1 1
 effect clear @s minecraft:poison
 effect clear @s minecraft:wither
 
-#If player is on team
-execute if entity @s[tag=!empower] as @a[distance=0.05..5,tag=playing,gamemode=!spectator,tag=!teamDead] if score @s team = @a[tag=kitActions,limit=1,tag=playing,scores={kit=34}] team run function du-in:kit/cinder/ability/spear/team
-execute if entity @s[tag=empower] as @a[distance=0.05..5,tag=playing,gamemode=!spectator,tag=!teamDead] if score @s team = @a[tag=kitActions,limit=1,tag=playing,scores={kit=34}] team run function du-in:kit/cinder/ability/spear/empowered_team
+#Set team
+execute store result score #main team run scoreboard players get @s team
 
+#If player is on team
+execute if entity @s[tag=!empower] as @a[distance=0.05..5,tag=playing,gamemode=!spectator,tag=!teamDead] if score @s team = #main team run function du-in:kit/cinder/ability/spear/team
+execute if entity @s[tag=empower] as @a[distance=0.05..5,tag=playing,gamemode=!spectator,tag=!teamDead] if score @s team = #main team run function du-in:kit/cinder/ability/spear/empowered_team
+
+#Reset team
+scoreboard players reset #main team
 
 clear @s #du-in:ability
 xp set @s[tag=!stolen] 350 levels

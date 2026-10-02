@@ -1,6 +1,10 @@
+execute store result score #main team run scoreboard players get @s team
+
 tag @s[tag=!sabotaged] add runzaRex
-execute if entity @s[tag=!empower] as @a[tag=playing,tag=!spectating,tag=!runzaRex] at @s unless score @a[scores={kit=1004},tag=kitActions,limit=1] team = @s team run function du-in:kit/runza/ability/start
-execute if entity @s[tag=empower] as @a[tag=playing,tag=!spectating,tag=!runzaRex] at @s unless score @a[scores={kit=1004},tag=kitActions,limit=1] team = @s team run function du-in:kit/runza/ability/empowered_start
+execute if entity @s[tag=!empower] as @a[tag=playing,tag=!spectating,tag=!runzaRex] at @s unless score @s team = #main team run function du-in:kit/runza/ability/start
+execute if entity @s[tag=empower] as @a[tag=playing,tag=!spectating,tag=!runzaRex] at @s unless score @s team = #main team run function du-in:kit/runza/ability/empowered_start
+
+scoreboard players reset #main team
 
 swing @s[tag=!sabotaged] offhand whack
 swing @s[tag=sabotaged] offhand stab

@@ -1,6 +1,9 @@
-execute if entity @s[tag=!sabotaged] as @a[distance=0.05..4,tag=playing,gamemode=!spectator,tag=!teamDead] run tag @s add golemHit
-execute as @a[tag=golemHit] if score @s team = @p[scores={kit=6},tag=kitActions,distance=..4] team run tag @s remove golemHit
+execute store result score #main team run scoreboard players get @s team
+execute if entity @s[tag=!sabotaged] as @a[distance=0.05..4,tag=playing,gamemode=!spectator,tag=!teamDead] unless score @s team = #main team run tag @s add golemHit
 tag @s[tag=sabotaged] add golemHit
+
+#Sort team
+scoreboard players reset #main team
 
 #Break function if no targets
 execute unless entity @a[tag=golemHit] run return run function du-in:kit/all/ability/titles/team

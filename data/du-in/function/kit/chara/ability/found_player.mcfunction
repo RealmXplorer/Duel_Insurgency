@@ -1,7 +1,12 @@
+#Set main to team
+execute store result score #main team run scoreboard players get @s team
+
 #Test players
-execute if entity @s[tag=!sabotaged,tag=!void] run tag @a[distance=0.05..10,tag=playing,tag=!win,tag=!lose,gamemode=!spectator,tag=!teamDead] add charaMark
-execute if entity @s[tag=!sabotaged] as @a[tag=charaMark] if score @s team = @a[tag=kitActions,limit=1,tag=playing,scores={kit=17}] team run tag @s remove charaMark
+execute if entity @s[tag=!sabotaged,tag=!void] as @a[distance=0.05..10,tag=playing,tag=!win,tag=!lose,gamemode=!spectator,tag=!teamDead] unless score @s team = #main team run tag @s add charaMark
 tag @s[tag=sabotaged] add charaMark
+
+#Reset team score.
+scoreboard players reset #main team
 
 #Break function if no player marked
 execute unless entity @a[tag=charaMark] run return run function du-in:kit/all/ability/titles/team
