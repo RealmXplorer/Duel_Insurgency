@@ -17,7 +17,7 @@ execute store result score @s team run scoreboard players get @a[scores={kit=13}
 execute store result score @s player run scoreboard players get @a[scores={kit=13},tag=kitActions,limit=1] player
 
 #Store player and team values in bones
-execute as @e[tag=papyrusBone,tag=!boneIDSet] run function du-in:kit/papyrus/ability/bones/set_player
+execute as @e[distance=..4,tag=papyrusBone,tag=!boneIDSet,type=armor_stand] run function du-in:kit/papyrus/ability/bones/set_player
 
 #Mark marker as having player and team ids set for bones
 tag @s add boneIDSet
