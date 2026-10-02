@@ -12,7 +12,7 @@ kill @e[tag=displayItem]
 #Reset Gamemode Displays
 #kill @e[type=text_display,tag=gamemodeLabel]
 kill bc991cc6-7586-4f25-ad79-4861722620dd
-summon text_display -983 16 517 {Tags:["gamemodeLabel"],billboard:"center",UUID:[I;-1130816314,1971736357,-1384560543,1915101405]}
+summon text_display -983 16 517 {Tags:["gamemodeLabel","lobbyPoint"],billboard:"center",UUID:[I;-1130816314,1971736357,-1384560543,1915101405]}
 schedule function du-in:lobby/theme/default/text 5t
 
 #Stop music
@@ -93,6 +93,8 @@ scoreboard players set @a music 0
 
 #Resets map score
 scoreboard players reset #main map
+
+schedule clear du-in:lobby/scheduled/two_sec_loop
 
 #Removes kitMenu and resets it
 tag @a remove kitMenu

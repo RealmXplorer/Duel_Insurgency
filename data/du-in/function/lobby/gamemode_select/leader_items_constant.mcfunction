@@ -1,5 +1,5 @@
    #Team Item
-        execute unless items entity @s hotbar.2 minecraft:carrot_on_a_stick run function du-in:lobby/gamemode_select/item/team
+        #execute unless items entity @s hotbar.2 minecraft:carrot_on_a_stick run function du-in:lobby/gamemode_select/item/team
 
     # Spam Mode Item # (FUNCTIONALITY RUNS THROUGH ITEM FUNCTION)
         execute unless items entity @s inventory.15 minecraft:cookie run function du-in:lobby/gamemode_select/item/spam

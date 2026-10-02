@@ -51,6 +51,10 @@
 -Gamemode functions run through returns
 -"new_player" check is now run through a ticking advancement instead of a constant score check.
 -Moved game shutdown functions into "ingame/scheduled", as they aren't needed or used in the lobby.
+-Moved "team_enable" and "team_disable" into a single check using returns.
+-Moved "count_stop" and "count_go" into a single check using returns.
+-"Team mode" lobby hotbar icon is now scheduled every second, rather than running every tick.
+-The "two_sec_loop" scheduled function in lobby now only runs in Map Select, as its the only lobby where its used.
 -Moved "main" player count checks to be event based in the lobby. Ingame, they have been moved to run every second, rather than every tick.
 -Simplified game cap functions as they did unnecessary checks and math.
 -Moved "shutdown" system to schedules, rather than a score-based tick timer. (Deprecated "shutdownTimer" score)

@@ -37,6 +37,8 @@ clear @a
 scoreboard players set #main lobby 2
 scoreboard players set @a lobby 2
 
+function du-in:lobby/scheduled/two_sec_loop
+
 #If in Classic or Deathmatch, let game know to use same map pool
 tag @a[tag=cl] add cmap
 tag @a[tag=dml] add cmap

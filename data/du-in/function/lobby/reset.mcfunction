@@ -1,7 +1,3 @@
-#Restart music
-stopsound @s record
-scoreboard players set @s music 0
-
 #Get lobby score from main
 execute store result score @s lobby run scoreboard players get #main lobby
 
@@ -27,3 +23,7 @@ execute unless entity @s[scores={lobby=2}] run tag @s remove kitMenu
 
 #Hide map countdown bossbar if not in map select
 execute unless entity @a[scores={lobby=2},tag=partyLeader] run bossbar set minecraft:map_countdown visible false
+
+#Restart music
+stopsound @s record
+scoreboard players set @s music 0

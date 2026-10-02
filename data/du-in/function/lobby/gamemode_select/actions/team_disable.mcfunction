@@ -3,4 +3,5 @@ tellraw @a [{text:"Team Play ",bold:true,color:blue},{text:"has been ",color:gra
 scoreboard players reset @s kitUse
 tag @a remove teamMode
 scoreboard players set #main teamModeToggle 0
-clear @a carrot_on_a_stick[custom_data={du-in:'teamItem'}]
+#clear @a carrot_on_a_stick[custom_data={du-in:'teamItem'}]
+function du-in:lobby/gamemode_select/item/team

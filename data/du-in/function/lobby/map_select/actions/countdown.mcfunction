@@ -1,0 +1,2 @@
+execute if entity @s[tag=countStop] run return run function du-in:lobby/map_select/actions/count_go
+execute unless score #main mapCountdown matches 200 unless score #main mapCountdown matches 100 unless score #main mapCountdown matches 80 unless score #main mapCountdown matches 60 unless score #main mapCountdown matches 40 unless score #main mapCountdown matches ..20 if score #main mapCountdown matches 1.. run function du-in:lobby/map_select/actions/count_stop

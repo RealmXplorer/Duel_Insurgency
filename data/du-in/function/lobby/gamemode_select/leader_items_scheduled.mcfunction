@@ -1,3 +1,6 @@
+    #Team Item
+        execute unless items entity @s hotbar.2 minecraft:carrot_on_a_stick run function du-in:lobby/gamemode_select/item/team
+
     #Play Item
         execute unless items entity @s hotbar.4 minecraft:carrot_on_a_stick run function du-in:lobby/gamemode_select/item/play
 

@@ -6,5 +6,7 @@ scoreboard players set #main teamModeToggle 1
 # clear @a carrot_on_a_stick[item_model="du-in:lobby/teamgray"]
 # clear @a carrot_on_a_stick[item_model="du-in:lobby/void_teamgray"]
 
-clear @a carrot_on_a_stick[item_model="du-in:lobby/teamgray"]
-clear @a carrot_on_a_stick[item_model="du-in:lobby/void_teamgray"]
+#clear @a carrot_on_a_stick[item_model="du-in:lobby/teamgray"]
+#clear @a carrot_on_a_stick[item_model="du-in:lobby/void_teamgray"]
+
+function du-in:lobby/gamemode_select/item/team
