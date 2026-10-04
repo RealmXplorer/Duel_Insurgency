@@ -1,7 +1,8 @@
 #Set number of kits to be displayed
-execute if entity @s[tag=skinsListed] run scoreboard players set @s skinList 11
+execute if entity @s[tag=skinsListed] run scoreboard players set @s skinList 12
 
 #Display Kits
+execute unless items entity @s inventory.13 minecraft:player_head run function du-in:kit/rory/menu/skins/display
 execute unless items entity @s inventory.12 minecraft:player_head run function du-in:kit/jevil/menu/skins/display
 execute unless items entity @s inventory.11 minecraft:player_head run function du-in:kit/susie/menu/skins/display
 execute unless items entity @s inventory.10 minecraft:player_head run function du-in:kit/ralsei/menu/skins/display

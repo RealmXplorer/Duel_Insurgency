@@ -55,6 +55,10 @@ scoreboard objectives add willoStandTimer minecraft.custom:minecraft.play_time
 scoreboard objectives add willoCancelAnimation minecraft.custom:minecraft.play_time
 scoreboard objectives add willoCandyCornTimer minecraft.custom:minecraft.play_time
 scoreboard objectives add muzzleFlash dummy
+scoreboard objectives add starTravelTime dummy
+scoreboard objectives add starCount dummy
+scoreboard objectives add starTimer minecraft.custom:minecraft.play_time
+scoreboard objectives add flashCookTime dummy
 
 #Timers
 scoreboard objectives add ambience dummy

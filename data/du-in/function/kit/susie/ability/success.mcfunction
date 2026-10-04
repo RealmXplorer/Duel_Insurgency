@@ -17,8 +17,8 @@ scoreboard players operation #targetY pos -= #playerY pos
 scoreboard players operation #targetZ pos -= #playerZ pos
 
 # summon the susieTest entity
-execute if entity @s[tag=!redBuster] run summon armor_stand ~ ~1 ~ {Invisible:1b,Invulnerable:1b,Tags:["susieAbility","susieTest","rudeBuster","unsetTime","mapSpecific","projectile"],Pose:{RightArm:[268f,0f,0f]},equipment:{mainhand:{id:"minecraft:stick",count:1,components:{"minecraft:item_model":"du-in:other/rude_buster"}}}}
-execute if entity @s[tag=redBuster] run summon armor_stand ~ ~1 ~ {Invisible:1b,Invulnerable:1b,Tags:["susieAbility","susieTest","redBuster","unsetTime","mapSpecific","projectile"],Pose:{RightArm:[268f,0f,0f]},equipment:{mainhand:{id:"minecraft:stick",count:1,components:{"minecraft:item_model":"du-in:other/red_buster"}}}}
+execute if entity @s[tag=!redBuster] run summon armor_stand ~ ~1 ~ {Invisible:1b,Invulnerable:1b,Tags:["susieAbility","susieTest","rudeBuster","unsetTime","mapSpecific","projectile"],Pose:{RightArm:[268f,0f,0f]},equipment:{mainhand:{id:"minecraft:stick",count:1,components:{"minecraft:item_model":"du-in:other/rude_buster"}}},active_effects:[{id:"minecraft:levitation",amplifier:0,duration:-1,show_particles:0b}]}
+execute if entity @s[tag=redBuster] run summon armor_stand ~ ~1 ~ {Invisible:1b,Invulnerable:1b,Tags:["susieAbility","susieTest","redBuster","unsetTime","mapSpecific","projectile"],Pose:{RightArm:[268f,0f,0f]},equipment:{mainhand:{id:"minecraft:stick",count:1,components:{"minecraft:item_model":"du-in:other/red_buster"}}},active_effects:[{id:"minecraft:levitation",amplifier:0,duration:-1,show_particles:0b}]}
 
 execute as @e[type=armor_stand,tag=susieAbility,tag=susieTest] at @s rotated as @a[scores={kit=36},tag=kitActions] run tp @s ~ ~ ~ ~ ~ 
 # execute if entity @s[tag=!redBuster] rotated as @s run summon item_display ~ ~1 ~ {Tags:["susieAbility","susieTest","rudeBuster","unsetTime","projectile","mapSpecific"],width:30f,height:30f,brightness:{sky:15,block:15},transformation:{left_rotation:[0f,-7f,0f,3f],right_rotation:[0f,-7f,0f,3f],translation:[0f,0f,0f],scale:[5f,5f,5f]},item:{id:"minecraft:stick",count:1,components:{"minecraft:item_model":"du-in:abilities/rude_buster"}}}
@@ -57,7 +57,7 @@ execute store result score @e[type=item_display,tag=susieTest,limit=1] team run 
 execute store result score @e[type=item_display,tag=susieTest,limit=1] player run scoreboard players get @s player
 
 # clean up, ready for the next player
-effect give @e[type=armor_stand,tag=susieTest] levitation infinite 0 true
+#effect give @e[type=armor_stand,tag=susieTest] levitation infinite 0 true
 tag @e[tag=susieTest] remove susieTest
 
 kill @e[type=marker,tag=susieDirection]

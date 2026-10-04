@@ -1,9 +1,14 @@
 #INIT Function
+execute if entity @s[tag=sabotaged] run return run function du-in:kit/willo/ability/sabotaged
+
+function du-in:kit/willo/ability/flash/throw
+
+
 #Test for traps
-execute if entity @s[scores={willoTrapCount=3..}] run return run function du-in:kit/willo/ability/titles/max_traps
+#execute if entity @s[scores={willoTrapCount=3..}] run return run function du-in:kit/willo/ability/titles/max_traps
 
 #Place traps if less than 3
-function du-in:kit/willo/ability/set_trap
+#function du-in:kit/willo/ability/set_trap
 
 #Test if 3 traps have been placed, if so, cancel ability (Or trigger smoke bomb?)
 #If not, run place trap function

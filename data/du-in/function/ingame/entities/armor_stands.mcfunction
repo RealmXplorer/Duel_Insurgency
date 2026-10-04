@@ -8,4 +8,4 @@ execute if entity @s[tag=asgoreFire,scores={asgoreFire=-99..}] run return run fu
 execute if entity @s[tag=susieAbility,scores={susieTimer=0..}] run return run function du-in:kit/susie/ability/buster/timer
 
 #Desolate Dive
-execute if entity @s[tag=desolateDive] run function du-in:kit/knight/ability/dive
+execute if entity @s[tag=desolateDive] run return run function du-in:kit/knight/ability/dive

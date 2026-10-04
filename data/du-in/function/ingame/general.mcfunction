@@ -36,6 +36,9 @@ execute as @e[type=falling_block,tag=floweyStem] at @s run function du-in:kit/fl
 #Block Displays
 execute as @e[type=block_display] at @s run function du-in:ingame/entities/block_display
 
+#Willo Flashbang
+execute as @e[type=salmon,tag=willoFlash] at @s run function du-in:kit/willo/ability/flash/timer
+
 #Poison Apples (MUST BE BELOW MARKER FUNCTIONS)
 execute at @e[type=snowball] run summon minecraft:marker ~ ~ ~ {Tags:["poisonApple","mapSpecific"]}
 

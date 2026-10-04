@@ -44,6 +44,7 @@ Kit number = character name
 39 = Chief Bogo
 40 = Pawbert Lynxley
 41 = Willo
+42 = The Roaring Knight
 
 1000 = Saac
 1001 = PearApplez

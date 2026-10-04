@@ -23,6 +23,8 @@ title @a[scores={team=1}] subtitle {text:"Red Team",color:red,bold:true}
 title @a[scores={team=2}] subtitle {text:"Blue Team",color:blue,bold:true}
 
 execute as @a[scores={kit=21}] at @s run playsound du-in:kit.cuphead.announce.go master @s ~ ~ ~ 10 1
+execute as @a[scores={kit=42}] at @s run playsound du-in:kit.rory.roar master @s ~ ~ ~ 10 1
+
 execute at @e[type=armor_stand,tag=vendMachine] run setblock ~ ~1 ~ barrier keep
 execute at @e[type=armor_stand,tag=vendMachine] run setblock ~ ~ ~ light[level=9] keep
 

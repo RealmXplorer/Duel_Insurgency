@@ -71,7 +71,9 @@ summon marker 234 91 34 {Tags:["mapVote","displayItem","vote10"],UUID:[I;-596993
 scoreboard players set dc6a9947-1212-489e-820c-32f16895e06a mapVote 10
 
 #Maze
-summon minecraft:item 236 92 32 {NoGravity:1b,Age:-32768,Health:99999,PickupDelay:32767,Tags:["mapLabel","displayItem"],Item:{id:"minecraft:spruce_leaves",count:1},CustomNameVisible:1b,CustomName:{text:"Maze",color:"dark_green",bold:true}}
+execute unless score #main lobbyTheme matches 1 unless score #main lobbyTheme matches 3 run summon minecraft:item 236 92 32 {NoGravity:1b,Age:-32768,Health:99999,PickupDelay:32767,Tags:["mapLabel","displayItem"],Item:{id:"minecraft:spruce_leaves",count:1},CustomNameVisible:1b,CustomName:{text:"Maze",color:"dark_green",bold:true}}
+execute if score #main lobbyTheme matches 1 run summon minecraft:item 236 92 32 {NoGravity:1b,Age:-32768,Health:99999,PickupDelay:32767,Tags:["mapLabel","displayItem"],Item:{id:"minecraft:spruce_leaves",count:1},CustomNameVisible:1b,CustomName:{text:"Overlook Maze",color:"dark_green",bold:true}}
+execute if score #main lobbyTheme matches 3 run summon minecraft:item 236 92 32 {NoGravity:1b,Age:-32768,Health:99999,PickupDelay:32767,Tags:["mapLabel","displayItem"],Item:{id:"minecraft:spruce_leaves",count:1},CustomNameVisible:1b,CustomName:{text:"Overlook Maze",color:"dark_green",bold:true}}
 execute if entity @a[tag=mazeLock,tag=partyLeader] run summon marker 236 92 32 {Tags:["displayItem","voidLocked"]}
 summon marker 234 91 32 {Tags:["mapVote","displayItem","vote9"],UUID:[I;-863499413,2145536198,-1793359234,-905015544]} 
 scoreboard players set cc880b6b-7fe2-48c6-951b-827eca0e8f08 mapVote 9

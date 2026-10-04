@@ -2,13 +2,14 @@ tag @s add willoShoot
 function du-in:kit/willo/secondary/item
 playsound du-in:kit.willo.revolver_shoot master @a ~ ~ ~ 1 1
 
-summon marker ^ ^1.9 ^.5 {Tags:["willoBullet","unset","mapSpecific","projectile"]}
+summon marker ^ ^1.9 ^.5 {Tags:["willoBullet","unset","mapSpecific","projectile","unShot"]}
 scoreboard players set @e[distance=..2,tag=willoBullet,tag=unset,type=marker] willoBulletTravel 120
 execute as @e[distance=..2,tag=willoBullet,tag=unset,type=marker] rotated as @p[tag=willoShoot] run tp @s ~ ~1.2 ~ ~ ~
 
 execute if entity @s[tag=void] run tag @e[distance=..2,tag=willoBullet,tag=unset,type=marker] add void
+execute store result score @e[type=marker,tag=willoBullet,tag=unset] player run scoreboard players get @s player
 tag @e[distance=..2,tag=willoBullet,tag=unset,type=marker] remove unset
-execute as @e[distance=..2,tag=willoBullet,tag=!unset,type=marker] at @s run function du-in:kit/willo/revolver/marker_raycast
+execute as @e[distance=..2,tag=willoBullet,tag=!unset,tag=unShot,type=marker] at @s run function du-in:kit/willo/revolver/marker_raycast
 
 
 execute positioned ^-.5 ^.1 ^1 run particle campfire_cosy_smoke ~ ~1 ~ 0 0 0 0 3 normal

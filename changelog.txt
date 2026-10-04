@@ -2,7 +2,9 @@
 ***Version 1.6 - The Last Autumn:***
 *Additions*
 -Added Willo character.
+-Added Roaring Knight character.
 -Added Jack Torrance skin for Springtrap.
+-Added "Overlook Maze" map as a Halloween and Christmas variant for the "Maze" map.
 -Added small audio cue when a player with resistance takes damage.
 -Added subtitles to all gameplay audio.
 
@@ -18,6 +20,7 @@
 -Messages for when a player ends another killstreak now dynamically shows the real killstreak (instead of just 3 or 5).
 -Skin menu is now organized the same as the kit menu.
 -Harvest now uses the Dappled Forest biome, and features Poplar trees.
+-Moved a vending machine on Maze so it wasn't right next to a jump pad.
 -Beds can no longer be slept in.
 -Signs on San Ricardo are now properly waxed.
 -Added grayscale post effect for the void.
@@ -119,3 +122,6 @@
 -Added Jack Torrance skin. (by Three_Thumbs)
 -Added Willo revolver models and textures. (by nerbski_)
 -Added Candy Corn muzzle flash overlays. (by nerbski_)
+-Added Roaring Knight armor texture. (by nerbski_)
+-Added Roaring Knight star models. (by nerbski_)
+-Added Roaring Knight sound effects.
