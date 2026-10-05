@@ -125,3 +125,6 @@
 -Added Roaring Knight armor texture. (by nerbski_)
 -Added Roaring Knight star models. (by nerbski_)
 -Added Roaring Knight sound effects.
+-Added Black Knife texture. (by Realm_Xplorer)
+-Added Jack Torrance armor textures. (by Three_Thumbs)
+-Added Jack Torrance ability texture. (by Realm_Xplorer)
