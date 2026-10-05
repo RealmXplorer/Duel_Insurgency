@@ -4,8 +4,11 @@ execute if entity @s[scores={papyrusHitTimer=-1..}] run return run function du-i
 #Asgore Fire Wall
 execute if entity @s[tag=asgoreFire,scores={asgoreFire=-99..}] run return run function du-in:kit/asgore/ability/fire_wall
 
-#Death's fire cone
+#Susie Buster
 execute if entity @s[tag=susieAbility,scores={susieTimer=0..}] run return run function du-in:kit/susie/ability/buster/timer
 
 #Desolate Dive
 execute if entity @s[tag=desolateDive] run return run function du-in:kit/knight/ability/dive
+
+#Roaring Knight
+execute if entity @s[tag=roryAbility] run return run function du-in:kit/rory/ability/star/timer

@@ -16,6 +16,9 @@ execute as @e[type=chicken,tag=jockeyDuration] run function du-in:kit/jack_black
 #Kratos Rock
 execute if entity @e[type=salmon,tag=kratosRock] run function du-in:kit/kratos/ability/rock/track
 
+#Willo Flashbang
+execute as @e[type=salmon,tag=willoFlash] at @s run function du-in:kit/willo/ability/flash/timer
+
 #Neo Chaos#
 execute as @e[type=minecraft:item_display,tag=devilsKnife] at @s run function du-in:kit/jevil/neo_chaos/scythe
 
@@ -35,9 +38,6 @@ execute as @e[type=falling_block,tag=floweyStem] at @s run function du-in:kit/fl
 
 #Block Displays
 execute as @e[type=block_display] at @s run function du-in:ingame/entities/block_display
-
-#Willo Flashbang
-execute as @e[type=salmon,tag=willoFlash] at @s run function du-in:kit/willo/ability/flash/timer
 
 #Poison Apples (MUST BE BELOW MARKER FUNCTIONS)
 execute at @e[type=snowball] run summon minecraft:marker ~ ~ ~ {Tags:["poisonApple","mapSpecific"]}

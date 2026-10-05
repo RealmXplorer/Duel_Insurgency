@@ -42,7 +42,7 @@ execute if entity @s[tag=redBuster] store result entity @e[type=armor_stand,tag=
 #execute if entity @s[tag=redBuster] store result entity @e[type=item_display,tag=susieTest,limit=1] Motion[1] double 0.0025 run scoreboard players get #targetY pos
 #execute if entity @s[tag=redBuster] store result entity @e[type=item_display,tag=susieTest,limit=1] Motion[2] double 0.0025 run scoreboard players get #targetZ pos
 
-
+execute if entity @s[tag=void] run tag @e[tag=susieTest,tag=unsetTime] add void
 scoreboard players set @e[tag=susieTest,tag=unsetTime] susieTimer 30
 tag @e[tag=susieTest,tag=unsetTime,scores={susieTimer=0..}] remove unsetTime
 

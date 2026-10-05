@@ -2,10 +2,10 @@ scoreboard players remove @s starTravelTime 1
 #particle minecraft:dust_plume ~ ~ ~ 0.5 0.5 0.5 0 1
 #particle minecraft:small_gust ~ ~0.5 ~ 0 0 0 0 1
 
-execute if entity @a[tag=void] run function du-in:kit/susie/ability/void/damage
+execute if entity @s[tag=void] as @e[distance=..1.5,type=skeleton,tag=gonerThing] run function du-in:kit/rory/ability/star/damage
 
 #Rude Buster
-execute unless entity @a[tag=void] as @a[gamemode=adventure,distance=..1.5] unless score @s team = @n[type=armor_stand,tag=rudeBuster,distance=..1.5] team unless score @s player = @n[type=armor_stand,tag=rudeBuster] player run function du-in:kit/susie/ability/buster/rude_hit
+execute unless entity @s[tag=void] as @a[gamemode=adventure,distance=..1.5] unless score @s team = @n[type=armor_stand,tag=roryAbility,distance=..1.5] team unless score @s player = @n[type=armor_stand,tag=roryAbility] player run function du-in:kit/rory/ability/star/damage
 
 execute if entity @s[scores={starTravelTime=40}] run item replace entity @s weapon.mainhand with stick[item_model="du-in:rory/star2"]
 execute if entity @s[scores={starTravelTime=40}] run effect clear @s levitation

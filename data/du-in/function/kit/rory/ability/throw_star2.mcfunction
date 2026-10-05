@@ -22,6 +22,7 @@ execute store result entity @e[type=armor_stand,tag=starTest,limit=1] Motion[1] 
 execute store result entity @e[type=armor_stand,tag=starTest,limit=1] Motion[2] double 0.0010 run scoreboard players get #targetZ pos
 
 
+execute if entity @s[tag=void] run tag @e[tag=starTest,tag=unsetTime] add void
 scoreboard players set @e[tag=starTest,tag=unsetTime] starTravelTime 60
 tag @e[tag=starTest,tag=unsetTime,scores={starTravelTime=0..}] remove unsetTime
 
