@@ -2,12 +2,12 @@
   "layers": {
     "humanoid": [
       {
-        "texture": "du-in:blank"
+        "texture": "du-in:rory"
       }
     ],
     "humanoid_leggings": [
       {
-        "texture": "du-in:willo"
+        "texture": "du-in:rory"
       }
     ]
   }

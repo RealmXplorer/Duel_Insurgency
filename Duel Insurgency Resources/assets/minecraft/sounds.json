@@ -30,5 +30,15 @@
 		"sounds": [
 			{"name": "minecraft:hello"}
 		]
+	},
+	"jingle": {
+		"sounds": [
+			{"name": "minecraft:jingle"}
+		]
+	},
+	"crash": {
+		"sounds": [
+			{"name": "minecraft:crash"}
+		]
 	}
         }

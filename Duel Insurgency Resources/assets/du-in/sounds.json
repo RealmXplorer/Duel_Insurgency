@@ -1504,6 +1504,38 @@
 		]
 	},
 
+	"kit.rory.hit": {
+		"sounds": [
+			{"name":"du-in:kit/rory/hit1"},
+			{"name":"du-in:kit/rory/hit2"}],
+			"subtitle": "Roaring Knight hurt"
+	},
+	"kit.rory.stardrop": {
+		"sounds": [
+			{"name":"du-in:kit/rory/stardrop"}],
+			"subtitle": "Star summoned"
+	},
+	"kit.rory.dark_star": {
+		"sounds": [
+			{"name":"du-in:kit/rory/dark_star"}],
+			"subtitle": "Dark Star summoned"
+	},
+	"kit.rory.star_explosion_close": {
+		"sounds": [
+			{"name":"du-in:kit/rory/star_explosion_close"}],
+			"subtitle": "Star priming"
+	},
+	"kit.rory.stretch": {
+		"sounds": [
+			{"name":"du-in:kit/rory/stretch"}],
+			"subtitle": "Roaring Knight charging"
+	},
+	"kit.rory.roar": {
+		"sounds": [
+			{"name":"du-in:kit/rory/roar"}],
+			"subtitle": "Roaring Knight roars"
+	},
+
 	"kit.runza.hit": {
 		"sounds": [
 			{"name":"du-in:kit/runza/hit1"},

@@ -1,0 +1,79 @@
+{
+	"format_version": "26.3",
+	"credit": "Made with Blockbench",
+	"texture_size": [32, 68],
+	"textures": {
+		"0": "du-in:item/weapons/black_knife",
+		"1": "du-in:item/weapons/black_knife2",
+		"particle": "du-in:item/weapons/black_knife2"
+	},
+	"elements": [
+		{
+			"from": [8, -14.4, 1.4],
+			"to": [8, 31.6, 15.4],
+			"rotation": {"angle": 0, "axis": "y", "origin": [8, 8.6, 8.4]},
+			"faces": {
+				"north": {"uv": [0.5, 0, 0.5, 3.76471], "texture": "#1"},
+				"east": {"uv": [13.5, 0, 3.5, 16], "texture": "#1"},
+				"south": {"uv": [0.5, 0, 0.5, 3.76471], "texture": "#1"},
+				"west": {"uv": [3.5, 0, 13.5, 16], "texture": "#1"},
+				"up": {"uv": [0.5, 0, 0.5, 3.76471], "texture": "#1"},
+				"down": {"uv": [0.5, 0, 0.5, 3.76471], "texture": "#1"}
+			}
+		},
+		{
+			"from": [8.2, -14, 2],
+			"to": [8.2, 30, 14],
+			"rotation": {"angle": 0, "axis": "y", "origin": [8, 8, 8]},
+			"faces": {
+				"north": {"uv": [0.5, 0, 0.5, 3.76471], "texture": "#0"},
+				"east": {"uv": [13.5, 0, 3.5, 16], "texture": "#0"},
+				"south": {"uv": [0.5, 0, 0.5, 3.76471], "texture": "#0"},
+				"west": {"uv": [3.5, 0, 13.5, 16], "texture": "#0"},
+				"up": {"uv": [0.5, 0, 0.5, 3.76471], "texture": "#0"},
+				"down": {"uv": [0.5, 0, 0.5, 3.76471], "texture": "#0"}
+			}
+		},
+		{
+			"from": [7.8, -14, 2],
+			"to": [7.8, 30, 14],
+			"rotation": {"angle": 0, "axis": "y", "origin": [8, 8, 8]},
+			"faces": {
+				"north": {"uv": [0.5, 0, 0.5, 3.76471], "texture": "#0"},
+				"east": {"uv": [13.5, 0, 3.5, 16], "texture": "#0"},
+				"south": {"uv": [0.5, 0, 0.5, 3.76471], "texture": "#0"},
+				"west": {"uv": [3.5, 0, 13.5, 16], "texture": "#0"},
+				"up": {"uv": [0.5, 0, 0.5, 3.76471], "texture": "#0"},
+				"down": {"uv": [0.5, 0, 0.5, 3.76471], "texture": "#0"}
+			}
+		}
+	],
+	"display": {
+		"thirdperson_righthand": {
+			"translation": [0, 8.25, 2.5],
+			"scale": [1, 0.78, 0.87]
+		},
+		"thirdperson_lefthand": {
+			"translation": [0, 8.25, 2.5],
+			"scale": [1, 0.78, 0.87]
+		},
+		"firstperson_righthand": {
+			"rotation": [-82, 24, -35],
+			"translation": [0.75, 4.25, 1.25],
+			"scale": [0.6, 0.6, 0.6]
+		},
+		"firstperson_lefthand": {
+			"rotation": [-82, 24, -35],
+			"translation": [0.75, 4.25, 0],
+			"scale": [0.6, 0.6, 0.6]
+		},
+		"ground": {
+			"scale": [0, 0, 0]
+		},
+		"gui": {
+			"rotation": [85.19, 47.85, -88.31],
+			"translation": [0.5, 0, 0],
+			"scale": [1, 0.37445, 0.41883]
+		}
+	}
+}
