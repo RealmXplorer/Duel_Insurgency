@@ -1,6 +1,6 @@
 #Functionality
-execute if entity @s[scores={skinList=..0},tag=villagerSkins] run function du-in:kit/villager/menu/skins/select
-execute if entity @s[scores={skinList=..0},tag=!villagerSkins] run function du-in:kit/villager/menu/skins/try
+execute if entity @s[scores={kitList=..0},tag=villagerSkins] run function du-in:kit/villager/menu/skins/select
+execute if entity @s[scores={kitList=..0},tag=!villagerSkins] run function du-in:kit/villager/menu/skins/try
 
 
 #Void Head
@@ -14,4 +14,4 @@ execute unless score #main pylonsDestroyed matches 3.. unless entity @s[scores={
 execute unless score #main pylonsDestroyed matches 3.. run item replace entity @s[scores={villSkin=1},tag=villagerSkins] inventory.1 with minecraft:player_head[custom_data={du-in:'villagerHead'},custom_name={text:"Illager",color:white,bold:true,italic:false},lore=[{text:"Villager",color:green,bold:true,"italic":true}],profile={id:[I;73502451,-1145421044,-1440943755,92654936],name:"",properties:[{name:"textures",value:"eyJ0ZXh0dXJlcyI6eyJTS0lOIjp7InVybCI6Imh0dHA6Ly90ZXh0dXJlcy5taW5lY3JhZnQubmV0L3RleHR1cmUvOWUxY2FiMzgyNDU4ZTg0M2FjNDM1NmUzZTAwZTFkMzVjMzZmNDQ5ZmExYTg0NDg4YWIyYzY1NTdiMzkyZCJ9fX0="}]}]
 execute unless score #main pylonsDestroyed matches 3.. run item replace entity @s[scores={villSkin=2},tag=villagerSkins] inventory.1 with minecraft:player_head[custom_data={du-in:'villagerHead'},custom_name={text:"Witch",color:white,bold:true,italic:false},lore=[{text:"Villager",color:green,bold:true,"italic":true}],profile={id:[I;-103470526,-994032010,-2040227010,1988961387],name:"",properties:[{name:"textures",value:"eyJ0ZXh0dXJlcyI6eyJTS0lOIjp7InVybCI6Imh0dHA6Ly90ZXh0dXJlcy5taW5lY3JhZnQubmV0L3RleHR1cmUvN2U3MWE2ZWIzMDNhYjdlNmY3MGVkNTRkZjkxNDZhODBlYWRmMzk2NDE3Y2VlOTQ5NTc3M2ZmYmViZmFkODg3YyJ9fX0="}]}]
 
-execute if entity @s[scores={skinList=1}] run scoreboard players remove @s skinList 1
+execute if entity @s[scores={kitList=1}] run scoreboard players remove @s kitList 1

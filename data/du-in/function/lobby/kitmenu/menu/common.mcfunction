@@ -11,18 +11,22 @@ execute if entity @s[scores={kitTheme=6}] run function du-in:lobby/kitmenu/menu/
 execute unless items entity @s[scores={kitTheme=1..5}] inventory.0 minecraft:barrier run function du-in:lobby/kitmenu/menu/function/next
 execute unless items entity @s[scores={kitTheme=2..}] inventory.18 minecraft:barrier run function du-in:lobby/kitmenu/menu/function/prev
 
+#To legendary
+execute unless items entity @s[scores={kitTheme=1..}] inventory.21 minecraft:carrot_on_a_stick run function du-in:lobby/kitmenu/menu/function/to_legend
+
+#Theme Displays
+execute unless items entity @s inventory.9 minecraft:carrot_on_a_stick run function du-in:lobby/kitmenu/menu/theme_display
+
+#Skin menu
+execute if entity @s[tag=skinMenu] run return run function du-in:lobby/kitmenu/skins/common
+
+##DEFAULTS
 #Random button
 execute unless items entity @s[scores={kitTheme=0}] inventory.19 minecraft:barrier run function du-in:lobby/kitmenu/menu/function/random_legend
 execute unless items entity @s[scores={kitTheme=1..}] inventory.19 minecraft:barrier run function du-in:lobby/kitmenu/menu/function/random
 
 #Spectate button
 execute unless items entity @s[scores={kitTheme=0..},tag=!playing] inventory.26 minecraft:barrier run function du-in:lobby/kitmenu/menu/function/spectate
-
-#To legendary
-execute unless items entity @s[scores={kitTheme=1..}] inventory.21 minecraft:carrot_on_a_stick run function du-in:lobby/kitmenu/menu/function/to_legend
-
-#Theme Displays
-execute unless items entity @s inventory.9 minecraft:carrot_on_a_stick run function du-in:lobby/kitmenu/menu/theme_display
 
 #Give info on character
 execute if entity @s[scores={info=1..}] run function du-in:lobby/kitmenu/select/info
