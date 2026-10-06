@@ -1,0 +1,12 @@
+{
+  "type": "minecraft:location_check",
+  "entity": "this",
+  "predicate": {
+    "light": {
+      "light": {
+        "min": 0,
+        "max": 3
+      }
+    }
+  }
+}
