@@ -29,7 +29,7 @@ tag @a remove vendingMachine
 tag @a remove voidSpect
 tag @a remove lostStreak
 
-execute as @a[tag=randomSkins] run function du-in:skin_menu/actions/random
+execute as @a[tag=randomSkins] run function du-in:lobby/kitmenu/skins/actions/random
 
 execute as @a run function du-in:storage/reset
 

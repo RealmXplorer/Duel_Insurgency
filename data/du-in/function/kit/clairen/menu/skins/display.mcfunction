@@ -1,6 +1,6 @@
 #Functionality
-execute if entity @s[scores={skinList=..0},tag=clairenSkins] run function du-in:kit/clairen/menu/skins/select
-execute if entity @s[scores={skinList=..0},tag=!clairenSkins] run function du-in:kit/clairen/menu/skins/try
+execute if entity @s[scores={kitList=..0},tag=clairenSkins] run function du-in:kit/clairen/menu/skins/select
+execute if entity @s[scores={kitList=..0},tag=!clairenSkins] run function du-in:kit/clairen/menu/skins/try
 
 #Void Head
 execute if score #main pylonsDestroyed matches 3.. run item replace entity @s inventory.3 with minecraft:player_head[custom_data={du-in:'clairenHead'},custom_name={text:"I SEE YOU",color:gray,bold:true},lore=[{text:"Clairen",color:"#8ff0f7",bold:true,"italic":true}],profile={id:[I;318736035,-1403303440,-1876061664,-609467480],name:"",properties:[{name:"textures",value:"eyJ0ZXh0dXJlcyI6eyJTS0lOIjp7InVybCI6Imh0dHA6Ly90ZXh0dXJlcy5taW5lY3JhZnQubmV0L3RleHR1cmUvYTdlMGE5MGMyYjg0ODU1YzkwMDYzNmNmYzkyNWQ5ZjJkMDc4NjliMGNiZmE1MzhlMjYxMDcyMGI3ZDI0YWVlNSJ9fX0="}]}] 1
@@ -13,5 +13,3 @@ execute unless score #main pylonsDestroyed matches 3.. unless entity @s[scores={
 
 execute unless score #main pylonsDestroyed matches 3.. run item replace entity @s[scores={clairenSkin=1},tag=clairenSkins] inventory.3 with minecraft:player_head[custom_data={du-in:'clairenHead'},custom_name={text:"Festive",color:white,bold:true,italic:false},lore=[{text:"Clairen",color:"#8ff0f7",bold:true,"italic":true}],profile={id:[I;362162431,-1389739602,-1387506468,-619197374],name:"",properties:[{name:"textures",value:"eyJ0ZXh0dXJlcyI6eyJTS0lOIjp7InVybCI6Imh0dHA6Ly90ZXh0dXJlcy5taW5lY3JhZnQubmV0L3RleHR1cmUvYzM5NWZmMDFiZDVmYjVkM2I1YWNiZTU1OWM0NDlhOThhZjlkYzE5YjMwMjJhOTg5NTI3Yzg3MTAzNTZhODYzZSJ9fX0="}]}]
 execute unless score #main pylonsDestroyed matches 3.. run item replace entity @s[scores={clairenSkin=2},tag=clairenSkins] inventory.3 with minecraft:player_head[custom_data={du-in:'clairenHead'},custom_name={text:"Lovers",color:white,bold:true,italic:false},lore=[{text:"Clairen",color:"#8ff0f7",bold:true,"italic":true}],profile={id:[I;1329323876,1363494325,-1671964151,-1487826333],properties:[{name:"textures",value:"eyJ0ZXh0dXJlcyI6eyJTS0lOIjp7InVybCI6Imh0dHA6Ly90ZXh0dXJlcy5taW5lY3JhZnQubmV0L3RleHR1cmUvM2I4NTM4NzQ3Yjg3MjFhYmM5OWZkMDlkNTQxYjg5Y2ZjNDg5YjVhMzhmZGQxNDBiOWM4ODNlOWZlZGEyMzQzOSJ9fX0="}]}]
-
-execute if entity @s[scores={skinList=3}] run scoreboard players remove @s skinList 1

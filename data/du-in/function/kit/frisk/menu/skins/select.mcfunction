@@ -3,7 +3,7 @@ clear @s player_head[custom_data={du-in:'friskHead'}]
 scoreboard players add @s friskSkin 1
 scoreboard players reset @s[scores={friskSkin=3..}] friskSkin
 
-function du-in:skin_menu/actions/select_sound
+function du-in:lobby/kitmenu/skins/actions/select_sound
 
 
 execute unless entity @s[scores={friskSkin=1..}] run tellraw @s[tag=!pickPreset] [{text:"Default Frisk ",bold:true,color:gold},{text:"skin selected!",color:yellow}]

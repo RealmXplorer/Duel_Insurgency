@@ -1,6 +1,6 @@
 #Functionality
-execute if entity @s[scores={skinList=..0},tag=friskSkins] run function du-in:kit/frisk/menu/skins/select
-execute if entity @s[scores={skinList=..0},tag=!friskSkins] run function du-in:kit/frisk/menu/skins/try
+execute if entity @s[scores={kitList=..0},tag=friskSkins] run function du-in:kit/frisk/menu/skins/select
+execute if entity @s[scores={kitList=..0},tag=!friskSkins] run function du-in:kit/frisk/menu/skins/try
 
 #Void Head
 execute if score #main pylonsDestroyed matches 3.. run item replace entity @s inventory.2 with minecraft:player_head[custom_data={du-in:'friskHead'},custom_name={text:"I SEE YOU",color:gray,bold:true},lore=[{text:"Frisk",color:aqua,bold:true,"italic":true}],profile={id:[I;318736035,-1403303440,-1876061664,-609467480],name:"",properties:[{name:"textures",value:"eyJ0ZXh0dXJlcyI6eyJTS0lOIjp7InVybCI6Imh0dHA6Ly90ZXh0dXJlcy5taW5lY3JhZnQubmV0L3RleHR1cmUvYTdlMGE5MGMyYjg0ODU1YzkwMDYzNmNmYzkyNWQ5ZjJkMDc4NjliMGNiZmE1MzhlMjYxMDcyMGI3ZDI0YWVlNSJ9fX0="}]}] 1
@@ -20,5 +20,3 @@ execute unless score #main pylonsDestroyed matches 3.. run item replace entity @
 execute unless score #main pylonsDestroyed matches 3.. run item replace entity @s[scores={friskSkin=2},tag=friskSkins] inventory.2 with minecraft:player_head[custom_data={du-in:'friskHead'},custom_name={text:"Priest",color:white,bold:true,italic:false},lore=[{text:"Frisk",color:aqua,bold:true,"italic":true}],profile={id:[I;-1590443435,829243816,-2071605894,1474773107],name:"",properties:[{name:"textures",value:"eyJ0ZXh0dXJlcyI6eyJTS0lOIjp7InVybCI6Imh0dHA6Ly90ZXh0dXJlcy5taW5lY3JhZnQubmV0L3RleHR1cmUvNDVhNWJhNWY2ZDQ1YTU2ZmRkNzZiNjJlM2RjZmFiYmZjNWYyNTZjODU4Zjc0ZDA2MjUyNDRhZTM0Y2E3NjRmIn19fQ=="}]}] 1
 #{SkullOwner:{Id:[I;-1590443435,829243816,-2071605894,1474773107],Properties:{textures:[{Value:"eyJ0ZXh0dXJlcyI6eyJTS0lOIjp7InVybCI6Imh0dHA6Ly90ZXh0dXJlcy5taW5lY3JhZnQubmV0L3RleHR1cmUvNDVhNWJhNWY2ZDQ1YTU2ZmRkNzZiNjJlM2RjZmFiYmZjNWYyNTZjODU4Zjc0ZDA2MjUyNDRhZTM0Y2E3NjRmIn19fQ=="}]}}}
 #,profile={id:[I;-1590443435,829243816,-2071605894,1474773107],name:"",properties:[{name:"textures",value:"eyJ0ZXh0dXJlcyI6eyJTS0lOIjp7InVybCI6Imh0dHA6Ly90ZXh0dXJlcy5taW5lY3JhZnQubmV0L3RleHR1cmUvNDVhNWJhNWY2ZDQ1YTU2ZmRkNzZiNjJlM2RjZmFiYmZjNWYyNTZjODU4Zjc0ZDA2MjUyNDRhZTM0Y2E3NjRmIn19fQ=="}]}
-
-execute if entity @s[scores={skinList=2}] run scoreboard players remove @s skinList 1

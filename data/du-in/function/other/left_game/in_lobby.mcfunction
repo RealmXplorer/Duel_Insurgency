@@ -26,9 +26,9 @@ execute if entity @a[tag=partyLeader,tag=cql] run tag @s add cql
 execute if entity @a[tag=partyLeader,tag=cmap] run tag @s add cmap
 
 #In gamemode select
-execute if entity @a[tag=partyLeader,tag=kitMenu,tag=lobby] run function du-in:lobby/kitmenu/init
+execute if entity @a[tag=partyLeader,tag=kitMenu,scores={lobby=2}] run function du-in:lobby/kitmenu/init
 
-execute if entity @a[tag=partyLeader,tag=!kitMenu,tag=lobby] run function du-in:other/left_game/not_in_kit_menu
+execute if entity @a[tag=partyLeader,scores={lobby=1}] run function du-in:other/left_game/not_in_kit_menu
 
 attribute @s minecraft:armor base set 0
 attribute @s minecraft:armor_toughness base set 0

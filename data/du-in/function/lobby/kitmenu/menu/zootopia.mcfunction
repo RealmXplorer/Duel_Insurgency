@@ -7,10 +7,10 @@ execute if entity @s[tag=kitsListed] run scoreboard players set @s kitList 4
 #function du-in:lobby/kitmenu/menu/zootopia/find with storage du-in:zootopia list
 
 #Display Kits
-execute unless items entity @s inventory.4 minecraft:player_head run function du-in:kit/pawbert/menu/display
-execute unless items entity @s inventory.3 minecraft:player_head run function du-in:kit/bogo/menu/display
-execute unless items entity @s inventory.2 minecraft:player_head run function du-in:kit/judy/menu/display
-execute unless items entity @s inventory.1 minecraft:player_head run function du-in:kit/nick/menu/display
+execute unless items entity @s inventory.4 minecraft:player_head run function du-in:kit/pawbert/menu/init
+execute unless items entity @s inventory.3 minecraft:player_head run function du-in:kit/bogo/menu/init
+execute unless items entity @s inventory.2 minecraft:player_head run function du-in:kit/judy/menu/init
+execute unless items entity @s inventory.1 minecraft:player_head run function du-in:kit/nick/menu/init
 
 #Add Zootopia menu display icon
 #execute unless items entity @s inventory.9 minecraft:carrot_on_a_stick run function du-in:lobby/kitmenu/menu/display/zt

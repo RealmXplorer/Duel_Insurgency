@@ -1,9 +1,9 @@
 clear @s player_head[custom_data={du-in:'deathHead'}]
-function du-in:skin_menu/actions/invalid_skin
+function du-in:lobby/kitmenu/skins/actions/invalid_skin
 
 # scoreboard players add @s zombSkin 1
 # scoreboard players reset @s[scores={zombSkin=5..}] zombSkin
-# function du-in:skin_menu/actions/select_sound
+# function du-in:lobby/kitmenu/skins/actions/select_sound
 
 # execute unless entity @s[scores={zombSkin=1..}] run tellraw @s[tag=!pickPreset] [{text:"Default Zombie ",bold:true,color:gold},{text:"skin selected!",color:yellow}]
 # tellraw @s[tag=!pickPreset,scores={zombSkin=1}] [{text:"Husk ",bold:true,color:yellow},{text:"skin selected!",color:yellow}]

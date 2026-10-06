@@ -1,7 +1,7 @@
 scoreboard players add @s wildeSkin 1
 
 scoreboard players reset @s[scores={wildeSkin=7..}] wildeSkin
-function du-in:skin_menu/actions/select_sound
+function du-in:lobby/kitmenu/skins/actions/select_sound
 
 clear @s player_head[custom_data={du-in:'nickHead'}]
 

@@ -292,8 +292,8 @@ scoreboard objectives add musicCycle dummy
 scoreboard objectives add prize dummy
 scoreboard objectives add ranMode dummy
 scoreboard objectives add vendMode dummy
-scoreboard objectives add skinList dummy
-scoreboard objectives add skinTheme dummy
+#scoreboard objectives add skinList dummy
+#scoreboard objectives add skinTheme dummy
 scoreboard objectives add spamMode dummy
 
 scoreboard objectives add tKillScale dummy

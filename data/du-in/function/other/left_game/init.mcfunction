@@ -101,8 +101,8 @@ scoreboard players set @s kitTheme 1
 function du-in:lobby/reset/item
 scoreboard players set @s kitList 8
 tag @s[tag=kitMenu] add kitsListed
-scoreboard players set @s skinList 20
-tag @s add skinsListed
+#scoreboard players set @s skinList 20
+tag @s[tag=skinMenu] add skinsListed
 
 #Create Storage (or clear kit if created)
 execute store result storage du-in:main player.current int 1 run scoreboard players get @s player

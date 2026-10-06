@@ -2,7 +2,7 @@ clear @s player_head[custom_data={du-in:'ralseiHead'}]
 
 scoreboard players add @s ralSkin 1
 scoreboard players reset @s[scores={ralSkin=4..}] ralSkin
-function du-in:skin_menu/actions/select_sound
+function du-in:lobby/kitmenu/skins/actions/select_sound
 
 execute unless entity @s[scores={ralSkin=1..}] run tellraw @s[tag=!pickPreset] [{text:"Default Ralsei ",bold:true,color:gold},{text:"skin selected!",color:yellow}]
 tellraw @s[tag=!pickPreset,scores={ralSkin=1}] [{text:"Chapter I Ralsei ",bold:true,color:green},{text:"skin selected!",color:yellow}]

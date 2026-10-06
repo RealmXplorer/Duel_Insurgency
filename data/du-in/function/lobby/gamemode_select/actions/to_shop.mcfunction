@@ -35,9 +35,11 @@ title @s title {text:"",color:red,bold:true}
 title @s subtitle {text:"",color:red,bold:true}
 
 #Initiate Skin menu
-scoreboard players set @s skinTheme 1
-scoreboard players set @s skinList 8
-tag @s add skinsListed
+#scoreboard players set @s skinTheme 1
+#scoreboard players set @s skinList 8
+#tag @s add skinsListed
+
 execute unless entity @a[scores={LEVEL_OF_FUN=1..}] run tag @s add skinMenu
+execute unless entity @a[scores={LEVEL_OF_FUN=1..}] run function du-in:lobby/kitmenu/init
 function du-in:lobby/scheduled/shop
 playsound minecraft:entity.ender_dragon.flap master @s ~ ~ ~ 1 1.5

@@ -1,11 +1,11 @@
 #Functionality
-execute if entity @s[scores={skinList=..0}] run function du-in:kit/vader/menu/skins/select
+execute if entity @s[scores={kitList=..0}] run function du-in:kit/vader/menu/skins/select
 
 execute unless score #main pylonsDestroyed matches 3.. run item replace entity @s inventory.2 with minecraft:player_head[custom_data={du-in:'vaderHead'},custom_name={text:"Darth Vader Skins",color:white,bold:true,italic:false},lore=[{text:"None Available!",color:red,bold:true,"italic":true}],profile={properties:[{name:"textures",value:"eyJ0ZXh0dXJlcyI6eyJTS0lOIjp7InVybCI6Imh0dHA6Ly90ZXh0dXJlcy5taW5lY3JhZnQubmV0L3RleHR1cmUvMTkxOWQxNTk0YmY4MDlkYjdiNDRiMzc4MmJmOTBhNjlmNDQ5YTg3Y2U1ZDE4Y2I0MGViNjUzZmRlYzI3MjIifX19"}]}] 1
 
 
-# execute if entity @s[scores={skinList=..0},tag=vaderSkins] run function du-in:kit/vader/menu/skins/select
-# execute if entity @s[scores={skinList=..0},tag=!vaderSkins] run function du-in:kit/vader/menu/skins/try
+# execute if entity @s[scores={kitList=..0},tag=vaderSkins] run function du-in:kit/vader/menu/skins/select
+# execute if entity @s[scores={kitList=..0},tag=!vaderSkins] run function du-in:kit/vader/menu/skins/try
 
 # #Void Head
 execute if score #main pylonsDestroyed matches 3.. run item replace entity @s inventory.2 with minecraft:player_head[custom_data={du-in:'vaderHead'},custom_name={text:"I SEE YOU",color:gray,bold:true},lore=[{text:"Darth Vader",color:green,bold:true,"italic":true}],profile={id:[I;318736035,-1403303440,-1876061664,-609467480],name:"",properties:[{name:"textures",value:"eyJ0ZXh0dXJlcyI6eyJTS0lOIjp7InVybCI6Imh0dHA6Ly90ZXh0dXJlcy5taW5lY3JhZnQubmV0L3RleHR1cmUvYTdlMGE5MGMyYjg0ODU1YzkwMDYzNmNmYzkyNWQ5ZjJkMDc4NjliMGNiZmE1MzhlMjYxMDcyMGI3ZDI0YWVlNSJ9fX0="}]}] 1
@@ -15,5 +15,3 @@ execute if score #main pylonsDestroyed matches 3.. run item replace entity @s in
 
 # #Display Heads
 # execute unless score #main pylonsDestroyed matches 3.. unless entity @s[scores={zombSkin=1..}] run item replace entity @s[tag=zombSkins] inventory.6 with minecraft:player_head[custom_data={du-in:'zombieHead'},custom_name={text:"Default",color:white,bold:true,italic:false},lore=[{text:"Zombie",color:green,bold:true,"italic":true}],profile={id:[I;-1722163816,-273461527,-1459933222,35179936],name:"",properties:[{name:"textures",value:"eyJ0ZXh0dXJlcyI6eyJTS0lOIjp7InVybCI6Imh0dHA6Ly90ZXh0dXJlcy5taW5lY3JhZnQubmV0L3RleHR1cmUvNTZmYzg1NGJiODRjZjRiNzY5NzI5Nzk3M2UwMmI3OWJjMTA2OTg0NjBiNTFhNjM5YzYwZTVlNDE3NzM0ZTExIn19fQ=="}]}]
-
-execute if entity @s[scores={skinList=2}] run scoreboard players remove @s skinList 1

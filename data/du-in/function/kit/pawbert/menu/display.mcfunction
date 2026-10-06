@@ -6,7 +6,6 @@ execute if entity @s[scores={kitList=..0}] run function du-in:kit/pawbert/menu/s
 item replace entity @s[tag=kitMenu] inventory.4 with minecraft:player_head[custom_data={du-in:'pawbertHead'},custom_name={text:"Pawbert Lynxley",color:white,bold:true,italic:false},lore=[{text:"Zootopia 2",color:"#40c962",bold:true,"italic":true}],profile={properties:[{name:"textures",value:"eyJ0ZXh0dXJlcyI6eyJTS0lOIjp7InVybCI6Imh0dHA6Ly90ZXh0dXJlcy5taW5lY3JhZnQubmV0L3RleHR1cmUvNWFiY2Y0Mjk3MGRjZDAxMDYxYzZhMTc4NDdiODdlZjRmMTFkZmNhNGIzODc1ZThlMzhiYzkyODcxMDIwNWJhOCJ9fX0="}]}] 1
 
 #End
-execute if entity @s[scores={kitList=4}] run scoreboard players remove @s kitList 1
 
 
 #NEW TESTING VERSION

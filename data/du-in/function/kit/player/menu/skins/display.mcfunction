@@ -36,6 +36,4 @@ execute unless score #main pylonsDestroyed matches 3.. run item replace entity @
 #{SkullOwner:{Id:[I;-1806535104,-1322367265,-1595469683,1551887155],Properties:{textures:[{Value:"eyJ0ZXh0dXJlcyI6eyJTS0lOIjp7InVybCI6Imh0dHA6Ly90ZXh0dXJlcy5taW5lY3JhZnQubmV0L3RleHR1cmUvYWRlMTYwZDExN2YzYzkzMTY0YmM1OWM2OWEzYTQ1YTViMzU4MTQ0MGRlODAwMjdhZTE1OTQ5ODNhMzc1N2MzMyJ9fX0="}]}}}
 #,profile={id:[I;-1806535104,-1322367265,-1595469683,1551887155],name:"",properties:[{name:"textures",value:"eyJ0ZXh0dXJlcyI6eyJTS0lOIjp7InVybCI6Imh0dHA6Ly90ZXh0dXJlcy5taW5lY3JhZnQubmV0L3RleHR1cmUvYWRlMTYwZDExN2YzYzkzMTY0YmM1OWM2OWEzYTQ1YTViMzU4MTQ0MGRlODAwMjdhZTE1OTQ5ODNhMzc1N2MzMyJ9fX0="}]}
 
-execute if entity @s[scores={kitList=2}] run scoreboard players remove @s kitList 1
-
 #750

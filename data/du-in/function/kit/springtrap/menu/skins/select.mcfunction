@@ -2,7 +2,7 @@ clear @s player_head[custom_data={du-in:'springHead'}]
 
 scoreboard players add @s springSkin 1
 scoreboard players reset @s[scores={springSkin=7..}] springSkin
-function du-in:skin_menu/actions/select_sound
+function du-in:lobby/kitmenu/skins/actions/select_sound
 
 execute unless entity @s[scores={springSkin=1..}] run tellraw @s[tag=!pickPreset] [{text:"Default Springtrap ",bold:true,color:gold},{text:"skin selected!",color:yellow}]
 tellraw @s[tag=!pickPreset,scores={springSkin=1}] [{text:"Stalktrap ",bold:true,color:"#b558f5"},{text:"skin selected!",color:yellow}]

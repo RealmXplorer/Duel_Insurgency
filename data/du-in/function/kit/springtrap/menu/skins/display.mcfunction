@@ -1,6 +1,6 @@
 #Functionality
-execute if entity @s[scores={skinList=..0},tag=springSkins] run function du-in:kit/springtrap/menu/skins/select
-execute if entity @s[scores={skinList=..0},tag=!springSkins] run function du-in:kit/springtrap/menu/skins/try
+execute if entity @s[scores={kitList=..0},tag=springSkins] run function du-in:kit/springtrap/menu/skins/select
+execute if entity @s[scores={kitList=..0},tag=!springSkins] run function du-in:kit/springtrap/menu/skins/try
 
 #Void Head
 execute if score #main pylonsDestroyed matches 3.. run item replace entity @s inventory.1 with minecraft:player_head[custom_data={du-in:'springHead'},custom_name={text:"I SEE YOU",color:gray,bold:true},lore=[{text:"Springtrap",color:aqua,bold:true,"italic":true}],profile={id:[I;318736035,-1403303440,-1876061664,-609467480],name:"",properties:[{name:"textures",value:"eyJ0ZXh0dXJlcyI6eyJTS0lOIjp7InVybCI6Imh0dHA6Ly90ZXh0dXJlcy5taW5lY3JhZnQubmV0L3RleHR1cmUvYTdlMGE5MGMyYjg0ODU1YzkwMDYzNmNmYzkyNWQ5ZjJkMDc4NjliMGNiZmE1MzhlMjYxMDcyMGI3ZDI0YWVlNSJ9fX0="}]}] 1
@@ -16,5 +16,3 @@ execute unless score #main pylonsDestroyed matches 3.. run item replace entity @
 execute unless score #main pylonsDestroyed matches 3.. run item replace entity @s[scores={springSkin=4},tag=springSkins] inventory.1 with minecraft:player_head[custom_data={du-in:'springHead'},custom_name={text:"Flametrap",color:white,bold:true,italic:false},lore=[{text:"Springtrap",color:"#961FFF",bold:true,"italic":true}],profile={id:[I;-1743240953,962805853,-1677212989,-125648568],name:"",properties:[{name:"textures",value:"eyJ0ZXh0dXJlcyI6eyJTS0lOIjp7InVybCI6Imh0dHA6Ly90ZXh0dXJlcy5taW5lY3JhZnQubmV0L3RleHR1cmUvYWQzYWU3ZmI2YzliNDFlN2E4NjgwYzRiNDYwNzVlOTNmYjBjZTkzNjhlNzBlM2Q1N2M0Mzc1M2RiMDdkMDk2YiJ9fX0="}]}] 1
 execute unless score #main pylonsDestroyed matches 3.. run item replace entity @s[scores={springSkin=5},tag=springSkins] inventory.1 with minecraft:player_head[custom_data={du-in:'springHead'},custom_name={text:"Roxanne Wolf",color:white,bold:true,italic:false},lore=[{text:"Springtrap",color:"#961FFF",bold:true,"italic":true}],profile={properties: [{name:"Roxy",value: "eyJ0ZXh0dXJlcyI6eyJTS0lOIjp7InVybCI6Imh0dHBzOi8vdGV4dHVyZXMubWluZWNyYWZ0Lm5ldC90ZXh0dXJlLzJhYWYwMWM1MGM3MzJiYjUyMDFiZGI1NjI2MjAwNWQ4MmZlOTA0NGQzN2Y0MmIwNGM5ODE5NzIzNTdhMTE1YjAifX19"}]}] 1
 execute unless score #main pylonsDestroyed matches 3.. run item replace entity @s[scores={springSkin=6},tag=springSkins] inventory.1 with minecraft:player_head[custom_data={du-in:'springHead'},custom_name={text:"Jack Torrance",color:white,bold:true,italic:false},lore=[{text:"Springtrap",color:"#961FFF",bold:true,"italic":true}],profile={properties:[{name:"textures",value:"eyJ0ZXh0dXJlcyI6eyJTS0lOIjp7InVybCI6Imh0dHA6Ly90ZXh0dXJlcy5taW5lY3JhZnQubmV0L3RleHR1cmUvZTBkYWIwNzk0Mzc0ZGFhYTVjNjYxMmJlZjFlNWYxY2Q0M2EwN2Q2MTM4NDVkNWRhMTQwMTYxNGE4MDUzZmFjNCJ9fX0="}]}] 1
-
-execute if entity @s[scores={skinList=1}] run scoreboard players remove @s skinList 1
