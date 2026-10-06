@@ -59,6 +59,9 @@ scoreboard objectives add starTravelTime dummy
 scoreboard objectives add starCount dummy
 scoreboard objectives add starTimer minecraft.custom:minecraft.play_time
 scoreboard objectives add flashCookTime dummy
+scoreboard objectives add lightScanX dummy
+scoreboard objectives add lightScanY dummy
+scoreboard objectives add lightScanZ dummy
 
 #Timers
 scoreboard objectives add ambience dummy
