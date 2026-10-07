@@ -11,5 +11,6 @@ execute if entity @a[tag=partyLeader,tag=specialEvent] run tellraw @a [{selector
 scoreboard players set @s kit 9
 $data modify storage du-in:player$(current) kit set value {"kit":"chara"}
 
+scoreboard players set @s kitGender 2
 
 function du-in:lobby/kitmenu/select/common

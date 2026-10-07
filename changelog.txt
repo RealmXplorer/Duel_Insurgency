@@ -1,5 +1,5 @@
 ***7/11/26 - ??/??/??:***
-***Version 1.6 - The Last Autumn:***
+***Version 1.6 - The Edge of Shadow:***
 *Additions*
 -Added Willo character.
 -Added Roaring Knight character.
@@ -100,6 +100,8 @@
 -Added "du-in:non_firelight" block tag to test for light blocks (that don't have fire).
 -Added "minecraft:copper_bulbs" block tag to test for Copper bulbs.
 -Added "minecraft:froglights" block tag to test for froglights.
+-Added "kitGender" score to test for which type of underwear kits should wear.
+-Added "du-in:light_level/" predicates to test for light levels.
 
 *Resourcepack Changes*
 -Moved all Duel-related audio to "du-in:sounds" folder and organized it much better.

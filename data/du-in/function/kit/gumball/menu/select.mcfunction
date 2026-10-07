@@ -10,4 +10,6 @@ execute if entity @a[tag=partyLeader,tag=specialEvent] run tellraw @a [{selector
 
 tag @s add hasSecond
 
+scoreboard players set @s kitGender 1
+
 function du-in:lobby/kitmenu/select/common

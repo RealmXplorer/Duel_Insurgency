@@ -15,5 +15,7 @@ scoreboard players set @s kit 5
 $data modify storage du-in:player$(current) kit set value {"kit":"springtrap"}
 tag @s[tag=playing] add undead
 
+scoreboard players set @s kitGender 1
+
 #Clear and remove tags
 function du-in:lobby/kitmenu/select/common

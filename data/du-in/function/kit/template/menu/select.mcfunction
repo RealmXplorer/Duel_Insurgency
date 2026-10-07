@@ -14,5 +14,13 @@ execute if entity @a[tag=partyLeader,tag=specialEvent] run tellraw @a [{selector
 scoreboard players set @s kit 18
 $data modify storage du-in:player$(current) kit set value {"kit":"template"}
 
+#Set kit gender (This is to make sure they get the right "darwin" underwear
+scoreboard players set @s kitGender 1
+
+#1 = Male
+#2 = Female
+#3 = Male with no arms
+#4 = Female with no arms
+
 #Clear and remove tags
 function du-in:lobby/kitmenu/select/common

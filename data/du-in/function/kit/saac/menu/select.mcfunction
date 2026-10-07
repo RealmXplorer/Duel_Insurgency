@@ -17,6 +17,8 @@ $data modify storage du-in:player$(current) kit set value {"kit":"saac"}
 #Clear and remove tags
 function du-in:lobby/kitmenu/select/common
 
+scoreboard players set @s kitGender 1
+
 #Play Saac music
 tag @s[tag=!legMusicOff,tag=!ctfl,tag=!cql] add saac
 tag @s[tag=!legMusicOff,tag=!ctfl,tag=!cql] add musOverride

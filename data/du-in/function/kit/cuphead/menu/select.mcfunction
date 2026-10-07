@@ -13,4 +13,7 @@ execute if entity @s[predicate=du-in:chance/half_chance] run tellraw @s [{text:"
 tag @s add noMainWeapon
 tag @s add hasSecond
 
+scoreboard players set @s kitGender 1
+execute if entity @s[scores={cupSkin=2}] run scoreboard players set @s kitGender 2
+
 function du-in:lobby/kitmenu/select/common

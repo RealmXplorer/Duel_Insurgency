@@ -1,2 +1,2 @@
-scoreboard players set @n[type=marker,tag=light,tag=unset] lightTimer 100
-tag @e[type=marker,tag=light,tag=unset,scores={lightTimer=1..}] remove unset
+scoreboard players set @s lightTimer 100
+tag @s remove unset

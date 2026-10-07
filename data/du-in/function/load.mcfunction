@@ -65,6 +65,8 @@ scoreboard objectives add lightScanZ dummy
 scoreboard objectives add lightType dummy
 scoreboard objectives add lightVariant dummy
 scoreboard objectives add lightTimer dummy
+scoreboard objectives add kitGender dummy
+scoreboard objectives add lightLevel dummy
 
 #Timers
 scoreboard objectives add ambience dummy

@@ -1,1 +1,1 @@
-#Runs when countdown for the game ends.
+#Runs when countdown for the start of game ends.

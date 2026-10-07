@@ -11,4 +11,6 @@ execute if entity @a[tag=partyLeader,tag=specialEvent] run tellraw @a [{selector
 #Add Sus tag (allows venting)
 tag @s add sus
 
+scoreboard players set @s kitGender 4
+
 function du-in:lobby/kitmenu/select/common

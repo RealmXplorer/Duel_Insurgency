@@ -21,5 +21,8 @@ execute if entity @a[tag=partyLeader,tag=specialEvent] run tellraw @a [{selector
 #Reset lobby scores and tags
 function du-in:lobby/kitmenu/select/common
 
+#Kit gender (for darwin underwear)
+scoreboard players set @s kitGender 1
+
 #Chance to make Spider a Cave Spider
 tag @s[predicate=du-in:chance/ten_chance] add caveSpider

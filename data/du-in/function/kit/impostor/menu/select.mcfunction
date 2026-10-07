@@ -19,6 +19,8 @@ scoreboard players set @s kit 1002
 
 $data modify storage du-in:player$(current) kit set value {"kit":"impostor"}
 
+scoreboard players set @s kitGender 1
+
 #Clear and remove tags
 function du-in:lobby/kitmenu/select/common
 

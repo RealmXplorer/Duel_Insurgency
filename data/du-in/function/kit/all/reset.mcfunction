@@ -54,6 +54,7 @@ scoreboard players reset @s skeletonMode
 scoreboard players reset @s cinderType
 
 scoreboard players set @s deathWeapSwitch 0
+scoreboard players set @s kitGender 0
 
 #Attributes
 function du-in:kit/all/attribute/reset

@@ -14,6 +14,8 @@ execute if entity @a[tag=partyLeader,tag=specialEvent] run tellraw @a [{selector
 scoreboard players set @s kit 28
 $data modify storage du-in:player$(current) kit set value {"kit":"death"}
 
+scoreboard players set @s kitGender 1
+
 tag @s add hasSecond
 
 #Clear and remove tags
