@@ -1,0 +1,1 @@
+$say $(name), $(num), $(rank), $(slot), $(group) 
