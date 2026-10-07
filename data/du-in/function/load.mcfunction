@@ -466,6 +466,18 @@ scoreboard players set #main mapTimerMax 300
 
 execute unless score #main timerClose matches 1.. run function du-in:storage/timers/set_storage
 
+scoreboard objectives add Object.drop.null minecraft.dropped:minecraft.string
+scoreboard objectives add Object.map.return dummy
+scoreboard objectives add Time.add dummy
+scoreboard objectives add FRIEND dummy
+scoreboard objectives add UUID.0 dummy
+scoreboard objectives add UUID.1 dummy
+scoreboard objectives add UUID.2 dummy
+scoreboard objectives add UUID.3 dummy
+scoreboard objectives add FUN dummy
+scoreboard objectives add LEVEL_OF_FUN dummy
+scoreboard objectives add listLength dummy
+
 #Build kit lists
 data modify storage du-in:unlock list set value {"size":7}
 data modify storage du-in:minecraft list set value {"size":8}
@@ -479,20 +491,10 @@ data modify storage du-in:grabbag list set value {"size":10}
 data modify storage du-in:new_kit kit set value {"name":"","num":0,"group":"",rank:0,slot:0}
 
 #Build Kit storages
-data modify storage du-in:zootopia1 kit set value {"name":"nick","num":23,"group":"zootopia",rank:1,slot:1}
-data modify storage du-in:zootopia2 kit set value {"name":"judy","num":35,"group":"zootopia",rank:2,slot:2}
-data modify storage du-in:zootopia3 kit set value {"name":"bogo","num":38,"group":"zootopia",rank:3,slot:3}
-data modify storage du-in:zootopia4 kit set value {"name":"pawbert","num":40,"group":"zootopia",rank:4,slot:4}
+#data modify storage du-in:zootopia1 kit set value {"name":"nick","num":23,"group":"zootopia",rank:1,slot:1}
+#data modify storage du-in:zootopia2 kit set value {"name":"judy","num":35,"group":"zootopia",rank:2,slot:2}
+#data modify storage du-in:zootopia3 kit set value {"name":"bogo","num":38,"group":"zootopia",rank:3,slot:3}
+#data modify storage du-in:zootopia4 kit set value {"name":"pawbert","num":40,"group":"zootopia",rank:4,slot:4}
 
-scoreboard objectives add Object.drop.null minecraft.dropped:minecraft.string
-scoreboard objectives add Object.map.return dummy
-scoreboard objectives add Time.add dummy
-scoreboard objectives add FRIEND dummy
-scoreboard objectives add UUID.0 dummy
-scoreboard objectives add UUID.1 dummy
-scoreboard objectives add UUID.2 dummy
-scoreboard objectives add UUID.3 dummy
-scoreboard objectives add FUN dummy
-scoreboard objectives add LEVEL_OF_FUN dummy
-
-
+#Build Zootopia kit storage
+data merge storage du-in:zootopia {kit_list:[{"name":"nick","num":23,"group":"zootopia",rank:1,slot:1},{"name":"judy","num":35,"group":"zootopia",rank:2,slot:2},{"name":"bogo","num":38,"group":"zootopia",rank:3,slot:3},{"name":"pawbert","num":40,"group":"zootopia",rank:4,slot:4}]}
