@@ -102,4 +102,9 @@ attribute @s armor_toughness modifier remove parry
 attribute @s minecraft:armor modifier remove parry_resist
 attribute @s minecraft:armor_toughness modifier remove parry_resist
 
+##FREDDY
+attribute @s attack_damage modifier remove freddy_darkness
+attribute @s movement_speed modifier remove freddy_darkness
+
+
 ##COME BACK TO THIS

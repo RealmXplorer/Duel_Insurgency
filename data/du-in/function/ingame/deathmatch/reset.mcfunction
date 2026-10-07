@@ -15,4 +15,6 @@ tag @a remove dmDead
 tag @a remove dmIngame
 tag @a remove dmOut
 
+scoreboard players reset @a dmDeath
+
 advancement grant @a[tag=win,tag=!devMode] only du-in:challenge/deathmatch_win

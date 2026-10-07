@@ -71,6 +71,9 @@
 -Moved Runza eating test to an advancement.
 -Added "du-in:effect/has_resistance" predicate.
 -Added "kit/all/game_start/" functions, allowing all characters to have a function that runs on game start without hardcoded tests.
+    -Every character folder now has a "(kit)/events/game_starrt" file, which runs the moment a game starts (but before "intro").
+-Added "kit/all/reset/" functions. All characters now run their end of game resets independently, which is less optimized in some ways, but allows for easier management of per-character resets.
+    -Every character folder now has a "(kit)/events/reset" file which runs their resets on game end / pre-game start.
 -Added room.Between
 -Renamed "oldPack" tag for beta music to "beta".
 -Renamed "music/ingame/oldpack/" and "music/lobby/oldpack/" to "music/ingame/beta/" and "music/lobby/beta/".
@@ -102,6 +105,7 @@
 -Added "minecraft:froglights" block tag to test for froglights.
 -Added "kitGender" score to test for which type of underwear kits should wear.
 -Added "du-in:light_level/" predicates to test for light levels.
+-Removed "beetleDamage" and "beetleGhostTimer" objectives as they were unused.
 
 *Resourcepack Changes*
 -Moved all Duel-related audio to "du-in:sounds" folder and organized it much better.

@@ -21,7 +21,7 @@ clear @s #du-in:ability
 tag @s add cooldown
 
 #Remove Beetlejuice exemption
-tag @s remove beetleJuice
+#tag @s remove beetleJuice
 
 #Remove empower
 tag @s remove empower

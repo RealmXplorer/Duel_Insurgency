@@ -54,7 +54,7 @@ tag @s add cooldown
 #xp set @s[tag=!stolen] 500 levels
 
 #Remove Beetlejuice exemption
-tag @s remove beetleJuice
+#tag @s remove beetleJuice
 
 #Remove empower
 tag @s remove empower

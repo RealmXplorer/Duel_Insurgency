@@ -139,8 +139,8 @@ scoreboard objectives add kratosRage dummy
 scoreboard objectives add yodaTimer dummy
 scoreboard objectives add sauronTimer dummy
 scoreboard objectives add shrunkTimer dummy
-scoreboard objectives add beetleDamage dummy
-scoreboard objectives add beetleGhostTimer dummy
+#scoreboard objectives add beetleDamage dummy
+#scoreboard objectives add beetleGhostTimer dummy
 scoreboard objectives add showTimer dummy
 scoreboard objectives add pawbertTimer dummy
 scoreboard objectives add abilityDelay dummy
