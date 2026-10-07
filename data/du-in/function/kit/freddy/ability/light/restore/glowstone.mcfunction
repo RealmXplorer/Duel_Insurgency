@@ -1,0 +1,3 @@
+setblock ~ ~ ~ glowstone
+
+kill @s

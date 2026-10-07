@@ -18,5 +18,5 @@ execute if entity @s[tag=kyloHitPos] run return run function du-in:kit/kylo/abil
 #Willo Trap
 #execute if entity @s[tag=willoTrap] run function du-in:kit/willo/ability/trap/init
 
-#Kylo Freeze Spot
-#execute if entity @s[tag=willoBullet] run function du-in:kit/willo/revolver/marker_raycast
+#Freddy lights
+execute if entity @s[tag=light,tag=!unset] run function du-in:kit/freddy/ability/light/timer

@@ -1,0 +1,18 @@
+execute if entity @s[scores={lightVariant=0}] run setblock ~ ~ ~ light[level=0]
+execute if entity @s[scores={lightVariant=1}] run setblock ~ ~ ~ light[level=1]
+execute if entity @s[scores={lightVariant=2}] run setblock ~ ~ ~ light[level=2]
+execute if entity @s[scores={lightVariant=3}] run setblock ~ ~ ~ light[level=3]
+execute if entity @s[scores={lightVariant=4}] run setblock ~ ~ ~ light[level=4]
+execute if entity @s[scores={lightVariant=5}] run setblock ~ ~ ~ light[level=5]
+execute if entity @s[scores={lightVariant=6}] run setblock ~ ~ ~ light[level=6]
+execute if entity @s[scores={lightVariant=7}] run setblock ~ ~ ~ light[level=7]
+execute if entity @s[scores={lightVariant=8}] run setblock ~ ~ ~ light[level=8]
+execute if entity @s[scores={lightVariant=9}] run setblock ~ ~ ~ light[level=9]
+execute if entity @s[scores={lightVariant=10}] run setblock ~ ~ ~ light[level=10]
+execute if entity @s[scores={lightVariant=11}] run setblock ~ ~ ~ light[level=11]
+execute if entity @s[scores={lightVariant=12}] run setblock ~ ~ ~ light[level=12]
+execute if entity @s[scores={lightVariant=13}] run setblock ~ ~ ~ light[level=13]
+execute if entity @s[scores={lightVariant=14}] run setblock ~ ~ ~ light[level=14]
+execute if entity @s[scores={lightVariant=15}] run setblock ~ ~ ~ light[level=15]
+
+kill @s

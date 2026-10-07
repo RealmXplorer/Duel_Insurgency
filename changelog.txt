@@ -97,6 +97,9 @@
 -Skin Menu has been merged with kit menu. (skin menu functions can now be found in "lobby/kitmenu/skins/)
     -Removed "du-in:skin_menu/" folder.
     -Removed "skinList" and "skinTheme" objectives.
+-Added "du-in:non_firelight" block tag to test for light blocks (that don't have fire).
+-Added "minecraft:copper_bulbs" block tag to test for Copper bulbs.
+-Added "minecraft:froglights" block tag to test for froglights.
 
 *Resourcepack Changes*
 -Moved all Duel-related audio to "du-in:sounds" folder and organized it much better.
