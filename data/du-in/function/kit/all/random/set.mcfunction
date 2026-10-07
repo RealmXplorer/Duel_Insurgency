@@ -51,6 +51,8 @@ $execute if entity @s[scores={kit=38}] run data modify storage du-in:player$(cur
 $execute if entity @s[scores={kit=39}] run data modify storage du-in:player$(current) kit set value {"kit":"bogo"}
 $execute if entity @s[scores={kit=40}] run data modify storage du-in:player$(current) kit set value {"kit":"pawbert"}
 $execute if entity @s[scores={kit=41}] run data modify storage du-in:player$(current) kit set value {"kit":"willo"}
+$execute if entity @s[scores={kit=42}] run data modify storage du-in:player$(current) kit set value {"kit":"rory"}
+$execute if entity @s[scores={kit=43}] run data modify storage du-in:player$(current) kit set value {"kit":"freddy"}
 
 $execute if entity @s[scores={kit=1000}] run data modify storage du-in:player$(current) kit set value {"kit":"saac"}
 $execute if entity @s[scores={kit=1001}] run data modify storage du-in:player$(current) kit set value {"kit":"paz"}
