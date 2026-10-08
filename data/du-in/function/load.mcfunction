@@ -554,20 +554,21 @@ data modify storage du-in:kit list append value {"name":"puss","id":27,"gender":
 data modify storage du-in:kit list append value {"name":"jack_horner","id":26,"gender":1,"group":"last_wish",rank:2,slot:2}
 data modify storage du-in:kit list append value {"name":"death","id":28,"gender":1,"group":"last_wish",rank:3,slot:3}
 
-#Grab Bag
-data modify storage du-in:kit list append value {"name":"springtrap","id":5,"gender":1,"group":"grab_bag",rank:1,slot:1}
-data modify storage du-in:kit list append value {"name":"yharim","id":20,"gender":1,"group":"grab_bag",rank:2,slot:2}
-data modify storage du-in:kit list append value {"name":"clairen","id":25,"gender":2,"group":"grab_bag",rank:3,slot:3}
-data modify storage du-in:kit list append value {"name":"cuphead","id":21,"gender":1,"group":"grab_bag",rank:4,slot:4}
-data modify storage du-in:kit list append value {"name":"gumball","id":22,"gender":1,"group":"grab_bag",rank:5,slot:5}
-data modify storage du-in:kit list append value {"name":"cinder","id":34,"gender":1,"group":"grab_bag",rank:6,slot:6}
-data modify storage du-in:kit list append value {"name":"sauron","id":31,"gender":1,"group":"grab_bag",rank:7,slot:7}
-data modify storage du-in:kit list append value {"name":"avatar","id":32,"gender":1,"group":"grab_bag",rank:8,slot:8}
-data modify storage du-in:kit list append value {"name":"kratos","id":33,"gender":1,"group":"grab_bag",rank:9,slot:10}
-data modify storage du-in:kit list append value {"name":"knight","id":37,"gender":1,"group":"grab_bag",rank:10,slot:11}
-data modify storage du-in:kit list append value {"name":"willo","id":31,"gender":4,"group":"grab_bag",rank:11,slot:12}
+#Five Nights at Freddy's
+data modify storage du-in:kit list append value {"name":"springtrap","id":5,"gender":1,"group":"fnaf",rank:1,slot:1}
+data modify storage du-in:kit list append value {"name":"freddy","id":43,"gender":1,"group":"fnaf",rank:2,slot:2}
 
-data modify storage du-in:kit list append value {"name":"freddy","id":43,"gender":1,"group":"",rank:0,slot:0}
+#Grab Bag
+data modify storage du-in:kit list append value {"name":"yharim","id":20,"gender":1,"group":"grab_bag",rank:1,slot:1}
+data modify storage du-in:kit list append value {"name":"clairen","id":25,"gender":2,"group":"grab_bag",rank:2,slot:2}
+data modify storage du-in:kit list append value {"name":"cuphead","id":21,"gender":1,"group":"grab_bag",rank:3,slot:3}
+data modify storage du-in:kit list append value {"name":"gumball","id":22,"gender":1,"group":"grab_bag",rank:4,slot:4}
+data modify storage du-in:kit list append value {"name":"cinder","id":34,"gender":1,"group":"grab_bag",rank:5,slot:5}
+data modify storage du-in:kit list append value {"name":"sauron","id":31,"gender":1,"group":"grab_bag",rank:6,slot:6}
+data modify storage du-in:kit list append value {"name":"avatar","id":32,"gender":1,"group":"grab_bag",rank:7,slot:7}
+data modify storage du-in:kit list append value {"name":"kratos","id":33,"gender":1,"group":"grab_bag",rank:8,slot:8}
+data modify storage du-in:kit list append value {"name":"knight","id":37,"gender":1,"group":"grab_bag",rank:9,slot:10}
+data modify storage du-in:kit list append value {"name":"willo","id":31,"gender":4,"group":"grab_bag",rank:10,slot:11}
 
 #Legendary
 data modify storage du-in:kit list append value {"name":"saac","id":1000,"gender":1,"group":"unlock",rank:1,slot:1}
