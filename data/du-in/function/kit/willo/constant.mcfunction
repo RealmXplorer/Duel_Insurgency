@@ -17,7 +17,7 @@ execute if entity @s[scores={willoStandTimer=20..}] run function du-in:kit/willo
 #
 
 #If invisibility is toggled off, keep it on for Willo.
-execute if score #main invisibleToggle matches 1 if entity @s[predicate=!du-in:effect/is_invisible] run effect give @s invisibility infinite 0 true
+# execute if score #main invisibleToggle matches 1 if entity @s[predicate=!du-in:effect/is_invisible] run effect give @s invisibility infinite 0 true
 
 ##SUS Functions
 #Vent cooldowns

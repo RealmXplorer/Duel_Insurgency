@@ -51,3 +51,9 @@ execute if score @s kit matches 40 run return run function du-in:kit/pawbert/ini
 
 #Willo
 execute if score @s kit matches 41 run return run function du-in:kit/willo/init
+
+#Roaring Knight
+execute if score @s kit matches 42 run return run function du-in:kit/rory/init
+
+#Freddy Fazbear
+execute if score @s kit matches 43 run return run function du-in:kit/freddy/init
