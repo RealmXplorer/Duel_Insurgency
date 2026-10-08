@@ -14,3 +14,5 @@ execute if score #main pylonsDestroyed matches 3.. run item replace entity @s in
 
 # #Display Heads
 # execute unless score #main pylonsDestroyed matches 3.. unless entity @s[scores={zombSkin=1..}] run item replace entity @s[tag=zombSkins] inventory.6 with minecraft:player_head[custom_data={du-in:'zombieHead'},custom_name={text:"Default",color:white,bold:true,italic:false},lore=[{text:"Zombie",color:green,bold:true,"italic":true}],profile={id:[I;-1722163816,-273461527,-1459933222,35179936],name:"",properties:[{name:"textures",value:"eyJ0ZXh0dXJlcyI6eyJTS0lOIjp7InVybCI6Imh0dHA6Ly90ZXh0dXJlcy5taW5lY3JhZnQubmV0L3RleHR1cmUvNTZmYzg1NGJiODRjZjRiNzY5NzI5Nzk3M2UwMmI3OWJjMTA2OTg0NjBiNTFhNjM5YzYwZTVlNDE3NzM0ZTExIn19fQ=="}]}]
+
+#profile={properties:[{name:"textures",value:"eyJ0ZXh0dXJlcyI6eyJTS0lOIjp7InVybCI6Imh0dHA6Ly90ZXh0dXJlcy5taW5lY3JhZnQubmV0L3RleHR1cmUvYjAxZTRiZWYxZjNjYzllZWZhNzZhZDM5ZWQyOGM2NzQwODg2MWE4NGJlYTgzZWEyOTQ2ZjMzNDBiOTFlZGRlNyJ9fX0="}]}

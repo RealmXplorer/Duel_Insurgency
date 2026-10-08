@@ -30,6 +30,7 @@ AdmiralPie
 DarthMason4
 BellowBomb
 Three_Thumbs
+CornKaine
 
 MUSIC:
 Duel: Insurgency OST - i2o2 (a.k.a _saac)
@@ -127,3 +128,5 @@ Beetlejuice: https://novask.in/5230575092
 Pawbert: https://www.planetminecraft.com/skin/pawbert-lynxley/
 
 Jack Torrance: https://www.planetminecraft.com/skin/jack-torrance-the-shining-5743743/
+
+Freddy Fazbear: https://www.planetminecraft.com/skin/accurate-ish-freddy-fazbear-fnaf-1-ucn-tse/
