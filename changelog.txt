@@ -3,6 +3,7 @@
 *Additions*
 -Added Willo character.
 -Added Roaring Knight character.
+-Added Freddy Fazbear character.
 -Added Jack Torrance skin for Springtrap.
 -Added "Overlook Maze" map as a Halloween and Christmas variant for the "Maze" map.
 -Added small audio cue when a player with resistance takes damage.
@@ -46,7 +47,7 @@
 -Rebuilt internal kit system.
     -ALL characters are now saved in an internal "du-in:kit" storage with compounded storages. Info about each kit is saved, copied, and pulled.
     -The dynamic tests ("/go" functions) now search for "$(id)" instead of "$(kit)".
-    -"kit/all/random/set" no longer searches each and every "kit=", and can now can the correct kit via indexing its "kit.id" from the database.
+    -"kit/all/random/set" no longer searches each "kit" score, and can now find the correct kit via indexing its "kit.id" from the database.
 -Secondaries are now standardized through a "hasSecond" tag (added on kit pick), and dynamic "secondary/item" and "secondary/init" functions.
     -Per-tick "secKitActions" tag check is being phased out, but technically still supported.
 -Secondary give/return functions are now run every second, rather than every tick (like weapons and armor).
@@ -61,7 +62,7 @@
 -Moved "team_enable" and "team_disable" into a single check using returns.
 -Moved "count_stop" and "count_go" into a single check using returns.
 -"Team mode" lobby hotbar icon is now scheduled every second, rather than running every tick.
--The "two_sec_loop" scheduled function in lobby now only runs in Map Select, as its the only lobby where its used.
+-The "two_sec_loop" scheduled function in lobby now only runs in Map Select, as it's the only lobby where it's used.
 -Moved "main" player count checks to be event based in the lobby. Ingame, they have been moved to run every second, rather than every tick.
 -Simplified game cap functions as they did unnecessary checks and math.
 -Moved "shutdown" system to schedules, rather than a score-based tick timer. (Deprecated "shutdownTimer" score)
@@ -75,7 +76,7 @@
 -Moved Runza eating test to an advancement.
 -Added "du-in:effect/has_resistance" predicate.
 -Added "kit/all/game_start/" functions, allowing all characters to have a function that runs on game start without hardcoded tests.
-    -Every character folder now has a "(kit)/events/game_starrt" file, which runs the moment a game starts (but before "intro").
+    -Every character folder now has a "(kit)/events/game_start" file, which runs the moment a game starts (but before "intro").
 -Added "kit/all/reset/" functions. All characters now run their end of game resets independently, which is less optimized in some ways, but allows for easier management of per-character resets.
     -Every character folder now has a "(kit)/events/reset" file which runs their resets on game end / pre-game start.
 -Added room.Between
@@ -132,12 +133,12 @@
 -Renamed "minecraft:soundeffect." to "du-in:sfx.", and made proper subfolders.
     -Some sounds from characters such as ralsei have been moved to the sfx folder.
 -Added Willo armor textures. (by nerbski)
--Added Candy Corn texture. (by Realm_Xplorer)
+-Added Candy corn texture. (by Realm_Xplorer)
 -Added Revolver sounds.
 -Added Candy corn saber. (by Realm_Xplorer)
 -Added Jack Torrance skin. (by Three_Thumbs)
 -Added Willo revolver models and textures. (by nerbski_)
--Added Candy Corn muzzle flash overlays. (by nerbski_)
+-Added Candy corn muzzle flash overlays. (by nerbski_)
 -Added Roaring Knight armor texture. (by nerbski_)
 -Added Roaring Knight star models. (by nerbski_)
 -Added Roaring Knight sound effects.
