@@ -2,6 +2,7 @@ scoreboard players remove @s gasterTimer 1
 
 ##Can this be removed?
 tag @s add gasterInvisible
+tag @s add invisible
 
 #effect give @s minecraft:speed 1 1 true
     #This should run as an attribute modifier now, allowing it to be stacked.

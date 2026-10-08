@@ -1,5 +1,8 @@
 scoreboard players remove @s floweyHitTimer 1
 
+effect give @s[tag=!sabotaged] minecraft:invisibility 1 1 true
+tag @s add invisible
+
 clear @s
 
 #If player is nearby#
@@ -18,8 +21,6 @@ effect give @s[tag=sabotaged,tag=!empower] minecraft:slowness 1 200 true
 effect give @s[tag=sabotaged,tag=empower] minecraft:slowness 3 200 true
 
 attribute @s minecraft:jump_strength modifier add flowey_jump -100 add_value
-
-effect give @s[tag=!sabotaged] minecraft:invisibility 1 1 true
 
 #Dirt particles#
 execute unless entity @s[tag=sabotaged] run particle minecraft:block{block_state:"minecraft:dirt"} ~ ~ ~ 0.05 0 0.05 1 10 force

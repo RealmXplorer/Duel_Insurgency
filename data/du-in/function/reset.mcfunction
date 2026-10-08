@@ -141,6 +141,9 @@ execute as @a run function du-in:music/ingame/stop/all
     tag @a remove sus
     scoreboard players set @a ventCooldown 0
 
+    #Reset invisible tag
+    tag @a remove invisible
+    
     #Invalid Ability block tags
     tag @a remove airBlock
     tag @a remove groundBlock

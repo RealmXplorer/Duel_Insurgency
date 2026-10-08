@@ -2,9 +2,13 @@
 ***Version 1.6 - The Edge of Shadow:***
 *Additions*
 -Added Willo character.
+    -Willo primarily uses her candy corn revolver and traps to trip up the competition.
 -Added Roaring Knight character.
+    -The Roaring Knight floats and speeds through the arena, using its explosive stars to oppress enemies.
 -Added Freddy Fazbear character.
+    -Freddy lurks in the shadows, gaining strength the darker it is. His ability will take out all non-flame lights.
 -Added Jack Torrance skin for Springtrap.
+-Added "Five Nights at Freddy's" tab to kit menu.
 -Added "Overlook Maze" map as a Halloween and Christmas variant for the "Maze" map.
 -Added small audio cue when a player with resistance takes damage.
 -Added subtitles to all gameplay audio.

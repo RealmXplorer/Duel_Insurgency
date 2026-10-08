@@ -3,6 +3,7 @@ swing @s offhand whack
 
 #This tag makes it so that Pawbert won't be given his axe back while invisible
 tag @s add pawbertInvisible
+tag @s add invisible
 clear @s #du-in:weapon
 scoreboard players set @s[tag=!empower] pawbertTimer 60
 

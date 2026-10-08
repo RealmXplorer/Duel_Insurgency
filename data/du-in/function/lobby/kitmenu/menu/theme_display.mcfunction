@@ -5,4 +5,5 @@ item replace entity @s[scores={kitTheme=2}] inventory.9 with minecraft:carrot_on
 item replace entity @s[scores={kitTheme=3}] inventory.9 with minecraft:carrot_on_a_stick[custom_data={du-in:'displayHead'},custom_name={text:"Star Wars",color:white,bold:true},item_model="du-in:abilities/yoda"] 1
 item replace entity @s[scores={kitTheme=4}] inventory.9 with minecraft:carrot_on_a_stick[custom_data={du-in:'displayHead'},custom_name={text:"Zootopia",color:green,bold:true},item_model="du-in:abilities/badge"] 1
 item replace entity @s[scores={kitTheme=5}] inventory.9 with minecraft:carrot_on_a_stick[custom_data={du-in:'displayHead'},custom_name={text:"The Last Wish",color:dark_blue,bold:true},item_model="du-in:abilities/asriel"] 1
-item replace entity @s[scores={kitTheme=6}] inventory.9 with minecraft:carrot_on_a_stick[custom_data={du-in:'displayHead'},custom_name={text:"Grab Bag",color:dark_green,bold:true},item_model="bundle"] 1
+item replace entity @s[scores={kitTheme=6}] inventory.9 with minecraft:carrot_on_a_stick[custom_data={du-in:'displayHead'},custom_name={text:"Five Nights at Freddy's",color:"#824308",bold:true},item_model="lantern"] 1
+item replace entity @s[scores={kitTheme=7}] inventory.9 with minecraft:carrot_on_a_stick[custom_data={du-in:'displayHead'},custom_name={text:"Grab Bag",color:dark_green,bold:true},item_model="bundle"] 1

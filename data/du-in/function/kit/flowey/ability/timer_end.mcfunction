@@ -1,4 +1,7 @@
-effect clear @s minecraft:invisibility
+#effect clear @s minecraft:invisibility
+tag @s remove invisible
+function du-in:kit/flowey/armor
+
 attribute @s minecraft:jump_strength modifier remove flowey_jump
 effect clear @s[tag=sabotaged] minecraft:slowness
 execute if entity @s[tag=!stolen] run function du-in:kit/flowey/weapon

@@ -14,6 +14,7 @@ xp set @s[tag=!stolen,tag=!pawbertDisrupt] 400 levels
 xp set @s[tag=!stolen,tag=pawbertDisrupt] 420 levels
 tag @s remove pawbertDisrupt
 tag @s remove pawbertInvisible
+tag @s remove invisible
 
 clear @s[tag=stolen] blaze_rod
 

@@ -1,5 +1,8 @@
+tag @s remove invisible
+function du-in:kit/gaster/armor
+
 effect clear @s speed
-effect clear @s invisibility
+#effect clear @s invisibility
 
 effect give @s[tag=!sabotaged,tag=!empower] minecraft:strength 2 1 true
 effect give @s[tag=!sabotaged,tag=empower] minecraft:strength 3 3 true

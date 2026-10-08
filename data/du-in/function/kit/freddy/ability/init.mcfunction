@@ -10,6 +10,13 @@ tag @s[tag=sabotaged] add freddyHit
 #Sort team
 scoreboard players reset #main team
 
+attribute @s attack_damage modifier add freddy_ability 2 add_value
+attribute @s movement_speed modifier add freddy_ability 0.3 add_value
+
+#Go Invisible
+tag @s add freddyShadow
+tag @s add invisible
+clear @s #du-in:armor
 
 #Take lights away
 function du-in:kit/freddy/ability/light/scan_start
