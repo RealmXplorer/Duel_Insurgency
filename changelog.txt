@@ -36,13 +36,16 @@
 -Updated Advancements and Predicates to follow new 26.3 syntaxes.
 -Chunks are now dynamically forceloaded, hopefully offering better performance for the server.
 -Some entities are now loaded and tested via hardcoded UUIDs, rather than dynamic tests. This affects KOTH, CTF, and the lobby.
--Abilities now run through "returns", reducing entity checks for optimizations.
+-Abilities now run through "returns", reducing entity checks.
 -Zombie, Impostor, and Hollow Knight ability validity checks now happen on ability execution, rather than their constants.
 -Reorganized Clairen's field-state tests to run based on if players are nearby, rather than all the time.
 -Clairen's per-tick ability field check now runs through a centralized using "inField" tag and nesting returns, rather than every variant at once.
 -Clairen's field timer is now set on the field's spawn, rather than checking every tick for a tag inside its entity function.
 -Team checks are now done through the "#main" fake player. They are set on ability use, tested, then reset. This removes the previous second player check.
 -Merged the player checks in relevant abilities to check once and never add the "hit" tags for teammates, rather than give all players the "hit" and remove for teammates.
+-Rebuilt internal kit system.
+    -ALL characters are now saved in an internal "du-in:kit" storage with compounded storages. Info about each kit is saved, copied, and pulled.
+    -The dynamic tests ("/go" functions) now search for "$(id)" instead of "$(kit)".
 -Secondaries are now standardized through a "hasSecond" tag (added on kit pick), and dynamic "secondary/item" and "secondary/init" functions.
     -Per-tick "secKitActions" tag check is being phased out, but technically still supported.
 -Secondary give/return functions are now run every second, rather than every tick (like weapons and armor).

@@ -9,8 +9,16 @@ playsound du-in:sfx.te.golhit master @s ~ ~ ~ 1 .1 1
 playsound minecraft:block.netherite_block.break master @s ~ ~ ~ 1 1
 playsound minecraft:block.heavy_core.hit master @s ~ ~ ~ 1 1
 
-scoreboard players set @s kit 31
-$data modify storage du-in:player$(current) kit set value {"kit":"sauron"}
+#scoreboard players set @s kit 31
+#$data modify storage du-in:player$(current) kit set value {"kit":"sauron"}
+
+$data modify storage du-in:player$(current) kit set from storage du-in:kit list[{name:"sauron"}]
+
+#Set Kit score from storage
+$execute store result score @s kit run data get storage du-in:player$(current) kit.id
+
+#Set Kit's gender from storage
+$execute store result score @s kitGender run data get storage du-in:player$(current) kit.gender
 
 tellraw @s [{text:"Selected the ",bold:true,color:gray},{text:"Sauron ",bold:true,color:gold},{text:"class! ",bold:true,color:gray},{text:"(Click here for kit info!)",bold:false,color:white,"underlined":true,"click_event":{"action":"run_command","command":"/trigger info add 1"}}]
 execute if entity @a[tag=partyLeader,tag=specialEvent] run tellraw @a [{selector:"@s",bold:true},{text:" has picked the ",bold:true,color:gray},{text:"Sauron ",bold:true,color:gold},{text:"class! ",bold:true,color:gray}]

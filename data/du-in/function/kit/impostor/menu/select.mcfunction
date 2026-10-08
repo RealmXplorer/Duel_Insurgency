@@ -15,11 +15,18 @@ execute if entity @a[tag=partyLeader,tag=specialEvent] run tellraw @a [{selector
 
 #Set kit score to match kit
 #scoreboard players set @s kit 1003
-scoreboard players set @s kit 1002
+#scoreboard players set @s kit 1002
 
-$data modify storage du-in:player$(current) kit set value {"kit":"impostor"}
+#$data modify storage du-in:player$(current) kit set value {"kit":"impostor"}
 
-scoreboard players set @s kitGender 1
+#scoreboard players set @s kitGender 1
+$data modify storage du-in:player$(current) kit set from storage du-in:kit list[{name:"impostor"}]
+
+#Set Kit score from storage
+$execute store result score @s kit run data get storage du-in:player$(current) kit.id
+
+#Set Kit's gender from storage
+$execute store result score @s kitGender run data get storage du-in:player$(current) kit.gender
 
 #Clear and remove tags
 function du-in:lobby/kitmenu/select/common

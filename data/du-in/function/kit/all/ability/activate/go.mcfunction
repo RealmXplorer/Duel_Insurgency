@@ -1,3 +1,3 @@
 #say success (all/ability/activate/go)
 #Run "hit/player" for selected character
-$execute at @s rotated as @s run function du-in:kit/$(kit)/ability/init
+$execute at @s rotated as @s run function du-in:kit/$(name)/ability/init

@@ -11,10 +11,18 @@ tellraw @s [{text:"Selected the ",bold:true,color:gray},{text:"Death ",bold:true
 execute if entity @a[tag=partyLeader,tag=specialEvent] run tellraw @a [{selector:"@s",bold:true},{text:" has picked the ",bold:true,color:gray},{text:"Death ",bold:true,color:gold},{text:"class! ",bold:true,color:gray}]
 
 #Set kit score to match kit
-scoreboard players set @s kit 28
-$data modify storage du-in:player$(current) kit set value {"kit":"death"}
+$data modify storage du-in:player$(current) kit set from storage du-in:kit list[{name:"death"}]
 
-scoreboard players set @s kitGender 1
+#Set Kit score from storage
+$execute store result score @s kit run data get storage du-in:player$(current) kit.id
+
+#Set Kit's gender from storage
+$execute store result score @s kitGender run data get storage du-in:player$(current) kit.gender
+
+#scoreboard players set @s kit 28
+#$data modify storage du-in:player$(current) kit set value {"kit":"death"}
+
+#scoreboard players set @s kitGender 1
 
 tag @s add hasSecond
 

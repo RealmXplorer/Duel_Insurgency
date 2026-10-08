@@ -3,13 +3,21 @@ scoreboard players enable @s info
 playsound du-in:kit.clairen.select master @s ~ ~ ~ 100 1
 clear @s player_head[custom_data={du-in:'clairenHead'}]
 
-scoreboard players set @s kit 25
-$data modify storage du-in:player$(current) kit set value {"kit":"clairen"}
+$data modify storage du-in:player$(current) kit set from storage du-in:kit list[{name:"clairen"}]
+
+#Set Kit score from storage
+$execute store result score @s kit run data get storage du-in:player$(current) kit.id
+
+#Set Kit's gender from storage
+$execute store result score @s kitGender run data get storage du-in:player$(current) kit.gender
+
+#scoreboard players set @s kit 25
+#$data modify storage du-in:player$(current) kit set value {"kit":"clairen"}
 
 tellraw @s [{text:"Selected the ",bold:true,color:gray},{text:"Clairen ",bold:true,color:gold},{text:"class! ",bold:true,color:gray},{text:"(Click here for kit info!)",bold:false,color:white,"underlined":true,"click_event":{"action":"run_command","command":"/trigger info add 1"}}]
 execute if entity @a[tag=partyLeader,tag=specialEvent] run tellraw @a [{selector:"@s",bold:true},{text:" has picked the ",bold:true,color:gray},{text:"Clairen ",bold:true,color:gold},{text:"class! ",bold:true,color:gray}]
 
-scoreboard players set @s kitGender 2
+#scoreboard players set @s kitGender 2
 
 function du-in:lobby/kitmenu/select/common
 

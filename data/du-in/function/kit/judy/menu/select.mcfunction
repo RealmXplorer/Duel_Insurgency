@@ -11,10 +11,17 @@ tellraw @s [{text:"Selected the ",bold:true,color:gray},{text:"Judy Hopps ",bold
 execute if entity @a[tag=partyLeader,tag=specialEvent] run tellraw @a [{selector:"@s",bold:true},{text:" has picked the ",bold:true,color:gray},{text:"Judy Hopps ",bold:true,color:gold},{text:"class! ",bold:true,color:gray}]
 
 #Set kit score to match kit
-scoreboard players set @s kit 35
-$data modify storage du-in:player$(current) kit set value {"kit":"judy"}
+#scoreboard players set @s kit 35
+#$data modify storage du-in:player$(current) kit set value {"kit":"judy"}
 
-scoreboard players set @s kitGender 2
+#scoreboard players set @s kitGender 2
+$data modify storage du-in:player$(current) kit set from storage du-in:kit list[{name:"judy"}]
+
+#Set Kit score from storage
+$execute store result score @s kit run data get storage du-in:player$(current) kit.id
+
+#Set Kit's gender from storage
+$execute store result score @s kitGender run data get storage du-in:player$(current) kit.gender
 
 #Clear and remove tags
 function du-in:lobby/kitmenu/select/common

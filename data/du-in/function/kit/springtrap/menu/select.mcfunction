@@ -11,11 +11,20 @@ tellraw @s [{text:"Selected the ",bold:true,color:gray},{text:"Springtrap ",bold
 execute if entity @a[tag=partyLeader,tag=specialEvent] run tellraw @a [{selector:"@s",bold:true},{text:" has picked the ",bold:true,color:gray},{text:"Springtrap ",bold:true,color:gold},{text:"class! ",bold:true,color:gray}]
 
 #Set kit score to match kit
-scoreboard players set @s kit 5
-$data modify storage du-in:player$(current) kit set value {"kit":"springtrap"}
+#scoreboard players set @s kit 5
+#data modify storage du-in:player$(current) kit set value {"kit":"springtrap"}
+$data modify storage du-in:player$(current) kit set from storage du-in:kit list[{name:"springtrap"}]
+
+#Set Kit score from storage
+$execute store result score @s kit run data get storage du-in:player$(current) kit.id
+
+#Set Kit's gender from storage
+$execute store result score @s kitGender run data get storage du-in:player$(current) kit.gender
+
+
 tag @s[tag=playing] add undead
 
-scoreboard players set @s kitGender 1
+#scoreboard players set @s kitGender 1
 
 #Clear and remove tags
 function du-in:lobby/kitmenu/select/common

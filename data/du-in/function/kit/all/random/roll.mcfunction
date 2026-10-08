@@ -8,6 +8,7 @@ execute if entity @a[tag=chungusThrowdown,tag=partyLeader] run scoreboard player
 
 #Set to current player
 execute store result storage du-in:main player.current int 1 run scoreboard players get @s player
+execute store result storage du-in:main player.test int 1 run scoreboard players get @s kit
 
 #Find player
 execute at @s run function du-in:kit/all/random/set with storage du-in:main player

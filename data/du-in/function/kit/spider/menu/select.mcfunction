@@ -11,18 +11,26 @@ playsound minecraft:entity.spider.ambient master @s ~ ~ ~ 100 1
 clear @s player_head[custom_data={du-in:'spiderHead'}]
 
 #Set character
-scoreboard players set @s kit 1
-$data modify storage du-in:player$(current) kit set value {"kit":"spider"}
+#scoreboard players set @s kit 1
+#$data modify storage du-in:player$(current) kit set value {"kit":"spider"}
 
 #Announce
 tellraw @s [{text:"Selected the ",bold:true,color:gray},{text:"Spider ",bold:true,color:gold},{text:"class! ",bold:true,color:gray},{text:"(Click here for kit info!)",bold:false,color:white,"underlined":true,"click_event":{"action":"run_command","command":"/trigger info add 1"}}]
 execute if entity @a[tag=partyLeader,tag=specialEvent] run tellraw @a [{selector:"@s",bold:true},{text:" has picked the ",bold:true,color:gray},{text:"Spider ",bold:true,color:gold},{text:"class! ",bold:true,color:gray}]
 
+$data modify storage du-in:player$(current) kit set from storage du-in:kit list[{name:"spider"}]
+
+#Set Kit score from storage
+$execute store result score @s kit run data get storage du-in:player$(current) kit.id
+
+#Set Kit's gender from storage
+$execute store result score @s kitGender run data get storage du-in:player$(current) kit.gender
+
 #Reset lobby scores and tags
 function du-in:lobby/kitmenu/select/common
 
 #Kit gender (for darwin underwear)
-scoreboard players set @s kitGender 1
+#scoreboard players set @s kitGender 1
 
 #Chance to make Spider a Cave Spider
 tag @s[predicate=du-in:chance/ten_chance] add caveSpider
