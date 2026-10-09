@@ -5,3 +5,5 @@ tellraw @s [{text:"You have been COMPLETELY frozen with the Force!",bold:true,co
 
 tag @s remove kyloMark
 tag @s remove kyloEmpowerHit
+
+execute unless score #freeze running matches 1 run function du-in:kit/kylo/ability/freeze_loop

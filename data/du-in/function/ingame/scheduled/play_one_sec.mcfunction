@@ -19,4 +19,4 @@ execute if entity @s[tag=hasTracker,tag=!teamDead] run function du-in:kit/all/se
 execute if entity @s[predicate=!du-in:has_armor,tag=!teamDead,tag=!kitMenu,tag=!invisible] run function du-in:kit/all/armor/armor_reset
 
 #Jerma Randomizer
-execute if entity @s[scores={kit=1003},predicate=du-in:chance/third_chance] run function du-in:kit/jerma/weapon
+execute if entity @s[scores={kit=1003},predicate=du-in:chance/third_chance,tag=!pussFear] run function du-in:kit/jerma/weapon

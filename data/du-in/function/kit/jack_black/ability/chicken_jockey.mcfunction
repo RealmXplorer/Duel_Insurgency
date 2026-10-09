@@ -1,5 +1,6 @@
 scoreboard players set @s jockeyTimer 60
 tag @s add jockeyDuration
+execute unless score #jockey running matches 1 run function du-in:kit/jack_black/ability/jockey_loop
 
 #Summon Chicken
 execute at @s run summon chicken ~ ~ ~ {Tags:["projectile","mapSpecific","notSet","noTimer"]}

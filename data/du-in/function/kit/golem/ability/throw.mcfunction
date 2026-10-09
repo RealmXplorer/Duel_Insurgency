@@ -4,6 +4,7 @@ scoreboard players set @s golemFloat 5
 effect give @s minecraft:levitation 1 25 true
 damage @s 6 generic
 damage @s[tag=empoweredGolemHit] 4 generic
+execute unless score #float running matches 1 run function du-in:kit/golem/ability/float_loop
 
 #effect give @s minecraft:instant_damage 1 0 true
 

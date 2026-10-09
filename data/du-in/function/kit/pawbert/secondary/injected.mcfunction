@@ -6,4 +6,5 @@ effect give @s nausea infinite 1 true
 
 tag @s add injected
 title @s actionbar [{text:"Injected with Snake Venom!",bold:true,color:red}]
+execute unless score #venom running matches 1 run function du-in:kit/pawbert/secondary/loop
 advancement revoke @s only du-in:kit/venom_injected

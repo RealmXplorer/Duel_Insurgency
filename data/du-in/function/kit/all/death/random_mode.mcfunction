@@ -2,7 +2,7 @@
 execute unless entity @s[tag=grave] run function du-in:kit/all/reset
 #tag @s[tag=!grave] add random
        
-execute if entity @s[tag=!grave] run function du-in:kit/all/random/roll
+execute if entity @s[tag=!grave] run function du-in:kit/all/random/roll with storage du-in:main random
       
 clear @s
 clear @s minecraft:emerald

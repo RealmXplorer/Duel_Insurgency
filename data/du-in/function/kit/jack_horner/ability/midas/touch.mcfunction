@@ -2,6 +2,9 @@
 tag @s add midasTouched
 playsound minecraft:entity.zombie_villager.cure master @a
 scoreboard players set @s goldTimer 20
+
+execute unless score #midas running matches 1 run function du-in:kit/jack_horner/ability/midas/midas_loop
+
 particle block{block_state:"minecraft:gold_block"} ~ ~1 ~ .5 1 .5 3 50 normal
 
 execute at @s run summon minecraft:block_display ~ ~1 ~ {block_state:{id:"minecraft:gold_block"},interpolation_duration:0,start_interpolation:0,transformation:[1f,0f,0f,-0.5f,0f,2f,0f,-1f,0f,0f,1f,-0.5f,0f,0f,0f,1f],Tags:[gold,"notSet"]}

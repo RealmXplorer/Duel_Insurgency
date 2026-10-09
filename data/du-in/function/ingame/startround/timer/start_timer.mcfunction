@@ -36,7 +36,7 @@ tag @a[tag=!spectating] add playing
 ##Kit stuff
     #Give player kit if they don't have one
     #execute unless entity @s[scores={kit=1..}] run tag @s add random
-    execute as @a unless entity @s[scores={kit=1..}] run function du-in:kit/all/random/roll
+    execute as @a unless entity @s[scores={kit=1..}] run function du-in:kit/all/random/roll with storage du-in:main random
     execute as @a[tag=teamMode] unless entity @s[scores={team=1..}] run function du-in:lobby/team_select/actions/team_fallback
 
     #Give all players weapons

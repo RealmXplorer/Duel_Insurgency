@@ -6,7 +6,7 @@ tag @a add quickMatch
 
 #Add random kit#
 #tag @a[tag=!kitPicked,tag=!spectating] add random
-execute as @a[tag=!kitPicked,tag=!spectating] run function du-in:kit/all/random/roll
+execute as @a[tag=!kitPicked,tag=!spectating] run function du-in:kit/all/random/roll with storage du-in:main random
       
 #Make it so players do not go into spectator, unless they already are
 tag @a[tag=!kitPicked,tag=!spectating] add kitPicked

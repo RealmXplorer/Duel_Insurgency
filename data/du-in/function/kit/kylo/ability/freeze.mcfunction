@@ -1,5 +1,6 @@
 #Teleport
 execute as @n[type=marker,tag=kyloHitPos,distance=..3] at @s rotated as @s run tp @p[tag=kyloHit,scores={kyloTimer=1..}] @s
+#execute at @n[type=marker,tag=kyloHitPos,distance=..3] rotated as @s run tp @s ~ ~ ~ ~ ~
 
 scoreboard players remove @s kyloTimer 1
 

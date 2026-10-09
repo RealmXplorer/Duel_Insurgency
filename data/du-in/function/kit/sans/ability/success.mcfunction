@@ -7,6 +7,7 @@ effect clear @s minecraft:levitation
 
 scoreboard players set @a[tag=sansHit] sansHitTimer 60
 tag @a[tag=sansHit] add sansHitDuration
+execute unless score #sansHit running matches 1 run function du-in:kit/sans/ability/hit_loop
 
 playsound du-in:sfx.ut.ability master @a ~ ~ ~ 100 1
 playsound minecraft:entity.player.attack.sweep master @a ~ ~ ~ 100 0.3

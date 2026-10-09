@@ -1,4 +1,7 @@
 scoreboard players set @s yharimTimer 60
+tag @s add yharimAbility
+execute unless score #yharimAbility running matches 1 run function du-in:kit/yharim/ability/test_loop
+
 execute if entity @s[tag=!sabotaged,tag=!empower] run function du-in:kit/yharim/ability/effects
 execute if entity @s[tag=!sabotaged,tag=empower] run function du-in:kit/yharim/ability/empowered_effects
 

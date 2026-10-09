@@ -1,5 +1,5 @@
 #tag @s add randomLeg
-function du-in:kit/all/random/roll_legend
+function du-in:kit/all/random/roll_legend with storage du-in:main random
 
 playsound minecraft:entity.zombie_villager.converted master @s ~ ~ ~ 1 1.5
 playsound minecraft:block.amethyst_block.chime master @s ~ ~ ~ 100 .5 1

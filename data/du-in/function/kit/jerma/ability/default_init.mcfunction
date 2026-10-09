@@ -18,6 +18,9 @@ execute as @a[tag=peepedHorror] run tellraw @s {text:"You peeped the horror, it 
 
 execute as @a[tag=horrorStart] at @s run function du-in:kit/jerma/ability/particle
 
+#Start timer
+execute unless score #horror running matches 1 run function du-in:kit/jerma/ability/horror_test_loop
+
 swing @s[tag=!sabotaged] offhand whack
 swing @s[tag=sabotaged] offhand stab
 

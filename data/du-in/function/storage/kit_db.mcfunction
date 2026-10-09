@@ -8,7 +8,10 @@
 #slot: the actual slot the kit's head will appear in kit menu's listed category (currently unused)
 
 #Empty "kit.list" so it doesn't duplicate.
-data modify storage du-in:kit list set value [""]
+data remove storage du-in:kit list
+data remove storage du-in:random pool
+data remove storage du-in:random unlock_pool
+data modify storage du-in:groups group set value {}
 
 ##CREATE CHARACTERS DATABASE
 #Minecraft
@@ -80,3 +83,12 @@ data modify storage du-in:kit list append value {"name":"beetlejuice","id":1006,
 #Easter Eggs
 data modify storage du-in:kit list append value {"name":"chungus","id":42069,"gender":1,"group":"",rank:0,slot:0}
 data modify storage du-in:kit list append value {"name":"saul","id":2015,"gender":1,"group":"",rank:0,slot:0}
+
+
+
+execute store result score #main listLength run data get storage du-in:kit list
+
+scoreboard players remove #main listLength 1
+
+execute store result storage du-in:main list.index int 1 run scoreboard players get #main listLength
+function du-in:storage/kit/create_list with storage du-in:main list

@@ -67,6 +67,7 @@ scoreboard objectives add lightVariant dummy
 scoreboard objectives add lightTimer dummy
 scoreboard objectives add kitGender dummy
 scoreboard objectives add lightLevel dummy
+scoreboard objectives add running dummy
 
 #Timers
 scoreboard objectives add ambience dummy
@@ -214,6 +215,7 @@ scoreboard objectives add kothGoal dummy
 scoreboard objectives add kothHalf dummy
 scoreboard objectives add Lives dummy
 scoreboard objectives add checkpoint dummy
+scoreboard objectives add random dummy
 
 scoreboard objectives add maxLives dummy
 scoreboard objectives add maxTeamLives dummy

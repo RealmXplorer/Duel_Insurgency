@@ -6,5 +6,6 @@ scoreboard players set @s golemFloat 3
 
 effect give @s minecraft:levitation 1 25 true
 damage @s 4 generic
+execute unless score #float running matches 1 run function du-in:kit/golem/ability/float_loop
 
 tellraw @s [{text:"The Earth moves beneath your feet",bold:true,color:red}]

@@ -1,5 +1,5 @@
 execute store result score #main team run scoreboard players get @s team
-execute if entity @s[tag=!sabotaged] as @a[tag=playing,tag=!spectating] unless score @s team = #main team run tag @s add chickenJockey
+execute if entity @s[tag=!sabotaged] as @a[tag=playing,gamemode=!spectator,tag=!spectating] unless score @s team = #main team run tag @s add chickenJockey
 tag @s[tag=!sabotaged] remove chickenJockey
 tag @s[tag=sabotaged] add chickenJockey
 scoreboard players reset #main team

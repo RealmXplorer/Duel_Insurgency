@@ -10,6 +10,7 @@ particle minecraft:angry_villager ~ ~2 ~ 0.25 0 0.01 0 20 force
 effect clear @s minecraft:weakness
 scoreboard players set @s yharimRageDuration 60
 tag @s add enraged
+execute unless score #yharimRage running matches 1 run function du-in:kit/yharim/secondary/test_loop
 
 attribute @s attack_damage modifier add yharim_rage 6.0 add_value
 attribute @s movement_speed modifier add yharim_rage 0.025 add_value

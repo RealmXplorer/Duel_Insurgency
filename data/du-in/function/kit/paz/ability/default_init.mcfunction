@@ -31,6 +31,7 @@ execute as @e[type=ender_pearl,tag=blakeTP,tag=notAssigned] at @s run function d
 #Set rubberband timer
 scoreboard players set @s blakeTimer 60
 tag @s add blakeDuration
+execute unless score #blake running matches 1 run function du-in:kit/paz/ability/wifi_loop
 
 #Give Paz bonus effects
 effect give @s[tag=!empower] speed 2 0 true
