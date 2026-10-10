@@ -1,6 +1,7 @@
 #Set number of kits to be displayed
 #execute if entity @s[tag=kitsListed] run scoreboard players set @s kitList 10
-execute if entity @s[tag=kitsListed] run scoreboard players set @s kitList 10
+#execute if entity @s[tag=kitsListed] run scoreboard players set @s kitList 10
+execute if entity @s[tag=kitsListed] store result score @s kitList run data get storage du-in:groups group.grab_bag
 
 #Display Kits
 execute unless items entity @s inventory.11 minecraft:player_head run function du-in:kit/willo/menu/init

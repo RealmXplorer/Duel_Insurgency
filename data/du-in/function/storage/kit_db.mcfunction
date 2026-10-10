@@ -3,7 +3,7 @@
 #num: unique kit number
 #gender: what kind of underwear the kit will get if hit by Darwin's ability
     #1 = male, 2 = female, 3 = armless male, 4 = armless female
-#group: which category in kit menu they belong to (currently unused)
+#group: which category in kit menu they belong to.
 #rank: where this kit lists in the kit menu's listed category (currently unused)
 #slot: the actual slot the kit's head will appear in kit menu's listed category (currently unused)
 
@@ -12,27 +12,28 @@ data remove storage du-in:kit list
 data remove storage du-in:random pool
 data remove storage du-in:random unlock_pool
 data modify storage du-in:groups group set value {}
+data modify storage du-in:main themes set value []
 
 ##CREATE CHARACTERS DATABASE
 #Minecraft
-data modify storage du-in:kit list append value {"name":"spider","id":1,"gender":1,"group":"minecraft",rank:1,slot:1}
-data modify storage du-in:kit list append value {"name":"zombie","id":2,"gender":1,"group":"minecraft",rank:2,slot:2}
-data modify storage du-in:kit list append value {"name":"slime","id":3,"gender":1,"group":"minecraft",rank:3,slot:3}
+data modify storage du-in:kit list append value {"name":"villager","id":8,"gender":1,"group":"minecraft",rank:1,slot:1}
+data modify storage du-in:kit list append value {"name":"player","id":7,"gender":1,"group":"minecraft",rank:2,slot:2}
+data modify storage du-in:kit list append value {"name":"golem","id":6,"gender":1,"group":"minecraft",rank:3,slot:3}
 data modify storage du-in:kit list append value {"name":"creeper","id":4,"gender":1,"group":"minecraft",rank:4,slot:4}
-data modify storage du-in:kit list append value {"name":"golem","id":6,"gender":1,"group":"minecraft",rank:5,slot:5}
-data modify storage du-in:kit list append value {"name":"player","id":7,"gender":1,"group":"minecraft",rank:6,slot:6}
-data modify storage du-in:kit list append value {"name":"villager","id":8,"gender":1,"group":"minecraft",rank:7,slot:7}
+data modify storage du-in:kit list append value {"name":"slime","id":3,"gender":1,"group":"minecraft",rank:5,slot:5}
+data modify storage du-in:kit list append value {"name":"zombie","id":2,"gender":1,"group":"minecraft",rank:6,slot:6}
+data modify storage du-in:kit list append value {"name":"spider","id":1,"gender":1,"group":"minecraft",rank:7,slot:7}
 data modify storage du-in:kit list append value {"name":"skeleton","id":30,"gender":1,"group":"minecraft",rank:8,slot:8}
 
 #Undertale
-data modify storage du-in:kit list append value {"name":"chara","id":9,"gender":2,"group":"undertale",rank:1,slot:1}
-data modify storage du-in:kit list append value {"name":"gaster","id":10,"gender":1,"group":"undertale",rank:2,slot:2}
-data modify storage du-in:kit list append value {"name":"asriel","id":11,"gender":1,"group":"undertale",rank:3,slot:3}
-data modify storage du-in:kit list append value {"name":"flowey","id":12,"gender":1,"group":"undertale",rank:4,slot:4}
-data modify storage du-in:kit list append value {"name":"papyrus","id":13,"gender":1,"group":"undertale",rank:5,slot:5}
-data modify storage du-in:kit list append value {"name":"asgore","id":14,"gender":1,"group":"undertale",rank:6,slot:6}
-data modify storage du-in:kit list append value {"name":"frisk","id":15,"gender":1,"group":"undertale",rank:7,slot:7}
-data modify storage du-in:kit list append value {"name":"sans","id":16,"gender":1,"group":"undertale",rank:8,slot:8}
+data modify storage du-in:kit list append value {"name":"sans","id":16,"gender":1,"group":"undertale",rank:1,slot:1}
+data modify storage du-in:kit list append value {"name":"frisk","id":15,"gender":1,"group":"undertale",rank:2,slot:2}
+data modify storage du-in:kit list append value {"name":"asgore","id":14,"gender":1,"group":"undertale",rank:3,slot:3}
+data modify storage du-in:kit list append value {"name":"papyrus","id":13,"gender":1,"group":"undertale",rank:4,slot:4}
+data modify storage du-in:kit list append value {"name":"flowey","id":12,"gender":1,"group":"undertale",rank:5,slot:5}
+data modify storage du-in:kit list append value {"name":"asriel","id":11,"gender":1,"group":"undertale",rank:6,slot:6}
+data modify storage du-in:kit list append value {"name":"gaster","id":10,"gender":1,"group":"undertale",rank:7,slot:7}
+data modify storage du-in:kit list append value {"name":"chara","id":9,"gender":2,"group":"undertale",rank:8,slot:8}
 data modify storage du-in:kit list append value {"name":"ralsei","id":24,"gender":1,"group":"undertale",rank:9,slot:10}
 data modify storage du-in:kit list append value {"name":"susie","id":36,"gender":2,"group":"undertale",rank:10,slot:11}
 data modify storage du-in:kit list append value {"name":"jevil","id":18,"gender":1,"group":"undertale",rank:11,slot:12}
@@ -73,10 +74,10 @@ data modify storage du-in:kit list append value {"name":"willo","id":31,"gender"
 
 #Legendary
 data modify storage du-in:kit list append value {"name":"saac","id":1000,"gender":1,"group":"unlock",rank:1,slot:1}
-data modify storage du-in:kit list append value {"name":"paz","id":1001,"gender":2,"group":"unlock",rank:2,slot:2}
-data modify storage du-in:kit list append value {"name":"impostor","id":1002,"gender":1,"group":"unlock",rank:3,slot:3}
+data modify storage du-in:kit list append value {"name":"impostor","id":1002,"gender":1,"group":"unlock",rank:2,slot:2}
+data modify storage du-in:kit list append value {"name":"runza","id":1004,"gender":1,"group":"unlock",rank:3,slot:3}
 data modify storage du-in:kit list append value {"name":"jerma","id":1003,"gender":1,"group":"unlock",rank:4,slot:4}
-data modify storage du-in:kit list append value {"name":"runza","id":1004,"gender":1,"group":"unlock",rank:5,slot:5}
+data modify storage du-in:kit list append value {"name":"paz","id":1001,"gender":2,"group":"unlock",rank:5,slot:5}
 data modify storage du-in:kit list append value {"name":"jack_black","id":1005,"gender":1,"group":"unlock",rank:6,slot:6}
 data modify storage du-in:kit list append value {"name":"beetlejuice","id":1006,"gender":1,"group":"unlock",rank:7,slot:7}
 
@@ -92,3 +93,5 @@ scoreboard players remove #main listLength 1
 
 execute store result storage du-in:main list.index int 1 run scoreboard players get #main listLength
 function du-in:storage/kit/create_list with storage du-in:main list
+
+data modify storage du-in:main themes set value ["unlock", "minecraft", "undertale", "starwars", "zootopia", "last_wish", "fnaf", "grab_bag"]
