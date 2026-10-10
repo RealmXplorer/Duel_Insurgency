@@ -36,7 +36,7 @@ data modify storage du-in:kit list append value {"name":"gaster","id":10,"gender
 data modify storage du-in:kit list append value {"name":"chara","id":9,"gender":2,"group":"undertale",rank:8,slot:8}
 data modify storage du-in:kit list append value {"name":"ralsei","id":24,"gender":1,"group":"undertale",rank:9,slot:10}
 data modify storage du-in:kit list append value {"name":"susie","id":36,"gender":2,"group":"undertale",rank:10,slot:11}
-data modify storage du-in:kit list append value {"name":"jevil","id":18,"gender":1,"group":"undertale",rank:11,slot:12}
+data modify storage du-in:kit list append value {"name":"jevil","id":38,"gender":1,"group":"undertale",rank:11,slot:12}
 data modify storage du-in:kit list append value {"name":"rory","id":42,"gender":1,"group":"undertale",rank:12,slot:13}
 
 #Star Wars
@@ -70,7 +70,7 @@ data modify storage du-in:kit list append value {"name":"sauron","id":31,"gender
 data modify storage du-in:kit list append value {"name":"avatar","id":32,"gender":1,"group":"grab_bag",rank:7,slot:7}
 data modify storage du-in:kit list append value {"name":"kratos","id":33,"gender":1,"group":"grab_bag",rank:8,slot:8}
 data modify storage du-in:kit list append value {"name":"knight","id":37,"gender":1,"group":"grab_bag",rank:9,slot:10}
-data modify storage du-in:kit list append value {"name":"willo","id":31,"gender":4,"group":"grab_bag",rank:10,slot:11}
+data modify storage du-in:kit list append value {"name":"willo","id":41,"gender":4,"group":"grab_bag",rank:10,slot:11}
 
 #Legendary
 data modify storage du-in:kit list append value {"name":"saac","id":1000,"gender":1,"group":"unlock",rank:1,slot:1}

@@ -1,4 +1,4 @@
-scoreboard players reset @s secKitUse
+
 
 #return error if has flags
 execute if entity @s[tag=flagGot] run return run function du-in:kit/all/ability/titles/flag
@@ -13,3 +13,6 @@ execute store result storage du-in:main player.current int 1 run scoreboard play
 
 #Find player
 function du-in:kit/all/secondary/activate/find_kit with storage du-in:main player
+
+scoreboard players reset @s secKitUse
+#tag @s remove testActions

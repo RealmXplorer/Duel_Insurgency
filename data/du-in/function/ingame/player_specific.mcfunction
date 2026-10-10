@@ -1,6 +1,7 @@
 #Run Ability and Secondaries
     execute if entity @s[scores={kitUse=1..},tag=!win,tag=!lose,tag=!kitMenu] run function du-in:kit/all/ability/init
     execute if entity @s[scores={secKitUse=1..},tag=!win,tag=!lose,tag=!kitMenu,tag=!startgame] run function du-in:kit/all/secondary/activate
+    #execute if entity @s[tag=testActions] run function du-in:kit/all/secondary/activate
 
     # #Ability timer
     execute if entity @s[level=1..,tag=!teamDead,tag=!win,tag=!lose,tag=!kitMenu,tag=!startgame] run function du-in:kit/all/ability/timer

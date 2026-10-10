@@ -11,7 +11,7 @@ scoreboard players add @s lightScanY 1
 #tp @s ~ ~1 ~
 
 # Scan the next Y row if there are any remaining
-execute if score @s lightScanY matches 1..20 positioned ~ ~1 ~ run function du-in:kit/freddy/ability/light/scan_y
+execute if score @s lightScanY matches 1..40 positioned ~ ~1 ~ run function du-in:kit/freddy/ability/light/scan_y
 
 # Return to the bottom of the Y column
-execute if score @s lightScanY matches 21 run tp @s ~ ~-21 ~
+execute if score @s lightScanY matches 41 run tp @s ~ ~-21 ~

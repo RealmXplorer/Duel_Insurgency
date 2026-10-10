@@ -13,6 +13,7 @@ tag @e[type=chicken,tag=notSet,scores={player=0..}] remove notSet
 scoreboard players set @e[type=chicken,tag=noTimer] jockeyTimer 60
 tag @e[type=chicken,tag=noTimer] add jockeyDuration
 tag @e[type=chicken,tag=noTimer,scores={jockeyTimer=0..}] remove noTimer
+execute unless score #chicken running matches 1 run function du-in:kit/jack_black/ability/chicken_loop
 
 #Set current player to this player
 execute store result storage du-in:main player.current int 1 run scoreboard players get @s player

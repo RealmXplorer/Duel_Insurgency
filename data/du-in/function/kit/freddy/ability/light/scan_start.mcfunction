@@ -1,4 +1,4 @@
-summon marker ~-10 ~ ~-10 {Tags:["light_scanner","unset"]}
+summon marker ~-20 ~ ~-20 {Tags:["light_scanner","unset"]}
 
 # scoreboard players set @e[type=marker,tag=light_scanner,limit=1,sort=nearest] lightScanX 0
 # scoreboard players set @e[type=marker,tag=light_scanner,limit=1,sort=nearest] lightScanY 0

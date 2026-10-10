@@ -1,5 +1,5 @@
 
-execute if entity @s[scores={willoRecoilTimer=0..}] run function du-in:kit/willo/revolver/recoil/timer
+#execute if entity @s[scores={willoRecoilTimer=0..}] run function du-in:kit/willo/revolver/recoil/timer
 
 execute if entity @s[scores={willoCancelAnimation=20}] run function du-in:kit/willo/secondary/item
 

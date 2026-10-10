@@ -21,7 +21,7 @@ clear @s #du-in:armor
 #Take lights away
 function du-in:kit/freddy/ability/light/scan_start
 
-scoreboard players set @s lightTimer 100
+scoreboard players set @s lightTimer 200
 
 #Put into cooldown
 tag @s add cooldown

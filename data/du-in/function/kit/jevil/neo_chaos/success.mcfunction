@@ -7,7 +7,7 @@ execute positioned ^ ^ ^5 run summon item_display ~ ~4 ~ {Tags:["devilsKnife","p
 
 #Particle#
 playsound du-in:kit.jevil.neo_chaos master @a ~ ~ ~ 100 1
-
+execute unless score #scythe running matches 1 run function du-in:kit/jevil/neo_chaos/loop
 
 tellraw @a [{text:"The air crackles with Freedom!",bold:true,color:dark_purple}]
 

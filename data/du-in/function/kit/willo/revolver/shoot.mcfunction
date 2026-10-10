@@ -1,4 +1,5 @@
 tag @s add willoShoot
+
 function du-in:kit/willo/secondary/item
 playsound du-in:kit.willo.revolver_shoot master @a ~ ~ ~ 1 1
 
@@ -17,14 +18,19 @@ execute positioned ^-.5 ^ ^1.25 run particle dust{color:[1.000,1.000,0.000],scal
 execute positioned ^-.5 ^ ^1.5 run particle dust{color:[1.000,0.541,0.141],scale:1} ~ ~1 ~ 0.1 0.1 0.1 0.5 5 normal
 
 scoreboard players remove @s willoAmmo 1
+tp @s ~ ~ ~ ~ ~-15
+
 #title @s actionbar [{"color":"red","score":{"name":"@s","objective":"willoAmmo"}},{"color":"red","text":"/6"}]
 tag @s remove willoShoot
 
-
-tp @s ~ ~ ~ ~ ~-15
 scoreboard players set @s willoRecoilTimer 5
+execute unless score #recoil running matches 1 run schedule function du-in:kit/willo/revolver/recoil/loop 1t
 
-execute store result score @s muzzleFlash run random value 1..4
-execute if entity @s[scores={muzzleFlash=1}] run return run item modify entity @s armor.head du-in:muzzle_flash1
-execute if entity @s[scores={muzzleFlash=2}] run return run item modify entity @s armor.head du-in:muzzle_flash2
-execute if entity @s[scores={muzzleFlash=3}] run return run item modify entity @s armor.head du-in:muzzle_flash3
+tag @s add muzzleFlash
+schedule function du-in:kit/willo/revolver/flash/test 1t
+
+#execute store result score @s muzzleFlash run random value 1..4
+#execute if entity @s[scores={muzzleFlash=1}] run item modify entity @s armor.head du-in:muzzle_flash1
+#execute if entity @s[scores={muzzleFlash=2}] run item modify entity @s armor.head du-in:muzzle_flash2
+#execute if entity @s[scores={muzzleFlash=3}] run item modify entity @s armor.head du-in:muzzle_flash3
+#scoreboard players reset @s muzzleFlash

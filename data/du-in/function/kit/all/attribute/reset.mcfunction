@@ -106,5 +106,10 @@ attribute @s minecraft:armor_toughness modifier remove parry_resist
 attribute @s attack_damage modifier remove freddy_darkness
 attribute @s movement_speed modifier remove freddy_darkness
 
+#Rory
+attribute @s minecraft:air_drag_modifier modifier remove air_drag
+attribute @s minecraft:movement_speed modifier remove move
+attribute @s minecraft:jump_strength modifier remove jump
+attribute @s minecraft:friction_modifier modifier remove friction
 
 ##COME BACK TO THIS
