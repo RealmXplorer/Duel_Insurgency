@@ -5,7 +5,7 @@
     #1 = male, 2 = female, 3 = armless male, 4 = armless female
 #group: which category in kit menu they belong to.
 #rank: where this kit lists in the kit menu's listed category (currently unused)
-#slot: the actual slot the kit's head will appear in kit menu's listed category (currently unused)
+#slot: the actual slot the kit's head will appear in kit menu's listed category
 
 #Empty "kit.list" so it doesn't duplicate.
 data remove storage du-in:kit list
@@ -86,12 +86,15 @@ data modify storage du-in:kit list append value {"name":"chungus","id":42069,"ge
 data modify storage du-in:kit list append value {"name":"saul","id":2015,"gender":1,"group":"",rank:0,slot:0}
 
 
-
+#Store Kit list length
 execute store result score #main listLength run data get storage du-in:kit list
 
+#Align with 0-indexing of lists
 scoreboard players remove #main listLength 1
 
+#Store index value into main and begin running through database
 execute store result storage du-in:main list.index int 1 run scoreboard players get #main listLength
 function du-in:storage/kit/create_list with storage du-in:main list
 
+#Set groups for kit menu
 data modify storage du-in:main themes set value ["unlock", "minecraft", "undertale", "starwars", "zootopia", "last_wish", "fnaf", "grab_bag"]

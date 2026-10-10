@@ -1,1 +1,2 @@
+#Run functions for indexed head
 $execute unless items entity @s inventory.$(slot) minecraft:player_head run function du-in:lobby/kitmenu/menu/run_kit with storage du-in:temp current_kit

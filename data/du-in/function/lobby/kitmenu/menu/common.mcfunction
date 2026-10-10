@@ -8,9 +8,11 @@
 # execute if entity @s[scores={kitTheme=6}] run function du-in:lobby/kitmenu/menu/fnaf
 # execute if entity @s[scores={kitTheme=7}] run function du-in:lobby/kitmenu/menu/grab_bag
 
+#Start index from current value and start load sequence for indexed group
 execute store result storage du-in:temp theme_index int 1 run scoreboard players get @s kitTheme
 function du-in:lobby/kitmenu/menu/load_group with storage du-in:temp
 
+##GENERAL FUNCTIONS (Applicable across themes)
 #Menu change icons
 execute unless items entity @s[scores={kitTheme=1..6}] inventory.0 minecraft:barrier run function du-in:lobby/kitmenu/menu/function/next
 execute unless items entity @s[scores={kitTheme=2..}] inventory.18 minecraft:barrier run function du-in:lobby/kitmenu/menu/function/prev
