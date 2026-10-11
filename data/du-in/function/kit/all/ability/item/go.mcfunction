@@ -1,2 +1,2 @@
 #Run "hit/player" for selected character
-$function du-in:kit/$(name)/ability/item
+$function $(pack):kit/$(name)/ability/item
