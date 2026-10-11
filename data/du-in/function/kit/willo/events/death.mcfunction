@@ -1,0 +1,1 @@
+scoreboard players set @s[tag=!stolen] willoAmmo 6

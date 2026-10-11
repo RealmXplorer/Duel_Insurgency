@@ -1,9 +1,5 @@
 {
 	"values": [
-        "minecraft:player_attack",
-        "minecraft:player_explosion",
-        "minecraft:explosion",
-        "minecraft:arrow",
-        "minecraft:generic"
+                "du-in:bullet"
 	]
 }

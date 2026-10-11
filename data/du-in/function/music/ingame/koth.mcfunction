@@ -1,5 +1,5 @@
 #KING OF THE HILL#
-execute unless entity @a[scores={musType=2..}] if entity @a[tag=!musOverride,tag=!musicOff] run function du-in:music/ingame/default/koth
+execute if entity @a[tag=!musOverride,tag=!musicOff] run function du-in:music/ingame/default/koth
 
 #LEGACY#
 execute if entity @a[scores={musType=2},tag=!musOverride,tag=!musicOff] run function du-in:music/ingame/legacy/koth

@@ -26,8 +26,13 @@ tag @s remove willoShoot
 scoreboard players set @s willoRecoilTimer 5
 execute unless score #recoil running matches 1 run schedule function du-in:kit/willo/revolver/recoil/loop 1t
 
+scoreboard players set @s willoShotDelay 30
+tag @s add revolverCooldown
+execute unless score #willoShotDelay running matches 1 run schedule function du-in:kit/willo/revolver/delay/loop 1t
+
 tag @s add muzzleFlash
 schedule function du-in:kit/willo/revolver/flash/test 1t
+
 
 #execute store result score @s muzzleFlash run random value 1..4
 #execute if entity @s[scores={muzzleFlash=1}] run item modify entity @s armor.head du-in:muzzle_flash1

@@ -1,3 +1,4 @@
+tag @s add lostStreak
 execute store result storage du-in:main killsteak.streak int 1 run scoreboard players get @a[tag=lostStreak,limit=1] killStreak
 
 function du-in:ingame/killstreaks/end_msg with storage du-in:main killstreak

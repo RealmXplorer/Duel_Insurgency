@@ -15,6 +15,7 @@ execute if entity @s[scores={willoStock=..11,willoCandyCornTimer=81..,willoCance
 
 execute if entity @s[scores={willoStandTimer=20..}] run function du-in:kit/willo/revolver/candy_corn/increase
 #
+execute if entity @s[predicate=du-in:is_sneaking] run function du-in:kit/willo/revolver/reload/try
 
 #If invisibility is toggled off, keep it on for Willo.
 # execute if score #main invisibleToggle matches 1 if entity @s[predicate=!du-in:effect/is_invisible] run effect give @s invisibility infinite 0 true

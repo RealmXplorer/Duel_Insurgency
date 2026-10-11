@@ -18,4 +18,4 @@ execute if entity @s[tag=voidReady] run function du-in:void/interact/reaffirm
 execute if entity @s[predicate=du-in:effect/has_resistance] run playsound minecraft:entity.breeze.deflect master @a ~ ~ ~ 0.5 .75
 
 #Start parry if taken damage
-execute if entity @s[predicate=du-in:is_sneaking,scores={parryCooldown=..5},predicate=!du-in:effect/is_on_fire,predicate=!du-in:effect/is_poisoned,predicate=!du-in:effect/is_withered,predicate=!du-in:effect/is_invisible,tag=!floweyDuration] run function du-in:kit/all/parry/init
+execute if entity @s[predicate=du-in:is_sneaking,scores={parryCooldown=..5},predicate=!du-in:effect/is_on_fire,predicate=!du-in:effect/is_poisoned,predicate=!du-in:effect/is_withered,tag=!floweyDuration,tag=!invisible] run function du-in:kit/all/parry/init

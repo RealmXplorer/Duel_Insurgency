@@ -1,5 +1,5 @@
 #DEATHMATCH#
-execute unless entity @a[scores={musType=2..}] if entity @a[tag=!musOverride,tag=!musicOff] run function du-in:music/ingame/default/deathmatch
+execute if entity @a[tag=!musOverride,tag=!musicOff] run function du-in:music/ingame/default/deathmatch
 
 #LEGACY#
 execute if entity @a[scores={musType=2},tag=!musOverride,tag=!musicOff] run function du-in:music/ingame/legacy/deathmatch

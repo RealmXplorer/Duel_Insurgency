@@ -2,7 +2,8 @@ scoreboard players remove @s willoBulletTravel 1
 
 tag @s remove unShot
 
-tp @s ^ ^ ^0.65
+# tp @s ^ ^ ^0.65
+tp @s ~ ~ ~
 
 #Hasn't hit wood
 execute if entity @s[tag=!woodPass,scores={willoBulletTravel=..110}] at @e[type=marker,tag=willoBullet] run particle minecraft:crit ~ ~ ~ 0.2 0.2 0.2 0 1 force
@@ -20,16 +21,17 @@ execute if entity @s[tag=woodPass] run playsound du-in:kit.willo.revolver_whizz 
 #execute if entity @s[tag=woodPass] as @e[type=husk,dx=0] positioned ~-0.99 ~-0.99 ~-0.99 if entity @s[dx=0] positioned ~0.99 ~0.99 ~0.99 run function du-in:kit/willo/revolver/damage_pen
 
 execute store result storage du-in:willo_bullet player.current int 1 run scoreboard players get @s player
-execute if entity @s[tag=!woodPass,tag=!void] as @a[tag=!willoShoot,tag=playing,dx=0] positioned ~-0.99 ~-0.99 ~-0.99 if entity @s[dx=0] positioned ~0.99 ~0.99 ~0.99 run function du-in:kit/willo/revolver/damage_no_pen with storage du-in:willo_bullet player
-execute if entity @s[tag=woodPass,tag=!void] as @a[tag=!willoShoot,tag=playing,dx=0] positioned ~-0.99 ~-0.99 ~-0.99 if entity @s[dx=0] positioned ~0.99 ~0.99 ~0.99 run function du-in:kit/willo/revolver/damage_pen with storage du-in:willo_bullet player
+execute if entity @s[tag=!woodPass,tag=!void] as @a[tag=!willoShoot,tag=playing] positioned ~-.5 ~-.5 ~-.5 if entity @s[dx=0.5,dy=0.5,dz=0.5] run function du-in:kit/willo/revolver/damage_no_pen with storage du-in:willo_bullet player
+execute if entity @s[tag=woodPass,tag=!void] as @a[tag=!willoShoot,tag=playing] positioned ~-.5 ~-.5 ~-.5 if entity @s[dx=0.5,dy=0.5,dz=0.5] run function du-in:kit/willo/revolver/damage_pen with storage du-in:willo_bullet player
 
-execute if entity @s[tag=void,tag=!woodPass] as @e[type=skeleton,dx=0] positioned ~-0.99 ~-0.99 ~-0.99 if entity @s[dx=0] positioned ~0.99 ~0.99 ~0.99 run function du-in:kit/willo/revolver/void/damage with storage du-in:willo_bullet player
-execute if entity @s[tag=void,tag=woodPass] as @e[type=skeleton,dx=0] positioned ~-0.99 ~-0.99 ~-0.99 if entity @s[dx=0] positioned ~0.99 ~0.99 ~0.99 run function du-in:kit/willo/revolver/void/damage with storage du-in:willo_bullet player
+execute if entity @s[tag=void,tag=!woodPass] as @e[type=skeleton] positioned ~-.5 ~-.5 ~-.5 if entity @s[dx=0.5,dy=0.5,dz=0.5] run function du-in:kit/willo/revolver/void/damage with storage du-in:willo_bullet player
+execute if entity @s[tag=void,tag=woodPass] as @e[type=skeleton] positioned ~-.5 ~-.5 ~-.5 if entity @s[dx=0.5,dy=0.5,dz=0.5] run function du-in:kit/willo/revolver/void/damage with storage du-in:willo_bullet player
 
+execute if block ~ ~ ~ minecraft:snow run tag @s add hitSnow
 execute if block ~ ~ ~ #mineable/pickaxe run tag @s add hitStone
 execute if block ~ ~ ~ #mineable/axe run tag @s add hitWood
 execute if block ~ ~ ~ #mineable/hoe run tag @s add hitLeaf
-execute if block ~ ~ ~ #mineable/shovel run tag @s add hitDirt
+execute if block ~ ~ ~ #mineable/shovel run tag @s[tag=!hitSnow] add hitDirt
 execute if block ~ ~ ~ #minecraft:glass run tag @s add hitGlass
 
 #Pass through leaves and glass
@@ -41,6 +43,7 @@ execute if entity @s[tag=hitStone] run function du-in:kit/willo/revolver/pen/sto
 execute if entity @s[tag=hitDirt] run function du-in:kit/willo/revolver/pen/dirt
 execute if entity @s[tag=hitWood] run function du-in:kit/willo/revolver/pen/wood
 
+#execute positioned ^ ^ ^0.65 if entity @s[scores={willoBulletTravel=1..}] run function du-in:kit/willo/revolver/marker_raycast
 execute positioned ^ ^ ^0.65 if entity @s[scores={willoBulletTravel=1..}] run function du-in:kit/willo/revolver/marker_raycast
 
 #execute positioned ^ ^ ^1 if entity @s[scores={willoBulletTravel=1..}] run function du-in:kit/willo/revolver/marker_raycast

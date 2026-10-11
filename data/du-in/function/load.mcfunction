@@ -68,6 +68,9 @@ scoreboard objectives add lightTimer dummy
 scoreboard objectives add kitGender dummy
 scoreboard objectives add lightLevel dummy
 scoreboard objectives add running dummy
+scoreboard objectives add currentMap dummy
+scoreboard objectives add bulletIFrames dummy
+scoreboard objectives add willoShotDelay dummy
 
 #Timers
 scoreboard objectives add ambience dummy

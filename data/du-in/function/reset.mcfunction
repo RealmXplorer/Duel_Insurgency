@@ -79,6 +79,7 @@ scoreboard players reset * deathTimer
 scoreboard players reset * teamDeaths
 tag @a remove teamDead
 
+scoreboard players reset @a abilityDelay
 
 
 scoreboard players reset * killStreak

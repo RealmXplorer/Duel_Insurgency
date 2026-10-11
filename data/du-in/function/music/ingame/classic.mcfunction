@@ -1,5 +1,5 @@
 #CLASSIC#
-execute unless entity @a[scores={musType=1..}] if entity @a[tag=!musOverride] run function du-in:music/ingame/default/classic
+execute if entity @a[tag=!musOverride] run function du-in:music/ingame/default/classic
 
 #TOURNAMENT#
 execute if entity @a[scores={musType=1},tag=!musOverride] run function du-in:music/ingame/other/tournament
