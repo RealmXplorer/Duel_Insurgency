@@ -4,7 +4,7 @@ scoreboard players enable @s info
 clear @s player_head[custom_data={du-in:'freddyHead'}]
 
 #Play sound
-#playsound du-in:kit.asriel.hit master @s ~ ~ ~ 100 1
+playsound du-in:kit.freddy.laugh master @s ~ ~ ~ 100 1
 
 #Announce kit pick
 tellraw @s [{text:"Selected the ",bold:true,color:gray},{text:"Freddy Fazbear ",bold:true,color:gold},{text:"class! ",bold:true,color:gray},{text:"(Click here for kit info!)",bold:false,color:white,"underlined":true,"click_event":{"action":"run_command","command":"/trigger info add 1"}}]
@@ -23,6 +23,7 @@ $execute store result score @s kit run data get storage du-in:player$(current) k
 
 #Set Kit's gender from storage
 $execute store result score @s kitGender run data get storage du-in:player$(current) kit.gender
+
 
 #Clear and remove tags
 function du-in:lobby/kitmenu/select/common

@@ -43,6 +43,7 @@ tag @a remove glowing
 
 tag @a remove saul
 tag @a remove saac
+tag @a remove jackBlack
 tag @a remove bigChungus
 tag @a remove musOverride
 execute as @a run function du-in:kit/clairen/ability/remove_field

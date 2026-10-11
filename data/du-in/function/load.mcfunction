@@ -71,6 +71,8 @@ scoreboard objectives add running dummy
 scoreboard objectives add currentMap dummy
 scoreboard objectives add bulletIFrames dummy
 scoreboard objectives add willoShotDelay dummy
+scoreboard objectives add willoWeapSwitch dummy
+scoreboard objectives add playerDied minecraft.custom:minecraft.deaths
 
 #Timers
 scoreboard objectives add ambience dummy

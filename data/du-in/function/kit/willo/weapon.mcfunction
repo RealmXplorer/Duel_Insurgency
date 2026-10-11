@@ -1,0 +1,1 @@
+item replace entity @s hotbar.0 with minecraft:bone[item_name={text:"Willo's Knife",color:gray,bold:true},item_model="du-in:willo/knife",unbreakable={},attribute_modifiers=[{type:"attack_damage",id:"attack_damage",amount:3.25,operation:"add_value",slot:"mainhand"},{type:"attack_speed",id:"attack_speed",amount:40,operation:"add_value",slot:"mainhand"}]] 1

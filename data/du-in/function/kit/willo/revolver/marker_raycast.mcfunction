@@ -19,6 +19,8 @@ execute if entity @s[tag=woodPass] run playsound du-in:kit.willo.revolver_whizz 
 #Damage
 #execute if entity @s[tag=!woodPass] as @e[type=husk,dx=0] positioned ~-0.99 ~-0.99 ~-0.99 if entity @s[dx=0] positioned ~0.99 ~0.99 ~0.99 run function du-in:kit/willo/revolver/damage_no_pen
 #execute if entity @s[tag=woodPass] as @e[type=husk,dx=0] positioned ~-0.99 ~-0.99 ~-0.99 if entity @s[dx=0] positioned ~0.99 ~0.99 ~0.99 run function du-in:kit/willo/revolver/damage_pen
+execute if entity @e[distance=..6,type=marker,tag=clairenField] run function du-in:kit/clairen/ability/field/kill_projectile
+
 
 execute store result storage du-in:willo_bullet player.current int 1 run scoreboard players get @s player
 execute if entity @s[tag=!woodPass,tag=!void] as @a[tag=!willoShoot,tag=playing] positioned ~-.5 ~-.5 ~-.5 if entity @s[dx=0.5,dy=0.5,dz=0.5] run function du-in:kit/willo/revolver/damage_no_pen with storage du-in:willo_bullet player

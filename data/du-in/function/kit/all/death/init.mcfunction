@@ -90,6 +90,7 @@ execute if entity @s[scores={parryDuration=0..},tag=parry] run scoreboard player
 
 #KILLSTREAK#
 tag @s[scores={killStreak=3..}] add lostStreak
+execute store result storage du-in:main killsteak.streak int 1 run scoreboard players get @s[tag=lostStreak] killStreak
 scoreboard players reset @s killStreak
 
 
@@ -105,6 +106,8 @@ execute if entity @s[tag=ranMode] run function du-in:kit/all/death/random_mode
 execute if entity @s[tag=injected] run function du-in:kit/pawbert/secondary/antidote/cure
 
 function du-in:kit/nick/ability/sabotage/expire
+
+# tag @s add deathMsg
 
 #End function
 scoreboard players reset @s killedByCreeper

@@ -13,10 +13,10 @@ execute if entity @s[tag=meetingSpot,scores={impostTimer=0..}] run return run fu
 execute if entity @s[tag=clairenField] run return run function du-in:kit/clairen/ability/field
 
 #Kylo Freeze Spot
-execute if entity @s[tag=kyloHitPos] run return run function du-in:kit/kylo/ability/marker
+#execute if entity @s[tag=kyloHitPos] run return run function du-in:kit/kylo/ability/marker
 
 #Willo Trap
 #execute if entity @s[tag=willoTrap] run function du-in:kit/willo/ability/trap/init
 
 #Freddy lights
-execute if entity @s[tag=light,tag=!unset] run function du-in:kit/freddy/ability/light/timer
+#execute if entity @s[tag=light,tag=!unset] run function du-in:kit/freddy/ability/light/timer

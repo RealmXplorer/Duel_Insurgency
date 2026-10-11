@@ -3,6 +3,11 @@ execute store result score @s willoStock run clear @s copper_nugget 0
 
 scoreboard players set @s willoAmmo 6
 scoreboard players set @s willoReloadTimer 20
+scoreboard players set @s willoWeapSwitch 1
+tag @s add willoKnife
+
+function du-in:kit/willo/armor
 
 tag @s add hasSecond
-tag @s add noMainWeapon
+tag @s add secondExempt
+#tag @s add noMainWeapon

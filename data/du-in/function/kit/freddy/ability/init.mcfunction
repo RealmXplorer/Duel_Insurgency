@@ -13,6 +13,9 @@ scoreboard players reset #main team
 attribute @s attack_damage modifier add freddy_ability 2 add_value
 attribute @s movement_speed modifier add freddy_ability 0.02 add_value
 
+playsound du-in:kit.freddy.power master @a ~ ~ ~ 1 1
+playsound du-in:kit.freddy.laugh master @a ~ ~ ~ 1 1
+
 #Go Invisible
 tag @s add freddyShadow
 tag @s add invisible
@@ -20,8 +23,11 @@ clear @s #du-in:armor
 
 #Take lights away
 function du-in:kit/freddy/ability/light/scan_start
-
 scoreboard players set @s lightTimer 200
+execute unless score #freddyLight running matches 1 run function du-in:kit/freddy/ability/light/loop
+
+##Freddy lights
+#execute if entity @s[tag=light,tag=!unset] run function du-in:kit/freddy/ability/light/timer
 
 #Put into cooldown
 tag @s add cooldown

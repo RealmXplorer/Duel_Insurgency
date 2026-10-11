@@ -1,0 +1,27 @@
+execute as @a[x=726,y=14,z=-211,dx=-7,dy=.1,dz=-3] run tp @s 709 16 -220 180 0
+execute as @a[x=709,y=13,z=-247,dx=1,dy=.1,dz=-1] run tp @s 690 0 -238 -90 0
+execute as @a[x=701,y=-1,z=-258,dx=1,dy=.1,dz=-1] run tp @s 689 -11 -240 -90 0
+execute as @a[x=708,y=-14,z=-257,dx=1,dy=.1,dz=1] run tp @s 713 4 -222 -90 0
+execute as @a[x=725,y=1,z=-242,dx=1,dy=.1,dz=1] run tp @s 718 14 -255 -180 0
+execute as @a[x=733,y=11,z=-284,dx=1,dy=.1,dz=1] run tp @s 721 -25 -221 180 0
+execute as @a[x=729,y=-28,z=-228,dx=1,dy=.1,dz=1] run tp @s 742 -23 -242 0 0
+execute as @a[x=749,y=-35,z=-239,dx=1,dy=.1,dz=1] run tp @s 730.5 -13 -239.5 0 0
+execute as @a[x=730,y=-10,z=-218,dx=1,dy=.1,dz=1] run tp @s 748.5 0.5 -240.5 -180 0
+execute as @a[x=748,y=-3,z=-272,dx=1,dy=.1,dz=1] run tp @s 747 -7 -217.5 -90 0
+execute as @a[x=757,y=-6,z=-223,dx=1,dy=.1,dz=1] run tp @s 765.5 -4 -260.5 -90 0
+execute as @a[x=771,y=-4,z=-267,dx=1,dy=.1,dz=1] run tp @s 772.5 -1 -244.5 0 0
+execute as @a[x=786,y=-2,z=-244,dx=1,dy=.1,dz=1] run tp @s 777.5 9 -259.5 -180 0
+
+execute as @a[x=704,y=11,z=-218,dx=10,dy=1,dz=-31] run tp @s 709 16 -220 180 0
+execute as @a[x=687,y=-4,z=-233,dx=18,dy=1,dz=-29] run tp @s 690 0 -238 -90 0
+execute as @a[x=685,y=-17,z=-234,dx=26,dy=1,dz=-25] run tp @s 689 -11 -240 -90 0
+execute as @a[x=710,y=-2,z=-217,dx=18,dy=1,dz=-27] run tp @s 713 4 -222 -90 0
+execute as @a[x=712,y=8,z=-251,dx=25,dy=1,dz=-36] run tp @s 718 14 -255 -180 0
+execute as @a[x=716,y=-32,z=-217,dx=15,dy=1,dz=-28] run tp @s 721 -25 -221 180 0
+execute as @a[x=739,y=-38,z=-245,dx=14,dy=1,dz=19] run tp @s 742 -23 -242 0 0
+execute as @a[x=735,y=-17,z=-243,dx=-9,dy=1,dz=26] run tp @s 730.5 -13 -239.5 0 0
+execute as @a[x=745,y=-5,z=-238,dx=7,dy=1,dz=-37] run tp @s 748.5 0.5 -240.5 -180 0
+execute as @a[x=744,y=-10,z=-215,dx=24,dy=1,dz=-10] run tp @s 747 -7 -217.5 -90 0
+execute as @a[x=763,y=-8,z=-257,dx=20,dy=1,dz=-13] run tp @s 765.5 -4 -260.5 -90 0
+execute as @a[x=770,y=-5,z=-246,dx=19,dy=1,dz=27] run tp @s 772.5 -1 -244.5 0 0
+execute as @a[x=772,y=6,z=-258,dx=11,dy=1,dz=-21] run tp @s 777.5 9 -259.5 -180 0

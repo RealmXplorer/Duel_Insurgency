@@ -17,13 +17,13 @@
 #execute if entity @e[type=salmon,tag=kratosRock] run function du-in:kit/kratos/ability/rock/track
 
 #Willo Flashbang
-execute as @e[type=salmon,tag=willoFlash] at @s run function du-in:kit/willo/ability/flash/timer
+#execute as @e[type=salmon,tag=willoFlash] at @s run function du-in:kit/willo/ability/flash/timer
 
 #Neo Chaos#
 #execute as @e[type=minecraft:item_display,tag=devilsKnife] at @s run function du-in:kit/jevil/neo_chaos/scythe
 
 #Jack Horner midas
-execute as @e[type=#du-in:midas,tag=gold,scores={goldTimer=1..}] run function du-in:kit/jack_horner/ability/midas/timer
+#execute as @e[type=#du-in:midas,tag=gold,scores={goldTimer=1..}] run function du-in:kit/jack_horner/ability/midas/timer
 
 ##ENTITY TESTS
 #Markers

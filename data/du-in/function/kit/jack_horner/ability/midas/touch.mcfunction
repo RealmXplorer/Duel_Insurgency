@@ -15,4 +15,6 @@ scoreboard players set @e[tag=gold,tag=notSet] goldTimer 20
 
 tag @e[tag=notSet,tag=gold,scores={goldTimer=-1..}] remove notSet
 
+execute unless score #midasEntity running matches 1 run function du-in:kit/jack_horner/ability/midas/entity_loop
+
 advancement revoke @s only du-in:kit/midas

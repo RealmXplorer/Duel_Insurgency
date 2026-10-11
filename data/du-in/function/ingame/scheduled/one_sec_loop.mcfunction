@@ -3,6 +3,7 @@ execute as @a[gamemode=!spectator,tag=playing] at @s run function du-in:ingame/s
 
 execute if score #main matchDeaths matches 12.. if entity @a[gamemode=adventure,scores={kit=28},tag=!win,tag=!lose] run function du-in:kit/death/passive/start
 
+execute if entity @a[scores={kit=31}] unless entity @a[tag=hasRing] as @p[tag=playing,gamemode=!spectator] run function du-in:kit/sauron/ring/give_ring
 
 execute as @e[type=item,tag=!displayItem] run kill @s
 

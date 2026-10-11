@@ -1,7 +1,7 @@
 tag @s add willoShoot
 
 function du-in:kit/willo/secondary/item
-playsound du-in:kit.willo.revolver_shoot master @a ~ ~ ~ 1 1
+playsound du-in:kit.willo.revolver_shoot master @a ~ ~ ~ 100 1
 
 summon marker ^ ^1.9 ^.5 {Tags:["willoBullet","unset","mapSpecific","projectile","unShot"]}
 scoreboard players set @e[distance=..2,tag=willoBullet,tag=unset,type=marker] willoBulletTravel 120
@@ -18,7 +18,7 @@ execute positioned ^-.5 ^ ^1.25 run particle dust{color:[1.000,1.000,0.000],scal
 execute positioned ^-.5 ^ ^1.5 run particle dust{color:[1.000,0.541,0.141],scale:1} ~ ~1 ~ 0.1 0.1 0.1 0.5 5 normal
 
 scoreboard players remove @s willoAmmo 1
-tp @s ~ ~ ~ ~ ~-15
+execute if entity @s[x_rotation=-74.9..90] run tp @s ~ ~ ~ ~ ~-15
 
 #title @s actionbar [{"color":"red","score":{"name":"@s","objective":"willoAmmo"}},{"color":"red","text":"/6"}]
 tag @s remove willoShoot
@@ -26,7 +26,7 @@ tag @s remove willoShoot
 scoreboard players set @s willoRecoilTimer 5
 execute unless score #recoil running matches 1 run schedule function du-in:kit/willo/revolver/recoil/loop 1t
 
-scoreboard players set @s willoShotDelay 30
+scoreboard players set @s willoShotDelay 16
 tag @s add revolverCooldown
 execute unless score #willoShotDelay running matches 1 run schedule function du-in:kit/willo/revolver/delay/loop 1t
 

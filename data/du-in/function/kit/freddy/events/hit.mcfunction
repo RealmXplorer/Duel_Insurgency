@@ -1,0 +1,1 @@
+playsound du-in:kit.freddy.hit voice @a ~ ~ ~ 1 1

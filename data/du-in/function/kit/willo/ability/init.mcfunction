@@ -1,7 +1,38 @@
 #INIT Function
+execute if entity @s[tag=stolen] run return run function du-in:kit/willo/ability/stolen
 execute if entity @s[tag=sabotaged] run return run function du-in:kit/willo/ability/sabotaged
 
-function du-in:kit/willo/ability/flash/throw
+
+scoreboard players add @s willoWeapSwitch 1
+scoreboard players set @s[scores={willoWeapSwitch=3..}] willoWeapSwitch 1
+
+execute if entity @s[scores={willoWeapSwitch=1}] run function du-in:kit/willo/ability/switch/knife
+
+execute if entity @s[scores={willoWeapSwitch=2}] run function du-in:kit/willo/ability/switch/revolver
+
+#Reset Attributes
+function du-in:kit/willo/attribute
+
+#Clear items
+#clear @s #du-in:weapon
+#clear @s #du-in:secondary
+#clear @s #du-in:ability
+#clear @s coal
+
+#Play sound
+playsound du-in:kit.death.switch master @a ~ ~ ~
+
+
+#play particles
+playsound minecraft:entity.player.attack.sweep master @a ~ ~ ~ 2 1.25
+particle minecraft:dust{color:[1.0, 1.0, 1.0],scale:1.0} ~ ~1 ~ .5 .5 .5 1 100 force
+
+#Set cooldown
+xp set @s 60 levels
+tag @s remove kitActions
+
+
+# function du-in:kit/willo/ability/flash/throw
 
 
 #Test for traps

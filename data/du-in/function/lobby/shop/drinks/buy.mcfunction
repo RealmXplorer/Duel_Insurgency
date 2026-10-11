@@ -1,5 +1,5 @@
 scoreboard players remove @s[tag=!audience] Diamonds 5
-execute store result score @s drinkType run random value 1..7
+execute store result score @s drinkType run random value 1..9
 execute unless entity @s[tag=audience] run function du-in:lobby/kitmenu/skins/actions/buy_sound
 execute if entity @s[tag=audience] run playsound du-in:sfx.vending.dispense player @a ~ ~ ~ 1 1 1
 
@@ -16,3 +16,5 @@ execute if entity @s[scores={drinkType=5}] run give @s potion[custom_name={text:
 
 execute if entity @s[scores={drinkType=6}] run give @s milk_bucket[custom_name={text:"Milk Pail",color:white,bold:true,italic:false},lore=[{text:"I am the milkman, my milk is delicious!",color:gray,bold:false}]] 1
 execute if entity @s[scores={drinkType=7}] run give @s stone_sword[item_model="du-in:abilities/runza",food={nutrition:4,saturation:0.1,can_always_eat:true},consumable={consume_seconds:1.6},item_name={text:"Runza",color:"#136b0e",bold:true},unbreakable={}] 1
+execute if entity @s[scores={drinkType=8}] run give @s copper_nugget[item_name={text:"Candy Corn",color:"#e2a807",bold:true},lore=[{text:"The classic"}],consumable={consume_seconds:1,animation:"eat",has_consume_particles:true,on_consume_effects:[{type:"minecraft:apply_effects",effects:[{id:"minecraft:speed",amplifier:0,duration:60,show_particles:0b,show_icon:1b}]}]},item_model="du-in:other/candy_corn"] 5
+execute if entity @s[scores={drinkType=9}] run give @s stone_sword[item_model="du-in:weapons/popsicle",food={nutrition:4,saturation:0.1,can_always_eat:true},consumable={consume_seconds:1.6},item_name={text:"Pawpsicle",color:"#9e2323",bold:true},unbreakable={}] 1

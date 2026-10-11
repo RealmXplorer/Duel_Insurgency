@@ -18,13 +18,13 @@ playsound minecraft:entity.player.breath player @a ~ ~ ~ 0.5 1
 particle minecraft:smoke ~ ~1 ~ 0.2 0.2 0.2 0.01 10
 
 #Refill Venom injector
-execute if entity @s[tag=venomEmpty] run playsound minecraft:item.bottle.fill master @a ~ ~ ~ 1 1 1
-tag @s remove venomEmpty
-function du-in:kit/pawbert/secondary/item
+#execute if entity @s[tag=venomEmpty] run playsound minecraft:item.bottle.fill master @a ~ ~ ~ 1 1 1
+#tag @s remove venomEmpty
+#function du-in:kit/pawbert/secondary/item
 
 #Remove reserve Venom
-clear @s gunpowder
-tag @s remove hasVial
+#clear @s gunpowder
+#tag @s remove hasVial
 
 #Ability Effects
 clear @s #du-in:armor
@@ -32,11 +32,11 @@ effect give @s invisibility infinite 1 true
 
 execute if entity @s[tag=void] if entity @e[distance=0.05..4,type=skeleton] run function du-in:kit/pawbert/ability/void/near
 
-execute store result score #main team run scoreboard players get @s team
-tag @a[distance=0.05..3,tag=playing] add wildeHit
-execute as @a[tag=wildeHit] unless score @s team = #main team run function du-in:kit/nick/ability/enemy_hit
-execute as @a[tag=wildeHit] if score @s team = #main team run function du-in:kit/nick/ability/team_hit
-scoreboard players reset #main team
+#execute store result score #main team run scoreboard players get @s team
+#tag @a[distance=0.05..3,tag=playing] add wildeHit
+#execute as @a[tag=wildeHit] unless score @s team = #main team run function du-in:kit/nick/ability/enemy_hit
+#execute as @a[tag=wildeHit] if score @s team = #main team run function du-in:kit/nick/ability/team_hit
+#scoreboard players reset #main team
 
 #Start cooldown
 clear @s #du-in:ability

@@ -1,6 +1,14 @@
 # execute if entity @s[scores={starTravelTime=0}] run summon creeper ~ ~ ~ {Fuse:0b}
-summon creeper ~ ~ ~ {Fuse:0b}
+#summon creeper ~ ~ ~ {Fuse:0b}
+execute store result score #main team run scoreboard players get @s team
 
+execute as @a[distance=..6,tag=playing,sort=nearest,gamemode=!spectator,tag=!teamDead] unless score @s team = #main team run tag @s add roryHit
+
+scoreboard players reset #main team
+
+execute store result storage du-in:dark_star player.current int 1 run scoreboard players get @s player
+
+execute as @a[tag=roryHit] run function du-in:kit/rory/ability/star/explode_damage with storage du-in:dark_star player
 
 execute as @n[type=armor_stand,tag=roryDisplay] if score @s player = @n[type=armor_stand,tag=roryAbility] player run function du-in:kit/susie/ability/buster/kill
 execute as @n[type=item_display,tag=roryAbility] if score @s player = @n[type=armor_stand,tag=roryAbility] player run function du-in:kit/susie/ability/buster/kill

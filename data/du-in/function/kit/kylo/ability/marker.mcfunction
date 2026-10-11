@@ -1,2 +1,5 @@
-scoreboard players add @s kyloPosTimer 1
-kill @s[scores={kyloPosTimer=31..}]
+# scoreboard players add @s kyloPosTimer 1
+# kill @s[scores={kyloPosTimer=31..}]
+
+scoreboard players remove @s kyloPosTimer 1
+kill @s[scores={kyloPosTimer=..0}]

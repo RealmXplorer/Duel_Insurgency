@@ -11,7 +11,7 @@ execute unless entity @a[tag=scaleMode,tag=partyLeader] run function du-in:kit/a
 # attribute @s minecraft:jump_strength base set 0.47
 # attribute @s minecraft:friction_modifier base set -0.4
 
-attribute @s minecraft:air_drag_modifier base set -0.3
+attribute @s minecraft:air_drag_modifier base set 0.4
 effect give @s minecraft:slow_falling infinite 0 true
 attribute @s minecraft:jump_strength base set 0.45
-attribute @s minecraft:friction_modifier base set -0.2
+attribute @s minecraft:friction_modifier base set 0.2

@@ -1,13 +1,13 @@
 #Runs various tellraws associated with the character.
 
 #Kit Info
-execute if entity @s[scores={info=1}] run tellraw @s [{text:"Asriel",color:red,bold:true},{text:"\n Chaos Saber: ",color:blue,bold:true},{text:"A low-damage weapon that charges. Once charged, it can unleash a damaging attack",color:white,bold:false},{text:" (Sword)",color:gray,bold:false},{text:"\n Shocker Breaker: ",color:gold,bold:true},{text:"Summons a series of lightning strikes where you are looking.",color:white,bold:false}]
+execute if entity @s[scores={info=1}] run tellraw @s [{text:"Freddy Fazbear",color:red,bold:true},{text:"\n Showtime Mic: ",color:blue,bold:true},{text:"A good-damage weapon.",color:white,bold:false},{text:" (Sword)",color:gray,bold:false},{text:"\n Power Drain: ",color:gold,bold:true},{text:"Steals power from all nearby non-fire light blocks and strengthens Freddy.",color:white,bold:false},{text:"\n Shadow Freddy: ",color:gray,bold:true},{text:"The lower the light level, the faster and stronger Freddy becomes. If its dark enough, he disappears entirely...",color:white,bold:false}]
 
 #Surrender
-execute if entity @s[tag=surrender] run tellraw @s [{text:"You let go of your need to find someone like you...",color:gray,"italic": true}]
+execute if entity @s[tag=surrender] run tellraw @s [{text:"You let go of your need for revenge...",color:gray,"italic": true}]
 
 #Dream
-execute if entity @s[tag=dream] run tellraw @s [{text:"You dream of your parents...",color:gray,"italic": true}]
+execute if entity @s[tag=dream] run tellraw @s [{text:"You dream of birthdays and pizzas...",color:gray,"italic": true}]
 
 #Vision
-execute if entity @s[tag=vision] run tellraw @s [{text:"You see your family one last time...",color:gray,"italic": true}]
+execute if entity @s[tag=vision] run tellraw @s [{text:"You see a bright light welcoming you home...",color:gray,"italic": true}]

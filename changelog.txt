@@ -10,12 +10,19 @@
 -Added Jack Torrance skin for Springtrap.
 -Added "Five Nights at Freddy's" tab to kit menu.
 -Added "Overlook Maze" map as a Halloween and Christmas variant for the "Maze" map.
+-Added Pawpsicles and Candy Corn to the drink shop.
 -Added small audio cue when a player with resistance takes damage.
 -Added subtitles to all gameplay audio.
 
+*Balancing*
+-Pawbert's ability no longer automatically fills his venom vial.
+    -Pawbert will now have to play around his ability and weigh whether its the best option.
+-Pawbert no longer sabotages nearby enemies when using his ability.
+    -Pawbert will still charm nearby Goners.
+
 *Changes*
 -Updated map to 26.3.
--There are no more I-frames.
+-Unpurchased skins in shop now have a custom icon.
 -Map Countdown now always counts down, and will only stop when the party leader pauses.
 -Removed glowing effect when crouching in game.
 -All players are now invisible, forcing players to search for their enemy.
@@ -155,3 +162,8 @@
 -Added Black Knife texture. (by Realm_Xplorer)
 -Added Jack Torrance armor textures. (by Three_Thumbs)
 -Added Jack Torrance ability texture. (by Realm_Xplorer)
+-Added Willo Ability texture. (by Realm_Xplorer)
+-Added Willo knife models and textures. (by nerbski)
+-Added shop lock texture. (by Realm_Xplorer)
+-Added Freddy armor textures. (by CornKaine)
+-Added Freddy sounds
