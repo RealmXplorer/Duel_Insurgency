@@ -107,8 +107,6 @@ execute if entity @s[tag=injected] run function du-in:kit/pawbert/secondary/anti
 
 function du-in:kit/nick/ability/sabotage/expire
 
-# tag @s add deathMsg
-
 #End function
 scoreboard players reset @s killedByCreeper
 scoreboard players reset @s killedByPlayer

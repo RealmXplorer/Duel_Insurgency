@@ -30,7 +30,9 @@
 -Characters now have animations when using abilities.
     -"whack" for successful abilities, "none" for failed abilities, and "stab" for sabotaged abilities.
 -Messages for when a player ends another killstreak now dynamically shows the real killstreak (instead of just 3 or 5).
+-Kit Menu now has its page navigators on the right, instead of the left so that you can see the entries.
 -Skin menu is now organized the same as the kit menu.
+    -Skin presets has been removed due to a pesky bug.
 -Harvest now uses the Dappled Forest biome, and features Poplar trees.
 -Moved a vending machine on Maze so it wasn't right next to a jump pad.
 -Beds can no longer be slept in.
@@ -64,7 +66,7 @@
     -"kit/all/random/set" no longer searches each "kit" score, and can now find the correct kit via indexing its "kit.id" from the database.
     -Random roll is now dynamic, automatically adding to the max value for every kit not in groups "unlock" or "easter_egg"
     -Legendary random roll is also dynamic, automatically adding to the random max value for every kit in "unlock".
-    -Kit Menu has been overhauled, dynamically creating slots based off of the kit's stored "slot", and each entry is dynamically created, removing hardcoded groups for kitmenu.
+    -Kit Menu has been overhauled, dynamically creating slots, and each entry is dynamically created, removing hardcoded groups for kitmenu.
 -Secondaries are now standardized through a "hasSecond" tag (added on kit pick), and dynamic "secondary/item" and "secondary/init" functions.
     -Per-tick "secKitActions" tag check is being phased out, but technically still supported.
 -Secondary give/return functions are now run every second, rather than every tick (like weapons and armor).

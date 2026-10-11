@@ -43,13 +43,13 @@ scoreboard players set @s[tag=!palpsSkins] palpsSkin 0
 scoreboard players set @s[tag=!slimeSkins] slimeSkin 0
 
 #Execute display function
-execute if entity @s[scores={kitTheme=0}] run function du-in:lobby/kitmenu/menu/unlock
-execute if entity @s[scores={kitTheme=1}] run function du-in:lobby/kitmenu/menu/minecraft
-execute if entity @s[scores={kitTheme=2}] run function du-in:lobby/kitmenu/menu/undertale
-execute if entity @s[scores={kitTheme=3}] run function du-in:lobby/kitmenu/menu/starwars
-execute if entity @s[scores={kitTheme=4}] run function du-in:lobby/kitmenu/menu/zootopia
-execute if entity @s[scores={kitTheme=5}] run function du-in:lobby/kitmenu/menu/last_wish
-execute if entity @s[scores={kitTheme=6}] run function du-in:lobby/kitmenu/menu/grab_bag
+# execute if entity @s[scores={kitTheme=0}] run function du-in:lobby/kitmenu/menu/unlock
+# execute if entity @s[scores={kitTheme=1}] run function du-in:lobby/kitmenu/menu/minecraft
+# execute if entity @s[scores={kitTheme=2}] run function du-in:lobby/kitmenu/menu/undertale
+# execute if entity @s[scores={kitTheme=3}] run function du-in:lobby/kitmenu/menu/starwars
+# execute if entity @s[scores={kitTheme=4}] run function du-in:lobby/kitmenu/menu/zootopia
+# execute if entity @s[scores={kitTheme=5}] run function du-in:lobby/kitmenu/menu/last_wish
+# execute if entity @s[scores={kitTheme=6}] run function du-in:lobby/kitmenu/menu/grab_bag
 
 # execute if entity @s[scores={skinTheme=0}] run function du-in:skin_menu/menu/unlock
 # execute if entity @s[scores={skinTheme=1}] run function du-in:skin_menu/menu/minecraft
