@@ -1,7 +1,7 @@
 #scoreboard players add @a scannedZ 1
 
 # Check the current block
-execute if block ~ ~ ~ #du-in:non_firelight run function du-in:kit/freddy/ability/light/take_light
+execute if block ~ ~ ~ #du-in:light run function du-in:kit/freddy/ability/light/take_light
 
 # Move to the next Z position
 scoreboard players add @s lightScanZ 1

@@ -1,13 +1,9 @@
-#Cancel setup if an unpowered redstone lamp or copper bulb is present
+#Cancel setup if unlit
 execute if block ~ ~ ~ minecraft:redstone_lamp[lit=false] run return fail
-execute if block ~ ~ ~ minecraft:copper_bulb[lit=false] run return fail
-execute if block ~ ~ ~ minecraft:waxed_copper_bulb[lit=false] run return fail
-execute if block ~ ~ ~ minecraft:exposed_copper_bulb[lit=false] run return fail
-execute if block ~ ~ ~ minecraft:waxed_exposed_copper_bulb[lit=false] run return fail
-execute if block ~ ~ ~ minecraft:weathered_copper_bulb[lit=false] run return fail
-execute if block ~ ~ ~ minecraft:waxed_weathered_copper_bulb[lit=false] run return fail
-execute if block ~ ~ ~ minecraft:oxidized_copper_bulb[lit=false] run return fail
-execute if block ~ ~ ~ minecraft:waxed_oxidized_copper_bulb[lit=false] run return fail
+execute if block ~ ~ ~ #minecraft:copper_bulbs[lit=false] run return fail
+execute if block ~ ~ ~ #minecraft:campfires[lit=false] run return fail
+execute if block ~ ~ ~ #minecraft:candles[lit=false] run return fail
+execute if block ~ ~ ~ #minecraft:torches[lit=false] run return fail
 
 #Kill old light marker if already set
 execute as @n[distance=..0.5,type=marker,tag=light,tag=!unset] run kill @s
@@ -24,3 +20,6 @@ execute if block ~ ~ ~ #minecraft:copper_bulbs as @n[type=marker,tag=light,tag=u
 execute if block ~ ~ ~ #minecraft:campfires as @n[type=marker,tag=light,tag=unset] run return run function du-in:kit/freddy/ability/light/take/campfires
 execute if block ~ ~ ~ #minecraft:froglights as @n[type=marker,tag=light,tag=unset] run return run function du-in:kit/freddy/ability/light/take/froglights
 execute if block ~ ~ ~ minecraft:shroomlight as @n[type=marker,tag=light,tag=unset] run return run function du-in:kit/freddy/ability/light/take/shroomlight
+execute if block ~ ~ ~ #minecraft:torches as @n[type=marker,tag=light,tag=unset] run return run function du-in:kit/freddy/ability/light/take/torches
+execute if block ~ ~ ~ #minecraft:lanterns as @n[type=marker,tag=light,tag=unset] run return run function du-in:kit/freddy/ability/light/take/lanterns
+execute if block ~ ~ ~ #minecraft:candles as @n[type=marker,tag=light,tag=unset] run return run function du-in:kit/freddy/ability/light/take/candles

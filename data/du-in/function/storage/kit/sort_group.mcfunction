@@ -1,5 +1,6 @@
+
 #Store in group array from kit's group
-$data modify storage du-in:groups group.$(group) append from storage du-in:temp current
+$data modify storage du-in:groups group.$(group) prepend from storage du-in:temp current
 
 #Store in general pool if not unlock or easter_egg
 execute unless data storage du-in:temp current{group:"unlock"} unless data storage du-in:temp current{group:"easter_egg"} run data modify storage du-in:random pool append from storage du-in:temp current

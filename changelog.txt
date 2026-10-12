@@ -49,6 +49,8 @@
 
 *Internal Changes*
 -Updated Advancements and Predicates to follow new 26.3 syntaxes.
+
+***DATAPACK 7.0***
 -Chunks are now dynamically forceloaded, hopefully offering better performance for the server.
 -Some entities are now loaded and tested via hardcoded UUIDs, rather than dynamic tests. This affects KOTH, CTF, and the lobby.
 -Abilities now run through "returns", reducing entity checks.

@@ -26,9 +26,6 @@
 #execute as @e[type=#du-in:midas,tag=gold,scores={goldTimer=1..}] run function du-in:kit/jack_horner/ability/midas/timer
 
 ##ENTITY TESTS
-#Markers
-execute as @e[type=marker,tag=!spawnPoint] at @s run function du-in:ingame/entities/markers
-
 #Armor Stands
 execute as @e[type=armor_stand] at @s run function du-in:ingame/entities/armor_stands
 
@@ -40,6 +37,7 @@ execute as @e[type=falling_block,tag=floweyStem] at @s run function du-in:kit/fl
 execute as @e[type=block_display] at @s run function du-in:ingame/entities/block_display
 
 #Poison Apples (MUST BE BELOW MARKER FUNCTIONS)
+execute as @e[type=marker,tag=poisonApple] at @s run function du-in:kit/jack_horner/ability/poison_apple/marker
 execute at @e[type=snowball] run summon minecraft:marker ~ ~ ~ {Tags:["poisonApple","mapSpecific"]}
 
 #Test when it shifts to day or night

@@ -10,6 +10,7 @@ scoreboard players set @e[type=marker,tag=clairenField,tag=noTeam] clairenTimer 
 
 execute store result score @e[type=marker,tag=clairenField,tag=noTeam,limit=1] team run scoreboard players get @s team
 tag @e[type=marker,tag=clairenField,tag=noTeam,scores={team=1..}] remove noTeam
+execute unless score #clairenField running matches 1 run function du-in:kit/clairen/ability/field/loop
 
 execute if entity @s[tag=sabotaged] run function du-in:kit/all/ability/sabotage/effects
 

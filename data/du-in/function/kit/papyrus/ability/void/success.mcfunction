@@ -13,6 +13,8 @@ tag @e[type=marker,tag=papyrusFind,tag=!papyrusStart] add papyrusStart
 tag @e[type=skeleton,tag=gonerThing,tag=papyrusHit] remove papyrusHit
 execute as @e[type=marker,scores={papyrusHitTimer=30}] as @e[tag=papyrusFind] at @s run function du-in:kit/papyrus/ability/bones/spawn
 
+execute unless score #papyrusFind running matches 1 run function du-in:kit/papyrus/ability/bones/loop
+
 #tag @s remove sabotaged
 execute if entity @s[tag=stolen] run tag @s add kitDone
 tag @s remove kitActions

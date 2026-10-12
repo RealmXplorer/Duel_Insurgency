@@ -109,7 +109,7 @@
     #execute if entity @s[tag=jevilDuration] run function du-in:kit/jevil/ability/spin
 
 #Clairen Field
-    execute if entity @s[tag=inField] run function du-in:kit/clairen/ability/field/effects/field_effects
+    # execute if entity @s[tag=inField] run function du-in:kit/clairen/ability/field/effects/field_effects
 
 #Pawbert injection
  #execute if entity @s[tag=injected] run function du-in:kit/pawbert/secondary/antidote/init

@@ -1,8 +1,8 @@
-#Set #main kitMax to number of kits
-execute store result score #main kitMax run data get storage du-in:kit list
+##UNFINISHED
+# Modded / Custom Characters Entry File
+data modify storage du-in:new_kit list append value {"name":"rory","gender":1,"group":"minecraft","pack":"du-in"}
+data modify storage du-in:new_kit list append value {"name":"frisk","gender":1,"group":"unlock","pack":"du-in"}
+data modify storage du-in:new_kit list append value {"name":"player","id":84,"gender":1,"group":"undertale","pack":"du-in"}
 
-#Store value of 
-
-# execute store result storage du-in:new_kit kit.id int 1 run scoreboard players get #main kitMax
-# function du-in:storage/kit/add_list with storage du-in:new_kit kit
-
+# Trigger auto-ID assignment & menu slot registration
+function du-in:storage/kit/custom/register

@@ -1,5 +1,6 @@
 #Set Timer
 scoreboard players set @s papyrusHitTimer 30
+execute unless score #papyrusFind running matches 1 run function du-in:kit/papyrus/ability/bones/loop
 
 #Spawn Bones
 summon minecraft:armor_stand ~1 ~-1 ~1 {Invulnerable:1b,Small:1b,Invisible:1b,NoBasePlate:1b,PersistenceRequired:1b,Tags:["papyrusBone","projectile","mapSpecific"],DisabledSlots:4144959,equipment:{head:{id:"minecraft:oak_sapling",count:1,components:{"minecraft:item_model":"du-in:other/bone"}}},NoGravity:1b}

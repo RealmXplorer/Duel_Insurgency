@@ -1,0 +1,1 @@
+$setblock ~ ~ ~ $(id)[candles=$(candles),lit=false]

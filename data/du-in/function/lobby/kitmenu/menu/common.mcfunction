@@ -11,6 +11,7 @@
 #Start index from current value and start load sequence for indexed group
 execute store result storage du-in:temp theme_index int 1 run scoreboard players get @s kitTheme
 function du-in:lobby/kitmenu/menu/load_group with storage du-in:temp
+#function du-in:lobby/kitmenu/menu/poll_group
 
 ##GENERAL FUNCTIONS (Applicable across themes)
 #Menu change icons

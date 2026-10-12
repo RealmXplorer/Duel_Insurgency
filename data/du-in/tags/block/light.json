@@ -1,0 +1,16 @@
+{
+    "replace":false,
+    "values": [
+        "minecraft:sea_lantern",
+        "glowstone",
+        "light",
+        "redstone_lamp",
+        "#minecraft:froglights",
+        "shroomlight",
+        "#minecraft:copper_bulbs",
+        "#minecraft:campfires",
+        "#minecraft:torches",
+        "#minecraft:candles",
+        "#minecraft:lanterns"
+    ]
+}

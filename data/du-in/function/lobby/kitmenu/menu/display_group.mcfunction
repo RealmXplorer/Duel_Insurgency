@@ -1,8 +1,12 @@
-#Copy group list into working queue
+# #Copy group list into working queue
+# $data modify storage du-in:temp kit_queue set from storage du-in:groups group.$(active_group)
+
+# #Update player kitList score
+# $execute if entity @s[tag=kitsListed] store result score @s kitList run data get storage du-in:groups group.$(active_group)
+
 $data modify storage du-in:temp kit_queue set from storage du-in:groups group.$(active_group)
 
-#Update player kitList score
-$execute if entity @s[tag=kitsListed] store result score @s kitList run data get storage du-in:groups group.$(active_group)
+execute if entity @s[tag=kitsListed] store result score @s kitList run data get storage du-in:temp kit_queue
 
 #Calculate max array index (length - 1)
 execute store result score #menu queueIndex run data get storage du-in:temp kit_queue

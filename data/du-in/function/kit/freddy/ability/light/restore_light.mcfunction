@@ -8,3 +8,6 @@ execute if entity @s[scores={lightType=5}] run return run function du-in:kit/fre
 execute if entity @s[scores={lightType=6}] run return run function du-in:kit/freddy/ability/light/restore/campfires
 execute if entity @s[scores={lightType=7}] run return run function du-in:kit/freddy/ability/light/restore/froglights
 execute if entity @s[scores={lightType=8}] run return run function du-in:kit/freddy/ability/light/restore/shroomlight
+execute if entity @s[scores={lightType=9}] run return run function du-in:kit/freddy/ability/light/restore/torches
+execute if entity @s[scores={lightType=10}] run return run function du-in:kit/freddy/ability/light/restore/lanterns
+execute if entity @s[scores={lightType=11}] run return run function du-in:kit/freddy/ability/light/restore/candles

@@ -87,10 +87,10 @@ playsound minecraft:entity.ender_dragon.flap master @a ~ ~ ~ 0.5 1.5
 #execute unless entity @a[tag=partyLeader,tag=specialEvent] as @a run function du-in:lobby/kitmenu/init
 
 #Changes
-#execute as @a run function du-in:lobby/kitmenu/init
-scoreboard players set @a kitTheme 1
-scoreboard players set @a kitList 8
-tag @a add kitMenu
+execute as @a run function du-in:lobby/kitmenu/init
+#scoreboard players set @a kitTheme 1
+#scoreboard players set @a kitList 8
+#tag @a add kitMenu
 
 title @a times 0 60 0
 title @a title {text:"",color:red,bold:true}

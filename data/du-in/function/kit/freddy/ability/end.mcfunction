@@ -12,4 +12,4 @@ tag @s remove cooldown
 tag @s remove empower
 xp set @s[tag=!stolen] 335 levels
 execute if entity @s[tag=stolen] run tag @s add kitDone
-scoreboard players reset @s gasterTimer
+#scoreboard players reset @s gasterTimer

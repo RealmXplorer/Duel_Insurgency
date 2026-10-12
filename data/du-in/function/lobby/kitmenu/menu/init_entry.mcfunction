@@ -1,5 +1,6 @@
 #Extract kit object at current index into current_kit
 $data modify storage du-in:temp current_kit set from storage du-in:temp kit_queue[$(index)]
+#$data modify storage du-in:temp current_kit set from storage du-in:groups group.$(active_group)[$(index)]
 
 #Execute kit init macro using current_kit compound
 function du-in:lobby/kitmenu/menu/check_slot with storage du-in:temp current_kit
