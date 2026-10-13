@@ -79,12 +79,11 @@ scoreboard objectives add kitIndex dummy
 scoreboard objectives add testSlot dummy
 scoreboard objectives add themeCount dummy
 scoreboard objectives add waterLogged dummy
-# scoreboard objectives add candleColor dummy
-# scoreboard objectives add candleCount dummy
 scoreboard objectives add legCount dummy
 scoreboard objectives add legID dummy
 scoreboard objectives add regID dummy
 scoreboard objectives add currentID dummy
+scoreboard objectives add darkTimer dummy
 
 #Timers
 scoreboard objectives add ambience dummy

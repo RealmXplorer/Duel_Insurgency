@@ -18,6 +18,8 @@ execute as f4682175-5eef-494c-9adb-fc8f6f2b1fda run function du-in:ingame/ctf/bl
 #Clear all banners from those who don't have it#
 clear @a[gamemode=adventure,tag=!flagGot] #minecraft:banners
 
+execute if entity @a[tag=playing,tag=!void] run schedule function du-in:ingame/ctf/ctf 1t
+
 #Select Submode
 execute if score #CTF gamemode matches 0 run return run function du-in:ingame/ctf/default/default
 execute if score #CTF gamemode matches 1 run function du-in:ingame/ctf/timed/timed

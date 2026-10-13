@@ -11,6 +11,7 @@
         "#minecraft:campfires",
         "#minecraft:torches",
         "#minecraft:candles",
-        "#minecraft:lanterns"
+        "#minecraft:lanterns",
+        "minecraft:end_rod"
     ]
 }

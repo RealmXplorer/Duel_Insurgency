@@ -13,7 +13,7 @@ forceload remove 216 40
 
 # execute unless entity @a[tag=partyLeader,tag=specialEvent] unless score #main pylonsDestroyed matches 4.. run function du-in:ingame/endround/lobby_return
 # execute unless entity @a[tag=partyLeader,tag=specialEvent] if score #main pylonsDestroyed matches 4.. run function du-in:void/free/start
-# execute if entity @a[tag=partyLeader,tag=specialEvent] run function du-in:maps/dfc/end_round
+# execute if entity @a[tag=partyLeader,tag=specialEvent] run function du-in:map/dfc/end_round
 
 execute unless score #main pylonsDestroyed matches 4.. run function du-in:ingame/endround/lobby_return
 execute if score #main pylonsDestroyed matches 4.. run function du-in:void/free/start

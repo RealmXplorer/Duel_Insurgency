@@ -1,5 +1,6 @@
 execute store result score #lastMode gamemode run scoreboard players get #main gamemode
 scoreboard players set #main gamemode 6
+function du-in:void/void
 
 tag @a add void
 tag @a[tag=spectating] add voidSpect
@@ -11,6 +12,7 @@ tag @a remove ranMode
 execute if score #main map matches 13 run fill -1332 21 850 -1379 21 915 minecraft:iron_block replace minecraft:barrier
 
 clear @a barrier
+
 
 effect give @a instant_health 1 100 true
 advancement revoke @s only du-in:void/interact_void
@@ -25,9 +27,17 @@ team modify Insurgent collisionRule pushOtherTeams
 
 schedule function du-in:void/goner/check 3s
 schedule clear du-in:ingame/scheduled/ambience/init
-schedule clear du-in:maps/jermall/stop
-schedule clear du-in:maps/jermall/pick_victim
-schedule clear du-in:maps/jermall/eat_victim
+schedule clear du-in:map/jermall/stop
+schedule clear du-in:map/jermall/pick_victim
+schedule clear du-in:map/jermall/eat_victim
+schedule clear du-in:ingame/classic/timed/ending
+schedule clear du-in:ingame/deathmatch/timed/ending
+schedule clear du-in:ingame/ctf/timed/ending
+schedule clear du-in:ingame/koth/timed/ending
+schedule clear du-in:ingame/conquest/timed/ending
+schedule clear du-in:ingame/timed/half
+schedule clear du-in:ingame/timed/near_end
+schedule clear du-in:ingame/timed/timer
 
 tag @a[tag=kothIngame] add kothMap
 

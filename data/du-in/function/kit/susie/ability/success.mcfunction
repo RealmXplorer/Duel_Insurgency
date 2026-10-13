@@ -81,6 +81,8 @@ particle minecraft:crit ~ ~2.25 ~ 0.5 0.5 0.5 0.25 30 force @a
 particle minecraft:infested ~ ~0.5 ~ 0.75 0.5 0.75 0 30
 #playsound minecraft:entity.elder_guardian.curse master @a ~ ~ ~ .5 .75
 
+execute unless score #susieBuster running matches 1 run function du-in:kit/susie/ability/buster/loop
+
 tag @s remove empower
 tag @s remove redBuster
 tag @s remove sabotaged

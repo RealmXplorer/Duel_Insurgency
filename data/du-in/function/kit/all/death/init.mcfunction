@@ -21,7 +21,7 @@ tag @s remove glowing
 execute if entity @s[scores={killedByPlayer=1..},tag=hasRing] run function du-in:kit/sauron/ring/lose_ring
 execute if entity @s[tag=hasRing] unless entity @s[scores={killedByPlayer=1..}] run function du-in:kit/sauron/ring/drop_ring
 
-execute if entity @s[tag=selectedTarget] run function du-in:maps/jermall/clear
+execute if entity @s[tag=selectedTarget] run function du-in:map/jermall/clear
 
 execute if entity @s[tag=sabotaged] run function du-in:kit/nick/ability/sabotage/expire
 

@@ -12,3 +12,5 @@ execute as @a[gamemode=!spectator,tag=playing] at @s if score @s dmDeath < #main
 # execute if score #main maxTimer matches 1000 run function du-in:ingame/timed/near_end
 
 # execute if score #main maxTimer matches ..0 run function du-in:ingame/deathmatch/timed/ending
+
+execute if entity @a[tag=plying] run schedule function du-in:ingame/deathmatch/timed/timed 1t

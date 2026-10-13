@@ -12,3 +12,5 @@ execute if score #main playerCount matches 1 run function du-in:ingame/deathmatc
 
 #TIE#
 execute if score #main playerCount matches ..0 run tag @r[tag=dmDead] add win
+
+execute if entity @a[tag=playing,tag=!void] run schedule function du-in:ingame/deathmatch/default/default 1t

@@ -15,7 +15,7 @@ title @a subtitle {text:""}
 kill @e[tag=displayItem]
 
 #Pick random map
-function du-in:maps/start/random
+function du-in:map/all/vote/random
 
 #Reset map countdown timer
 scoreboard players reset #main mapCountdown

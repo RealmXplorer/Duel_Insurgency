@@ -81,7 +81,7 @@ bossbar set minecraft:map_countdown visible true
 
 #Add 1 to DFC queue if Special Event
 # execute if entity @a[tag=partyLeader,tag=specialEvent] run scoreboard players add #main dfcQueue 1
-# execute if entity @a[tag=partyLeader,tag=specialEvent] as @a run function du-in:maps/dfc/lobby_setup
+# execute if entity @a[tag=partyLeader,tag=specialEvent] as @a run function du-in:map/dfc/lobby_setup
 
 playsound minecraft:entity.ender_dragon.flap master @a ~ ~ ~ 0.5 1.5
 #execute unless entity @a[tag=partyLeader,tag=specialEvent] as @a run function du-in:lobby/kitmenu/init

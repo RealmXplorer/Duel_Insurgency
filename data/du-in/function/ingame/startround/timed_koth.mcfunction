@@ -18,3 +18,6 @@ execute store result score #main maxTimer run scoreboard players get #main gameT
 bossbar set bossbar:gametimer visible true
 
 tag @a remove kothl
+
+#Start loop
+function du-in:ingame/koth/timed/timed

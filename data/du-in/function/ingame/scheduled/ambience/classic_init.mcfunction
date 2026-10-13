@@ -2,7 +2,7 @@
 #Mountain Castle
 execute if score #main map matches 1 run playsound du-in:ambient.wind ambient @s ~ ~ ~ 0.25 1 1
 
-#execute if score #main map matches 2 run function du-in:maps/hive/constant
+#execute if score #main map matches 2 run function du-in:map/hive/constant
 
 #Desert Arena
 execute if score #main map matches 3 run function du-in:ingame/scheduled/ambience/desert

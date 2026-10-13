@@ -46,23 +46,11 @@
 -Fixed bug where Roxanne Wolf's skin could not be selected.
 -Fixed bug where final pylon's timer would appear blank.
 -Fixed bug where Jerma's randomized sword could bypass Puss's ability.
+-Fixed bug where Deathmatch would not run classic map functions.
 
 *Internal Changes*
--Updated Advancements and Predicates to follow new 26.3 syntaxes.
-
 ***DATAPACK 7.0***
--Chunks are now dynamically forceloaded, hopefully offering better performance for the server.
--Some entities are now loaded and tested via hardcoded UUIDs, rather than dynamic tests. This affects KOTH, CTF, and the lobby.
--Abilities now run through "returns", reducing entity checks.
--Zombie, Impostor, and Hollow Knight ability validity checks now happen on ability execution, rather than their constants.
--Reorganized Clairen's field-state tests to run based on if players are nearby, rather than all the time.
--Clairen's per-tick ability field check now runs through a centralized using "inField" tag and nesting returns, rather than every variant at once.
--Clairen's field timer is now set on the field's spawn, rather than checking every tick for a tag inside its entity function.
--Team checks are now done through the "#main" fake player. They are set on ability use, tested, then reset. This removes the previous second player check.
--Merged the player checks in relevant abilities to check once and never add the "hit" tags for teammates, rather than give all players the "hit" and remove for teammates.
--Moved many per-player timers over to a contexted scheduling system.
-    -This prevents removes checks for characters abilities who aren't even in the game, and technically makes them independent from overall game functions.
--Rebuilt internal kit system.
+**Rebuilt internal kit system**
     -ALL characters are now saved in an internal "du-in:kit" storage with compounded storages. Info about each kit is saved, copied, and pulled.
     -The dynamic tests ("/go" functions) now search for "$(id)" instead of "$(kit)".
     -"kit/all/random/set" no longer searches each "kit" score, and can now find the correct kit via indexing its "kit.id" from the database.
@@ -70,6 +58,7 @@
     -Legendary random roll is also dynamic, automatically adding to the random max value for every kit in "unlock".
     -Kit Menu has been overhauled, dynamically creating slots, and each entry is dynamically created, removing hardcoded groups for kitmenu.
     -Kit functions now pass "pack" into their functions, allowing other datapacks to be mounted and used, so long as they use the same file structure.
+    -Added "kitGender" score to test for which type of underwear kits should wear.
 -Secondaries are now standardized through a "hasSecond" tag (added on kit pick), and dynamic "secondary/item" and "secondary/init" functions.
     -Per-tick "secKitActions" tag check is being phased out, but technically still supported.
 -Secondary give/return functions are now run every second, rather than every tick (like weapons and armor).
@@ -77,34 +66,52 @@
     -Only exceptions are Pawbert and PearApplez, as their trackers are unique.
 -Deprecated "weapCount", "secCount", "triCount", "appleCount", and "tridentCount" scores, now uses "execute unless items" to test for missing items.
 -Jack Horner's run functions now operate off his constant function, rather than deferring to "run" functions.
--Ingame music now runs through returns.
+-Abilities now run through "returns", reducing entity checks.
+-Zombie, Impostor, and Hollow Knight ability validity checks now happen on ability execution, rather than their constants.
+-Reorganized Clairen's field-state tests to run based on if players are nearby, rather than all the time.
+-Clairen's per-tick ability field check now runs through a centralized using "inField" tag and nesting returns, rather than every variant at once.
+-Clairen's field timer is now set on the field's spawn, rather than checking every tick for a tag inside its entity function.
+-Removed "beetleDamage" and "beetleGhostTimer" objectives as they were unused.
+-All skin menu functions now run through individual kits' "du-in:kit/[kit]/menu/skins/" folder.
+-Skin Menu has been merged with kit menu. (skin menu functions can now be found in "lobby/kitmenu/skins/)
+    -Removed "du-in:skin_menu/" folder.
+    -Removed "skinList" and "skinTheme" objectives.
+-Team checks are now done through the "#main" fake player. They are set on ability use, tested, then reset. This removes the previous second player check.
+-Merged the player checks in relevant abilities to check once and never add the "hit" tags for teammates, rather than give all players the "hit" and remove for teammates.
+-Moved many per-player timers over to a "smart" scheduling system. This removes checks for characters abilities who aren't even in the game, and technically makes them independent from hardcoded game functions.
+-Added "kit/all/game_start/" functions, allowing all characters to have a function that runs on game start without hardcoded tests.
+    -Every character folder now has a "(kit)/events/game_start" file, which runs the moment a game starts (but before "intro").
+-Added "kit/all/reset/" functions. All characters now run their end of game resets independently, which is less optimized in some ways, but allows for easier management of per-character resets.
+    -Every character folder now has a "(kit)/events/reset" file which runs their resets on game end.
+-Moved Runza eating test to an advancement.
+-Restructured constants for kits using returns.
+
+**Reorganized map folders and functions**
+-Renamed "du-in:maps/" folder to "du-in:map/".
+-Each map has its own folder, similar to kits.
+-Removed "du-in:map/start/pick/pick_arena" and "du-in:map/start/pick/pick_caves", as these functions now run in their maps' folders. 
+-Map select is now fully scalable, running off of inset scores from UUIDs, rather than tags.
+-Map-specific constants (such as effects and kill zones) are scheduled on select and run off their own folder, rather than all ticking in their gamemode functions.
+    -Many of these are no longer every tick so as to lighten tick load.
+
+**Gamemode Overhaul**
+-Default classic, Team, Timed, and Timed Team classic is now event-based.
+-Created "Macro-Assisted Schedules", which dynamically front-load timers for timed mode.
+-Simplified game cap functions as they did unnecessary checks and math.
+-Created "smart schedules", which initialize and run the necessary ticking functions when a specific gamemode is picked.
 -Gamemode functions run through returns
--"new_player" check is now run through a ticking advancement instead of a constant score check.
--Moved game shutdown functions into "ingame/scheduled", as they aren't needed or used in the lobby.
+
+**Lobby Tweaks**
 -Moved "team_enable" and "team_disable" into a single check using returns.
 -Moved "count_stop" and "count_go" into a single check using returns.
 -"Team mode" lobby hotbar icon is now scheduled every second, rather than running every tick.
 -The "two_sec_loop" scheduled function in lobby now only runs in Map Select, as it's the only lobby where it's used.
 -Moved "main" player count checks to be event based in the lobby. Ingame, they have been moved to run every second, rather than every tick.
--Simplified game cap functions as they did unnecessary checks and math.
--Moved "shutdown" system to schedules, rather than a score-based tick timer. (Deprecated "shutdownTimer" score)
--Map select is now fully scalable, running off of inset scores from UUIDs, rather than tags.
--Default classic, Team, Timed, and Timed Team classic is now event-based.
--Restructured constants for kits using returns.
--Created "Macro-Assisted Schedules", which dynamically front-load timers for timed mode.
--Added "overworld" and "overworld_caves" dimension_types to alter overworld environment attributes.
--Added Glass Panes to "minecraft:glass" block tags.
--Added du-in:retro, du-in:goner, du-in:bw, and du-in:flash posteffects.
--Moved Runza eating test to an advancement.
--Added "du-in:effect/has_resistance" predicate.
--Added "kit/all/game_start/" functions, allowing all characters to have a function that runs on game start without hardcoded tests.
-    -Every character folder now has a "(kit)/events/game_start" file, which runs the moment a game starts (but before "intro").
--Added "kit/all/reset/" functions. All characters now run their end of game resets independently, which is less optimized in some ways, but allows for easier management of per-character resets.
-    -Every character folder now has a "(kit)/events/reset" file which runs their resets on game end / pre-game start.
--Added room.Between
+
+**Audio Overhaul**
+-Renamed and moved audio sources from "minecraft:" to "du-in:".
 -Renamed "oldPack" tag for beta music to "beta".
 -Renamed "music/ingame/oldpack/" and "music/lobby/oldpack/" to "music/ingame/beta/" and "music/lobby/beta/".
--Renamed and moved audio sources from "minecraft:" to "du-in:".
 -Renamed several music files.
     -"ffa" and "ffaend" are now "classic" and "classic_end" (this goes for Beta and Legacy variants)
     -"dm" and "dmend" are now "deathmatch" and "deathmatch_end"
@@ -123,18 +130,30 @@
     -"ambient.jungleamb" is now "ambient.jungle"
     -"ambient.nightamb" is now "ambient.night"
 -Renamed all kit sound effects to be under "du-in:kit.[kit].[sound]".
--All skin menu functions now run through individual kits' "du-in:kit/[kit]/menu/skins/" folder.
--Skin Menu has been merged with kit menu. (skin menu functions can now be found in "lobby/kitmenu/skins/)
-    -Removed "du-in:skin_menu/" folder.
-    -Removed "skinList" and "skinTheme" objectives.
+
+**Other Technical Changes**
+-Updated Advancements and Predicates to follow new 26.3 syntaxes.
+-Chunks are now dynamically forceloaded, hopefully offering better performance for the server.
+-Some entities are now loaded and tested via hardcoded UUIDs, rather than dynamic tests. This affects KOTH, CTF, and the lobby.
+-Ingame music now runs through returns.
+-"new_player" check is now run through a ticking advancement instead of a constant score check.
+-Moved game shutdown functions into "ingame/scheduled", as they aren't needed or used in the lobby.
+-Moved "shutdown" system to schedules, rather than a score-based tick timer. (Deprecated "shutdownTimer" score)
+-Added "overworld" and "overworld_caves" dimension_types to alter overworld environment attributes.
+-Added Glass Panes to "minecraft:glass" block tags.
+-Added du-in:retro, du-in:goner, du-in:bw, and du-in:flash posteffects.
+-Added "du-in:effect/has_resistance" predicate.
+-Added room.Between
 -Added "du-in:non_firelight" block tag to test for light blocks (that don't have fire).
+-Added "du-in:light" block tag to test for ALL light blocks.
 -Added "minecraft:copper_bulbs" block tag to test for Copper bulbs.
 -Added "minecraft:froglights" block tag to test for froglights.
--Added "kitGender" score to test for which type of underwear kits should wear.
+-Added "minecraft:torches" block tag to test for torches.
+-Added "minecraft:wall_torches" block tag to test for wall torches.
 -Added "du-in:light_level/" predicates to test for light levels.
--Removed "beetleDamage" and "beetleGhostTimer" objectives as they were unused.
 
 *Resourcepack Changes*
+**Audio Overhaul**
 -Moved all Duel-related audio to "du-in:sounds" folder and organized it much better.
 -All audio now uses the object case in the sounds.json and all gameplay audio is now subtitled.
 -All music and ambient tracks are now streamed.
@@ -154,6 +173,8 @@
 -All kit sounds are now under "du-in:kit.[kitname].[sound]"
 -Renamed "minecraft:soundeffect." to "du-in:sfx.", and made proper subfolders.
     -Some sounds from characters such as ralsei have been moved to the sfx folder.
+
+**Additions**
 -Added Willo armor textures. (by nerbski)
 -Added Candy corn texture. (by Realm_Xplorer)
 -Added Revolver sounds.

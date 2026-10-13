@@ -19,3 +19,6 @@ bossbar set bossbar:gametimer visible true
 
 scoreboard objectives setdisplay sidebar teamDeaths
 tag @a remove dml
+
+#Start loop
+function du-in:ingame/deathmatch/team_timed/timed

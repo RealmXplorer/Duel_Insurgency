@@ -72,8 +72,9 @@ tag @a[tag=!spectating] add playing
     # execute if entity @a[scores={kit=42069}] run tag @a[tag=!legMusicOff,tag=!void,tag=!ctfl,tag=!cql] add musOverride
 
     #Set global variable for easter egg music to true
-    execute if entity @a[scores={kit=2015..},tag=!void,tag=!ctfl,tag=!cql] run scoreboard players set #main music 1
-    
+    # execute if entity @a[scores={kit=2015..},tag=!void,tag=!ctfl,tag=!cql] run scoreboard players set #main music 1
+    execute if entity @a[scores={kit=2015..},tag=!void,tag=!ctfl,tag=!cql] run function du-in:music/easter_egg_loop
+
     #Mark Zombie and Springtrap as undead
     #tag @a[scores={kit=2}] add undead
     # tag @a[scores={kit=5}] add undead

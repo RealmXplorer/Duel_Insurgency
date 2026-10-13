@@ -18,3 +18,4 @@ execute store result score #main maxTimer run scoreboard players get #main gameT
 bossbar set bossbar:gametimer visible true
 
 tag @a remove cl
+function du-in:ingame/timed/timer

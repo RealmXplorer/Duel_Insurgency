@@ -20,3 +20,5 @@ scoreboard objectives setdisplay sidebar flagGot
 scoreboard players set Red flagGot 0
 scoreboard players set Blue flagGot 0
 tag @a remove ctfl
+
+function du-in:ingame/ctf/ctf

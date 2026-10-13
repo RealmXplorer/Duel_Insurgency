@@ -31,3 +31,5 @@ swing @s offhand whack
 scoreboard players set @e[type=armor_stand,tag=asgoreFire,tag=!fireTimer] asgoreFire 100
 execute as @e[type=armor_stand,tag=asgoreFire,tag=!fireTimer] store result score @s team run scoreboard players get @p[scores={kit=14},distance=..10] team
 tag @e[type=armor_stand,tag=asgoreFire,tag=!fireTimer,scores={asgoreFire=-99..}] add fireTimer
+
+execute unless score #asgoreFire running matches 1 run function du-in:kit/asgore/ability/fire_loop

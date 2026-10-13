@@ -22,3 +22,5 @@ execute store result score Blue kothTeamTimer run scoreboard players get #main b
 # execute if score #main maxTimer matches ..0 run function du-in:ingame/koth/team_timed/ending
 
 execute at 388b1f13-3fca-4318-820c-d5b05ae2fd37 run function du-in:ingame/koth/team_hill
+
+execute if entity @a[tag=playing,tag=!void] run schedule function du-in:ingame/koth/team_timed/timed 1t

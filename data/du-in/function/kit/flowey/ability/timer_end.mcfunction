@@ -1,3 +1,4 @@
+particle minecraft:block{block_state:"minecraft:dirt"} ~ ~ ~ 0.5 0.6 0.5 2 100 force
 #effect clear @s minecraft:invisibility
 tag @s remove invisible
 function du-in:kit/flowey/armor

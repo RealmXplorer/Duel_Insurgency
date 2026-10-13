@@ -17,4 +17,4 @@
     title @a[tag=!kitPicked,tag=!spectating,tag=!teamMode] actionbar {text:"Open inventory to select a character!",color:red,bold:true}
 
 #Pick Map#
-    execute if score #main mapCountdown matches ..1 run function du-in:maps/start/init
+    execute if score #main mapCountdown matches ..1 run function du-in:map/all/vote/init

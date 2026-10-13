@@ -49,10 +49,10 @@ kill @e[nbt={inGround:1b}]
 kill @e[type=item,tag=!displayItem]
 kill @e[type=ender_pearl,tag=blakeTP]
 
-function du-in:maps/jermall/stop
-schedule clear du-in:maps/jermall/stop
-schedule clear du-in:maps/jermall/pick_victim
-schedule clear du-in:maps/jermall/eat_victim
+function du-in:map/jermall/stop
+schedule clear du-in:map/jermall/stop
+schedule clear du-in:map/jermall/pick_victim
+schedule clear du-in:map/jermall/eat_victim
 
 #Play sounds for ending
 execute as @a[tag=win,tag=!void,tag=!voidLose,tag=!falseWin,limit=1] at @s run function du-in:ingame/endround/winning_seq

@@ -18,3 +18,5 @@ execute if entity @a[tag=devMode,tag=partyLeader] if entity @a[tag=!teamMode] ru
 
 scoreboard objectives setdisplay sidebar Lives
 tag @a remove dml
+
+function du-in:ingame/deathmatch/default/default

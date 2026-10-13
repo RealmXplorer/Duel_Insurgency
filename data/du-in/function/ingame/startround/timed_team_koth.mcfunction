@@ -23,3 +23,6 @@ scoreboard players set Blue kothTeamTimer 0
 execute store result score #main maxTimer run scoreboard players get #main gameTimeMax
 bossbar set bossbar:gametimer visible true
 tag @a remove kothl
+
+#Start Loop
+function du-in:ingame/koth/team_timed/timed

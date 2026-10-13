@@ -18,3 +18,5 @@ execute unless score #main pylonsDestroyed matches 3 run schedule function du-in
 
 scoreboard objectives setdisplay sidebar capturePoints
 tag @a remove cql
+
+function du-in:ingame/conquest/conquest

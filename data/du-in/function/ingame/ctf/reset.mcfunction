@@ -21,5 +21,7 @@ tag @a remove flagGot
 tag @a remove glowing
 scoreboard players reset * flagGot
 
+schedule clear du-in:ingame/ctf/timed/ending
+
 advancement grant @a[tag=win,tag=!devMode] only du-in:challenge/ctf_win
 

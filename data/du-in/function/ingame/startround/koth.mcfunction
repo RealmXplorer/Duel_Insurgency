@@ -16,3 +16,6 @@ scoreboard players set #KOTH gamemode 0
 team join Classic @a[tag=!spectating]
 scoreboard players set @a[tag=!spectating] kothTimer 0
 tag @a remove kothl
+
+#Start loop
+function du-in:ingame/koth/default/default

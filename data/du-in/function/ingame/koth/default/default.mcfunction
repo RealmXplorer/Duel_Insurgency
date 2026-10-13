@@ -8,3 +8,5 @@ execute as @a[tag=playing,limit=1,tag=!kothEnd] if score @s kothTimer >= #main k
 execute as @a[tag=playing,tag=kothIngame] if score @s kothTimer >= #main kothCap run function du-in:ingame/koth/default/ending
 
 execute at 388b1f13-3fca-4318-820c-d5b05ae2fd37 run function du-in:ingame/koth/hill
+
+execute if entity @a[tag=playing,tag=!void] run schedule function du-in:ingame/koth/default/default 1t

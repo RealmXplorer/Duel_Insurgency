@@ -30,3 +30,4 @@
     #This runs all the necessary commands for Bossbars
     #Uncomment it to re-enable bossbars
     #function du-in:ingame/classic/default/default_old_bossbar
+    execute if entity @a[tag=playing,tag=!void] run schedule function du-in:ingame/timed/timer 1t

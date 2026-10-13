@@ -16,3 +16,5 @@ execute store result score Red kothTeamTimer run scoreboard players get #main re
 execute store result score Blue kothTeamTimer run scoreboard players get #main bluePoints
 
 execute at 388b1f13-3fca-4318-820c-d5b05ae2fd37 run function du-in:ingame/koth/team_hill
+
+execute if entity @a[tag=playing,tag=!void] run schedule function du-in:ingame/koth/team/teams 1t

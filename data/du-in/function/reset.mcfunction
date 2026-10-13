@@ -18,6 +18,7 @@ execute if entity @a[tag=ctfIngame] run function du-in:ingame/ctf/reset
 execute if entity @a[tag=cqIngame] run function du-in:ingame/conquest/reset
 execute if entity @a[tag=lobby] run function du-in:lobby/reset/complete
 
+
 #scoreboard players reset #main startSeq
 tag @a remove startgame
 tag @a remove kitPicked
@@ -371,7 +372,7 @@ tag @a remove projectile
 #scoreboard players reset @a Lives
 
 #Give back default skins
-execute as @a[tag=poolParty] run function du-in:maps/pool_party/revert
+execute as @a[tag=poolParty] run function du-in:map/pool_party/revert
 
 ##INGAME TAG AND SCORE RESETS
 #Sub-Gamemodes

@@ -7,26 +7,29 @@ clear @s
 
 #If player is nearby#
 #execute unless entity @a[tag=void] run function du-in:kit/flowey/ability/default_hit
-execute unless entity @a[tag=void] if entity @s[tag=!sabotaged] as @a[gamemode=!spectator,tag=playing,distance=.5..2,limit=1] unless score @p[scores={floweyHitTimer=0..},distance=..2] team = @s team at @s run function du-in:kit/flowey/ability/default_hit
-execute unless entity @a[tag=void] if entity @s[tag=!sabotaged,tag=empower] as @a[gamemode=!spectator,tag=playing,distance=.5..2,limit=1] unless score @p[scores={floweyHitTimer=0..},distance=..2] team = @s team at @s run function du-in:kit/flowey/ability/empowered_hit
+execute if entity @s[tag=!void,tag=!sabotaged,tag=!empower] as @a[gamemode=!spectator,tag=playing,distance=.5..2,limit=1] unless score @p[scores={floweyHitTimer=0..},distance=..2] team = @s team at @s run function du-in:kit/flowey/ability/default_hit
+execute if entity @s[tag=!void,tag=!sabotaged,tag=empower] as @a[gamemode=!spectator,tag=playing,distance=.5..2,limit=1] unless score @p[scores={floweyHitTimer=0..},distance=..2] team = @s team at @s run function du-in:kit/flowey/ability/empowered_hit
 
 execute if entity @a[tag=void] as @e[distance=.5..2,type=skeleton,tag=gonerThing] at @s run function du-in:kit/flowey/ability/void_hit
 
 #Give effects#
+effect give @s minecraft:weakness 1 255 true
+
+#Non sabotaged effects
 effect give @s[tag=!sabotaged] minecraft:resistance 1 255 true
 effect give @s[tag=!sabotaged] minecraft:fire_resistance 1 255 true
-effect give @s minecraft:weakness 1 255 true
 effect give @s[tag=!sabotaged] minecraft:speed 1 2 true
+
+#Sabotaged effects
 effect give @s[tag=sabotaged,tag=!empower] minecraft:slowness 1 200 true
 effect give @s[tag=sabotaged,tag=empower] minecraft:slowness 3 200 true
 
-attribute @s minecraft:jump_strength modifier add flowey_jump -100 add_value
+# attribute @s minecraft:jump_strength modifier add flowey_jump -100 add_value
 
 #Dirt particles#
 execute unless entity @s[tag=sabotaged] run particle minecraft:block{block_state:"minecraft:dirt"} ~ ~ ~ 0.05 0 0.05 1 10 force
 
 execute if entity @s[scores={floweyHitTimer=88..}] run particle minecraft:block{block_state:"minecraft:dirt"} ~ ~ ~ 0.5 0.1 0.5 1 100 force
-
 tellraw @s[scores={floweyHitTimer=88},tag=sabotaged] [{text:"You have been rooted into the ground!",bold:true,color:red}]
 
 #Sounds#
@@ -38,6 +41,6 @@ execute if entity @s[scores={floweyHitTimer= 85}] run playsound minecraft:block.
 execute if entity @s[scores={floweyHitTimer=84}] run playsound minecraft:block.ancient_debris.break master @a ~ ~ ~ 10 .8
 
 #End Timer#
-execute if entity @s[scores={floweyHitTimer=..2}] run particle minecraft:block{block_state:"minecraft:dirt"} ~ ~ ~ 0.5 0.6 0.5 2 100 force
+#execute if entity @s[scores={floweyHitTimer=..2}] run particle minecraft:block{block_state:"minecraft:dirt"} ~ ~ ~ 0.5 0.6 0.5 2 100 force
 
 execute if entity @s[scores={floweyHitTimer=..1}] run function du-in:kit/flowey/ability/timer_end

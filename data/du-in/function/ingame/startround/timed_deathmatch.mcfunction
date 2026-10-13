@@ -15,3 +15,5 @@ function du-in:ingame/deathmatch/timed/set_timers with storage du-in:gamemode ti
 
 scoreboard objectives setdisplay sidebar dmDeath
 tag @a remove dml
+
+function du-in:ingame/deathmatch/timed/timed

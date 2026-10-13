@@ -20,3 +20,6 @@ scoreboard players set Blue kothTeamTimer 0
 bossbar set minecraft:redkoth visible true
 bossbar set minecraft:bluekoth visible true
 tag @a remove kothl
+
+#Start loop
+function du-in:ingame/koth/team/teams

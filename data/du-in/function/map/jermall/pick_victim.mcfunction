@@ -1,0 +1,13 @@
+execute as @r[tag=playing,gamemode=!spectator,tag=!monsterTarget,limit=1] run tag @s add monsterTarget
+
+stopsound @a record
+
+scoreboard players set @a music 2
+
+execute as @a[tag=!musicOff] at @s run playsound du-in:music.jerma_mall record @s ~ ~ ~ 1 1 1
+fill -1332 21 850 -1379 21 915 minecraft:barrier replace minecraft:iron_block
+
+schedule function du-in:map/jermall/eat_victim 1000t
+schedule function du-in:map/jermall/stop 1160t
+
+#-1355 50 880

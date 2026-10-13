@@ -19,4 +19,6 @@ bossbar set minecraft:classicblue color white
 bossbar set minecraft:classicred color white
 
 advancement grant @a[tag=win,tag=!devMode] only du-in:challenge/classic_win
+schedule clear du-in:ingame/classic/timed/ending
+
 tag @a remove cIngame

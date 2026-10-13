@@ -17,4 +17,5 @@ execute if score Blue teamDeaths < #main scoreMost run scoreboard players operat
 
 # execute if score #main maxTimer matches ..0 run function du-in:ingame/deathmatch/team_timed/ending
 
-function du-in:maps/classic
+#function du-in:map/classic
+execute if entity @a[tag=playing,tag=!void] run schedule function du-in:ingame/deathmatch/team_timed/timed 1t

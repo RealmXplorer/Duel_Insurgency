@@ -10,6 +10,8 @@ execute if entity @s[tag=sabotaged] run tag @e[type=armor_stand,tag=desolateTest
 
 tag @e[type=armor_stand,tag=desolateTest] remove desolateTest
 
+execute unless score #desolateDive running matches 1 run function du-in:kit/knight/ability/dive_loop
+
 swing @s[tag=!sabotaged] offhand whack
 swing @s[tag=sabotaged] offhand stab
 

@@ -19,3 +19,5 @@ schedule clear du-in:ingame/conquest/timed/ending
 
 advancement grant @a[tag=win,tag=!devMode] only du-in:challenge/conquest_win
 tag @a remove cqIngame
+
+schedule clear du-in:ingame/conquest/timed/ending

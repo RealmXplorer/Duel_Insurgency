@@ -17,4 +17,8 @@ tag @a remove dmOut
 
 scoreboard players reset @a dmDeath
 
+scoreboard players reset #DM gamemode
+
 advancement grant @a[tag=win,tag=!devMode] only du-in:challenge/deathmatch_win
+
+schedule clear du-in:ingame/deathmatch/timed/ending

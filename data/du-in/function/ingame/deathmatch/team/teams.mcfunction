@@ -7,3 +7,5 @@ execute if score Blue teamPool matches 2 run function du-in:ingame/deathmatch/te
 #TEAM DEATHMATCH ENDING#
 execute if score Blue teamPool matches ..0 run function du-in:ingame/deathmatch/team/team_end
 execute if score Red teamPool matches ..0 run function du-in:ingame/deathmatch/team/team_end
+
+execute if entity @a[tag=playing,tag=!void] run schedule function du-in:ingame/deathmatch/team/teams 1t

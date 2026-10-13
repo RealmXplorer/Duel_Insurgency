@@ -40,3 +40,6 @@ kill @e[type=marker,tag=starDirection]
 
 # playsound du-in:kit.rory.stardrop master @a ~ ~ ~ 1 0.5
 playsound du-in:kit.rory.dark_star master @a ~ ~ ~ 1 1
+
+#Start loop
+execute unless score #roryStar running matches 1 run function du-in:kit/rory/ability/star/loop

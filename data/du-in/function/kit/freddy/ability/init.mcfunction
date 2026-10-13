@@ -16,9 +16,12 @@ attribute @s movement_speed modifier add freddy_ability 0.02 add_value
 playsound du-in:kit.freddy.power master @a ~ ~ ~ 1 1
 playsound du-in:kit.freddy.laugh master @a ~ ~ ~ 1 1
 
+execute as @a[tag=freddyHit] run function du-in:kit/freddy/ability/enemy_hit
+
 #Go Invisible
 tag @s add freddyShadow
 tag @s add invisible
+effect give @s night_vision infinite 1 true
 clear @s #du-in:armor
 
 #Take lights away

@@ -25,6 +25,8 @@
     scoreboard players set Insurgents playerCount 0
     execute as @a[gamemode=!spectator] run scoreboard players add Insurgents playerCount 1
 
+execute if entity @a[tag=playing] run schedule function du-in:void/void 1t
+
 #Lose condition
 execute if score Insurgents playerCount matches ..0 unless entity @a[tag=win] run function du-in:void/end/lose
 
