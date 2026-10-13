@@ -6,6 +6,7 @@ scoreboard players set @e[type=block_display,tag=devilsKnife,tag=unsetTime] jevi
 tag @e[type=block_display,tag=devilsKnife,tag=unsetTime] add jevilDuration
 tag @e[type=block_display,tag=devilsKnife,tag=unsetTime] remove unsetTime
 
+execute unless score #jevilNeo running matches 1 run function du-in:kit/jevil/neo_chaos/beam_loop
 #Sound
 playsound du-in:kit.jevil.scythe_burst master @a ~ ~ ~ 1 1 1
 

@@ -23,6 +23,8 @@ execute if entity @s[tag=!sabotaged,tag=!empower] positioned ^4 ^ ^ if entity @s
 execute if entity @s[tag=!sabotaged,tag=empower] positioned ^-4 ^ ^ if entity @s[distance=..25] run function du-in:kit/death/ability/empowered/left_raycast
 execute if entity @s[tag=!sabotaged,tag=empower] positioned ^4 ^ ^ if entity @s[distance=..25] run function du-in:kit/death/ability/empowered/right_raycast
 
+execute unless score #deathFire running matches 1 run function du-in:kit/death/ability/loop
+
 execute if entity @s[tag=sabotaged] run function du-in:kit/asgore/ability/contact
 execute if entity @s[tag=sabotaged] run function du-in:kit/all/ability/sabotage/effects
 
