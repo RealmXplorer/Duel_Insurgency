@@ -152,6 +152,7 @@
 -Added "minecraft:torches" block tag to test for torches.
 -Added "minecraft:wall_torches" block tag to test for wall torches.
 -Added "du-in:light_level/" predicates to test for light levels.
+-Mounted Mulverine's "Player Motion API" datapack, though it is currently unused. https://modrinth.com/datapack/player_motion
 
 *Resourcepack Changes*
 **Audio Overhaul**
