@@ -1,1 +1,1 @@
-execute if entity @s[tag=killMsg] run tellraw @a {selector:"@s",color:red,bold:false,extra:[{text:" shattered ",color:white,bold:false},{selector:"@a[scores={justdied=1}]",color:dark_red,bold:false}]}
+execute if entity @s[tag=killMsg] run function du-in:kit/gaster/events/kill_msg

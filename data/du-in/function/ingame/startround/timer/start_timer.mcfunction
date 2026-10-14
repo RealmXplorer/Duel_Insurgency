@@ -47,6 +47,9 @@ tag @a[tag=!spectating] add playing
 
     execute as @a[tag=hasRing] run function du-in:kit/sauron/ring/give_ring
 
+    #Dev Mode Barrier test
+    execute if entity @a[tag=devMode,tag=partyLeader] run function du-in:dev_mode_loop
+
     #Run Game initialization for certain kits.
     execute as @a at @s run function du-in:kit/all/game_start/init
 

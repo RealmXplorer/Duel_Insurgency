@@ -1,1 +1,1 @@
-execute if entity @s[tag=killMsg] run tellraw @a {selector:"@s",color:red,bold:false,extra:[{text:" reaped ",color:white,bold:false},{selector:"@a[tag=deathMsg]",color:dark_red,bold:false},{text:"'s soul",color:white,bold:false}]}
+execute if entity @s[tag=killMsg] run function du-in:kit/death/events/kill_msg

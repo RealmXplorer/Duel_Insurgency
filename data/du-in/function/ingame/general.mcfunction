@@ -44,7 +44,7 @@ execute at @e[type=snowball] run summon minecraft:marker ~ ~ ~ {Tags:["poisonApp
 execute if score #main dayNightSetting matches 1 run function du-in:ingame/scheduled/ambience/night_init
 
 #Dev Mode end game
-execute if entity @a[tag=devMode,tag=partyLeader] if entity @a[scores={thrownBarrier=1..}] run tag @a add win
+    #execute if entity @a[tag=devMode,tag=partyLeader] if entity @a[scores={thrownBarrier=1..}] run tag @a add win
 
 #Override music for Saul and Big Chungus#
 #execute if score #main music matches 1 as @a[tag=!legMusicOff] at @s run function du-in:music/ingame/easter_egg

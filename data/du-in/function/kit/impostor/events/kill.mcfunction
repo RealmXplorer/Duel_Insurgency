@@ -1,4 +1,4 @@
-execute if entity @s[tag=killMsg] run tellraw @a {selector:"@s",color:red,bold:false,extra:[{text:" ejected ",color:white,bold:false},{selector:"@a[scores={justdied=1}]",color:dark_red,bold:false}]}
+execute if entity @s[tag=killMsg] run function du-in:kit/impostor/events/kill_msg
 playsound du-in:kit.sus.kill voice @a ~ ~ ~ 3100000 1 1
 
 #Killstreak dialogue

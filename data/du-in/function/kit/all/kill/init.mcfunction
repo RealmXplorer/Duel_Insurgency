@@ -12,7 +12,7 @@ execute if entity @s[scores={quickKill=1..}] run function du-in:ingame/kill_comb
 execute if entity @s[scores={killStreak=3..}] run function du-in:ingame/killstreak
 
 #Kill Messages
-# execute unless entity @s[tag=deathMsg] run function du-in:kit/all/kill/msg/init
+# execute unless entity @s[scores={justdied=1}] run function du-in:kit/all/kill/msg/init
 execute unless entity @s[scores={justdied=1..}] run function du-in:kit/all/kill/msg/init
 
 #Set current player to this player

@@ -1,2 +1,0 @@
-#KILL MESSAGE#
-execute unless entity @s[scores={kit=5}] unless entity @s[scores={kit=9}] unless entity @s[scores={kit=15..16}] unless entity @s[scores={kit=20}] unless entity @s[scores={kit=23}] unless entity @s[scores={kit=1000..1004}] unless entity @s[scores={kit=42069}] run tellraw @a {selector:"@s",color:red,bold:false,extra:[{text:" eliminated ",color:white,bold:false},{selector:"@a[scores={justdied=1}]",color:dark_red,bold:false}]}

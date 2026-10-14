@@ -85,6 +85,7 @@
     -Every character folder now has a "(kit)/events/reset" file which runs their resets on game end.
 -Moved Runza eating test to an advancement.
 -Restructured constants for kits using returns.
+-Kill message functions now run through characters.
 
 **Reorganized map folders and functions**
 -Renamed "du-in:maps/" folder to "du-in:map/".
