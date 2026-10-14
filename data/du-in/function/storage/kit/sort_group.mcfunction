@@ -1,18 +1,43 @@
+##OLD SYSTEM
+# #Store in group array from kit's group
+# $data modify storage du-in:groups group.$(group) prepend from storage du-in:temp current
 
-#Store in group array from kit's group
-$data modify storage du-in:groups group.$(group) prepend from storage du-in:temp current
+# # Dynamically add group to main themes list if not easter_egg and not already present
+# $execute unless data storage du-in:temp current{group:"easter_egg"} unless data storage du-in:main {themes:[$(group)]} run data modify storage du-in:main themes prepend value $(group)
 
-#Store in general pool if not unlock or easter_egg
+# #Store in general pool if not unlock or easter_egg
+# execute unless data storage du-in:temp current{group:"unlock"} unless data storage du-in:temp current{group:"easter_egg"} run data modify storage du-in:random pool append from storage du-in:temp current
+
+# #Stpre in unlock pool if legendary
+# execute if data storage du-in:temp current{group:"unlock"} run data modify storage du-in:random unlock_pool append from storage du-in:temp current
+
+# #Adjust Unlock's number to match legendary numbers
+# execute store result score #main random run data get storage du-in:random unlock_pool
+# scoreboard players remove #main random 1
+# scoreboard players add #main random 1000
+
+# #Set max values into storages
+# execute store result storage du-in:main random.max int 1 run data get storage du-in:random pool
+# execute store result storage du-in:main random.unlock_max int 1 run scoreboard players get #main random
+
+##NEW TESTS
+# Store in group array from kit's group (append for forward order)
+$data modify storage du-in:groups group.$(group) append from storage du-in:temp current
+
+# Dynamically append group to main themes list if not easter_egg and not already present
+$execute unless data storage du-in:temp current{group:"easter_egg"} unless data storage du-in:main {themes:[$(group)]} run data modify storage du-in:main themes append value $(group)
+
+# Store in general pool if not unlock or easter_egg
 execute unless data storage du-in:temp current{group:"unlock"} unless data storage du-in:temp current{group:"easter_egg"} run data modify storage du-in:random pool append from storage du-in:temp current
 
-#Stpre in unlock pool if legendary
+# Store in unlock pool if legendary
 execute if data storage du-in:temp current{group:"unlock"} run data modify storage du-in:random unlock_pool append from storage du-in:temp current
 
-#Adjust Unlock's number to match legendary numbers
+# Adjust Unlock's number to match legendary numbers
 execute store result score #main random run data get storage du-in:random unlock_pool
 scoreboard players remove #main random 1
 scoreboard players add #main random 1000
 
-#Set max values into storages
+# Set max values into storages
 execute store result storage du-in:main random.max int 1 run data get storage du-in:random pool
 execute store result storage du-in:main random.unlock_max int 1 run scoreboard players get #main random

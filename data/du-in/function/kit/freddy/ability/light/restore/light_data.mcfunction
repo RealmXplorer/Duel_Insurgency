@@ -1,1 +1,0 @@
-$setblock ~ ~ ~ light[level=$(level)$(waterlog)]

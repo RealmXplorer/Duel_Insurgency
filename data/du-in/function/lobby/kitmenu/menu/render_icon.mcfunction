@@ -1,0 +1,1 @@
+$item replace entity @s inventory.17 with minecraft:carrot_on_a_stick[custom_data={du-in:"displayHead"},custom_name=$(name),item_model=$(model)] 1

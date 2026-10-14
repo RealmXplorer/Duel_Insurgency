@@ -1,6 +1,6 @@
 #INIT Function
-execute if entity @s[tag=stolen] run return run function du-in:kit/willo/ability/stolen
 execute if entity @s[tag=sabotaged] run return run function du-in:kit/willo/ability/sabotaged
+execute if entity @s[tag=stolen] run return run function du-in:kit/willo/ability/stolen
 
 
 scoreboard players add @s willoWeapSwitch 1
@@ -13,6 +13,9 @@ execute if entity @s[scores={willoWeapSwitch=2}] run function du-in:kit/willo/ab
 #Reset Attributes
 function du-in:kit/willo/attribute
 
+execute if entity @s[tag=empower] run effect give @s speed 3 1 true
+execute if entity @s[tag=empower] run effect give @s strength 3 0 true
+
 #Clear items
 #clear @s #du-in:weapon
 #clear @s #du-in:secondary
@@ -22,13 +25,13 @@ function du-in:kit/willo/attribute
 #Play sound
 playsound du-in:kit.death.switch master @a ~ ~ ~
 
-
 #play particles
 playsound minecraft:entity.player.attack.sweep master @a ~ ~ ~ 2 1.25
 particle minecraft:dust{color:[1.0, 1.0, 1.0],scale:1.0} ~ ~1 ~ .5 .5 .5 1 100 force
 
 #Set cooldown
 xp set @s 60 levels
+tag @s remove empower
 tag @s remove kitActions
 
 

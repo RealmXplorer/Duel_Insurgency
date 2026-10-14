@@ -15,7 +15,9 @@ function du-in:lobby/kitmenu/menu/load_group with storage du-in:temp
 
 ##GENERAL FUNCTIONS (Applicable across themes)
 #Menu change icons
-execute unless items entity @s[scores={kitTheme=1..6}] inventory.8 minecraft:barrier run function du-in:lobby/kitmenu/menu/function/next
+#execute unless items entity @s[scores={kitTheme=1..6}] inventory.8 minecraft:barrier run function du-in:lobby/kitmenu/menu/function/next
+execute if score @s kitTheme matches 1.. if score @s kitTheme < #main maxThemes unless items entity @s inventory.8 minecraft:barrier run function du-in:lobby/kitmenu/menu/function/next
+
 #execute unless items entity @s[scores={kitTheme=1..6}] inventory.0 minecraft:barrier run function du-in:lobby/kitmenu/menu/function/next
 
 # execute unless items entity @s[scores={kitTheme=2..}] inventory.18 minecraft:barrier run function du-in:lobby/kitmenu/menu/function/prev
@@ -30,7 +32,7 @@ execute unless items entity @s[scores={kitTheme=1..}] inventory.21 minecraft:car
 
 #Theme Displays
 #execute unless items entity @s inventory.9 minecraft:carrot_on_a_stick run function du-in:lobby/kitmenu/menu/theme_display
-execute unless items entity @s inventory.17 minecraft:carrot_on_a_stick run function du-in:lobby/kitmenu/menu/theme_display
+#execute unless items entity @s inventory.17 minecraft:carrot_on_a_stick run function du-in:lobby/kitmenu/menu/theme_display
 
 #Skin menu
 execute if entity @s[tag=skinMenu] run return run function du-in:lobby/kitmenu/skins/common

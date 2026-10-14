@@ -1,5 +1,7 @@
 advancement revoke @s only du-in:utility/interact_vending
 
+execute if score #freddyLight running matches 1 run return run function du-in:ingame/vending_machine/titles/no_power
+
 execute if entity @s[scores={kit=1000}] run function du-in:kit/saac/vending/vend
 
 execute if entity @s[scores={kit=1001}] run function du-in:kit/paz/card/spend

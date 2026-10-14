@@ -5,8 +5,9 @@
 # $execute if entity @s[tag=kitsListed] store result score @s kitList run data get storage du-in:groups group.$(active_group)
 
 $data modify storage du-in:temp kit_queue set from storage du-in:groups group.$(active_group)
-
 execute if entity @s[tag=kitsListed] store result score @s kitList run data get storage du-in:temp kit_queue
+
+execute unless items entity @s inventory.17 minecraft:carrot_on_a_stick run function du-in:lobby/kitmenu/menu/theme_icon with storage du-in:temp
 
 #Calculate max array index (length - 1)
 execute store result score #menu queueIndex run data get storage du-in:temp kit_queue

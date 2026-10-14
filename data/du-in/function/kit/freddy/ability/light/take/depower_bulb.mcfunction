@@ -1,0 +1,1 @@
+$setblock ~ ~ ~ $(id)[lit=false]

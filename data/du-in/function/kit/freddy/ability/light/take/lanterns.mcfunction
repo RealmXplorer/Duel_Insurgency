@@ -1,24 +1,43 @@
 scoreboard players set @s lightType 10
-scoreboard players set @s waterLogged 0
+#Set default
+data modify entity @s data.variant set value ""
 
-execute if block ~ ~ ~ lantern run scoreboard players set @s lightVariant 1
-execute if block ~ ~ ~ soul_lantern run scoreboard players set @s lightVariant 2
-execute if block ~ ~ ~ copper_lantern run scoreboard players set @s lightVariant 3
+#Set type
+execute if block ~ ~ ~ minecraft:soul_lantern run data modify entity @s data.variant set value "soul_"
 
-execute if block ~ ~ ~ lantern[hanging=true] run scoreboard players set @s lightVariant 4
-execute if block ~ ~ ~ soul_lantern[hanging=true] run scoreboard players set @s lightVariant 5
-execute if block ~ ~ ~ copper_lantern[hanging=true] run scoreboard players set @s lightVariant 6
+#Copper
+execute if block ~ ~ ~ minecraft:copper_lantern run data modify entity @s data.variant set value "copper_"
+execute if block ~ ~ ~ minecraft:waxed_copper_lantern run data modify entity @s data.variant set value "waxed_copper_"
+execute if block ~ ~ ~ minecraft:exposed_copper_lantern run data modify entity @s data.variant set value "exposed_copper_"
+execute if block ~ ~ ~ minecraft:waxed_exposed_copper_lantern run data modify entity @s data.variant set value "waxed_exposed_copper_"
+execute if block ~ ~ ~ minecraft:weathered_copper_lantern run data modify entity @s data.variant set value "weathered_copper_"
+execute if block ~ ~ ~ minecraft:waxed_weathered_copper_lantern run data modify entity @s data.variant set value "waxed_weathered_copper_"
+execute if block ~ ~ ~ minecraft:oxidized_copper_lantern run data modify entity @s data.variant set value "oxidized_copper_"
+execute if block ~ ~ ~ minecraft:waxed_oxidized_copper_lantern run data modify entity @s data.variant set value "waxed_oxidized_copper_"
 
-execute if block ~ ~ ~ lantern[waterlogged=true] run scoreboard players set @s waterLogged 1
-execute if block ~ ~ ~ soul_lantern[waterlogged=true] run scoreboard players set @s waterLogged 1
-execute if block ~ ~ ~ copper_lantern[waterlogged=true] run scoreboard players set @s waterLogged 1
+#Set Hanging
+data modify entity @s data.hanging set value "false"
+execute if block ~ ~ ~ #minecraft:lanterns[hanging=true] run data modify entity @s data.hanging set value "true"
 
-execute if score @s lightVariant matches ..3 run setblock ~ ~ ~ air
-execute if score @s lightVariant matches 4..5 run setblock ~ ~ ~ iron_chain
-execute if score @s lightVariant matches 6 run setblock ~ ~ ~ copper_chain
+#Set waterlog
+data modify entity @s data.waterlog set value ""
+execute if block ~ ~ ~ #minecraft:lanterns[waterlogged=true] run data modify entity @s data.waterlog set value ",waterlogged=true"
 
-execute if score @s waterLogged matches 1 if score @s lightVariant matches ..3 run setblock ~ ~ ~ water
-execute if score @s waterLogged matches 1 if score @s lightVariant matches 4..5 run setblock ~ ~ ~ iron_chain[waterlogged=true]
-execute if score @s waterLogged matches 1 if score @s lightVariant matches 6 run setblock ~ ~ ~ copper_chain[waterlogged=true]
+#Find Replacement Blocks
+#Determine replacement for STANDING lanterns (air vs water)
+data modify entity @s data.replacement set value "air"
+execute if block ~ ~ ~ #minecraft:lanterns[waterlogged=true] run data modify entity @s data.replacement set value "water"
+
+#Determine chain material for HANGING lanterns
+data modify entity @s data.chain_material set value "iron_"
+execute if block ~ ~ ~ #minecraft:copper_lanterns run data modify entity @s data.chain_material set from entity @s data.variant
+
+#Execute Macro based on hanging state
+execute unless block ~ ~ ~ #minecraft:lanterns[hanging=true] run function du-in:kit/freddy/ability/light/take/lantern_standing with entity @s data
+execute if block ~ ~ ~ #minecraft:lanterns[hanging=true] run function du-in:kit/freddy/ability/light/take/lantern_hanging with entity @s data
 
 function du-in:kit/freddy/ability/start_timer
+
+#Save Marker entity data into storage and execute
+#data modify storage du-in:temp candle set from entity @s data
+#function du-in:kit/freddy/ability/light/take/extinguish_candle with storage du-in:temp candle

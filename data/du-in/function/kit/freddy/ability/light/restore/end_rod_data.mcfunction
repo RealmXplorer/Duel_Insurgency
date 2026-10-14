@@ -1,1 +1,0 @@
-$setblock ~ ~ ~ end_rod[facing=$(facing)]

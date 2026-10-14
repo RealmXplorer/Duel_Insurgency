@@ -10,6 +10,7 @@ execute as @n[distance=..0.5,type=marker,tag=light,tag=!unset] run kill @s
 
 #Summon new light marker
 summon marker ~ ~ ~ {Tags:["light","unset"]}
+execute if entity @s[tag=empower] run tag @n[type=marker,tag=unset,tag=light] add empower
 
 #Test for what kind of light block
 execute if block ~ ~ ~ minecraft:light as @n[type=marker,tag=light,tag=unset] run return run function du-in:kit/freddy/ability/light/take/light

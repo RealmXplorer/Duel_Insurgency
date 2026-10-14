@@ -27,8 +27,7 @@ execute if block ~ ~ ~ #minecraft:candles[candles=3] run data modify entity @s d
 execute if block ~ ~ ~ #minecraft:candles[candles=4] run data modify entity @s data.candles set value 4
 
 #Save Marker entity data into storage and execute
-data modify storage du-in:temp candle set from entity @s data
-function du-in:kit/freddy/ability/light/take/extinguish_candle with storage du-in:temp candle
+function du-in:kit/freddy/ability/light/take/extinguish_candle with entity @s data
 
 #Start timer for this light
 function du-in:kit/freddy/ability/start_timer

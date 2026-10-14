@@ -84,6 +84,9 @@ scoreboard objectives add legID dummy
 scoreboard objectives add regID dummy
 scoreboard objectives add currentID dummy
 scoreboard objectives add darkTimer dummy
+scoreboard objectives add currentIndex dummy
+scoreboard objectives add maxIndex dummy
+scoreboard objectives add maxThemes dummy
 
 #Timers
 scoreboard objectives add ambience dummy

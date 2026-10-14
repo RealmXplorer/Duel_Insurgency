@@ -15,6 +15,32 @@ data remove storage du-in:random unlock_pool
 data modify storage du-in:groups group set value {}
 data modify storage du-in:main themes set value []
 
+#Create Group icon definitions
+# Legendary (unlock)
+data modify storage du-in:group_icons unlock set value {name:'{"text":"Legendary Characters","color":"gold","bold":true}',model:'"du-in:lobby/crown"'}
+data modify storage du-in:group_icons minecraft set value {name:'{"text":"Minecraft","color":"green","bold":true}',model:'"oak_log"'}
+data modify storage du-in:group_icons undertale set value {name:'{"text":"Undertale / Deltarune","color":"red","bold":true}',model:'"du-in:abilities/chara"'}
+data modify storage du-in:group_icons starwars set value {name:'{"text":"Star Wars","color":"white","bold":true}',model:'"du-in:abilities/yoda"'}
+data modify storage du-in:group_icons zootopia set value {name:'{"text":"Zootopia","color":"light_purple","bold":true}',model:'"du-in:abilities/badge"'}
+data modify storage du-in:group_icons last_wish set value {name:'{"text":"The Last Wish","color":"dark_blue","bold":true}',model:'"du-in:abilities/asriel"'}
+data modify storage du-in:group_icons fnaf set value {name:'{"text":"Five Nights at Freddy\'s","color":"#824308","bold":true}',model:'"lantern"'}
+data modify storage du-in:group_icons grab_bag set value {name:'{"text":"Grab Bag","color":"dark_green","bold":true}',model:'"bundle"'}
+
+# #Minecraft
+#data modify storage du-in:group_icons minecraft set value {id:"minecraft:carrot_on_a_stick",count:1,components:{"minecraft:custom_data":{du-in:"displayHead"},"minecraft:custom_name":'{"text":"Minecraft","color":"green","bold":true}',"minecraft:item_model":"oak_log"}}
+# #Undertale
+# data modify storage du-in:group_icons undertale set value {id:"minecraft:carrot_on_a_stick",count:1,components:{"minecraft:custom_data":{du-in:"displayHead"},"minecraft:custom_name":'{"text":"Undertale / Deltarune","color":"red","bold":true}',"minecraft:item_model":"du-in:abilities/chara"}}
+# #Star Wars
+# data modify storage du-in:group_icons starwars set value {id:"minecraft:carrot_on_a_stick",count:1,components:{"minecraft:custom_data":{du-in:"displayHead"},"minecraft:custom_name":'{"text":"Star Wars","color":"white","bold":true}',"minecraft:item_model":"du-in:abilities/yoda"}}
+# #Zootopia
+# data modify storage du-in:group_icons zootopia set value {id:"minecraft:carrot_on_a_stick",count:1,components:{"minecraft:custom_data":{du-in:"displayHead"},"minecraft:custom_name":'{"text":"Zootopia","color":"light_purple","bold":true}',"minecraft:item_model":"du-in:abilities/badge"}}
+# #Last Wish
+# data modify storage du-in:group_icons last_wish set value {id:"minecraft:carrot_on_a_stick",count:1,components:{"minecraft:custom_data":{du-in:"displayHead"},"minecraft:custom_name":'{"text":"The Last Wish","color":"dark_blue","bold":true}',"minecraft:item_model":"du-in:abilities/asriel"}}
+# #FNAF
+# data modify storage du-in:group_icons fnaf set value {id:"minecraft:carrot_on_a_stick",count:1,components:{"minecraft:custom_data":{du-in:"displayHead"},"minecraft:custom_name":'{"text":"Five Nights at Freddy\'s","color":"#824308","bold":true}',"minecraft:item_model":"lantern"}}
+# #Grab Bag
+# data modify storage du-in:group_icons grab_bag set value {id:"minecraft:carrot_on_a_stick",count:1,components:{"minecraft:custom_data":{du-in:"displayHead"},"minecraft:custom_name":'{"text":"Grab Bag","color":"dark_green","bold":true}',"minecraft:item_model":"bundle"}}
+
 ##CREATE CHARACTERS DATABASE
 #Legendary
 data modify storage du-in:kit list append value {"name":"saac","id":1000,"gender":1,"group":"unlock","pack":"du-in"}
@@ -83,30 +109,27 @@ data modify storage du-in:kit list append value {"name":"knight","id":37,"gender
 data modify storage du-in:kit list append value {"name":"willo","id":41,"gender":4,"group":"grab_bag","pack":"du-in"}
 
 #Easter Eggs
-data modify storage du-in:kit list append value {"name":"chungus","id":42069,"gender":1,"group":"","pack":"du-in"}
-data modify storage du-in:kit list append value {"name":"saul","id":2015,"gender":1,"group":"","pack":"du-in"}
+data modify storage du-in:kit list append value {"name":"chungus","id":42069,"gender":1,"group":"easter_egg","pack":"du-in"}
+data modify storage du-in:kit list append value {"name":"saul","id":2015,"gender":1,"group":"easter_egg","pack":"du-in"}
 
 #data modify storage du-in:kit list append value {"name":"m_frisk","id":82,"gender":1,"group":"undertale","pack":"mod"}
 
-#Store Kit list length
-execute store result score #main listLength run data get storage du-in:kit list
+##NEW TEST
+#Set up forward iteration indices
+execute store result score #main maxIndex run data get storage du-in:kit list
+scoreboard players remove #main maxIndex 1
+scoreboard players set #main currentIndex 0
 
-#Align with 0-indexing of lists
-scoreboard players remove #main listLength 1
-
-#Store index value into main and begin running through database
-execute store result storage du-in:main list.index int 1 run scoreboard players get #main listLength
-function du-in:storage/kit/create_list with storage du-in:main list
-
-#Set groups for kit menu
-data modify storage du-in:main themes set value ["unlock", "minecraft", "undertale", "starwars", "zootopia", "last_wish", "fnaf", "grab_bag"]
-
-
-#Set groups for kit menu
-# execute store result score #main themeCount run data get storage du-in:main themes
+#Recreate Lists
+execute if score #main maxIndex matches 0.. store result storage du-in:main list.index int 1 run scoreboard players get #main currentIndex
+execute if score #main maxIndex matches 0.. run function du-in:storage/kit/create_list with storage du-in:main list
 
 #Assign Slot values
 scoreboard players set #menu themeIndex 0
 execute store result storage du-in:temp theme_index int 1 run scoreboard players get #menu themeIndex
 
 function du-in:storage/kit/slots/assign_theme with storage du-in:temp
+
+#Set Max theme list
+execute store result score #main maxThemes run data get storage du-in:main themes
+scoreboard players remove #main maxThemes 1
