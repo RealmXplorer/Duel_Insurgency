@@ -408,7 +408,7 @@ execute as @a[tag=poolParty] run function du-in:map/pool_party/revert
 
 tag @a remove ready
 tag @a remove kitMenu
-tag @a remove kitsListed
+#tag @a remove kitsListed
 tag @a remove teamPicked
 tag @a remove skinMenu
 function du-in:lobby/reset/item

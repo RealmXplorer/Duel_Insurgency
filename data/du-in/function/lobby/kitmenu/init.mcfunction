@@ -1,5 +1,5 @@
 scoreboard players set @s kitTheme 1
-execute store result score @s kitList run data get storage du-in:groups group.minecraft
+#execute store result score @s kitList run data get storage du-in:groups group.minecraft
 tag @s add kitMenu
 
 tag @s add menuRefresh

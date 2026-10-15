@@ -5,7 +5,7 @@
 # $execute if entity @s[tag=kitsListed] store result score @s kitList run data get storage du-in:groups group.$(active_group)
 
 $data modify storage du-in:temp kit_queue set from storage du-in:groups group.$(active_group)
-execute if entity @s[tag=kitsListed] store result score @s kitList run data get storage du-in:temp kit_queue
+#execute if entity @s[tag=kitsListed] store result score @s kitList run data get storage du-in:temp kit_queue
 
 execute unless items entity @s inventory.17 minecraft:carrot_on_a_stick run function du-in:lobby/kitmenu/menu/theme_icon with storage du-in:temp
 
@@ -17,4 +17,4 @@ scoreboard players remove #menu queueIndex 1
 execute store result storage du-in:temp index int 1 run scoreboard players get #menu queueIndex
 execute if score #menu queueIndex matches 0.. run function du-in:lobby/kitmenu/menu/init_entry with storage du-in:temp
 
-execute if entity @s[tag=kitsListed] run tag @s remove kitsListed
+#execute if entity @s[tag=kitsListed] run tag @s remove kitsListed

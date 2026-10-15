@@ -99,8 +99,8 @@ execute if entity @a[tag=partyLeader,tag=teamMode] run tag @s add teamMode
 #RESET KIT MENU
 scoreboard players set @s kitTheme 1
 function du-in:lobby/reset/item
-scoreboard players set @s kitList 8
-tag @s[tag=kitMenu] add kitsListed
+# players set @s kitList 8
+#tag @s[tag=kitMenu] add kitsListed
 #scoreboard players set @s skinList 20
 tag @s[tag=skinMenu] add skinsListed
 
