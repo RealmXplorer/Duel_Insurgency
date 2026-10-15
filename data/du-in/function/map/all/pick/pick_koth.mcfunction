@@ -4,7 +4,6 @@ execute if score #main map matches 3 run function du-in:map/the_end/start
 execute if score #main map matches 4 run function du-in:map/bowl/start
 execute if score #main map matches 5 run function du-in:map/moraband/start
 execute if score #main map matches 6 run function du-in:map/dunes/start
-# execute if score #main map matches 7 run function du-in:map/all/start/koth/paz_pool
 execute if score #main map matches 7 run function du-in:map/pool_party/start
 execute if score #main map matches 8 run function du-in:map/chancel/start
 execute if score #main map matches 9 run function du-in:map/lao_gai/start

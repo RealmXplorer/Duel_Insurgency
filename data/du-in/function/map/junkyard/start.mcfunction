@@ -33,6 +33,10 @@ summon marker -1569 30 405 {Tags:["vent","mapSpecific"]}
 
 function du-in:ingame/conquest/reset_points
 
+#Ambience
+scoreboard players set #main ambience 4
+function du-in:map/all/ambience/init
+
 #-1549 22 435
 #-1572 31 478
 #-1569 29 404

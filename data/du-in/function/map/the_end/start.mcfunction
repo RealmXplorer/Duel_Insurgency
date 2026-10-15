@@ -25,3 +25,7 @@ execute unless entity @a[scores={kit=10}] run setblock -355 12 223 lectern[has_b
 execute if entity @a[scores={kit=10}] run setblock -355 12 223 air
 
 function du-in:map/the_end/constant
+
+#Ambience
+scoreboard players set #main ambience 4
+function du-in:map/all/ambience/init

@@ -1,8 +1,0 @@
-#Crait
-execute if score #main map matches 1 run playsound du-in:ambient.wind ambient @s ~ ~ ~ 0.25 1 1
-
-#Junkyard
-execute if score #main map matches 2 run playsound du-in:ambient.wind ambient @s ~ ~ ~ 0.25 1 1
-
-#San Ricardo
-execute if score #main map matches 3 run function du-in:ingame/scheduled/ambience/desert

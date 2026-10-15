@@ -29,3 +29,7 @@ execute if entity @a[tag=partyLeader,tag=wsLock] run summon interaction 2540 69 
 
 #Map looping
 function du-in:map/wishing_star/constant
+
+#Ambience
+scoreboard players set #main ambience 4
+function du-in:map/all/ambience/init

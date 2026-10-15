@@ -1,0 +1,2 @@
+execute if predicate du-in:ambience/night_start run function du-in:map/all/ambience/night/start
+execute if predicate du-in:ambience/night_end run function du-in:map/all/ambience/night/end

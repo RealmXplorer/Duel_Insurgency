@@ -37,3 +37,7 @@ execute if entity @a[scores={kit=10}] run setblock -3757 57 1245 air replace
 
 #Start loop
 function du-in:map/ricardo/constant
+
+#Ambience
+scoreboard players set #main ambience 2
+function du-in:map/all/ambience/init

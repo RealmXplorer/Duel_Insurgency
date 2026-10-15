@@ -26,3 +26,7 @@ execute if entity @a[tag=vendingMachine] positioned 608 -33 -7230 run function d
 #Goner Eye
 execute unless entity @a[tag=partyLeader,tag=pazLock] run summon interaction 612 -33 -7231 {Tags:["voidLock","mapSpecific"],width:0.6f,height:0.6f,response:1b}
 execute if entity @a[tag=partyLeader,tag=pazLock] run summon interaction 612 -33 -7231 {Tags:["usedVoidLock","mapSpecific"],width:0.6f,height:0.6f,response:1b}
+
+#Ambience
+scoreboard players set #main ambience 2
+function du-in:map/all/ambience/init

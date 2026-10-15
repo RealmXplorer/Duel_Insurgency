@@ -42,3 +42,7 @@ execute if entity @a[tag=partyLeader,tag=flameLock] run summon interaction 7447 
 
 #Start game loop
 function du-in:map/first_flame/constant
+
+#Ambience
+scoreboard players set #main ambience 4
+function du-in:map/all/ambience/init

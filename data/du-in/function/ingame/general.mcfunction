@@ -41,7 +41,7 @@ execute as @e[type=marker,tag=poisonApple] at @s run function du-in:kit/jack_hor
 execute at @e[type=snowball] run summon minecraft:marker ~ ~ ~ {Tags:["poisonApple","mapSpecific"]}
 
 #Test when it shifts to day or night
-execute if score #main dayNightSetting matches 1 run function du-in:ingame/scheduled/ambience/night_init
+execute if score #main dayNightSetting matches 1 run function du-in:map/all/ambience/night/test
 
 #Dev Mode end game
     #execute if entity @a[tag=devMode,tag=partyLeader] if entity @a[scores={thrownBarrier=1..}] run tag @a add win

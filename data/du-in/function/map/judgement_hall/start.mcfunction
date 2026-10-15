@@ -23,3 +23,7 @@ function du-in:ingame/ctf/banner_reset
 #Vending Machines#
 execute if entity @a[tag=vendingMachine] positioned 253 4 426 run function du-in:ingame/vending_machine/place/east
 execute if entity @a[tag=vendingMachine] positioned 242 4 515 run function du-in:ingame/vending_machine/place/east
+
+#Ambience
+scoreboard players set #main ambience 3
+function du-in:map/all/ambience/init

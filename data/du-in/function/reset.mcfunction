@@ -2,7 +2,8 @@
 schedule clear du-in:ingame/scheduled/one_sec_loop
 schedule clear du-in:ingame/scheduled/five_sec_loop
 schedule clear du-in:ingame/scheduled/three_sec_loop
-schedule clear du-in:ingame/scheduled/ambience/init
+schedule clear du-in:map/all/ambience/init
+scoreboard players reset #main ambience
 schedule clear du-in:void/lobby_amb
 
 #schedule clear du-in:ingame/scheduled/five_loop

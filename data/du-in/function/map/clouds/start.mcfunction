@@ -39,3 +39,7 @@ summon interaction -450 22 488 {Tags:["ventBlock","mapSpecific"],width:1.05f,hei
 summon interaction -424 23 484 {Tags:["ventBlock","mapSpecific"],width:1.05f,height:1.25f,response:1b}
 summon interaction -422 17 481 {Tags:["ventBlock","mapSpecific"],width:1.05f,height:1.25f,response:1b}
 summon interaction -393 22 477 {Tags:["ventBlock","mapSpecific"],width:1.05f,height:1.25f,response:1b}
+
+#Ambience
+scoreboard players set #main ambience 4
+function du-in:map/all/ambience/init

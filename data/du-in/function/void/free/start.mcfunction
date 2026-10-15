@@ -31,7 +31,7 @@ tag @a remove bowlLock
 gamemode adventure @a
 scoreboard players set @a music 0
 #scoreboard players set @a ambience 0
-function du-in:ingame/scheduled/ambience/init
+function du-in:map/all/ambience/init
 stopsound @a record
 #function du-in:music/free/free
 execute unless entity @a[tag=partyLeader,tag=execute.Autumn] as @a[tag=free,tag=!musicOff,tag=!stump] at @s run playsound du-in:music.free record @s ~ ~ ~ 1 1 1

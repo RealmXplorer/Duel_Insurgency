@@ -168,7 +168,7 @@ tag @a remove kitMenu
 function du-in:ingame/scheduled/one_sec_loop
 function du-in:ingame/scheduled/five_sec_loop
 
-function du-in:ingame/scheduled/ambience/init
+# function du-in:map/all/ambience/init
 
 advancement grant @a[tag=playing,tag=!devMode] only du-in:challenge/duel_reborn
 

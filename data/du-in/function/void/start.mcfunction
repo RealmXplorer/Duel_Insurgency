@@ -26,7 +26,7 @@ scoreboard players set #main voidReadyOnline 0
 team modify Insurgent collisionRule pushOtherTeams
 
 schedule function du-in:void/goner/check 3s
-schedule clear du-in:ingame/scheduled/ambience/init
+schedule clear du-in:map/all/ambience/init
 schedule clear du-in:map/jermall/stop
 schedule clear du-in:map/jermall/pick_victim
 schedule clear du-in:map/jermall/eat_victim
@@ -58,7 +58,7 @@ tag @a remove bigChungus
 tag @a remove musOverride
 execute as @a run function du-in:kit/clairen/ability/remove_field
 
-schedule clear du-in:ingame/scheduled/ambience/init
+schedule clear du-in:map/all/ambience/init
 stopsound @a ambient
 
 function du-in:music/ingame/stop/all

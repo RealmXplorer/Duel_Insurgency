@@ -61,3 +61,6 @@ summon marker -1036 7 -1040 {Tags:["vent","mapSpecific"]}
 #-1011 16 -979
 #-971 7 -979
 #-1036 7 -1040
+#Ambience
+scoreboard players set #main ambience 2
+function du-in:map/all/ambience/init

@@ -94,6 +94,8 @@
 -Map select is now fully scalable, running off of inset scores from UUIDs, rather than tags.
 -Map-specific constants (such as effects and kill zones) are scheduled on select and run off their own folder, rather than all ticking in their gamemode functions.
     -Many of these are no longer every tick so as to lighten tick load.
+-Ambience has been moved out of "ingame/scheduled/ambience/" to "map/all/ambience/"
+-Ambience is now a single score set on individual map starts, rather than testing for gamemodes and map scores.
 
 **Gamemode Overhaul**
 -Default classic, Team, Timed, and Timed Team classic is now event-based.

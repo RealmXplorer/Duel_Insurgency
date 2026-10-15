@@ -42,3 +42,7 @@ function du-in:ingame/conquest/reset_points
 #10032 5 5006
 #10037 5 5054
 #10048 5 5101
+
+#Ambience
+scoreboard players set #main ambience 4
+function du-in:map/all/ambience/init

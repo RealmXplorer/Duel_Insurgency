@@ -1,3 +1,7 @@
+#Conquest start
+execute if score #main gamemode matches 5 run return run function du-in:map/ricardo/conquest_start
+
+#Default
 tellraw @a [{text:"The ",bold:false,color:gray},{text:"San Ricardo ",bold:true,color:"#fceaa2"},{text:"map has been chosen!",bold:false,color:gray}]
 
 #Teleports#
@@ -39,3 +43,7 @@ execute if entity @a[tag=partyLeader,tag=ricardoLock] run summon interaction -37
 
 #Start loop
 function du-in:map/ricardo/constant
+
+#Ambience
+scoreboard players set #main ambience 2
+function du-in:map/all/ambience/init

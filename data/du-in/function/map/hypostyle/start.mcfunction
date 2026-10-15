@@ -52,3 +52,7 @@ summon interaction -762 1 -40 {Tags:["ventBlock","mapSpecific"],width:1.05f,heig
 #-809 5 -21
 #-786 5 -20
 #-761 1 -39
+
+#Ambience
+scoreboard players set #main ambience 1
+function du-in:map/all/ambience/init

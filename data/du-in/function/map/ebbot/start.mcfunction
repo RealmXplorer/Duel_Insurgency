@@ -47,3 +47,6 @@ function du-in:map/ebbot/constant
 
 #Remove Forceload
 forceload remove -2517 -2514 -2432 -2443
+
+scoreboard players set #main ambience 1
+function du-in:map/all/ambience/init
