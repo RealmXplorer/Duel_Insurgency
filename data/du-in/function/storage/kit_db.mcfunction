@@ -26,21 +26,6 @@ data modify storage du-in:group_icons last_wish set value {name:'{"text":"The La
 data modify storage du-in:group_icons fnaf set value {name:'{"text":"Five Nights at Freddy\'s","color":"#824308","bold":true}',model:'"lantern"'}
 data modify storage du-in:group_icons grab_bag set value {name:'{"text":"Grab Bag","color":"dark_green","bold":true}',model:'"bundle"'}
 
-# #Minecraft
-#data modify storage du-in:group_icons minecraft set value {id:"minecraft:carrot_on_a_stick",count:1,components:{"minecraft:custom_data":{du-in:"displayHead"},"minecraft:custom_name":'{"text":"Minecraft","color":"green","bold":true}',"minecraft:item_model":"oak_log"}}
-# #Undertale
-# data modify storage du-in:group_icons undertale set value {id:"minecraft:carrot_on_a_stick",count:1,components:{"minecraft:custom_data":{du-in:"displayHead"},"minecraft:custom_name":'{"text":"Undertale / Deltarune","color":"red","bold":true}',"minecraft:item_model":"du-in:abilities/chara"}}
-# #Star Wars
-# data modify storage du-in:group_icons starwars set value {id:"minecraft:carrot_on_a_stick",count:1,components:{"minecraft:custom_data":{du-in:"displayHead"},"minecraft:custom_name":'{"text":"Star Wars","color":"white","bold":true}',"minecraft:item_model":"du-in:abilities/yoda"}}
-# #Zootopia
-# data modify storage du-in:group_icons zootopia set value {id:"minecraft:carrot_on_a_stick",count:1,components:{"minecraft:custom_data":{du-in:"displayHead"},"minecraft:custom_name":'{"text":"Zootopia","color":"light_purple","bold":true}',"minecraft:item_model":"du-in:abilities/badge"}}
-# #Last Wish
-# data modify storage du-in:group_icons last_wish set value {id:"minecraft:carrot_on_a_stick",count:1,components:{"minecraft:custom_data":{du-in:"displayHead"},"minecraft:custom_name":'{"text":"The Last Wish","color":"dark_blue","bold":true}',"minecraft:item_model":"du-in:abilities/asriel"}}
-# #FNAF
-# data modify storage du-in:group_icons fnaf set value {id:"minecraft:carrot_on_a_stick",count:1,components:{"minecraft:custom_data":{du-in:"displayHead"},"minecraft:custom_name":'{"text":"Five Nights at Freddy\'s","color":"#824308","bold":true}',"minecraft:item_model":"lantern"}}
-# #Grab Bag
-# data modify storage du-in:group_icons grab_bag set value {id:"minecraft:carrot_on_a_stick",count:1,components:{"minecraft:custom_data":{du-in:"displayHead"},"minecraft:custom_name":'{"text":"Grab Bag","color":"dark_green","bold":true}',"minecraft:item_model":"bundle"}}
-
 ##CREATE CHARACTERS DATABASE
 #Legendary
 data modify storage du-in:kit list append value {"name":"saac","id":1000,"gender":1,"group":"unlock","pack":"du-in"}
