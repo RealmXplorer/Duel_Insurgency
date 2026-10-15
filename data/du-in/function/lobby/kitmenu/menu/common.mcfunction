@@ -3,7 +3,7 @@
 #execute store result storage du-in:temp theme_index int 1 run scoreboard players get @s kitTheme
 #function du-in:lobby/kitmenu/menu/load_group with storage du-in:temp
 
-execute if entity @s[tag=menuRefresh] run function du-in:lobby/kitmenu/menu/render_menu
+#execute if entity @s[tag=menuRefresh] run function du-in:lobby/kitmenu/menu/render_menu
 
 
 ##GENERAL FUNCTIONS (Applicable across themes)
