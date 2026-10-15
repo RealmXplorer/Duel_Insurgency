@@ -21,5 +21,8 @@ bossbar set minecraft:redkoth visible true
 bossbar set minecraft:bluekoth visible true
 tag @a remove kothl
 
+team join Red @a[scores={team=1}]
+team join Blue @a[scores={team=2}]
+
 #Start loop
 function du-in:ingame/koth/team/teams

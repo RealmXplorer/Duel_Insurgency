@@ -1,6 +1,8 @@
 #Functionality
-execute if entity @s[scores={kitList=..0},tag=villagerSkins] run function du-in:kit/villager/menu/skins/select
-execute if entity @s[scores={kitList=..0},tag=!villagerSkins] run function du-in:kit/villager/menu/skins/try
+# execute if entity @s[scores={kitList=..0},tag=villagerSkins] run function du-in:kit/villager/menu/skins/select
+# execute if entity @s[scores={kitList=..0},tag=!villagerSkins] run function du-in:kit/villager/menu/skins/try
+execute if entity @s[tag=!renderingKit,tag=villagerSkins] run function du-in:kit/villager/menu/skins/select
+execute if entity @s[tag=!renderingKit,tag=!villagerSkins] run function du-in:kit/villager/menu/skins/try
 
 
 #Void Head

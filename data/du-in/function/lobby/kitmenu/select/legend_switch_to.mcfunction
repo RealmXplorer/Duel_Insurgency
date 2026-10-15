@@ -6,5 +6,7 @@ clear @s
 execute if entity @s[tag=skinMenu] run function du-in:lobby/scheduled/shop
 tag @s add kitsListed
 
+tag @s add menuRefresh
+
 #execute store result storage du-in:temp theme_index int 1 run scoreboard players get @s kitTheme
 #function du-in:lobby/kitmenu/menu/load_group with storage du-in:temp

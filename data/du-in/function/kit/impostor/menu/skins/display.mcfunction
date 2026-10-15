@@ -1,5 +1,6 @@
 #Functionality
-execute if entity @s[scores={kitList=..0}] run function du-in:kit/impostor/menu/skins/select
+# execute if entity @s[scores={kitList=..0}] run function du-in:kit/impostor/menu/skins/select
+execute if entity @s[tag=!renderingKit] run function du-in:kit/impostor/menu/skins/select
 
 $execute unless score #main pylonsDestroyed matches 3.. run item replace entity @s inventory.$(slot) with minecraft:player_head[custom_data={du-in:'impostorHead'},custom_name={text:"Impostor Skins",color:white,bold:true,italic:false},lore=[{text:"None Available!",color:red,bold:true,"italic":true}],item_model="barrier"] 1
 

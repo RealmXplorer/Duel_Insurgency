@@ -18,3 +18,6 @@ scoreboard objectives setdisplay sidebar classicTeamKills
 bossbar set minecraft:classicred visible true
 bossbar set minecraft:classicblue visible true
 tag @a remove cl
+
+team join Red @a[scores={team=1}]
+team join Blue @a[scores={team=2}]

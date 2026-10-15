@@ -1,5 +1,7 @@
-execute if entity @s[scores={kitList=..0},tag=gasterSkins] run function du-in:kit/gaster/menu/skins/select
-execute if entity @s[scores={kitList=..0},tag=!gasterSkins] run function du-in:kit/gaster/menu/skins/try
+# execute if entity @s[scores={kitList=..0},tag=gasterSkins] run function du-in:kit/gaster/menu/skins/select
+# execute if entity @s[scores={kitList=..0},tag=!gasterSkins] run function du-in:kit/gaster/menu/skins/try
+execute if entity @s[tag=!renderingKit,tag=gasterSkins] run function du-in:kit/gaster/menu/skins/select
+execute if entity @s[tag=!renderingKit,tag=!gasterSkins] run function du-in:kit/gaster/menu/skins/try
 
 #Void Head
 $execute if score #main pylonsDestroyed matches 3.. run item replace entity @s inventory.$(slot) with minecraft:player_head[custom_data={du-in:'gasterHead'},custom_name={text:"Default",color:white,bold:true,italic:false},lore=[{text:"Gaster",color:aqua,bold:true,"italic":true}],profile={id:[I;1144803015,773998093,-2103491651,-2103585732],name:"",properties:[{name:"textures",value:"eyJ0ZXh0dXJlcyI6eyJTS0lOIjp7InVybCI6Imh0dHA6Ly90ZXh0dXJlcy5taW5lY3JhZnQubmV0L3RleHR1cmUvYWM4MDQ0YzdjN2U1MjdkNDMyYjRhZTcxYjFjNDg2NWM4NzZkOGFjODIzZjE0Njc0OTNiYWM4MmE2OTZmOTZkNSJ9fX0="}]}]

@@ -20,5 +20,8 @@ bossbar set bossbar:gametimer visible true
 scoreboard objectives setdisplay sidebar teamDeaths
 tag @a remove dml
 
+team join Red @a[scores={team=1}]
+team join Blue @a[scores={team=2}]
+
 #Start loop
 function du-in:ingame/deathmatch/team_timed/timed

@@ -1,5 +1,6 @@
 #Functionality
-execute if entity @s[scores={kitList=..0}] run function du-in:kit/asriel/menu/skins/select
+# execute if entity @s[scores={kitList=..0}] run function du-in:kit/asriel/menu/skins/select
+execute if entity @s[tag=!renderingKit] run function du-in:kit/asriel/menu/skins/select
 
 $execute unless score #main pylonsDestroyed matches 3.. run item replace entity @s inventory.$(slot) with minecraft:player_head[custom_data={du-in:'asrielHead'},custom_name={text:"Asriel Skins",color:white,bold:true,italic:false},lore=[{text:"None Available!",color:red,bold:true,"italic":true}],item_model="barrier"] 1
 #profile={properties:[{name:"textures",value:"eyJ0ZXh0dXJlcyI6eyJTS0lOIjp7InVybCI6Imh0dHA6Ly90ZXh0dXJlcy5taW5lY3JhZnQubmV0L3RleHR1cmUvMTkxOWQxNTk0YmY4MDlkYjdiNDRiMzc4MmJmOTBhNjlmNDQ5YTg3Y2U1ZDE4Y2I0MGViNjUzZmRlYzI3MjIifX19"}]}

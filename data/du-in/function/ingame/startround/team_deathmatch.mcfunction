@@ -16,4 +16,7 @@ execute unless score #main pylonsDestroyed matches 3 run schedule function du-in
 scoreboard objectives setdisplay sidebar teamPool
 tag @a remove dml
 
+team join Red @a[scores={team=1}]
+team join Blue @a[scores={team=2}]
+
 function du-in:ingame/deathmatch/team/teams

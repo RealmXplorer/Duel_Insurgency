@@ -174,10 +174,6 @@ advancement grant @a[tag=playing,tag=!devMode] only du-in:challenge/duel_reborn
 
 execute if entity @a[scores={LEVEL_OF_FUN=3..}] run schedule function du-in:ingame/timed/countdown 15s
 
-#Join teams
-team join Red @a[scores={team=1}]
-team join Blue @a[scores={team=2}]
-
 #Reset void functions
 tag @a remove fromVoid
 scoreboard players set #main voidReadyOnline 0

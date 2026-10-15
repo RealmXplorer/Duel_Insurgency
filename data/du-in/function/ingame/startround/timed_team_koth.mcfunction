@@ -24,5 +24,7 @@ execute store result score #main maxTimer run scoreboard players get #main gameT
 bossbar set bossbar:gametimer visible true
 tag @a remove kothl
 
+team join Red @a[scores={team=1}]
+team join Blue @a[scores={team=2}]
 #Start Loop
 function du-in:ingame/koth/team_timed/timed

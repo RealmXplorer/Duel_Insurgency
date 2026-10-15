@@ -1,6 +1,8 @@
 #Functionality
-execute if entity @s[scores={kitList=..0},tag=kyloSkins] run function du-in:kit/kylo/menu/skins/select
-execute if entity @s[scores={kitList=..0},tag=!kyloSkins] run function du-in:kit/kylo/menu/skins/try
+# execute if entity @s[scores={kitList=..0},tag=kyloSkins] run function du-in:kit/kylo/menu/skins/select
+# execute if entity @s[scores={kitList=..0},tag=!kyloSkins] run function du-in:kit/kylo/menu/skins/try
+execute if entity @s[tag=!renderingKit,tag=kyloSkins] run function du-in:kit/kylo/menu/skins/select
+execute if entity @s[tag=!renderingKit,tag=!kyloSkins] run function du-in:kit/kylo/menu/skins/try
 
 #Void Head
 $execute if score #main pylonsDestroyed matches 3.. run item replace entity @s inventory.$(slot) with minecraft:player_head[custom_data={du-in:'kyloHead'},custom_name={text:"I SEE YOU",color:gray,bold:true},lore=[{text:"Kylo Ren",color:"#8ff0f7",bold:true,"italic":true}],profile={id:[I;318736035,-1403303440,-1876061664,-609467480],name:"",properties:[{name:"textures",value:"eyJ0ZXh0dXJlcyI6eyJTS0lOIjp7InVybCI6Imh0dHA6Ly90ZXh0dXJlcy5taW5lY3JhZnQubmV0L3RleHR1cmUvYTdlMGE5MGMyYjg0ODU1YzkwMDYzNmNmYzkyNWQ5ZjJkMDc4NjliMGNiZmE1MzhlMjYxMDcyMGI3ZDI0YWVlNSJ9fX0="}]}] 1

@@ -1,7 +1,10 @@
 #Functionality
-execute if entity @s[scores={kitList=..0},tag=sansSkins] run function du-in:kit/sans/menu/skins/select
+# execute if entity @s[scores={kitList=..0},tag=sansSkins] run function du-in:kit/sans/menu/skins/select
 
-execute if entity @s[scores={kitList=..0},tag=!sansSkins] run function du-in:kit/sans/menu/skins/try
+# execute if entity @s[scores={kitList=..0},tag=!sansSkins] run function du-in:kit/sans/menu/skins/try
+
+execute if entity @s[tag=!renderingKit,tag=sansSkins] run function du-in:kit/sans/menu/skins/select
+execute if entity @s[tag=!renderingKit,tag=!sansSkins] run function du-in:kit/sans/menu/skins/try
 
 #Locked Head
 $execute unless score #main pylonsDestroyed matches 3.. run item replace entity @s inventory.$(slot) with minecraft:player_head[custom_data={du-in:'sansHead'},custom_name={text:"Sans Skins",color:white,bold:true,italic:false},lore=[{text:"200 Diamonds",color:red,bold:true,"italic":true}],item_model="du-in:lobby/lock"] 1
