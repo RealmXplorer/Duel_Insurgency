@@ -3,3 +3,5 @@ $data modify storage du-in:temp active_group set from storage du-in:main themes[
 
 #Pass du-in:temp compound to display_group
 function du-in:lobby/kitmenu/menu/display_group with storage du-in:temp
+
+advancement revoke @s only du-in:utility/detect_item

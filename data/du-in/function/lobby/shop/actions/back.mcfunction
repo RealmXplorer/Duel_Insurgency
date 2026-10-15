@@ -1,6 +1,9 @@
 #Remove tags for Shop
 tag @s remove shop
 
+tag @s remove skinMenu
+tag @s remove kitMenu
+
 #Kill tabba and Hugo if no one else is in shop
 execute unless entity @a[tag=shop] run tp @e[tag=tabba] 216 -100 40
 execute unless entity @a[tag=shop] run kill @e[tag=tabba]
@@ -30,9 +33,6 @@ function du-in:lobby/reset/item
 tag @s remove subLobby
 clear @s
 function du-in:lobby/scheduled/gamemode_select
-
-tag @s remove skinMenu
-tag @s remove kitMenu
 
 #Play sound
 playsound minecraft:entity.ender_dragon.flap master @s ~ ~ ~ 1 1.5

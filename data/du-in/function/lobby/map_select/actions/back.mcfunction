@@ -2,6 +2,11 @@
 tag @a[scores={Object.map.return=3..},predicate=du-in:chance/ten_chance] add Player.accept
 scoreboard players add @a[tag=partyLeader] Object.map.return 1
 
+#Removes kitMenu and resets it
+tag @a remove kitMenu
+scoreboard players set @a kitTheme 1
+# scoreboard players set @a kitList 8
+
 #Reset map vote to reset vote displays
 scoreboard players reset @a mapVote
 execute as @e[type=marker,tag=mapVote] at @s run setblock ~ ~-1 ~ minecraft:red_concrete destroy
@@ -95,11 +100,6 @@ scoreboard players set @a music 0
 scoreboard players reset #main map
 
 schedule clear du-in:lobby/scheduled/two_sec_loop
-
-#Removes kitMenu and resets it
-tag @a remove kitMenu
-scoreboard players set @a kitTheme 1
-scoreboard players set @a kitList 8
 
 
 #Remove tags

@@ -1,5 +1,5 @@
 # 1. Instantly revoke the advancement so it can trigger again on the next click
-advancement revoke @s only du-in:utility/detect_click
+# advancement revoke @s only du-in:utility/detect_click
 
 #say success
 

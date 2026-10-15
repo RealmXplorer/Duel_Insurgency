@@ -1,8 +1,12 @@
+tag @s add changeTheme
+
 scoreboard players set @s kitTheme 1
 #execute store result score @s kitList run data get storage du-in:groups group.minecraft
 tag @s add kitMenu
+function du-in:lobby/kitmenu/menu/render_menu
+tag @s remove changeTheme
 
-tag @s add menuRefresh
+#tag @s add menuRefresh
 
 #execute store result storage du-in:temp theme_index int 1 run scoreboard players get @s kitTheme
 #function du-in:lobby/kitmenu/menu/load_group with storage du-in:temp
