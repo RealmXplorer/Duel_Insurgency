@@ -1,8 +1,10 @@
 execute as @e[type=skeleton,sort=random,limit=1,tag=!peepedHorror] run tag @s add peepedHorror
 
-execute as @e[type=skeleton,tag=peepedHorror] run function du-in:kit/jerma/ability/peeped_horror
+execute as @n[type=skeleton,tag=peepedHorror] run function du-in:kit/jerma/ability/peeped_horror
 
-scoreboard players remove @a[scores={gonersKilled=1..}] gonersKilled 1
+#scoreboard players remove @a[scores={gonersKilled=1..}] gonersKilled 1
+scoreboard players remove #main gonersKilled 1
+scoreboard players add @s gameGonerKills 1
 
 #execute as @a at @s run function du-in:kit/jerma/particle
 function du-in:void/goner/kill_goner

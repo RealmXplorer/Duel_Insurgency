@@ -19,7 +19,7 @@ tag @s remove kitMenu
 execute if entity @a[tag=partyLeader,tag=void] run tp @s[tag=spectating] @a[tag=partyLeader,limit=1]
 execute if entity @a[tag=partyLeader,tag=spectating] run tp @s[tag=spectating] @r[tag=void,sort=furthest]
 
-execute store result score @s gonersKilled run scoreboard players get @r[tag=void] gonersKilled
+#execute store result score @s gonersKilled run scoreboard players get @r[tag=void] gonersKilled
 
 execute if entity @a[tag=partyLeader,tag=spectating] run tp @s[tag=spectating] @r[tag=void]
 

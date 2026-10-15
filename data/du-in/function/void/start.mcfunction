@@ -188,15 +188,21 @@ spawnpoint @a 10045 42 10047
 #spawnpoint @a 113 5 -91 135
 
 #Vending Machines
-execute if entity @a[scores={kit=1000..1001}] run summon interaction 10057 42 10030 {Tags:["vending","stable","mapSpecific"],width:1.15f,height:2.1f,response:1b}
-execute if entity @a[scores={kit=1000..1001}] run summon interaction 10029 42 10035 {Tags:["vending","stable","mapSpecific"],width:1.15f,height:2.1f,response:1b}
-execute if entity @a[scores={kit=1000..1001}] run summon interaction 10034 42 10063 {Tags:["vending","stable","mapSpecific"],width:1.15f,height:2.1f,response:1b}
-execute if entity @a[scores={kit=1000..1001}] run summon interaction 10062 42 10058 {Tags:["vending","stable","mapSpecific"],width:1.15f,height:2.1f,response:1b}
+execute if entity @a[tag=vendingMachine] positioned 10029 42 10035 run function du-in:ingame/vending_machine/place/south
+execute if entity @a[tag=vendingMachine] positioned 10034 42 10063 run function du-in:ingame/vending_machine/place/east
+execute if entity @a[tag=vendingMachine] positioned 10062 42 10058 run function du-in:ingame/vending_machine/place/north
+execute if entity @a[tag=vendingMachine] positioned 10057 42 10030 run function du-in:ingame/vending_machine/place/west
 
-execute if entity @a[scores={kit=1000..1001}] run summon armor_stand 10057 42 10030 {Rotation:[90F,0F],Tags:["vendMachine","mapSpecific"],NoGravity:1b,Silent:1b,Invulnerable:1b,Invisible:1b,NoBasePlate:1b,DisabledSlots:4144959,equipment:{head:{id:"minecraft:spruce_sapling",count:1,components:{"minecraft:item_model":"du-in:other/vending_machine"}}}}
-execute if entity @a[scores={kit=1000..1001}] run summon armor_stand 10029 42 10035 {Rotation:[0F,0F],Tags:["vendMachine","mapSpecific"],NoGravity:1b,Silent:1b,Invulnerable:1b,Invisible:1b,NoBasePlate:1b,DisabledSlots:4144959,equipment:{head:{id:"minecraft:spruce_sapling",count:1,components:{"minecraft:item_model":"du-in:other/vending_machine"}}}}
-execute if entity @a[scores={kit=1000..1001}] run summon armor_stand 10034 42 10063 {Rotation:[-90F,0F],Tags:["vendMachine","mapSpecific"],NoGravity:1b,Silent:1b,Invulnerable:1b,Invisible:1b,NoBasePlate:1b,DisabledSlots:4144959,equipment:{head:{id:"minecraft:spruce_sapling",count:1,components:{"minecraft:item_model":"du-in:other/vending_machine"}}}}
-execute if entity @a[scores={kit=1000..1001}] run summon armor_stand 10062 42 10058 {Rotation:[180F,0F],Tags:["vendMachine","mapSpecific"],NoGravity:1b,Silent:1b,Invulnerable:1b,Invisible:1b,NoBasePlate:1b,DisabledSlots:4144959,equipment:{head:{id:"minecraft:spruce_sapling",count:1,components:{"minecraft:item_model":"du-in:other/vending_machine"}}}}
+
+# execute if entity @a[scores={kit=1000..1001}] run summon interaction 10057 42 10030 {Tags:["vending","stable","mapSpecific"],width:1.15f,height:2.1f,response:1b}
+# execute if entity @a[scores={kit=1000..1001}] run summon interaction 10029 42 10035 {Tags:["vending","stable","mapSpecific"],width:1.15f,height:2.1f,response:1b}
+# execute if entity @a[scores={kit=1000..1001}] run summon interaction 10034 42 10063 {Tags:["vending","stable","mapSpecific"],width:1.15f,height:2.1f,response:1b}
+# execute if entity @a[scores={kit=1000..1001}] run summon interaction 10062 42 10058 {Tags:["vending","stable","mapSpecific"],width:1.15f,height:2.1f,response:1b}
+
+# execute if entity @a[scores={kit=1000..1001}] run summon armor_stand 10057 42 10030 {Rotation:[90F,0F],Tags:["vendMachine","mapSpecific"],NoGravity:1b,Silent:1b,Invulnerable:1b,Invisible:1b,NoBasePlate:1b,DisabledSlots:4144959,equipment:{head:{id:"minecraft:spruce_sapling",count:1,components:{"minecraft:item_model":"du-in:other/vending_machine"}}}}
+# execute if entity @a[scores={kit=1000..1001}] run summon armor_stand 10029 42 10035 {Rotation:[0F,0F],Tags:["vendMachine","mapSpecific"],NoGravity:1b,Silent:1b,Invulnerable:1b,Invisible:1b,NoBasePlate:1b,DisabledSlots:4144959,equipment:{head:{id:"minecraft:spruce_sapling",count:1,components:{"minecraft:item_model":"du-in:other/vending_machine"}}}}
+# execute if entity @a[scores={kit=1000..1001}] run summon armor_stand 10034 42 10063 {Rotation:[-90F,0F],Tags:["vendMachine","mapSpecific"],NoGravity:1b,Silent:1b,Invulnerable:1b,Invisible:1b,NoBasePlate:1b,DisabledSlots:4144959,equipment:{head:{id:"minecraft:spruce_sapling",count:1,components:{"minecraft:item_model":"du-in:other/vending_machine"}}}}
+# execute if entity @a[scores={kit=1000..1001}] run summon armor_stand 10062 42 10058 {Rotation:[180F,0F],Tags:["vendMachine","mapSpecific"],NoGravity:1b,Silent:1b,Invulnerable:1b,Invisible:1b,NoBasePlate:1b,DisabledSlots:4144959,equipment:{head:{id:"minecraft:spruce_sapling",count:1,components:{"minecraft:item_model":"du-in:other/vending_machine"}}}}
 
 #Vents
 summon interaction 10067 41 10025 {Tags:["ventBlock","mapSpecific"],width:1.05f,height:1.25f,response:1b}
@@ -221,15 +227,18 @@ execute positioned 10046 42 10047 run playsound du-in:sfx.void.bell master @a ~ 
 execute positioned 10046 42 10047 run playsound du-in:sfx.void.bell master @a ~ ~ ~ 1 1.5
 execute positioned 10046 42 10047 run playsound du-in:sfx.void.bell master @a ~ ~ ~ 1 2
 
-#execute if score #main pylonsDestroyed matches ..2 run scoreboard players set @a gonersKilled 30
-#execute if score #main pylonsDestroyed matches 3 run scoreboard players set @a gonersKilled 30
 
-#scoreboard players set @a gonersKilled 30
 
-execute if score #main pylonsDestroyed matches 0 run scoreboard players set @a gonersKilled 10
-execute if score #main pylonsDestroyed matches 1 run scoreboard players set @a gonersKilled 13
-execute if score #main pylonsDestroyed matches 2 run scoreboard players set @a gonersKilled 17
-execute as @a[gamemode=!spectator] run scoreboard players add @a gonersKilled 10
+# execute if score #main pylonsDestroyed matches 0 run scoreboard players set @a gonersKilled 10
+# execute if score #main pylonsDestroyed matches 1 run scoreboard players set @a gonersKilled 13
+# execute if score #main pylonsDestroyed matches 2 run scoreboard players set @a gonersKilled 17
+# execute as @a[gamemode=!spectator] run scoreboard players add @a gonersKilled 10
+
+execute if score #main pylonsDestroyed matches 0 run scoreboard players set #main gonersKilled 10
+execute if score #main pylonsDestroyed matches 1 run scoreboard players set #main gonersKilled 13
+execute if score #main pylonsDestroyed matches 2 run scoreboard players set #main gonersKilled 17
+execute as @a[gamemode=!spectator] run scoreboard players add #main gonersKilled 10
+
 
 advancement grant @a[tag=void] only du-in:void/void
 
@@ -245,8 +254,11 @@ scoreboard players set #main wave 1
 title @a title " "
 execute unless score #main pylonsDestroyed matches 0 unless score #main pylonsDestroyed matches 3 run title @a subtitle [{text:"Wave ",color:light_purple,bold:true},{"score":{"name":"#main","objective":"wave"},color:dark_purple,bold:true},{text:"/2",color:dark_purple,bold:true}]
 
-bossbar set gast:pylon name [{text:"Pylon Stabilization: ",bold:true,color:white},{"score":{"name":"@a[gamemode=adventure,tag=void,limit=1]","objective":"gonersKilled"},color:red,bold:true},{text:" Goners left",color:gray,bold:true}]
-execute store result bossbar gast:pylon max run scoreboard players get @a[gamemode=adventure,tag=void,limit=1] gonersKilled
+# bossbar set gast:pylon name [{text:"Pylon Stabilization: ",bold:true,color:white},{"score":{"name":"@a[gamemode=adventure,tag=void,limit=1]","objective":"gonersKilled"},color:red,bold:true},{text:" Goners left",color:gray,bold:true}]
+# execute store result bossbar gast:pylon max run scoreboard players get @a[gamemode=adventure,tag=void,limit=1] gonersKilled
+
+bossbar set gast:pylon name [{text:"Pylon Stabilization: ",bold:true,color:"white"},{"score":{"name":"#main","objective":"gonersKilled"},color:red,bold:true},{text:" Goners left",color:gray,bold:true}]
+execute store result bossbar gast:pylon max run scoreboard players get #main gonersKilled
 
 scoreboard players set @a team 1
 team join Insurgent @a
@@ -267,7 +279,7 @@ execute unless score #main pylonsDestroyed matches 3 run bossbar set gast:pylon 
 execute if score #main pylonsDestroyed matches 3 run bossbar set gast:pylon4 players @a
 execute if score #main pylonsDestroyed matches 3 run bossbar set gast:pylon4 visible true
 
-bossbar set gast:pylon4 name [{text:"Time to Pylon shutdown: ",bold:true,color:white},{text:"SURVIVE",bold:true,color:red}]
+bossbar set gast:pylon4 name [{text:"Time to Pylon shutdown: ",bold:true,color:"white"},{text:"SURVIVE",bold:true,color:red}]
 #execute store result bossbar gast:pylon4 max run scoreboard players get @a[gamemode=adventure,tag=void,limit=1] pylonTimer
 
 schedule function du-in:void/spawn/vending 10t

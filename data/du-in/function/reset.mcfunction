@@ -438,7 +438,8 @@ scoreboard players set @a voidReadyOnline 0
 scoreboard players reset #main gonerCount
 scoreboard players set #main leastDeaths 0
 scoreboard players reset @a realDeath
-scoreboard players reset @a gonersKilled
+#scoreboard players reset @a gonersKilled
+scoreboard players reset #main gonersKilled
 scoreboard players set @a gameGonerKills 0
 tag @a remove voidLose
 tag @a remove suicide

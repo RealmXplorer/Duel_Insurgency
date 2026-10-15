@@ -1,4 +1,5 @@
 scoreboard players remove @a[scores={gonersKilled=1..}] gonersKilled 1
+scoreboard players remove #main gonersKilled 1
 
 effect give @s instant_health 1 0 true
 playsound du-in:sfx.ut.heal master @a ~ ~ ~ 0.5 1.7
