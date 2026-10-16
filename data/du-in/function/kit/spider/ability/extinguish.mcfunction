@@ -4,5 +4,6 @@ playsound minecraft:block.fire.extinguish master @a[tag=!saboted] ~ ~ ~ 10000 1
 tellraw @s [{text:"Your webs extinguished the fire!",bold:true,color:green}]
 clear @s #du-in:ability
 xp set @s[tag=!stolen] 240 levels
-execute if entity @s[tag=stolen] run tag @s add kitDone
+# execute if entity @s[tag=stolen] run tag @s add kitDone
+execute if entity @s[tag=stolen] run function du-in:kit/villager/ability/end/revert
 tag @s remove kitActions

@@ -28,5 +28,7 @@ tag @s remove sabotaged
 tag @s remove cooldown
 tag @s remove empower
 xp set @s[tag=!stolen] 335 levels
-execute if entity @s[tag=stolen] run tag @s add kitDone
+# execute if entity @s[tag=stolen] run tag @s add kitDone
+execute if entity @s[tag=stolen] run function du-in:kit/villager/ability/end/revert
+
 scoreboard players reset @s gasterTimer

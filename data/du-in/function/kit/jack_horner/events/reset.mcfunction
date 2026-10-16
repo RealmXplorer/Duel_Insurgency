@@ -13,6 +13,7 @@ tag @s remove drinkMe
 tag @s remove theHatchet
 tag @s remove midasHand
 
+execute unless entity @a[tag=win] run return fail
 #Other players
 scoreboard players reset @a unicornTimer
 tag @a remove unicornDuration

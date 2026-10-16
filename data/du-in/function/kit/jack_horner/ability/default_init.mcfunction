@@ -17,4 +17,6 @@ execute if entity @s[scores={magicCount=4}] run function du-in:kit/jack_horner/a
 execute if entity @s[scores={magicCount=5}] run function du-in:kit/jack_horner/ability/phoenix/give
 execute if entity @s[scores={magicCount=6}] run function du-in:kit/jack_horner/ability/hatchet/give
 execute if entity @s[scores={magicCount=7}] run function du-in:kit/jack_horner/ability/drink/give
+
 #execute if entity @s[scores={magicCount=8}] run function du-in:kit/jack_horner/ability/ball/give
+

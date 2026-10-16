@@ -12,5 +12,7 @@ playsound du-in:kit.gumball.success master @a[tag=!sabotaged] ~ ~ ~ 1 1
 execute if entity @s[tag=!stolen,tag=sabotaged] run playsound du-in:kit.gumball.what master @a ~ ~ ~ 1 1
 
 scoreboard players reset @s gumballPursueTimer
-execute if entity @s[tag=stolen] run tag @s add kitDone
+# execute if entity @s[tag=stolen] run tag @s add kitDone
+execute if entity @s[tag=stolen] run function du-in:kit/villager/ability/end/revert
+
 tag @s remove pursue

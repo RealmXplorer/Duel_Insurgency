@@ -4,8 +4,9 @@
         execute if entity @a[tag=lobby,tag=!playing] run function du-in:lobby/general
 
     # Functions that run while ingame #
-        execute if entity @a[tag=playing] run function du-in:ingame/general
-
+        #execute if entity @a[tag=playing] run function du-in:ingame/general
+        execute if entity @a[tag=playing] as @e[type=#du-in:projectile] run function du-in:ingame/entities/projectiles
+        
     # Run when game ends #
         execute if entity @a[tag=win,tag=!endSeq] run function du-in:ingame/endround/start_ending
         

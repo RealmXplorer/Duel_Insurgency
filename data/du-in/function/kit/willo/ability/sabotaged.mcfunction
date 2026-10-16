@@ -7,5 +7,7 @@ execute if entity @s[tag=empower] run effect give @s slowness 3 1 true
 xp set @s 60 levels
 tag @s remove empower
 tag @s remove sabotaged
-execute if entity @s[tag=stolen] run tag @s add kitDone
+# execute if entity @s[tag=stolen] run tag @s add kitDone
+execute if entity @s[tag=stolen] run function du-in:kit/villager/ability/end/revert
+
 tag @s remove kitActions

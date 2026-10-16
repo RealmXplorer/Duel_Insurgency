@@ -16,5 +16,7 @@ execute as @e[type=marker,scores={papyrusHitTimer=30}] as @e[tag=papyrusFind] at
 #execute unless score #papyrusFind running matches 1 run function du-in:kit/papyrus/ability/bones/loop
 
 #tag @s remove sabotaged
-execute if entity @s[tag=stolen] run tag @s add kitDone
+# execute if entity @s[tag=stolen] run tag @s add kitDone
+execute if entity @s[tag=stolen] run function du-in:kit/villager/ability/end/revert
+
 tag @s remove kitActions

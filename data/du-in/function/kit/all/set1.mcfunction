@@ -11,7 +11,7 @@ execute if score @s[tag=!stolen] kit matches 3 run return run function du-in:kit
 #execute if score @s kit matches 4 run return run function du-in:kit/creeper/init
 
 # Springtrap #
-execute if score @s kit matches 5 run return run function du-in:kit/springtrap/init
+#execute if score @s[tag=!stolen] kit matches 5 run return run function du-in:kit/springtrap/constant
 
 # Golem #
 #execute if entity @s[scores={kit=6},tag=!stolen] run function du-in:kit/golem/constant

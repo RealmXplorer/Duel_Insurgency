@@ -21,4 +21,5 @@ execute if entity @s[tag=sabotaged] run function du-in:kit/all/ability/sabotage/
 #Switch villager back to their ability
 tag @s remove empower
 tag @s remove sabotaged
-execute if entity @s[tag=stolen] run tag @s add kitDone
+# execute if entity @s[tag=stolen] run tag @s add kitDone
+execute if entity @s[tag=stolen] run function du-in:kit/villager/ability/end/revert

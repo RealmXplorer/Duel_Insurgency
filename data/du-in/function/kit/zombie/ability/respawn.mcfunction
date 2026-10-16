@@ -23,7 +23,8 @@ playsound minecraft:entity.ghast.shoot master @a ~ ~ ~ 100000 .5 1
 
 xp set @s[tag=!stolen] 350 levels
 tag @s remove empower
-tag @s[tag=stolen,tag=givenStolen] add kitDone
+#tag @s[tag=stolen,tag=givenStolen] add kitDone
+execute if entity @s[tag=stolen] run function du-in:kit/villager/ability/end/revert
 
 kill @n[type=interaction,tag=grave,distance=..3]
 kill @n[type=falling_block,tag=grave,distance=..3]

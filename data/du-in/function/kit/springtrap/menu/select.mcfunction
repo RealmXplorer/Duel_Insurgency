@@ -21,10 +21,10 @@ $execute store result score @s kit run data get storage du-in:player$(current) k
 #Set Kit's gender from storage
 $execute store result score @s kitGender run data get storage du-in:player$(current) kit.gender
 
-
-tag @s[tag=playing] add undead
-
 #scoreboard players set @s kitGender 1
+
+#Initialize kit
+execute if entity @s[tag=playing] run function du-in:kit/springtrap/events/game_start
 
 #Clear and remove tags
 function du-in:lobby/kitmenu/select/common

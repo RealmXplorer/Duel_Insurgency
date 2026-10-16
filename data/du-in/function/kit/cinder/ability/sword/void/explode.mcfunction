@@ -16,4 +16,6 @@ clear @s #du-in:ability
 xp set @s[tag=!stolen] 350 levels
 tag @a remove cinderHit
 tag @s remove empower
-tag @s add kitDone
+execute if entity @s[tag=stolen] run function du-in:kit/villager/ability/end/revert
+
+# tag @s add kitDone

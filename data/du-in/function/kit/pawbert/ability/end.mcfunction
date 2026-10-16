@@ -19,4 +19,5 @@ tag @s remove invisible
 clear @s[tag=stolen] blaze_rod
 
 #End Villager ability
-execute if entity @s[tag=stolen] run tag @s add kitDone
+# execute if entity @s[tag=stolen] run tag @s add kitDone
+execute if entity @s[tag=stolen] run function du-in:kit/villager/ability/end/revert

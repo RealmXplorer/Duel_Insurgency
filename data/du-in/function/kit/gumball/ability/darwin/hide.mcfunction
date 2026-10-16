@@ -1,6 +1,7 @@
 #Revert villager back to default
 tag @s[tag=stolen] remove darwin
-execute if entity @s[tag=stolen] run tag @s add kitDone
+# execute if entity @s[tag=stolen] run tag @s add kitDone
+execute if entity @s[tag=stolen] run function du-in:kit/villager/ability/end/revert
 
 xp set @s[tag=!stolen] 300 levels
 ##copyright

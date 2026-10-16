@@ -33,7 +33,8 @@ playsound du-in:sfx.ut.ability master @a ~ ~ ~ .5 1.05
 
 #If sabotaged, end ability
 xp set @s[tag=!stolen,tag=sabotaged] 320 levels
-tag @s[tag=stolen,tag=sabotaged] add kitDone
+# tag @s[tag=stolen,tag=sabotaged] add kitDone
+execute if entity @s[tag=stolen] run function du-in:kit/villager/ability/end/revert
 execute if entity @s[tag=sabotaged] run function du-in:kit/all/ability/sabotage/effects
 
 #End function

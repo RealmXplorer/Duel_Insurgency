@@ -17,5 +17,7 @@ playsound du-in:sfx.ut.ability master @a ~ ~ ~ 0.5 1.05
 
 tag @s remove redBuster
 tag @s remove sabotaged
-execute if entity @s[tag=stolen] run tag @s add kitDone
+# execute if entity @s[tag=stolen] run tag @s add kitDone
+execute if entity @s[tag=stolen] run function du-in:kit/villager/ability/end/revert
+
 tag @s remove kitActions

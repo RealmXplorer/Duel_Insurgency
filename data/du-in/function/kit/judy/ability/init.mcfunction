@@ -13,7 +13,8 @@ clear @s #du-in:ability
 xp set @s[tag=!stolen] 350 levels
 
 #Switch villager back to their ability
-execute if entity @s[tag=stolen] run tag @s add kitDone
+# execute if entity @s[tag=stolen] run tag @s add kitDone
+execute if entity @s[tag=stolen] run function du-in:kit/villager/ability/end/revert
 
 #Sabotaged#
 tag @s remove sabotaged

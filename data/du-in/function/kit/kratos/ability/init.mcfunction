@@ -13,5 +13,5 @@ tag @s remove sabotaged
 clear @s #du-in:ability
 tag @s remove kitActions
 xp set @s[tag=!stolen] 300 levels
-execute if entity @s[tag=stolen] run tag @s add kitDone
-
+# execute if entity @s[tag=stolen] run tag @s add kitDone
+execute if entity @s[tag=stolen] run function du-in:kit/villager/ability/end/revert

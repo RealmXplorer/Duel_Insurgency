@@ -16,7 +16,9 @@ swing @s offhand whack
 xp set @s[tag=!stolen] 280 levels
 clear @s #du-in:ability
 #clear @s coal
-execute if entity @s[tag=stolen] run tag @s add kitDone
+# execute if entity @s[tag=stolen] run tag @s add kitDone
+execute if entity @s[tag=stolen] run function du-in:kit/villager/ability/end/revert
+
 tag @s remove empower
 tag @s remove cupheadShoot
 tag @s remove kitActions

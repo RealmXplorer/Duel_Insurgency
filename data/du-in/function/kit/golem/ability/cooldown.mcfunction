@@ -19,4 +19,5 @@ tag @s remove sabotaged
 tag @s remove empower
 tag @a remove golemHit
 tag @a remove empoweredGolemHit
-tag @s add kitDone
+# tag @s add kitDone
+execute if entity @s[tag=stolen] run function du-in:kit/villager/ability/end/revert

@@ -1,5 +1,7 @@
 #Switch villager back to their ability
-execute if entity @s[tag=stolen] run tag @s add kitDone
+# execute if entity @s[tag=stolen] run tag @s add kitDone
+execute if entity @s[tag=stolen] run function du-in:kit/villager/ability/end/revert
+
 #End ability
 tag @s remove kitActions
 

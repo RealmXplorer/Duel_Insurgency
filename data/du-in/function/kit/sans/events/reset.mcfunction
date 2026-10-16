@@ -1,2 +1,5 @@
-tag @a[tag=sansHitDuration] remove sansHitDuration
+#Break Function if game is still going
+execute unless entity @a[tag=win] run return fail
+
+tag @a remove sansHitDuration
 scoreboard players reset @a sansHitTimer

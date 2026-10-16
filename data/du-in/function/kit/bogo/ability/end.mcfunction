@@ -8,4 +8,5 @@ xp set @s[tag=!stolen] 320 levels
 effect give @s slowness 2 1 true
 tag @s remove cooldown
 tag @s remove empower
-execute if entity @s[tag=stolen] run tag @s add kitDone
+# execute if entity @s[tag=stolen] run tag @s add kitDone
+execute if entity @s[tag=stolen] run function du-in:kit/villager/ability/end/revert

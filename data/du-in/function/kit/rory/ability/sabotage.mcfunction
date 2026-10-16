@@ -10,7 +10,9 @@ playsound minecraft:entity.warden.sonic_boom master @a ~ ~ ~ 1 1
 
 clear @s #du-in:ability
 xp set @s[tag=!stolen] 40 levels
-tag @s[tag=stolen] add kitDone
+# tag @s[tag=stolen] add kitDone
+execute if entity @s[tag=stolen] run function du-in:kit/villager/ability/end/revert
+
 tag @s remove sabotaged
 tag @s remove empower
 tag @s remove kitActions

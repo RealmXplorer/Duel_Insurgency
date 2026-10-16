@@ -22,7 +22,8 @@ playsound minecraft:entity.ender_dragon.flap master @a ~ ~ ~ 100 0.7
 
 
 scoreboard players set @a[distance=..5,tag=playing,gamemode=!spectator,tag=!teamDead] charaTimer 0
-execute if entity @s[tag=stolen] run tag @s add kitDone
+# execute if entity @s[tag=stolen] run tag @s add kitDone
+execute if entity @s[tag=stolen] run function du-in:kit/villager/ability/end/revert
 tag @s remove sabotaged
 tag @s remove empower
 tag @s remove kitActions

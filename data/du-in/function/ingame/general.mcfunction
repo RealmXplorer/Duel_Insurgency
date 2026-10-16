@@ -3,7 +3,7 @@
         execute as @e[type=#du-in:projectile] run function du-in:ingame/entities/projectiles
 
     #Make timer count down
-        execute if score #main titleTimer2 matches -99.. run function du-in:ingame/startround/timer/timer
+        #execute if score #main titleTimer2 matches -99.. run function du-in:ingame/startround/timer/timer
 
 
 #Asgore Trident thrown
@@ -37,11 +37,11 @@
 #execute as @e[type=block_display] at @s run function du-in:ingame/entities/block_display
 
 #Poison Apples (MUST BE BELOW MARKER FUNCTIONS)
-execute as @e[type=marker,tag=poisonApple] at @s run function du-in:kit/jack_horner/ability/poison_apple/marker
-execute at @e[type=snowball] run summon minecraft:marker ~ ~ ~ {Tags:["poisonApple","mapSpecific"]}
+#execute as @e[type=marker,tag=poisonApple] at @s run function du-in:kit/jack_horner/ability/poison_apple/marker
+#execute at @e[type=snowball] run summon minecraft:marker ~ ~ ~ {Tags:["poisonApple","mapSpecific"]}
 
 #Test when it shifts to day or night
-execute if score #main dayNightSetting matches 1 run function du-in:map/all/ambience/night/test
+# execute if score #main dayNightSetting matches 1 run function du-in:map/all/ambience/night/test
 
 #Dev Mode end game
     #execute if entity @a[tag=devMode,tag=partyLeader] if entity @a[scores={thrownBarrier=1..}] run tag @a add win

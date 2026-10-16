@@ -44,5 +44,6 @@ playsound du-in:sfx.ut.ability master @a ~ ~ ~ .5 1.15
 clear @s #du-in:ability
 tag @s remove empower
 xp set @s[tag=!stolen] 20 levels
-tag @s[tag=stolen] add kitDone
+# tag @s[tag=stolen] add kitDone
+execute if entity @s[tag=stolen] run function du-in:kit/villager/ability/end/revert
 tag @s remove kitActions

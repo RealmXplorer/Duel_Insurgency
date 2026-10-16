@@ -1,1 +1,1 @@
-tag @a remove creeperDuration
+tag @s remove creeperDuration

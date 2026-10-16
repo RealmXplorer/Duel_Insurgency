@@ -27,6 +27,5 @@ swing @s[tag=!sabotaged] offhand whack
 swing @s[tag=sabotaged] offhand stab
 
 clear @s #du-in:ability
-#execute if entity @s[tag=stolen] run tag @s add kitDone
 tag @s add cooldown
 tag @s remove kitActions

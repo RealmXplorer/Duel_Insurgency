@@ -6,7 +6,6 @@ execute if entity @s[tag=poisonApple] unless items entity @s container.* snowbal
 #execute if entity @s[tag=unicornBow] run function du-in:kit/jack_horner/ability/unicorn_bow/run
 execute if entity @s[tag=unicornBow,scores={crossbowShoot=1..}] run function du-in:kit/jack_horner/ability/unicorn_bow/end
 
-#execute if entity @s[tag=asgoreTrident] run function du-in:kit/jack_horner/ability/trident/run
 execute if entity @s[tag=asgoreTrident] unless items entity @s container.* trident run function du-in:kit/jack_horner/ability/trident/end
 
 #execute if entity @s[tag=theHatchet] run function du-in:kit/jack_horner/ability/hatchet/run

@@ -1,3 +1,5 @@
+scoreboard players set #shutdown running 1
+
 #If player is either spectating or playing
     #Start Shutdown
     #execute if entity @a[tag=playing,tag=!win,tag=!lose] run function du-in:other/shutdown/start
@@ -6,3 +8,7 @@
 
     #Cancel shutdown if 2 or more people are online
     execute if score #main online matches 2.. if entity @a[tag=playing] unless entity @a[tag=lobby,tag=partyLeader] run function du-in:other/shutdown/cancel
+
+#Run shutdown timer
+execute if score #main shutdown matches 1.. run return run schedule function du-in:other/shutdown/init 1t
+scoreboard players set #shutdown running 0

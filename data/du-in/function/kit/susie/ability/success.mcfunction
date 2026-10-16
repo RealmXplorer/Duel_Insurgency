@@ -86,5 +86,7 @@ execute unless score #susieBuster running matches 1 run function du-in:kit/susie
 tag @s remove empower
 tag @s remove redBuster
 tag @s remove sabotaged
-execute if entity @s[tag=stolen] run tag @s add kitDone
+# execute if entity @s[tag=stolen] run tag @s add kitDone
+execute if entity @s[tag=stolen] run function du-in:kit/villager/ability/end/revert
+
 tag @s remove kitActions

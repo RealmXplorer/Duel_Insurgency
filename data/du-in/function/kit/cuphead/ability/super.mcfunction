@@ -8,6 +8,7 @@ effect give @s resistance 1 255 true
 
 
 attribute @s[scores={cupTimer=..0}] knockback_resistance modifier remove cuphead_ult
-tag @s[tag=stolen,scores={cupTimer=..0}] add kitDone
+# tag @s[tag=stolen,scores={cupTimer=..0}] add kitDone
+execute if entity @s[tag=stolen,scores={cupTimer=..0}] run function du-in:kit/villager/ability/end/revert
 scoreboard players reset @s[scores={cupTimer=..0}] cupTimer
 

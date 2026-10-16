@@ -2,6 +2,9 @@
         tag @s remove ringCorrupted
         scoreboard players reset @s sauronTimer
         
+        #Break Function if game is still going
+        execute unless entity @a[tag=win] run return fail
+
         #Other Players
         scoreboard players reset @a seenTimer
         tag @a remove seenDuration

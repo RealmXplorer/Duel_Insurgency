@@ -18,4 +18,7 @@ effect clear @s[tag=!sabotaged] minecraft:weakness
 damage @s[scores={Health=6..}] 5
 damage @s[tag=sabotaged] 5
 execute if entity @s[tag=sabotaged] run function du-in:kit/all/ability/sabotage/effects
+
+execute unless score #springLock running matches 1 run function du-in:kit/springtrap/ability/loop
+
 tag @s remove kitActions

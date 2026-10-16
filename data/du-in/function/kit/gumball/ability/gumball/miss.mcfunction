@@ -10,6 +10,8 @@ execute if entity @s[tag=!stolen,tag=whatTheWhat] run playsound du-in:kit.gumbal
 execute if entity @s[tag=stolen] run playsound minecraft:entity.villager.no master @a ~ ~ ~ 1 1
  
 tag @s remove whatTheWhat
-execute if entity @s[tag=stolen] run tag @s add kitDone
+# execute if entity @s[tag=stolen] run tag @s add kitDone
+execute if entity @s[tag=stolen] run function du-in:kit/villager/ability/end/revert
+
 tag @s remove pursue
 scoreboard players reset @s gumballPursueTimer

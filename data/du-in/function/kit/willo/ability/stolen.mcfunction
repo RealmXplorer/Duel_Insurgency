@@ -6,5 +6,7 @@ execute if entity @s[tag=empower] run give @s copper_nugget[item_name={text:"Sup
 #Set cooldown
 xp set @s 60 levels
 tag @s remove empower
-execute if entity @s[tag=stolen] run tag @s add kitDone
+# execute if entity @s[tag=stolen] run tag @s add kitDone
+execute if entity @s[tag=stolen] run function du-in:kit/villager/ability/end/revert
+
 tag @s remove kitActions

@@ -20,4 +20,5 @@ function du-in:kit/all/armor/armor
 #End ability and start cooldown
 xp set @s[tag=!stolen] 300 levels
 tag @s remove cooldown
-execute if entity @s[tag=stolen] run tag @s add kitDone
+# execute if entity @s[tag=stolen] run tag @s add kitDone
+execute if entity @s[tag=stolen] run function du-in:kit/villager/ability/end/revert

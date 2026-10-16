@@ -1,3 +1,6 @@
+#Remove Kit Menu
+tag @a remove kitMenu
+
 #Clear lobby schedule
 schedule clear du-in:lobby/scheduled/one_sec_loop
 schedule clear du-in:lobby/scheduled/two_sec_loop
@@ -41,8 +44,10 @@ tag @a[tag=!spectating] add playing
 
     #Give all players weapons
     tag @a[scores={kit=31},limit=1] add hasRing
-    scoreboard players set @a[tag=playing,gamemode=!spectator] weapCount 0
-    function du-in:kit/all/weapon/give
+    #scoreboard players set @a[tag=playing,gamemode=!spectator] weapCount 0
+
+    # function du-in:kit/all/weapon/give
+    
     execute as @a[tag=playing,gamemode=!spectator] run function du-in:kit/all/weapon/init
 
     execute as @a[tag=hasRing] run function du-in:kit/sauron/ring/give_ring
@@ -51,7 +56,7 @@ tag @a[tag=!spectating] add playing
     execute if entity @a[tag=devMode,tag=partyLeader] run function du-in:dev_mode_loop
 
     #Run Game initialization for certain kits.
-    execute as @a at @s run function du-in:kit/all/game_start/init
+    execute as @a[tag=playing,gamemode=!spectator] at @s run function du-in:kit/all/game_start/init
 
     #Set swap for secondary kits/weapons to 2 (this is to ensure that the weapon actually switches when rightclicked)
     # scoreboard players set @a[scores={kit=22}] gumballSwitch 2
@@ -92,10 +97,15 @@ tag @a[tag=!spectating] add playing
 
 ##
 
+#Ambience night check if setting is enabled
+execute if score #main dayNightSetting matches 1 run function du-in:map/all/ambience/night/test
 
 #Start next title timer
 scoreboard players set #main titleTimer2 80
 execute as @a run attribute @s attack_damage modifier add startgame -100 add_value
+
+#Start timer
+function du-in:ingame/startround/timer/timer
 
 #Remove all previous game tags, and start new game stats
 tag @a remove wonGame
@@ -162,7 +172,6 @@ execute as @a run function du-in:lobby/reset/item
 tag @a remove ready
 tag @a remove teamPicked
 tag @a remove countStop
-tag @a remove kitMenu
 
 #Schedule ingame functions
 function du-in:ingame/scheduled/one_sec_loop

@@ -8,4 +8,6 @@ scoreboard players remove #main titleTimer2 1
 execute as @a[tag=teamMode] at @s run function du-in:ingame/startround/team_start
 
 #End timer
-execute if score #main titleTimer2 matches ..0 run function du-in:ingame/startround/timer/end_timer
+execute if score #main titleTimer2 matches 1.. run return run schedule function du-in:ingame/startround/timer/timer 1t
+# execute if score #main titleTimer2 matches ..0 run function du-in:ingame/startround/timer/end_timer
+function du-in:ingame/startround/timer/end_timer

@@ -21,6 +21,8 @@ playsound minecraft:entity.ender_dragon.flap master @a ~ ~ ~ 100 0.7
 swing @s[tag=!sabotaged] offhand whack
 swing @s[tag=sabotaged] offhand stab
 
-execute if entity @s[tag=stolen] run tag @s add kitDone
+# execute if entity @s[tag=stolen] run tag @s add kitDone
+execute if entity @s[tag=stolen] run function du-in:kit/villager/ability/end/revert
+
 tag @s remove sabotaged
 tag @s remove kitActions

@@ -6,5 +6,4 @@ execute at @s run function du-in:kit/all/reset/find_kit with storage du-in:main 
 
 function du-in:kit/all/attribute/reset
 
-
-scoreboard players reset @s kit
+execute unless entity @a[tag=win] run scoreboard players reset @s kit
