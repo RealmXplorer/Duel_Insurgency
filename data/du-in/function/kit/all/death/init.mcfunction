@@ -61,7 +61,9 @@ execute if entity @s[tag=midasTouched] run tag @s remove midasTouched
 scoreboard players set @s pussFearTimer 1
 
 #Start Zombie ability
-execute if entity @s[tag=grave,tag=!teamDead] run scoreboard players set @s zombieTimer 5
+# execute if entity @s[tag=grave,tag=!teamDead] run tag @s add zombieDuration
+# execute if entity @s[tag=zombieDuration] run scoreboard players set @s zombieTimer 5
+# execute unless score #zombieTimer running matches 1 run function du-in:kit/zombie/ability/zombie_loop
 
 execute if entity @a[scores={kit=1004}] run clear @s mushroom_stew
 

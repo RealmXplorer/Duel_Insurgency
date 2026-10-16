@@ -2,7 +2,7 @@ execute unless entity @s[scores={villSkin=1..}] run playsound minecraft:entity.v
 execute if entity @s[scores={villSkin=1}] run playsound minecraft:entity.vindicator.death master @a ~ ~ ~ 3 1
 execute if entity @s[scores={villSkin=2}] run playsound minecraft:entity.witch.death master @a ~ ~ ~ 3 1
 
- clear @s minecraft:emerald
+clear @s minecraft:emerald
 scoreboard players reset @s villagerEmeralds
 
 #Reset stolen abilities
@@ -18,4 +18,7 @@ execute if entity @s[scores={kit=22},tag=pursue] run scoreboard players set @s g
 execute if entity @s[scores={kit=22}] run scoreboard players set @s darwinTimer 0
 
 #Start Zombie ability
-execute if entity @s[tag=grave,tag=!teamDead] run scoreboard players set @s zombieTimer 5
+execute if entity @s[tag=grave,tag=!teamDead] run function du-in:kit/zombie/ability/respawn
+#execute if entity @s[tag=grave,tag=!teamDead] run tag @s add zombieDuration
+#execute if entity @s[tag=zombieDuration] run scoreboard players set @s zombieTimer 5
+#execute unless score #zombieTimer running matches 1 run function du-in:kit/zombie/ability/zombie_loop

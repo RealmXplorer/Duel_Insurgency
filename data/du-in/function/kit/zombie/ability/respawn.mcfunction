@@ -34,3 +34,4 @@ execute if entity @s[tag=ranMode] run function du-in:kit/all/reset
 execute if entity @s[tag=ranMode] run function du-in:kit/all/random/roll with storage du-in:main random
       
 scoreboard players reset @s zombieTimer
+tag @s remove zombieDuration

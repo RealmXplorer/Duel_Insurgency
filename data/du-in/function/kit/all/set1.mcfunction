@@ -2,13 +2,13 @@
 # execute if entity @s[scores={kit=1},tag=!stolen] run function du-in:kit/spider/constant
 
 # Zombie #
-execute if score @s kit matches 2 run return run function du-in:kit/zombie/init
+#execute if score @s kit matches 2 run return run function du-in:kit/zombie/init
 
 # Slime #
-execute if score @s kit matches 3 run return run function du-in:kit/slime/init
+execute if score @s[tag=!stolen] kit matches 3 run return run function du-in:kit/slime/constant
 
 # Creeper #
-execute if score @s kit matches 4 run return run function du-in:kit/creeper/init
+#execute if score @s kit matches 4 run return run function du-in:kit/creeper/init
 
 # Springtrap #
 execute if score @s kit matches 5 run return run function du-in:kit/springtrap/init

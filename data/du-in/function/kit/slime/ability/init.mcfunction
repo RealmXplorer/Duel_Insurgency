@@ -19,6 +19,8 @@ execute if entity @s[tag=!sabotaged] run function du-in:kit/all/armor/armor
 execute if entity @s[tag=!empower,tag=!sabotaged] run function du-in:kit/slime/ability/default_effects
 execute if entity @s[tag=empower,tag=!sabotaged] run function du-in:kit/slime/ability/empowered_effects
 
+execute unless score #magmaLoop running matches 1 run function du-in:kit/slime/ability/magma_loop
+
 #Play particles and sounds
 particle minecraft:flame ~ ~ ~ 0.5 1 0.5 0 50 force
 particle minecraft:lava ~ ~ ~ 0.5 1 0.5 0 50 force
