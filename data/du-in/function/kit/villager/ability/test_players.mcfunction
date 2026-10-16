@@ -30,9 +30,13 @@ function du-in:kit/villager/ability/find_stolen_kit with storage du-in:main play
 #Give tag "darwin" if stolen player is Darwin.
 execute if entity @s[scores={kit=22}] if entity @a[distance=0.05..5,tag=darwin,scores={kit=22},tag=playing,limit=1,sort=nearest] run tag @s add darwin
 
+#tag @s add needStolen
 #Give new ability
-experience set @s[tag=!givenStolen] 3 levels
+# experience set @s[tag=!givenStolen] 3 levels
+experience set @s 3 levels
 
 #Play sounds and end ability
-execute if entity @s[tag=!givenStolen] run function du-in:kit/villager/ability/particle
-tag @s[tag=!givenStolen] add givenStolen
+# execute if entity @s[tag=!givenStolen] run function du-in:kit/villager/ability/particle
+function du-in:kit/villager/ability/particle
+
+# tag @s[tag=!givenStolen] add givenStolen

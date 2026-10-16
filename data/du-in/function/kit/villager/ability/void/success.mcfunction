@@ -7,10 +7,4 @@ execute unless entity @e[distance=.05..5,type=skeleton] unless entity @a[distanc
 #Success Stolen
 execute if entity @s[tag=stolen] run function du-in:kit/villager/ability/void/stolen
 
-#Give new ability
-# experience set @s[tag=stolen,tag=!givenStolen] 3 levels
-
-#Play sounds and end ability
-# execute if entity @s[tag=stolen,tag=!givenStolen] run function du-in:kit/villager/ability/particle
-# tag @s[tag=!givenStolen,tag=stolen] add givenStolen
 tag @s remove kitActions
