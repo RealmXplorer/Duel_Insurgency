@@ -2,6 +2,7 @@
 scoreboard players reset @s yodaTimer
 scoreboard players set @s yodaAbsorb 0
 scoreboard players set @s yodaDamage 0
+tag @s remove yodaDuration
 
 #Start cooldown
 xp set @s[tag=!stolen] 360 levels

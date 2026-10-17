@@ -14,7 +14,7 @@ execute if score @s kit matches 27 run return run function du-in:kit/puss/init
 execute if score @s kit matches 28 run return run function du-in:kit/death/init
 
 #Yoda#
-execute if score @s kit matches 29 run return run function du-in:kit/yoda/init
+#execute if score @s kit matches 29 run return run function du-in:kit/yoda/init
 
 #Skeleton#
 execute if score @s kit matches 30 run return run function du-in:kit/skeleton/init

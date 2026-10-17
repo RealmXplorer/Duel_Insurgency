@@ -5,3 +5,4 @@ tag @s remove cooldown
 # execute if entity @s[tag=stolen] run tag @s add kitDone
 execute if entity @s[tag=stolen] run function du-in:kit/villager/ability/end/revert
 scoreboard players reset @s charaTimer
+tag @s remove charaDuration

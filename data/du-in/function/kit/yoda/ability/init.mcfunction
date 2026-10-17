@@ -2,6 +2,8 @@ scoreboard players set @s yodaAbsorb 0
 scoreboard players set @s yodaDamage 0
 scoreboard players set @s[tag=!empower] yodaTimer 50
 execute if entity @s[tag=empower] run scoreboard players set @s yodaTimer 80
+tag @s add yodaDuration
+execute unless score #yodaTimer running matches 1 run function du-in:kit/yoda/ability/loop
 
 playsound du-in:kit.yoda.laugh voice @a ~ ~ ~ 100 1 1
 playsound minecraft:entity.breeze.shoot master @a ~ ~ ~ 1 .5
