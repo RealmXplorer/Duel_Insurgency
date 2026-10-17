@@ -3,7 +3,10 @@ advancement revoke @s only du-in:void/gonerhit
 
 #Combos Count
 scoreboard players set @s comboHitTimer 0
+#coreboard players set @s comboHitTimer 20
 scoreboard players add @s comboScore 1
+#tag @s add comboHit
+#execute unless score 
 
 #Set current player to this player
 execute store result storage du-in:main player.current int 1 run scoreboard players get @s player

@@ -1,6 +1,7 @@
 #Give Pawbert different parameters
 execute if entity @s[scores={kit=40}] run return run function du-in:kit/pawbert/secondary/tracker/check
 execute if entity @s[scores={kit=1001}] run return run function du-in:kit/paz/secondary/tracker/check
+execute if entity @s[tag=sus] run return run function du-in:ingame/vending_machine/sabotaged/item/init
 
 #Default
 execute unless items entity @s container.* gunpowder run function du-in:kit/all/secondary/tracker/init

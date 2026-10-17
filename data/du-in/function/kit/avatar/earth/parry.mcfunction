@@ -1,5 +1,6 @@
 title @s title {text:""}
 title @s subtitle {text:"🛡 Parry! 🛡",color:dark_green}
+title @s times 0 15 5
 
 execute on attacker run function du-in:kit/avatar/earth/parried
 
@@ -10,3 +11,9 @@ particle minecraft:block{block_state:"minecraft:packed_mud"} ~ ~ ~ 3 0 3 0 500 f
 playsound minecraft:block.basalt.break master @a ~ ~ ~ 1 1
 playsound minecraft:block.basalt.break master @a ~ ~ ~ 1 .5
 playsound minecraft:block.basalt.break master @a ~ ~ ~ 1 2
+
+#Add to parry score
+scoreboard players add @s gameParries 1
+
+#Marked as landed parry
+tag @s add parried

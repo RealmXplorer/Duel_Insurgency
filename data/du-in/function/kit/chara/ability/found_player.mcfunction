@@ -27,7 +27,8 @@ swing @s[tag=sabotaged] offhand stab
 #Clear ability
 clear @s #du-in:ability
 scoreboard players set @s charaTimer 80
-
+tag @s add charaDuration
+execute unless score #charaDuration running matches 1 run function du-in:kit/chara/ability/loop
 
 #Particles and Sounds
 particle minecraft:smoke ~ ~1.5 ~ 2 2 2 0 500 force

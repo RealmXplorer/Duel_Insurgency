@@ -1,9 +1,9 @@
 #UNDERTALE CONSTANTS#
 # Chara #
-execute if score @s kit matches 9 run return run function du-in:kit/chara/init
+#execute if score @s kit matches 9 run return run function du-in:kit/chara/init
 
 # Gaster #
-execute if score @s kit matches 10 run return run function du-in:kit/gaster/init
+#execute if score @s kit matches 10 run return run function du-in:kit/gaster/init
 
 # Asriel#
 execute if score @s kit matches 11 run return run function du-in:kit/asriel/init

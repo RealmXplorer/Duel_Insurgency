@@ -20,9 +20,5 @@ execute if entity @s[tag=!willoKnife,predicate=du-in:is_sneaking] run function d
 #If invisibility is toggled off, keep it on for Willo.
 # execute if score #main invisibleToggle matches 1 if entity @s[predicate=!du-in:effect/is_invisible] run effect give @s invisibility infinite 0 true
 
-##SUS Functions
-#Vent cooldowns
-# scoreboard players remove @s[scores={ventCooldown=1..}] ventCooldown 1
-
 # #Wire cutter item
 # execute if entity @s[tag=vendingMachine] run function du-in:ingame/vending_machine/sabotaged/item/init

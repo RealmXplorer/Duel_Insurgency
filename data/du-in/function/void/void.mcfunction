@@ -1,8 +1,9 @@
 ##Pylons
 ##Enemies
     #Test enemy numbers
-    #scoreboard players set #main gonerCount 0
-    #execute as @e[type=skeleton,tag=gonerThing] run scoreboard players add #main gonerCount 1
+    scoreboard players set #main gonerCount 0
+    execute as @e[type=skeleton,tag=gonerThing] run scoreboard players add #main gonerCount 1
+
 
     execute as @e[type=skeleton,tag=gonerThing,tag=jevilDuration] at @s run function du-in:kit/jevil/ability/spin
 
@@ -14,9 +15,9 @@
     #effect give @a[predicate=!du-in:effect/has_night_vision,tag=void] night_vision infinite 1 true
 
     #Get Player count
-    # scoreboard players set Insurgents playerCount 0
-    # execute as @a[gamemode=!spectator] run scoreboard players add Insurgents playerCount 1
-    execute store result score Insurgents playerCount as @a[gamemode=!spectator] run scoreboard players add Insurgents playerCount 0
+    scoreboard players set Insurgents playerCount 0
+    execute as @a[gamemode=!spectator] run scoreboard players add Insurgents playerCount 1
+    #execute store result score Insurgents playerCount as @a[gamemode=!spectator] run scoreboard players add Insurgents playerCount 0
 
 execute if entity @a[tag=playing] run schedule function du-in:void/void 1t
 

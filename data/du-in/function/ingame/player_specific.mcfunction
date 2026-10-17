@@ -17,16 +17,16 @@
 
     #Parry Mechanics
     execute if entity @s[tag=parryStart] run function du-in:kit/all/parry/buffer
-    execute if entity @s[tag=parry,scores={parryDuration=0..}] run function du-in:kit/all/parry/in_parry
+    #execute if entity @s[tag=parry,scores={parryDuration=0..}] run function du-in:kit/all/parry/in_parry
 
 # REGEN TIMER (Except for undead) #
     execute if entity @s[scores={healthTimer=140..}] run function du-in:ingame/regentimer/start_regen
 
 #KILL COMBOS
-    execute if entity @s[scores={comboTimer=0..}] run function du-in:ingame/kill_combo/timer
+    #execute if entity @s[scores={comboTimer=0..}] run function du-in:ingame/kill_combo/timer
 
 #Sus functions
-    execute if entity @s[tag=sus] run function du-in:kit/all/sus
+    #execute if entity @s[tag=sus] run function du-in:kit/all/sus
 
 #HIT COMBO#
     execute if entity @s[scores={comboHitTimer=10..,comboScore=1..}] run function du-in:ingame/hit_combo/expire
@@ -39,11 +39,13 @@
         #execute if entity @s[tag=!kitMenu] run function du-in:kit/all/init/init
 
     #General Set 1 int functions #
-        execute if entity @s[scores={kit=1..8},tag=!kitMenu] run function du-in:kit/all/set1
+        # execute if entity @s[scores={kit=1..8},tag=!kitMenu] run function du-in:kit/all/set1
+        execute if entity @s[scores={kit=3..8},tag=!kitMenu] run function du-in:kit/all/set1
         execute if entity @s[tag=stolen,tag=!kitMenu] run function du-in:kit/villager/constant
 
     # General Set 2 int functions #
-        execute if entity @s[scores={kit=9..16},tag=!kitMenu] run function du-in:kit/all/set2
+        #execute if entity @s[scores={kit=9..16},tag=!kitMenu] run function du-in:kit/all/set2
+        execute if entity @s[scores={kit=11..16},tag=!kitMenu] run function du-in:kit/all/set2
 
     # General Set 3 int functions #
         execute if entity @s[scores={kit=17..24},tag=!kitMenu] run function du-in:kit/all/set3

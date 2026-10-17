@@ -1,5 +1,5 @@
 #Abiltiy In Use
-execute if entity @s[scores={gasterTimer=-1..}] run function du-in:kit/gaster/ability/shattered
+#execute if entity @s[scores={gasterTimer=-1..}] run function du-in:kit/gaster/ability/timer
 
 #Ability Attribute
 #attribute @s[tag=gasterInvisible] minecraft:knockback_resistance base set 10

@@ -3,6 +3,7 @@ execute rotated as @s at @e[type=minecraft:marker,tag=vent,sort=random,limit=1] 
 
 #Start cooldown
 scoreboard players set @s ventCooldown 60
+execute unless score #ventCooldown running matches 1 run function du-in:kit/all/vent/loop
 
 #Play sounds
 playsound du-in:kit.sus.vent master @a ~ ~ ~ 10000 1

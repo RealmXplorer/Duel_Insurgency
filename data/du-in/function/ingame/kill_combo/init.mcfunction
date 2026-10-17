@@ -12,5 +12,7 @@ execute if entity @s[scores={quickKill=5}] run function du-in:ingame/kill_combo/
 
 #Starts Timer#
 scoreboard players set @s comboTimer 70
+tag @s add comboDuration
+execute unless score #comboTimer running matches 1 run function du-in:ingame/kill_combo/loop
 
 #

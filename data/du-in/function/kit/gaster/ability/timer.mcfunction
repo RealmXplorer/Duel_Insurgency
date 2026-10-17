@@ -11,6 +11,4 @@ effect give @s minecraft:invisibility 1 255 true
 effect give @s minecraft:resistance 1 255 true
 effect give @s minecraft:weakness 1 255 true
 
-#execute if entity @s[scores={gasterTimer=20..}] run function du-in:kit/gaster/ability/shattered_effects
-
-execute if entity @s[scores={gasterTimer=..0}] run function du-in:kit/gaster/ability/shattered_end
+execute if entity @s[scores={gasterTimer=..0}] run function du-in:kit/gaster/ability/end

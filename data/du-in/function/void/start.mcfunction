@@ -2,6 +2,8 @@ execute store result score #lastMode gamemode run scoreboard players get #main g
 scoreboard players set #main gamemode 6
 function du-in:void/void
 
+execute store result score Insurgents playerCount as @a[gamemode=!spectator] run scoreboard players add Insurgents playerCount 0
+
 tag @a add void
 tag @a[tag=spectating] add voidSpect
 execute if score #spamClick gamemode matches 1 as @a run attribute @s attack_speed base set 100.0

@@ -1,3 +1,4 @@
+#MINECRAFT CONSTANTS#
 # Spider #
 # execute if entity @s[scores={kit=1},tag=!stolen] run function du-in:kit/spider/constant
 

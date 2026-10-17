@@ -33,6 +33,7 @@ tag @s remove sus
 scoreboard players reset @s ralseiTP
 tag @s remove maxTP
 scoreboard players set @s ventCooldown 0
+tag @s remove ventCooldown
 scoreboard players set @s saacMoneyCheck 0
 scoreboard players set @s saacMoney 0
 scoreboard players set @s saacMoneyDollar 0

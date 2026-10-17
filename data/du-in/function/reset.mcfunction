@@ -143,6 +143,7 @@ execute as @a run function du-in:music/ingame/stop/all
     #Reset Vent stuff
     tag @a remove sus
     scoreboard players set @a ventCooldown 0
+    tag @a remove ventCooldown
 
     #Reset invisible tag
     tag @a remove invisible

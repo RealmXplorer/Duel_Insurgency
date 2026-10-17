@@ -139,6 +139,7 @@
 -Chunks are now dynamically forceloaded, hopefully offering better performance for the server.
 -Some entities are now loaded and tested via hardcoded UUIDs, rather than dynamic tests. This affects KOTH, CTF, and the lobby.
 -Ingame music now runs through returns.
+-Void gonerKills are now run through a fake player rather than maintaining and calling random players' scores.
 -"new_player" check is now run through a ticking advancement instead of a constant score check.
 -Moved game shutdown functions into "ingame/scheduled", as they aren't needed or used in the lobby.
 -Moved "shutdown" system to schedules, rather than a score-based tick timer. (Deprecated "shutdownTimer" score)

@@ -99,7 +99,7 @@ scoreboard objectives add boneTimer dummy
 scoreboard objectives add charaTimer dummy
 scoreboard objectives add circleTimer dummy
 scoreboard objectives add clairenTimer dummy
-scoreboard objectives add comboHitTimer dummy
+scoreboard objectives add comboHitTimer minecraft.custom:minecraft.play_time
 scoreboard objectives add comboTimer dummy
 scoreboard objectives add creditsTimer dummy
 scoreboard objectives add creeperTimer dummy

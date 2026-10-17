@@ -1,3 +1,4 @@
+kill @e[type=block_display,tag=voidDoor]
 tag @a remove free
 tag @a remove cmap
 stopsound @a ambient

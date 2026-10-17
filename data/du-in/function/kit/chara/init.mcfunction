@@ -1,5 +1,5 @@
 #Ability duration
-execute if entity @s[scores={charaTimer=0..}] run function du-in:kit/chara/ability/head
+#execute if entity @s[scores={charaTimer=0..}] run function du-in:kit/chara/ability/head
 
 #Not Villager#
 #execute if entity @s[tag=!stolen] run function du-in:kit/chara/constant

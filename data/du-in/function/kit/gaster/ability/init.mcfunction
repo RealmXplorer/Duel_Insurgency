@@ -1,10 +1,10 @@
 effect give @s[tag=!sabotaged] minecraft:invisibility 1 255 true
+tag @s[tag=!sabotaged] add invisible
 
 scoreboard players set @s[tag=!sabotaged] gasterTimer 80
-tag @s[tag=!sabotaged] add gasterInvisible
-
 scoreboard players set @s[tag=sabotaged] gasterTimer 1
-#tag @s[tag=sabotaged] add gasterInvisible
+tag @s add gasterDuration
+execute unless score #gasterDuration running matches 1 run function du-in:kit/gaster/ability/loop
 
 execute if entity @s[tag=sabotaged] run function du-in:kit/all/ability/sabotage/effects
 

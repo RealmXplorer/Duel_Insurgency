@@ -10,4 +10,6 @@ function du-in:kit/willo/armor
 
 tag @s add hasSecond
 tag @s add secondExempt
+tag @s add sus
+tag @s add hasTracker
 #tag @s add noMainWeapon

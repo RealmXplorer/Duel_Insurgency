@@ -11,8 +11,8 @@ execute as @e[type=item,tag=!displayItem] run kill @s
     #execute unless entity @a[tag=devMode] run function du-in:other/player_count/default
     #execute if entity @a[tag=devMode] run function du-in:other/player_count/dev_mode
 
-    execute unless entity @a[tag=devMode] store result score #main online as @a[tag=!spectating] run scoreboard players add @s online 0
-    execute if entity @a[tag=devMode] run scoreboard players set #main online 2
+    # execute unless entity @a[tag=devMode] store result score #main online as @a[tag=!spectating] run scoreboard players add @s online 0
+    # execute if entity @a[tag=devMode] run scoreboard players set #main online 2
 
     # SHUTDOWN Game if not enough players #
     execute if score #main online matches ..1 unless entity @a[tag=lobby] run function du-in:ingame/shutdown

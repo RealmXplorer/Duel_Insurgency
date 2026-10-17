@@ -14,6 +14,8 @@ swing @s[tag=sabotaged] offhand stab
 
 clear @s #du-in:ability
 scoreboard players set @s charaTimer 80
+tag @s add charaDuration
+execute unless score #charaDuration running matches 1 run function du-in:kit/chara/ability/loop
 
 playsound du-in:sfx.ut.ability master @a ~ ~ ~ .25 .95
 
