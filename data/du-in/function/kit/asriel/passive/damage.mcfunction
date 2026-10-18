@@ -10,6 +10,7 @@ execute if entity @s[tag=void] as @e[type=skeleton,distance=0.05..5] run damage 
 tag @s add asrielSaber
 clear @s wooden_sword
 scoreboard players set @s asrielSaberTimer 60
+execute unless score #asrielSaberCooldown running matches 1 run function du-in:kit/asriel/passive/loop
 
 playsound du-in:kit.asriel.saber master @a ~ ~ ~ 5 1
 particle minecraft:firework ~ ~ ~ 1 ~ 1 1 100 force

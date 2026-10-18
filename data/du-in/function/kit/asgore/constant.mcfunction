@@ -4,7 +4,7 @@
 # execute if entity @s[scores={jump=1..}] run function du-in:kit/asgore/events/jump
 
 #End trident cooldown
-execute if entity @s[tag=thrown,scores={tridentTimer=0..}] run function du-in:kit/asgore/passive/timer
+#execute if entity @s[tag=thrown,scores={tridentTimer=0..}] run function du-in:kit/asgore/passive/timer
 
 #MY KING
 #TRULY A SHAME

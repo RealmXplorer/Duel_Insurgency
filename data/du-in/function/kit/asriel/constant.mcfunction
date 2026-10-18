@@ -1,5 +1,5 @@
 #Saber timer#
-execute if entity @s[scores={asrielSaberTimer=0..}] run function du-in:kit/asriel/passive/cooldown
+#execute if entity @s[scores={asrielSaberTimer=0..}] run function du-in:kit/asriel/passive/cooldown
 
 #MY PRINCE
 #I WEEP

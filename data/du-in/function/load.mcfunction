@@ -370,7 +370,7 @@ scoreboard objectives add simSprint minecraft.custom:sprint_one_cm
 scoreboard objectives add simStep minecraft.custom:walk_one_cm
 scoreboard objectives add sprint minecraft.custom:sprint_one_cm
 scoreboard objectives add step minecraft.custom:walk_one_cm
-scoreboard objectives add trident minecraft.used:minecraft.trident
+#scoreboard objectives add trident minecraft.used:minecraft.trident
 
 scoreboard objectives add level dummy
 scoreboard objectives add lobby dummy

@@ -6,16 +6,16 @@
 #execute if score @s kit matches 10 run return run function du-in:kit/gaster/init
 
 # Asriel#
-execute if score @s kit matches 11 run return run function du-in:kit/asriel/init
+#execute if score @s kit matches 11 run return run function du-in:kit/asriel/init
 
 # Flowey #
-execute if score @s kit matches 12 run return run function du-in:kit/flowey/init
+#execute if score @s kit matches 12 run return run function du-in:kit/flowey/init
 
 # Papyrus #
 #execute if entity @s[scores={kit=13},tag=!stolen] run function du-in:kit/papyrus/constant
 
 # Asgore #
-execute if score @s[tag=!stolen] kit matches 14 run return run function du-in:kit/asgore/constant
+#execute if score @s[tag=!stolen] kit matches 14 run return run function du-in:kit/asgore/constant
 
 # Frisk #
 #execute if entity @s[scores={kit=15},tag=!stolen] run function du-in:kit/frisk/constant
