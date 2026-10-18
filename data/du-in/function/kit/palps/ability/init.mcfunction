@@ -13,5 +13,7 @@ playsound du-in:sfx.ut.ability master @a ~ ~ ~ .25 1
 
 execute if entity @s[scores={palpsSkin=1}] run playsound minecraft:entity.evoker_fangs.attack master @a ~ ~ ~ 1 1 1
 particle minecraft:cloud ~ ~1 ~ 0.30 .30 0.30 0 10 force
+tag @s add lifeStealing
+execute unless score #lifeSteal running matches 1 run function du-in:kit/palps/ability/loop
 tag @s add cooldown
 tag @s remove kitActions

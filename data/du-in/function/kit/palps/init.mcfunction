@@ -1,5 +1,5 @@
 #Ability function
-execute if entity @s[scores={palpTimer=-99..}] run function du-in:kit/palps/ability/stealing
+#execute if entity @s[scores={palpTimer=-99..}] run function du-in:kit/palps/ability/stealing
 
 #Attributes#
 # execute unless entity @s[scores={palpTimer=2..}] run attribute @s[tag=!deathMark] minecraft:armor base set 0

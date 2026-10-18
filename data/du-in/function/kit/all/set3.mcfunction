@@ -5,7 +5,7 @@
 execute if score @s[tag=!stolen] kit matches 18 run return run function du-in:kit/vader/constant
 
 # Palpatine #
-execute if score @s kit matches 19 run return run function du-in:kit/palps/init
+#execute if score @s kit matches 19 run return run function du-in:kit/palps/init
 
 #Yharim#
 # execute if score @s kit matches 20 run return run function du-in:kit/yharim/init

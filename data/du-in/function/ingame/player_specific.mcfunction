@@ -47,7 +47,8 @@
         #execute if entity @s[scores={kit=9..16},tag=!kitMenu] run function du-in:kit/all/set2
 
     # General Set 3 int functions #
-        execute if entity @s[scores={kit=17..24},tag=!kitMenu] run function du-in:kit/all/set3
+        # execute if entity @s[scores={kit=17..24},tag=!kitMenu] run function du-in:kit/all/set3
+        execute if entity @s[scores={kit=18..24},tag=!kitMenu] run function du-in:kit/all/set3
 
     # General Set 4 functions #
         execute if entity @s[scores={kit=25..999},tag=!kitMenu] run function du-in:kit/all/set4
