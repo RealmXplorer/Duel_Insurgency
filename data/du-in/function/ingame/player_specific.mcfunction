@@ -29,7 +29,7 @@
     #execute if entity @s[tag=sus] run function du-in:kit/all/sus
 
 #HIT COMBO#
-    execute if entity @s[scores={comboHitTimer=10..,comboScore=1..}] run function du-in:ingame/hit_combo/expire
+    #execute if entity @s[scores={comboHitTimer=10..,comboScore=1..}] run function du-in:ingame/hit_combo/expire
 
 #Bhop reset
     #execute if entity @s[scores={jumpResetTimer=20..}] run function du-in:kit/all/attribute/bhop/reset

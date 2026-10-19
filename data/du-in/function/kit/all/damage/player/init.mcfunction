@@ -18,6 +18,8 @@ execute if entity @s[tag=stolen] run function du-in:kit/villager/damage/player
 #Combos Sounds
 execute if entity @s[scores={comboScore=3..},tag=playing] run function du-in:ingame/hit_combo/init
 
+execute unless score #hitCombo running matches 1 run function du-in:ingame/hit_combo/loop
+
 #Regen Timer reset
 scoreboard players reset @s healthTimer
 scoreboard players set @s regenTimer 0
