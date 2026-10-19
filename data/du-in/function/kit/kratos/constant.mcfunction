@@ -11,7 +11,7 @@
 
 #Activate Secondary#
 #execute if entity @s[tag=secKitActions] run function du-in:kit/kratos/secondary/init
-execute if entity @s[scores={kratosRageDuration=0..}] run function du-in:kit/kratos/secondary/in_rage
+#execute if entity @s[scores={kratosRageDuration=0..}] run function du-in:kit/kratos/secondary/in_rage
 
 #CURIOUS
 #OF ALL THE BEINGS I HAVE BROUGHT

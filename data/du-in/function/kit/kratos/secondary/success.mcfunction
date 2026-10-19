@@ -18,6 +18,8 @@ attribute @s attack_speed modifier add kratos_rage 4.0 add_value
 tag @s add kratosRage
 clear @s #du-in:weapon
 
+execute unless score #kratosRageDuration running matches 1 run function du-in:kit/kratos/secondary/loop
+
 #effect give @s minecraft:strength 2 1 true
 #effect give @s minecraft:speed 2 0 true
 #effect give @s minecraft:haste 2 0 true

@@ -26,7 +26,7 @@ execute if score @s kit matches 26 run return run function du-in:kit/jack_horner
 execute if score @s[tag=!stolen] kit matches 32 run return run function du-in:kit/avatar/constant
 
 #Kratos#
-execute if score @s kit matches 33 run return run function du-in:kit/kratos/init
+#execute if score @s kit matches 33 run return run function du-in:kit/kratos/init
 
 #Cinder#
 execute if score @s kit matches 34 run return run function du-in:kit/cinder/init

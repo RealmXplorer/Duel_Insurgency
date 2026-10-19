@@ -2,6 +2,8 @@ execute if entity @s[tag=!sabotaged] run function du-in:kit/kratos/ability/rock/
 execute if entity @s[tag=sabotaged] run function du-in:kit/kratos/ability/sabotage/sabotaged
 
 scoreboard players set @s kratosTimer 100
+tag @s add kratosDuration
+execute unless score #kratosDuration running matches 1 run function du-in:kit/kratos/ability/loop
 
 playsound minecraft:entity.ender_dragon.growl master @a ~ ~ ~ .5 .85
 playsound du-in:kit.kratos.rock master @a ~ ~ ~ 1 1
