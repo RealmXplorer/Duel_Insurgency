@@ -137,33 +137,33 @@ tag @a[tag=!musicOff] add song
 scoreboard players add @a[scores={FRIEND=2..}] LEVEL_OF_FUN 1
 
 #Non-timed classic
-execute if entity @a[tag=cl,tag=!teamMode,tag=!timedMode,tag=partyLeader] run function du-in:ingame/startround/classic
-execute if entity @a[tag=cl,tag=teamMode,tag=!timedMode,tag=partyLeader] run function du-in:ingame/startround/team_classic
+execute if entity @a[tag=cl,tag=!teamMode,tag=!timedMode,tag=partyLeader] run function du-in:ingame/classic/default/start
+execute if entity @a[tag=cl,tag=teamMode,tag=!timedMode,tag=partyLeader] run function du-in:ingame/classic/team/start
 #Timed classic
-execute if entity @a[tag=cl,tag=timedMode,tag=!teamMode,tag=partyLeader] run function du-in:ingame/startround/timed_classic
-execute if entity @a[tag=cl,tag=timedMode,tag=teamMode,tag=partyLeader] run function du-in:ingame/startround/timed_team_classic
+execute if entity @a[tag=cl,tag=timedMode,tag=!teamMode,tag=partyLeader] run function du-in:ingame/classic/timed/start
+execute if entity @a[tag=cl,tag=timedMode,tag=teamMode,tag=partyLeader] run function du-in:ingame/classic/team_timed/start
 
 #Non-timed Deathmatch
-execute if entity @a[tag=dml,tag=!teamMode,tag=!timedMode] run function du-in:ingame/startround/deathmatch
-execute if entity @a[tag=dml,tag=teamMode,tag=!timedMode] run function du-in:ingame/startround/team_deathmatch
+execute if entity @a[tag=dml,tag=!teamMode,tag=!timedMode] run function du-in:ingame/deathmatch/default/start
+execute if entity @a[tag=dml,tag=teamMode,tag=!timedMode] run function du-in:ingame/deathmatch/team/start
 #Timed Deathmatch
-execute if entity @a[tag=dml,tag=timedMode,tag=!teamMode] run function du-in:ingame/startround/timed_deathmatch
-execute if entity @a[tag=dml,tag=timedMode,tag=teamMode] run function du-in:ingame/startround/timed_team_deathmatch
+execute if entity @a[tag=dml,tag=timedMode,tag=!teamMode] run function du-in:ingame/deathmatch/timed/start
+execute if entity @a[tag=dml,tag=timedMode,tag=teamMode] run function du-in:ingame/deathmatch/team_timed/start
 
 #Non-timed KOTH
-execute if entity @a[tag=kothl,tag=!teamMode,tag=!timedMode,tag=partyLeader] run function du-in:ingame/startround/koth
-execute if entity @a[tag=kothl,tag=teamMode,tag=partyLeader] run function du-in:ingame/startround/team_koth
+execute if entity @a[tag=kothl,tag=!teamMode,tag=!timedMode,tag=partyLeader] run function du-in:ingame/koth/default/start
+execute if entity @a[tag=kothl,tag=teamMode,tag=partyLeader] run function du-in:ingame/koth/team/start
 #Timed KOTH
-execute if entity @a[tag=kothl,tag=!teamMode,tag=timedMode,tag=partyLeader] run function du-in:ingame/startround/timed_koth
-execute if entity @a[tag=kothl,tag=teamMode,tag=timedMode,tag=partyLeader] run function du-in:ingame/startround/timed_team_koth
+execute if entity @a[tag=kothl,tag=!teamMode,tag=timedMode,tag=partyLeader] run function du-in:ingame/koth/timed/start
+execute if entity @a[tag=kothl,tag=teamMode,tag=timedMode,tag=partyLeader] run function du-in:ingame/koth/team_timed/start
 
 #CTF
-execute if entity @a[tag=ctfl,tag=!timedMode] run function du-in:ingame/startround/ctf
-execute if entity @a[tag=ctfl,tag=timedMode] run function du-in:ingame/startround/timed_ctf
+execute if entity @a[tag=ctfl,tag=!timedMode] run function du-in:ingame/ctf/default/start
+execute if entity @a[tag=ctfl,tag=timedMode] run function du-in:ingame/ctf/timed/start
 
 #Conquest
-execute if entity @a[tag=cql,tag=!timedMode] run function du-in:ingame/startround/conquest
-execute if entity @a[tag=cql,tag=timedMode] run function du-in:ingame/startround/timed_conquest
+execute if entity @a[tag=cql,tag=!timedMode] run function du-in:ingame/conquest/default/start
+execute if entity @a[tag=cql,tag=timedMode] run function du-in:ingame/conquest/timed/start
 
 #Reset Lobby functions, tags, and scores
 scoreboard players reset #main lobby

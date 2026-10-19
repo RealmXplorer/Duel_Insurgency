@@ -105,7 +105,7 @@
 -Created "Macro-Assisted Schedules", which dynamically front-load timers for timed mode.
 -Simplified game cap functions as they did unnecessary checks and math.
 -Created "smart schedules", which initialize and run the necessary ticking functions when a specific gamemode is picked.
--Gamemode functions run through returns
+-Moved "ingame/startround/(gamemode and subtype)" functions to their gamemode folders. "ingame/(gamemode)/(submode)/start"
 
 **Lobby Tweaks**
 -Moved "team_enable" and "team_disable" into a single check using returns.
