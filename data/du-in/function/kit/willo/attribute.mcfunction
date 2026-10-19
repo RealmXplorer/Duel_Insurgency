@@ -1,10 +1,10 @@
+#Size
+execute unless entity @a[tag=scaleMode,tag=partyLeader] run function du-in:kit/all/attribute/size/small
+
 #Attributes#
 attribute @s[tag=!willoKnife] minecraft:movement_speed base set 0.07
 attribute @s knockback_resistance base set 0.02
 attribute @s minecraft:attack_knockback base set 0.1
-
-#Size
-execute unless entity @a[tag=scaleMode,tag=partyLeader] run function du-in:kit/all/size/small
 
 attribute @s[tag=!willoKnife] minecraft:air_drag_modifier base set 1.1
 

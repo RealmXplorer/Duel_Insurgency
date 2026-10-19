@@ -9,3 +9,4 @@ attribute @s minecraft:water_movement_efficiency base set 0.60
 #New Attributes
 attribute @s minecraft:air_drag_modifier base set 0.75
 attribute @s minecraft:friction_modifier base set 0.95
+execute store result score @s maxHealth run attribute @s max_health get

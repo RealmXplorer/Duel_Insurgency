@@ -8,3 +8,7 @@ effect give @s[tag=!empower] speed 3 0 true
 effect give @s[tag=!empower] strength 3 1 true
 
 execute if entity @s[tag=empower] run function du-in:kit/sauron/ability/ring/empower
+
+tag @s add sauronDuration
+
+execute unless score #sauronDuration running matches 1 run function du-in:kit/sauron/ability/loop

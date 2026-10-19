@@ -10,3 +10,7 @@ execute if entity @s[tag=empower] run scoreboard players set @s sauronTimer 160
 
 execute if entity @s[tag=empower] run effect give @s speed 4 0 true
 execute if entity @s[tag=empower] run effect give @s strength 4 1 true
+
+tag @s add sauronDuration
+
+execute unless score #sauronDuration running matches 1 run function du-in:kit/sauron/ability/loop

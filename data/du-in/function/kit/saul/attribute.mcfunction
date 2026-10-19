@@ -1,3 +1,5 @@
+execute unless entity @a[tag=scaleMode,tag=partyLeader] run function du-in:kit/all/attribute/size/medium
+
 #Base movement speed#
 attribute @s minecraft:movement_speed base set 0.1375
 

@@ -13,3 +13,5 @@ execute if entity @s[tag=!invisible,predicate=!du-in:effect/is_on_fire,predicate
 #Increase Cooldown for Parry if in cooldown
 execute if entity @s[tag=parryStart,scores={parryCooldown=6..}] run scoreboard players set @s parryCooldown 15
 
+#Start Parry Buffer
+execute if entity @s[tag=parryStart] unless score #parryStart running matches 1 run function du-in:kit/all/parry/buffer_loop

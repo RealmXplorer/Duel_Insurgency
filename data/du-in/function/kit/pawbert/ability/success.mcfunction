@@ -10,8 +10,9 @@ scoreboard players set @s[tag=!empower] pawbertTimer 60
 execute if entity @s[tag=empower] run scoreboard players set @s pawbertTimer 80
 execute if entity @s[tag=empower] run attribute @s attack_damage modifier add empowered_pawbert 4 add_value
 
-
 effect give @s resistance 1 0 true
+execute unless score #pawbertInvisible running matches 1 run function du-in:kit/pawbert/ability/loop
+
 
 #Particles
 playsound minecraft:entity.player.breath player @a ~ ~ ~ 0.5 1

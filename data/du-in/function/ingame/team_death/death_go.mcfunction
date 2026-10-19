@@ -13,6 +13,7 @@ scoreboard players set @s deathCountdown 1
 # clear @s[tag=!cIngame,tag=!dmIngame,tag=!kothIngame]
 
 tag @s add teamDead
+execute unless score #teamDead running matches 1 run function du-in:ingame/team_death/loop
 
 tag @s add changeTheme
 

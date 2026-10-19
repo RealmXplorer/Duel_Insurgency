@@ -1,3 +1,4 @@
+tag @s add secondExempt
 scoreboard players reset @s skeletonMode
 
 #Play particles and sounds
@@ -16,6 +17,7 @@ clear @s #du-in:ability
 function du-in:kit/all/weapon/init
 function du-in:kit/all/armor/armor
 #tag @s add armor
+tag @s remove skeletonMode
 
 #End ability and start cooldown
 xp set @s[tag=!stolen] 300 levels

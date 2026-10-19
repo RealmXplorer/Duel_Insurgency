@@ -5,4 +5,4 @@ attribute @s minecraft:armor base set -2
 attribute @s minecraft:attack_damage base set 2
 
 #Size
-execute unless entity @a[tag=scaleMode,tag=partyLeader] run function du-in:kit/all/size/huge
+execute unless entity @a[tag=scaleMode,tag=partyLeader] run function du-in:kit/all/attribute/size/huge

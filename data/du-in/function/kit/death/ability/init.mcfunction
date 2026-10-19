@@ -1,6 +1,7 @@
 tag @s add deathAbility
 scoreboard players set @s deathAbilityTimer 60
 effect clear @s glowing
+execute unless score #deathSelfTimer running matches 1 run function du-in:kit/death/ability/self_loop
 
 #Give effects
 effect give @s[tag=!sabotaged] fire_resistance 3 0 true

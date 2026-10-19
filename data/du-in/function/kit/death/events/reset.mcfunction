@@ -1,6 +1,7 @@
 scoreboard players set #main markTimer 0
 tag @s remove deathDouble
 tag @s remove deathAbility
+tag @s remove deathSwap
 scoreboard players reset @s deathAbilityTimer
 scoreboard players reset @s deathSwapTimer
 scoreboard players set @s deathWeapSwitch 0

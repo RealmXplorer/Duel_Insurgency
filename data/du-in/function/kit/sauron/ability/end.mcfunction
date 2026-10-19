@@ -13,3 +13,4 @@ tag @s remove sabotaged
 tag @s remove empower
 
 scoreboard players reset @s sauronTimer
+tag @s remove sauronDuration

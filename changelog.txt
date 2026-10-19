@@ -19,6 +19,7 @@
     -Pawbert will now have to play around his ability and weigh whether its the best option.
 -Pawbert no longer sabotages nearby enemies when using his ability.
     -Pawbert will still charm nearby Goners.
+-Asriel is now "big" size, instead of "medium".
 
 *Changes*
 -Updated map to 26.3.
@@ -86,6 +87,8 @@
 -Moved Runza eating test to an advancement.
 -Restructured constants for kits using returns.
 -Kill message functions now run through characters.
+-Size attributes are now set at the top of the "attribute" function, making all attributes replace their size's defaults.
+-The regen timer is no longer tag-based, instead running off of the kit's "maxHealth" score set in their attribute function.
 
 **Reorganized map folders and functions**
 -Renamed "du-in:maps/" folder to "du-in:map/".

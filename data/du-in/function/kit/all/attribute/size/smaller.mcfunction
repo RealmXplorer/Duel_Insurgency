@@ -13,3 +13,4 @@ attribute @s minecraft:max_health base set 16
 #New Attributes
 attribute @s minecraft:air_drag_modifier base set 0.90
 attribute @s minecraft:friction_modifier base set 1.1
+execute store result score @s maxHealth run attribute @s max_health base get

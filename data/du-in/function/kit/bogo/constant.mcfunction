@@ -6,4 +6,4 @@
 
 #execute if entity @s[scores={bogoShieldBreak=1..}] run function du-in:kit/bogo/shield/break
 
-execute if entity @s[scores={bogoShieldTimer=1..}] run function du-in:kit/bogo/shield/timer
+#execute if entity @s[scores={bogoShieldTimer=1..}] run function du-in:kit/bogo/shield/timer

@@ -10,3 +10,4 @@ xp set @s[tag=!stolen] 340 levels
 execute if entity @s[tag=stolen] run function du-in:kit/villager/ability/end/revert
 
 tag @s remove cooldown
+tag @s remove pussDuration

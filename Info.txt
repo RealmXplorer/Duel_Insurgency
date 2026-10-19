@@ -34,7 +34,7 @@ Some outside functions are needed for certain aspects to characters
 		"du-in/function/lobby/kitmenu/select/" contains all the function for selecting a character from the kit menu.
 		"du-in/function/lobby/kitmenu/menu/" contains all the function for displaying a character in the kit menu.
 
-Kits' sizes are determined by one of 6 functions called in "du-in/function/kit/all/size/".
+Kits' sizes are determined by one of 6 functions called in "du-in/function/kit/all/attribute/size/".
 
 Tag "secKitActions" run when a player with tag "playing" right clicks a warped fungus on a stick.
 	This activates the character's secondary ability.

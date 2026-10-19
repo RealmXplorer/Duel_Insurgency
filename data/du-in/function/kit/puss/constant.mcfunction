@@ -14,4 +14,4 @@
 #Secondary Item
 #execute unless entity @s[scores={secCount=1}] unless entity @s[scores={pussSwapTimer=1..}] if entity @s[tag=!teamDead] run function du-in:kit/puss/secondary/item_old
 
-execute if entity @s[scores={pussSwapTimer=-1..}] run function du-in:kit/puss/secondary/timer
+#execute if entity @s[scores={pussSwapTimer=-1..}] run function du-in:kit/puss/secondary/timer

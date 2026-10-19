@@ -1,4 +1,7 @@
 clear @s #minecraft:arrows
+tag @s remove secondExempt
+
+function du-in:kit/skeleton/secondary/item
 
 #Change skeleton mode, unless sabotaged
 scoreboard players add @s[tag=!sabotaged] skeletonMode 1
@@ -42,6 +45,9 @@ playsound du-in:sfx.ut.ability master @a ~ ~ ~ .5 1.05
 xp set @s[tag=!sabotaged] 100 levels
 
 execute if entity @s[tag=sabotaged] run function du-in:kit/all/ability/sabotage/effects
+
+tag @s add skeletonMode
+execute unless score #skeletonMode running matches 1 run function du-in:kit/skeleton/ability/mode_loop
 
 #End function
 tag @s remove empower

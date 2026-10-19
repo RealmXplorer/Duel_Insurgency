@@ -87,6 +87,7 @@ scoreboard objectives add darkTimer dummy
 scoreboard objectives add currentIndex dummy
 scoreboard objectives add maxIndex dummy
 scoreboard objectives add maxThemes dummy
+scoreboard objectives add maxHealth dummy
 
 #Timers
 scoreboard objectives add ambience dummy

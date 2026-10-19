@@ -14,6 +14,8 @@ clear @s #du-in:ability
 # scoreboard players set @s weapCount 0
 function du-in:kit/all/weapon/init
 scoreboard players set @s pussSwapTimer 20
+tag @s add pussSwap
+execute unless score #pussSwap running matches 1 run function du-in:kit/puss/secondary/loop
 
 #execute unless entity @s[level=1..] unless entity @s[scores={pussTimer=-99..}] run xp add @s 30 levels
 playsound minecraft:entity.player.attack.sweep master @a ~ ~ ~ 2 1.25

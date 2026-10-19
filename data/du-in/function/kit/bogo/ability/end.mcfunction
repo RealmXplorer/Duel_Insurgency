@@ -3,6 +3,7 @@ scoreboard players reset @s bogoTimer
 attribute @s movement_speed modifier remove bogo_charge
 attribute @s movement_speed modifier remove bogo_charge_build
 tag @s remove bogoCharge
+tag @s remove bogoDuration
 
 xp set @s[tag=!stolen] 320 levels
 effect give @s slowness 2 1 true

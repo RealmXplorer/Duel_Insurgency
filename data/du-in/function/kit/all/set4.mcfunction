@@ -8,22 +8,22 @@ execute if score @s[tag=!stolen] kit matches 25 run return run function du-in:ki
 execute if score @s kit matches 26 run return run function du-in:kit/jack_horner/init
 
 #Puss#
-execute if score @s kit matches 27 run return run function du-in:kit/puss/init
+#execute if score @s kit matches 27 run return run function du-in:kit/puss/init
 
 #Death#
-execute if score @s kit matches 28 run return run function du-in:kit/death/init
+#execute if score @s kit matches 28 run return run function du-in:kit/death/init
 
 #Yoda#
 #execute if score @s kit matches 29 run return run function du-in:kit/yoda/init
 
 #Skeleton#
-execute if score @s kit matches 30 run return run function du-in:kit/skeleton/init
+#execute if score @s kit matches 30 run return run function du-in:kit/skeleton/init
 
 #Sauron#
-execute if score @s kit matches 31 run return run function du-in:kit/sauron/init
+#execute if score @s kit matches 31 run return run function du-in:kit/sauron/init
 
 #Aang#
-execute if score @s kit matches 32 run return run function du-in:kit/avatar/init
+execute if score @s[tag=!stolen] kit matches 32 run return run function du-in:kit/avatar/constant
 
 #Kratos#
 execute if score @s kit matches 33 run return run function du-in:kit/kratos/init
@@ -35,19 +35,19 @@ execute if score @s kit matches 34 run return run function du-in:kit/cinder/init
 #execute if score @s[tag=!stolen] kit matches 35 run return run function du-in:kit/judy/constant
 
 #Susie#
-execute if score @s kit matches 36 run return run function du-in:kit/susie/init
+execute if score @s[tag=!stolen] kit matches 36 run return run function du-in:kit/susie/constant
 
 #Knight#
 #execute if score @s kit matches 37 run return run function du-in:kit/knight/init
 
 #Jevil
-execute if score @s kit matches 38 run return run function du-in:kit/jevil/init
+execute if score @s[tag=!stolen] kit matches 38 run return run function du-in:kit/jevil/constant
 
 #Bogo
-execute if score @s kit matches 39 run return run function du-in:kit/bogo/init
+#execute if score @s kit matches 39 run return run function du-in:kit/bogo/init
 
 #Pawbert
-execute if score @s kit matches 40 run return run function du-in:kit/pawbert/init
+#execute if score @s kit matches 40 run return run function du-in:kit/pawbert/init
 
 #Willo
 execute if score @s kit matches 41 run return run function du-in:kit/willo/init

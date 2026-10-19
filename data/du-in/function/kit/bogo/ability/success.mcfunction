@@ -1,5 +1,7 @@
 scoreboard players set @s[tag=!empower] bogoTimer 30
 scoreboard players set @s[tag=empower] bogoTimer 50
+tag @s add bogoDuration
+execute unless score #bogoDuration running matches 1 run function du-in:kit/bogo/ability/loop
 
 playsound du-in:kit.bogo.snort master @a ~ ~ ~ 1 1 1
 

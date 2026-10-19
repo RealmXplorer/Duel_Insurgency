@@ -16,6 +16,9 @@ execute as @a[tag=pussHit] run function du-in:kit/puss/ability/enemy_hit
 
 #End ability for Puss
 scoreboard players set @s[tag=!sabotaged] pussTimer 60
+tag @s[tag=!sabotaged] add pussDuration
+execute if entity @s[tag=pussDuration] unless score #pussDuration running matches 1 run function du-in:kit/puss/ability/self_loop
+
 effect give @s[tag=!sabotaged,tag=!empower] speed 1 0 true
 effect give @s[tag=empower] speed 2 0 true
 effect give @s[tag=empower] strength 2 0 true

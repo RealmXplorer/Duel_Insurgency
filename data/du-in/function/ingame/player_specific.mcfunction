@@ -7,7 +7,7 @@
     execute if entity @s[level=1..,tag=!teamDead,tag=!win,tag=!lose,tag=!kitMenu,tag=!startgame] run function du-in:kit/all/ability/timer
 
 # If a player is dead in team mode #
-    execute if entity @s[tag=teamDead,tag=!void,scores={deathTimer=0..}] run function du-in:ingame/team_death/dead_effects
+    #execute if entity @s[tag=teamDead,tag=!void,scores={deathTimer=0..}] run function du-in:ingame/team_death/dead_effects
 
 #Attempt parry if sneaking
     execute if entity @s[predicate=du-in:is_sneaking] run function du-in:ingame/is_sneaking
@@ -16,11 +16,11 @@
     execute if entity @s[predicate=!du-in:effect/is_invisible] run effect give @s invisibility infinite 0 true
 
     #Parry Mechanics
-    execute if entity @s[tag=parryStart] run function du-in:kit/all/parry/buffer
+    #execute if entity @s[tag=parryStart] run function du-in:kit/all/parry/buffer
     #execute if entity @s[tag=parry,scores={parryDuration=0..}] run function du-in:kit/all/parry/in_parry
 
-# REGEN TIMER (Except for undead) #
-    execute if entity @s[scores={healthTimer=140..}] run function du-in:ingame/regentimer/start_regen
+# REGEN TIMER #
+    execute if score @s Health < @s maxHealth if entity @s[scores={healthTimer=140..}] run function du-in:ingame/regentimer/start_regen
 
 #KILL COMBOS
     #execute if entity @s[scores={comboTimer=0..}] run function du-in:ingame/kill_combo/timer
