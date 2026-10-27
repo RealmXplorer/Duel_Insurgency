@@ -181,7 +181,7 @@ function du-in:ingame/scheduled/five_sec_loop
 
 advancement grant @a[tag=playing,tag=!devMode] only du-in:challenge/duel_reborn
 
-#execute if entity @a[scores={LEVEL_OF_FUN=3..}] run schedule function du-in:ingame/timed/countdown 15s
+execute if entity @a[scores={LEVEL_OF_FUN=5..}] run schedule function du-in:ingame/timed/countdown 15s
 
 #Reset void functions
 tag @a remove fromVoid
