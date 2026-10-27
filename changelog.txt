@@ -26,6 +26,7 @@
 -Unpurchased skins in shop now have a custom icon.
 -Map Countdown now always counts down, and will only stop when the party leader pauses.
 -Removed glowing effect when crouching in game.
+-Cycling through music in the shop now plays a sound and particle.
 -All players are now invisible, forcing players to search for their enemy.
     -This is toggleable, though Willo will always be invisible as part of her kit.
 -Characters now have animations when using abilities.
