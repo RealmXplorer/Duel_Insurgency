@@ -12,3 +12,4 @@ execute if entity @s[scores={lightType=9}] run return run function du-in:kit/fre
 execute if entity @s[scores={lightType=10}] run return run function du-in:kit/freddy/ability/light/restore/lanterns with entity @s data
 execute if entity @s[scores={lightType=11}] run return run function du-in:kit/freddy/ability/light/restore/candles with entity @s data
 execute if entity @s[scores={lightType=12}] run return run function du-in:kit/freddy/ability/light/restore/end_rods with entity @s data
+execute if entity @s[scores={lightType=13}] run return run function du-in:kit/freddy/ability/light/restore/jack_o_lanterns with entity @s data

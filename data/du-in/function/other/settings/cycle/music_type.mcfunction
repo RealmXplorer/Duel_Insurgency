@@ -1,7 +1,7 @@
 advancement revoke @s only du-in:shop/interact_jukebox
 
-particle note ~ ~ ~ 0 0 0 1 1 normal
-playsound minecraft:block.note_block.bit record @s ~ ~ ~ 1 1 1
+particle note 1977 53 1987 0 0 0 1 1 normal
+playsound minecraft:block.note_block.bit master @s ~ ~ ~ 0.25 1
 
 scoreboard players add @s musicCycle 1
 execute if entity @s[scores={musicCycle=5..},tag=!secret] run scoreboard players set @s musicCycle 0

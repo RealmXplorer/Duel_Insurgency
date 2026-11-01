@@ -12,6 +12,7 @@
         "#minecraft:torches",
         "#minecraft:candles",
         "#minecraft:lanterns",
-        "minecraft:end_rod"
+        "minecraft:end_rod",
+        "minecraft:jack_o_lantern"
     ]
 }

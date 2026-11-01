@@ -49,6 +49,7 @@
 -Fixed bug where final pylon's timer would appear blank.
 -Fixed bug where Jerma's randomized sword could bypass Puss's ability.
 -Fixed bug where Deathmatch would not run classic map functions.
+-Fixed bug where Goner Eye was not present on Wild West map.
 
 *Internal Changes*
 ***DATAPACK 7.0***
@@ -182,6 +183,9 @@
 -All kit sounds are now under "du-in:kit.[kitname].[sound]"
 -Renamed "minecraft:soundeffect." to "du-in:sfx.", and made proper subfolders.
     -Some sounds from characters such as ralsei have been moved to the sfx folder.
+
+**Changes**
+-Lowered Kratos' hurt sounds' volume.
 
 **Additions**
 -Added Willo armor textures. (by nerbski)

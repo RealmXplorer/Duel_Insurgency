@@ -25,3 +25,4 @@ execute if block ~ ~ ~ #minecraft:torches as @n[type=marker,tag=light,tag=unset]
 execute if block ~ ~ ~ #minecraft:lanterns as @n[type=marker,tag=light,tag=unset] run return run function du-in:kit/freddy/ability/light/take/lanterns
 execute if block ~ ~ ~ #minecraft:candles as @n[type=marker,tag=light,tag=unset] run return run function du-in:kit/freddy/ability/light/take/candles
 execute if block ~ ~ ~ minecraft:end_rod as @n[type=marker,tag=light,tag=unset] run return run function du-in:kit/freddy/ability/light/take/end_rods
+execute if block ~ ~ ~ minecraft:jack_o_lantern as @n[type=marker,tag=light,tag=unset] run return run function du-in:kit/freddy/ability/light/take/jack_o_lanterns
