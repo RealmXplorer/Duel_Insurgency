@@ -50,7 +50,6 @@
 *Bug Fixes*
 -Fixed bug where Clairen's ability would not be properly empowered.
 -Fixed bug where Bogo's hurt sound would not play.
--Fixed bug where the lobby display label would not display on returning from map select
 -Fixed bug where Roxanne Wolf's skin could not be selected.
 -Fixed bug where final pylon's timer would appear blank.
 -Fixed bug where Jerma's randomized sword could bypass Puss's ability.
