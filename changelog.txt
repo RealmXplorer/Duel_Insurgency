@@ -181,9 +181,9 @@
 -Renamed wordy ambient file names.
     -"forestamb_day" is now "forest"
     -"desertamb_day" is now "desert"
-    "nightamb" is now "night"
-    "jungleamb" is now "jungle"
-    "caveamb" is now "cave"
+    -"nightamb" is now "night"
+    -"jungleamb" is now "jungle"
+    -"caveamb" is now "cave"
 -All kit "hurt" sounds are now properly ".hit" instead of some being ".voice".
 -All kit sounds are now under "du-in:kit.[kitname].[sound]"
 -Renamed "minecraft:soundeffect." to "du-in:sfx.", and made proper subfolders.
