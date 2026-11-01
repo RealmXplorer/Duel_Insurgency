@@ -1,0 +1,14 @@
+{
+  "layers": {
+    "humanoid": [
+      {
+        "texture": "du-in:willo_basic"
+      }
+    ],
+    "humanoid_leggings": [
+      {
+        "texture": "du-in:willo_basic"
+      }
+    ]
+  }
+}

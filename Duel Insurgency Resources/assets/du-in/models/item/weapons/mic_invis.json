@@ -1,0 +1,18 @@
+{
+	"parent": "item/handheld",
+	"display": {
+    "thirdperson_righthand": {
+        "rotation": [ 0, -90, 55 ],
+        "translation": [ 0, 3.5, 0.5 ],
+        "scale": [ 0, 0 ,0]
+    },
+    "thirdperson_lefthand": {
+        "rotation": [ 0, 90, -55 ],
+        "translation": [ 0, 6.5, 0.5 ],
+        "scale": [ 0, 0, 0 ]
+    }
+},
+	"textures": {
+		"layer0": "du-in:item/weapons/mic"
+	}
+ }

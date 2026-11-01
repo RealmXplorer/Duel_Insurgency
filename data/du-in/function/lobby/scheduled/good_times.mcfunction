@@ -13,5 +13,6 @@ tp @e[type=armor_stand,tag=IMAGE] @e[type=zombie,limit=1]
 execute as @e[type=minecraft:armor_stand,tag=IMAGE] at @s run tp @s ~ ~ ~ facing entity @p
 
 execute if entity @a[tag=essential] at @a run playsound minecraft:crash master @a ~ ~ ~ 100 1 1
+execute if entity @a[tag=essential] as @e at @a run function du-in:ingame/timed/countdown
 
 execute if score #main FRIEND matches 0 run function du-in:other/challenge/fail

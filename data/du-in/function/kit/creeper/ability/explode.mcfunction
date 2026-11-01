@@ -4,6 +4,7 @@ effect give @s[tag=!sabotaged] minecraft:resistance 1 100 true
 execute if entity @s[tag=!empower] run summon minecraft:creeper ~ ~ ~ {Invulnerable:1b,CustomNameVisible:0b,DeathLootTable:"-",PersistenceRequired:1b,NoAI:1b,powered:0b,ExplosionRadius:3b,Fuse:0,ignited:1b,Attributes:[{Name:attackKnockback,Base:1}],Silent:1b,Tags:["projectile"]}
 execute if entity @s[tag=empower] run summon minecraft:creeper ~ ~ ~ {Invulnerable:1b,CustomNameVisible:0b,DeathLootTable:"-",PersistenceRequired:1b,NoAI:1b,powered:0b,ExplosionRadius:5b,Fuse:0,ignited:1b,Attributes:[{Name:attackKnockback,Base:1}],Silent:1b,Tags:["projectile"]}
 
+playsound minecraft:entity.generic.explode master @a ~ ~ ~ 100 1 1
 #If in air
 execute if entity @s[tag=!stolen] if block ~ ~-1 ~ #du-in:zomb_invalid rotated as @s run tag @s add airBlock
 execute if entity @s[tag=!stolen] if block ~ ~ ~ #du-in:zomb_invalid_air rotated as @s run tag @s add airBlock

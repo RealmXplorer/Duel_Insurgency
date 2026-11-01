@@ -26,7 +26,8 @@ tag @s remove killMsg
 
 #Announce if player killed player with Killstreak
 # execute if entity @a[scores={killStreak=3..,justdied=1}] run function du-in:ingame/killstreaks/killed
-execute if entity @a[tag=lostStreak] run function du-in:ingame/killstreaks/killed
+# execute if entity @a[tag=lostStreak] run function du-in:ingame/killstreaks/killed
+execute if entity @s[scores={killStreak=..2}] run scoreboard players reset @s killStreak
 
 #Kill Sounds#
 execute unless entity @a[tag=partyLeader,tag=aprilFools] run playsound du-in:sfx.te.golkill master @s ~ ~ ~ .4 2

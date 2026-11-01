@@ -1,7 +1,5 @@
 #Set light type
 scoreboard players set @s lightType 13
-say found pumpkin
-
 #Get End Rod Type
 execute if block ~ ~ ~ minecraft:jack_o_lantern[facing=east] run data modify entity @s data.facing set value "east"
 execute if block ~ ~ ~ minecraft:jack_o_lantern[facing=west] run data modify entity @s data.facing set value "west"

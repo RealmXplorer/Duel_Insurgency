@@ -1,7 +1,8 @@
 tag @s add willoShoot
 
 function du-in:kit/willo/secondary/item
-playsound du-in:kit.willo.revolver_shoot master @a ~ ~ ~ 100 1
+#playsound du-in:kit.willo.revolver_shoot master @a ~ ~ ~ 50 1
+playsound du-in:kit.willo.revolver_shoot_self master @a ~ ~ ~ 1 1
 
 summon marker ^ ^1.9 ^.5 {Tags:["willoBullet","unset","mapSpecific","projectile","unShot"]}
 scoreboard players set @e[distance=..2,tag=willoBullet,tag=unset,type=marker] willoBulletTravel 120

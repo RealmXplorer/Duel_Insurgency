@@ -1,6 +1,9 @@
 #KILL MESSAGE#
 #execute unless entity @a[scores={justdied=1,kit=28}] run function du-in:kit/all/kill/msg/default
-execute unless entity @a[scores={kit=28},scores={justdied=1}] if entity @s[tag=!stolen] run tag @s add killMsg
+execute as @a[scores={killStreak=3..,justdied=1}] run tag @s add lostStreak
+execute if entity @a[tag=lostStreak] run function du-in:ingame/killstreaks/killed
+
+execute unless entity @a[scores={kit=28,justdied=1}] if entity @s[tag=!stolen] run tag @s add killMsg
 
 execute if entity @a[scores={kit=28,justdied=1}] run tellraw @a {selector:"@s",color:red,bold:false,extra:[{text:" escaped ",color:white,bold:false},{selector:"@a[scores={justdied=1,kit=28}]",color:dark_red,bold:false}]}
 

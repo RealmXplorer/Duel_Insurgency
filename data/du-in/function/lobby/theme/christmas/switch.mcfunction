@@ -13,6 +13,10 @@ function du-in:lobby/theme/christmas/display
 #clone 167 14 96 177 4 121 227 90 13
 clone 206 47 96 216 37 121 227 90 13
 
+#Shop#
+#clone 311 5 168 255 24 115 1957 50 1966
+
+
 team modify Red color red
 team modify Blue color dark_green
 

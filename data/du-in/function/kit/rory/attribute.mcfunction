@@ -1,7 +1,7 @@
 execute unless entity @a[tag=scaleMode,tag=partyLeader] run function du-in:kit/all/attribute/size/big
 
 #ATTRIBUTES
-attribute @s minecraft:movement_speed base set 0.18
+attribute @s minecraft:movement_speed base set 0.12
 attribute @s knockback_resistance base set 0.035
 
 #attribute @s minecraft:air_drag_modifier modifier add air_drag -1.25 add_value

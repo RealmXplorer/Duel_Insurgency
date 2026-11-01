@@ -12,8 +12,12 @@ function du-in:lobby/theme/thanks/display
 
 #MAP SELECT#
 #clone 180 14 96 190 4 121 227 90 13
-
 clone 206 36 96 216 26 121 227 90 13
+
+#Shop
+clone 311 45 114 255 64 61 1957 50 1966
+
+fillbiome 2013 50 2019 1957 80 1966 minecraft:dappled_forest
 
 tellraw @a [{text:"Thanksgiving ",bold:true,color:gold},{text:"lobby theme selected!",color:yellow}]
 #forceload remove -1002 537 -963 499

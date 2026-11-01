@@ -3,7 +3,8 @@ playsound minecraft:item.shield.break master @a ~ ~ ~ 5 1.2
 playsound minecraft:item.shield.break master @a ~ ~ ~ 5 1
 title @s title {text:" ",color:red}
 title @s subtitle {text:"You are now naked.",color:red}
-clear @s #du-in:darwin_armor
+#clear @s #du-in:darwin_armor
+function du-in:kit/all/armor/armor
 scoreboard players set @s darwinTimer 100
 tag @s add darwinDuration
 execute unless score #darwin running matches 1 run function du-in:kit/gumball/ability/darwin/clothes_loop

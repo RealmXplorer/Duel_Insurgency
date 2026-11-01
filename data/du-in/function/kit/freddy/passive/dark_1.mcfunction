@@ -5,6 +5,7 @@ function du-in:kit/freddy/passive/reset
 tag @s add freddyDark
 tag @s add invisible
 clear @s #du-in:armor
+function du-in:kit/freddy/weapon
 
 #Add new modifier
 attribute @s attack_damage modifier add freddy_darkness 3 add_value

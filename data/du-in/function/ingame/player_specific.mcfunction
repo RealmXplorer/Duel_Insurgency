@@ -20,7 +20,7 @@
     #execute if entity @s[tag=parry,scores={parryDuration=0..}] run function du-in:kit/all/parry/in_parry
 
 # REGEN TIMER #
-    execute if score @s Health < @s maxHealth if entity @s[scores={healthTimer=140..}] run function du-in:ingame/regentimer/start_regen
+    execute if score @s Health < @s maxHealth if entity @s[scores={healthTimer=60..}] run function du-in:ingame/regentimer/start_regen
 
 #KILL COMBOS
     #execute if entity @s[scores={comboTimer=0..}] run function du-in:ingame/kill_combo/timer

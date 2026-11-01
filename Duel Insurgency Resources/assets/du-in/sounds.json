@@ -507,6 +507,13 @@
 			{"name":"du-in:sfx/woosh"}],
 			"subtitle": "Something wooshes"
 	},
+		"sfx.bit_crush": {
+		"sounds": [
+			{"name":"du-in:sfx/bit_crush","pitch": 1},
+			{"name":"du-in:sfx/bit_crush","pitch": 0.9},
+			{"name":"du-in:sfx/bit_crush","pitch": 1.1}],
+			"subtitle": "Damage creature"
+	},
 
 
 
@@ -582,6 +589,14 @@
 		"sounds": [
 			{"name":"du-in:goner/missile/chase"}],
 			"subtitle": "Goner Missle whirs"
+	},
+
+	"goner.hit": {
+		"sounds": [
+			{"name":"du-in:goner/hit","pitch": 1},
+			{"name":"du-in:goner/hit","pitch": 1.1},
+			{"name":"du-in:goner/hit","pitch": 0.9}],
+			"subtitle": "Goner hurt"
 	},
 
 
@@ -912,6 +927,32 @@
 		"sounds": [
 			{"name":"du-in:kit/flowey/ability2"}],
 			"subtitle": "Flowey activates ability"
+	},
+
+		"kit.freddy.power": {
+		"sounds": [
+			"du-in:kit/freddy/power"
+		],
+		"subtitle": "Freddy deactivates power"
+	},
+	"kit.freddy.laugh": {
+		"sounds": [
+		{"name": "du-in:kit/freddy/laugh1"},
+		{"name": "du-in:kit/freddy/laugh2"},
+		{"name": "du-in:kit/freddy/laugh3"}],
+		"subtitle": "Freddy laughs"
+	},
+	"kit.freddy.hit": {
+		"sounds": [
+		{"name": "du-in:kit/freddy/hit","pitch": 1},
+		{"name": "du-in:kit/freddy/hit","pitch": 0.9},
+		{"name": "du-in:kit/freddy/hit","pitch": 1.1}],
+		"subtitle": "Freddy hurt"
+	},
+	"kit.freddy.scream": {
+		"sounds": [
+			{"name":"du-in:kit/freddy/scream"}],
+			"subtitle": "Freddy screams"
 	},
 
 	"kit.gaster.pick": {
@@ -1854,6 +1895,13 @@
 		{"name":"du-in:kit/willo/shoot","pitch": 1.1}],
 		"subtitle": "Revolver fires"
 	},
+		"kit.willo.revolver_shoot_self": {
+		"sounds": [
+		{"name":"du-in:kit/willo/shoot_shooter","pitch": 1},
+		{"name":"du-in:kit/willo/shoot_shooter","pitch": 0.9},
+		{"name":"du-in:kit/willo/shoot_shooter","pitch": 1.1}],
+		"subtitle": "Revolver fires"
+	},
 	"kit.willo.revolver_reload": {
 		"sounds": [
 		{"name":"du-in:kit/willo/reload"}],
@@ -1871,6 +1919,12 @@
 		{"name":"du-in:kit/willo/whizz3"}],
 		"subtitle": "Bullet whizzes"
 	},
+	"kit.willo.rechamber_click": {
+		"sounds": [
+		{"name":"du-in:kit/willo/click"}],
+		"subtitle": "Chamber clicks"
+	},
+
 
 	"kit.yharim.rage.ready": {
 		"sounds": [

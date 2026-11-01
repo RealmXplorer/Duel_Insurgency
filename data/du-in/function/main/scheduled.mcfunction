@@ -8,7 +8,9 @@
     effect give @a[predicate=!du-in:effect/has_saturation,tag=!notEaten] minecraft:saturation infinite 100 true
 
 
-    execute unless entity @a[tag=devMode] store result score #main online as @a[tag=!spectating] run scoreboard players add @s online 0
+    execute unless entity @a[tag=devMode] run scoreboard players set #main online 0
+    execute unless entity @a[tag=devMode] as @a[tag=!spectating] run scoreboard players add #main online 1
+
     execute if entity @a[tag=devMode] run scoreboard players set #main online 2
 
     #Shutdown if party leader is in lobby and a player isn't in lobby

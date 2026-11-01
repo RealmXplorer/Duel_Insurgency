@@ -4,6 +4,7 @@ execute if entity @s[tag=freddyDark,tag=!freddyShadow] run function du-in:kit/fr
 #Keep visible
 tag @s remove freddyDark
 tag @s[tag=!freddyShadow] remove invisible
+function du-in:kit/freddy/weapon
 
 #Remove previous modifiers
 attribute @s attack_damage modifier remove freddy_darkness

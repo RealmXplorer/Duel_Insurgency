@@ -20,6 +20,7 @@ tag @s[tag=!sabotaged] add freddyShadow
 tag @s[tag=!sabotaged] add invisible
 effect give @s[tag=!sabotaged] night_vision infinite 1 true
 clear @s[tag=!sabotaged] #du-in:armor
+execute if entity @s[tag=!sabotaged,tag=!stolen] run function du-in:kit/freddy/weapon
 
 #Take lights away
 execute if entity @s[tag=!void,tag=!sabotaged] run function du-in:kit/freddy/ability/light/scan_start

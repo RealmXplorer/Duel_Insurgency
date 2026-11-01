@@ -1,5 +1,9 @@
-execute if entity @s[tag=!devMode] run function du-in:other/player_count/default
-execute if entity @s[tag=devMode] run function du-in:other/player_count/dev_mode
+scoreboard players set #main online 0
+execute if entity @s[tag=!devMode] as @a run scoreboard players add #main online 1
+#function du-in:other/player_count/default
+
+
+execute if entity @s[tag=devMode] run scoreboard players set #main online 2
 
 execute unless score #main online matches ..1 run playsound minecraft:block.end_portal.spawn master @a ~ ~ ~ 0.5 2
 execute unless score #main online matches ..1 run playsound minecraft:block.bell.use master @a ~ ~ ~ 0.5 1

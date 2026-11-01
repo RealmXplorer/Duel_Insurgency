@@ -4,7 +4,8 @@ attribute @s movement_speed modifier remove freddy_ability
 tag @s remove freddyShadow
 tag @s remove invisible
 effect clear @s night_vision
-function du-in:kit/freddy/armor
+execute if entity @s[tag=!stolen] run function du-in:kit/freddy/armor
+execute if entity @s[tag=!stolen] run function du-in:kit/freddy/weapon
 
 scoreboard players reset @s lightTimer
 

@@ -1,6 +1,6 @@
 effect clear @s night_vision
-effect give @s darkness 1 1 true
-effect give @s blindness 1 1 true
+effect give @s darkness 3 1 true
+effect give @s blindness 3 1 true
 
 scoreboard players set @s darkTimer 200
 scoreboard players set @s[tag=empoweredFreddyHit] darkTimer 300

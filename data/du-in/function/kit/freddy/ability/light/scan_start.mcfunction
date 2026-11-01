@@ -1,4 +1,4 @@
-summon marker ~-25 ~ ~-25 {Tags:["light_scanner","unset"]}
+summon marker ~-25 ~-2 ~-25 {Tags:["light_scanner","unset"]}
 execute if entity @s[tag=empower] run tag @n[type=marker,tag=light_scanner,tag=unset] add empower
 
 # scoreboard players set @e[type=marker,tag=light_scanner,limit=1,sort=nearest] lightScanX 0

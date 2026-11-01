@@ -91,9 +91,9 @@ execute if entity @s[scores={shrunkTimer=0..}] run function du-in:kit/jack_horne
 execute if entity @s[scores={parryDuration=0..},tag=parry] run scoreboard players set @s parryDuration 0
 
 #KILLSTREAK#
-tag @s[scores={killStreak=3..}] add lostStreak
-execute store result storage du-in:main killsteak.streak int 1 run scoreboard players get @s[tag=lostStreak] killStreak
-scoreboard players reset @s killStreak
+#tag @s[scores={killStreak=3..}] add lostStreak
+#execute store result storage du-in:main killsteak.streak int 1 run scoreboard players get @s[tag=lostStreak] killStreak
+#scoreboard players reset @s killStreak
 
 
 function du-in:ingame/kill_combo/reset

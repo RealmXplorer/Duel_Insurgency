@@ -10,10 +10,8 @@ execute store result storage du-in:dark_star player.current int 1 run scoreboard
 
 execute as @a[tag=roryHit] run function du-in:kit/rory/ability/star/explode_damage with storage du-in:dark_star player
 
-execute as @n[type=armor_stand,tag=roryDisplay] if score @s player = @n[type=armor_stand,tag=roryAbility] player run function du-in:kit/susie/ability/buster/kill
-execute as @n[type=item_display,tag=roryAbility] if score @s player = @n[type=armor_stand,tag=roryAbility] player run function du-in:kit/susie/ability/buster/kill
-tp @s 0.0 0.0 0.0
-kill @s
+playsound du-in:kit.asriel.saber master @a ~ ~ ~ 1 .75
+particle minecraft:electric_spark ~ ~1 ~ 1.5 1.5 1.5 1 50
 
 # execute if entity @s[scores={starTravelTime=..-10}] as @n[type=armor_stand,tag=roryDisplay] if score @s player = @n[type=armor_stand,tag=roryAbility] player run function du-in:kit/susie/ability/buster/kill
 # execute if entity @s[scores={starTravelTime=..-10}] as @n[type=item_display,tag=roryAbility] if score @s player = @n[type=armor_stand,tag=roryAbility] player run function du-in:kit/susie/ability/buster/kill

@@ -10,16 +10,11 @@
 -Added Jack Torrance skin for Springtrap.
 -Added "Five Nights at Freddy's" tab to kit menu.
 -Added "Overlook Maze" map as a Halloween and Christmas variant for the "Maze" map.
+-Added holiday variants for the Shop.
+    -Currently only Halloween and Thanksgiving.
 -Added Pawpsicles and Candy Corn to the drink shop.
 -Added small audio cue when a player with resistance takes damage.
 -Added subtitles to all gameplay audio.
-
-*Balancing*
--Pawbert's ability no longer automatically fills his venom vial.
-    -Pawbert will now have to play around his ability and weigh whether its the best option.
--Pawbert no longer sabotages nearby enemies when using his ability.
-    -Pawbert will still charm nearby Goners.
--Asriel is now "big" size, instead of "medium".
 
 *Changes*
 -Updated map to 26.3.
@@ -27,19 +22,30 @@
 -Map Countdown now always counts down, and will only stop when the party leader pauses.
 -Removed glowing effect when crouching in game.
 -Cycling through music in the shop now plays a sound and particle.
--All players are now invisible, forcing players to search for their enemy.
-    -This is toggleable, though Willo will always be invisible as part of her kit.
 -Characters now have animations when using abilities.
     -"whack" for successful abilities, "none" for failed abilities, and "stab" for sabotaged abilities.
 -Messages for when a player ends another killstreak now dynamically shows the real killstreak (instead of just 3 or 5).
 -Kit Menu now has its page navigators on the right, instead of the left so that you can see the entries.
 -Skin menu is now organized the same as the kit menu.
     -Skin presets has been removed due to a pesky bug.
--Harvest now uses the Dappled Forest biome, and features Poplar trees.
+-The Harvest map now uses the Dappled Forest biome, and features Poplar trees.
 -Moved a vending machine on Maze so it wasn't right next to a jump pad.
 -Beds can no longer be slept in.
 -Signs on San Ricardo are now properly waxed.
 -Added grayscale post effect for the void.
+
+*Balancing*
+-All players are now invisible, forcing players to search for their enemy.
+    -Darwin's ability now puts players into an "underwear" state, with custom textures.
+-Greatly reduced natural regen timer. This should make fleeing a more viable option in fights.
+    -Initial delay reduced. (10s -> 4s, Undead 7s -> 3s, Palpatine 11s -> 5s).
+    -Delay between each heal reduced. (5s -> 2s)
+-Pawbert's ability no longer automatically fills his venom vial.
+    -Pawbert will now have to play around his ability and weigh whether its the best option.
+-Pawbert no longer sabotages nearby enemies when using his ability.
+    -Pawbert will still charm nearby Goners.
+-Player's ability now heals 8 health over 2 seconds, rather than 6 health over 1 second.
+-Asriel is now "big" size, instead of "medium".
 
 *Bug Fixes*
 -Fixed bug where Clairen's ability would not be properly empowered.
@@ -193,10 +199,10 @@
 -Added Revolver sounds.
 -Added Candy corn saber. (by Realm_Xplorer)
 -Added Jack Torrance skin. (by Three_Thumbs)
--Added Willo revolver models and textures. (by nerbski_)
--Added Candy corn muzzle flash overlays. (by nerbski_)
--Added Roaring Knight armor texture. (by nerbski_)
--Added Roaring Knight star models. (by nerbski_)
+-Added Willo revolver models and textures. (by nerbski)
+-Added Candy corn muzzle flash overlays. (by nerbski)
+-Added Roaring Knight armor texture. (by nerbski)
+-Added Roaring Knight star models. (by nerbski)
 -Added Roaring Knight sound effects.
 -Added Black Knife texture. (by Realm_Xplorer)
 -Added Jack Torrance armor textures. (by Three_Thumbs)
@@ -206,3 +212,4 @@
 -Added shop lock texture. (by Realm_Xplorer)
 -Added Freddy armor textures. (by CornKaine)
 -Added Freddy sounds
+-Added underwear armor textures. (by nerbski)

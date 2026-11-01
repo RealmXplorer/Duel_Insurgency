@@ -1,9 +1,9 @@
 #Ability Effects#
 effect give @s[tag=!sabotaged] minecraft:fire_resistance 3 3 true
-effect give @s[tag=!sabotaged] minecraft:regeneration 1 4 true
+effect give @s[tag=!sabotaged] minecraft:regeneration 2 3 true
 
 effect give @s[tag=!sabotaged,tag=empower] minecraft:fire_resistance 5 4 true
-effect give @s[tag=!sabotaged,tag=empower] minecraft:regeneration 2 5 true
+effect give @s[tag=!sabotaged,tag=empower] minecraft:regeneration 2 4 true
 
 effect give @s[tag=sabotaged] minecraft:poison 1 3 true
 effect give @s[tag=sabotaged,tag=empower] minecraft:poison 2 4 true
