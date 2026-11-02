@@ -1,0 +1,214 @@
+***7/11/26 - 11/1/26:***
+***Version 1.6 - The Edge of Shadow:***
+*Additions*
+-Added Willo character.
+    -Willo primarily uses her candy corn revolver and traps to trip up the competition.
+-Added Roaring Knight character.
+    -The Roaring Knight floats and speeds through the arena, using its explosive stars to oppress enemies.
+-Added Freddy Fazbear character.
+    -Freddy lurks in the shadows, gaining strength the darker it is. His ability will take out all non-flame lights.
+-Added Jack Torrance skin for Springtrap.
+-Added "Five Nights at Freddy's" tab to kit menu.
+-Added "Overlook Maze" map as a Halloween and Christmas variant for the "Maze" map.
+-Added holiday variants for the Shop.
+    -Currently only Halloween and Thanksgiving.
+-Added Pawpsicles and Candy Corn to the drink shop.
+-Added small audio cue when a player with resistance takes damage.
+-Added subtitles to all gameplay audio.
+
+*Changes*
+-Updated map to 26.3.
+-Unpurchased skins in shop now have a custom icon.
+-Map Countdown now always counts down, and will only stop when the party leader pauses.
+-Removed glowing effect when crouching in game.
+-Cycling through music in the shop now plays a sound and particle.
+-Characters now have animations when using abilities.
+    -"whack" for successful abilities, "none" for failed abilities, and "stab" for sabotaged abilities.
+-Messages for when a player ends another killstreak now dynamically shows the real killstreak (instead of just 3 or 5).
+-Kit Menu now has its page navigators on the right, instead of the left so that you can see the entries.
+-Skin menu is now organized the same as the kit menu.
+    -Skin presets has been removed due to a pesky bug.
+-The Harvest map now uses the Dappled Forest biome, and features Poplar trees.
+-Moved a vending machine on Maze so it wasn't right next to a jump pad.
+-Beds can no longer be slept in.
+-Signs on San Ricardo are now properly waxed.
+-Added grayscale post effect for the void.
+
+*Balancing*
+-All players are now invisible, forcing players to search for their enemy.
+    -Darwin's ability now puts players into an "underwear" state, with custom textures.
+-Greatly reduced natural regen timer. This should make fleeing a more viable option in fights.
+    -Initial delay reduced. (10s -> 4s, Undead 7s -> 3s, Palpatine 11s -> 5s).
+    -Delay between each heal reduced. (5s -> 2s)
+-Pawbert's ability no longer automatically fills his venom vial.
+    -Pawbert will now have to play around his ability and weigh whether its the best option.
+-Pawbert no longer sabotages nearby enemies when using his ability.
+    -Pawbert will still charm nearby Goners.
+-Player's ability now heals 8 health over 2 seconds, rather than 6 health over 1 second.
+-Asriel is now "big" size, instead of "medium".
+
+*Bug Fixes*
+-Fixed bug where Clairen's ability would not be properly empowered.
+-Fixed bug where Bogo's hurt sound would not play.
+-Fixed bug where Roxanne Wolf's skin could not be selected.
+-Fixed bug where final pylon's timer would appear blank.
+-Fixed bug where Jerma's randomized sword could bypass Puss's ability.
+-Fixed bug where Deathmatch would not run classic map functions.
+-Fixed bug where Goner Eye was not present on Wild West map.
+
+*Internal Changes*
+***DATAPACK 7.0***
+**Rebuilt internal kit system**
+    -ALL characters are now saved in an internal "du-in:kit" storage with compounded storages. Info about each kit is saved, copied, and pulled.
+    -The dynamic tests ("/go" functions) now search for "$(id)" instead of "$(kit)".
+    -"kit/all/random/set" no longer searches each "kit" score, and can now find the correct kit via indexing its "kit.id" from the database.
+    -Random roll is now dynamic, automatically adding to the max value for every kit not in groups "unlock" or "easter_egg"
+    -Legendary random roll is also dynamic, automatically adding to the random max value for every kit in "unlock".
+    -Kit Menu has been overhauled, dynamically creating slots and groups. Each entry is dynamically created, removing hardcoded groups and slots.
+    -Kit functions now pass "pack" into their functions, allowing other datapacks to be mounted and used, so long as they use the same file structure.
+    -Added "kitGender" score to test for which type of underwear kits should wear.
+-Secondaries are now standardized through a "hasSecond" tag (added on kit pick), and dynamic "secondary/item" and "secondary/init" functions.
+    -Per-tick "secKitActions" tag check is being phased out, but technically still supported.
+-Secondary give/return functions are now run every second, rather than every tick (like weapons and armor).
+-"triCounts" are now tested every second, and are standardized via "secondary/tracker/item".
+    -Only exceptions are Pawbert and PearApplez, as their trackers are unique.
+-Deprecated "weapCount", "secCount", "triCount", "appleCount", and "tridentCount" scores, now uses "execute unless items" to test for missing items.
+-Jack Horner's run functions now operate off his constant function, rather than deferring to "run" functions.
+-Abilities now run through "returns", reducing entity checks.
+-Zombie, Impostor, and Hollow Knight ability validity checks now happen on ability execution, rather than their constants.
+-Reorganized Clairen's field-state tests to run based on if players are nearby, rather than all the time.
+-Clairen's per-tick ability field check now runs through a centralized using "inField" tag and nesting returns, rather than every variant at once.
+-Clairen's field timer is now set on the field's spawn, rather than checking every tick for a tag inside its entity function.
+-Removed "beetleDamage" and "beetleGhostTimer" objectives as they were unused.
+-All skin menu functions now run through individual kits' "du-in:kit/[kit]/menu/skins/" folder.
+-Skin Menu has been merged with kit menu. (skin menu functions can now be found in "lobby/kitmenu/skins/)
+    -Removed "du-in:skin_menu/" folder.
+    -Removed "skinList" and "skinTheme" objectives.
+-Team checks are now done through the "#main" fake player. They are set on ability use, tested, then reset. This removes the previous second player check.
+-Merged the player checks in relevant abilities to check once and never add the "hit" tags for teammates, rather than give all players the "hit" and remove for teammates.
+-Moved many per-player timers over to a "smart" scheduling system. This removes checks for characters abilities who aren't even in the game, and technically makes them independent from hardcoded game functions.
+-Added "kit/all/game_start/" functions, allowing all characters to have a function that runs on game start without hardcoded tests.
+    -Every character folder now has a "(kit)/events/game_start" file, which runs the moment a game starts (but before "intro").
+-Added "kit/all/reset/" functions. All characters now run their end of game resets independently, which is less optimized in some ways, but allows for easier management of per-character resets.
+    -Every character folder now has a "(kit)/events/reset" file which runs their resets on game end.
+-Moved Runza eating test to an advancement.
+-Restructured constants for kits using returns.
+-Kill message functions now run through characters.
+-Size attributes are now set at the top of the "attribute" function, making all attributes replace their size's defaults.
+-The regen timer is no longer tag-based, instead running off of the kit's "maxHealth" score set in their attribute function.
+
+**Reorganized map folders and functions**
+-Renamed "du-in:maps/" folder to "du-in:map/".
+-Each map has its own folder, similar to kits.
+-Removed "du-in:map/start/pick/pick_arena" and "du-in:map/start/pick/pick_caves", as these functions now run in their maps' folders. 
+-Map select is now fully scalable, running off of inset scores from UUIDs, rather than tags.
+-Map-specific constants (such as effects and kill zones) are scheduled on select and run off their own folder, rather than all ticking in their gamemode functions.
+    -Many of these are no longer every tick so as to lighten tick load.
+-Ambience has been moved out of "ingame/scheduled/ambience/" to "map/all/ambience/"
+-Ambience is now a single score set on individual map starts, rather than testing for gamemodes and map scores.
+
+**Gamemode Overhaul**
+-Default classic, Team, Timed, and Timed Team classic is now event-based.
+-Created "Macro-Assisted Schedules", which dynamically front-load timers for timed mode.
+-Simplified game cap functions as they did unnecessary checks and math.
+-Created "smart schedules", which initialize and run the necessary ticking functions when a specific gamemode is picked.
+-Moved "ingame/startround/(gamemode and subtype)" functions to their gamemode folders. "ingame/(gamemode)/(submode)/start"
+
+**Lobby Tweaks**
+-Moved "team_enable" and "team_disable" into a single check using returns.
+-Moved "count_stop" and "count_go" into a single check using returns.
+-"Team mode" lobby hotbar icon is now scheduled every second, rather than running every tick.
+-The "two_sec_loop" scheduled function in lobby now only runs in Map Select, as it's the only lobby where it's used.
+-Moved "main" player count checks to be event based in the lobby. Ingame, they have been moved to run every second, rather than every tick.
+
+**Audio Overhaul**
+-Renamed and moved audio sources from "minecraft:" to "du-in:".
+-Renamed "oldPack" tag for beta music to "beta".
+-Renamed "music/ingame/oldpack/" and "music/lobby/oldpack/" to "music/ingame/beta/" and "music/lobby/beta/".
+-Renamed several music files.
+    -"ffa" and "ffaend" are now "classic" and "classic_end" (this goes for Beta and Legacy variants)
+    -"dm" and "dmend" are now "deathmatch" and "deathmatch_end"
+    -"cqend" is now "conquest_end"
+    -"kothend" is now "koth_end"
+    -"ctfend" is now "ctf_end"
+    -"tournamentffa" and "tournamentffaend" are now "tournament" and "tournament_end"
+    -"tournament.lobby" is now "tournament_lobby"
+    -"oldmusic." is now "music.beta."
+    -"music.win.generic" is now "music.win"
+    -"big.chungus" and "big.chungus.end" is now "music.big_chungus" and "music.big_chungus_end"
+-Simplified ambient sound names.
+    -"ambient.forestamb" is now "ambient.forest" 
+    -"ambient.desertamb" is now "ambient.desert"
+    -"ambient.caveamb" is now "ambient.cave" (possible now that is uses "du-in:" namespacing)
+    -"ambient.jungleamb" is now "ambient.jungle"
+    -"ambient.nightamb" is now "ambient.night"
+-Renamed all kit sound effects to be under "du-in:kit.[kit].[sound]".
+
+**Other Technical Changes**
+-Updated Advancements and Predicates to follow new 26.3 syntaxes.
+-Chunks are now dynamically forceloaded, hopefully offering better performance for the server.
+-Some entities are now loaded and tested via hardcoded UUIDs, rather than dynamic tests. This affects KOTH, CTF, and the lobby.
+-Ingame music now runs through returns.
+-Void gonerKills are now run through a fake player rather than maintaining and calling random players' scores.
+-"new_player" check is now run through a ticking advancement instead of a constant score check.
+-Moved game shutdown functions into "ingame/scheduled", as they aren't needed or used in the lobby.
+-Moved "shutdown" system to schedules, rather than a score-based tick timer. (Deprecated "shutdownTimer" score)
+-Added "overworld" and "overworld_caves" dimension_types to alter overworld environment attributes.
+-Added Glass Panes to "minecraft:glass" block tags.
+-Added du-in:retro, du-in:goner, du-in:bw, and du-in:flash posteffects.
+-Added "du-in:effect/has_resistance" predicate.
+-Added room.Between
+-Added "du-in:non_firelight" block tag to test for light blocks (that don't have fire).
+-Added "du-in:light" block tag to test for ALL light blocks.
+-Added "minecraft:copper_bulbs" block tag to test for Copper bulbs.
+-Added "minecraft:froglights" block tag to test for froglights.
+-Added "minecraft:torches" block tag to test for torches.
+-Added "minecraft:wall_torches" block tag to test for wall torches.
+-Added "du-in:light_level/" predicates to test for light levels.
+-Mounted Mulverine's "Player Motion API" datapack, though it is currently unused. https://modrinth.com/datapack/player_motion
+
+*Resourcepack Changes*
+**Audio Overhaul**
+-Moved all Duel-related audio to "du-in:sounds" folder and organized it much better.
+-All audio now uses the object case in the sounds.json and all gameplay audio is now subtitled.
+-All music and ambient tracks are now streamed.
+-Renamed music to be more consistent and easier to keep track of.
+-Moved kit-specific music tracks from the kit files to the new "du-in:music/" file
+    -"jack_black/music" is now "music/jack_black"
+    -"saac/music" is now "music/saac"
+    -"saul/music" is now "music/saul"
+    -"chungus/big" and "chungus/chungus" are now "music/chungus" and "music/chungus_end"
+-Renamed wordy ambient file names.
+    -"forestamb_day" is now "forest"
+    -"desertamb_day" is now "desert"
+    -"nightamb" is now "night"
+    -"jungleamb" is now "jungle"
+    -"caveamb" is now "cave"
+-All kit "hurt" sounds are now properly ".hit" instead of some being ".voice".
+-All kit sounds are now under "du-in:kit.[kitname].[sound]"
+-Renamed "minecraft:soundeffect." to "du-in:sfx.", and made proper subfolders.
+    -Some sounds from characters such as ralsei have been moved to the sfx folder.
+
+**Changes**
+-Lowered Kratos' hurt sounds' volume.
+
+**Additions**
+-Added Willo armor textures. (by nerbski)
+-Added Candy corn texture. (by Realm_Xplorer)
+-Added Revolver sounds.
+-Added Candy corn saber. (by Realm_Xplorer)
+-Added Jack Torrance skin. (by Three_Thumbs)
+-Added Willo revolver models and textures. (by nerbski)
+-Added Candy corn muzzle flash overlays. (by nerbski)
+-Added Roaring Knight armor texture. (by nerbski)
+-Added Roaring Knight star models. (by nerbski)
+-Added Roaring Knight sound effects.
+-Added Black Knife texture. (by Realm_Xplorer)
+-Added Jack Torrance armor textures. (by Three_Thumbs)
+-Added Jack Torrance ability texture. (by Realm_Xplorer)
+-Added Willo Ability texture. (by Realm_Xplorer)
+-Added Willo knife models and textures. (by nerbski)
+-Added shop lock texture. (by Realm_Xplorer)
+-Added Freddy armor textures. (by CornKaine)
+-Added Freddy sounds
+-Added underwear armor textures. (by nerbski)
